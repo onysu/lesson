@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* #playlist {} */
+
+    #playlist li {
+      cursor: pointer;
+    }
+
+    #playlist li:hover {
+      color: blue;
+    }
+
+    #videoarea {
+      width: 100%;
+      /* height: 480px; */
+      margin-top: 10px;
+      border: 1px solid silver;
+    }
+
+    /* ul {
+      height: 480px;
+      width: 100%;
+    } */
+
+    ul#playlist {
+      margin-top: 15px;
+      padding-left: 20px;
+    }
+
+    ul {
+      overflow: hidden;
+      overflow-y: scroll;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-7">
+        <video id="videoarea" controls="controls" poster="img/first-image-open-in-photoshop.jpg"
+          src="video/OPEN Image vs PLACE Image in Photoshop.mp4"></video>
+      </div>
+      <div class="col-sm-5">
+        <ul id="playlist">
+          <li movieurl="video/OPEN Image vs PLACE Image in Photoshop.mp4">Menu Open vs Place Embedded</li>
+          <li movieurl="video/Create a Drop Shadow Photo Border in Photoshop.mp4">Buat Drop Shadow pada Bingkai Foto
+          </li>
+          <li movieurl="video/Memotong Gambar dalam Bentuk Lingkaran.mp4">Memotong Gambar dalam Bentuk Lingkaran</li>
+          <li movieurl="video/Memotong Gambar dengan Crop Tool.mp4">Memotong Gambar dengan Crop Tool</li>
+          <li movieurl="video/Ubah Ukuran Gambar Tanpa Kehilangan Kualitas dengan Smart Objects.mp4">Ubah Ukuran Gambar
+            Tanpa Kehilangan Kualitas dengan Smart Objects</li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    var starttime = 2;
+    $(function () {
+      $("#playlist li").on("click", function () {
+        $("#videoarea").attr({
+          src: $(this).attr("movieurl"),
+          poster: "",
+          autoplay: "autoplay"
+        });
+        starttime = $(this).attr("startt");
+      });
+      //     $("#videoarea").attr({
+      //         "src": $("#playlist li").eq(0).attr("movieurl"),
+      //         "poster": $("#playlist li").eq(0).attr("moviesposter"),
+
+      //     })
+    });
+
+    document.getElementById("videoarea").addEventListener(
+      "loadedmetadata",
+      function () {
+        this.currentTime = starttime;
+      },
+      false
+    );
+  </script>
+</body>
+
+</html>

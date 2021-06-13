@@ -18,21 +18,24 @@
       margin-bottom: 10px;
     }
 
-    video {
+    /* video {
       border-radius: 8px;
-    }
+    } */
 
-    .accordion-body{
+    .accordion-body {
       padding: 0;
     }
-    .accordion-item{
+
+    .accordion-item {
       border-right: 0;
       border-left: 0;
     }
-    .accordion-button:focus{
+
+    .accordion-button:focus {
       box-shadow: none;
     }
-    .accordion-button:not(.collapsed){
+
+    .accordion-button:not(.collapsed) {
       color: #333;
       background-color: #ddd;
     }
@@ -77,15 +80,47 @@
       vertical-align: top;
       font-weight: 400;
     }
-    .tg .tg-0lax img{
+
+    .tg .tg-0lax img {
       margin-top: 5px;
+    }
+
+    /* video-playlist */
+    #playlist li {
+      cursor: pointer;
+    }
+
+    #playlist li:hover {
+      color: blue;
+    }
+
+    #videoarea {
+      width: 100%;
+      /* height: 480px; */
+      /* margin-top: 10px; */
+      /* border: 1px solid silver; */
+    }
+
+    /* ul {
+      height: 480px;
+      width: 100%;
+    } */
+
+    ul#playlist {
+      /* margin-top: 15px; */
+      padding-left: 20px;
+    }
+
+    ul {
+      overflow: hidden;
+      overflow-y: scroll;
     }
   </style>
 </head>
 
 <body class="hold-transition sidebar-mini text-sm">
   <div class="wrapper">
-    
+
     <nav class="main-header navbar navbar-expand navbar-white navbar-light">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -154,7 +189,7 @@
                 </p>
               </a>
             </li>
-            
+
             <li class="nav-item">
               <a href="webdesain.html" class="nav-link">
                 <i class="nav-icon fas fa-th"></i>
@@ -164,7 +199,7 @@
                 </p>
               </a>
             </li>
-            
+
             <li class="nav-item">
               <a href="pemrograman.html" class="nav-link">
                 <i class="nav-icon fas fa-th"></i>
@@ -293,12 +328,13 @@
                       <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
                         data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                          
+
                           <table class="tg">
                             <tbody>
                               <tr>
                                 <td class="tg-1wig" style="border-top: 0;">File</td>
-                                <td class="tg-0lax" style="border-top: 0;">Digunakan untuk langkah-langkah awal dan langkah
+                                <td class="tg-0lax" style="border-top: 0;">Digunakan untuk langkah-langkah awal dan
+                                  langkah
                                   akhir
                                   dalam pengeditan foto, karena disana bisa memilih pilihan membuka lembar
                                   kerja baru, Impor foto, Browse, Open As, Close, Save, Save As, proses Print
@@ -361,13 +397,14 @@
                               </tr>
                               <tr>
                                 <td class="tg-1wig" style="border-bottom: 0;">Help</td>
-                                <td class="tg-0lax" style="border-bottom: 0;">menu yang cukup penting untuk diakses yang berisi
+                                <td class="tg-0lax" style="border-bottom: 0;">menu yang cukup penting untuk diakses yang
+                                  berisi
                                   konten
                                   informasi tentang Photoshop serta fitur terbaru.</td>
                               </tr>
                             </tbody>
                           </table>
-                          
+
                         </div>
                       </div>
                     </div>
@@ -1118,10 +1155,10 @@
                       </div>
                     </div>
                   </div>
-                </div>                
+                </div>
               </div>
 
-            <!-- tools -->
+              <!-- tools -->
               <div class="card">
                 <div class="card-header">
                   <h5 class="m-0">Tools</h5>
@@ -1193,7 +1230,7 @@
                 </div>
               </div>
             </div>
-            
+
             <!-- tutorials -->
             <div class="col-lg-12">
               <div class="card">
@@ -1205,7 +1242,27 @@
                 <div class="card-body">
                   <div class="row">
 
-                    <div class="col-lg-6">
+                    <div class="col-sm-7">
+                      <video id="videoarea" controls="controls" poster="img/first-image-open-in-photoshop.jpg"
+                        src="video/OPEN Image vs PLACE Image in Photoshop.mp4"></video>
+                    </div>
+                    <div class="col-sm-5">
+                      <ul id="playlist">
+                        <li movieurl="video/OPEN Image vs PLACE Image in Photoshop.mp4">Menu Open vs Place Embedded</li>
+                        <li movieurl="video/Create a Drop Shadow Photo Border in Photoshop.mp4">Buat Drop Shadow pada
+                          Bingkai Foto
+                        </li>
+                        <li movieurl="video/Memotong Gambar dalam Bentuk Lingkaran.mp4">Memotong Gambar dalam Bentuk
+                          Lingkaran</li>
+                        <li movieurl="video/Memotong Gambar dengan Crop Tool.mp4">Memotong Gambar dengan Crop Tool</li>
+                        <li movieurl="video/Ubah Ukuran Gambar Tanpa Kehilangan Kualitas dengan Smart Objects.mp4">Ubah
+                          Ukuran Gambar
+                          Tanpa Kehilangan Kualitas dengan Smart Objects</li>
+
+                      </ul>
+                    </div>
+
+                    <!-- <div class="col-lg-6">
                       <h5>Menu Open vs Place Embedded</h5>
                       <video src="video/OPEN Image vs PLACE Image in Photoshop.mp4" controls
                         poster="img/first-image-open-in-photoshop.jpg" width="100%"></video>
@@ -1227,9 +1284,9 @@
                     </div>
                     <div class="col-lg-6">
                       <h5>Ubah Ukuran Gambar Tanpa Kehilangan Kualitas dengan Smart Objects</h5>
-                      <video src="video/Ubah Ukuran Gambar Tanpa Kehilangan Kualitas dengan Smart Objects.mp4" controls poster="img/drag-image-right.jpg"
-                        width="100%"></video>
-                    </div>
+                      <video src="video/Ubah Ukuran Gambar Tanpa Kehilangan Kualitas dengan Smart Objects.mp4" controls
+                        poster="img/drag-image-right.jpg" width="100%"></video>
+                    </div> -->
 
                   </div>
                 </div>
@@ -1275,6 +1332,33 @@
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <!-- AdminLTE App -->
   <script src="dist/js/adminlte.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    var starttime = 2;
+    $(function () {
+      $("#playlist li").on("click", function () {
+        $("#videoarea").attr({
+          src: $(this).attr("movieurl"),
+          poster: "",
+          autoplay: "autoplay"
+        });
+        // starttime = $(this).attr("startt");
+      });
+      // $("#videoarea").attr({
+      //   "src": $("#playlist li").eq(0).attr("movieurl"),
+      //   "poster": $("#playlist li").eq(0).attr("moviesposter"),
+
+      // })
+    });
+
+    document.getElementById("videoarea").addEventListener(
+      "loadedmetadata",
+      function () {
+        this.currentTime = starttime;
+      },
+      false
+    );
+  </script>
 </body>
 
 </html>

@@ -152,27 +152,10 @@
           <span>10:00</span><br />
           <span class="category">Marketing</span>
         </a>
-      </div>
-      <div class="column">
-        <a href="?id=vb933-JveIQ&title=Referral+Maker+CRM+To-Do+Section">
-          <img src="https://img.youtube.com/vi/vb933-JveIQ/mqdefault.jpg" width="800" />
-          <span class="name"><strong>Referral Maker CRM To-Do Section</strong></span><br />
-          <span>10:00</span><br />
-          <span class="category">My Business</span>
-        </a>
-      </div>
-      <div class="column">
-        <a href="?id=w0_Jj83yGvs&title=Referral+Maker+CRM+Mobile+App+Calendar">
-          <img src="https://img.youtube.com/vi/w0_Jj83yGvs/mqdefault.jpg" width="800" />
-          <span class="name"><strong>Referral Maker CRM Mobile App Calendar</strong></span><br />
-          <span>10:00</span><br />
-          <span class="category">My Business</span>
-        </a>
       </div> -->
+
   </div>
-  <!-- End Row -->
   </div>
-  <!-- End search-results -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.2.0/list.min.js"></script>
@@ -208,34 +191,34 @@
     });
 
     //Get URL query string
-    function getQueryVariable(variable) {
-      var query = window.location.search.substring(1);
-      var vars = query.split("&");
-      for (var i = 0; i < vars.length; i++) {
-        var pair = vars[i].split("=");
-        if (pair[0] == variable) {
-          return pair[1];
-        }
-      }
-      return false;
-    }
+    // function getQueryVariable(variable) {
+    //   var query = window.location.search.substring(1);
+    //   var vars = query.split("&");
+    //   for (var i = 0; i < vars.length; i++) {
+    //     var pair = vars[i].split("=");
+    //     if (pair[0] == variable) {
+    //       return pair[1];
+    //     }
+    //   }
+    //   return false;
+    // }
     // Get URL query string variables
-    var id = getQueryVariable("id");
-    var title = getQueryVariable("title");
+    // var id = getQueryVariable("id");
+    // var title = getQueryVariable("title");
 
-    if (id) {
-      $("[data-video-container]").show();
-      $("[data-video]").attr(
-        "src",
-        "https://github.com/onysu/lesson/blob/main/video/belajar-dasar-photoshop/" +
-        id
-      );
-    }
+    // if (id) {
+    //   $("[data-video-container]").show();
+    //   $("[data-video]").attr(
+    //     "src",
+    //     "https://github.com/onysu/lesson/blob/main/video/belajar-dasar-photoshop/" +
+    //     id
+    //   );
+    // }
 
-    if (title) {
-      var videoTitle = title.replace(/\+/g, " ");
-      $("[data-title]").html(videoTitle);
-    }
+    // if (title) {
+    //   var videoTitle = title.replace(/\+/g, " ");
+    //   $("[data-title]").html(videoTitle);
+    // }
   </script>
 </body>
 

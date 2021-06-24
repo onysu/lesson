@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio player with playlist and events and properties tabs</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    /*///////////////////////////////////////////////// - HOME STYLES -
+    //////////////////////////////////////////////////*/
+    .browserref {
+      border: 1px solid #e5e5e5;
+      width: 100%;
+    }
+
+    .table tbody th,
+    .table tbody td {
+      text-align: center;
+    }
+
+    .browserref td {
+      border: 1px solid #e5e5e5;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .browserref .odd {
+      background-color: white;
+    }
+
+    .bsChrome {
+      width: 16%;
+      padding: 5px 11px;
+      background: url(../img/browser_icon/compatible_chrome.gif) no-repeat center;
+    }
+
+    .bsEdge {
+      width: 16%;
+      padding: 5px 11px;
+      background: url(../img/browser_icon/compatible_edge.gif) no-repeat center;
+    }
+
+    .bsFirefox {
+      width: 16%;
+      padding: 5px 11px;
+      background: url(../img/browser_icon/compatible_firefox.gif) no-repeat center;
+    }
+
+    .bsSafari {
+      width: 16%;
+      padding: 5px 11px;
+      background: url(../img/browser_icon/compatible_safari.gif) no-repeat center;
+    }
+
+    .bsOpera {
+      width: 16%;
+      padding: 5px 11px;
+      background: url(../img/browser_icon/compatible_opera.gif) no-repeat center;
+    }
+
+    .footer {
+      background-color: #f5f5f5;
+    }
+
+    .footer .copyright {
+      padding: 20px 0;
+      margin: 0;
+    }
+
+    .false {
+      color: red;
+    }
+
+    .true {
+      color: green;
+    }
+
+    progress {
+      width: 50%;
+    }
+
+    /*//////////////////////////////////////////////// - VIDEO STYLES -
+    //////////////////////////////////////////////////*/
+    .video-playlist {
+      height: 406px;
+      overflow-y: scroll;
+    }
+
+    .video-playlist .mt-0 {
+      margin: 0;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    .video-playlist .media-object {
+      width: 150px;
+      height: 100px;
+    }
+
+    .video-tabs-container {
+      height: 450px;
+    }
+
+    /*//////////////////////////////////////////////// - AUDIO STYLES -
+    //////////////////////////////////////////////////*/
+    .audioPlayer {
+      display: block;
+      width: 100% !important;
+    }
+
+    .audio-list {
+      list-style-type: none;
+      padding-left: 0;
+      cursor: pointer;
+    }
+
+    .audio-list li {
+      padding: 7px 15px;
+      background-color: #ecedef;
+      border-bottom: 1px solid #ffffff;
+    }
+
+    .classic-list li span:first-child {
+      color: #337ab7;
+    }
+
+    .trance-list li span:first-child {
+      color: #5bc0de;
+    }
+
+    .metal-list li span:first-child {
+      color: #c12e2a;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <article class="jumbotron row">
+      <div class="page-header">
+        <h2>Audio player</h2>
+      </div>
+    </article>
+    <article class="well row">
+      <div class="audio-container col-lg-12">
+        <audio id="audio" preload="metadata" class="audioPlayer">
+          <source id="mp3" src="./audio/trance/Armin-Van-Buuren-In-And-Out-Of-Love.mp3" type="audio/mpeg">
+          <!-- Author's opinion about how browser should load audio:
+                auto(load audio when the page loads),
+                metadata( load only metadata when page loads),
+                none (don't load the audio when the page loads); -->
+          Your browser does not support the audio element.
+        </audio>
+        <div>
+          <button id="controlsPlayPause" class="btn btn-primary" title="Play/Pause">&#9654;/&#8214;</button>
+          <button id="controlsStop" class="btn btn-primary">&#9632;</button>
+          <button id="controlsDecreaseVolume" class="btn btn-primary" title="Decrease volume">-</button>
+          <button id="controlsMute" class="btn btn-primary" title="Mute / Unmute">&#128266;</button>
+          <button id="controlsIncreaseVolume" class="btn btn-primary" title="Increase volume">+</button>
+          <button id="controlsDecreaseSpeed" class="btn btn-primary" title="Decrease speed">&#9664;&#9664;</button>
+          <button id="controlsIncreaseSpeed" class="btn btn-primary" title="Increase speed">&#9654;&#9654;</button>
+          <button id="controlsLoop" class="btn btn-info" title="Loop">&#10561;</button>
+          <button id="controlsReload" class="btn btn-success" title="Load Audio">&#8645;</button>
+          <button id="controlsStepBack" class="btn btn-warning" title="Step back">&#8630;</button>
+          <button id="controlsStepForward" class="btn btn-danger" title="Step forward">&#8631;</button>
+          <progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
+        </div>
+      </div>
+    </article>
+    <article class="well row audio-playlists">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist" id="tablist">
+      </ul>
+      <!-- Tab panes -->
+      <div id="tabcontent" class="tab-content">
+      </div>
+    </article>
+    <article class="well row audio-tabs-container">
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#home1" aria-controls="home" role="tab" data-toggle="tab">Media
+            Events</a></li>
+        <li role="presentation"><a href="#profile1" aria-controls="profile" role="tab" data-toggle="tab">Media
+            Properties</a></li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="home1">
+          <table class="table table-striped">
+            <caption>Media Events</caption>
+            <tbody id='eventsTableID'>
+            </tbody>
+          </table>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="profile1">
+          <table class="table table-striped">
+            <caption>Media Properties</caption>
+            <tbody id='propertiesTableID'>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </article>
+  </main>
+  <footer class="footer">
+    <p class="copyright text-center">2017 &copy; <a href="http://www.astulov.ru" target="_blank">ASTULOV.RU</a></p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    /**
+     * Created by alexey on 06.03.2017.
+     */
+    "use strict";
+    /*------------------------------------------ GENERAL MEDIA CLASS BEGIN
+    -----------------------------------------------*/
+    function Media(mediaType, defaultCodecFormat, mediaElementTag) {
+      // mediaType can be 'video' or 'audio' strings
+      // defaultCodecFormat can be 'webm' or 'mp3' strings
+      var self = this;
+      this.mediaEvents = {
+        loadstart: 0,
+        progress: 0,
+        suspend: 0,
+        abort: 0,
+        error: 0,
+        emptied: 0,
+        stalled: 0,
+        loadedmetadata: 0,
+        loadeddata: 0,
+        canplay: 0,
+        canplaythrough: 0,
+        playing: 0,
+        waiting: 0,
+        seeking: 0,
+        seeked: 0,
+        ended: 0,
+        durationchange: 0,
+        timeupdate: 0,
+        play: 0,
+        pause: 0,
+        ratechange: 0,
+        resize: 0,
+        volumechange: 0
+      };
+      this.mediaProperties = [
+        "error",
+        "src",
+        "srcObject",
+        "currentSrc",
+        "crossOrigin",
+        "networkState",
+        "preload",
+        "buffered",
+        "readyState",
+        "seeking",
+        "currentTime",
+        "duration",
+        "paused",
+        "defaultPlaybackRate",
+        "playbackRate",
+        "played",
+        "seekable",
+        "ended",
+        "autoplay",
+        "loop",
+        "mediaGroup",
+        "controller",
+        "controls",
+        "volume",
+        "muted",
+        "defaultMuted",
+        "audioTracks",
+        "videoTracks",
+        "textTracks",
+        "width",
+        "height",
+        "videoWidth",
+        "videoHeight",
+        "poster"
+      ];
+      // find media element
+      this.mediaElement = document.getElementById(mediaElementTag);
+      // find source element
+      this.mediaSource = document.getElementById(defaultCodecFormat);
+      // create an array sized by properties amount
+      this.mediaPropertiesElts = new Array(this.mediaProperties.length);
+      // initiate media events
+      this.initEvents("eventsTableID", this.mediaEvents, false);
+      // initiate media properties
+      this.initProperties(
+        "propertiesTableID",
+        this.mediaProperties,
+        this.mediaPropertiesElts,
+        false
+      );
+      // properties are updated even if no event was triggered
+      setInterval(function () {
+        self.updateProperties(self);
+      }, 250);
+    }
+    // initiate media events function to fill the table
+    Media.prototype.initEvents = function (id, arrayEventDef) {
+      var self = this;
+      // for every media event add eventListener by event name(key)
+      for (var key in arrayEventDef) {
+        // increase value in arrayEventDef every time you trigger 'key' event
+        this.mediaElement.addEventListener(
+          key,
+          function (event) {
+            self.incrementEventCounter(event, self);
+          },
+          false
+        );
+      }
+      // update progress bar each time current value changed
+      this.mediaElement.addEventListener(
+        "timeupdate",
+        function (event) {
+          self.updateProgressBar(self);
+        },
+        false
+      );
+      // get table body element with exact id
+      var tbody = document.getElementById(id),
+        i = 1, // iterator for table row formation
+        tr = null,
+        th,
+        td;
+      for (key in arrayEventDef) {
+        // if this is beginning of the row, create it
+        if (tr === null) tr = document.createElement("tr");
+        th = document.createElement("th"); //initiate element
+        th.textContent = key; // fill the context
+        // create column element
+        td = document.createElement("td");
+        td.setAttribute("id", "e_" + key);
+        td.textContent = "0";
+        td.className = "false";
+        // assign header and column to row
+        tr.appendChild(th);
+        tr.appendChild(td);
+        // when you rich 5th column - append row, and drop tr
+        if (i++ % 5 === 0) {
+          tbody.appendChild(tr);
+          tr = null;
+        }
+      }
+      // if somehow tr not dropped append the least of available data
+      if (tr !== null) tbody.appendChild(tr);
+    };
+    // increase 'event' counter, when event happen
+    Media.prototype.incrementEventCounter = function (event, self) {
+      self.mediaEvents[event.type]++;
+    };
+    // initiate media properties function to fill the table
+    Media.prototype.initProperties = function (id, arrayPropDef, arrayProp) {
+      var tableBody = document.getElementById(id),
+        tableFragment = document.createDocumentFragment(),
+        i = 0,
+        tr = null,
+        th,
+        td,
+        temp; // temporary boolean variable to check if video supports any listed properties
+      // while array's limit is not achieved, create rows with properties' values
+      do {
+        // if this is the first row
+        if (tr === null) {
+          tr = document.createElement("tr");
+        }
+        th = document.createElement("th");
+        th.textContent = arrayPropDef[i];
+        // create column element
+        td = document.createElement("td");
+        td.setAttribute("id", "p_" + arrayPropDef[i]);
+        // check video's value of this property
+        //temp = eval ("document.getElementById('video')." + arrayPropDef[i]);
+        //to access media element properties use indexer notation
+        temp = this.mediaElement[arrayPropDef[i]];
+        if (typeof temp == "string") {
+          temp = temp.substr(0, 10);
+        }
+        td.textContent = temp;
+        if (typeof temp != "undefined") {
+          td.className = "true"; // this class highlight supported properties
+        } else {
+          td.className = "false";
+        }
+        tr.appendChild(th);
+        tr.appendChild(td);
+        arrayProp[i] = td;
+        // when you rich 3rd column - append row, and drop tr
+        if (++i % 4 === 0) {
+          tableFragment.appendChild(tr);
+          tr = null;
+        }
+      } while (i < arrayPropDef.length);
+      tableBody.appendChild(tableFragment); // if somehow tr not dropped append the least of available data
+      if (tr !== null) tableBody.appendChild(tr);
+    }; // update progress bar value each time 'timeupdate' event happens(after you click play it happens all the time)
+    Media.prototype.updateProgressBar = function (self) { // find progress bar element var
+      progressBar = document.getElementById("progress-bar"), percentage = 0; // if media is playing, calculate
+      progress in percents
+      if (self.mediaElement.duration >= 0) {
+        percentage = Math.floor(
+          (100 / self.mediaElement.duration) * self.mediaElement.currentTime
+        );
+      }
+      // assign result to value and alt text
+      progressBar.value = percentage;
+      progressBar.innerHTML = percentage + "% played";
+    };
+    // update video's properties
+    Media.prototype.updateProperties = function (self) {
+      var i = 0;
+      var e; // for the property value element
+      var val; // for video property via 'eval'
+      // check if document contain tag with specific media event identifier
+      for (var keyME in self.mediaEvents) {
+        e = document.getElementById("e_" + keyME);
+        if (e) {
+          e.textContent = self.mediaEvents[keyME];
+          // if event happened at least once, apply class
+          if (self.mediaEvents[keyME] > 0) e.className = "true";
+        }
+      }
+      for (var keyMP in self.mediaProperties) {
+        // eval video property value
+        val = this.mediaElement[self.mediaProperties[keyMP]];
+        if (typeof val == "string") {
+          val = val.substr(0, 10);
+        }
+        // show it in the properties table
+        self.mediaPropertiesElts[i++].textContent = val;
+      }
+    };
+    /*------------------------------------------ GENERAL MEDIA CLASS END
+    -------------------------------------------------*/
+    /*------------------------------------------ SPECIFIC MEDIA FUNCTIONS BEGIN
+    ------------------------------------------*/
+    Media.prototype.toggleMute = function () {
+      this.mediaElement.muted = !this.mediaElement.muted;
+    };
+    Media.prototype.playPause = function () {
+      if (this.mediaElement.paused) {
+        this.mediaElement.play();
+      } else {
+        this.mediaElement.pause();
+      }
+    };
+    Media.prototype.loopUnloop = function () {
+      if (this.mediaElement.loop) {
+        this.mediaElement.removeAttribute("loop");
+      } else {
+        this.mediaElement.loop = true;
+      }
+    };
+    /*------------------------------------------- SPECIFIC MEDIA FUNCTIONS END
+    -------------------------------------------*/
+    /*------------------------------------------- AUDIO CLASS BEGIN
+    ------------------------------------------------------*/
+    // an array of audios with associated files
+    var audioList = {
+      classic: {
+        to_elise: "./audio/classic/Bethoven-To-Elise.mp3",
+        i_allegro: "./audio/classic/Johann-Bach-I.Allegro.mp3",
+        sonata_n_14: "./audio/classic/L.V.Bethoven-Piano-Sonata-N14.mp3",
+        mozart_lacrimosa: "./audio/classic/Wolfgang-Amadeus-Mozart-Lacrimosa.mp3"
+      },
+      metal: {
+        burzum_war: "./audio/metal/Burzum-WAR.mp3",
+        bodom_living: "./audio/metal/Children-Of-Bodom-Living-Dead-Beat.mp3",
+        dethklok_thunderhorse: "./audio/metal/Dethklok-Thunderhorse.mp3",
+        korpiklaani_vodka: "./audio/metal/Korpiklaani-Vodka.mp3",
+        nargaroth_winter: "./audio/metal/Nargaroth-Winter.mp3"
+      },
+      trance: {
+        van_dyk_nothing: "./audio/trance/Paul-Van-Dyk-Nothing-But-You.mp3",
+        van_buuren_love: "./audio/trance/Armin-Van-Buuren-In-And-Out-Of-Love.mp3",
+        mushroom_insane: "./audio/trance/Infected-Mushroom-Becoming-Insane.mp3",
+        van_dyk_let_go: "./audio/trance/Paul-Van-Dyk-Feat.-Rea-Garvey-Let-Go.mp3",
+        skazi_xtc: "./audio/trance/Skazi-Xtc.mp3"
+      }
+    };
+
+    function Audio(defaultCodecFormat, elementTag) {
+      Media.call(this, "audio", defaultCodecFormat, elementTag);
+
+      this.generatePlaylist();
+    }
+    Audio.prototype = Object.create(Media.prototype);
+    Audio.prototype.switchAudio = function (playlist, n) {
+      // n for a number in an 'audio' array
+      // if n is out of the array range make it 0
+      if (n >= audioList.length) n = 0;
+      // get video 'source' tag
+      var mp3 = document.getElementById("mp3");
+      mp3.setAttribute("src", audioList[playlist][n]);
+      this.mediaElement.load();
+      this.playPause();
+    };
+    Audio.prototype.generatePlaylist = function () {
+      var self = this;
+      var tabsTag = document.getElementById("tablist");
+      var tabContentTag = document.getElementById("tabcontent");
+      var tabs = "";
+      var tabsContent = "";
+      for (var listName in audioList) {
+        if (tabs === "") {
+          tabs +=
+            '<li role="presentation" class="active"><a href="#' +
+            listName +
+            '" aria-controls="' +
+            listName +
+            '" role="tab" data-toggle="tab">' +
+            listName.replace(/\b\w/g, (l) => l.toUpperCase()) +
+            "</a></li>"; // class="active"
+        } else {
+          tabs +=
+            '<li role="presentation"><a href="#' +
+            listName +
+            '" aria-controls="' +
+            listName +
+            '" role="tab" data-toggle="tab">' +
+            listName.replace(/\b\w/g, (l) => l.toUpperCase()) +
+            "</a></li>"; // class="active"
+        }
+        if (tabsContent === "") {
+          tabsContent +=
+            '<div role="tabpanel" class="tab-pane active" id="' + listName + '">';
+        } else {
+          tabsContent +=
+            '<div role="tabpanel" class="tab-pane" id="' + listName + '">';
+        }
+        tabsContent +=
+          '<ul class="audio-list ' + listName + '-list" id="' + listName + '">';
+        for (var index in audioList[listName]) {
+          tabsContent +=
+            '<li id="' +
+            index +
+            '" data-playlist="' +
+            listName +
+            '" : class="music-element">';
+          tabsContent +=
+            '<span class="mt-0">&#9654; ' +
+            listName.replace(/\b\w/g, (l) => l.toUpperCase()) +
+            " - " +
+            index
+            .split("_")
+            .join(" ")
+            .replace(/\b\w/g, (l) => l.toUpperCase()) +
+            "</span>";
+          tabsContent += "</li>";
+        }
+        tabsContent += "</ul>";
+        tabsContent += "</div>";
+      }
+      tabsContent += "</div>";
+      tabs += "</ul>";
+      tabsTag.innerHTML = tabs;
+      tabContentTag.innerHTML = tabsContent;
+      var trackTag;
+      for (var newListName in audioList) {
+        for (var trackName in audioList[newListName]) {
+          trackTag = document.getElementById(trackName);
+          // assign event listener for every media element
+          (function (_trackTag) {
+            trackTag.addEventListener("click", function () {
+              self.switchAudio(_trackTag.dataset.playlist, _trackTag.id);
+            });
+          })(trackTag);
+        }
+      }
+    };
+    /*------------------------------------------- AUDIO CLASS END
+    --------------------------------------------------------*/
+    /*------------------------------------------- VIDEO CLASS BEGIN
+    ------------------------------------------------------*/
+    var videoList = {
+      //alien: {
+      // poster: './img/poster/poster_alien.jpg',
+      // name: 'Alien',
+      // mp4: './video/alien.mp4'
+      //},
+      big_buck: {
+        poster: "./img/poster/poster_big_buck.jpg",
+        name: "Big Buck",
+        mp4: "./video/big_buck.mp4",
+        ogv: "./video/big_buck.ogv"
+      },
+      //django_unchained: {
+      // poster: './img/poster/poster_django_unchained.jpg',
+      // name: 'Django Unchained',
+      // mp4: './video/django_unchained.mp4'
+      //},
+      //fury_road: {
+      // poster: './img/poster/poster_fury_road.png',
+      // name: 'Fury Road',
+      // mp4: './video/fury_road.mp4'
+      //},
+      //ghost_in_the_shell: {
+      // poster: './img/poster/poster_ghost_in_the_shell.jpg',
+      // name: 'Ghost in the shell',
+      // mp4: './video/ghost_in_the_shell.mp4'
+      //},
+      //inglorious_basterds: {
+      // poster: './img/poster/poster_inglorious_basterds.jpg',
+      // name: 'Inglorious basterds',
+      // mp4: './video/inglorious_basterds.mp4'
+      //},
+      //interstellar: {
+      // poster: './img/poster/poster_interstellar.jpg',
+      // name: 'Interstellar',
+      // mp4: './video/interstellar.mp4'
+      //},
+      sintel: {
+        poster: "./img/poster/poster_sintel.png",
+        name: "Sintel Trailer",
+        webm: "./video/sintel-trailer.webm",
+        ogv: "./video/sintel-trailer.ogv"
+      },
+      //wall_street_wolf: {
+      // poster: './img/poster/poster_wall_street_wolf.jpg',
+      // name: 'Wall Street Wolf',
+      // mp4: './video/wall_street_wolf.mp4'
+      //},
+      w3c: {
+        poster: "./img/poster/poster_w3c.png",
+        name: "W3C",
+        mp4: "./video/w3c.mp4",
+        webm: "./video/w3c.webm"
+      }
+    };
+
+    function Video(defaultCodecFormat, elementTag) {
+      Media.call(this, "video", defaultCodecFormat, elementTag);
+      var self = this;
+      // when customer click inside the tag aria make it play/pause the video
+      this.mediaElement.onclick = function () {
+        self.playPause();
+      };
+      this.generatePlaylist();
+    }
+    Video.prototype = Object.create(Media.prototype);
+    Video.prototype.toggleFullScreen = function () {
+      if (this.mediaElement.requestFullscreen) {
+        this.mediaElement.requestFullscreen();
+      } else if (this.mediaElement.webkitRequestFullScreen) {
+        this.mediaElement.webkitRequestFullScreen();
+      } else if (this.mediaElement.mozRequestFullScreen) {
+        this.mediaElement.mozRequestFullScreen();
+      } else if (this.mediaElement.msRequestFullscreen) {
+        this.mediaElement.msRequestFullscreen();
+      }
+    };
+    Video.prototype.switchVideo = function (videoName) {
+      var sourceFragment = document.createDocumentFragment();
+      for (var index in videoList[videoName]) {
+        if (index === "poster") {
+          this.mediaElement.setAttribute("poster", videoList[videoName][index]);
+        } else if (index != "name") {
+          var sourcePiece = document.createElement("source");
+          sourcePiece.src = videoList[videoName][index];
+          sourcePiece.type = "video/" + index;
+          sourceFragment.appendChild(sourcePiece);
+        }
+      }
+      this.mediaElement.innerHTML = "";
+      this.mediaElement.appendChild(sourceFragment);
+      // if video is not loaded - load it
+      this.mediaElement.setAttribute("width", "723px");
+      this.mediaElement.setAttribute("height", "361px");
+      this.mediaElement.load();
+    };
+    Video.prototype.generatePlaylist = function () {
+      var self = this;
+      var playlistElement = document.getElementById("videoPlaylist");
+      var playlistFragment = document.createDocumentFragment();
+      for (var index in videoList) {
+        var mediaBlock = document.createElement("div");
+        var mediaLeftBlock = document.createElement("div");
+        var mediaBodyBlock = document.createElement("div");
+        var imageBlock = document.createElement("img");
+        var headerBlock = document.createElement("h3");
+        var textBlock = document.createElement("p");
+        mediaBlock.className = "media";
+        mediaBlock.id = index;
+        mediaLeftBlock.className = "media-left";
+        imageBlock.className = "media-object";
+        imageBlock.src = videoList[index].poster;
+        imageBlock.alt = videoList[index].name;
+        mediaBodyBlock.className = "media-body";
+        headerBlock.className = "mt-0";
+        headerBlock.innerHTML = videoList[index].name;
+        textBlock.innerHTML = "Official trailer";
+        mediaLeftBlock.appendChild(imageBlock);
+        mediaBodyBlock.appendChild(headerBlock);
+        mediaBodyBlock.appendChild(textBlock);
+        mediaBlock.appendChild(mediaLeftBlock);
+        mediaBlock.appendChild(mediaBodyBlock);
+        playlistFragment.appendChild(mediaBlock);
+      }
+      playlistElement.innerHTML = "";
+      playlistElement.appendChild(playlistFragment);
+      var media = document.getElementsByClassName("media");
+      // iterate each element of HTMLCollection with Array method 'forEach'
+      [].forEach.call(media, function (el) {
+        // assign event listener for every media element
+        el.addEventListener("click", function () {
+          self.switchVideo(el.id);
+        });
+        (function (_el) {
+          _el.addEventListener("click", function () {
+            self.switchVideo(_el.id);
+          });
+        })(el);
+      });
+    };
+    Video.prototype.resizeVideo = function () {
+      if (this.mediaEvents.loadeddata > 0) {
+        // check if video loaded
+        if (this.mediaElement.width != this.mediaElement.videoWidth + 200) {
+          // and video width not equal to this one
+          this.mediaElement.width = this.mediaElement.videoWidth + 200;
+          this.mediaElement.height = this.mediaElement.videoHeight + 200;
+        } else {
+          // return video to initial size
+          this.mediaElement.width = this.mediaElement.videoWidth;
+          this.mediaElement.height = this.mediaElement.videoHeight;
+        }
+      }
+    };
+    var mediaObject;
+    if (document.getElementById("audio")) {
+      mediaObject = new Audio("mp3", "audio");
+    } else if (document.getElementById("video")) {
+      mediaObject = new Video("webm", "video");
+    }
+    document.getElementById("controlsPlayPause").addEventListener(
+      "click",
+      function () {
+        mediaObject.playPause();
+      },
+      false
+    );
+    document.getElementById("controlsStop").addEventListener(
+      "click",
+      function () {
+        mediaObject.playPause();
+        mediaObject.mediaElement.currentTime = 0;
+      },
+      false
+    );
+    document.getElementById("controlsDecreaseVolume").addEventListener(
+      "click",
+      function () {
+        mediaObject.mediaElement.volume -= 0.1;
+      },
+      false
+    );
+    document.getElementById("controlsMute").addEventListener(
+      "click",
+      function () {
+        mediaObject.toggleMute();
+      },
+      false
+    );
+    document.getElementById("controlsIncreaseVolume").addEventListener(
+      "click",
+      function () {
+        mediaObject.mediaElement.volume += 0.1;
+      },
+      false
+    );
+    document.getElementById("controlsDecreaseSpeed").addEventListener(
+      "click",
+      function () {
+        mediaObject.mediaElement.playbackRate--;
+      },
+      false
+    );
+    document.getElementById("controlsIncreaseSpeed").addEventListener(
+      "click",
+      function () {
+        mediaObject.mediaElement.playbackRate++;
+      },
+      false
+    );
+    document.getElementById("controlsLoop").addEventListener(
+      "click",
+      function () {
+        mediaObject.loopUnloop();
+      },
+      false
+    );
+    document.getElementById("controlsReload").addEventListener(
+      "click",
+      function () {
+        mediaObject.mediaElement.load();
+      },
+      false
+    );
+    document.getElementById("controlsStepBack").addEventListener(
+      "click",
+      function () {
+        mediaObject.mediaElement.currentTime -= 10;
+      },
+      false
+    );
+    document.getElementById("controlsStepForward").addEventListener(
+      "click",
+      function () {
+        mediaObject.mediaElement.currentTime += 10;
+      },
+      false
+    );
+    /*------------------------------------------- VIDEO CLASS END
+    --------------------------------------------------------*/
+    // WHERE YOU CAN FIND THE SOURCE OF THIS SHIT: https://www.w3.org/2010/05/video/mediaevents.html
+  </script>
+
+</body>
+
+</html>

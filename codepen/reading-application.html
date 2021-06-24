@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>reading-application</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+    html {
+      box-sizing: border-box;
+      --padding-left: 1.25em;
+      --duration-header: 0.25s;
+      --duration-product-item: 0.5s;
+    }
+
+    html *,
+    html *::before,
+    html *::after {
+      box-sizing: inherit;
+      scrollbar-width: none;
+    }
+
+    @media (max-width: 26.875em) {
+      html {
+        --none: none;
+        --top-start: 4.99em;
+        --top-end: 2.08em;
+      }
+    }
+
+    body {
+      margin: 0;
+      display: flex;
+      user-select: none;
+      align-items: center;
+      justify-content: center;
+      background-color: #dadfea;
+      font-family: "Kumbh Sans", sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    ::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+
+    .list {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+    }
+
+    .img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      position: relative;
+    }
+
+    .img::after {
+      top: 0;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: white;
+    }
+
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    button {
+      all: unset;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    .container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      overflow: hidden;
+      font-size: 6.4vw;
+      position: relative;
+      flex-direction: column;
+      background-color: white;
+      border-radius: var(--none, 1.3em);
+      border: var(--none, 0.45em solid black);
+    }
+
+    .container::before {
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      content: " ";
+      position: absolute;
+      pointer-events: none;
+      transition: opacity 0.2s;
+      height: calc(100% - 4.81em);
+      background-color: #f8f9fc;
+      width: calc(100% - var(--padding-left));
+    }
+
+    @media (min-width: 26.875em) {
+      .container {
+        font-size: 1em;
+        width: 15.0375em;
+        height: 31.84em;
+      }
+
+      .container::before {
+        height: 80.2%;
+      }
+    }
+
+    .container.active::before {
+      opacity: 1;
+      z-index: 100;
+    }
+
+    .status-bar {
+      display: var(--none, flex);
+      padding: 0.3em 0.25em 0 0.95em;
+      justify-content: space-between;
+    }
+
+    .status-bar__clock {
+      font-size: 0.53em;
+      font-weight: bold;
+      letter-spacing: 0.075em;
+      font-family: "Rubik", sans-serif;
+    }
+
+    .status-bar__img {
+      width: 2.85em;
+    }
+
+    .header {
+      padding: 1.15em 0 0.25em var(--padding-left);
+      transition: height, var(--duration-header), padding var(--duration-header),
+        transform var(--duration-header), opacity var(--duration-header);
+    }
+
+    .header.hide {
+      height: 0;
+      opacity: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      pointer-events: none;
+      transform: translate3d(0, -5%, 0);
+    }
+
+    .header__context {
+      display: flex;
+      font-size: 0.6em;
+      align-items: baseline;
+      text-transform: capitalize;
+    }
+
+    .header__title {
+      margin: 0 0.8em 0 0;
+      letter-spacing: 0.03em;
+    }
+
+    .header__text {
+      color: #414141b4;
+    }
+
+    .tabbar {
+      overflow: hidden;
+    }
+
+    .tabbar__list {
+      overflow: auto;
+      cursor: pointer;
+      white-space: nowrap;
+      padding: 0.6em 1.2em 0.6em 0;
+    }
+
+    .tabbar__item {
+      font-size: 0.41em;
+      color: #9e9fa2;
+      border-radius: 2em;
+      display: inline-flex;
+      justify-content: center;
+      padding: 0.75em 1.2em 0.4em;
+      text-transform: capitalize;
+      background-color: #f0f1f4;
+      pointer-events: var(--pointer-event);
+    }
+
+    .tabbar__item:not(:first-of-type) {
+      margin-left: 0.5em;
+    }
+
+    .tabbar__item.active {
+      color: #f1f1f1;
+      background-color: #1469fc;
+    }
+
+    .global-button {
+      opacity: 0;
+      width: 100%;
+      pointer-events: none;
+      padding: 0.55em 1em 0 0.8em;
+    }
+
+    .global-button--position-ab {
+      top: 0.5%;
+      position: absolute;
+    }
+
+    @media (min-width: 26.875em) {
+      .global-button--position-ab {
+        top: 4.6%;
+      }
+    }
+
+    .global-button>* {
+      width: 1em;
+      height: 1em;
+    }
+
+    .global-button.show {
+      opacity: 1;
+      pointer-events: initial;
+    }
+
+    .main {
+      height: 100%;
+      font-size: 1.1em;
+      touch-action: none;
+      overflow: hidden auto;
+      overscroll-behavior: contain;
+    }
+
+    @media (min-width: 26.875em) {
+      .main {
+        font-size: 1em;
+      }
+    }
+
+    .product-card {
+      height: var(--productCardHeight);
+      padding-left: var(--padding-left);
+    }
+
+    .product-card__item {
+      width: 100%;
+      display: flex;
+      height: 9.92em;
+      align-items: center;
+      max-height: var(--max-height-item);
+      pointer-events: var(--pointer-event);
+      transform: var(--transform, perspective(1000px) rotateX(0));
+      transition: height var(--duration-product-item),
+        margin var(--timeOut, calc(var(--duration-product-item) / 1.5));
+    }
+
+    .product-card__img {
+      width: 6.55em;
+      height: 8.75em;
+      overflow: hidden;
+      position: absolute;
+      border-radius: 0.3em;
+      pointer-events: none;
+      transform: translate3d(80%, 0, 0);
+      transition: border-radius var(--duration-product-item);
+      box-shadow: 0.3125em 0.3125em 0.875em -0.1875em #403e3e4f;
+    }
+
+    .product-card__item.active {
+      height: 100%;
+      padding-top: 3em;
+      align-items: unset;
+      margin-bottom: 1.5em;
+      flex-direction: column;
+    }
+
+    @media (min-width: 26.875em) {
+      .product-card__item.active {
+        padding-top: 3.55em;
+      }
+    }
+
+    .product-card__item.active .product-card__img {
+      z-index: 200;
+      cursor: pointer;
+      pointer-events: initial;
+    }
+
+    .product-card__img.move-img {
+      border-radius: 0 0.3em 0.3em 0;
+      animation: product-card-img-move var(--duration-product-item) forwards;
+    }
+
+    @keyframes product-card-img-move {
+
+      0%,
+      20% {
+        top: var(--top-start, 20.5%);
+      }
+
+      80%,
+      100% {
+        top: var(--top-end, 12.8%);
+        transform: translate3d(-20%, 0, 0);
+      }
+    }
+
+    .product-card__img.back-img {
+      border-radius: 0.3em;
+      animation: product-card-img-back var(--duration-product-item) forwards;
+    }
+
+    @keyframes product-card-img-back {
+
+      0%,
+      15% {
+        top: var(--top-end, 12.8%);
+        transform: translate3d(-20%, 0, 0);
+      }
+
+      50%,
+      100% {
+        top: var(--top-start, 20.5%);
+      }
+    }
+
+    .product-card__content {
+      width: 6em;
+      z-index: 50;
+      height: 6.88em;
+      cursor: pointer;
+      overflow: hidden;
+      border-radius: 0.25em;
+      will-change: transform;
+      background-color: white;
+      text-transform: capitalize;
+      box-shadow: -2px 6px 15px 0px #2f2f2f24;
+      transition: opacity calc(var(--duration-product-item) / 2);
+    }
+
+    .product-card__content.open-content {
+      width: 100%;
+      height: 100%;
+      z-index: 150;
+      cursor: initial;
+      box-shadow: none;
+      padding-left: 1.05em;
+      pointer-events: initial;
+      background-color: unset;
+      transform: translate3d(0, 180%, 0);
+      animation: open-content var(--duration-product-item) forwards,
+        opacity-content calc(var(--duration-product-item) * 2) forwards;
+    }
+
+    @keyframes open-content {
+      100% {
+        transform: none;
+      }
+    }
+
+    @keyframes opacity-content {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    .product-card__info {
+      padding: 0.82em 0.7em;
+    }
+
+    .product-card__content.open-content .product-card__info {
+      width: 63%;
+      margin-left: auto;
+      padding: 0.8em 0.7em;
+    }
+
+    .product-card__product-name {
+      margin: 0 0 0.2em;
+      line-height: 1.4;
+      font-size: 0.63em;
+      min-height: 2.778em;
+      white-space: pre-line;
+    }
+
+    .product-card__content.open-content .product-card__product-name {
+      font-size: 0.78em;
+      line-height: 1.5;
+      margin-bottom: 0.8em;
+      letter-spacing: 0.03em;
+    }
+
+    .product-card__product-author {
+      font-size: 0.4em;
+      font-weight: bold;
+      color: #00000073;
+      letter-spacing: -0.01em;
+    }
+
+    .product-card__content.open-content .product-card__product-author {
+      font-size: 0.55em;
+    }
+
+    .product-card__rank {
+      display: flex;
+      align-items: center;
+      margin: 0.8em 0 0.75em;
+    }
+
+    .product-card__content.open-content .product-card__rank {
+      width: 0;
+      overflow: hidden;
+      margin: 1.2em 0 0;
+      animation: show-rank var(--duration-product-item) var(--duration-product-item) forwards;
+    }
+
+    @keyframes show-rank {
+      100% {
+        width: 100%;
+      }
+    }
+
+    .product-card__starts {
+      position: relative;
+    }
+
+    .product-card__starts::after {
+      right: 0;
+      content: "";
+      height: 100%;
+      width: var(--rank);
+      position: absolute;
+      background-color: #ffffffc2;
+    }
+
+    .product-card__content.open-content .product-card__starts::after {
+      background-color: #f8f9fcc9;
+    }
+
+    .product-card__start-icon {
+      width: 0.5em;
+      height: 0.5em;
+      flex-shrink: 0;
+      margin-right: 0.1em;
+    }
+
+    .product-card__content.open-content .product-card__start-icon {
+      animation: show-star var(--duration-product-item) var(--duration-product-item) forwards;
+    }
+
+    @keyframes show-star {
+      0% {
+        transform: scale(0);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .product-card__rank-number {
+      font-size: 0.5em;
+      color: #ffb964;
+      font-weight: bold;
+      margin-left: 0.15em;
+      margin-bottom: -0.3em;
+      letter-spacing: 0.05em;
+    }
+
+    .product-card__view {
+      display: flex;
+      font-size: 0.45em;
+      font-weight: bold;
+      color: #00000059;
+      position: relative;
+      align-items: center;
+    }
+
+    .product-card__view.hide {
+      display: none;
+    }
+
+    .product-card__view::after {
+      right: 4%;
+      opacity: 0.2;
+      width: 1.6em;
+      content: " ";
+      height: 1.6em;
+      position: absolute;
+      transform: rotate(180deg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url(http://utopian-drink.surge.sh/images/icon/back.svg);
+    }
+
+    .product-card__view-number {
+      color: #408cff;
+      margin-right: 0.45em;
+    }
+
+    .product-card__view-value {
+      font-size: 0.45em;
+      color: #00000059;
+      margin: 0 0 -0.3em 0.8em;
+    }
+
+    .product-card__view-value.hide {
+      display: none;
+    }
+
+    .product-card__buttons {
+      width: 100%;
+      margin-top: 2.8em;
+      font-size: 0.45em;
+      color: #000000d9;
+      will-change: transform;
+      padding: 0 1.6em 2.4em 0;
+      border-bottom: 0.2em solid #c3c3c31f;
+    }
+
+    @media (max-width: 26.875em) {
+      .product-card__buttons {
+        margin-top: 1.8em;
+        padding: 0 1.6em 1.4em 0;
+      }
+    }
+
+    .product-card__button-icon {
+      width: 1.6em;
+      margin-right: 0.8em;
+    }
+
+    .product-card__button-text {
+      margin: 0.5em 0 0;
+    }
+
+    .product-card__context {
+      height: 100%;
+      overflow: hidden;
+      font-size: 0.52em;
+      padding: 1.2em 0 0;
+      text-transform: none;
+    }
+
+    .product-card__context ::first-letter {
+      text-transform: capitalize;
+    }
+
+    .product-card__description {
+      overflow: auto;
+      line-height: 1.9;
+      margin: 1.6em 0 0;
+      color: #969696a8;
+      padding-right: 2.15em;
+      pointer-events: initial;
+      height: calc(100% - 23.2em);
+    }
+
+    @media (min-width: 26.875em) {
+      .product-card__description {
+        overflow: hidden;
+      }
+    }
+
+    .product-card__content.open-content .product-card__description {
+      transform: translate3d(0, 12%, 0);
+      animation: description var(--duration-product-item) calc(var(--duration-product-item) / 2) forwards;
+    }
+
+    @keyframes description {
+      100% {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    .product-card__cta {
+      opacity: 0;
+      z-index: 300;
+      color: white;
+      font-size: 0.55em;
+      margin-left: auto;
+      pointer-events: none;
+      letter-spacing: 0.1em;
+      text-transform: capitalize;
+      background-color: #1368fa;
+      padding: 1.7em 1.5em 1em 1.9em;
+    }
+
+    .product-card__item.active .product-card__cta {
+      opacity: 1;
+      pointer-events: initial;
+      transition: opacity calc(var(--duration-product-item) / 2) var(--duration-product-item);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="status-bar">
+
+      <span class="status-bar__clock" onload="showTime()"></span>
+
+      <div>
+
+        <img class="status-bar__img img" src="http://utopian-drink.surge.sh/images/icon/status-bar.svg"
+          alt="status-bar">
+
+      </div>
+
+    </div>
+
+    <header class="header">
+
+      <div class="header__context">
+
+        <h1 class="header__title">browse</h1>
+        <b class="header__text">recommended</b>
+
+      </div>
+
+      <nav class="tabbar">
+
+        <ul class="tabbar__list list">
+
+          <li class="tabbar__item">history</li>
+          <li class="tabbar__item">classical</li>
+          <li class="tabbar__item active">biography</li>
+          <li class="tabbar__item">cartoon</li>
+          <li class="tabbar__item">fantasy</li>
+          <li class="tabbar__item">drama</li>
+          <li class="tabbar__item">memoir</li>
+          <li class="tabbar__item">self help</li>
+
+        </ul>
+
+      </nav>
+
+    </header>
+
+    <div class="global-button global-button--position-ab flex">
+
+      <button class="global-button__back">
+
+        <img class="img" src="http://utopian-drink.surge.sh/images/icon/back.svg" alt="icon-back">
+
+      </button>
+
+      <button>
+
+        <img class="img" src="http://utopian-drink.surge.sh/images/icon/menu.svg" alt="icon-menu">
+
+      </button>
+
+    </div>
+
+    <main class="main">
+
+      <ul class="product-card list"></ul>
+
+    </main>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+  <script>
+    // Designed by: Crank
+    // Original image:
+    https
+      : //dribbble.com/shots/5707503-Reading-Application?utm_source=Pinterest_Shot&utm_campaign=crankwh&utm_content=Reading%20Application&utm_medium=Social_Share
+
+      "use strict";
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    let info;
+    let genre;
+    const request =
+      "https://www.json-generator.com/api/json/get/cqyGXnDfjC?indent=2";
+    const html = document.documentElement;
+    const container = document.querySelector(".container");
+    const tabbarList = document.querySelector(".tabbar__list");
+    const main = container.querySelector(".main");
+    const productCard = main.querySelector(".product-card");
+    let productCardItems;
+    const header = document.querySelector(".header");
+    const time =
+      parseFloat(
+        getComputedStyle(document.documentElement).getPropertyValue(
+          "--duration-header"
+        )
+      ) * 1000;
+    const globalButton = document.querySelector(".global-button");
+    const globalButtonBack = globalButton.querySelector(".global-button__back");
+    let elements;
+    let activeItem;
+    let isMove = false;
+    let startY;
+    let scrollTop;
+    let startX;
+    let scrollLeft;
+    let tabbarItemActive = tabbarList.querySelector(".tabbar__item.active");
+    const statusBar = document.querySelector(".status-bar");
+    const statusBarClock = document.querySelector(".status-bar__clock");
+    let progressScroll = 0;
+    let notScroll = false;
+
+    fetch(request)
+      .then((response) => response.json())
+      .then((item) => {
+        info = item;
+        booksGenre(info);
+        setMaxHeight();
+      });
+
+    function setMaxHeight() {
+      document.body.style.height = window.innerHeight + "px";
+      const maxHeightItem =
+        container.clientHeight - globalButton.offsetHeight - statusBar.offsetHeight;
+      html.style.setProperty("--max-height-item", `${maxHeightItem}px`);
+      html.style.setProperty("--height-body", `${window.innerHeight}px`);
+    }
+
+    function booksGenre(info) {
+      const key = tabbarItemActive.textContent;
+      genre = info[key];
+
+      if (!genre) return;
+      productCard.innerHTML = "";
+      genre.forEach((book) => {
+        book.rank = `${book.rank}`.replace(/^\d$/, "$&.0");
+        const width = 100 - book.rank * 20;
+
+        book.keywords.forEach((word) => {
+          const regex = new RegExp(`${word}`, `i`);
+          book.description = book.description.replace(
+            regex,
+            `<b style="color:black">${word}</b>`
+          );
+        });
+
+        productCard.insertAdjacentHTML("beforeend", creatBook(book, width));
+      });
+
+      productCardItems = Array.from(productCard.children);
+      const productCardHeight =
+        (genre.length + 3) * productCard.firstElementChild.offsetHeight;
+      html.style.setProperty("--productCardHeight", `${productCardHeight}px`);
+
+      main.scrollTop = 0;
+
+      ScrollTrigger.getAll().forEach((item) => {
+        item.kill();
+      });
+
+      roll(productCardItems);
+    }
+
+    function creatBook(book, width) {
+      const {
+        picture,
+        name,
+        author,
+        rank,
+        view,
+        description
+      } = book;
+
+      return `
+    <li class="product-card__item">
+
+      <div class="product-card__img">
+        <img class="img" src="${picture}" alt="book">
+      </div>
+
+      <article class="product-card__content">
+
+        <header class="product-card__info">
+
+          <h2 class="product-card__product-name">${name}</h2>
+
+          <footer class="product-card__product-author">${author}</footer>
+
+          <div class="product-card__rank">
+
+            <div class="product-card__starts flex" style="--rank:${width}%;">
+
+              <img class="product-card__start-icon" src="http://utopian-drink.surge.sh/images/icon/star.svg"
+                alt="star-icon">
+              <img class="product-card__start-icon" src="http://utopian-drink.surge.sh/images/icon/star.svg"
+                alt="star-icon">
+              <img class="product-card__start-icon" src="http://utopian-drink.surge.sh/images/icon/star.svg"
+                alt="star-icon">
+              <img class="product-card__start-icon" src="http://utopian-drink.surge.sh/images/icon/star.svg"
+                alt="star-icon">
+              <img class="product-card__start-icon" src="http://utopian-drink.surge.sh/images/icon/star.svg"
+                alt="star-icon">
+
+            </div>
+
+            <span class="product-card__rank-number">${rank}</span>
+            <span class="product-card__view-value hide">(${view})</span>
+
+          </div>
+
+          <div class="product-card__view">
+
+            <p class="product-card__view-number">${view}</p>
+            <p>views</p>
+
+          </div>
+
+        </header>
+
+        <div class="flex product-card__buttons">
+
+          <button class="flex">
+
+            <img class="product-card__button-icon img" src="http://utopian-drink.surge.sh/images/icon/reviews.svg"
+              alt="reviews">
+            <p class="product-card__button-text">see reviews</p>
+
+          </button>
+
+          <button class="flex">
+
+            <img class="product-card__button-icon img" src="http://utopian-drink.surge.sh/images/icon/heart.svg"
+              alt="like">
+            <p class="product-card__button-text">like</p>
+
+          </button>
+
+          <button class="flex">
+
+            <img class="product-card__button-icon img" src="http://utopian-drink.surge.sh/images/icon/share.svg"
+              alt="share">
+            <p class="product-card__button-text">share</p>
+
+          </button>
+
+        </div>
+
+        <footer class="product-card__context">
+
+          <h3>about the book</h3>
+          <p class="product-card__description">${description}</p>
+
+        </footer>
+
+      </article>
+
+      <button class="product-card__cta">read now</button>
+
+    </li>`;
+    }
+
+    function openProductCard(e, productCardItems) {
+      const target = e.target;
+      activeItem = target.closest(".product-card__item");
+
+      if (target.closest(".product-card__img")) {
+        activeItem.classList.remove("active");
+        closeProductCard(elements);
+        return;
+      }
+
+      if (!target.closest(".product-card__content")) return;
+
+      const indexActiveItem = productCardItems.findIndex(
+        (item) => item == activeItem
+      );
+      notScroll = true;
+      main.scrollTo(0, indexActiveItem * productCardItems[0].offsetHeight);
+      const productCardWrapperImg = activeItem.querySelector(".product-card__img");
+      const productCardContent = activeItem.querySelector(".product-card__content");
+      const productCardView = productCardContent.querySelector(
+        ".product-card__view"
+      );
+      const productCardViewValue = productCardContent.querySelector(
+        ".product-card__view-value"
+      );
+
+      elements = [
+        activeItem,
+        productCardWrapperImg,
+        productCardContent,
+        productCard,
+        header,
+        container,
+        productCardView,
+        productCardViewValue
+      ];
+
+      header.classList.add("hide");
+
+      if (header.classList.contains("hide")) {
+        productCard.style.paddingTop = `${globalButton.offsetHeight}px`;
+      }
+
+      activeItem.style.cssText = `
+    --timeOut : 0s;
+    --transform : none;
+
+    `;
+
+      main.style.cssText = `
+    pointer-events : none;
+    overflow: hidden;
+
+    `;
+
+      container.classList.add("active");
+      productCardView.classList.add("hide");
+      productCardViewValue.classList.remove("hide");
+
+      productCardContent.classList.add("open-content");
+      productCardWrapperImg.classList.add("move-img");
+
+      activeItem.classList.add("active");
+    }
+
+    function closeProductCard(elements) {
+      const [
+        activeItem,
+        productCardWrapperImg,
+        productCardContent,
+        productCard,
+        header,
+        container,
+        productCardView,
+        productCardViewValue
+      ] = elements;
+
+      if (!activeItem.classList.contains("active")) {
+        productCardWrapperImg.classList.add("back-img");
+        productCardContent.classList.remove("open-content");
+        container.classList.remove("active");
+        productCardView.classList.remove("hide");
+        productCardViewValue.classList.add("hide");
+        productCardContent.style.opacity = 0;
+
+        setTimeout(() => {
+          productCard.style = "";
+          header.classList.remove("hide");
+        }, time);
+      }
+
+      productCardWrapperImg.addEventListener("animationend", function (e) {
+        if (e.animationName.includes("img-back")) {
+          productCardItems.forEach((item) => {
+            item.style.removeProperty("--timeOut");
+            item.classList.remove("hide");
+          });
+
+          this.classList.remove("move-img", "back-img");
+          productCardContent.style = "";
+          main.style = "";
+          activeItem.style = "";
+        }
+      });
+    }
+
+    function showTime() {
+      const date = new Date();
+      let hours = date.getHours();
+      let minutes = date.getMinutes();
+
+      if (hours == 0) {
+        hours = 12;
+      }
+
+      if (hours > 12) {
+        hours = hours - 12;
+      }
+
+      hours = hours < 10 ? "0" + hours : hours;
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      statusBarClock.textContent = `${hours}:${minutes}`;
+      setTimeout(showTime, 1000);
+    }
+    showTime();
+    tabbarList.addEventListener("click", function (e) {
+      if (tabbarItemActive == e.target) return;
+      if (e.target.tagName !=
+        "LI") return;
+      tabbarItemActive = e.target;
+      booksGenre(info);
+      if (!genre) return;
+      tabbarItemActive.classList.add("active");
+      gsap.to(".product-card__content", {
+        duration: 0.4,
+        rotationY: -180,
+        scaleX: -1
+      });
+      gsap.fromTo(".product-card__img", {
+        duration: 0.75,
+        filter: "brightness(.5)"
+      }, {
+        duration: 0.75,
+        filter: "brightness(1)"
+      });
+      gsap.to(".product-card__content", {
+        clearProps: "all"
+      });
+      tabbarList.querySelectorAll(".tabbar__item").forEach((item) => {
+        if (item != tabbarItemActive) {
+          item.classList.remove("active");
+        }
+      });
+    });
+
+    tabbarList.addEventListener("pointerdown", function (e) {
+      isMove = true;
+      startX = Math.floor(e.pageX - this.getBoundingClientRect().left);
+      scrollLeft = this.scrollLeft;
+    });
+
+    tabbarList.addEventListener("pointermove", function (e) {
+      if (!isMove) return;
+
+      this.style.cssText = `
+      --pointer-event: none;
+      cursor : grabbing;
+
+      `;
+      const lastX = Math.floor(e.pageX - this.getBoundingClientRect().left);
+      const walk = lastX - startX;
+      this.scrollLeft = scrollLeft - walk;
+    });
+
+    tabbarList.addEventListener("pointerup", function () {
+      isMove = false;
+      this.style = "";
+    });
+
+    tabbarList.addEventListener("pointerleave", function () {
+      isMove = false;
+      this.style = "";
+    });
+
+    header.addEventListener("transitionend", function () {
+      if (this.classList.contains("hide")) {
+        globalButton.classList.add("show");
+      }
+    });
+
+    header.addEventListener("transitionstart", () => {
+      globalButton.classList.remove("show");
+    });
+
+    globalButtonBack.addEventListener("click", () => {
+      activeItem.classList.remove("active");
+      closeProductCard(elements);
+    });
+
+    productCard.addEventListener("click", (e) =>
+      openProductCard(e, productCardItems)
+    );
+
+    function roll(productCardItems) {
+      productCardItems.forEach((item, index) => {
+        gsap.set(item, {
+          transformPerspective: 1000
+        });
+
+        const animation = gsap.to(item, {
+          rotationX: 95,
+          y: 70,
+          opacity: 0
+        });
+
+        ScrollTrigger.create({
+          animation: animation,
+          trigger: item,
+          scroller: main,
+          start: `top+=5 top`,
+          end: `bottom-=5 top`,
+          scrub: true,
+
+          onEnter: (progress) => {
+            progressScroll = progress.end + 5;
+          },
+
+          onLeaveBack: (progress) => {
+            progressScroll = progress.start - 5;
+          },
+
+          onEnterBack: (progress) => {
+            progressScroll = progress.start - 5;
+          },
+
+          onUpdate: ({
+            direction,
+            isActive
+          }) => {
+            productCardItems.forEach((item) => {
+              if (index == productCardItems.length - 1) return;
+
+              if (isActive) item.style.marginBottom = direction * 0.25 + "em";
+              else item.style.removeProperty("margin-bottom");
+            });
+          }
+        });
+      });
+    }
+
+    function scrollInMain() {
+      if (notScroll) return;
+
+      main.scroll({
+        top: progressScroll,
+        behavior: "smooth"
+      });
+    }
+
+    main.addEventListener("pointerdown", function (e) {
+      if (activeItem && activeItem.classList.contains("active")) return;
+
+      isMove = true;
+      startY = Math.floor(e.pageY - this.getBoundingClientRect().top);
+      scrollTop = this.scrollTop;
+    });
+
+    main.addEventListener("pointermove", function (e) {
+      if (!isMove) return;
+
+      notScroll = false;
+      const lastY = Math.floor(e.pageY - this.getBoundingClientRect().top);
+      const walk = lastY - startY;
+      this.scrollTop = scrollTop - walk;
+      this.style.setProperty("--pointer-event", "none");
+    });
+
+    main.addEventListener("pointerup", function () {
+      isMove = false;
+      this.style.removeProperty("--pointer-event");
+      scrollInMain();
+    });
+
+    main.addEventListener("pointerleave", function () {
+      isMove = false;
+      this.style.removeProperty("--pointer-event");
+    });
+
+    window.addEventListener("resize", setMaxHeight);
+
+    document.ondragstart = () => {
+      return false;
+    };
+  </script>
+</body>
+
+</html>

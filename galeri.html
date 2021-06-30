@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <style>
+    /* * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      } */
+
+    .konten img {
+      width: 100%;
+      margin-bottom: 5px;
+      border-radius: 8px;
+    }
+
+    @media (min-width: 240px) and (max-width: 358.98px) {
+      .konten {
+        padding: 3px;
+        column-count: 1;
+        column-gap: 10px;
+      }
+    }
+
+    @media (min-width: 360px) and (max-width: 575.98px) {
+      .konten {
+        padding: 10px;
+        column-count: 2;
+        column-gap: 10px;
+      }
+    }
+
+    @media (min-width: 576px) and (max-width: 767.98px) {
+      .konten {
+        padding: 10px;
+        column-count: 3;
+        column-gap: 10px;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .konten {
+        padding: 10px;
+        column-count: 4;
+        column-gap: 10px;
+      }
+    }
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      .konten {
+        padding: 10px;
+        column-count: 5;
+        column-gap: 10px;
+      }
+    }
+
+    @media (min-width: 1200px) and (max-width: 1399.98px) {
+      .konten {
+        padding: 10px;
+        column-count: 6;
+        column-gap: 10px;
+      }
+    }
+
+    @media (min-width: 1400px) and (max-width: 2000px) {
+      .konten {
+        padding: 10px;
+        column-count: 7;
+        column-gap: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a href="photoshop.html">Kembali ke Photoshop</a>
+  <div class="konten">
+    <a href="img/bahan/pohon/clean-environment-m.jpg" data-fancybox="images" data-caption="">
+      <img src="img/bahan/pohon/clean-environment-m.jpg" alt="" />
+    </a>
+    <a href="img/bahan/pohon/johann-siemens-EPy0gBJzzZU-unsplash.jpg" data-fancybox="images" data-caption="">
+      <img src="img/bahan/pohon/johann-siemens-EPy0gBJzzZU-unsplash.jpg" alt="" />
+    </a>
+    <a href="img/bahan/pohon/luke-richardson-OJo6TXpFGiY-unsplash.jpg" data-fancybox="images" data-caption="">
+      <img src="img/bahan/pohon/luke-richardson-OJo6TXpFGiY-unsplash.jpg" alt="" />
+    </a>
+    <a href="img/bahan/pohon/niko-photos-tGTVxeOr_Rs-unsplash.jpg" data-fancybox="images" data-caption="">
+      <img src="img/bahan/pohon/niko-photos-tGTVxeOr_Rs-unsplash.jpg" alt="" />
+    </a>
+    <a href="img/bahan/pohon/tree.jpg" data-fancybox="images" data-caption="">
+      <img src="img/bahan/pohon/tree.jpg" alt="" />
+    </a>
+    <a href="img/bahan/pohon/wolfgang-hasselmann-pe-GUtsGMsM-unsplash.jpg" data-fancybox="images" data-caption="">
+      <img src="img/bahan/pohon/wolfgang-hasselmann-pe-GUtsGMsM-unsplash.jpg" alt="" />
+    </a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script>
+    $('[data-fancybox="images"]').fancybox({
+      buttons: ["slideShow", "share", "zoom", "fullScreen", "close"],
+      thumbs: {
+        autoStart: true,
+      },
+    });
+  </script>
+</body>
+
+</html>

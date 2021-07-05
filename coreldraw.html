@@ -138,7 +138,7 @@
   </style>
 </head>
 
-<body class="hold-transition sidebar-mini text-sm sidebar-collapse">
+<body class="hold-transition sidebar-mini text-sm">
   <div class="wrapper">
     <nav class="main-header navbar navbar-expand navbar-white navbar-light">
       <ul class="navbar-nav">
@@ -846,52 +846,54 @@
               </div>
 
             </div>
+
           </div>
-        </div>
-
-
+          <!-- </div> -->
+        </div><!-- /content -->
       </div>
-
-      <footer class="main-footer">
-        <div class="float-right d-none d-sm-inline">CorelDRAW</div>
-        Web-Dev by &RightAngleBracket; <a href="#">Ony</a> &RightAngleBracket;
-        &phone; 08155509153 &RightAngleBracket; &copy; 2021.
-      </footer>
     </div>
 
-    <script src="dist/js/jquery.min.js"></script>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="dist/js/bootstrap.bundle.js"></script>
-    <!-- Font Awesome Icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <!-- AdminLTE App -->
-    <script src="dist/js/adminlte.min.js"></script>
+    <footer class="main-footer">
+      <div class="float-right d-none d-sm-inline">CorelDRAW</div>
+      Web-Dev by &RightAngleBracket; <a href="#">Ony</a> &RightAngleBracket;
+      &phone; 08155509153 &RightAngleBracket; &copy; 2021.
+    </footer>
 
-    <script>
-      var starttime = 2;
-      $(function () {
-        $("#playlist li").on("click", function () {
-          $("#videoarea-cd").attr({
-            src: $(this).attr("movieurl"),
-            poster: "",
-            autoplay: "autoplay"
-          });
-          // starttime = $(this).attr("startt");
+  </div>
+
+  <script src="dist/js/jquery.min.js"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="dist/js/bootstrap.bundle.js"></script>
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.min.js"></script>
+
+  <script>
+    var starttime = 2;
+    $(function () {
+      $("#playlist li").on("click", function () {
+        $("#videoarea-cd").attr({
+          src: $(this).attr("movieurl"),
+          poster: "",
+          autoplay: "autoplay"
         });
-        // $("#videoarea-cd").attr({
-        //   "src": $("#playlist li").eq(0).attr("movieurl"),
-        //   "poster": $("#playlist li").eq(0).attr("moviesposter"),
-        // })
+        // starttime = $(this).attr("startt");
       });
+      // $("#videoarea-cd").attr({
+      //   "src": $("#playlist li").eq(0).attr("movieurl"),
+      //   "poster": $("#playlist li").eq(0).attr("moviesposter"),
+      // })
+    });
 
-      // document.getElementById("videoarea-cd").addEventListener(
-      //   "loadedmetadata",
-      //   function () {
-      //     this.currentTime = starttime;
-      //   },
-      //   false
-      // );
-    </script>
+    // document.getElementById("videoarea-cd").addEventListener(
+    //   "loadedmetadata",
+    //   function () {
+    //     this.currentTime = starttime;
+    //   },
+    //   false
+    // );
+  </script>
 </body>
 
 </html>

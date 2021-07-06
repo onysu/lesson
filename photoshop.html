@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
   <link rel="stylesheet" href="dist/css/foundation.min.css">
+  <link rel="stylesheet" href="dist/css/style.css">
   <link rel="shortcut icon" href="img/me.png" type="image/x-icon">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
@@ -104,24 +105,24 @@
     }
 
     /* video-playlist */
-    #playlist li {
+    /* #playlist li {
       cursor: pointer;
     }
 
     #playlist li:hover {
       color: blue;
-    }
+    } */
 
-    #videoarea {
+    /* #videoarea {
       width: 100%;
-    }
+    } */
 
-    ul#playlist {
-      /* padding-left: 20px; */
+    /* ul#playlist {
+      padding-left: 20px;
       overflow: hidden;
       overflow-y: scroll;
       height: 322px;
-    }
+    } */
 
     .m-0 {
       font-weight: bold;
@@ -198,6 +199,15 @@
           grid-row: unset !important;
         }
       } */
+
+    video::cue {
+      background-image: linear-gradient(to bottom, dimgray, lightgray);
+      color: papayawhip;
+    }
+
+    video::cue(b) {
+      color: peachpuff;
+    }
   </style>
 </head>
 
@@ -333,7 +343,7 @@
             <div class="col-lg-6">
               <div class="card">
                 <div class="card-body">
-                  <img src="img/photoshop.png" alt="" width="100%">
+                  <img src="img/img-photoshop/opening.png" alt="" width="100%">
                 </div>
               </div>
 
@@ -363,7 +373,7 @@
                 </div>
                 <div class="card-body">
                   <!-- <h6 class="card-title"><b></b></h6> -->
-                  <img src="img/1.png" alt="" width="100%" style="border-radius: 8px; margin-bottom: 10px;">
+                  <img src="img/1.png" alt="" width="100%" style="margin-bottom: 10px;">
 
                   <!-- <h6><b>1. Tampilan Awal (Interface)</b></h6> -->
                   <p>Untuk awal belajar photoshop pemula sebaiknya mempelajari Menu Utama yang berada dibagian atas
@@ -380,7 +390,7 @@
                 <div class="card-body">
                   <!-- <h6 class="card-title">Judul</h6> -->
                   <p><b>File – New…</b> (Ctrl+N) : Membuka lembar kerja baru</p>
-                  <img src="img/2.png" alt="" width="100%" style="border-radius: 8px; margin-bottom: 10px;">
+                  <img src="img/2.png" alt="" width="100%" style="margin-bottom: 10px;">
                 </div>
               </div>
 
@@ -390,7 +400,7 @@
                 </div>
                 <div class="card-body">
                   <h6 class="card-title" style="margin-bottom: 10px;">Tampilan Halaman Lembar Kerja Baru</h6>
-                  <img src="img/3.png" alt="" width="100%" style="border-radius: 8px; margin-bottom: 10px;">
+                  <img src="img/3.png" alt="" width="100%" style="margin-bottom: 10px;">
 
                   <div class="accordion" id="accordionExample">
 
@@ -1219,7 +1229,6 @@
 
             <!-- sisi kanan -->
             <div class="col-lg-6">
-
               <div class="card">
                 <!-- <div class="card-header">
                   <h5 class="m-0">Bagian Tools</h5>
@@ -1231,7 +1240,7 @@
                       <tr>
                         <th class="tg-0lax" style="border: 0;">
                           <img src="https://raw.githubusercontent.com/onysu/lesson/main/img/toolsbar.png" alt="Image"
-                            width="65%"></th>
+                            width="50%"></th>
                       </tr>
                     </thead>
                     <tbody>
@@ -1264,7 +1273,7 @@
                     Navigation di bagian bawah
                   </p>
                   <br>
-                  <img src="img/photoshop-cc-toolbar.png" alt="" width="65%">
+                  <img src="img/photoshop-cc-toolbar.png" alt="" width="50%">
                   <br>
 
                   <!-- <a href="#" class="btn btn-primary">Selengkapnya</a> -->
@@ -1274,7 +1283,7 @@
                     <thead>
                       <tr>
                         <th class="tg-0lax" style="border-bottom: 0;border-top: 0;">
-                          <img src="img/toolsbar-menu.png" alt="Image" width="75%"></th>
+                          <img src="img/toolsbar-menu.png" alt="Image" width="65%"></th>
                       </tr>
                     </thead>
                     <tbody>
@@ -1308,11 +1317,14 @@
                   <div class="row">
 
                     <div class="col-sm-7">
-                      <video id="videoarea" controls="controls" poster="img/awal.png" src=""></video>
+                      <video id="videoarea" controls="controls" poster="img/img-photoshop/opening.png"
+                        src="video/belajar-photoshop/1.Tutorial-Part-1.mp4" style="border-radius: 8px;"></video>
                     </div>
 
                     <div class="col-sm-5" style="margin-top: 0;">
                       <ul class="list-group list-group-flush" id="playlist">
+
+                        <!-- langkah 1 -->
                         <li class="list-group-item" movieurl="video/belajar-photoshop/1.Tutorial-Part-1.mp4">
                           <table cellspacing="1" cellpadding="3">
                             <tr style="vertical-align: top;">
@@ -1742,6 +1754,18 @@
                 <div class="card-body">
                   <div class="row">
 
+                    <div class="d-grid gap-2 d-md-block mb-3">
+
+                      <a href="galeri.html" target="_blank" class="btn btn-warning btn-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                          class="bi bi-images" viewBox="0 0 16 16">
+                          <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                          <path
+                            d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z" />
+                        </svg> <i>Untuk bahan gambar bisa download disini</i>
+                      </a>
+                    </div>
+
                     <!-- Video -->
                     <div class="row" data-video-container style="display: none">
                       <div class="columns medium-12">
@@ -1779,6 +1803,42 @@
                       </div>
 
                       <div class="column">
+                        <video controls width="100%" poster="img/vlcsnap-2021-06-26-15h09m21s178.png"
+                          src="video/tutorials-photoshop/Membuat-Background-Foto-Produk.mp4"></video>
+                        <span class="name">Membuat Background Foto Produk</span>
+                      </div>
+
+                      <div class="column">
+                        <video controls width="100%" poster="img/vlcsnap-2021-06-26-16h55m48s419.png"
+                          src="video/tutorials-photoshop/Merubah-Warna-Putih-Jadi-Hitam.mp4"></video>
+                        <span class="name">Merubah Warna Putih Jadi Hitam</span>
+                      </div>
+
+                      <div class="column">
+                        <video controls width="100%" poster="img/vlcsnap-2021-06-28-01h16m58s424.png"
+                          src="video/tutorials-photoshop/Menghapus-background-dengan-Pen-Tools.mp4"></video>
+                        <span class="name">Trik Menghapus background dengan Pen Tools</span>
+                      </div>
+
+                      <div class="column">
+                        <video controls width="100%" poster="img/Banner.png"
+                          src="video/tutorials-photoshop/Membuat-Banner.mp4"></video>
+                        <span class="name">Tutorial Membuat Banner</span>
+                      </div>
+
+                      <div class="column">
+                        <video controls width="100%" poster="img/Brosur-Lipat-Tiga.png"
+                          src="video/tutorials-photoshop/Brosur-Lipat-Tiga.mp4"></video>
+                        <span class="name">Tutorial Membuat Brosur Lipat Tiga</span>
+                      </div>
+
+                      <div class="column">
+                        <video controls width="100%" poster="img/bakso.png"
+                          src="video/tutorials-photoshop/Desain-Banner-Bakso.mp4"></video>
+                        <span class="name">Tutorial Membuat Desain Banner Bakso</span>
+                      </div>
+
+                      <div class="column">
                         <video controls width="100%" poster="img/Buat-Drop-Shadow-Bingkai-Foto.jpg"
                           src="video/tutorials-photoshop/Buat Drop Shadow Bingkai Foto.mp4"></video>
                         <span class="name">Buat Drop Shadow Bingkai Foto</span>
@@ -1792,20 +1852,24 @@
 
                       <div class="column">
                         <video controls width="100%" poster="img/Cara Terbaik Membuat Refleksi Air.jpg"
-                          src="video/tutorials-photoshop/Cara Terbaik Membuat Refleksi Air.mp4"></video>
-                        <span class="name">Cara Terbaik Membuat Refleksi Air</span>
+                          src="video/tutorials-photoshop/Best-Way-to-Make-Water-Reflection.mp4"></video>
+                        <span class="name">Tutorial Membuat Refleksi Air</span>
                       </div>
 
                       <div class="column">
                         <video controls width="100%" poster="img/Efek Teks Emas Terbaik.jpg"
-                          src="video/tutorials-photoshop/Efek Teks Emas Terbaik.mp4"></video>
+                          src="video/tutorials-photoshop/Efek Teks Emas Terbaik.mp4">
+                        </video>
                         <span class="name">Efek Teks Emas Terbaik</span>
                       </div>
 
                       <div class="column">
                         <video controls width="100%" poster="img/Gold Text Effect.jpg"
-                          src="video/tutorials-photoshop/Gold Text Effect.mp4"></video>
-                        <span class="name">Gold Text Effect.mp4</span>
+                          src="video/tutorials-photoshop/Photoshop Gold Text Effect.mp4">
+                          <track src="video/tutorials-photoshop/subtitle.vtt" kind="subtitles" srclang="in"
+                            label="Indonesia" default>
+                        </video>
+                        <span class="name">Gold Text Effect</span>
                       </div>
 
                       <div class="column">
@@ -1877,7 +1941,7 @@
           </div><!-- END/row -->
         </div>
       </div>
-    </div>
+    </div><!-- /content-wrapper -->
 
     <footer class="main-footer">
       <!-- To the right -->
@@ -1889,6 +1953,7 @@
       &phone; 08155509153 &RightAngleBracket; &copy; 2021.
     </footer>
   </div>
+
 
   <script src="dist/js/jquery.min.js"></script>
   <!-- Option 1: Bootstrap Bundle with Popper -->

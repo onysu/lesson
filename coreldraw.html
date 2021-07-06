@@ -1,234 +1,376 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-    <title>CORELDRAW</title>
-    <link rel="stylesheet" href="dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="dist/css/adminlte.min.css" />
-    <link rel="shortcut icon" href="img/me.png" type="image/x-icon" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-      body {
-        font-family: "Roboto", sans-serif !important;
-      }
+  <title>CORELDRAW</title>
+  <link rel="stylesheet" href="dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="dist/css/adminlte.min.css" />
+  <link rel="shortcut icon" href="img/me.png" type="image/x-icon" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
-      h5.card-title {
-        font-weight: bold;
-      }
-    </style>
-  </head>
+    body {
+      font-family: "Roboto", sans-serif !important;
+    }
 
-  <body class="hold-transition sidebar-mini text-sm">
-    <div class="wrapper">
-      <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" data-widget="pushmenu" href="#" role="button"
-              ><i class="fas fa-bars"></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
+    h5.card-title {
+      font-weight: bold;
+    }
+  </style>
+</head>
 
-      <aside class="main-sidebar sidebar-light-primary elevation-4">
-        <!-- Brand Logo -->
-        <a href="index.html" class="brand-link">
-          <img
-            src="img/aku.png"
-            alt="AdminLTE Logo"
-            class="brand-image img-circle elevation-3"
-            style="opacity: 0.8"
-          />
-          <span class="brand-text font-weight-light">Lesson</span>
-        </a>
+<body class="hold-transition sidebar-mini text-sm sidebar-collapse">
+  <div class="wrapper">
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+      </ul>
+    </nav>
 
-        <!-- Sidebar -->
-        <div class="sidebar">
-          <!-- Sidebar Menu -->
-          <nav class="mt-2">
-            <ul
-              class="nav nav-pills nav-sidebar flex-column"
-              data-widget="treeview"
-              role="menu"
-              data-accordion="false"
-            >
-              <li class="nav-item">
-                <a href="word.html" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
-                  <p>
-                    Materi Ms. Word
-                    <span class="right badge badge-danger">Baru</span>
-                  </p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="excel.html" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
-                  <p>
-                    Materi Ms. Excel
-                    <span class="right badge badge-danger">Baru</span>
-                  </p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="photoshop.html" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
-                  <p>
-                    Materi Photoshop
-                    <span class="right badge badge-danger">Baru</span>
-                  </p>
-                </a>
-              </li>
+    <aside class="main-sidebar sidebar-light-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-link">
+        <img src="img/aku.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: 0.8" />
+        <span class="brand-text font-weight-light">Lesson</span>
+      </a>
 
-              <li class="nav-item">
-                <a href="coreldraw.html" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
-                  <p>
-                    Materi CorelDRAW
-                    <span class="right badge badge-danger">Baru</span>
-                  </p>
-                </a>
-              </li>
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <li class="nav-item">
+              <a href="word.html" class="nav-link">
+                <i class="nav-icon fas fa-th"></i>
+                <p>
+                  Materi Ms. Word
+                  <span class="right badge badge-danger">Baru</span>
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="excel.html" class="nav-link">
+                <i class="nav-icon fas fa-th"></i>
+                <p>
+                  Materi Ms. Excel
+                  <span class="right badge badge-danger">Baru</span>
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="photoshop.html" class="nav-link">
+                <i class="nav-icon fas fa-th"></i>
+                <p>
+                  Materi Photoshop
+                  <span class="right badge badge-danger">Baru</span>
+                </p>
+              </a>
+            </li>
 
-              <li class="nav-item">
-                <a href="webdesain.html" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
-                  <p>
-                    Materi Web Desain
-                    <span class="right badge badge-danger">Baru</span>
-                  </p>
-                </a>
-              </li>
+            <li class="nav-item">
+              <a href="coreldraw.html" class="nav-link">
+                <i class="nav-icon fas fa-th"></i>
+                <p>
+                  Materi CorelDRAW
+                  <span class="right badge badge-danger">Baru</span>
+                </p>
+              </a>
+            </li>
 
-              <li class="nav-item">
-                <a href="pemrograman.html" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
-                  <p>
-                    Materi Pemrograman
-                    <span class="right badge badge-danger">Baru</span>
-                  </p>
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </aside>
+            <li class="nav-item">
+              <a href="webdesain.html" class="nav-link">
+                <i class="nav-icon fas fa-th"></i>
+                <p>
+                  Materi Web Desain
+                  <span class="right badge badge-danger">Baru</span>
+                </p>
+              </a>
+            </li>
 
-      <div class="content-wrapper">
-        <div class="content-header">
-          <div class="container-fluid">
-            <div class="row mb-2">
-              <div class="col-sm-6">
-                <h1 class="m-0 text-dark">
-                  CorelDRAW
-                  <i><small>(masih dalam proses pengembangan)</small></i>
-                </h1>
-              </div>
-              <div class="col-sm-6">
-                <ol class="breadcrumb float-sm-right">
-                  <li class="breadcrumb-item">
-                    <a href="index.html">Beranda</a>
-                  </li>
-                  <li class="breadcrumb-item active">CorelDRAW</li>
-                </ol>
-              </div>
+            <li class="nav-item">
+              <a href="pemrograman.html" class="nav-link">
+                <i class="nav-icon fas fa-th"></i>
+                <p>
+                  Materi Pemrograman
+                  <span class="right badge badge-danger">Baru</span>
+                </p>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </aside>
+
+    <div class="content-wrapper">
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1 class="m-0 text-dark">
+                CorelDRAW
+                <i><small>(masih dalam proses pengembangan)</small></i>
+              </h1>
+            </div>
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item">
+                  <a href="index.html">Beranda</a>
+                </li>
+                <li class="breadcrumb-item active">CorelDRAW</li>
+              </ol>
             </div>
           </div>
-        </div>
-
-        <!-- Main content -->
-        <!-- Main content -->
-        <div class="content">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Judul</h5>
-
-                    <p class="card-text">
-                      Beberapa teks contoh cepat untuk dibangun di atas judul
-                      kartu dan membuat sebagian besar konten kartu.
-                    </p>
-
-                    <a href="#" class="card-link">Link</a>
-                    <a href="#" class="card-link">Link</a>
-                  </div>
-                </div>
-
-                <div class="card card-primary card-outline">
-                  <div class="card-body">
-                    <h5 class="card-title">Judul</h5>
-
-                    <p class="card-text">
-                      Beberapa teks contoh cepat untuk dibangun di atas judul
-                      kartu dan membuat sebagian besar konten kartu.
-                    </p>
-                    <a href="#" class="card-link">Link</a>
-                    <a href="#" class="card-link">Link</a>
-                  </div>
-                </div>
-                <!-- /.card -->
-              </div>
-              <!-- /.col-md-6 -->
-              <div class="col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h5 class="m-0">Fitur</h5>
-                  </div>
-                  <div class="card-body">
-                    <h6 class="card-title">Judul</h6>
-
-                    <p class="card-text">
-                      Dengan teks pendukung di bawah ini sebagai petunjuk utama
-                      untuk konten tambahan.
-                    </p>
-                    <a href="#" class="btn btn-primary">Selengkapnya</a>
-                  </div>
-                </div>
-
-                <div class="card card-primary card-outline">
-                  <div class="card-header">
-                    <h5 class="m-0">Fitur</h5>
-                  </div>
-                  <div class="card-body">
-                    <h6 class="card-title">Judul</h6>
-
-                    <p class="card-text">
-                      Dengan teks pendukung di bawah ini sebagai petunjuk utama
-                      untuk konten tambahan.
-                    </p>
-                    <a href="#" class="btn btn-primary">Selengkapnya</a>
-                  </div>
-                </div>
-              </div>
-              <!-- /.col-md-6 -->
-            </div>
-            <!-- /.row -->
-          </div>
-          <!-- /.container-fluid -->
         </div>
       </div>
-      <!-- /.content-wrapper -->
 
-      <!-- Main Footer -->
-      <footer class="main-footer">
-        <div class="float-right d-none d-sm-inline">CorelDRAW</div>
-        Web-Dev by &RightAngleBracket; <a href="#">Ony</a> &RightAngleBracket;
-        &phone; 08155509153 &RightAngleBracket; &copy; 2021.
-      </footer>
+      <!-- Main content -->
+      <!-- Main content -->
+      <div class="content">
+        <div class="container-fluid">
+          <div class="row">
+
+            <!-- kiri -->
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-body">
+                  <!-- <h5 class="card-title">Judul</h5> -->
+                  <img src="img/img-coreldraw/opening-CorelDraw-2021.png" width="100%" alt="">
+                  <p class="card-text mt-2" style="text-align: justify;">
+                    Desain grafis adalah suatu bentuk komunikasi visual yang menggunakan teks atau gambar untuk
+                    menyampaikan info atau pesan. Corel draw merupakan sebuah program komputer atau software yang
+                    berfungsi sebagai editor grafik vektor. Ada banyak yang dapat kita desain mengunakan aplikasi Corel
+                    Draw antara lain: Desain Logo, Desain Baju, Desain Karakter, Desain Spanduk, Desain Brosur, Desain
+                    Postcard, dll. Pada bab kesatu ini akan dibahas berbagai hal tentang:
+                    <ol>
+                      <li>Pengenalan Antarmuka CorelDRAW</li>
+                      <li>Penggunaan Toolbox Standar</li>
+                      <li>Membuat Objek Dasar</li>
+                    </ol>
+
+                    <strong>Kelebihan CorelDraw</strong>
+                    <br>
+                    1. <strong>Lebih User Friendly</strong>
+                    <br>
+                    Untuk pengguna awam, tampilan CorelDraw lebih bersahabat dibandingkan AI. Tampilan Coreldraw
+                    sederhana dan pengguna mungkin lebih terbiasa karena tata letak dan warna latarnya mirip seperti
+                    ms word. Sedangkan Fitur-fitur AI lebih kompleks dan tersembunyi.
+                    <br>
+                    2. <strong>Formart Import dan Export Cukup Lengkap</strong>
+                    <br>
+                    Coreldraw mempunyai banyak format save data baik untuk keperluan import maupun export data. Bahkan
+                    coreldraw menyediakan format AI, artinya data yang dibuat di coreldraw bisa juga dibuka di Adobe
+                    Illustrator yang notabene adalah rivalnya. Ini tidak berlaku sebaliknya.
+                    <br>
+                    3. <strong>Resolusi Tinggi</strong>
+                    <br>
+                    CorelDraw menyediakan resolusi atau kapasitas gambar yang besar, ukurannya mulai dari inchi,
+                    milimeter, centimeter sampai kilometer. Jadi software ini cocok digunakan pada industri yang kadang
+                    harus mencetak gambar dalam skala gambar besar.
+                    <br>
+                    4. <strong>Ramah di Percetakan</strong>
+                    <br>
+                    Bagaimanapun Corel lebih populer dibandingkan produk keluaran kompetitornya. Ketika akan
+                    mencetak/print gambar ke percetakan, software yang terinstal dalam komputer mereka adalah Corel.
+
+                    Ini masalah ketika anda membawa file dengan format bawaan Adobe (misalnya) ke percetakan. Mereka
+                    tentu saja akan menolak dan mau tidak mau kita harus menyesuaikan dengan software yang ada di
+                    kompuer mereka.
+                    <br><br>
+                    <strong>Kekurangan CorelDRAW</strong>
+                    <br>
+                    1. <strong>Ukuran file besar</strong>
+                    <br>
+                    Apikasi ini menuntut penggunaan PC yang memiliki spesifikasi mumpuni dan dalam sektor RAM yang
+                    tinggi karena ukuran file mentah yang dihasilkan bisa cukup besar. Apalagi jika desainnya terbilang
+                    kompleks.
+                    <br>
+                    2. <strong>Sulit untuk membuat tabel</strong>
+                    <br>
+                    Karena berbasis vektor, membuat tabel di Corel Draw agak sedikit sulit karena membutuhkan beberapa
+                    klik untuk mendapatkan hasil tabel sesuai dengan yang diinginkan.
+                    <br>
+                    3. <strong>Color Space harus dikoreksi sebelum penggunaan secara profesional</strong>
+                    <br>
+                    Permasalahan terbesar yang dihadapi oleh desainer grafis ketika menggunakan Corel Draw adalah
+                    akurasi warna dari palet yang disediakan. Tak jarang, warna yang digunakan tidak sesuai dengan hasil
+                    cetakan.
+                  </p>
+                  <!-- <a href="#" class="card-link">Link</a> -->
+                  <!-- <a href="#" class="card-link">Link</a> -->
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Tampilan Awal</h5>
+                  <img src="img/img-coreldraw/kotak-buat-lembar-baru.png" width="100%" alt="">
+                  <p class="card-text mt-2">
+                    Keterangan :
+                    <ol>
+                      <li><strong>New Document</strong>, berfungsi untuk membuat membuat lembar kerja baru.</li>
+                      <li><strong>New From Template</strong>, berfungsi untuk membuat desain berdasarkan template yang
+                        telah tersedia.
+                      </li>
+                      <li><strong>Open Recent</strong>, berfungsi untuk membuka dokumen yang baru saja kita buka atau
+                        buat.</li>
+                      <li><strong>Open Other</strong>, berfungsi untuk membuka dokumen dari dalam folder atau membuka
+                        file yang akan
+                        disisipkan kedalam Corel Draw.</li>
+                    </ol>
+                  </p>
+                  <!-- <a href="#" class="card-link">Link</a> -->
+                  <!-- <a href="#" class="card-link">Link</a> -->
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Tampilan Membuat Dokumen Baru</h5>
+                  <img src="img/img-coreldraw/new-doc.png" width="100%" alt="">
+                  <p class="card-text mt-2">
+                    Beberapa teks contoh cepat untuk dibangun di atas judul
+                    kartu dan membuat sebagian besar konten kartu.
+                  </p>
+                  <!-- <a href="#" class="card-link">Link</a> -->
+                  <!-- <a href="#" class="card-link">Link</a> -->
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title mb-2">Tampilan Lembar Kerja Baru</h5>
+                  <img src="img/img-coreldraw/lembar-kerja-baru.png" width="100%" alt="">
+                  <p class="card-text mt-2">
+                    Keterangan :
+                    <ol>
+                      <li><strong>Tool Bar</strong>, bagian yang berisi beberapa tombol perintah untuk menjalankan suatu
+                        perintah.</li>
+                      <li><strong>Tool Box</strong>, bagian yang berisi beberapa tombol perintah untuk membuat dan
+                        memodifikasi obyek
+                        gambar.</li>
+                      <li><strong>Drawing Page</strong>, area yang digunakan untuk mengolah obyek gambar. Bagian ini
+                        juga merupakan area
+                        pencetakan gambar.</li>
+                      <li><strong>Color Palette</strong>, bagian yang berisi daftar pilihan warna yang dapat kita
+                        gunakan untuk memberi
+                        warna pada obyek gambar.</li>
+                    </ol>
+                  </p>
+                  <!-- <a href="#" class="card-link">Link</a> -->
+                  <!-- <a href="#" class="card-link">Link</a> -->
+                </div>
+              </div>
+
+            </div>
+
+            <!-- kanan -->
+            <div class="col-lg-6">
+              <div class="card">
+                <!-- <div class="card-header">
+                  <h5 class="m-0">Fitur</h5>
+                </div> -->
+                <div class="card-body">
+                  <!-- <h6 class="card-title">Judul</h6> -->
+                  <video autoplay loop
+                    src="video/belajar-coreldraw/CorelDRAW Graphics Suite 2021 - Graphic Design Software.mp4"
+                    width="100%"></video>
+                  <!-- <p class="card-text">
+                    Dengan teks pendukung di bawah ini sebagai petunjuk utama
+                    untuk konten tambahan.
+                  </p> -->
+                  <!-- <a href="#" class="btn btn-primary">Selengkapnya</a> -->
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <h5 class="m-0">Toolbox</h5>
+                </div>
+                <div class="card-body">
+                  <h6 class="card-title mb-3">Adapun fungsi dan cara menggunakan dari tool yang ada di Toolbox sebagai
+                    berikut :</h6>
+                  <br><br>
+                  <img src="img/img-coreldraw/01.png" alt="">
+                  <br>
+                  <p class="card-text mt-2" style="text-align: justify;">
+                    <ol>
+                      <li><strong>Pick tool</strong> : untuk memilih atau menyeleksi dan mengatur ukuran, memiringkan,
+                        dan memutar objek.</li>
+                      <li><strong>Freehand Pick tool</strong> untuk menyeleksi objek dengan bebas.</li>
+                    </ol>
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary">Selengkapnya</a> -->
+                  <hr>
+                </div>
+
+                <div class="card-body">
+                  <img src="img/img-coreldraw/02.png" alt="">
+                  <br>
+                  <p class="card-text mt-2" style="text-align: justify;">
+                    <ol>
+                      <li><strong>Shape tool</strong> untuk mengedit bentuk objek kurva.</li>
+                      <li><strong>Smudge Brush tool</strong> untuk mengubah objek vektor dengan cara men-drag sepanjang
+                        garis luar.</li>
+                      <li><strong>Roughen Brush tool</strong> untuk mengubah garis luar dari objek vektor dengan cara
+                        men-drag sepanjang
+                        garis luar.</li>
+                      <li><strong>Free Transform tool</strong> untuk mengubah suatu objek dengan menggunakan Free
+                        rotation, angle
+                        rotation, Scale, dan Skew tool.</li>
+                    </ol>
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary">Selengkapnya</a> -->
+                  <hr>
+                </div>
+
+                <div class="card-body">
+                  <img src="img/img-coreldraw/03.png" alt="">
+                  <br>
+                  <p class="card-text mt-2" style="text-align: justify;">
+                    <ol>
+                      <li><strong>Croop tool</strong> untuk menghilangkan area yang tidak dikehendaki.</li>
+                      <li><strong>Knife tool</strong> untuk memotong objek.</li>
+                      <li><strong>Eraser tool</strong> untuk menghilangkan daerah yang tidak diinginkan pada gambar.
+                      </li>
+                      <li><strong>Virtual Segment Delete tool</strong> untuk menghapus bagian dari objek-objek diantara
+                        persimpangan.</li>
+                    </ol>
+                  </p>
+                  <!-- <a href="#" class="btn btn-primary">Selengkapnya</a> -->
+                  <hr>
+                </div>
+
+              </div>
+            </div>
+            <!-- /.col-md-6 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+      </div>
     </div>
+    <!-- /.content-wrapper -->
 
-    <script src="dist/js/jquery.min.js"></script>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="dist/js/bootstrap.bundle.js"></script>
-    <!-- Font Awesome Icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <!-- AdminLTE App -->
-    <script src="dist/js/adminlte.min.js"></script>
-  </body>
+    <!-- Main Footer -->
+    <footer class="main-footer">
+      <div class="float-right d-none d-sm-inline">CorelDRAW</div>
+      Web-Dev by &RightAngleBracket; <a href="#">Ony</a> &RightAngleBracket;
+      &phone; 08155509153 &RightAngleBracket; &copy; 2021.
+    </footer>
+  </div>
+
+  <script src="dist/js/jquery.min.js"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="dist/js/bootstrap.bundle.js"></script>
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.min.js"></script>
+</body>
+
 </html>

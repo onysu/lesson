@@ -10,35 +10,27 @@
 </head>
 
 <body>
-    <header class="site-header" role="banner">
+    <!-- <header class="site-header" role="banner">
         <div class="wrapper">
             <h1 class="site-title">HTML <span class="title-five">5</span> Video Player</h1>
             <p class="credit-line">by <a href="https://twitter.com/gianablantin">Giana Blantin</a></p>
         </div>
-    </header>
+    </header> -->
 
     <main class="site-content">
 
         <section class="video-area">
             <div class="wrapper">
 
-                <header class="video-header">
-                    <h2 class="video-title">Caminandes: Grand Dillama</h2>
-                    <small class="video-author">By the <a href="https://www.blender.org/features/projects/">Blender
-              Foundation</a></small>
-                </header>
+
 
                 <div class="video-column">
                     <div class="video-player">
                         <button id="btnReplay" class="btn-replay"><span class="fontawesome-refresh"></span></button>
-
-                        <video id="video" class="video" src="https://mainline.i3s.unice.fr/mooc/week2p1/video1.mp4" type="video/mp4" poster="https://mainline.i3s.unice.fr/mooc/week2p1/caminandes-1.jpg" preload="none">
-            </video>
+                        <video id="video" class="video" src="https://mainline.i3s.unice.fr/mooc/week2p1/video1.mp4" type="video/mp4" poster="https://mainline.i3s.unice.fr/mooc/week2p1/caminandes-1.jpg" preload="none"></video>
 
                         <div class="video-controls">
-
                             <button id="btnState"><span class="fontawesome-play"></span></button>
-
                             <span id="timePlayed">00:00</span>
 
                             <!-- Seeker + progress bar -->
@@ -49,23 +41,28 @@
                             </div>
 
                             <div id="timeBubble" class="time-bubble">00:00</div>
-
                             <span id="timeDuration">00:00</span>
 
                             <button id="btnSound" class="btn-sound"><span class="fontawesome-volume-up"></span></button>
                             <input type="range" id="sliderVolume" class="slider-volume" value="10" min="0" max="10">
-
                         </div>
-
                     </div>
 
                     <div class="video-info">
+                        <header class="video-header">
+                            <h2 class="video-title"></h2>
+                            <!-- <small class="video-author">By the <a href="https://www.blender.org/features/projects/">Blender
+                  Foundation</a></small> -->
+                        </header>
 
                         <p class="video-popularity">
-                            <span class="views">394,7304 views <span class="fontawesome-eye-open meta-icon"></span>
-                            <span class="likes">97,349 likes <a href="#" id="likeThis" class="like-this"><span
-                      class="fontawesome-heart meta-icon like-heart"></span></a><span class="like-prompt">Don't forget
-                    to like!</span></span>
+                            <!-- <span class="views">394,7304 views <span class="fontawesome-eye-open meta-icon"></span> -->
+                            <span class="likes">97,349 likes
+                <a href="#" id="likeThis" class="like-this">
+                  <!-- <span class="fontawesome-heart meta-icon like-heart"></span> -->
+                            </a>
+                            <!-- <span class="like-prompt">Don't forget to like!</span> -->
+                            </span>
                         </p>
 
                         <div class="description">
@@ -77,7 +74,7 @@
                 <div id="video-playlist" class="video-playlist">
                     <header class="playlist-title">Up next...</header>
 
-                    <!-- HTML 5 allows us to wrap block-level elements in <a> tags. -->
+                    <!-- HTML 5 memungkinkan kita untuk membungkus elemen level blok dalam tag <a>. -->
 
                     <a href="https://mainline.i3s.unice.fr/mooc/week2p1/video2.mp4" class="next-video">
                         <img src="https://mainline.i3s.unice.fr/mooc/week2p1/caminandes-2.jpg" alt="">
@@ -136,6 +133,7 @@
                     </a>
                 </div>
             </div>
+
         </section>
     </main>
 

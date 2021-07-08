@@ -14,40 +14,6 @@
     <link rel="stylesheet" href="dist/css/all-style.css">
     <link rel="shortcut icon" href="img/me.png" type="image/x-icon">
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
-
-      body {
-        font-family: 'Roboto', sans-serif !important;
-      }
-
-      /* .card-body {
-      padding: 15px;
-    } */
-
-      p {
-        font-weight: 400;
-        margin-top: 0;
-        margin-bottom: 10px;
-      }
-
-      .accordion-body {
-        padding: 0;
-      }
-
-      .accordion-item {
-        border-right: 0;
-        border-left: 0;
-      }
-
-      .accordion-button:focus {
-        box-shadow: none;
-      }
-
-      .accordion-button:not(.collapsed) {
-        color: #333;
-        background-color: #ddd;
-      }
-
       ul#playlist.list-group.list-group-flush {
         margin-left: 0;
       }
@@ -200,15 +166,6 @@
           grid-row: unset !important;
         }
       } */
-
-      video::cue {
-        background-image: linear-gradient(to bottom, dimgray, lightgray);
-        color: papayawhip;
-      }
-
-      video::cue(b) {
-        color: peachpuff;
-      }
     </style>
   </head>
 
@@ -339,24 +296,15 @@
                 <div class="card">
                   <div class="card-body">
                     <img src="img/img-photoshop/opening.png" alt="" width="100%">
-                  </div>
-                </div>
-
-                <!-- Langkah -->
-                <div class="card">
-                  <div class="card-header">
-                    <h5 class="m-0">Langkah yang di lakukan dalam belajar dasar-dasar Photoshop</h5>
-                  </div>
-                  <div class="card-body" style="margin-left: 20px;">
-                    <!-- <h6 class="card-title"><b></b></h6> -->
+                    <h5 class="card-title mt-3">Langkah yang di lakukan dalam belajar dasar-dasar Photoshop</h5>
                     <p class="card-text">
-                    <ul>
+                    <ol>
                       <li>Kuasai Tampilan Awal pada photoshop</li>
                       <li>Kuasai penggunaan Tools bar</li>
                       <li>Kuasai Fitur yang ada pada Options bar</li>
                       <li>Mencoba membuat desain berdasarkan tutorial</li>
                       <li>Membuat desain sendiri</li>
-                    </ul>
+                    </ol>
                     </p>
                   </div>
                 </div>
@@ -368,7 +316,8 @@
                   </div>
                   <div class="card-body p-0">
                     <img src="img/1.png" alt="" width="100%">
-                    <p class="card-body mb-0">Untuk awal belajar photoshop pemula sebaiknya mempelajari Menu Utama yang berada dibagian atas
+                    <p class="card-body mb-0">Untuk awal belajar photoshop pemula sebaiknya mempelajari Menu Utama yang
+                      berada dibagian atas
                       program Photoshop. Menu utama Photoshop diantaranya adalah File, Edit, Image, Layer, Select,
                       Filter, View, Window dan Help.</p>
                   </div>
@@ -396,22 +345,25 @@
                     </div>
 
                     <!-- tabs -->
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">                      
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
                       <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                          type="button" role="tab" aria-controls="home" aria-selected="true"><strong>Options</strong></button>
+                          type="button" role="tab" aria-controls="home"
+                          aria-selected="true"><strong>Options</strong></button>
                       </li>
                       <li class="nav-item" role="presentation">
                         <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                          type="button" role="tab" aria-controls="profile" aria-selected="false"><strong>Menu Utama</strong></button>
+                          type="button" role="tab" aria-controls="profile" aria-selected="false"><strong>Menu
+                            Utama</strong></button>
                       </li>
                       <li class="nav-item" role="presentation">
                         <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
-                          type="button" role="tab" aria-controls="contact" aria-selected="false"><strong>Tools</strong></button>
+                          type="button" role="tab" aria-controls="contact"
+                          aria-selected="false"><strong>Tools</strong></button>
                       </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
-                      
+
                       <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                         <ul style="padding: 20px 20px 0 20px;">
                           <li>Menu dan Fitur tambahan untuk <strong>Tools</strong></li>
@@ -1131,7 +1083,7 @@
                       </div>
                     </div>
 
-                    
+
 
                   </div>
                 </div>
@@ -1140,9 +1092,25 @@
               <!-- sisi kanan -->
               <div class="col-lg-6">
                 <div class="card">
+                  <div class="card-header">
+                    <h5 class="m-0">Pelajari Apa yang Baru di Photoshop CC</h5>
+                  </div>
+                  <div class="card-body" style="padding: 0;">
+                    <video id="sub" controls src="video/tutorials-photoshop/Photoshop CC Overview.mp4" poster=""
+                      width="100%" type="video/mp4">
+                      <track default src="video/tutorials-photoshop/Photoshop CC Overview.vtt" kind="subtitles"
+                        srclang="id" label="Indonesian">
+                    </video>
+                  </div>
+                  <p class="card-body py-0">Photoshop CC Overview</p>
+                </div>
+                <div class="card">
                   <!-- <div class="card-header">
                   <h5 class="m-0">Bagian Tools</h5>
                 </div> -->
+
+
+
                   <div class="card-body">
                     <p>Toolbar Photoshop terletak di sepanjang kiri layar</p>
                     <table class="tg">
@@ -1860,7 +1828,7 @@
       <!-- /content-wrapper -->
 
       <footer class="main-footer">
-        <div class="float-right d-none d-sm-inline">CorelDRAW</div>
+        <div class="float-right d-none d-sm-inline">PHOTOSHOP</div>
         Web-Dev by &RightAngleBracket; <a href="#">Ony</a> &RightAngleBracket; &phone; 08155509153 &RightAngleBracket;
         &copy; 2021 <i class="bi-github" role="img" aria-label="GitHub"></i>
       </footer>

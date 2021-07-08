@@ -40,27 +40,27 @@
         <article class="well row">
             <div class="video-container col-lg-8">
                 <video id='video' width="723px" height="361px" preload='none' mediagroup='myVideoGroup' poster="https://img00.deviantart.net/176d/i/2008/306/a/1/big_buccaneer_by_ratow.jpg">
-          <source
-            src="https://upload.wikimedia.org/wikipedia/commons/transcoded/7/79/Big_Buck_Bunny_small.ogv/Big_Buck_Bunny_small.ogv.120p.vp9.webm"
-            type='video/webm'>
-          <!-- Available attributes list-->
-          <!-- Use 'src' attribute for video tag or 'source' tag between video tags -->
-          <!-- Set width and height of video block with attributes respectively -->
-          <!-- autoplay - run the video as soon as it loaded -->
-          <!-- Show an image while video might be loading and until you click 'play' -->
-          <!-- Author's opinion about how browser should load video:
+                    <source
+                        src="https://upload.wikimedia.org/wikipedia/commons/transcoded/7/79/Big_Buck_Bunny_small.ogv/Big_Buck_Bunny_small.ogv.120p.vp9.webm"
+                        type='video/webm'>
+                    <!-- Available attributes list-->
+                    <!-- Use 'src' attribute for video tag or 'source' tag between video tags -->
+                    <!-- Set width and height of video block with attributes respectively -->
+                    <!-- autoplay - run the video as soon as it loaded -->
+                    <!-- Show an image while video might be loading and until you click 'play' -->
+                    <!-- Author's opinion about how browser should load video:
                 auto(load video when the page loads),
                 metadata( load only metadata when page loads),
                 none (don't load the video when the page loads); -->
-          <!-- loop - repeat video after play is finished -->
-          <!-- mute - mute video by setting this attribute to true or false -->
-          <!-- controls - show browser-predefined controls (depends on browser implementation) -->
-          <!--<source src="./video/mov_bbb.mp4" type="video/mp4">
+                    <!-- loop - repeat video after play is finished -->
+                    <!-- mute - mute video by setting this attribute to true or false -->
+                    <!-- controls - show browser-predefined controls (depends on browser implementation) -->
+                    <!--<source src="./video/mov_bbb.mp4" type="video/mp4">
               - you can set here several videos with different types to make it available in different browsers-->
-          <p>Your browser does not support the video tag.</p>
-          <!-- User see this paragraph,
+                    <p>Your browser does not support the video tag.</p>
+                    <!-- User see this paragraph,
                                                                 when none of provided videos can be played -->
-        </video>
+                </video>
                 <div>
                     <button id="controlsPlayPause" class="btn btn-primary" title="Play/Pause">&#9654;/&#8214;</button>
                     <button id="controlsStop" class="btn btn-primary">&#9632;</button>
@@ -82,9 +82,9 @@
         <article class="tabs-container well row video-tabs-container">
             <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Media
-            Events</a></li>
+                        Events</a></li>
                 <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Media
-            Properties</a></li>
+                        Properties</a></li>
             </ul>
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane active" id="home">
@@ -261,7 +261,8 @@
                 tr = null,
                 th,
                 td,
-                temp; // temporary boolean variable to check if video supports any listed properties
+                temp;
+            // temporary boolean variable to check if video supports any listed properties
             // while array's limit is not achieved, create rows with properties' values
             do {
                 // if this is the first row
@@ -301,11 +302,10 @@
         };
         // update progress bar value each time 'timeupdate' event happens(after you click play it happens all the time)
         Media.prototype.updateProgressBar = function(self) {
-            // find progress bar element var
-            progressBar = document.getElementById("progress-bar"), percentage =
-                0;
-            // if media is playing, calculate progress in
-            percents
+            // find progress bar element 
+            var progressBar = document.getElementById("progress-bar"),
+                percentage = 0;
+            // if media is playing, calculate progress in percents
             if (self.mediaElement.duration >= 0) {
                 percentage = Math.floor(
                     (100 / self.mediaElement.duration) * self.mediaElement.currentTime

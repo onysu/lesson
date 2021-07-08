@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
@@ -11,521 +11,642 @@
     <link rel="stylesheet" href="../dist/css/adminlte.min.css" />
     <link rel="shortcut icon" href="../img/aku-bulat.png" type="image/x-icon" />
     <link rel="stylesheet" href="../dist/css/all-style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.css" /> -->
     <style>
-      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
-
-      body {
-        font-family: "Roboto", sans-serif !important;
-      }
-
-      h5.card-title {
-        font-weight: bold;
-      }
-
-      .blockquote-footer {
-        margin-bottom: 0;
-      }
-
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+        body {
+            font-family: "Roboto", sans-serif !important;
         }
-      }
+        
+        h5.card-title {
+            font-weight: bold;
+        }
+        
+        .blockquote-footer {
+            margin-bottom: 0;
+        }
+        
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
     </style>
-  </head>
+</head>
 
-  <body class="hold-transition sidebar-mini text-sm">
+<body class="hold-transition sidebar-mini text-sm">
     <div class="wrapper">
-      <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-          </li>
-        </ul>
-      </nav>
-
-      <aside class="main-sidebar sidebar-light-primary elevation-4">
-        <!-- Brand Logo -->
-        <a href="index.html" class="brand-link">
-          <img src="../img/aku-bulat.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-            style="opacity: 0.8" />
-          <span class="brand-text font-weight-light">Lesson</span>
-        </a>
-
-        <!-- Sidebar -->
-        <div class="sidebar">
-          <!-- Sidebar Menu -->
-          <nav class="mt-2">
-            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-              <li class="nav-item">
-                <a href="word.html" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
-                  <p>
-                    Materi Ms. Word
-                    <span class="right badge badge-danger">Baru</span>
-                  </p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="excel.html" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
-                  <p>
-                    Materi Ms. Excel
-                    <span class="right badge badge-danger">Baru</span>
-                  </p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="photoshop.html" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
-                  <p>
-                    Materi Photoshop
-                    <span class="right badge badge-danger">Baru</span>
-                  </p>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a href="coreldraw.html" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
-                  <p>
-                    Materi CorelDRAW
-                    <span class="right badge badge-danger">Baru</span>
-                  </p>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a href="webdesain.html" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
-                  <p>
-                    Materi Web Desain
-                    <span class="right badge badge-danger">Baru</span>
-                  </p>
-                </a>
-              </li>
-
-              <li class="nav-item">
-                <a href="pemrograman.html" class="nav-link">
-                  <i class="nav-icon fas fa-th"></i>
-                  <p>
-                    Materi Pemrograman
-                    <span class="right badge badge-danger">Baru</span>
-                  </p>
-                </a>
-              </li>
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
             </ul>
-          </nav>
-        </div>
-      </aside>
+        </nav>
 
-      <div class="content-wrapper">
-        <div class="content-header">
-          <div class="container-fluid">
-            <div class="row mb-2">
-              <div class="col-sm-6">
-                <h1 class="m-0 text-dark">Beranda</h1>
-              </div>
-              <div class="col-sm-6">
-                <ol class="breadcrumb float-sm-right">
-                  <li class="breadcrumb-item">
-                    <a href="index.html">Beranda</a>
-                  </li>
-                  <li class="breadcrumb-item active">Halaman Depan</li>
-                </ol>
-              </div>
+        <aside class="main-sidebar sidebar-light-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="index.html" class="brand-link">
+                <img src="../img/aku-bulat.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: 0.8" />
+                <span class="brand-text font-weight-light">Lesson</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <li class="nav-item">
+                            <a href="word.html" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Materi Ms. Word
+                                    <span class="right badge badge-danger">Baru</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="excel.html" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Materi Ms. Excel
+                                    <span class="right badge badge-danger">Baru</span>
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="photoshop.html" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Materi Photoshop
+                                    <span class="right badge badge-danger">Baru</span>
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="coreldraw.html" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Materi CorelDRAW
+                                    <span class="right badge badge-danger">Baru</span>
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="webdesain.html" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Materi Web Desain
+                                    <span class="right badge badge-danger">Baru</span>
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="pemrograman.html" class="nav-link">
+                                <i class="nav-icon fas fa-th"></i>
+                                <p>
+                                    Materi Pemrograman
+                                    <span class="right badge badge-danger">Baru</span>
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-          </div>
-        </div>
+        </aside>
 
-        <!-- Main content -->
-        <div class="content">
-          <div class="container-fluid">
-
-            <!-- carousel -->
-            <div class="row mb-3">
-              <div class="col">
-                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                  <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                      aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                      aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                      aria-label="Slide 3"></button>
-                  </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active" style="height: 200px; background-size: cover;">
-                      <img src="https://learn.corel.com/wp-content/uploads/2021/05/James-River-M33.jpg"
-                        class="d-block mw-100" alt="...">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                      </div>
+        <div class="content-wrapper">
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 class="m-0 text-dark">Beranda</h1>
+                        </div>
+                        <div class="col-sm-6">
+                            <ol class="breadcrumb float-sm-right">
+                                <li class="breadcrumb-item">
+                                    <a href="index.html">Beranda</a>
+                                </li>
+                                <li class="breadcrumb-item active">Halaman Depan</li>
+                            </ol>
+                        </div>
                     </div>
-                    <div class="carousel-item" style="height: 200px; background-size: cover;">
-                      <img src="https://learn.corel.com/wp-content/uploads/2021/01/To-and-From-Manhattan.jpg"
-                        class="d-block mw-100" alt="...">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                      </div>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <div class="content">
+                <div class="container-fluid">
+
+                    <!-- carousel -->
+                    <div class="row mb-3">
+                        <div class="col">
+                            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                </div>
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" style="height: 200px; background-size: cover;">
+                                        <img src="https://learn.corel.com/wp-content/uploads/2021/05/James-River-M33.jpg" class="d-block mw-100" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>First slide label</h5>
+                                            <p>Some representative placeholder content for the first slide.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" style="height: 200px; background-size: cover;">
+                                        <img src="https://learn.corel.com/wp-content/uploads/2021/01/To-and-From-Manhattan.jpg" class="d-block mw-100" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Second slide label</h5>
+                                            <p>Some representative placeholder content for the second slide.</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item" style="height: 200px; background-size: cover;">
+                                        <img src="https://learn.corel.com/wp-content/uploads/2021/05/Wetlands-j2-14.jpg" class="d-block mw-100" alt="...">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h5>Third slide label</h5>
+                                            <p>Some representative placeholder content for the third slide.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="carousel-item" style="height: 200px; background-size: cover;">
-                      <img src="https://learn.corel.com/wp-content/uploads/2021/05/Wetlands-j2-14.jpg"
-                        class="d-block mw-100" alt="...">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-              </div>
-            </div><!-- /.row -->
+                    <!-- /.row -->
 
-            <!-- card -->
-            <div class="row">
-              <!-- kiri -->
-              <div class="col-lg-6">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Kiri</h5>
-                    <p class="card-text">
-                      col-lg-6
-                    </p>
-                    <a href="#" class="card-link">Link</a>
-                    <a href="#" class="card-link">Link</a>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Kiri</h5>
-
-                    <p class="card-text">
-                      col-lg-6
-                    </p>
-                    <a href="#" class="card-link">Link</a>
-                    <a href="#" class="card-link">Link</a>
-                  </div>
-                </div>
-                <!-- tab -->
-                <div class="card">
-                  <div class="card-body">
-                    <nav>
-                      <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
-                          data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
-                          aria-selected="true">Home</button>
-                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
-                          type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
-                          type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
-                      </div>
-                    </nav>
-                    <div class="tab-content mt-2" id="nav-tabContent">
-                      <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
-                        aria-labelledby="nav-home-tab">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Consequatur quisquam magni omnis, architecto ad aliquid earum magnam neque laboriosam itaque eum
-                        sapiente vitae adipisci blanditiis voluptatem repellat nisi accusantium cum non praesentium
-                        atque. Fuga consequuntur dolorum est obcaecati provident recusandae. Hic qui totam nulla ea
-                        magni adipisci cum? Fugit, deserunt.</div>
-                      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, fuga? Recusandae
-                        consequuntur reiciendis eius soluta ad sapiente amet harum sit libero rem ea, quae esse, facere
-                        saepe! Natus, ad repellendus!
-                      </div>
-                      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, unde nemo quisquam
-                        provident qui amet molestias eaque eveniet inventore, veritatis sapiente tempora autem explicabo
-                        atque ipsa soluta maxime quidem, minima odio? Consequatur, enim ipsum. Laboriosam neque maiores
-                        voluptatem reiciendis incidunt eaque odit corporis impedit! Exercitationem veritatis cupiditate
-                        quia perspiciatis? Quidem nisi quis optio ipsa obcaecati expedita et nam harum assumenda!
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div><!-- /.col-md-6 -->
-
-              <!-- kanan -->
-              <div class="col-lg-6">
-                <div class="card">
-                  <div class="card-header">
-                    <h5 class="m-0">Kanan</h5>
-                  </div>
-                  <div class="card-body">
-                    <h6 class="card-title">col-lg-6</h6>
-
-                    <p class="card-text">
-                      Dengan teks pendukung di bawah ini sebagai petunjuk utama
-                      untuk konten tambahan.
-                    </p>
-                    <a href="#" class="btn btn-primary">Selengkapnya</a>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <h5 class="m-0">Kanan</h5>
-                  </div>
-                  <div class="card-body">
-                    <h6 class="card-title">col-lg-6</h6>
-
-                    <p class="card-text">
-                      Dengan teks pendukung di bawah ini sebagai petunjuk utama
-                      untuk konten tambahan.
-                    </p>
-                    <a href="#" class="btn btn-primary">Selengkapnya</a>
-                  </div>
-                </div>
-              </div><!-- /.col-md-6 -->
-            </div><!-- /.row -->
-
-            <!-- video tutorial -->
-            <div class="row">
-              <div class="col">
-                <div class="card">
-                  <div class="card-header">
-                    <h5 class="m-0">col-lg-12</h5>
-                  </div>
-
-                  <div class="card-body" style="padding: 0 7px 0 7px;">
-
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
-
-                      <div class="col p-0">
-                        <div class="card" style="box-shadow: none; margin-bottom: 0;">
-                          <video controls src="../video/belajar-coreldraw/langkah-cd-1.mp4">
-                          </video>
-                          <div class="card-body"
-                            style="padding: 10px; display: flex; justify-content: space-between; align-items: flex-start; flex-direction: row; column-gap: 10px;">
-                            <div class="d-flex justify-content-between align-items-center">
-                              <img src="../img/aku.png" alt="..." width="35px" style="border-radius: 50%;">
-                            </div>
-                            <p class="card-text" style="margin-bottom: 5px;">Lorem, ipsum dolor sit amet consectetur
-                              adipisicing elit. Iste, eius ab itaque consectetur cumque tempora.
-                              <br><br>
-                              <small class="blockquote-footer">Tutorial CorelDRAW</small>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col p-0">
-                        <div class="card" style="box-shadow: none; margin-bottom: 0;">
-                          <video controls src="../video/belajar-coreldraw/langkah-cd-2.mp4">
-                          </video>
-                          <div class="card-body"
-                            style="padding: 10px; display: flex; justify-content: space-between; align-items: flex-start; flex-direction: row; column-gap: 10px;">
-                            <div class="d-flex justify-content-between align-items-center">
-                              <img src="../img/aku.png" alt="..." width="35px" style="border-radius: 50%;">
-                            </div>
-                            <p class="card-text" style="margin-bottom: 5px;">Lorem, ipsum dolor sit amet consectetur
-                              adipisicing elit. Iste, eius ab itaque consectetur cumque tempora.
-                              <br><br>
-                              <small class="blockquote-footer">Tutorial CorelDRAW</small>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col p-0">
-                        <div class="card" style="box-shadow: none; margin-bottom: 0;">
-                          <video controls
-                            src="../video/belajar-coreldraw/CorelDRAW Graphics Suite 2021 - Graphic Design Software.mp4">
-                          </video>
-                          <div class="card-body"
-                            style="padding: 10px; display: flex; justify-content: space-between; align-items: flex-start; flex-direction: row; column-gap: 10px;">
-                            <div class="d-flex justify-content-between align-items-center">
-                              <img src="../img/aku.png" alt="..." width="35px" style="border-radius: 50%;">
-                            </div>
-                            <p class="card-text" style="margin-bottom: 5px;">Lorem, ipsum dolor sit amet consectetur
-                              adipisicing elit. Iste, eius ab itaque consectetur cumque tempora.
-                              <br><br>
-                              <small class="blockquote-footer">Tutorial CorelDRAW</small>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col p-0">
-                        <div class="card" style="box-shadow: none; margin-bottom: 0;">
-                          <video controls
-                            src="../video/belajar-coreldraw/CorelDRAW Graphics Suite 2021 - Graphic Design Software.mp4">
-                          </video>
-                          <div class="card-body"
-                            style="padding: 10px; display: flex; justify-content: space-between; align-items: flex-start; flex-direction: row; column-gap: 10px;">
-                            <div class="d-flex justify-content-between align-items-center">
-                              <img src="../img/aku.png" alt="..." width="35px" style="border-radius: 50%;">
-                            </div>
-                            <p class="card-text" style="margin-bottom: 5px;">Lorem, ipsum dolor sit amet consectetur
-                              adipisicing elit. Iste, eius ab itaque consectetur cumque tempora.
-                              <br><br>
-                              <small class="blockquote-footer">Tutorial CorelDRAW</small>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col p-0">
-                        <div class="card" style="box-shadow: none; margin-bottom: 0;">
-                          <video controls
-                            src="../video/belajar-coreldraw/CorelDRAW Graphics Suite 2021 - Graphic Design Software.mp4">
-                          </video>
-                          <div class="card-body"
-                            style="padding: 10px; display: flex; justify-content: space-between; align-items: flex-start; flex-direction: row; column-gap: 10px;">
-                            <div class="d-flex justify-content-between align-items-center">
-                              <img src="../img/aku.png" alt="..." width="35px" style="border-radius: 50%;">
-                            </div>
-                            <p class="card-text" style="margin-bottom: 5px;">Lorem, ipsum dolor sit amet consectetur
-                              adipisicing elit. Iste, eius ab itaque consectetur cumque tempora.
-                              <br><br>
-                              <small class="blockquote-footer">Tutorial CorelDRAW</small>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col p-0">
-                        <div class="card" style="box-shadow: none; margin-bottom: 0;">
-                          <video controls
-                            src="../video/belajar-coreldraw/CorelDRAW Graphics Suite 2021 - Graphic Design Software.mp4">
-                          </video>
-                          <div class="card-body"
-                            style="padding: 10px; display: flex; justify-content: space-between; align-items: flex-start; flex-direction: row; column-gap: 10px;">
-                            <div class="d-flex justify-content-between align-items-center">
-                              <img src="../img/aku.png" alt="..." width="35px" style="border-radius: 50%;">
-                            </div>
-                            <p class="card-text" style="margin-bottom: 5px;">Lorem, ipsum dolor sit amet consectetur
-                              adipisicing elit. Iste, eius ab itaque consectetur cumque tempora.
-                              <br><br>
-                              <small class="blockquote-footer">Tutorial CorelDRAW</small>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col p-0">
-                        <div class="card" style="box-shadow: none; margin-bottom: 0;">
-                          <video controls
-                            src="../video/belajar-coreldraw/CorelDRAW Graphics Suite 2021 - Graphic Design Software.mp4">
-                          </video>
-                          <div class="card-body"
-                            style="padding: 10px; display: flex; justify-content: space-between; align-items: flex-start; flex-direction: row; column-gap: 10px;">
-                            <div class="d-flex justify-content-between align-items-center">
-                              <img src="../img/aku.png" alt="..." width="35px" style="border-radius: 50%;">
-                            </div>
-                            <p class="card-text" style="margin-bottom: 5px;">Lorem, ipsum dolor sit amet consectetur
-                              adipisicing elit. Iste, eius ab itaque consectetur cumque tempora.
-                              <br><br>
-                              <small class="blockquote-footer">Tutorial CorelDRAW</small>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col p-0">
-                        <div class="card" style="box-shadow: none; margin-bottom: 0;">
-                          <video controls
-                            src="../video/belajar-coreldraw/CorelDRAW Graphics Suite 2021 - Graphic Design Software.mp4">
-                          </video>
-                          <div class="card-body"
-                            style="padding: 10px; display: flex; justify-content: space-between; align-items: flex-start; flex-direction: row; column-gap: 10px;">
-                            <div class="d-flex justify-content-between align-items-center">
-                              <img src="../img/aku.png" alt="..." width="35px" style="border-radius: 50%;">
-                            </div>
-                            <p class="card-text" style="margin-bottom: 5px;">Lorem, ipsum dolor sit amet consectetur
-                              adipisicing elit. Iste, eius ab itaque consectetur cumque tempora.
-                              <br><br>
-                              <small class="blockquote-footer">Tutorial CorelDRAW</small>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col p-0">
-                        <div class="card" style="box-shadow: none; margin-bottom: 0;">
-                          <video controls
-                            src="../video/belajar-coreldraw/CorelDRAW Graphics Suite 2021 - Graphic Design Software.mp4">
-                          </video>
-                          <div class="card-body"
-                            style="padding: 10px; display: flex; justify-content: space-between; align-items: flex-start; flex-direction: row; column-gap: 10px;">
-                            <div class="d-flex justify-content-between align-items-center">
-                              <img src="../img/aku.png" alt="..." width="35px" style="border-radius: 50%;">
-                            </div>
-                            <p class="card-text" style="margin-bottom: 5px;">Lorem, ipsum dolor sit amet consectetur
-                              adipisicing elit. Iste, eius ab itaque consectetur cumque tempora.
-                              <br><br>
-                              <small class="blockquote-footer">Tutorial CorelDRAW</small>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-
-                    </div><!-- /row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 -->
-
-                    <!-- halaman -->
+                    <!-- card -->
                     <div class="row">
-                      <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-center">
-                          <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Previous">
-                              <span aria-hidden="true">&laquo;</span>
-                            </a>
-                          </li>
-                          <li class="page-item"><a class="page-link" href="#">1</a></li>
-                          <li class="page-item"><a class="page-link" href="#">2</a></li>
-                          <li class="page-item"><a class="page-link" href="#">3</a></li>
-                          <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                              <span aria-hidden="true">&raquo;</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </nav>
-                    </div><!-- /row -->
+                        <!-- kiri -->
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Kiri</h5>
+                                    <p class="card-text">
+                                        col-lg-6
+                                    </p>
+                                    <a href="#" class="card-link">Link</a>
+                                    <a href="#" class="card-link">Link</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Kiri</h5>
 
-                  </div>
+                                    <p class="card-text">
+                                        col-lg-6
+                                    </p>
+                                    <a href="#" class="card-link">Link</a>
+                                    <a href="#" class="card-link">Link</a>
+                                </div>
+                            </div>
+                            <!-- tab -->
+                            <div class="card">
+                                <div class="card-body">
+                                    <nav>
+                                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+                                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+                                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+                                        </div>
+                                    </nav>
+                                    <div class="tab-content mt-2" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur quisquam magni omnis, architecto ad aliquid earum magnam neque laboriosam itaque eum sapiente vitae adipisci blanditiis voluptatem repellat nisi accusantium cum non praesentium atque.
+                                            Fuga consequuntur dolorum est obcaecati provident recusandae. Hic qui totam nulla ea magni adipisci cum? Fugit, deserunt.</div>
+                                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, fuga? Recusandae consequuntur reiciendis eius soluta ad sapiente amet harum sit libero rem ea, quae esse, facere saepe! Natus, ad repellendus!
+                                        </div>
+                                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, unde nemo quisquam provident qui amet molestias eaque eveniet inventore, veritatis sapiente tempora autem explicabo atque ipsa soluta maxime quidem, minima odio? Consequatur, enim ipsum.
+                                            Laboriosam neque maiores voluptatem reiciendis incidunt eaque odit corporis impedit! Exercitationem veritatis cupiditate quia perspiciatis? Quidem nisi quis optio ipsa obcaecati expedita et nam harum assumenda!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.col-md-6 -->
+
+                        <!-- kanan -->
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="m-0">Kanan</h5>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title">col-lg-6</h6>
+
+                                    <p class="card-text">
+                                        Dengan teks pendukung di bawah ini sebagai petunjuk utama untuk konten tambahan.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Selengkapnya</a>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="m-0">Kanan</h5>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title">col-lg-6</h6>
+
+                                    <p class="card-text">
+                                        Dengan teks pendukung di bawah ini sebagai petunjuk utama untuk konten tambahan.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Selengkapnya</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.col-md-6 -->
+                    </div>
+                    <!-- /.row -->
+
+                    <!-- video tutorial -->
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="m-0">col-lg-12</h5>
+                                </div>
+
+                                <div class="card-body" style="padding: 0 7px 0 7px;"></div>
+                                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+
+
+                                    <div class="col p-0">
+                                        <div class="card" style="box-shadow: none; margin-bottom: 0;">
+                                            <video controls src="../video/belajar-coreldraw/langkah-cd-1.mp4"></video>
+                                            <div class="card-body" style="padding: 10px; display: flex; justify-content: space-between; align-items: flex-start; flex-direction: row; column-gap: 10px;">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <img src="../img/aku.png" alt="..." width="35px" style="border-radius: 50%;">
+                                                </div>
+                                                <span class="name" style="margin-bottom: 5px;">Lorem, ipsum dolor sit amet consectetur
+                          adipisicing elit. Iste, eius ab itaque consectetur cumque tempora 3D.
+                          <br><br>
+                          <small class="blockquote-footer">Tutorial CorelDRAW 3D</small>
+                        </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col p-0">
+                                        <div class="card" style="box-shadow: none; margin-bottom: 0;">
+                                            <video controls src="../video/belajar-coreldraw/langkah-cd-2.mp4"></video>
+                                            <div class="card-body" style="padding: 10px; display: flex; justify-content: space-between; align-items: flex-start; flex-direction: row; column-gap: 10px;">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <img src="../img/aku.png" alt="..." width="35px" style="border-radius: 50%;">
+                                                </div>
+                                                <p class="name" style="margin-bottom: 5px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, eius ab itaque consectetur cumque tempora.
+                                                    <br><br>
+                                                    <small class="blockquote-footer">Tutorial CorelDRAW 5D</small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col p-0">
+                                        <div class="card" style="box-shadow: none; margin-bottom: 0;">
+                                            <video controls src="../video/belajar-coreldraw/CorelDRAW Graphics Suite 2021 - Graphic Design Software.mp4"></video>
+                                            <div class="card-body" style="padding: 10px; display: flex; justify-content: space-between; align-items: flex-start; flex-direction: row; column-gap: 10px;">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <img src="../img/aku.png" alt="..." width="35px" style="border-radius: 50%;">
+                                                </div>
+                                                <p class="name" style="margin-bottom: 5px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, eius ab itaque consectetur cumque tempora.
+                                                    <br><br>
+                                                    <small class="blockquote-footer">Tutorial CorelDRAW</small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col p-0">
+                                        <div class="card" style="box-shadow: none; margin-bottom: 0;">
+                                            <video controls src="../video/belajar-coreldraw/CorelDRAW Graphics Suite 2021 - Graphic Design Software.mp4"></video>
+                                            <div class="card-body" style="padding: 10px; display: flex; justify-content: space-between; align-items: flex-start; flex-direction: row; column-gap: 10px;">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <img src="../img/aku.png" alt="..." width="35px" style="border-radius: 50%;">
+                                                </div>
+                                                <p class="name" style="margin-bottom: 5px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, eius ab itaque consectetur cumque tempora.
+                                                    <br><br>
+                                                    <small class="blockquote-footer">Tutorial CorelDRAW</small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col p-0">
+                                        <div class="card" style="box-shadow: none; margin-bottom: 0;">
+                                            <video controls src="../video/belajar-coreldraw/CorelDRAW Graphics Suite 2021 - Graphic Design Software.mp4"></video>
+                                            <div class="card-body" style="padding: 10px; display: flex; justify-content: space-between; align-items: flex-start; flex-direction: row; column-gap: 10px;">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <img src="../img/aku.png" alt="..." width="35px" style="border-radius: 50%;">
+                                                </div>
+                                                <p class="name" style="margin-bottom: 5px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, eius ab itaque consectetur cumque tempora.
+                                                    <br><br>
+                                                    <small class="blockquote-footer">Tutorial CorelDRAW</small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col p-0">
+                                        <div class="card" style="box-shadow: none; margin-bottom: 0;">
+                                            <video controls src="../video/belajar-coreldraw/CorelDRAW Graphics Suite 2021 - Graphic Design Software.mp4"></video>
+                                            <div class="card-body" style="padding: 10px; display: flex; justify-content: space-between; align-items: flex-start; flex-direction: row; column-gap: 10px;">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <img src="../img/aku.png" alt="..." width="35px" style="border-radius: 50%;">
+                                                </div>
+                                                <p class="name" style="margin-bottom: 5px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, eius ab itaque consectetur cumque tempora.
+                                                    <br><br>
+                                                    <small class="blockquote-footer">Tutorial CorelDRAW</small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col p-0">
+                                        <div class="card" style="box-shadow: none; margin-bottom: 0;">
+                                            <video controls src="../video/belajar-coreldraw/CorelDRAW Graphics Suite 2021 - Graphic Design Software.mp4"></video>
+                                            <div class="card-body" style="padding: 10px; display: flex; justify-content: space-between; align-items: flex-start; flex-direction: row; column-gap: 10px;">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <img src="../img/aku.png" alt="..." width="35px" style="border-radius: 50%;">
+                                                </div>
+                                                <p class="name" style="margin-bottom: 5px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, eius ab itaque consectetur cumque tempora 3D.
+                                                    <br><br>
+                                                    <small class="blockquote-footer">Tutorial CorelDRAW</small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col p-0">
+                                        <div class="card" style="box-shadow: none; margin-bottom: 0;">
+                                            <video controls src="../video/belajar-coreldraw/CorelDRAW Graphics Suite 2021 - Graphic Design Software.mp4"></video>
+                                            <div class="card-body" style="padding: 10px; display: flex; justify-content: space-between; align-items: flex-start; flex-direction: row; column-gap: 10px;">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <img src="../img/aku.png" alt="..." width="35px" style="border-radius: 50%;">
+                                                </div>
+                                                <p class="name" style="margin-bottom: 5px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, eius ab itaque consectetur cumque tempora 5D.
+                                                    <br><br>
+                                                    <small class="blockquote-footer">Tutorial CorelDRAW</small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col p-0">
+                                        <div class="card" style="box-shadow: none; margin-bottom: 0;">
+                                            <video controls src="../video/belajar-coreldraw/CorelDRAW Graphics Suite 2021 - Graphic Design Software.mp4"></video>
+                                            <div class="card-body" style="padding: 10px; display: flex; justify-content: space-between; align-items: flex-start; flex-direction: row; column-gap: 10px;">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <img src="../img/aku.png" alt="..." width="35px" style="border-radius: 50%;">
+                                                </div>
+                                                <p class="name" style="margin-bottom: 5px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, eius ab itaque consectetur cumque tempora.
+                                                    <br><br>
+                                                    <small class="blockquote-footer">Tutorial CorelDRAW</small>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- </div> -->
+                                </div>
+                                <!-- /thumbnail -->
+                                <!-- </div> -->
+                                <!-- /videogaleri -->
+                                <!-- /row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 -->
+
+                                <!-- halaman -->
+                                <div class="row">
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <!-- /row -->
+
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div><!-- /.row -->
+                <!-- /.row -->
 
-          </div><!-- /.container-fluid -->
-        </div><!-- /content -->
-      </div><!-- /.content-wrapper -->
+                <!-- video tutorial -->
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="m-0">col-lg-12 tes dua</h5>
+                            </div>
 
-      <!-- Main Footer -->
-      <footer class="main-footer">
+                            <div class="card-body" style="padding: 0 7px 0 7px;">
+
+                                <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3"> -->
+
+                                <!-- <div class="container-fluid"> -->
+                                <div id="videoGallery__" class="video-gallery">
+
+                                    <!-- cari video -->
+                                    <div class="row">
+                                        <!-- <div> -->
+                                        <input id="search__" class="search" type="text" placeholder="cari video ..." />
+                                        <!-- </div> -->
+                                    </div>
+
+                                    <!-- Thumbnails -->
+                                    <div id="thumbnails__" class="list row small-up-1 medium-up-2 large-up-3">
+
+                                        <div>
+                                            <video controls width="100%" poster="" src="../video/belajar-coreldraw/CorelDRAW Graphics Suite 2021 - Graphic Design Software.mp4"></video>
+                                            <span class="name__"><strong>Buat Drop Shadow Bingkai Foto</strong></span>
+                                        </div>
+
+                                        <div>
+                                            <video controls width="100%" poster="" src="../video/belajar-coreldraw/Learn What's New in CorelDRAW Graphics Suite 2021   Windows.mp4"></video>
+                                            <span class="name__"><strong>Cara Membuat Teks 3D</strong></span>
+                                        </div>
+
+                                        <div>
+                                            <video controls width="100%" poster="" src="video/tutorials-photoshop/Cara Terbaik Membuat Refleksi Air.mp4"></video>
+                                            <span class="name__"><strong>Cara Terbaik Membuat Refleksi Air</strong></span>
+                                        </div>
+
+                                        <div>
+                                            <video controls width="100%" poster="" src="video/tutorials-photoshop/Efek Teks Emas Terbaik.mp4"></video>
+                                            <span class="name__"><strong>Efek Teks Emas Terbaik</strong></span>
+                                        </div>
+
+                                    </div>
+                                    <!-- /thumbnails -->
+                                </div>
+                                <!-- /video-gallery -->
+                            </div>
+                            <!-- /container-fluid -->
+
+
+
+                            <!-- </div> -->
+                            <!-- /row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 -->
+
+                            <!-- halaman -->
+                            <div class="row">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- /row -->
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+
+        </div>
+        <!-- /.container-fluid -->
+    </div>
+    <!-- /content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
         <div class="float-right d-none d-sm-inline">E-Learning</div>
-        Web-Dev by &RightAngleBracket; <a href="#">Ony</a> &RightAngleBracket;
-        &phone; 08155509153 &RightAngleBracket; &copy; 2021.
-      </footer>
+        Web-Dev by &RightAngleBracket; <a href="#">Ony</a> &RightAngleBracket; &phone; 08155509153 &RightAngleBracket; &copy; 2021.
+    </footer>
     </div>
 
-    <script src="../dist/js/jquery.min.js"></script>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="../dist/js/bootstrap.bundle.js"></script>
-    <!-- Font Awesome Icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <!-- AdminLTE App -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- <script src="../dist/js/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.2.0/list.min.js"></script>
     <script src="../dist/js/adminlte.min.js"></script>
-  </body>
+    <script src="../dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="../dist/js/bootstrap.bundle.js"></script> -->
+    <!-- Font Awesome Icons -->
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <!-- AdminLTE App -->
+    <!-- <script src="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js"></script> -->
+
+    <script>
+        $(function() {
+            // Search
+            var options = {
+                valueNames: ["name"],
+            };
+            var videoList = new List("videoGallery", options);
+
+            $("#search").change(function() {
+                $("html, body").animate({
+                        scrollTop: $("#thumbnails").offset().top - 60,
+                    },
+                    1000
+                );
+            });
+
+            // var options = {
+            //     valueNames: ["name__"],
+            // };
+            // var videoList = new List("videoGallery__", options);
+
+            // $("#search__").change(function() {
+            //     $("html, body").animate({
+            //             scrollTop: $("#thumbnails__").offset().top - 60,
+            //         },
+            //         1000
+            //     );
+            // });
+
+            // Filter
+            // $("#filter").change(function () {
+            //   var selection = this.value;
+            //   if (selection) {
+            //     videoList.filter(function (item) {
+            //       return item.values().category == selection;
+            //     });
+            //   } else {
+            //     videoList.filter();
+            //   }
+            // });
+        });
+
+        //Get URL query string
+        // function getQueryVariable(variable) {
+        //   var query = window.location.search.substring(1);
+        //   var vars = query.split("&");
+        //   for (var i = 0; i < vars.length; i++) {
+        //     var pair = vars[i].split("=");
+        //     if (pair[0] == variable) {
+        //       return pair[1];
+        //     }
+        //   }
+        //   return false;
+        // }
+        // Get URL query string variables
+        // var id = getQueryVariable("id");
+        // var title = getQueryVariable("title");
+
+        // if (id) {
+        //   $("[data-video-container]").show();
+        //   $("[data-video]").attr(
+        //     "src",
+        //     "https://github.com/onysu/lesson/blob/main/video/belajar-dasar-photoshop/" +
+        //     id
+        //   );
+        // }
+
+        // if (title) {
+        //   var videoTitle = title.replace(/\+/g, " ");
+        //   $("[data-title]").html(videoTitle);
+        // }
+    </script>
+</body>
 
 </html>

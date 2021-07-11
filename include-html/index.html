@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<script>
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /* Loop melalui koleksi semua elemen HTML: */
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /* mencari elemen dengan atribut tertentu: */
+            file = elmnt.getAttribute("include");
+            if (file) {
+                /* Membuat permintaan HTTP menggunakan nilai atribut sebagai nama file: */
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {
+                            elmnt.innerHTML = this.responseText;
+                        }
+                        if (this.status == 404) {
+                            elmnt.innerHTML = "Page not found.";
+                        }
+                        /* Hapus atribut, dan panggil fungsi ini sekali lagi: */
+                        elmnt.removeAttribute("include");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /* Keluar dari fungsi: */
+                return;
+            }
+        }
+    }
+</script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        main>.container {
+            padding: 60px 15px 0;
+        }
+        
+        .footer {
+            margin-top: auto;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+        
+        .carousel img {
+            height: 100vh;
+            object-fit: cover;
+        }
+        /* scrollbar-custom */
+        /* width */
+        
+         ::-webkit-scrollbar {
+            width: 8px;
+        }
+        /* Track */
+        
+         ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 10px;
+        }
+        /* Handle */
+        
+         ::-webkit-scrollbar-thumb {
+            background: #222;
+            /* border-radius: 10px; */
+        }
+        /* Handle on hover */
+        
+         ::-webkit-scrollbar-thumb:hover {
+            background: #b30000;
+        }
+    </style>
+</head>
+
+<body class="d-flex flex-column h-100">
+
+    <!-- includeHTML -->
+
+    <div include="header.html"></div>
+    <div class="carousel" include="carousel.html"></div>
+    <div include="content.html"></div>
+    <div class="footer" include="footer.html"></div>
+
+    <!-- /includeHTML -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="bootstrap.bundle.min.js"></script>
+    <script>
+        includeHTML();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,451 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.11/css/perfect-scrollbar.css" />
+<link rel="stylesheet" href="https://rawgit.com/kenwheeler/slick/master/slick/slick.css" />
+<link rel="stylesheet" href="https://rawgit.com/kenwheeler/slick/master/slick/slick-theme.css" />
+<style>
+    /* ******************************* */
+    
+    .container {
+        padding: 0 !important;
+        margin: 0 !important;
+        box-sizing: border-box !important;
+        width: 100%;
+    }
+    
+    .playlist-item {
+        border-bottom: 1px solid #ddd;
+        cursor: pointer;
+    }
+    
+    div#video-order.show {
+        margin: 10px 15px;
+        font-size: large;
+        font-weight: 300;
+    }
+    
+    div#video-controls {
+        display: none;
+    }
+    /* ******************************* */
+    
+    .fluid-ratio-wrap {
+        position: relative;
+        height: 0;
+        padding-bottom: 56.25%;
+    }
+    
+    .fluid-ratio-wrap>*:first-child {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .video-wrapper {
+        max-width: 764px;
+        margin: 0 auto;
+    }
+    
+    .video-wrapper #mod-videos-overlay>object,
+    .video-wrapper>#video-player {
+        margin: 0 auto 0px;
+        width: 100%;
+        position: relative;
+        height: 0;
+        padding-bottom: 56.25%;
+        display: block;
+    }
+    
+    .video-wrapper #mod-videos-overlay>object img,
+    .video-wrapper>#video-player img {
+        max-width: 100%;
+    }
+    
+    .video-wrapper #mod-videos-overlay>object .video-splash,
+    .video-wrapper>#video-player .video-splash {
+        width: 100%;
+    }
+    
+    .video-wrapper #mod-videos-overlay>object .video-play,
+    .video-wrapper>#video-player .video-play {
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: 0;
+    }
+    
+    .video-wrapper #mod-videos-overlay>object object,
+    .video-wrapper>#video-player object {
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+    
+    .remove-bullets {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .ps-scroll-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    html,
+    body {
+        background: #eaedf5;
+    }
+    /* body {
+            padding: 20px;
+        } */
+    
+    .slick-arrow:before {
+        color: black;
+    }
+    
+    .slick-prev {
+        left: -18px;
+    }
+    
+    .slick-next {
+        right: -18px;
+    }
+    
+    .container {
+        background: #fff;
+        padding: 15px;
+    }
+    /* .video-playlist-wrap {
+            padding: 20px;
+        } */
+    
+    .video-playlist-wrap .playlist-wrap {
+        position: relative;
+    }
+    
+    .video-playlist-wrap .playlist-item .thumb {
+        width: 100%;
+    }
+    
+    .video-playlist-wrap .playlist-item .thumb .fluid-ratio-wrap .fluid-ratio-inner {
+        background-image: url(http://placehold.it/1600x900);
+    }
+    
+    .video-playlist-wrap:not(.two-col) .playlist-wrap {
+        margin-left: -7.5px;
+        margin-right: -7.5px;
+    }
+    
+    .video-playlist-wrap:not(.two-col) .playlist-wrap .playlist-item {
+        padding-top: 15px;
+        padding-left: 7.5px;
+        padding-right: 7.5px;
+    }
+    
+    .video-playlist-wrap:not(.two-col) .details {
+        padding: 10px 0;
+    }
+    
+    .video-playlist-wrap:not(.two-col) .more {
+        display: none;
+    }
+    
+    .video-playlist-wrap.two-col {
+        display: flex;
+    }
+    
+    .video-playlist-wrap.two-col .player-wrap {
+        width: calc(100% - 350px);
+    }
+    
+    .video-playlist-wrap.two-col .player-wrap+.playlist-wrap {
+        width: 350px;
+    }
+    
+    @media (max-width: 980px) {
+        .video-playlist-wrap.two-col .player-wrap {
+            width: calc(100% - 20%);
+        }
+        .video-playlist-wrap.two-col .player-wrap+.playlist-wrap {
+            width: 20%;
+        }
+        .video-playlist-wrap.two-col .player-wrap+.playlist-wrap .playlist-item {
+            flex-wrap: wrap;
+        }
+        .video-playlist-wrap.two-col .player-wrap+.playlist-wrap .playlist-item .thumb {
+            width: 100%;
+        }
+        .video-playlist-wrap.two-col .player-wrap+.playlist-wrap .playlist-item .details {
+            padding: 10px 3px 0;
+        }
+    }
+    
+    @media (max-width: 720px) {
+        .video-playlist-wrap.two-col .player-wrap {
+            width: calc(100% - 30%);
+        }
+        .video-playlist-wrap.two-col .player-wrap+.playlist-wrap {
+            width: 30%;
+        }
+    }
+    
+    .video-playlist-wrap.two-col .playlist-wrap {
+        width: 350px;
+    }
+    
+    .video-playlist-wrap.two-col .playlist-wrap .scroll-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding-left: 15px;
+    }
+    
+    .video-playlist-wrap.two-col .playlist-item {
+        display: flex;
+    }
+    
+    .video-playlist-wrap.two-col .playlist-item:not(:first-child) {
+        padding-top: 10px;
+        margin-top: 10px;
+        border-top: #ebebeb solid 1px;
+    }
+    
+    .video-playlist-wrap.two-col .playlist-item .thumb {
+        width: 150px;
+    }
+    
+    .video-playlist-wrap.two-col .details {
+        /* padding: 0 10px; */
+        padding: 8px 10px;
+        margin: 0 5px;
+    }
+</style>
+</head>
+
+<h1 class="text-center">Two Column</h1>
+<div class="video-playlist-wrap two-col">
+    <div class="player-wrap">
+        <div class="fluid-ratio-wrap">
+            <div class="fluid-ratio-inner">
+                <video controls id="video-player" width="100%" poster="http://placehold.it/1280x720"></video>
+                <!-- <img class="img-responsive" src="http://placehold.it/1600x900" /> -->
+            </div>
+        </div>
+        <div id="video-order"></div>
+        <div id="video-controls">
+            <a href="#" id="toggle-video">Play</a>
+            <a href="#" id="play-previous-video">Previous</a>
+            <a href="#" id="play-next-video">Next</a>
+            <!-- <ul>
+                        <li><a href="#" id="toggle-video">Play</a></li>
+                        <li><a href="#" id="play-previous-video">Previous</a></li>
+                        <li><a href="#" id="play-next-video">Next</a></li>
+                    </ul> -->
+        </div>
+    </div>
+
+
+
+    <div class="playlist-wrap">
+        <div id="video-playlist">
+            <!-- <ul class="remove-bullets scroll-wrap"> -->
+            <li class="playlist-item">
+                <!-- <div class="details">...</div> -->
+            </li>
+            <!-- <li class="playlist-item more">
+                        <a href="#">See More</a>
+                    </li> -->
+            <!-- </ul> -->
+        </div>
+    </div>
+</div>
+
+<!-- <video src="../files/video/tutorials-photoshop/Cara Membuat Teks 3D.mp4"></video> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.11/js/min/perfect-scrollbar.jquery.min.js">
+</script>
+<script src="https://rawgit.com/kenwheeler/slick/master/slick/slick.js"></script>
+
+<script>
+    $(".video-playlist-wrap.two-col .scroll-wrap").perfectScrollbar();
+
+    $(".video-playlist-wrap")
+        .not(".two-col")
+        .find(".scroll-wrap")
+        .slick({
+            slidesToShow: 6,
+            responsive: [{
+                breakpoint: 980,
+                settings: {
+                    slidesToShow: 4,
+                },
+            }, {
+                breakpoint: 720,
+                settings: {
+                    slidesToShow: 2,
+                },
+            }, ],
+        });
+</script>
+
+
+<!-- <script>
+        $(function() {
+            $("#playlist li").on("click", function() {
+                $("#videoarea").attr({
+                    src: $(this).attr("movieurl"),
+                    poster: "",
+                    autoplay: "autoplay"
+                });
+            });
+            $("#videoarea").attr({
+                src: $("#playlist li").eq(0).attr("movieurl"),
+                poster: $("#playlist li").eq(0).attr("moviesposter")
+            });
+        });
+    </script> -->
+
+<script>
+    var videos = [
+        [1, 'Cara Membuat Teks 3D', 'https://mainline.i3s.unice.fr/mooc/week2p1/video1.mp4'],
+        [2, 'Video 2', 'https://mainline.i3s.unice.fr/mooc/week2p1/video2.mp4'],
+        [3, 'Video 3', 'https://mainline.i3s.unice.fr/mooc/week2p1/video3.mp4'],
+        [4, 'Video 4', 'https://mainline.i3s.unice.fr/mooc/week2p1/video4.mp4']
+    ];
+    var videos_count = videos.length - 1;
+    var video_current = 0;
+    var $video_wrapper = document.getElementById('video-wrapper');
+    var $video_player = document.getElementById('video-player');
+    var $video_playlist = document.getElementById('video-playlist');
+    var $video_order = document.getElementById('video-order');
+    var $toggle_video = document.getElementById('toggle-video');
+    var $play_next_video = document.getElementById('play-next-video');
+    var $play_previous_video = document.getElementById('play-previous-video');
+
+    $video_player.addEventListener('playing', videoPlaying);
+    $video_player.addEventListener('pause', videoPause);
+    $toggle_video.addEventListener("click", function(e) {
+        e.preventDefault();
+        if ($video_player.paused) {
+            $video_player.play();
+        } else {
+            $video_player.pause();
+        }
+    });
+    $play_next_video.addEventListener("click", function(e) {
+        e.preventDefault();
+        nextVideoCurrent();
+        videoLoad();
+        videoPlay();
+    });
+    $play_previous_video.addEventListener("click", function(e) {
+        e.preventDefault();
+        previousVideoCurrent();
+        videoLoad();
+        videoPlay();
+    });
+
+    function videoPlaying() {
+        $toggle_video.innerHTML = 'Pause';
+    }
+
+    function videoPause() {
+        $toggle_video.innerHTML = 'Play';
+    }
+
+    function showCurrentVideoOrder() {
+        $video_order.innerHTML = videos[video_current][0] + ' - ' + videos[video_current][1];
+        $video_order.classList.add("show");
+    }
+
+    function videoLoad() {
+        $video_player.setAttribute("src", videos[video_current][2]);
+        $video_player.load();
+        showCurrentVideoOrder();
+    }
+
+    function videoPlay() {
+        $video_player.play();
+    }
+
+    function nextVideoCurrent() {
+        if (video_current < videos_count) {
+            video_current++;
+        } else {
+            video_current = 0;
+        }
+    }
+
+    function previousVideoCurrent() {
+        if (video_current == 0) {
+            video_current = videos_count;
+        } else {
+            video_current--;
+        }
+    }
+
+    function onVideoEnded() {
+        if (video_current < videos_count) {
+            $video_order.classList.remove("show");
+            nextVideoCurrent();
+            videoLoad();
+            videoPlay();
+        } else {
+            resetVideoplayer();
+        }
+    }
+
+    function resetVideoplayer() {
+        video_current = 0;
+        videoLoad();
+    }
+
+    function videoCreatePlaylist() {
+        for (i = 0; i < videos.length; i++) {
+            var node = document.createElement('div');
+            // var anchor = document.createElement('a');
+            var anchor = document.createElement('li');
+            // anchor.href = '#';
+            var class_attr = document.createAttribute('class');
+            class_attr.value = 'playlist-item details';
+            anchor.setAttributeNode(class_attr);
+            var
+                data_attr = document.createAttribute('data-index');
+            data_attr.value = i;
+            anchor.setAttributeNode(data_attr);
+            var
+                order = videos[i][0];
+            var title = videos[i][1];
+            var textnode = document.createTextNode(order + ' - ' + title);
+            anchor.appendChild(textnode);
+            node.appendChild(anchor);
+            $video_playlist.appendChild(node);
+        }
+    }
+    $video_playlist.addEventListener('click', function(event) {
+        event.preventDefault();
+        if (event.target.classList.contains('playlist-item')) {
+            var data_index = event.target.dataset.index;
+            video_current = data_index;
+            videoLoad();
+            videoPlay();
+        }
+    })
+
+    function initVideoPlayer() {
+        $video_player.addEventListener('ended', onVideoEnded);
+        videoLoad();
+        videoCreatePlaylist();
+    }
+    window.addEventListener("load", initVideoPlayer);
+</script>

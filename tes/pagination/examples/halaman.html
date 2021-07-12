@@ -31,6 +31,14 @@
             background: #eee;
             color: #666;
         }
+        
+        .paging {
+            border: 1px solid #333;
+            width: 150px;
+            height: 150px;
+            margin: 3px;
+            float: left;
+        }
     </style>
 </head>
 
@@ -39,9 +47,11 @@
     <div id="wrapper">
         <section>
             <div class="data-container"></div>
-            <div id="pagination-demo1"></div>
-            <div class="data-container"></div>
-            <div id="pagination-demo2"></div>
+            <div id="pagination-demo1">
+                <!-- <img src="../../../img/aku.png" width="100%"> -->
+            </div>
+            <!-- <div class="data-container"></div> -->
+            <!-- <div id="pagination-demo2"></div> -->
         </section>
     </div>
 
@@ -54,7 +64,7 @@
                 var sources = function() {
                     var result = [];
 
-                    for (var i = 1; i < 196; i++) {
+                    for (var i = 1; i < 31; i++) {
                         result.push(i);
                     }
 
@@ -66,13 +76,19 @@
                     callback: function(response, pagination) {
                         window.console && console.log(response, pagination);
 
-                        var dataHtml = '<ul>';
+                        // var dataHtml = '<ul>';
+
+                        // $.each(response, function(index, item) {
+                        //     dataHtml += '<li>' + item + '</li>';
+                        // });
+
+                        // dataHtml += '</ul>';
+
+                        var dataHtml = '';
 
                         $.each(response, function(index, item) {
-                            dataHtml += '<li>' + item + '</li>';
+                            dataHtml += '<div class="paging">' + '<img src="../../../img/aku-bulat.png" width="100%">' + '</div>';
                         });
-
-                        dataHtml += '</ul>';
 
                         container.prev().html(dataHtml);
                     }
@@ -91,32 +107,32 @@
                 });
             })('demo1');
 
-            (function(name) {
-                var container = $('#pagination-' + name);
-                container.pagination({
-                    dataSource: 'https://api.flickr.com/services/feeds/photos_public.gne?tags=cat&tagmode=any&format=json&jsoncallback=?',
-                    locator: 'items',
-                    totalNumber: 120,
-                    pageSize: 20,
-                    ajax: {
-                        beforeSend: function() {
-                            container.prev().html('Loading data from flickr.com ...');
-                        }
-                    },
-                    callback: function(response, pagination) {
-                        window.console && console.log(22, response, pagination);
-                        var dataHtml = '<ul>';
+            // (function(name) {
+            //     var container = $('#pagination-' + name);
+            //     container.pagination({
+            //         dataSource: 'https://api.flickr.com/services/feeds/photos_public.gne?tags=cat&tagmode=any&format=json&jsoncallback=?',
+            //         locator: 'items',
+            //         totalNumber: 120,
+            //         pageSize: 20,
+            //         ajax: {
+            //             beforeSend: function() {
+            //                 container.prev().html('Loading data from flickr.com ...');
+            //             }
+            //         },
+            //         callback: function(response, pagination) {
+            //             window.console && console.log(22, response, pagination);
+            //             var dataHtml = '<ul>';
 
-                        $.each(response, function(index, item) {
-                            dataHtml += '<li>' + item.title + '</li>';
-                        });
+            //             $.each(response, function(index, item) {
+            //                 dataHtml += '<li>' + item.title + '</li>';
+            //             });
 
-                        dataHtml += '</ul>';
+            //             dataHtml += '</ul>';
 
-                        container.prev().html(dataHtml);
-                    }
-                })
-            })('demo2');
+            //             container.prev().html(dataHtml);
+            //         }
+            //     })
+            // })('demo2');
         })
     </script>
 </body>

@@ -1,138 +1,268 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 
 <head>
-    <title>Paginationjs example</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link href="dist/css/pagination.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-        ul,
-        li {
-            list-style: none;
-        }
-        
-        #wrapper {
-            width: 900px;
-            margin: 20px auto;
-        }
-        
-        .data-container {
-            margin-top: 20px;
-        }
-        
-        .data-container ul {
-            padding: 0;
+    <meta charset="utf-8">
+    <title>Pagination</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
         }
         
-        .data-container li {
+        .container {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .card-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 30px;
+        }
+        
+        .card {
+            position: relative;
+            background: #fff;
+            max-width: 325px;
+            width: 325px;
+            height: auto;
+            margin: 25px;
+            box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .card-image {
+            max-height: 200px;
+        }
+        
+        .card-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .card-info {
+            position: relative;
+            color: #222;
+            padding: 10px 20px 20px;
+        }
+        
+        .card-info h3 {
+            font-size: 1.8em;
+            font-weight: 800;
             margin-bottom: 5px;
-            padding: 5px 10px;
-            background: #eee;
-            color: #666;
         }
         
-        .konten {
-            border: 1px solid #999;
-            width: 150px;
-            height: 150px;
-            margin: 3px;
-            float: left;
+        .card-info p {
+            font-size: 1em;
+            margin-bottom: 5px;
+        }
+        
+        .pagination {
+            text-align: center;
+            margin: 30px 30px 60px;
+            user-select: none;
+        }
+        
+        .pagination li {
+            display: inline-block;
+            margin: 5px;
+            box-shadow: 0 5px 25px rgb(1 1 1 / 10%);
+        }
+        
+        .pagination li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            line-height: 45px;
+        }
+        
+        .previous-page,
+        .next-page {
+            background: #0AB1CE;
+            width: 80px;
+            border-radius: 45px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        
+        .previous-page:hover {
+            transform: translateX(-5px);
+        }
+        
+        .next-page:hover {
+            transform: translateX(5px);
+        }
+        
+        .current-page,
+        .dots {
+            background: #ccc;
+            width: 45px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        
+        .active {
+            background: #0AB1CE;
+        }
+        
+        .disable {
+            background: #ccc;
         }
     </style>
+
 </head>
 
 <body>
 
-    <div id="wrapper">
-        <section>
-            <div class="data-container"></div>
-            <div id="pagination-demo1"></div>
-            <!-- <div class="data-container"></div> -->
-            <!-- <div id="pagination-demo2"></div> -->
-        </section>
+    <div class="container">
+        <div class="card-content" style="display: none">
+            <div class="card">
+                <div class="card-image"><img src="http://placehold.jp/99ccff/003366/150x150.png?text=img%201%0A150%20x%20150" alt=""></div>
+                <div class="card-info">
+                    <h3>Card 01</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image"><img src="http://placehold.jp/99ccff/003366/150x150.png?text=img%201%0A150%20x%20150" alt=""></div>
+                <div class="card-info">
+                    <h3>Card 02</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image"><img src="http://placehold.jp/99ccff/003366/150x150.png?text=img%201%0A150%20x%20150" alt=""></div>
+                <div class="card-info">
+                    <h3>Card 03</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image"><img src="http://placehold.jp/99ccff/003366/150x150.png?text=img%201%0A150%20x%20150" alt=""></div>
+                <div class="card-info">
+                    <h3>Card 04</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image"><img src="http://placehold.jp/99ccff/003366/150x150.png?text=img%201%0A150%20x%20150" alt=""></div>
+                <div class="card-info">
+                    <h3>Card 05</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image"><img src="http://placehold.jp/99ccff/003366/150x150.png?text=img%201%0A150%20x%20150" alt=""></div>
+                <div class="card-info">
+                    <h3>Card 06</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <li class="page-item previous-page disable"><a class="page-link" href="#">Prev</a></li>
+                <li class="page-item current-page active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item dots"><a class="page-link" href="#">...</a></li>
+                <li class="page-item current-page"><a class="page-link" href="#">5</a></li>
+                <li class="page-item current-page"><a class="page-link" href="#">6</a></li>
+                <li class="page-item dots"><a class="page-link" href="#">...</a></li>
+                <li class="page-item current-page"><a class="page-link" href="#">10</a></li>
+                <li class="page-item next-page"><a class="page-link" href="#">Next</a></li>
+            </div>
+        </div>
     </div>
 
-    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
-    <script src="dist/js/pagination.min.js"></script>
-    <script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        function getPageList(totalPages, page, maxLength) {
+            function range(start, end) {
+                return Array.from(Array(end - start + 1), (_, i) => i + start);
+            }
+
+            var sideWidth = maxLength < 9 ? 1 : 2;
+            var leftWidth = (maxLength - sideWidth * 2 - 3) >> 1;
+            var rightWidth = (maxLength - sideWidth * 2 - 3) >> 1;
+
+            if (totalPages <= maxLength) {
+                return range(1, totalPages);
+            }
+
+            if (page <= maxLength - sideWidth - 1 - rightWidth) {
+                return range(1, maxLength - sideWidth - 1).concat(0, range(totalPages - sideWidth + 1, totalPages));
+            }
+
+            if (page >= totalPages - sideWidth - 1 - rightWidth) {
+                return range(1, sideWidth).concat(0, range(totalPages - sideWidth - 1 - rightWidth - leftWidth, totalPages));
+            }
+
+            return range(1, sideWidth).concat(0, range(page - leftWidth, page + rightWidth), 0, range(totalPages - sideWidth + 1, totalPages));
+        }
+
         $(function() {
-            (function(name) {
-                var container = $('#pagination-' + name);
-                var sources = function() {
-                    var result = [];
+            var numberOfItems = $(".card-content .card").length;
+            var limitPerPage = 3; //How many card items visible per a page
+            var totalPages = Math.ceil(numberOfItems / limitPerPage);
+            var paginationSize = 7; //How many page elements visible in the pagination
+            var currentPage;
 
-                    for (var i = 1; i < 196; i++) {
-                        result.push(i);
-                    }
+            function showPage(whichPage) {
+                if (whichPage < 1 || whichPage > totalPages) return false;
 
-                    return result;
-                }();
+                currentPage = whichPage;
 
-                var options = {
-                    dataSource: sources,
-                    callback: function(response, pagination) {
-                        window.console && console.log(response, pagination);
+                $(".card-content .card").hide().slice((currentPage - 1) * limitPerPage, currentPage * limitPerPage).show();
 
-                        var dataHtml = '<ul>';
+                $(".pagination li").slice(1, -1).remove();
 
-                        $.each(response, function(index, item) {
-                            dataHtml += '<li>' + item + '</li>';
-                        });
-
-                        dataHtml += '</ul>';
-
-                        // var dataHtml = '';
-
-                        // $.each(response, function(index, item) {
-                        //     dataHtml += '<div class="konten">' + item + '</div>';
-                        // });
-
-                        container.prev().html(dataHtml);
-                    }
-                };
-
-                //$.pagination(container, options);
-
-                container.addHook('beforeInit', function() {
-                    window.console && console.log('beforeInit...');
+                getPageList(totalPages, currentPage, paginationSize).forEach(item => {
+                    $("<li>").addClass("page-item").addClass(item ? "current-page" : "dots")
+                        .toggleClass("active", item === currentPage).append($("<a>").addClass("page-link")
+                            .attr({
+                                href: "javascript:void(0)"
+                            }).text(item || "...")).insertBefore(".next-page");
                 });
-                container.pagination(options);
 
-                container.addHook('beforePageOnClick', function() {
-                    window.console && console.log('beforePageOnClick...');
-                    //return false
-                });
-            })('demo1');
+                $(".previous-page").toggleClass("disable", currentPage === 1);
+                $(".next-page").toggleClass("disable", currentPage === totalPages);
+                return true;
+            }
 
-            // (function (name) {
-            //   var container = $('#pagination-' + name);
-            //   container.pagination({
-            //     dataSource: 'https://api.flickr.com/services/feeds/photos_public.gne?tags=cat&tagmode=any&format=json&jsoncallback=?',
-            //     locator: 'items',
-            //     totalNumber: 120,
-            //     pageSize: 20,
-            //     ajax: {
-            //       beforeSend: function () {
-            //         container.prev().html('Loading data from flickr.com ...');
-            //       }
-            //     },
-            //     callback: function (response, pagination) {
-            //       window.console && console.log(22, response, pagination);
-            //       var dataHtml = '<ul>';
+            $(".pagination").append(
+                $("<li>").addClass("page-item").addClass("previous-page").append($("<a>").addClass("page-link").attr({
+                    href: "javascript:void(0)"
+                }).text("Prev")),
+                $("<li>").addClass("page-item").addClass("next-page").append($("<a>").addClass("page-link").attr({
+                    href: "javascript:void(0)"
+                }).text("Next"))
+            );
 
-            //       $.each(response, function (index, item) {
-            //         dataHtml += '<li>' + item.title + '</li>';
-            //       });
+            $(".card-content").show();
+            showPage(1);
 
-            //       dataHtml += '</ul>';
+            $(document).on("click", ".pagination li.current-page:not(.active)", function() {
+                return showPage(+$(this).text());
+            });
 
-            //       container.prev().html(dataHtml);
-            //     }
-            //   })
-            // })('demo2');
-        })
+            $(".next-page").on("click", function() {
+                return showPage(currentPage + 1);
+            });
+
+            $(".previous-page").on("click", function() {
+                return showPage(currentPage - 1);
+            });
+        });
     </script>
+
 </body>
 
 </html>

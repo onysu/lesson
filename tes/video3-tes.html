@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.css" /> -->
 </head>
 
 <body>
@@ -101,19 +101,20 @@
     <!-- /container-fluid -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- untuk pencarian nama/kategori -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.2.0/list.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.js"></script> -->
     <script src="../dist/js/bootstrap.bundle.min.js"></script>
     <script>
         $(function() {
-            // Search
+            // Cari
             var options = {
                 valueNames: ["name", "category"],
             };
             var videoList = new List("videoGallery", options);
 
             $("#search").change(function() {
-                // smooth scroll to thumbnails
+                // gulir halus ke thumbnail
                 $("html, body").animate({
                         scrollTop: $("#thumbnails").offset().top - 60,
                     },
@@ -121,48 +122,48 @@
                 );
             });
 
-            // Filter
-            // $("#filter").change(function () {
-            //   var selection = this.value;
-            //   if (selection) {
-            //     videoList.filter(function (item) {
-            //       return item.values().category == selection;
-            //     });
-            //   } else {
-            //     videoList.filter();
-            //   }
-            // });
+            Filter
+            $("#filter").change(function() {
+                var selection = this.value;
+                if (selection) {
+                    videoList.filter(function(item) {
+                        return item.values().category == selection;
+                    });
+                } else {
+                    videoList.filter();
+                }
+            });
         });
 
-        //Get URL query string
-        // function getQueryVariable(variable) {
-        //   var query = window.location.search.substring(1);
-        //   var vars = query.split("&");
-        //   for (var i = 0; i < vars.length; i++) {
-        //     var pair = vars[i].split("=");
-        //     if (pair[0] == variable) {
-        //       return pair[1];
-        //     }
-        //   }
-        //   return false;
-        // }
-        // Get URL query string variables
-        // var id = getQueryVariable("id");
-        // var title = getQueryVariable("title");
+        // Dapatkan string kueri URL
+        function getQueryVariable(variable) {
+            var query = window.location.search.substring(1);
+            var vars = query.split("&");
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split("=");
+                if (pair[0] == variable) {
+                    return pair[1];
+                }
+            }
+            return false;
+        }
+        // Dapatkan variabel string kueri URL
+        var id = getQueryVariable("id");
+        var title = getQueryVariable("title");
 
-        // if (id) {
-        //   $("[data-video-container]").show();
-        //   $("[data-video]").attr(
-        //     "src",
-        //     "https://github.com/onysu/lesson/blob/main/video/belajar-dasar-photoshop/" +
-        //     id
-        //   );
-        // }
+        if (id) {
+            $("[data-video-container]").show();
+            $("[data-video]").attr(
+                "src",
+                "https://github.com/onysu/lesson/blob/main/video/belajar-dasar-photoshop/" +
+                id
+            );
+        }
 
-        // if (title) {
-        //   var videoTitle = title.replace(/\+/g, " ");
-        //   $("[data-title]").html(videoTitle);
-        // }
+        if (title) {
+            var videoTitle = title.replace(/\+/g, " ");
+            $("[data-title]").html(videoTitle);
+        }
     </script>
 </body>
 

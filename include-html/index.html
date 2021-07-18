@@ -35,60 +35,23 @@
 </script>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+
+    <title>E-LEARNING</title>
+    <link rel="stylesheet" href="../dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../dist/bootstrap-icons-1.5.0/bootstrap-icons.css">
+    <link rel="stylesheet" href="../dist/css/adminlte.min.css" />
+    <link rel="shortcut icon" href="../img/aku-bulat_50x50.png" type="image/x-icon" />
     <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+        body {
+            font-family: "Roboto", sans-serif !important;
         }
         
-        main>.container {
-            padding: 60px 15px 0;
-        }
-        
-        .footer {
-            margin-top: auto;
-        }
-        
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-        
-        .carousel img {
-            height: 100vh;
-            object-fit: cover;
-        }
-        /* scrollbar-custom */
-        /* width */
-        
-         ::-webkit-scrollbar {
-            width: 8px;
-        }
-        /* Track */
-        
-         ::-webkit-scrollbar-track {
-            box-shadow: inset 0 0 5px grey;
-            border-radius: 10px;
-        }
-        /* Handle */
-        
-         ::-webkit-scrollbar-thumb {
-            background: #222;
-            /* border-radius: 10px; */
-        }
-        /* Handle on hover */
-        
-         ::-webkit-scrollbar-thumb:hover {
-            background: #b30000;
+        h5.card-title {
+            font-weight: bold;
         }
     </style>
 </head>
@@ -97,15 +60,20 @@
 
     <!-- includeHTML -->
 
-    <div include="header.html"></div>
-    <div class="carousel" include="carousel.html"></div>
+    <div include="nav.html"></div>
+    <div include="aside.html"></div>
     <div include="content.html"></div>
-    <div class="footer" include="footer.html"></div>
+    <div include="footer.html"></div>
 
     <!-- /includeHTML -->
 
+    <script src="../dist/js/jquery.min.js"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="bootstrap.bundle.min.js"></script>
+    <script src="../dist/js/bootstrap.bundle.js"></script>
+    <!-- Font Awesome Icons -->
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <!-- AdminLTE App -->
+    <script src="../dist/js/adminlte.min.js"></script>
     <script>
         includeHTML();
     </script>

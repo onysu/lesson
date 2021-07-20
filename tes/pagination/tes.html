@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div id="navigation">
+        <a href="javascript: onClick=showPage('1')">Page 1</a>
+        <a href="javascript: onClick=showPage('2')">Page 2</a>
+    </div>
+
+    <div id="page1" style="display: none;">
+        <img src="../../img/aku-bulat_400x400.png" alt="">
+    </div>
+    <div id="page2" style="display: none;">
+        <img src="../../img/aku_300x300.png" alt="">
+    </div>
+
+    <script>
+        function showPage(id) {
+            var totalNumberOfPages = 2;
+            for (i = 1; i <= totalNumberOfPages; i++) {
+                if (document.getElementById('page' + i))
+                    document.getElementById('page' + i).style.display = 'none';
+            }
+            if (document.getElementById('page' + id))
+                document.getElementById('page' + id).style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>

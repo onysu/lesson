@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .themed-grid-col {
+            padding-top: .75rem;
+            padding-bottom: .75rem;
+            background-color: rgba(86, 61, 124, .15);
+            border: 1px solid rgba(86, 61, 124, .2);
+        }
+        
+        .themed-container {
+            padding: .75rem;
+            margin-bottom: 1.5rem;
+            /* background-color: rgba(0, 123, 255, .15); */
+            /* border: 1px solid rgba(0, 123, 255, .2); */
+        }
+        
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="gallery">
+        <div class="container-fluid themed-container">
+            <!-- <div class="title">
+                <h1>Gallery</h1>
+            </div> -->
+            <div class="gallery-items">
+                <div class="item">
+                    <img src="images/1.jpg" alt="gallery" />
+                    <div class="caption">
+                        1
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/2.jpg" alt="gallery" />
+                    <div class="caption">
+                        2
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/3.jpg" alt="gallery" />
+                    <div class="caption">
+                        3
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/4.jpg" alt="gallery" />
+                    <div class="caption">
+                        4
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/5.jpg" alt="gallery" />
+                    <div class="caption">
+                        5
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/6.jpg" alt="gallery" />
+                    <div class="caption">
+                        6
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/7.jpg" alt="gallery" />
+                    <div class="caption">
+                        7
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/8.jpg" alt="gallery" />
+                    <div class="caption">
+                        8
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/9.jpg" alt="gallery" />
+                    <div class="caption">
+                        9
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/10.jpg" alt="gallery" />
+                    <div class="caption">
+                        10
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/11.jpg" alt="gallery" />
+                    <div class="caption">
+                        11
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/12.jpg" alt="gallery" />
+                    <div class="caption">
+                        12
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/13.jpg" alt="gallery" />
+                    <div class="caption">
+                        13
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/14.jpg" alt="gallery" />
+                    <div class="caption">
+                        14
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/15.jpg" alt="gallery" />
+                    <div class="caption">
+                        15
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/16.jpg" alt="gallery" />
+                    <div class="caption">
+                        16
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/17.jpg" alt="gallery" />
+                    <div class="caption">
+                        17
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/18.jpg" alt="gallery" />
+                    <div class="caption">
+                        18
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/19.jpg" alt="gallery" />
+                    <div class="caption">
+                        19
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/20.jpg" alt="gallery" />
+                    <div class="caption">
+                        20
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="pagination">
+                <div class="prev">Prev</div>
+                <div class="page">Page <span class="page-num"></span></div>
+                <div class="next">Next</div>
+            </div> -->
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link prev" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item page"><a class="page-link" href="#"><span class="page-num"></span></a></li>
+                    <li class="page-item">
+                        <a class="page-link next" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

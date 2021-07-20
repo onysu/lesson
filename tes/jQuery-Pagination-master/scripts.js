@@ -1,7 +1,7 @@
 'use strict';
 
 var numberOfItems = $('#page .list-group').length; // Dapatkan jumlah total item yang harus diberi halaman
-var limitPerPage = 4; // Batas item per setiap halaman
+var limitPerPage = 6; // Batas item per setiap halaman
 $('#page .list-group:gt(' + (limitPerPage - 1) + ')').hide(); // Sembunyikan semua item melebihi batas halaman (mis., item ke-5, item ke-6, dll.)
 var totalPages = Math.round(numberOfItems / limitPerPage); // Dapatkan jumlah halaman
 $(".pagination").append("<li class='page-item current-page active'><a class='page-link' href='javascript:void(0)'>" + 1 + "</a></li>"); // Tambahkan penanda halaman pertama

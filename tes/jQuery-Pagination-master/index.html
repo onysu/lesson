@@ -8,14 +8,28 @@
     <title>jQuery Pagination Tutorial</title>
     <link rel="stylesheet" href="../../dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         .row {
-            --bs-gutter-x: 1.5rem;
-            --bs-gutter-y: 1rem;
+            --bs-gutter-x: 15px;
+            --bs-gutter-y: 0.5rem;
             display: flex;
             flex-wrap: wrap;
             margin-top: calc(var(--bs-gutter-y) * -1);
             margin-right: calc(var(--bs-gutter-x) * -.5);
             margin-left: calc(var(--bs-gutter-x) * -.5);
+        }
+        
+        .list-group {
+            display: flex;
+            flex-direction: column;
+            padding-left: unset;
+            margin-bottom: unset;
+            border-radius: .25rem;
         }
         
         .list-group-item.active {

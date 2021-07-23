@@ -1,20 +1,20 @@
-//Get the button
+// Dapatkan tombolnya
 var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+// Saat pengguna menggulir ke bawah 20px dari atas dokumen, perlihatkan tombol
 window.onscroll = function() {
     scrollFunction()
 };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    if (document.body.scrollTop > 6000 || document.documentElement.scrollTop > 6000) {
         mybutton.style.display = "block";
     } else {
         mybutton.style.display = "none";
     }
 }
 
-// When the user clicks on the button, scroll to the top of the document
+// Ketika pengguna mengklik tombol, gulir ke atas dokumen
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;

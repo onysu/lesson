@@ -39,9 +39,17 @@
     <div id="wrapper">
         <section>
             <div class="data-container"></div>
-            <div id="pagination-demo1"></div>
-            <div class="data-container"></div>
-            <div id="pagination-demo2"></div>
+            <div id="pagination-demo1">
+                <!-- <ul>
+                    <li><img src="../../../img/aku-bulat_400x400.png" alt=""></li>
+                    <li><img src="../../../img/aku_300x300.png" alt=""></li>
+                    <li><img src="img/bahan/pohon/clean-environment-m.jpg" alt=""></li>
+                    <li><img src="img/bahan/pohon/clean-environment-m.jpg" alt=""></li>
+                </ul> -->
+                
+            </div>
+            <!-- <div class="data-container"></div> -->
+            <!-- <div id="pagination-demo2"></div> -->
         </section>
     </div>
 
@@ -69,7 +77,8 @@
                         var dataHtml = '<ul>';
 
                         $.each(response, function(index, item) {
-                            dataHtml += '<li>' + item + '</li>';
+                            dataHtml += '<li>' + '<img src="../../../img/aku-bulat_400x400.png">' + '</li>';
+                            dataHtml += '<li>' + '<img src="../../../img/aku_300x300.png">' + '</li>';
                         });
 
                         dataHtml += '</ul>';

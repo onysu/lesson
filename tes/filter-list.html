@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Kolom Cari</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <input class="form-control" id="myInput" type="text" placeholder="Ketik dan cari item disini ...">
+    <p>Ketik sesuatu di kolom input untuk mencari daftar item tertentu</p>
+
+    <h2>Daftar List :</h2>
+    <ul class="list-group" id="myList">
+      <li class="list-group-item">Pertama</li>
+      <li class="list-group-item">Kedua</li>
+      <li class="list-group-item">Ketiga</li>
+      <li class="list-group-item">Keempat</li>
+    </ul>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="../dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#myInput").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+        $("#myList li").filter(function () {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+  </script>
+
+</body>
+
+</html>

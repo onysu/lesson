@@ -1,4 +1,4 @@
-[class*="fontawesome-"]:before {
+[class*=fontawesome-]:before {
   font-family: "FontAwesome", sans-serif;
   font-weight: 400;
 }
@@ -15,15 +15,11 @@ h2 {
 a {
   color: inherit;
   text-decoration: none;
-  -webkit-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.5);
-          box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.5);
-  -webkit-transition: all 0.5s;
+  box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.5);
   transition: all 0.5s;
 }
-
 a:hover {
-  -webkit-box-shadow: inset 0px -24px 0px #61b5d9;
-          box-shadow: inset 0px -24px 0px #61b5d9;
+  box-shadow: inset 0px -24px 0px #61b5d9;
 }
 
 .wrapper {
@@ -32,9 +28,8 @@ a:hover {
   max-width: 69rem;
 }
 
-.truncate, .video-title, .next-video-title, .next-video-info {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.truncate, .next-video-info, .next-video-title, .video-title {
+  box-sizing: border-box;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -52,18 +47,15 @@ a:hover {
 
 @-webkit-keyframes slidein {
   0% {
-    -webkit-transform: translate3d(0, -4.5rem, 0);
-            transform: translate3d(0, -4.5rem, 0);
+    transform: translate3d(0, -4.5rem, 0);
   }
 }
 
 @keyframes slidein {
   0% {
-    -webkit-transform: translate3d(0, -4.5rem, 0);
-            transform: translate3d(0, -4.5rem, 0);
+    transform: translate3d(0, -4.5rem, 0);
   }
 }
-
 .site-title {
   font-size: 1.5rem;
   font-weight: 300;
@@ -98,8 +90,7 @@ a:hover {
 
 @-webkit-keyframes slidebottom {
   0% {
-    -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
     opacity: 1;
   }
   100% {
@@ -109,15 +100,13 @@ a:hover {
 
 @keyframes slidebottom {
   0% {
-    -webkit-transform: translate3d(0, 100%, 0);
-            transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
     opacity: 1;
   }
   100% {
     opacity: 1;
   }
 }
-
 .video-column {
   float: left;
   max-width: 854px;
@@ -137,8 +126,7 @@ a:hover {
   width: 100%;
   position: relative;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .video-playlist {
@@ -166,32 +154,24 @@ a:hover {
   float: left;
   margin-left: 3rem;
 }
-
 .video-author a:hover {
-  -webkit-box-shadow: inset 0px -24px 0px #f11753;
-          box-shadow: inset 0px -24px 0px #f11753;
+  box-shadow: inset 0px -24px 0px #f11753;
 }
 
 /* Video controls */
 .video-controls {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background: rgba(14, 32, 82, 0.8);
   line-height: 3rem;
   padding: 0 1.5rem;
   position: absolute;
   bottom: 0;
-  -webkit-transform: translate3d(0, 3rem, 0);
-          transform: translate3d(0, 3rem, 0);
+  transform: translate3d(0, 3rem, 0);
   width: 100%;
   height: 3rem;
   vertical-align: middle;
-  -webkit-transition: -webkit-transform 0.5s;
-  transition: -webkit-transform 0.5s;
   transition: transform 0.5s;
-  transition: transform 0.5s, -webkit-transform 0.5s;
 }
-
 .video-controls button {
   background: 0;
   border: 0;
@@ -203,8 +183,7 @@ a:hover {
 }
 
 .video-player:hover .video-controls {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 /* Seeker bar */
@@ -240,26 +219,26 @@ a:hover {
 * Reset range input
 * https://css-tricks.com/styling-cross-browser-compatible-range-inputs-css/
 */
-input[type="range"] {
+input[type=range] {
   background: transparent;
   cursor: pointer;
   -webkit-appearance: none;
   width: 100%;
 }
 
-input[type="range"]::-webkit-slider-runnable-track {
+input[type=range]::-webkit-slider-runnable-track {
   -webkit-appearance: none;
 }
 
-input[type="range"]::-webkit-slider-thumb {
+input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
 }
 
-input[type="range"]:focus {
+input[type=range]:focus {
   outline: none;
 }
 
-input[type="range"]::-ms-track {
+input[type=range]::-ms-track {
   width: 100%;
   cursor: pointer;
   background: transparent;
@@ -330,18 +309,14 @@ input[type="range"]::-ms-track {
     vertical-align: middle;
   }
 }
-
 input.slider-volume {
   position: absolute;
   bottom: 36px;
   right: -40px;
   width: 6rem;
   opacity: 0;
-  -webkit-transform: rotate(-90deg) scaleX(0);
-          transform: rotate(-90deg) scaleX(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transition: all 1s;
+  transform: rotate(-90deg) scaleX(0);
+  transform-origin: left;
   transition: all 1s;
 }
 
@@ -387,8 +362,7 @@ input.slider-volume {
 .btn-sound:hover + .slider-volume,
 .slider-volume:hover {
   opacity: 1;
-  -webkit-transform: rotate(-90deg) scaleX(1);
-          transform: rotate(-90deg) scaleX(1);
+  transform: rotate(-90deg) scaleX(1);
 }
 
 /* Progress bars */
@@ -476,62 +450,46 @@ progress::-webkit-progress-value {
   position: relative;
   overflow: hidden;
 }
-
 .next-video img {
   display: block;
 }
-
 .next-video::before {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(14, 32, 82, 0.9)), color-stop(60%, transparent));
   background: linear-gradient(0deg, rgba(14, 32, 82, 0.9) 0%, transparent 60%);
   content: "";
   width: 100%;
   height: 100%;
   position: absolute;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-
 .next-video-title {
   position: absolute;
-  -webkit-transform: translateY(-4.5rem);
-          transform: translateY(-4.5rem);
+  transform: translateY(-4.5rem);
   padding: 0.75rem 1.5rem;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-
 .next-video-info {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 14px;
   font-weight: 400;
   padding: 0.75rem 1.5rem;
   position: absolute;
-  -webkit-transform: translateY(-6.75rem);
-          transform: translateY(-6.75rem);
-  -webkit-transition: all 0.5s;
+  transform: translateY(-6.75rem);
   transition: all 0.5s;
   opacity: 0;
   width: 100%;
 }
-
 .next-video:hover .next-video-title {
-  -webkit-transform: translateY(-9.75rem);
-          transform: translateY(-9.75rem);
+  transform: translateY(-9.75rem);
 }
-
 .next-video:hover::before {
   background: rgba(14, 32, 82, 0.8);
 }
-
 .next-video:hover .next-video-info {
   opacity: 1;
 }
 
 .played-video {
-  -webkit-transform: scale(0);
-          transform: scale(0);
+  transform: scale(0);
   height: 0;
   width: 0;
 }
@@ -554,48 +512,38 @@ progress::-webkit-progress-value {
 
 /* Like icon styling */
 .like-this {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   color: #f11753;
 }
-
 .like-this:hover {
   -webkit-animation: beat 1s infinite;
           animation: beat 1s infinite;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 @-webkit-keyframes beat {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    transform: scale(1.5);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 
 @keyframes beat {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
+    transform: scale(1.5);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
-
 .meta-icon {
   padding-left: 0.5em;
 }
@@ -606,14 +554,9 @@ progress::-webkit-progress-value {
   line-height: 1.7rem;
   padding-left: 0.75em;
   position: absolute;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  -webkit-transition: -webkit-transform 0.25s;
-  transition: -webkit-transform 0.25s;
+  transform: scaleX(0);
+  transform-origin: left;
   transition: transform 0.25s;
-  transition: transform 0.25s, -webkit-transform 0.25s;
 }
 
 .wiggle {
@@ -624,40 +567,32 @@ progress::-webkit-progress-value {
 }
 
 .wiggle + .like-prompt {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 @-webkit-keyframes wiggle {
   0% {
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px);
+    transform: translateY(2px);
   }
   50% {
-    -webkit-transform: translateY(-2px);
-            transform: translateY(-2px);
+    transform: translateY(-2px);
   }
   100% {
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px);
+    transform: translateY(2px);
   }
 }
 
 @keyframes wiggle {
   0% {
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px);
+    transform: translateY(2px);
   }
   50% {
-    -webkit-transform: translateY(-2px);
-            transform: translateY(-2px);
+    transform: translateY(-2px);
   }
   100% {
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px);
+    transform: translateY(2px);
   }
 }
-
 .info-area {
   background: #fff;
   color: #080b13;
@@ -675,8 +610,6 @@ progress::-webkit-progress-value {
   content: " ";
   display: table;
 }
-
 .clearfix:after, .wrapper:after, .video-header:after {
   clear: both;
-}
-/*# sourceMappingURL=Video-Playlist-2.css.map */
+}/*# sourceMappingURL=Video-Playlist-2.css.map */

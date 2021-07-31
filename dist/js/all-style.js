@@ -66,3 +66,18 @@ $(document).ready(function () {
 //         clip[i].pause()
 //     });
 // }
+
+
+// Fancybox Config
+$('[data-fancybox="video-gallery"]').fancybox({
+    buttons: [
+        // "slideShow",
+        "thumbs",
+        // "zoom",
+        // "fullScreen",
+        // "share",
+        "close"
+    ],
+    loop: false,
+    protect: true
+});

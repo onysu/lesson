@@ -1,131 +1,171 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Tutorial :: Bahan Gambar</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../../dist/fancybox/jquery.fancybox.min.css"> -->
+    <link rel="shortcut icon" href="../../img/aku-bulat_50x50.png" type="image/x-icon">
+    <style>
+        .konten img {
+            width: 100%;
+            margin-bottom: 10px;
+            border-radius: .3rem;
+        }
+
+        @media (min-width: 240px) and (max-width: 358.98px) {
+            .konten {
+                /* padding: 3px; */
+                column-count: 1;
+                column-gap: 10px;
+            }
+        }
+
+        @media (min-width: 360px) and (max-width: 575.98px) {
+            .konten {
+                /* padding: 10px; */
+                column-count: 2;
+                column-gap: 10px;
+            }
+        }
+
+        @media (min-width: 576px) and (max-width: 767.98px) {
+            .konten {
+                /* padding: 10px; */
+                column-count: 3;
+                column-gap: 10px;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991.98px) {
+            .konten {
+                /* padding: 10px; */
+                column-count: 3;
+                column-gap: 10px;
+            }
+        }
+
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+            .konten {
+                /* padding: 10px; */
+                column-count: 5;
+                column-gap: 10px;
+            }
+        }
+
+        @media (min-width: 1200px) and (max-width: 1399.98px) {
+            .konten {
+                /* padding: 10px; */
+                column-count: 5;
+                column-gap: 10px;
+            }
+        }
+
+        @media (min-width: 1400px) and (max-width: 2000px) {
+            .konten {
+                /* padding: 10px; */
+                column-count: 5;
+                column-gap: 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <div class="container-fluid">
 
-    <!-- <a href="img/bahan/mobil/olav-tvedt-6lSBynPRaAQ-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/mobil/olav-tvedt-6lSBynPRaAQ-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/mobil/tim-meyer-GIm7wxiAZys-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/mobil/tim-meyer-GIm7wxiAZys-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/mobil/toni-zaat-h1I6_kwAtLU-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/mobil/toni-zaat-h1I6_kwAtLU-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/mobil/toni-zaat-T8EuwT8ZEnI-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/mobil/toni-zaat-T8EuwT8ZEnI-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/awan/alex-machado-80sv993lUKI-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/awan/alex-machado-80sv993lUKI-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/awan/artiom-vallat-pMkmatiY9Fg-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/awan/artiom-vallat-pMkmatiY9Fg-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/awan/conrad-de-wet-XuVsZIKMjXA-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/awan/conrad-de-wet-XuVsZIKMjXA-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/awan/e-AnGx1n-gtw8-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/awan/e-AnGx1n-gtw8-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/awan/rodion-kutsaev-PEm_sLmJT-w-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/awan/rodion-kutsaev-PEm_sLmJT-w-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/awan/sam-schooler-E9aetBe2w40-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/awan/sam-schooler-E9aetBe2w40-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/rambut/george-bohunicky-qJKT2rMU0VU-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/rambut/george-bohunicky-qJKT2rMU0VU-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/rambut/gift-habeshaw-gJSHxZFpL1I-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/rambut/gift-habeshaw-gJSHxZFpL1I-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/BAHAN LATIHAN POSTER IKLAN/WaterSplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/BAHAN LATIHAN POSTER IKLAN/WaterSplash.jpg" alt="" /></a> -->
+        <nav aria-label="Page navigation example" style="margin-top: 15px;">
+            <ul class="pagination pagination-lg">
+                <li class="page-item"><a class="page-link" href="javascript: onClick=showPage('1')">1</a></li>
+                <li class="page-item"><a class="page-link" href="javascript: onClick=showPage('2')">2</a></li>
+                <li class="page-item"><a class="page-link" href="javascript: onClick=showPage('3')">3</a></li>
+            </ul>
+        </nav>
 
-    <!-- <a href="img/bahan/rambut/juan-manuel-merino-ZE8Tb4qkiVM-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/rambut/juan-manuel-merino-ZE8Tb4qkiVM-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/rambut/masao-mask-mVWhTY1M6WA-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/rambut/masao-mask-mVWhTY1M6WA-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/rambut/park-street-KYUiTYOaE9M-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/rambut/park-street-KYUiTYOaE9M-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/rambut/pius-martin-uRHO082vO70-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/rambut/pius-martin-uRHO082vO70-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/baju/itay-verchik-d-JQHXTcH_Q-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/baju/itay-verchik-d-JQHXTcH_Q-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/baju/long-truong-n7lL4LQbkbs-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/baju/long-truong-n7lL4LQbkbs-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/baju/mario-klassen-t8yimzM2bEY-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/baju/mario-klassen-t8yimzM2bEY-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/baju/mohamad-khosravi-ikjvPfC3pbI-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/baju/mohamad-khosravi-ikjvPfC3pbI-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/baju/roman-holoschchuk-vZ9jVtV56as-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/baju/roman-holoschchuk-vZ9jVtV56as-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/kota/jonathan-roger-LY1eyQMFeyo-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/kota/jonathan-roger-LY1eyQMFeyo-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/kota/olivia-bliss-HTnycx0h_kk-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/kota/olivia-bliss-HTnycx0h_kk-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/kota/alexandra-barka-mDcY7ym_L_A-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/kota/alexandra-barka-mDcY7ym_L_A-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/BAHAN LATIHAN POSTER IKLAN/WaterDrop.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/BAHAN LATIHAN POSTER IKLAN/WaterDrop.jpg" alt="" /></a> -->
+        <hr class="my-3">
 
-    <!-- <a href="img/bahan/kota/dimitry-anikin-nSZlic4jLeo-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/kota/dimitry-anikin-nSZlic4jLeo-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/anamnesis33-Lu6zroAoJm4-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/anamnesis33-Lu6zroAoJm4-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/andrew-ridley-jR4Zf-riEjI-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/andrew-ridley-jR4Zf-riEjI-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/bady-abbas-2DuRSOHopNk-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/bady-abbas-2DuRSOHopNk-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/cheerful-woman-with-curly-hair.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/cheerful-woman-with-curly-hair.jpg" alt="" /></a>
-    <a href="img/bahan/guilherme-stecanella-_dH-oQF9w-Y-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/guilherme-stecanella-_dH-oQF9w-Y-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/Hair Masking with Color Range - Sample Image - PiXimperfect.jpg" data-fancybox="images"
-        data-caption="">
-        <img src="img/bahan/Hair Masking with Color Range - Sample Image - PiXimperfect.jpg" alt="" /></a>
-    <a href="img/bahan/hiroko-yoshii-CCYRdR5GHc0-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/hiroko-yoshii-CCYRdR5GHc0-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/homemade-margherita-pizza-wooden-chopping-board_23-2147926083.jpg" data-fancybox="images"
-        data-caption="">
-        <img src="img/bahan/homemade-margherita-pizza-wooden-chopping-board_23-2147926083.jpg" alt="" /></a>
-    <a href="img/bahan/ian-dooley-DuBNA1QMpPA-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/ian-dooley-DuBNA1QMpPA-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/jordan-eFiNsmpqmYU-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/jordan-eFiNsmpqmYU-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/j-remus-sZ9F_XkGJfI-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/j-remus-sZ9F_XkGJfI-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/BAHAN LATIHAN POSTER IKLAN/Smoke.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/BAHAN LATIHAN POSTER IKLAN/Smoke.jpg" alt="" /></a> -->
+        <div class="konten">
 
-    <!-- <a href="img/bahan/ksenia-balandina-RCF5KSWb7Ms-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/ksenia-balandina-RCF5KSWb7Ms-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/lemon-pepper-near-sauce-chicken_23-2147765434.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/lemon-pepper-near-sauce-chicken_23-2147765434.jpg" alt="" /></a>
-    <a href="img/bahan/Light Rays - PiXimperfect - Sample Image.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/Light Rays - PiXimperfect - Sample Image.jpg" alt="" /></a>
-    <a href="img/bahan/lucas-carl-PQfuavIwNGM-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/lucas-carl-PQfuavIwNGM-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/luke-stackpoole-eWqOgJ-lfiI-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/luke-stackpoole-eWqOgJ-lfiI-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/pexels-elijah-o'donnell-5868449.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/pexels-elijah-o'donnell-5868449.jpg" alt="" /></a>
-    <a href="img/bahan/ralph-kelly-z9fFOzL5L_Y-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/ralph-kelly-z9fFOzL5L_Y-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/SAMPEL MODEL.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/SAMPEL MODEL.jpg" alt="" /></a>
-    <a href="img/bahan/tasty-pizza-with-cut-slice-chopping-board_23-2147926085.jpg" data-fancybox="images"
-        data-caption="">
-        <img src="img/bahan/tasty-pizza-with-cut-slice-chopping-board_23-2147926085.jpg" alt="" /></a>
-    <a href="img/bahan/todd-kent-178j8tJrNlc-unsplash.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/todd-kent-178j8tJrNlc-unsplash.jpg" alt="" /></a>
-    <a href="img/bahan/FILE LATIHAN BACKGROUND FOTO PRODUK/SONY HEADPHONES.jpg" data-fancybox="images" data-caption="">
-        <img src="img/bahan/FILE LATIHAN BACKGROUND FOTO PRODUK/SONY HEADPHONES.jpg" alt="" /></a>
-    <a href="img/bahan/FILE LATIHAN BACKGROUND FOTO PRODUK/SONY LOGO.png" data-fancybox="images" data-caption="">
-        <img src="img/bahan/FILE LATIHAN BACKGROUND FOTO PRODUK/SONY LOGO.png" alt="" /></a>
-    <a href="img/bahan/BAHAN LATIHAN POSTER IKLAN/BOTOL.png" data-fancybox="images" data-caption="">
-        <img src="img/bahan/BAHAN LATIHAN POSTER IKLAN/BOTOL.png" alt="" /></a>
-    <a href="img/bahan/BAHAN LATIHAN POSTER IKLAN/LOGO.png" data-fancybox="images" data-caption="">
-        <img src="img/bahan/BAHAN LATIHAN POSTER IKLAN/LOGO.png" alt="" /></a> -->
+            <div id="page1" style="display: block;">
+                <img src="../../img/bahan/mobil/olav-tvedt-6lSBynPRaAQ-unsplash.jpg" alt="" /></a>
+                <img src="../../img/bahan/mobil/tim-meyer-GIm7wxiAZys-unsplash.jpg" alt="" /></a>
+                <img src="../../img/bahan/mobil/toni-zaat-h1I6_kwAtLU-unsplash.jpg" alt="" /></a>
+                <img src="../../img/bahan/mobil/toni-zaat-T8EuwT8ZEnI-unsplash.jpg" alt="" /></a>
+                <img src="../../img/bahan/awan/alex-machado-80sv993lUKI-unsplash.jpg" alt="" /></a>
+                <img src="../../img/bahan/awan/artiom-vallat-pMkmatiY9Fg-unsplash.jpg" alt="" /></a>
+                <img src="../../img/bahan/awan/conrad-de-wet-XuVsZIKMjXA-unsplash.jpg" alt="" /></a>
+                <img src="../../img/bahan/awan/e-AnGx1n-gtw8-unsplash.jpg" alt="" /></a>
+                <img src="../../img/bahan/awan/rodion-kutsaev-PEm_sLmJT-w-unsplash.jpg" alt="" /></a>
+                <img src="../../img/bahan/awan/sam-schooler-E9aetBe2w40-unsplash.jpg" alt="" /></a>
+                <img src="../../img/bahan/rambut/george-bohunicky-qJKT2rMU0VU-unsplash.jpg" alt="" /></a>
+                <img src="../../img/bahan/rambut/gift-habeshaw-gJSHxZFpL1I-unsplash.jpg" alt="" /></a>
+                <img src="../../img/bahan/BAHAN LATIHAN POSTER IKLAN/WaterSplash.jpg" alt="" /></a>
+            </div>
+
+            <div id="page2" style="display: none;">
+                <img src="../../img/bahan/kota/dimitry-anikin-nSZlic4jLeo-unsplash.jpg" alt="" /></a>
+                <img src="../../img/bahan/anamnesis33-Lu6zroAoJm4-unsplash.jpg" alt="" /></a>
+                <img src="../../img/bahan/andrew-ridley-jR4Zf-riEjI-unsplash.jpg" alt="" /></a>
+                <img src="../../img/bahan/bady-abbas-2DuRSOHopNk-unsplash.jpg" alt="" /></a>
+                <img src="../../img/bahan/cheerful-woman-with-curly-hair.jpg" alt="" /></a>
+                <img src="../../img/bahan/guilherme-stecanella-_dH-oQF9w-Y-unsplash.jpg" alt="" /></a>
+                <img src="../../img/bahan/Hair Masking with Color Range - Sample Image - PiXimperfect.jpg" alt="" /></a>
+                <img src="../../img/bahan/hiroko-yoshii-CCYRdR5GHc0-unsplash.jpg" alt="" /></a>
+                <img src="../../img/bahan/homemade-margherita-pizza-wooden-chopping-board_23-2147926083.jpg"
+                    alt="" /></a>
+                <img src="../../img/bahan/ian-dooley-DuBNA1QMpPA-unsplash.jpg" alt="" /></a>
+                <img src="../../img/bahan/jordan-eFiNsmpqmYU-unsplash.jpg" alt="" /></a>
+                <img src="../../img/bahan/j-remus-sZ9F_XkGJfI-unsplash.jpg" alt="" /></a>
+                <img src="../../img/bahan/BAHAN LATIHAN POSTER IKLAN/Smoke.jpg" alt="" /></a>
+            </div>
+
+            <div id="page3" style="display: none;">
+                <img src="../../img/bahan/ksenia-balandina-RCF5KSWb7Ms-unsplash.jpg" alt="" /></a>
+                <img src="../../img/bahan/lemon-pepper-near-sauce-chicken_23-2147765434.jpg" alt="" /></a>
+                <img src="../../img/bahan/Light Rays - PiXimperfect - Sample Image.jpg" alt="" /></a>
+                <img src="../../img/bahan/lucas-carl-PQfuavIwNGM-unsplash.jpg" alt="" /></a>
+                <img src="../../img/bahan/luke-stackpoole-eWqOgJ-lfiI-unsplash.jpg" alt="" /></a>
+                <img src="../../img/bahan/pexels-elijah-o'donnell-5868449.jpg" alt="" /></a>
+                <img src="../../img/bahan/ralph-kelly-z9fFOzL5L_Y-unsplash.jpg" alt="" /></a>
+                <img src="../../img/bahan/SAMPEL MODEL.jpg" alt="" /></a>
+                <img src="../../img/bahan/tasty-pizza-with-cut-slice-chopping-board_23-2147926085.jpg" alt="" /></a>
+                <img src="../../img/bahan/todd-kent-178j8tJrNlc-unsplash.jpg" alt="" /></a>
+                <img src="../../img/bahan/FILE LATIHAN BACKGROUND FOTO PRODUK/SONY HEADPHONES.jpg" alt="" /></a>
+                <img src="../../img/bahan/FILE LATIHAN BACKGROUND FOTO PRODUK/SONY LOGO.png" alt="" /></a>
+                <img src="../../img/bahan/BAHAN LATIHAN POSTER IKLAN/BOTOL.png" alt="" /></a>
+                <img src="../../img/bahan/BAHAN LATIHAN POSTER IKLAN/LOGO.png" alt="" /></a>
+            </div>
+        </div>
 
 
+    </div>
 
-
+    <script src="../../dist/js/jquery.min.js"></script>
+    <!-- <script src="../../dist/fancybox/jquery.fancybox.min.js"></script> -->
+    <script src="../../dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script>
+        $('[data-fancybox="images"]').fancybox({
+            buttons: ["thumbs", "close"]
+        });
+    </script> -->
+    <script>
+        function showPage(id) {
+            var totalNumberOfPages = 3;
+            for (i = 1; i <= totalNumberOfPages; i++) {
+                if (document.getElementById('page' + i))
+                    document.getElementById('page' + i).style.display = 'none';
+            }
+            if (document.getElementById('page' + id))
+                document.getElementById('page' + id).style.display = 'block';
+        }
+    </script>
 </body>
 
 </html>

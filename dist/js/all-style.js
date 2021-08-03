@@ -20,55 +20,9 @@ function topFunction() {
 }
 
 
-// script video pengenalan corel
-var starttime = 2;
-$(function() {
-    $("#playlist li").on("click", function() {
-        $("#videoarea-cd").attr({
-            src: $(this).attr("movieurl"),
-            poster: "",
-            autoplay: "autoplay"
-        });
-        starttime = $(this).attr("startt");
-    });
-    $("#videoarea-cd").attr({
-        "src": $("#playlist li").eq(0).attr("movieurl"),
-        "poster": $("#playlist li").eq(0).attr("moviesposter"),
-    })
-});
 
-document.getElementById("videoarea-cd").addEventListener(
-    "loadedmetadata",
-    function() {
-        this.currentTime = starttime;
-    },
-    false
-);
 
-// script video pengenalan pshop
-var starttime = 2;
-$(function() {
-    $("#playlist li").on("click", function() {
-        $("#videoarea").attr({
-            src: $(this).attr("movieurl"),
-            poster: "",
-            autoplay: "autoplay"
-        });
-        starttime = $(this).attr("startt");
-    });
-    $("#videoarea").attr({
-        "src": $("#playlist li").eq(0).attr("movieurl"),
-        "poster": $("#playlist li").eq(0).attr("moviesposter"),
-    })
-});
 
-document.getElementById("videoarea").addEventListener(
-    "loadedmetadata",
-    function() {
-        this.currentTime = starttime;
-    },
-    false
-);
 
 
 // cari dengan nama video

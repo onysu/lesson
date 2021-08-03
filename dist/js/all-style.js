@@ -2,9 +2,10 @@
 // Dapatkan tombolnya
 var mybutton = document.getElementById("myBtn");
 // Saat pengguna menggulir ke bawah 20px dari atas dokumen, perlihatkan tombol
-window.onscroll = function () {
+window.onscroll = function() {
     scrollFunction()
 };
+
 function scrollFunction() {
     if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
         mybutton.style.display = "block";
@@ -21,8 +22,8 @@ function topFunction() {
 
 // script video pengenalan
 var starttime = 2;
-$(function () {
-    $("#playlist li").on("click", function () {
+$(function() {
+    $("#playlist li").on("click", function() {
         $("#videoarea-cd").attr({
             src: $(this).attr("movieurl"),
             poster: "",
@@ -44,12 +45,37 @@ $(function () {
 //   false
 // );
 
+// script video pengenalan
+var starttime = 2;
+$(function() {
+    $("#playlist li").on("click", function() {
+        $("#videoarea").attr({
+            src: $(this).attr("movieurl"),
+            poster: "",
+            autoplay: "autoplay"
+        });
+        // starttime = $(this).attr("startt");
+    });
+    // $("#videoarea").attr({
+    //  "src": $("#playlist li").eq(0).attr("movieurl"),
+    //  "poster": $("#playlist li").eq(0).attr("moviesposter"),
+    // })
+});
+
+// document.getElementById("videoarea").addEventListener(
+//  "loadedmetadata",
+//   function () {
+//     this.currentTime = starttime;
+//   },
+//   false
+// );
+
 
 // cari dengan nama video
-$(document).ready(function () {
-    $("#myInput").on("keyup", function () {
+$(document).ready(function() {
+    $("#myInput").on("keyup", function() {
         var value = $(this).val().toLowerCase();
-        $("#myList article").filter(function () {
+        $("#myList article").filter(function() {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
     });

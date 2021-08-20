@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>WEB-DESAIN</title>
-    <link rel="stylesheet" href="dist/bootstrap-5.0.2-dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="dist/css/adminlte.min.css" />
-    <link rel="stylesheet" href="dist/bootstrap-icons-1.5.0/bootstrap-icons.css">
-    <!-- <link rel="stylesheet" href="dist/fancybox/jquery.fancybox.min.css"> -->
+    <link rel="stylesheet" href="dist/bootstrap502/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="dist/bootstrapIcons/bootstrap-icons.css">
+    <link rel="stylesheet" href="dist/fancybox/jquery.fancybox.min.css">
     <link rel="shortcut icon" href="img/aku-bulat_50x50.png" type="image/x-icon" />
     <link rel="stylesheet" href="dist/css/all-style.css">
+
 </head>
 
 <body class="hold-transition sidebar-mini text-sm sidebar-collapse">
@@ -20,11 +21,11 @@
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button" style="padding: .35rem .5rem;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-layout-text-sidebar-reverse" viewBox="0 0 20 20">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-layout-text-sidebar-reverse" viewBox="0 0 16 16">
                             <path
                                 d="M12.5 3a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5zm0 3a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5zm.5 3.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm-.5 2.5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z" />
                             <path
-                                d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h32a2 2 0 0 0 2-2V2zM4 1v14H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h2zm1 0h9a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5V1z" />
+                                d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2zM4 1v14H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h2zm1 0h9a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5V1z" />
                         </svg>
                         <!-- <i class="fas fa-bars"></i> -->
                     </a>
@@ -115,20 +116,20 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h3 class="m-0 text-dark">
+                            <h1 class="m-0 text-dark">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-mouse2" viewBox="0 0 20 20">
                                     <path
-                                        d="M3 5.188C3 2.341 5.22 0 8 0s5 2.342 5 5.188v5.625C13 13.658 10.78 16 8 16s-5-2.342-5-5.188V5.189zm4.5-4.155C5.541 1.289 4 3.035 4 5.188V5.5h3.5V1.033zm1 0V5.5h32v-.313c0-2.152-1.541-3.898-3.5-4.154zM12 6.5H4v4.313C4 13.145 5.81 15 8 15s4-1.855 4-4.188V6.5z" />
-                                </svg> Miscrosoft Excel
+                                        d="M3 5.188C3 2.341 5.22 0 8 0s5 2.342 5 5.188v5.625C13 13.658 10.78 16 8 16s-5-2.342-5-5.188V5.189zm4.5-4.155C5.541 1.289 4 3.035 4 5.188V5.5h3.5V1.033zm1 0V5.5H12v-.313c0-2.152-1.541-3.898-3.5-4.154zM12 6.5H4v4.313C4 13.145 5.81 15 8 15s4-1.855 4-4.188V6.5z" />
+                                </svg> Microsoft Word
                                 <!-- <i><small>(masih dalam proses pengembangan)</small></i> -->
-                            </h3>
+                            </h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item">
                                     <a href="index.html">Beranda</a>
                                 </li>
-                                <li class="breadcrumb-item active">Miscrosoft Excel</li>
+                                <li class="breadcrumb-item active">Microsoft Word</li>
                             </ol>
                         </div>
                     </div>
@@ -139,211 +140,208 @@
             <div class="content">
                 <div class="container-fluid">
 
+                    <style>
+                        .card {
+                            background-image: url(https://images.unsplash.com/photo-1518655048521-f130df041f66?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
+                            background-size: cover;
+                            background-position: center;
+                        }
+                        
+                        .card-body {
+                            /* text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5); */
+                            box-shadow: inset 0 0 3rem rgba(0, 0, 0, .5);
+                        }
+                    </style>
                     <div class="row">
-                        <div class="clearfix">
-                            <img src="img/excel.png" class="col-md-6 float-md-end mb-3 ms-md-3 p-0" alt="...">
-
-                            <p>
-                                <strong>Microsoft Excel</strong> adalah sebuah Aplikasi Spreadsheet. Apabila di dalam komputer yang Anda gunakan saat ini sudah terdapat <i>Microsoft Word</i> atau <i>Powerpoint</i> maka kemungkinan besar Microsoft Excel
-                                juga sudah terinstall dan dapat digunakan pada komputer Anda. Office Excel merupakan salah satu bagian dari Paket Instalasi Microsoft Office.
-                            </p>
-                            <p>
-                                Microsoft Office Excel berfungsi sebagai aplikasi pengolah angka, salah satu yang terbaik saat ini dan tersedia untuk desktop maupun mobile. Bisa dibilang Office Excel merupakan kalkulator cerdas modern yang selain melakukan kalkulasi atau perhitungan
-                                data juga bisa digunakan untuk automatisasi pekerjaan-pekerjaan kantor.
-                            </p>
-                            <p>
-                                Alternatif lain jika Anda tidak menggunakan Office Excel, anda bisa mencoba menggunakan Spreadsheet dari <i>WPS Office</i> yang sebelumnya juga dikenal sebagai <i>Kingsoft</i>, <i>Calc Spreadsheet</i> yang terdapat di paket
-                                Aplikasi <i>LibreOffice</i> dan <i>OpenOffice</i> atau menggunakan <i>Google Sheets</i> yang hanya tersedia secara Online. Dan tentunya masih banyak alternatif lainnya yang secara umum fungsi-fungsi utamanya mirip atau
-                                sama saja.
-                            </p>
-
-                            <h3>Pengertian Rumus dan Fungsi Pada Microsoft Excel</h3>
-                            <p>
-                                <strong>Rumus Excel</strong> adalah persamaan matematika yang umumnya melibatkan fungsi excel, operator excel, konstanta dan atau referensi sel atau range untuk menghitung nilai-nilai tertentu dengan tujuan untuk mendapatkan
-                                hasil yang diharapkan pada aplikasi microsoft excel.
-
-                                <div class="alert alert-light" role="alert">
-                                    Pengertian formula pada microsoft excel atau rumus excel dan fungsi excel serta komponen penyusun sebuah rumus excel dan sintaks fungsi excel.
+                        <div class="col mt-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Coming soon ...</h5>
+                                    <p class="card-text">
+                                        Masih dalam pengembangan Website.
+                                    </p>
+                                    <a href="index.html" class="btn btn-outline-info">Belajar Online</a>
                                 </div>
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <ul>
-                                            <li>Pengertian Rumus Excel</li>
-                                            <li>Pengertian Fungsi Excel</li>
-                                            <li>Bagian-bagian Rumus Excel</li>
-                                            <li>Sintaks Fungsi Excel</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-
-                                <h3>Pengertian Rumus Excel</h3>
-                                <p>
-                                    <i>Apa yang dimaksud formula pada microsoft excel?</i>
-                                </p>
-                                <p>
-                                    Secara garis besar yang dimaksud formula atau rumus pada microsoft excel adalah persamaan matematika untuk menghitung nilai-nilai tertentu dengan tujuan untuk mendapatkan hasil yang diharapkan pada microsoft excel. Rumus Excel (Excel Formula) ini bisa
-                                    kita gunakan dalam perhitungan yang sederhana hingga yang super kompleks, baik untuk data berupa angka, teks, tanggal, waktu, atau kombinasi dari jenis data-data tersebut. Mengenai jenis data pada excel ini bisa Anda
-                                    pelajari lebih lanjut pada bagian berikut: <a class="btn btn-outline-info btn-sm" href="#" role="button">Tipe Data Pada Microsoft Excel</a>. Yang perlu dicatat bahwa cara menggunakan
-                                    rumus microsoft excel selalu diawali tanda sama dengan <strong>(=)</strong>. Selain itu dalam sebuah rumus excel bisa melibatkan fungsi excel, referensi, konstanta dan umumnya juga melibatkan operator dasar pada microsoft
-                                    excel.
-                                </p>
-
-                                <i>Sebagai contoh misalnya kita akan menjumlahkan angka 10, 20, 30 maka formula excelnya adalah:</i>
-                                <div class="alert alert-light" role="alert">
-                                    Rumus:
-                                    <strong>=10+20+30</strong>
-                                </div>
-
-                                <i>Contoh lain jika kita ingin mencari rata-rata dari 10, 20, 30 maka rumus excelnya adalah:</i>
-                                <div class="alert alert-light" role="alert">
-                                    Rumus:
-                                    <strong>=(10+20+30)/3</strong>
-                                </div>
-
-                                <p>Pada kedua contoh rumus excel di atas, formula excel tersebut menggunakan <strong>konstanta(10,20,30,3)</strong> serta operator <strong>penjumlahan(+)</strong> dan <strong>pembagian(/)</strong>.</p>
-
-                                <i>Contoh rumus excel yang melibatkan fungsi excel adalah sebagai berikut:</i>
-                                <div class="alert alert-light" role="alert">
-                                    Rumus:
-                                    <strong>=SUM(A1:A10)</strong>
-                                </div>
-
-                                <i>Contoh rumus excel yang melibatkan referensi cell adalah sebagai berikut:</i>
-                                <div class="alert alert-light" role="alert">
-                                    Rumus:
-                                    <strong>=A1+A2</strong>
-                                </div>
-
-                                <div class="alert alert-light" role="alert">
-                                    Tidak sedikit saya jumpai dan memang sudah umum bahwa formula atau rumus excel disama artikan dengan function atau fungsi excel. Padahal seharusnya kedua istilah pada Microsoft Excel ini memiliki penjelasan yang berbeda.
-                                </div>
-
-                                <p>
-                                    Setelah mengenalkan tentang rumus atau formula excel berikutnya akan kita jelaskan mengenai maksud Function atau Fungsi Excel.
-                                </p>
-
-                                <h3>Pengertian Function/Fungsi Excel</h3>
-                                <P>
-                                    Adapun yang dimaksud fungsi excel secara garis besar merupakan preset dari formula yang bertujuan untuk menyederhanakan formula hingga membuat proses perhitungan data menjadi lebih singkat dan tentunya relatif lebih mudah untuk dikerjakan. Fungsi Excel
-                                    adalah rumus-rumus yang telah didefinisikan oleh microsoft excel atau dengan kata lain formula siap pakai yang dibuat untuk menyederhanakan perhitungan yang panjang dan rumit.
-                                </P>
-
-                                <i>Sebagai contoh, jika kita akan menjumlahkan
-                                    data berupa angka 10,20,30 maka fungsi yang dapat Anda gunakan adalah <strong>fungsi SUM</strong> : <a class="btn btn-outline-info btn-sm" href="#" role="button">Fungsi SUM</a></i>
-                                <div class="alert alert-light" role="alert">
-                                    Rumus:
-                                    <strong>=SUM(10;20;30)</strong>
-                                </div>
-
-                                <i>Sedangkan untuk mencari Rata-rata <strong>(Fungsi AVERAGE)</strong> data tersebut kita gunakan : <a class="btn btn-outline-info btn-sm" href="#" role="button">Fungsi AVERAGE</a></i>
-                                <div class="alert alert-light" role="alert">
-                                    Rumus:
-                                    <strong>=AVERAGE(10;20;30)</strong>
-                                </div>
-
-                                Jika hanya melibatkan tiga angka sebagaimana contoh diatas tentu belum ada perbedaan yang cukup berarti namun coba bayangkan jika kita sudah berhadapan dengan ratusan atau bahkan ribuan data. Keberadaan fungsi pada microsoft excel akan benar-benar kita
-                                rasakan manfaatnya.
-                            </p>
-
-                            <h3>Bagian-bagian Rumus Excel</h3>
-                            <p>
-                                Cara menggunakan rumus atau formula excel selalu diawali dengan tanda sama dengan <strong>(=)</strong>. Selain itu dalam sebuah rumus atau formula excel dapat terdiri atas satu atau semua dari beberapa hal berikut:
-                                <ul class="list-unstyled">
-                                    <li>
-                                        <ul>
-                                            <li>Fungsi-fungsi Excel</li>
-                                            <li>Operator Perhitungan</li>
-                                            <li>Nilai dari angka-angka atau teks secara langsung (Konstanta)</li>
-                                            <li>Referensi alamat suatu Sel atau Range</li>
-                                            <li>Nama Sel/Range</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <p>Supaya lebih jelas perhatikan gambar bagian-bagian sebuah rumus excel berikut:</p>
-
-                                <img src="https://4.bp.blogspot.com/-6usANgIOL8Y/W6-3g8JEbHI/AAAAAAABALY/QAvEwq757mcS_ts8gm9bMgIKv_c2GOzigCLcBGAs/s1600/Bagian-bagian-Rumus-Excel.png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
-
-                                <p>
-                                    <ul class="list-unstyled">
-                                        <li>
-                                            <ol>
-                                                <li><strong>SAMA DENGAN (=)</strong>: Tanda sama dengan atau <strong>"="</strong> merupakan tanda awal dari penulisan formula atau rumus excel yang harus dituliskan jika kita hendak membuat atau menggunakan
-                                                    formula apapun.</li>
-                                                <li><strong>FUNGSI</strong>: Fungsi merupakan sebuah kode tertentu yang melakukan kalkulasi tertentu di excel berdasarkan susunan argumen yang telah di tetapkan pada microsoft excel. Fungsi bisa digunakan untuk
-                                                    menjalankan perhitungan sederhana atau kompleks. Misalnya fungsi SUM yang merupakan sebuah Fungsi excel yang digunakan untuk menjumlahkan data.</li>
-                                                <li><strong>REFERENSI</strong>: Referensi adalah acuan pada sebuah sel atau range pada lembar kerja, baik pada sheet yang sama maupun sheet yang berbeda. Pada contoh di atas misalnya <strong>B2:B5</strong> merupakan
-                                                    referensi dalam bentuk Range (Kumpulan Cell) sedangkan <strong>C2</strong> Merupakan Referensi dalam bentuk sel tunggal.</li>
-                                                <li><strong>KONSTANTA</strong>: Konstanta merupakan nilai yang bukan hasil dari sebuah kalkulasi perhitungan, karena itu nilainya selalu sama atau tidak berubah. Konstanta dapat berbentuk teks maupun angka yang
-                                                    dimasukkan langsung ke rumus, misalnya angka 3</li>
-                                                <li><strong>OPERATOR</strong>: Operator merupakan simbol karakter yang menentukan tipe perhitungan yang ingin anda jalankan pada sebuah rumus excel. Pada contoh diatas yang termasuk operator adalah tanda * (perkalian)
-                                                    dan / (pembagian).</li>
-                                            </ol>
-                                        </li>
-                                    </ul>
-                                    <i>Untuk lebih jelas tentang operator silahkan baca artikel tentang <a class="btn btn-outline-info btn-sm" href="#" role="button">Operator Perhitungan dalam Rumus Excel </a> data tersebut kita gunakan.</i>
-                                </p>
-
-                                <h3>Sintaksis Fungsi Excel</h3>
-                                <p>
-                                    Penggunaan fungsi microsoft excel pada sebuah rumus excel selalu diikuti dengan tanda kurung <strong>"(...)"</strong> dimana dalam tanda kurung tersebut kita bisa memasukkan argumen-argument atau data tambahan yang
-                                    akan dikalkulasi oleh fungsi tersebut.
-                                </p>
-                                <i>Sintaksis Fungsi Excel</i>
-                                <div class="alert alert-light" role="alert">
-                                    <strong>NAMAFUNGSI (Argument1;Argument2;Argument3;dst...)</strong>
-                                </div>
-                                <p>
-                                    Pada argument Tooltips gambar di bawah ada keterangan argument yang diapit kurung siku <strong>"[...]"</strong>. Tanda kurung siku ini menunjukkan bahwa bagian argument tersebut bersifat opsional atau boleh tidak digunakan.
-                                    Beberapa fungsi excel, meskipun tidak membutuhkan argument tetap harus menyertakan tanda kurung saat digunakan untuk menyusun sebuah rumus excel misalnya fungsi <strong>NOW</strong> dan <strong>TODAY</strong>. Misal
-                                    pada fungsi NOW jika digunakan pada rumus excel maka ditulis <strong>"=NOW()"</strong>. Supaya lebih jelas perhatikan gambar bagian-bagian struktur fungsi excel berikut:
-                                </p>
-
-                                <img src="https://3.bp.blogspot.com/-y7QfTpzZc5Y/W6-348hwPaI/AAAAAAABALg/qvyZplkE390ZknkdUGYbiQhHd6zFgRPhACLcBGAs/s1600/Struktur-Fungsi-Excel.png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
-
-                                <p>
-                                    <ul class="list-unstyled">
-                                        <li>
-                                            <ol>
-                                                <li><strong>STRUKTUR</strong>: Struktur fungsi dimulai dengan tanda sama dengan <strong>(=)</strong>, yang diikuti dengan nama fungsi, tanda kurung buka, argumen untuk fungsi yang dipisahkan oleh titik koma(;)
-                                                    untuk format bahasa Indonesia atau koma <strong>(,)</strong> untuk format English, dan tanda kurung tutup. Struktur Fungsi contoh diatas adalah <strong>"=IF(A2=B2;"Sama";"Tidak Sama")"</strong>. Apabila
-                                                    sebuah fungsi excel digunakan tidak pada bagian awal rumus, Tidak perlu menambahkan tanda <strong>"="</strong> lagi, cukup 1 sama dengan(=) di awal rumus.</li>
-                                                <li><strong>NAMA FUNGSI</strong>: Nama Fungsi pada contoh diatas adalah Fungsi IF. Nama fungsi. Untuk daftar fungsi yang ada, <kbd>Shift</kbd> + <kbd>F3</kbd> klik sel dan tekan.</li>
-                                                <li><strong>ARGUMEN</strong>: Argumen bisa berupa angka, teks, nilai logika seperti TRUE atau FALSE, array, nilai kesalahan seperti <strong>#N/A</strong>, atau referensi sel. Argumen yang Anda tentukan harus
-                                                    menghasilkan nilai yang valid untuk argumen itu. Argumen juga bisa berupa konstanta, rumus, atau fungsi lainnya. Dan untuk catatan bahwa setiap fungsi memiliki argumen yang berbeda-beda.</li>
-                                                <li><strong>ARGUMENT TOOLTIPS</strong>: Tooltips atau tips alat dengan sintaks dan argumen muncul saat Anda mengetikkan fungsi. Tooltips hanya muncul untuk fungsi bawaan excel.</li>
-                                            </ol>
-                                        </li>
-                                    </ul>
-                                </p>
-                                <p>
-                                    Jika sebuah fungsi memiliki argument lebih dari satu maka argumen-argument tersebut dipisahkan dengan tanda pemisah berupa koma(,) atau titik koma(;) sesuai pengaturan regional setting komputer yang Anda digunakan. Tentang bagaimana cara mengatur regional
-                                    setting dan perbedaan apa saja yang dipengaruhinya pada microsoft excel bisa Anda pelajari pada halaman berikut: <a class="btn btn-outline-info btn-sm" href="#" role="button">Pengaturan
-                                    regional setting dan perbedaannya pada microsoft excel.</a>
-                                </p>
-                                <p>
-                                    Dari sedikit penjelasan tentang Fungsi dan Formula (Rumus Excel) diatas seringkali saya temui pengguna excel salah atau kurang tepat dalam menggunakan kedua istilah pada excel tersebut. Banyak pengguna excel menyamakan atau lebih tepatnya memakai istilah
-                                    fungsi sebagai rumus excel.
-                                </p>
-                                <p>
-                                    Contoh beserta penjelasan diatas masih sangat sederhana. Penjelasan lebih lanjut tentang formula dan fungsi ini akan saya bahas pada postingan-postingan lain selanjutnya.
-                                </p>
-                                <p>
-                                    <ul class="list-unstyled">
-                                        <li>Berikut beberapa seri Tutorial Excel Dasar lainnya yang bisa anda pelajari:
-                                            <ol>
-                                                <li>Pengenalan excel 1: Sejarah dan pengertian microsoft excel</li>
-                                                <li></li>
-                                                <li></li>
-                                                <li></li>
-                                            </ol>
-                                        </li>
-                                    </ul>
-                                </p>
-                            </p>
+                            </div>
                         </div>
                     </div>
 
                     <!-- <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Judul</h5>
+
+                                    <p class="card-text">
+                                        Beberapa teks contoh cepat untuk dibangun di atas judul kartu dan membuat
+                                        sebagian besar konten kartu.
+                                    </p>
+
+                                    <a href="#" class="card-link">Link</a>
+                                    <a href="#" class="card-link">Link</a>
+                                </div>
+                            </div>
+
+                            <div class="card card-primary card-outline">
+                                <div class="card-body">
+                                    <h5 class="card-title">Judul</h5>
+
+                                    <p class="card-text">
+                                        Beberapa teks contoh cepat untuk dibangun di atas judul kartu dan membuat
+                                        sebagian besar konten kartu.
+                                    </p>
+                                    <a href="#" class="card-link">Link</a>
+                                    <a href="#" class="card-link">Link</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="m-0">Fitur</h5>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title">Judul</h6>
+
+                                    <p class="card-text">
+                                        Dengan teks pendukung di bawah ini sebagai petunjuk utama untuk konten tambahan.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Selengkapnya</a>
+                                </div>
+                            </div>
+
+                            <div class="card card-primary card-outline">
+                                <div class="card-header">
+                                    <h5 class="m-0">Fitur</h5>
+                                </div>
+                                <div class="card-body">
+                                    <h6 class="card-title">Judul</h6>
+
+                                    <p class="card-text">
+                                        Dengan teks pendukung di bawah ini sebagai petunjuk utama untuk konten tambahan.
+                                    </p>
+                                    <a href="#" class="btn btn-primary">Selengkapnya</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- /.row -->
+
+                </div>
+                <!-- /.container-fluid -->
+            </div>
+            <!-- /content -->
+        </div>
+        <!-- /.content-wrapper -->
+
+        <!-- Main Footer -->
+        <footer class="main-footer">
+            <div class="float-right d-none d-sm-inline">MS. WORD</div>
+            Web-Dev by &RightAngleBracket; <a href="#">Ony</a> &RightAngleBracket; &phone; 08155509153 &RightAngleBracket; &copy; 2021 <i class="bi-github" role="img" aria-label="GitHub"></i>
+        </footer>
+    </div>
+
+    <script src="dist/js/jquery.min.js"></script>
+    <script src="dist/fancybox/jquery.fancybox.min.js"></script>
+    <script src="dist/js/bootstrap.bundle.js"></script>
+    <script src="dist/js/adminlte.min.js"></script>
+    <script src="dist/js/all-style.js"></script>
+</body>
+
+</html>
+<li>
+    <ul>
+        <li>Fungsi-fungsi Excel</li>
+        <li>Operator Perhitungan</li>
+        <li>Nilai dari angka-angka atau teks secara langsung (Konstanta)</li>
+        <li>Referensi alamat suatu Sel atau Range</li>
+        <li>Nama Sel/Range</li>
+    </ul>
+</li>
+</ul>
+<p>Supaya lebih jelas perhatikan gambar bagian-bagian sebuah rumus excel berikut:</p>
+
+<img src="https://4.bp.blogspot.com/-6usANgIOL8Y/W6-3g8JEbHI/AAAAAAABALY/QAvEwq757mcS_ts8gm9bMgIKv_c2GOzigCLcBGAs/s1600/Bagian-bagian-Rumus-Excel.png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+
+<p>
+    <ul class="list-unstyled">
+        <li>
+            <ol>
+                <li><strong>SAMA DENGAN (=)</strong>: Tanda sama dengan atau <strong>"="</strong> merupakan tanda awal dari penulisan formula atau rumus excel yang harus dituliskan jika kita hendak membuat atau menggunakan formula apapun.</li>
+                <li><strong>FUNGSI</strong>: Fungsi merupakan sebuah kode tertentu yang melakukan kalkulasi tertentu di excel berdasarkan susunan argumen yang telah di tetapkan pada microsoft excel. Fungsi bisa digunakan untuk menjalankan perhitungan sederhana
+                    atau kompleks. Misalnya fungsi SUM yang merupakan sebuah Fungsi excel yang digunakan untuk menjumlahkan data.</li>
+                <li><strong>REFERENSI</strong>: Referensi adalah acuan pada sebuah sel atau range pada lembar kerja, baik pada sheet yang sama maupun sheet yang berbeda. Pada contoh di atas misalnya <strong>B2:B5</strong> merupakan referensi dalam bentuk
+                    Range (Kumpulan Cell) sedangkan <strong>C2</strong> Merupakan Referensi dalam bentuk sel tunggal.</li>
+                <li><strong>KONSTANTA</strong>: Konstanta merupakan nilai yang bukan hasil dari sebuah kalkulasi perhitungan, karena itu nilainya selalu sama atau tidak berubah. Konstanta dapat berbentuk teks maupun angka yang dimasukkan langsung ke rumus,
+                    misalnya angka 3</li>
+                <li><strong>OPERATOR</strong>: Operator merupakan simbol karakter yang menentukan tipe perhitungan yang ingin anda jalankan pada sebuah rumus excel. Pada contoh diatas yang termasuk operator adalah tanda * (perkalian) dan / (pembagian).</li>
+            </ol>
+        </li>
+    </ul>
+    <i>Untuk lebih jelas tentang operator silahkan baca artikel tentang <a class="btn btn-outline-info btn-sm" href="#" role="button">Operator Perhitungan dalam Rumus Excel </a> data tersebut kita gunakan.</i>
+</p>
+
+<h3>Sintaksis Fungsi Excel</h3>
+<p>
+    Penggunaan fungsi microsoft excel pada sebuah rumus excel selalu diikuti dengan tanda kurung <strong>"(...)"</strong> dimana dalam tanda kurung tersebut kita bisa memasukkan argumen-argument atau data tambahan yang akan dikalkulasi oleh fungsi tersebut.
+</p>
+<i>Sintaksis Fungsi Excel</i>
+<div class="alert alert-light" role="alert">
+    <strong>NAMAFUNGSI (Argument1;Argument2;Argument3;dst...)</strong>
+</div>
+<p>
+    Pada argument Tooltips gambar di bawah ada keterangan argument yang diapit kurung siku <strong>"[...]"</strong>. Tanda kurung siku ini menunjukkan bahwa bagian argument tersebut bersifat opsional atau boleh tidak digunakan. Beberapa fungsi excel,
+    meskipun tidak membutuhkan argument tetap harus menyertakan tanda kurung saat digunakan untuk menyusun sebuah rumus excel misalnya fungsi <strong>NOW</strong> dan <strong>TODAY</strong>. Misal pada fungsi NOW jika digunakan pada rumus excel maka ditulis
+    <strong>"=NOW()"</strong>. Supaya lebih jelas perhatikan gambar bagian-bagian struktur fungsi excel berikut:
+</p>
+
+<img src="https://3.bp.blogspot.com/-y7QfTpzZc5Y/W6-348hwPaI/AAAAAAABALg/qvyZplkE390ZknkdUGYbiQhHd6zFgRPhACLcBGAs/s1600/Struktur-Fungsi-Excel.png" class="col-md-6 float-md-end mb-3 ms-md-3" alt="...">
+
+<p>
+    <ul class="list-unstyled">
+        <li>
+            <ol>
+                <li><strong>STRUKTUR</strong>: Struktur fungsi dimulai dengan tanda sama dengan <strong>(=)</strong>, yang diikuti dengan nama fungsi, tanda kurung buka, argumen untuk fungsi yang dipisahkan oleh titik koma(;) untuk format bahasa Indonesia
+                    atau koma <strong>(,)</strong> untuk format English, dan tanda kurung tutup. Struktur Fungsi contoh diatas adalah <strong>"=IF(A2=B2;"Sama";"Tidak Sama")"</strong>. Apabila sebuah fungsi excel digunakan tidak pada bagian awal rumus,
+                    Tidak perlu menambahkan tanda <strong>"="</strong> lagi, cukup 1 sama dengan(=) di awal rumus.</li>
+                <li><strong>NAMA FUNGSI</strong>: Nama Fungsi pada contoh diatas adalah Fungsi IF. Nama fungsi. Untuk daftar fungsi yang ada, <kbd>Shift</kbd> + <kbd>F3</kbd> klik sel dan tekan.</li>
+                <li><strong>ARGUMEN</strong>: Argumen bisa berupa angka, teks, nilai logika seperti TRUE atau FALSE, array, nilai kesalahan seperti <strong>#N/A</strong>, atau referensi sel. Argumen yang Anda tentukan harus menghasilkan nilai yang valid untuk
+                    argumen itu. Argumen juga bisa berupa konstanta, rumus, atau fungsi lainnya. Dan untuk catatan bahwa setiap fungsi memiliki argumen yang berbeda-beda.</li>
+                <li><strong>ARGUMENT TOOLTIPS</strong>: Tooltips atau tips alat dengan sintaks dan argumen muncul saat Anda mengetikkan fungsi. Tooltips hanya muncul untuk fungsi bawaan excel.</li>
+            </ol>
+        </li>
+    </ul>
+</p>
+<p>
+    Jika sebuah fungsi memiliki argument lebih dari satu maka argumen-argument tersebut dipisahkan dengan tanda pemisah berupa koma(,) atau titik koma(;) sesuai pengaturan regional setting komputer yang Anda digunakan. Tentang bagaimana cara mengatur regional
+    setting dan perbedaan apa saja yang dipengaruhinya pada microsoft excel bisa Anda pelajari pada halaman berikut: <a class="btn btn-outline-info btn-sm" href="#" role="button">Pengaturan
+                                    regional setting dan perbedaannya pada microsoft excel.</a>
+</p>
+<p>
+    Dari sedikit penjelasan tentang Fungsi dan Formula (Rumus Excel) diatas seringkali saya temui pengguna excel salah atau kurang tepat dalam menggunakan kedua istilah pada excel tersebut. Banyak pengguna excel menyamakan atau lebih tepatnya memakai istilah
+    fungsi sebagai rumus excel.
+</p>
+<p>
+    Contoh beserta penjelasan diatas masih sangat sederhana. Penjelasan lebih lanjut tentang formula dan fungsi ini akan saya bahas pada postingan-postingan lain selanjutnya.
+</p>
+<p>
+    <ul class="list-unstyled">
+        <li>Berikut beberapa seri Tutorial Excel Dasar lainnya yang bisa anda pelajari:
+            <ol>
+                <li>Pengenalan excel 1: Sejarah dan pengertian microsoft excel</li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </li>
+    </ul>
+</p>
+</p>
+</div>
+</div>
+
+<!-- <div class="row">
                         <div class="col-lg-6">
                             <div class="card">
                                 <div class="card-body">
@@ -399,27 +397,27 @@
                             </div>
                         </div>
                     </div> -->
-                    <!-- /.row -->
+<!-- /.row -->
 
-                </div>
-                <!-- /.container-fluid -->
-            </div>
-            <!-- /content -->
-        </div>
-        <!-- /.content-wrapper -->
+</div>
+<!-- /.container-fluid -->
+</div>
+<!-- /content -->
+</div>
+<!-- /.content-wrapper -->
 
-        <!-- Main Footer -->
-        <footer class="main-footer">
-            <div class="float-right d-none d-sm-inline">MS. EXCEL</div>
-            Web-Dev by &RightAngleBracket; <a href="#">Ony</a> &RightAngleBracket; &phone; 08155509153 &RightAngleBracket; &copy; 2021 <i class="bi-github" role="img" aria-label="GitHub"></i>
-        </footer>
-    </div>
+<!-- Main Footer -->
+<footer class="main-footer">
+    <div class="float-right d-none d-sm-inline">MS. EXCEL</div>
+    Web-Dev by &RightAngleBracket; <a href="#">Ony</a> &RightAngleBracket; &phone; 08155509153 &RightAngleBracket; &copy; 2021 <i class="bi-github" role="img" aria-label="GitHub"></i>
+</footer>
+</div>
 
-    <!-- <script src="dist/js/jquery.min.js"></script> -->
-    <!-- <script src="dist/fancybox/jquery.fancybox.min.js"></script> -->
-    <script src="dist/js/bootstrap.bundle.js"></script>
-    <script src="dist/js/adminlte.min.js"></script>
-    <!-- <script src="dist/js/all-style.js"></script> -->
+<!-- <script src="dist/js/jquery.min.js"></script> -->
+<!-- <script src="dist/fancybox/jquery.fancybox.min.js"></script> -->
+<script src="dist/js/bootstrap.bundle.js"></script>
+<script src="dist/js/adminlte.min.js"></script>
+<!-- <script src="dist/js/all-style.js"></script> -->
 </body>
 
 </html>

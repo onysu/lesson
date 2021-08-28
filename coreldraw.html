@@ -1,5 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+<script>
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /*loop melalui koleksi semua elemen HTML:*/
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*mencari elemen dengan atribut tertentu:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+                /*buat permintaan HTTP menggunakan nilai atribut sebagai nama file:*/
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {
+                            elmnt.innerHTML = this.responseText;
+                        }
+                        if (this.status == 404) {
+                            elmnt.innerHTML = "Page not found.";
+                        }
+                        /*hapus atributnya, dan panggil fungsi ini sekali lagi:*/
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /*keluar dari fungsi:*/
+                return;
+            }
+        }
+    };
+</script>
 
 <head>
     <meta charset="utf-8" />
@@ -17,96 +50,8 @@
 
 <body class="hold-transition sidebar-mini sidebar-collapse">
     <div class="wrapper">
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" data-widget="pushmenu" href="#" role="button" style="padding: .35rem .5rem;">
-                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-layout-text-sidebar-reverse" viewBox="0 0 20 20">
-              <path
-                d="M12.5 3a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5zm0 3a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5zm.5 3.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm-.5 2.5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z" />
-              <path
-                d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2zM4 1v14H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h2zm1 0h9a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5V1z" />
-            </svg> -->
-                        <i class="fas fa-bars"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
-        <aside class="main-sidebar sidebar-light-primary elevation-4">
-            <a href="index.html" class="brand-link">
-                <img src="img/aku-bulat-50x50.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: 0.8" />
-                <span class="brand-text font-weight-light">Lesson</span>
-            </a>
-
-            <!-- Sidebar -->
-            <div class="sidebar">
-                <!-- Sidebar Menu -->
-                <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                        <li class="nav-item">
-                            <a href="word.html" class="nav-link">
-                                <i class="fad fa-file-word"></i>
-                                <p>
-                                    &nbsp;&nbsp;Microsoft Word
-                                    <span class="right badge rounded-pill bg-warning text-dark fw-lighter text-lowercase">Office</span>
-                                </p>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="excel.html" class="nav-link">
-                                <i class="fad fa-file-excel"></i>
-                                <p>
-                                    &nbsp;&nbsp;Microsoft Excel
-                                    <span class="right badge rounded-pill bg-warning text-dark fw-lighter text-lowercase">Office</span>
-                                </p>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="photoshop.html" class="nav-link">
-                                <i class="fad fa-paint-brush-alt"></i>
-                                <p>
-                                    &nbsp;&nbsp;Photoshop
-                                    <span class="right badge rounded-pill bg-warning text-dark fw-lighter text-lowercase">Desain</span>
-                                </p>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="coreldraw.html" class="nav-link">
-                                <i class="fad fa-palette"></i>
-                                <p>
-                                    &nbsp;&nbsp;CorelDRAW
-                                    <span class="right badge rounded-pill bg-warning text-dark fw-lighter text-lowercase">Desain</span>
-                                </p>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="webdesain.html" class="nav-link">
-                                <i class="fab fa-html5"></i>
-                                <p>
-                                    &nbsp;&nbsp;Web-Desain
-                                    <span class="right badge rounded-pill bg-warning text-dark fw-lighter text-lowercase">Web-Dev</span>
-                                </p>
-                            </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="pemrograman.html" class="nav-link">
-                                <i class="fad fa-code"></i>
-                                <p>
-                                    &nbsp;&nbsp;Pemrograman
-                                    <span class="right badge rounded-pill bg-warning text-dark fw-lighter text-lowercase">PHP</span>
-                                </p>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </aside>
+        <div w3-include-html="nav.html"></div>
+        <div w3-include-html="aside.html"></div>
 
         <div class="content-wrapper">
             <div class="content-header">
@@ -953,10 +898,7 @@
       </svg>
     </button>
 
-        <footer class="main-footer">
-            <div class="float-right d-none d-sm-inline">CorelDRAW</div>
-            Web-Dev by &RightAngleBracket; <a href="#">Ony</a> &RightAngleBracket; &phone; 08155509153 &RightAngleBracket; &copy; 2021 <i class="bi-github" role="img" aria-label="GitHub"></i>
-
+        <div w3-include-html="footer.html"></div>
     </div>
     <!-- /wrapper -->
 
@@ -990,6 +932,9 @@
             },
             false
         );
+    </script>
+    <script>
+        includeHTML();
     </script>
 
 </body>

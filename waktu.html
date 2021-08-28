@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="today"></p>
+    <p id="tgl"></p>
+    <p id="bulan"></p>
+    <p id="tahun"></p>
+    <p id="jam"></p>
+    <p id="menit"></p>
+    <p id="detik"></p>
+
+    <script>
+        const d = new Date();
+        const days = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+        document.getElementById("today").innerHTML = days[d.getDay()];
+        const months = ["January", "February", "March", "April", "May", "June", "July", "Agustus", "September", "October", "November", "December"];
+        document.getElementById("tgl").innerHTML = d.getDate();
+        document.getElementById("bulan").innerHTML = months[d.getMonth()];
+        document.getElementById("tahun").innerHTML = d.getFullYear();
+        document.getElementById("jam").innerHTML = d.getHours();
+        document.getElementById("menit").innerHTML = d.getMinutes();
+        document.getElementById("detik").innerHTML = d.getSeconds();
+    </script>
+</body>
+
+</html>

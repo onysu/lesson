@@ -1,6 +1,7 @@
 // script tombol kembali keatas
 // Dapatkan tombolnya
 var mybutton = document.getElementById("myBtn");
+
 // Saat pengguna menggulir ke bawah 20px dari atas dokumen, perlihatkan tombol
 window.onscroll = function() {
     scrollFunction()
@@ -13,17 +14,12 @@ function scrollFunction() {
         mybutton.style.display = "none";
     }
 }
+
 // Ketika pengguna mengklik tombol, gulir ke atas dokumen
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-
-
-
-
-
-
 
 // cari dengan nama video
 $(document).ready(function() {
@@ -34,7 +30,6 @@ $(document).ready(function() {
         });
     });
 });
-
 
 // autoplay dengan mouse
 // const clip = document.querySelectorAll('.clip');
@@ -47,16 +42,15 @@ $(document).ready(function() {
 //     });
 // }
 
-
 // Fancybox Config
 $('[data-fancybox="video-gallery"]').fancybox({
     buttons: [
-        // "slideShow",
         "thumbs",
+        "close"
+        // "slideShow",
         // "zoom",
         // "fullScreen",
         // "share",
-        "close"
     ],
     loop: false,
     protect: true

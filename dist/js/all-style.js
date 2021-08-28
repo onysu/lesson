@@ -12,14 +12,14 @@ function scrollFunction() {
         mybutton.style.display = "block";
     } else {
         mybutton.style.display = "none";
-    }
-}
+    };
+};
 
 // Ketika pengguna mengklik tombol, gulir ke atas dokumen
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-}
+};
 
 // cari dengan nama video
 $(document).ready(function() {

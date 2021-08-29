@@ -8,6 +8,12 @@
     <title>Document</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+        span.navbar-text {
+            padding-right: 2px;
+            padding-left: 2px;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,7 +25,7 @@
     </button>
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
@@ -27,31 +33,25 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Pricing</a>
-                    </li>
+                    </li> -->
                 </ul>
-                <span class="navbar-text" id="today"></span>,
-                <span class="navbar-text" id="tgl"></span>-
-                <span class="navbar-text" id="bulan"></span>-
-                <span class="navbar-text" id="tahun"></span> |
                 <span class="navbar-text" id="jam"></span> :
                 <span class="navbar-text" id="menit"></span> :
-                <span class="navbar-text" id="detik"></span>
+                <span class="navbar-text" id="detik"></span> |
+                <span class="navbar-text" id="today"></span>
+                <span class="navbar-text" id="tgl"></span>
+                <span class="navbar-text" id="bulan"></span>
+                <span class="navbar-text" id="tahun"></span>
+
             </div>
         </div>
     </nav>
-    <!-- <p id="today"></p>
-    <p id="tgl"></p>
-    <p id="bulan"></p>
-    <p id="tahun"></p>
-    <p id="jam"></p>
-    <p id="menit"></p>
-    <p id="detik"></p> -->
 
     <script>
         const d = new Date();
         const days = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
         document.getElementById("today").innerHTML = days[d.getDay()];
-        const months = ["January", "February", "March", "April", "May", "June", "July", "Agustus", "September", "October", "November", "December"];
+        const months = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
         document.getElementById("tgl").innerHTML = d.getDate();
         document.getElementById("bulan").innerHTML = months[d.getMonth()];
         document.getElementById("tahun").innerHTML = d.getFullYear();

@@ -973,7 +973,8 @@
                                 <div class="card-body">
                                     <p class="card-text">Bagian ini membahas mengenai rumus-rumus excel yang berkaitan dengan perhitungan aritmetika atau sering disalah sebutkan sebagai aritmatika seperti penjumlahan, pengurangan, perkalian, pembagian dan lain sebagianya:
                                         <ol>
-                                            <li><strong>Rumus Penjumlahan.</strong>
+                                            <li>
+                                                <p class="text-uppercase fw-bold">Rumus Penjumlahan :</p>
                                                 <ol>
                                                     <li><strong>Rumus Penjumlahan Pertama :</strong>
                                                         <p class="card-text">Cara yang paling dasar untuk melakukan penjumlahan adalah dengan menggunakan <strong>Operator Plus (+)</strong> atau simbol tambah. Misalkan kita ingin menjumlah angka 130,170,110,90,180 dan 190,
@@ -992,7 +993,7 @@
                                                         </p>
                                                     </li>
                                                     <li><strong>Rumus Penjumlahan Kedua :</strong>
-                                                        <p class="card-text">
+                                                        <p>
                                                             Menggunakan <strong>Fungsi SUM</strong> yang telah disediakan oleh office excel. Cara ini lebih simple dan efisien jika cell-cell yang akan dijumlahkan berurutan dan cukup banyak. Sebagai contoh
                                                             untuk menjumlahkan data angka pada range D2 sampai D7 rumus excel yang digunakan adalah:
                                                             <div class="warning">
@@ -1002,8 +1003,26 @@
                                                             <br>
                                                             <img src="https://2.bp.blogspot.com/-ZwwXiIP0OdE/W8-gbJTzZwI/AAAAAAABAcM/IkGUBOCAbfgzeOPSIOhg5AfxJ_fQ7FX9QCLcBGAs/s1600/Rumus-Excel-Penjumlahan.png" width="35%" alt="">
                                                         </p>
-                                                        <p class="card-text">
-                                                            <p class="info">Beberapa contoh <strong>Fungsi SUM</strong> di excel berikut ini :</p>
+                                                        <p>
+
+                                                            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+  </symbol>
+  <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+  </symbol>
+  <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </symbol>
+</svg>
+
+                                                            <div class="alert alert-light d-flex align-items-center" role="alert">
+                                                                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+                                                                <div>
+                                                                    Beberapa contoh penggunaan <strong>Fungsi SUM</strong> berikut ini :
+                                                                </div>
+                                                            </div>
                                                             <ol>
                                                                 <li>
                                                                     <p>
@@ -1056,15 +1075,17 @@
                                                                     <p>Fungsi MIN digunakan untuk mencari nilai terendah dari sebuah sekumpulan nilai. Fungsi SUM menjumlahkan nilai minimal (terendah) pada range A2:A6 dengan minimal (terendah) pada range
                                                                         B2:B6. hasilnya adalah 25:50 = 75</p>
                                                                 </li>
+
+                                                                <p class="info fw-bold mb-3">Catatan Dalam Menggunakan Fungsi SUM</p>
+                                                                <p>Saat menggunakan fungsi SUM pada sebuah rumus excel, ada beberapa hal yang perlu Anda perhatikan. Jika argumen pada fungsi SUM adalah array atau referensi sel/range, hanya nilai angka di
+                                                                    dalam array atau referensi itu yang dihitung. Sel kosong, nilai logika, atau teks dalam array atau referensi diabaikan. Perhatikan contoh rumus fungsi SUM berikut:</p>
+                                                                <img src="https://4.bp.blogspot.com/-_p3u-VaJZ1A/WObQj7e2qII/AAAAAAAAp8g/rxGPqhKW8z0-nZaV69zNctP2qgdU7xxDACLcB/s1600/Contoh%2BFungsi%2BRumus%2BSUM%2BExcel%2B4.png" width="35%" class="mb-3" alt="">
+                                                                <p>Jika argumen adalah nilai kesalahan, atau sebuah teks yang tidak dapat diterjemahkan menjadi angka, Microsoft Excel akan menampilkan pesan error.</p>
+                                                                <img width="35%" class="mb-3" src="https://2.bp.blogspot.com/-IJz0rovVwns/WObQqEb1xHI/AAAAAAAAp8k/xHFiDMAXV3YJDlIG2x9KxAy4oLj8OsuTACLcB/s1600/Contoh%2BFungsi%2BRumus%2BSUM%2BExcel%2B5.png" alt="">
+                                                                <p><i>Bagaimana jika menghendaki menjumlahkan data dengan kriteria atau syarat tertentu?</i></p>
+                                                                <p class="info">Untuk melakukan penjumlahan atau menambahkan nilai angka dengan syarat atau kriteria tertentu maka gunakanlah Fungsi <strong>SUMIF</strong> atau <strong>SUMIFS</strong>.</p>
                                                             </ol>
-                                                            <p class="info fw-bold mb-3">Catatan Dalam Menggunakan Fungsi SUM</p>
-                                                            <p>Saat menggunakan fungsi SUM pada sebuah rumus excel, ada beberapa hal yang perlu Anda perhatikan. Jika argumen pada fungsi SUM adalah array atau referensi sel/range, hanya nilai angka di dalam
-                                                                array atau referensi itu yang dihitung. Sel kosong, nilai logika, atau teks dalam array atau referensi diabaikan. Perhatikan contoh rumus fungsi SUM berikut:</p>
-                                                            <img src="https://4.bp.blogspot.com/-_p3u-VaJZ1A/WObQj7e2qII/AAAAAAAAp8g/rxGPqhKW8z0-nZaV69zNctP2qgdU7xxDACLcB/s1600/Contoh%2BFungsi%2BRumus%2BSUM%2BExcel%2B4.png" width="35%" class="mb-3" alt="">
-                                                            <p>Jika argumen adalah nilai kesalahan, atau sebuah teks yang tidak dapat diterjemahkan menjadi angka, Microsoft Excel akan menampilkan pesan error.</p>
-                                                            <img width="35%" class="mb-3" src="https://2.bp.blogspot.com/-IJz0rovVwns/WObQqEb1xHI/AAAAAAAAp8k/xHFiDMAXV3YJDlIG2x9KxAy4oLj8OsuTACLcB/s1600/Contoh%2BFungsi%2BRumus%2BSUM%2BExcel%2B5.png" alt="">
-                                                            <p><i>Bagaimana jika menghendaki menjumlahkan data dengan kriteria atau syarat tertentu?</i></p>
-                                                            <p class="info">Untuk melakukan penjumlahan atau menambahkan nilai angka dengan syarat atau kriteria tertentu maka gunakanlah Fungsi <strong>SUMIF</strong> atau <strong>SUMIFS</strong>.</p>
+
                                                         </p>
                                                     </li>
                                                     <li><strong>Rumus Penjumlahan Ketiga :</strong>

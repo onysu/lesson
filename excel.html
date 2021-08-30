@@ -148,18 +148,27 @@
 
                                         <style>
                                             .info {
+                                                color: #666;
                                                 background-color: #e7f3fe;
                                                 border-left: 6px solid #2196F3;
                                                 padding: 10px 12px;
                                                 margin-bottom: 15px;
                                             }
                                             
-                                            .info p {
+                                            .info,
+                                            .warning p {
                                                 margin-bottom: 0;
                                             }
+                                            
+                                            .warning {
+                                                background-color: #ffffcc;
+                                                border-left: 6px solid #ffeb3b;
+                                                padding: 10px 12px;
+                                                margin-bottom: 15px;
+                                            }
                                         </style>
-                                        <div class="info">
-                                            <p><strong>Info!</strong> Tutorial Excel ini menggunakan istilah <strong>Fungsi Excel</strong> dan <strong>Rumus Excel</strong> secara berbeda. <strong>Fungsi Excel</strong> merujuk pada Fungsi Preset yang disediakan
+                                        <div class="info mb-3">
+                                            <p><strong></strong> Tutorial Excel ini menggunakan istilah <strong>Fungsi Excel</strong> dan <strong>Rumus Excel</strong> secara berbeda. <strong>Fungsi Excel</strong> merujuk pada Fungsi Preset yang disediakan
                                                 oleh Microsoft Excel, sedangkan istilah <strong>Rumus Excel</strong> lebih kepada cara menggunakan gabungan dari Fungsi-fungsi Excel tersebut dimana cara menggunakan Rumus Excel pada sebuah Cell Excel selalu
                                                 diawali dengan tanda <i>sama dengan</i> <strong>(=)</strong>. Dengan kata lain satu atau beberapa fungsi excel dapat digunakan dalam sebuah rumus excel, namun sebuah rumus excel tidak harus memuat fungsi
                                                 excel.
@@ -176,11 +185,38 @@
                                                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                                     <div class="accordion-body">
                                                         <ul>
-                                                            <li><a href="#">Fungsi IF</a></li>
-                                                            <li><a href="#">Fungsi IFERROR</a></li>
-                                                            <li><a href="#">Fungsi AND</a></li>
-                                                            <li><a href="#">Fungsi OR</a></li>
-                                                            <li><a href="#">Fungsi NOT</a></li>
+                                                            <li><a href="#">Fungsi IF</a>
+                                                                <p>Fungsi IF Excel adalah fungsi yang digunakan untuk menghasilkan Nilai berdasarkan Uji Logika (Benar/Salah) tertentu.</p>
+                                                                <div class="warning">
+                                                                    <p><strong>IF(TesLogika; KondisiTerpenuhi; [KondisiTidakTerpenuhi])</strong></p>
+                                                                </div>
+                                                            </li>
+                                                            <li><a href="#">Fungsi IFERROR</a>
+                                                                <p>Fungsi IFERROR Excel fungsi yang digunakan untuk menghasilkan sebuah Nilai tertentu jika Nilai Rumus Excel yang diuji menghasilkan Nilai Error/Kesalahan. Sebaliknya jika Nilai yang diuji
+                                                                    tidak menghasilkan Error maka IFERROR akan mengembalikan Nilai yang diuji.</p>
+                                                                <div class="warning">
+                                                                    <p><strong>IFERROR(value; value_if_error)</strong></p>
+                                                                </div>
+                                                            </li>
+                                                            <li><a href="#">Fungsi AND</a>
+                                                                <p>Fungsi AND Excel adalah fungsi yang digunakan untuk melakukan Uji Logika yang menghasilkan Nilai TRUE jika semua argumen yang diuji bernilai TRUE.</p>
+                                                                <div class="warning">
+                                                                    <p><strong>AND(Logika1; [Logika2]; ...)</strong></p>
+                                                                </div>
+                                                            </li>
+                                                            <li><a href="#">Fungsi OR</a>
+                                                                <p>Fungsi OR Excel fungsi yang digunakan untuk melakukan Uji Logika yang menghasilkan Nilai TRUE jika salah satu argumen yang diuji bernilai TRUE.</p>
+                                                                <div class="warning">
+                                                                    <p><strong>OR(Logika1; [Logika2]; ...)</strong></p>
+                                                                </div>
+                                                            </li>
+                                                            <li><a href="#">Fungsi NOT</a>
+                                                                <p>Fungsi NOT Excel fungsi yang digunakan untuk membalikkan Nilai Logika TRUE menjadi FALSE dan membalikkan Nilai Logika FALSE menjadi TRUE.</p>
+                                                                <div class="warning">
+                                                                    <p><strong>NOT(logical)</strong></p>
+                                                                </div>
+                                                            </li>
+
                                                         </ul>
                                                     </div>
                                                 </div>

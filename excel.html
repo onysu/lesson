@@ -1373,14 +1373,14 @@
                                             </div>
                                         </div> -->
 
-                                        <!-- Rumus Excel IF -->
+                                        <!-- Rumus Excel IF Tunggal -->
                                         <div class="accordion-item">
                                             <h2 class="accordion-header" id="rumusLogika1">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rumusLogika-1" aria-expanded="false" aria-controls="rumusLogika-1">Rumus Excel IF</button>
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rumusLogika-1" aria-expanded="false" aria-controls="rumusLogika-1">Rumus IF Tunggal</button>
                                             </h2>
                                             <div id="rumusLogika-1" class="accordion-collapse collapse" aria-labelledby="rumusLogika1" data-bs-parent="#rumusLogika">
                                                 <div class="accordion-body">
-                                                    <p>Cara menggunakan fungsi excel IF atau rumus IF excel pada sebuah rumus atau formula excel adalah dengan mengikuti kaidah penulisan rumus berikut:</p>
+                                                    <!-- <p>Cara menggunakan fungsi excel IF atau rumus IF excel pada sebuah rumus atau formula excel adalah dengan mengikuti kaidah penulisan rumus berikut:</p>
 
                                                     <div class="warning">
                                                         <p><strong>IF(TesLogika; KondisiTerpenuhi; [KondisiTidakTerpenuhi])</strong></p>
@@ -1396,8 +1396,105 @@
 
                                                     <div class="warning">
                                                         <p><strong>=IF(1=0; "Benar"; "Salah")</strong></p>
+                                                    </div> -->
+
+                                                    <div class="row g-0 position-relative">
+                                                        <div class="col-md-6">
+                                                            <img src="https://1.bp.blogspot.com/-zo2aaGvcVQ4/XRo5LPRXzeI/AAAAAAABFhw/PDzdYf_WIconH1fV4XmweJ-0P0UfaScywCLcBGAs/s1600/Contoh-Rumus-IF-Excel.png" class="w-100" alt="...">
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p>Pada contoh Rumus IF ini kita akan menguji apakah <strong>Jumlah Nilai</strong> lebih dari 140 atau tidak. Jika lebih dari 140 maka dinyatakan LULUS dan sebaliknya jika kurang dari atau sama
+                                                                dengan 140 maka dinyatakan GAGAL (Tidak Lulus). Pada contoh di atas, Rumus yang digunakan pada Sel <strong>F2</strong> adalah:</p>
+                                                            <div class="warning">
+                                                                <p><strong>=IF(E2>140;"LULUS";"GAGAL")</strong></p>
+                                                            </div>
+                                                        </div>
                                                     </div>
 
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Rumus IF Ganda -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="rumusLogika1">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rumusLogika-1Ganda" aria-expanded="false" aria-controls="rumusLogika-1Ganda">Rumus IF Ganda</button>
+                                            </h2>
+                                            <div id="rumusLogika-1Ganda" class="accordion-collapse collapse" aria-labelledby="rumusLogika1" data-bs-parent="#rumusLogika">
+                                                <div class="accordion-body">
+                                                    <p>Rumus IF bisa juga dimasukkan ke dalam Fungsi IF yang lain. Kasus ini sering juga disebut Rumus <strong>IF Ganda</strong>, Rumus <strong>IF Bertingkat</strong>, Rumus <strong>IF Bersarang</strong> Atau
+                                                        Rumus <strong>IF Bercabang</strong>. Atau dalam istilah lain disebut <strong>Nested IF Function</strong>.</p>
+                                                    <ol>
+                                                        <li>
+                                                            <h5>Rumus IF Ganda Pada Kondisi Terpenuhi</h5>
+
+                                                            <div class="row g-0 position-relative">
+                                                                <div class="col-md-6">
+                                                                    <p>Rumus Umum fungsi IF ganda pada kondisi terpenuhi adalah sebagai berikut:</p>
+                                                                    <div class="warning">
+                                                                        <p><strong>IF(TesLogika1; IF(TesLogika2; KondisiTerpenuhi2; [KondisiTidakTerpenuhi2]); [KondisiTidakTerpenuhi1])</strong></p>
+                                                                    </div>
+                                                                    <p>Silahkan perhatikan contoh Rumus IF ganda di bawah ini:</p>
+                                                                    <p>
+                                                                        <img src="https://4.bp.blogspot.com/-1b6arHo3d6U/XRo-LM3Tf0I/AAAAAAABFh8/wfpbNgpvnrYmsk2e--jj7NG2ESmFFj7-ACLcBGAs/s1600/Contoh-Rumus-IF-Ganda-Excel-1.png" class="w-100" alt="">
+                                                                    </p>
+
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <p>Pada contoh tersebut rumus if ganda yang digunakan pada sel F2 adalah:</p>
+                                                                    <div class="warning">
+                                                                        <p><strong>=IF(C2>60;IF(D2>60;"LULUS";"GAGAL");"GAGAL")</strong></p>
+                                                                    </div>
+                                                                    <p>Rumus IF diatas melakukan uji logika ganda pada dua sel sekaligus secara bertahap:</p>
+                                                                    <p>
+                                                                        <ol>
+                                                                            <li>Jika C2 lebih dari 60 maka lakukan uji logika lanjutan dengan rumus IF ke-2. Jika C2 tidak lebih dari 60 maka "GAGAL".</li>
+                                                                            <li>Pada rumus IF ke-2 jika D2 lebih dari 60 maka "LULUS", jika tidak maka "GAGAL".</li>
+                                                                        </ol>
+                                                                    </p>
+                                                                    <p>Hasil akhir dari rumus if diatas adalah LULUS, sebab nilai cell C2 dan D2 sama-sama lebih dari 60. Selanjutnya silahkan perhatikan contoh nomor 4. Pada contoh nomor 4 rumus if excel yg
+                                                                        dipakai pada sel F5 adalah:</p>
+                                                                    <div class="warning">
+                                                                        <p><strong>=IF(C5>60;IF(D5>60;"LULUS";"GAGAL");"GAGAL")</strong></p>
+                                                                    </div>
+                                                                    <p>Rumus excel diatas menghasilkan nilai GAGAL sebab pada rumus if kedua, nilai dari D4 (60) tidak lebih dari 60.</p>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </li>
+                                                        <li>
+                                                            <h5>Rumus IF Ganda Pada Kondisi Tidak Terpenuhi</h5>
+                                                            <div class="row g-0 position-relative">
+                                                                <div class="col-md-6">
+                                                                    <p>Rumus Umum fungsi IF ganda pada kondisi tidak terpenuhi adalah sebagai berikut:</p>
+                                                                    <div class="warning">
+                                                                        <p><strong>=IF(TesLogika1; KondisiTerpenuhi1; IF(TesLogika2; KondisiTerpenuhi2; [KondisiTidakTerpenuhi2]))</strong></p>
+                                                                    </div>
+                                                                    <p>Contoh rumus IF yang menggunakan sintaksis ini adalah sebagai berikut:</p>
+                                                                    <p><img src="https://3.bp.blogspot.com/-cuVye4gZgEk/XRpAD9Gh03I/AAAAAAABFiI/KQsMTtUGODsDmmDPOnMveu-QbhEwcwV1gCLcBGAs/s1600/Contoh-Rumus-IF-Ganda-Excel-2.png" class="w-100" alt=""></p>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <p>Pada sel F2 contoh rumus excel if ganda ini, rumusnya:</p>
+                                                                    <div class="warning">
+                                                                        <p><strong>=IF(C2<=60;"GAGAL";IF(D2<=60;"GAGAL";"LULUS"))</strong></p>
+                                                                    </div>
+                                                                    <p>Rumus IF diatas melakukan uji logika ganda pada dua sel sekaligus secara bertahap:</p>
+                                                                    <p>
+                                                                        <ol>
+                                                                            <li>Jika C2 kurang dari atau sama dengan 60 maka hasilnya "GAGAL", sebaliknya jika nilai C2 Lebih dari 60 maka lakukan uji logika lanjutan dengan rumus IF ke-2. </li>
+                                                                            <li>Pada rumus IF ke-2 jika nilai cell D2 kurang dari atau sama dengan 60 maka "GAGAL", jika tidak maka "LULUS".</li>
+                                                                        </ol>
+                                                                    </p>
+                                                                    <p>Hasil akhir dari rumus if diatas adalah LULUS, sebab nilai cell C2 maupun D2 TIDAK kurang dari atau sama dengan 60.</p>
+                                                                </div>
+
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <h5>Rumus IF Ganda Pada Kondisi Terpenuhi dan Tidak Terpenuhi</h5>
+                                                        </li>
+                                                    </ol>
                                                 </div>
                                             </div>
                                         </div>
@@ -1408,8 +1505,8 @@
                                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rumusLogika-2" aria-expanded="false" aria-controls="rumusLogika-2">Rumus IF bertingkat</button>
                                             </h2>
                                             <div id="rumusLogika-2" class="accordion-collapse collapse" aria-labelledby="rumusLogika2" data-bs-parent="#rumusLogika">
-                                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual
-                                                    content.
+                                                <div class="accordion-body">
+                                                    <!--  -->
                                                 </div>
                                             </div>
                                         </div>

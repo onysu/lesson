@@ -1463,6 +1463,7 @@
 
 
                                                         </li>
+
                                                         <li>
                                                             <h5>Rumus IF Ganda Pada Kondisi Tidak Terpenuhi</h5>
                                                             <div class="row g-0 position-relative">
@@ -1491,8 +1492,36 @@
 
                                                             </div>
                                                         </li>
+
                                                         <li>
                                                             <h5>Rumus IF Ganda Pada Kondisi Terpenuhi dan Tidak Terpenuhi</h5>
+                                                            <div class="row g-0 position-relative">
+                                                                <div class="col-md-6">
+                                                                    <p>Rumus Umum fungsi IF ganda pada kondisi tidak terpenuhi adalah sebagai berikut:</p>
+                                                                    <div class="warning">
+                                                                        <p><strong>=IF(TesLogika1; IF(TesLogika2; KondisiTerpenuhi2; [KondisiTidakTerpenuhi2]); IF(TesLogika3; KondisiTerpenuhi3; [KondisiTidakTerpenuhi3]))</strong></p>
+                                                                    </div>
+                                                                    <p>Contoh rumus IF yang menggunakan sintaksis ini adalah sebagai berikut:</p>
+                                                                    <p>
+                                                                        <img src="https://2.bp.blogspot.com/-efKXFjNAaWw/XRpEAOJAdBI/AAAAAAABFiU/E-mI3agL4vkZm01iR1Vp6mkV8MtJhoXogCLcBGAs/s1600/Contoh-Rumus-IF-Bertingkat.png" class="w-100" alt="">
+                                                                    </p>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <p>Pada sel F2 contoh rumus excel if ganda ini, rumusnya:</p>
+                                                                    <div class="warning">
+                                                                        <p><strong>=IF(C2="L"; IF(F2>150;"LULUS";"GAGAL"); IF(F2>130;"LULUS";"GAGAL"))</strong></p>
+                                                                    </div>
+                                                                    <p>
+                                                                        Rumus IF diatas melakukan uji logika ganda dimana pada masing-masing Argumen NilaiTerpenuhi dan NilaiTidakTerpenuhi pada IF pertama diisi dengan rumus IF lainnya.
+                                                                        <ol>
+                                                                            <li>Pada contoh ini fungsi IF pertama melakukan uji perbandingan dengan menilai apakah Nilai C2 adalah teks "L". </li>
+                                                                            <li>Jika benar (TRUE) maka dilanjutkan dengan uji logika dengan IF ke-2 (IF(F2>150;"LULUS";"GAGAL"))
+                                                                            </li>
+                                                                            <li>Jika salah (FALSE) atau bukan "L", maka dilakukan uji logika dengan IF ke-3 (IF(F2>130;"LULUS";"GAGAL")).</li>
+                                                                        </ol>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
                                                         </li>
                                                     </ol>
                                                 </div>

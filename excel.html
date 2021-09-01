@@ -70,6 +70,11 @@
         hr.solid {
             border-top: 1px solid #bbb;
         }
+        
+        .accordion-button:not(.collapsed) {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
     </style>
 </head>
 
@@ -1492,12 +1497,13 @@
                                                                     </p>
                                                                 </div>
                                                                 <div class="col-md-6">
-                                                                    <p>Pada sel F2 contoh rumus excel if ganda ini, rumusnya:</p>
+                                                                    <p>Pada sel <strong>F2</strong> contoh Rumus IF Ganda ini, Rumusnya:</p>
                                                                     <div class="warning">
                                                                         <p><strong>=IF(C2="L"; IF(F2>150;"LULUS";"GAGAL"); IF(F2>130;"LULUS";"GAGAL"))</strong></p>
                                                                     </div>
                                                                     <p>
-                                                                        Rumus IF diatas melakukan uji logika ganda dimana pada masing-masing Argumen NilaiTerpenuhi dan NilaiTidakTerpenuhi pada IF pertama diisi dengan rumus IF lainnya.
+                                                                        Rumus IF diatas melakukan uji logika ganda dimana pada masing-masing Argumen <strong>Nilai Terpenuhi</strong> dan <strong>Nilai Tidak Terpenuhi</strong> pada IF pertama diisi dengan
+                                                                        Rumus IF lainnya.
                                                                         <ol>
                                                                             <li>Pada contoh ini fungsi IF pertama melakukan uji perbandingan dengan menilai apakah Nilai C2 adalah teks "L". </li>
                                                                             <li>Jika benar (TRUE) maka dilanjutkan dengan uji logika dengan IF ke-2 (IF(F2>150;"LULUS";"GAGAL"))

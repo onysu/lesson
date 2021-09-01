@@ -165,772 +165,778 @@
                                 </div>
                                 <div class="card-body">
                                     <p class="card-text">Rumus Excel adalah persamaan matematika yang umumnya melibatkan fungsi excel, operator excel, konstanta dan atau referensi sel atau range untuk menghitung nilai-nilai tertentu dengan tujuan untuk mendapatkan hasil yang
-                                        diharapkan pada aplikasi microsoft excel.
-                                        <p class="info">
-                                            Apabila anda menggunakan <i>Regional setting English</i> maka menggunakan <strong>koma (,)</strong> dan <i>Regional setting Indonesia</i> maka menggunakan <strong>titik koma (;)</strong> yang ada pada setiap
-                                            Rumus Excel.
-                                        </p>
+                                        diharapkan pada aplikasi microsoft excel.</p>
+                                    <p class="info mb-3">
+                                        Apabila anda menggunakan <i>Regional setting English</i> maka menggunakan <strong>koma (,)</strong> dan <i>Regional setting Indonesia</i> maka menggunakan <strong>titik koma (;)</strong> yang ada pada setiap Rumus
+                                        Excel.
+                                    </p>
 
-                                        <div class="info mb-3">
+                                    <!-- <div class="info mb-3">
                                             <p><strong></strong> Tutorial Excel ini menggunakan istilah <strong>Fungsi Excel</strong> dan <strong>Rumus Excel</strong> secara berbeda. <strong>Fungsi Excel</strong> merujuk pada Fungsi Preset yang disediakan
                                                 oleh Microsoft Excel, sedangkan istilah <strong>Rumus Excel</strong> lebih kepada cara menggunakan gabungan dari Fungsi-fungsi Excel tersebut dimana cara menggunakan Rumus Excel pada sebuah Cell Excel selalu
                                                 diawali dengan tanda <i>sama dengan</i> <strong>(=)</strong>. Dengan kata lain satu atau beberapa fungsi excel dapat digunakan dalam sebuah rumus excel, namun sebuah rumus excel tidak harus memuat fungsi
                                                 excel.
                                             </p>
+                                        </div> -->
+
+                                    <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                                        <!-- 1. Fungsi Logika (Logical Functions) -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingOne">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"> Fungsi Logika (Logical Functions)</button>
+                                            </h2>
+                                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ol>
+                                                        <div class="row g-0 position-relative">
+                                                            <div class="col-md-6">
+                                                                <li><a href="#">Fungsi IF</a>
+                                                                    <p>Fungsi IF digunakan untuk menghasilkan Nilai berdasarkan Uji Logika (Benar/Salah) tertentu.</p>
+                                                                    <div class="warning">
+                                                                        <p><strong>IF(TesLogika; KondisiTerpenuhi; [KondisiTidakTerpenuhi])</strong></p>
+                                                                    </div>
+                                                                </li>
+                                                                <li><a href="#">Fungsi IFERROR</a>
+                                                                    <p>Fungsi IFERROR digunakan untuk menghasilkan sebuah Nilai tertentu jika Nilai Rumus Excel yang diuji menghasilkan Nilai Error/Kesalahan. Sebaliknya jika Nilai yang diuji tidak menghasilkan
+                                                                        Error maka IFERROR akan mengembalikan Nilai yang diuji.</p>
+                                                                    <div class="warning">
+                                                                        <p><strong>IFERROR(value; value_if_error)</strong></p>
+                                                                    </div>
+                                                                </li>
+                                                                <li><a href="#">Fungsi AND</a>
+                                                                    <p>Fungsi AND digunakan untuk melakukan Uji Logika yang menghasilkan Nilai TRUE jika semua argumen yang diuji bernilai TRUE.</p>
+                                                                    <div class="warning">
+                                                                        <p><strong>AND(Logika1; [Logika2]; ...)</strong></p>
+                                                                    </div>
+                                                                </li>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <li><a href="#">Fungsi OR</a>
+                                                                    <p>Fungsi OR digunakan untuk melakukan Uji Logika yang menghasilkan Nilai TRUE jika salah satu argumen yang diuji bernilai TRUE.</p>
+                                                                    <div class="warning">
+                                                                        <p><strong>OR(Logika1; [Logika2]; ...)</strong></p>
+                                                                    </div>
+                                                                </li>
+                                                                <li><a href="#">Fungsi NOT</a>
+                                                                    <p>Fungsi NOT digunakan untuk membalikkan Nilai Logika TRUE menjadi FALSE dan membalikkan Nilai Logika FALSE menjadi TRUE.</p>
+                                                                    <div class="warning">
+                                                                        <p><strong>NOT(logical)</strong></p>
+                                                                    </div>
+                                                                </li>
+                                                            </div>
+                                                        </div>
+                                                    </ol>
+                                                </div>
+                                            </div>
                                         </div>
 
-                                        <div class="accordion accordion-flush" id="accordionFlushExample">
-
-                                            <!-- 1. Fungsi Logika (Logical Functions) -->
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="flush-headingOne">
-                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"> Fungsi Logika (Logical Functions)</button>
-                                                </h2>
-                                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">
-                                                        <ol>
-                                                            <li><a href="#">Fungsi IF</a>
-                                                                <p>Fungsi IF digunakan untuk menghasilkan Nilai berdasarkan Uji Logika (Benar/Salah) tertentu.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>IF(TesLogika; KondisiTerpenuhi; [KondisiTidakTerpenuhi])</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi IFERROR</a>
-                                                                <p>Fungsi IFERROR digunakan untuk menghasilkan sebuah Nilai tertentu jika Nilai Rumus Excel yang diuji menghasilkan Nilai Error/Kesalahan. Sebaliknya jika Nilai yang diuji tidak menghasilkan
-                                                                    Error maka IFERROR akan mengembalikan Nilai yang diuji.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>IFERROR(value; value_if_error)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi AND</a>
-                                                                <p>Fungsi AND digunakan untuk melakukan Uji Logika yang menghasilkan Nilai TRUE jika semua argumen yang diuji bernilai TRUE.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>AND(Logika1; [Logika2]; ...)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi OR</a>
-                                                                <p>Fungsi OR digunakan untuk melakukan Uji Logika yang menghasilkan Nilai TRUE jika salah satu argumen yang diuji bernilai TRUE.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>OR(Logika1; [Logika2]; ...)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi NOT</a>
-                                                                <p>Fungsi NOT digunakan untuk membalikkan Nilai Logika TRUE menjadi FALSE dan membalikkan Nilai Logika FALSE menjadi TRUE.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>NOT(logical)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                        </ol>
-                                                    </div>
+                                        <!-- 2. Fungsi Teks (Text Functions) -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingTwo">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Fungsi Teks (Text Functions)</button>
+                                            </h2>
+                                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ol>
+                                                        <li><a href="#">Fungsi LOWER</a>
+                                                            <p>Fungsi LOWER digunakan untuk mengubah SEMUA HURUF pada sebuah teks menjadi huruf KECIL semua.</p>
+                                                            <div class="warning">
+                                                                <p><strong>LOWER(Teks)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi UPPER</a>
+                                                            <p>Fungsi UPPER digunakan untuk mengubah kapitalisasi SEMUA HURUF pada sebuah teks menjadi huruf BESAR semua.</p>
+                                                            <div class="warning">
+                                                                <p><strong>UPPER(Teks)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi PROPER</a>
+                                                            <p>Fungsi PROPER digunakan untuk mengubah HURUF AWAL setiap kata pada teks menjadi huruf besar.</p>
+                                                            <div class="warning">
+                                                                <p><strong>PROPER(Teks)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi LEFT</a>
+                                                            <p>Fungsi LEFT digunakan untuk mengambil beberapa karakter teks dari arah KIRI atau awal sebuah teks.</p>
+                                                            <div class="warning">
+                                                                <p><strong>LEFT(Teks; [JumlahKarakter])</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi RIGHT</a>
+                                                            <p>Fungsi RIGHT digunakan untuk mengambil beberapa karakter teks dari arah KANAN atau akhir sebuah teks.</p>
+                                                            <div class="warning">
+                                                                <p><strong>RIGHT(Teks; [JumlahKarakter])</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi MID</a>
+                                                            <p>Fungsi MID digunakan untuk mengambil beberapa karakter teks dari posisi tertentu (AWAL/TENGAH) sebanyak beberapa karakter tertentu.</p>
+                                                            <div class="warning">
+                                                                <p><strong>MID(Teks; AwalKarakter; JumlahKarakter)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi FIND</a>
+                                                            <p>Fungsi FIND digunakan untuk mencari teks pada teks lain (Case Sensitive) dan menghasilkan sebuah angka yang menunjukkan posisi teks yang dicari.</p>
+                                                            <div class="warning">
+                                                                <p><strong>FIND(find_text; within_text; [start_num])</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi SEARCH</a>
+                                                            <p>Fungsi SEARCH digunakan untuk mencari teks pada teks lain (Non Case Sensistive) dan menghasilkan sebuah angka yang menunjukkan posisi teks yang dicari.</p>
+                                                            <div class="warning">
+                                                                <p><strong>SEARCH(find_text, within_text, [start_num])</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi LEN</a>
+                                                            <p>Fungsi LEN digunakan untuk mengetahui jumlah karakter sebuah teks.</p>
+                                                            <div class="warning">
+                                                                <p><strong>LEN(Teks)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi TRIM</a>
+                                                            <p>Fungsi TRIM digunakan untuk menghapus spasi berlebihan (spasi ganda, spasi pada awal teks dan spasi pada akhir teks).</p>
+                                                            <div class="warning">
+                                                                <p><strong>TRIM(Teks)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi SUBSTITUTE</a>
+                                                            <p>Fungsi SUBSTITUTE digunakan untuk mengubah teks tertentu dengan teks lain.</p>
+                                                            <div class="warning">
+                                                                <p><strong>SUBSTITUTE(text; old_text; new_text; [instance_num])</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi REPLACE</a>
+                                                            <p>Fungsi REPLACE digunakan untuk mengganti teks pada posisi tertentu dengan teks lain.</p>
+                                                            <div class="warning">
+                                                                <p><strong>REPLACE(old_text; start_num; num_chars; new_text)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi CONCATENATE</a>
+                                                            <p>Fungsi CONCATENATE digunakan untuk menggabungkan beberapa teks pada pada excel ke dalam satu sel.</p>
+                                                            <div class="warning">
+                                                                <p><strong>CONCATENATE(Teks1; [Teks2]; ...)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi TEXT</a>
+                                                            <p>Fungsi TEXT digunakan untuk mengkonversi angka(numeric) termasuk format tanggal dan waktu menjadi teks(string) dalam format yang ditentukan.</p>
+                                                            <div class="warning">
+                                                                <p><strong>TEXT(Angka;"KodeFormat")</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi EXACT</a>
+                                                            <p>Fungsi EXACT digunakan untuk membandingkan 2 teks apakah identik sama persis atau tidak.</p>
+                                                            <div class="warning">
+                                                                <p><strong>EXACT(Teks1; Teks2)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                    </ol>
                                                 </div>
                                             </div>
+                                        </div>
 
-                                            <!-- 2. Fungsi Teks (Text Functions) -->
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="flush-headingTwo">
-                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Fungsi Teks (Text Functions)</button>
-                                                </h2>
-                                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">
-                                                        <ol>
-                                                            <li><a href="#">Fungsi LOWER</a>
-                                                                <p>Fungsi LOWER digunakan untuk mengubah SEMUA HURUF pada sebuah teks menjadi huruf KECIL semua.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>LOWER(Teks)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi UPPER</a>
-                                                                <p>Fungsi UPPER digunakan untuk mengubah kapitalisasi SEMUA HURUF pada sebuah teks menjadi huruf BESAR semua.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>UPPER(Teks)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi PROPER</a>
-                                                                <p>Fungsi PROPER digunakan untuk mengubah HURUF AWAL setiap kata pada teks menjadi huruf besar.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>PROPER(Teks)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi LEFT</a>
-                                                                <p>Fungsi LEFT digunakan untuk mengambil beberapa karakter teks dari arah KIRI atau awal sebuah teks.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>LEFT(Teks; [JumlahKarakter])</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi RIGHT</a>
-                                                                <p>Fungsi RIGHT digunakan untuk mengambil beberapa karakter teks dari arah KANAN atau akhir sebuah teks.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>RIGHT(Teks; [JumlahKarakter])</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi MID</a>
-                                                                <p>Fungsi MID digunakan untuk mengambil beberapa karakter teks dari posisi tertentu (AWAL/TENGAH) sebanyak beberapa karakter tertentu.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>MID(Teks; AwalKarakter; JumlahKarakter)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi FIND</a>
-                                                                <p>Fungsi FIND digunakan untuk mencari teks pada teks lain (Case Sensitive) dan menghasilkan sebuah angka yang menunjukkan posisi teks yang dicari.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>FIND(find_text; within_text; [start_num])</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi SEARCH</a>
-                                                                <p>Fungsi SEARCH digunakan untuk mencari teks pada teks lain (Non Case Sensistive) dan menghasilkan sebuah angka yang menunjukkan posisi teks yang dicari.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>SEARCH(find_text, within_text, [start_num])</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi LEN</a>
-                                                                <p>Fungsi LEN digunakan untuk mengetahui jumlah karakter sebuah teks.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>LEN(Teks)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi TRIM</a>
-                                                                <p>Fungsi TRIM digunakan untuk menghapus spasi berlebihan (spasi ganda, spasi pada awal teks dan spasi pada akhir teks).</p>
-                                                                <div class="warning">
-                                                                    <p><strong>TRIM(Teks)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi SUBSTITUTE</a>
-                                                                <p>Fungsi SUBSTITUTE digunakan untuk mengubah teks tertentu dengan teks lain.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>SUBSTITUTE(text; old_text; new_text; [instance_num])</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi REPLACE</a>
-                                                                <p>Fungsi REPLACE digunakan untuk mengganti teks pada posisi tertentu dengan teks lain.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>REPLACE(old_text; start_num; num_chars; new_text)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi CONCATENATE</a>
-                                                                <p>Fungsi CONCATENATE digunakan untuk menggabungkan beberapa teks pada pada excel ke dalam satu sel.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>CONCATENATE(Teks1; [Teks2]; ...)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi TEXT</a>
-                                                                <p>Fungsi TEXT digunakan untuk mengkonversi angka(numeric) termasuk format tanggal dan waktu menjadi teks(string) dalam format yang ditentukan.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>TEXT(Angka;"KodeFormat")</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi EXACT</a>
-                                                                <p>Fungsi EXACT digunakan untuk membandingkan 2 teks apakah identik sama persis atau tidak.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>EXACT(Teks1; Teks2)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                        </ol>
-                                                    </div>
+                                        <!-- 3. Fungsi Tanggal Dan Waktu (Date and Time Functions) -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-headingThree">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">Fungsi Tanggal Dan Waktu (Date and Time Functions)</button>
+                                            </h2>
+                                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ol>
+                                                        <li><a href="#">Fungsi NOW</a>
+                                                            <p>Fungsi NOW digunakan untuk mendapatkan nomor seri TANGGAL dan WAKTU saat ini.</p>
+                                                            <div class="warning">
+                                                                <p><strong>NOW()</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi TODAY</a>
+                                                            <p>Fungsi TODAY digunakan untuk mendapatkan nomor seri TANGGAL saat ini.</p>
+                                                            <div class="warning">
+                                                                <p><strong>TODAY()</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi DATE</a>
+                                                            <p>Fungsi DATE digunakan untuk mendapatkan format (nomor seri) TANGGAL berdasarkan informasi tanggal, bulan dan tahun yang Anda tentukan.</p>
+                                                            <div class="warning">
+                                                                <p><strong>DATE(Tahun;Bulan;Tanggal)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi DATEVALUE</a>
+                                                            <p>Fungsi DATEVALUE digunakan untuk mengonversi tanggal dalam bentuk teks menjadi nomor seri tanggal excel.</p>
+                                                            <div class="warning">
+                                                                <p><strong>DATEVALUE(TeksTanggal)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi DATEDIF</a>
+                                                            <p>Fungsi DATEDIF digunakan untuk menghasilkan selisih tangal, bulan atau tahun diantara dua tanggal tertentu. Biasanya digunakan untuk menghitung umur atau masa kerja.
+                                                            </p>
+                                                            <div class="warning">
+                                                                <p><strong>DATEDIF(TglAwal;TglAkhir;KodeSatuan)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi DAY</a>
+                                                            <p>Fungsi DAY digunakan untuk mendapatkan nilai angka TANGGAL(1-31) dari format tanggal(DATE).</p>
+                                                            <div class="warning">
+                                                                <p><strong>DAY(Tanggal)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi DAYS (Excel 2013+)</a>
+                                                            <p>Fungsi DAYS digunakan untuk menghitung jumlah hari diantara dua tanggal.</p>
+                                                            <div class="warning">
+                                                                <p><strong>DAYS(TanggalAkhir; TanggalAwal)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi DAYS360</a>
+                                                            <p>Fungsi DAYS360 digunakan untuk menghitung jumlah hari diantara dua tanggal dengan asumsi semua bulan dalam setahun adalah 30 hari atau 360 hari dalam setahun.</p>
+                                                            <div class="warning">
+                                                                <p><strong>DAYS360(TanggalAwal; TanggalAkhir; [Metode])</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi MONTH</a>
+                                                            <p>Fungsi MONTH digunakan untuk mendapatkan nilai angka BULAN (1-12) dari sebuah format tanggal(DATE).</p>
+                                                            <div class="warning">
+                                                                <p><strong>MONTH(Tanggal)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi YEAR</a>
+                                                            <p>Fungsi YEAR digunakan untuk mendapatkan nilai angka TAHUN dari sebuah format tanggal(DATE).</p>
+                                                            <div class="warning">
+                                                                <p><strong>YEAR(Tanggal)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi TIME</a>
+                                                            <p>Fungsi TIME digunakan untuk mendapatkan format WAKTU berdasarkan informasi jam, menit dan detik tertentu.</p>
+                                                            <div class="warning">
+                                                                <p><strong>TIME(Jam;Menit;Detik)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi TIMEVALUE</a>
+                                                            <p>Fungsi TIMEVALUE digunakan untuk menkonversi TEKS yang menunjukkan waktu menjadi nilai desimal atau format waktu yang dikenal oleh excel.</p>
+                                                            <div class="warning">
+                                                                <p><strong>TIMEVALUE(TeksWaktu)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi SECOND</a>
+                                                            <p>Fungsi SECOND digunakan untuk mendapatkan nilai angka DETIK dari sebuah format waktu(TIME).</p>
+                                                            <div class="warning">
+                                                                <p><strong>SECOND(Waktu)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi MINUTE</a>
+                                                            <p>Fungsi MINUTE digunakan untuk mendapatkan nilai MENIT dari sebuah format waktu (TIME).</p>
+                                                            <div class="warning">
+                                                                <p><strong>MINUTE(Waktu)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi HOUR</a>
+                                                            <p>Fungsi HOUR digunakan untuk mendapatkan nilai JAM dari sebuah format waktu (TIME).</p>
+                                                            <div class="warning">
+                                                                <p><strong>HOUR(Waktu)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi EDATE</a>
+                                                            <p>Fungsi EDATE digunakan untuk menghasilkan nomor seri tanggal yang menunjukkan jumlah bulan sebelum atau sesudah tanggal tertentu.</p>
+                                                            <div class="warning">
+                                                                <p><strong>EDATE(TanggalAwal; Bulan)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi EOMONTH</a>
+                                                            <p>Fungsi EOMONTH digunakan untuk menghasilkan nomor seri dari hari terakhir bulan sebelum atau sesudah jumlah bulan yang ditentukan.</p>
+                                                            <div class="warning">
+                                                                <p><strong>EOMONTH(TanggalAwal; Bulan)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi NETWORKDAYS</a>
+                                                            <p>Fungsi NETWORKDAYS digunakan untuk menghasilkan jumlah hari kerja di antara dua tanggal (Mengecualikan akhir pekan dan hari libur).</p>
+                                                            <div class="warning">
+                                                                <p><strong>NETWORKDAYS(Tanggal_Awal; Tanggal_Akhir, [Hari_Libur])</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi NETWORKDAYS.INTL (Excel 2010+)</a>
+                                                            <p>Fungsi NETWORKDAYS.INTL digunakan untuk menghasilkan jumlah hari kerja di antara dua tanggal (Dengan mengatur parameter akhir pekan dan hari libur).</p>
+                                                            <div class="warning">
+                                                                <p><strong>NETWORKDAYS.INTL(Tanggal_Awal; Tanggal_Akhir; [Akhir_Pekan]; [Hari_Libur])</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi WORKDAY</a>
+                                                            <p>Fungsi WORKDAY digunakan untuk menghasilkan tanggal selesai kerja (Mengecualikan akhir pekan dan hari libur).</p>
+                                                            <div class="warning">
+                                                                <p><strong>WORKDAY(Tanggal_Awal;Jumlah_Hari; [Hari_Libur])</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi WORKDAY.INTL (Excel 2010+)</a>
+                                                            <p>Fungsi WORKDAY.INTL digunakan untuk menentukan tanggal selesai kerja (Dengan mengatur parameter akhir pekan dan hari libur).</p>
+                                                            <div class="warning">
+                                                                <p><strong>WORKDAY.INTL(Tanggal_Awal;Jumlah_Hari; [Akhir_Pekan]; [Hari_Libur])</strong></p>
+                                                            </div>
+                                                        </li>
+                                                    </ol>
                                                 </div>
                                             </div>
+                                        </div>
 
-                                            <!-- 3. Fungsi Tanggal Dan Waktu (Date and Time Functions) -->
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="flush-headingThree">
-                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">Fungsi Tanggal Dan Waktu (Date and Time Functions)</button>
-                                                </h2>
-                                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">
-                                                        <ol>
-                                                            <li><a href="#">Fungsi NOW</a>
-                                                                <p>Fungsi NOW digunakan untuk mendapatkan nomor seri TANGGAL dan WAKTU saat ini.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>NOW()</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi TODAY</a>
-                                                                <p>Fungsi TODAY digunakan untuk mendapatkan nomor seri TANGGAL saat ini.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>TODAY()</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi DATE</a>
-                                                                <p>Fungsi DATE digunakan untuk mendapatkan format (nomor seri) TANGGAL berdasarkan informasi tanggal, bulan dan tahun yang Anda tentukan.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>DATE(Tahun;Bulan;Tanggal)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi DATEVALUE</a>
-                                                                <p>Fungsi DATEVALUE digunakan untuk mengonversi tanggal dalam bentuk teks menjadi nomor seri tanggal excel.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>DATEVALUE(TeksTanggal)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi DATEDIF</a>
-                                                                <p>Fungsi DATEDIF digunakan untuk menghasilkan selisih tangal, bulan atau tahun diantara dua tanggal tertentu. Biasanya digunakan untuk menghitung umur atau masa kerja.
-                                                                </p>
-                                                                <div class="warning">
-                                                                    <p><strong>DATEDIF(TglAwal;TglAkhir;KodeSatuan)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi DAY</a>
-                                                                <p>Fungsi DAY digunakan untuk mendapatkan nilai angka TANGGAL(1-31) dari format tanggal(DATE).</p>
-                                                                <div class="warning">
-                                                                    <p><strong>DAY(Tanggal)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi DAYS (Excel 2013+)</a>
-                                                                <p>Fungsi DAYS digunakan untuk menghitung jumlah hari diantara dua tanggal.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>DAYS(TanggalAkhir; TanggalAwal)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi DAYS360</a>
-                                                                <p>Fungsi DAYS360 digunakan untuk menghitung jumlah hari diantara dua tanggal dengan asumsi semua bulan dalam setahun adalah 30 hari atau 360 hari dalam setahun.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>DAYS360(TanggalAwal; TanggalAkhir; [Metode])</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi MONTH</a>
-                                                                <p>Fungsi MONTH digunakan untuk mendapatkan nilai angka BULAN (1-12) dari sebuah format tanggal(DATE).</p>
-                                                                <div class="warning">
-                                                                    <p><strong>MONTH(Tanggal)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi YEAR</a>
-                                                                <p>Fungsi YEAR digunakan untuk mendapatkan nilai angka TAHUN dari sebuah format tanggal(DATE).</p>
-                                                                <div class="warning">
-                                                                    <p><strong>YEAR(Tanggal)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi TIME</a>
-                                                                <p>Fungsi TIME digunakan untuk mendapatkan format WAKTU berdasarkan informasi jam, menit dan detik tertentu.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>TIME(Jam;Menit;Detik)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi TIMEVALUE</a>
-                                                                <p>Fungsi TIMEVALUE digunakan untuk menkonversi TEKS yang menunjukkan waktu menjadi nilai desimal atau format waktu yang dikenal oleh excel.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>TIMEVALUE(TeksWaktu)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi SECOND</a>
-                                                                <p>Fungsi SECOND digunakan untuk mendapatkan nilai angka DETIK dari sebuah format waktu(TIME).</p>
-                                                                <div class="warning">
-                                                                    <p><strong>SECOND(Waktu)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi MINUTE</a>
-                                                                <p>Fungsi MINUTE digunakan untuk mendapatkan nilai MENIT dari sebuah format waktu (TIME).</p>
-                                                                <div class="warning">
-                                                                    <p><strong>MINUTE(Waktu)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi HOUR</a>
-                                                                <p>Fungsi HOUR digunakan untuk mendapatkan nilai JAM dari sebuah format waktu (TIME).</p>
-                                                                <div class="warning">
-                                                                    <p><strong>HOUR(Waktu)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi EDATE</a>
-                                                                <p>Fungsi EDATE digunakan untuk menghasilkan nomor seri tanggal yang menunjukkan jumlah bulan sebelum atau sesudah tanggal tertentu.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>EDATE(TanggalAwal; Bulan)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi EOMONTH</a>
-                                                                <p>Fungsi EOMONTH digunakan untuk menghasilkan nomor seri dari hari terakhir bulan sebelum atau sesudah jumlah bulan yang ditentukan.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>EOMONTH(TanggalAwal; Bulan)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi NETWORKDAYS</a>
-                                                                <p>Fungsi NETWORKDAYS digunakan untuk menghasilkan jumlah hari kerja di antara dua tanggal (Mengecualikan akhir pekan dan hari libur).</p>
-                                                                <div class="warning">
-                                                                    <p><strong>NETWORKDAYS(Tanggal_Awal; Tanggal_Akhir, [Hari_Libur])</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi NETWORKDAYS.INTL (Excel 2010+)</a>
-                                                                <p>Fungsi NETWORKDAYS.INTL digunakan untuk menghasilkan jumlah hari kerja di antara dua tanggal (Dengan mengatur parameter akhir pekan dan hari libur).</p>
-                                                                <div class="warning">
-                                                                    <p><strong>NETWORKDAYS.INTL(Tanggal_Awal; Tanggal_Akhir; [Akhir_Pekan]; [Hari_Libur])</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi WORKDAY</a>
-                                                                <p>Fungsi WORKDAY digunakan untuk menghasilkan tanggal selesai kerja (Mengecualikan akhir pekan dan hari libur).</p>
-                                                                <div class="warning">
-                                                                    <p><strong>WORKDAY(Tanggal_Awal;Jumlah_Hari; [Hari_Libur])</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi WORKDAY.INTL (Excel 2010+)</a>
-                                                                <p>Fungsi WORKDAY.INTL digunakan untuk menentukan tanggal selesai kerja (Dengan mengatur parameter akhir pekan dan hari libur).</p>
-                                                                <div class="warning">
-                                                                    <p><strong>WORKDAY.INTL(Tanggal_Awal;Jumlah_Hari; [Akhir_Pekan]; [Hari_Libur])</strong></p>
-                                                                </div>
-                                                            </li>
-                                                        </ol>
-                                                    </div>
+                                        <!-- 4. Fungsi Pencarian Dan Referensi (Lookup and Reference Functions) -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-heading3">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">Fungsi Pencarian Dan Referensi (Lookup and Reference Functions)</button>
+                                            </h2>
+                                            <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ol>
+                                                        <li><a href="#">Fungsi LOOKUP</a>
+                                                            <p>Fungsi LOOKUP untuk melakukan pencarian data pada satu baris (row) atau satu kolom (column) tabel data atau sebuah array.</p>
+                                                            <div class="warning">
+                                                                <p><strong>LOOKUP(Lookup_value; Lookup_vector; [Result_vector])</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi VLOOKUP</a>
+                                                            <p>Fungsi VLOOKUP untuk mencari sebuah nilai pada kolom(column) pertama sebuah data tabel untuk mendapatkan sebuah nilai data tertentu pada kolom lain yang berada pada baris(row) yang sama dengan
+                                                                hasil pencarian. Data disusun secara vertikal.</p>
+                                                            <div class="warning">
+                                                                <p><strong>VLOOKUP(NilaiYangDiCari; TabelReferensi; NomorKolom; [RangeLookup])</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi HLOOKUP</a>
+                                                            <p>Fungsi HLOOKUP untuk mencari sebuah nilai pada baris(row) pertama sebuah data tabel untuk mendapatkan nilai data tertentu pada baris lain yang berada pada kolom(column) yang sama dengan hasil
+                                                                pencarian. Data disusun secara horizontal.</p>
+                                                            <div class="warning">
+                                                                <p><strong>HLOOKUP(NilaiYangDiCari; TabelReferensi; NomorBaris; [RangeLookup])</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi INDEX</a>
+                                                            <p>Fungsi INDEX untuk mendapatkan sebuah nilai data berdasarkan input/informasi kolom dan baris tertentu.</p>
+                                                            <div class="warning">
+                                                                <p><strong>INDEX(array; Nomor_Baris; [Nomor_Kolom])</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi MATCH</a>
+                                                            <p>Fungsi MATCH untuk mendapatkan angka urut posisi sebuah nilai data pada sebuah array. Biasanya dikombinasikan dengan Fungsi INDEX dalam penggunannya.</p>
+                                                            <div class="warning">
+                                                                <p><strong>MATCH(lookup_value; lookup_array; [match_type])</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi OFFSET</a>
+                                                            <p>Fungsi OFFSET untuk memindahkan/menggeser serta membuat sebuah referensi range data atau rentang sel yang kita tentukan berdasarkan jumlah lebar baris dan kolomnya.</p>
+                                                            <div class="warning">
+                                                                <p><strong>OFFSET(reference; rows; cols; [height]; [width])</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi ADDRESS</a>
+                                                            <p>Fungsi ADDRESS untuk membuat teks alamat cell/range berdasarkan informasi posisi baris dan kolom.</p>
+                                                            <div class="warning">
+                                                                <p><strong>ADDRESS(PosisiBaris; PosisiKolom; [TipeRef]; [GayaRef]; [NamaSheet])</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi INDIRECT</a>
+                                                            <p>Fungsi INDIRECT untuk membuat sebuah referensi cell atau range dari sebuah teks atau gabungan teks dan value tertentu.</p>
+                                                            <div class="warning">
+                                                                <p><strong>INDIRECT(TeksReferensi; JenisReferensi)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi ROW</a>
+                                                            <p>Fungsi ROW untuk mendapatkan posisi baris(Row) sebuah sel.</p>
+                                                            <div class="warning">
+                                                                <p><strong>ROW([Referensi])</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi ROWS</a>
+                                                            <p>Fungsi ROWS untuk mendapatkan jumlah baris sebuah array atau referensi.</p>
+                                                            <div class="warning">
+                                                                <p><strong>ROWS(Array)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi COLUMN</a>
+                                                            <p>Fungsi COLUMN untuk mendapatkan posisi kolom(Column) sebuah sel.</p>
+                                                            <div class="warning">
+                                                                <p><strong>COLUMN([Referensi])</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi COLUMNS</a>
+                                                            <p>Fungsi COLUMNS untuk mendapatkan jumlah kolom sebuah array atau referensi.</p>
+                                                            <div class="warning">
+                                                                <p><strong>COLUMNS(Array)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi CHOOSE</a>
+                                                            <p>Fungsi CHOOSE digunakan untuk memilih nilai dari daftar nilai yang disediakan.</p>
+                                                            <div class="warning">
+                                                                <p><strong>CHOOSE(IndexNumber; Nilai1; [Nilai2]; ...)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi TRANSPOSE</a>
+                                                            <p>Fungsi TRANSPOSE digunakan untuk mengubah orientasi data vertikal menjadi horizontal atau sebaliknya.</p>
+                                                            <div class="warning">
+                                                                <p><strong>TRANSPOSE(Array)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                    </ol>
                                                 </div>
                                             </div>
+                                        </div>
 
-                                            <!-- 4. Fungsi Pencarian Dan Referensi (Lookup and Reference Functions) -->
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="flush-heading3">
-                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">Fungsi Pencarian Dan Referensi (Lookup and Reference Functions)</button>
-                                                </h2>
-                                                <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">
-                                                        <ol>
-                                                            <li><a href="#">Fungsi LOOKUP</a>
-                                                                <p>Fungsi LOOKUP untuk melakukan pencarian data pada satu baris (row) atau satu kolom (column) tabel data atau sebuah array.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>LOOKUP(Lookup_value; Lookup_vector; [Result_vector])</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi VLOOKUP</a>
-                                                                <p>Fungsi VLOOKUP untuk mencari sebuah nilai pada kolom(column) pertama sebuah data tabel untuk mendapatkan sebuah nilai data tertentu pada kolom lain yang berada pada baris(row) yang sama dengan
-                                                                    hasil pencarian. Data disusun secara vertikal.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>VLOOKUP(NilaiYangDiCari; TabelReferensi; NomorKolom; [RangeLookup])</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi HLOOKUP</a>
-                                                                <p>Fungsi HLOOKUP untuk mencari sebuah nilai pada baris(row) pertama sebuah data tabel untuk mendapatkan nilai data tertentu pada baris lain yang berada pada kolom(column) yang sama dengan hasil
-                                                                    pencarian. Data disusun secara horizontal.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>HLOOKUP(NilaiYangDiCari; TabelReferensi; NomorBaris; [RangeLookup])</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi INDEX</a>
-                                                                <p>Fungsi INDEX untuk mendapatkan sebuah nilai data berdasarkan input/informasi kolom dan baris tertentu.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>INDEX(array; Nomor_Baris; [Nomor_Kolom])</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi MATCH</a>
-                                                                <p>Fungsi MATCH untuk mendapatkan angka urut posisi sebuah nilai data pada sebuah array. Biasanya dikombinasikan dengan Fungsi INDEX dalam penggunannya.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>MATCH(lookup_value; lookup_array; [match_type])</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi OFFSET</a>
-                                                                <p>Fungsi OFFSET untuk memindahkan/menggeser serta membuat sebuah referensi range data atau rentang sel yang kita tentukan berdasarkan jumlah lebar baris dan kolomnya.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>OFFSET(reference; rows; cols; [height]; [width])</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi ADDRESS</a>
-                                                                <p>Fungsi ADDRESS untuk membuat teks alamat cell/range berdasarkan informasi posisi baris dan kolom.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>ADDRESS(PosisiBaris; PosisiKolom; [TipeRef]; [GayaRef]; [NamaSheet])</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi INDIRECT</a>
-                                                                <p>Fungsi INDIRECT untuk membuat sebuah referensi cell atau range dari sebuah teks atau gabungan teks dan value tertentu.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>INDIRECT(TeksReferensi; JenisReferensi)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi ROW</a>
-                                                                <p>Fungsi ROW untuk mendapatkan posisi baris(Row) sebuah sel.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>ROW([Referensi])</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi ROWS</a>
-                                                                <p>Fungsi ROWS untuk mendapatkan jumlah baris sebuah array atau referensi.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>ROWS(Array)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi COLUMN</a>
-                                                                <p>Fungsi COLUMN untuk mendapatkan posisi kolom(Column) sebuah sel.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>COLUMN([Referensi])</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi COLUMNS</a>
-                                                                <p>Fungsi COLUMNS untuk mendapatkan jumlah kolom sebuah array atau referensi.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>COLUMNS(Array)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi CHOOSE</a>
-                                                                <p>Fungsi CHOOSE digunakan untuk memilih nilai dari daftar nilai yang disediakan.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>CHOOSE(IndexNumber; Nilai1; [Nilai2]; ...)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi TRANSPOSE</a>
-                                                                <p>Fungsi TRANSPOSE digunakan untuk mengubah orientasi data vertikal menjadi horizontal atau sebaliknya.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>TRANSPOSE(Array)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                        </ol>
-                                                    </div>
+                                        <!-- 5. Fungsi Matematika Dan Trigonometri (Math and Trigonometry Functions) -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-heading4">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">Fungsi Matematika Dan Trigonometri (Math and Trigonometry Functions)</button>
+                                            </h2>
+                                            <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ol>
+                                                        <li><a href="#">Fungsi SUBTOTAL</a>
+                                                            <p>Fungsi SUBTOTAL untuk menghitung nilai subtotal sebuah daftar atau database dengan mengabaikan data terfilter.</p>
+                                                            <div class="warning">
+                                                                <p><strong>SUBTOTAL(KodeFungsi; Referensi1; [Referensi2]; …)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi SUM</a>
+                                                            <p>Fungsi SUM untuk menjumlahkan data.</p>
+                                                            <div class="warning">
+                                                                <p><strong>SUM(angka1;[angka2];...)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi SUMIF</a>
+                                                            <p>Fungsi SUMIF untuk melakukan penjumlahan berdasarkan sebuah syarat tertentu.</p>
+                                                            <div class="warning">
+                                                                <p><strong>SUMIF(Range; Kriteria; [Sum_range])</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi SUMIFS</a>
+                                                            <p>Fungsi SUMIFS untuk menjumlahan data berdasarkan banyak kriteria /syarat.</p>
+                                                            <div class="warning">
+                                                                <p><strong>SUMIFS(sum_range;criteria_range1; criteria1;[criteria_range2, criteria2]; ...)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi SUMPRODUCT</a>
+                                                            <p>Fungsi SUMPRODUCT untuk menjumlahkan hasil perkalian nilai-nilai array yang bersesuaian.</p>
+                                                            <div class="warning">
+                                                                <p><strong>SUMPRODUCT(Array1; [Array2]; [Array3]; ...)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi ROUND</a>
+                                                            <p>Fungsi ROUND untuk membulatkan bilangan pada nilai digit tertentu</p>
+                                                            <div class="warning">
+                                                                <p><strong>ROUND(Angka; JumlahDigit)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi ROUNDDOWN</a>
+                                                            <p>Fungsi ROUNDDOWN untuk membulatkan angka ke bawah</p>
+                                                            <div class="warning">
+                                                                <p><strong>ROUNDDOWN(Angka; JumlahDigit)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi ROUNDUP</a>
+                                                            <p>Fungsi ROUNDUP untuk membulatkan angka ke atas</p>
+                                                            <div class="warning">
+                                                                <p><strong>ROUNDUP(Angka; JumlahDigit)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi INT</a>
+                                                            <p>Fungsi INT untuk membulatkan angka kedalam bilangan bulat terdekat.</p>
+                                                            <div class="warning">
+                                                                <p><strong>INT(Angka)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi TRUNC</a>
+                                                            <p>Fungsi TRUNC untuk memotong angka desimal menjadi bilangan bulat (menghilangkan angka dibelakang koma).
+                                                            </p>
+                                                            <div class="warning">
+                                                                <p><strong>TRUNC(Angka, [BanyakDigit])</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi ODD</a>
+                                                            <p>Fungsi ODD untuk membulatkan angka ke bilangan bulat GANJIL terdekat</p>
+                                                            <div class="warning">
+                                                                <p><strong>ODD(Angka)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi EVEN</a>
+                                                            <p>Fungsi EVEN untuk membulatkan angka ke bilangan bulat GENAP terdekat</p>
+                                                            <div class="warning">
+                                                                <p><strong>EVEN(Angka)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi RAND</a>
+                                                            <p>Fungsi RAND untuk menghasilkan angka random(Acak) diantara angka 0 dan 1 (desimal).</p>
+                                                            <div class="warning">
+                                                                <p><strong>RAND()</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi RANDBETWEEN</a>
+                                                            <p>Fungsi RADNBETWEEN untuk menghasilkan angka random (acak) diantara dua angka tertentu.</p>
+                                                            <div class="warning">
+                                                                <p><strong>RANDBETWEEN(AngkaTerkecil; AngkaTerbesar)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi MOD</a>
+                                                            <p>Fungsi MOD untuk mendapatkan nilai sisa hasil pembagian.</p>
+                                                            <div class="warning">
+                                                                <p><strong>MOD(NilaiAngka; NilaiPembagi)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi MROUND</a>
+                                                            <p>Fungsi MROUND untuk membulatkan bilangan pada nilai kelipatan angka tertentu.</p>
+                                                            <div class="warning">
+                                                                <p><strong>MROUND(Angka; Kelipatan)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi CEILING</a>
+                                                            <p>Fungsi CEILING untuk membulatkan bilangan ke ATAS pada nilai kelipatan angka tertentu.</p>
+                                                            <div class="warning">
+                                                                <p><strong>CEILING(Angka; Kelipatan)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi FLOOR</a>
+                                                            <p>Fungsi FLOOR untuk membulatkan bilangan ke BAWAH pada nilai kelipatan angka tertentu.</p>
+                                                            <div class="warning">
+                                                                <p><strong>FLOOR(Angka; Kelipatan)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                    </ol>
                                                 </div>
                                             </div>
+                                        </div>
 
-                                            <!-- 5. Fungsi Matematika Dan Trigonometri (Math and Trigonometry Functions) -->
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="flush-heading4">
-                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">Fungsi Matematika Dan Trigonometri (Math and Trigonometry Functions)</button>
-                                                </h2>
-                                                <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">
-                                                        <ol>
-                                                            <li><a href="#">Fungsi SUBTOTAL</a>
-                                                                <p>Fungsi SUBTOTAL untuk menghitung nilai subtotal sebuah daftar atau database dengan mengabaikan data terfilter.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>SUBTOTAL(KodeFungsi; Referensi1; [Referensi2]; …)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi SUM</a>
-                                                                <p>Fungsi SUM untuk menjumlahkan data.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>SUM(angka1;[angka2];...)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi SUMIF</a>
-                                                                <p>Fungsi SUMIF untuk melakukan penjumlahan berdasarkan sebuah syarat tertentu.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>SUMIF(Range; Kriteria; [Sum_range])</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi SUMIFS</a>
-                                                                <p>Fungsi SUMIFS untuk menjumlahan data berdasarkan banyak kriteria /syarat.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>SUMIFS(sum_range;criteria_range1; criteria1;[criteria_range2, criteria2]; ...)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi SUMPRODUCT</a>
-                                                                <p>Fungsi SUMPRODUCT untuk menjumlahkan hasil perkalian nilai-nilai array yang bersesuaian.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>SUMPRODUCT(Array1; [Array2]; [Array3]; ...)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi ROUND</a>
-                                                                <p>Fungsi ROUND untuk membulatkan bilangan pada nilai digit tertentu</p>
-                                                                <div class="warning">
-                                                                    <p><strong>ROUND(Angka; JumlahDigit)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi ROUNDDOWN</a>
-                                                                <p>Fungsi ROUNDDOWN untuk membulatkan angka ke bawah</p>
-                                                                <div class="warning">
-                                                                    <p><strong>ROUNDDOWN(Angka; JumlahDigit)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi ROUNDUP</a>
-                                                                <p>Fungsi ROUNDUP untuk membulatkan angka ke atas</p>
-                                                                <div class="warning">
-                                                                    <p><strong>ROUNDUP(Angka; JumlahDigit)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi INT</a>
-                                                                <p>Fungsi INT untuk membulatkan angka kedalam bilangan bulat terdekat.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>INT(Angka)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi TRUNC</a>
-                                                                <p>Fungsi TRUNC untuk memotong angka desimal menjadi bilangan bulat (menghilangkan angka dibelakang koma).
-                                                                </p>
-                                                                <div class="warning">
-                                                                    <p><strong>TRUNC(Angka, [BanyakDigit])</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi ODD</a>
-                                                                <p>Fungsi ODD untuk membulatkan angka ke bilangan bulat GANJIL terdekat</p>
-                                                                <div class="warning">
-                                                                    <p><strong>ODD(Angka)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi EVEN</a>
-                                                                <p>Fungsi EVEN untuk membulatkan angka ke bilangan bulat GENAP terdekat</p>
-                                                                <div class="warning">
-                                                                    <p><strong>EVEN(Angka)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi RAND</a>
-                                                                <p>Fungsi RAND untuk menghasilkan angka random(Acak) diantara angka 0 dan 1 (desimal).</p>
-                                                                <div class="warning">
-                                                                    <p><strong>RAND()</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi RANDBETWEEN</a>
-                                                                <p>Fungsi RADNBETWEEN untuk menghasilkan angka random (acak) diantara dua angka tertentu.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>RANDBETWEEN(AngkaTerkecil; AngkaTerbesar)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi MOD</a>
-                                                                <p>Fungsi MOD untuk mendapatkan nilai sisa hasil pembagian.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>MOD(NilaiAngka; NilaiPembagi)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi MROUND</a>
-                                                                <p>Fungsi MROUND untuk membulatkan bilangan pada nilai kelipatan angka tertentu.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>MROUND(Angka; Kelipatan)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi CEILING</a>
-                                                                <p>Fungsi CEILING untuk membulatkan bilangan ke ATAS pada nilai kelipatan angka tertentu.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>CEILING(Angka; Kelipatan)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi FLOOR</a>
-                                                                <p>Fungsi FLOOR untuk membulatkan bilangan ke BAWAH pada nilai kelipatan angka tertentu.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>FLOOR(Angka; Kelipatan)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                        </ol>
-                                                    </div>
+                                        <!-- 6. Fungsi Statistik (Statistical Functions) -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-heading5">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">Fungsi Statistik (Statistical Functions)</button>
+                                            </h2>
+                                            <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ol>
+                                                        <li><a href="#">Fungsi AVERAGE</a>
+                                                            <p>Fungsi AVERAGE untuk menghitung rata-rata sekumpulan nilai</p>
+                                                            <div class="warning">
+                                                                <p><strong>AVERAGE(Angka1; [Angka2]; ...)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi AVERAGEIF</a>
+                                                            <p>Fungsi AVERAGEIF untuk menghitung rata-rata nilai berdasarkan sebuah kriteria.</p>
+                                                            <div class="warning">
+                                                                <p><strong>AVERAGEIF(Range; Criteria; [Average_range])</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi AVERAGEIFS</a>
+                                                            <p>Fungsi AVERAGEIFS untuk menghitung rata-rata nilai berdasarkan beberapa syarat atau kriteria.</p>
+                                                            <div class="warning">
+                                                                <p><strong>AVERAGEIFS(AverageRange; CriteriaRange1; Criteria1; [CriteriaRange2; Criteria2]; ...)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi COUNT</a>
+                                                            <p>Fungsi COUNT untuk mencacah/menghitung banyak cell yang berisi angka.</p>
+                                                            <div class="warning">
+                                                                <p><strong>COUNT(value1; [value2]; ...)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi COUNTA</a>
+                                                            <p>Fungsi COUNTA untuk menghitung banyak cell yang tidak kosong(berisi teks, angka, informasi, dll).</p>
+                                                            <div class="warning">
+                                                                <p><strong>COUNTA(value1; [value2]; ...)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi COUNTBLANK</a>
+                                                            <p>Fungsi COUNTBLANK untuk menghitung jumlah cell yang kosong.</p>
+                                                            <div class="warning">
+                                                                <p><strong>COUNTBLANK(range)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi COUNTIF</a>
+                                                            <p>Fungsi COUNTIF untuk mencacah/menghitung banyak sel berdasarkan pada syarat/kriteria tunggal tertentu.</p>
+                                                            <div class="warning">
+                                                                <p><strong>COUNTIF(Range; Kriteria)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi COUNTIFS</a>
+                                                            <p>Fungsi COUNTIFS untuk mencacah/menghitung jumlah sel atau banyak data berdasarkan pada beberapa atau syarat/kriteria.</p>
+                                                            <div class="warning">
+                                                                <p><strong>COUNTIFS(criteria_range1; criteria1; [criteria_range2; criteria2]…)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi MIN</a>
+                                                            <p>Fungsi MIN untuk mendapatkan nilai terendah(minimum) dari sebuah kumpulan nilai.</p>
+                                                            <div class="warning">
+                                                                <p><strong>MIN(Angka1; [Angka2]; ...)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi MAX</a>
+                                                            <p>Fungsi MAX untuk mendapatkan nilai tertinggi(maximum) dari sebuah kumpulan nilai</p>
+                                                            <div class="warning">
+                                                                <p><strong>MAX(Angka1; [Angka2]; ...)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi LARGE</a>
+                                                            <p>Fungsi LARGE untuk mendapatkan nilai terbesar ke-x dari sebuah kumpulan nilai.</p>
+                                                            <div class="warning">
+                                                                <p><strong>LARGE(Array; k)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi SMALL</a>
+                                                            <p>Fungsi SMALL untuk mendapatkan nilai terkecil ke-x dari sebuah kumpulan nilai.</p>
+                                                            <div class="warning">
+                                                                <p><strong>SMALL(Array; k)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi RANK</a>
+                                                            <p>Fungsi RANK untuk mendapatkan ranking atau peringkat nilai..</p>
+                                                            <div class="warning">
+                                                                <p><strong>RANK(Angka;Referensi;[order])</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi RANK.AVG (Excel 2010+)</a>
+                                                            <p>Fungsi RANK.AVG untuk mendapatkan ranking atau peringkat nilai. Jika ada nilai duplikat RANK AVG menghasilkan nilai rata-rata pada ranking atau peringkat tersebut.
+                                                            </p>
+                                                            <div class="warning">
+                                                                <p><strong>RANK.AVG(Angka; Referensi; [order])</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi RANK.EQ (Excel 2010+)</a>
+                                                            <p>Fungsi RANK.EQ untuk mendapatkan ranking atau peringkat nilai. Jika terdapat nilai duplikat RANK.EQ akan memberikan nilai ranking yang sama.</p>
+                                                            <div class="warning">
+                                                                <p><strong>RANK.EQ(Number; Referensi; [order])</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi FREQUENCY</a>
+                                                            <p>Fungsi FREQUENCY untuk menghitung kemunculan(frekuensi) nilai dari sebuah rentang data dalam bentuk Array Vertikal.</p>
+                                                            <div class="warning">
+                                                                <p><strong>FREQUENCY(ArrayData; ArrayBins)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                    </ol>
                                                 </div>
                                             </div>
+                                        </div>
 
-                                            <!-- 6. Fungsi Statistik (Statistical Functions) -->
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="flush-heading5">
-                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">Fungsi Statistik (Statistical Functions)</button>
-                                                </h2>
-                                                <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5" data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">
-                                                        <ol>
-                                                            <li><a href="#">Fungsi AVERAGE</a>
-                                                                <p>Fungsi AVERAGE untuk menghitung rata-rata sekumpulan nilai</p>
-                                                                <div class="warning">
-                                                                    <p><strong>AVERAGE(Angka1; [Angka2]; ...)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi AVERAGEIF</a>
-                                                                <p>Fungsi AVERAGEIF untuk menghitung rata-rata nilai berdasarkan sebuah kriteria.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>AVERAGEIF(Range; Criteria; [Average_range])</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi AVERAGEIFS</a>
-                                                                <p>Fungsi AVERAGEIFS untuk menghitung rata-rata nilai berdasarkan beberapa syarat atau kriteria.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>AVERAGEIFS(AverageRange; CriteriaRange1; Criteria1; [CriteriaRange2; Criteria2]; ...)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi COUNT</a>
-                                                                <p>Fungsi COUNT untuk mencacah/menghitung banyak cell yang berisi angka.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>COUNT(value1; [value2]; ...)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi COUNTA</a>
-                                                                <p>Fungsi COUNTA untuk menghitung banyak cell yang tidak kosong(berisi teks, angka, informasi, dll).</p>
-                                                                <div class="warning">
-                                                                    <p><strong>COUNTA(value1; [value2]; ...)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi COUNTBLANK</a>
-                                                                <p>Fungsi COUNTBLANK untuk menghitung jumlah cell yang kosong.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>COUNTBLANK(range)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi COUNTIF</a>
-                                                                <p>Fungsi COUNTIF untuk mencacah/menghitung banyak sel berdasarkan pada syarat/kriteria tunggal tertentu.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>COUNTIF(Range; Kriteria)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi COUNTIFS</a>
-                                                                <p>Fungsi COUNTIFS untuk mencacah/menghitung jumlah sel atau banyak data berdasarkan pada beberapa atau syarat/kriteria.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>COUNTIFS(criteria_range1; criteria1; [criteria_range2; criteria2]…)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi MIN</a>
-                                                                <p>Fungsi MIN untuk mendapatkan nilai terendah(minimum) dari sebuah kumpulan nilai.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>MIN(Angka1; [Angka2]; ...)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi MAX</a>
-                                                                <p>Fungsi MAX untuk mendapatkan nilai tertinggi(maximum) dari sebuah kumpulan nilai</p>
-                                                                <div class="warning">
-                                                                    <p><strong>MAX(Angka1; [Angka2]; ...)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi LARGE</a>
-                                                                <p>Fungsi LARGE untuk mendapatkan nilai terbesar ke-x dari sebuah kumpulan nilai.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>LARGE(Array; k)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi SMALL</a>
-                                                                <p>Fungsi SMALL untuk mendapatkan nilai terkecil ke-x dari sebuah kumpulan nilai.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>SMALL(Array; k)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi RANK</a>
-                                                                <p>Fungsi RANK untuk mendapatkan ranking atau peringkat nilai..</p>
-                                                                <div class="warning">
-                                                                    <p><strong>RANK(Angka;Referensi;[order])</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi RANK.AVG (Excel 2010+)</a>
-                                                                <p>Fungsi RANK.AVG untuk mendapatkan ranking atau peringkat nilai. Jika ada nilai duplikat RANK AVG menghasilkan nilai rata-rata pada ranking atau peringkat tersebut.
-                                                                </p>
-                                                                <div class="warning">
-                                                                    <p><strong>RANK.AVG(Angka; Referensi; [order])</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi RANK.EQ (Excel 2010+)</a>
-                                                                <p>Fungsi RANK.EQ untuk mendapatkan ranking atau peringkat nilai. Jika terdapat nilai duplikat RANK.EQ akan memberikan nilai ranking yang sama.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>RANK.EQ(Number; Referensi; [order])</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi FREQUENCY</a>
-                                                                <p>Fungsi FREQUENCY untuk menghitung kemunculan(frekuensi) nilai dari sebuah rentang data dalam bentuk Array Vertikal.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>FREQUENCY(ArrayData; ArrayBins)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                        </ol>
-                                                    </div>
+                                        <!-- 7. Fungsi Informasi (Information Functions) -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-heading6">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">Fungsi Informasi (Information Functions)</button>
+                                            </h2>
+                                            <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ol>
+                                                        <li><a href="#">Fungsi ISBLANK</a>
+                                                            <p>Fungsi ISBLANK untuk memeriksa sel kosong.</p>
+                                                            <div class="warning">
+                                                                <p><strong>ISBLANK(Value)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi ISFORMULA</a>
+                                                            <p>Fungsi ISFORMULA untuk memeriksa apakah sebuah sel berisi FORMULA atau Rumus Excel.</p>
+                                                            <div class="warning">
+                                                                <p><strong>ISFORMULA(Reference)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi ISREF</a>
+                                                            <p>Fungsi ISREF untuk memeriksa apakah nilai yang diberikan berupa Referensi yang valid atau tidak.</p>
+                                                            <div class="warning">
+                                                                <p><strong>ISREF(Value)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi ISLOGICAL</a>
+                                                            <p>Fungsi ISLOGICAL untuk memeriksa apakah nilai yang diberikan merupakan bentuk logika.</p>
+                                                            <div class="warning">
+                                                                <p><strong>ISLOGICAL(Value)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi ISNA</a>
+                                                            <p>Fungsi ISNA untuk memeriksa ada tidaknya #NA error.</p>
+                                                            <div class="warning">
+                                                                <p><strong>ISNA(Value)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi ISERR</a>
+                                                            <p>Fungsi ISERR untuk memeriksa ada tidaknya nilai pesan error selain fungsi #NA.</p>
+                                                            <div class="warning">
+                                                                <p><strong>ISERR(Value)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi ISERROR</a>
+                                                            <p>Fungsi ISERROR untuk memeriksa ada tidaknya semua jenis pesan error.</p>
+                                                            <div class="warning">
+                                                                <p><strong>ISERROR(Value)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi ISTEXT</a>
+                                                            <p>Fungsi ISTEXT untuk memeriksa apakah nilai yang diberikan berupa teks(string).</p>
+                                                            <div class="warning">
+                                                                <p><strong>ISTEXT(Value)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi ISNONTEXT</a>
+                                                            <p>Fungsi ISNONTEXT untuk memeriksa apakah nilai yang diberikan selain teks (string).</p>
+                                                            <div class="warning">
+                                                                <p><strong>ISNONTEXT(Value)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi ISNUMBER</a>
+                                                            <p>Fungsi ISNUMBER untuk memeriksa apakah nilai yang diberikan merupakan angka (numeric).</p>
+                                                            <div class="warning">
+                                                                <p><strong>ISNUMBER(Value)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi ISEVEN</a>
+                                                            <p>Fungsi ISEVEN untuk memeriksa apakah nilai yang diberikan merupakan angka GENAP.</p>
+                                                            <div class="warning">
+                                                                <p><strong>ISEVEN(Angka)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi ISODD</a>
+                                                            <p>Fungsi ISODD untuk memeriksa apakah nilai yang diberikan merupakan angka GANJIL.</p>
+                                                            <div class="warning">
+                                                                <p><strong>ISODD(Angka)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                    </ol>
                                                 </div>
                                             </div>
+                                        </div>
 
-                                            <!-- 7. Fungsi Informasi (Information Functions) -->
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="flush-heading6">
-                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">Fungsi Informasi (Information Functions)</button>
-                                                </h2>
-                                                <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6" data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">
-                                                        <ol>
-                                                            <li><a href="#">Fungsi ISBLANK</a>
-                                                                <p>Fungsi ISBLANK untuk memeriksa sel kosong.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>ISBLANK(Value)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi ISFORMULA</a>
-                                                                <p>Fungsi ISFORMULA untuk memeriksa apakah sebuah sel berisi FORMULA atau Rumus Excel.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>ISFORMULA(Reference)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi ISREF</a>
-                                                                <p>Fungsi ISREF untuk memeriksa apakah nilai yang diberikan berupa Referensi yang valid atau tidak.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>ISREF(Value)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi ISLOGICAL</a>
-                                                                <p>Fungsi ISLOGICAL untuk memeriksa apakah nilai yang diberikan merupakan bentuk logika.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>ISLOGICAL(Value)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi ISNA</a>
-                                                                <p>Fungsi ISNA untuk memeriksa ada tidaknya #NA error.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>ISNA(Value)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi ISERR</a>
-                                                                <p>Fungsi ISERR untuk memeriksa ada tidaknya nilai pesan error selain fungsi #NA.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>ISERR(Value)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi ISERROR</a>
-                                                                <p>Fungsi ISERROR untuk memeriksa ada tidaknya semua jenis pesan error.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>ISERROR(Value)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi ISTEXT</a>
-                                                                <p>Fungsi ISTEXT untuk memeriksa apakah nilai yang diberikan berupa teks(string).</p>
-                                                                <div class="warning">
-                                                                    <p><strong>ISTEXT(Value)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi ISNONTEXT</a>
-                                                                <p>Fungsi ISNONTEXT untuk memeriksa apakah nilai yang diberikan selain teks (string).</p>
-                                                                <div class="warning">
-                                                                    <p><strong>ISNONTEXT(Value)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi ISNUMBER</a>
-                                                                <p>Fungsi ISNUMBER untuk memeriksa apakah nilai yang diberikan merupakan angka (numeric).</p>
-                                                                <div class="warning">
-                                                                    <p><strong>ISNUMBER(Value)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi ISEVEN</a>
-                                                                <p>Fungsi ISEVEN untuk memeriksa apakah nilai yang diberikan merupakan angka GENAP.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>ISEVEN(Angka)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi ISODD</a>
-                                                                <p>Fungsi ISODD untuk memeriksa apakah nilai yang diberikan merupakan angka GANJIL.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>ISODD(Angka)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                        </ol>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <!-- 8. Fungsi Database (Database Functions) -->
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="flush-heading7">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapse7">Fungsi Database (Database Functions)</button>
+                                            </h2>
+                                            <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-heading7" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">
+                                                    <ol>
+                                                        <li><a href="#">Fungsi DSUM</a>
+                                                            <p>Fungsi DSUM digunakan untuk mendapatkan jumlah data pada sebuah field database yang memenuhi kriteria tertentu.
+                                                            </p>
+                                                            <div class="warning">
+                                                                <p><strong>DSUM(Database; Field; Kriteria)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi DAVERAGE</a>
+                                                            <p>Fungsi DAVERAGE digunakan untuk digunakan untuk menghitung nilai rata-rata pada sebuah field database yang cocok dengan kondisi atau kriteria tertentu.</p>
+                                                            <div class="warning">
+                                                                <p><strong>DAVERAGE(Database; Field; Kriteria)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi DMAX</a>
+                                                            <p>Fungsi DMAX digunakan untuk menghasilkan nilai angka terbesar(maximum) field record sebuah database yang sesuai dengan syarat atau kriteria yang anda tentukan.</p>
+                                                            <div class="warning">
+                                                                <p><strong>DAMX(Database; Field; Kriteria)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi DMIN</a>
+                                                            <p>Fungsi DMIN digunakan untuk menghasilkan nilai angka terkecil (minimum) field record sebuah database yang sesuai dengan syarat atau kriteria yang anda tentukan.</p>
+                                                            <div class="warning">
+                                                                <p><strong>DMIN(Database; Field; Kriteria)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi DCOUNT</a>
+                                                            <p>Fungsi DCOUNT digunakan untuk menghitung sel yang berisi angka dalam database dengan kriteria tertentu.</p>
+                                                            <div class="warning">
+                                                                <p><strong>DCOUNT(Database; Field; Kriteria)</strong></p>
+                                                            </div>
+                                                        </li>
+                                                        <li><a href="#">Fungsi DCOUNTA</a>
+                                                            <p>Fungsi DCOUNTA digunakan untuk untuk menghitung jumlah sel yang tidak kosong dalam database yang memenuhi kriteria tertentu.</p>
+                                                            <div class="warning">
+                                                                <p><strong>DCOUNTA(Database; Field; Kriteria)</strong></p>
+                                                            </div>
+                                                        </li>
 
-                                            <!-- 8. Fungsi Database (Database Functions) -->
-                                            <div class="accordion-item">
-                                                <h2 class="accordion-header" id="flush-heading7">
-                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapse7">Fungsi Database (Database Functions)</button>
-                                                </h2>
-                                                <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-heading7" data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">
-                                                        <ol>
-                                                            <li><a href="#">Fungsi DSUM</a>
-                                                                <p>Fungsi DSUM digunakan untuk mendapatkan jumlah data pada sebuah field database yang memenuhi kriteria tertentu.
-                                                                </p>
-                                                                <div class="warning">
-                                                                    <p><strong>DSUM(Database; Field; Kriteria)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi DAVERAGE</a>
-                                                                <p>Fungsi DAVERAGE digunakan untuk digunakan untuk menghitung nilai rata-rata pada sebuah field database yang cocok dengan kondisi atau kriteria tertentu.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>DAVERAGE(Database; Field; Kriteria)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi DMAX</a>
-                                                                <p>Fungsi DMAX digunakan untuk menghasilkan nilai angka terbesar(maximum) field record sebuah database yang sesuai dengan syarat atau kriteria yang anda tentukan.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>DAMX(Database; Field; Kriteria)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi DMIN</a>
-                                                                <p>Fungsi DMIN digunakan untuk menghasilkan nilai angka terkecil (minimum) field record sebuah database yang sesuai dengan syarat atau kriteria yang anda tentukan.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>DMIN(Database; Field; Kriteria)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi DCOUNT</a>
-                                                                <p>Fungsi DCOUNT digunakan untuk menghitung sel yang berisi angka dalam database dengan kriteria tertentu.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>DCOUNT(Database; Field; Kriteria)</strong></p>
-                                                                </div>
-                                                            </li>
-                                                            <li><a href="#">Fungsi DCOUNTA</a>
-                                                                <p>Fungsi DCOUNTA digunakan untuk untuk menghitung jumlah sel yang tidak kosong dalam database yang memenuhi kriteria tertentu.</p>
-                                                                <div class="warning">
-                                                                    <p><strong>DCOUNTA(Database; Field; Kriteria)</strong></p>
-                                                                </div>
-                                                            </li>
-
-                                                            <!-- <li><a href="#">Fungsi Finansial (Financial Functions)</a>
+                                                        <!-- <li><a href="#">Fungsi Finansial (Financial Functions)</a>
                                                                 <p></p>
                                                                 <div class="warning">
                                                                     <p><strong></strong></p>
@@ -960,11 +966,11 @@
                                                                     <p><strong></strong></p>
                                                                 </div>
                                                             </li> -->
-                                                        </ol>
-                                                    </div>
+                                                    </ol>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
                                     </p>
                                 </div>
                             </div>

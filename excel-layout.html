@@ -229,7 +229,79 @@
                                                 </li>
                                                 <div id="listFunctions" class="accordion-collapse collapse" aria-labelledby="functions" data-bs-parent="#pengantar">
                                                     <div class="accordion-body">
-                                                        (Rumus dan Fungsi) : Rumus adalah ekspresi yang menghitung nilai sel. Fungsi adalah rumus yang telah ditentukan sebelumnya dan sudah tersedia di Excel.
+                                                        <p>Sebuah rumus adalah ekspresi yang menghitung nilai sel. Fungsi adalah rumus yang telah ditentukan sebelumnya dan sudah tersedia di Excel.</p>
+
+                                                        <div class="row g-0 position-relative">
+                                                            <div class="col-md-6">
+                                                                <p>Misalnya, sel A3 di bawah ini berisi rumus yang menambahkan nilai sel A2 ke nilai sel A1.</p>
+                                                                <p><img src="https://www.excel-easy.com/introduction/images/formulas-functions/formula-example.png" width="347" alt="..."></p>
+                                                                <p>Misalnya, sel A3 di bawah ini berisi fungsi SUM yang menghitung jumlah Range A1:A2.</p>
+                                                                <p><img src="https://www.excel-easy.com/introduction/images/formulas-functions/function-example.png" width="347" alt="..."></p>
+
+                                                                <h5>Masukkan Formula</h5>
+                                                                <p>Untuk memasukkan rumus, jalankan langkah-langkah berikut.</p>
+                                                                <ol>
+                                                                    <li>Pilih sel.</li>
+                                                                    <li>Untuk memberi tahu Excel bahwa Anda ingin memasukkan rumus, ketikkan tanda sama dengan (=).</li>
+                                                                    <li>
+                                                                        <p>Misalnya, ketikkan rumus A1+A2.</p>
+                                                                        <p><img src="https://www.excel-easy.com/introduction/images/formulas-functions/formula-example.png" width="411" alt="..."></p>
+                                                                        <p>Tip: daripada mengetik A1 dan A2, cukup pilih sel A1 dan sel A2.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Ubah nilai sel A1 menjadi 3.</p>
+                                                                        <p><img src="https://www.excel-easy.com/introduction/images/formulas-functions/recalculation.png" width="411" alt="..."></p>
+                                                                        <p>Excel secara otomatis menghitung ulang nilai sel A3. Ini adalah salah satu fitur Excel yang paling kuat!</p>
+                                                                    </li>
+                                                                </ol>
+
+                                                                <h5>Mengedit Rumus</h5>
+                                                                <p>Saat Anda memilih sel, Excel memperlihatkan nilai atau rumus sel di bilah rumus.</p>
+                                                                <p><img src="https://www.excel-easy.com/introduction/images/formulas-functions/formula-bar.png" width="411" alt="..."></p>
+                                                                <ol>
+                                                                    <li>
+                                                                        <p>Untuk mengedit rumus, klik di bilah rumus dan ubah rumus.</p>
+                                                                        <p><img src="https://www.excel-easy.com/introduction/images/formulas-functions/edit-formula.png" width="411" alt="..."></p>
+                                                                    </li>
+
+                                                                    <li>
+                                                                        <p>Tekan Enter.</p>
+                                                                        <p><img src="https://www.excel-easy.com/introduction/images/formulas-functions/edited-formula.png" width="411" alt="..."></p>
+                                                                    </li>
+                                                                </ol>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <h5>Prioritas Operator</h5>
+                                                                <p>Excel menggunakan urutan default di mana perhitungan terjadi. Jika bagian dari rumus ada dalam tanda kurung, bagian itu akan dihitung terlebih dahulu. Kemudian melakukan perhitungan perkalian
+                                                                    atau pembagian. Setelah ini selesai, Excel akan menambah dan mengurangi sisa rumus Anda. Lihat contoh di bawah ini.</p>
+                                                                <p><img src="https://www.excel-easy.com/introduction/images/formulas-functions/operator-precedence.png" width="411" alt="..."></p>
+                                                                <p>Pertama, Excel melakukan perkalian (A1 * A2). Selanjutnya, Excel menambahkan nilai sel A3 ke hasil ini.</p>
+                                                                <p>Contoh lain,</p>
+                                                                <p><img src="https://www.excel-easy.com/introduction/images/formulas-functions/parentheses.png" width="411" alt="..."></p>
+                                                                <p>Pertama, Excel menghitung bagian dalam tanda kurung (A2+A3). Selanjutnya, hasil ini dikalikan dengan nilai sel A1.</p>
+
+                                                                <h5>Copy/Paste Rumus</h5>
+                                                                <p>Saat Anda menyalin rumus, Excel secara otomatis menyesuaikan referensi sel untuk setiap sel baru tempat rumus disalin. Untuk memahaminya, lakukan langkah-langkah berikut.</p>
+                                                                <ol>
+                                                                    <li>
+                                                                        <p>Masukkan rumus yang ditunjukkan di bawah ini ke dalam sel A4.</p>
+                                                                        <p><img src="https://www.excel-easy.com/introduction/images/formulas-functions/copy-formula-example.png" width="411" alt="..."></p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Pilih sel A4, klik kanan, lalu klik Salin (atau tekan CTRL + C)</p>
+                                                                        <p><img src="https://www.excel-easy.com/introduction/images/formulas-functions/copy.png" width="180" alt="..."></p>
+                                                                        <p>... selanjutnya, pilih sel B4, klik kanan, lalu klik Tempel di bawah 'Opsi Tempel:' (atau tekan CTRL + V).</p>
+                                                                        <p><img src="https://www.excel-easy.com/introduction/images/formulas-functions/paste.png" width="180" alt="..."></p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Anda juga dapat menyeret rumus ke sel B4. Pilih sel A4, klik di sudut kanan bawah sel A4 dan seret ke sel B4. Ini jauh lebih mudah dan memberikan hasil yang sama persis!</p>
+                                                                        <p><img src="https://www.excel-easy.com/introduction/images/formulas-functions/drag-formula.png" width="411" alt="..."></p>
+                                                                        <p>Hasil. Rumus di sel B4 mereferensikan nilai di kolom B.</p>
+                                                                        <p><img src="https://www.excel-easy.com/introduction/images/formulas-functions/copy-formula-result.png" width="411" alt="..."></p>
+                                                                    </li>
+                                                                </ol>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>

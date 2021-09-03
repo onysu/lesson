@@ -52,6 +52,10 @@
             background: #ffffff;
         }
         
+        .accordion-button {
+            font-weight: bold;
+        }
+        
         .accordion-button:not(.collapsed) {
             background-color: #eeeeee;
             color: #222;
@@ -69,6 +73,10 @@
             background: whitesmoke;
             padding: 0.5rem 1.25rem;
             border-left: 3px solid #666;
+        }
+        
+         ::marker {
+            font-weight: bold;
         }
     </style>
 </head>
@@ -424,7 +432,7 @@
                                             <div class="accordion-item">
                                                 <li>
                                                     <h2 class="accordion-header" id="workbook">
-                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listWorkbook" aria-expanded="false" aria-controls="listWorkbook">Workbook </button>
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listWorkbook" aria-expanded="false" aria-controls="listWorkbook">Workbook (Buku kerja)</button>
                                                     </h2>
                                                 </li>
                                                 <div id="listWorkbook" class="accordion-collapse collapse" aria-labelledby="workbook" data-bs-parent="#dasar">
@@ -485,51 +493,51 @@
                                                 <div id="listWorksheets" class="accordion-collapse collapse" aria-labelledby="worksheets" data-bs-parent="#dasar">
                                                     <div class="accordion-body">
                                                         <div class="row g-0 position-relative">
-                                                            <p>Lembar kerja adalah kumpulan sel tempat Anda menyimpan dan memanipulasi data. Setiap buku kerja Excel dapat berisi beberapa lembar kerja .</p>
+                                                            <p>Lembar Kerja (Worksheet) adalah kumpulan sel tempat Anda menyimpan dan memanipulasi data. Setiap buku kerja Excel dapat berisi beberapa Lembar Kerja (Worksheet) .</p>
                                                             <div class="col-md-6">
-                                                                <h5 class="judul-sub-accordion">Pilih Lembar Kerja</h5>
-                                                                <p>Ketika Anda membuka Excel workbook, Excel secara otomatis memilih Sheet1 untuk Anda. Nama lembar kerja muncul pada tab lembarnya di bagian bawah jendela dokumen.</p>
+                                                                <h5 class="judul-sub-accordion">Pilih Lembar Kerja (Worksheet)</h5>
+                                                                <p>Ketika Anda membuka Excel Workbook, Excel secara otomatis memilih <strong>Sheet1</strong> untuk Anda. Nama Lembar Kerja (Worksheet) muncul pada tab lembarnya di bagian bawah jendela dokumen.</p>
                                                                 <p><img src="https://www.excel-easy.com/basics/images/worksheets/sheet1.png" class="img-fluid" alt="..."></p>
 
-                                                                <h5 class="judul-sub-accordion">Sisipkan Lembar Kerja</h5>
-                                                                <p>Anda dapat menyisipkan lembar kerja sebanyak yang Anda inginkan. Untuk menyisipkan lembar kerja baru dengan cepat , klik tanda plus di bagian bawah jendela dokumen.</p>
+                                                                <h5 class="judul-sub-accordion">Sisipkan Lembar Kerja (Worksheet)</h5>
+                                                                <p>Anda dapat menyisipkan Lembar Kerja (Worksheet) sebanyak yang Anda inginkan. Untuk menyisipkan Lembar Kerja (Worksheet) baru dengan cepat , klik tanda plus di bagian bawah jendela dokumen.</p>
                                                                 <p><img src="https://www.excel-easy.com/basics/images/worksheets/insert.png" class="img-fluid" alt="..."></p>
                                                                 <p>Hasil:</p>
                                                                 <p><img src="https://www.excel-easy.com/basics/images/worksheets/added-sheet.png" class="img-fluid" alt="..."></p>
 
-                                                                <h5 class="judul-sub-accordion">Ganti nama Lembar Kerja</h5>
-                                                                <p>Untuk memberi lembar kerja nama yang lebih spesifik, jalankan langkah-langkah berikut.</p>
+                                                                <h5 class="judul-sub-accordion">Ganti nama Lembar Kerja (Worksheet)</h5>
+                                                                <p>Untuk memberi Lembar Kerja (Worksheet) nama yang lebih spesifik, jalankan langkah-langkah berikut.</p>
                                                                 <ol>
-                                                                    <li>Klik kanan pada tab lembar Sheet1.</li>
+                                                                    <li>Klik kanan pada tab lembar <strong>Sheet1</strong>.</li>
                                                                     <li>
-                                                                        <p>Pilih Ganti Nama.</p>
+                                                                        <p>Pilih Ganti Nama (Rename).</p>
                                                                         <p><img src="https://www.excel-easy.com/basics/images/worksheets/rename.png" class="img-fluid" alt="..."></p>
                                                                     </li>
                                                                     <li>
-                                                                        <p>Misalnya, ketik Penjualan 2016.</p>
+                                                                        <p>Misalnya, ketik <strong>Sales 2016</strong>.</p>
                                                                         <p><img src="https://www.excel-easy.com/basics/images/worksheets/specific-name.png" class="img-fluid" alt="..."></p>
                                                                     </li>
                                                                 </ol>
                                                             </div>
 
                                                             <div class="col-md-6">
-                                                                <h5 class="judul-sub-accordion">Hapus Lembar Kerja</h5>
-                                                                <p>Untuk menghapus lembar kerja, klik kanan pada tab lembar dan pilih Hapus.</p>
-                                                                <p>Misalnya, hapus Sheet2.</p>
+                                                                <h5 class="judul-sub-accordion">Hapus Lembar Kerja (Worksheet)</h5>
+                                                                <p>Untuk menghapus Lembar Kerja (Worksheet), klik kanan pada tab lembar dan pilih Hapus.</p>
+                                                                <p>Misalnya, hapus <strong>Sheet2</strong>.</p>
                                                                 <p><img src="https://www.excel-easy.com/basics/images/worksheets/delete.png" class="img-fluid" alt="..."></p>
 
                                                                 <p>Hasil:</p>
                                                                 <p><img src="https://www.excel-easy.com/basics/images/worksheets/one-worksheet-left.png" class="img-fluid" alt="..."></p>
 
-                                                                <h5 class="judul-sub-accordion">Salin Lembar Kerja</h5>
-                                                                <p>Bayangkan, Anda telah menyiapkan penjualan untuk tahun 2016 dan ingin membuat lembar yang sama persis untuk tahun 2017, tetapi dengan data yang berbeda. Anda dapat membuat ulang lembar kerja,
-                                                                    tetapi ini memakan waktu. Jauh lebih mudah untuk menyalin seluruh lembar kerja dan hanya mengubah angkanya.</p>
+                                                                <h5 class="judul-sub-accordion">Salin Lembar Kerja (Worksheet)</h5>
+                                                                <p>Bayangkan, Anda telah menyiapkan penjualan untuk tahun 2016 dan ingin membuat lembar yang sama persis untuk tahun 2017, tetapi dengan data yang berbeda. Anda dapat membuat ulang lembar kerja
+                                                                    (Worksheet), tetapi ini memakan waktu. Jauh lebih mudah untuk menyalin seluruh Lembar Kerja (Worksheet) dan hanya mengubah angkanya.</p>
                                                                 <ol>
                                                                     <li>Klik kanan pada tab lembar Sales 2016.</li>
                                                                     <li>
-                                                                        <p>Pilih Pindahkan atau Salin.</p>
+                                                                        <p>Pilih Pindahkan atau Salin (Move or Copy).</p>
                                                                         <p><img src="https://www.excel-easy.com/basics/images/worksheets/copy.png" class="img-fluid" alt="..."></p>
-                                                                        <p>Kotak dialog 'Pindahkan atau Salin' muncul.</p>
+                                                                        <p>Kotak dialog <strong>Move or Copy</strong> muncul.</p>
                                                                     </li>
                                                                     <li>
                                                                         <p>Pilih (pindah ke akhir) dan centang Buat salinan.</p>
@@ -542,8 +550,8 @@
                                                                     </li>
                                                                 </ol>
                                                             </div>
-                                                            <p class="info"><strong><i>Catatan:</i></strong> Anda bahkan dapat menyalin lembar kerja ke buku kerja Excel lain dengan memilih buku kerja tertentu dari daftar turun bawah (lihat kotak dialog yang diperlihatkan
-                                                                sebelumnya).
+                                                            <p class="info"><strong><i>Catatan:</i></strong> Anda bahkan dapat menyalin Lembar Kerja (Worksheet) ke buku kerja Excel lain dengan memilih buku kerja tertentu dari daftar turun bawah (lihat kotak dialog yang
+                                                                diperlihatkan sebelumnya).
                                                             </p>
                                                         </div>
                                                     </div>

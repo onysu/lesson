@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/bootstrap502/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="http://www.shieldui.com/shared/components/latest/css/light-bootstrap/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 offset-md-4">
+                <ul id="treeview">
+                    <li data-icon-cls="fa fa-inbox" data-expanded="true">Inbox
+                        <ul>
+                            <li><b>Today (2)</b></li>
+                            <li>Monday</li>
+                            <li>Last Week</li>
+                        </ul>
+                    </li>
+                    <li data-icon-cls="fa fa-trash">Trash
+                    </li>
+                    <li data-icon-cls="fa fa-calendar">Calendar
+                        <ul>
+                            <li>Day</li>
+                            <li>Week</li>
+                            <li>Month</li>
+                        </ul>
+                    </li>
+                    <li data-icon-cls="fa fa-user">Contacts
+                        <ul>
+                            <li>Alexander Stein</li>
+                            <li>John Doe</li>
+                            <li>Paul Smith</li>
+                            <li>Steward Lynn</li>
+                        </ul>
+                    </li>
+                    <li data-icon-cls="fa fa-folder">Folders
+                        <ul>
+                            <li>Backup</li>
+                            <li>Deleted</li>
+                            <li>Projects</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- you need to include the ShieldUI CSS and JS assets in order for the TreeView widget to work -->
+    <script src="dist/js/jquery.min.js "></script>
+    <script type="text/javascript" src="http://www.shieldui.com/shared/components/latest/js/shieldui-all.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function($) {
+            $("#treeview").shieldTreeView();
+        });
+    </script>
+</body>
+
+</html>

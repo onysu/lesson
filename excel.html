@@ -1306,7 +1306,7 @@
 
                                                                 <!-- COUNT -->
                                                                 <h5 class="judul-sub-accordion">COUNT</h5>
-                                                                <p>Untuk menghitung jumlah sel yang berisi angka, gunakan fungsi COUNT.</p>
+                                                                <p>Untuk menghitung jumlah sel yang berisi angka, gunakan fungsi <strong>COUNT</strong>.</p>
                                                                 <p><img src="https://www.excel-easy.com/functions/images/count-sum-functions/count-function.png" class="img-fluid" alt="..."></p>
                                                                 <p class="info"><strong><i>Catatan:</i></strong> untuk menghitung sel kosong dan tidak kosong di Excel, gunakan
                                                                     <strong>COUNTBLANK</strong> dan <strong>COUNTA</strong>.</p>
@@ -1529,21 +1529,191 @@
                                                             <div class="col-md-6">
                                                                 <!-- SUM -->
                                                                 <h5 class="judul-sub-accordion">SUM</h5>
-                                                                <p>Untuk menjumlahkan rentang sel, gunakan fungsi SUM.</p>
+                                                                <p>Untuk menjumlahkan Range sel, gunakan fungsi <strong>SUM</strong>.</p>
                                                                 <p><img src="https://www.excel-easy.com/functions/images/count-sum-functions/sum-function.png" class="img-fluid" alt="..."></p>
-                                                                <P class="info"><strong><i>Catatan:</i></strong> kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/sum.html" target="_blank">fungsi SUM</a> untuk lebih banyak contoh.</P>
+                                                                <P class="info"><strong><i>Catatan:</i></strong> kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/sum.html" target="_blank">fungsi <strong>SUM</strong></a> untuk lebih banyak contoh.</P>
+
+                                                                <p>Gunakan fungsi SUM di Excel untuk menjumlahkan Range sel, seluruh kolom, atau sel yang tidak bersebelahan. Untuk membuat rumus SUM yang mengagumkan , gabungkan fungsi SUM dengan fungsi Excel
+                                                                    lainnya .</p>
+
+                                                                <!-- Jumlah Range -->
+                                                                <h5 class="judul-sub-accordion">Jumlah Range</h5>
+                                                                <p>Sebagian besar waktu, Anda akan menggunakan fungsi SUM di Excel untuk menjumlahkan Range sel.</p>
+                                                                <p><img src="https://www.excel-easy.com/examples/images/sum/sum-range.png" class="img-fluid" alt="..."></p>
+
+                                                                <!-- Jumlahkan Seluruh Kolom -->
+                                                                <h5 class="judul-sub-accordion">Jumlahkan Seluruh Kolom</h5>
+                                                                <p>Anda juga dapat menggunakan fungsi SUM di Excel untuk menjumlahkan seluruh kolom.</p>
+                                                                <p><img src="https://www.excel-easy.com/examples/images/sum/sum-entire-column.png" class="img-fluid" alt="..."></p>
+                                                                <p><img src="https://www.excel-easy.com/examples/images/sum/cell-A99.png" class="img-fluid" alt="..."></p>
+                                                                <p>Catatan: Anda juga dapat menggunakan fungsi SUM di Excel untuk menjumlahkan seluruh baris. Misalnya, =SUM(5:5) menjumlahkan semua nilai di baris ke-5.</p>
+
+                                                                <!-- Jumlah Sel yang Tidak Bersebelahan -->
+                                                                <h5 class="judul-sub-accordion">Jumlah Sel yang Tidak Bersebelahan</h5>
+                                                                <p>Anda juga dapat menggunakan fungsi SUM di Excel untuk menjumlahkan sel yang tidak bersebelahan. Tidak bersebelahan berarti tidak bersebelahan.</p>
+                                                                <p><img src="https://www.excel-easy.com/examples/images/sum/sum-non-contiguous-cells.png" class="img-fluid" alt="..."></p>
+                                                                <p>Catatan: =A3+A5+A8 menghasilkan hasil yang sama persis!</p>
+
+                                                                <!-- JumlahOtomatis -->
+                                                                <h5 class="judul-sub-accordion">JumlahOtomatis</h5>
+                                                                <p>Gunakan JumlahOtomatis atau tekan <kbd>Alt</kbd> <kbd>+</kbd> <kbd>=</kbd> untuk menjumlahkan kolom atau baris angka dengan cepat.</p>
+                                                                <ol>
+                                                                    <li>
+                                                                        <p>Pertama, pilih sel di bawah kolom angka (atau di sebelah deretan angka) yang ingin Anda jumlahkan.</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sum/select-cell.png" class="img-fluid" alt="..."></p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Pada tab Beranda, dalam grup Pengeditan, klik JumlahOtomatis (atau tekan ATL + =).</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sum/click-autosum.png" class="img-fluid" alt="..."></p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Tekan Enter.</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sum/autosum.png" class="img-fluid" alt="..."></p>
+                                                                    </li>
+                                                                </ol>
+
+                                                                <!-- Jumlahkan Setiap Baris Ke-N -->
+                                                                <h5 class="judul-sub-accordion">Jumlahkan Setiap Baris Ke-N</h5>
+                                                                <p>Rumus <strong>SUM</strong> di bawah ini menggunakan <strong>SUM</strong>, <strong>MOD</strong> dan <strong>ROW</strong> untuk menjumlahkan setiap baris ke-n . Ubah 3 menjadi 4 untuk menjumlahkan
+                                                                    setiap baris ke-4, menjadi 5 untuk menjumlahkan setiap baris ke-5, dst.</p>
+                                                                <p><img src="https://www.excel-easy.com/examples/images/sum/sum-every-nth-row.png" class="img-fluid" alt="..."></p>
+                                                                <p>Catatan: bilah rumus menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Untuk memasukkan rumus array, selesaikan dengan menekan
+                                                                    <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
+
+                                                                <!-- Jumlahkan Bilangan Terbesar -->
+                                                                <h5 class="judul-sub-accordion">Jumlahkan Bilangan Terbesar</h5>
+                                                                <p>Rumus <strong>SUM</strong> di bawah ini menggunakan <strong>SUM</strong> dan LARGE untuk menjumlahkan angka terbesar dalam suatu Range. Ubah {1,2,3,4} menjadi {1,2,3,4,5} untuk menjumlahkan
+                                                                    5 bilangan terbesar.</p>
+                                                                <p><img src="https://www.excel-easy.com/examples/images/sum/sum-largest-numbers.png" class="img-fluid" alt="..."></p>
+                                                                <p>Catatan: =LARGE(A1:A11,2) cukup mengembalikan angka terbesar kedua.</p>
+
+                                                                <!-- Jumlah Range dengan Kesalahan -->
+                                                                <h5 class="judul-sub-accordion">Jumlah Range dengan Kesalahan</h5>
+                                                                <p>Rumus <strong>SUM</strong> di bawah ini menggunakan <strong>SUM</strong> dan <strong>IFERROR</strong> untuk menjumlahkan Range dengan kesalahan . Anda juga dapat menggunakan fungsi <strong>AGGREGATE</strong>                                                                    di Excel untuk menjumlahkan Range dengan kesalahan.</p>
+                                                                <p><img src="https://www.excel-easy.com/examples/images/sum/sum-range-with-errors.png" class="img-fluid" alt="..."></p>
+                                                                <p>Catatan: fungsi <strong>SUM</strong> di Excel secara otomatis mengabaikan nilai teks.</p>
+
                                                             </div>
 
                                                             <div class="col-md-6">
                                                                 <!-- SUMIF -->
                                                                 <h5 class="judul-sub-accordion">SUMIF</h5>
-                                                                <p>Untuk menjumlahkan sel berdasarkan satu kriteria (misalnya, lebih besar dari 9), gunakan fungsi SUMIF berikut (dua argumen).</p>
+                                                                <p>Untuk menjumlahkan sel berdasarkan satu kriteria (misalnya, lebih besar dari 9), gunakan fungsi <strong>SUMIF</strong> berikut (dua argumen).</p>
                                                                 <p><img src="https://www.excel-easy.com/functions/images/count-sum-functions/sumif-function-two-arguments.png" class="img-fluid" alt="..."></p>
-                                                                <p>Untuk menjumlahkan sel berdasarkan satu kriteria (misalnya, hijau), gunakan fungsi SUMIF berikut (tiga argumen, argumen terakhir adalah rentang yang akan dijumlahkan).</p>
+                                                                <p>Untuk menjumlahkan sel berdasarkan satu kriteria (misalnya, hijau), gunakan fungsi <strong>SUMIF</strong> berikut (tiga argumen, argumen terakhir adalah Range yang akan dijumlahkan).</p>
                                                                 <p><img src="https://www.excel-easy.com/functions/images/count-sum-functions/sumif-function-three-arguments.png" class="img-fluid" alt="..."></p>
-                                                                <p class="info"><strong><i>Catatan:</i></strong> kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/sumif.html" target="_blank">fungsi SUMIF</a> untuk lebih banyak contoh.</p>
-                                                                <p>Untuk menjumlahkan sel berdasarkan beberapa kriteria (misalnya, lingkaran dan merah), gunakan fungsi SUMIFS berikut (argumen pertama adalah rentang yang akan dijumlahkan).</p>
+                                                                <p class="info"><strong><i>Catatan:</i></strong> kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/sumif.html" target="_blank">fungsi <strong>SUMIF</strong></a> untuk lebih banyak
+                                                                    contoh.
+                                                                </p>
+                                                                <p>Untuk menjumlahkan sel berdasarkan beberapa kriteria (misalnya, lingkaran dan merah), gunakan fungsi SUMIFS berikut (argumen pertama adalah Range yang akan dijumlahkan).</p>
                                                                 <p><img src="https://www.excel-easy.com/functions/images/count-sum-functions/sumifs-function.png" class="img-fluid" alt="..."></p>
+
+                                                                <p>Fungsi <strong>SUMIF</strong> yang kuat di Excel menjumlahkan sel berdasarkan satu kriteria. Halaman ini berisi banyak contoh <strong>SUMIF</strong> yang mudah diikuti.</p>
+
+                                                                <h5 class="judul-sub-accordion">Kriteria Numerik</h5>
+                                                                <p>Gunakan fungsi <strong>SUMIF</strong> di Excel untuk menjumlahkan sel berdasarkan angka yang memenuhi kriteria tertentu.</p>
+                                                                <ol>
+                                                                    <li>
+                                                                        <p>Fungsi <strong>SUMIF</strong> di bawah (dua argumen) menjumlahkan nilai dalam Range A1:A5 yang kurang dari atau sama dengan 10.</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sumif/sumif-function-with-two-arguments.png" class="img-fluid" alt="..."></p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Fungsi <strong>SUMIF</strong> berikut memberikan hasil yang sama persis. Operator & menggabungkan simbol 'kurang dari atau sama dengan' dan nilai dalam sel C1.</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sumif/sumif-function-ampersand-operator.png" class="img-fluid" alt="..."></p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Fungsi <strong>SUMIF</strong> di bawah ini (tiga argumen, argumen terakhir adalah Range yang akan dijumlahkan) menjumlahkan nilai dalam Range B1:B5 jika sel terkait dalam Range A1:A5
+                                                                            berisi nilai 25.
+                                                                        </p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sumif/sumif-function-with-three-arguments.png" class="img-fluid" alt="..."></p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Fungsi <strong>SUMIF</strong> berikut memberikan hasil yang sama persis (argumen kedua mengacu pada sel D1).</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sumif/second-argument-refers-to-cell-d1.png" class="img-fluid" alt="..."></p>
+                                                                    </li>
+                                                                </ol>
+
+                                                                <!-- Kriteria Teks -->
+                                                                <h5 class="judul-sub-accordion">Kriteria Teks</h5>
+                                                                <p>Gunakan fungsi <strong>SUMIF</strong> di Excel untuk menjumlahkan sel berdasarkan string teks yang memenuhi kriteria tertentu. Selalu sertakan teks dalam tanda kutip ganda.</p>
+                                                                <ol>
+                                                                    <li>
+                                                                        <p>Fungsi <strong>SUMIF</strong> di bawah ini menjumlahkan nilai dalam Range B1:B5 jika sel yang sesuai dalam Range A1:A5 berisi lingkaran persis.</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sumif/sum-if-equal-to-text-value.png" class="img-fluid" alt="..."></p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Fungsi <strong>SUMIF</strong> di bawah ini menjumlahkan nilai dalam Range B1:B5 jika sel terkait dalam Range A1:A5 tidak berisi segitiga sama persis.</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sumif/sum-if-not-equal-to-text-value.png" class="img-fluid" alt="..."></p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Fungsi <strong>SUMIF</strong> di bawah ini menjumlahkan nilai dalam Range B1:B5 jika sel yang sesuai dalam Range A1:A5 berisi persis lingkaran + 1 karakter. Tanda tanya (?) cocok
+                                                                            dengan tepat satu karakter.
+                                                                        </p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sumif/sumif-function-with-question-mark.png" class="img-fluid" alt="..."></p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Fungsi <strong>SUMIF</strong> di bawah ini menjumlahkan nilai dalam Range B1:B5 jika sel terkait dalam Range A1:A5 berisi rangkaian nol atau lebih karakter + file. Tanda bintang (*)
+                                                                            cocok dengan serangkaian karakter nol atau lebih.</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sumif/sumif-function-with-asterisk.png" class="img-fluid" alt="..."></p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Fungsi <strong>SUMIF</strong> di bawah jumlah nilai dalam Range B1:B5 jika sel yang sesuai dalam Range A1:A5 berisi segitiga atau lingkaran yang tepat8.</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sumif/two-sumif-functions.png" class="img-fluid" alt="..."></p>
+                                                                    </li>
+                                                                </ol>
+
+                                                                <!-- Kriteria Tanggal -->
+                                                                <h5 class="judul-sub-accordion">Kriteria Tanggal</h5>
+                                                                <p>Gunakan fungsi <strong>SUMIF</strong> di Excel untuk menjumlahkan sel berdasarkan tanggal yang memenuhi kriteria tertentu.</p>
+                                                                <ol>
+                                                                    <li>
+                                                                        <p>Fungsi <strong>SUMIF</strong> di bawah ini menjumlahkan penjualan setelah 20 Januari 2018.</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sumif/sum-if-date-is-greater-than.png" class="img-fluid" alt="..."></p>
+                                                                        <p class="info"><strong><i>Catatan:</i></strong> fungsi DATE di Excel menerima tiga argumen: tahun, bulan, dan hari.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Fungsi <strong>SUMIF</strong> di bawah ini menjumlahkan penjualan hari ini.</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sumif/sumif-function-today-function.png" class="img-fluid" alt="..."></p>
+                                                                        <p class="info"><strong><i>Catatan:</i></strong> hari ini adalah 3 Agustus 2018.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Fungsi SUMIFS (dengan huruf S di akhir) di bawah ini menjumlahkan penjualan antara dua tanggal.</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sumif/sum-if-date-is-between.png" class="img-fluid" alt="..."></p>
+                                                                        <p class="info"><strong><i>Catatan:</i></strong> fungsi SUMIFS di Excel menjumlahkan sel berdasarkan dua atau lebih kriteria (argumen pertama adalah Range yang akan dijumlahkan, diikuti oleh dua
+                                                                            atau lebih pasangan Range/kriteria). Sesuaikan tanggal untuk menjumlahkan penjualan pada bulan, tahun, dll.</p>
+                                                                    </li>
+                                                                </ol>
+
+                                                                <!-- AND Kriteria -->
+                                                                <h5 class="judul-sub-accordion">AND Kriteria</h5>
+                                                                <p>Menjumlahkan dengan kriteria Dan di Excel itu mudah.</p>
+                                                                <p>Misalnya, untuk menjumlahkan sel yang memenuhi kriteria berikut: Google dan Stanford (dua Range kriteria), cukup gunakan fungsi SUMIFS (dengan huruf S di akhir).</p>
+                                                                <p><img src="https://www.excel-easy.com/examples/images/sumif/sumifs-function.png" class="img-fluid" alt="..."></p>
+                                                                <p class="info"><strong><i>Catatan:</i></strong> ingat, saat menggunakan fungsi SUMIFS, argumen pertama adalah Range yang akan dijumlahkan, diikuti oleh dua atau lebih pasangan Range/kriteria.</p>
+
+                                                                <!-- OR Kriteria -->
+                                                                <h5 class="judul-sub-accordion">OR Kriteria</h5>
+                                                                <p>Menjumlahkan dengan kriteria Or di Excel bisa jadi rumit.</p>
+                                                                <ol>
+                                                                    <li>
+                                                                        <p>Rumus di bawah ini menjumlahkan sel yang memenuhi kriteria berikut: Google atau Facebook (satu Range kriteria). Tidak ada ilmu roket sejauh ini.</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sumif/2x-sumif-function.png" class="img-fluid" alt="..."></p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Namun, jika Anda ingin menjumlahkan sel yang memenuhi kriteria berikut: Google atau Stanford (dua Range kriteria), Anda tidak bisa begitu saja menggunakan fungsi SUMIF dua kali (lihat
+                                                                            gambar di bawah).</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sumif/wrong-formula.png" class="img-fluid" alt="..."></p>
+                                                                        <p class="info"><strong><i>Catatan:</i></strong> sel yang memenuhi kriteria Google dan Stanford ditambahkan dua kali, tetapi hanya boleh ditambahkan satu kali. 10 adalah jawaban yang kita cari.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Rumus array di bawah ini berhasil.</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sumif/sum-with-or-criteria.png" class="img-fluid" alt="..."></p>
+                                                                        <p class="info"><strong><i>Catatan:</i></strong> selesaikan rumus array dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>. Excel menambahkan kurung kurawal <strong>{}</strong>. Kunjungi
+                                                                            halaman kami tentang
+                                                                            <a href="https://www.excel-easy.com/examples/sum-with-or-criteria.html" target="_blank">Menjumlahkan dengan Atau Kriteria</a> untuk instruksi terperinci tentang cara membuat rumus
+                                                                            array ini.</p>
+                                                                    </li>
+                                                                </ol>
                                                             </div>
                                                         </div>
                                                     </div>

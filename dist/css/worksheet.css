@@ -1,4 +1,8 @@
 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -60,8 +64,10 @@ footer a .icons {
 }
 
 .main-content {
+    display: -ms-grid;
     display: grid;
     min-height: 100vh;
+    -ms-grid-rows: (45px)[2] 115px 60px auto;
     grid-template-rows: repeat(2, 45px) 115px 60px auto;
     max-width: 100%;
 }
@@ -73,13 +79,17 @@ footer a .icons {
 .title {
     background: #217346;
     text-align: center;
+    display: -ms-grid;
     display: grid;
     place-content: center;
     color: #fff;
 }
 
 .menu-bar {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: (max-content)[10];
+    grid-template-columns: repeat(10, -webkit-max-content);
     grid-template-columns: repeat(10, max-content);
     padding: 15px;
     grid-gap: 30px;
@@ -97,19 +107,27 @@ footer a .icons {
 .cell-content {
     border: 1px solid #e6e6e6;
     background: #e6e6e6;
+    display: -ms-grid;
     display: grid;
     padding: 10px;
+    -ms-grid-columns: 50px auto;
     grid-template-columns: 50px auto;
 }
 
 .cell-content div {
     border: 1px solid #cdcdcd;
     background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .cell-content div:nth-child(1) {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     color: #999;
     font: italic 700 18px "Merriweather", serif;
@@ -118,8 +136,11 @@ footer a .icons {
 
 .cells {
     position: relative;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 40px (calc((100% - 50px) / 11))[11];
     grid-template-columns: 40px repeat(11, calc((100% - 50px) / 11));
+    -ms-grid-rows: (25px)[21];
     grid-template-rows: repeat(21, 25px);
     grid-gap: 1px;
     background: #cdcdcd;
@@ -145,16 +166,30 @@ footer a .icons {
 
 .cells__alphabet {
     background: #e6e6e6;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
 .cells__number {
     background: #e6e6e6;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1/span 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -172,12 +207,17 @@ footer a .icons {
 }
 
 .input__explanation {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
     grid-column: 3/span 2;
+    -ms-grid-row: 15;
     grid-row: 15;
 }
 
 .input__see-more {
+    -ms-grid-column: 5;
     grid-column: 5;
+    -ms-grid-row: 15;
     grid-row: 15;
     text-align: left;
     padding: 6px;
@@ -189,35 +229,46 @@ footer a .icons {
 .input__sm-3 {
     text-align: center;
     padding: 6px;
+    -ms-grid-row: 15;
     grid-row: 15;
     background: #fff;
 }
 
 .input__sm-1 {
+    -ms-grid-column: 8;
     grid-column: 8;
 }
 
 .input__sm-2 {
+    -ms-grid-column: 9;
     grid-column: 9;
 }
 
 .input__sm-3 {
+    -ms-grid-column: 10;
     grid-column: 10;
 }
 
 .icon-bar {
     background: #f3f2f1;
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     position: relative;
+    display: -ms-grid;
     display: grid;
     padding: 10px 15px;
+    -ms-grid-columns: (max-content)[6];
+    grid-template-columns: repeat(6, -webkit-max-content);
     grid-template-columns: repeat(6, max-content);
+    -ms-grid-rows: auto 35px;
     grid-template-rows: auto 35px;
     grid-auto-flow: dense;
 }
 
 .icon-bar>div {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-rows: (30px)[2] 30px;
     grid-template-rows: repeat(2, 30px) 30px;
     border-right: 1px solid #cdcdcd;
     grid-gap: 5px;
@@ -226,6 +277,8 @@ footer a .icons {
 .icon-bar__name {
     font-size: 12px;
     text-align: center;
+    -ms-flex-item-align: end;
+    -ms-grid-row-align: end;
     align-self: end;
     margin-bottom: 3px;
 }
@@ -241,19 +294,33 @@ footer a .icons {
 }
 
 .icon-bar__clipboard {
+    -ms-grid-columns: 50px 30px;
     grid-template-columns: 50px 30px;
     padding-right: 10px;
 }
 
 .icon-bar__clipboard .icon-bar__name {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
     grid-column: 1/span 2;
 }
 
 .icon-bar__clipboard .icon-paste {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
     grid-row: 1/span 2;
 }
 
@@ -278,11 +345,15 @@ footer a .icons {
 
 .icon-bar__font {
     padding: 0 10px;
+    -ms-grid-columns: (30px)[3] 40px (30px)[2];
     grid-template-columns: repeat(3, 30px) 40px repeat(2, 30px);
+    -ms-flex-pack: distribute;
     justify-content: space-around;
 }
 
 .icon-bar__font .icon-bar__name {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 5;
     grid-column: 1/span 5;
 }
 
@@ -291,6 +362,8 @@ footer a .icons {
 }
 
 .icon-bar__font select:nth-child(1) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
     grid-column: 1/span 4;
 }
 
@@ -300,6 +373,8 @@ footer a .icons {
 
 .icon-bar__font select:nth-child(2) {
     margin-left: -6px;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 2;
     grid-column: 5/span 2;
 }
 
@@ -334,10 +409,13 @@ footer a .icons {
 
 .icon-bar__alignment {
     padding: 0 10px;
+    -ms-grid-columns: (30px)[5] 160px;
     grid-template-columns: repeat(5, 30px) 160px;
 }
 
 .icon-bar__alignment .icon-bar__name {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
     grid-column: 1/span 6;
 }
 
@@ -360,6 +438,7 @@ footer a .icons {
 
 .icon-bar__alignment .icon-alignl {
     background-position: 0 -30px;
+    -ms-grid-column: 1;
     grid-column: 1;
 }
 
@@ -382,10 +461,15 @@ footer a .icons {
 
 .icon-bar__alignment .wrap-text,
 .icon-bar__alignment .merge-center {
+    -ms-grid-column: 6;
     grid-column: 6;
     border-left: 1px solid #cdcdcd;
     padding-left: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -402,6 +486,7 @@ footer a .icons {
 }
 
 .icon-bar__alignment .wrap-text {
+    -ms-grid-row: 1;
     grid-row: 1;
 }
 
@@ -414,6 +499,7 @@ footer a .icons {
 }
 
 .icon-bar__number {
+    -ms-grid-columns: (30px)[5];
     grid-template-columns: repeat(5, 30px);
     padding: 0 10px;
 }
@@ -449,6 +535,7 @@ footer a .icons {
 }
 
 .icon-bar__styles {
+    -ms-grid-columns: 80px 70px 60px;
     grid-template-columns: 80px 70px 60px;
     padding: 0 10px;
     text-align: center;
@@ -477,6 +564,7 @@ footer a .icons {
 }
 
 .icon-bar__cells {
+    -ms-grid-columns: (50px)[3];
     grid-template-columns: repeat(3, 50px);
     padding: 0 10px;
     text-align: center;
@@ -503,3 +591,6 @@ footer a .icons {
 .icon-bar__cells .cell-format .icon {
     background-position: -30px -105px;
 }
+
+
+/*# sourceMappingURL=style.css.map */

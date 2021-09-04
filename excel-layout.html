@@ -98,23 +98,18 @@
                                                 <li><strong>Daftar isi :</strong>
                                                     <ol>
                                                         <li><a href="#tentang">Tentang Microsoft Excel</a></li>
-                                                        <li><a href="#rumus">Pengertian Rumus Excel</a></li>
-                                                        <li><a href="#aritmatika">Rumus Excel Aritmatika</a></li>
-                                                        <li><a href="#statiska">Rumus Excel Statistika</a> :
-                                                            <ul>
-                                                                <li><a href="#">Rumus Rata-rata Excel</a></li>
-                                                                <li><a href="#">Rumus Menghitung Data</a></li>
-                                                                <li><a href="#">Rumus Rangking Excel</a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li><a href="#lookup">Rumus Excel Pencarian/Lookup Data</a></li>
-                                                        <li><a href="#logika">Rumus Excel Logika</a></li>
-                                                        <li><a href="#waktu">Rumus Excel Tanggal dan Waktu</a></li>
-                                                        <li><a href="#teks">Rumus Excel Teks</a></li>
-                                                        <li><a href="#array">Rumus Array</a></li>
-                                                        <li><a href="#lainnya">Rumus-rumus Excel Lainnya</a></li>
-                                                        <li><a href="#latihan">Latihan Excel</a></li>
-                                                    </ol>
+                                                        <li><a href="#dasar">Dasar - Dasar Excel</a></li>
+                                                        <li><a href="#fungsi">Fungsi Excel</a></li>
+                                                        <li><a href="#analisis">Analisis Data Excel</a></li>
+                                                        <li><a href="#vba">VBA</a></li>
+                                                        <ul>
+                                                            <li><a href="#">Rumus Rata-rata Excel</a></li>
+                                                            <li><a href="#">Rumus Menghitung Data</a></li>
+                                                            <li><a href="#">Rumus Rangking Excel</a></li>
+                                                        </ul>
+                                                </li>
+                                                <li><a href="#latihan">Latihan Excel</a></li>
+                                                </ol>
                                                 </li>
                                             </ul>
                                         </div>
@@ -122,17 +117,207 @@
                                 </div>
                             </div>
 
-                            <!-- PENGANTAR -->
-                            <div class="card">
+                            <!-- Tentang Microsoft Excel -->
+                            <div class="card" id="tentang">
                                 <div class="card-header">
-                                    <h5 class="m-0">PENGANTAR</h5>
+                                    <h5 class="m-0">Tentang Microsoft Excel</h5>
                                 </div>
                                 <div class="card-body">
                                     <p>Microsoft Excel adalah salah satu aplikasi perangkat lunak yang paling banyak digunakan sepanjang masa. Ratusan juta orang di seluruh dunia menggunakan Microsoft Excel. Anda dapat menggunakan Excel untuk memasukkan
                                         semua jenis data dan melakukan perhitungan keuangan, matematis, atau statistik.</p>
-                                    <div class="accordion accordion-flush" id="pengantar">
 
+                                </div>
+                            </div>
+                            <!-- /PENGANTAR -->
+
+                            <!-- DASAR-DASAR -->
+                            <div class="card" id="dasar">
+                                <div class="card-header">
+                                    <h5 class="m-0">DASAR-DASAR</h5>
+                                </div>
+                                <div class="card-body">
+                                    <p>Bagian ini menjelaskan dasar - dasar Excel.</p>
+                                    <div class="accordion accordion-flush" id="dasar">
                                         <ol>
+                                            <!-- Ribbon -->
+                                            <div class="accordion-item">
+                                                <li>
+                                                    <h2 class="accordion-header" id="ribbon">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listRibbon" aria-expanded="false" aria-controls="listRibbon">Ribbon </button>
+                                                    </h2>
+                                                </li>
+                                                <div id="listRibbon" class="accordion-collapse collapse" aria-labelledby="ribbon" data-bs-parent="#dasar">
+                                                    <div class="accordion-body">
+                                                        <div class="row g-0 position-relative">
+                                                            <p>Excel memilih Tab Beranda Ribbon saat Anda membukanya. Pelajari cara menggunakan Ribbon.</p>
+                                                            <div class="col-md-6">
+                                                                <h5 class="judul-sub-accordion">Tab</h5>
+                                                                <p>Tab pada Ribbon adalah: File, Beranda, Sisipkan, Tata letak halaman, Rumus, Data, Tinjauan, Tampilan, dan Bantuan. Tab Beranda berisi perintah yang paling sering digunakan di Excel.</p>
+                                                                <p><img src="https://www.excel-easy.com/basics/images/ribbon/tabs.png" class="img-fluid" alt="..."></p>
+
+                                                                <h5>Grup</h5>
+                                                                <p>Setiap tab berisi grup perintah terkait. Misalnya, tab Tata Letak Halaman berisi grup Tema, grup Penyetelan Halaman, dll.</p>
+                                                                <p><img src="https://www.excel-easy.com/basics/images/ribbon/groups.png" class="img-fluid" alt="..."></p>
+
+                                                                <h5 class="judul-sub-accordion">Ciutkan Pita</h5>
+                                                                <p>Anda dapat menciutkan pita untuk mendapatkan ruang ekstra di layar. Klik kanan di mana saja pada pita, lalu klik Ciutkan Pita (atau tekan <kbd><strong>Ctrl+F1</strong></kbd>).</p>
+                                                                <p><img src="https://www.excel-easy.com/basics/images/ribbon/collapse-the-ribbon.png" class="img-fluid" alt="..."></p>
+                                                                <p>Hasil.</p>
+                                                                <p><img src="https://www.excel-easy.com/basics/images/ribbon/hidden-ribbon.png" class="img-fluid" alt="..."></p>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <h5 class="judul-sub-accordion">Gunakan Ribbon</h5>
+                                                                <p>Mari gunakan Ribbon untuk menyisipkan tabel. Tabel memungkinkan Anda menganalisis data di Excel dengan cepat dan mudah.</p>
+                                                                <ol>
+                                                                    <li>Klik salah satu sel di dalam <a href="img/bahan/data-set.xlsx">data set</a>.</li>
+                                                                    <li>
+                                                                        <p>Pada tab Sisipkan, dalam grup Tabel, klik Tabel.</p>
+                                                                        <p><img src="https://www.excel-easy.com/basics/images/ribbon/use-the-ribbon.png" class="img-fluid" alt="..."></p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Excel secara otomatis memilih data untuk Anda. Centang <strong>Tabel saya memiliki header</strong> dan klik OK.</p>
+                                                                        <p><img src="https://www.excel-easy.com/basics/images/ribbon/create-table.png" class="img-fluid" alt="..."></p>
+                                                                        <p>Hasil. Excel membuat tabel yang diformat dengan baik untuk Anda.</p>
+                                                                        <p><img src="https://www.excel-easy.com/basics/images/ribbon/excel-table.png" class="img-fluid" alt="..."></p>
+                                                                        <p class="info"><strong><i>Catatan:</i></strong> gunakan panah tarik-turun untuk mengurutkan dan memfilter dengan cepat.</p>
+                                                                    </li>
+                                                                </ol>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Workbook  -->
+                                            <div class="accordion-item">
+                                                <li>
+                                                    <h2 class="accordion-header" id="workbook">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listWorkbook" aria-expanded="false" aria-controls="listWorkbook">Workbook (Buku kerja)</button>
+                                                    </h2>
+                                                </li>
+                                                <div id="listWorkbook" class="accordion-collapse collapse" aria-labelledby="workbook" data-bs-parent="#dasar">
+                                                    <div class="accordion-body">
+                                                        <div class="row g-0 position-relative">
+                                                            <p><strong>Workbook</strong> (Buku kerja) adalah kata lain untuk file Excel Anda . Saat Anda memulai Excel, klik Buku kerja kosong untuk membuat buku kerja Excel dari awal.</p>
+                                                            <div class="col-md-6">
+                                                                <h5 class="judul-sub-accordion">Buka Buku Kerja yang sudah Ada</h5>
+                                                                <p>Untuk membuka buku kerja yang telah Anda buat sebelumnya, jalankan langkah-langkah berikut.</p>
+                                                                <ol>
+                                                                    <li>Pada tab File, klik Buka.</li>
+                                                                    <li>
+                                                                        <p>Terbaru menampilkan daftar buku kerja yang baru saja Anda gunakan. Anda dapat dengan cepat membuka buku kerja dari sini.</p>
+                                                                        <p><img src="https://www.excel-easy.com/basics/images/workbook/backstage-view.png" class="img-fluid" alt="..."></p>
+                                                                    </li>
+                                                                    <li>Klik Telusuri untuk membuka buku kerja yang tidak ada dalam daftar.</li>
+                                                                </ol>
+
+                                                                <h5 class="judul-sub-accordion">Tutup Buku Kerja</h5>
+                                                                <p>Untuk menutup buku kerja (dan Excel), klik kanan atas <strong>X</strong>. Jika Anda memiliki beberapa buku kerja yang terbuka, mengklik kanan atas X akan menutup buku kerja yang aktif.</p>
+                                                                <p><img src="https://www.excel-easy.com/basics/images/workbook/close-excel-workbook.png" class="img-fluid" alt="..."></p>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <h5 class="judul-sub-accordion">Buat Buku Kerja Baru</h5>
+                                                                <p>Terkadang Anda ingin memulai dari awal lagi. Untuk membuat buku kerja baru, jalankan langkah-langkah berikut.</p>
+                                                                <ol>
+                                                                    <li>Pada tab File, klik Baru.</li>
+                                                                    <li>
+                                                                        <p>Klik Buku kerja kosong.</p>
+                                                                        <p><img src="https://www.excel-easy.com/basics/images/workbook/create-new-workbook.png" class="img-fluid" alt="..."></p>
+                                                                    </li>
+                                                                </ol>
+
+                                                                <h5 class="judul-sub-accordion">Matikan layar Mulai</h5>
+                                                                <p>Saat Anda memulai Excel, ini menunjukkan layar mulai yang mencantumkan file dan templat Excel yang baru saja digunakan. Untuk melewati layar mulai dan selalu memulai dengan buku kerja kosong,
+                                                                    jalankan langkah-langkah berikut.</p>
+                                                                <ol>
+                                                                    <li>Pada tab File, klik Opsi.</li>
+                                                                    <li>
+                                                                        <p>Di bawah opsi Mulai, hapus centang <strong>Show the Start screen when this application starts</strong> (Tampilkan layar Mulai saat aplikasi ini dimulai).</p>
+                                                                        <p><img src="https://www.excel-easy.com/basics/images/workbook/turn-off-start-screen.png" class="img-fluid" alt="..."></p>
+                                                                    </li>
+                                                                    <li>Klik Oke.</li>
+                                                                </ol>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <!-- Worksheets -->
+                                            <div class="accordion-item">
+                                                <li>
+                                                    <h2 class="accordion-header" id="worksheets">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listWorksheets" aria-expanded="false" aria-controls="listWorksheets">Worksheets (Lembar Kerja) </button>
+                                                    </h2>
+                                                </li>
+                                                <div id="listWorksheets" class="accordion-collapse collapse" aria-labelledby="worksheets" data-bs-parent="#dasar">
+                                                    <div class="accordion-body">
+                                                        <div class="row g-0 position-relative">
+                                                            <p>Lembar Kerja (Worksheet) adalah kumpulan sel tempat Anda menyimpan dan memanipulasi data. Setiap buku kerja Excel dapat berisi beberapa Lembar Kerja (Worksheet) .</p>
+                                                            <div class="col-md-6">
+                                                                <h5 class="judul-sub-accordion">Pilih Lembar Kerja (Worksheet)</h5>
+                                                                <p>Ketika Anda membuka Excel Workbook, Excel secara otomatis memilih <strong>Sheet1</strong> untuk Anda. Nama Lembar Kerja (Worksheet) muncul pada tab lembarnya di bagian bawah jendela dokumen.</p>
+                                                                <p><img src="https://www.excel-easy.com/basics/images/worksheets/sheet1.png" class="img-fluid" alt="..."></p>
+
+                                                                <h5 class="judul-sub-accordion">Sisipkan Lembar Kerja (Worksheet)</h5>
+                                                                <p>Anda dapat menyisipkan Lembar Kerja (Worksheet) sebanyak yang Anda inginkan. Untuk menyisipkan Lembar Kerja (Worksheet) baru dengan cepat , klik tanda plus di bagian bawah jendela dokumen.</p>
+                                                                <p><img src="https://www.excel-easy.com/basics/images/worksheets/insert.png" class="img-fluid" alt="..."></p>
+                                                                <p>Hasil:</p>
+                                                                <p><img src="https://www.excel-easy.com/basics/images/worksheets/added-sheet.png" class="img-fluid" alt="..."></p>
+
+                                                                <h5 class="judul-sub-accordion">Ganti nama Lembar Kerja (Worksheet)</h5>
+                                                                <p>Untuk memberi Lembar Kerja (Worksheet) nama yang lebih spesifik, jalankan langkah-langkah berikut.</p>
+                                                                <ol>
+                                                                    <li>Klik kanan pada tab lembar <strong>Sheet1</strong>.</li>
+                                                                    <li>
+                                                                        <p>Pilih Ganti Nama (Rename).</p>
+                                                                        <p><img src="https://www.excel-easy.com/basics/images/worksheets/rename.png" class="img-fluid" alt="..."></p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Misalnya, ketik <strong>Sales 2016</strong>.</p>
+                                                                        <p><img src="https://www.excel-easy.com/basics/images/worksheets/specific-name.png" class="img-fluid" alt="..."></p>
+                                                                    </li>
+                                                                </ol>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <h5 class="judul-sub-accordion">Hapus Lembar Kerja (Worksheet)</h5>
+                                                                <p>Untuk menghapus Lembar Kerja (Worksheet), klik kanan pada tab lembar dan pilih Hapus.</p>
+                                                                <p>Misalnya, hapus <strong>Sheet2</strong>.</p>
+                                                                <p><img src="https://www.excel-easy.com/basics/images/worksheets/delete.png" class="img-fluid" alt="..."></p>
+
+                                                                <p>Hasil:</p>
+                                                                <p><img src="https://www.excel-easy.com/basics/images/worksheets/one-worksheet-left.png" class="img-fluid" alt="..."></p>
+
+                                                                <h5 class="judul-sub-accordion">Salin Lembar Kerja (Worksheet)</h5>
+                                                                <p>Bayangkan, Anda telah menyiapkan penjualan untuk tahun 2016 dan ingin membuat lembar yang sama persis untuk tahun 2017, tetapi dengan data yang berbeda. Anda dapat membuat ulang lembar kerja
+                                                                    (Worksheet), tetapi ini memakan waktu. Jauh lebih mudah untuk menyalin seluruh Lembar Kerja (Worksheet) dan hanya mengubah angkanya.</p>
+                                                                <ol>
+                                                                    <li>Klik kanan pada tab lembar Sales 2016.</li>
+                                                                    <li>
+                                                                        <p>Pilih Pindahkan atau Salin (Move or Copy).</p>
+                                                                        <p><img src="https://www.excel-easy.com/basics/images/worksheets/copy.png" class="img-fluid" alt="..."></p>
+                                                                        <p>Kotak dialog <strong>Move or Copy</strong> muncul.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Pilih (pindah ke akhir) dan centang Buat salinan.</p>
+                                                                        <p><img src="https://www.excel-easy.com/basics/images/worksheets/move-or-copy-dialog-box.png" class="img-fluid" alt="..."></p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Klik Oke.</p>
+                                                                        <p>Hasil:</p>
+                                                                        <p><img src="https://www.excel-easy.com/basics/images/worksheets/copied.png" class="img-fluid" alt="..."></p>
+                                                                    </li>
+                                                                </ol>
+                                                            </div>
+                                                            <p class="info"><strong><i>Catatan:</i></strong> Anda bahkan dapat menyalin Lembar Kerja (Worksheet) ke buku kerja Excel lain dengan memilih buku kerja tertentu dari daftar turun bawah (lihat kotak dialog yang
+                                                                diperlihatkan sebelumnya).
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
                                             <!-- Range -->
                                             <div class="accordion-item">
                                                 <li>
@@ -368,200 +553,6 @@
                                                                     </li>
                                                                 </ol>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </ol>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- /PENGANTAR -->
-
-                            <!-- DASAR-DASAR -->
-                            <div class="card">
-                                <div class="card-header">
-                                    <h5 class="m-0">DASAR-DASAR</h5>
-                                </div>
-                                <div class="card-body">
-                                    <p>Bagian ini menjelaskan dasar - dasar Excel.</p>
-                                    <div class="accordion accordion-flush" id="dasar">
-                                        <ol>
-                                            <!-- Ribbon -->
-                                            <div class="accordion-item">
-                                                <li>
-                                                    <h2 class="accordion-header" id="ribbon">
-                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listRibbon" aria-expanded="false" aria-controls="listRibbon">Ribbon </button>
-                                                    </h2>
-                                                </li>
-                                                <div id="listRibbon" class="accordion-collapse collapse" aria-labelledby="ribbon" data-bs-parent="#dasar">
-                                                    <div class="accordion-body">
-                                                        <div class="row g-0 position-relative">
-                                                            <p>Excel memilih Tab Beranda Ribbon saat Anda membukanya. Pelajari cara menggunakan Ribbon.</p>
-                                                            <div class="col-md-6">
-                                                                <h5 class="judul-sub-accordion">Tab</h5>
-                                                                <p>Tab pada Ribbon adalah: File, Beranda, Sisipkan, Tata letak halaman, Rumus, Data, Tinjauan, Tampilan, dan Bantuan. Tab Beranda berisi perintah yang paling sering digunakan di Excel.</p>
-                                                                <p><img src="https://www.excel-easy.com/basics/images/ribbon/tabs.png" class="img-fluid" alt="..."></p>
-
-                                                                <h5>Grup</h5>
-                                                                <p>Setiap tab berisi grup perintah terkait. Misalnya, tab Tata Letak Halaman berisi grup Tema, grup Penyetelan Halaman, dll.</p>
-                                                                <p><img src="https://www.excel-easy.com/basics/images/ribbon/groups.png" class="img-fluid" alt="..."></p>
-
-                                                                <h5 class="judul-sub-accordion">Ciutkan Pita</h5>
-                                                                <p>Anda dapat menciutkan pita untuk mendapatkan ruang ekstra di layar. Klik kanan di mana saja pada pita, lalu klik Ciutkan Pita (atau tekan <kbd><strong>Ctrl+F1</strong></kbd>).</p>
-                                                                <p><img src="https://www.excel-easy.com/basics/images/ribbon/collapse-the-ribbon.png" class="img-fluid" alt="..."></p>
-                                                                <p>Hasil.</p>
-                                                                <p><img src="https://www.excel-easy.com/basics/images/ribbon/hidden-ribbon.png" class="img-fluid" alt="..."></p>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <h5 class="judul-sub-accordion">Gunakan Ribbon</h5>
-                                                                <p>Mari gunakan Ribbon untuk menyisipkan tabel. Tabel memungkinkan Anda menganalisis data di Excel dengan cepat dan mudah.</p>
-                                                                <ol>
-                                                                    <li>Klik salah satu sel di dalam <a href="img/bahan/data-set.xlsx">data set</a>.</li>
-                                                                    <li>
-                                                                        <p>Pada tab Sisipkan, dalam grup Tabel, klik Tabel.</p>
-                                                                        <p><img src="https://www.excel-easy.com/basics/images/ribbon/use-the-ribbon.png" class="img-fluid" alt="..."></p>
-                                                                    </li>
-                                                                    <li>
-                                                                        <p>Excel secara otomatis memilih data untuk Anda. Centang <strong>Tabel saya memiliki header</strong> dan klik OK.</p>
-                                                                        <p><img src="https://www.excel-easy.com/basics/images/ribbon/create-table.png" class="img-fluid" alt="..."></p>
-                                                                        <p>Hasil. Excel membuat tabel yang diformat dengan baik untuk Anda.</p>
-                                                                        <p><img src="https://www.excel-easy.com/basics/images/ribbon/excel-table.png" class="img-fluid" alt="..."></p>
-                                                                        <p class="info"><strong><i>Catatan:</i></strong> gunakan panah tarik-turun untuk mengurutkan dan memfilter dengan cepat.</p>
-                                                                    </li>
-                                                                </ol>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- Workbook  -->
-                                            <div class="accordion-item">
-                                                <li>
-                                                    <h2 class="accordion-header" id="workbook">
-                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listWorkbook" aria-expanded="false" aria-controls="listWorkbook">Workbook (Buku kerja)</button>
-                                                    </h2>
-                                                </li>
-                                                <div id="listWorkbook" class="accordion-collapse collapse" aria-labelledby="workbook" data-bs-parent="#dasar">
-                                                    <div class="accordion-body">
-                                                        <div class="row g-0 position-relative">
-                                                            <p><strong>Workbook</strong> (Buku kerja) adalah kata lain untuk file Excel Anda . Saat Anda memulai Excel, klik Buku kerja kosong untuk membuat buku kerja Excel dari awal.</p>
-                                                            <div class="col-md-6">
-                                                                <h5 class="judul-sub-accordion">Buka Buku Kerja yang sudah Ada</h5>
-                                                                <p>Untuk membuka buku kerja yang telah Anda buat sebelumnya, jalankan langkah-langkah berikut.</p>
-                                                                <ol>
-                                                                    <li>Pada tab File, klik Buka.</li>
-                                                                    <li>
-                                                                        <p>Terbaru menampilkan daftar buku kerja yang baru saja Anda gunakan. Anda dapat dengan cepat membuka buku kerja dari sini.</p>
-                                                                        <p><img src="https://www.excel-easy.com/basics/images/workbook/backstage-view.png" class="img-fluid" alt="..."></p>
-                                                                    </li>
-                                                                    <li>Klik Telusuri untuk membuka buku kerja yang tidak ada dalam daftar.</li>
-                                                                </ol>
-
-                                                                <h5 class="judul-sub-accordion">Tutup Buku Kerja</h5>
-                                                                <p>Untuk menutup buku kerja (dan Excel), klik kanan atas <strong>X</strong>. Jika Anda memiliki beberapa buku kerja yang terbuka, mengklik kanan atas X akan menutup buku kerja yang aktif.</p>
-                                                                <p><img src="https://www.excel-easy.com/basics/images/workbook/close-excel-workbook.png" class="img-fluid" alt="..."></p>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <h5 class="judul-sub-accordion">Buat Buku Kerja Baru</h5>
-                                                                <p>Terkadang Anda ingin memulai dari awal lagi. Untuk membuat buku kerja baru, jalankan langkah-langkah berikut.</p>
-                                                                <ol>
-                                                                    <li>Pada tab File, klik Baru.</li>
-                                                                    <li>
-                                                                        <p>Klik Buku kerja kosong.</p>
-                                                                        <p><img src="https://www.excel-easy.com/basics/images/workbook/create-new-workbook.png" class="img-fluid" alt="..."></p>
-                                                                    </li>
-                                                                </ol>
-
-                                                                <h5 class="judul-sub-accordion">Matikan layar Mulai</h5>
-                                                                <p>Saat Anda memulai Excel, ini menunjukkan layar mulai yang mencantumkan file dan templat Excel yang baru saja digunakan. Untuk melewati layar mulai dan selalu memulai dengan buku kerja kosong,
-                                                                    jalankan langkah-langkah berikut.</p>
-                                                                <ol>
-                                                                    <li>Pada tab File, klik Opsi.</li>
-                                                                    <li>
-                                                                        <p>Di bawah opsi Mulai, hapus centang <strong>Show the Start screen when this application starts</strong> (Tampilkan layar Mulai saat aplikasi ini dimulai).</p>
-                                                                        <p><img src="https://www.excel-easy.com/basics/images/workbook/turn-off-start-screen.png" class="img-fluid" alt="..."></p>
-                                                                    </li>
-                                                                    <li>Klik Oke.</li>
-                                                                </ol>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <!-- Worksheets -->
-                                            <div class="accordion-item">
-                                                <li>
-                                                    <h2 class="accordion-header" id="worksheets">
-                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listWorksheets" aria-expanded="false" aria-controls="listWorksheets">Worksheets (Lembar Kerja) </button>
-                                                    </h2>
-                                                </li>
-                                                <div id="listWorksheets" class="accordion-collapse collapse" aria-labelledby="worksheets" data-bs-parent="#dasar">
-                                                    <div class="accordion-body">
-                                                        <div class="row g-0 position-relative">
-                                                            <p>Lembar Kerja (Worksheet) adalah kumpulan sel tempat Anda menyimpan dan memanipulasi data. Setiap buku kerja Excel dapat berisi beberapa Lembar Kerja (Worksheet) .</p>
-                                                            <div class="col-md-6">
-                                                                <h5 class="judul-sub-accordion">Pilih Lembar Kerja (Worksheet)</h5>
-                                                                <p>Ketika Anda membuka Excel Workbook, Excel secara otomatis memilih <strong>Sheet1</strong> untuk Anda. Nama Lembar Kerja (Worksheet) muncul pada tab lembarnya di bagian bawah jendela dokumen.</p>
-                                                                <p><img src="https://www.excel-easy.com/basics/images/worksheets/sheet1.png" class="img-fluid" alt="..."></p>
-
-                                                                <h5 class="judul-sub-accordion">Sisipkan Lembar Kerja (Worksheet)</h5>
-                                                                <p>Anda dapat menyisipkan Lembar Kerja (Worksheet) sebanyak yang Anda inginkan. Untuk menyisipkan Lembar Kerja (Worksheet) baru dengan cepat , klik tanda plus di bagian bawah jendela dokumen.</p>
-                                                                <p><img src="https://www.excel-easy.com/basics/images/worksheets/insert.png" class="img-fluid" alt="..."></p>
-                                                                <p>Hasil:</p>
-                                                                <p><img src="https://www.excel-easy.com/basics/images/worksheets/added-sheet.png" class="img-fluid" alt="..."></p>
-
-                                                                <h5 class="judul-sub-accordion">Ganti nama Lembar Kerja (Worksheet)</h5>
-                                                                <p>Untuk memberi Lembar Kerja (Worksheet) nama yang lebih spesifik, jalankan langkah-langkah berikut.</p>
-                                                                <ol>
-                                                                    <li>Klik kanan pada tab lembar <strong>Sheet1</strong>.</li>
-                                                                    <li>
-                                                                        <p>Pilih Ganti Nama (Rename).</p>
-                                                                        <p><img src="https://www.excel-easy.com/basics/images/worksheets/rename.png" class="img-fluid" alt="..."></p>
-                                                                    </li>
-                                                                    <li>
-                                                                        <p>Misalnya, ketik <strong>Sales 2016</strong>.</p>
-                                                                        <p><img src="https://www.excel-easy.com/basics/images/worksheets/specific-name.png" class="img-fluid" alt="..."></p>
-                                                                    </li>
-                                                                </ol>
-                                                            </div>
-
-                                                            <div class="col-md-6">
-                                                                <h5 class="judul-sub-accordion">Hapus Lembar Kerja (Worksheet)</h5>
-                                                                <p>Untuk menghapus Lembar Kerja (Worksheet), klik kanan pada tab lembar dan pilih Hapus.</p>
-                                                                <p>Misalnya, hapus <strong>Sheet2</strong>.</p>
-                                                                <p><img src="https://www.excel-easy.com/basics/images/worksheets/delete.png" class="img-fluid" alt="..."></p>
-
-                                                                <p>Hasil:</p>
-                                                                <p><img src="https://www.excel-easy.com/basics/images/worksheets/one-worksheet-left.png" class="img-fluid" alt="..."></p>
-
-                                                                <h5 class="judul-sub-accordion">Salin Lembar Kerja (Worksheet)</h5>
-                                                                <p>Bayangkan, Anda telah menyiapkan penjualan untuk tahun 2016 dan ingin membuat lembar yang sama persis untuk tahun 2017, tetapi dengan data yang berbeda. Anda dapat membuat ulang lembar kerja
-                                                                    (Worksheet), tetapi ini memakan waktu. Jauh lebih mudah untuk menyalin seluruh Lembar Kerja (Worksheet) dan hanya mengubah angkanya.</p>
-                                                                <ol>
-                                                                    <li>Klik kanan pada tab lembar Sales 2016.</li>
-                                                                    <li>
-                                                                        <p>Pilih Pindahkan atau Salin (Move or Copy).</p>
-                                                                        <p><img src="https://www.excel-easy.com/basics/images/worksheets/copy.png" class="img-fluid" alt="..."></p>
-                                                                        <p>Kotak dialog <strong>Move or Copy</strong> muncul.</p>
-                                                                    </li>
-                                                                    <li>
-                                                                        <p>Pilih (pindah ke akhir) dan centang Buat salinan.</p>
-                                                                        <p><img src="https://www.excel-easy.com/basics/images/worksheets/move-or-copy-dialog-box.png" class="img-fluid" alt="..."></p>
-                                                                    </li>
-                                                                    <li>
-                                                                        <p>Klik Oke.</p>
-                                                                        <p>Hasil:</p>
-                                                                        <p><img src="https://www.excel-easy.com/basics/images/worksheets/copied.png" class="img-fluid" alt="..."></p>
-                                                                    </li>
-                                                                </ol>
-                                                            </div>
-                                                            <p class="info"><strong><i>Catatan:</i></strong> Anda bahkan dapat menyalin Lembar Kerja (Worksheet) ke buku kerja Excel lain dengan memilih buku kerja tertentu dari daftar turun bawah (lihat kotak dialog yang
-                                                                diperlihatkan sebelumnya).
-                                                            </p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1192,7 +1183,7 @@
                             <!-- /DASAR-DASAR -->
 
                             <!-- FUNGSI -->
-                            <div class="card">
+                            <div class="card" id="fungsi">
                                 <div class="card-header">
                                     <h5 class="m-0">FUNGSI</h5>
                                 </div>
@@ -1360,7 +1351,7 @@
                             <!-- /FUNGSI -->
 
                             <!-- ANALISIS DATA -->
-                            <div class="card">
+                            <div class="card" id="analisis">
                                 <div class="card-header">
                                     <h5 class="m-0">ANALISIS DATA</h5>
                                 </div>
@@ -1500,7 +1491,7 @@
                             <!-- /ANALISIS DATA -->
 
                             <!-- VBA -->
-                            <div class="card">
+                            <div class="card" id="vba">
                                 <div class="card-header">
                                     <h5 class="m-0">VBA</h5>
                                 </div>

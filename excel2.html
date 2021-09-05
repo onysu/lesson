@@ -561,7 +561,7 @@
                                     </ol>
 
                                     <!-- Transpose -->
-                                    <h5 id="Transpose" class="judul-sub-accordion">Transpose</h5>
+                                    <h5 id="Transpose" class="judul-sub-accordion">Transpose (Mengubah urutan)</h5>
 
                                     <p class="konten-sub text-sm fw-light mb-1"><a href="#Paste">Paste Special Transpose</a> | <a href="#Function">Fungsi Transpos</a> | <a href="#Zeros">Transpose Tabel tanpa Nol</a> | <a href="#Magic">Transpose Magic</a></p>
 
@@ -571,99 +571,88 @@
                                     <p id="Paste" class="konten-sub-judul">Paste Special Transpose</p>
                                     <p class="konten-sub">Untuk mentranspos data, lakukan langkah-langkah berikut.</p>
                                     <ol>
+                                        <li>Pilih rentang A1:C1.</li>
                                         <li>
-                                            <p>Anda dapat mengubah lebar kolom dengan mengklik dan menyeret batas kanan header kolom.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/change-column-width.png" class="img-fluid" alt="..."></p>
+                                            <p>Klik kanan, lalu klik Salin.</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/transpose/right-click-copy.png" class="img-fluid" alt="..."></p>
+                                        </li>
+                                        <li>Pilih sel E2.</li>
+                                        <li>Klik kanan, lalu klik Tempel Spesial.</li>
+                                        <li>
+                                            <p>Periksa Transpos.</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/transpose/check-transpose.png" class="img-fluid" alt="..."></p>
                                         </li>
                                         <li>
-                                            <p>To automatically fit the widest entry in a column, double click the right border of a column header.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/autofit-column.png" class="img-fluid" alt="..."></p>
-                                        </li>
-                                        <li>
-                                            <p>To autofit multiple columns, first select multiple columns by clicking and dragging over the column headers.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/select-multiple-columns.png" class="img-fluid" alt="..."></p>
-                                            <p>Note: to select non-adjacent columns, hold CTRL while clicking the column headers.</p>
-                                        </li>
-                                        <li>
-                                            <p>Next, double click the right border of one of the column headers.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/autofit-multiple-columns.png" class="img-fluid" alt="..."></p>
-                                        </li>
-                                        <li>
-                                            <p>To change the width of all columns, first select all columns by clicking the Select All button.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/select-all-columns.png" class="img-fluid" alt="..."></p>
-                                        </li>
-                                        <li>
-                                            <p>Next, change the width of a column.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/change-width-of-all-columns.png" class="img-fluid" alt="..."></p>
+                                            <p>Klik Oke.</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/transpose/paste-special-transpose-result.png" class="img-fluid" alt="..."></p>
                                         </li>
                                     </ol>
 
                                     <!-- Fungsi Transpos -->
                                     <p id="Function" class="konten-sub-judul">Fungsi Transpos</p>
-                                    <p class="konten-sub">Teknik yang dijelaskan di atas juga dapat digunakan untuk mengubah ketinggian baris. Alih-alih mengklik batas kanan tajuk kolom, cukup klik batas bawah tajuk baris. Ada satu cara lagi untuk menyesuaikan kolom atau baris
-                                        secara otomatis.</p>
+                                    <p class="konten-sub">Untuk menyisipkan fungsi TRANSPOSE, jalankan langkah-langkah berikut.</p>
                                     <ol>
                                         <li>
-                                            <p>Pertama, pilih beberapa baris dengan mengklik dan menyeret header baris.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/select-multiple-rows.png" class="img-fluid" alt="..."></p>
+                                            <p>Pertama, pilih rentang sel baru.</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/transpose/select-new-range.png" class="img-fluid" alt="..."></p>
+                                        </li>
+                                        <li>Ketik =TRANSPOSE(</li>
+                                        <li>
+                                            <p>Pilih rentang A1:C1 dan tutup dengan tanda kurung.</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/transpose/transpose-function.png" class="img-fluid" alt="..."></p>
                                         </li>
                                         <li>
-                                            <p>Pada tab Beranda, dalam grup Sel, klik Format.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/click-format.png" class="img-fluid" alt="..."></p>
-                                        </li>
-                                        <li>
-                                            <p>Klik Paskan Otomatis Tinggi Baris.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/click-autofit-row-height.png" class="img-fluid" alt="..."></p>
-                                            <p>Hasil:</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/autofit-row-height.png" class="img-fluid" alt="..."></p>
-                                            <p>Catatan: Anda juga dapat menggunakan teknik ini untuk mengatur tinggi baris atau lebar kolom (lihat tangkapan layar pada langkah 3). Hati-hati, jangan berpikir dalam piksel di sini. Lebar default kolom adalah
-                                                8,43 unit dan tinggi default baris adalah 15,00 unit.</p>
+                                            <p>Akhiri dengan menekan CTRL + SHIFT + ENTER.</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/transpose/transpose-function-result.png" class="img-fluid" alt="..."></p>
+                                            <p>Catatan: Bilah rumus menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Untuk menghapus rumus array ini, pilih rentang E2:E4 dan tekan Delete.</p>
                                         </li>
                                     </ol>
 
                                     <!-- Transpose Tabel tanpa Nol -->
                                     <p id="Zeros" class="konten-sub-judul">Transpose Tabel tanpa Nol</p>
-                                    <p class="konten-sub">Teknik yang dijelaskan di atas juga dapat digunakan untuk mengubah ketinggian baris. Alih-alih mengklik batas kanan tajuk kolom, cukup klik batas bawah tajuk baris. Ada satu cara lagi untuk menyesuaikan kolom atau baris
-                                        secara otomatis.</p>
+                                    <p class="konten-sub">Fungsi TRANSPOSE di Excel mengonversi sel kosong menjadi nol. Cukup gunakan fungsi IF untuk memperbaiki masalah ini.</p>
                                     <ol>
                                         <li>
-                                            <p>Pertama, pilih beberapa baris dengan mengklik dan menyeret header baris.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/select-multiple-rows.png" class="img-fluid" alt="..."></p>
+                                            <p>Misalnya, sel B4 di bawah ini kosong. Fungsi TRANSPOSE mengonversi sel kosong ini menjadi nol (sel G3).</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/transpose/transpose-table.png" class="img-fluid" alt="..."></p>
                                         </li>
                                         <li>
-                                            <p>Pada tab Beranda, dalam grup Sel, klik Format.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/click-format.png" class="img-fluid" alt="..."></p>
-                                        </li>
-                                        <li>
-                                            <p>Klik Paskan Otomatis Tinggi Baris.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/click-autofit-row-height.png" class="img-fluid" alt="..."></p>
-                                            <p>Hasil:</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/autofit-row-height.png" class="img-fluid" alt="..."></p>
-                                            <p>Catatan: Anda juga dapat menggunakan teknik ini untuk mengatur tinggi baris atau lebar kolom (lihat tangkapan layar pada langkah 3). Hati-hati, jangan berpikir dalam piksel di sini. Lebar default kolom adalah
-                                                8,43 unit dan tinggi default baris adalah 15,00 unit.</p>
+                                            <p>Jika kosong, fungsi IF di bawah ini mengembalikan string kosong (dua tanda kutip ganda tanpa apa pun di antaranya) untuk ditranspos.</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/transpose/transpose-table-without-zeros.png" class="img-fluid" alt="..."></p>
                                         </li>
                                     </ol>
 
                                     <!-- Transpose Magic -->
                                     <p id="Magic" class="konten-sub-judul">Transpose Magic</p>
-                                    <p class="konten-sub">Teknik yang dijelaskan di atas juga dapat digunakan untuk mengubah ketinggian baris. Alih-alih mengklik batas kanan tajuk kolom, cukup klik batas bawah tajuk baris. Ada satu cara lagi untuk menyesuaikan kolom atau baris
-                                        secara otomatis.</p>
+                                    <p class="konten-sub">Opsi <em>'Paste Special Transpose'</em> adalah cara yang bagus untuk mentranspos data tetapi jika Anda ingin menautkan sel sumber ke sel target, Anda memerlukan beberapa trik sulap.</p>
                                     <ol>
+                                        <li>Pilih rentang A1:E2.</li>
                                         <li>
-                                            <p>Pertama, pilih beberapa baris dengan mengklik dan menyeret header baris.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/select-multiple-rows.png" class="img-fluid" alt="..."></p>
+                                            <p>Klik kanan, lalu klik Salin.</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/transpose/copy-data.png" class="img-fluid" alt="..."></p>
+                                        </li>
+                                        <li>Pilih sel A4.</li>
+                                        <li>Klik kanan, lalu klik Tempel Spesial.</li>
+                                        <li>
+                                            <p>Klik Tempel Tautan.</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/transpose/click-paste-link.png" class="img-fluid" alt="..."></p>
+                                            <p>Hasil.</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/transpose/paste-link-result.png" class="img-fluid" alt="..."></p>
                                         </li>
                                         <li>
-                                            <p>Pada tab Beranda, dalam grup Sel, klik Format.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/click-format.png" class="img-fluid" alt="..."></p>
+                                            <p>Pilih rentang A4:E5 dan ganti semua tanda sama dengan xxx.</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/transpose/replace-all.png" class="img-fluid" alt="..."></p>
+                                            <p>Hasil.</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/transpose/ready-to-transpose.png" class="img-fluid" alt="..."></p>
                                         </li>
                                         <li>
-                                            <p>Klik Paskan Otomatis Tinggi Baris.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/click-autofit-row-height.png" class="img-fluid" alt="..."></p>
-                                            <p>Hasil:</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/autofit-row-height.png" class="img-fluid" alt="..."></p>
-                                            <p>Catatan: Anda juga dapat menggunakan teknik ini untuk mengatur tinggi baris atau lebar kolom (lihat tangkapan layar pada langkah 3). Hati-hati, jangan berpikir dalam piksel di sini. Lebar default kolom adalah
-                                                8,43 unit dan tinggi default baris adalah 15,00 unit.</p>
+                                            <p>Gunakan <em>'Paste Special Transpose'</em> untuk mentranspos data ini.</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/transpose/transposed-data.png" class="img-fluid" alt="..."></p>
+                                        </li>
+                                        <li>
+                                            <p>Pilih rentang G1:H5 dan ganti semua kemunculan 'xxx' dengan tanda sama dengan (kebalikan dari langkah 6).</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/transpose/transpose-magic.png" class="img-fluid" alt="..."></p>
+                                            <p>Catatan: misalnya, ubah nilai di sel C2 dari 16 menjadi 36. Nilai di sel H3 juga akan berubah dari 16 menjadi 36.</p>
                                         </li>
                                     </ol>
 

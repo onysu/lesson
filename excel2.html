@@ -153,19 +153,19 @@
                             <div id="range-collapse" class="accordion-collapse collapse" aria-labelledby="rangeId" data-bs-parent="#Introduction">
                                 <div class="accordion-body">
 
-                                    <p class="konten-sub text-sm fw-light mb-1"><a href="#autofill">AutoFill</a> | <a href="#Fibonacci">Fibonacci Sequence</a> | <a href="#Lists">Daftar Kustom</a> | <a href="#Komentar">Komentar</a> | <a href="#KolomBaris">Hide Columns or Rows</a> | <a href="#">Skip Blanks</a>                                        | <a href="#">AutoFit</a> | <a href="#">Transpose</a> | <a href="#">Split Cells</a> | <a href="#">Flash Fill</a> | <a href="#">Pindahkan Kolom</a>
+                                    <p class="konten-sub text-sm fw-light mb-1"><a href="#autofill">AutoFill</a> | <a href="#Fibonacci">Fibonacci Sequence</a> | <a href="#Lists">Daftar Kustom</a> | <a href="#Komentar">Komentar</a> | <a href="#KolomBaris">Hide Columns or Rows</a> | <a href="#Skip">Skip Blanks</a>                                        | <a href="#AutoFit">AutoFit</a> | <a href="#Transpose">Transpose</a> | <a href="#Split">Split Cells</a> | <a href="#Flash">Flash Fill</a> | <a href="#Pindahkan">Pindahkan Kolom</a>
                                     </p>
 
                                     <!-- AutoFill -->
                                     <h5 id="autofill" class="judul-sub-accordion">AutoFill</h5>
-                                    <p class="konten-sub">Gunakan IsiOtomatis di Excel untuk mengisi serangkaian sel secara otomatis. Halaman ini berisi banyak contoh IsiOtomatis yang mudah diikuti. Langit adalah batasnya!</p>
+                                    <p class="konten-sub">Gunakan AutoFill (IsiOtomatis) di Excel untuk mengisi serangkaian sel secara otomatis. Halaman ini berisi banyak contoh IsiOtomatis yang mudah diikuti. Langit adalah batasnya!</p>
                                     <ol>
                                         <li>
                                             <p>Misalnya, masukkan nilai 10 ke dalam sel A1 dan nilai 20 ke dalam sel A2.</p>
                                             <p><img src="https://www.excel-easy.com/examples/images/autofill/numbers.png" class="img-fluid" alt="..."></p>
                                         </li>
                                         <li>
-                                            <p>Pilih sel A1 dan sel A2 dan seret gagang isian ke bawah. Pegangan isian adalah kotak hijau kecil di kanan bawah sel yang dipilih atau rentang sel yang dipilih.</p>
+                                            <p>Pilih sel A1 dan sel A2 dan seret gagang isian ke bawah. Pegangan isian adalah kotak hijau kecil di kanan bawah sel yang dipilih atau Range sel yang dipilih.</p>
                                             <p><img src="https://www.excel-easy.com/examples/images/autofill/autofill-numbers.png" class="img-fluid" alt="..."></p>
                                             <p>Catatan: IsiOtomatis mengisi angka berdasarkan pola dua angka pertama.</p>
                                         </li>
@@ -269,7 +269,7 @@
 
                                     <!-- Daftar Kustom -->
                                     <h5 id="Lists" class="judul-sub-accordion">Daftar Kustom (Custom Lists)</h5>
-                                    <p class="konten-sub">Jika Anda membuat daftar kustom di Excel , Anda dapat dengan mudah mengisi rentang dengan daftar departemen, klien, kota, nomor kartu kredit Anda sendiri, dll. Ini dapat menghemat waktu dan mengurangi kesalahan.</p>
+                                    <p class="konten-sub">Jika Anda membuat daftar kustom di Excel , Anda dapat dengan mudah mengisi Range dengan daftar departemen, klien, kota, nomor kartu kredit Anda sendiri, dll. Ini dapat menghemat waktu dan mengurangi kesalahan.</p>
                                     <p class="konten-sub">Pertama, kita akan melihat contoh daftar bawaan.</p>
                                     <ol>
                                         <li>
@@ -368,7 +368,7 @@
 
                                     <!-- Sembunyikan Kolom atau Baris -->
                                     <h5 id="KolomBaris" class="judul-sub-accordion">Hide Columns or Rows (Sembunyikan Kolom atau Baris)</h5>
-                                    <p class="konten-sub text-sm fw-light mb-1"><a href="#Sembunyikan">Sembunyikan</a> | <a href="#Perlihatkan">Perlihatkan</a> | <a href="#Beberapa">Beberapa Kolom atau Baris</a> | <a href="#Trik">Trik Tersembunyi</a></p>
+                                    <p class="konten-sub text-sm fw-light mb-1"><a href="#Sembunyikan">Hide</a> | <a href="#Perlihatkan">Unhide</a> | <a href="#Beberapa">Beberapa Kolom atau Baris</a> | <a href="#Trik">Trik Tersembunyi</a></p>
                                     <p class="konten-sub">Terkadang berguna untuk menyembunyikan kolom atau baris di Excel .</p>
 
                                     <!-- Bersembunyi -->
@@ -460,7 +460,7 @@
                                             <p>Terakhir, untuk menyembunyikan sel di Excel, jalankan langkah-langkah berikut.</p>
                                             <ol>
                                                 <li>
-                                                    <p>Pilih rentang sel.</p>
+                                                    <p>Pilih Range sel.</p>
                                                     <p><img src="https://www.excel-easy.com/examples/images/hide-columns-rows/select-cells.png" class="img-fluid" alt="..."></p>
                                                 </li>
                                                 <li>
@@ -479,6 +479,87 @@
                                             </ol>
                                         </li>
                                     </ol>
+
+                                    <!-- Skip Blanks -->
+                                    <h5 id="Skip" class="judul-sub-accordion">Skip Blanks (Lewati Kosong)</h5>
+                                    <p class="konten-sub">Gunakan opsi <em>'Paste Special Skip Blanks'</em> dan Excel tidak akan menimpa nilai yang ada dengan kosong.</p>
+                                    <ol>
+                                        <li>Pilih Range B1:B12.</li>
+                                        <li>
+                                            <p>Klik kanan, lalu klik Salin.</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/skip-blanks/right-click-copy.png" class="img-fluid" alt="..."></p>
+                                        </li>
+                                        <li>Pilih sel A1.</li>
+                                        <li>Klik kanan, lalu klik Tempel Spesial.</li>
+                                        <li>
+                                            <p>Centang Lewati Kosong.</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/skip-blanks/check-skip-blanks.png" class="img-fluid" alt="..."></p>
+                                        </li>
+                                        <li>
+                                            <p>Klik Oke.</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/skip-blanks/paste-special-skip-blanks-result.png" class="img-fluid" alt="..."></p>
+                                        </li>
+                                    </ol>
+
+                                    <!-- AutoFit -->
+                                    <h5 id="AutoFit" class="judul-sub-accordion">AutoFit</h5>
+                                    <p class="konten-sub text-sm fw-light mb-1"><a href="#Width">AutoFit Column Width</a> | <a href="#Height">AutoFit Row Height</a></p>
+
+                                    <!-- AutoFit Column Width -->
+                                    <p class="konten-sub">Anda mungkin tahu cara mengubah lebar kolom di Excel , tetapi apakah Anda juga tahu cara memasukkan entri terluas secara otomatis ke dalam kolom?</p>
+                                    <p id="Width" class="konten-sub-judul">AutoFit Column Width (Lebar Kolom Otomatis)</p>
+                                    <p class="konten-sub">Lebar default kolom adalah 64 piksel.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Anda dapat mengubah lebar kolom dengan mengklik dan menyeret batas kanan header kolom.</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/change-column-width.png" class="img-fluid" alt="..."></p>
+                                        </li>
+                                        <li>
+                                            <p>To automatically fit the widest entry in a column, double click the right border of a column header.</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/autofit-column.png" class="img-fluid" alt="..."></p>
+                                        </li>
+                                        <li>
+                                            <p>To autofit multiple columns, first select multiple columns by clicking and dragging over the column headers.</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/select-multiple-columns.png" class="img-fluid" alt="..."></p>
+                                            <p>Note: to select non-adjacent columns, hold CTRL while clicking the column headers.</p>
+                                        </li>
+                                        <li>
+                                            <p>Next, double click the right border of one of the column headers.</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/autofit-multiple-columns.png" class="img-fluid" alt="..."></p>
+                                        </li>
+                                        <li>
+                                            <p>To change the width of all columns, first select all columns by clicking the Select All button.</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/select-all-columns.png" class="img-fluid" alt="..."></p>
+                                        </li>
+                                        <li>
+                                            <p>Next, change the width of a column.</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/change-width-of-all-columns.png" class="img-fluid" alt="..."></p>
+                                        </li>
+                                    </ol>
+
+                                    <!-- AutoFit Row Height -->
+                                    <p id="Height" class="konten-sub-judul">AutoFit Row Height (Tinggi Baris Otomatis)</p>
+                                    <p class="konten-sub">Teknik yang dijelaskan di atas juga dapat digunakan untuk mengubah ketinggian baris. Alih-alih mengklik batas kanan tajuk kolom, cukup klik batas bawah tajuk baris. Ada satu cara lagi untuk menyesuaikan kolom atau baris
+                                        secara otomatis.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Pertama, pilih beberapa baris dengan mengklik dan menyeret header baris.</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/select-multiple-rows.png" class="img-fluid" alt="..."></p>
+                                        </li>
+                                        <li>
+                                            <p>Pada tab Beranda, dalam grup Sel, klik Format.</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/click-format.png" class="img-fluid" alt="..."></p>
+                                        </li>
+                                        <li>
+                                            <p>Klik Paskan Otomatis Tinggi Baris.</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/click-autofit-row-height.png" class="img-fluid" alt="..."></p>
+                                            <p>Hasil:</p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/autofit/autofit-row-height.png" class="img-fluid" alt="..."></p>
+                                            <p>Catatan: Anda juga dapat menggunakan teknik ini untuk mengatur tinggi baris atau lebar kolom (lihat tangkapan layar pada langkah 3). Hati-hati, jangan berpikir dalam piksel di sini. Lebar default kolom adalah
+                                                8,43 unit dan tinggi default baris adalah 15,00 unit.</p>
+                                        </li>
+                                    </ol>
+
                                 </div>
                             </div>
                         </div>

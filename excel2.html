@@ -1760,6 +1760,259 @@
                                             </div>
                                         </details>
 
+                                        <!-- SUMIF -->
+                                        <details>
+                                            <summary>SUMIF</summary>
+
+                                            <p class="konten-sub text-sm fw-light mb-1">
+                                                <a href="#KriteriaNumerik">Kriteria Numerik</a> |
+                                                <a href="#KriteriaTeks">Kriteria Teks</a> |
+                                                <a href="#KriteriaTanggal">Kriteria Tanggal</a> |
+                                                <a href="#AndKriteria">And Kriteria</a> |
+                                                <a href="#OrKriteria">Or Kriteria</a> |
+                                                <a href="#Sumproduct">Sumproduct</a>
+                                            </p>
+
+                                            <p class="konten-sub">Fungsi <strong>SUMIF</strong> yang kuat di Excel menjumlahkan sel berdasarkan satu kriteria. Halaman ini berisi banyak contoh <strong>SUMIF</strong> yang mudah diikuti.</p>
+
+                                            <div class="content">
+                                                <ol>
+                                                    <!-- Kriteria Numerik -->
+                                                    <li>
+                                                        <p class="judul-sub-accordion">Kriteria Numerik</p>
+                                                        <p class="konten-sub">Gunakan fungsi <strong>SUMIF</strong> di Excel untuk menjumlahkan sel berdasarkan angka yang memenuhi kriteria tertentu.</p>
+                                                        <ol>
+                                                            <li>
+                                                                <p>Fungsi <strong>SUMIF</strong> di bawah (dua argumen) menjumlahkan nilai dalam Range A1:A5 yang kurang dari atau sama dengan 10.</p>
+                                                                <p><img src="https://www.excel-easy.com/examples/images/sumif/sumif-function-with-two-arguments.png" class="img-fluid" alt="..."></p>
+                                                                <!-- <p class="info"><strong>Catatan: </strong></p> -->
+                                                                <!-- <p class="info"><strong>Penjelasan: </strong></p> -->
+                                                            </li>
+                                                            <li>
+                                                                <p>Fungsi <strong>SUMIF</strong> berikut memberikan hasil yang sama persis. Operator & menggabungkan simbol 'kurang dari atau sama dengan' dan nilai dalam sel C1.</p>
+                                                                <p><img src="https://www.excel-easy.com/examples/images/sumif/sumif-function-ampersand-operator.png" class="img-fluid" alt="..."></p>
+                                                                <!-- <p class="info"><strong>Catatan: </strong></p> -->
+                                                                <!-- <p class="info"><strong>Penjelasan: </strong></p> -->
+                                                            </li>
+                                                            <li>
+                                                                <p>Fungsi <strong>SUMIF</strong> di bawah ini (tiga argumen, argumen terakhir adalah Range yang akan dijumlahkan) menjumlahkan nilai dalam Range B1:B5 jika sel terkait dalam Range A1:A5 berisi
+                                                                    nilai 25.</p>
+                                                                <p><img src="https://www.excel-easy.com/examples/images/sumif/sumif-function-with-three-arguments.png" class="img-fluid" alt="..."></p>
+                                                                <!-- <p class="info"><strong>Catatan: </strong></p> -->
+                                                                <!-- <p class="info"><strong>Penjelasan: </strong></p> -->
+                                                            </li>
+                                                            <li>
+                                                                <p>Fungsi <strong>SUMIF</strong> berikut memberikan hasil yang sama persis (argumen kedua mengacu pada sel D1).</p>
+                                                                <p><img src="https://www.excel-easy.com/examples/images/sumif/second-argument-refers-to-cell-d1.png" class="img-fluid" alt="..."></p>
+                                                                <!-- <p class="info"><strong>Catatan: </strong></p> -->
+                                                                <!-- <p class="info"><strong>Penjelasan: </strong></p> -->
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                    <!-- Kriteria Teks -->
+                                                    <li>
+                                                        <p class="judul-sub-accordion">Kriteria Teks</p>
+                                                        <p class="konten-sub">Gunakan fungsi <strong>SUMIF</strong> di Excel untuk menjumlahkan sel berdasarkan string teks yang memenuhi kriteria tertentu. Selalu sertakan teks dalam tanda kutip ganda.</p>
+                                                        <ol>
+                                                            <li>
+                                                                <p>Fungsi <strong>SUMIF</strong> di bawah ini menjumlahkan nilai dalam Range B1:B5 jika sel yang sesuai dalam Range A1:A5 berisi lingkaran persis.</p>
+                                                                <p><img src="https://www.excel-easy.com/examples/images/sumif/sum-if-equal-to-text-value.png" class="img-fluid" alt="..."></p>
+                                                                <!-- <p class="info"><strong>Catatan: </strong></p> -->
+                                                                <!-- <p class="info"><strong>Penjelasan: </strong></p> -->
+                                                            </li>
+                                                            <li>
+                                                                <p>Fungsi <strong>SUMIF</strong> di bawah ini menjumlahkan nilai dalam Range B1:B5 jika sel terkait dalam Range A1:A5 tidak berisi segitiga sama persis.</p>
+                                                                <p><img src="https://www.excel-easy.com/examples/images/sumif/sum-if-not-equal-to-text-value.png" class="img-fluid" alt="..."></p>
+                                                                <!-- <p class="info"><strong>Catatan: </strong></p> -->
+                                                                <!-- <p class="info"><strong>Penjelasan: </strong></p> -->
+                                                            </li>
+                                                            <li>
+                                                                <p>Fungsi <strong>SUMIF</strong> di bawah ini menjumlahkan nilai dalam Range B1:B5 jika sel yang sesuai dalam Range A1:A5 berisi persis lingkaran + 1 karakter. Tanda tanya <strong>(?)</strong>                                                                    cocok dengan tepat satu karakter.</p>
+                                                                <p><img src="https://www.excel-easy.com/examples/images/sumif/sumif-function-with-question-mark.png" class="img-fluid" alt="..."></p>
+                                                                <!-- <p class="info"><strong>Catatan: </strong></p> -->
+                                                                <!-- <p class="info"><strong>Penjelasan: </strong></p> -->
+                                                            </li>
+                                                            <li>
+                                                                <p>Fungsi <strong>SUMIF</strong> di bawah ini menjumlahkan nilai dalam Range B1:B5 jika sel terkait dalam Range A1:A5 berisi rangkaian nol atau lebih karakter + file. Tanda bintang <strong>(*)</strong>                                                                    cocok dengan serangkaian karakter nol atau lebih.</p>
+                                                                <p><img src="https://www.excel-easy.com/examples/images/sumif/sumif-function-with-asterisk.png" class="img-fluid" alt="..."></p>
+                                                                <!-- <p class="info"><strong>Catatan: </strong></p> -->
+                                                                <!-- <p class="info"><strong>Penjelasan: </strong></p> -->
+                                                            </li>
+                                                            <li>
+                                                                <p>Fungsi <strong>SUMIF</strong> di bawah jumlah nilai dalam Range B1:B5 jika sel yang sesuai dalam Range A1:A5 berisi segitiga atau lingkaran8 yang tepat.</p>
+                                                                <p><img src="https://www.excel-easy.com/examples/images/sumif/two-sumif-functions.png" class="img-fluid" alt="..."></p>
+                                                                <!-- <p class="info"><strong>Catatan: </strong></p> -->
+                                                                <!-- <p class="info"><strong>Penjelasan: </strong></p> -->
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                    <!-- Kriteria Tanggal -->
+                                                    <li>
+                                                        <p class="judul-sub-accordion">Kriteria Tanggal</p>
+                                                        <p class="konten-sub">Gunakan fungsi <strong>SUMIF</strong> di Excel untuk menjumlahkan sel berdasarkan tanggal yang memenuhi kriteria tertentu.</p>
+                                                        <ol>
+                                                            <li>
+                                                                <p>Fungsi <strong>SUMIF</strong> di bawah ini menjumlahkan penjualan setelah 20 Januari 2018.</p>
+                                                                <p><img src="https://www.excel-easy.com/examples/images/sumif/sum-if-date-is-greater-than.png" class="img-fluid" alt="..."></p>
+                                                                <p class="info"><strong>Catatan: </strong>fungsi <strong>DATE</strong> di Excel menerima tiga argumen: tahun, bulan, dan hari.</p>
+                                                                <!-- <p class="info"><strong>Penjelasan: </strong></p> -->
+                                                            </li>
+                                                            <li>
+                                                                <p>Fungsi <strong>SUMIF</strong> di bawah ini menjumlahkan penjualan hari ini.</p>
+                                                                <p><img src="https://www.excel-easy.com/examples/images/sumif/sumif-function-today-function.png" class="img-fluid" alt="..."></p>
+                                                                <p class="info"><strong>Catatan: </strong>hari ini adalah 3 Agustus 2018.</p>
+                                                                <!-- <p class="info"><strong>Penjelasan: </strong></p> -->
+                                                            </li>
+                                                            <li>
+                                                                <p>Fungsi <strong>SUMIFS</strong> (dengan huruf S di akhir) di bawah ini menjumlahkan penjualan antara dua tanggal.</p>
+                                                                <p><img src="https://www.excel-easy.com/examples/images/sumif/sum-if-date-is-between.png" class="img-fluid" alt="..."></p>
+                                                                <p class="info"><strong>Catatan: </strong>fungsi <strong>SUMIFS</strong> di Excel menjumlahkan sel berdasarkan dua atau lebih kriteria (argumen pertama adalah Range yang akan dijumlahkan, diikuti oleh dua
+                                                                    atau lebih pasangan Range/kriteria). Sesuaikan tanggal untuk menjumlahkan penjualan pada bulan, tahun, dll.</p>
+                                                                <!-- <p class="info"><strong>Penjelasan: </strong></p> -->
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                    <!-- And Kriteria -->
+                                                    <li>
+                                                        <p class="judul-sub-accordion">And Kriteria</p>
+                                                        <p class="konten-sub">Menjumlahkan dengan kriteria Dan di Excel itu mudah.</p>
+                                                        <ol>
+                                                            <li>
+                                                                <p>Misalnya, untuk menjumlahkan sel yang memenuhi kriteria berikut: Google <u>dan</u> Stanford (dua Range kriteria), cukup gunakan fungsi <strong>SUMIFS</strong> (dengan huruf S di akhir).</p>
+                                                                <p><img src="https://www.excel-easy.com/examples/images/sumif/sumifs-function.png" class="img-fluid" alt="..."></p>
+                                                                <p class="info"><strong>Catatan: </strong>ingat, saat menggunakan fungsi <strong>SUMIFS</strong>, argumen pertama adalah Range yang akan dijumlahkan, diikuti oleh dua atau lebih pasangan Range/kriteria.</p>
+                                                                <!-- <p class="info"><strong>Penjelasan: </strong></p> -->
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                                    <!-- Or Kriteria -->
+                                                    <li>
+                                                        <p class="judul-sub-accordion">Or Kriteria</p>
+                                                        <p class="konten-sub">Menjumlahkan dengan kriteria Or di Excel bisa jadi rumit.</p>
+                                                        <ol>
+                                                            <li>
+                                                                <p>Rumus di bawah ini menjumlahkan sel yang memenuhi kriteria berikut: Google <u>atau</u> Facebook (satu Range kriteria). Tidak ada ilmu roket sejauh ini.</p>
+                                                                <p><img src="https://www.excel-easy.com/examples/images/sumif/2x-sumif-function.png" class="img-fluid" alt="..."></p>
+                                                                <!-- <p class="info"><strong>Catatan: </strong></p> -->
+                                                                <!-- <p class="info"><strong>Penjelasan: </strong></p> -->
+                                                            </li>
+                                                            <li>
+                                                                <p>Namun, jika Anda ingin menjumlahkan sel yang memenuhi kriteria berikut: Google <u>atau</u> Stanford (dua Range kriteria), Anda tidak bisa begitu saja menggunakan fungsi <strong>SUMIF</strong>                                                                    dua kali (lihat gambar di bawah).</p>
+                                                                <p><img src="https://www.excel-easy.com/examples/images/sumif/wrong-formula.png" class="img-fluid" alt="..."></p>
+                                                                <p class="info"><strong>Catatan: </strong>sel yang memenuhi kriteria Google <u>dan</u> Stanford ditambahkan dua kali, tetapi hanya boleh ditambahkan satu kali. 10 adalah jawaban yang kita cari.</p>
+                                                                <!-- <p class="info"><strong>Penjelasan: </strong></p> -->
+                                                            </li>
+                                                            <li>
+                                                                <p>Rumus array di bawah ini berhasil.</p>
+                                                                <p><img src="https://www.excel-easy.com/examples/images/sumif/sum-with-or-criteria.png" class="img-fluid" alt="..."></p>
+                                                                <p class="info"><strong>Catatan: </strong>selesaikan rumus array dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>. Excel menambahkan kurung kurawal <strong>{}</strong>. Kunjungi halaman kami
+                                                                    tentang <a href="https://www.excel-easy.com/examples/sum-with-or-criteria.html" target="_blank">Menjumlahkan dengan Atau Kriteria</a> untuk instruksi terperinci tentang cara membuat rumus
+                                                                    array ini.</p>
+                                                                <!-- <p class="info"><strong>Penjelasan: </strong></p> -->
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+
+                                                    <!-- SUMPRODUCT -->
+                                                    <li>
+                                                        <p class="judul-sub-accordion">SUMPRODUCT</p>
+                                                        <p class="konten-sub">Untuk menghitung jumlah produk dari angka yang sesuai dalam satu atau beberapa rentang, gunakan fungsi <strong>SUMPRODUCT</strong> Excel yang kuat.</p>
+                                                        <ol>
+                                                            <li>
+                                                                <p class="fw-bold">Penggunaan Dasar</p>
+                                                                <ol>
+                                                                    <li>
+                                                                        <p>Misalnya, fungsi <strong>SUMPRODUCT</strong> di bawah ini menghitung jumlah total yang dibelanjakan.</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sumproduct/sumproduct-function.png" class="img-fluid" alt="..."></p>
+                                                                        <!-- <p class="info"><strong>Catatan: </strong></p> -->
+                                                                        <p class="info"><strong>Penjelasan: </strong>fungsi <strong>SUMPRODUCT</strong> melakukan perhitungan ini: (2 * 1000) + (4 * 250) + (4 * 100) + (2 * 50) = 3500.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Rentang harus memiliki dimensi yang sama atau Excel akan menampilkan #VALUE! kesalahan.</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sumproduct/ranges-of-unequal-size.png" class="img-fluid" alt="..."></p>
+                                                                        <!-- <p class="info"><strong>Catatan: </strong></p> -->
+                                                                        <!-- <p class="info"><strong>Penjelasan: </strong></p> -->
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Fungsi <strong>SUMPRODUCT</strong> memperlakukan setiap entri yang bukan numerik seolah-olah mereka adalah nol.</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sumproduct/non-numeric-entries.png" class="img-fluid" alt="..."></p>
+                                                                        <!-- <p class="info"><strong>Catatan: </strong></p> -->
+                                                                        <!-- <p class="info"><strong>Penjelasan: </strong></p> -->
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Jika Anda menyediakan rentang tunggal, fungsi <strong>SUMPRODUCT</strong> menghasilkan hasil yang sama persis dengan fungsi SUM.</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sumproduct/one-range.png" class="img-fluid" alt="..."></p>
+                                                                        <!-- <p class="info"><strong>Catatan: </strong></p> -->
+                                                                        <!-- <p class="info"><strong>Penjelasan: </strong></p> -->
+                                                                    </li>
+                                                                </ol>
+                                                            </li>
+                                                            <li>
+                                                                <p class="fw-bold">Penggunaan Lanjutan</p>
+                                                                <p>Fungsi <strong>SUMPRODUCT</strong> adalah fungsi yang sangat serbaguna dan dapat menghasilkan hasil yang sama seperti banyak fungsi bawaan di Excel dan bahkan rumus array!</p>
+                                                                <ol>
+                                                                    <li>
+                                                                        <p>Misalnya, fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang berisi bintang persis.</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sumproduct/countif-function.png" class="img-fluid" alt="..."></p>
+                                                                        <!-- <p class="info"><strong>Catatan: </strong></p> -->
+                                                                        <!-- <p class="info"><strong>Penjelasan: </strong></p> -->
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Fungsi <strong>SUMPRODUCT</strong> di bawah ini menghasilkan hasil yang sama persis.</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sumproduct/double-negative.png" class="img-fluid" alt="..."></p>
+                                                                        <!-- <p class="info"><strong>Catatan: </strong></p> -->
+                                                                        <p class="info"><strong>Penjelasan: </strong><br>--(A1:A7="star") direduksi menjadi konstanta array berikut: <br> --{BENAR; SALAH; SALAH; SALAH; SALAH; BENAR; SALAH} <br> Negatif ganda -- memaksa
+                                                                            Boolean ini menjadi 1 dan 0 (TRUE=1, FALSE=0). Hasil: <br> {1;0;0;0;0;1;0} <br>Konstanta array ini digunakan sebagai argumen untuk fungsi <strong>SUMPRODUCT</strong>, memberikan
+                                                                            hasil 2.</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang berisi persis bintang + 1 karakter. Tanda tanya (?) cocok dengan tepat satu karakter.</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sumproduct/wildcard-character.png" class="img-fluid" alt="..."></p>
+                                                                        <!-- <p class="info"><strong>Catatan: </strong></p> -->
+                                                                        <!-- <p class="info"><strong>Penjelasan: </strong></p> -->
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Fungsi <strong>SUMPRODUCT</strong> tidak sempurna! Anda tidak dapat menggunakan karakter wildcard (? dan *) saat Anda menggunakan fungsi <strong>SUMPRODUCT</strong>.</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sumproduct/sumproduct-limitation.png" class="img-fluid" alt="..."></p>
+                                                                        <!-- <p class="info"><strong>Catatan: </strong></p> -->
+                                                                        <!-- <p class="info"><strong>Penjelasan: </strong></p> -->
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Rumus array di bawah ini menghitung jumlah karakter dalam rentang sel.</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sumproduct/count-characters.png" class="img-fluid" alt="..."></p>
+                                                                        <p class="info"><strong>Catatan: </strong>selesaikan rumus array dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>. Excel menambahkan kurung kurawal <strong>{}</strong>.</p>
+                                                                        <!-- <p class="info"><strong>Penjelasan: </strong></p> -->
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Fungsi <strong>SUMPRODUCT</strong> di bawah ini menghasilkan hasil yang sama persis.</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sumproduct/elegant-sumproduct-formula.png" class="img-fluid" alt="..."></p>
+                                                                        <p class="info"><strong>Catatan: </strong>konstanta array {9;4;6;5} digunakan sebagai argumen untuk fungsi <strong>SUMPRODUCT</strong>, memberikan hasil 24. Fungsi <strong>SUMPRODUCT</strong> menangani
+                                                                            array secara native sehingga Anda tidak perlu menyelesaikannya dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>. Ini adalah salah satu keuntungan terbesar dari
+                                                                            fungsi <strong>SUMPRODUCT</strong> karena kurung kurawal <strong>{}</strong> membingungkan banyak pemula Excel!</p>
+                                                                        <!-- <p class="info"><strong>Penjelasan: </strong></p> -->
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Rumus array di bawah ini menjumlahkan penjualan pada tahun 2018.</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sumproduct/sum-by-year.png" class="img-fluid" alt="..."></p>
+                                                                        <!-- <p class="info"><strong>Catatan: </strong></p> -->
+                                                                        <!-- <p class="info"><strong>Penjelasan: </strong></p> -->
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>Fungsi <strong>SUMPRODUCT</strong> di bawah ini menghasilkan hasil yang sama persis.</p>
+                                                                        <p><img src="https://www.excel-easy.com/examples/images/sumproduct/multiplication-operator.png" class="img-fluid" alt="..."></p>
+                                                                        <!-- <p class="info"><strong>Catatan: </strong></p> -->
+                                                                        <p class="info"><strong>Penjelasan: </strong>(TAHUN(A1:A5)=2018)*B1:B5 dikurangi menjadi: <br> ({2018;2017;2018;2017;2017}=2018)*{10;1;7;20;3} dan ini dikurangi menjadi: <br> {BENAR; SALAH; BENAR;
+                                                                            SALAH; SALAH}*{10;1;7;20;3} <br> Kita tidak memerlukan negatif ganda (lihat contoh 1b) karena operator perkalian * secara otomatis memaksa Boolean menjadi 1 dan 0 (TRUE=1, FALSE=0).
+                                                                            Hasil: {10;0;7;0;0} <br> Konstanta array ini digunakan sebagai argumen untuk fungsi <strong>SUMPRODUCT</strong>, memberikan hasil 17.
+                                                                        </p>
+                                                                    </li>
+                                                                </ol>
+                                                            </li>
+                                                        </ol>
+                                                    </li>
+                                            </div>
+                                        </details>
+
                                     </div>
                                 </div>
                             </div>

@@ -109,6 +109,59 @@
         ul {
             padding-left: 2.25rem;
         }
+        /* details */
+        
+        .daftar {
+            padding: 0 0.5em;
+            margin: 0;
+            height: 100vh;
+        }
+        
+        summary {
+            padding: 1em;
+            /* background: orange; */
+            /* margin-bottom: 1em; */
+            cursor: pointer;
+            outline: none;
+            /* border-radius: .3em; */
+            /* font-weight: bold; */
+            transition: .3s;
+        }
+        
+        summary:hover {
+            background: #eee;
+        }
+        
+        summary::-webkit-details-marker {
+            background: url(img/svg/arrow-bar-down.svg) center no-repeat;
+            color: transparent;
+            width: 17px;
+            height: 17px;
+        }
+        
+        img {
+            width: 100%;
+        }
+        
+        details[open] summary~* {
+            animation: sweep .5s ease-in-out;
+        }
+        
+        details[open] summary::-webkit-details-marker {
+            background: url(img/svg/arrow-bar-up.svg) center no-repeat;
+            color: transparent;
+        }
+        
+        @keyframes sweep {
+            from {
+                opacity: 0;
+                margin-top: -10px;
+            }
+            to {
+                opacity: 1;
+                margin-top: 0;
+            }
+        }
     </style>
 </head>
 
@@ -949,21 +1002,63 @@
                             <div id="Formula-collapse" class="accordion-collapse collapse" aria-labelledby="FormulaId" data-bs-parent="#Introduction">
                                 <div class="accordion-body">
 
-                                    <p class="konten-sub text-sm fw-light mb-1">
-                                        <a href="#">Fungsi yang Paling Banyak Digunakan</a> |
-                                        <a href="#">Kurangi</a> |
-                                        <a href="#">Kalikan</a> |
-                                        <a href="#">Bagi</a> |
-                                        <a href="#">Akar Kuadrat</a> |
-                                        <a href="#">Persentase</a> |
-                                        <a href="#">Rentang Bernama</a> |
-                                        <a href="#">Rentang Bernama Dinamis</a> |
-                                        <a href="#">Opsi Tempel</a> |
-                                        <a href="#">Diskon</a>
-                                    </p>
+                                    <div class="daftar">
+                                        <details>
+                                            <summary>Lorem, ipsum dolor.</summary>
+                                            <div class="content">
+                                                <p class="konten-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi excepturi, illo dicta sunt blanditiis facere.</p>
+                                                <ul>
+                                                    <li>Lorem, ipsum dolor.</li>
+                                                    <li>Lorem, ipsum dolor.</li>
+                                                    <li>Lorem, ipsum dolor.</li>
+                                                    <li>Lorem, ipsum dolor.</li>
+                                                    <li>Lorem, ipsum dolor.</li>
+                                                </ul>
+                                            </div>
+                                        </details>
 
-                                    <p class="judul-sub-accordion">Fungsi yang Paling Banyak Digunakan</p>
-                                    <p class="konten-sub">Rumus dan Fungsi: Fungsi yang Paling Banyak Digunakan | Kurangi | Kalikan | Bagi | Akar Kuadrat | Persentase | Range Bernama | Range Bernama Dinamis | Opsi Tempel | Diskon</p>
+                                        <details>
+                                            <summary>Lorem, ipsum dolor.</summary>
+                                            <div class="content">
+                                                <p class="konten-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi excepturi, illo dicta sunt blanditiis facere.</p>
+                                                <ul>
+                                                    <li>Lorem, ipsum dolor.</li>
+                                                    <li>Lorem, ipsum dolor.</li>
+                                                    <li>Lorem, ipsum dolor.</li>
+                                                    <li>Lorem, ipsum dolor.</li>
+                                                    <li>Lorem, ipsum dolor.</li>
+                                                </ul>
+                                            </div>
+                                        </details>
+                                    </div>
+
+                                    <!-- <p class="konten-sub text-sm fw-light mb-1">
+                                        <a href="#most">Fungsi yang Paling Banyak Digunakan</a> |
+                                        <a href="#Kurangi">Kurangi</a> |
+                                        <a href="#Kalikan">Kalikan</a> |
+                                        <a href="#Bagi">Bagi</a> |
+                                        <a href="#Kuadrat">Akar Kuadrat</a> |
+                                        <a href="#Persentase">Persentase</a> |
+                                        <a href="#RangeBernama">Range Bernama</a> |
+                                        <a href="#RangeDinamis">Range Bernama Dinamis</a> |
+                                        <a href="#OpsiTempel">Opsi Tempel</a> |
+                                        <a href="#Diskon">Diskon</a>
+                                    </p> -->
+
+                                    <h5 id="" class="judul-sub-accordion">Fungsi yang Paling Banyak Digunakan</h5>
+                                    <p class="konten-sub">Mari kita lihat 10 fungsi Excel yang paling sering digunakan . Kunjungi bagian kami tentang fungsi untuk penjelasan terperinci dan fungsi yang lebih mengagumkan.</p>
+                                    <p class="konten-sub">Tip: unduh <a href="img/bahan/Fungsi yang Paling Banyak Digunakan.xlsx">file Excel</a> dan coba masukkan fungsi-fungsi ini.</p>
+
+                                    <ol>
+                                        <li>
+                                            <p><strong>COUNT</strong>
+                                                <br>Untuk menghitung jumlah sel yang berisi angka, gunakan fungsi COUNT di Excel.
+                                            </p>
+                                            <p><img src="https://www.excel-easy.com/examples/images/most-used-functions/count-function.png" class="img-fluid" alt="..."></p>
+                                            <p>Catatan: gunakan COUNTA untuk menghitung semua sel yang tidak kosong. COUNTA adalah singkatan dari hitung semua.</p>
+                                        </li>
+                                    </ol>
+
                                 </div>
                             </div>
                         </div>

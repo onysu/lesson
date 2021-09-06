@@ -55,6 +55,7 @@
         
         .accordion-body {
             padding: 0;
+            background-color: #ddd;
         }
         
         .accordion-button {
@@ -75,7 +76,7 @@
         
         .judul-akordeon {
             font-size: x-large;
-            padding: 0.2rem 1.25rem;
+            padding: 0 1rem;
             color: white;
             /* color: #0c63e4; */
             margin-bottom: 0;
@@ -86,28 +87,28 @@
         
         .judul-sub-accordion {
             background: whitesmoke;
-            padding: 0.5rem;
-            border-bottom: 2px solid #666;
-            font-size: 16px;
-            font-weight: bold;
+            padding: 1rem;
+            border-bottom: 1px solid #666;
+            font-size: 18px;
+            /* font-weight: bold; */
         }
         
         .konten-sub-judul {
-            padding: 0.5rem;
+            padding: 1rem;
             margin-bottom: -10px;
             font-size: 20px;
             font-weight: bold;
         }
         
         .konten-sub {
-            padding: 0.5rem;
-            margin-bottom: 0.5rem;
+            padding: 1rem;
+            margin-bottom: 0;
+            /* margin-bottom: 0.5rem; */
         }
-        
-        ol,
+        /* ol,
         ul {
             padding-left: 2.25rem;
-        }
+        } */
         /* details */
         
         .daftar {
@@ -117,7 +118,7 @@
         }
         
         summary {
-            padding: 0.5rem;
+            padding: 1rem;
             /* background: orange; */
             /* margin-bottom: 1em; */
             cursor: pointer;
@@ -207,91 +208,95 @@
                                     <p class="konten-sub text-sm fw-light mb-1"><a href="#autofill">AutoFill</a> | <a href="#Fibonacci">Fibonacci Sequence</a> | <a href="#Lists">Daftar Kustom</a> | <a href="#Komentar">Komentar</a> | <a href="#KolomBaris">Hide Columns or Rows</a> | <a href="#Skip">Skip Blanks</a>                                        | <a href="#AutoFit">AutoFit</a> | <a href="#Transpose">Transpose</a> | <a href="#Split">Split Cells</a> | <a href="#Flash">Flash Fill</a> | <a href="#Pindahkan">Pindahkan Kolom</a>
                                     </p>
 
-                                    <!-- AutoFill -->
-                                    <h5 id="autofill" class="judul-sub-accordion">AutoFill</h5>
-                                    <p class="konten-sub">Gunakan AutoFill (IsiOtomatis) di Excel untuk mengisi serangkaian sel secara otomatis. Halaman ini berisi banyak contoh IsiOtomatis yang mudah diikuti. Langit adalah batasnya!</p>
                                     <ol>
                                         <li>
-                                            <p>Misalnya, masukkan nilai 10 ke dalam sel A1 dan nilai 20 ke dalam sel A2.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofill/numbers.png" class="img-fluid" alt="..."></p>
-                                        </li>
-                                        <li>
-                                            <p>Pilih sel A1 dan sel A2 dan seret gagang isian ke bawah. Pegangan isian adalah kotak hijau kecil di kanan bawah sel yang dipilih atau Range sel yang dipilih.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofill/autofill-numbers.png" class="img-fluid" alt="..."></p>
-                                            <p>Catatan: IsiOtomatis mengisi angka berdasarkan pola dua angka pertama.</p>
-                                        </li>
-                                        <li>
-                                            <p>Masukkan Jan ke sel A1.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofill/month-name.png" class="img-fluid" alt="..."></p>
-                                        </li>
-                                        <li>
-                                            <p>Pilih sel A1 dan seret gagang isian ke bawah. IsiOtomatis secara otomatis mengisi nama bulan.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofill/autofill-month-names.png" class="img-fluid" alt="..."></p>
-                                        </li>
-                                        <li>
-                                            <p>Masukkan Produk 1 ke dalam sel A1.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofill/product-name.png" class="img-fluid" alt="..."></p>
-                                        </li>
-                                        <li>
-                                            <p>Pilih sel A1 dan seret gagang isian ke bawah. IsiOtomatis secara otomatis mengisi nama produk.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofill/autofill-product-names.png" class="img-fluid" alt="..."></p>
-                                        </li>
-                                        <li>
-                                            <p>Masukkan Friday ke sel A1.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofill/day-name.png" class="img-fluid" alt="..."></p>
-                                        </li>
-                                        <li>
-                                            <p>Pilih sel A1 dan seret gagang isian ke bawah. IsiOtomatis secara otomatis mengisi nama hari.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofill/autofill-day-names.png" class="img-fluid" alt="..."></p>
-                                        </li>
-                                        <li>
-                                            <p>Masukkan tanggal 14/1/2019 ke dalam sel A1.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofill/day.png" class="img-fluid" alt="..."></p>
-                                        </li>
-                                        <li>
-                                            <p>Pilih sel A1 dan seret gagang isian ke bawah. IsiOtomatis mengisi hari secara otomatis.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofill/autofill-days.png" class="img-fluid" alt="..."></p>
-                                        </li>
-                                        <li>
-                                            <p>Alih-alih mengisi hari, gunakan opsi IsiOtomatis untuk mengisi hari kerja (mengabaikan hari akhir pekan), bulan (lihat contoh di bawah) atau tahun.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofill/autofill-options.png" class="img-fluid" alt="..."></p>
-                                            <p>Catatan: lihat juga opsi untuk mengisi pemformatan saja dan untuk mengisi rangkaian tanpa pemformatan.</p>
-                                        </li>
-                                        <li>
-                                            <p>Masukkan tanggal 14/1/2019 ke dalam sel A1 dan tanggal 21/01/2019 ke dalam sel A2.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofill/dates.png" class="img-fluid" alt="..."></p>
-                                        </li>
-                                        <li>
-                                            <p>Pilih sel A1 dan sel A2 dan seret gagang isian ke bawah. IsiOtomatis secara otomatis mengisi tanggal berdasarkan pola dua tanggal pertama.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofill/autofill-dates.png" class="img-fluid" alt="..."></p>
-                                        </li>
-                                        <li>
-                                            <p>Masukkan waktu 6:00 pagi ke sel A1.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofill/time.png" class="img-fluid" alt="..."></p>
-                                        </li>
-                                        <li>
-                                            <p>Pilih sel A1 dan seret gagang isian. IsiOtomatis mengisi waktu secara otomatis.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofill/autofill-times.png" class="img-fluid" alt="..."></p>
-                                        </li>
-                                        <li>
-                                            <p>Jika Excel tidak mengenali daftar, cukup buat <a href="#" target="_blank">daftar kustom</a>.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofill/first-entry.png" class="img-fluid" alt="..."></p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofill/custom-list.png" class="img-fluid" alt="..."></p>
-                                        </li>
-                                        <li>
-                                            <p>Gunakan <a href="#" target="_blank">flash fill</a> di Excel 2013 atau yang lebih baru untuk mengekstrak secara otomatis atau menggabungkan data secara otomatis.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofill/use-flash-fill.png" class="img-fluid" alt="..."></p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofill/flash-fill.png" class="img-fluid" alt="..."></p>
-                                            <p>Jika Anda memiliki Excel 365, Anda juga dapat menggunakan fungsi SEQUENCE untuk mengisi serangkaian sel. Fungsi ini cukup keren.</p>
-                                        </li>
-                                        <li>
-                                            <p>Fungsi SEQUENCE di bawah ini menghasilkan array dua dimensi. Baris = 7, Kolom = 4, Mulai = 0, Langkah = 5.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofill/sequence-function.png" class="img-fluid" alt="..."></p>
-                                        </li>
-                                        <li>
-                                            <p>Fungsi SEQUENCE di bawah ini menghasilkan daftar angka ganjil. Baris = 10, Kolom = 1, Mulai = 1, Langkah = 2.</p>
-                                            <p><img src="https://www.excel-easy.com/examples/images/autofill/list-of-odd-numbers.png" class="img-fluid" alt="..."></p>
-                                            <p>Catatan: fungsi SEQUENCE, dimasukkan ke dalam sel A1, mengisi beberapa sel. Wow! Perilaku ini di Excel 365 disebut menumpahkan.</p>
+                                            <!-- AutoFill -->
+                                            <h5 id="autofill" class="judul-sub-accordion">AutoFill</h5>
+                                            <p class="konten-sub">Gunakan AutoFill (IsiOtomatis) di Excel untuk mengisi serangkaian sel secara otomatis. Halaman ini berisi banyak contoh IsiOtomatis yang mudah diikuti. Langit adalah batasnya!</p>
+                                            <ol>
+                                                <li>
+                                                    <p>Misalnya, masukkan nilai 10 ke dalam sel A1 dan nilai 20 ke dalam sel A2.</p>
+                                                    <p><img src="https://www.excel-easy.com/examples/images/autofill/numbers.png" class="img-fluid" alt="..."></p>
+                                                </li>
+                                                <li>
+                                                    <p>Pilih sel A1 dan sel A2 dan seret gagang isian ke bawah. Pegangan isian adalah kotak hijau kecil di kanan bawah sel yang dipilih atau Range sel yang dipilih.</p>
+                                                    <p><img src="https://www.excel-easy.com/examples/images/autofill/autofill-numbers.png" class="img-fluid" alt="..."></p>
+                                                    <p>Catatan: IsiOtomatis mengisi angka berdasarkan pola dua angka pertama.</p>
+                                                </li>
+                                                <li>
+                                                    <p>Masukkan Jan ke sel A1.</p>
+                                                    <p><img src="https://www.excel-easy.com/examples/images/autofill/month-name.png" class="img-fluid" alt="..."></p>
+                                                </li>
+                                                <li>
+                                                    <p>Pilih sel A1 dan seret gagang isian ke bawah. IsiOtomatis secara otomatis mengisi nama bulan.</p>
+                                                    <p><img src="https://www.excel-easy.com/examples/images/autofill/autofill-month-names.png" class="img-fluid" alt="..."></p>
+                                                </li>
+                                                <li>
+                                                    <p>Masukkan Produk 1 ke dalam sel A1.</p>
+                                                    <p><img src="https://www.excel-easy.com/examples/images/autofill/product-name.png" class="img-fluid" alt="..."></p>
+                                                </li>
+                                                <li>
+                                                    <p>Pilih sel A1 dan seret gagang isian ke bawah. IsiOtomatis secara otomatis mengisi nama produk.</p>
+                                                    <p><img src="https://www.excel-easy.com/examples/images/autofill/autofill-product-names.png" class="img-fluid" alt="..."></p>
+                                                </li>
+                                                <li>
+                                                    <p>Masukkan Friday ke sel A1.</p>
+                                                    <p><img src="https://www.excel-easy.com/examples/images/autofill/day-name.png" class="img-fluid" alt="..."></p>
+                                                </li>
+                                                <li>
+                                                    <p>Pilih sel A1 dan seret gagang isian ke bawah. IsiOtomatis secara otomatis mengisi nama hari.</p>
+                                                    <p><img src="https://www.excel-easy.com/examples/images/autofill/autofill-day-names.png" class="img-fluid" alt="..."></p>
+                                                </li>
+                                                <li>
+                                                    <p>Masukkan tanggal 14/1/2019 ke dalam sel A1.</p>
+                                                    <p><img src="https://www.excel-easy.com/examples/images/autofill/day.png" class="img-fluid" alt="..."></p>
+                                                </li>
+                                                <li>
+                                                    <p>Pilih sel A1 dan seret gagang isian ke bawah. IsiOtomatis mengisi hari secara otomatis.</p>
+                                                    <p><img src="https://www.excel-easy.com/examples/images/autofill/autofill-days.png" class="img-fluid" alt="..."></p>
+                                                </li>
+                                                <li>
+                                                    <p>Alih-alih mengisi hari, gunakan opsi IsiOtomatis untuk mengisi hari kerja (mengabaikan hari akhir pekan), bulan (lihat contoh di bawah) atau tahun.</p>
+                                                    <p><img src="https://www.excel-easy.com/examples/images/autofill/autofill-options.png" class="img-fluid" alt="..."></p>
+                                                    <p>Catatan: lihat juga opsi untuk mengisi pemformatan saja dan untuk mengisi rangkaian tanpa pemformatan.</p>
+                                                </li>
+                                                <li>
+                                                    <p>Masukkan tanggal 14/1/2019 ke dalam sel A1 dan tanggal 21/01/2019 ke dalam sel A2.</p>
+                                                    <p><img src="https://www.excel-easy.com/examples/images/autofill/dates.png" class="img-fluid" alt="..."></p>
+                                                </li>
+                                                <li>
+                                                    <p>Pilih sel A1 dan sel A2 dan seret gagang isian ke bawah. IsiOtomatis secara otomatis mengisi tanggal berdasarkan pola dua tanggal pertama.</p>
+                                                    <p><img src="https://www.excel-easy.com/examples/images/autofill/autofill-dates.png" class="img-fluid" alt="..."></p>
+                                                </li>
+                                                <li>
+                                                    <p>Masukkan waktu 6:00 pagi ke sel A1.</p>
+                                                    <p><img src="https://www.excel-easy.com/examples/images/autofill/time.png" class="img-fluid" alt="..."></p>
+                                                </li>
+                                                <li>
+                                                    <p>Pilih sel A1 dan seret gagang isian. IsiOtomatis mengisi waktu secara otomatis.</p>
+                                                    <p><img src="https://www.excel-easy.com/examples/images/autofill/autofill-times.png" class="img-fluid" alt="..."></p>
+                                                </li>
+                                                <li>
+                                                    <p>Jika Excel tidak mengenali daftar, cukup buat <a href="#" target="_blank">daftar kustom</a>.</p>
+                                                    <p><img src="https://www.excel-easy.com/examples/images/autofill/first-entry.png" class="img-fluid" alt="..."></p>
+                                                    <p><img src="https://www.excel-easy.com/examples/images/autofill/custom-list.png" class="img-fluid" alt="..."></p>
+                                                </li>
+                                                <li>
+                                                    <p>Gunakan <a href="#" target="_blank">flash fill</a> di Excel 2013 atau yang lebih baru untuk mengekstrak secara otomatis atau menggabungkan data secara otomatis.</p>
+                                                    <p><img src="https://www.excel-easy.com/examples/images/autofill/use-flash-fill.png" class="img-fluid" alt="..."></p>
+                                                    <p><img src="https://www.excel-easy.com/examples/images/autofill/flash-fill.png" class="img-fluid" alt="..."></p>
+                                                    <p>Jika Anda memiliki Excel 365, Anda juga dapat menggunakan fungsi SEQUENCE untuk mengisi serangkaian sel. Fungsi ini cukup keren.</p>
+                                                </li>
+                                                <li>
+                                                    <p>Fungsi SEQUENCE di bawah ini menghasilkan array dua dimensi. Baris = 7, Kolom = 4, Mulai = 0, Langkah = 5.</p>
+                                                    <p><img src="https://www.excel-easy.com/examples/images/autofill/sequence-function.png" class="img-fluid" alt="..."></p>
+                                                </li>
+                                                <li>
+                                                    <p>Fungsi SEQUENCE di bawah ini menghasilkan daftar angka ganjil. Baris = 10, Kolom = 1, Mulai = 1, Langkah = 2.</p>
+                                                    <p><img src="https://www.excel-easy.com/examples/images/autofill/list-of-odd-numbers.png" class="img-fluid" alt="..."></p>
+                                                    <p>Catatan: fungsi SEQUENCE, dimasukkan ke dalam sel A1, mengisi beberapa sel. Wow! Perilaku ini di Excel 365 disebut menumpahkan.</p>
+                                                </li>
+                                            </ol>
                                         </li>
                                     </ol>
 

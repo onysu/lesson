@@ -1631,13 +1631,13 @@
                                                 <a href="#SumRangewithErrors">Jumlah Rentang dengan Kesalahan</a>
                                             </p>
 
-                                            <p class="konten-sub">Gunakan fungsi SUM di Excel untuk menjumlahkan rentang sel, seluruh kolom, atau sel yang tidak bersebelahan. Untuk membuat rumus SUM yang mengagumkan, gabungkan fungsi SUM dengan fungsi Excel lainnya</p>
+                                            <p class="konten-sub">Gunakan fungsi SUM di Excel untuk menjumlahkan Range sel, seluruh kolom, atau sel yang tidak bersebelahan. Untuk membuat rumus SUM yang mengagumkan, gabungkan fungsi SUM dengan fungsi Excel lainnya</p>
 
                                             <div class="content">
                                                 <ol>
                                                     <li>
                                                         <p class="judul-sub-accordion">Sum Range</p>
-                                                        <p>Sebagian besar waktu, Anda akan menggunakan fungsi <strong>SUM</strong> di Excel untuk menjumlahkan rentang sel.</p>
+                                                        <p>Sebagian besar waktu, Anda akan menggunakan fungsi <strong>SUM</strong> di Excel untuk menjumlahkan Range sel.</p>
                                                         <p><img src="https://www.excel-easy.com/examples/images/sum/sum-range.png" class="img-fluid" alt="..."></p>
                                                     </li>
                                                     <li>
@@ -1688,17 +1688,73 @@
                                                     </li>
                                                     <li>
                                                         <p class="judul-sub-accordion">Jumlahkan Bilangan Terbesar</p>
-                                                        <p>Rumus <strong>SUM</strong> di bawah ini menggunakan <strong>SUM</strong> dan <strong>LARGE</strong> untuk <a href="https://www.excel-easy.com/examples/sum-largest-numbers.html" target="_blank">menjumlahkan angka terbesar</a>                                                            dalam suatu rentang. Ubah {1,2,3,4} menjadi {1,2,3,4,5} untuk menjumlahkan 5 bilangan terbesar.</p>
+                                                        <p>Rumus <strong>SUM</strong> di bawah ini menggunakan <strong>SUM</strong> dan <strong>LARGE</strong> untuk <a href="https://www.excel-easy.com/examples/sum-largest-numbers.html" target="_blank">menjumlahkan angka terbesar</a>                                                            dalam suatu Range. Ubah {1,2,3,4} menjadi {1,2,3,4,5} untuk menjumlahkan 5 bilangan terbesar.</p>
                                                         <p><img src="https://www.excel-easy.com/examples/images/sum/sum-largest-numbers.png" class="img-fluid" alt="..."></p>
                                                         <p class="info"><strong>Catatan:</strong>=<strong>LARGE</strong>(A1:A11,2) cukup mengembalikan angka terbesar kedua.</p>
                                                     </li>
                                                     <li>
                                                         <p class="judul-sub-accordion">Jumlah Rentang dengan Kesalahan</p>
-                                                        <p>Rumus <strong>SUM</strong> di bawah ini menggunakan <strong>SUM</strong> dan <strong>IFERROR</strong> untuk <a href="https://www.excel-easy.com/examples/sum-range-with-errors.html" target="_blank">menjumlahkan rentang dengan kesalahan</a>.
-                                                            Anda juga dapat menggunakan <a href="https://www.excel-easy.com/examples/aggregate.html" target="_blank">fungsi AGGREGATE</a> di Excel untuk menjumlahkan rentang dengan kesalahan.
+                                                        <p>Rumus <strong>SUM</strong> di bawah ini menggunakan <strong>SUM</strong> dan <strong>IFERROR</strong> untuk <a href="https://www.excel-easy.com/examples/sum-range-with-errors.html" target="_blank">menjumlahkan Range dengan kesalahan</a>.
+                                                            Anda juga dapat menggunakan <a href="https://www.excel-easy.com/examples/aggregate.html" target="_blank">fungsi AGGREGATE</a> di Excel untuk menjumlahkan Range dengan kesalahan.
                                                         </p>
                                                         <p><img src="https://www.excel-easy.com/examples/images/sum/sum-range-with-errors.png" class="img-fluid" alt="..."></p>
                                                         <p class="info"><strong>Catatan: </strong>fungsi <strong>SUM</strong> di Excel secara otomatis mengabaikan nilai teks.</p>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                        </details>
+
+                                        <!-- Running Total -->
+                                        <details>
+                                            <summary>Running Total</summary>
+
+                                            <!-- <p class="konten-sub text-sm fw-light mb-1">
+                                                <a href="#SumRange">Jumlah Range</a> |
+                                                <a href="#SumEntireColumn">Jumlahkan Seluruh Kolom</a> |
+                                                <a href="#SumNon-contiguousCells">Jumlahkan Sel yang Tidak Bersebelahan</a> |
+                                                <a href="#AutoSum">JumlahOtomatis</a> |
+                                                <a href="#SumEveryNthRow">Jumlahkan Setiap Baris Ke-N</a> |
+                                                <a href="#SumLargestNumbers">Jumlahkan Bilangan Terbesar</a> |
+                                                <a href="#SumRangewithErrors">Jumlah Rentang dengan Kesalahan</a>
+                                            </p> -->
+
+                                            <p class="konten-sub">Contoh ini mengajarkan Anda cara membuat total berjalan (jumlah kumulatif) di Excel . Total berjalan berubah setiap kali data baru ditambahkan ke daftar.</p>
+
+                                            <div class="content">
+                                                <ol>
+                                                    <li>
+                                                        <p>Pilih sel B9 dan masukkan fungsi SUM sederhana.</p>
+                                                        <p><img src="https://www.excel-easy.com/examples/images/running-total/sum-function.png" class="img-fluid" alt="..."></p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Pilih sel C2 dan masukkan fungsi SUM yang ditunjukkan di bawah ini.</p>
+                                                        <p><img src="https://www.excel-easy.com/examples/images/running-total/running-total-formula.png" class="img-fluid" alt="..."></p>
+                                                        <p class="info"><strong>Penjelasan: </strong>sel pertama (B$2) dalam referensi Range adalah <a href="https://www.excel-easy.com/functions/cell-references.html#mixed-reference" target="_blank">referensi campuran</a>                                                            . Kami memperbaiki referensi ke baris 2 dengan menambahkan simbol $ di depan nomor baris. Sel kedua (B2) dalam referensi Range adalah <a href="https://www.excel-easy.com/functions/cell-references.html#relative-reference"
+                                                                target="_blank">referensi relatif</a> normal</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Pilih sel C2, klik di sudut kanan bawah sel C2 dan seret ke bawah ke sel C7.</p>
+                                                        <p><img src="https://www.excel-easy.com/examples/images/running-total/create-running-total.png" class="img-fluid" alt="..."></p>
+                                                        <p class="info"><strong>Penjelasan: </strong>ketika kita menyeret rumus ke bawah, referensi campuran (B$2) tetap sama, sedangkan referensi relatif (B2) berubah menjadi B3, B4, B5, dll.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Misalnya, lihat rumus di sel C3.</p>
+                                                        <p><img src="https://www.excel-easy.com/examples/images/running-total/mixed-reference.png" class="img-fluid" alt="..."></p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Misalnya, lihat rumus di sel C4.</p>
+                                                        <p><img src="https://www.excel-easy.com/examples/images/running-total/running-total-check.png" class="img-fluid" alt="..."></p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Pada langkah 2, masukkan fungsi IF yang ditunjukkan di bawah ini (dan seret ke bawah ke sel C7) untuk hanya menampilkan jumlah kumulatif jika data telah dimasukkan.</p>
+                                                        <p><img src="https://www.excel-easy.com/examples/images/running-total/cumulative-sums.png" class="img-fluid" alt="..."></p>
+                                                        <p class="info"><strong>Penjelasan: </strong>jika sel B2 tidak kosong (
+                                                            <strong><></strong> berarti tidak sama dengan), <a href="https://www.excel-easy.com/examples/if.html" target="_blank">fungsi IF</a> di sel C2 menampilkan jumlah kumulatif, selain itu menampilkan
+                                                            string kosong.</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>Masukkan penjualan di bulan April.</p>
+                                                        <p><img src="https://www.excel-easy.com/examples/images/running-total/sales-in-april.png" class="img-fluid" alt="..."></p>
                                                     </li>
                                                 </ol>
                                             </div>

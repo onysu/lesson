@@ -118,19 +118,20 @@
         }
         
         summary {
-            padding: 1em;
+            padding: 0.6rem 1.25rem;
             /* background: orange; */
             /* margin-bottom: 1em; */
             cursor: pointer;
             outline: none;
             /* border-radius: .3em; */
-            /* font-weight: bold; */
+            font-weight: 500;
             transition: .3s;
+            color: #222;
+            border-bottom: 1px solid #ddd;
         }
-        
-        summary:hover {
+        /* summary:hover {
             background: #eee;
-        }
+        } */
         
         summary::-webkit-details-marker {
             background: url(img/svg/arrow-bar-down.svg) center no-repeat;
@@ -138,10 +139,9 @@
             width: 17px;
             height: 17px;
         }
-        
-        img {
+        /* img {
             width: 100%;
-        }
+        } */
         
         details[open] summary~* {
             animation: sweep .5s ease-in-out;
@@ -1004,16 +1004,20 @@
 
                                     <div class="daftar">
                                         <details>
-                                            <summary>Lorem, ipsum dolor.</summary>
+                                            <summary>Fungsi yang Paling Banyak Digunakan</summary>
                                             <div class="content">
-                                                <p class="konten-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi excepturi, illo dicta sunt blanditiis facere.</p>
-                                                <ul>
-                                                    <li>Lorem, ipsum dolor.</li>
-                                                    <li>Lorem, ipsum dolor.</li>
-                                                    <li>Lorem, ipsum dolor.</li>
-                                                    <li>Lorem, ipsum dolor.</li>
-                                                    <li>Lorem, ipsum dolor.</li>
-                                                </ul>
+                                                <p class="konten-sub">Mari kita lihat 10 fungsi Excel yang paling sering digunakan . Kunjungi bagian kami tentang fungsi untuk penjelasan terperinci dan fungsi yang lebih mengagumkan.</p>
+                                                <p class="konten-sub">Tip: unduh <a href="img/bahan/Fungsi yang Paling Banyak Digunakan.xlsx">file Excel</a> dan coba masukkan fungsi-fungsi ini.</p>
+
+                                                <ol>
+                                                    <li>
+                                                        <p><strong>COUNT</strong>
+                                                            <br>Untuk menghitung jumlah sel yang berisi angka, gunakan fungsi COUNT di Excel.
+                                                        </p>
+                                                        <p><img src="https://www.excel-easy.com/examples/images/most-used-functions/count-function.png" class="img-fluid" alt="..."></p>
+                                                        <p>Catatan: gunakan COUNTA untuk menghitung semua sel yang tidak kosong. COUNTA adalah singkatan dari hitung semua.</p>
+                                                    </li>
+                                                </ol>
                                             </div>
                                         </details>
 

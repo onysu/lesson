@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -22,155 +23,312 @@
 </head>
 
 <body>
-    <h1>Introduction</h1>
-    <details>
-        <summary>Range</summary>
-        <ul style="list-style: none;">
-            <li>
-                <!-- AutoFill -->
-                <details>
-                    <summary>AutoFill</summary>
-                    <p>Gunakan IsiOtomatis di Excel untuk mengisi serangkaian sel secara otomatis. Halaman ini berisi banyak contoh IsiOtomatis yang mudah diikuti. Langit adalah batasnya!</p>
-                    <p>Misalnya, masukkan nilai 10 ke dalam sel A1 dan nilai 20 ke dalam sel A2.</p>
-                    <p><img width=604 height=81 id="Picture 42" src="https://www.excel-easy.com/examples/images/autofill/numbers.png" alt=Angka></p>
-                    <p>Pilih sel A1 dan sel A2 dan seret gagang isian ke bawah. Pegangan isian adalah kotak hijau kecil di kanan bawah sel yang dipilih atau rentang sel yang dipilih.</p>
-                    <p><img width=604 height=181 id="Picture 41" src="https://www.excel-easy.com/examples/images/autofill/autofill-numbers.png" alt="Nomor IsiOtomatis di Excel"></p>
-                    <p>Catatan: IsiOtomatis mengisi angka berdasarkan pola dua angka pertama.</p>
-                    <p>Masukkan Jan ke sel A1.</p>
-                    <p><img width=604 height=61 id="Picture 40" src="https://www.excel-easy.com/examples/images/autofill/month-name.png" alt="Nama Bulan"></p>
-                    <p>Pilih sel A1 dan seret gagang isian ke bawah. IsiOtomatis secara otomatis mengisi nama bulan.</p>
-                    <p><img width=604 height=181 id="Picture 39" src="https://www.excel-easy.com/examples/images/autofill/autofill-month-names.png" alt="Nama Bulan IsiOtomatis"></p>
-                    <p>Masukkan Produk 1 ke dalam sel A1.</p>
-                    <p><img width=604 height=61 id="Picture 38" src="https://www.excel-easy.com/examples/images/autofill/product-name.png" alt="Nama Produk"></p>
-                    <p>Pilih sel A1 dan seret gagang isian ke bawah. IsiOtomatis secara otomatis mengisi nama produk.</p>
-                    <p><img width=604 height=181 id="Picture 37" src="https://www.excel-easy.com/examples/images/autofill/autofill-product-names.png" alt="Nama Produk IsiOtomatis"></p>
-                    <p>Masukkan Friday ke sel A1.</p>
-                    <p><img width=604 height=61 id="Picture 36" src="https://www.excel-easy.com/examples/images/autofill/day-name.png" alt="Nama Hari"></p>
-                    <p>Pilih sel A1 dan seret gagang isian ke bawah. IsiOtomatis secara otomatis mengisi nama hari.</p>
-                    <p><img width=604 height=161 id="Picture 35" src="https://www.excel-easy.com/examples/images/autofill/autofill-day-names.png" alt="Nama Hari IsiOtomatis"></p>
-                    <p>Masukkan tanggal 14/1/2019 ke dalam sel A1.</p>
-                    <p><img width=604 height=61 id="Picture 34" src="https://www.excel-easy.com/examples/images/autofill/day.png" alt=Hari></p>
-                    <p>Pilih sel A1 dan seret gagang isian ke bawah. IsiOtomatis mengisi hari secara otomatis.</p>
-                    <p><img width=604 height=181 id="Picture 33" src="https://www.excel-easy.com/examples/images/autofill/autofill-days.png" alt="Hari IsiOtomatis"></p>
-                    <p>Alih-alih mengisi hari, gunakan opsi IsiOtomatis untuk mengisi hari kerja (mengabaikan hari akhir pekan), bulan (lihat contoh di bawah) atau tahun.</p>
-                    <p><img width=604 height=401 id="Picture 32" src="https://www.excel-easy.com/examples/images/autofill/autofill-options.png" alt="Opsi IsiOtomatis"></p>
-                    <p>Catatan: lihat juga opsi untuk mengisi pemformatan saja dan untuk mengisi rangkaian tanpa pemformatan.</p>
-                    <p>Masukkan tanggal 14/1/2019 ke dalam sel A1 dan tanggal 21/01/2019 ke dalam sel A2.</p>
-                    <p><img width=604 height=81 id="Picture 31" src="https://www.excel-easy.com/examples/images/autofill/dates.png" alt=tanggal></p>
-                    <p>Pilih sel A1 dan sel A2 dan seret gagang isian ke bawah. IsiOtomatis secara otomatis mengisi tanggal berdasarkan pola dua tanggal pertama.</p>
-                    <p><img width=604 height=181 id="Picture 30" src="https://www.excel-easy.com/examples/images/autofill/autofill-dates.png" alt="Tanggal IsiOtomatis"></p>
-                    <p>Masukkan waktu 6:00 pagi ke sel A1.</p>
-                    <p><img width=604 height=61 id="Picture 29" src="https://www.excel-easy.com/examples/images/autofill/time.png" alt=Waktu></p>
-                    <p>Pilih sel A1 dan seret gagang isian. IsiOtomatis mengisi waktu secara otomatis.</p>
-                    <p><img width=604 height=81 id="Picture 28" src="https://www.excel-easy.com/examples/images/autofill/autofill-times.png" alt="Waktu IsiOtomatis"></p>
-                    <p>Jika Excel tidak mengenali daftar, cukup buat <a href="https://www.excel-easy.com/examples/custom-lists.html">daftar kustom</a> .</p>
-                    <p><img width=604 height=81 id="Picture 27" src="https://www.excel-easy.com/examples/images/autofill/first-entry.png" alt="Entri Pertama"></p>
-                    <p><img width=604 height=161 id="Picture 26" src="https://www.excel-easy.com/examples/images/autofill/custom-list.png" alt="Daftar Kustom"></p>
-                    <p>Gunakan <a href="https://www.excel-easy.com/examples/flash-fill.html">flash fill</a> di Excel 2013 atau yang lebih baru untuk mengekstrak secara otomatis atau menggabungkan data secara otomatis.</p>
-                    <p><img width=604 height=161 id="Picture 25" src="https://www.excel-easy.com/examples/images/autofill/use-flash-fill.png" alt="Gunakan Isi Flash"></p>
-                    <p><img width=604 height=161 id="Picture 24" src="https://www.excel-easy.com/examples/images/autofill/flash-fill.png" alt="Isi Flash"></p>
-                    <p>Jika Anda memiliki Excel 365, Anda juga dapat menggunakan fungsi SEQUENCE untuk mengisi serangkaian sel. Fungsi ini cukup keren.</p>
-                    <p>Fungsi SEQUENCE di bawah ini menghasilkan array dua dimensi. Baris = 7, Kolom = 4, Mulai = 0, Langkah = 5.</p>
-                    <p><img width=604 height=227 id="Picture 23" src="https://www.excel-easy.com/examples/images/autofill/sequence-function.png" alt="Fungsi SEQUENCE"></p>
-                    <p>Fungsi SEQUENCE di bawah ini menghasilkan daftar angka ganjil. Baris = 10, Kolom = 1, Mulai = 1, Langkah = 2.</p>
-                    <p><img width=604 height=287 id="Picture 22" src="https://www.excel-easy.com/examples/images/autofill/list-of-odd-numbers.png" alt="Daftar Angka Ganjil"></p>
-                    <p>Catatan: fungsi SEQUENCE, dimasukkan ke dalam sel A1, mengisi beberapa sel. Wow! Perilaku ini di Excel 365 disebut menumpahkan.
-                    </p>
-                </details>
-            </li>
-            <li>
-                <!-- Barisan Fibonacci -->
-                <details>
-                    <summary>Barisan Fibonacci</summary>
-                    <p>Sangat mudah untuk membuat segala macam urutan di Excel. Misalnya, barisan Fibonacci.
-                    </p>
-                    <p>1. Dua angka pertama dalam deret Fibonacci adalah 0 dan 1.
-                    </p>
-                    <p><img width=347 height=147 id="Picture 6" src="https://www.excel-easy.com/examples/images/fibonacci-sequence/first-two-numbers.png" alt="Dua Angka Pertama"></p>
-                    <p>2. Setiap bilangan berikutnya dapat ditemukan dengan menjumlahkan dua bilangan sebelumnya.</p>
-                    <p><img width=347 height=147 id="Picture 5" src="https://www.excel-easy.com/examples/images/fibonacci-sequence/fibonacci-formula.png" alt="Rumus Fibonacci"></p>
-                    <p>3. Klik di sudut kanan bawah sel A3 dan seret ke bawah.</p>
-                    <p>Hasil. Deret Fibonacci di Excel.</p>
-                    <p><img width=347 height=467 id="Picture 4" src="https://www.excel-easy.com/examples/images/fibonacci-sequence/fibonacci-sequence-excel.png" alt="Urutan Fibonacci di Excel"></p>
-                </details>
-            </li>
-            <li>
-                <!-- Daftar Kustom -->
-                <details>
-                    <summary>Daftar Kustom</summary>
-                    <p>Jika Anda membuat daftar kustom di Excel, Anda dapat dengan mudah mengisi rentang dengan daftar departemen, klien, kota, nomor kartu kredit Anda sendiri, dll. Ini dapat menghemat waktu dan mengurangi kesalahan.
-                    </p>
-                    <p>Pertama, kita akan melihat contoh daftar bawaan.</p>
-                    <p>1. Ketik Sun ke dalam sel B2.</p>
-                    <p><img width=604 height=81 id="Picture 6" src="Daftar%20Kustom_files/image001.png" alt="Contoh Daftar Bawaan di Excel"></p>
-                    <p>2. Pilih sel B2, klik di sudut kanan bawah sel B2 dan seret ke sel H2.</p>
-                    <p><img width=604 height=101 id="Picture 5" src="Daftar%20Kustom_files/image002.png" alt="Hasil Daftar Bawaan"></p>
-                    <p>Bagaimana Excel mengetahui hal ini?</p>
-                    <p>3. Pada tab File, klik Opsi.</p>
-                    <p>4. Di bawah Lanjutan, buka Umum dan klik Edit Daftar Kustom.</p>
-                    <p><img width=604 height=568 id="Picture 4" src="Daftar%20Kustom_files/image003.png" alt="Klik Edit Daftar Kustom"></p>
-                    <p>Di sini Anda dapat menemukan daftar 'hari dalam seminggu' bawaan. Perhatikan juga daftar 'bulan dalam setahun'.</p>
-                    <p>5. Untuk membuat daftar kustom Anda sendiri, ketik beberapa entri daftar, dan klik Tambah.</p>
-                    <p><img width=492 height=380 id="Picture 3" src="Daftar%20Kustom_files/image004.png" alt="Buat Daftar Kustom"></p>
-                    <p>Catatan: Anda juga dapat mengimpor daftar dari lembar kerja.</p>
-                    <p>6. Klik Oke.</p>
-                    <p>7. Ketik London ke dalam sel C2.</p>
-                    <p><img width=604 height=81 id="Picture 2" src="Daftar%20Kustom_files/image005.png" alt="Contoh Daftar Kustom"></p>
-                    <p>8. Pilih sel C2, klik di sudut kanan bawah sel C2 dan seret ke bawah ke sel C5.</p>
-                    <p><img width=604 height=161 id="Picture 1" src="Daftar%20Kustom_files/image006.png" alt="Daftar Kustom di Excel"></p>
-                    <p>Catatan: daftar kustom ditambahkan ke registri komputer Anda, sehingga Anda bisa menggunakannya di buku kerja lain.</p>
-                </details>
-            </li>
-            <li>
-                <details>
-                    <summary>Komentar</summary>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis commodi impedit dolore repellat modi qui fugit natus laborum dignissimos libero?</p>
-                </details>
-            </li>
-            <li>
-                <details>
-                    <summary>Sembunyikan Kolom atau Baris</summary>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis commodi impedit dolore repellat modi qui fugit natus laborum dignissimos libero?</p>
-                </details>
-            </li>
-            <li>
-                <details>
-                    <summary>Skip Blanks</summary>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis commodi impedit dolore repellat modi qui fugit natus laborum dignissimos libero?</p>
-                </details>
-            </li>
-            <li>
-                <details>
-                    <summary>AutoFit</summary>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis commodi impedit dolore repellat modi qui fugit natus laborum dignissimos libero?</p>
-                </details>
-            </li>
-            <li>
-                <details>
-                    <summary>Transpose</summary>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis commodi impedit dolore repellat modi qui fugit natus laborum dignissimos libero?</p>
-                </details>
-            </li>
-            <li>
-                <details>
-                    <summary>Split Cells</summary>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis commodi impedit dolore repellat modi qui fugit natus laborum dignissimos libero?</p>
-                </details>
-            </li>
-            <li>
-                <details>
-                    <summary>Flash Fill</summary>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis commodi impedit dolore repellat modi qui fugit natus laborum dignissimos libero?</p>
-                </details>
-            </li>
-            <li>
-                <details>
-                    <summary>Pindahkan Kolom</summary>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis commodi impedit dolore repellat modi qui fugit natus laborum dignissimos libero?</p>
-                </details>
-            </li>
-        </ul>
-    </details>
+    <div class="container">
+        <h1>Introduction</h1>
+        <h3>Range</h3>
+        <div class="accordion accordion-flush" id="Range">
+            <!-- AutoFill -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="AutoFill">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listAutoFill" aria-expanded="false" aria-controls="listAutoFill">AutoFill</button>
+                </h2>
+                <div id="listAutoFill" class="accordion-collapse collapse" aria-labelledby="AutoFill" data-bs-parent="#Range">
+                    <div class="accordion-body">
+                        <p>Gunakan IsiOtomatis di Excel untuk mengisi serangkaian sel secara otomatis. Halaman ini berisi banyak contoh IsiOtomatis yang mudah diikuti. Langit adalah batasnya!</p>
+                        <p>Misalnya, masukkan nilai 10 ke dalam sel A1 dan nilai 20 ke dalam sel A2.</p>
+                        <p><img width=604 height=81 id="Picture 42" src="https://www.excel-easy.com/examples/images/autofill/numbers.png" alt=Angka></p>
+                        <p>Pilih sel A1 dan sel A2 dan seret gagang isian ke bawah. Pegangan isian adalah kotak hijau kecil di kanan bawah sel yang dipilih atau rentang sel yang dipilih.</p>
+                        <p><img width=604 height=181 id="Picture 41" src="https://www.excel-easy.com/examples/images/autofill/autofill-numbers.png" alt="Nomor IsiOtomatis di Excel"></p>
+                        <p>Catatan: IsiOtomatis mengisi angka berdasarkan pola dua angka pertama.</p>
+                        <p>Masukkan Jan ke sel A1.</p>
+                        <p><img width=604 height=61 id="Picture 40" src="https://www.excel-easy.com/examples/images/autofill/month-name.png" alt="Nama Bulan"></p>
+                        <p>Pilih sel A1 dan seret gagang isian ke bawah. IsiOtomatis secara otomatis mengisi nama bulan.</p>
+                        <p><img width=604 height=181 id="Picture 39" src="https://www.excel-easy.com/examples/images/autofill/autofill-month-names.png" alt="Nama Bulan IsiOtomatis"></p>
+                        <p>Masukkan Produk 1 ke dalam sel A1.</p>
+                        <p><img width=604 height=61 id="Picture 38" src="https://www.excel-easy.com/examples/images/autofill/product-name.png" alt="Nama Produk"></p>
+                        <p>Pilih sel A1 dan seret gagang isian ke bawah. IsiOtomatis secara otomatis mengisi nama produk.</p>
+                        <p><img width=604 height=181 id="Picture 37" src="https://www.excel-easy.com/examples/images/autofill/autofill-product-names.png" alt="Nama Produk IsiOtomatis"></p>
+                        <p>Masukkan Friday ke sel A1.</p>
+                        <p><img width=604 height=61 id="Picture 36" src="https://www.excel-easy.com/examples/images/autofill/day-name.png" alt="Nama Hari"></p>
+                        <p>Pilih sel A1 dan seret gagang isian ke bawah. IsiOtomatis secara otomatis mengisi nama hari.</p>
+                        <p><img width=604 height=161 id="Picture 35" src="https://www.excel-easy.com/examples/images/autofill/autofill-day-names.png" alt="Nama Hari IsiOtomatis"></p>
+                        <p>Masukkan tanggal 14/1/2019 ke dalam sel A1.</p>
+                        <p><img width=604 height=61 id="Picture 34" src="https://www.excel-easy.com/examples/images/autofill/day.png" alt=Hari></p>
+                        <p>Pilih sel A1 dan seret gagang isian ke bawah. IsiOtomatis mengisi hari secara otomatis.</p>
+                        <p><img width=604 height=181 id="Picture 33" src="https://www.excel-easy.com/examples/images/autofill/autofill-days.png" alt="Hari IsiOtomatis"></p>
+                        <p>Alih-alih mengisi hari, gunakan opsi IsiOtomatis untuk mengisi hari kerja (mengabaikan hari akhir pekan), bulan (lihat contoh di bawah) atau tahun.</p>
+                        <p><img width=604 height=401 id="Picture 32" src="https://www.excel-easy.com/examples/images/autofill/autofill-options.png" alt="Opsi IsiOtomatis"></p>
+                        <p>Catatan: lihat juga opsi untuk mengisi pemformatan saja dan untuk mengisi rangkaian tanpa pemformatan.</p>
+                        <p>Masukkan tanggal 14/1/2019 ke dalam sel A1 dan tanggal 21/01/2019 ke dalam sel A2.</p>
+                        <p><img width=604 height=81 id="Picture 31" src="https://www.excel-easy.com/examples/images/autofill/dates.png" alt=tanggal></p>
+                        <p>Pilih sel A1 dan sel A2 dan seret gagang isian ke bawah. IsiOtomatis secara otomatis mengisi tanggal berdasarkan pola dua tanggal pertama.</p>
+                        <p><img width=604 height=181 id="Picture 30" src="https://www.excel-easy.com/examples/images/autofill/autofill-dates.png" alt="Tanggal IsiOtomatis"></p>
+                        <p>Masukkan waktu 6:00 pagi ke sel A1.</p>
+                        <p><img width=604 height=61 id="Picture 29" src="https://www.excel-easy.com/examples/images/autofill/time.png" alt=Waktu></p>
+                        <p>Pilih sel A1 dan seret gagang isian. IsiOtomatis mengisi waktu secara otomatis.</p>
+                        <p><img width=604 height=81 id="Picture 28" src="https://www.excel-easy.com/examples/images/autofill/autofill-times.png" alt="Waktu IsiOtomatis"></p>
+                        <p>Jika Excel tidak mengenali daftar, cukup buat <a href="https://www.excel-easy.com/examples/custom-lists.html">daftar kustom</a> .</p>
+                        <p><img width=604 height=81 id="Picture 27" src="https://www.excel-easy.com/examples/images/autofill/first-entry.png" alt="Entri Pertama"></p>
+                        <p><img width=604 height=161 id="Picture 26" src="https://www.excel-easy.com/examples/images/autofill/custom-list.png" alt="Daftar Kustom"></p>
+                        <p>Gunakan <a href="https://www.excel-easy.com/examples/flash-fill.html">flash fill</a> di Excel 2013 atau yang lebih baru untuk mengekstrak secara otomatis atau menggabungkan data secara otomatis.</p>
+                        <p><img width=604 height=161 id="Picture 25" src="https://www.excel-easy.com/examples/images/autofill/use-flash-fill.png" alt="Gunakan Isi Flash"></p>
+                        <p><img width=604 height=161 id="Picture 24" src="https://www.excel-easy.com/examples/images/autofill/flash-fill.png" alt="Isi Flash"></p>
+                        <p>Jika Anda memiliki Excel 365, Anda juga dapat menggunakan fungsi SEQUENCE untuk mengisi serangkaian sel. Fungsi ini cukup keren.</p>
+                        <p>Fungsi SEQUENCE di bawah ini menghasilkan array dua dimensi. Baris = 7, Kolom = 4, Mulai = 0, Langkah = 5.</p>
+                        <p><img width=604 height=227 id="Picture 23" src="https://www.excel-easy.com/examples/images/autofill/sequence-function.png" alt="Fungsi SEQUENCE"></p>
+                        <p>Fungsi SEQUENCE di bawah ini menghasilkan daftar angka ganjil. Baris = 10, Kolom = 1, Mulai = 1, Langkah = 2.</p>
+                        <p><img width=604 height=287 id="Picture 22" src="https://www.excel-easy.com/examples/images/autofill/list-of-odd-numbers.png" alt="Daftar Angka Ganjil"></p>
+                        <p>Catatan: fungsi SEQUENCE, dimasukkan ke dalam sel A1, mengisi beberapa sel. Wow! Perilaku ini di Excel 365 disebut menumpahkan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Barisan Fibonacci -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="Fibonacci">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listFibonacci" aria-expanded="false" aria-controls="listFibonacci">Barisan Fibonacci</button>
+                </h2>
+                <div id="listFibonacci" class="accordion-collapse collapse" aria-labelledby="Fibonacci" data-bs-parent="#Range">
+                    <div class="accordion-body">
+                        <p>Sangat mudah untuk membuat segala macam urutan di Excel. Misalnya, barisan Fibonacci.
+                        </p>
+                        <p>1. Dua angka pertama dalam deret Fibonacci adalah 0 dan 1.
+                        </p>
+                        <p><img width=347 height=147 id="Picture 6" src="https://www.excel-easy.com/examples/images/fibonacci-sequence/first-two-numbers.png" alt="Dua Angka Pertama"></p>
+                        <p>2. Setiap bilangan berikutnya dapat ditemukan dengan menjumlahkan dua bilangan sebelumnya.</p>
+                        <p><img width=347 height=147 id="Picture 5" src="https://www.excel-easy.com/examples/images/fibonacci-sequence/fibonacci-formula.png" alt="Rumus Fibonacci"></p>
+                        <p>3. Klik di sudut kanan bawah sel A3 dan seret ke bawah.</p>
+                        <p>Hasil. Deret Fibonacci di Excel.</p>
+                        <p><img width=347 height=467 id="Picture 4" src="https://www.excel-easy.com/examples/images/fibonacci-sequence/fibonacci-sequence-excel.png" alt="Urutan Fibonacci di Excel"></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Daftar Kustom -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="DaftarKustom">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listDaftarKustom" aria-expanded="false" aria-controls="listDaftarKustom">Daftar Kustom</button>
+                </h2>
+                <div id="listDaftarKustom" class="accordion-collapse collapse" aria-labelledby="DaftarKustom" data-bs-parent="#Range">
+                    <div class="accordion-body">
+                        <p>Jika Anda membuat daftar kustom di Excel, Anda dapat dengan mudah mengisi rentang dengan daftar departemen, klien, kota, nomor kartu kredit Anda sendiri, dll. Ini dapat menghemat waktu dan mengurangi kesalahan.
+                        </p>
+                        <p>Pertama, kita akan melihat contoh daftar bawaan.</p>
+                        <p>1. Ketik Sun ke dalam sel B2.</p>
+                        <p><img width=604 height=81 id="Picture 6" src="img/img-excel/Daftar Kustom_files/image001.png" alt="Contoh Daftar Bawaan di Excel"></p>
+                        <p>2. Pilih sel B2, klik di sudut kanan bawah sel B2 dan seret ke sel H2.</p>
+                        <p><img width=604 height=101 id="Picture 5" src="img/img-excel/Daftar Kustom_files/image002.png" alt="Hasil Daftar Bawaan"></p>
+                        <p>Bagaimana Excel mengetahui hal ini?</p>
+                        <p>3. Pada tab File, klik Opsi.</p>
+                        <p>4. Di bawah Lanjutan, buka Umum dan klik Edit Daftar Kustom.</p>
+                        <p><img width=604 height=568 id="Picture 4" src="img/img-excel/Daftar Kustom_files/image003.png" alt="Klik Edit Daftar Kustom"></p>
+                        <p>Di sini Anda dapat menemukan daftar 'hari dalam seminggu' bawaan. Perhatikan juga daftar 'bulan dalam setahun'.</p>
+                        <p>5. Untuk membuat daftar kustom Anda sendiri, ketik beberapa entri daftar, dan klik Tambah.</p>
+                        <p><img width=492 height=380 id="Picture 3" src="img/img-excel/Daftar Kustom_files/image004.png" alt="Buat Daftar Kustom"></p>
+                        <p>Catatan: Anda juga dapat mengimpor daftar dari lembar kerja.</p>
+                        <p>6. Klik Oke.</p>
+                        <p>7. Ketik London ke dalam sel C2.</p>
+                        <p><img width=604 height=81 id="Picture 2" src="img/img-excel/Daftar Kustom_files/image005.png" alt="Contoh Daftar Kustom"></p>
+                        <p>8. Pilih sel C2, klik di sudut kanan bawah sel C2 dan seret ke bawah ke sel C5.</p>
+                        <p><img width=604 height=161 id="Picture 1" src="img/img-excel/Daftar Kustom_files/image006.png" alt="Daftar Kustom di Excel"></p>
+                        <p>Catatan: daftar kustom ditambahkan ke registri komputer Anda, sehingga Anda bisa menggunakannya di buku kerja lain.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Komentar -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="Komentar">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listKomentar" aria-expanded="false" aria-controls="listKomentar">Komentar</button>
+                </h2>
+                <div id="listKomentar" class="accordion-collapse collapse" aria-labelledby="Komentar" data-bs-parent="#Range">
+                    <div class="accordion-body">
+                        <p>Sisipkan&nbsp;komentar&nbsp;di&nbsp;Excel&nbsp;2019 untuk memulai percakapan atau memberikan umpan balik tentang konten sel.&nbsp;Komentar gaya lama masih tersedia dan sekarang disebut catatan.</p>
+                        <p>
+                            <a name=insert-comment></a>Sisipkan Komentar</p>
+                        <p>Untuk&nbsp;menyisipkan komentar&nbsp;, jalankan langkah-langkah berikut.</p>
+                        <p>1. Pilih sel.</p>
+                        <p>2. Klik kanan, lalu klik Komentar Baru.</p>
+                        <p><img width=206 height=352 id="Picture 18" src="img/img-excel/Komentar_files/image001.png" alt="Komentar Baru"></p>
+                        <p>Tips: untuk menyisipkan komentar gaya lama, klik Catatan Baru.
+                        </p>
+                        <p>3. Ketik komentar Anda dan posting.</p>
+                        <p><img width=272 height=134 id="Picture 17" src="img/img-excel/Komentar_files/image002.png" alt="Kirim Komentar"></p>
+                        <p>Excel menampilkan indikator ungu di sudut kanan atas sel.</p>
+                        <p>4. Arahkan kursor ke sel untuk melihat komentar.</p>
+                        <p><img width=475 height=201 id="Picture 16" src="img/img-excel/Komentar_files/image003.png" alt="Lihat Komentar"></p>
+                        <p>5. Untuk mengedit komentar, arahkan kursor ke komentar dan klik Edit.</p>
+                        <p><img width=475 height=201 id="Picture 15" src="img/img-excel/Komentar_files/image004.png" alt="Edit Komentar"></p>
+                        <p>6. Orang lain sekarang dapat membalas komentar Anda.</p>
+                        <p><img width=475 height=281 id="Picture 14" src="img/img-excel/Komentar_files/image005.png" alt="Balas Komentar"></p>
+                        <p>Tips: gunakan&nbsp;<a href="https://www.excel-easy.com/examples/onedrive.html">OneDrive</a>&nbsp;untuk berbagi file Excel Anda dengan orang lain.</p>
+                        <p>
+                            <a name=delete-comment></a>Hapus Komentar</p>
+                        <p>Untuk menghapus komentar, jalankan langkah-langkah berikut.</p>
+                        <p>1. Pilih sel dengan komentar.</p>
+                        <p>2. Klik kanan, lalu klik&nbsp;Hapus Komentar&nbsp;.</p>
+                        <p><img border=0 width=206 height=352 id="Picture 13" src="img/img-excel/Komentar_files/image006.png" alt="Hapus Komentar"></p>
+                        <p>
+                            <a name=show-comments></a>Tampilkan Komentar</p>
+                        <p>Untuk melihat semua komentar dalam file Excel, jalankan langkah-langkah berikut.</p>
+                        <p>1. Pada tab Tinjau, di grup Komentar, klik Perlihatkan Komentar.
+                        </p>
+                        <p><img border=0 width=358 height=100 id="Picture 12" src="img/img-excel/Komentar_files/image007.png" alt="Tampilkan Komentar"></p>
+                        <p>Tips: daripada menggunakan tab Tinjau, cukup klik tombol Komentar di sudut kanan atas pita.</p>
+                        <p><img border=0 width=604 height=35 id="Picture 11" src="img/img-excel/Komentar_files/image008.png" alt="Klik Komentar"></p>
+                        <p>Excel membuka panel Komentar dengan semua komentar dalam file Excel ini.</p>
+                        <p><img border=0 width=321 height=420 id="Picture 10" src="img/img-excel/Komentar_files/image009.png" alt="Panel Komentar"></p>
+                        <p>Tips: Anda juga dapat menggunakan panel ini untuk mengedit, membalas, dan menghapus komentar.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Sembunyikan Kolom atau Baris -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="SembunyikanKolomBaris">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listSembunyikanKolomBaris" aria-expanded="false" aria-controls="listSembunyikanKolomBaris">Sembunyikan Kolom atau Baris</button>
+                </h2>
+                <div id="listSembunyikanKolomBaris" class="accordion-collapse collapse" aria-labelledby="SembunyikanKolomBaris" data-bs-parent="#Range">
+                    <div class="accordion-body">
+                        <p>Terkadang berguna untuk&nbsp;menyembunyikan kolom&nbsp;atau&nbsp;baris&nbsp;di&nbsp;Excel&nbsp;.</p>
+                        <p>
+                            <a name=hide></a>Bersembunyi</p>
+                        <p>Untuk menyembunyikan kolom, jalankan langkah-langkah berikut.
+                        </p>
+                        <p>1. Pilih kolom.</p>
+                        <p><img width=389 height=321 id="Picture 40" src="img/img-excel/Sembunyikan%20Kolom%20atau%20Baris_files/image001.png" alt="Sembunyikan Contoh Kolom"></p>
+                        <p>2. Klik kanan, lalu klik Sembunyikan.</p>
+                        <p><img width=146 height=300 id="Picture 39" src="img/img-excel/Sembunyikan%20Kolom%20atau%20Baris_files/image002.png" alt="Klik Sembunyikan"></p>
+                        <p>Hasil:</p>
+                        <p><img width=336 height=321 id="Picture 38" src="img/img-excel/Sembunyikan%20Kolom%20atau%20Baris_files/image003.png" alt="Kolom Tersembunyi di Excel"></p>
+                        <p>Catatan: untuk menyembunyikan baris, pilih satu baris, klik kanan, lalu klik Sembunyikan.</p>
+                        <p>
+                            <a name=unhide></a>Perlihatkan</p>
+                        <p>Untuk&nbsp;memperlihatkan&nbsp;kolom, jalankan langkah-langkah berikut.</p>
+                        <p>1. Pilih kolom di kedua sisi kolom tersembunyi.</p>
+                        <p><img width=336 height=321 id="Picture 37" src="img/img-excel/Sembunyikan%20Kolom%20atau%20Baris_files/image004.png" alt="Perlihatkan Contoh Kolom"></p>
+                        <p>2. Klik kanan, lalu klik Perlihatkan.</p>
+                        <p><img width=146 height=303 id="Picture 36" src="img/img-excel/Sembunyikan%20Kolom%20atau%20Baris_files/image005.png" alt="Klik Perlihatkan"></p>
+                        <p>Hasil:</p>
+                        <p><img width=389 height=321 id="Picture 35" src="img/img-excel/Sembunyikan%20Kolom%20atau%20Baris_files/image006.png" alt="Tidak Ada Kolom Tersembunyi"></p>
+                        <p>Catatan: untuk memperlihatkan baris, pilih baris di kedua sisi baris tersembunyi, klik kanan, lalu klik Perlihatkan.</p>
+                        <p>
+                            <a name=multiple-columns-or-rows></a>Beberapa Kolom atau Baris
+                        </p>
+                        <p>Untuk menyembunyikan beberapa kolom, jalankan langkah-langkah berikut.</p>
+                        <p>1. Pilih beberapa kolom dengan mengklik dan menyeret header kolom.
+                        </p>
+                        <p><img width=487 height=321 id="Picture 34" src="img/img-excel/Sembunyikan%20Kolom%20atau%20Baris_files/image007.png" alt="Pilih Beberapa Kolom"></p>
+                        <p>2. Untuk memilih kolom yang tidak berdekatan, tahan CTRL sambil mengklik header kolom.</p>
+                        <p><img width=487 height=321 id="Picture 33" src="img/img-excel/Sembunyikan%20Kolom%20atau%20Baris_files/image008.png" alt="Pilih Kolom yang Tidak Berdekatan"></p>
+                        <p>3. Klik kanan, lalu klik Sembunyikan.</p>
+                        <p><img width=146 height=300 id="Picture 32" src="img/img-excel/Sembunyikan%20Kolom%20atau%20Baris_files/image002.png" alt="Klik Sembunyikan"></p>
+                        <p>Hasil:</p>
+                        <p><img width=232 height=321 id="Picture 31" src="img/img-excel/Sembunyikan%20Kolom%20atau%20Baris_files/image009.png" alt="Kolom Tersembunyi di Excel"></p>
+                        <p>Untuk memperlihatkan semua kolom, jalankan langkah-langkah berikut.
+                        </p>
+                        <p>4. Pilih semua kolom dengan mengklik tombol Select All.</p>
+                        <p><img width=232 height=321 id="Picture 30" src="img/img-excel/Sembunyikan%20Kolom%20atau%20Baris_files/image010.png" alt="Pilih Semua Kolom"></p>
+                        <p>5. Klik kanan tajuk kolom, lalu klik Perlihatkan.</p>
+                        <p><img width=146 height=303 id="Picture 29" src="img/img-excel/Sembunyikan%20Kolom%20atau%20Baris_files/image005.png" alt="Klik Perlihatkan"></p>
+                        <p>Hasil:</p>
+                        <p><img width=487 height=321 id="Picture 28" src="img/img-excel/Sembunyikan%20Kolom%20atau%20Baris_files/image011.png" alt="Perlihatkan Semua Kolom"></p>
+                        <p>Catatan: dengan cara yang sama, Anda dapat menyembunyikan dan menampilkan beberapa baris.</p>
+                        <p>
+                            <a name=hidden-tricks></a>Trik Tersembunyi</p>
+                        <p>Buat bos Anda terkesan dengan trik tersembunyi :-) berikut.&nbsp;Untuk menyembunyikan dan menampilkan kolom dengan mengklik tombol, jalankan langkah-langkah berikut.</p>
+                        <p>1. Pilih satu atau beberapa kolom.</p>
+                        <p><img width=487 height=321 id="Picture 27" src="img/img-excel/Sembunyikan%20Kolom%20atau%20Baris_files/image012.png" alt="Pilih Satu atau Lebih Kolom"></p>
+                        <p>2. Pada tab Data, dalam grup Kerangka, klik Grup.</p>
+                        <p><img width=251 height=100 id="Picture 26" src="img/img-excel/Sembunyikan%20Kolom%20atau%20Baris_files/image013.png" alt="Klik Grup"></p>
+                        <p>3. Untuk menyembunyikan kolom, klik tanda minus.</p>
+                        <p><img width=487 height=371 id="Picture 25" src="img/img-excel/Sembunyikan%20Kolom%20atau%20Baris_files/image014.png" alt="Sembunyikan Kolom"></p>
+                        <p>4. Untuk menampilkan kolom lagi, klik tanda plus.</p>
+                        <p><img width=316 height=371 id="Picture 24" src="img/img-excel/Sembunyikan%20Kolom%20atau%20Baris_files/image015.png" alt="Tampilkan Kolom"></p>
+                        <p>Catatan: untuk memisahkan kolom, pertama, pilih kolom.&nbsp;Selanjutnya, pada tab Data, di grup Outline, klik Ungroup.</p>
+                        <p>Terakhir, untuk menyembunyikan sel di Excel, jalankan langkah-langkah berikut.</p>
+                        <p>1. Pilih rentang sel.</p>
+                        <p><img width=487 height=321 id="Picture 23" src="img/img-excel/Sembunyikan%20Kolom%20atau%20Baris_files/image016.png" alt="Pilih Sel"></p>
+                        <p>2. Klik kanan, lalu klik Format Sel.</p>
+                        <p>Kotak dialog 'Format Sel' muncul.</p>
+                        <p>3. Pilih Kustom.</p>
+                        <p>4. Ketik kode format angka berikut:&nbsp;;;;</p>
+                        <p>5. Klik Oke.</p>
+                        <p><img width=532 height=484 id="Picture 22" src="img/img-excel/Sembunyikan%20Kolom%20atau%20Baris_files/image017.png" alt="Ketik Kode Format Angka"></p>
+                        <p>Hasil:</p>
+                        <p><img width=487 height=321 id="Picture 21" src="img/img-excel/Sembunyikan%20Kolom%20atau%20Baris_files/image018.png" alt="Sel Tersembunyi"></p>
+                        <p>Catatan: data masih ada.&nbsp;Cobalah sendiri.&nbsp;Unduh file Excel, sembunyikan sel, pilih salah satu sel tersembunyi dan lihat bilah rumus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Skip Blanks -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="SkipBlanks">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listSkipBlanks" aria-expanded="false" aria-controls="listSkipBlanks">Skip Blanks</button>
+                </h2>
+                <div id="listSkipBlanks" class="accordion-collapse collapse" aria-labelledby="SkipBlanks" data-bs-parent="#Range">
+                    <div class="accordion-body">
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+            <!-- AutoFit -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="AutoFit">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listAutoFit" aria-expanded="false" aria-controls="listAutoFit">AutoFit</button>
+                </h2>
+                <div id="listAutoFit" class="accordion-collapse collapse" aria-labelledby="AutoFit" data-bs-parent="#Range">
+                    <div class="accordion-body">
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+            <!-- Transpose -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="Transpose">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listTranspose" aria-expanded="false" aria-controls="listTranspose">Transpose</button>
+                </h2>
+                <div id="listTranspose" class="accordion-collapse collapse" aria-labelledby="Transpose" data-bs-parent="#Range">
+                    <div class="accordion-body">
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+            <!-- Split Cells -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="SplitCells">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listSplitCells" aria-expanded="false" aria-controls="listSplitCells">Split Cells</button>
+                </h2>
+                <div id="listSplitCells" class="accordion-collapse collapse" aria-labelledby="SplitCells" data-bs-parent="#Range">
+                    <div class="accordion-body">
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+            <!-- Flash Fill -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="FlashFill">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listFlashFill" aria-expanded="false" aria-controls="listFlashFill">Flash Fill</button>
+                </h2>
+                <div id="listFlashFill" class="accordion-collapse collapse" aria-labelledby="FlashFill" data-bs-parent="#Range">
+                    <div class="accordion-body">
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+            <!-- Move Columns -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="MoveColumns">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listMoveColumns" aria-expanded="false" aria-controls="listMoveColumns">Move Columns</button>
+                </h2>
+                <div id="listMoveColumns" class="accordion-collapse collapse" aria-labelledby="MoveColumns" data-bs-parent="#Range">
+                    <div class="accordion-body">
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3>Formulas and Functions</h3>
+    </div>
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -1097,7 +1097,7 @@ Excel</a> , buat rentang bernama dengan cepat dan mudah (mulai dengan langkah 11
                 <div id="listDynamicNamedRange" class="accordion-collapse collapse" aria-labelledby="DynamicNamedRange" data-bs-parent="#RumusFungsi">
                     <div class="accordion-body">
                         <p>Sebuah rentang dinamis bernama mengembang secara otomatis saat Anda menambahkan nilai ke kisaran.</p>
-                        <p>1. Misalnya, pilih rentang A1:A4 dan beri <a href="#">nama</a> Harga.</p>
+                        <p>1. Misalnya, pilih rentang A1:A4 dan beri <a href="#">nama</a> <em>Prices</em>.</p>
                         <p>2. Hitung jumlahnya.</p>
                         <p><img class="img-fluid" src="img/img-excel/DynamicNamedRange_files/image001.png" alt="Contoh Rentang Bernama Dinamis"></p>
                         <p>3. Saat Anda menambahkan nilai ke rentang, Excel tidak memperbarui jumlah.</p>
@@ -1110,8 +1110,8 @@ Excel</a> , buat rentang bernama dengan cepat dan mudah (mulai dengan langkah 11
                         <p>6. Klik pada kotak &quot;Refers to&quot; dan masukkan rumus =OFFSET($A$1,0,0,COUNTA($A:$A),1)
                         </p>
                         <p><img class="img-fluid" src="img/img-excel/DynamicNamedRange_files/image005.png" alt="Edit Nama"></p>
-                        <p>Penjelasan: <a href="https://www.excel-easy.com/examples/offset.html">fungsi OFFSET</a> membutuhkan 5 argumen. Referensi: $A$1, baris untuk diimbangi: 0, kolom untuk diimbangi: 0, tinggi: COUNTA($A:$A) dan lebar: 1. COUNTA($A:$A)
-                            menghitung jumlah nilai di kolom A yang tidak kosong. Saat Anda menambahkan nilai ke rentang, COUNTA($A:$A) meningkat. Akibatnya, rentang yang dikembalikan oleh fungsi OFFSET meluas.</p>
+                        <p class="info"><strong>Penjelasan:</strong> <a href="https://www.excel-easy.com/examples/offset.html">fungsi OFFSET</a> membutuhkan 5 argumen. Referensi: $A$1, baris untuk diimbangi: 0, kolom untuk diimbangi: 0, tinggi: COUNTA($A:$A) dan lebar:
+                            1. COUNTA($A:$A) menghitung jumlah nilai di kolom A yang tidak kosong. Saat Anda menambahkan nilai ke rentang, COUNTA($A:$A) meningkat. Akibatnya, rentang yang dikembalikan oleh fungsi OFFSET meluas.</p>
                         <p>7. Klik OK dan Tutup.</p>
                         <p>8. Sekarang, saat Anda menambahkan nilai ke rentang, Excel memperbarui jumlah secara otomatis.</p>
                         <p><img class="img-fluid" src="img/img-excel/DynamicNamedRange_files/image006.png" alt="Jumlah yang benar"></p>

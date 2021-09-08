@@ -1,0 +1,82 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-ID style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal>Untuk&nbsp;mengembalikan nama sheet&nbsp;dalam sel, gunakan
+CELL, FIND dan MID di&nbsp;Excel&nbsp;.&nbsp;Tidak ada fungsi bawaan di Excel
+yang bisa&nbsp;mendapatkan nama sheet&nbsp;.</p>
+
+<p class=MsoNormal>1. Fungsi CELL di bawah ini mengembalikan jalur lengkap,
+nama buku kerja, dan nama lembar kerja saat ini.</p>
+
+<p class=MsoNormal><img width=604 height=177 id="Picture 4"
+src="GetSheetName_files/image001.png" alt="Fungsi Sel di Excel"></p>
+
+<p class=MsoNormal>Catatan: alih-alih menggunakan A1, Anda bisa merujuk ke sel
+mana pun di lembar kerja pertama untuk mendapatkan nama lembar kerja ini.</p>
+
+<p class=MsoNormal>2. Gunakan fungsi FIND untuk mencari posisi braket
+kanan.&nbsp;Tambahkan 1 untuk mengembalikan posisi awal nama sheet.</p>
+
+<p class=MsoNormal><img width=604 height=177 id="Picture 3"
+src="GetSheetName_files/image002.png" alt="Temukan Fungsi di Excel"></p>
+
+<p class=MsoNormal>3. Untuk mengekstrak substring, mulai dari tengah string,
+gunakan fungsi MID.&nbsp;Argumen pertama (rumus dari langkah 1).&nbsp;Argumen
+kedua (rumus dari langkah 2).&nbsp;Argumen ketiga (31).</p>
+
+<p class=MsoNormal><img width=604 height=177 id="Picture 2"
+src="GetSheetName_files/image003.png" alt="Dapatkan Nama Lembar Kerja Saat Ini"></p>
+
+<p class=MsoNormal>Penjelasan: fungsi MID yang ditunjukkan di atas dimulai pada
+posisi 24 dan mengekstrak 31 karakter (panjang maksimum nama lembar kerja).</p>
+
+<p class=MsoNormal>4. Untuk mendapatkan nama lembar kerja kedua, cukup merujuk
+ke sel mana saja di lembar kerja kedua.</p>
+
+<p class=MsoNormal><img width=604 height=177 id="Picture 1"
+src="GetSheetName_files/image004.png" alt="Dapatkan Nama Lembar Kerja Kedua"></p>
+
+</div>
+
+</body>
+
+</html>

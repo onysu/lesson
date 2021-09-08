@@ -539,8 +539,7 @@
                         <p><img class="img-fluid" src="img/img-excel/Split%20Cells_files/image019.png" alt="Nama keluarga"></p>
                         <p>3. Pilih Range B2:C2 dan seret ke bawah.</p>
                         <p><img class="img-fluid" src="img/img-excel/Split%20Cells_files/image020.png" alt="Rumus untuk Memisahkan Sel"></p>
-                        <p class="info"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/separate-strings.html">memisahkan
-string</a> untuk memahami logika di balik rumus ini.</p>
+                        <p class="info"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/separate-strings.html">memisahkan string</a> untuk memahami logika di balik rumus ini.</p>
                     </div>
                 </div>
             </div>
@@ -683,7 +682,7 @@ string</a> untuk memahami logika di balik rumus ini.</p>
             </div>
         </div>
         <h3 class="bg-subjudul py-2 px-3 mb-0">Rumus dan Fungsi</h3>
-        <div class="accordion accordion-flush mb-3" id="Range">
+        <div class="accordion accordion-flush mb-3" id="RumusFungsi">
             <!-- Fungsi yang Paling Banyak Digunakan -->
             <div class="accordion-item">
                 <h2 class="accordion-header" id="MostUse">
@@ -698,7 +697,7 @@ string</a> untuk memahami logika di balik rumus ini.</p>
                         </figure>
                     </button>
                 </h2>
-                <div id="listMostUse" class="accordion-collapse collapse" aria-labelledby="MostUse" data-bs-parent="#Range">
+                <div id="listMostUse" class="accordion-collapse collapse" aria-labelledby="MostUse" data-bs-parent="#RumusFungsi">
                     <div class="accordion-body">
                         <p>Mari kita lihat 10 fungsi Excel yang paling sering digunakan.
                         </p>
@@ -764,7 +763,7 @@ string</a> untuk memahami logika di balik rumus ini.</p>
                         </figure>
                     </button>
                 </h2>
-                <div id="listSubtract" class="accordion-collapse collapse" aria-labelledby="Subtract" data-bs-parent="#Range">
+                <div id="listSubtract" class="accordion-collapse collapse" aria-labelledby="Subtract" data-bs-parent="#RumusFungsi">
                     <div class="accordion-body">
                         <p>Tidak ada fungsi <strong>SUBTRACT</strong> di Excel. Namun, ada beberapa cara untuk mengurangi angka di Excel. Apakah Anda siap untuk meningkatkan keterampilan Excel Anda?</p>
                         <p>1. Misalnya, rumus di bawah ini mengurangi angka dalam sel. Cukup gunakan tanda minus (-). Jangan lupa, selalu awali rumus dengan tanda sama dengan (=).</p>
@@ -798,6 +797,60 @@ string</a> untuk memahami logika di balik rumus ini.</p>
                     </div>
                 </div>
             </div>
+            <!-- Perkalian -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="Multiply">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listMultiply" aria-expanded="false" aria-controls="listMultiply">
+                        <figure>
+                            <blockquote class="blockquote">
+                                <p>Perkalian</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer">
+                                 Multiply Untuk mengalikan angka di Excel
+                            </figcaption>
+                        </figure>
+                    </button>
+                </h2>
+                <div id="listMultiply" class="accordion-collapse collapse" aria-labelledby="Multiply" data-bs-parent="#RumusFungsi">
+                    <div class="accordion-body">
+                        <p>Untuk mengalikan angka di Excel, gunakan simbol asterisk (*) atau fungsi PRODUCT. Pelajari cara mengalikan kolom dan cara mengalikan kolom dengan konstanta.</p>
+                        <p>1. Rumus di bawah ini mengalikan angka dalam sel. Cukup gunakan simbol asterisk (*) sebagai operator perkalian. Jangan lupa, selalu awali rumus dengan tanda sama dengan (=).</p>
+                        <p><img src="img/img-excel/Perkalian_files/image001.png" alt="Mengalikan Angka dalam Sel"></p>
+                        <p>2. Rumus di bawah ini mengalikan nilai dalam sel A1, A2 dan A3.
+                        </p>
+                        <p><img src="img/img-excel/Perkalian_files/image002.png" alt="Kalikan Angka dalam Rentang"></p>
+                        <p>3. Seperti yang bisa Anda bayangkan, rumus ini bisa sangat panjang. Gunakan fungsi PRODUCT untuk mempersingkat rumus Anda. Misalnya, fungsi PRODUCT di bawah ini mengalikan nilai dalam rentang A1:A7.
+                        </p>
+                        <p><img src="img/img-excel/Perkalian_files/image003.png" alt="Fungsi Produk"></p>
+                        <p>4. Ini contoh lain.</p>
+                        <p><img src="img/img-excel/Perkalian_files/image004.png" alt="Fungsi Produk Lanjutan"></p>
+                        <p>Penjelasan: =A1*A2*A3*A4*A5*A6*A7*B1*B2*B3*B4*C1*8 menghasilkan hasil yang sama persis.</p>
+                        <p>Lihatlah tangkapan layar di bawah ini. Untuk mengalikan dua kolom , lakukan langkah-langkah berikut.</p>
+                        <p>5a. Pertama, kalikan nilai di sel A1 dengan nilai di sel B1.</p>
+                        <p><img src="img/img-excel/Perkalian_files/image005.png" alt="Referensi Relatif"></p>
+                        <p>5b. Selanjutnya, pilih sel C1, klik di sudut kanan bawah sel C1 dan seret ke bawah ke sel C6.</p>
+                        <p><img src="img/img-excel/Perkalian_files/image006.png" alt="Kalikan Dua Kolom"></p>
+                        <p>Lihatlah tangkapan layar di bawah ini. Untuk mengalikan kolom angka dengan angka konstan , lakukan langkah-langkah berikut.</p>
+                        <p>6a. Pertama, kalikan nilai di sel A1 dengan nilai di sel A8. Perbaiki referensi ke sel A8 dengan menempatkan simbol $ di depan huruf kolom dan nomor baris ($A$8).</p>
+                        <p><img src="img/img-excel/Perkalian_files/image007.png" alt="Referensi Mutlak"></p>
+                        <p>6b. Selanjutnya, pilih sel B1, klik di sudut kanan bawah sel B1 dan seret ke bawah ke sel B6.</p>
+                        <p><img src="img/img-excel/Perkalian_files/image008.png" alt="Kalikan Kolom Angka dengan Angka Konstan"></p>
+                        <p>Penjelasan: ketika kita menyeret rumus ke bawah, <a href="https://www.excel-easy.com/examples/absolute-reference.html">referensi
+absolut</a> ($A$8) tetap sama, sedangkan referensi relatif (A1) berubah menjadi A2, A3, A4, dst.</p>
+                        <p>Jika Anda bukan pahlawan rumus, gunakan Tempel Spesial untuk mengalikan di Excel tanpa menggunakan rumus!</p>
+                        <p>7. Misalnya, pilih sel C1.</p>
+                        <p><img src="img/img-excel/Perkalian_files/image009.png" alt="Pilih Sel"></p>
+                        <p>8. Klik kanan, lalu klik Copy (atau tekan CTRL + c).</p>
+                        <p>9. Pilih rentang A1:A6.</p>
+                        <p>10. Klik kanan, lalu klik Tempel Spesial.</p>
+                        <p>11. Klik Kalikan.</p>
+                        <p><img src="img/img-excel/Perkalian_files/image010.png" alt="Tempel Kalikan Khusus"></p>
+                        <p>12. Klik Oke.</p>
+                        <p><img src="img/img-excel/Perkalian_files/image011.png" alt="Tempel Hasil Perkalian Khusus"></p>
+                        <p>Catatan: untuk mengalikan angka dalam satu kolom dengan angka di kolom lain, pada langkah 7, cukup pilih rentang alih-alih sel.</p>
+                    </div>
+                </div>
+            </div>
             <!--  -->
             <div class="accordion-item">
                 <h2 class="accordion-header" id="Subtract">
@@ -812,7 +865,7 @@ string</a> untuk memahami logika di balik rumus ini.</p>
                         </figure>
                     </button>
                 </h2>
-                <div id="listSubtract" class="accordion-collapse collapse" aria-labelledby="Subtract" data-bs-parent="#Range">
+                <div id="listSubtract" class="accordion-collapse collapse" aria-labelledby="Subtract" data-bs-parent="#RumusFungsi">
                     <div class="accordion-body">
                         <!--  -->
                     </div>
@@ -832,7 +885,7 @@ string</a> untuk memahami logika di balik rumus ini.</p>
                         </figure>
                     </button>
                 </h2>
-                <div id="listSubtract" class="accordion-collapse collapse" aria-labelledby="Subtract" data-bs-parent="#Range">
+                <div id="listSubtract" class="accordion-collapse collapse" aria-labelledby="Subtract" data-bs-parent="#RumusFungsi">
                     <div class="accordion-body">
                         <!--  -->
                     </div>
@@ -852,7 +905,7 @@ string</a> untuk memahami logika di balik rumus ini.</p>
                         </figure>
                     </button>
                 </h2>
-                <div id="listSubtract" class="accordion-collapse collapse" aria-labelledby="Subtract" data-bs-parent="#Range">
+                <div id="listSubtract" class="accordion-collapse collapse" aria-labelledby="Subtract" data-bs-parent="#RumusFungsi">
                     <div class="accordion-body">
                         <!--  -->
                     </div>
@@ -872,7 +925,7 @@ string</a> untuk memahami logika di balik rumus ini.</p>
                         </figure>
                     </button>
                 </h2>
-                <div id="listSubtract" class="accordion-collapse collapse" aria-labelledby="Subtract" data-bs-parent="#Range">
+                <div id="listSubtract" class="accordion-collapse collapse" aria-labelledby="Subtract" data-bs-parent="#RumusFungsi">
                     <div class="accordion-body">
                         <!--  -->
                     </div>
@@ -892,7 +945,7 @@ string</a> untuk memahami logika di balik rumus ini.</p>
                         </figure>
                     </button>
                 </h2>
-                <div id="listSubtract" class="accordion-collapse collapse" aria-labelledby="Subtract" data-bs-parent="#Range">
+                <div id="listSubtract" class="accordion-collapse collapse" aria-labelledby="Subtract" data-bs-parent="#RumusFungsi">
                     <div class="accordion-body">
                         <!--  -->
                     </div>
@@ -912,7 +965,7 @@ string</a> untuk memahami logika di balik rumus ini.</p>
                         </figure>
                     </button>
                 </h2>
-                <div id="listSubtract" class="accordion-collapse collapse" aria-labelledby="Subtract" data-bs-parent="#Range">
+                <div id="listSubtract" class="accordion-collapse collapse" aria-labelledby="Subtract" data-bs-parent="#RumusFungsi">
                     <div class="accordion-body">
                         <!--  -->
                     </div>
@@ -932,7 +985,7 @@ string</a> untuk memahami logika di balik rumus ini.</p>
                         </figure>
                     </button>
                 </h2>
-                <div id="listSubtract" class="accordion-collapse collapse" aria-labelledby="Subtract" data-bs-parent="#Range">
+                <div id="listSubtract" class="accordion-collapse collapse" aria-labelledby="Subtract" data-bs-parent="#RumusFungsi">
                     <div class="accordion-body">
                         <!--  -->
                     </div>
@@ -952,27 +1005,7 @@ string</a> untuk memahami logika di balik rumus ini.</p>
                         </figure>
                     </button>
                 </h2>
-                <div id="listSubtract" class="accordion-collapse collapse" aria-labelledby="Subtract" data-bs-parent="#Range">
-                    <div class="accordion-body">
-                        <!--  -->
-                    </div>
-                </div>
-            </div>
-            <!--  -->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="Subtract">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listSubtract" aria-expanded="false" aria-controls="listSubtract">
-                        <figure>
-                            <blockquote class="blockquote">
-                                <p></p>
-                            </blockquote>
-                            <figcaption class="blockquote-footer">
-                                 <!--  -->
-                            </figcaption>
-                        </figure>
-                    </button>
-                </h2>
-                <div id="listSubtract" class="accordion-collapse collapse" aria-labelledby="Subtract" data-bs-parent="#Range">
+                <div id="listSubtract" class="accordion-collapse collapse" aria-labelledby="Subtract" data-bs-parent="#RumusFungsi">
                     <div class="accordion-body">
                         <!--  -->
                     </div>

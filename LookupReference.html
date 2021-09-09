@@ -11,14 +11,96 @@
                     </p>
                 </blockquote>
                 <figcaption class="blockquote-footer fw-light">
-                <!--  -->
+                Exact Match | Approximate Match | Vlookup Looks Right | First Match | Vlookup is Case-insensitive | Multiple Criteria | #N/A error | Multiple Lookup Tables | Index and Match | Xlookup
                 </figcaption>
             </figure>
             </button>
         </h2>
         <div id="listVlookup" class="accordion-collapse collapse" aria-labelledby="Vlookup" data-bs-parent="#Fungsi">
             <div class="accordion-body">
-                <!--  -->
+                <p>Fungsi <strong>VLOOKUP</strong> adalah salah satu fungsi yang paling populer di Excel. Halaman ini berisi banyak contoh <strong>VLOOKUP</strong> yang mudah diikuti.</p>
+                <p class="fw-bold">
+                    Benar-benar cocok</p>
+                <p>Sebagian besar waktu Anda mencari kecocokan yang tepat saat Anda menggunakan fungsi <strong>VLOOKUP</strong> di Excel. Mari kita lihat argumen dari fungsi <strong>VLOOKUP</strong>.</p>
+                <p>1. Fungsi <strong>VLOOKUP</strong> di bawah ini mencari nilai 53 (argumen pertama) di kolom paling kiri tabel merah (argumen kedua).</p>
+                <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image001.png" alt="Argumen Vlookup"></p>
+                <p>2. Nilai 4 (argumen ketiga) memberitahu fungsi <strong>VLOOKUP</strong> untuk mengembalikan nilai pada baris yang sama dari kolom keempat tabel merah.</p>
+                <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image002.png" alt="Hasil Vlookup di Excel"></p>
+                <p class="info"><strong>Catatan:</strong> Boolean FALSE (argumen keempat) memberi tahu fungsi <strong>VLOOKUP</strong> untuk mengembalikan kecocokan yang sama persis. Jika fungsi <strong>VLOOKUP</strong> tidak dapat menemukan nilai 53 di kolom pertama,
+                    itu akan mengembalikan kesalahan
+                    <a href="https://www.excel-easy.com/examples/vlookup.html#na-error">#N/A</a>.</p>
+                <p>3. Ini contoh lain. Alih-alih mengembalikan gaji, fungsi <strong>VLOOKUP</strong> di bawah ini mengembalikan nama belakang (argumen ketiga diatur ke 3) dari ID 79.</p>
+                <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image003.png" alt="Benar-benar cocok"></p>
+                <p class="fw-bold">
+                    Perkiraan Pertandingan</p>
+                <p>Mari kita lihat contoh fungsi <strong>VLOOKUP</strong> dalam mode pencocokan perkiraan (argumen keempat disetel ke TRUE).</p>
+                <p>1. Fungsi <strong>VLOOKUP</strong> di bawah ini mencari nilai 85 (argumen pertama) di kolom paling kiri dari tabel merah (argumen kedua). Hanya ada satu masalah. Tidak ada nilai 85 di kolom pertama.</p>
+                <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image004.png" alt="Fungsi Vlookup dalam Mode Pencocokan Perkiraan"></p>
+                <p>2. Untungnya, Boolean TRUE (argumen keempat) memberi tahu fungsi <strong>VLOOKUP</strong> untuk mengembalikan perkiraan kecocokan. Jika fungsi <strong>VLOOKUP</strong> tidak dapat menemukan nilai 85 di kolom pertama, itu akan mengembalikan
+                    nilai terbesar yang lebih kecil dari 85. Dalam contoh ini, ini akan menjadi nilai 80.</p>
+                <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image005.png" alt="Nilai Terbesar Lebih Kecil dari Nilai Pencarian"></p>
+                <p>3. Nilai 2 (argumen ketiga) memberitahu fungsi <strong>VLOOKUP</strong> untuk mengembalikan nilai pada baris yang sama dari kolom kedua tabel merah.</p>
+                <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image006.png" alt="Perkiraan Pertandingan di Excel"></p>
+                <p class="info"><strong>Catatan:</strong> selalu urutkan kolom paling kiri dari tabel merah dalam urutan menaik jika Anda menggunakan fungsi <strong>VLOOKUP</strong> dalam mode pencocokan perkiraan (argumen keempat disetel ke <strong>TRUE</strong>).</p>
+                <p class="fw-bold">
+                    Vlookup Terlihat Benar</p>
+                <p>Fungsi <strong>VLOOKUP</strong> selalu mencari nilai di kolom paling kiri dari tabel dan mengembalikan nilai yang sesuai dari kolom ke kanan .</p>
+                <p>1. Misalnya, fungsi <strong>VLOOKUP</strong> di bawah ini mencari nama depan dan mengembalikan nama belakang.</p>
+                <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image007.png" alt="Pencarian Kanan"></p>
+                <p>2. Jika Anda mengubah nomor indeks kolom (argumen ketiga) menjadi 3, fungsi <strong>VLOOKUP</strong> akan mencari nama depan dan mengembalikan gaji.</p>
+                <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image008.png" alt="Ubah Nomor Indeks Kolom"></p>
+                <p class="info"><strong>Catatan:</strong> dalam contoh ini, fungsi <strong>VLOOKUP</strong> tidak dapat mencari nama depan dan mengembalikan <strong>ID</strong>. Fungsi <strong>VLOOKUP</strong> hanya melihat ke kanan. Jangan khawatir, Anda dapat menggunakan
+                    <strong>INDEX</strong> dan <strong>MATCH</strong> di Excel untuk melakukan
+                    <a href="https://www.excel-easy.com/examples/left-lookup.html">pencarian kiri</a> .</p>
+                <p class="fw-bold">
+                    Pertandingan Pertama</p>
+                <p>Jika kolom paling kiri dari tabel berisi duplikat, fungsi VLOOKUP cocok dengan instance pertama. Sebagai contoh, lihatlah fungsi <strong>VLOOKUP</strong> di bawah ini.</p>
+                <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image009.png" alt="Pertandingan Pertama"></p>
+                <p class="info"><strong>Penjelasan:</strong> fungsi <strong>VLOOKUP</strong> mengembalikan gaji Mia Clark, bukan Mia Reed.</p>
+                <p class="fw-bold">
+                    Vlookup tidak peka huruf besar-kecil</p>
+                <p>Fungsi <strong>VLOOKUP</strong> di Excel melakukan pencarian peka huruf besar/kecil. Misalnya, fungsi <strong>VLOOKUP</strong> di bawah ini mencari MIA (sel G2) di kolom paling kiri tabel.</p>
+                <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image010.png" alt="Pencarian peka huruf besar/kecil"></p>
+                <p class="info"><strong>Penjelasan:</strong> Fungsi <strong>VLOOKUP</strong> bersifat case-insensitive sehingga mencari MIA atau Mia atau mia atau miA, dll. Akibatnya, fungsi VLOOKUP mengembalikan gaji Mia Clark (contoh pertama). Gunakan <strong>INDEX</strong>,
+                    <strong>MATCH</strong>, dan <strong>EXACT</strong> di Excel untuk melakukan
+                    <a href="https://www.excel-easy.com/examples/case-sensitive-lookup.html">pencarian peka huruf besar/kecil</a> .</p>
+                <p class="fw-bold">
+                    Beberapa Kriteria</p>
+                <p>Apakah Anda ingin mencari nilai berdasarkan beberapa kriteria? Gunakan <strong>INDEX</strong> dan <strong>MATCH</strong> di Excel untuk melakukan <a href="https://www.excel-easy.com/examples/two-column-lookup.html">pencarian dua kolom</a>.</p>
+                <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image011.png" alt="Pencarian dua kolom"></p>
+                <p class="info"><strong>Catatan:</strong> rumus array di atas mencari gaji James Clark, bukan James Smith, bukan James Anderson.</p>
+                <p class="fw-bold">
+                    <strong>#N/A</strong> kesalahan</p>
+                <p>Jika fungsi <strong>VLOOKUP</strong> tidak dapat menemukan kecocokan, ia mengembalikan kesalahan <strong>#N/A</strong>.</p>
+                <p>1. Misalnya, fungsi <strong>VLOOKUP</strong> di bawah ini tidak dapat menemukan nilai 28 di kolom paling kiri.</p>
+                <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image012.png" alt="#T/A Kesalahan"></p>
+                <p>2. Jika mau, Anda dapat menggunakan fungsi <strong>IFNA</strong> untuk mengganti kesalahan <strong>#N/A</strong> dengan pesan ramah.</p>
+                <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image013.png" alt="Fungsi Ifna"></p>
+                <p class="info"><strong>Catatan:</strong> fungsi <strong>IFNA</strong> diperkenalkan di Excel 2013. Jika Anda menggunakan Excel 2010 atau Excel 2007, cukup ganti <strong>IFNA</strong> dengan <strong>IFERROR</strong>. Ingat, fungsi <strong>IFERROR</strong>                    juga menangkap kesalahan lain. Misalnya, <strong>#NAME?</strong> kesalahan jika Anda tidak sengaja salah mengeja kata VLOOKUP.</p>
+                <p class="fw-bold">
+                    Beberapa Tabel Pencarian
+                </p>
+                <p>Saat menggunakan fungsi <strong>VLOOKUP</strong> di Excel, Anda dapat memiliki beberapa tabel pencarian. Anda dapat menggunakan <a href="https://www.excel-easy.com/examples/if.html">fungsi IF</a> untuk memeriksa apakah suatu kondisi terpenuhi,
+                    dan mengembalikan satu tabel pencarian jika <strong>TRUE</strong> dan tabel pencarian lainnya jika <strong>FALSE</strong>.</p>
+                <p>1. Buat dua <a href="https://www.excel-easy.com/examples/named-range.html">rentang bernama</a> : Tabel1 dan Tabel2.</p>
+                <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image014.png" alt="Meja Pertama"></p>
+                <p>2. Pilih sel E4 dan masukkan fungsi <strong>VLOOKUP</strong> yang ditunjukkan di bawah ini.</p>
+                <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image015.png" alt="Fungsi Vlookup dengan Beberapa Tabel Pencarian"></p>
+                <p class="info"><strong>Penjelasan:</strong> bonus tergantung pada pasar (Inggris atau USA) dan jumlah penjualan. Argumen kedua dari fungsi <strong>VLOOKUP</strong> berhasil. Jika Inggris, fungsi <strong>VLOOKUP</strong> menggunakan Tabel1, jika AS, fungsi
+                    <strong>VLOOKUP</strong> menggunakan Tabel2. Setel argumen keempat fungsi <strong>VLOOKUP</strong> ke <strong>TRUE</strong> untuk mengembalikan perkiraan kecocokan.</p>
+                <p>3. Tekan Enter.</p>
+                <p>4. Pilih sel E4, klik di sudut kanan bawah sel E4 dan seret ke bawah ke sel E10.</p>
+                <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image016.png" alt="Salin Fungsi Vlookup"></p>
+                <p class="info"><strong>Catatan:</strong> misalnya, Walker menerima bonus $1.500. Karena kami menggunakan rentang bernama, kami dapat dengan mudah menyalin fungsi VLOOKUP ini ke sel lain tanpa mengkhawatirkan referensi sel.</p>
+                <p class="fw-bold">
+                    Indeks dan Pertandingan</p>
+                <p>Alih-alih menggunakan <strong>VLOOKUP</strong>, gunakan <a href="https://www.excel-easy.com/examples/index-match.html">INDEX dan MATCH</a>. Untuk melakukan pencarian lanjutan, Anda memerlukan <strong>INDEX</strong> dan <strong>MATCH</strong>.
+                    Mungkin ini satu langkah terlalu jauh untuk Anda pada tahap ini, tetapi ini menunjukkan kepada Anda salah satu dari banyak formula hebat lainnya yang ditawarkan Excel.</p>
+                <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image017.png" alt="Indeks dan Pertandingan"></p>
+                <p class="fw-bold">
+                    Xlookup</p>
+                <p>Jika Anda memiliki Excel 365, gunakan <a href="https://www.excel-easy.com/examples/xlookup.html">XLOOKUP,</a> bukan <strong>VLOOKUP</strong>. Fungsi <strong>XLOOKUP</strong> lebih mudah digunakan dan memiliki beberapa keuntungan tambahan.</p>
+                <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image018.png" alt="Fungsi XLOOKUP di Excel"></p>
             </div>
         </div>
     </div>

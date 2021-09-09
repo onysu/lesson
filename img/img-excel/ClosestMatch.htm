@@ -1,0 +1,112 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-ID link="#0563C1" vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal>Untuk menemukan&nbsp;kecocokan terdekat&nbsp;dengan nilai
+target di kolom data, gunakan INDEX, MATCH, ABS, dan MIN di&nbsp;Excel&nbsp;.&nbsp;Gunakan&nbsp;<a
+href="https://www.excel-easy.com/examples/vlookup.html">fungsi VLOOKUP</a>&nbsp;di
+Excel untuk menemukan kecocokan perkiraan.</p>
+
+<p class=MsoNormal>1. Fungsi ABS di Excel mengembalikan nilai&nbsp;<a
+href="https://www.excel-easy.com/examples/absolute-value.html">absolut</a>&nbsp;dari
+sebuah angka.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=267 id="Picture 12"
+src="ClosestMatch_files/image001.png" alt="Fungsi perut"></p>
+
+<p class=MsoNormal>Penjelasan: C3-F2 sama dengan -39.&nbsp;Fungsi ABS
+menghilangkan tanda minus (-) dari angka negatif, menjadikannya
+positif.&nbsp;Fungsi ABS tidak berpengaruh pada angka 0 (nol) atau positif.</p>
+
+<p class=MsoNormal>2. Untuk menghitung selisih antara nilai target dan nilai
+pada kolom data, ganti C3 dengan C3:C9.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=267 id="Picture 11"
+src="ClosestMatch_files/image002.png" alt="Konstanta Array"></p>
+
+<p class=MsoNormal>Penjelasan: rentang (konstanta array) yang dibuat oleh
+fungsi ABS disimpan dalam memori Excel, bukan dalam rentang.&nbsp;Konstanta
+array terlihat sebagai berikut:</p>
+
+<p class=MsoNormal>{39;14;37;16;22;16;17}</p>
+
+<p class=MsoNormal>3. Untuk menemukan&nbsp;kecocokan terdekat&nbsp;, tambahkan
+fungsi MIN dan selesaikan dengan menekan CTRL + SHIFT + ENTER.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=267 id="Picture 10"
+src="ClosestMatch_files/image003.png" alt="Fungsi Minimal"></p>
+
+<p class=MsoNormal>Catatan: bilah rumus menunjukkan bahwa ini adalah&nbsp;<a
+href="https://www.excel-easy.com/functions/array-formulas.html">rumus larik</a>&nbsp;dengan
+mengapitnya dalam kurung kurawal {}.&nbsp;Jangan mengetik ini
+sendiri.&nbsp;Konstanta array digunakan sebagai argumen untuk fungsi MIN,
+memberikan hasil 14.</p>
+
+<p class=MsoNormal>4. Yang kita butuhkan hanyalah sebuah fungsi yang menemukan
+posisi nilai 14 dalam konstanta array.&nbsp;MATCH berfungsi untuk
+menyelamatkan!&nbsp;Akhiri dengan menekan CTRL + SHIFT + ENTER.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=267 id="Picture 9"
+src="ClosestMatch_files/image004.png" alt="Fungsi Pertandingan"></p>
+
+<p class=MsoNormal>Penjelasan: 14 (argumen pertama) ditemukan pada posisi 2
+dalam konstanta array (argumen kedua).&nbsp;Dalam contoh ini, kami menggunakan
+fungsi MATCH untuk mengembalikan kecocokan persis sehingga kami menetapkan
+argumen ketiga ke 0.</p>
+
+<p class=MsoNormal>5. Gunakan fungsi INDEX (dua argumen) untuk mengembalikan
+nilai tertentu dalam rentang satu dimensi.&nbsp;Dalam contoh ini, nama pada
+posisi 2 (argumen kedua) dalam rentang B3:B9 (argumen pertama).</p>
+
+<p class=MsoNormal><img border=0 width=604 height=267 id="Picture 8"
+src="ClosestMatch_files/image005.png" alt="Fungsi Indeks"></p>
+
+<p class=MsoNormal>6. Akhiri dengan menekan CTRL + SHIFT + ENTER.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=267 id="Picture 7"
+src="ClosestMatch_files/image006.png" alt="Pertandingan Terdekat di Excel"></p>
+
+</div>
+
+</body>
+
+</html>

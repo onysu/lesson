@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
     <title>E-LEARNING</title>
     <!-- Google Font: Source Sans Pro -->
@@ -22,6 +22,11 @@
         .control-sidebar-dark {
             background-color: #eee;
             color: #222;
+        }
+        
+        [class*=sidebar-dark] .list-group-item {
+            background-color: transparent;
+            color: #222222;
         }
     </style>
 </head>
@@ -321,8 +326,48 @@
         <aside class="control-sidebar control-sidebar-dark">
             <!-- Control sidebar content goes here -->
             <div class="p-3">
-                <p class="h5">Title</p class="h5">
-                <p>Sidebar content</p>
+                <div class="feature col">
+                    <!-- <div class="feature-icon bg-primary bg-gradient"> -->
+                    <div class="feature-icon">
+                        <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg> -->
+                        <img src="../img/aku-bulat-400x400.png" class="img-rounded w-25" alt="">
+                    </div>
+                    <p class="h3 fw-light">About Me</p class="h3">
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, eius!</p>
+                    <a href="#" class="icon-link"> -->
+
+                    <ol class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-light">Nama</div>
+                                <span class="fw-bold">Ony</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-light">Email</div>
+                                <span class="fw-bold">onydarrell@gmail.com</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-light">Phone</div>
+                                <span class="fw-bold">+62 8155509153</span>
+                            </div>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-start">
+                            <div class="ms-2 me-auto">
+                                <div class="fw-light">Profesi</div>
+                                <span class="fw-bold">Web Development</span>
+                            </div>
+                        </li>
+                    </ol>
+                    <!-- Call to action
+                    <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+                    </a> -->
+                </div>
+                <!-- <p class="h5">Title</p class="h5">
+                <p>Sidebar content</p> -->
             </div>
         </aside>
         <!-- /.control-sidebar -->

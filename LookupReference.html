@@ -264,14 +264,35 @@
                     </p>
                 </blockquote>
                 <figcaption class="blockquote-footer fw-light">
-                <!--  -->
+                Untuk menemukan kecocokan terdekat dengan nilai target di kolom data
                 </figcaption>
             </figure>
             </button>
         </h2>
         <div id="listClosestMatch" class="accordion-collapse collapse" aria-labelledby="ClosestMatch" data-bs-parent="#Fungsi">
             <div class="accordion-body">
-                <!--  -->
+                <p>Untuk menemukan kecocokan terdekat dengan nilai target di kolom data, gunakan INDEX, MATCH, ABS, dan MIN di Excel. Gunakan <a href="https://www.excel-easy.com/examples/vlookup.html">fungsi VLOOKUP</a> di Excel untuk menemukan kecocokan
+                    perkiraan.
+                </p>
+                <p>1. Fungsi ABS di Excel mengembalikan nilai <a href="https://www.excel-easy.com/examples/absolute-value.html">absolut</a> dari sebuah angka.</p>
+                <p><img class="img-fluid" src="img/img-excel/ClosestMatch_files/image001.png" alt="Fungsi perut"></p>
+                <p class="info"><strong>Penjelasan:</strong> C3-F2 sama dengan -39. Fungsi ABS menghilangkan tanda minus (-) dari angka negatif, menjadikannya positif. Fungsi ABS tidak berpengaruh pada angka 0 (nol) atau positif.</p>
+                <p>2. Untuk menghitung selisih antara nilai target dan nilai pada kolom data, ganti C3 dengan C3:C9.</p>
+                <p><img class="img-fluid" src="img/img-excel/ClosestMatch_files/image002.png" alt="Konstanta Array"></p>
+                <p class="info"><strong>Penjelasan:</strong> rentang (konstanta array) yang dibuat oleh fungsi ABS disimpan dalam memori Excel, bukan dalam rentang. Konstanta array terlihat sebagai berikut:</p>
+                <p>{39;14;37;16;22;16;17}</p>
+                <p>3. Untuk menemukan kecocokan terdekat, tambahkan fungsi MIN dan selesaikan dengan menekan CTRL + SHIFT + ENTER.</p>
+                <p><img class="img-fluid" src="img/img-excel/ClosestMatch_files/image003.png" alt="Fungsi Minimal"></p>
+                <p class="info"><strong>Catatan:</strong> bilah rumus menunjukkan bahwa ini adalah <a href="https://www.excel-easy.com/functions/array-formulas.html">rumus larik</a> dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Konstanta array
+                    digunakan sebagai argumen untuk fungsi MIN, memberikan hasil 14.</p>
+                <p>4. Yang kita butuhkan hanyalah sebuah fungsi yang menemukan posisi nilai 14 dalam konstanta array. MATCH berfungsi untuk menyelamatkan! Akhiri dengan menekan CTRL + SHIFT + ENTER.</p>
+                <p><img class="img-fluid" src="img/img-excel/ClosestMatch_files/image004.png" alt="Fungsi Pertandingan"></p>
+                <p class="info"><strong>Penjelasan:</strong> 14 (argumen pertama) ditemukan pada posisi 2 dalam konstanta array (argumen kedua). Dalam contoh ini, kami menggunakan fungsi MATCH untuk mengembalikan kecocokan persis sehingga kami menetapkan argumen ketiga
+                    ke 0.</p>
+                <p>5. Gunakan fungsi INDEX (dua argumen) untuk mengembalikan nilai tertentu dalam rentang satu dimensi. Dalam contoh ini, nama pada posisi 2 (argumen kedua) dalam rentang B3:B9 (argumen pertama).</p>
+                <p><img class="img-fluid" src="img/img-excel/ClosestMatch_files/image005.png" alt="Fungsi Indeks"></p>
+                <p>6. Akhiri dengan menekan CTRL + SHIFT + ENTER.</p>
+                <p><img class="img-fluid" src="img/img-excel/ClosestMatch_files/image006.png" alt="Pertandingan Terdekat di Excel"></p>
             </div>
         </div>
     </div>

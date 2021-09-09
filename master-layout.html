@@ -1,5 +1,38 @@
 <!doctype html>
 <html lang="en">
+<script>
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /*loop melalui koleksi semua elemen HTML:*/
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*mencari elemen dengan atribut tertentu:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+                /*buat permintaan HTTP menggunakan nilai atribut sebagai nama file:*/
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {
+                            elmnt.innerHTML = this.responseText;
+                        }
+                        if (this.status == 404) {
+                            elmnt.innerHTML = "Page not found.";
+                        }
+                        /*hapus atributnya, dan panggil fungsi ini sekali lagi:*/
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /*keluar dari fungsi:*/
+                return;
+            }
+        }
+    };
+</script>
 
 <head>
     <!-- Required meta tags -->
@@ -54,23 +87,15 @@
     <div class="wrapper">
 
         <!-- Navbar -->
+        <!-- <div w3-include-html="nav.html"></div> -->
         <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-            <!-- Left navbar links -->
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
-                <!-- <li class="nav-item d-none d-sm-inline-block">
-                    <a href="index3.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item d-none d-sm-inline-block">
-                    <a href="#" class="nav-link">Contact</a>
-                </li> -->
             </ul>
 
-            <!-- Right navbar links -->
             <ul class="navbar-nav ml-auto">
-                <!-- Navbar Search -->
                 <li class="nav-item">
                     <a class="nav-link" data-widget="navbar-search" href="#" role="button">
                         <i class="fas fa-search"></i>
@@ -92,7 +117,6 @@
                     </div>
                 </li>
 
-                <!-- Messages Dropdown Menu -->
                 <li class="nav-item dropdown">
                     <a class="nav-link" data-toggle="dropdown" href="#">
                         <i class="far fa-comments"></i>
@@ -100,7 +124,6 @@
                     </a>
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                         <a href="#" class="dropdown-item">
-                            <!-- Message Start -->
                             <div class="media">
                                 <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
                                 <div class="media-body">
@@ -112,11 +135,9 @@
                                     <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
                                 </div>
                             </div>
-                            <!-- Message End -->
                         </a>
                         <div class="dropdown-divider"></div>
                         <a href="#" class="dropdown-item">
-                            <!-- Message Start -->
                             <div class="media">
                                 <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
@@ -128,11 +149,9 @@
                                     <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
                                 </div>
                             </div>
-                            <!-- Message End -->
                         </a>
                         <div class="dropdown-divider"></div>
                         <a href="#" class="dropdown-item">
-                            <!-- Message Start -->
                             <div class="media">
                                 <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
                                 <div class="media-body">
@@ -144,13 +163,12 @@
                                     <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
                                 </div>
                             </div>
-                            <!-- Message End -->
                         </a>
                         <div class="dropdown-divider"></div>
                         <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
                     </div>
                 </li>
-                <!-- Notifications Dropdown Menu -->
+
                 <li class="nav-item dropdown">
                     <a class="nav-link" data-toggle="dropdown" href="#">
                         <i class="far fa-bell"></i>
@@ -192,118 +210,61 @@
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
+        <!-- <div w3-include-html="aside.html"></div> -->
         <aside class="main-sidebar sidebar-light-primary elevation-4">
-            <!-- Brand Logo -->
             <a href="#" class="brand-link">
                 <img src="https://onysu.github.io/lesson/img/aku-bulat-50x50.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">PROGRAM</span>
             </a>
 
-            <!-- Sidebar -->
             <div class="sidebar">
-                <!-- Panel pengguna sisibar (opsional) -->
-                <!-- <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                    <div class="image">
-                        <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-                    </div>
-                    <div class="info">
-                        <a href="#" class="d-block">Alexander Pierce</a>
-                    </div>
-                </div> -->
-
-                <!-- Formulir Pencarian Sisibar -->
-                <!-- <div class="form-inline">
-                    <div class="input-group" data-widget="sidebar-search">
-                        <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-                        <div class="input-group-append">
-                            <button class="btn btn-sidebar">
-              <i class="fas fa-search fa-fw"></i>
-            </button>
-                        </div>
-                    </div>
-                </div> -->
-
-                <!-- Sidebar Menu -->
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                        <!-- Tambahkan ikon ke tautan menggunakan kelas .nav-icon dengan font-awesome atau pustaka font ikon lainnya -->
-                        <!-- <li class="nav-item menu-open">
-                            <a href="#" class="nav-link active">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>
-                                    Starter Pages
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link active">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Active Page</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="#" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Inactive Page</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li> -->
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                <!-- <i class="nav-icon fas fa-th"></i> -->
                                 <img src="https://img.icons8.com/color/32/000000/ms-word.png" />
                                 <p>Microsoft Word <span class="right badge badge-danger">New</span></p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                <!-- <i class="nav-icon fas fa-th"></i> -->
                                 <img src="https://img.icons8.com/color/32/000000/ms-excel.png" />
                                 <p>Microsoft Excel <span class="right badge badge-danger">New</span></p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                <!-- <i class="nav-icon fas fa-th"></i> -->
                                 <img src="https://img.icons8.com/color/32/000000/ms-powerpoint--v1.png" />
                                 <p>Power Point <span class="right badge badge-danger">New</span></p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                <!-- <i class="nav-icon fas fa-th"></i> -->
                                 <img src="https://img.icons8.com/fluency/32/000000/adobe-photoshop.png" />
                                 <p>Photoshop <span class="right badge badge-danger">New</span></p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                <!-- <i class="nav-icon fas fa-th"></i> -->
                                 <img src="https://img.icons8.com/fluency/32/000000/coreldraw-2021.png" />
                                 <p>CorelDRAW <span class="right badge badge-danger">New</span></p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                <!-- <i class="nav-icon fas fa-th"></i> -->
                                 <img src="https://img.icons8.com/color/32/000000/html-5--v1.png" />
                                 <p>Web-Desain <span class="right badge badge-danger">New</span></p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
-                                <!-- <i class="nav-icon fas fa-th"></i> -->
                                 <img src="https://img.icons8.com/officel/32/000000/php-logo.png" />
                                 <p>Pemrograman <span class="right badge badge-danger">New</span></p>
                             </a>
                         </li>
                     </ul>
                 </nav>
-                <!-- /.sidebar-menu -->
             </div>
-            <!-- /.sidebar -->
         </aside>
 
         <!-- Content Wrapper. Contains page content -->
@@ -333,7 +294,25 @@
             <!-- Main content -->
             <div class="content">
                 <div class="container-fluid">
-                    <!--  -->
+                    <div class="row">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos a quaerat deserunt, magni alias recusandae impedit enim quasi officia ab quae voluptas adipisci unde consequuntur tenetur eius, beatae nihil nobis modi. Quaerat magnam
+                            quibusdam quia neque quos deserunt laudantium. Nemo voluptates necessitatibus vero cumque error quidem id eos at delectus, porro harum ab explicabo tenetur nostrum atque optio, libero saepe repudiandae? Vero possimus modi et
+                            ad fuga vel? Repudiandae id eos sequi debitis, quod perferendis iusto, fuga ipsa totam provident dolores sapiente ducimus tempora quo, velit nihil natus molestias corrupti. Obcaecati illo repudiandae cupiditate ex quae dolor
+                            natus at? Quisquam nemo enim veritatis in dignissimos possimus expedita dolorem, beatae natus tempore, est, iusto unde assumenda soluta laborum porro sit voluptates consequuntur qui repudiandae neque dolorum doloribus laboriosam?
+                            Perspiciatis architecto nostrum similique earum, mollitia ducimus in neque sunt culpa, nemo ea quis dolorum et. Veritatis nobis inventore, rerum tenetur deserunt ratione quisquam consectetur cupiditate commodi est ea sit, quibusdam
+                            doloribus enim totam, id perspiciatis iste. Eum vel quisquam hic facere recusandae reiciendis molestias reprehenderit, ad nisi impedit sunt id adipisci mollitia dolorem sed explicabo illo. Numquam, enim consequuntur nemo quam
+                            dolorem suscipit. In sed quod dolorum porro aut, suscipit modi itaque impedit eaque iste magni non? Velit sit consequatur blanditiis laudantium sapiente eveniet pariatur porro ex distinctio assumenda? Numquam possimus tenetur
+                            minus odit eius nesciunt? Tempora harum soluta necessitatibus, ipsum porro deserunt unde voluptate eius nisi atque ea cumque veniam voluptates voluptatum modi quibusdam voluptatibus qui perferendis quis. Quod illum possimus
+                            totam cupiditate nesciunt, neque officia iusto omnis! Odit et provident reiciendis iste temporibus. Officiis labore voluptatibus similique, quos error perspiciatis distinctio aliquam culpa maiores facere. Qui voluptates libero
+                            quo adipisci quam cum earum unde nisi voluptatem hic recusandae beatae et alias dicta tempora odio quas magni tenetur deserunt, nesciunt dolores quasi vel enim. Omnis doloribus tenetur eos recusandae ut quibusdam dolorem error
+                            laborum? Saepe voluptas culpa maxime et, placeat nam quia architecto necessitatibus dolorum veritatis rem vitae at dolorem reiciendis dicta illum esse hic temporibus obcaecati odit deserunt quibusdam blanditiis. Aperiam amet
+                            officiis ipsa ratione reiciendis nostrum fuga ut accusamus, officia ipsum aspernatur doloribus incidunt autem temporibus assumenda dolore magnam similique harum praesentium hic, tempora iste adipisci molestias! Quaerat beatae
+                            at impedit ea sunt iure, quidem consectetur accusamus commodi quam. Repellat aspernatur necessitatibus cum ullam. Autem error similique laborum veritatis nam voluptatum voluptatem unde maxime ab odio itaque minus molestiae
+                            sit in, dolorum ipsa, illum aliquam reiciendis, quas fugiat impedit. Delectus a, quisquam dolorem facilis rerum ipsum odit quam dignissimos officiis, laborum error? Voluptatibus ducimus quasi pariatur repudiandae rem sint id,
+                            quo hic magnam vel repellat rerum. Atque quae sed officiis molestias illum reiciendis asperiores natus, maiores praesentium quaerat deleniti ab omnis placeat quis! Nulla aut repudiandae nesciunt cum commodi illo blanditiis
+                            sint ipsa, quibusdam modi rerum facere laboriosam culpa saepe hic velit minima esse impedit incidunt ducimus enim reprehenderit. Repudiandae esse beatae corrupti asperiores rerum? Quasi temporibus iusto porro repellat veniam,
+                            tempora magnam velit minus dolor nostrum sapiente sint.</p>
+                    </div>
                 </div>
                 <!-- /.container-fluid -->
             </div>
@@ -342,19 +321,14 @@
         <!-- /.content-wrapper -->
 
         <!-- Control Sidebar -->
+        <!-- <div w3-include-html="sidebar.html"></div> -->
         <aside class="control-sidebar control-sidebar-dark">
-            <!-- Control sidebar content goes here -->
             <div class="p-3">
                 <div class="feature col">
-                    <!-- <div class="feature-icon bg-primary bg-gradient"> -->
                     <div class="feature-icon mb-2">
-                        <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg> -->
                         <img src="../img/aku-bulat-400x400.png" class="img-rounded w-25" alt="">
                     </div>
                     <p class="h3 fw-light mb-1">About Me</p class="h3">
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, eius!</p>
-                    <a href="#" class="icon-link"> -->
-
                     <ol class="list-group list-group-flush">
                         <li class="list-group-item d-flex justify-content-between align-items-start">
                             <div class="me-auto">
@@ -387,19 +361,16 @@
                         </li>
                     </ol>
                 </div>
-                <!-- <p class="h5">Title</p class="h5">
-                <p>Sidebar content</p> -->
             </div>
         </aside>
         <!-- /.control-sidebar -->
 
         <!-- Main Footer -->
+        <!-- <div w3-include-html="footer.html"></div> -->
         <footer class="main-footer">
-            <!-- Ke kanan -->
             <div class="float-right d-none d-sm-inline">
                 E-LEARNING
             </div>
-            <!-- Default ke kiri -->
             Web-Dev by &RightAngleBracket; <a href="#">Ony</a> &RightAngleBracket; &phone; 08155509153 &RightAngleBracket; &copy; 2021
         </footer>
     </div>
@@ -413,6 +384,10 @@
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
     <script src="dist/js/adminlte.min.js"></script>
+    <!-- include HTML -->
+    <script>
+        includeHTML();
+    </script>
 </body>
 
 </html>

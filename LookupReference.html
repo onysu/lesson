@@ -60,7 +60,7 @@
                 <p class="penjelasan"><strong>Penjelasan:</strong> fungsi <strong>VLOOKUP</strong> mengembalikan gaji Mia Clark, bukan Mia Reed.</p>
                 <p class="fw-bold text-uppercase">
                     Vlookup is Case-insensitive</p>
-                <p>Fungsi <strong>VLOOKUP</strong> di Excel melakukan pencarian peka huruf besar/kecil. Misalnya, fungsi <strong>VLOOKUP</strong> di bawah ini mencari MIA (sel G2) di kolom paling kiri tabel.</p>
+                <p>Fungsi <strong>VLOOKUP</strong> di Excel melakukan pencarian peka huruf besar/kecil. Misalnya, fungsi <strong>VLOOKUP</strong> di bawah ini mencari MIA (Sel G2) di kolom paling kiri tabel.</p>
                 <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image010.png" alt="Pencarian peka huruf besar/kecil"></p>
                 <p class="penjelasan"><strong>Penjelasan:</strong> Fungsi <strong>VLOOKUP</strong> bersifat case-insensitive sehingga mencari MIA atau Mia atau mia atau miA, dll. Akibatnya, fungsi VLOOKUP mengembalikan gaji Mia Clark (contoh pertama). Gunakan <strong>INDEX</strong>,
                     <strong>MATCH</strong>, dan <strong>EXACT</strong> di Excel untuk melakukan
@@ -83,16 +83,16 @@
                 </p>
                 <p>Saat menggunakan fungsi <strong>VLOOKUP</strong> di Excel, Anda dapat memiliki beberapa tabel pencarian. Anda dapat menggunakan <a href="https://www.excel-easy.com/examples/if.html">fungsi IF</a> untuk memeriksa apakah suatu kondisi terpenuhi,
                     dan mengembalikan satu tabel pencarian jika <strong>TRUE</strong> dan tabel pencarian lainnya jika <strong>FALSE</strong>.</p>
-                <p>1. Buat dua <a href="https://www.excel-easy.com/examples/named-range.html">rentang bernama</a> : Tabel1 dan Tabel2.</p>
+                <p>1. Buat dua <a href="https://www.excel-easy.com/examples/named-range.html">Range bernama</a> : Tabel1 dan Tabel2.</p>
                 <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image014.png" alt="Meja Pertama"></p>
-                <p>2. Pilih sel E4 dan masukkan fungsi <strong>VLOOKUP</strong> yang ditunjukkan di bawah ini.</p>
+                <p>2. Pilih Sel E4 dan masukkan fungsi <strong>VLOOKUP</strong> yang ditunjukkan di bawah ini.</p>
                 <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image015.png" alt="Fungsi Vlookup dengan Beberapa Tabel Pencarian"></p>
                 <p class="penjelasan"><strong>Penjelasan:</strong> bonus tergantung pada pasar (Inggris atau USA) dan jumlah penjualan. Argumen kedua dari fungsi <strong>VLOOKUP</strong> berhasil. Jika Inggris, fungsi <strong>VLOOKUP</strong> menggunakan Tabel1, jika AS, fungsi
                     <strong>VLOOKUP</strong> menggunakan Tabel2. Setel argumen keempat fungsi <strong>VLOOKUP</strong> ke <strong>TRUE</strong> untuk mengembalikan perkiraan kecocokan.</p>
                 <p>3. Tekan Enter.</p>
-                <p>4. Pilih sel E4, klik di sudut kanan bawah sel E4 dan seret ke bawah ke sel E10.</p>
+                <p>4. Pilih Sel E4, klik di sudut kanan bawah Sel E4 dan seret ke bawah ke Sel E10.</p>
                 <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image016.png" alt="Salin Fungsi Vlookup"></p>
-                <p class="note"><strong>Catatan:</strong> misalnya, Walker menerima bonus $1.500. Karena kami menggunakan rentang bernama, kami dapat dengan mudah menyalin fungsi VLOOKUP ini ke sel lain tanpa mengkhawatirkan referensi sel.</p>
+                <p class="note"><strong>Catatan:</strong> misalnya, Walker menerima bonus $1.500. Karena kami menggunakan Range bernama, kami dapat dengan mudah menyalin fungsi VLOOKUP ini ke Sel lain tanpa mengkhawatirkan referensi Sel.</p>
                 <p class="fw-bold text-uppercase">
                     Index and Match</p>
                 <p>Alih-alih menggunakan <strong>VLOOKUP</strong>, gunakan <a href="https://www.excel-easy.com/examples/index-match.html">INDEX dan MATCH</a>. Untuk melakukan pencarian lanjutan, Anda memerlukan <strong>INDEX</strong> dan <strong>MATCH</strong>.
@@ -112,18 +112,95 @@
             <figure>
                 <!-- <blockquote class="blockquote"> -->
                     <p>
-                    Tax Rates
+                    Tarif pajak <span class="fw-light">(Tax Rates)</span>
                     </p>
                 <!-- </blockquote> -->
                 <figcaption class="blockquote-footer fw-light">
-                <!--  -->
+                Menghitung pajak atas penghasilan
                 </figcaption>
             </figure>
             </button>
         </h2>
         <div id="listTaxRates" class="accordion-collapse collapse" aria-labelledby="TaxRates" data-bs-parent="#PencarianReferensi">
             <div class="accordion-body">
-                <!--  -->
+                <p>Contoh ini mengajarkan Anda bagaimana menghitung pajak atas penghasilan menggunakan <a href="#">fungsi VLOOKUP</a> di Excel. Tarif pajak berikut berlaku untuk individu yang merupakan penduduk Australia.</p>
+                <p class="tip"><img src="https://img.icons8.com/color/25/000000/export-excel.png" /> unduh file <a href="img/bahan/excel/tax-rates.xlsx">tax-rates</a> dan coba masukkan fungsi-fungsi ini.</p>
+                <tableTable border=0 cellspacing=0 cellpadding=0 style='background:white;border-collapse:collapse'>
+                    <tr>
+                        <td style='border:solid #212121 1.0pt;background:#E6E6E6;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                            <p>Penghasilan kena pajak</p>
+                        </td>
+                        <td style='border:solid #212121 1.0pt;border-left:none;background:#E6E6E6;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                            <p><span style='color:black'>Pajak atas penghasilan ini</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style='border:solid #212121 1.0pt;border-top:none;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                            <p><span style='color:black'>0 - $18.200</span></p>
+                        </td>
+                        <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                            <p><span style='color:black'>Nol</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style='border:solid #212121 1.0pt;border-top:none;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                            <p><span style='color:black'>$18.201 - $37.000</span></p>
+                        </td>
+                        <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                            <p><span style='color:black'>19c untuk setiap $1 lebih dari
+  $18.200</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style='border:solid #212121 1.0pt;border-top:none;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                            <p><span style='color:black'>$37.001 - $87.000</span></p>
+                        </td>
+                        <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                            <p><span style='color:black'>$3,572 ditambah 32,5c untuk
+  setiap $1 di atas $37.000</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style='border:solid #212121 1.0pt;border-top:none;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                            <p><span style='color:black'>$87,001 - $180,000</span></p>
+                        </td>
+                        <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                            <p><span style='color:black'>$19.822 ditambah 37c untuk
+  setiap $1 lebih dari $87.000</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style='border:solid #212121 1.0pt;border-top:none;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                            <p><span style='color:black'>$180,001 ke atas</span></p>
+                        </td>
+                        <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                            <p><span style='color:black'>$54.232 ditambah 45c untuk
+  setiap $1 di atas $180.000</span></p>
+                        </td>
+                    </tr>
+                    </table>
+                    <p><strong>Contoh:</strong> jika penghasilan 39000, pajak sama dengan 3572 + 0,325 * (39000 - 37000) = 3572 + 650 = $4222</p>
+                    <p><img class="img-fluid" src="img/img-excel/TaxRates_files/image001.png" alt="Tarif Pajak di Excel"></p>
+                    <p>Untuk menghitung pajak penghasilan secara otomatis, lakukan langkah-langkah berikut.</p>
+                    <p>1. Pada lembar kedua, buat <a href="#">Range bernama</a> Rates.</p>
+                    <p><img class="img-fluid" src="img/img-excel/TaxRates_files/image002.png" alt="Range bernama"></p>
+                    <p>2. Saat Anda menyetel argumen keempat dari fungsi <strong>VLOOKUP</strong> ke TRUE, fungsi <strong>VLOOKUP</strong> mengembalikan kecocokan yang sama persis atau jika tidak ditemukan, ia mengembalikan nilai terbesar yang lebih kecil
+                        dari
+                        <em>lookup_value</em> (A2). Itulah yang kami inginkan!</p>
+                    <p><img class="img-fluid" src="img/img-excel/TaxRates_files/image003.png" alt="Fungsi Vlookup"></p>
+                    <p class="penjelasan"><strong>Penjelasan:</strong> Excel tidak dapat menemukan 39000 di kolom pertama Tarif (Rates). Namun, ia dapat menemukan 37000 (nilai terbesar lebih kecil dari 39000). Akibatnya, ia mengembalikan 3572 (<em>col_index_num</em>, argumen
+                        ketiga, disetel ke 2).
+                    </p>
+                    <p>3. Sekarang, yang tersisa adalah sisa persamaan, + 0,325 * (39000 - 37000). Ini mudah. Kita dapat mengembalikan 0,325 dengan menyetel col_index_num ke 3 dan mengembalikan 37000 dengan menyetel col_index_num ke 1. Rumus lengkap di bawah
+                        ini berhasil.</p>
+                    <p><img class="img-fluid" src="img/img-excel/TaxRates_files/image004.png" alt="Rumus Tarif Pajak"></p>
+                    <p class="note"><strong>Catatan:</strong> saat Anda menyetel argumen keempat fungsi <strong>VLOOKUP</strong> ke <strong>TRUE</strong>, kolom pertama tabel harus diurutkan dalam urutan menaik.</p>
             </div>
         </div>
     </div>
@@ -147,29 +224,29 @@
             <div class="accordion-body">
                 <p>Gunakan <strong>INDEX</strong> dan <strong>MATCH</strong> di Excel dan buat atasan Anda terkesan. Alih-alih menggunakan <a href="#">VLOOKUP</a>, gunakan <strong>INDEX</strong> dan <strong>MATCH</strong>. Untuk melakukan pencarian lanjutan,
                     Anda memerlukan <strong>INDEX</strong> dan <strong>MATCH</strong>.</p>
-                <p class="tip"><img src="https://img.icons8.com/color/25/000000/export-excel.png" /> unduh <a href="img/bahan/excel/index-match.xlsx">file Excel</a> dan coba masukkan fungsi-fungsi ini.</p>
+                <p class="tip"><img src="https://img.icons8.com/color/25/000000/export-excel.png" /> unduh file <a href="img/bahan/excel/index-match.xlsx">index-match</a> dan coba masukkan fungsi-fungsi ini.</p>
                 <p class="fw-bold text-uppercase">Match (kecocokan)</p>
-                <p>Fungsi <strong>MATCH</strong> mengembalikan posisi nilai dalam rentang tertentu. Misalnya, fungsi <strong>MATCH</strong> di bawah ini mencari nilai 53 dalam rentang B3:B9.</p>
+                <p>Fungsi <strong>MATCH</strong> mengembalikan posisi nilai dalam Range tertentu. Misalnya, fungsi <strong>MATCH</strong> di bawah ini mencari nilai 53 dalam Range B3:B9.</p>
                 <p><img class="img-fluid" src="img/img-excel/IndexMatch_files/image001.png" alt="Fungsi Pertandingan"></p>
-                <p class="penjelasan"><strong>Penjelasan:</strong> 53 (argumen pertama) ditemukan pada posisi 5 dalam rentang B3:B9 (argumen kedua). Dalam contoh ini, kami menggunakan fungsi <strong>MATCH</strong> untuk mengembalikan kecocokan persis sehingga kami menetapkan
+                <p class="penjelasan"><strong>Penjelasan:</strong> 53 (argumen pertama) ditemukan pada posisi 5 dalam Range B3:B9 (argumen kedua). Dalam contoh ini, kami menggunakan fungsi <strong>MATCH</strong> untuk mengembalikan kecocokan persis sehingga kami menetapkan
                     argumen ketiga ke 0.</p>
                 <p class="fw-bold text-uppercase">Indeks</p>
-                <p>Fungsi <strong>INDEX</strong> di bawah ini mengembalikan nilai tertentu dalam rentang satu dimensi.</p>
+                <p>Fungsi <strong>INDEX</strong> di bawah ini mengembalikan nilai tertentu dalam Range satu dimensi.</p>
                 <p><img class="img-fluid" src="img/img-excel/IndexMatch_files/image002.png" alt="Fungsi Indeks"></p>
-                <p class="penjelasan"><strong>Penjelasan:</strong> fungsi <strong>INDEX</strong> mengembalikan nilai ke-5 (argumen kedua) dalam rentang E3:E9 (argumen pertama).</p>
+                <p class="penjelasan"><strong>Penjelasan:</strong> fungsi <strong>INDEX</strong> mengembalikan nilai ke-5 (argumen kedua) dalam Range E3:E9 (argumen pertama).</p>
                 <p class="fw-bold text-uppercase">Index and Match</p>
                 <p>Ganti nilai 5 pada fungsi <strong>INDEX</strong> (lihat contoh sebelumnya) dengan fungsi <strong>MATCH</strong> (lihat contoh pertama) untuk mencari gaji ID 53.</p>
                 <p><img class="img-fluid" src="img/img-excel/IndexMatch_files/image003.png" alt="Indeks dan Pertandingan"></p>
                 <p class="penjelasan"><strong>Penjelasan:</strong> fungsi <strong>MATCH</strong> mengembalikan posisi 5. Fungsi <strong>INDEX</strong> membutuhkan posisi 5. Ini adalah kombinasi yang sempurna. Jika Anda suka, Anda juga dapat menggunakan <a href="#">fungsi VLOOKUP</a>                    . Terserah kamu. Namun, Anda memerlukan <strong>INDEX</strong> dan <strong>MATCH</strong> untuk melakukan pencarian lanjutan, seperti yang akan kita lihat selanjutnya.</p>
                 <p class="fw-bold text-uppercase">Pencarian dua arah (Two-way Lookup)</p>
-                <p>Fungsi <strong>INDEX</strong> juga dapat mengembalikan nilai tertentu dalam rentang dua dimensi. Misalnya, gunakan <strong>INDEX</strong> dan <strong>MATCH</strong> di Excel untuk melakukan pencarian <a href="#">dua arah</a>.</p>
+                <p>Fungsi <strong>INDEX</strong> juga dapat mengembalikan nilai tertentu dalam Range dua dimensi. Misalnya, gunakan <strong>INDEX</strong> dan <strong>MATCH</strong> di Excel untuk melakukan pencarian <a href="#">dua arah</a>.</p>
                 <p><img class="img-fluid" src="img/img-excel/IndexMatch_files/image004.png" alt="Pencarian dua arah"></p>
                 <p class="fw-bold text-uppercase">Pencarian kasus sensitif (Case-sensitive Lookup)</p>
                 <p>Secara default, fungsi <strong>VLOOKUP</strong> melakukan pencarian case-insensitive. Namun, Anda dapat menggunakan <strong>INDEX</strong>, <strong>MATCH</strong>, dan <strong>EXACT</strong> di Excel untuk melakukan <a href="#">Case-sensitive Lookup</a>.</p>
                 <p><img class="img-fluid" src="img/img-excel/IndexMatch_files/image005.png" alt="Pencarian kasus sensitif"></p>
                 <p class="note"><strong>Catatan:</strong> rumus benar mencari gaji MIA Reed, bukan Mia Clark.</p>
                 <p class="fw-bold text-uppercase">Pencarian Kiri (Left Lookup)</p>
-                <p>Fungsi VLOOKUP hanya melihat ke kanan. Jangan khawatir, Anda dapat menggunakan <strong>INDEX</strong> dan <strong>MATCH</strong> di Excel untuk melakukan <a href="#">pencarian kiri</a>.</p>
+                <p>Fungsi <strong>VLOOKUP</strong> hanya melihat ke kanan. Jangan khawatir, Anda dapat menggunakan <strong>INDEX</strong> dan <strong>MATCH</strong> di Excel untuk melakukan <a href="#">pencarian kiri</a>.</p>
                 <p><img class="img-fluid" src="img/img-excel/IndexMatch_files/image006.png" alt="Pencarian Kiri"></p>
                 <p class="note"><strong>Catatan:</strong> ketika kita menyeret rumus ini ke bawah, referensi absolut ($E$4:$E$7 dan $G$4:$G$7) tetap sama, sedangkan referensi relatif (A2) berubah menjadi A3, A4, A5, dll.</p>
                 <p class="fw-bold text-uppercase">Pencarian dua kolom (Two-column Lookup)</p>
@@ -193,14 +270,38 @@
                     </p>
                 <!-- </blockquote> -->
                 <figcaption class="blockquote-footer fw-light">
-                <!--  -->
+                Untuk mencari nilai dalam Range dua dimensi
                 </figcaption>
             </figure>
             </button>
         </h2>
         <div id="listTwowayLookup" class="accordion-collapse collapse" aria-labelledby="TwowayLookup" data-bs-parent="#PencarianReferensi">
             <div class="accordion-body">
-                <!--  -->
+                <p>Untuk mencari nilai dalam Range dua dimensi, gunakan <strong>INDEX</strong> dan <strong>MATCH</strong> di Excel. Di bawah ini Anda dapat menemukan penjualan berbagai rasa es krim di setiap bulannya.</p>
+                <p class="tip"><img src="https://img.icons8.com/color/25/000000/export-excel.png" /> unduh file <a href="img/bahan/excel/two-way-lookup.xlsx">two-way-lookup</a> dan coba masukkan fungsi-fungsi ini.</p>
+                <p>1. Untuk mencari posisi Feb pada range A2:A13, gunakan fungsi <strong>MATCH</strong>. Hasilnya adalah 2.</p>
+                <p><img width=604 height=347 id="Picture 20" class="img-fluid" src="img/img-excel/TwowayLookup_files/image001.png" alt="Fungsi Pertandingan"></p>
+                <p>2. Untuk mencari posisi Cokelat pada range B1:D1, gunakan fungsi <strong>MATCH</strong>. Hasilnya adalah 1.</p>
+                <p><img class="img-fluid" src="img/img-excel/TwowayLookup_files/image002.png" alt="Fungsi Pertandingan"></p>
+                <p>3. Gunakan hasil ini dan fungsi <strong>INDEX</strong> untuk mencari penjualan Cokelat di bulan Februari.</p>
+                <p><img class="img-fluid" src="img/img-excel/TwowayLookup_files/image003.png" alt="Fungsi Indeks"></p>
+                <p class="penjelasan"><strong>Penjelasan:</strong> 217 ditemukan pada perpotongan baris 2 dan kolom 1 pada Range B2:D13.</p>
+                <p>4. Gabungkan semuanya.</p>
+                <p><img class="img-fluid" src="img/img-excel/TwowayLookup_files/image004.png" alt="Pencarian dua arah di Excel"></p>
+                <p>Anda juga dapat mencari nilai dalam Range dua dimensi tanpa menggunakan <strong>INDEX</strong> dan <strong>MATCH</strong>. Trik berikut ini cukup mengagumkan.</p>
+                <p>5. Pilih Range A1:D13.</p>
+                <p><img class="img-fluid" src="img/img-excel/TwowayLookup_files/image005.png" alt="Pilih Range"></p>
+                <p>6. Pada tab Rumus, di grup Nama yang Ditentukan, klik Buat dari Pilihan.</p>
+                <p><img class="img-fluid" src="img/img-excel/TwowayLookup_files/image006.png" alt="Buat Range Bernama"></p>
+                <p>7. Centang Baris atas dan kolom Kiri dan klik OK.</p>
+                <p><img class="img-fluid" src="img/img-excel/TwowayLookup_files/image007.png" alt="Buat Nama dari Pilihan"></p>
+                <p>8. Excel membuat 12 + 3 = 15 Range bernama! Cukup pilih Range dan lihat kotak Nama.</p>
+                <p><img class="img-fluid" src="img/img-excel/TwowayLookup_files/image008.png" alt="Range bernama"></p>
+                <p>9. Gunakan operator intersect (spasi) untuk mengembalikan perpotongan dua Range bernama.</p>
+                <p><img class="img-fluid" src="img/img-excel/TwowayLookup_files/image009.png" alt="Persimpangan Range Bernama"></p>
+                <p>10. Buat pencarian dua arah yang dinamis.</p>
+                <p><img class="img-fluid" src="img/img-excel/TwowayLookup_files/image010.png" alt="Pencarian Dua Arah Dinamis"></p>
+                <p class="penjelasan"><strong>Penjelasan:</strong> fungsi <a href="#">INDIRECT</a> mengonversi string teks (&quot;Feb&quot; di Sel G2 dan &quot;Cokelat&quot; di Sel G3) menjadi Range bernama yang valid.</p>
             </div>
         </div>
     </div>
@@ -215,14 +316,35 @@
                     </p>
                 <!-- </blockquote> -->
                 <figcaption class="blockquote-footer fw-light">
-                <!--  -->
+                mengembalikan Sel / Range Sel yang merupakan jumlah baris dan kolom tertentu dari Sel
                 </figcaption>
             </figure>
             </button>
         </h2>
         <div id="listOffset" class="accordion-collapse collapse" aria-labelledby="Offset" data-bs-parent="#PencarianReferensi">
             <div class="accordion-body">
-                <!--  -->
+                <p>Fungsi <strong>OFFSET</strong> di Excel mengembalikan sel atau rentang sel yang merupakan jumlah baris dan kolom tertentu dari sel atau rentang sel.</p>
+                <p class="tip"><img src="https://img.icons8.com/color/25/000000/export-excel.png" /> unduh file <a href="img/bahan/excel/offset.xlsx">offset</a> dan coba masukkan fungsi-fungsi ini.</p>
+                <p>1. Fungsi <strong>OFFSET</strong> di bawah ini mengembalikan sel yaitu 3 baris di bawah dan 2 kolom di sebelah kanan sel A2. Fungsi <strong>OFFSET</strong> mengembalikan sel karena tinggi dan lebar keduanya disetel ke 1.</p>
+                <p><img class="img-fluid" src="img/img-excel/Offset_files/image001.png" alt="Contoh Sel Offset"></p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="img/img-excel/Offset_files/image002.png" alt="Hasil Sel Offset"></p>
+                <p>2. Fungsi <strong>OFFSET</strong> di bawah ini mengembalikan rentang 1 x 2 yaitu 8 baris di bawah dan 1 kolom di sebelah kanan sel A2. Fungsi <strong>SUM</strong> menghitung jumlah rentang ini.</p>
+                <p><img class="img-fluid" src="img/img-excel/Offset_files/image003.png" alt="Contoh Rentang Offset"></p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="img/img-excel/Offset_files/image004.png" alt="Hasil Rentang Offset"></p>
+                <p>2 argumen terakhir dari fungsi <strong>OFFSET</strong> adalah opsional. Ketika tinggi dan lebar dihilangkan, referensi baru memiliki tinggi dan lebar yang sama dengan referensi awal (argumen pertama). Seperti biasa, kami akan menggunakan
+                    contoh mudah untuk membuat segalanya lebih jelas.</p>
+                <p>3. Fungsi <strong>OFFSET</strong> di bawah ini mengembalikan sel yaitu 12 baris di bawah dan 0 kolom di sebelah kanan sel A2.</p>
+                <p><img class="img-fluid" src="img/img-excel/Offset_files/image005.png" alt="Tinggi dan Lebar Dihilangkan"></p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="img/img-excel/Offset_files/image006.png" alt="Fungsi OFFSET sederhana"></p>
+                <p>4. Fungsi <strong>OFFSET</strong> di bawah ini mengembalikan rentang yaitu 4 baris di bawah dan 0 kolom di sebelah kanan rentang B2:C2. Fungsi <strong>SUM</strong> menghitung jumlah rentang ini.</p>
+                <p><img class="img-fluid" src="img/img-excel/Offset_files/image007.png" alt="Rentang sebagai Titik Awal"></p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="img/img-excel/Offset_files/image008.png" alt="rumus SUM OFFSET"></p>
+                <p class="note"><strong>Catatan:</strong> untuk mengembalikan rentang (tanpa menghitung jumlah), pilih rentang dengan ukuran yang sama sebelum Anda menyisipkan fungsi <strong>OFFSET</strong> dan selesaikan dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.
+                    Jika Anda ingin mengembalikan sel atau rentang sel yang merupakan jumlah baris tertentu di atas atau kolom di sebelah kiri, masukkan angka negatif.</p>
             </div>
         </div>
     </div>
@@ -237,14 +359,36 @@
                     </p>
                 <!-- </blockquote> -->
                 <figcaption class="blockquote-footer fw-light">
-                <!--  -->
+                Untuk melakukan pencarian case-insensitive
                 </figcaption>
             </figure>
             </button>
         </h2>
         <div id="listCaseSensitiveLookup" class="accordion-collapse collapse" aria-labelledby="CaseSensitiveLookup" data-bs-parent="#PencarianReferensi">
             <div class="accordion-body">
-                <!--  -->
+                <p>Secara default, <a href="#">fungsi VLOOKUP</a> melakukan pencarian case-insensitive. Namun, Anda dapat menggunakan <strong>INDEX</strong>, <strong>MATCH</strong>, dan <strong>EXACT</strong> di Excel untuk melakukan pencarian peka huruf
+                    besar/kecil .
+                </p>
+                <p>1. Misalnya, fungsi <strong>VLOOKUP</strong> sederhana di bawah ini mengembalikan gaji Mia Clark. Namun, kami ingin mencari gaji MIA Reed (lihat sel G2).</p>
+                <p><img border=0 width=604 height=267 id="Picture 7" class="img-fluid" src="img/img-excel/CaseSensitiveLookup_files/image001.png" alt="Pencarian peka huruf besar/kecil di Excel"></p>
+                <p>2. Fungsi <strong>EXACT</strong> di Excel mengembalikan <strong>TRUE</strong> jika dua string sama persis. Fungsi <strong>EXACT</strong> di bawah ini mengembalikan <strong>FALSE</strong>.</p>
+                <p><img class="img-fluid" src="img/img-excel/CaseSensitiveLookup_files/image002.png" alt="Fungsi yang Tepat"></p>
+                <p>3. Fungsi <strong>EXACT</strong> di bawah ini mengembalikan <strong>TRUE</strong>.</p>
+                <p><img class="img-fluid" src="img/img-excel/CaseSensitiveLookup_files/image003.png" alt="Benar-benar cocok"></p>
+                <p>4. Ganti B8 dengan B3:B9.</p>
+                <p><img class="img-fluid" src="img/img-excel/CaseSensitiveLookup_files/image004.png" alt="Konstanta Array"></p>
+                <p>Penjelasan: Rentang (konstanta array) yang dibuat oleh fungsi <strong>EXACT</strong> disimpan dalam memori Excel, bukan dalam rentang. Konstanta array terlihat sebagai berikut:</p>
+                <p>{SALAH; SALAH; SALAH; SALAH; SALAH; BENAR; SALAH}</p>
+                <p>5. Yang kita butuhkan hanyalah sebuah fungsi yang menemukan posisi <strong>TRUE</strong> dalam konstanta array ini. <strong>MATCH</strong> berfungsi untuk menyelamatkan! Akhiri dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
+                <p><img class="img-fluid" src="img/img-excel/CaseSensitiveLookup_files/image005.png" alt="Fungsi Pertandingan"></p>
+                <p>Penjelasan: <strong>TRUE</strong> (argumen pertama) ditemukan pada posisi 6 dalam konstanta array (argumen kedua). Dalam contoh ini, kami menggunakan fungsi <strong>MATCH</strong> untuk mengembalikan kecocokan persis sehingga kami menyetel
+                    argumen ketiga ke 0. Bilah rumus menunjukkan bahwa ini adalah <a href="#">rumus larik</a> dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri.</p>
+                <p>6. Gunakan fungsi <strong>INDEX</strong> (dua argumen) untuk mengembalikan nilai tertentu dalam rentang satu dimensi. Dalam contoh ini, gaji pada posisi 6 (argumen kedua) dalam kisaran D3:D9 (argumen pertama).</p>
+                <p><img class="img-fluid" src="img/img-excel/CaseSensitiveLookup_files/image006.png" alt="Fungsi Indeks"></p>
+                <p>7. Akhiri dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
+                <p><img class="img-fluid" src="img/img-excel/CaseSensitiveLookup_files/image007.png" alt="Pencarian peka huruf besar/kecil di Excel"></p>
+                <p>Catatan: rumus benar mencari gaji MIA Reed, bukan Mia Clark. Bilah rumus menunjukkan bahwa ini adalah <a href="#">rumus larik</a> dengan mengapitnya dalam kurung kurawal
+                    <strong>{}</strong>.</p>
             </div>
         </div>
     </div>
@@ -362,7 +506,7 @@
                 <p class="penjelasan"><strong>Penjelasan:</strong> C3-F2 sama dengan -39. Fungsi ABS menghilangkan tanda minus (-) dari angka negatif, menjadikannya positif. Fungsi ABS tidak berpengaruh pada angka 0 (nol) atau positif.</p>
                 <p>2. Untuk menghitung selisih antara nilai target dan nilai pada kolom data, ganti C3 dengan C3:C9.</p>
                 <p><img class="img-fluid" src="img/img-excel/ClosestMatch_files/image002.png" alt="Konstanta Array"></p>
-                <p class="penjelasan"><strong>Penjelasan:</strong> rentang (konstanta array) yang dibuat oleh fungsi <strong>ABS</strong> disimpan dalam memori Excel, bukan dalam rentang. Konstanta array terlihat sebagai berikut:</p>
+                <p class="penjelasan"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh fungsi <strong>ABS</strong> disimpan dalam memori Excel, bukan dalam Range. Konstanta array terlihat sebagai berikut:</p>
                 <p>{39;14;37;16;22;16;17}</p>
                 <p>3. Untuk menemukan kecocokan terdekat, tambahkan fungsi <strong>MIN</strong> dan selesaikan dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
                 <p><img class="img-fluid" src="img/img-excel/ClosestMatch_files/image003.png" alt="Fungsi Minimal"></p>
@@ -372,7 +516,7 @@
                 <p><img class="img-fluid" src="img/img-excel/ClosestMatch_files/image004.png" alt="Fungsi Pertandingan"></p>
                 <p class="penjelasan"><strong>Penjelasan:</strong> 14 (argumen pertama) ditemukan pada posisi 2 dalam konstanta array (argumen kedua). Dalam contoh ini, kami menggunakan fungsi <strong>MATCH</strong> untuk mengembalikan kecocokan persis sehingga kami menetapkan
                     argumen ketiga ke 0.</p>
-                <p>5. Gunakan fungsi <strong>INDEX</strong> (dua argumen) untuk mengembalikan nilai tertentu dalam rentang satu dimensi. Dalam contoh ini, nama pada posisi 2 (argumen kedua) dalam rentang B3:B9 (argumen pertama).</p>
+                <p>5. Gunakan fungsi <strong>INDEX</strong> (dua argumen) untuk mengembalikan nilai tertentu dalam Range satu dimensi. Dalam contoh ini, nama pada posisi 2 (argumen kedua) dalam Range B3:B9 (argumen pertama).</p>
                 <p><img class="img-fluid" src="img/img-excel/ClosestMatch_files/image005.png" alt="Fungsi Indeks"></p>
                 <p>6. Akhiri dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
                 <p><img class="img-fluid" src="img/img-excel/ClosestMatch_files/image006.png" alt="Pertandingan Terdekat di Excel"></p>

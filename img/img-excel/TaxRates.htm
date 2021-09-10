@@ -1,0 +1,158 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-ID link="#0563C1" vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal>Contoh ini mengajarkan Anda bagaimana menghitung pajak atas
+penghasilan menggunakan&nbsp;<a
+href="https://www.excel-easy.com/examples/vlookup.html">fungsi VLOOKUP</a>&nbsp;di&nbsp;Excel&nbsp;.&nbsp;Tarif&nbsp;pajak&nbsp;berikut&nbsp;berlaku
+untuk individu yang merupakan penduduk Australia.</p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='background:white;border-collapse:collapse'>
+ <tr>
+  <td style='border:solid #212121 1.0pt;background:#E6E6E6;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p class=MsoNormal>Penghasilan kena pajak</p>
+  </td>
+  <td style='border:solid #212121 1.0pt;border-left:none;background:#E6E6E6;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p class=MsoNormal><span style='color:black'>Pajak atas penghasilan ini</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:solid #212121 1.0pt;border-top:none;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p class=MsoNormal><span style='color:black'>0 - $18.200</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p class=MsoNormal><span style='color:black'>Nol</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:solid #212121 1.0pt;border-top:none;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p class=MsoNormal><span style='color:black'>$18.201 - $37.000</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p class=MsoNormal><span style='color:black'>19c untuk setiap $1 lebih dari
+  $18.200</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:solid #212121 1.0pt;border-top:none;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p class=MsoNormal><span style='color:black'>$37.001 - $87.000</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p class=MsoNormal><span style='color:black'>$3,572 ditambah 32,5c untuk
+  setiap $1 di atas $37.000</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:solid #212121 1.0pt;border-top:none;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p class=MsoNormal><span style='color:black'>$87,001 - $180,000</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p class=MsoNormal><span style='color:black'>$19.822 ditambah 37c untuk
+  setiap $1 lebih dari $87.000</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:solid #212121 1.0pt;border-top:none;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p class=MsoNormal><span style='color:black'>$180,001 ke atas</span></p>
+  </td>
+  <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+  <p class=MsoNormal><span style='color:black'>$54.232 ditambah 45c untuk
+  setiap $1 di atas $180.000</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='color:white'><br>
+<br>
+</span></p>
+
+<p class=MsoNormal>Contoh: jika penghasilan 39000, pajak sama dengan 3572 +
+0,325 * (39000 - 37000) = 3572 + 650 = $4222</p>
+
+<p class=MsoNormal><img border=0 width=604 height=81 id="Picture 8"
+src="TaxRates_files/image001.png" alt="Tarif Pajak di Excel"></p>
+
+<p class=MsoNormal>Untuk menghitung pajak penghasilan secara otomatis, lakukan
+langkah-langkah berikut.</p>
+
+<p class=MsoNormal>1. Pada lembar kedua, buat&nbsp;<a
+href="https://www.excel-easy.com/examples/named-range.html">rentang bernama</a>&nbsp;Tarif.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=235 id="Picture 7"
+src="TaxRates_files/image002.png" alt="Rentang bernama"></p>
+
+<p class=MsoNormal>2. Saat Anda menyetel argumen keempat dari fungsi VLOOKUP ke
+TRUE, fungsi VLOOKUP mengembalikan kecocokan yang sama persis atau jika tidak
+ditemukan, ia mengembalikan nilai terbesar yang lebih kecil dari lookup_value
+(A2).&nbsp;Itulah yang kami inginkan!</p>
+
+<p class=MsoNormal><img border=0 width=604 height=127 id="Picture 6"
+src="TaxRates_files/image003.png" alt="Fungsi Vlookup"></p>
+
+<p class=MsoNormal>Penjelasan: Excel tidak dapat menemukan 39000 di kolom
+pertama Tarif.&nbsp;Namun, ia dapat menemukan 37000 (nilai terbesar lebih kecil
+dari 39000).&nbsp;Akibatnya, ia mengembalikan 3572 (col_index_num, argumen
+ketiga, disetel ke 2).</p>
+
+<p class=MsoNormal>3. Sekarang, yang tersisa adalah sisa persamaan, + 0,325 *
+(39000 - 37000).&nbsp;Ini mudah.&nbsp;Kita dapat mengembalikan 0,325 dengan
+menyetel col_index_num ke 3 dan mengembalikan 37000 dengan menyetel
+col_index_num ke 1. Rumus lengkap di bawah ini berhasil.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=127 id="Picture 5"
+src="TaxRates_files/image004.png" alt="Rumus Tarif Pajak"></p>
+
+<p class=MsoNormal>Catatan: saat Anda menyetel argumen keempat fungsi VLOOKUP
+ke TRUE, kolom pertama tabel harus diurutkan dalam urutan menaik.</p>
+
+</div>
+
+</body>
+
+</html>

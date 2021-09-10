@@ -1,0 +1,118 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-ID link=blue vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal>Secara default,&nbsp;<a
+href="https://www.excel-easy.com/examples/vlookup.html">fungsi VLOOKUP</a>&nbsp;melakukan
+pencarian case-insensitive.&nbsp;Namun, Anda dapat menggunakan INDEX, MATCH,
+dan EXACT di&nbsp;Excel&nbsp;untuk melakukan&nbsp;pencarian peka huruf
+besar/kecil&nbsp;.</p>
+
+<p class=MsoNormal>1. Misalnya, fungsi VLOOKUP sederhana di bawah ini
+mengembalikan gaji Mia Clark.&nbsp;Namun, kami ingin mencari gaji MIA Reed
+(lihat sel G2).</p>
+
+<p class=MsoNormal><img border=0 width=604 height=267 id="Picture 7"
+src="CaseSensitiveLookup_files/image001.png"
+alt="Pencarian peka huruf besar/kecil di Excel"></p>
+
+<p class=MsoNormal>2. Fungsi EXACT di Excel mengembalikan TRUE jika dua string
+sama persis.&nbsp;Fungsi EXACT di bawah ini mengembalikan FALSE.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=267 id="Picture 6"
+src="CaseSensitiveLookup_files/image002.png" alt="Fungsi yang Tepat"></p>
+
+<p class=MsoNormal>3. Fungsi EXACT di bawah ini mengembalikan TRUE.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=267 id="Picture 5"
+src="CaseSensitiveLookup_files/image003.png" alt="Benar-benar cocok"></p>
+
+<p class=MsoNormal>4. Ganti B8 dengan B3:B9.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=267 id="Picture 4"
+src="CaseSensitiveLookup_files/image004.png" alt="Konstanta Array"></p>
+
+<p class=MsoNormal>Penjelasan: Rentang (konstanta array) yang dibuat oleh
+fungsi EXACT disimpan dalam memori Excel, bukan dalam rentang.&nbsp;Konstanta
+array terlihat sebagai berikut:</p>
+
+<p class=MsoNormal>{SALAH; SALAH; SALAH; SALAH; SALAH; BENAR; SALAH}</p>
+
+<p class=MsoNormal>5. Yang kita butuhkan hanyalah sebuah fungsi yang menemukan
+posisi TRUE dalam konstanta array ini.&nbsp;MATCH berfungsi untuk
+menyelamatkan!&nbsp;Akhiri dengan menekan CTRL + SHIFT + ENTER.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=267 id="Picture 3"
+src="CaseSensitiveLookup_files/image005.png" alt="Fungsi Pertandingan"></p>
+
+<p class=MsoNormal>Penjelasan: TRUE (argumen pertama) ditemukan pada posisi 6
+dalam konstanta array (argumen kedua).&nbsp;Dalam contoh ini, kami menggunakan
+fungsi MATCH untuk mengembalikan kecocokan persis sehingga kami menyetel
+argumen ketiga ke 0. Bilah rumus menunjukkan bahwa ini adalah&nbsp;<a
+href="https://www.excel-easy.com/functions/array-formulas.html">rumus larik</a>&nbsp;dengan
+mengapitnya dalam kurung kurawal {}.&nbsp;Jangan mengetik ini sendiri.</p>
+
+<p class=MsoNormal>6. Gunakan fungsi INDEX (dua argumen) untuk mengembalikan
+nilai tertentu dalam rentang satu dimensi.&nbsp;Dalam contoh ini, gaji pada
+posisi 6 (argumen kedua) dalam kisaran D3:D9 (argumen pertama).</p>
+
+<p class=MsoNormal><img border=0 width=604 height=267 id="Picture 2"
+src="CaseSensitiveLookup_files/image006.png" alt="Fungsi Indeks"></p>
+
+<p class=MsoNormal>7. Akhiri dengan menekan CTRL + SHIFT + ENTER.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=267 id="Picture 1"
+src="CaseSensitiveLookup_files/image007.png"
+alt="Pencarian peka huruf besar/kecil di Excel"></p>
+
+<p class=MsoNormal>Catatan: rumus benar mencari gaji MIA Reed, bukan Mia
+Clark.&nbsp;Bilah rumus menunjukkan bahwa ini adalah&nbsp;<a
+href="https://www.excel-easy.com/functions/array-formulas.html">rumus larik</a>&nbsp;dengan
+mengapitnya dalam kurung kurawal {}.</p>
+
+</div>
+
+</body>
+
+</html>

@@ -362,7 +362,22 @@
         </h2>
         <div id="listSwitch" class="accordion-collapse collapse" aria-labelledby="Switch" data-bs-parent="#Logical">
             <div class="accordion-body">
-                <!--  -->
+                <p>Contoh ini mengajarkan Anda cara menggunakan fungsi <strong>SWITCH</strong> di Excel 2016 atau yang lebih baru, bukan <a href="#">fungsi IFS</a>.</p>
+                <p class="tip"><img src="https://img.icons8.com/color/25/000000/export-excel.png" /> unduh file <a href="img/bahan/excel/switch.xlsx">switch</a> dan coba masukkan fungsi-fungsi ini.</p>
+                <p>1a. Misalnya, fungsi <strong>IFS</strong> di bawah ini menemukan status yang benar.</p>
+                <p><img class="img-fluid" src="img/img-excel/Switch_files/image001.png" alt="Fungsi Ifs di Excel"></p>
+                <p class="penjelasan"><strong>Penjelasan :</strong> sel A2 berisi string 85-UT. Fungsi <strong>RIGHT</strong> mengekstrak 2 karakter paling kanan dari string ini <strong>(UT)</strong>. Akibatnya, fungsi <strong>IFS</strong> mengembalikan status yang benar <strong>(Utah)</strong>.
+                    Jika 2 karakter paling kanan tidak sama dengan <strong>UT</strong>, <strong>TX</strong> atau <strong>OH</strong>, fungsi <strong>IFS</strong> mengembalikan tanda tanya. Alih-alih <strong>TRUE</strong>, Anda juga dapat menggunakan 1=1
+                    atau sesuatu yang lain yang selalu <strong>TRUE</strong>.</p>
+                <p>1b. Fungsi <strong>SWITCH</strong> di bawah ini menghasilkan hasil yang sama persis tetapi jauh lebih mudah dibaca.</p>
+                <p><img class="img-fluid" src="img/img-excel/Switch_files/image002.png" alt="Beralih Fungsi di Excel"></p>
+                <p class="penjelasan"><strong>Penjelasan :</strong> jika argumen pertama (RIGHT(A2,2) dalam contoh ini) sama dengan <strong>UT</strong>, fungsi <strong>SWITCH</strong> mengembalikan <strong>Utah</strong>. Jika <strong>TX</strong>, <strong>Texas</strong>. Jika
+                    <strong>OH</strong>,
+                    <strong>Ohio</strong>. Argumen terakhir (tanda tanya dalam contoh ini) selalu merupakan nilai default (jika tidak ada kecocokan).</p>
+                <p>2. Mengapa tidak selalu menggunakan fungsi <strong>SWITCH</strong> di Excel? Ada banyak contoh di mana Anda tidak dapat menggunakan fungsi <strong>SWITCH</strong> alih-alih fungsi <strong>IFS</strong>.</p>
+                <p><img class="img-fluid" src="img/img-excel/Switch_files/image003.png" alt="Fungsi Ifs Kedua"></p>
+                <p class="penjelasan"><strong>Penjelasan :</strong> karena kita menggunakan simbol&quot;&lt;&quot; dan &quot;&gt;=&quot; dalam fungsi <strong>IFS</strong> ini, kita tidak dapat menggunakan fungsi <strong>SWITCH</strong>.
+                </p>
             </div>
         </div>
     </div>

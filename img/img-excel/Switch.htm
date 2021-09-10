@@ -1,0 +1,87 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-ID link="#0563C1" vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal>Contoh ini mengajarkan Anda cara menggunakan&nbsp;fungsi
+SWITCH&nbsp;di&nbsp;Excel 2016&nbsp;atau yang lebih baru, bukan&nbsp;<a
+href="https://www.excel-easy.com/examples/ifs.html">fungsi IFS</a>&nbsp;.</p>
+
+<p class=MsoNormal>1a.&nbsp;Misalnya, fungsi IFS di bawah ini menemukan status
+yang benar.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=307 id="Picture 6"
+src="Switch_files/image001.png" alt="Fungsi Ifs di Excel"></p>
+
+<p class=MsoNormal>Penjelasan: sel A2 berisi string 85-UT.&nbsp;Fungsi RIGHT
+mengekstrak 2 karakter paling kanan dari string ini (UT).&nbsp;Akibatnya,
+fungsi IFS mengembalikan status yang benar (Utah).&nbsp;Jika 2 karakter paling
+kanan tidak sama dengan UT, TX atau OH, fungsi IFS mengembalikan tanda
+tanya.&nbsp;Alih-alih TRUE, Anda juga dapat menggunakan 1=1 atau sesuatu yang
+lain yang selalu TRUE.</p>
+
+<p class=MsoNormal>1b.&nbsp;Fungsi SWITCH di bawah ini menghasilkan hasil yang
+sama persis tetapi jauh lebih mudah dibaca.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=307 id="Picture 5"
+src="Switch_files/image002.png" alt="Beralih Fungsi di Excel"></p>
+
+<p class=MsoNormal>Penjelasan: jika argumen pertama (RIGHT(A2,2) dalam contoh
+ini) sama dengan UT, fungsi SWITCH mengembalikan Utah.&nbsp;Jika TX,
+Texas.&nbsp;Jika OH, Ohio.&nbsp;Argumen terakhir (tanda tanya dalam contoh ini)
+selalu merupakan nilai default (jika tidak ada kecocokan).</p>
+
+<p class=MsoNormal>2. Mengapa tidak selalu menggunakan fungsi SWITCH di
+Excel?&nbsp;Ada banyak contoh di mana Anda tidak dapat menggunakan fungsi
+SWITCH alih-alih fungsi IFS.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=107 id="Picture 4"
+src="Switch_files/image003.png" alt="Fungsi Ifs Kedua"></p>
+
+<p class=MsoNormal>Penjelasan: karena kita menggunakan simbol&quot;&lt;&quot;
+dan &quot;&gt;=&quot; dalam fungsi IFS ini, kita tidak dapat menggunakan fungsi
+SWITCH.</p>
+
+</div>
+
+</body>
+
+</html>

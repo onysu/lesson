@@ -1,0 +1,114 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-ID link="#0563C1" vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal>Untuk memeriksa&nbsp;apakah sel berisi teks tertentu&nbsp;,
+gunakan ISNUMBER dan SEARCH di&nbsp;Excel&nbsp;.&nbsp;Tidak ada fungsi CONTAIN
+di Excel.</p>
+
+<p class=MsoNormal>1. Untuk menemukan posisi substring dalam string teks,
+gunakan&nbsp;<a href="https://www.excel-easy.com/examples/search.html">fungsi
+SEARCH</a>&nbsp;.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=187 id="Picture 12"
+src="ContainsSpecificText_files/image001.png" alt="Fungsi Pencarian di Excel"></p>
+
+<p class=MsoNormal>Penjelasan: &quot;bebek&quot; ditemukan di posisi 10,
+&quot;keledai&quot; ditemukan di posisi 1, sel A4 tidak berisi kata
+&quot;kuda&quot; dan &quot;kambing&quot; ditemukan di posisi 12.</p>
+
+<p class=MsoNormal>2. Tambahkan fungsi ISNUMBER.&nbsp;Fungsi ISNUMBER
+mengembalikan TRUE jika sel berisi angka, dan FALSE jika tidak.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=187 id="Picture 11"
+src="ContainsSpecificText_files/image002.png" alt="Fungsi IsNumber"></p>
+
+<p class=MsoNormal>Penjelasan: sel A2&nbsp;berisi&nbsp;kata &quot;bebek&quot;,
+sel A3 berisi kata &quot;keledai&quot;, sel A4 tidak berisi kata
+&quot;kuda&quot; dan sel A5 berisi kata &quot;kambing&quot;.</p>
+
+<p class=MsoNormal>3. Anda juga dapat memeriksa apakah sel berisi teks
+tertentu, tanpa menampilkan substring.&nbsp;Pastikan untuk menyertakan
+substring dalam tanda kutip ganda.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=127 id="Picture 10"
+src="ContainsSpecificText_files/image003.png" alt="Tanda kutip ganda"></p>
+
+<p class=MsoNormal>4. Untuk melakukan pencarian peka huruf besar/kecil, ganti
+fungsi SEARCH dengan fungsi FIND.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=187 id="Picture 9"
+src="ContainsSpecificText_files/image004.png"
+alt="Pencarian peka huruf besar/kecil"></p>
+
+<p class=MsoNormal>Penjelasan: rumus di sel C3 mengembalikan FALSE
+sekarang.&nbsp;Sel A3 tidak mengandung kata &quot;keledai&quot; tetapi berisi
+kata &quot;Keledai&quot;.</p>
+
+<p class=MsoNormal>5. Tambahkan&nbsp;<a
+href="https://www.excel-easy.com/examples/if.html">fungsi JIKA</a>&nbsp;.&nbsp;Rumus
+di bawah (peka huruf besar/kecil) mengembalikan &quot;Ditemukan&quot; jika sel
+berisi teks tertentu, dan &quot;Tidak Ditemukan&quot; jika tidak.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=187 id="Picture 8"
+src="ContainsSpecificText_files/image005.png"
+alt="Periksa Apakah Sel Berisi Teks Tertentu"></p>
+
+<p class=MsoNormal>6. Anda juga dapat menggunakan IF dan COUNTIF di Excel untuk
+memeriksa apakah sel berisi teks tertentu.&nbsp;Namun, fungsi COUNTIF selalu
+tidak peka huruf besar-kecil.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=187 id="Picture 7"
+src="ContainsSpecificText_files/image006.png" alt="Jika dan Fungsi Hitung"></p>
+
+<p class=MsoNormal>Penjelasan: rumus di sel C2 direduksi menjadi
+=IF(COUNTIF(A2,&quot;*bebek*&quot;),&quot;Ditemukan&quot;,,&quot;Tidak
+Ditemukan&quot;).&nbsp;Tanda bintang (*) cocok dengan serangkaian karakter nol
+atau lebih.&nbsp;Kunjungi halaman kami tentang&nbsp;<a
+href="https://www.excel-easy.com/examples/countif.html">fungsi COUNTIF</a>&nbsp;untuk
+mempelajari semua yang perlu Anda ketahui tentang fungsi hebat ini.</p>
+
+</div>
+
+</body>
+
+</html>

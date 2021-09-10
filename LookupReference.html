@@ -611,18 +611,51 @@
             <figure>
                 <!-- <blockquote class="blockquote"> -->
                     <p>
-                    Compare Two Columns
+                    Bandingkan Dua Kolom <span class="fw-light">(Compare Two Columns)</span>
                     </p>
                 <!-- </blockquote> -->
                 <figcaption class="blockquote-footer fw-light">
-                <!--  -->
+                Tampilkan Duplikat | Nilai Unik di Setiap Kolom | Perbandingan Baris demi Baris
                 </figcaption>
             </figure>
             </button>
         </h2>
         <div id="listCompareTwoColumns" class="accordion-collapse collapse" aria-labelledby="CompareTwoColumns" data-bs-parent="#PencarianReferensi">
             <div class="accordion-body">
-                <!--  -->
+                <p>Untuk membandingkan dua kolom, gunakan IF, ISERROR dan MATCH di Excel. Anda dapat menampilkan duplikat atau nilai unik.</p>
+                <p class="tip"><img src="https://img.icons8.com/color/25/000000/export-excel.png" /> unduh file <a href="img/bahan/excel/compare-two-columns.xlsx">Bandingkan Dua Kolom</a> dan coba masukkan fungsi-fungsi ini.</p>
+                <p>Sebelum kita mulai: apakah Anda ingin membandingkan dua kolom dengan menyorot nilai unik di setiap kolom? Kunjungi halaman kami tentang
+                    <a href="https://www.excel-easy.com/examples/compare-two-lists.html">membandingkan dua daftar</a>.</p>
+                <p><img class="img-fluid" src="img/img-excel/CompareTwoColumns_files/image001.png" alt="Sorot Nilai Unik di Setiap Kolom"></p>
+                <p class="fw-bold text-uppercase">
+                    Tampilkan Duplikat</p>
+                <p>Mari kita mulai dengan membandingkan dua kolom dan menampilkan duplikatnya.</p>
+                <p>1. Tampilkan duplikat di kolom pertama (nilai ini juga muncul di kolom kedua).</p>
+                <p><img class="img-fluid" src="img/img-excel/CompareTwoColumns_files/image002.png" alt="Bandingkan Dua Kolom di Excel"></p>
+                <p>Penjelasan: fungsi MATCH di sel C1 mengembalikan angka 5 (huruf A ditemukan di posisi 5 dalam rentang B1:B7). Akibatnya, fungsi ISERROR mengembalikan FALSE dan fungsi IF mengembalikan nilai di sel A1. Fungsi MATCH di sel C4 mengembalikan
+                    kesalahan #N/A (tidak ada huruf D dalam rentang B1:B7). Akibatnya, fungsi ISERROR mengembalikan TRUE dan fungsi IF mengembalikan string kosong.</p>
+                <p>2. Anda juga dapat menampilkan duplikat di kolom kedua.</p>
+                <p><img class="img-fluid" src="img/img-excel/CompareTwoColumns_files/image003.png" alt="Duplikat di Kolom Kedua"></p>
+                <p>Catatan: pada langkah 1, kami mencocokkan setiap nilai di kolom pertama dengan rentang di kolom kedua. Pada langkah 2, kami mencocokkan setiap nilai di kolom kedua dengan rentang di kolom pertama.</p>
+                <p class="fw-bold text-uppercase">
+                    Nilai Unik di Setiap Kolom</p>
+                <p>Apakah Anda ingin membandingkan dua kolom dengan menampilkan nilai unik di setiap kolom? Cukup tukar 2 argumen terakhir dari fungsi IF.</p>
+                <p>1. Tampilkan nilai unik di kolom pertama (nilai ini tidak muncul di kolom kedua).</p>
+                <p><img class="img-fluid" src="img/img-excel/CompareTwoColumns_files/image004.png" alt="Nilai Unik di Kolom Pertama"></p>
+                <p>Catatan: lihat gambar kedua di halaman ini untuk melihat bahwa kita menukar 2 argumen terakhir dari fungsi IF.</p>
+                <p>2. Anda juga dapat menampilkan nilai unik di kolom kedua.</p>
+                <p><img class="img-fluid" src="img/img-excel/CompareTwoColumns_files/image005.png" alt="Nilai Unik di Kolom Kedua"></p>
+                <p>Catatan: lihat gambar ketiga di halaman ini untuk melihat bahwa kita menukar 2 argumen terakhir dari fungsi IF.</p>
+                <p class="fw-bold text-uppercase">
+                    Perbandingan Baris demi Baris
+                </p>
+                <p>Untuk perbandingan baris demi baris dengan cepat, cukup gunakan fungsi IF di Excel.</p>
+                <p>1. Fungsi IF di sel C1 di bawah ini mengembalikan Match karena nilai di sel A1 sama dengan nilai di sel B1.</p>
+                <p><img class="img-fluid" src="img/img-excel/CompareTwoColumns_files/image006.png" alt="Perbandingan Baris demi Baris"></p>
+                <p>2. Untuk melakukan perbandingan peka huruf besar/kecil, tambahkan fungsi EXACT.</p>
+                <p><img class="img-fluid" src="img/img-excel/CompareTwoColumns_files/image007.png" alt="Perbandingan peka huruf besar-kecil"></p>
+                <p>3. Apakah Anda ingin membandingkan dua kolom dengan menyorot perbedaan di setiap baris? Kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/row-differences.html">Perbedaan Baris</a> .</p>
+                <p><img class="img-fluid" src="img/img-excel/CompareTwoColumns_files/image008.png" alt="Sorot Perbedaan Baris"></p>
             </div>
         </div>
     </div>

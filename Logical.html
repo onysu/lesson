@@ -227,17 +227,37 @@
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listRolltheDice" aria-expanded="false" aria-controls="listRolltheDice">
             <figure>
                 <!-- <blockquote class="blockquote"> -->
-                    <p>Roll the Dice <span class="fw-light text-capitalize">(Melempar dadu)</span></p></p>
+                    <p>Melempar dadu <span class="fw-light text-capitalize">(Roll the Dice)</span></p></p>
                 <!-- </blockquote> -->
                 <figcaption class="blockquote-footer fw-light">
-                <!--  -->
+                mensimulasikan pelemparan dua dadu di Excel
                 </figcaption>
             </figure>
             </button>
         </h2>
         <div id="listRolltheDice" class="accordion-collapse collapse" aria-labelledby="RolltheDice" data-bs-parent="#Logical">
             <div class="accordion-body">
-                <!--  -->
+                <p>Contoh ini mengajarkan Anda bagaimana mensimulasikan pelemparan dua dadu di Excel. Jika Anda sedang terburu-buru, cukup unduh file Excel.</p>
+                <p class="tip"><img src="https://img.icons8.com/color/25/000000/export-excel.png" /> unduh file <a href="img/bahan/excel/roll-the-dice.xlsm">melempar dadu</a> dan coba masukkan fungsi-fungsi ini.</p>
+                <p class="note"><strong>Catatan:</strong> petunjuk di bawah ini tidak mengajarkan Anda cara memformat lembar kerja. Kami berasumsi bahwa Anda tahu cara mengubah ukuran font, gaya font, menyisipkan baris dan kolom, menambahkan batas, mengubah warna latar
+                    belakang, dll.</p>
+                <p>1. Saat ini, setiap sel berisi huruf l (seperti pada singa). Dengan gaya font Wingdings, saya ini terlihat seperti titik-titik.</p>
+                <p><img class="img-fluid" src="img/img-excel/RolltheDice_files/image001.png" alt="Gaya Huruf Wingdings"></p>
+                <p>2. Masukkan fungsi <strong>RANDBETWEEN</strong> di sel C2.</p>
+                <p><img class="img-fluid" src="img/img-excel/RolltheDice_files/image002.png" alt="RandAntara Fungsi"></p>
+                <p>3. Masukkan rumus yang ditunjukkan di bawah ini ke dalam sel kuning. Jika kita menggulung 2, 3, 4, 5 atau 6, sel-sel ini harus berisi titik.</p>
+                <p><img class="img-fluid" src="img/img-excel/RolltheDice_files/image003.png" alt="Sel Kuning"></p>
+                <p>4. Masukkan rumus yang ditunjukkan di bawah ini ke dalam sel darah merah. Jika kita menggulung 4, 5 atau 6, sel-sel ini harus berisi titik.</p>
+                <p><img class="img-fluid" src="img/img-excel/RolltheDice_files/image004.png" alt="Sel merah"></p>
+                <p>5. Masukkan rumus yang ditunjukkan di bawah ini ke dalam sel biru. Jika kita menggulung 6, sel-sel ini harus berisi titik.</p>
+                <p><img class="img-fluid" src="img/img-excel/RolltheDice_files/image005.png" alt="Sel Biru"></p>
+                <p>6. Masukkan rumus yang ditunjukkan di bawah ini ke dalam sel abu-abu. Jika kita menggulung 1, 3 atau 5, sel ini harus berisi titik.</p>
+                <p><img class="img-fluid" src="img/img-excel/RolltheDice_files/image006.png" alt="Sel abu-abu"></p>
+                <p>7. Salin rentang C2:E5 dan tempel ke rentang G2:I5.</p>
+                <p>8. Ubah warna font sel C2 dan sel G2 menjadi hijau (agar angkanya tidak terlihat).</p>
+                <p>9. Klik tombol perintah pada lembar (atau tekan F9).</p>
+                <p>Hasil.</p>
+                <p><img class="img-fluid" src="img/img-excel/RolltheDice_files/image007.png" alt="Melempar dadu"></p>
             </div>
         </div>
     </div>
@@ -250,14 +270,39 @@
                     <p>IFS</p>
                 <!-- </blockquote> -->
                 <figcaption class="blockquote-footer fw-light">
-                <!--  -->
+                mengembalikan nilai yang sesuai dengan kondisi TRUE pertama
                 </figcaption>
             </figure>
             </button>
         </h2>
         <div id="listIfs" class="accordion-collapse collapse" aria-labelledby="Ifs" data-bs-parent="#Logical">
             <div class="accordion-body">
-                <!--  -->
+                <p>Gunakan fungsi IFS di Excel 2016 atau yang lebih baru saat Anda memiliki beberapa kondisi yang harus dipenuhi. Fungsi IFS mengembalikan nilai yang sesuai dengan kondisi TRUE pertama.
+                </p>
+                <p class="note"><strong>Catatan :</strong> jika Anda tidak memiliki Excel 2016 atau yang lebih baru, Anda dapat <a href="#">menyarangkan fungsi IF</a>.</p>
+                <p>1a. Jika nilai di sel A1 sama dengan 1, fungsi IFS mengembalikan Buruk.</p>
+                <p><img class="img-fluid" src="img/img-excel/Ifs_files/image001.png" alt="Fungsi Ifs Pertama di Excel, Nilai 1"></p>
+                <p>1b. Jika nilai di sel A1 sama dengan 2, fungsi IFS mengembalikan Baik.</p>
+                <p><img class="img-fluid" src="img/img-excel/Ifs_files/image002.png" alt="Fungsi Ifs Pertama, Nilai 2"></p>
+                <p>1c. Jika nilai di sel A1 sama dengan 3, fungsi IFS mengembalikan Sangat Baik.</p>
+                <p><img class="img-fluid" src="img/img-excel/Ifs_files/image003.png" alt="Fungsi Ifs Pertama, Nilai 3"></p>
+                <p>1d. Jika nilai di sel A1 sama dengan nilai lain, fungsi IFS mengembalikan Skor Tidak Valid.</p>
+                <p><img class="img-fluid" src="img/img-excel/Ifs_files/image004.png" alt="Fungsi Ifs Pertama, Yang Lain"></p>
+                <p class="note"><strong>Catatan :</strong> alih-alih TRUE, Anda juga dapat menggunakan 1=1 atau hal lain yang selalu TRUE.</p>
+                <p>
+                    <a name=second-ifs-function></a>Berikut contoh lain.</p>
+                <p>2a. Jika nilai dalam sel A1 kurang dari 60, fungsi IFS mengembalikan F.</p>
+                <p><img class="img-fluid" src="img/img-excel/Ifs_files/image005.png" alt="Fungsi Ifs Kedua di Excel, Nilai 41"></p>
+                <p>2b. Jika nilai dalam sel A1 lebih besar atau sama dengan 60 dan kurang dari 70, fungsi IFS mengembalikan D.</p>
+                <p><img class="img-fluid" src="img/img-excel/Ifs_files/image006.png" alt="Fungsi Ifs Kedua, Nilai 60"></p>
+                <p>2c. Jika nilai dalam sel A1 lebih besar atau sama dengan 70 dan kurang dari 80, fungsi IFS mengembalikan C.</p>
+                <p><img class="img-fluid" src="img/img-excel/Ifs_files/image007.png" alt="Fungsi Ifs Kedua, Nilai 73"></p>
+                <p>2d. Jika nilai dalam sel A1 lebih besar dari atau sama dengan 80 dan kurang dari 90, fungsi IFS mengembalikan B.</p>
+                <p><img class="img-fluid" src="img/img-excel/Ifs_files/image008.png" alt="Fungsi Ifs Kedua, Nilai 82"></p>
+                <p>2e. Jika nilai dalam sel A1 lebih besar atau sama dengan 90, fungsi IFS mengembalikan A.</p>
+                <p><img class="img-fluid" src="img/img-excel/Ifs_files/image009.png" alt="Fungsi Ifs Kedua, Nilai 95"></p>
+                <p class="note"><strong>Catatan :</strong> untuk sedikit mengubah batas, Anda mungkin ingin menggunakan &quot;&lt;=&quot; alih-alih &quot;&lt;&quot; dalam fungsi Anda sendiri.
+                </p>
             </div>
         </div>
     </div>

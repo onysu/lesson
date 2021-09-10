@@ -1,4 +1,5 @@
-<p class="h4 bg-subjudul py-2 px-3 mb-0">Logical</p>
+<p class="h4 bg-subjudul py-2 px-3 mb-0">Fungsi Logika <span class="fw-light text-sm text-capitalize">(Logical)</span></p>
+</p>
 <div class="accordion accordion-flush mb-3" id="Logical">
     <!-- If -->
     <div class="accordion-item">
@@ -187,7 +188,34 @@
         </h2>
         <div id="listOr" class="accordion-collapse collapse" aria-labelledby="Or" data-bs-parent="#Logical">
             <div class="accordion-body">
-                <!--  -->
+                <p>Fungsi <strong>OR</strong> di Excel mengembalikan <strong>TRUE</strong> jika salah satu kondisi benar dan mengembalikan <strong>FALSE</strong> jika semua kondisi salah. Gabungkan fungsi <strong>OR</strong> dengan fungsi lain dan jadilah
+                    ahli Excel .
+                </p>
+                <p>1. Sebagai contoh, perhatikan fungsi <strong>OR</strong> pada sel D2 di bawah ini.</p>
+                <p><img class="img-fluid" src="img/img-excel/or_files/image001.png" alt="Atau Fungsi di Excel"></p>
+                <p class="penjelasan"><strong>Penjelasan:</strong> fungsi <strong>OR</strong> mengembalikan <strong>TRUE</strong> jika skor pertama lebih besar dari 70 atau skor kedua sama dengan 100, selain itu mengembalikan <strong>FALSE</strong>.</p>
+                <p>2. Gabungkan fungsi <strong>OR</strong> dengan <a href="#">fungsi IF</a> .</p>
+                <p><img class="img-fluid" src="img/img-excel/or_files/image002.png" alt="Jika &amp; Atau Fungsi"></p>
+                <p class="penjelasan"><strong>Penjelasan:</strong> fungsi <strong>OR</strong> mengembalikan <strong>TRUE</strong> atau <strong>FALSE</strong> (lihat contoh sebelumnya). Jika <strong>TRUE</strong>, fungsi <strong>IF</strong> mengembalikan <strong>Pass</strong>,
+                    jika <strong>FALSE</strong>, fungsi <strong>IF</strong> mengembalikan <strong>Fail</strong>.</p>
+                <p>3. Sebagai contoh, perhatikan fungsi <strong>OR</strong> pada sel E2 di bawah ini.</p>
+                <p><img class="img-fluid" src="img/img-excel/or_files/image003.png" alt="Beberapa Kondisi"></p>
+                <p class="penjelasan"><strong>Penjelasan:</strong> fungsi <strong>OR</strong> mengembalikan <strong>TRUE</strong> jika setidaknya satu skor lebih besar dari atau sama dengan 90, selain itu mengembalikan <strong>FALSE</strong>. Fungsi <strong>OR</strong> dapat
+                    menguji hingga 255 kondisi. Satu-satunya cara agar fungsi <strong>OR</strong> mengembalikan <strong>FALSE</strong> adalah jika semua kondisinya <strong>FALSE</strong> (baris 6).</p>
+                <p>4. Rumus array di bawah ini menggunakan fungsi <strong>OR</strong> untuk mengembalikan <strong>TRUE</strong> jika ada sel dalam rentang A1:E6 lebih besar dari atau sama dengan 90.</p>
+                <p><img class="img-fluid" src="img/img-excel/or_files/image004.png" alt="Rumus Array"></p>
+                <p class="penjelasan"><strong>Penjelasan:</strong> selesaikan rumus array dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>. Excel menambahkan kurung kurawal <strong>{}</strong>. Nilai dalam sel D4 lebih besar dari atau sama dengan 90. Akibatnya,
+                    rumus array mengembalikan <strong>TRUE</strong>.</p>
+                <p>5. Gabungkan fungsi <strong>OR</strong> dengan fungsi <strong>AND</strong>.</p>
+                <p><img class="img-fluid" src="img/img-excel/or_files/image005.png" alt="Dan &amp; Atau Fungsi"></p>
+                <p class="penjelasan"><strong>Penjelasan:</strong> Fungsi <strong>AND</strong> mengembalikan <strong>TRUE</strong> jika semua kondisi benar dan mengembalikan <strong>FALSE</strong> jika salah satu kondisi salah. Fungsi <strong>AND</strong> di atas memiliki
+                    dua argumen yang dipisahkan oleh koma (Tabel, Hijau atau Biru). Fungsi <strong>AND</strong> mengembalikan <strong>TRUE</strong> jika Produk sama dengan &quot;Tabel&quot; dan Warna sama dengan &quot;Hijau&quot; atau &quot;Biru&quot;.</p>
+                <p>6. Gabungkan fungsi <strong>OR</strong> dengan fungsi <strong>WEEKDAY</strong>.</p>
+                <p><img class="img-fluid" src="img/img-excel/or_files/image006.png" alt="Atau &amp; Fungsi Hari Kerja"></p>
+                <p class="penjelasan"><strong>Penjelasan:</strong> fungsi <strong>WEEKDAY</strong> di Excel mengembalikan angka dari 1 (Minggu) hingga 7 (Sabtu) yang mewakili hari dalam seminggu dari suatu tanggal. Akibatnya, fungsi <strong>OR</strong> mengembalikan <strong>TRUE</strong>                    jika tanggal jatuh pada akhir pekan.</p>
+                <p>7. Jangan bingung antara fungsi <strong>OR</strong> dengan fungsi <strong>XOR</strong> (Exclusive OR).</p>
+                <p><img class="img-fluid" src="img/img-excel/or_files/image007.png" alt="Fungsi Xor"></p>
+                <p class="penjelasan"><strong>Penjelasan:</strong> fungsi <strong>XOR</strong> mengembalikan <strong>TRUE</strong> jika sejumlah kondisi ganjil benar, dan <strong>FALSE</strong> sebaliknya. Dengan dua kondisi (lihat contoh di atas) fungsi <strong>XOR</strong>                    mengembalikan <strong>TRUE</strong> jika satu kondisi benar (baris 2) dan mengembalikan <strong>FALSE</strong> jika kedua kondisi salah (baris 3, 4 dan 6) atau kedua kondisi benar! (baris 5).</p>
             </div>
         </div>
     </div>

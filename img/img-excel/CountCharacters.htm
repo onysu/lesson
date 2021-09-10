@@ -1,0 +1,121 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-ID link="#0563C1" vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal>Pelajari cara&nbsp;menghitung jumlah karakter&nbsp;dalam sel
+atau rentang sel dan cara menghitung berapa kali&nbsp;karakter tertentu muncul&nbsp;dalam
+sel atau rentang sel.</p>
+
+<p class=MsoNormal>1. Fungsi LEN di Excel menghitung jumlah karakter dalam sel.</p>
+
+<p class=MsoNormal><img width=604 height=127 id="Picture 12"
+src="CountCharacters_files/image001.png" alt="Hitung Karakter dalam Sel"></p>
+
+<p class=MsoNormal>Penjelasan: fungsi LEN menghitung 2 angka, 1 spasi dan 6
+huruf.</p>
+
+<p class=MsoNormal>2. Gunakan SUM dan LEN untuk menghitung jumlah karakter
+dalam rentang sel.</p>
+
+<p class=MsoNormal><img width=604 height=187 id="Picture 11"
+src="CountCharacters_files/image002.png" alt="Fungsi Jumlah dan Len di Excel"></p>
+
+<p class=MsoNormal>Catatan: seperti yang dapat Anda bayangkan, rumus ini bisa
+menjadi sangat panjang.</p>
+
+<p class=MsoNormal>3. Rumus array di bawah ini menghitung jumlah karakter dalam
+rentang sel.</p>
+
+<p class=MsoNormal><img width=604 height=187 id="Picture 10"
+src="CountCharacters_files/image003.png" alt="Hitung Karakter dalam Rentang Sel"></p>
+
+<p class=MsoNormal>Catatan: selesaikan&nbsp;<a
+href="https://www.excel-easy.com/functions/array-formulas.html">rumus array</a>&nbsp;dengan
+menekan CTRL + SHIFT + ENTER.&nbsp;Excel menambahkan kurung kurawal
+{}.&nbsp;Konstanta array {9;4;6;5} digunakan sebagai argumen untuk fungsi SUM,
+memberikan hasil 24. Mungkin ini satu langkah terlalu jauh untuk Anda pada
+tahap ini, tetapi ini menunjukkan kepada Anda salah satu dari banyak lainnya
+fitur canggih yang ditawarkan Excel.</p>
+
+<p class=MsoNormal>4. Gunakan LEN dan SUBSTITUTE untuk menghitung berapa kali
+karakter tertentu (dalam contoh ini, karakter a) muncul dalam sel.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=127 id="Picture 9"
+src="CountCharacters_files/image004.png"
+alt="Hitung Karakter Tertentu dalam Sel"></p>
+
+<p class=MsoNormal>Penjelasan: fungsi SUBSTITUTE menggantikan karakter a
+(argumen kedua) dengan string kosong (argumen
+ketiga).&nbsp;LEN(SUBSTITUTE(A1,&quot;a&quot;,&quot;&quot;)) sama dengan 8
+(panjang string tanpa karakter a).&nbsp;Jika kita mengurangi angka ini dari 9
+(jumlah total karakter di sel A1), kita mendapatkan jumlah kemunculan karakter
+a di sel A1.</p>
+
+<p class=MsoNormal>5. Rumus array di bawah ini menghitung berapa kali karakter
+tertentu (dalam contoh ini, karakter a) muncul dalam rentang sel.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=187 id="Picture 8"
+src="CountCharacters_files/image005.png"
+alt="Hitung Karakter Tertentu dalam Rentang Sel"></p>
+
+<p class=MsoNormal>Catatan: selesaikan&nbsp;<a
+href="https://www.excel-easy.com/functions/array-formulas.html">rumus array</a>&nbsp;dengan
+menekan CTRL + SHIFT + ENTER.&nbsp;Excel menambahkan kurung kurawal
+{}.&nbsp;Konstanta larik {1;1;2;1} digunakan sebagai argumen untuk fungsi SUM,
+memberikan hasil 5. Fungsi SUBSTITUTE peka huruf besar/kecil.&nbsp;A di Alaska
+tidak dihitung.</p>
+
+<p class=MsoNormal>6. Rumus array di bawah ini menghitung kemunculan huruf
+kecil dan huruf besar dari karakter tertentu (dalam contoh ini, karakter a).</p>
+
+<p class=MsoNormal><img border=0 width=604 height=187 id="Picture 7"
+src="CountCharacters_files/image006.png"
+alt="Jumlah Karakter Tidak Peka Huruf Besar-kecil"></p>
+
+<p class=MsoNormal>Penjelasan: Fungsi LOWER mengubah semua huruf menjadi huruf
+kecil terlebih dahulu.</p>
+
+</div>
+
+</body>
+
+</html>

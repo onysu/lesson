@@ -411,12 +411,12 @@
             <div class="accordion-body">
                 <p>Fungsi <a href="https://www.excel-easy.com/examples/vlookup.html">VLOOKUP</a> hanya melihat ke kanan. Untuk mencari nilai di kolom mana pun dan mengembalikan nilai yang sesuai ke kiri, cukup gunakan <strong>INDEX</strong> dan <strong>MATCH</strong>.</p>
                 <p class="tip"><img src="https://img.icons8.com/color/25/000000/export-excel.png" /> unduh file <a href="img/bahan/excel/left-lookup.xlsx">left-lookup</a> dan coba masukkan fungsi-fungsi ini.</p>
-                <p>1. Fungsi <strong>MATCH</strong> mengembalikan posisi nilai dalam rentang tertentu.
+                <p>1. Fungsi <strong>MATCH</strong> mengembalikan posisi nilai dalam Range tertentu.
                 </p>
                 <p><img class="img-fluid" src="img/img-excel/LeftLookup_files/image001.png" alt="Mencocokkan Fungsi di Excel"></p>
                 <p class="penjelasan"><strong>Penjelasan:</strong> 104 ditemukan pada posisi 4 di kisaran $G$4:$G$7.
                 </p>
-                <p>2. Gunakan hasil ini dan fungsi <strong>INDEX</strong> untuk mengembalikan nilai ke-4 dalam rentang $E$4:$E$7.</p>
+                <p>2. Gunakan hasil ini dan fungsi <strong>INDEX</strong> untuk mengembalikan nilai ke-4 dalam Range $E$4:$E$7.</p>
                 <p><img class="img-fluid" src="img/img-excel/LeftLookup_files/image002.png" alt="Fungsi Indeks di Excel"></p>
                 <p>3. Seret rumus di sel B2 ke bawah ke sel B11.</p>
                 <p><img class="img-fluid" src="img/img-excel/LeftLookup_files/image003.png" alt="Tarik Rumus ke Bawah"></p>
@@ -468,14 +468,62 @@
                     </p>
                 <!-- </blockquote> -->
                 <figcaption class="blockquote-footer fw-light">
-                <!--  -->
+                Referensi Sel | Referensi Range | Range Bernama | Referensi Lembar Kerja
                 </figcaption>
             </figure>
             </button>
         </h2>
         <div id="listIndirect" class="accordion-collapse collapse" aria-labelledby="Indirect" data-bs-parent="#PencarianReferensi">
             <div class="accordion-body">
-                <!--  -->
+                <p>Gunakan fungsi <strong>INDIRECT</strong> di Excel untuk mengonversi string teks menjadi referensi yang valid. Anda dapat menggunakan operator &amp; untuk membuat string teks.</p>
+                <p class="tip"><img src="https://img.icons8.com/color/25/000000/export-excel.png" /> unduh file <a href="img/bahan/excel/indirect.xlsx">indirect</a> dan coba masukkan fungsi-fungsi ini.</p>
+                <p class="fw-bold text-uppercase">
+                    Referensi Sel</p>
+                <p>Gunakan fungsi <strong>INDIRECT</strong> di Excel untuk mengonversi string teks menjadi referensi sel yang valid.</p>
+                <p>1. Sebagai contoh, perhatikan fungsi <strong>INDIRECT</strong> di bawah ini.</p>
+                <p><img class="img-fluid" src="img/img-excel/Indirect_files/image001.png" alt="Fungsi Tidak Langsung di Excel"></p>
+                <p class="penjelasan"><strong>Penjelasan:</strong> =INDIRECT(A1) direduksi menjadi =INDIRECT(&quot;D1&quot;). Fungsi INDIRECT mengubah string teks &quot;D1&quot; menjadi referensi sel yang valid. Dengan kata lain, =INDIRECT(&quot;D1&quot;) direduksi menjadi
+                    =D1.
+                </p>
+                <p>2. Fungsi <strong>INDIRECT</strong> sederhana di bawah ini menghasilkan hasil yang sama persis.</p>
+                <p><img class="img-fluid" src="img/img-excel/Indirect_files/image002.png" alt="Fungsi Tidak Langsung Sederhana"></p>
+                <p>3. Apakah kita benar-benar membutuhkan fungsi <strong>INDIRECT</strong>? Ya. Tanpa menggunakan fungsi <strong>INDIRECT</strong>, inilah hasilnya.</p>
+                <p><img class="img-fluid" src="img/img-excel/Indirect_files/image003.png" alt="Tanpa Fungsi Tidak Langsung"></p>
+                <p>4. Gunakan operator &amp; untuk menggabungkan string &quot;D&quot; dengan nilai di sel A1.</p>
+                <p><img class="img-fluid" src="img/img-excel/Indirect_files/image004.png" alt="Referensi Sel"></p>
+                <p class="penjelasan"><strong>Penjelasan:</strong> rumus di atas direduksi menjadi =INDIRECT(&quot;D1&quot;). Sekali lagi, =INDIRECT(&quot;D1&quot;) direduksi menjadi =D1.</p>
+                <p class="fw-bold text-uppercase">
+                    Referensi Range</p>
+                <p>Gunakan fungsi <strong>INDIRECT</strong> di Excel untuk mengonversi string teks menjadi referensi Range yang valid. Misalnya, gunakan <strong>SUM</strong> dan <strong>INDIRECT</strong>.
+                </p>
+                <p><img class="img-fluid" src="img/img-excel/Indirect_files/image005.png" alt="Jumlah dan Fungsi Tidak Langsung"></p>
+                <p class="penjelasan"><strong>Penjelasan:</strong> rumus di atas direduksi menjadi =SUM(INDIRECT(&quot;D3:D6&quot;)). Fungsi <strong>INDIRECT</strong> mengubah string teks &quot;D3:D6&quot; menjadi referensi Range yang valid. Dengan kata lain, =SUM(INDIRECT(&quot;D3:D6&quot;))
+                    dikurangi menjadi =SUM(D3:D6).</p>
+                <p class="fw-bold text-uppercase">
+                    Range bernama</p>
+                <p>Gunakan fungsi <strong>INDIRECT</strong> di Excel untuk mengonversi string teks menjadi Range bernama yang valid.</p>
+                <p>1. Misalnya, fungsi <strong>AVERAGE</strong> di bawah ini menggunakan Skor Range bernama.</p>
+                <p><img class="img-fluid" src="img/img-excel/Indirect_files/image006.png" alt="Range Bernama Sederhana"></p>
+                <p class="penjelasan"><strong>Penjelasan:</strong> <a href="https://www.excel-easy.com/examples/named-range.html">Range bernama</a> Skor mengacu pada Range D1:D3.</p>
+                <p>2. Namun, fungsi <strong>AVERAGE</strong> di bawah ini mengembalikan kesalahan.
+                </p>
+                <p><img class="img-fluid" src="img/img-excel/Indirect_files/image007.png" alt="#DIV/0!  Kesalahan"></p>
+                <p class="penjelasan"><strong>Penjelasan:</strong> =AVERAGE(&quot;Skor&quot;) mengembalikan kesalahan karena Excel tidak dapat menghitung rata-rata string teks!</p>
+                <p>3. Fungsi <strong>INDIRECT</strong> di bawah ini berhasil.</p>
+                <p><img class="img-fluid" src="img/img-excel/Indirect_files/image008.png" alt="Fungsi Rata-Rata dan Tidak Langsung"></p>
+                <p class="penjelasan"><strong>Penjelasan:</strong> =AVERAGE(INDIRECT(&quot;Scores&quot;)) dikurangi menjadi =AVERAGE(Scores).</p>
+                <p class="fw-bold text-uppercase">
+                    Referensi Lembar Kerja</p>
+                <p>Gunakan fungsi <strong>INDIRECT</strong> di Excel untuk membuat referensi lembar kerja dinamis.</p>
+                <p>1. Seperti inilah referensi lembar kerja sederhana.</p>
+                <p><img class="img-fluid" src="img/img-excel/Indirect_files/image009.png" alt="Referensi Lembar Kerja"></p>
+                <p>Catatan: sel A1 pada Sheet1 berisi nilai 10. Sel A1 pada Sheet2 berisi nilai 20. Sel A1 pada Sheet3 berisi nilai 30.</p>
+                <p>2. Pada lembar Ringkasan, masukkan fungsi <strong>INDIRECT</strong> yang ditunjukkan di bawah ini. Gunakan operator &amp; untuk menggabungkan nama sheet di sel A1 dengan &quot;!A1&quot;.</p>
+                <p><img class="img-fluid" src="img/img-excel/Indirect_files/image010.png" alt="Referensi Lembar Kerja Dinamis"></p>
+                <p class="penjelasan"><strong>Penjelasan:</strong> rumus di atas direduksi menjadi =INDIRECT(&quot;Sheet1!A1&quot;). Fungsi <strong>INDIRECT</strong> mengubah string teks &quot;Sheet1!A1&quot; menjadi referensi lembar kerja yang valid. Dengan kata lain, =INDIRECT(&quot;Sheet1!A1&quot;)
+                    direduksi menjadi =Sheet1!A1.</p>
+                <p>3. Jika nama sheet Anda mengandung spasi atau karakter khusus lainnya, lampirkan nama sheet dalam tanda kutip tunggal. Ubah fungsi <strong>INDIRECT</strong> seperti yang ditunjukkan di bawah ini.</p>
+                <p><img class="img-fluid" src="img/img-excel/Indirect_files/image011.png" alt="Tambahkan Tanda kutip Tunggal"></p>
             </div>
         </div>
     </div>

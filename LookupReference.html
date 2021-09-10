@@ -549,14 +549,14 @@
                 <p class="tip"><img src="https://img.icons8.com/color/25/000000/export-excel.png" /> unduh file <a href="img/bahan/excel/two-column-lookup.xlsx">Pencarian dua kolom</a> dan coba masukkan fungsi-fungsi ini.</p>
                 <p>1. Untuk menggabungkan string, gunakan operator &amp;.</p>
                 <p><img class="img-fluid" src="img/img-excel/TwoColumnLookup_files/image001.png" alt="Bergabung dengan String di Excel"></p>
-                <p>2. Fungsi <strong>MATCH</strong> mengembalikan posisi nilai dalam rentang tertentu. Masukkan fungsi <strong>MATCH</strong> yang ditunjukkan di bawah ini.</p>
+                <p>2. Fungsi <strong>MATCH</strong> mengembalikan posisi nilai dalam Range tertentu. Masukkan fungsi <strong>MATCH</strong> yang ditunjukkan di bawah ini.</p>
                 <p>3. Akhiri dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
                 <p><img class="img-fluid" src="img/img-excel/TwoColumnLookup_files/image002.png" alt="Mencocokkan Fungsi di Excel"></p>
                 <p class="note"><strong>Catatan:</strong> Bilah rumus menunjukkan bahwa ini adalah <a href="#">rumus array</a> dengan mengapitnya dalam kurung kurawal <strong>{}</strong>. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.</p>
-                <p class="penjelasan"><strong>Penjelasan:</strong> Rentang (konstanta array) A2:A8&amp;B2:B8 disimpan dalam memori Excel, bukan dalam rentang. Konstanta array terlihat sebagai berikut:</p>
+                <p class="penjelasan"><strong>Penjelasan:</strong> Range (konstanta array) A2:A8&amp;B2:B8 disimpan dalam memori Excel, bukan dalam Range. Konstanta array terlihat sebagai berikut:</p>
                 <p>{&quot;JamesSmith&quot;;&quot;JamesAnderson&quot;;&quot;JamesClark&quot;;&quot;JohnLewis&quot;;&quot;JohnWalker&quot;;&quot;MarkReed&quot;;&quot;RichardLopez&quot;}</p>
                 <p>Konstanta array ini digunakan sebagai argumen untuk fungsi <strong>MATCH</strong>, memberikan hasil 3 (JamesClark ditemukan di posisi 3).</p>
-                <p>4. Gunakan hasil ini dan fungsi INDEX untuk mengembalikan nilai ke-3 dalam rentang C2:C8.</p>
+                <p>4. Gunakan hasil ini dan fungsi INDEX untuk mengembalikan nilai ke-3 dalam Range C2:C8.</p>
                 <p><img class="img-fluid" src="img/img-excel/TwoColumnLookup_files/image003.png" alt="Fungsi Indeks di Excel"></p>
             </div>
         </div>
@@ -632,12 +632,12 @@
                 <p>Mari kita mulai dengan membandingkan dua kolom dan menampilkan duplikatnya.</p>
                 <p>1. Tampilkan duplikat di kolom pertama (nilai ini juga muncul di kolom kedua).</p>
                 <p><img class="img-fluid" src="img/img-excel/CompareTwoColumns_files/image002.png" alt="Bandingkan Dua Kolom di Excel"></p>
-                <p class="penjelasan"><strong>Penjelasan:</strong> fungsi <strong>MATCH</strong> di sel C1 mengembalikan angka 5 (huruf A ditemukan di posisi 5 dalam rentang B1:B7). Akibatnya, fungsi <strong>ISERROR</strong> mengembalikan <strong>FALSE</strong> dan fungsi
-                    <strong>IF</strong> mengembalikan nilai di sel A1. Fungsi <strong>MATCH</strong> di sel C4 mengembalikan kesalahan <strong>#N/A</strong> (tidak ada huruf D dalam rentang B1:B7). Akibatnya, fungsi <strong>ISERROR</strong> mengembalikan
+                <p class="penjelasan"><strong>Penjelasan:</strong> fungsi <strong>MATCH</strong> di sel C1 mengembalikan angka 5 (huruf A ditemukan di posisi 5 dalam Range B1:B7). Akibatnya, fungsi <strong>ISERROR</strong> mengembalikan <strong>FALSE</strong> dan fungsi
+                    <strong>IF</strong> mengembalikan nilai di sel A1. Fungsi <strong>MATCH</strong> di sel C4 mengembalikan kesalahan <strong>#N/A</strong> (tidak ada huruf D dalam Range B1:B7). Akibatnya, fungsi <strong>ISERROR</strong> mengembalikan
                     <strong>TRUE</strong> dan fungsi <strong>IF</strong> mengembalikan string kosong.</p>
                 <p>2. Anda juga dapat menampilkan duplikat di kolom kedua.</p>
                 <p><img class="img-fluid" src="img/img-excel/CompareTwoColumns_files/image003.png" alt="Duplikat di Kolom Kedua"></p>
-                <p class="note"><strong>Catatan:</strong> pada langkah 1, kami mencocokkan setiap nilai di kolom pertama dengan rentang di kolom kedua. Pada langkah 2, kami mencocokkan setiap nilai di kolom kedua dengan rentang di kolom pertama.</p>
+                <p class="note"><strong>Catatan:</strong> pada langkah 1, kami mencocokkan setiap nilai di kolom pertama dengan Range di kolom kedua. Pada langkah 2, kami mencocokkan setiap nilai di kolom kedua dengan Range di kolom pertama.</p>
                 <p class="fw-bold text-uppercase">
                     Nilai Unik di Setiap Kolom</p>
                 <p>Apakah Anda ingin membandingkan dua kolom dengan menampilkan nilai unik di setiap kolom? Cukup tukar 2 argumen terakhir dari fungsi <strong>IF</strong>.</p>
@@ -683,16 +683,16 @@
                 <p class="fw-bold text-uppercase">
                     Benar-benar cocok</p>
                 <p>Secara default, fungsi <strong>XLOOKUP</strong> di Excel 365 melakukan pencocokan persis.</p>
-                <p>1. Fungsi <strong>XLOOKUP</strong> di bawah ini mencari nilai 53 (argumen pertama) dalam rentang B3:B9 (argumen kedua).</p>
+                <p>1. Fungsi <strong>XLOOKUP</strong> di bawah ini mencari nilai 53 (argumen pertama) dalam Range B3:B9 (argumen kedua).</p>
                 <p><img class="img-fluid" src="img/img-excel/Xlookup_files/image001.png" alt="Argumen XLOOKUP"></p>
-                <p>2. Selanjutnya, itu hanya mengembalikan nilai di baris yang sama dari rentang E3:E9 (argumen ketiga).</p>
+                <p>2. Selanjutnya, itu hanya mengembalikan nilai di baris yang sama dari Range E3:E9 (argumen ketiga).</p>
                 <p><img class="img-fluid" src="img/img-excel/Xlookup_files/image002.png" alt="Fungsi XLOOKUP di Excel"></p>
                 <p>3. Ini contoh lain. Alih-alih mengembalikan gaji, fungsi <strong>XLOOKUP</strong> di bawah ini mengembalikan nama belakang (ganti E3:E9 dengan D3:D9) dari ID 79.</p>
                 <p><img class="img-fluid" src="img/img-excel/Xlookup_files/image003.png" alt="Benar-benar cocok"></p>
                 <p class="fw-bold text-uppercase">
                     Tidak ditemukan</p>
                 <p>Jika fungsi <strong>XLOOKUP</strong> tidak dapat menemukan kecocokan, ia mengembalikan kesalahan #<strong>N/A</strong>.</p>
-                <p>1. Misalnya, fungsi <strong>XLOOKUP</strong> di bawah ini tidak dapat menemukan nilai 28 dalam rentang B3:B9.</p>
+                <p>1. Misalnya, fungsi <strong>XLOOKUP</strong> di bawah ini tidak dapat menemukan nilai 28 dalam Range B3:B9.</p>
                 <p><img class="img-fluid" src="img/img-excel/Xlookup_files/image004.png" alt="#T/A Kesalahan"></p>
                 <p>2. Gunakan argumen keempat dari fungsi <strong>XLOOKUP</strong> untuk mengganti kesalahan <strong>#N/A</strong> dengan pesan ramah.</p>
                 <p><img class="img-fluid" src="img/img-excel/Xlookup_files/image005.png" alt="Tidak ditemukan"></p>
@@ -700,11 +700,11 @@
                     Perkiraan Pertandingan</p>
                 <p>Mari kita lihat contoh fungsi <strong>XLOOKUP</strong> dalam mode pencocokan perkiraan.
                 </p>
-                <p>1. Fungsi <strong>XLOOKUP</strong> di bawah ini mencari nilai 85 (argumen pertama) dalam rentang B3:B7 (argumen kedua). Hanya ada satu masalah. Tidak ada nilai 85 dalam kisaran ini.</p>
+                <p>1. Fungsi <strong>XLOOKUP</strong> di bawah ini mencari nilai 85 (argumen pertama) dalam Range B3:B7 (argumen kedua). Hanya ada satu masalah. Tidak ada nilai 85 dalam kisaran ini.</p>
                 <p><img class="img-fluid" src="img/img-excel/Xlookup_files/image006.png" alt="Fungsi XLOOKUP dalam Approximate Match Mode"></p>
                 <p>2. Untungnya, nilai -1 (argumen kelima) memberitahu fungsi <strong>XLOOKUP</strong> untuk menemukan nilai berikutnya yang lebih kecil. Dalam contoh ini, nilai 80.</p>
                 <p><img class="img-fluid" src="img/img-excel/Xlookup_files/image007.png" alt="Nilai Lebih Kecil Berikutnya"></p>
-                <p>3. Selanjutnya, itu hanya mengembalikan nilai di baris yang sama dari rentang C3:C7 (argumen ketiga).</p>
+                <p>3. Selanjutnya, itu hanya mengembalikan nilai di baris yang sama dari Range C3:C7 (argumen ketiga).</p>
                 <p><img class="img-fluid" src="img/img-excel/Xlookup_files/image008.png" alt="Perkiraan Pertandingan di Excel"></p>
                 <p>Catatan: gunakan 1 alih-alih -1 untuk argumen kelima untuk menemukan nilai berikutnya yang lebih besar. Dalam contoh ini, nilai 90. Fungsi <strong>XLOOKUP</strong> juga bekerja dengan data yang tidak disortir. Dalam contoh ini, tidak perlu
                     mengurutkan skor dalam urutan menaik.</p>

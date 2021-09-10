@@ -432,18 +432,28 @@
             <figure>
                 <!-- <blockquote class="blockquote"> -->
                     <p>
-                    Locate Maximum Value
+                    Cari Nilai Maksimum <span class="fw-light">(Locate Maximum Value)</span>
                     </p>
                 <!-- </blockquote> -->
                 <figcaption class="blockquote-footer fw-light">
-                <!--  -->
+                Menemukan alamat sel dari nilai maksimum dalam kolom
                 </figcaption>
             </figure>
             </button>
         </h2>
         <div id="listLocateMaximumValue" class="accordion-collapse collapse" aria-labelledby="LocateMaximumValue" data-bs-parent="#PencarianReferensi">
             <div class="accordion-body">
-                <!--  -->
+                <p>Contoh ini mengajarkan Anda cara menemukan alamat sel dari nilai maksimum dalam kolom.</p>
+                <p class="tip"><img src="https://img.icons8.com/color/25/000000/export-excel.png" /> unduh file <a href="img/bahan/excel/locate-maximum-value.xlsx">locate-maximum-value</a> dan coba masukkan fungsi-fungsi ini.</p>
+                <p>1. Pertama, kita menggunakan fungsi <strong>MAX</strong> untuk mencari nilai maksimum di kolom A.</p>
+                <p><img class="img-fluid" src="img/img-excel/LocateMaximumValue_files/image001.png" alt="Fungsi Maks di Excel"></p>
+                <p>2. Kedua, kita menggunakan fungsi <strong>MATCH</strong> untuk mencari nomor baris dari nilai maksimum.</p>
+                <p><img class="img-fluid" src="img/img-excel/LocateMaximumValue_files/image002.png" alt="Mencocokkan Fungsi di Excel"></p>
+                <p class="penjelasan"><strong>Penjelasan:</strong> fungsi <strong>MATCH</strong> direduksi menjadi =<strong>MATCH</strong>(12,A:A,0), 7. Fungsi <strong>MATCH</strong> mengembalikan posisi nilai maksimum di kolom A. Setel argumen ketiga ke 0 untuk mengembalikan
+                    kecocokan persis.</p>
+                <p>3. Terakhir, kita menggunakan fungsi <strong>ADDRESS</strong> untuk mengembalikan alamat sel.</p>
+                <p><img class="img-fluid" src="img/img-excel/LocateMaximumValue_files/image003.png" alt="Fungsi Alamat di Excel"></p>
+                <p class="penjelasan"><strong>Penjelasan:</strong> fungsi <strong>ADDRESS</strong> direduksi menjadi =<strong>ADDRESS</strong>(7,1), $A$7. Argumen pertama menentukan nomor baris. Argumen kedua menentukan nomor kolom.</p>
             </div>
         </div>
     </div>

@@ -517,7 +517,7 @@
                 <p>Gunakan fungsi <strong>INDIRECT</strong> di Excel untuk membuat referensi lembar kerja dinamis.</p>
                 <p>1. Seperti inilah referensi lembar kerja sederhana.</p>
                 <p><img class="img-fluid" src="img/img-excel/Indirect_files/image009.png" alt="Referensi Lembar Kerja"></p>
-                <p>Catatan: sel A1 pada Sheet1 berisi nilai 10. Sel A1 pada Sheet2 berisi nilai 20. Sel A1 pada Sheet3 berisi nilai 30.</p>
+                <p class="note"><strong>Catatan:</strong> sel A1 pada Sheet1 berisi nilai 10. Sel A1 pada Sheet2 berisi nilai 20. Sel A1 pada Sheet3 berisi nilai 30.</p>
                 <p>2. Pada lembar Ringkasan, masukkan fungsi <strong>INDIRECT</strong> yang ditunjukkan di bawah ini. Gunakan operator &amp; untuk menggabungkan nama sheet di sel A1 dengan &quot;!A1&quot;.</p>
                 <p><img class="img-fluid" src="img/img-excel/Indirect_files/image010.png" alt="Referensi Lembar Kerja Dinamis"></p>
                 <p class="penjelasan"><strong>Penjelasan:</strong> rumus di atas direduksi menjadi =INDIRECT(&quot;Sheet1!A1&quot;). Fungsi <strong>INDIRECT</strong> mengubah string teks &quot;Sheet1!A1&quot; menjadi referensi lembar kerja yang valid. Dengan kata lain, =INDIRECT(&quot;Sheet1!A1&quot;)
@@ -553,7 +553,7 @@
                 <p>3. Akhiri dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
                 <p><img class="img-fluid" src="img/img-excel/TwoColumnLookup_files/image002.png" alt="Mencocokkan Fungsi di Excel"></p>
                 <p class="note"><strong>Catatan:</strong> Bilah rumus menunjukkan bahwa ini adalah <a href="#">rumus array</a> dengan mengapitnya dalam kurung kurawal <strong>{}</strong>. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.</p>
-                <p>Penjelasan: Rentang (konstanta array) A2:A8&amp;B2:B8 disimpan dalam memori Excel, bukan dalam rentang. Konstanta array terlihat sebagai berikut:</p>
+                <p class="penjelasan"><strong>Penjelasan:</strong> Rentang (konstanta array) A2:A8&amp;B2:B8 disimpan dalam memori Excel, bukan dalam rentang. Konstanta array terlihat sebagai berikut:</p>
                 <p>{&quot;JamesSmith&quot;;&quot;JamesAnderson&quot;;&quot;JamesClark&quot;;&quot;JohnLewis&quot;;&quot;JohnWalker&quot;;&quot;MarkReed&quot;;&quot;RichardLopez&quot;}</p>
                 <p>Konstanta array ini digunakan sebagai argumen untuk fungsi <strong>MATCH</strong>, memberikan hasil 3 (JamesClark ditemukan di posisi 3).</p>
                 <p>4. Gunakan hasil ini dan fungsi INDEX untuk mengembalikan nilai ke-3 dalam rentang C2:C8.</p>
@@ -622,7 +622,7 @@
         </h2>
         <div id="listCompareTwoColumns" class="accordion-collapse collapse" aria-labelledby="CompareTwoColumns" data-bs-parent="#PencarianReferensi">
             <div class="accordion-body">
-                <p>Untuk membandingkan dua kolom, gunakan IF, ISERROR dan MATCH di Excel. Anda dapat menampilkan duplikat atau nilai unik.</p>
+                <p>Untuk membandingkan dua kolom, gunakan <strong>IF</strong>, <strong>ISERROR</strong> dan <strong>MATCH</strong> di Excel. Anda dapat menampilkan duplikat atau nilai unik.</p>
                 <p class="tip"><img src="https://img.icons8.com/color/25/000000/export-excel.png" /> unduh file <a href="img/bahan/excel/compare-two-columns.xlsx">Bandingkan Dua Kolom</a> dan coba masukkan fungsi-fungsi ini.</p>
                 <p>Sebelum kita mulai: apakah Anda ingin membandingkan dua kolom dengan menyorot nilai unik di setiap kolom? Kunjungi halaman kami tentang
                     <a href="https://www.excel-easy.com/examples/compare-two-lists.html">membandingkan dua daftar</a>.</p>
@@ -632,27 +632,28 @@
                 <p>Mari kita mulai dengan membandingkan dua kolom dan menampilkan duplikatnya.</p>
                 <p>1. Tampilkan duplikat di kolom pertama (nilai ini juga muncul di kolom kedua).</p>
                 <p><img class="img-fluid" src="img/img-excel/CompareTwoColumns_files/image002.png" alt="Bandingkan Dua Kolom di Excel"></p>
-                <p>Penjelasan: fungsi MATCH di sel C1 mengembalikan angka 5 (huruf A ditemukan di posisi 5 dalam rentang B1:B7). Akibatnya, fungsi ISERROR mengembalikan FALSE dan fungsi IF mengembalikan nilai di sel A1. Fungsi MATCH di sel C4 mengembalikan
-                    kesalahan #N/A (tidak ada huruf D dalam rentang B1:B7). Akibatnya, fungsi ISERROR mengembalikan TRUE dan fungsi IF mengembalikan string kosong.</p>
+                <p class="penjelasan"><strong>Penjelasan:</strong> fungsi <strong>MATCH</strong> di sel C1 mengembalikan angka 5 (huruf A ditemukan di posisi 5 dalam rentang B1:B7). Akibatnya, fungsi <strong>ISERROR</strong> mengembalikan <strong>FALSE</strong> dan fungsi
+                    <strong>IF</strong> mengembalikan nilai di sel A1. Fungsi <strong>MATCH</strong> di sel C4 mengembalikan kesalahan <strong>#N/A</strong> (tidak ada huruf D dalam rentang B1:B7). Akibatnya, fungsi <strong>ISERROR</strong> mengembalikan
+                    <strong>TRUE</strong> dan fungsi <strong>IF</strong> mengembalikan string kosong.</p>
                 <p>2. Anda juga dapat menampilkan duplikat di kolom kedua.</p>
                 <p><img class="img-fluid" src="img/img-excel/CompareTwoColumns_files/image003.png" alt="Duplikat di Kolom Kedua"></p>
-                <p>Catatan: pada langkah 1, kami mencocokkan setiap nilai di kolom pertama dengan rentang di kolom kedua. Pada langkah 2, kami mencocokkan setiap nilai di kolom kedua dengan rentang di kolom pertama.</p>
+                <p class="note"><strong>Catatan:</strong> pada langkah 1, kami mencocokkan setiap nilai di kolom pertama dengan rentang di kolom kedua. Pada langkah 2, kami mencocokkan setiap nilai di kolom kedua dengan rentang di kolom pertama.</p>
                 <p class="fw-bold text-uppercase">
                     Nilai Unik di Setiap Kolom</p>
-                <p>Apakah Anda ingin membandingkan dua kolom dengan menampilkan nilai unik di setiap kolom? Cukup tukar 2 argumen terakhir dari fungsi IF.</p>
+                <p>Apakah Anda ingin membandingkan dua kolom dengan menampilkan nilai unik di setiap kolom? Cukup tukar 2 argumen terakhir dari fungsi <strong>IF</strong>.</p>
                 <p>1. Tampilkan nilai unik di kolom pertama (nilai ini tidak muncul di kolom kedua).</p>
                 <p><img class="img-fluid" src="img/img-excel/CompareTwoColumns_files/image004.png" alt="Nilai Unik di Kolom Pertama"></p>
-                <p>Catatan: lihat gambar kedua di halaman ini untuk melihat bahwa kita menukar 2 argumen terakhir dari fungsi IF.</p>
+                <p class="note"><strong>Catatan:</strong> lihat gambar kedua di halaman ini untuk melihat bahwa kita menukar 2 argumen terakhir dari fungsi <strong>IF</strong>.</p>
                 <p>2. Anda juga dapat menampilkan nilai unik di kolom kedua.</p>
                 <p><img class="img-fluid" src="img/img-excel/CompareTwoColumns_files/image005.png" alt="Nilai Unik di Kolom Kedua"></p>
-                <p>Catatan: lihat gambar ketiga di halaman ini untuk melihat bahwa kita menukar 2 argumen terakhir dari fungsi IF.</p>
+                <p class="note"><strong>Catatan:</strong> lihat gambar ketiga di halaman ini untuk melihat bahwa kita menukar 2 argumen terakhir dari fungsi <strong>IF</strong>.</p>
                 <p class="fw-bold text-uppercase">
                     Perbandingan Baris demi Baris
                 </p>
-                <p>Untuk perbandingan baris demi baris dengan cepat, cukup gunakan fungsi IF di Excel.</p>
-                <p>1. Fungsi IF di sel C1 di bawah ini mengembalikan Match karena nilai di sel A1 sama dengan nilai di sel B1.</p>
+                <p>Untuk perbandingan baris demi baris dengan cepat, cukup gunakan fungsi <strong>IF</strong> di Excel.</p>
+                <p>1. Fungsi <strong>IF</strong> di sel C1 di bawah ini mengembalikan Match karena nilai di sel A1 sama dengan nilai di sel B1.</p>
                 <p><img class="img-fluid" src="img/img-excel/CompareTwoColumns_files/image006.png" alt="Perbandingan Baris demi Baris"></p>
-                <p>2. Untuk melakukan perbandingan peka huruf besar/kecil, tambahkan fungsi EXACT.</p>
+                <p>2. Untuk melakukan perbandingan peka huruf besar/kecil, tambahkan fungsi <strong>EXACT</strong>.</p>
                 <p><img class="img-fluid" src="img/img-excel/CompareTwoColumns_files/image007.png" alt="Perbandingan peka huruf besar-kecil"></p>
                 <p>3. Apakah Anda ingin membandingkan dua kolom dengan menyorot perbedaan di setiap baris? Kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/row-differences.html">Perbedaan Baris</a> .</p>
                 <p><img class="img-fluid" src="img/img-excel/CompareTwoColumns_files/image008.png" alt="Sorot Perbedaan Baris"></p>

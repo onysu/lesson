@@ -505,7 +505,8 @@
                 <p><img class="img-fluid" src="img/img-excel/Sumproduct_files/image005.png" alt="Fungsi Hitung"></p>
                 <p>1b. Fungsi <strong>SUMPRODUCT</strong> di bawah ini menghasilkan hasil yang sama persis.</p>
                 <p><img class="img-fluid" src="img/img-excel/Sumproduct_files/image006.png" alt="Negatif Ganda"></p>
-                <p class="penjelasan"><strong>Penjelasan:</strong> --(A1:A7=&quot;star&quot;) direduksi menjadi konstanta array berikut: <br> --{TRUE;FALSE;FALSE;FALSE;FALSE;TRUE;FALSE} <br> Negatif ganda -- memaksa Boolean ini menjadi 1 dan 0 (TRUE=1, FALSE=0). Hasil: <br>                    {1;0;0;0;0;1;0} <br> Konstanta array ini digunakan sebagai argumen untuk fungsi <strong>SUMPRODUCT</strong>, memberikan hasil 2.</p>
+                <p class="penjelasan"><strong>Penjelasan:</strong> <br> --(A1:A7=&quot;star&quot;) direduksi menjadi konstanta array berikut: <br> --{TRUE;FALSE;FALSE;FALSE;FALSE;TRUE;FALSE} <br> Negatif ganda -- memaksa Boolean ini menjadi 1 dan 0 (TRUE=1, FALSE=0). Hasil:
+                    <br> {1;0;0;0;0;1;0} <br> Konstanta array ini digunakan sebagai argumen untuk fungsi <strong>SUMPRODUCT</strong>, memberikan hasil 2.</p>
                 <p>1c. Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang berisi persis bintang + 1 karakter. Tanda tanya (?) cocok dengan tepat satu karakter.</p>
                 <p><img class="img-fluid" src="img/img-excel/Sumproduct_files/image007.png" alt="Karakter Wildcard"></p>
                 <p>1d. Fungsi <strong>SUMPRODUCT</strong> tidak sempurna! Anda tidak dapat menggunakan karakter <strong>wildcard (? dan *)</strong> saat Anda menggunakan fungsi <strong>SUMPRODUCT</strong>.
@@ -522,7 +523,7 @@
                 <p><img class="img-fluid" src="img/img-excel/Sumproduct_files/image011.png" alt="Jumlah menurut Tahun"></p>
                 <p>3b. Fungsi <strong>SUMPRODUCT</strong> di bawah ini menghasilkan hasil yang sama persis.</p>
                 <p><img class="img-fluid" src="img/img-excel/Sumproduct_files/image012.png" alt="Operator Perkalian"></p>
-                <p class="penjelasan"><strong>Penjelasan:</strong> (TAHUN(A1:A5)=2018)*B1:B5 dikurangi menjadi: <br> ({2018;2017;2018;2017;2017}=2018)*{10;1;7;20;3} dan ini dikurangi menjadi: <br> {BENAR; SALAH; BENAR; SALAH; SALAH}*{10;1;7;20;3} <br> Kita tidak memerlukan
+                <p class="penjelasan"><strong>Penjelasan:</strong> <br> (TAHUN(A1:A5)=2018)*B1:B5 dikurangi menjadi: <br> ({2018;2017;2018;2017;2017}=2018)*{10;1;7;20;3} dan ini dikurangi menjadi: <br> {BENAR; SALAH; BENAR; SALAH; SALAH}*{10;1;7;20;3} <br> Kita tidak memerlukan
                     negatif ganda (lihat contoh 1b) karena operator perkalian * secara otomatis memaksa Boolean menjadi 1 dan 0 (TRUE=1, FALSE=0). Hasil: <br> {10;0;7;0;0} <br> Konstanta array ini digunakan sebagai argumen untuk fungsi <strong>SUMPRODUCT</strong>,
                     memberikan hasil 17.</p>
             </div>

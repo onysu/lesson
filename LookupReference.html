@@ -398,18 +398,30 @@
             <figure>
                 <!-- <blockquote class="blockquote"> -->
                     <p>
-                    Left Lookup
+                    Pencarian Kiri <span class="fw-light">(Left Lookup)</span>
                     </p>
                 <!-- </blockquote> -->
                 <figcaption class="blockquote-footer fw-light">
-                <!--  -->
+                Untuk mencari nilai di kolom dan mengembalikan nilai yang sesuai ke kiri.
                 </figcaption>
             </figure>
             </button>
         </h2>
         <div id="listLeftLookup" class="accordion-collapse collapse" aria-labelledby="LeftLookup" data-bs-parent="#PencarianReferensi">
             <div class="accordion-body">
-                <!--  -->
+                <p>Fungsi <a href="https://www.excel-easy.com/examples/vlookup.html">VLOOKUP</a> hanya melihat ke kanan. Untuk mencari nilai di kolom mana pun dan mengembalikan nilai yang sesuai ke kiri, cukup gunakan <strong>INDEX</strong> dan <strong>MATCH</strong>.</p>
+                <p class="tip"><img src="https://img.icons8.com/color/25/000000/export-excel.png" /> unduh file <a href="img/bahan/excel/left-lookup.xlsx">left-lookup</a> dan coba masukkan fungsi-fungsi ini.</p>
+                <p>1. Fungsi <strong>MATCH</strong> mengembalikan posisi nilai dalam rentang tertentu.
+                </p>
+                <p><img class="img-fluid" src="img/img-excel/LeftLookup_files/image001.png" alt="Mencocokkan Fungsi di Excel"></p>
+                <p class="penjelasan"><strong>Penjelasan:</strong> 104 ditemukan pada posisi 4 di kisaran $G$4:$G$7.
+                </p>
+                <p>2. Gunakan hasil ini dan fungsi <strong>INDEX</strong> untuk mengembalikan nilai ke-4 dalam rentang $E$4:$E$7.</p>
+                <p><img class="img-fluid" src="img/img-excel/LeftLookup_files/image002.png" alt="Fungsi Indeks di Excel"></p>
+                <p>3. Seret rumus di sel B2 ke bawah ke sel B11.</p>
+                <p><img class="img-fluid" src="img/img-excel/LeftLookup_files/image003.png" alt="Tarik Rumus ke Bawah"></p>
+                <p class="note"><strong>Catatan:</strong> ketika kita menyeret rumus ini ke bawah, <a href="https://www.excel-easy.com/examples/absolute-reference.html">referensi absolut</a> ($E$4:$E$7 dan $G$4:$G$7) tetap sama, sedangkan referensi relatif (A2) berubah
+                    menjadi A3, A4, A5, dll.</p>
             </div>
         </div>
     </div>

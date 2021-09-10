@@ -398,6 +398,7 @@
         <div id="listIfCellisBlank" class="accordion-collapse collapse" aria-labelledby="IfCellisBlank" data-bs-parent="#Logical">
             <div class="accordion-body">
                 <p>Gunakan fungsi <strong>IF</strong> dan string kosong di Excel untuk memeriksa apakah sel kosong. Gunakan <strong>IF</strong> dan <strong>ISBLANK</strong> untuk menghasilkan hasil yang sama persis.</p>
+                <p class="tip"><img src="https://img.icons8.com/color/25/000000/export-excel.png" /> unduh file <a href="img/bahan/excel/if-cell-is-blank.xlsx">jika sel kosong</a> dan coba masukkan fungsi-fungsi ini.</p>
                 <p class="fw-bold text-uppercase">
                     Jika Kosong <span class="fw-light text-capitalize">(If Blank)</span></p>
                 <p>Ingat, <a href="#">fungsi IF</a> di Excel memeriksa apakah suatu kondisi terpenuhi, dan mengembalikan satu nilai jika benar dan nilai lain jika salah.</p>
@@ -450,7 +451,36 @@
         </h2>
         <div id="listAbsoluteValue" class="accordion-collapse collapse" aria-labelledby="AbsoluteValue" data-bs-parent="#Logical">
             <div class="accordion-body">
-                <!--  -->
+                <p>Fungsi <strong>ABS</strong> di Excel mengembalikan nilai absolut dari sebuah angka. Dengan kata lain: fungsi <strong>ABS</strong> menghilangkan tanda minus <strong>(-)</strong> dari angka negatif, menjadikannya positif.</p>
+                <p>1. Misalnya, fungsi <strong>ABS</strong> di sel B1 di bawah ini mengembalikan nilai absolut dari angka negatif.</p>
+                <p><img class="img-fluid" src="img/img-excel/AbsoluteValue_files/image001.png" alt="Nilai Absolut di Excel"></p>
+                <p>Fungsi <strong>ABS</strong> tidak berpengaruh pada angka 0 (nol) atau positif.
+                </p>
+                <p>2. Nilai mutlak 0 adalah 0.</p>
+                <p><img class="img-fluid" src="img/img-excel/AbsoluteValue_files/image002.png" alt="Fungsi ABS"></p>
+                <p>3. Nilai mutlak suatu bilangan positif adalah bilangan positif yang sama.</p>
+                <p><img class="img-fluid" src="img/img-excel/AbsoluteValue_files/image003.png" alt="Nomor positif"></p>
+                <p>Kapan kita membutuhkan fungsi <strong>ABS</strong> di Excel?</p>
+                <p>4. Misalnya, menghitung kesalahan ramalan (selisih antara nilai aktual dan perkiraan) untuk setiap bulan.</p>
+                <p><img class="img-fluid" src="img/img-excel/AbsoluteValue_files/image004.png" alt="Kesalahan Prakiraan"></p>
+                <p class="note"><strong>Catatan :</strong> jika kita melihat jumlah kesalahan ini (nol), model perkiraan ini tampaknya sempurna, tetapi tidak!</p>
+                <p>5. Cukup gunakan fungsi <strong>ABS</strong> untuk menghitung kesalahan absolut setiap bulannya.</p>
+                <p><img class="img-fluid" src="img/img-excel/AbsoluteValue_files/image005.png" alt="Kesalahan mutlak"></p>
+                <p>6. Jika Anda tidak ingin menampilkan kesalahan perkiraan pada lembar, gunakan <strong>SUMPRODUCT</strong> dan <strong>ABS</strong>.</p>
+                <p><img class="img-fluid" src="img/img-excel/AbsoluteValue_files/image006.png" alt="SUMPRODUCT dan ABS"></p>
+                <p class="note"><strong>Catatan :</strong> kunjungi halaman kami tentang <a href="#">fungsi SUMPRODUCT</a> untuk mempelajari lebih lanjut tentang fungsi ini.</p>
+                <p>Mari kita lihat satu lagi contoh keren.</p>
+                <p>7. Gunakan fungsi <strong>ABS</strong> untuk menghitung nilai absolut dari setiap perbedaan.</p>
+                <p><img class="img-fluid" src="img/img-excel/AbsoluteValue_files/image007.png" alt="Nilai Mutlak Setiap Selisih"></p>
+                <p>8. Tambahkan fungsi <strong>IF</strong> untuk menguji apakah nilainya berada dalam toleransi.</p>
+                <p><img class="img-fluid" src="img/img-excel/AbsoluteValue_files/image008.png" alt="JIKA dan ABS"></p>
+                <p class="penjelasan"><strong>Penjelasan :</strong> jika selisihnya kurang dari atau sama dengan 3, fungsi <strong>IF</strong> mengembalikan 1, selain itu mengembalikan 0.</p>
+                <p>9. Tambahkan ikon.</p>
+                <p><img class="img-fluid" src="img/img-excel/AbsoluteValue_files/image009.png" alt=Ikon></p>
+                <p>10. Ubah toleransi.</p>
+                <p><img class="img-fluid" src="img/img-excel/AbsoluteValue_files/image010.png" alt="Ubah Toleransi"></p>
+                <p class="note"><strong>Catatan :</strong> kunjungi halaman kami tentang <a href="#">kumpulan ikon</a> untuk mempelajari lebih lanjut tentang topik ini. Untuk melihat aturan pemformatan ini, unduh file Excel. Selanjutnya, pada tab Home, di grup Styles,
+                    klik Conditional Formatting, Manage Rules.</p>
             </div>
         </div>
     </div>

@@ -1,0 +1,158 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-ID link="#0563C1" vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal>Jika Anda memiliki Excel 365, gunakan XLOOKUP
+alih-alih&nbsp;<a href="https://www.excel-easy.com/examples/vlookup.html">VLOOKUP</a>&nbsp;.&nbsp;Fungsi&nbsp;XLOOKUP&nbsp;lebih
+mudah digunakan dan memiliki beberapa keuntungan tambahan.</p>
+
+<p class=MsoNormal><a name=exact-match></a>Benar-benar cocok</p>
+
+<p class=MsoNormal>Secara default, fungsi XLOOKUP di&nbsp;Excel 365&nbsp;melakukan
+pencocokan persis.</p>
+
+<p class=MsoNormal>1. Fungsi XLOOKUP di bawah ini mencari nilai 53 (argumen
+pertama) dalam rentang B3:B9 (argumen kedua).</p>
+
+<p class=MsoNormal><img border=0 width=604 height=267 id="Picture 22"
+src="Xlookup_files/image001.png" alt="Argumen XLOOKUP"></p>
+
+<p class=MsoNormal>2. Selanjutnya, itu hanya mengembalikan nilai di baris yang
+sama dari rentang E3:E9 (argumen ketiga).</p>
+
+<p class=MsoNormal><img border=0 width=604 height=267 id="Picture 21"
+src="Xlookup_files/image002.png" alt="Fungsi XLOOKUP di Excel"></p>
+
+<p class=MsoNormal>3. Ini contoh lain.&nbsp;Alih-alih mengembalikan gaji,
+fungsi XLOOKUP di bawah ini mengembalikan nama belakang (ganti E3:E9 dengan
+D3:D9) dari ID 79.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=267 id="Picture 20"
+src="Xlookup_files/image003.png" alt="Benar-benar cocok"></p>
+
+<p class=MsoNormal><a name=not-found></a>Tidak ditemukan</p>
+
+<p class=MsoNormal>Jika fungsi XLOOKUP tidak dapat menemukan kecocokan, ia
+mengembalikan kesalahan #N/A.</p>
+
+<p class=MsoNormal>1. Misalnya, fungsi XLOOKUP di bawah ini tidak dapat
+menemukan nilai 28 dalam rentang B3:B9.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=267 id="Picture 19"
+src="Xlookup_files/image004.png" alt="#T/A Kesalahan"></p>
+
+<p class=MsoNormal>2. Gunakan argumen keempat dari fungsi XLOOKUP untuk
+mengganti kesalahan #N/A dengan pesan ramah.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=267 id="Picture 18"
+src="Xlookup_files/image005.png" alt="Tidak ditemukan"></p>
+
+<p class=MsoNormal><a name=approximate-match></a>Perkiraan Pertandingan</p>
+
+<p class=MsoNormal>Mari kita lihat contoh fungsi XLOOKUP dalam mode pencocokan
+perkiraan.</p>
+
+<p class=MsoNormal>1. Fungsi XLOOKUP di bawah ini mencari nilai 85 (argumen
+pertama) dalam rentang B3:B7 (argumen kedua).&nbsp;Hanya ada satu
+masalah.&nbsp;Tidak ada nilai 85 dalam kisaran ini.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=227 id="Picture 17"
+src="Xlookup_files/image006.png"
+alt="Fungsi XLOOKUP dalam Approximate Match Mode"></p>
+
+<p class=MsoNormal>2. Untungnya, nilai -1 (argumen kelima) memberitahu fungsi
+XLOOKUP untuk menemukan nilai berikutnya yang lebih kecil.&nbsp;Dalam contoh
+ini, nilai 80.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=227 id="Picture 16"
+src="Xlookup_files/image007.png" alt="Nilai Lebih Kecil Berikutnya"></p>
+
+<p class=MsoNormal>3. Selanjutnya, itu hanya mengembalikan nilai di baris yang
+sama dari rentang C3:C7 (argumen ketiga).</p>
+
+<p class=MsoNormal><img border=0 width=604 height=227 id="Picture 15"
+src="Xlookup_files/image008.png" alt="Perkiraan Pertandingan di Excel"></p>
+
+<p class=MsoNormal>Catatan: gunakan 1 alih-alih -1 untuk argumen kelima untuk
+menemukan nilai berikutnya yang lebih besar.&nbsp;Dalam contoh ini, nilai 90.
+Fungsi XLOOKUP juga bekerja dengan data yang tidak disortir.&nbsp;Dalam contoh
+ini, tidak perlu mengurutkan skor dalam urutan menaik.</p>
+
+<p class=MsoNormal><a name=left-lookup></a>Pencarian Kiri</p>
+
+<p class=MsoNormal>Alih-alih menggunakan INDEX dan MATCH di Excel untuk melakukan&nbsp;<a
+href="https://www.excel-easy.com/examples/left-lookup.html">pencarian kiri</a>&nbsp;,
+cukup gunakan fungsi XLOOKUP.&nbsp;Misalnya, lihat fungsi XLOOKUP di bawah ini.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=267 id="Picture 14"
+src="Xlookup_files/image009.png" alt="Pencarian Kiri"></p>
+
+<p class=MsoNormal>Penjelasan: fungsi XLOOKUP mencari nama belakang dan
+mengembalikan ID.</p>
+
+<p class=MsoNormal><a name=multiple-values></a>Beberapa Nilai</p>
+
+<p class=MsoNormal>Fungsi XLOOKUP di Excel 365 dapat mengembalikan beberapa
+nilai.</p>
+
+<p class=MsoNormal>1. Pertama, fungsi XLOOKUP di bawah ini mencari ID dan
+mengembalikan nama depan (tidak ada yang baru).</p>
+
+<p class=MsoNormal><img border=0 width=604 height=327 id="Picture 13"
+src="Xlookup_files/image010.png" alt="Fungsi dasar XLOOKUP"></p>
+
+<p class=MsoNormal>2. Ganti C6:C12 dengan C6:E12 untuk mengembalikan nama
+depan, nama belakang, dan gaji.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=327 id="Picture 12"
+src="Xlookup_files/image011.png"
+alt="XLOOKUP Dapat Mengembalikan Beberapa Nilai"></p>
+
+<p class=MsoNormal>Catatan:&nbsp;fungsi&nbsp;XLOOKUP&nbsp;, dimasukkan ke dalam
+sel C3, mengisi beberapa sel.&nbsp;Wow!&nbsp;Perilaku ini di Excel 365 disebut
+menumpahkan.</p>
+
+</div>
+
+</body>
+
+</html>

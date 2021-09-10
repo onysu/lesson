@@ -44,7 +44,7 @@
     <link rel="stylesheet" href="dist/bootstrapIcons/bootstrap-icons.css">
     <link rel="stylesheet" href="dist/fancybox/jquery.fancybox.min.css">
     <link rel="shortcut icon" href="img/aku-bulat-50x50.png" type="image/x-icon" />
-    <link rel="stylesheet" href="dist/css/all-style.css">
+    <link rel="stylesheet" href="dist/css/style2.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
@@ -173,6 +173,8 @@
         </div>
         <!-- /.content-wrapper -->
 
+        <div w3-include-html="sidebar.html"></div>
+
         <button type="button" class="btn btn-outline-warning btn-sm" onclick="topFunction()" id="myBtn" title="Kembali ke atas">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
@@ -184,10 +186,14 @@
         <div w3-include-html="footer.html"></div>
     </div>
 
-    <script src="dist/js/jquery.min.js"></script>
-    <script src="dist/fancybox/jquery.fancybox.min.js"></script>
-    <script src="dist/js/bootstrap.bundle.js"></script>
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/bootstrap.bundle.min.js"></script>
     <script src="dist/js/adminlte.min.js"></script>
+
     <script src="dist/js/all-style.js"></script>
     <script>
         includeHTML();

@@ -534,18 +534,30 @@
             <figure>
                 <!-- <blockquote class="blockquote"> -->
                     <p>
-                    Two-column Lookup
+                    Pencarian dua kolom <span class="fw-light">(Two-column Lookup)</span>
                     </p>
                 <!-- </blockquote> -->
                 <figcaption class="blockquote-footer fw-light">
-                <!--  -->
+                Cara melakukan pencarian dua kolom
                 </figcaption>
             </figure>
             </button>
         </h2>
         <div id="listTwoColumnLookup" class="accordion-collapse collapse" aria-labelledby="TwoColumnLookup" data-bs-parent="#PencarianReferensi">
             <div class="accordion-body">
-                <!--  -->
+                <p>Contoh ini mengajarkan Anda cara melakukan pencarian dua kolom di Excel. Lihat contoh di bawah ini. Kami ingin melihat gaji James Clark, bukan James Smith, bukan James Anderson.</p>
+                <p class="tip"><img src="https://img.icons8.com/color/25/000000/export-excel.png" /> unduh file <a href="img/bahan/excel/two-column-lookup.xlsx">Pencarian dua kolom</a> dan coba masukkan fungsi-fungsi ini.</p>
+                <p>1. Untuk menggabungkan string, gunakan operator &amp;.</p>
+                <p><img class="img-fluid" src="img/img-excel/TwoColumnLookup_files/image001.png" alt="Bergabung dengan String di Excel"></p>
+                <p>2. Fungsi <strong>MATCH</strong> mengembalikan posisi nilai dalam rentang tertentu. Masukkan fungsi <strong>MATCH</strong> yang ditunjukkan di bawah ini.</p>
+                <p>3. Akhiri dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
+                <p><img class="img-fluid" src="img/img-excel/TwoColumnLookup_files/image002.png" alt="Mencocokkan Fungsi di Excel"></p>
+                <p class="note"><strong>Catatan:</strong> Bilah rumus menunjukkan bahwa ini adalah <a href="#">rumus larik</a> dengan mengapitnya dalam kurung kurawal <strong>{}</strong>. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.</p>
+                <p>Penjelasan: Rentang (konstanta array) A2:A8&amp;B2:B8 disimpan dalam memori Excel, bukan dalam rentang. Konstanta array terlihat sebagai berikut:</p>
+                <p>{&quot;JamesSmith&quot;;&quot;JamesAnderson&quot;;&quot;JamesClark&quot;;&quot;JohnLewis&quot;;&quot;JohnWalker&quot;;&quot;MarkReed&quot;;&quot;RichardLopez&quot;}</p>
+                <p>Konstanta array ini digunakan sebagai argumen untuk fungsi <strong>MATCH</strong>, memberikan hasil 3 (JamesClark ditemukan di posisi 3).</p>
+                <p>4. Gunakan hasil ini dan fungsi INDEX untuk mengembalikan nilai ke-3 dalam rentang C2:C8.</p>
+                <p><img class="img-fluid" src="img/img-excel/TwoColumnLookup_files/image003.png" alt="Fungsi Indeks di Excel"></p>
             </div>
         </div>
     </div>

@@ -95,17 +95,61 @@
                         <figure>
                                 <p>AVERAGE <span class="fw-light text-capitalize">(rata-rata)</span></p>
                             <figcaption class="blockquote-footer fw-light">
-                                 Untuk menghitung rata-rata sekelompok angka
+                                 Average | AverageA | Average Top 3 | AverageIf | Weighted Average | Moving Average
                             </figcaption>
                         </figure>
                     </button>
         </h2>
         <div id="listAVERAGE" class="accordion-collapse collapse" aria-labelledby="AVERAGE" data-bs-parent="#RumusFungsi">
             <div class="accordion-body">
-                <p>Untuk menghitung rata-rata sekelompok angka, gunakan fungsi <strong>AVERAGE</strong>. Rumus di bawah ini menghitung rata-rata dari 3 angka teratas dalam Range A1:A6.</p>
+                <!-- <p>Untuk menghitung rata-rata sekelompok angka, gunakan fungsi <strong>AVERAGE</strong>. Rumus di bawah ini menghitung rata-rata dari 3 angka teratas dalam Range A1:A6.</p>
                 <p><img class="img-fluid" src="img/img-excel/MostUse_files/image005.png" alt=""></p>
                 <p class="penjelasan"><strong>Penjelasan :</strong> fungsi <strong>LARGE</strong> mengembalikan konstanta array {20,15,10}. Konstanta array ini digunakan sebagai argumen untuk <a href="#">fungsi AVERAGE</a>, memberikanhasil 15.
-                </p>
+                </p> -->
+                <!-- *** -->
+                <p>Fungsi <strong>AVERAGE</strong> di Excel menghitung rata-rata (rata-rata aritmatika) dari sekelompok angka. Fungsi <strong>AVERAGE</strong> mengabaikan nilai logika, sel kosong, dan sel yang berisi teks.</p>
+
+                <!-- <p class="fw-bold text-uppercase">AVERAGE <span class="fw-light text-capitalize">(Rata-rata)</span></p> -->
+                <!-- <p>Alih-alih menggunakan fungsi AVERAGE, gunakan SUM dan COUNT.</p> -->
+                <p>1. Misalnya, fungsi <strong>AVERAGE</strong> di bawah ini menghitung rata - rata angka dalam sel <strong>A1</strong> hingga <strong>A3</strong>.</p>
+                <p><img class="img-fluid" src="img/img-excel/AVERAGE_files/image001.png" alt=""></p>
+                <p>2. Rumus di bawah ini menghasilkan hasil yang sama persis. Menggunakan <strong>SUM</strong> dan <strong>COUNT</strong></p>
+                <p><img class="img-fluid" src="img/img-excel/AVERAGE_files/image002.png" alt=""></p>
+                <p>3. Fungsi <strong>AVERAGE</strong> berikut menghitung rata-rata angka dalam sel <strong>A1</strong> sampai <strong>A3</strong> dan angka <strong>8</strong>.</p>
+                <p><img class="img-fluid" src="img/img-excel/AVERAGE_files/image003.png" alt=""></p>
+                <p>4. Fungsi <strong>AVERAGE</strong> mengabaikan nilai logika (<strong>TRUE</strong> atau <strong>FALSE</strong>), sel kosong dan sel yang berisi teks.</p>
+                <p><img class="img-fluid" src="img/img-excel/AVERAGE_files/image004.png" alt=""></p>
+
+                <!-- <p class="fw-bold text-uppercase">AVERAGEA</p>
+                <p>Fungsi AVERAGEA juga mengembalikan rata-rata (rata-rata aritmatika) dari sekelompok angka. Namun, nilai logika FALSE dan sel yang berisi teks bernilai 0 dan nilai logika TRUE bernilai 1. Fungsi AVERAGEA juga mengabaikan sel kosong.</p>
+                <p>1. Sebagai contoh, perhatikan fungsi AVERAGEA di bawah ini.</p>
+                <p><img class="img-fluid" src="img/img-excel/AVERAGE_files/image005.png" alt=""></p>
+                <p>2. Anda dapat menggunakan fungsi AVERAGE normal untuk memeriksa hasil ini.</p>
+                <p><img class="img-fluid" src="img/img-excel/AVERAGE_files/image006.png" alt=""></p>
+
+                <p class="fw-bold text-uppercase">Rata-rata 3 Teratas</p>
+                <p>Gunakan AVERAGE dan LARGE di Excel untuk menghitung rata-rata dari 3 angka teratas dalam kumpulan data.</p>
+                <p>1. Pertama, fungsi AVERAGE di bawah ini menghitung rata-rata angka dalam sel A1 hingga A6.</p>
+                <p><img class="img-fluid" src="img/img-excel/AVERAGE_files/image007.png" alt="Rata-rata Sederhana"></p>
+                <p>2. Misalnya, untuk mencari bilangan terbesar ketiga, gunakan fungsi LARGE berikut.</p>
+                <p><img class="img-fluid" src="img/img-excel/AVERAGE_files/image008.png" alt="Fungsi Besar"></p>
+                <p>3. Rumus di bawah ini menghitung rata-rata dari 3 angka teratas.</p>
+                <p><img class="img-fluid" src="img/img-excel/AVERAGE_files/image009.png" alt="Rata-rata 3 Teratas"></p>
+                <p>Penjelasan: fungsi LARGE mengembalikan konstanta array {20,15,10}. Konstanta array ini digunakan sebagai argumen untuk fungsi AVERAGE, memberikan hasil 15.</p>
+
+                <p class="fw-bold text-uppercase">AVERAGEIF</p>
+                <p>Untuk menghitung rata-rata sel yang memenuhi satu kriteria, gunakan
+                    <a href="https://www.excel-easy.com/examples/averageif.html">fungsi AVERAGEIF</a> di Excel.</p>
+                <p><img class="img-fluid" src="img/img-excel/AVERAGE_files/image010.png" alt="Fungsi Rata-rataJika"></p>
+
+                <p class="fw-bold text-uppercase">Rata-rata tertimbang</p>
+                <p>Untuk menghitung <a href="https://www.excel-easy.com/examples/weighted-average.html">rata-rata tertimbang</a> di Excel, gunakan SUMPRODUCT dan SUM.</p>
+                <p><img class="img-fluid" src="img/img-excel/AVERAGE_files/image011.png" alt="Rata-rata tertimbang"></p>
+
+                <p class="fw-bold text-uppercase">Rata-Rata Bergerak</p>
+                <p>Gunakan Analysis Toolpak untuk menghitung <a href="https://www.excel-easy.com/examples/moving-average.html">rata-rata bergerak</a> dari deret waktu di Excel.</p>
+                <p><img class="img-fluid" src="img/img-excel/AVERAGE_files/image012.png" alt="Rata-Rata Bergerak"></p>
+                <p class="note"><strong>Catatan :</strong> rata-rata bergerak digunakan untuk menghaluskan ketidakteraturan (puncak dan lembah) untuk mengenali tren dengan mudah.</p> -->
             </div>
         </div>
     </div>
@@ -615,7 +659,6 @@ Excel</a> , buat Nama Range dengan cepat dan mudah (mulai dengan langkah 11) dan
             </div>
         </div>
     </div>
-
     <!-- Akar pangkat dua -->
     <!-- <div class="accordion-item">
         <h2 class="accordion-header" id="Akarpangkatdua">

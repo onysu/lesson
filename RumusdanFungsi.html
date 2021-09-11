@@ -1,11 +1,13 @@
 <p class="h4 bg-subjudul py-2 px-3 mb-0">Rumus dan Fungsi</p>
 <div class="accordion accordion-flush mb-3" id="RumusFungsi">
     <!-- Fungsi yang Paling Banyak Digunakan -->
-    <!-- <div class="accordion-item">
+    <div class="accordion-item">
         <h2 class="accordion-header" id="MostUse">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listMostUse" aria-expanded="false" aria-controls="listMostUse">
                         <figure>
+                            <!-- <blockquote class="blockquote"> -->
                                 <p>Fungsi yang Paling Banyak Digunakan <span class="fw-light text-capitalize">(Most Used Functions)</span></p></p>
+                            <!-- </blockquote> -->
                             <figcaption class="blockquote-footer fw-light">
                                 COUNT | SUM | IF | AVERAGE | COUNTIF | SUMIF | VLOOKUP | MAX | MIN | SUMPRODUCT
                             </figcaption>
@@ -17,253 +19,61 @@
                 <p>Mari kita lihat 10 fungsi Excel yang paling sering digunakan.
                 </p>
                 <p class="tip"><strong>Tips :</strong> unduh <a href="img/bahan/excel/most-used-functions.xlsx">file Excel</a> dan coba masukkan fungsi-fungsi ini.</p>
+                <p><strong>COUNT</strong></p>
+                <p>Untuk menghitung jumlah sel yang berisi angka, gunakan fungsi <strong>COUNT</strong> di Excel.</p>
+                <p><img class="img-fluid" src="img/img-excel/MostUse_files/image001.png" alt="fungsi COUNT"></p>
+                <p class="note"><strong>Catatan :</strong> gunakan <strong>COUNTA</strong> untuk menghitung semua sel yang tidak kosong. <strong>COUNTA</strong> adalah singkatan dari hitung semua.</p>
+                <p><strong>SUM</strong></p>
+                <p>Untuk menjumlahkan Range sel, gunakan fungsi SUM di Excel. Fungsi SUM di bawah ini menjumlahkan semua nilai di kolom A.</p>
+                <p><img class="img-fluid" src="img/img-excel/MostUse_files/image002.png" alt="fungsi SUM"></p>
+                <p><img class="img-fluid" src="img/img-excel/MostUse_files/image003.png" alt="Sel A99"></p>
+                <p class="note"><strong>Catatan :</strong> Anda juga dapat menggunakan fungsi SUM untuk menjumlahkan seluruh baris. Misalnya, =SUM(5:5) menjumlahkan semua nilai di baris ke-5.</p>
+                <p><strong>IF</strong></p>
+                <p>Fungsi IF memeriksa apakah suatu kondisi terpenuhi, dan mengembalikan satu nilai jika benar dan nilai lain jika salah.</p>
+                <p><img class="img-fluid" src="img/img-excel/MostUse_files/image004.png" alt="fungsi JIKA"></p>
+                <p class="penjelasan"><strong>Penjelasan :</strong> jika skor lebih besar atau sama dengan 60, <a href="#">fungsi IF</a> yang ditunjukkan di atas mengembalikan Lulus, jika tidak mengembalikan Gagal. Untuk menyalin rumus ini dengan cepat ke sel lain, klik di
+                    sudut kanan bawah sel C2 dan seret ke bawah ke sel C6.</p>
+                <p><strong>AVERAGE</strong></p>
+                <p>Untuk menghitung rata-rata sekelompok angka, gunakan fungsi <strong>AVERAGE</strong>. Rumus di bawah ini menghitung rata-rata dari 3 angka teratas dalam Range A1:A6.</p>
+                <p><img class="img-fluid" src="img/img-excel/MostUse_files/image005.png" alt="Fungsi RATA-RATA"></p>
+                <p class="penjelasan"><strong>Penjelasan :</strong> fungsi <strong>LARGE</strong> mengembalikan konstanta array {20,15,10}. Konstanta array ini digunakan sebagai argumen untuk <a href="#">fungsi AVERAGE</a>, memberikanhasil 15.
+                </p>
+                <p><strong>COUNTIF</strong></p>
+                <p>Fungsi COUNTIF di bawah ini menghitung jumlah sel yang berisi persis bintang + serangkaian karakter nol atau lebih.</p>
+                <p><img class="img-fluid" src="img/img-excel/MostUse_files/image006.png" alt="fungsi COUNTIF"></p>
+                <p class="penjelasan"><strong>Penjelasan :</strong> tanda bintang (*) cocok dengan serangkaian karakter nol atau lebih. Kunjungi halaman kami tentang <a href="#">fungsi COUNTIF</a> untuk informasi dan contoh lebih lanjut.</p>
+                <p><strong>SUMIF</strong></p>
+                <p>Fungsi SUMIF di bawah ini menjumlahkan nilai dalam Range B1:B5 jika sel yang sesuai dalam Range A1:A5 berisi persis lingkaran + 1 karakter.
+                </p>
+                <p><img class="img-fluid" src="img/img-excel/MostUse_files/image007.png" alt="fungsi SUMIF"></p>
+                <p class="penjelasan"><strong>Penjelasan :</strong> tanda tanya (?) cocok dengan tepat satu karakter. Kunjungi halaman kami tentang <a href="#">fungsi SUMIF</a> untuk informasi dan contoh lebih lanjut.</p>
+                <p><strong>VLOOKUP</strong></p>
+                <p>Fungsi VLOOKUP di bawah ini mencari nilai 53 (argumen pertama) di kolom paling kiri dari tabel merah (argumen kedua). Nilai 4 (argumen ketiga) memberi tahu fungsi VLOOKUP untuk mengembalikan nilai pada baris yang sama dari kolom keempat
+                    tabel merah.</p>
+                <p><img class="img-fluid" src="img/img-excel/MostUse_files/image008.png" alt="Fungsi VLOOKUP"></p>
+                <p class="note"><strong>Catatan :</strong> kunjungi halaman kami tentang <a href="#">fungsi VLOOKUP</a> untuk mempelajari lebih lanjut tentang fungsi Excel yang hebat ini.</p>
+                <p><strong>MIN</strong></p>
+                <p>Untuk mencari nilai minimum, gunakan fungsi MIN. Ini sesederhana kedengarannya.</p>
+                <p><img class="img-fluid" src="img/img-excel/MostUse_files/image009.png" alt="fungsi MIN"></p>
+                <p><strong>MAX</strong></p>
+                <p>Untuk mencari nilai maksimum, gunakan fungsi MAX.</p>
+                <p><img class="img-fluid" src="img/img-excel/MostUse_files/image010.png" alt="fungsi MAX"></p>
+                <p class="note"><strong>Catatan :</strong> kunjungi bab kami tentang <a href="#">fungsi statistik</a> untuk mempelajari lebih lanjut tentang Excel dan Statistik.</p>
                 <p><strong>SUMPRODUCT</strong></p>
                 <p>Untuk menghitung jumlah produk dari angka yang sesuai dalam satu atau beberapa Range, gunakan fungsi SUMPRODUCT Excel yang kuat.</p>
                 <p><img class="img-fluid" src="img/img-excel/MostUse_files/image011.png" alt="Fungsi SUMPRODUCT"></p>
                 <p class="penjelasan"><strong>Penjelasan :</strong> <a href="#">fungsi SUMPRODUCT</a> melakukan perhitungan ini: (2 * 1000) + (4 * 250) + (4 * 100) + (2 * 50) = 3500.</p>
             </div>
         </div>
-    </div> -->
-    <!-- **************************************************** -->
-    <!-- COUNT -->
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="Count">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listCount" aria-expanded="false" aria-controls="listCount">
-                        <figure>
-                                <p>COUNT <span class="fw-light text-capitalize">(Hitung)</span></p>
-                            <figcaption class="blockquote-footer fw-light">
-                                 Untuk menghitung jumlah sel yang berisi angka
-                            </figcaption>
-                        </figure>
-                    </button>
-        </h2>
-        <div id="listCount" class="accordion-collapse collapse" aria-labelledby="Count" data-bs-parent="#RumusFungsi">
-            <div class="accordion-body">
-                <!-- <p><strong>COUNT</strong></p> -->
-                <p>Untuk menghitung jumlah sel yang berisi angka, gunakan fungsi <strong>COUNT</strong> di Excel.</p>
-                <p><img class="img-fluid" src="img/img-excel/MostUse_files/image001.png" alt=""></p>
-                <p class="note"><strong>Catatan :</strong> gunakan <strong>COUNTA</strong> untuk menghitung semua sel yang tidak kosong. <strong>COUNTA</strong> adalah singkatan dari hitung semua.</p>
-            </div>
-        </div>
     </div>
-    <!-- SUM -->
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="SUM">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listSUM" aria-expanded="false" aria-controls="listSUM">
-                        <figure>
-                                <p>SUM <span class="fw-light text-capitalize">(jumlahkan)</span></p>
-                            <figcaption class="blockquote-footer fw-light">
-                                 Untuk menjumlahkan rentang sel
-                            </figcaption>
-                        </figure>
-                    </button>
-        </h2>
-        <div id="listSUM" class="accordion-collapse collapse" aria-labelledby="SUM" data-bs-parent="#RumusFungsi">
-            <div class="accordion-body">
-                <p>Untuk menjumlahkan Range sel, gunakan fungsi SUM di Excel. Fungsi SUM di bawah ini menjumlahkan semua nilai di kolom A.</p>
-                <p><img class="img-fluid" src="img/img-excel/MostUse_files/image002.png" alt=""></p>
-                <p><img class="img-fluid" src="img/img-excel/MostUse_files/image003.png" alt=""></p>
-                <p class="note"><strong>Catatan :</strong> Anda juga dapat menggunakan fungsi SUM untuk menjumlahkan seluruh baris. Misalnya, =SUM(5:5) menjumlahkan semua nilai di baris ke-5.</p>
-            </div>
-        </div>
-    </div>
-    <!-- IF -->
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="IF">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listIF" aria-expanded="false" aria-controls="listIF">
-                        <figure>
-                                <p>IF <span class="fw-light text-capitalize">(jika)</span></p>
-                            <figcaption class="blockquote-footer fw-light">
-                                 memeriksa apakah suatu kondisi terpenuhi atau tidak terpenuhi
-                            </figcaption>
-                        </figure>
-                    </button>
-        </h2>
-        <div id="listIF" class="accordion-collapse collapse" aria-labelledby="IF" data-bs-parent="#RumusFungsi">
-            <div class="accordion-body">
-                <p>Fungsi IF memeriksa apakah suatu kondisi terpenuhi, dan mengembalikan satu nilai jika benar dan nilai lain jika salah.</p>
-                <p><img class="img-fluid" src="img/img-excel/MostUse_files/image004.png" alt=""></p>
-                <p class="penjelasan"><strong>Penjelasan :</strong> jika skor lebih besar atau sama dengan 60, <a href="#">fungsi IF</a> yang ditunjukkan di atas mengembalikan Lulus, jika tidak mengembalikan Gagal. Untuk menyalin rumus ini dengan cepat ke sel lain, klik di
-                    sudut kanan bawah sel C2 dan seret ke bawah ke sel C6.</p>
-            </div>
-        </div>
-    </div>
-    <!-- AVERAGE -->
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="AVERAGE">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listAVERAGE" aria-expanded="false" aria-controls="listAVERAGE">
-                        <figure>
-                                <p>AVERAGE <span class="fw-light text-capitalize">(rata-rata)</span></p>
-                            <figcaption class="blockquote-footer fw-light">
-                                 Untuk menghitung rata-rata sekelompok angka
-                            </figcaption>
-                        </figure>
-                    </button>
-        </h2>
-        <div id="listAVERAGE" class="accordion-collapse collapse" aria-labelledby="AVERAGE" data-bs-parent="#RumusFungsi">
-            <div class="accordion-body">
-                <!-- <p>Untuk menghitung rata-rata sekelompok angka, gunakan fungsi <strong>AVERAGE</strong>. Rumus di bawah ini menghitung rata-rata dari 3 angka teratas dalam Range A1:A6.</p>
-                <p><img class="img-fluid" src="img/img-excel/MostUse_files/image005.png" alt=""></p>
-                <p class="penjelasan"><strong>Penjelasan :</strong> fungsi <strong>LARGE</strong> mengembalikan konstanta array {20,15,10}. Konstanta array ini digunakan sebagai argumen untuk <a href="#">fungsi AVERAGE</a>, memberikanhasil 15.
-                </p> -->
-                <!-- *** -->
-                <p>Fungsi <strong>AVERAGE</strong> di Excel menghitung rata-rata (rata-rata aritmatika) dari sekelompok angka. Fungsi <strong>AVERAGE</strong> mengabaikan nilai logika, sel kosong, dan sel yang berisi teks.</p>
-                <p class="tip"><img src="https://img.icons8.com/color/25/000000/export-excel.png" /> unduh file <a href="img/bahan/excel/average.xlsx">average</a> dan coba masukkan fungsi-fungsi ini.</p>
-
-                <!-- <p class="fw-bold text-uppercase">AVERAGE <span class="fw-light text-capitalize">(Rata-rata)</span></p> -->
-                <!-- <p>Alih-alih menggunakan fungsi AVERAGE, gunakan SUM dan COUNT.</p> -->
-                <p>1. Misalnya, fungsi <strong>AVERAGE</strong> di bawah ini menghitung rata - rata angka dalam sel <strong>A1</strong> hingga <strong>A3</strong>.</p>
-                <p><img class="img-fluid" src="img/img-excel/AVERAGE_files/image001.png" alt=""></p>
-                <p>2. Rumus di bawah ini menghasilkan hasil yang sama persis. Menggunakan <strong>SUM</strong> dan <strong>COUNT</strong></p>
-                <p><img class="img-fluid" src="img/img-excel/AVERAGE_files/image002.png" alt=""></p>
-                <p>3. Fungsi <strong>AVERAGE</strong> berikut menghitung rata-rata angka dalam sel <strong>A1</strong> sampai <strong>A3</strong> dan angka <strong>8</strong>.</p>
-                <p><img class="img-fluid" src="img/img-excel/AVERAGE_files/image003.png" alt=""></p>
-                <p>4. Fungsi <strong>AVERAGE</strong> mengabaikan nilai logika (<strong>TRUE</strong> atau <strong>FALSE</strong>), sel kosong dan sel yang berisi teks.</p>
-                <p><img class="img-fluid" src="img/img-excel/AVERAGE_files/image004.png" alt=""></p>
-
-                <!-- <p class="fw-bold text-uppercase">AVERAGEA</p>
-                <p>Fungsi AVERAGEA juga mengembalikan rata-rata (rata-rata aritmatika) dari sekelompok angka. Namun, nilai logika FALSE dan sel yang berisi teks bernilai 0 dan nilai logika TRUE bernilai 1. Fungsi AVERAGEA juga mengabaikan sel kosong.</p>
-                <p>1. Sebagai contoh, perhatikan fungsi AVERAGEA di bawah ini.</p>
-                <p><img class="img-fluid" src="img/img-excel/AVERAGE_files/image005.png" alt=""></p>
-                <p>2. Anda dapat menggunakan fungsi AVERAGE normal untuk memeriksa hasil ini.</p>
-                <p><img class="img-fluid" src="img/img-excel/AVERAGE_files/image006.png" alt=""></p>
-
-                <p class="fw-bold text-uppercase">Rata-rata 3 Teratas</p>
-                <p>Gunakan AVERAGE dan LARGE di Excel untuk menghitung rata-rata dari 3 angka teratas dalam kumpulan data.</p>
-                <p>1. Pertama, fungsi AVERAGE di bawah ini menghitung rata-rata angka dalam sel A1 hingga A6.</p>
-                <p><img class="img-fluid" src="img/img-excel/AVERAGE_files/image007.png" alt="Rata-rata Sederhana"></p>
-                <p>2. Misalnya, untuk mencari bilangan terbesar ketiga, gunakan fungsi LARGE berikut.</p>
-                <p><img class="img-fluid" src="img/img-excel/AVERAGE_files/image008.png" alt="Fungsi Besar"></p>
-                <p>3. Rumus di bawah ini menghitung rata-rata dari 3 angka teratas.</p>
-                <p><img class="img-fluid" src="img/img-excel/AVERAGE_files/image009.png" alt="Rata-rata 3 Teratas"></p>
-                <p>Penjelasan: fungsi LARGE mengembalikan konstanta array {20,15,10}. Konstanta array ini digunakan sebagai argumen untuk fungsi AVERAGE, memberikan hasil 15.</p>
-
-                <p class="fw-bold text-uppercase">AVERAGEIF</p>
-                <p>Untuk menghitung rata-rata sel yang memenuhi satu kriteria, gunakan
-                    <a href="https://www.excel-easy.com/examples/averageif.html">fungsi AVERAGEIF</a> di Excel.</p>
-                <p><img class="img-fluid" src="img/img-excel/AVERAGE_files/image010.png" alt="Fungsi Rata-rataJika"></p>
-
-                <p class="fw-bold text-uppercase">Rata-rata tertimbang</p>
-                <p>Untuk menghitung <a href="https://www.excel-easy.com/examples/weighted-average.html">rata-rata tertimbang</a> di Excel, gunakan SUMPRODUCT dan SUM.</p>
-                <p><img class="img-fluid" src="img/img-excel/AVERAGE_files/image011.png" alt="Rata-rata tertimbang"></p>
-
-                <p class="fw-bold text-uppercase">Rata-Rata Bergerak</p>
-                <p>Gunakan Analysis Toolpak untuk menghitung <a href="https://www.excel-easy.com/examples/moving-average.html">rata-rata bergerak</a> dari deret waktu di Excel.</p>
-                <p><img class="img-fluid" src="img/img-excel/AVERAGE_files/image012.png" alt="Rata-Rata Bergerak"></p>
-                <p class="note"><strong>Catatan :</strong> rata-rata bergerak digunakan untuk menghaluskan ketidakteraturan (puncak dan lembah) untuk mengenali tren dengan mudah.</p> -->
-            </div>
-        </div>
-    </div>
-    <!-- COUNTIF -->
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="COUNTIF">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listCOUNTIF" aria-expanded="false" aria-controls="listCOUNTIF">
-                        <figure>
-                                <p>COUNTIF <span class="fw-light text-capitalize"></span></p>
-                            <figcaption class="blockquote-footer fw-light">
-                                 <!--  -->
-                            </figcaption>
-                        </figure>
-                    </button>
-        </h2>
-        <div id="listCOUNTIF" class="accordion-collapse collapse" aria-labelledby="COUNTIF" data-bs-parent="#RumusFungsi">
-            <div class="accordion-body">
-                <p>Fungsi COUNTIF di bawah ini menghitung jumlah sel yang berisi persis bintang + serangkaian karakter nol atau lebih.</p>
-                <p><img class="img-fluid" src="img/img-excel/MostUse_files/image006.png" alt="fungsi COUNTIF"></p>
-                <p class="penjelasan"><strong>Penjelasan :</strong> tanda bintang (*) cocok dengan serangkaian karakter nol atau lebih. Kunjungi halaman kami tentang <a href="#">fungsi COUNTIF</a> untuk informasi dan contoh lebih lanjut.</p>
-            </div>
-        </div>
-    </div>
-    <!-- SUMIF -->
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="SUMIF">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listSUMIF" aria-expanded="false" aria-controls="listSUMIF">
-                        <figure>
-                                <p>SUMIF <span class="fw-light text-capitalize"></span></p>
-                            <figcaption class="blockquote-footer fw-light">
-                                 <!--  -->
-                            </figcaption>
-                        </figure>
-                    </button>
-        </h2>
-        <div id="listSUMIF" class="accordion-collapse collapse" aria-labelledby="SUMIF" data-bs-parent="#RumusFungsi">
-            <div class="accordion-body">
-                <p>Fungsi SUMIF di bawah ini menjumlahkan nilai dalam Range B1:B5 jika sel yang sesuai dalam Range A1:A5 berisi persis lingkaran + 1 karakter.
-                </p>
-                <p><img class="img-fluid" src="img/img-excel/MostUse_files/image007.png" alt="fungsi SUMIF"></p>
-                <p class="penjelasan"><strong>Penjelasan :</strong> tanda tanya (?) cocok dengan tepat satu karakter. Kunjungi halaman kami tentang <a href="#">fungsi SUMIF</a> untuk informasi dan contoh lebih lanjut.</p>
-            </div>
-        </div>
-    </div>
-    <!-- VLOOKUP -->
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="VLOOKUP">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listVLOOKUP" aria-expanded="false" aria-controls="listVLOOKUP">
-                        <figure>
-                                <p>VLOOKUP <span class="fw-light text-capitalize"></span></p>
-                            <figcaption class="blockquote-footer fw-light">
-                                 <!--  -->
-                            </figcaption>
-                        </figure>
-                    </button>
-        </h2>
-        <div id="listVLOOKUP" class="accordion-collapse collapse" aria-labelledby="VLOOKUP" data-bs-parent="#RumusFungsi">
-            <div class="accordion-body">
-                <p>Fungsi VLOOKUP di bawah ini mencari nilai 53 (argumen pertama) di kolom paling kiri dari tabel merah (argumen kedua). Nilai 4 (argumen ketiga) memberi tahu fungsi VLOOKUP untuk mengembalikan nilai pada baris yang sama dari kolom keempat
-                    tabel merah.</p>
-                <p><img class="img-fluid" src="img/img-excel/MostUse_files/image008.png" alt="Fungsi VLOOKUP"></p>
-                <p class="note"><strong>Catatan :</strong> kunjungi halaman kami tentang <a href="#">fungsi VLOOKUP</a> untuk mempelajari lebih lanjut tentang fungsi Excel yang hebat ini.</p>
-            </div>
-        </div>
-    </div>
-    <!-- MIN -->
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="MIN">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listMIN" aria-expanded="false" aria-controls="listMIN">
-                        <figure>
-                                <p>MIN <span class="fw-light text-capitalize">(minimum)</span></p>
-                            <figcaption class="blockquote-footer fw-light">
-                                 Untuk mencari nilai minimum
-                            </figcaption>
-                        </figure>
-                    </button>
-        </h2>
-        <div id="listMIN" class="accordion-collapse collapse" aria-labelledby="MIN" data-bs-parent="#RumusFungsi">
-            <div class="accordion-body">
-                <p>Untuk mencari nilai minimum, gunakan fungsi MIN. Ini sesederhana kedengarannya.</p>
-                <p><img class="img-fluid" src="img/img-excel/MostUse_files/image009.png" alt="fungsi MIN"></p>
-            </div>
-        </div>
-    </div>
-    <!-- MAX -->
-    <div class="accordion-item">
-        <h2 class="accordion-header" id="MAX">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listMAX" aria-expanded="false" aria-controls="listMAX">
-                        <figure>
-                                <p>MAX <span class="fw-light text-capitalize">(maksimum)</span></p>
-                            <figcaption class="blockquote-footer fw-light">
-                                 Untuk mencari nilai maksimum
-                            </figcaption>
-                        </figure>
-                    </button>
-        </h2>
-        <div id="listMAX" class="accordion-collapse collapse" aria-labelledby="MAX" data-bs-parent="#RumusFungsi">
-            <div class="accordion-body">
-                <p>Untuk mencari nilai maksimum, gunakan fungsi MAX.</p>
-                <p><img class="img-fluid" src="img/img-excel/MostUse_files/image010.png" alt="fungsi MAX"></p>
-                <p class="note"><strong>Catatan :</strong> kunjungi bab kami tentang <a href="#">fungsi statistik</a> untuk mempelajari lebih lanjut tentang Excel dan Statistik.</p>
-            </div>
-        </div>
-    </div>
-    <!-- ****************************************************** -->
     <!-- Pengurangan -->
     <div class="accordion-item">
         <h2 class="accordion-header" id="Subtract">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listSubtract" aria-expanded="false" aria-controls="listSubtract">
                         <figure>
-                            
+                            <!-- <blockquote class="blockquote"> -->
                                 <p>Pengurangan <span class="fw-light text-capitalize">(Subtract)</span></p></p>
-                            
+                            <!-- </blockquote> -->
                             <figcaption class="blockquote-footer fw-light">
                                  ada beberapa cara untuk mengurangi angka di Excel | SUBTRACT
                             </figcaption>
@@ -310,9 +120,9 @@
         <h2 class="accordion-header" id="Multiply">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listMultiply" aria-expanded="false" aria-controls="listMultiply">
                         <figure>
-                            
+                            <!-- <blockquote class="blockquote"> -->
                                 <p>Perkalian <span class="fw-light text-capitalize">(Multiply)</span></p></p>
-                            
+                            <!-- </blockquote> -->
                             <figcaption class="blockquote-footer fw-light">
                                  Multiply Untuk mengalikan angka di Excel
                             </figcaption>
@@ -365,9 +175,9 @@ absolut</a> ($A$8) tetap sama, sedangkan referensi relatif (A1) berubah menjadi 
         <h2 class="accordion-header" id="Pembagian">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listPembagian" aria-expanded="false" aria-controls="listPembagian">
                         <figure>
-                            
+                            <!-- <blockquote class="blockquote"> -->
                                 <p>Pembagian <span class="fw-light text-capitalize">(Divide)</span></p></p>
-                            
+                            <!-- </blockquote> -->
                             <figcaption class="blockquote-footer fw-light">
                                  Tidak ada fungsi DIVIDE di Excel. Cukup gunakan garis miring (/)
                             </figcaption>
@@ -419,14 +229,58 @@ absolut</a> ($A$8) tetap sama, sedangkan referensi relatif (A1) berubah menjadi 
             </div>
         </div>
     </div>
+    <!-- Akar pangkat dua -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="Akarpangkatdua">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listAkarpangkatdua" aria-expanded="false" aria-controls="listAkarpangkatdua">
+                        <figure>
+                            <!-- <blockquote class="blockquote"> -->
+                                <p>Akar pangkat dua <span class="fw-light text-capitalize">(Square Root)</span></p></p>
+                            <!-- </blockquote> -->
+                            <figcaption class="blockquote-footer fw-light">
+                                 Fungsi SQRT di Excel mengembalikan akar kuadrat dari sebuah angka.
+                            </figcaption>
+                        </figure>
+                    </button>
+        </h2>
+        <div id="listAkarpangkatdua" class="accordion-collapse collapse" aria-labelledby="Akarpangkatdua" data-bs-parent="#RumusFungsi">
+            <div class="accordion-body">
+                <p>The akar kuadrat dari angka adalah nilai yang, bila dikalikan dengan sendirinya, memberikan nomor tersebut. Fungsi <strong>SQRT</strong> di Excel mengembalikan akar kuadrat dari sebuah angka.</p>
+                <p class="tip"><strong>Tips :</strong> unduh <a href="img/bahan/excel/square-root.xlsx">file Excel</a> dan coba masukkan fungsi-fungsi ini.</p>
+                <p>1. Pertama, untuk mengkuadratkan suatu bilangan, kalikan bilangan tersebut dengan dirinya sendiri. Misalnya, 4 * 4 = 16 atau 4^2 = 16.
+                </p>
+                <p><img class="img-fluid" src="img/img-excel/SQRT_files/image001.png" alt="Kuadratkan Angka"></p>
+                <p class="note"><strong>Catatan :</strong> untuk menyisipkan simbol tanda sisipan <strong>^</strong>, tekan <kbd>Shift</kbd>+<kbd>6</kbd>.</p>
+                <p>2. Akar kuadrat dari 16 adalah 4.</p>
+                <p><img class="img-fluid" src="img/img-excel/SQRT_files/image002.png" alt="Akar Kuadrat di Excel"></p>
+                <p>3. Alih-alih menggunakan fungsi <strong>SQRT</strong>, Anda juga bisa menggunakan eksponen 1/2. Jangan lupa tanda kurung.</p>
+                <p><img class="img-fluid" src="img/img-excel/SQRT_files/image003.png" alt="Eksponen 1/2"></p>
+                <p>4. Jika angka negatif, fungsi <strong>SQRT</strong> mengembalikan #NUM! kesalahan.
+                </p>
+                <p><img class="img-fluid" src="img/img-excel/SQRT_files/image004.png" alt="#NUM!  Kesalahan"></p>
+                <p>5. Anda dapat menggunakan <a href="#">fungsi ABS</a> untuk menghilangkan tanda minus (-) dari angka negatif.</p>
+                <p><img class="img-fluid" src="img/img-excel/SQRT_files/image005.png" alt="Fungsi ABS:"></p>
+                <p>Excel tidak memiliki fungsi bawaan untuk menghitung akar ke-n dari suatu angka. Untuk menghitung akar ke-n dari suatu bilangan, cukup naikkan bilangan tersebut ke pangkat 1/n.</p>
+                <p>6. Misalnya, 5 * 5 * 5 atau 5^3 adalah 5 pangkat tiga.</p>
+                <p><img class="img-fluid" src="img/img-excel/SQRT_files/image006.png" alt="Kekuatan Ketiga"></p>
+                <p>7. Akar pangkat tiga dari 125 adalah 5.</p>
+                <p><img class="img-fluid" src="img/img-excel/SQRT_files/image007.png" alt="Akar pangkat tiga"></p>
+                <p>8. Misalnya, 2 * 2 * 2 * 2 * 2 * 2 atau 2^6 adalah 2 pangkat enam.
+                </p>
+                <p><img class="img-fluid" src="img/img-excel/SQRT_files/image008.png" alt="Kekuatan Keenam"></p>
+                <p>9. Akar keenam dari 64 adalah 2.</p>
+                <p><img class="img-fluid" src="img/img-excel/SQRT_files/image009.png" alt="Akar Keenam"></p>
+            </div>
+        </div>
+    </div>
     <!-- Persentase -->
     <div class="accordion-item">
         <h2 class="accordion-header" id="Persentase">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listPersentase" aria-expanded="false" aria-controls="listPersentase">
                         <figure>
-                            
+                            <!-- <blockquote class="blockquote"> -->
                                 <p>Persentase</p>
-                            
+                            <!-- </blockquote> -->
                             <figcaption class="blockquote-footer fw-light">
                                  Masukkan Persentase | Persentase dari Total | Naik Persentase | Perubahan Persentase
                             </figcaption>
@@ -489,48 +343,104 @@ absolut</a> ($A$8) tetap sama, sedangkan referensi relatif (A1) berubah menjadi 
             </div>
         </div>
     </div>
-    <!-- Diskon -->
+    <!-- Nama Range -->
     <div class="accordion-item">
-        <h2 class="accordion-header" id="Diskon">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listDiskon" aria-expanded="false" aria-controls="listDiskon">
+        <h2 class="accordion-header" id="NamedRange">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listNamedRange" aria-expanded="false" aria-controls="listNamedRange">
                         <figure>
-                            
-                                <p>Diskon</p>
-                            
+                            <!-- <blockquote class="blockquote"> -->
+                                <p>Nama Range <span class="fw-light text-capitalize">(Nama Range)</span></p></p>
+                            <!-- </blockquote> -->
                             <figcaption class="blockquote-footer fw-light">
-                                 Hitung Persentase Diskon | Hitung Harga Diskon | Hitung Harga Asli
+                                 Buat Nama Range dan digunakan di dalam rumus
                             </figcaption>
                         </figure>
                     </button>
         </h2>
-        <div id="listDiskon" class="accordion-collapse collapse" aria-labelledby="Diskon" data-bs-parent="#RumusFungsi">
+        <div id="listNamedRange" class="accordion-collapse collapse" aria-labelledby="NamedRange" data-bs-parent="#RumusFungsi">
             <div class="accordion-body">
-                <p>Jika Anda mengetahui harga asli dan harga diskon, Anda dapat menghitung persentase diskon. Jika Anda mengetahui harga asli dan persentase diskon, Anda dapat menghitung harga diskon, dll.</p>
-                <p class="tip"><strong>Tips :</strong> unduh <a href="img/bahan/excel/discount.xlsx">file Excel</a> dan coba masukkan fungsi-fungsi ini.</p>
-                <p class="fw-bold">Hitung Persentase Diskon</p>
-                <p>Jika Anda mengetahui harga asli dan harga diskon, Anda dapat menghitung persentase diskon.</p>
-                <p>1. Pertama, bagi harga diskon dengan harga aslinya.</p>
-                <p><img class="img-fluid" src="img/img-excel/Diskon_files/image001.png" alt="Bagi Harga Diskon dengan Harga Asli"></p>
-                <p class="note"><strong>Catatan :</strong> Anda masih membayar $60 dari $80 yang asli. Ini sama dengan 75%.</p>
-                <p>2. Kurangi hasil ini dari 1.</p>
-                <p><img class="img-fluid" src="img/img-excel/Diskon_files/image002.png" alt="Kurangi Hasil Dari 1"></p>
-                <p class="note"><strong>Catatan :</strong> jika Anda masih membayar 75%, Anda tidak membayar 25% (persentase diskon).</p>
-                <p>3. Pada tab Beranda, di grup Angka, klik simbol persentase untuk menerapkan format Persentase.</p>
-                <p><img class="img-fluid" src="img/img-excel/Diskon_files/image003.png" alt="Format Persentase"></p>
-                <p>Hasil.</p>
-                <p><img class="img-fluid" src="img/img-excel/Diskon_files/image004.png" alt="Hitung Persentase Diskon"></p>
-                <p class="fw-bold">Hitung Harga Diskon</p>
-                <p>Jika Anda mengetahui harga asli dan persentase diskon, Anda dapat menghitung harga diskon.</p>
-                <p>1. Pertama, kurangi persentase diskon dari 1.</p>
-                <p><img class="img-fluid" src="img/img-excel/Diskon_files/image005.png" alt="Kurangi Persentase Diskon Dari 1"></p>
-                <p class="note"><strong>Catatan :</strong> Anda masih membayar 75%.</p>
-                <p>2. Kalikan hasil ini dengan harga aslinya.</p>
-                <p><img class="img-fluid" src="img/img-excel/Diskon_files/image006.png" alt="Hitung Harga Diskon"></p>
-                <p class="note"><strong>Catatan :</strong> Anda masih membayar 75% dari $80 yang asli. Ini sama dengan $60.</p>
-                <p class="fw-bold">Hitung Harga Asli</p>
-                <p>Jika Anda mengetahui harga diskon dan persentase diskon, Anda dapat menghitung harga aslinya. Lihatlah tangkapan layar sebelumnya. Untuk menghitung harga diskon, kami mengalikan harga asli dengan (1 - Persentase Diskon).</p>
-                <p>1. Untuk menghitung harga asli, cukup bagi harga diskon dengan (1 - Persentase Diskon).</p>
-                <p><img class="img-fluid" src="img/img-excel/Diskon_files/image007.png" alt="Hitung Harga Asli"></p>
+                <p>Buat Nama Range atau konstanta bernama dan gunakan nama ini dalam rumus Excel Anda. Dengan cara ini Anda dapat membuat rumus Anda lebih mudah dipahami.</p>
+                <p class="tip"><strong>Tips :</strong> unduh <a href="img/bahan/excel/named-range.xlsx">file Excel</a> dan coba masukkan fungsi-fungsi ini.</p>
+                <p>Untuk membuat Nama Range, jalankan langkah-langkah berikut.
+                </p>
+                <p>1. Pilih Range A1:A4.</p>
+                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image001.png" alt="Pilih Range"></p>
+                <p>2. Pada tab Rumus, dalam grup Nama yang Ditentukan, klik Tentukan Nama .</p>
+                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image002.png" alt="Tentukan Nama"></p>
+                <p>3. Masukkan nama dan klik OK.</p>
+                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image003.png" alt="Nama Range Baru"></p>
+                <p>Ada cara yang lebih cepat untuk melakukan ini.</p>
+                <p>4. Pilih Range, ketik nama di kotak Nama dan tekan Enter.</p>
+                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image004.png" alt="Kotak Nama"></p>
+                <p>5. Sekarang Anda dapat menggunakan Nama Range ini dalam rumus Anda. Misalnya, jumlahkan Harga.</p>
+                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image005.png" alt="Nama Range di Excel"></p>
+                <p>Untuk membuat konstanta bernama, jalankan langkah-langkah berikut.
+                </p>
+                <p>6. Pada tab Rumus, dalam grup Nama yang Ditentukan, klik Tentukan Nama.</p>
+                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image002.png" alt="Tentukan Nama"></p>
+                <p>7. Masukkan nama, ketik nilai, dan klik OK.</p>
+                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image006.png" alt="Baru bernama onstant"></p>
+                <p>8. Sekarang Anda dapat menggunakan konstanta bernama ini dalam rumus Anda.</p>
+                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image007.png" alt="Dinamakan Konstanta di Excel"></p>
+                <p>Jika tarif pajak berubah, gunakan Pengelola Nama untuk mengedit nilai dan Excel secara otomatis memperbarui semua rumus yang menggunakan TaxRate.</p>
+                <p>9. Pada tab Rumus, dalam grup Nama yang Ditentukan, klik Pengelola Nama .</p>
+                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image008.png" alt="Klik Manajer Nama"></p>
+                <p>10. Pilih TaxRate dan klik Edit.</p>
+                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image009.png" alt="Sunting Nilai"></p>
+                <p class="note"><strong>Catatan :</strong> gunakan Pengelola Nama untuk melihat, membuat, mengedit, dan menghapus Nama Range.</p>
+                <p>Jika data Anda memiliki label, Anda dapat dengan cepat membuat Nama Range di Excel.</p>
+                <p>11. Misalnya, pilih Range A1:D13.</p>
+                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image010.png" alt=Pilihan></p>
+                <p>12. Pada tab Rumus, dalam grup Nama yang Ditentukan, klik Buat dari Pilihan.</p>
+                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image011.png" alt="Buat Nama Range"></p>
+                <p>13. Centang Baris atas dan kolom Kiri dan klik OK.</p>
+                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image012.png" alt="Buat Nama dari Pilihan"></p>
+                <p>14. Excel membuat 12 + 3 = 15 Nama Range! Cukup pilih Range dan lihat kotak Nama.</p>
+                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image013.png" alt=Nama></p>
+                <p>15. Gunakan operator intersect (spasi) untuk mengembalikan perpotongan dua Nama Range.</p>
+                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image014.png" alt="Persimpangan Nama Range"></p>
+                <p class="note"><strong>Catatan :</strong> coba sendiri. Unduh <a href="img/bahan/excel/named-range.xlsx">file
+Excel</a> , buat Nama Range dengan cepat dan mudah (mulai dengan langkah 11) dan cari nilai apa pun dalam Range dua dimensi ini.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Nama Range Dinamis -->
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="DynamicNamedRange">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listDynamicNamedRange" aria-expanded="false" aria-controls="listDynamicNamedRange">
+                        <figure>
+                            <!-- <blockquote class="blockquote"> -->
+                                <p>Nama Range Dinamis <span class="fw-light text-capitalize">(Dynamic Named Range)</span></p></p>
+                            <!-- </blockquote> -->
+                            <figcaption class="blockquote-footer fw-light">
+                                 Sebuah Range dinamis bernama mengembang secara otomatis
+                            </figcaption>
+                        </figure>
+                    </button>
+        </h2>
+        <div id="listDynamicNamedRange" class="accordion-collapse collapse" aria-labelledby="DynamicNamedRange" data-bs-parent="#RumusFungsi">
+            <div class="accordion-body">
+                <p>Sebuah Range dinamis bernama mengembang secara otomatis saat Anda menambahkan nilai ke kisaran.</p>
+                <p class="tip"><strong>Tips :</strong> unduh <a href="img/bahan/excel/dynamic-named-range.xlsx">file Excel</a> dan coba masukkan fungsi-fungsi ini.</p>
+                <p>1. Misalnya, pilih Range A1:A4 dan beri <a href="#">nama</a> <em>Prices</em>.</p>
+                <p>2. Hitung jumlahnya.</p>
+                <p><img class="img-fluid" src="img/img-excel/DynamicNamedRange_files/image001.png" alt="Contoh Nama Range Dinamis"></p>
+                <p>3. Saat Anda menambahkan nilai ke Range, Excel tidak memperbarui jumlah.</p>
+                <p><img class="img-fluid" src="img/img-excel/DynamicNamedRange_files/image002.png" alt="Sum salah"></p>
+                <p>Untuk memperluas Nama Range secara otomatis saat Anda menambahkan nilai ke Range, jalankan langkah-langkah berikut ini.</p>
+                <p>4. Pada tab Rumus, dalam grup Nama yang Ditentukan, klik Manajer Nama.</p>
+                <p><img class="img-fluid" src="img/img-excel/DynamicNamedRange_files/image003.png" alt="Klik Manajer Nama"></p>
+                <p>5. Klik Sunting.</p>
+                <p><img class="img-fluid" src="img/img-excel/DynamicNamedRange_files/image004.png" alt="Klik Edit"></p>
+                <p>6. Klik pada kotak &quot;Refers to&quot; dan masukkan rumus =<strong>OFFSET</strong>($A$1,0,0,COUNTA($A:$A),1)
+                </p>
+                <p><img class="img-fluid" src="img/img-excel/DynamicNamedRange_files/image005.png" alt="Edit Nama"></p>
+                <p class="penjelasan"><strong>Penjelasan :</strong> <a href="#">fungsi OFFSET</a> membutuhkan 5 argumen. Referensi: $A$1, baris untuk diimbangi: 0, kolom untuk diimbangi: 0, tinggi: <strong>COUNTA</strong>($A:$A) dan lebar: 1. <strong>COUNTA</strong>($A:$A)
+                    menghitung jumlah nilai di kolom A yang tidak kosong. Saat Anda menambahkan nilai ke Range, <strong>COUNTA</strong>($A:$A) meningkat. Akibatnya, Range yang dikembalikan oleh fungsi <strong>OFFSET</strong> meluas.</p>
+                <p>7. Klik OK dan Tutup.</p>
+                <p>8. Sekarang, saat Anda menambahkan nilai ke Range, Excel memperbarui jumlah secara otomatis.</p>
+                <p><img class="img-fluid" src="img/img-excel/DynamicNamedRange_files/image006.png" alt="Jumlah yang benar"></p>
+                <p><img class="img-fluid" src="img/img-excel/DynamicNamedRange_files/image007.png" alt="Nama Range Dinamis di Excel"></p>
             </div>
         </div>
     </div>
@@ -539,9 +449,9 @@ absolut</a> ($A$8) tetap sama, sedangkan referensi relatif (A1) berubah menjadi 
         <h2 class="accordion-header" id="OpsiPaste">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listOpsiPaste" aria-expanded="false" aria-controls="listOpsiPaste">
                         <figure>
-                            
+                            <!-- <blockquote class="blockquote"> -->
                                 <p>Opsi Paste</p>
-                            
+                            <!-- </blockquote> -->
                             <figcaption class="blockquote-footer fw-light">
                                  Paste | Values | Formulas | Formatting | Paste Special
                             </figcaption>
@@ -599,149 +509,49 @@ yang kosong,</a> dan <a href="#">mentranspos</a> data.</p>
             </div>
         </div>
     </div>
-    <!-- Nama Range -->
+    <!-- Diskon -->
     <div class="accordion-item">
-        <h2 class="accordion-header" id="NamedRange">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listNamedRange" aria-expanded="false" aria-controls="listNamedRange">
+        <h2 class="accordion-header" id="Diskon">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listDiskon" aria-expanded="false" aria-controls="listDiskon">
                         <figure>
-                            
-                                <p>Nama Range <span class="fw-light text-capitalize">(Nama Range)</span></p></p>
-                            
+                            <!-- <blockquote class="blockquote"> -->
+                                <p>Diskon</p>
+                            <!-- </blockquote> -->
                             <figcaption class="blockquote-footer fw-light">
-                                 Buat Nama Range dan digunakan di dalam rumus
+                                 Hitung Persentase Diskon | Hitung Harga Diskon | Hitung Harga Asli
                             </figcaption>
                         </figure>
                     </button>
         </h2>
-        <div id="listNamedRange" class="accordion-collapse collapse" aria-labelledby="NamedRange" data-bs-parent="#RumusFungsi">
+        <div id="listDiskon" class="accordion-collapse collapse" aria-labelledby="Diskon" data-bs-parent="#RumusFungsi">
             <div class="accordion-body">
-                <p>Buat Nama Range atau konstanta bernama dan gunakan nama ini dalam rumus Excel Anda. Dengan cara ini Anda dapat membuat rumus Anda lebih mudah dipahami.</p>
-                <p class="tip"><strong>Tips :</strong> unduh <a href="img/bahan/excel/named-range.xlsx">file Excel</a> dan coba masukkan fungsi-fungsi ini.</p>
-                <p>Untuk membuat Nama Range, jalankan langkah-langkah berikut.
-                </p>
-                <p>1. Pilih Range A1:A4.</p>
-                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image001.png" alt="Pilih Range"></p>
-                <p>2. Pada tab Rumus, dalam grup Nama yang Ditentukan, klik Tentukan Nama .</p>
-                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image002.png" alt="Tentukan Nama"></p>
-                <p>3. Masukkan nama dan klik OK.</p>
-                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image003.png" alt="Nama Range Baru"></p>
-                <p>Ada cara yang lebih cepat untuk melakukan ini.</p>
-                <p>4. Pilih Range, ketik nama di kotak Nama dan tekan Enter.</p>
-                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image004.png" alt="Kotak Nama"></p>
-                <p>5. Sekarang Anda dapat menggunakan Nama Range ini dalam rumus Anda. Misalnya, jumlahkan Harga.</p>
-                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image005.png" alt="Nama Range di Excel"></p>
-                <p>Untuk membuat konstanta bernama, jalankan langkah-langkah berikut.
-                </p>
-                <p>6. Pada tab Rumus, dalam grup Nama yang Ditentukan, klik Tentukan Nama.</p>
-                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image002.png" alt="Tentukan Nama"></p>
-                <p>7. Masukkan nama, ketik nilai, dan klik OK.</p>
-                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image006.png" alt="Baru bernama onstant"></p>
-                <p>8. Sekarang Anda dapat menggunakan konstanta bernama ini dalam rumus Anda.</p>
-                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image007.png" alt="Dinamakan Konstanta di Excel"></p>
-                <p>Jika tarif pajak berubah, gunakan Pengelola Nama untuk mengedit nilai dan Excel secara otomatis memperbarui semua rumus yang menggunakan TaxRate.</p>
-                <p>9. Pada tab Rumus, dalam grup Nama yang Ditentukan, klik Pengelola Nama .</p>
-                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image008.png" alt="Klik Manajer Nama"></p>
-                <p>10. Pilih TaxRate dan klik Edit.</p>
-                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image009.png" alt="Sunting Nilai"></p>
-                <p class="note"><strong>Catatan :</strong> gunakan Pengelola Nama untuk melihat, membuat, mengedit, dan menghapus Nama Range.</p>
-                <p>Jika data Anda memiliki label, Anda dapat dengan cepat membuat Nama Range di Excel.</p>
-                <p>11. Misalnya, pilih Range A1:D13.</p>
-                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image010.png" alt=Pilihan></p>
-                <p>12. Pada tab Rumus, dalam grup Nama yang Ditentukan, klik Buat dari Pilihan.</p>
-                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image011.png" alt="Buat Nama Range"></p>
-                <p>13. Centang Baris atas dan kolom Kiri dan klik OK.</p>
-                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image012.png" alt="Buat Nama dari Pilihan"></p>
-                <p>14. Excel membuat 12 + 3 = 15 Nama Range! Cukup pilih Range dan lihat kotak Nama.</p>
-                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image013.png" alt=Nama></p>
-                <p>15. Gunakan operator intersect (spasi) untuk mengembalikan perpotongan dua Nama Range.</p>
-                <p><img class="img-fluid" src="img/img-excel/NamedRange_files/image014.png" alt="Persimpangan Nama Range"></p>
-                <p class="note"><strong>Catatan :</strong> coba sendiri. Unduh <a href="img/bahan/excel/named-range.xlsx">file
-Excel</a> , buat Nama Range dengan cepat dan mudah (mulai dengan langkah 11) dan cari nilai apa pun dalam Range dua dimensi ini.</p>
+                <p>Jika Anda mengetahui harga asli dan harga diskon, Anda dapat menghitung persentase diskon. Jika Anda mengetahui harga asli dan persentase diskon, Anda dapat menghitung harga diskon, dll.</p>
+                <p class="tip"><strong>Tips :</strong> unduh <a href="img/bahan/excel/discount.xlsx">file Excel</a> dan coba masukkan fungsi-fungsi ini.</p>
+                <p class="fw-bold">Hitung Persentase Diskon</p>
+                <p>Jika Anda mengetahui harga asli dan harga diskon, Anda dapat menghitung persentase diskon.</p>
+                <p>1. Pertama, bagi harga diskon dengan harga aslinya.</p>
+                <p><img class="img-fluid" src="img/img-excel/Diskon_files/image001.png" alt="Bagi Harga Diskon dengan Harga Asli"></p>
+                <p class="note"><strong>Catatan :</strong> Anda masih membayar $60 dari $80 yang asli. Ini sama dengan 75%.</p>
+                <p>2. Kurangi hasil ini dari 1.</p>
+                <p><img class="img-fluid" src="img/img-excel/Diskon_files/image002.png" alt="Kurangi Hasil Dari 1"></p>
+                <p class="note"><strong>Catatan :</strong> jika Anda masih membayar 75%, Anda tidak membayar 25% (persentase diskon).</p>
+                <p>3. Pada tab Beranda, di grup Angka, klik simbol persentase untuk menerapkan format Persentase.</p>
+                <p><img class="img-fluid" src="img/img-excel/Diskon_files/image003.png" alt="Format Persentase"></p>
+                <p>Hasil.</p>
+                <p><img class="img-fluid" src="img/img-excel/Diskon_files/image004.png" alt="Hitung Persentase Diskon"></p>
+                <p class="fw-bold">Hitung Harga Diskon</p>
+                <p>Jika Anda mengetahui harga asli dan persentase diskon, Anda dapat menghitung harga diskon.</p>
+                <p>1. Pertama, kurangi persentase diskon dari 1.</p>
+                <p><img class="img-fluid" src="img/img-excel/Diskon_files/image005.png" alt="Kurangi Persentase Diskon Dari 1"></p>
+                <p class="note"><strong>Catatan :</strong> Anda masih membayar 75%.</p>
+                <p>2. Kalikan hasil ini dengan harga aslinya.</p>
+                <p><img class="img-fluid" src="img/img-excel/Diskon_files/image006.png" alt="Hitung Harga Diskon"></p>
+                <p class="note"><strong>Catatan :</strong> Anda masih membayar 75% dari $80 yang asli. Ini sama dengan $60.</p>
+                <p class="fw-bold">Hitung Harga Asli</p>
+                <p>Jika Anda mengetahui harga diskon dan persentase diskon, Anda dapat menghitung harga aslinya. Lihatlah tangkapan layar sebelumnya. Untuk menghitung harga diskon, kami mengalikan harga asli dengan (1 - Persentase Diskon).</p>
+                <p>1. Untuk menghitung harga asli, cukup bagi harga diskon dengan (1 - Persentase Diskon).</p>
+                <p><img class="img-fluid" src="img/img-excel/Diskon_files/image007.png" alt="Hitung Harga Asli"></p>
             </div>
         </div>
     </div>
-    <!-- Akar pangkat dua -->
-    <!-- <div class="accordion-item">
-        <h2 class="accordion-header" id="Akarpangkatdua">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listAkarpangkatdua" aria-expanded="false" aria-controls="listAkarpangkatdua">
-                        <figure>
-                            
-                                <p>Akar pangkat dua <span class="fw-light text-capitalize">(Square Root)</span></p></p>
-                            
-                            <figcaption class="blockquote-footer fw-light">
-                                 Fungsi SQRT di Excel mengembalikan akar kuadrat dari sebuah angka.
-                            </figcaption>
-                        </figure>
-                    </button>
-        </h2>
-        <div id="listAkarpangkatdua" class="accordion-collapse collapse" aria-labelledby="Akarpangkatdua" data-bs-parent="#RumusFungsi">
-            <div class="accordion-body">
-                <p>The akar kuadrat dari angka adalah nilai yang, bila dikalikan dengan sendirinya, memberikan nomor tersebut. Fungsi <strong>SQRT</strong> di Excel mengembalikan akar kuadrat dari sebuah angka.</p>
-                <p class="tip"><strong>Tips :</strong> unduh <a href="img/bahan/excel/square-root.xlsx">file Excel</a> dan coba masukkan fungsi-fungsi ini.</p>
-                <p>1. Pertama, untuk mengkuadratkan suatu bilangan, kalikan bilangan tersebut dengan dirinya sendiri. Misalnya, 4 * 4 = 16 atau 4^2 = 16.
-                </p>
-                <p><img class="img-fluid" src="img/img-excel/SQRT_files/image001.png" alt="Kuadratkan Angka"></p>
-                <p class="note"><strong>Catatan :</strong> untuk menyisipkan simbol tanda sisipan <strong>^</strong>, tekan <kbd>Shift</kbd>+<kbd>6</kbd>.</p>
-                <p>2. Akar kuadrat dari 16 adalah 4.</p>
-                <p><img class="img-fluid" src="img/img-excel/SQRT_files/image002.png" alt="Akar Kuadrat di Excel"></p>
-                <p>3. Alih-alih menggunakan fungsi <strong>SQRT</strong>, Anda juga bisa menggunakan eksponen 1/2. Jangan lupa tanda kurung.</p>
-                <p><img class="img-fluid" src="img/img-excel/SQRT_files/image003.png" alt="Eksponen 1/2"></p>
-                <p>4. Jika angka negatif, fungsi <strong>SQRT</strong> mengembalikan #NUM! kesalahan.
-                </p>
-                <p><img class="img-fluid" src="img/img-excel/SQRT_files/image004.png" alt="#NUM!  Kesalahan"></p>
-                <p>5. Anda dapat menggunakan <a href="#">fungsi ABS</a> untuk menghilangkan tanda minus (-) dari angka negatif.</p>
-                <p><img class="img-fluid" src="img/img-excel/SQRT_files/image005.png" alt="Fungsi ABS:"></p>
-                <p>Excel tidak memiliki fungsi bawaan untuk menghitung akar ke-n dari suatu angka. Untuk menghitung akar ke-n dari suatu bilangan, cukup naikkan bilangan tersebut ke pangkat 1/n.</p>
-                <p>6. Misalnya, 5 * 5 * 5 atau 5^3 adalah 5 pangkat tiga.</p>
-                <p><img class="img-fluid" src="img/img-excel/SQRT_files/image006.png" alt="Kekuatan Ketiga"></p>
-                <p>7. Akar pangkat tiga dari 125 adalah 5.</p>
-                <p><img class="img-fluid" src="img/img-excel/SQRT_files/image007.png" alt="Akar pangkat tiga"></p>
-                <p>8. Misalnya, 2 * 2 * 2 * 2 * 2 * 2 atau 2^6 adalah 2 pangkat enam.
-                </p>
-                <p><img class="img-fluid" src="img/img-excel/SQRT_files/image008.png" alt="Kekuatan Keenam"></p>
-                <p>9. Akar keenam dari 64 adalah 2.</p>
-                <p><img class="img-fluid" src="img/img-excel/SQRT_files/image009.png" alt="Akar Keenam"></p>
-            </div>
-        </div>
-    </div> -->
-    <!-- Nama Range Dinamis -->
-    <!-- <div class="accordion-item">
-        <h2 class="accordion-header" id="DynamicNamedRange">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listDynamicNamedRange" aria-expanded="false" aria-controls="listDynamicNamedRange">
-                        <figure>
-                            
-                                <p>Nama Range Dinamis <span class="fw-light text-capitalize">(Dynamic Named Range)</span></p></p>
-                            
-                            <figcaption class="blockquote-footer fw-light">
-                                 Sebuah Range dinamis bernama mengembang secara otomatis
-                            </figcaption>
-                        </figure>
-                    </button>
-        </h2>
-        <div id="listDynamicNamedRange" class="accordion-collapse collapse" aria-labelledby="DynamicNamedRange" data-bs-parent="#RumusFungsi">
-            <div class="accordion-body">
-                <p>Sebuah Range dinamis bernama mengembang secara otomatis saat Anda menambahkan nilai ke kisaran.</p>
-                <p class="tip"><strong>Tips :</strong> unduh <a href="img/bahan/excel/dynamic-named-range.xlsx">file Excel</a> dan coba masukkan fungsi-fungsi ini.</p>
-                <p>1. Misalnya, pilih Range A1:A4 dan beri <a href="#">nama</a> <em>Prices</em>.</p>
-                <p>2. Hitung jumlahnya.</p>
-                <p><img class="img-fluid" src="img/img-excel/DynamicNamedRange_files/image001.png" alt="Contoh Nama Range Dinamis"></p>
-                <p>3. Saat Anda menambahkan nilai ke Range, Excel tidak memperbarui jumlah.</p>
-                <p><img class="img-fluid" src="img/img-excel/DynamicNamedRange_files/image002.png" alt="Sum salah"></p>
-                <p>Untuk memperluas Nama Range secara otomatis saat Anda menambahkan nilai ke Range, jalankan langkah-langkah berikut ini.</p>
-                <p>4. Pada tab Rumus, dalam grup Nama yang Ditentukan, klik Manajer Nama.</p>
-                <p><img class="img-fluid" src="img/img-excel/DynamicNamedRange_files/image003.png" alt="Klik Manajer Nama"></p>
-                <p>5. Klik Sunting.</p>
-                <p><img class="img-fluid" src="img/img-excel/DynamicNamedRange_files/image004.png" alt="Klik Edit"></p>
-                <p>6. Klik pada kotak &quot;Refers to&quot; dan masukkan rumus =<strong>OFFSET</strong>($A$1,0,0,COUNTA($A:$A),1)
-                </p>
-                <p><img class="img-fluid" src="img/img-excel/DynamicNamedRange_files/image005.png" alt="Edit Nama"></p>
-                <p class="penjelasan"><strong>Penjelasan :</strong> <a href="#">fungsi OFFSET</a> membutuhkan 5 argumen. Referensi: $A$1, baris untuk diimbangi: 0, kolom untuk diimbangi: 0, tinggi: <strong>COUNTA</strong>($A:$A) dan lebar: 1. <strong>COUNTA</strong>($A:$A)
-                    menghitung jumlah nilai di kolom A yang tidak kosong. Saat Anda menambahkan nilai ke Range, <strong>COUNTA</strong>($A:$A) meningkat. Akibatnya, Range yang dikembalikan oleh fungsi <strong>OFFSET</strong> meluas.</p>
-                <p>7. Klik OK dan Tutup.</p>
-                <p>8. Sekarang, saat Anda menambahkan nilai ke Range, Excel memperbarui jumlah secara otomatis.</p>
-                <p><img class="img-fluid" src="img/img-excel/DynamicNamedRange_files/image006.png" alt="Jumlah yang benar"></p>
-                <p><img class="img-fluid" src="img/img-excel/DynamicNamedRange_files/image007.png" alt="Nama Range Dinamis di Excel"></p>
-            </div>
-        </div>
-    </div> -->
 </div>

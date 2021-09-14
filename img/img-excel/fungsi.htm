@@ -1,0 +1,459 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-ID link="#0563C1" vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal>Sebuah&nbsp;<b>fungsi</b>&nbsp;adalah&nbsp;<b>rumus yang
+telah ditetapkan</b>&nbsp;yang melakukan perhitungan dengan menggunakan
+nilai-nilai tertentu dalam urutan tertentu.&nbsp;Excel menyertakan banyak
+fungsi umum yang dapat digunakan untuk menemukan&nbsp;<b>jumlah</b>&nbsp;,&nbsp;<b>rata-rata</b>&nbsp;,&nbsp;<b>hitungan</b>&nbsp;,&nbsp;<b>nilai
+maksimum</b>&nbsp;, dan&nbsp;<b>nilai minimum</b>&nbsp;untuk rentang sel dengan
+cepat.&nbsp;Untuk menggunakan fungsi dengan benar, Anda harus memahami
+berbagai&nbsp;<b>bagian fungsi</b>&nbsp;dan cara membuat&nbsp;<b>argumen</b>&nbsp;untuk
+menghitung nilai dan referensi sel.</p>
+
+<p class=MsoNormal>Opsional: Unduh&nbsp;<a
+href="https://media.gcflearnfree.org/content/563b7aa7ca7fac0d9c7b3f7a_11_05_2015/excel2016_functions_practice.xlsx"><b>buku
+kerja latihan</b></a>&nbsp;kami&nbsp;.</p>
+
+<p class=MsoNormal>Tonton video di bawah ini untuk mempelajari lebih lanjut
+tentang bekerja dengan fungsi.</p>
+
+<p class=MsoNormal>Bagian-bagian dari suatu fungsi</p>
+
+<p class=MsoNormal>Agar berfungsi dengan benar, suatu fungsi harus ditulis
+dengan cara tertentu, yang disebut&nbsp;<b>sintaks</b>&nbsp;.&nbsp;Sintaks
+dasar untuk suatu fungsi adalah&nbsp;<b>tanda sama dengan (=)</b>&nbsp;,&nbsp;<b>nama
+fungsi</b>&nbsp;(SUM, misalnya), dan satu atau lebih&nbsp;<b>argumen</b>&nbsp;.&nbsp;Argumen
+berisi informasi yang ingin Anda hitung.&nbsp;Fungsi dalam contoh di bawah ini
+akan menambahkan nilai rentang sel A1:A20.</p>
+
+<p class=MsoNormal><img border=0 width=700 height=328 id="Picture 78"
+src="fungsi_files/image001.png" alt="=SUM(A1:A20)"></p>
+
+<p class=MsoNormal>Bekerja dengan argumen</p>
+
+<p class=MsoNormal>Argumen dapat merujuk ke&nbsp;<b>sel individu</b>&nbsp;dan&nbsp;<b>rentang
+sel</b>&nbsp;dan harus diapit dalam&nbsp;<b>tanda kurung</b>&nbsp;.&nbsp;Anda
+dapat menyertakan satu argumen atau beberapa argumen, bergantung pada sintaks
+yang diperlukan untuk fungsi tersebut.</p>
+
+<p class=MsoNormal>Misalnya, fungsi&nbsp;<b>=AVERAGE(B1:B9)</b>&nbsp;akan
+menghitung&nbsp;<b>rata</b>&nbsp;-&nbsp;<b>rata</b>&nbsp;nilai dalam rentang
+sel B1:B9.&nbsp;Fungsi ini hanya berisi satu argumen.</p>
+
+<p class=MsoNormal><img border=0 width=405 height=295 id="Picture 77"
+src="fungsi_files/image002.png" alt="Fungsi dengan argumen tunggal"></p>
+
+<p class=MsoNormal>Beberapa argumen harus dipisahkan dengan&nbsp;<b>koma</b>&nbsp;.&nbsp;Misalnya,
+fungsi&nbsp;<b>=SUM(A1:A3, C1:C2, E1)</b>&nbsp;akan&nbsp;<b>menambahkan</b>&nbsp;nilai
+semua sel dalam tiga argumen.</p>
+
+<p class=MsoNormal><img border=0 width=405 height=190 id="Picture 76"
+src="fungsi_files/image003.png" alt="Fungsi dengan banyak argumen"></p>
+
+<p class=MsoNormal>Membuat fungsi</p>
+
+<p class=MsoNormal>Ada berbagai macam fungsi yang tersedia di Excel.&nbsp;Berikut
+adalah beberapa fungsi paling umum yang akan Anda gunakan:</p>
+
+<ul style='margin-top:0cm' type=disc>
+ <li class=MsoNormal><b>SUM</b>&nbsp;: Fungsi ini&nbsp;<b>menambahkan</b>&nbsp;semua
+     nilai sel dalam argumen.</li>
+ <li class=MsoNormal><b>AVERAGE</b>&nbsp;: Fungsi ini menentukan&nbsp;<b>rata</b>&nbsp;-&nbsp;<b>rata</b>&nbsp;nilai
+     yang disertakan dalam argumen.&nbsp;Ini menghitung jumlah sel dan kemudian
+     membagi nilai itu dengan jumlah sel dalam argumen.</li>
+ <li class=MsoNormal><b>COUNT</b>&nbsp;: Fungsi ini&nbsp;<b>menghitung</b>&nbsp;jumlah
+     sel dengan data numerik dalam argumen.&nbsp;Fungsi ini berguna untuk
+     menghitung item dalam rentang sel dengan cepat.</li>
+ <li class=MsoNormal><b>MAX</b>&nbsp;: Fungsi ini menentukan nilai&nbsp;<b>sel&nbsp;tertinggi
+     yang</b>&nbsp;disertakan dalam argumen.</li>
+ <li class=MsoNormal><b>MIN</b>&nbsp;: Fungsi ini menentukan nilai&nbsp;<b>sel
+     terendah yang</b>&nbsp;disertakan dalam argumen.</li>
+</ul>
+
+<p class=MsoNormal>Untuk membuat fungsi menggunakan perintah AutoSum:</p>
+
+<p class=MsoNormal>The&nbsp;<b>AutoSum</b>&nbsp;perintah memungkinkan Anda
+untuk secara otomatis memasukkan fungsi yang paling umum ke dalam rumus Anda,
+termasuk SUM, AVERAGE, COUNT, MIN, dan MAX.&nbsp;Pada contoh di bawah ini, kita
+akan menggunakan&nbsp;fungsi&nbsp;<b>SUM</b>&nbsp;untuk menghitung&nbsp;<b>total
+biaya</b>&nbsp;untuk daftar item yang baru dipesan.</p>
+
+<ol style='margin-top:0cm' start=1 type=1>
+ <li class=MsoNormal>Pilih&nbsp;<b>sel</b>&nbsp;yang akan berisi
+     fungsi.&nbsp;Dalam contoh kita, kita akan memilih sel&nbsp;<b>D13</b>&nbsp;.</li>
+</ol>
+
+<p class=MsoNormal><img border=0 width=678 height=435 id="Picture 75"
+src="fungsi_files/image004.png" alt="Memilih sel"></p>
+
+<ol style='margin-top:0cm' start=2 type=1>
+ <li class=MsoNormal>Di&nbsp;grup&nbsp;<b>Pengeditan</b>&nbsp;pada&nbsp;tab&nbsp;<b>Beranda</b>&nbsp;,
+     klik&nbsp;<b>panah di</b>&nbsp;samping&nbsp;perintah&nbsp;<b>JumlahOtomatis</b>&nbsp;.&nbsp;Selanjutnya,
+     pilih&nbsp;<b>fungsi yang diinginkan</b>&nbsp;dari menu drop-down.&nbsp;Dalam
+     contoh kita, kita akan memilih&nbsp;<b>Sum</b>&nbsp;.</li>
+</ol>
+
+<p class=MsoNormal><img border=0 width=678 height=255 id="Picture 74"
+src="fungsi_files/image005.png" alt="Memilih fungsi"></p>
+
+<ol style='margin-top:0cm' start=3 type=1>
+ <li class=MsoNormal>Excel akan menempatkan&nbsp;<b>fungsi</b>&nbsp;di dalam
+     sel dan secara otomatis memilih&nbsp;<b>rentang sel</b>&nbsp;untuk
+     argumen.&nbsp;Dalam contoh kita, sel&nbsp;<b>D3:D12</b>&nbsp;dipilih
+     secara otomatis;&nbsp;nilainya akan&nbsp;<b>ditambahkan</b>&nbsp;untuk
+     menghitung total biaya.&nbsp;Jika Excel memilih rentang sel yang salah,
+     Anda dapat memasukkan sel yang diinginkan secara manual ke dalam argumen.</li>
+</ol>
+
+<p class=MsoNormal><img border=0 width=678 height=435 id="Picture 73"
+src="fungsi_files/image006.png" alt="Argumen fungsi"></p>
+
+<ol style='margin-top:0cm' start=4 type=1>
+ <li class=MsoNormal>Tekan&nbsp;<b>Enter</b>&nbsp;pada keyboard
+     Anda.&nbsp;Fungsi akan&nbsp;<b>dihitung</b>&nbsp;, dan&nbsp;<b>hasilnya</b>&nbsp;akan
+     muncul di sel.&nbsp;Dalam contoh kita, jumlah D3:D12 adalah&nbsp;<b>$765.29</b>&nbsp;.</li>
+</ol>
+
+<p class=MsoNormal><img border=0 width=678 height=435 id="Picture 72"
+src="fungsi_files/image007.png" alt="Hasil fungsi"></p>
+
+<p class=MsoNormal>The&nbsp;<b>AutoSum</b>&nbsp;perintah juga dapat diakses
+dari&nbsp;<b>Rumus</b>&nbsp;tab pada&nbsp;<b>Ribbon</b>&nbsp;.</p>
+
+<p class=MsoNormal><img border=0 width=678 height=282 id="Picture 71"
+src="fungsi_files/image008.png" alt="Perintah AutoSum pada tab Rumus"></p>
+
+<p class=MsoNormal>Anda juga dapat menggunakan&nbsp;pintasan keyboard&nbsp;<b>Alt+=</b>&nbsp;alih-alih
+perintah JumlahOtomatis.&nbsp;Untuk menggunakan pintasan ini, tahan
+tombol&nbsp;<b>Alt</b>&nbsp;lalu tekan&nbsp;<b>tanda sama dengan</b>&nbsp;.</p>
+
+<p class=MsoNormal>Tonton video di bawah ini untuk melihat cara pintas ini
+beraksi.</p>
+
+<p class=MsoNormal>Untuk memasukkan fungsi secara manual:</p>
+
+<p class=MsoNormal>Jika Anda sudah mengetahui nama fungsinya, Anda bisa
+mengetiknya sendiri dengan mudah.&nbsp;Dalam contoh di bawah ini (penghitungan
+penjualan kue), kita akan menggunakan&nbsp;fungsi&nbsp;<b>AVERAGE</b>&nbsp;untuk
+menghitung&nbsp;<b>jumlah rata</b>&nbsp;-&nbsp;<b>rata unit yang terjual</b>&nbsp;oleh
+setiap pasukan.</p>
+
+<ol style='margin-top:0cm' start=1 type=1>
+ <li class=MsoNormal>Pilih&nbsp;<b>sel</b>&nbsp;yang akan berisi
+     fungsi.&nbsp;Dalam contoh kita, kita akan memilih sel&nbsp;<b>C10</b>&nbsp;.</li>
+</ol>
+
+<p class=MsoNormal><img border=0 width=565 height=379 id="Picture 70"
+src="fungsi_files/image009.png" alt="Memilih sel"></p>
+
+<ol style='margin-top:0cm' start=2 type=1>
+ <li class=MsoNormal>Ketik&nbsp;<b>tanda sama dengan (=),</b>&nbsp;dan
+     masukkan&nbsp;<b>nama fungsi yang</b>&nbsp;diinginkan&nbsp;.&nbsp;Anda
+     juga dapat memilih fungsi yang diinginkan dari daftar&nbsp;<b>fungsi</b>&nbsp;yang&nbsp;<b>disarankan</b>&nbsp;yang
+     muncul di bawah sel saat Anda mengetik.&nbsp;Dalam contoh kita, kita akan
+     mengetik&nbsp;<b>=AVERAGE</b>&nbsp;.</li>
+</ol>
+
+<p class=MsoNormal><img border=0 width=565 height=451 id="Picture 69"
+src="fungsi_files/image010.png" alt="Memasukkan nama fungsi"></p>
+
+<ol style='margin-top:0cm' start=3 type=1>
+ <li class=MsoNormal>Masukkan&nbsp;<b>rentang sel</b>&nbsp;untuk
+     argumen&nbsp;di dalam&nbsp;<b>tanda kurung</b>&nbsp;.&nbsp;Dalam contoh
+     kita, kita akan mengetik&nbsp;<b>(C3:C9)</b>&nbsp;.&nbsp;Rumus ini akan
+     menambahkan nilai sel C3:C9, lalu membagi nilai tersebut dengan jumlah
+     total nilai dalam rentang.</li>
+</ol>
+
+<p class=MsoNormal><img border=0 width=565 height=379 id="Picture 68"
+src="fungsi_files/image011.png" alt="Memasuki argumen"></p>
+
+<ol style='margin-top:0cm' start=4 type=1>
+ <li class=MsoNormal>Tekan&nbsp;<b>Enter</b>&nbsp;pada keyboard
+     Anda.&nbsp;Fungsi akan dihitung, dan&nbsp;<b>hasilnya</b>&nbsp;akan muncul
+     di sel.&nbsp;Dalam contoh kita, jumlah rata-rata unit yang terjual oleh
+     setiap pasukan adalah&nbsp;<b>849</b>&nbsp;.</li>
+</ol>
+
+<p class=MsoNormal><img border=0 width=565 height=379 id="Picture 67"
+src="fungsi_files/image012.png" alt="Hasil fungsi"></p>
+
+<p class=MsoNormal>Excel&nbsp;<b>tidak akan selalu memberi tahu Anda</b>&nbsp;jika
+rumus Anda mengandung kesalahan, jadi terserah Anda untuk memeriksa semua rumus
+Anda.&nbsp;Untuk mempelajari bagaimana melakukan ini, baca&nbsp;pelajaran&nbsp;<a
+href="http://www.gcflearnfree.org/excelformulas/doublecheck-your-formulas/1/"><b>Periksa
+Rumus Anda</b></a>&nbsp;dari&nbsp;tutorial&nbsp;<a
+href="http://www.gcflearnfree.org/excelformulas" target="_blank"><b>Rumus Excel</b></a>&nbsp;kami&nbsp;.</p>
+
+<p class=MsoNormal>Perpustakaan Fungsi</p>
+
+<p class=MsoNormal>Meskipun ada ratusan fungsi di Excel, yang paling sering
+Anda gunakan akan bergantung pada&nbsp;<b>tipe data yang ada di</b>&nbsp;buku
+kerja Anda.&nbsp;Tidak perlu mempelajari setiap fungsi, tetapi menjelajahi
+beberapa&nbsp;<b>jenis</b>&nbsp;fungsi yang berbedaakan membantu Anda saat Anda
+membuat proyek baru.&nbsp;Anda bahkan dapat menggunakan&nbsp;<b>Pustaka Fungsi</b>&nbsp;pada&nbsp;tab&nbsp;<b>Rumus</b>&nbsp;untuk
+menelusuri fungsimenurut kategori, seperti&nbsp;<b>Keuangan</b>&nbsp;,&nbsp;<b>Logis</b>&nbsp;,&nbsp;<b>Teks</b>&nbsp;,
+dan&nbsp;<b>Tanggal &amp; Waktu</b>&nbsp;.</p>
+
+<p class=MsoNormal>Untuk mengakses&nbsp;<b>Pustaka Fungsi</b>&nbsp;,
+pilih&nbsp;tab&nbsp;<b>Rumus</b>&nbsp;pada&nbsp;<b>Pita</b>&nbsp;.&nbsp;Cari&nbsp;grup&nbsp;<b>Pustaka
+Fungsi</b>&nbsp;.</p>
+
+<p class=MsoNormal>Klik tombol di interaktif di bawah ini untuk mempelajari
+lebih lanjut tentang berbagai jenis fungsi di Excel.</p>
+
+<p class=MsoNormal><img border=0 width=730 height=390 id="Picture 66"
+src="fungsi_files/image013.png" alt="Fungsi Perpustakaan interaktif"></p>
+
+<p class=MsoNormal><b>Pencarian &amp; Referensi</b></p>
+
+<p class=MsoNormal>Kategori&nbsp;<b>Pencarian &amp; Referensi</b>&nbsp;berisi
+fungsi yang akan mengembalikan hasil untuk menemukan dan mereferensikan
+informasi.&nbsp;Misalnya, Anda dapat menambahkan hyperlink ke sel (&nbsp;<b>HYPERLINK</b>&nbsp;)
+atau mengembalikan nilai persimpangan baris dan kolom tertentu (&nbsp;<b>INDEX</b>&nbsp;).</p>
+
+<p class=MsoNormal>Untuk menyisipkan fungsi dari Pustaka Fungsi:</p>
+
+<p class=MsoNormal>Pada contoh di bawah ini, kita akan menggunakan fungsi
+COUNTA untuk menghitung jumlah total item di&nbsp;kolom&nbsp;<b>Items</b>&nbsp;.&nbsp;Tidak
+seperti COUNT,&nbsp;<b>COUNTA</b>&nbsp;dapat digunakan untuk menghitung sel
+yang berisi data jenis apa pun, bukan hanya data numerik.</p>
+
+<ol style='margin-top:0cm' start=1 type=1>
+ <li class=MsoNormal>Pilih&nbsp;<b>sel</b>&nbsp;yang akan berisi
+     fungsi.&nbsp;Dalam contoh kita, kita akan memilih sel&nbsp;<b>B17</b>&nbsp;.</li>
+</ol>
+
+<p class=MsoNormal><img border=0 width=650 height=595 id="Picture 65"
+src="fungsi_files/image014.png" alt="Memilih sel"></p>
+
+<ol style='margin-top:0cm' start=2 type=1>
+ <li class=MsoNormal>Klik&nbsp;tab&nbsp;<b>Rumus</b>&nbsp;pada&nbsp;<b>Pita</b>&nbsp;untuk
+     mengakses&nbsp;<b>Pustaka Fungsi</b>&nbsp;.</li>
+ <li class=MsoNormal>Dari grup&nbsp;<b>Function Library</b>&nbsp;, pilih&nbsp;<b>kategori
+     fungsi yang</b>&nbsp;diinginkan&nbsp;.&nbsp;Dalam contoh kita, kita akan
+     memilih&nbsp;<b>Lebih Banyak Fungsi</b>, thid arahkan mouse ke&nbsp;<b>Statistical</b>&nbsp;.</li>
+</ol>
+
+<p class=MsoNormal><img border=0 width=650 height=545 id="Picture 64"
+src="fungsi_files/image015.png"
+alt="Memilih perintah Fungsi Lainnya / Statistik"></p>
+
+<ol style='margin-top:0cm' start=4 type=1>
+ <li class=MsoNormal>Pilih&nbsp;<b>fungsi yang diinginkan</b>&nbsp;dari menu drop-down.&nbsp;Dalam
+     contoh kita, kita akan memilih&nbsp;fungsi&nbsp;<b>COUNTA</b>&nbsp;, yang
+     akan menghitung jumlah sel di&nbsp;kolom&nbsp;<b>Item</b>&nbsp;yang tidak
+     kosong.</li>
+</ol>
+
+<p class=MsoNormal><img border=0 width=650 height=545 id="Picture 63"
+src="fungsi_files/image016.png" alt="Memilih fungsi COUNTA"></p>
+
+<ol style='margin-top:0cm' start=5 type=1>
+ <li class=MsoNormal>Kotak&nbsp;dialog&nbsp;<b>Argumen Fungsi</b>&nbsp;akan
+     muncul.&nbsp;Pilih&nbsp;bidang&nbsp;<b>Nilai1</b>&nbsp;, lalu masukkan
+     atau pilih sel yang diinginkan.&nbsp;Dalam contoh kita, kita akan
+     memasukkan rentang sel&nbsp;<b>A3:A12</b>&nbsp;.&nbsp;Anda dapat terus
+     menambahkan argumen di&nbsp;bidang&nbsp;<b>Value2</b>&nbsp;, tetapi dalam
+     kasus ini kami hanya ingin menghitung jumlah sel dalam rentang sel&nbsp;<b>A3:A12</b>&nbsp;.</li>
+ <li class=MsoNormal>Jika sudah puas, klik&nbsp;<b>OK</b>&nbsp;.</li>
+</ol>
+
+<p class=MsoNormal><img border=0 width=595 height=338 id="Picture 62"
+src="fungsi_files/image017.png" alt="Argumen fungsi"></p>
+
+<ol style='margin-top:0cm' start=7 type=1>
+ <li class=MsoNormal>Fungsi akan&nbsp;<b>dihitung</b>&nbsp;, dan&nbsp;<b>hasilnya</b>&nbsp;akan
+     muncul di sel.&nbsp;Dalam contoh kami, hasilnya menunjukkan bahwa
+     total&nbsp;<b>10 item</b>&nbsp;dipesan.</li>
+</ol>
+
+<p class=MsoNormal><img border=0 width=650 height=595 id="Picture 61"
+src="fungsi_files/image018.png" alt="Hasil fungsi"></p>
+
+<p class=MsoNormal>Perintah Sisipkan Fungsi</p>
+
+<p class=MsoNormal>Sementara Fungsi Perpustakaan adalah tempat yang bagus untuk
+menelusuri fungsi, kadang-kadang Anda dapat memilih untuk&nbsp;<b>mencari</b>&nbsp;satusebagai
+gantinya.&nbsp;Anda dapat melakukannya menggunakan perintah&nbsp;<b>Sisipkan
+Fungsi</b>&nbsp;.&nbsp;Mungkin diperlukan beberapa percobaan dan kesalahan
+tergantung pada jenis fungsi yang Anda cari;&nbsp;namun, dengan latihan,
+perintah Sisipkan Fungsi bisa menjadi cara yang ampuh untuk menemukan fungsi
+dengan cepat.</p>
+
+<p class=MsoNormal>Untuk menggunakan perintah Sisipkan Fungsi:</p>
+
+<p class=MsoNormal>Pada contoh di bawah ini, kami ingin mencari fungsi yang
+akan menghitung&nbsp;<b>jumlah hari kerja</b>&nbsp;yang dibutuhkan untuk
+menerima barang setelah dipesan.&nbsp;Kami akan menggunakan tanggal di
+kolom&nbsp;<b>E</b>&nbsp;dan&nbsp;<b>F</b>&nbsp;untuk menghitung waktu
+pengiriman di kolom&nbsp;<b>G</b>&nbsp;.</p>
+
+<ol style='margin-top:0cm' start=1 type=1>
+ <li class=MsoNormal>Pilih&nbsp;<b>sel</b>&nbsp;yang akan berisi
+     fungsi.&nbsp;Dalam contoh kita, kita akan memilih sel&nbsp;<b>G3</b>&nbsp;.</li>
+</ol>
+
+<p class=MsoNormal><img border=0 width=715 height=400 id="Picture 60"
+src="fungsi_files/image019.png" alt="Memilih sel"></p>
+
+<ol style='margin-top:0cm' start=2 type=1>
+ <li class=MsoNormal>Klik&nbsp;tab&nbsp;<b>Rumus</b>&nbsp;pada&nbsp;<b>Pita</b>&nbsp;,
+     lalu klik perintah&nbsp;<b>Sisipkan Fungsi</b>&nbsp;.</li>
+</ol>
+
+<p class=MsoNormal><img border=0 width=715 height=272 id="Picture 59"
+src="fungsi_files/image020.png" alt="Masukkan perintah Fungsi"></p>
+
+<ol style='margin-top:0cm' start=3 type=1>
+ <li class=MsoNormal>Kotak&nbsp;dialog&nbsp;<b>Sisipkan Fungsi</b>&nbsp;akan
+     muncul.</li>
+ <li class=MsoNormal>Ketik beberapa&nbsp;<b>kata kunci yang</b>&nbsp;menjelaskan
+     penghitungan yang Anda inginkan untuk dilakukan oleh fungsi tersebut, lalu
+     klik&nbsp;<b>Buka</b>&nbsp;.&nbsp;Dalam contoh kami, kami akan
+     mengetik&nbsp;<b>hitungan hari</b>&nbsp;, tetapi Anda juga dapat
+     menelusuri dengan memilih&nbsp;<b>kategori</b>&nbsp;dari daftar
+     tarik-turun.</li>
+</ol>
+
+<p class=MsoNormal><img border=0 width=419 height=369 id="Picture 58"
+src="fungsi_files/image021.png" alt="Mencari fungsi"></p>
+
+<ol style='margin-top:0cm' start=5 type=1>
+ <li class=MsoNormal>Tinjau&nbsp;<b>hasilnya</b>&nbsp;untuk menemukan fungsi
+     yang diinginkan, lalu klik&nbsp;<b>OK</b>&nbsp;.&nbsp;Dalam contoh kita,
+     kita akan memilih&nbsp;<b>NETWORKDAYS</b>&nbsp;, yang akan menghitung
+     jumlah hari kerja antara tanggal pemesanan dan tanggal penerimaan.</li>
+</ol>
+
+<p class=MsoNormal><img border=0 width=419 height=369 id="Picture 57"
+src="fungsi_files/image022.png" alt="Memilih fungsi"></p>
+
+<ol style='margin-top:0cm' start=6 type=1>
+ <li class=MsoNormal>Kotak&nbsp;dialog&nbsp;<b>Argumen Fungsi</b>&nbsp;akan
+     muncul.&nbsp;Dari sini, Anda dapat memasukkan atau memilih sel yang akan
+     membentuk argumen dalam fungsi.&nbsp;Dalam contoh kami, kami akan
+     memasukkan&nbsp;<b>E3</b>&nbsp;di&nbsp;bidang&nbsp;<b>Tanggal_Mulai</b>&nbsp;dan&nbsp;<b>F3</b>&nbsp;di&nbsp;bidang&nbsp;<b>Tanggal_Akhir</b>&nbsp;.</li>
+ <li class=MsoNormal>Jika sudah puas, klik&nbsp;<b>OK</b>&nbsp;.</li>
+</ol>
+
+<p class=MsoNormal><img border=0 width=581 height=292 id="Picture 56"
+src="fungsi_files/image023.png" alt="Argumen fungsi"></p>
+
+<ol style='margin-top:0cm' start=8 type=1>
+ <li class=MsoNormal>Fungsi akan&nbsp;<b>dihitung</b>&nbsp;, dan&nbsp;<b>hasilnya</b>&nbsp;akan
+     muncul di sel.&nbsp;Dalam contoh kami, hasilnya menunjukkan bahwa
+     butuh&nbsp;<b>empat hari kerja</b>&nbsp;untuk menerima pesanan.</li>
+</ol>
+
+<p class=MsoNormal><img border=0 width=715 height=400 id="Picture 55"
+src="fungsi_files/image024.png" alt="Hasil fungsi"></p>
+
+<p class=MsoNormal>Seperti rumus, fungsi dapat disalin ke sel yang
+berdekatan.&nbsp;Cukup pilih&nbsp;<b>sel</b>&nbsp;yang berisi fungsi, lalu klik
+dan seret&nbsp;<b>gagang isian</b>&nbsp;ke sel yang ingin Anda isi.&nbsp;Fungsi
+akan disalin, dan nilai untuk sel tersebut akan dihitung relatif terhadap baris
+atau kolomnya.</p>
+
+<p class=MsoNormal><img border=0 width=715 height=400 id="Picture 54"
+src="fungsi_files/image025.png" alt="Menggunakan pegangan isi"></p>
+
+<p class=MsoNormal>Untuk mempelajari lebih lanjut:</p>
+
+<p class=MsoNormal>Jika Anda merasa nyaman dengan fungsi dasar, Anda mungkin
+ingin mencoba yang lebih canggih seperti&nbsp;<b>VLOOKUP</b>&nbsp;.&nbsp;Lihat
+artikel kami tentang&nbsp;<a
+href="http://www.gcflearnfree.org/excel-tips/how-to-use-excels-vlookup-function/1/"
+title="Cara Menggunakan Fungsi VLOOKUP Excel"><b>Cara Menggunakan Fungsi
+VLOOKUP Excel</b></a>&nbsp;untuk informasi lebih lanjut.</p>
+
+<p class=MsoNormal>Untuk mempelajari lebih lanjut tentang bekerja dengan
+fungsi, kunjungi&nbsp;tutorial&nbsp;<a
+href="http://www.gcflearnfree.org/excelformulas" target="_blank"><b>Rumus Excel</b></a>&nbsp;kami&nbsp;.</p>
+
+<p class=MsoNormal>Tantangan!</p>
+
+<ol style='margin-top:0cm' start=1 type=1>
+ <li class=MsoNormal>Buka&nbsp;<a
+     href="https://media.gcflearnfree.org/content/563b7aa7ca7fac0d9c7b3f7a_11_05_2015/excel2016_functions_practice.xlsx"><b>buku
+     kerja latihan</b></a>&nbsp;kami&nbsp;.</li>
+ <li class=MsoNormal>Klik&nbsp;tab&nbsp;<b>Tantangan</b>&nbsp;di kiri bawah
+     buku kerja.</li>
+ <li class=MsoNormal>Di sel&nbsp;<b>F3</b>&nbsp;, masukkan fungsi untuk
+     menghitung&nbsp;<b>rata</b>&nbsp;-&nbsp;<b>rata</b>&nbsp;dari empat skor
+     di sel&nbsp;<b>B3:E3</b>&nbsp;.</li>
+ <li class=MsoNormal>Gunakan&nbsp;<b>gagang isian</b>&nbsp;untuk menyalin
+     fungsi Anda di sel&nbsp;<b>F3</b>&nbsp;ke sel&nbsp;<b>F4:F17</b>&nbsp;.</li>
+ <li class=MsoNormal>Di sel&nbsp;<b>B18</b>&nbsp;, gunakan&nbsp;<b>JumlahOtomatis</b>&nbsp;untuk
+     menyisipkan fungsi yang menghitung&nbsp;skor&nbsp;<b>terendah</b>&nbsp;di
+     sel&nbsp;<b>B3:B17</b>&nbsp;.</li>
+ <li class=MsoNormal>Di sel&nbsp;<b>B19</b>&nbsp;, gunakan&nbsp;<b>Pustaka
+     Fungsi</b>&nbsp;untuk menyisipkan fungsi yang menghitung&nbsp;<b>median</b>&nbsp;skor
+     di sel&nbsp;<b>B3:B17</b>&nbsp;.&nbsp;<b>Petunjuk</b>&nbsp;: Anda dapat
+     menemukan fungsi median dengan masuk ke&nbsp;<b>More Functions &gt;
+     Statistical</b>&nbsp;.</li>
+ <li class=MsoNormal>Di sel&nbsp;<b>B20</b>&nbsp;, buat&nbsp;<b>fungsi</b>&nbsp;untuk
+     menghitung&nbsp;skor&nbsp;<b>tertinggi</b>&nbsp;di sel&nbsp;<b>B3:B17</b>&nbsp;.</li>
+ <li class=MsoNormal>Pilih sel&nbsp;<b>B18:B20</b>&nbsp;, lalu gunakan&nbsp;<b>gagang
+     isian</b>&nbsp;untuk menyalin ketiga fungsi yang baru saja Anda buat ke
+     sel&nbsp;<b>C18:F20</b>&nbsp;.</li>
+ <li class=MsoNormal>Setelah selesai, buku kerja Anda akan terlihat seperti
+     ini:</li>
+</ol>
+
+<p class=MsoNormal><img border=0 width=749 height=470 id="Picture 53"
+src="fungsi_files/image026.jpg" alt="Tantangan Fungsi"></p>
+
+</div>
+
+</body>
+
+</html>

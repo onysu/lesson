@@ -44,7 +44,7 @@ body {
 
 .blockquote-footer {
     margin-bottom: 0;
-    text-transform: lowercase;
+    text-transform: lowercase !important;
 }
 
 figure {
@@ -76,12 +76,20 @@ figure {
 
 .accordion-body {
     padding: 1rem;
-    border-right: 1px solid #ddd;
-    border-left: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    /* border: .1pt solid orange; */
+    border-right: 1px solid orange;
+    border-left: 1px solid orange;
+    border-bottom: 1px solid orange;
 }
 
 .accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+.accordion-button:not(.collapsed) {
+    border-top: 1px solid orange;
+    border-left: 1px solid orange;
+    border-right: 1px solid orange;
     border-bottom: 1px solid rgba(0, 0, 0, .125);
 }
 

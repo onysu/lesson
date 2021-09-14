@@ -67,27 +67,35 @@ figure {
 }
 
 .accordion-button {
-    padding: 1rem;
+    padding: .5rem;
 }
 
 .accordion-body {
     padding: 1rem;
+    border-bottom: .5pt solid orange;
 }
 
-.accordion-header {
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+}
+
+
+/* .accordion-header {
     position: sticky;
     top: 0;
-}
+} */
 
-.header {
+
+/* .header {
     position: fixed;
     top: 2rem;
     z-index: 1;
     width: 100%;
     background-color: #f1f1f1;
-}
+} */
 
-.progress-container {
+
+/* .progress-container {
     width: 100%;
     height: 2px;
     background: #eee;
@@ -97,7 +105,7 @@ figure {
     height: 2px;
     background: orange;
     width: 0%;
-}
+} */
 
 .accordion-button:focus {
     box-shadow: none;
@@ -171,6 +179,8 @@ kbd {
     background-color: whitesmoke;
     padding: 8px;
     margin-bottom: 0;
+    margin-top: 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
 }
 
 .sub-materi {

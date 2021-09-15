@@ -12,8 +12,126 @@
     </h2>
     <div id="listmelakukan-lebih-banyak-dengan-pivottable" class="accordion-collapse collapse" aria-labelledby="melakukan-lebih-banyak-dengan-pivottable" data-bs-parent="#parentmelakukan-lebih-banyak-dengan-excel">
         <div class="accordion-body">
-            <p class="tip"><img src="https://img.icons8.com/color/25/000000/export-excel.png" /> unduh file <a href="files/excel/">file Excel</a> dan coba masukkan fungsi-fungsi ini.</p>
-            <!--  -->
+            <p class="tip"><img src="https://img.icons8.com/color/25/000000/export-excel.png" /> unduh file <a href="files/excel/excel2016_morepivottables_practice.xlsx">Pivot Lanjutan</a> sebagai bahan latihan.</p>
+            <p>Seperti yang Anda pelajari di pelajaran sebelumnya, <a href="http://www.gcflearnfree.org/excel2016/intro-to-pivottables/1/"><b>Pengantar PivotTable</b></a> , PivotTable dapat digunakan untuk meringkas dan menganalisis hampir semua jenis data.
+                Untuk membantu Anda memanipulasi PivotTable-dan Anda mendapatkan lebih banyak wawasan Anda menawarkan data Excel tiga alat tambahan: f <b>ilters</b> , <b>s licers</b> , dan <b>PivotCharts</b> .</p>
+
+            <p class="sub-sub-materi">Filter</p>
+
+            <p>Terkadang Anda mungkin ingin fokus pada bagian tertentu dari data Anda. <b>Filter</b> dapat digunakan untuk <b>mempersempit</b> data di PivotTable Anda, sehingga Anda hanya dapat menampilkan informasi yang Anda butuhkan.
+            </p>
+
+            <p class="sub-sub-materi">Untuk menambahkan filter:</p>
+
+            <p>Pada contoh di bawah, kami akan memfilter <b>tenaga penjualan</b> tertentu untuk menentukan bagaimana penjualan individual mereka memengaruhi setiap wilayah.</p>
+
+            <ol style='margin-top:0cm' start=1 type=1>
+                <li>
+                    <p>Seret bidang dari <b>Daftar Bidang</b> ke area <b>Filter</b> . Dalam contoh ini, kita akan menggunakan bidang <b>Tenaga Penjual</b> .</p>
+                    <p><img class="img-fluid" src="img/img-excel/melakukan-lebih-banyak-dengan-pivottable_files/image001.png" alt="menyeret bidang"></p>
+                </li>
+                <li>
+                    <p>The <b>Filter</b> akan muncul di atas PivotTable. Klik
+                        <b>panah tarik-turun</b> , lalu centang kotak di samping <b>Pilih Beberapa Item</b> .</p>
+                    <p><img class="img-fluid" src="img/img-excel/melakukan-lebih-banyak-dengan-pivottable_files/image002.png" alt="mengaktifkan pilih beberapa item"></p>
+                </li>
+                <li>
+                    <p><b>Hapus centang</b> pada kotak di samping item apa pun yang tidak ingin Anda sertakan dalam PivotTable. Dalam contoh kami, kami akan menghapus centang pada kotak untuk beberapa tenaga penjualan, lalu klik <b>OK</b> .</p>
+                    <p><img class="img-fluid" src="img/img-excel/melakukan-lebih-banyak-dengan-pivottable_files/image003.png" alt="hapus centang/batalkan pilihan item"></p>
+                </li>
+                <li>
+                    <p>PivotTable akan <b>menyesuaikan</b> untuk mencerminkan perubahan.</p>
+                    <p><img class="img-fluid" src="img/img-excel/melakukan-lebih-banyak-dengan-pivottable_files/image004.png" alt="pivottable yang difilter"></p>
+                </li>
+            </ol>
+
+
+            <p class="sub-sub-materi">Pemotong</p>
+
+            <p><b>Pemotong</b> membuat pemfilteran data di PivotTable menjadi lebih mudah. Pemotong pada dasarnya hanyalah <b>filter</b> tetapi lebih mudah dan lebih cepat digunakan, memungkinkan Anda untuk memutar data secara instan. Jika Anda sering memfilter
+                PivotTable, Anda mungkin ingin mempertimbangkan untuk menggunakan pemotong alih-alih filter.</p>
+
+            <p class="sub-sub-materi">Untuk menambahkan pemotong:</p>
+
+            <ol style='margin-top:0cm' start=1 type=1>
+                <li>Pilih <b>sel mana saja</b> di PivotTable.</li>
+                <li>
+                    <p>Dari tab <b>Analisis</b> , klik perintah
+                        <b>Sisipkan Pemotong</b> .</p>
+                    <p><img class="img-fluid" src="img/img-excel/melakukan-lebih-banyak-dengan-pivottable_files/image005.png" alt="masukkan perintah pengiris"></p>
+                </li>
+                <li>
+                    <p>Sebuah kotak dialog akan muncul. Centang kotak di sebelah
+                        <b>bidang yang</b> diinginkan . Dalam contoh kita, kita akan memilih <b>Salesperson</b> , lalu klik <b>OK</b> .</p>
+                    <p><img class="img-fluid" src="img/img-excel/melakukan-lebih-banyak-dengan-pivottable_files/image006.png" alt="kotak dialog bidang"></p>
+                </li>
+                <li>
+                    <p>Pemotong akan muncul di sebelah PivotTable. Setiap item yang dipilih akan disorot dengan <b>warna biru</b> . Pada contoh di bawah, pemotong berisi delapan tenaga penjualan, tetapi hanya
+                        <b>lima </b>dari mereka yang saat ini dipilih.</p>
+                    <p><img class="img-fluid" src="img/img-excel/melakukan-lebih-banyak-dengan-pivottable_files/image007.png" alt="alat pengiris dan dapat diputar"></p>
+                </li>
+                <li>
+                    <p>Sama seperti filter, hanya item yang <b>dipilih</b> yang digunakan di PivotTable. Saat Anda <b>memilih</b> atau <b>membatalkan pilihan</b> item, PivotTable akan langsung mencerminkan perubahan. Coba pilih item yang berbeda untuk melihat
+                        pengaruhnya terhadap PivotTable. Tekan dan tahan tombol <b>Ctrl</b> pada keyboard Anda untuk memilih <b>beberapa</b> item sekaligus.</p>
+                    <p><img class="img-fluid" src="img/img-excel/melakukan-lebih-banyak-dengan-pivottable_files/image008.png" alt="menyesuaikan pivottable"></p>
+                </li>
+                <p class="penjelasan">Anda juga dapat mengklik <b>ikon Filter</b> di sudut kanan atas pemotong untuk memilih <b>semua</b> item sekaligus.</p>
+            </ol>
+
+
+
+            <p class="sub-sub-materi">PivotChart</p>
+
+            <p><b>PivotChart</b> seperti bagan biasa, kecuali mereka menampilkan data dari <b>PivotTable</b> . Sama seperti bagan biasa, Anda dapat memilih <b>jenis bagan</b> , <b>tata letak</b> , dan
+                <b>gaya</b> yang paling mewakili data.</p>
+
+            <p class="sub-sub-materi">Untuk membuat PivotChart:</p>
+
+            <p>Pada contoh di bawah, PivotTable kami menunjukkan sebagian dari
+                <b>angka penjualan</b> setiap wilayah . Kami akan menggunakan PivotChart sehingga kami dapat melihat informasi lebih jelas.</p>
+
+            <ol style='margin-top:0cm' start=1 type=1>
+                <li>Pilih <b>sel mana pun</b> di PivotTable Anda.</li>
+                <li>
+                    <p>Dari tab <b>Sisipkan</b> , klik perintah
+                        <b>PivotChart</b> .</p>
+                    <p><img class="img-fluid" src="img/img-excel/melakukan-lebih-banyak-dengan-pivottable_files/image009.png" alt="perintah pivotchart"></p>
+                </li>
+                <li>
+                    <p>Kotak dialog <b>Sisipkan Bagan</b> akan muncul. Pilih
+                        <b>jenis</b> dan <b>tata letak bagan yang</b> diinginkan , lalu klik <b>OK</b> .</p>
+                    <p><img class="img-fluid" src="img/img-excel/melakukan-lebih-banyak-dengan-pivottable_files/image010.png" alt="kotak dialog bagan"></p>
+                </li>
+                <li>
+                    <p>PivotChart akan muncul.</p>
+                    <p><img class="img-fluid" src="img/img-excel/melakukan-lebih-banyak-dengan-pivottable_files/image011.png" alt="pivottable, alat pengiris, dan pivotchart"></p>
+                </li>
+
+                <p class="penjelasan">Coba gunakan <b>filter</b> atau <b>pemotong</b> untuk mempersempit data di PivotChart Anda. Untuk menampilkan subkumpulan informasi yang berbeda, ubah <b>kolom</b> atau <b>baris</b> di PivotTable Anda. Pada contoh di bawah ini, kami telah
+                    mengubah PivotTable untuk melihat <b>penjualan bulanan</b> untuk setiap tenaga penjualan.</p>
+
+                <p><img class="img-fluid" src="img/img-excel/melakukan-lebih-banyak-dengan-pivottable_files/image012.png" alt="pivotchart yang disesuaikan"></p>
+            </ol>
+
+
+
+
+            <p class="sub-materi">Latihan!</p>
+
+            <ol style='margin-top:0cm' start=1 type=1>
+                <li>Buka <a href="files/excel/excel2016_morepivottables_practice.xlsx"><b>latihan soal</b></a> kami .</li>
+                <li>Di area <b>Baris</b> , hapus <b>Region</b> dan ganti dengan <b>Salesperson</b> .</li>
+                <li>Masukkan <b>PivotChart</b> , dan pilih jenis <b>Line with Markers</b> .</li>
+                <li>Sisipkan <b>pemotong</b> untuk <b>Regions</b> .</li>
+                <li>Gunakan <b>pemotong</b> untuk hanya menampilkan wilayah <b>Selatan</b> dan <b>Timur</b> .</li>
+                <li>Ubah jenis <b>PivotChart</b> menjadi <b>Kolom Bertumpuk</b> .</li>
+                <li>Di panel <b>Bidang PivotChart</b> di sebelah kanan, tambahkan <b>Bulan</b> ke area <b>Legenda (Seri)</b> . <b>Catatan:</b> Anda juga bisa mengklik PivotTable lalu menambahkan <b>Bulan</b> ke area <b>Kolom</b> ; hasilnya akan sama.</li>
+                <li>
+                    <p>Setelah selesai, buku kerja Anda akan terlihat seperti ini:</p>
+                    <p><img class="img-fluid" src="img/img-excel/melakukan-lebih-banyak-dengan-pivottable_files/image013.png" alt="Lebih banyak PivotTable"></p>
+                </li>
+            </ol>
+
 
             <div class="text-end">
                 <a class="btn btn-outline-secondary btn-sm" href="#melakukan-lebih-banyak-dengan-pivottable" role="button">

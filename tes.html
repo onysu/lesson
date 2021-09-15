@@ -1,0 +1,171 @@
+<p class="sub-materi">Rumus dan Fungsi</p>
+<p class="fw-light text-sm">Masukkan Rumus | Mengedit Rumus | Prioritas Operator | Salin/Tempel Rumus | Sisipkan Fungsi</p>
+<p>Sebuah rumus adalah ekspresi yang menghitung nilai sel. Fungsi adalah rumus yang telah ditentukan sebelumnya dan sudah tersedia di Excel. Misalnya, sel A3 di bawah ini berisi rumus yang menambahkan nilai sel A2 ke nilai sel A1.
+</p>
+<p><img class="img-fluid" src="img/img-excel/tes_files/image001.png" alt="Rumus di Excel"></p>
+<p>Misalnya, sel A3 di bawah ini berisi fungsi SUM yang menghitung jumlah rentang A1:A2.</p>
+<p><img class="img-fluid" src="img/img-excel/tes_files/image002.png" alt="Fungsi di Excel"></p>
+<p class="sub-sub-materi">Masukkan Formula</p>
+<p>Untuk memasukkan rumus, jalankan langkah-langkah berikut.</p>
+<ol>
+    <li>Pilih sel.</li>
+    <li>Untuk memberi tahu Excel bahwa Anda ingin memasukkan rumus, ketikkan tanda sama dengan (=).</li>
+    <li>
+        <p>Misalnya, ketikkan rumus A1+A2.</p>
+        <p><img class="img-fluid" src="img/img-excel/tes_files/image001.png" alt="Masukkan Formula"></p>
+        <p>Tip: daripada mengetik A1 dan A2, cukup pilih sel A1 dan sel A2.</p>
+    </li>
+    <li>
+        <p>Ubah nilai sel A1 menjadi 3.</p>
+        <p><img class="img-fluid" src="img/img-excel/tes_files/image003.png" alt="Perhitungan ulang"></p>
+        <p>Excel secara otomatis menghitung ulang nilai sel A3. Ini adalah salah satu fitur Excel yang paling kuat!</p>
+    </li>
+</ol>
+<p class="sub-sub-materi">Mengedit Formula</p>
+<p>Saat Anda memilih sel, Excel memperlihatkan nilai atau rumus sel di bilah rumus.</p>
+<p><img class="img-fluid" src="img/img-excel/tes_files/image004.png" alt="Formula Bar"></p>
+<ol>
+    <li>
+        <p>Untuk mengedit rumus, klik di bilah rumus dan ubah rumus.</p>
+        <p><img class="img-fluid" src="img/img-excel/tes_files/image005.png" alt="Mengedit Rumus di Excel"></p>
+    </li>
+    <li>
+        <p>Tekan Enter.</p>
+        <p><img class="img-fluid" src="img/img-excel/tes_files/image006.png" alt="Formula yang Diedit"></p>
+    </li>
+</ol>
+<p class="sub-sub-materi">Prioritas Operator</p>
+<p>Excel menggunakan urutan default di mana perhitungan terjadi. Jika bagian dari rumus ada dalam tanda kurung, bagian itu akan dihitung terlebih dahulu. Kemudian melakukan perhitungan perkalian atau pembagian. Setelah ini selesai, Excel akan menambah dan
+    mengurangi sisa rumus Anda. Lihat contoh di bawah ini.</p>
+<p><img class="img-fluid" src="img/img-excel/tes_files/image007.png" alt="Prioritas Operator"></p>
+<p>Pertama, Excel melakukan perkalian (A1 * A2). Selanjutnya, Excel menambahkan nilai sel A3 ke hasil ini.</p>
+<p>Contoh lain,</p>
+<p><img class="img-fluid" src="img/img-excel/tes_files/image008.png" alt="Tanda kurung"></p>
+<p>Pertama, Excel menghitung bagian dalam tanda kurung (A2+A3). Selanjutnya, hasil ini dikalikan dengan nilai sel A1.
+</p>
+<p class="sub-sub-materi">Salin/Tempel Rumus</p>
+<p>Saat Anda menyalin rumus, Excel secara otomatis menyesuaikan referensi sel untuk setiap sel baru tempat rumus disalin. Untuk memahaminya, lakukan langkah-langkah berikut.</p>
+<ol>
+    <li>
+        <p>Masukkan rumus yang ditunjukkan di bawah ini ke dalam sel A4.</p>
+        <p><img class="img-fluid" src="img/img-excel/tes_files/image009.png" alt="Salin Contoh Rumus"></p>
+    </li>
+    <li>
+        <p>Pilih sel A4, klik kanan, lalu klik Salin (atau tekan CTRL + c)...</p>
+        <p><img class="img-fluid" src="img/img-excel/tes_files/image010.png" alt="Klik Salin"></p>
+        <p>... selanjutnya, pilih sel B4, klik kanan, lalu klik Tempel di bawah 'Opsi Tempel:' (atau tekan CTRL + v).
+        </p>
+        <p><img class="img-fluid" src="img/img-excel/tes_files/image011.png" alt="Klik Tempel"></p>
+    </li>
+    <li>
+        <p>Anda juga dapat menyeret rumus ke sel B4. Pilih sel A4, klik di sudut kanan bawah sel A4 dan seret ke sel B4. Ini jauh lebih mudah dan memberikan hasil yang sama persis!</p>
+        <p><img class="img-fluid" src="img/img-excel/tes_files/image012.png" alt="Seret Rumus Excel"></p>
+        <p>Hasil. Rumus di sel B4 mereferensikan nilai di kolom B.</p>
+        <p><img class="img-fluid" src="img/img-excel/tes_files/image013.png" alt="Salin Hasil Rumus"></p>
+    </li>
+</ol>
+<p class="sub-sub-materi">Sisipkan Fungsi</p>
+<p>Setiap fungsi memiliki struktur yang sama. Misalnya, SUM(A1:A4). Nama fungsi ini adalah SUM. Bagian antara tanda kurung (argumen) berarti kami memberikan Excel rentang A1:A4 sebagai input. Fungsi ini menambahkan nilai dalam sel A1, A2, A3 dan A4. Tidak
+    mudah untuk mengingat fungsi dan argumen mana yang digunakan untuk setiap tugas. Untungnya, fitur Sisipkan Fungsi di Excel membantu Anda dalam hal ini.</p>
+<p>Untuk menyisipkan fungsi, jalankan langkah-langkah berikut.</p>
+<ol>
+    <li>Pilih sel.</li>
+    <li>
+        <p>Klik tombol Sisipkan Fungsi.</p>
+        <p><img class="img-fluid" src="img/img-excel/tes_files/image014.png" alt="Sisipkan Fungsi"></p>
+        <p>Kotak dialog 'Sisipkan Fungsi' muncul.</p>
+    </li>
+    <li>
+        <p>Cari fungsi atau pilih fungsi dari kategori. Misalnya, pilih COUNTIF dari kategori Statistik.</p>
+        <p><img class="img-fluid" src="img/img-excel/tes_files/image015.png" alt="Masukkan Kotak Dialog Fungsi"></p>
+    </li>
+    <li>
+        <p>Klik Oke. <br> Kotak dialog 'Argumen Fungsi' muncul.</p>
+    </li>
+    <li>Klik pada kotak Range dan pilih range A1:C2.</li>
+    <li>Klik di kotak Kriteria dan ketik &gt;5.</li>
+    <li>
+        <p>Klik Oke.</p>
+        <p><img class="img-fluid" src="img/img-excel/tes_files/image016.png" alt="Kotak Dialog Argumen Fungsi"></p>
+        <p>Hasil. Fungsi COUNTIF menghitung jumlah sel yang lebih besar dari 5.</p>
+        <p><img class="img-fluid" src="img/img-excel/tes_files/image017.png" alt="Hasil COUNTIF"></p>
+        <p class="penjelasan"><strong>Catatan:</strong> daripada menggunakan fitur Sisipkan Fungsi, cukup ketik =COUNTIF(A1:C2,&quot;&gt;5&quot;). Saat Anda tiba di: =COUNTIF( alih-alih mengetik A1:C2, cukup pilih rentang A1:C2.</p>
+    </li>
+</ol>
+
+<p class="sub-materi">Fungsi yang Paling Banyak Digunakan</p>
+<p class="sub-sub-materi">1. JUMLAH</p>
+<p>Untuk menghitung jumlah sel yang berisi angka, gunakan fungsi COUNT di Excel.</p>
+<p><img class="img-fluid" src="img/img-excel/Most-Used-Functions_files/image001.png" alt="fungsi COUNT"></p>
+<p class="penjelasan"><strong>Catatan:</strong> gunakan COUNTA untuk menghitung semua sel yang tidak kosong. COUNTA adalah singkatan dari hitung semua.</p>
+<p class="sub-sub-materi">2. SUM</p>
+<p>Untuk menjumlahkan rentang sel, gunakan fungsi SUM di Excel. Fungsi SUM di bawah ini menjumlahkan semua nilai di kolom A.</p>
+<p><img class="img-fluid" src="img/img-excel/Most-Used-Functions_files/image002.png" alt="fungsi SUM"></p>
+<p><img class="img-fluid" src="img/img-excel/Most-Used-Functions_files/image003.png" alt="Sel A99"></p>
+<p class="penjelasan"><strong>Catatan:</strong> Anda juga dapat menggunakan fungsi SUM untuk menjumlahkan seluruh baris. Misalnya, =SUM(5:5) menjumlahkan semua nilai di baris ke-5.</p>
+<p class="sub-sub-materi">3. JIKA</p>
+<p>Fungsi IF memeriksa apakah suatu kondisi terpenuhi, dan mengembalikan satu nilai jika benar dan nilai lain jika salah.
+</p>
+<p><img class="img-fluid" src="img/img-excel/Most-Used-Functions_files/image004.png" alt="fungsi JIKA"></p>
+<p class="penjelasan"><strong>Penjelasan:</strong> jika skor lebih besar dari atau sama dengan 60,
+    <a href="https://www.excel-easy.com/examples/if.html">fungsi IF yang</a> ditunjukkan di atas mengembalikan Lulus, jika tidak mengembalikan Gagal. Untuk menyalin rumus ini dengan cepat ke sel lain, klik di sudut kanan bawah sel C2 dan seret ke bawah
+    ke sel C6.</p>
+<p class="sub-sub-materi">4. RATA-RATA</p>
+<p>Untuk menghitung rata-rata sekelompok angka, gunakan fungsi AVERAGE (tidak ada ilmu roket di sini). Rumus di bawah ini menghitung rata-rata dari 3 angka teratas dalam rentang A1:A6.</p>
+<p><img class="img-fluid" src="img/img-excel/Most-Used-Functions_files/image005.png" alt="Fungsi RATA-RATA"></p>
+<p class="penjelasan"><strong>Penjelasan:</strong> fungsi LARGE mengembalikan konstanta array {20,15,10}. Konstanta array ini digunakan sebagai argumen untuk <a href="https://www.excel-easy.com/examples/average.html">fungsi AVERAGE</a> , memberikan hasil 15.</p>
+<p class="sub-sub-materi">5. COUNTIF</p>
+<p>Fungsi COUNTIF di bawah ini menghitung jumlah sel yang berisi persis bintang + serangkaian karakter nol atau lebih.
+</p>
+<p><img class="img-fluid" src="img/img-excel/Most-Used-Functions_files/image006.png" alt="fungsi COUNTIF"></p>
+<p class="penjelasan"><strong>Penjelasan:</strong> tanda bintang (*) cocok dengan serangkaian karakter nol atau lebih. Kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/countif.html">fungsi COUNTIF</a> untuk informasi dan contoh lebih lanjut.
+</p>
+<p class="sub-sub-materi">6. SUMIF</p>
+<p>Fungsi SUMIF di bawah ini menjumlahkan nilai dalam rentang B1:B5 jika sel yang sesuai dalam rentang A1:A5 berisi persis lingkaran + 1 karakter.
+</p>
+<p><img class="img-fluid" src="img/img-excel/Most-Used-Functions_files/image007.png" alt="fungsi SUMIF"></p>
+<p class="penjelasan"><strong>Penjelasan:</strong> tanda tanya (?) cocok dengan tepat satu karakter. Kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/sumif.html">fungsi SUMIF</a> untuk informasi dan contoh lebih lanjut.
+</p>
+<p class="sub-sub-materi">7. VLOOKUP</p>
+<p>Fungsi VLOOKUP di bawah ini mencari nilai 53 (argumen pertama) di kolom paling kiri dari tabel merah (argumen kedua). Nilai 4 (argumen ketiga) memberi tahu fungsi VLOOKUP untuk mengembalikan nilai pada baris yang sama dari kolom keempat tabel merah.</p>
+<p><img class="img-fluid" src="img/img-excel/Most-Used-Functions_files/image008.png" alt="Fungsi VLOOKUP"></p>
+<p class="penjelasan"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/vlookup.html">fungsi VLOOKUP</a> untuk mempelajari lebih lanjut tentang fungsi Excel yang hebat ini.</p>
+<p class="sub-sub-materi">8. MIN</p>
+<p>Untuk mencari nilai minimum, gunakan fungsi MIN. Ini sesederhana kedengarannya.</p>
+<p><img class="img-fluid" src="img/img-excel/Most-Used-Functions_files/image009.png" alt="fungsi MIN"></p>
+<p class="sub-sub-materi">9. MAX</p>
+<p>Untuk mencari nilai maksimum, gunakan fungsi MAX.</p>
+<p><img class="img-fluid" src="img/img-excel/Most-Used-Functions_files/image010.png" alt="fungsi MAX"></p>
+<p class="penjelasan"><strong>Catatan:</strong> kunjungi bab kami tentang <a href="https://www.excel-easy.com/functions/statistical-functions.html">fungsi
+        statistik</a> untuk mempelajari lebih lanjut tentang Excel dan Statistik.</p>
+<p class="sub-sub-materi">10. SUMPRODUCT</p>
+<p>Untuk menghitung jumlah produk dari angka yang sesuai dalam satu atau beberapa rentang, gunakan fungsi SUMPRODUCT Excel yang kuat.</p>
+<p><img class="img-fluid" src="img/img-excel/Most-Used-Functions_files/image011.png" alt="Fungsi SUMPRODUCT"></p>
+<p class="penjelasan"><strong>Penjelasan:</strong> <a href="https://www.excel-easy.com/examples/sumproduct.html">fungsi SUMPRODUCT</a> melakukan perhitungan ini: (2 * 1000) + (4 * 250) + (4 * 100) + (2 * 50) = 3500.</p>
+
+
+<p>Bab</p>
+<p>Count and Sum</p>
+<p>Logika</p>
+<p>Referensi Sel</p>
+<p>Tanggal Waktu</p>
+<p>Teks</p>
+<p>Pencarian &amp; Referensi</p>
+<p>Keuangan</p>
+<p>Statistik</p>
+<p>Bulat</p>
+<p>Kesalahan Rumus</p>
+<p>Rumus Array</p>
+<p>Fungsi </p>
+<p>Temukan bagaimana fungsi di Excel membantu Anda menghemat waktu. Jika Anda baru mengenal fungsi di Excel, kami menyarankan Anda untuk membaca pengantar kami tentang Rumus dan Fungsi terlebih dahulu.</p>
+<p>Count and Sum : Fungsi yang paling banyak digunakan di Excel adalah fungsi count dan sum. Anda dapat menghitung dan menjumlahkan berdasarkan satu kriteria atau beberapa kriteria.</p>
+<p>Logika : Pelajari cara menggunakan fungsi logika Excel, seperti IF, AND, OR dan NOT.</p>
+<p>Referensi Sel : Referensi sel di Excel sangat penting. Pahami perbedaan antara referensi relatif, absolut, dan campuran, dan Anda sedang menuju kesuksesan.</p>
+<p>Tanggal &amp; Waktu : Untuk memasukkan tanggal, gunakan karakter &quot;/&quot; atau &quot;-&quot;. Untuk memasukkan waktu, gunakan &quot;:&quot; (titik dua).</p>
+<p>Teks : Excel memiliki banyak fungsi untuk ditawarkan dalam hal memanipulasi string teks.</p>
+<p>Pencarian &amp; Referensi : Pelajari semua tentang fungsi pencarian &amp; referensi Excel, seperti VLOOKUP, HLOOKUP, MATCH, INDEX dan CHOOSE.</p>
+<p>Financial: Bab ini menggambarkan fungsi keuangan Excel yang paling populer.</p>
+<p>Statistik: Gambaran umum dari beberapa fungsi statistik yang sangat berguna di Excel.</p>
+<p>Round: Bab ini menggambarkan tiga fungsi untuk membulatkan angka di Excel. ROUND, ROUNDUP dan ROUNDDOWN.</p>
+<p>Rumus Kesalahan: Bab ini mengajarkan Anda bagaimana menangani beberapa kesalahan rumus umum.</p>
+<p>Rumus Array: Bab ini membantu Anda memahami rumus array di Excel. Rumus array sel tunggal melakukan beberapa perhitungan dalam satu sel.</p>

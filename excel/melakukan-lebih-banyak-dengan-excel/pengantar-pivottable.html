@@ -2,19 +2,131 @@
 <div class="accordion-item">
     <h2 class="accordion-header" id="pengantar-pivottable">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listpengantar-pivottable" aria-expanded="false" aria-controls="listpengantar-pivottable">
-                <figure>
-                    <p>Pengantar PivotTable</p>
-                    <figcaption class="blockquote-footer fw-light text-lowercase">
-                        Pelajari cara menggunakan PivotTable di Excel untuk analisis data yang lebih kuat.
-                    </figcaption>
-                </figure>
-            </button>
+            <figure>
+                <p>Pengantar PivotTable</p>
+                <figcaption class="blockquote-footer fw-light text-lowercase">
+                    Pelajari cara menggunakan PivotTable di Excel untuk analisis data yang lebih kuat.
+                </figcaption>
+            </figure>
+        </button>
     </h2>
     <div id="listpengantar-pivottable" class="accordion-collapse collapse" aria-labelledby="pengantar-pivottable" data-bs-parent="#parentmelakukan-lebih-banyak-dengan-excel">
         <div class="accordion-body">
-            <p class="tip"><img src="https://img.icons8.com/color/25/000000/export-excel.png" /> unduh file <a href="files/excel/">file Excel</a> dan coba masukkan fungsi-fungsi ini.</p>
-            <!--  -->
-
+            <p class="tip"><img src="https://img.icons8.com/color/25/000000/export-excel.png" /> unduh file <a href="files/excel/excel2016_intropivottables_practice.xlsx">Pengantar PivotTable</a> sebagai bahan latihan.
+            </p>
+            <p>Ketika Anda memiliki banyak data, terkadang sulit untuk menganalisis semua informasi di lembar kerja Anda. <b>PivotTable</b> dapat membantu membuat lembar kerja Anda lebih mudah dikelola dengan
+                <b>meringkas</b> data Anda dan memungkinkan Anda untuk <b>memanipulasinya</b> dengan cara yang berbeda.
+            </p>
+            <p class="sub-sub-materi">Menggunakan PivotTable untuk menjawab pertanyaan</p>
+            <p>Perhatikan contoh di bawah ini. Katakanlah kita ingin menjawab pertanyaan <b>Berapa jumlah yang dijual
+                    oleh setiap tenaga penjual? </b>Menjawabnya bisa memakan waktu dan sulit; setiap tenaga penjual muncul di beberapa baris, dan kita perlu menjumlahkan semua pesanan mereka yang berbeda satu per satu. Kita dapat menggunakan perintah
+                <b>Subtotal</b> untuk membantu menemukan total untuk setiap tenaga penjualan, tetapi kita masih memiliki banyak data untuk dikerjakan.</p>
+            <p><img class="img-fluid" src="img/img-excel/pengantar-pivottable_files/image001.png" alt="lembar kerja data penjualan"></p>
+            <p>Untungnya, PivotTable dapat langsung <b>menghitung</b> dan <b>meringkas</b> data dengan cara yang akan membuatnya lebih mudah dibaca. Setelah selesai, PivotTable akan terlihat seperti ini:</p>
+            <p><img class="img-fluid" src="img/img-excel/pengantar-pivottable_files/image002.png" alt="total penjualan menurut tenaga penjual"></p>
+            <p>Setelah Anda membuat PivotTable, Anda dapat menggunakannya untuk menjawab pertanyaan yang berbeda dengan mengatur ulang—atau <b>memutar—</b> data. Sebagai contoh, katakanlah kita ingin menjawab <b>Berapa
+                    jumlah total penjualan setiap bulannya? </b>Kita bisa memodifikasi PivotTable kita agar terlihat seperti ini:</p>
+            <p><img class="img-fluid" src="img/img-excel/pengantar-pivottable_files/image003.png" alt="total penjualan per bulan"></p>
+            <p class="sub-sub-materi">Untuk membuat PivotTable:</p>
+            <ol style='margin-top:0cm' start=1 type=1>
+                <li>
+                    <p>Pilih <b>tabel</b> atau <b>sel</b> (termasuk header kolom) yang ingin Anda sertakan dalam PivotTable Anda.</p>
+                    <p><img class="img-fluid" src="img/img-excel/pengantar-pivottable_files/image004.png" alt="memilih meja">
+                </li>
+                <li>
+                    <p>Dari tab <b>Sisipkan</b>, klik perintah
+                        <b>PivotTable</b>.</p>
+                    <p><img class="img-fluid" src="img/img-excel/pengantar-pivottable_files/image005.png" alt="perintah yang dapat diputar"></p>
+                </li>
+                <li>
+                    <p>Kotak dialog <b>Buat PivotTable</b> akan muncul. Pilih pengaturan Anda, lalu klik <b>OK</b>. Dalam contoh kami, kami akan menggunakan <b>Table1</b> sebagai data sumber kami dan menempatkan PivotTable pada <b>lembar kerja baru</b> .</p>
+                    <p><img class="img-fluid" src="img/img-excel/pengantar-pivottable_files/image006.png" alt="kotak dialog yang dapat diputar"></p>
+                </li>
+                <li>
+                    <p><b>PivotTable</b> dan <b>Daftar Bidang</b> kosong akan muncul di lembar kerja baru.</p>
+                    <p><img class="img-fluid" src="img/img-excel/pengantar-pivottable_files/image007.png" alt="meja putar kosong"></p>
+                </li>
+                <li>
+                    <p>Setelah Anda membuat PivotTable, Anda harus memutuskan
+                        <b>bidang</b> mana yang akan ditambahkan. Setiap bidang hanyalah <b>header kolom</b> dari data sumber. Dalam <b>Daftar Bidang PivotTable</b>, centang kotak untuk setiap bidang yang ingin Anda tambahkan. Dalam contoh kami, kami
+                        ingin mengetahui <b>jumlah</b> total yang terjual oleh setiap <b>tenaga penjual</b>, jadi kami akan memeriksa bidang <b>Tenaga Penjual</b> dan <b>Jumlah Pesanan</b>.</p>
+                    <p><img class="img-fluid" src="img/img-excel/pengantar-pivottable_files/image008.png" alt="memilih bidang">
+                </li>
+                <li>
+                    <p>Bidang yang dipilih akan ditambahkan ke salah satu dari empat bidang di bawah ini. Dalam contoh kita, bidang <b>Tenaga Penjual</b> telah ditambahkan ke area <b>Baris</b>, sedangkan <b>Jumlah
+                            Pesanan</b> telah ditambahkan ke <b>Nilai</b>. Atau, Anda dapat <b>menarik dan melepas</b> bidang langsung ke area yang diinginkan.</p>
+                    <p><img class="img-fluid" src="img/img-excel/pengantar-pivottable_files/image009.png" alt="bidang ditambahkan ke area"></p>
+                </li>
+                <li>
+                    <p>PivotTable akan menghitung dan meringkas bidang yang dipilih. Dalam contoh kita, PivotTable menunjukkan <b>jumlah yang terjual oleh setiap tenaga penjual</b>.</p>
+                    <p><img class="img-fluid" src="img/img-excel/pengantar-pivottable_files/image010.png" alt="selesai dapat diputar"></p>
+                </li>
+                <p class="penjelasan">Sama seperti spreadsheet biasa, Anda dapat mengurutkan data dalam PivotTable menggunakan perintah <b>Sort
+                        &amp; Filter</b> pada tab Home. Anda juga dapat menerapkan semua jenis <b>pemformatan angka
+                        yang</b> Anda inginkan. Misalnya, Anda mungkin ingin mengubahformat angka ke <b>Mata Uang</b>. Namun, perlu diketahui bahwa beberapa tipe pemformatan mungkin hilang saat Anda mengubah PivotTable.</p>
+                <p><img class="img-fluid" src="img/img-excel/pengantar-pivottable_files/image011.png" alt="diurutkan dan diformat"></p>
+                <p class="penjelasan">Jika Anda mengubah salah satu data di lembar kerja sumber Anda, PivotTable
+                    <b>tidak akan diperbarui
+                        secara otomatis</b>. Untuk memperbaruinya secara manual, pilih PivotTable, lalu buka
+                    <b>Analisis</b><img class="img-fluid" src="img/img-excel/pengantar-pivottable_files/image012.gif"><b>Refresh</b>.</p>
+            </ol>
+            <p class="sub-sub-materi">Memutar data</p>
+            <p>Salah satu hal terbaik tentang PivotTable adalah mereka dapat dengan cepat <b>memutar</b> — atau mengatur ulang — data Anda, memungkinkan Anda untuk memeriksa lembar kerja Anda dalam beberapa cara. Pivoting data dapat membantu Anda menjawab
+                <b>berbagai pertanyaan</b> dan bahkan <b>bereksperimen</b> dengan data Anda untuk menemukan tren dan pola baru.</p>
+            <p class="sub-sub-materi">Untuk menambahkan kolom:</p>
+            <p>Sejauh ini, PivotTable kami hanya menampilkan <b>satu kolom</b> data dalam satu waktu. Untuk menampilkan
+                <b>beberapa kolom</b>, Anda harus menambahkan bidang ke area <b>Kolom</b>.</p>
+            <ol style='margin-top:0cm' start=1 type=1>
+                <li>
+                    <p>Seret bidang dari <b>Daftar Bidang</b> ke area <b>Kolom</b>. Dalam contoh kita, kita akan menggunakan bidang <b>Bulan</b>.</p>
+                    <p><img class="img-fluid" src="img/img-excel/pengantar-pivottable_files/image013.png" alt="menambahkan kolom"></p>
+                </li>
+                <li>
+                    <p>PivotTable akan menyertakan beberapa kolom. Dalam contoh kita, sekarang ada kolom untuk
+                        <b>penjualan
+                            bulanan</b> setiap orang, selain <b>total keseluruhan</b>.</p>
+                    <p><img class="img-fluid" src="img/img-excel/pengantar-pivottable_files/image014.png" alt="selesai dapat diputar"></p>
+                </li>
+            </ol>
+            <p class="sub-sub-materi">Untuk mengubah baris atau kolom:</p>
+            <p><b>Mengubah</b> baris atau kolom dapat memberi Anda perspektif yang sama sekali berbeda tentang data Anda. Yang harus Anda lakukan adalah <b>menghapus</b> bidang yang dimaksud, lalu <b>menggantinya</b> dengan yang lain.</p>
+            <ol style='margin-top:0cm' start=1 type=1>
+                <li>
+                    <p>Seret bidang yang ingin Anda hapus dari <b>area saat ini</b>. Anda juga dapat <b>menghapus
+                            centang</b> pada kotak yang sesuai di <b>Daftar Bidang</b>. Dalam contoh ini, kami telah menghapus bidang <b>Bulan</b> dan <b>Tenaga Penjual</b>.</p>
+                    <p><img class="img-fluid" src="img/img-excel/pengantar-pivottable_files/image015.png" alt="menghapus bidang"></p>
+                </li>
+                <li>
+                    <p>Seret <b>bidang baru</b> ke <b>area yang diinginkan</b>. Dalam contoh kita, kita akan menempatkan bidang <b>Region di</b> bawah <b>Rows</b>.</p>
+                    <p><img class="img-fluid" src="img/img-excel/pengantar-pivottable_files/image016.png" alt="menyeret bidang">
+                </li>
+                <li>
+                    <p>PivotTable akan menyesuaikan—atau pivot—untuk menampilkan data baru. Dalam contoh kami, sekarang menunjukkan <b>jumlah yang dijual oleh setiap wilayah</b>.</p>
+                    <p><img class="img-fluid" src="img/img-excel/pengantar-pivottable_files/image017.png" alt="selesai dapat diputar"></p>
+                </li>
+            </ol>
+            <p class="sub-sub-materi">Untuk mempelajari lebih lanjut</p>
+            <p>Setelah Anda merasa nyaman dengan PivotTable, lihat pelajaran
+                <a href="http://www.gcflearnfree.org/excel2016/doing-more-with-pivottables/1/"><b>Melakukan Lebih Banyak
+                        dengan PivotTable</b></a> untuk mengetahui lebih banyak cara menyesuaikan dan memanipulasinya.
+            </p>
+            <p class="sub-materi">Latihan!</p>
+            <ol style='margin-top:0cm' start=1 type=1>
+                <li>Buka <a href="files/excel/excel2016_intropivottables_practice.xlsx"><b>latihan soal</b></a> kami.
+                </li>
+                <li>Buat <b>PivotTable</b> di lembar terpisah.</li>
+                <li>
+                    <p>Kami ingin menjawab pertanyaan <b>Berapa jumlah total yang dijual di setiap wilayah? </b>Untuk melakukannya, pilih <b>Wilayah</b> dan <b>Jumlah Pesanan</b>. Setelah selesai, buku kerja Anda akan terlihat seperti ini:</p>
+                    <p><img class="img-fluid" src="img/img-excel/pengantar-pivottable_files/image018.png" alt="Tabel Pivot 1"></p>
+                </li>
+                <li>Di area <b>Baris</b>, hapus <b>Region</b> dan ganti dengan <b>Salesperson</b>.</li>
+                <li>Tambahkan <b>Bulan</b> ke area <b>Kolom</b>.</li>
+                <li>Ubah format angka sel <b>B5:E13</b> menjadi <b>Mata Uang</b>. <b>Catatan</b> : Anda mungkin harus membuat koloms C dan D lebih lebar untuk melihat nilai.</li>
+                <li>
+                    <p>Setelah selesai, buku kerja Anda akan terlihat seperti ini:</p>
+                    <p><img class="img-fluid" src="img/img-excel/pengantar-pivottable_files/image019.png" alt="Pengantar PivotTable"></p>
+                </li>
+            </ol>
             <div class="text-end">
                 <a class="btn btn-outline-secondary btn-sm" href="#pengantar-pivottable" role="button">
                     kembali ke atas <i class="bi bi-arrow-up-circle-fill"></i></a>

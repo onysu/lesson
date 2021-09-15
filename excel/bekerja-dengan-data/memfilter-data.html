@@ -2,19 +2,224 @@
 <div class="accordion-item">
     <h2 class="accordion-header" id="memfilter-data">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listmemfilter-data" aria-expanded="false" aria-controls="listmemfilter-data">
-                <figure>
-                    <p>Memfilter Data</p>
-                    <figcaption class="blockquote-footer fw-light text-lowercase">
-                        Pelajari cara memfilter data di lembar kerja Anda untuk hanya menampilkan informasi yang Anda butuhkan.
-                    </figcaption>
-                </figure>
-            </button>
+            <figure>
+                <p>Memfilter Data</p>
+                <figcaption class="blockquote-footer fw-light text-lowercase">
+                    Pelajari cara memfilter data di lembar kerja Anda untuk hanya menampilkan informasi yang Anda
+                    butuhkan.
+                </figcaption>
+            </figure>
+        </button>
     </h2>
     <div id="listmemfilter-data" class="accordion-collapse collapse" aria-labelledby="memfilter-data" data-bs-parent="#parentbekerja-dengan-data">
         <div class="accordion-body">
-            <p class="tip"><img src="https://img.icons8.com/color/25/000000/export-excel.png" /> unduh file <a href="files/excel/">file Excel</a> dan coba masukkan fungsi-fungsi ini.</p>
-            <!--  -->
-
+            <p class="tip"><img src="https://img.icons8.com/color/25/000000/export-excel.png" /> unduh file <a href="files/excel/excel2016_filtering_practice.xlsx">memfilter data</a> dan coba masukkan fungsi-fungsi ini.</p>
+            <p>Jika lembar kerja Anda berisi banyak konten, mungkin sulit untuk menemukan informasi dengan cepat.
+                <b>Filter</b> dapat digunakan untuk
+                <b>mempersempit</b> data di lembar kerja Anda, memungkinkan Anda untuk melihat hanya informasi yang Anda butuhkan.
+            </p>
+            <p class="sub-sub-materi">Untuk memfilter data:</p>
+            <p>Dalam contoh kami, kami akan menerapkan filter ke lembar kerja log peralatan untuk menampilkan hanya laptop dan proyektor yang tersedia untuk checkout.</p>
+            <ol>
+                <li>
+                    <p>Agar pemfilteran berfungsi dengan benar, lembar kerja Anda harus menyertakan <b>baris header</b>, yang digunakan untuk mengidentifikasi nama setiap kolom. Dalam contoh kami, lembar kerja kami diatur ke dalam kolom berbeda yang diidentifikasi
+                        oleh sel header di baris 1: <b>ID#</b>, <b>Type</b>, <b>Equipment Detail</b>, dan seterusnya.
+                    </p>
+                    <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image001.jpg" alt="Baris header dalam spreadsheet"></p>
+                </li>
+                <li>
+                    <p>Pilih tab <b>Data</b>, lalu klik perintah
+                        <b>Filter</b>.</p>
+                    <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image002.png" alt="Tombol Filter pada tab Data"></p>
+                </li>
+                <li>Sebuah <b>panah drop-down</b> akan muncul di sel header untuk setiap kolom.</li>
+                <li>
+                    <p>Klik <b>panah tarik-turun</b> untuk kolom yang ingin Anda filter. Dalam contoh kami, kami akan memfilter kolom <b>B</b> untuk melihat hanya jenis peralatan tertentu.</p>
+                    <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image003.png" alt="Panah tarik-turun di baris tajuk"></p>
+                </li>
+                <li>The <b>Filter menu</b> akan muncul.</li>
+                <li>
+                    <p><b>Hapus centang</b> pada kotak di samping <b>Pilih Semua</b> untuk membatalkan pilihan semua data dengan cepat.</p>
+                    <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image004.png" alt="Menu tarik-turun untuk menyortir dan memfilter"></p>
+                </li>
+                <li>
+                    <p><b>Centang</b> kotak di samping data yang ingin Anda filter, lalu klik <b>OK</b>. Dalam contoh ini, kita akan memeriksa <b>Laptop</b> dan <b>Proyektor</b> untuk hanya melihat jenis peralatan ini.
+                    </p>
+                    <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image005.png" alt="Memilih kategori filter"></p>
+                </li>
+                <li>
+                    <p>Data akan <b>difilter</b>, untuk sementara menyembunyikan konten apa pun yang tidak sesuai dengan kriteria. Dalam contoh kita, hanya laptop dan proyektor yang terlihat.</p>
+                    <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image006.jpg" alt="Lembar kerja sekarang difilter"></p>
+                </li>
+                <p class="penjelasan">Opsi pemfilteran juga dapat diakses dari perintah <b>Sort &amp; Filter</b> pada tab <b>Home</b>.</p>
+                <p>
+                    <img class="img-fluid" src="img/img-excel/memfilter-data_files/image007.png" alt="Menu Filter pada tab Beranda">
+                </p>
+            </ol>
+            <p class="sub-sub-materi">Untuk menerapkan beberapa filter:</p>
+            <p>Filter bersifat <b>kumulatif</b>, yang berarti Anda dapat menerapkan <b>beberapa filter</b> untuk membantu mempersempit hasil Anda. Dalam contoh ini, kami telah memfilter lembar kerja kami untuk menampilkan laptop dan proyektor, dan kami ingin
+                mempersempitnya lebih jauh untuk hanya menampilkan laptop dan proyektor yang diperiksa pada bulan Agustus.
+            </p>
+            <ol>
+                <li>
+                    <p>Klik <b>panah tarik-turun</b> untuk kolom yang ingin Anda filter. Dalam contoh ini, kami akan menambahkan filter ke kolom
+                        <b>D</b> untuk melihat informasi menurut tanggal.</p>
+                    <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image008.jpg" alt="Panah tarik-turun di baris tajuk"></p>
+                </li>
+                <li>The <b>menu Filter</b> akan muncul.</li>
+                <li>
+                    <p><b>Centang</b> atau <b>hapus centang</b> pada kotak tergantung pada data yang ingin Anda filter, lalu klik <b>OK</b>. Dalam contoh kami, kami akan menghapus centang semuanya kecuali untuk
+                        <b>August</b>.</p>
+                    <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image009.png" alt="Menu tarik-turun untuk menyortir dan memfilter"></p>
+                </li>
+                <li>
+                    <p>Filter baru akan diterapkan. Dalam contoh kami, lembar kerja sekarang difilter untuk menampilkan hanya laptop dan proyektor yang diperiksa pada bulan Agustus.</p>
+                    <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image010.jpg" alt="Lembar kerja sekarang memiliki dua filter"></p>
+                </li>
+            </ol>
+            <p class="sub-sub-materi">Untuk menghapus filter:</p>
+            <p>Setelah menerapkan filter, Anda mungkin ingin menghapus-atau
+                <b>menghapus</b> -itu dari lembar kerja Anda sehingga Anda akan dapat filter konten dengan cara yang berbeda.
+            </p>
+            <ol>
+                <li>
+                    <p>Klik <b>panah tarik-turun</b> untuk filter yang ingin Anda hapus. Dalam contoh kami, kami akan menghapus filter di kolom
+                        <b>D</b>.</p>
+                    <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image011.jpg" alt="Tombol tarik-turun untuk filter yang diterapkan di kolom ini"></p>
+                </li>
+                <li>The <b>menu Filter</b> akan muncul.</li>
+                <li>
+                    <p>Pilih <b>Hapus Filter Dari [NAMA KOLOM]</b> dari menu Filter. Dalam contoh kita, kita akan memilih <b>Clear Filter From &quot;Checked Out</b> &quot;.</p>
+                    <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image012.png" alt="Opsi menu Hapus Filter"></p>
+                </li>
+                <li>
+                    <p>Filter akan dihapus dari kolom. Data yang sebelumnya disembunyikan akan ditampilkan.</p>
+                    <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image013.jpg" alt="Filter telah dibersihkan"></p>
+                </li>
+                <p class="penjelasan">Untuk menghapus semua filter dari lembar kerja Anda, klik perintah
+                    <b>Filter</b> pada tab <b>Data</b>.</p>
+                <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image002.png" alt="Tombol Filter pada tab Data"></p>
+            </ol>
+            <p class="sub-sub-materi">Pemfilteran tingkat lanjut</p>
+            <p>Jika Anda memerlukan filter untuk sesuatu yang spesifik, pemfilteran dasar mungkin tidak memberi Anda pilihan yang cukup. Untungnya, Excel menyertakan banyak <b>alat pemfilteran tingkat lanjut</b>, termasuk
+                <b>pencarian</b>, <b>teks</b>, <b>tanggal</b>, dan
+                <b>pemfilteran angka</b>, yang dapat mempersempit hasil Anda untuk membantu menemukan apa yang Anda butuhkan.
+            </p>
+            <p class="sub-sub-materi">Untuk memfilter dengan penelusuran:</p>
+            <p>Excel memungkinkan Anda <b>mencari</b> data yang berisi frasa, angka, tanggal, dan lainnya yang tepat. Dalam contoh kami, kami akan menggunakan fitur ini untuk hanya menampilkan produk merek <b>Saris</b> di log peralatan kami.</p>
+            <ol>
+                <li>
+                    Pilih tab <b>Data</b>, lalu klik perintah <b>Filter</b>. Sebuah <b>panah drop-down</b> akan muncul di sel header untuk setiap kolom. <b>Catatan</b> : Jika Anda telah menambahkan filter ke lembar kerja, Anda dapat melewati langkah ini.
+                </li>
+                <li>
+                    <p>Klik <b>panah tarik-turun</b> untuk kolom yang ingin Anda filter. Dalam contoh kita, kita akan memfilter kolom <b>C</b>.</p>
+                    <p>
+                        <img class="img-fluid" src="img/img-excel/memfilter-data_files/image014.jpg" alt=""></p>
+                </li>
+                <li>
+                    <p>The <b>menu Filter</b> akan muncul. Masukkan
+                        <b>istilah pencarian</b> ke dalam <b>kotak pencarian</b>. Hasil pencarian akan muncul secara otomatis di bawah bidang
+                        <b>Filter Teks</b> saat Anda mengetik. Dalam contoh kami, kami akan mengetik <b>sari</b> untuk menemukan semua peralatan merek Saris. Setelah selesai, klik <b>OK</b>.</p>
+                    <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image015.png" alt=""></p>
+                </li>
+                <li>
+                    <p>Lembar kerja akan <b>disaring</b> sesuai dengan istilah pencarian Anda. Dalam contoh kita, lembar kerja sekarang difilter untuk hanya menampilkan peralatan merek Saris.</p>
+                    <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image016.jpg" alt=""></p>
+                </li>
+            </ol>
+            <p class="sub-sub-materi">Untuk menggunakan filter teks lanjutan:</p>
+            <p><b>Filter teks lanjutan</b> dapat digunakan untuk menampilkan informasi yang lebih spesifik, seperti sel yang berisi sejumlah karakter tertentu atau data yang mengecualikan kata atau angka tertentu. Dalam contoh kami, kami ingin mengecualikan
+                item apa pun yang mengandung kata <b>laptop</b>.</p>
+            <ol>
+                <li>Pilih tab <b>Data</b>, lalu klik perintah <b>Filter</b>. Sebuah <b>panah drop-down</b> akan muncul di sel header untuk setiap kolom. <b>Catatan</b> : Jika Anda telah menambahkan filter ke lembar kerja, Anda dapat melewati langkah ini.</li>
+                <li>
+                    <p>Klik <b>panah tarik-turun</b> untuk kolom yang ingin Anda filter. Dalam contoh kita, kita akan memfilter kolom <b>C</b>.</p>
+                    <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image017.jpg"></p>
+                </li>
+                <li>
+                    <p>The <b>menu Filter</b> akan muncul. Arahkan mouse ke <b>Filter Teks</b>, lalu pilih filter teks yang diinginkan dari menu tarik-turun. Dalam contoh kami, kami akan memilih
+                        <b>Tidak Berisi</b> untuk melihat data yang tidak berisi teks tertentu.</p>
+                    <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image018.png"></p>
+                </li>
+                <li>
+                    <p>Kotak dialog <b>Custom AutoFilter</b> akan muncul. Masukkan
+                        <b>teks yang diinginkan</b> di sebelah kanan filter, lalu klik <b>OK</b>. Dalam contoh kami, kami akan mengetik <b>laptop</b> untuk mengecualikan item apa pun yang mengandung kata ini.</p>
+                    <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image019.png"></p>
+                </li>
+                <li>
+                    <p>Data akan disaring oleh filter teks yang dipilih. Dalam contoh kami, lembar kerja kami sekarang menampilkan item yang tidak mengandung kata <b>laptop</b>.</p>
+                    <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image020.jpg"></p>
+                </li>
+            </ol>
+            <p class="sub-sub-materi">Untuk menggunakan filter angka lanjutan:</p>
+            <p><b>Filter angka tingkat lanjut</b> memungkinkan Anda untuk memanipulasi data bernomor dengan cara yang berbeda. Dalam contoh ini, kami hanya akan menampilkan jenis peralatan tertentu berdasarkan rentang nomor ID.</p>
+            <ol>
+                <li>Pilih tab <b>Data</b> pada Ribbon, lalu klik perintah
+                    <b>Filter</b>. Sebuah <b>panah
+                        drop-down</b> akan muncul di sel header untuk setiap kolom. <b>Catatan</b> : Jika Anda telah menambahkan filter ke lembar kerja, Anda dapat melewati langkah ini.</li>
+                <li>
+                    <p>Klik <b>panah tarik-turun</b> untuk kolom yang ingin Anda filter. Dalam contoh kami, kami akan memfilter kolom <b>A</b> untuk hanya melihat rentang nomor ID tertentu.</p>
+                    <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image021.jpg" alt="Panah tarik-turun di baris tajuk"></p>
+                </li>
+                <li>
+                    <p>The <b>menu Filter</b> akan muncul. Arahkan mouse ke <b>Filter Angka</b>, lalu pilih filter angka yang diinginkan dari menu tarik-turun. Dalam contoh kami, kami akan memilih
+                        <b>Antara</b> untuk melihat nomor ID antara rentang nomor tertentu.</p>
+                    <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image022.png" alt="Menambahkan filter angka di menu tarik-turun"></p>
+                </li>
+                <li>
+                    <p>Kotak dialog <b>Custom AutoFilter</b> akan muncul. Masukkan
+                        <b>nomor yang</b> diinginkan <b>di</b> sebelah kanan setiap filter, lalu klik <b>OK</b>. Dalam contoh kami, kami ingin memfilter nomor ID yang lebih besar atau sama dengan
+                        <b>3000</b> tetapi kurang dari atau sama dengan <b>6000</b>, yang akan menampilkan nomor ID dalam kisaran 3000-6000.</p>
+                    <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image023.png" alt="Kotak dialog filter angka"></p>
+                </li>
+                <li>
+                    <p>Data akan disaring oleh filter nomor yang dipilih. Dalam contoh kami, hanya item dengan nomor ID antara <b>3000</b> dan <b>6000</b> yang terlihat.</p>
+                    <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image024.jpg" alt="Filter angka telah diterapkan ke lembar kerja"></p>
+                </li>
+            </ol>
+            <p class="sub-sub-materi">Untuk menggunakan filter tanggal lanjutan:</p>
+            <p><b>Filter tanggal lanjutan</b> dapat digunakan untuk melihat informasi dari periode waktu tertentu, seperti tahun lalu, kuartal berikutnya, atau antara dua tanggal. Dalam contoh ini, kami akan menggunakan filter tanggal lanjutan untuk hanya
+                melihat peralatan yang telah diperiksa antara 15 Juli dan 15 Agustus.</p>
+            <ol>
+                <li>Pilih tab <b>Data</b>, lalu klik perintah
+                    <b>Filter</b>. Sebuah <b>panah
+                        drop-down</b> akan muncul di sel header untuk setiap kolom. <b>Catatan</b> : Jika Anda telah menambahkan filter ke lembar kerja, Anda dapat melewati langkah ini.</li>
+                <li>
+                    <p>Klik <b>panah tarik-turun</b> untuk kolom yang ingin Anda filter. Dalam contoh kami, kami akan memfilter kolom <b>D</b> untuk melihat hanya rentang tanggal tertentu.</p>
+                    <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image025.jpg" alt="Panah tarik-turun di baris tajuk"></p>
+                </li>
+                <li>
+                    <p>The <b>menu Filter</b> akan muncul. Arahkan mouse ke <b>Filter Tanggal</b>, lalu pilih filter tanggal yang diinginkan dari menu tarik-turun. Dalam contoh kita, kita akan memilih
+                        <b>Antara</b> untuk melihat peralatan yang telah diperiksa antara 15 Juli dan 15 Agustus.</p>
+                    <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image026.png" alt="Menambahkan filter tanggal di menu tarik-turun"></p>
+                </li>
+                <li>
+                    <p>Kotak dialog <b>Custom AutoFilter</b> akan muncul. Masukkan
+                        <b>tanggal yang</b> diinginkan <b>di</b> sebelah kanan setiap filter, lalu klik <b>OK</b>. Dalam contoh kami, kami ingin memfilter tanggal setelah atau sama dengan <b>15
+                            Juli 2015</b>, dan sebelum atau sama dengan <b>15 Agustus 2015</b>, yang akan menampilkan rentang antara tanggal ini.</p>
+                    <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image027.png" alt="Kotak dialog filter tanggal"></p>
+                </li>
+                <li>
+                    <p>Lembar kerja akan disaring oleh filter tanggal yang dipilih. Dalam contoh kami, kami sekarang dapat melihat item mana yang telah diperiksa <b>antara 15 Juli dan 15 Agustus</b>.</p>
+                    <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image028.png" alt="Filter tanggal telah diterapkan ke lembar kerja"></p>
+                </li>
+            </ol>
+            <p class="sub-materi">Latihan!</p>
+            <ol>
+                <li>Buka <a href="files/excel/excel2016_filtering_practice.xlsx"><b>latihan soal</b></a> kami.</li>
+                <li>Klik tab <b>Tantangan</b> di kiri bawah buku kerja.</li>
+                <li><b>Terapkan filter</b> untuk hanya menampilkan <b>Elektronik</b> dan <b>Instrumen</b>.</li>
+                <li>Gunakan fitur <b>Search</b> untuk menyaring deskripsi item yang mengandung kata <b>Sansei</b>. Setelah Anda melakukan ini, Anda akan memiliki <b>enam</b> entri yang ditampilkan.
+                </li>
+                <li><b>Hapus</b> filter Deskripsi Item.</li>
+                <li>Menggunakan <b>filter angka</b>, tunjukkan jumlah pinjaman yang <b>lebih besar dari atau sama
+                        dengan</b> $100.</li>
+                <li>Filter untuk hanya menampilkan item yang memiliki tenggat waktu pada tahun 2016.</li>
+                <li>
+                    <p>Setelah selesai, buku kerja Anda akan terlihat seperti ini:</p>
+                    <p><img class="img-fluid" src="img/img-excel/memfilter-data_files/image029.jpg" alt="Tantangan Penyaringan"></p>
+                </li>
+            </ol>
             <div class="text-end">
                 <a class="btn btn-outline-secondary btn-sm" href="#memfilter-data" role="button">
                     kembali ke atas <i class="bi bi-arrow-up-circle-fill"></i></a>

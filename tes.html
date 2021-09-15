@@ -92,7 +92,6 @@
         <p class="penjelasan"><strong>Catatan:</strong> daripada menggunakan fitur Sisipkan Fungsi, cukup ketik =COUNTIF(A1:C2,&quot;&gt;5&quot;). Saat Anda tiba di: =COUNTIF( alih-alih mengetik A1:C2, cukup pilih rentang A1:C2.</p>
     </li>
 </ol>
-
 <p class="sub-materi">Fungsi yang Paling Banyak Digunakan</p>
 <p class="sub-sub-materi">1. JUMLAH</p>
 <p>Untuk menghitung jumlah sel yang berisi angka, gunakan fungsi COUNT di Excel.</p>
@@ -103,13 +102,83 @@
 <p><img class="img-fluid" src="img/img-excel/Most-Used-Functions_files/image002.png" alt="fungsi SUM"></p>
 <p><img class="img-fluid" src="img/img-excel/Most-Used-Functions_files/image003.png" alt="Sel A99"></p>
 <p class="penjelasan"><strong>Catatan:</strong> Anda juga dapat menggunakan fungsi SUM untuk menjumlahkan seluruh baris. Misalnya, =SUM(5:5) menjumlahkan semua nilai di baris ke-5.</p>
-<p class="sub-sub-materi">3. JIKA</p>
+<p class="sub-sub-materi">3. IF</p>
 <p>Fungsi IF memeriksa apakah suatu kondisi terpenuhi, dan mengembalikan satu nilai jika benar dan nilai lain jika salah.
 </p>
 <p><img class="img-fluid" src="img/img-excel/Most-Used-Functions_files/image004.png" alt="fungsi JIKA"></p>
 <p class="penjelasan"><strong>Penjelasan:</strong> jika skor lebih besar dari atau sama dengan 60,
     <a href="https://www.excel-easy.com/examples/if.html">fungsi IF yang</a> ditunjukkan di atas mengembalikan Lulus, jika tidak mengembalikan Gagal. Untuk menyalin rumus ini dengan cepat ke sel lain, klik di sudut kanan bawah sel C2 dan seret ke bawah
     ke sel C6.</p>
+<p>
+    <details>
+        <summary>Selengkapnya IF</summary>
+        <p>Fungsi IF adalah salah satu fungsi yang paling banyak digunakan di Excel . Halaman ini berisi banyak contoh IF yang mudah diikuti.</p>
+        <p class="sub-sub-materi">Contoh IF Sederhana</p>
+        <p>Fungsi IF memeriksa apakah suatu kondisi terpenuhi, dan mengembalikan satu nilai jika benar dan nilai lain jika salah.</p>
+        <p>1a. Misalnya, lihat fungsi IF di sel B2 di bawah ini.</p>
+        <p><img class="img-fluid" src="img/img-excel/If_files/image001.png" alt="Jika Lebih Besar dari"></p>
+        <p class="penjelasan"><strong>Penjelasan:</strong> jika harga lebih besar dari 500, fungsi IF mengembalikan High, jika tidak mengembalikan Low.</p>
+        <p>1b. Fungsi IF berikut menghasilkan hasil yang sama persis.
+        </p>
+        <p><img class="img-fluid" src="img/img-excel/If_files/image002.png" alt="Jika Kurang dari"></p>
+        <p class="penjelasan"><strong>Catatan:</strong> Anda dapat menggunakan <a href="https://www.excel-easy.com/examples/comparison-operators.html">operator perbandingan</a> berikut : = (sama dengan), &gt; (lebih besar dari), &lt; (kurang dari), &gt;= (lebih besar atau
+            sama dengan), &lt;= (kurang dari atau sama dengan) dan &lt;&gt; (tidak sebanding dengan).</p>
+        <p>2. Selalu sertakan teks dalam tanda kutip ganda.</p>
+        <p><img class="img-fluid" src="img/img-excel/If_files/image003.png" alt="Fungsi IF sederhana di Excel"></p>
+        <p>3a. Rumus di bawah ini menghitung kemajuan antara dua titik waktu.</p>
+        <p><img class="img-fluid" src="img/img-excel/If_files/image004.png" alt="Hitung Kemajuan"></p>
+        <p>3b. Anda dapat menggunakan fungsi IF untuk menampilkan string kosong jika nilai akhir belum dimasukkan (lihat baris 5).</p>
+        <p><img class="img-fluid" src="img/img-excel/If_files/image005.png" alt="Tampilkan String Kosong"></p>
+        <p class="penjelasan"><strong>Penjelasan:</strong> jika nilai akhir tidak kosong (&lt;&gt; berarti tidak sama dengan), fungsi IF menghitung kemajuan antara nilai awal dan akhir, selain itu akan menampilkan string kosong (dua tanda kutip ganda tanpa apa pun di antaranya).</p>
+        <p class="sub-sub-materi">Dan/Atau Kriteria</p>
+        <p>Gunakan fungsi IF dalam kombinasi dengan fungsi AND dan
+            <a href="https://www.excel-easy.com/examples/or.html">fungsi OR</a> dan jadilah ahli Excel.</p>
+        <p>1. Sebagai contoh, perhatikan fungsi IF pada sel D2 di bawah ini.
+        </p>
+        <p><img class="img-fluid" src="img/img-excel/If_files/image006.png" alt="Jika ini Dan itu"></p>
+        <p class="penjelasan"><strong>Penjelasan:</strong> fungsi AND mengembalikan TRUE jika skor pertama lebih besar atau sama dengan 60 dan skor kedua lebih besar atau sama dengan 90, selain itu mengembalikan FALSE. Jika TRUE, fungsi IF mengembalikan Pass, jika FALSE, fungsi
+            IF mengembalikan Fail.
+        </p>
+        <p>2. Sebagai contoh, perhatikan fungsi IF pada sel D2 di bawah ini.
+        </p>
+        <p><img class="img-fluid" src="img/img-excel/If_files/image007.png" alt="Jika ini Atau itu"></p>
+        <p class="penjelasan"><strong>Penjelasan:</strong> fungsi OR mengembalikan TRUE jika setidaknya satu skor lebih besar dari atau sama dengan 60, selain itu mengembalikan FALSE. Jika TRUE, fungsi IF mengembalikan Pass, jika FALSE, fungsi IF mengembalikan Fail.</p>
+        <p>3. Sebagai contoh, perhatikan fungsi IF pada sel D2 di bawah ini.
+        </p>
+        <p><img class="img-fluid" src="img/img-excel/If_files/image008.png" alt="Fungsi JIKA lanjutan"></p>
+        <p class="penjelasan"><strong>Penjelasan:</strong> fungsi AND di atas memiliki dua argumen yang dipisahkan oleh koma (Tabel, Hijau atau Biru). Fungsi AND mengembalikan TRUE jika Produk sama dengan &quot;Tabel&quot; dan Warna sama dengan &quot;Hijau&quot; atau &quot;Biru&quot;.
+            Jika TRUE, fungsi IF mengurangi harga sebesar 50%, jika FALSE, fungsi IF mengurangi harga sebesar 10%.</p>
+        <p class="sub-sub-materi">Jika Bersarang</p>
+        <p>Fungsi JIKA di Excel bisa disarangkan, saat Anda memiliki beberapa kondisi yang harus dipenuhi. Nilai FALSE digantikan oleh fungsi IF lain untuk melakukan pengujian lebih lanjut.</p>
+        <p>1. Misalnya, lihat rumus JIKA bersarang di sel C2 di bawah ini.
+        </p>
+        <p><img class="img-fluid" src="img/img-excel/If_files/image009.png" alt="Contoh JIKA bersarang"></p>
+        <p class="penjelasan"><strong>Penjelasan:</strong> jika skor sama dengan 1, rumus IF bersarang menghasilkan Buruk, jika skor sama dengan 2, rumus JIKA bersarang menghasilkan Baik, jika skor sama dengan 3, rumus IF bersarang menghasilkan Sangat Baik, jika tidak maka
+            mengembalikan Tidak Valid. Jika Anda memiliki Excel 2016 atau lebih baru, cukup gunakan <a href="https://www.excel-easy.com/examples/ifs.html">fungsi IFS</a> .</p>
+        <p>2. Misalnya, lihat rumus JIKA bersarang di sel C2 di bawah ini.
+        </p>
+        <p><img class="img-fluid" src="img/img-excel/If_files/image010.png" alt="Rumus JIKA bersarang"></p>
+        <p class="penjelasan"><strong>Penjelasan:</strong> jika skor kurang dari 60, rumus IF bersarang mengembalikan F, jika skor lebih besar atau sama dengan 60 dan kurang dari 70, rumus mengembalikan D, jika skor lebih besar atau sama dengan 70 dan kurang dari 80, rumus
+            mengembalikan C, jika skor lebih besar atau sama dengan 80 dan kurang dari 90, rumus mengembalikan B, selain itu mengembalikan A.</p>
+        <p class="sub-sub-materi">Lebih lanjut mengenai IF</p>
+        <p>Fungsi IF adalah fungsi yang bagus. Mari kita lihat beberapa contoh keren lainnya.</p>
+        <p>1. Misalnya, gunakan IF dan AND untuk menguji apakah suatu nilai berada di antara dua angka.</p>
+        <p><img class="img-fluid" src="img/img-excel/If_files/image011.png" alt="Jika Nilai Antara Dua Angka"></p>
+        <p class="penjelasan"><strong>Penjelasan:</strong> fungsi AND mengembalikan TRUE jika orang tersebut lebih tua dari 12 tahun dan lebih muda dari 20 tahun, selain itu mengembalikan FALSE. Jika TRUE, fungsi IF mengembalikan Ya, jika FALSE, fungsi IF mengembalikan Tidak.</p>
+        <p>2. Anda dapat menggabungkan IF dengan AVERAGE, SUM dan fungsi Excel lainnya. Langit adalah batasnya!</p>
+        <p><img class="img-fluid" src="img/img-excel/If_files/image012.png" alt="JIKA, RATA-RATA dan SUM"></p>
+        <p class="penjelasan"><strong>Penjelasan:</strong> fungsi AND mengembalikan TRUE jika nilai input lebih besar dari 100 dan rata-rata nilai dalam <a href="https://www.excel-easy.com/examples/named-range.html">rentang bernama</a> Data1 lebih besar dari 100, selain itu
+            mengembalikan FALSE. Jika TRUE, fungsi IF mengembalikan jumlah Data2, jika FALSE, fungsi IF mengembalikan 0.</p>
+        <p>Bingung? Anda selalu dapat menggunakan alat Evaluasi Rumus untuk menelusuri rumus JIKA Anda. Alat Excel ini membantu Anda memahami rumus.</p>
+        <p>3. Misalnya, pilih sel G3 di atas.</p>
+        <p>4. Pada tab Rumus, dalam grup Audit Rumus, klik Evaluasi Rumus.
+        </p>
+        <p><img class="img-fluid" src="img/img-excel/If_files/image013.png" alt="Evaluasi Rumus"></p>
+        <p>5. Klik Evaluasi beberapa kali.</p>
+        <p><img class="img-fluid" src="img/img-excel/If_files/image014.png" alt="Evaluasi rumus JIKA"></p>
+        <p class="penjelasan"><strong>Catatan:</strong> coba sendiri. Unduh file Excel dan pilih salah satu rumus IF yang dijelaskan di halaman ini. Anda dapat menggunakan alat ini untuk menelusuri semua jenis rumus.</p>
+    </details>
+</p>
 <p class="sub-sub-materi">4. RATA-RATA</p>
 <p>Untuk menghitung rata-rata sekelompok angka, gunakan fungsi AVERAGE (tidak ada ilmu roket di sini). Rumus di bawah ini menghitung rata-rata dari 3 angka teratas dalam rentang A1:A6.</p>
 <p><img class="img-fluid" src="img/img-excel/Most-Used-Functions_files/image005.png" alt="Fungsi RATA-RATA"></p>
@@ -142,8 +211,6 @@
 <p>Untuk menghitung jumlah produk dari angka yang sesuai dalam satu atau beberapa rentang, gunakan fungsi SUMPRODUCT Excel yang kuat.</p>
 <p><img class="img-fluid" src="img/img-excel/Most-Used-Functions_files/image011.png" alt="Fungsi SUMPRODUCT"></p>
 <p class="penjelasan"><strong>Penjelasan:</strong> <a href="https://www.excel-easy.com/examples/sumproduct.html">fungsi SUMPRODUCT</a> melakukan perhitungan ini: (2 * 1000) + (4 * 250) + (4 * 100) + (2 * 50) = 3500.</p>
-
-
 <p>Bab</p>
 <p>Count and Sum</p>
 <p>Logika</p>

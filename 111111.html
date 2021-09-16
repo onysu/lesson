@@ -1,52 +1,71 @@
-<p class="sub-materi"><b>Sumif</b></p>
-<p><a href="#">Kriteria Numerik</a> | <a href="#">Kriteria Teks</a> | <a href="#">Kriteria Tanggal</a> | <a href="#">Dan Kriteria</a> | <a href="#">Atau Kriteria</a></p>
-<p>Fungsi <b>SUMIF</b> yang kuat di Excel menjumlahkan sel berdasarkan satu kriteria. Halaman ini berisi banyak contoh <b>SUMIF</b> yang mudah diikuti.</p>
-<p class="sub-sub-materi">Kriteria Numerik</p>
-<p>Gunakan fungsi <b>SUMIF</b> di Excel untuk menjumlahkan sel berdasarkan angka yang memenuhi kriteria tertentu.</p>
-<p>1. Fungsi <b>SUMIF</b> di bawah (dua argumen) menjumlahkan nilai dalam Range A1:A5 yang kurang dari atau sama dengan 10.</p>
-<p><img class="img-fluid" src="img/img-excel/Sumif_files/image001.png" alt="Fungsi xcel dengan Dua Argumen"></p>
-<p>2. Fungsi <b>SUMIF</b> berikut memberikan hasil yang sama persis. Operator &amp; menggabungkan simbol 'kurang dari atau sama dengan' dan nilai dalam sel C1.</p>
-<p><img class="img-fluid" src="img/img-excel/Sumif_files/image002.png" alt="Fungsierator Ampersand"></p>
-<p>3. Fungsi <b>SUMIF</b> di bawah ini (tiga argumen, argumen terakhir adalah Range yang akan dijumlahkan) menjumlahkan nilai dalam Range B1:B5 jika sel terkait dalam Range A1:A5 berisi nilai 25.</p>
-<p><img class="img-fluid" src="img/img-excel/Sumif_files/image003.png" alt="Fungsi xcel dengan Tiga Argumen"></p>
-<p>4. Fungsi <b>SUMIF</b> berikut memberikan hasil yang sama persis (argumen kedua mengacu pada sel D1).</p>
-<p><img class="img-fluid" src="img/img-excel/Sumif_files/image004.png" alt="Argumen Kedua Mengacu pada Sel D1"></p>
-<p class="sub-sub-materi">Kriteria Teks</p>
-<p>Gunakan fungsi <b>SUMIF</b> di Excel untuk menjumlahkan sel berdasarkan string teks yang memenuhi kriteria tertentu. Selalu sertakan teks dalam tanda kutip ganda.</p>
-<p>1. Fungsi <b>SUMIF</b> di bawah ini menjumlahkan nilai dalam Range B1:B5 jika sel yang sesuai dalam Range A1:A5 berisi lingkaran persis.</p>
-<p><img class="img-fluid" src="img/img-excel/Sumif_files/image005.png" alt="Jumlahkan Jika Sama dengan Nilai Teks"></p>
-<p>2. Fungsi <b>SUMIF</b> di bawah ini menjumlahkan nilai dalam Range B1:B5 jika sel terkait dalam Range A1:A5 <u>tidak</u> berisi segitiga sama persis.</p>
-<p><img class="img-fluid" src="img/img-excel/Sumif_files/image006.png" alt="Jumlahkan Jika Tidak Sama dengan Nilai Teks"></p>
-<p>3. Fungsi <b>SUMIF</b> di bawah ini menjumlahkan nilai dalam Range B1:B5 jika sel yang sesuai dalam Range A1:A5 berisi persis lingkaran + 1 karakter. Tanda tanya (?) cocok dengan tepat satu karakter.</p>
-<p><img class="img-fluid" src="img/img-excel/Sumif_files/image007.png" alt="Fungsi  dengan Tanda Tanya"></p>
-<p>4. Fungsi <b>SUMIF</b> di bawah ini menjumlahkan nilai dalam Range B1:B5 jika sel terkait dalam Range A1:A5 berisi rangkaian nol atau lebih karakter + file. Tanda bintang (*) cocok dengan serangkaian karakter nol atau lebih.</p>
-<p><img class="img-fluid" src="img/img-excel/Sumif_files/image008.png" alt="Fungsi  dengan Asterisk"></p>
-<p>5. Fungsi <b>SUMIF</b> di bawah jumlah nilai dalam Range B1:B5 jika sel yang sesuai dalam Range A1:A5 berisi segitiga <u>atau</u> lingkaran8 yang tepat.</p>
-<p><img class="img-fluid" src="img/img-excel/Sumif_files/image009.png" alt="Dua Fungsi  di Excel"></p>
-<p class="sub-sub-materi">Kriteria Tanggal</p>
-<p>Gunakan fungsi <b>SUMIF</b> di Excel untuk menjumlahkan sel berdasarkan tanggal yang memenuhi kriteria tertentu.</p>
-<p>1. Fungsi <b>SUMIF</b> di bawah ini menjumlahkan penjualan setelah 20 Januari 2018.</p>
-<p><img class="img-fluid" src="img/img-excel/Sumif_files/image010.png" alt="Jumlahkan Jika Tanggal Lebih Besar dari"></p>
-<p class="penjelasan"><b>Catatan:</b> fungsi DATE di Excel menerima tiga argumen: tahun, bulan, dan hari.</p>
-<p>2. Fungsi <b>SUMIF</b> di bawah ini menjumlahkan penjualan hari ini.</p>
-<p><img class="img-fluid" src="img/img-excel/Sumif_files/image011.png" alt="Fungsi  dan Fungsi Hari Ini"></p>
-<p class="penjelasan"><b>Catatan:</b> hari ini adalah 3 Agustus 2018.</p>
-<p>3. Fungsi SUMIFS (dengan huruf S di akhir) di bawah ini menjumlahkan penjualan antara dua tanggal.</p>
-<p><img class="img-fluid" src="img/img-excel/Sumif_files/image012.png" alt="Jumlahkan Jika Tanggal Antara"></p>
-<p class="penjelasan"><b>Catatan:</b> fungsi SUMIFS di Excel menjumlahkan sel berdasarkan dua atau lebih kriteria (argumen pertama adalah Range yang akan dijumlahkan, diikuti oleh dua atau lebih pasangan Range/kriteria). Sesuaikan tanggal untuk menjumlahkan penjualan pada
-    bulan, tahun, dll.</p>
-<p class="sub-sub-materi">Dan Kriteria</p>
-<p>Menjumlahkan dengan kriteria Dan di Excel itu mudah.</p>
-<p>1. Misalnya, untuk menjumlahkan sel yang memenuhi kriteria berikut: Google <u>dan</u> Stanford (dua Range kriteria), cukup gunakan fungsi SUMIFS (dengan huruf S di akhir).</p>
-<p><img class="img-fluid" src="img/img-excel/Sumif_files/image013.png" alt="Fungsi  di Excel"></p>
-<p class="penjelasan"><b>Catatan:</b> ingat, saat menggunakan fungsi SUMIFS, argumen pertama adalah Range yang akan dijumlahkan, diikuti oleh dua atau lebih pasangan Range/kriteria.</p>
-<p class="sub-sub-materi">Atau Kriteria</p>
-<p>Menjumlahkan dengan kriteria Or di Excel bisa jadi rumit.</p>
-<p>1. Rumus di bawah ini menjumlahkan sel yang memenuhi kriteria berikut: Google atau Facebook (satu Range kriteria). Tidak ada ilmu roket sejauh ini.</p>
-<p><img class="img-fluid" src="img/img-excel/Sumif_files/image014.png" alt="2x Fungsi di Excel"></p>
-<p>2. Namun, jika Anda ingin menjumlahkan sel yang memenuhi kriteria berikut: Google <u>atau</u> Stanford (dua Range kriteria), Anda tidak bisa begitu saja menggunakan fungsi <b>SUMIF</b> dua kali (lihat gambar di bawah).</p>
-<p><img class="img-fluid" src="img/img-excel/Sumif_files/image015.png" alt="Formula yang salah"></p>
-<p class="penjelasan"><b>Catatan:</b> sel yang memenuhi kriteria Google dan Stanford ditambahkan dua kali, tetapi hanya boleh ditambahkan satu kali. 10 adalah jawaban yang kita cari.</p>
-<p>3. Rumus array di bawah ini berhasil.</p>
-<p><img class="img-fluid" src="img/img-excel/Sumif_files/image016.png" alt="Jumlahkan dengan Atau Kriteria di Excel"></p>
-<p class="penjelasan"><b>Catatan:</b> selesaikan rumus array dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>. Excel menambahkan kurung kurawal {}. Kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/sum-with-or-criteria.html">Menjumlahkan dengan Atau Kriteria</a>    untuk instruksi terperinci tentang cara membuat rumus array ini.</p>
+<p><b>Vlookup</b></p>
+<p><a href="#">Pencocokan Tepat</a> | <a href="#">Perkiraan Pertandingan</a> | <a href="#">Vlookup Terlihat Benar</a> | <a href="#">First Match</a> | <a href="#">Vlookup is Case-insensitive</a> | <a href="#">Beberapa Kriteria</a> | <a href="#">#N/A kesalahan</a>    | <a href="#">Beberapa Tabel Pencarian</a> | <a href="#">Index dan Match</a> | <a href="#">Xlookup</a></p>
+<p>Fungsi <b>VLOOKUP</b> adalah salah satu fungsi yang paling populer di Excel. Halaman ini berisi banyak contoh <b>VLOOKUP</b> yang mudah diikuti.</p>
+<p class="sub-sub-materi">Benar-benar cocok</p>
+<p>Sebagian besar waktu Anda mencari kecocokan yang tepat saat Anda menggunakan fungsi <b>VLOOKUP</b> di Excel. Mari kita lihat argumen dari fungsi <b>VLOOKUP</b>.</p>
+<p>1. Fungsi <b>VLOOKUP</b> di bawah ini mencari nilai 53 (argumen pertama) di kolom paling kiri tabel merah (argumen kedua).</p>
+<p><img class="img-fluid" src="img/img-excel/Vlookup_files/image001.png" alt="Argumen <b>Vlookup</b>"></p>
+<p>2. Nilai 4 (argumen ketiga) memberitahu fungsi <b>VLOOKUP</b> untuk mengembalikan nilai pada baris yang sama dari kolom keempat tabel merah.</p>
+<p><img class="img-fluid" src="img/img-excel/Vlookup_files/image002.png" alt="Hasil <b>Vlookup</b> di Excel"></p>
+<p>Catatan: Boolean FALSE (argumen keempat) memberi tahu fungsi <b>VLOOKUP</b> untuk mengembalikan kecocokan yang sama persis. Jika fungsi <b>VLOOKUP</b> tidak dapat menemukan nilai 53 di kolom pertama, itu akan mengembalikan kesalahan
+    <a href="https://www.excel-easy.com/examples/<b>vlookup</b>.html#na-error">#N/A</a>.</p>
+<p>3. Ini contoh lain. Alih-alih mengembalikan gaji, fungsi <b>VLOOKUP</b> di bawah ini mengembalikan nama belakang (argumen ketiga disetel ke 3) dari ID 79.</p>
+<p><img class="img-fluid" src="img/img-excel/Vlookup_files/image003.png" alt="Benar-benar cocok"></p>
+<p class="sub-sub-materi">Perkiraan Pertandingan</p>
+<p>Mari kita lihat contoh fungsi <b>VLOOKUP</b> dalam mode pencocokan perkiraan (argumen keempat disetel ke TRUE).</p>
+<p>1. Fungsi <b>VLOOKUP</b> di bawah ini mencari nilai 85 (argumen pertama) di kolom paling kiri dari tabel merah (argumen kedua). Hanya ada satu masalah. Tidak ada nilai 85 di kolom pertama.</p>
+<p><img class="img-fluid" src="img/img-excel/Vlookup_files/image004.png" alt="Fungsi <b>Vlookup</b> dalam Mode Pencocokan Perkiraan"></p>
+<p>2. Untungnya, Boolean TRUE (argumen keempat) memberi tahu fungsi <b>VLOOKUP</b> untuk mengembalikan perkiraan kecocokan. Jika fungsi <b>VLOOKUP</b> tidak dapat menemukan nilai 85 di kolom pertama, itu akan mengembalikan nilai terbesar yang lebih kecil
+    dari 85. Dalam contoh ini, ini akan menjadi nilai 80.</p>
+<p><img class="img-fluid" src="img/img-excel/Vlookup_files/image005.png" alt="Nilai Terbesar Lebih Kecil dari Nilai Pencarian"></p>
+<p>3. Nilai 2 (argumen ketiga) memberitahu fungsi <b>VLOOKUP</b> untuk mengembalikan nilai pada baris yang sama dari kolom kedua tabel merah.</p>
+<p><img class="img-fluid" src="img/img-excel/Vlookup_files/image006.png" alt="Perkiraan Pertandingan di Excel"></p>
+<p>Catatan: selalu urutkan kolom paling kiri dari tabel merah dalam urutan menaik jika Anda menggunakan fungsi <b>VLOOKUP</b> dalam mode pencocokan perkiraan (argumen keempat disetel ke TRUE).</p>
+<p class="sub-sub-materi">Vlookup Terlihat Benar</p>
+<p>Fungsi <b>VLOOKUP</b> selalu mencari nilai di kolom paling kiri dari tabel dan mengembalikan nilai yang sesuai dari kolom ke <u>kanan</u>.</p>
+<p>1. Misalnya, fungsi <b>VLOOKUP</b> di bawah ini mencari nama depan dan mengembalikan nama belakang.</p>
+<p><img class="img-fluid" src="img/img-excel/Vlookup_files/image007.png" alt="Pencarian Kanan"></p>
+<p>2. Jika Anda mengubah nomor indeks kolom (argumen ketiga) menjadi 3, fungsi <b>VLOOKUP</b> akan mencari nama depan dan mengembalikan gaji.</p>
+<p><img class="img-fluid" src="img/img-excel/Vlookup_files/image008.png" alt="Ubah Nomor Indeks Kolom"></p>
+<p>Catatan: dalam contoh ini, fungsi <b>VLOOKUP</b> tidak dapat mencari nama depan dan mengembalikan ID. Fungsi <b>VLOOKUP</b> hanya melihat ke kanan. Jangan khawatir, Anda dapat menggunakan INDEX dan MATCH di Excel untuk melakukan <a href="https://www.excel-easy.com/examples/left-lookup.html">pencarian kiri</a>    .</p>
+<p class="sub-sub-materi">First Match</p>
+<p>Jika kolom paling kiri dari tabel berisi duplikat, fungsi <b>VLOOKUP</b> cocok dengan instance pertama. Sebagai contoh, lihatlah fungsi <b>VLOOKUP</b> di bawah ini.</p>
+<p><img class="img-fluid" src="img/img-excel/Vlookup_files/image009.png" alt="First Match"></p>
+<p>Penjelasan: fungsi <b>VLOOKUP</b> mengembalikan gaji Mia Clark, bukan Mia Reed.</p>
+<p class="sub-sub-materi">Vlookup tidak peka huruf besar-kecil</p>
+<p>Fungsi <b>VLOOKUP</b> di Excel melakukan pencarian peka huruf besar/kecil. Misalnya, fungsi <b>VLOOKUP</b> di bawah ini mencari MIA (sel G2) di kolom paling kiri tabel.</p>
+<p><img class="img-fluid" src="img/img-excel/Vlookup_files/image010.png" alt="Pencarian peka huruf besar/kecil"></p>
+<p>Penjelasan: Fungsi <b>VLOOKUP</b> bersifat case-insensitive sehingga mencari MIA atau Mia atau mia atau miA, dll. Akibatnya, fungsi <b>VLOOKUP</b> mengembalikan gaji Mia Clark (contoh pertama). Gunakan INDEX, MATCH, dan EXACT di Excel untuk melakukan
+    <a href="https://www.excel-easy.com/examples/case-sensitive-lookup.html">pencarian peka huruf besar/kecil</a>.</p>
+<p class="sub-sub-materi">Beberapa Kriteria</p>
+<p>Apakah Anda ingin mencari nilai berdasarkan beberapa kriteria? Gunakan INDEX dan MATCH di Excel untuk melakukan <a href="https://www.excel-easy.com/examples/two-column-lookup.html">pencarian dua kolom</a>.</p>
+<p><img class="img-fluid" src="img/img-excel/Vlookup_files/image011.png" alt="Pencarian dua kolom"></p>
+<p>Catatan: rumus array di atas mencari gaji James Clark, bukan James Smith, bukan James Anderson.</p>
+<p class="sub-sub-materi">#N/A Errors</p>
+<p>Jika fungsi <b>VLOOKUP</b> tidak dapat menemukan kecocokan, ia mengembalikan kesalahan #N/A.</p>
+<p>1. Misalnya, fungsi <b>VLOOKUP</b> di bawah ini tidak dapat menemukan nilai 28 di kolom paling kiri.</p>
+<p><img class="img-fluid" src="img/img-excel/Vlookup_files/image012.png" alt="#T/A Kesalahan"></p>
+<p>2. Jika mau, Anda dapat menggunakan fungsi IFNA untuk mengganti kesalahan #N/A dengan pesan ramah.</p>
+<p><img class="img-fluid" src="img/img-excel/Vlookup_files/image013.png" alt="Fungsi Ifna"></p>
+<p>Catatan: fungsi IFNA diperkenalkan di Excel 2013. Jika Anda menggunakan Excel 2010 atau Excel 2007, cukup ganti IFNA dengan IFERROR. Ingat, fungsi IFERROR juga menangkap kesalahan lain. Misalnya, #NAME? kesalahan jika Anda tidak sengaja salah mengeja
+    kata <b>VLOOKUP</b>.</p>
+<p class="sub-sub-materi">Beberapa Tabel Pencarian</p>
+<p>Saat menggunakan fungsi <b>VLOOKUP</b> di Excel, Anda dapat memiliki beberapa tabel pencarian. Anda dapat menggunakan <a href="https://www.excel-easy.com/examples/if.html">fungsi IF</a> untuk memeriksa apakah suatu kondisi terpenuhi, dan mengembalikan
+    satu tabel pencarian jika TRUE dan tabel pencarian lainnya jika FALSE.</p>
+<p>1. Buat dua <a href="https://www.excel-easy.com/examples/named-range.html">rentang bernama</a> : Tabel1 dan Tabel2.</p>
+<p><img border=0 width=604 height=287 id="Picture 23" class="img-fluid" src="img/img-excel/Vlookup_files/image014.png" alt="Meja Pertama"></p>
+<p>2. Pilih sel E4 dan masukkan fungsi <b>VLOOKUP</b> yang ditunjukkan di bawah ini.</p>
+<p><img border=0 width=604 height=287 id="Picture 22" class="img-fluid" src="img/img-excel/Vlookup_files/image015.png" alt="Fungsi <b>Vlookup</b> dengan Beberapa Tabel Pencarian"></p>
+<p>Penjelasan: bonus tergantung pada pasar (Inggris atau USA) dan jumlah penjualan. Argumen kedua dari fungsi <b>VLOOKUP</b> berhasil. Jika Inggris, fungsi <b>VLOOKUP</b> menggunakan Tabel1, jika AS, fungsi <b>VLOOKUP</b> menggunakan Tabel2. Setel argumen
+    keempat fungsi <b>VLOOKUP</b> ke TRUE untuk mengembalikan perkiraan kecocokan.</p>
+<p>3. Tekan Enter.</p>
+<p>4. Pilih sel E4, klik di sudut kanan bawah sel E4 dan seret ke bawah ke sel E10.</p>
+<p><img class="img-fluid" src="img/img-excel/Vlookup_files/image016.png" alt="Salin Fungsi <b>Vlookup</b>"></p>
+<p>Catatan: misalnya, Walker menerima bonus $1.500. Karena kami menggunakan rentang bernama, kami dapat dengan mudah menyalin fungsi <b>VLOOKUP</b> ini ke sel lain tanpa mengkhawatirkan referensi sel.</p>
+<p class="sub-sub-materi">Indeks dan Pertandingan</p>
+<p>Alih-alih menggunakan <b>VLOOKUP</b>, gunakan <a href="https://www.excel-easy.com/examples/index-match.html">INDEX dan MATCH</a>. Untuk melakukan pencarian lanjutan, Anda memerlukan INDEX dan MATCH. Mungkin ini satu langkah terlalu jauh untuk Anda pada
+    tahap ini, tetapi ini menunjukkan kepada Anda salah satu dari banyak formula hebat lainnya yang ditawarkan Excel.</p>
+<p><img class="img-fluid" src="img/img-excel/Vlookup_files/image017.png" alt="Indeks dan Pertandingan"></p>
+<p class="sub-sub-materi">Xlookup</p>
+<p>Jika Anda memiliki Excel 365, gunakan <a href="https://www.excel-easy.com/examples/xlookup.html">XLOOKUP,</a> bukan <b>VLOOKUP</b>. Fungsi XLOOKUP lebih mudah digunakan dan memiliki beberapa keuntungan tambahan.</p>
+<p><img class="img-fluid" src="img/img-excel/Vlookup_files/image018.png" alt="Fungsi XLOOKUP di Excel"></p>

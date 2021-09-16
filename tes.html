@@ -462,30 +462,30 @@
 <p>
     <details>
         <summary>Selengkapnya <b>Fungsi VLOOKUP</b></summary>
-        <p><b>VLOOKUP</b></p>
-        <p class="fw-light"><a href="#">Pencocokan Tepat</a> | <a href="#">Perkiraan Pertandingan</a> | <a href="#">Vlookup Terlihat Benar</a> | <a href="#">First Match</a> | <a href="#">Vlookup is Case-insensitive</a> | <a href="#">Beberapa Kriteria</a> | <a href="#">#N/A Errors</a>            | <a href="#">Beberapa Tabel Pencarian</a> | <a href="#">Index dan Match</a> | <a href="#">Xlookup</a></p>
+        <p class="sub-materi"><b>VLOOKUP</b></p>
+        <p class="fw-light"><a href="#">Pencocokan Tepat</a> | <a href="#">Approximate Match</a> | <a href="#">Vlookup Looks Right</a> | <a href="#">First Match</a> | <a href="#">Vlookup is Case-insensitive</a> | <a href="#">Beberapa Kriteria</a> | <a href="#">#N/A Errors</a>            | <a href="#">Beberapa Tabel Pencarian</a> | <a href="#">Index dan Match</a> | <a href="#">Xlookup</a></p>
         <p>Fungsi <b>VLOOKUP</b> adalah salah satu fungsi yang paling populer di Excel. Halaman ini berisi banyak contoh <b>VLOOKUP</b> yang mudah diikuti.</p>
-        <p class="sub-sub-materi">Benar-benar cocok</p>
+        <p class="sub-sub-materi">Exact Match <span class="fw-light text-capitalize">(Benar-benar cocok)</span></p>
         <p>Sebagian besar waktu Anda mencari kecocokan yang tepat saat Anda menggunakan fungsi <b>VLOOKUP</b> di Excel. Mari kita lihat argumen dari fungsi <b>VLOOKUP</b>.</p>
         <p>1. Fungsi <b>VLOOKUP</b> di bawah ini mencari nilai 53 (argumen pertama) di kolom paling kiri tabel merah (argumen kedua).</p>
-        <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image001.png" alt="Argumen <b>Vlookup</b>"></p>
+        <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image001.png" alt="Argumen "></p>
         <p>2. Nilai 4 (argumen ketiga) memberitahu fungsi <b>VLOOKUP</b> untuk mengembalikan nilai pada baris yang sama dari kolom keempat tabel merah.</p>
-        <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image002.png" alt="Hasil <b>Vlookup</b> di Excel"></p>
+        <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image002.png" alt="Hasil  di Excel"></p>
         <p>Catatan: Boolean FALSE (argumen keempat) memberi tahu fungsi <b>VLOOKUP</b> untuk mengembalikan kecocokan yang sama persis. Jika fungsi <b>VLOOKUP</b> tidak dapat menemukan nilai 53 di kolom pertama, itu akan mengembalikan kesalahan
             <a href="https://www.excel-easy.com/examples/<b>vlookup</b>.html#na-error">#N/A</a>.</p>
         <p>3. Ini contoh lain. Alih-alih mengembalikan gaji, fungsi <b>VLOOKUP</b> di bawah ini mengembalikan nama belakang (argumen ketiga disetel ke 3) dari ID 79.</p>
         <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image003.png" alt="Benar-benar cocok"></p>
-        <p class="sub-sub-materi">Perkiraan Pertandingan</p>
+        <p class="sub-sub-materi">Approximate Match <span class="fw-light text-capitalize">(Perkiraan Kecocokan)</span></p>
         <p>Mari kita lihat contoh fungsi <b>VLOOKUP</b> dalam mode pencocokan perkiraan (argumen keempat disetel ke TRUE).</p>
         <p>1. Fungsi <b>VLOOKUP</b> di bawah ini mencari nilai 85 (argumen pertama) di kolom paling kiri dari tabel merah (argumen kedua). Hanya ada satu masalah. Tidak ada nilai 85 di kolom pertama.</p>
-        <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image004.png" alt="Fungsi <b>Vlookup</b> dalam Mode Pencocokan Perkiraan"></p>
+        <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image004.png" alt="Fungsi  dalam Mode Pencocokan Perkiraan"></p>
         <p>2. Untungnya, Boolean TRUE (argumen keempat) memberi tahu fungsi <b>VLOOKUP</b> untuk mengembalikan perkiraan kecocokan. Jika fungsi <b>VLOOKUP</b> tidak dapat menemukan nilai 85 di kolom pertama, itu akan mengembalikan nilai terbesar yang lebih
             kecil dari 85. Dalam contoh ini, ini akan menjadi nilai 80.</p>
         <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image005.png" alt="Nilai Terbesar Lebih Kecil dari Nilai Pencarian"></p>
         <p>3. Nilai 2 (argumen ketiga) memberitahu fungsi <b>VLOOKUP</b> untuk mengembalikan nilai pada baris yang sama dari kolom kedua tabel merah.</p>
-        <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image006.png" alt="Perkiraan Pertandingan di Excel"></p>
+        <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image006.png" alt="Approximate Match di Excel"></p>
         <p>Catatan: selalu urutkan kolom paling kiri dari tabel merah dalam urutan menaik jika Anda menggunakan fungsi <b>VLOOKUP</b> dalam mode pencocokan perkiraan (argumen keempat disetel ke TRUE).</p>
-        <p class="sub-sub-materi">Vlookup Terlihat Benar</p>
+        <p class="sub-sub-materi">Vlookup Looks Right <span class="fw-light text-capitalize">(Vlookup Pencocokan ke Kanan)</span></p>
         <p>Fungsi <b>VLOOKUP</b> selalu mencari nilai di kolom paling kiri dari tabel dan mengembalikan nilai yang sesuai dari kolom ke <u>kanan</u>.</p>
         <p>1. Misalnya, fungsi <b>VLOOKUP</b> di bawah ini mencari nama depan dan mengembalikan nama belakang.</p>
         <p><img class="img-fluid" src="img/img-excel/Vlookup_files/image007.png" alt="Pencarian Kanan"></p>

@@ -12,29 +12,188 @@
     <title>Hello, world!</title>
     <style>
         body {
+            overflow-x: hidden;
+            /* padding-top: 56px; */
             position: relative;
         }
         
-        .nav-link {
-            /* padding: 0 1rem; */
-            line-height: 1;
+        @media (max-width: 991.98px) {
+            .offcanvas-collapse {
+                position: fixed;
+                top: 56px;
+                /* Height of navbar */
+                bottom: 0;
+                left: 100%;
+                width: 100%;
+                padding-right: 1rem;
+                padding-left: 1rem;
+                overflow-y: auto;
+                visibility: hidden;
+                background-color: #343a40;
+                transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+            }
+            .offcanvas-collapse.open {
+                visibility: visible;
+                transform: translateX(-100%);
+            }
         }
+        
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+        
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            color: rgba(255, 255, 255, .75);
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .nav-underline .nav-link {
+            padding-top: .75rem;
+            padding-bottom: .75rem;
+            font-size: .875rem;
+            color: #6c757d;
+        }
+        
+        .nav-underline .nav-link:hover {
+            color: #007bff;
+        }
+        
+        .nav-underline .active {
+            font-weight: 500;
+            color: #343a40;
+        }
+        
+        .bg-purple {
+            background-color: #6f42c1;
+        }
+        /* END-css offcanvas-navbar */
+        /* .nav-link {
+            padding: 0 1rem;
+            line-height: 1;
+        } */
         
         .nav-pills .nav-link.active,
         .nav-pills .show>.nav-link {
             background-color: #333;
         }
+        /* scroll to top */
+        
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        
+        #myBtn:hover {
+            background-color: #555;
+        }
+        
+        .sticky-top {
+            top: 10px;
+        }
     </style>
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#list-example">
-    <div class="container-fluid">
-        <h1>Hello, world!</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ipsum error velit totam provident, voluptatibus, ipsam facere quam eos ipsa quisquam aliquid tempora a. Porro accusamus voluptate at ab quibusdam hic voluptates, corrupti delectus,
-            aut sequi dolore a fugiat id temporibus sapiente? Nesciunt autem voluptate recusandae necessitatibus similique optio velit ullam. Molestiae natus nemo doloremque eaque perspiciatis animi sint doloribus, dolores dignissimos saepe. Aspernatur
-            accusamus veniam eaque at recusandae in ipsa, libero sapiente perspiciatis quis. Placeat quibusdam quia iste ipsum, aliquid quae atque dolorem praesentium ad eveniet ea ullam nam odio possimus voluptatum facilis repellendus iusto temporibus
-            corporis error doloremque. Vitae amet voluptas ipsam reprehenderit id laudantium perferendis corporis impedit soluta nostrum cum voluptatem suscipit, possimus deserunt illo ducimus consequatur ullam minima itaque modi autem atque aliquid!
-            Iusto vero debitis quod eos a dolorum qui exercitationem, reiciendis assumenda distinctio eaque ipsam veniam deleniti illo neque ullam, optio aliquid rem itaque?</p>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Main navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">E-Learning</a>
+            <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Program</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Office</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="#">Microsoft Word</a></li>
+                            <li><a class="dropdown-item" href="#">Microsoft Word</a></li>
+                            <li><a class="dropdown-item" href="#">Power Point</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Desain</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                            <li><a class="dropdown-item" href="#">Photoshop</a></li>
+                            <li><a class="dropdown-item" href="#">Corel Draw</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Web Desain</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pemrograman</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Secondary navigation -->
+    <div class="nav-scroller bg-body shadow-sm">
+        <nav class="nav nav-underline" aria-label="Secondary navigation">
+            <a class="nav-link fw-bold active" aria-current="page" href="index.html">Beranda</a>
+            <a class="nav-link fw-light" href="word.html">Ms. Word</a>
+            <a class="nav-link fw-light" href="excel.html">Ms. Excel</a>
+            <a class="nav-link fw-light" href="#">PowerPoint</a>
+            <a class="nav-link fw-light" href="photoshop.html">Photoshop</a>
+            <a class="nav-link fw-light" href="coreldraw.html">CorelDRAW</a>
+            <a class="nav-link fw-light" href="webdesain.html">WebDesain</a>
+            <a class="nav-link fw-light" href="pemrograman.html">Pemrograman</a>
+        </nav>
+    </div>
+
+
+
+    <div class="container">
+        <section>
+            <h1>Memulai dengan Microsoft Excel</h1>
+            <p class="fs-5 col-md-8">Cepat dan mudah memulai dengan kompilasi Microsoft Excel, file dasar dan tautan bermanfaat. Unduh semua contoh kami untuk memulai.</p>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <figure class="figure">
+                        <img src="img/img-excel/lembar-kerja.png" class="figure-img img-fluid rounded" alt="Tampilan Lembar Kerja Microsoft Excel">
+                        <figcaption class="figure-caption">Tampilan Lembar Kerja Microsoft Excel.</figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-6">
+                    <h2>Panduan</h2>
+                    <p>Baca instruksi dan dokumentasi yang lebih mendetail tentang penggunaan Microsoft Excel.</p>
+                    <ul class="icon-list">
+                        <li><a href="#dasar">Dasar-dasar Excel</a></li>
+                        <li><a href="#SelSpreadsheet">Bekerja dengan Sel dan Spreadsheet</a></li>
+                        <li><a href="#RumusFungsi">Rumus dan Fungsi</a></li>
+                        <li><a href="#BekerjadenganData">Bekerja dengan Data</a></li>
+                        <li><a href="#MelakukanLebihBanyakdenganExcel">Melakukan Lebih Banyak dengan Excel</a></li>
+                        <li><a href="#Latihan">Latihan Soal Excel</a></li>
+                        <li><a href="#tes">excel-easy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
 
         <div class="bd-example">
             <div class="row">
@@ -97,7 +256,7 @@
                             repellat nihil alias iure dolore necessitatibus facere ipsum unde beatae, deleniti eaque eos tenetur sapiente modi, incidunt doloribus.</p>
                     </div>
                 </div>
-                <div class="col-3 mt-4">
+                <div class="col-3">
                     <!-- <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-3 sticky-top"> -->
                     <nav id="list-example" class="navbar navbar-light flex-column align-items-stretch p-0 sticky-top">
                         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
@@ -120,6 +279,74 @@
                 </div>
             </div>
         </div>
+
+        <section>
+            <div class="container pr-4 pt-5 pb-0" id="icon-grid">
+                <h2 class="pb-2 border-bottom fw-light text-uppercase">Programs</h2>
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+                    <div class="col d-flex align-items-start">
+                        <img class="img-fluid me-2" src="https://img.icons8.com/color/32/000000/ms-word.png" />
+                        <div>
+                            <h4 class="fw-bold mb-0">Microsoft Word</h4>
+                            <p class="fw-light">adalah program pengolah kata yang dapat disimpan secara elektronik.</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <img class="img-fluid me-2" src="https://img.icons8.com/color/32/000000/ms-excel.png" />
+                        <div>
+                            <h4 class="fw-bold mb-0">Microsoft Excel</h4>
+                            <p class="fw-light">adalah program digunakan untuk proses pengolahan angka.</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <img class="img-fluid me-2" src="https://img.icons8.com/color/32/000000/ms-powerpoint--v1.png" />
+                        <div>
+                            <h4 class="fw-bold mb-0">Power Point</h4>
+                            <p class="fw-light">Paragraph of text beneath the heading to explain the heading.</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <img class="img-fluid me-2" src="https://img.icons8.com/fluency/32/000000/adobe-photoshop.png" />
+                        <div>
+                            <h4 class="fw-bold mb-0">Photoshop</h4>
+                            <p class="fw-light">adalah program yang dikhususkan untuk pengeditan foto/gambar dan pembuatan efek.</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <img class="img-fluid me-2" src="https://img.icons8.com/fluency/32/000000/coreldraw-2021.png" />
+                        <div>
+                            <h4 class="fw-bold mb-0">CorelDRAW</h4>
+                            <p class="fw-light">adalah sebuah program komputer editor grafik vektor yang berfungsi untuk mengolah gambar.</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <img class="img-fluid me-2" src="https://img.icons8.com/color/32/000000/html-5--v1.png" />
+                        <div>
+                            <h4 class="fw-bold mb-0">Web-Desain</h4>
+                            <p class="fw-light">adalah sebuah bentuk grafis ataupun animasi digital dalam membuat suatu halaman web.</p>
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-start">
+                        <img class="img-fluid me-2" src="https://img.icons8.com/officel/32/000000/php-logo.png" />
+                        <div>
+                            <h4 class="fw-bold mb-0">Pemrograman</h4>
+                            <p class="fw-light">adalah proses menulis, menguji dan memperbaiki (debug), dan memelihara kode yang membangun suatu program komputer.</p>
+                        </div>
+                    </div>
+                    <!-- <div class="col d-flex align-items-start">
+                        <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"/></svg>
+                        <div>
+                            <h4 class="fw-bold mb-0">Featured title</h4>
+                            <p>Paragraph of text beneath the heading to explain the heading.</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- scroll keatas -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
@@ -128,11 +355,44 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
     <script>
+        (function() {
+            'use strict'
+
+            document.querySelector('#navbarSideCollapse').addEventListener('click', function() {
+                document.querySelector('.offcanvas-collapse').classList.toggle('open')
+            })
+        })()
+    </script>
+
+    <!-- scroll to top -->
+    <script>
+        // Dapatkan tombolnya
+        var mybutton = document.getElementById("myBtn");
+
+        // Saat pengguna menggulir ke bawah 20px dari atas dokumen, perlihatkan tombol
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // Saat pengguna mengklik tombol, gulir ke atas dokumen
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script>
         var scrollSpy = new bootstrap.ScrollSpy(document.body, {
             target: '#list-example'
         })
-    </script>
-    <script>
+
         var dataSpyList = [].slice.call(document.querySelectorAll('[data-bs-spy="scroll"]'))
         dataSpyList.forEach(function(dataSpyEl) {
             bootstrap.ScrollSpy.getInstance(dataSpyEl)

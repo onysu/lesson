@@ -253,6 +253,30 @@
         .sticky-top {
             top: 70px;
         }
+        /* bagi kolom */
+        /* .konten {} */
+        
+        .leftcolumn {
+            float: left;
+            width: 75%;
+        }
+        /* Right column */
+        
+        .rightcolumn {
+            float: left;
+            width: 25%;
+        }
+        /* Tata letak responsif - ketika layar kurang dari 800px lebar, membuat dua kolom menumpuk di atas satu sama lain bukan di samping satu sama lain */
+        
+        @media screen and (max-width: 800px) {
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+            }
+            .rightcolumn {
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -419,7 +443,7 @@
         <p class="h3 fw-bold text-capitalize">Fungsi yang Paling Banyak Digunakan</p>
         <div class="bd-example">
             <div class="row">
-                <div class="col-md-10">
+                <div class="leftcolumn">
                     <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example-2" tabindex="0">
                         <h4 id="item-1"></h4>
                         <!-- COUNT -->
@@ -916,7 +940,7 @@
 
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="rightcolumn">
                     <!-- <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-3 sticky-top"> -->
                     <nav id="list-example" class="navbar navbar-light flex-column align-items-stretch p-0 sticky-top">
                         <!-- <a class="navbar-brand" href="#">Navbar</a> -->

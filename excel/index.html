@@ -34,7 +34,7 @@
             height: 1.5em;
             margin-right: .5rem;
             content: "";
-            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23212529' viewBox='0 0 16 16'%3E%3Cpath d='M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z'/%3E%3C/svg%3E") no-repeat center center / 100% auto;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23212529' viewBox='0 0 16 16'%3E%3Cpath d='M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0.708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z'/%3E%3C/svg%3E") no-repeat center center / 100% auto;
         }
         
         @media (max-width: 991.98px) {
@@ -50,7 +50,7 @@
                 overflow-y: auto;
                 visibility: hidden;
                 background-color: #343a40;
-                transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+                transition: transform.3s ease-in-out, visibility.3s ease-in-out;
             }
             .offcanvas-collapse.open {
                 visibility: visible;
@@ -65,7 +65,7 @@
             overflow-y: hidden;
         }
         
-        .nav-scroller .nav {
+        .nav-scroller.nav {
             display: flex;
             flex-wrap: nowrap;
             padding-bottom: 1rem;
@@ -77,18 +77,18 @@
             -webkit-overflow-scrolling: touch;
         }
         
-        .nav-underline .nav-link {
+        .nav-underline.nav-link {
             padding-top: .75rem;
             padding-bottom: .75rem;
             font-size: .875rem;
             color: #6c757d;
         }
         
-        .nav-underline .nav-link:hover {
+        .nav-underline.nav-link:hover {
             color: #007bff;
         }
         
-        .nav-underline .active {
+        .nav-underline.active {
             font-weight: 500;
             color: #343a40;
         }
@@ -97,13 +97,13 @@
             background-color: #6f42c1;
         }
         /* END-css offcanvas-navbar */
-        /* .nav-link {
+        /*.nav-link {
             padding: 0 1rem;
             line-height: 1;
         } */
         
-        .nav-pills .nav-link.active,
-        .nav-pills .show>.nav-link {
+        .nav-pills.nav-link.active,
+        .nav-pills.show>.nav-link {
             background-color: #333;
         }
         /* scroll to top */
@@ -219,9 +219,9 @@
                 </p>
                 <ol>
                     <li>
-                        <a href="https://www.excel-easy.com/introduction/range.html">Range</a> : Range di Excel adalah kumpulan dari dua atau lebih sel. Bab ini memberikan gambaran umum tentang beberapa operasi jangkauan yang sangat penting.
+                        <a href="#">Range</a> : Range di Excel adalah kumpulan dari dua atau lebih sel. Bab ini memberikan gambaran umum tentang beberapa operasi jangkauan yang sangat penting.
                     </li>
-                    <li>
+                    <li id="rumusfungsi">
                         <a href="https://www.excel-easy.com/introduction/formulas-functions.html">Rumus dan Fungsi</a> : Rumus adalah ekspresi yang menghitung nilai sel. Fungsi adalah rumus yang telah ditentukan sebelumnya dan sudah tersedia di Excel.
                     </li>
                 </ol>
@@ -229,85 +229,83 @@
 
             <section id="dasardasar">
                 <p class="h3">Dasar-dasar</p>
-                <p>Bagian ini menjelaskan dasar - dasar Excel .</p>
+                <p>Bagian ini menjelaskan dasar - dasar Excel.</p>
                 <ol>
                     <li>
-                        <a href="https://www.excel-easy.com/basics/ribbon.html">Pita</a> : Excel memilih tab Beranda pita saat Anda membukanya. Pelajari cara menggunakan pita.
+                        <a href="#">Pita</a> : Excel memilih tab Beranda pita saat Anda membukanya. Pelajari cara menggunakan pita.
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/basics/workbook.html">Workbook</a> : Workbook adalah kata lain untuk file Excel Anda. Saat Anda memulai Excel, klik Buku kerja kosong untuk membuat buku kerja Excel dari awal.
+                        <a href="#">Workbook</a> : Workbook adalah kata lain untuk file Excel Anda. Saat Anda memulai Excel, klik Buku kerja kosong untuk membuat buku kerja Excel dari awal.
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/basics/worksheets.html">Lembar Kerja</a> : Lembar kerja adalah kumpulan sel tempat Anda menyimpan dan memanipulasi data. Setiap buku kerja Excel dapat berisi beberapa lembar kerja.
+                        <a href="#">Lembar Kerja</a> : Lembar kerja adalah kumpulan sel tempat Anda menyimpan dan memanipulasi data. Setiap buku kerja Excel dapat berisi beberapa lembar kerja.
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/basics/format-cells.html">Format Sel</a> : Saat kita memformat sel di Excel, kita mengubah tampilan angka tanpa mengubah angka itu sendiri.
+                        <a href="#">Format Sel</a> : Saat kita memformat sel di Excel, kita mengubah tampilan angka tanpa mengubah angka itu sendiri.
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/basics/find-select.html">Find &amp; Select</a> : Pelajari cara menggunakan fitur Find, Replace and Go To Special di Excel.
+                        <a href="#">Find &amp; Select</a> : Pelajari cara menggunakan fitur Find, Replace and Go To Special di Excel.
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/basics/templates.html">Templat</a> : Daripada membuat buku kerja Excel dari awal, Anda bisa membuat buku kerja berdasarkan templat. Ada banyak template gratis yang tersedia, menunggu untuk digunakan.
+                        <a href="#">Templat</a> : Daripada membuat buku kerja Excel dari awal, Anda bisa membuat buku kerja berdasarkan templat. Ada banyak template gratis yang tersedia, menunggu untuk digunakan.
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/basics/data-validation.html">Validasi Data</a> : Gunakan validasi data di Excel untuk memastikan bahwa pengguna memasukkan nilai tertentu ke dalam sel.
+                        <a href="#">Validasi Data</a> : Gunakan validasi data di Excel untuk memastikan bahwa pengguna memasukkan nilai tertentu ke dalam sel.
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/basics/keyboard-shortcuts.html">Pintasan Keyboard</a> : Pintasan keyboard memungkinkan Anda melakukan berbagai hal dengan keyboard alih-alih mouse untuk meningkatkan kecepatan.
+                        <a href="#">Pintasan Keyboard</a> : Pintasan keyboard memungkinkan Anda melakukan berbagai hal dengan keyboard alih-alih mouse untuk meningkatkan kecepatan.
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/basics/print.html">Cetak</a> : Bab ini mengajarkan Anda cara mencetak lembar kerja dan cara mengubah beberapa pengaturan cetak penting di Excel.
+                        <a href="#">Cetak</a> : Bab ini mengajarkan Anda cara mencetak lembar kerja dan cara mengubah beberapa pengaturan cetak penting di Excel.
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/basics/share.html">Bagikan</a> : Pelajari cara berbagi data Excel dengan dokumen Word dan file lainnya.
+                        <a href="#">Bagikan</a> : Pelajari cara berbagi data Excel dengan dokumen Word dan file lainnya.
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/basics/protect.html">Protect</a> : Mengenkripsi file Excel dengan password sehingga membutuhkan password untuk membukanya.
+                        <a href="#">Protect</a> : Mengenkripsi file Excel dengan password sehingga membutuhkan password untuk membukanya.
                     </li>
                 </ol>
             </section>
 
             <section id="fungsi">
                 <p class="h3">Fungsi</p>
-                <p>Temukan bagaimana fungsi di Excel membantu Anda menghemat waktu. Jika Anda baru mengenal fungsi di Excel, kami menyarankan Anda untuk membaca pengantar kami tentang <a href="https://www.excel-easy.com/introduction/formulas-functions.html">Rumus dan Fungsi</a>                    terlebih dahulu.</p>
+                <p>Temukan bagaimana fungsi di Excel membantu Anda menghemat waktu. Jika Anda baru mengenal fungsi di Excel, kami menyarankan Anda untuk membaca pengantar kami tentang <a href="#rumusfungsi">Rumus dan Fungsi</a> terlebih dahulu.</p>
                 <ol>
                     <li>
-                        <a href="https://www.excel-easy.com/functions/count-sum-functions.html">Count and Sum</a> : Fungsi yang paling banyak digunakan di Excel adalah fungsi count dan sum. Anda dapat menghitung dan menjumlahkan berdasarkan satu kriteria
-                        atau beberapa kriteria.
+                        <a href="#">Count and Sum</a> : Fungsi yang paling banyak digunakan di Excel adalah fungsi count dan sum. Anda dapat menghitung dan menjumlahkan berdasarkan satu kriteria atau beberapa kriteria.
 
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/functions/logical-functions.html">Logis</a> : Pelajari cara menggunakan fungsi logika Excel, seperti IF, AND, OR dan NOT.
+                        <a href="#">Logis</a> : Pelajari cara menggunakan fungsi logika Excel, seperti IF, AND, OR dan NOT.
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/functions/cell-references.html">Referensi Sel</a> : <a href="https://www.excel-easy.com/functions/cell-references.html">Referensi</a> sel di Excel sangat penting. Pahami perbedaan antara referensi
-                        relatif, absolut, dan campuran, dan Anda sedang menuju kesuksesan.
+                        <a href="#">Referensi Sel</a> : <a href="#">Referensi</a> sel di Excel sangat penting. Pahami perbedaan antara referensi relatif, absolut, dan campuran, dan Anda sedang menuju kesuksesan.
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/functions/date-time-functions.html">Tanggal &amp; Waktu</a> : Untuk memasukkan tanggal di Excel, gunakan karakter &quot;/&quot; atau &quot;-&quot;. Untuk memasukkan waktu, gunakan &quot;:&quot;
-                        (titik dua). Anda juga dapat memasukkan tanggal dan waktu dalam satu sel.
+                        <a href="#">Tanggal &amp; Waktu</a> : Untuk memasukkan tanggal di Excel, gunakan karakter &quot;/&quot; atau &quot;-&quot;. Untuk memasukkan waktu, gunakan &quot;:&quot; (titik dua). Anda juga dapat memasukkan tanggal dan waktu
+                        dalam satu sel.
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/functions/text-functions.html">Teks</a> : Excel memiliki banyak fungsi untuk ditawarkan dalam hal memanipulasi string teks.
+                        <a href="#">Teks</a> : Excel memiliki banyak fungsi untuk ditawarkan dalam hal memanipulasi string teks.
 
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/functions/lookup-reference-functions.html">Pencarian &amp; Referensi</a> : Pelajari semua tentang fungsi pencarian &amp; referensi Excel, seperti VLOOKUP, HLOOKUP, MATCH, INDEX dan CHOOSE.
+                        <a href="#">Pencarian &amp; Referensi</a> : Pelajari semua tentang fungsi pencarian &amp; referensi Excel, seperti VLOOKUP, HLOOKUP, MATCH, INDEX dan CHOOSE.
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/functions/financial-functions.html">Keuangan</a> : Bab ini menggambarkan fungsi keuangan Excel yang paling populer.
+                        <a href="#">Keuangan</a> : Bab ini menggambarkan fungsi keuangan Excel yang paling populer.
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/functions/statistical-functions.html">Statistik</a> : Gambaran umum dari beberapa fungsi statistik yang sangat berguna di Excel.
+                        <a href="#">Statistik</a> : Gambaran umum dari beberapa fungsi statistik yang sangat berguna di Excel.
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/functions/round.html">Round</a> : Bab ini menggambarkan tiga fungsi untuk membulatkan angka di Excel. ROUND, ROUNDUP dan ROUNDDOWN.
+                        <a href="#">Round</a> : Bab ini menggambarkan tiga fungsi untuk membulatkan angka di Excel. ROUND, ROUNDUP dan ROUNDDOWN.
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/functions/formula-errors.html">Kesalahan Rumus</a> : Bab ini mengajarkan Anda bagaimana menangani beberapa kesalahan rumus umum di Excel.
+                        <a href="#">Kesalahan Rumus</a> : Bab ini mengajarkan Anda bagaimana menangani beberapa kesalahan rumus umum di Excel.
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/functions/array-formulas.html">Rumus Array</a> : Bab ini membantu Anda memahami rumus array di Excel. Rumus array sel tunggal melakukan beberapa perhitungan dalam satu sel.
+                        <a href="#">Rumus Array</a> : Bab ini membantu Anda memahami rumus array di Excel. Rumus array sel tunggal melakukan beberapa perhitungan dalam satu sel.
                     </li>
                 </ol>
             </section>
@@ -317,36 +315,31 @@
                 <p>Bagian ini menggambarkan fitur canggih yang ditawarkan Excel untuk menganalisis data.</p>
                 <ol>
                     <li>
-                        <a href="https://www.excel-easy.com/data-analysis/sort.html">Sortir</a> : Anda dapat mengurutkan data Excel pada satu kolom atau beberapa kolom. Anda dapat mengurutkan dalam urutan menaik atau menurun.
+                        <a href="#">Sortir</a> : Anda dapat mengurutkan data Excel pada satu kolom atau beberapa kolom. Anda dapat mengurutkan dalam urutan menaik atau menurun.
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/data-analysis/filter.html">Filter</a> : Filter data Excel Anda jika Anda hanya ingin menampilkan catatan yang memenuhi kriteria tertentu.
+                        <a href="#">Filter</a> : Filter data Excel Anda jika Anda hanya ingin menampilkan catatan yang memenuhi kriteria tertentu.
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/data-analysis/conditional-formatting.html">Pemformatan Bersyarat</a> : <a href="https://www.excel-easy.com/data-analysis/conditional-formatting.html">Pemformatan</a> bersyarat di Excel memungkinkan
-                        Anda untuk menyorot sel dengan warna tertentu, tergantung pada nilai sel.
+                        <a href="#">Pemformatan Bersyarat</a> : Pemformatan Bersyarat di Excel memungkinkan Anda untuk menyorot sel dengan warna tertentu, tergantung pada nilai sel.
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/data-analysis/charts.html">Bagan</a> : <a href="https://www.excel-easy.com/data-analysis/charts.html">Bagan</a> Excel sederhana dapat mengatakan lebih dari satu lembar penuh angka. Seperti yang
-                        akan Anda lihat, membuat bagan sangat mudah.
+                        <a href="#">charts</a> : Charts Excel sederhana dapat mengatakan lebih dari satu lembar penuh angka. Seperti yang akan Anda lihat, membuat bagan sangat mudah.
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/data-analysis/pivot-tables.html">Tabel Pivot</a> : <a href="https://www.excel-easy.com/data-analysis/pivot-tables.html">Tabel</a> Pivot adalah salah satu fitur Excel yang paling canggih. Tabel
-                        pivot memungkinkan Anda mengekstrak signifikansi dari kumpulan data yang besar dan terperinci.
+                        <a href="#">Tabel Pivot</a> : Tabel Pivot adalah salah satu fitur Excel yang paling canggih. Tabel pivot memungkinkan Anda mengekstrak signifikansi dari kumpulan data yang besar dan terperinci.
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/data-analysis/tables.html">Tabel</a> : Tabel memungkinkan Anda untuk menganalisis data Anda di Excel dengan cepat dan mudah.
+                        <a href="#">Tabel</a> : Tabel memungkinkan Anda untuk menganalisis data Anda di Excel dengan cepat dan mudah.
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/data-analysis/what-if-analysis.html">Analisis Bagaimana-Jika</a> : <a href="https://www.excel-easy.com/data-analysis/what-if-analysis.html">Analisis</a> Bagaimana-Jika di Excel memungkinkan Anda
-                        untuk mencoba nilai (skenario) yang berbeda untuk rumus.
+                        <a href="#">Analisis Bagaimana-Jika</a> : Analisis Bagaimana-Jika di Excel memungkinkan Anda untuk mencoba nilai (skenario) yang berbeda untuk rumus.
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/data-analysis/solver.html">Solver</a> : Excel menyertakan alat yang disebut solver yang menggunakan teknik dari riset operasi untuk menemukan solusi optimal untuk semua jenis masalah keputusan.
+                        <a href="#">Solver</a> : Excel menyertakan alat yang disebut solver yang menggunakan teknik dari riset operasi untuk menemukan solusi optimal untuk semua jenis masalah keputusan.
                     </li>
                     <li>
-                        <a href="https://www.excel-easy.com/data-analysis/analysis-toolpak.html">Analysis ToolPak</a> : The Analysis ToolPak adalah program tambahan Excel yang menyediakan alat analisis data untuk analisis data keuangan, statistik, dan
-                        teknik.
+                        <a href="#">Analysis ToolPak</a> : The Analysis ToolPak adalah program tambahan Excel yang menyediakan alat analisis data untuk analisis data keuangan, statistik, dan teknik.
                     </li>
                 </ol>
             </section>

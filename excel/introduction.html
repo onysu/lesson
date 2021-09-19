@@ -95,7 +95,532 @@
     </div>
 
     <div class="container">
-        <p>halaman introduction</p>
+        <div class="bd-example">
+            <div class="row">
+                <div class="col-9">
+                    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example-2" tabindex="0">
+                        <h4 id="item-1"></h4>
+                        <!-- COUNT -->
+                        <p id="count" class="h5">1. <b>COUNT</b></p>
+                        <p>Untuk menghitung jumlah sel yang berisi angka, gunakan fungsi <b>COUNT</b> di Excel.</p>
+                        <p><img class="img-fluid" src="../img/img-excel/Most-Used-Functions_files/image001.png" alt="fungsi COUNT"></p>
+                        <p class="penjelasan"><strong>Catatan:</strong> gunakan <b>COUNTA</b> untuk menghitung semua sel yang tidak kosong.
+                            <b>COUNTA</b> adalah singkatan dari hitung semua.</p>
+
+                        <h4 id="item-2"></h4>
+                        <!-- SUM -->
+                        <p id="sum" class="h5">2. <b>SUM</b></p>
+                        <p>Untuk menjumlahkan Range sel, gunakan fungsi <b>SUM</b> di Excel. Fungsi <b>SUM</b> di bawah ini menjumlahkan semua nilai di kolom A.</p>
+                        <p><img class="img-fluid" src="../img/img-excel/Most-Used-Functions_files/image002.png" alt="fungsi <b>SUM</b>"></p>
+                        <p><img class="img-fluid" src="../img/img-excel/Most-Used-Functions_files/image003.png" alt="Sel A99"></p>
+                        <p class="penjelasan"><strong>Catatan:</strong> Anda juga dapat menggunakan fungsi <b>SUM</b> untuk menjumlahkan seluruh baris. Misalnya, =<b>SUM</b>(5:5) menjumlahkan semua nilai di baris ke-5.</p>
+
+                        <h4 id="item-3"></h4>
+                        <!-- IF -->
+                        <p id="if" class="h5">3. <b>IF</b></p>
+                        <p>Fungsi <b>IF</b> memeriksa apakah suatu kondisi terpenuhi, dan mengembalikan satu nilai jika benar dan nilai lain jika salah.
+                        </p>
+                        <p><img class="img-fluid" src="../img/img-excel/Most-Used-Functions_files/image004.png" alt="Fungsi IF"></p>
+                        <p class="penjelasan"><strong>Penjelasan:</strong> jika skor lebih besar dari atau sama dengan <b>60</b>,
+                            <a href="https://www.excel-easy.com/examples/<b>IF</b>.html">Fungsi <b>IF</b> yang</a> ditunjukkan di atas mengembalikan
+                            <strong>Pass <span class="fw-light text-capitalize">(Lulus)</span></strong>, jika tidak mengembalikan maka
+                            <strong>Fail <span class="fw-light text-capitalize">(Gagal)</span></strong>. Untuk menyalin rumus ini dengan cepat ke sel lain, klik di sudut kanan bawah sel <b>C2</b> dan seret ke bawah ke sel
+                            <b>C6</b>.
+                        </p>
+                        <p>
+                            <details>
+                                <summary>Selengkapnya <b>Fungsi IF</b></summary>
+                                <p><a href="#">Contoh IF Sederhana</a> |
+                                    <a href="#">And/Or Kriteria</a> | <a href="#">IF Bersarang</a> | <a href="#">Lebih lanjut mengenai IF</a>
+                                </p>
+                                <p>fungsi <b>IF</b> adalah salah satu fungsi yang paling banyak digunakan di Excel . Halaman ini berisi banyak contoh <b>IF</b> yang mudah diikuti.</p>
+                                <p class="h5">Contoh IF Sederhana </p>
+                                <p>fungsi <b>IF</b> memeriksa apakah suatu kondisi terpenuhi, dan mengembalikan satu nilai jika benar dan nilai lain jika salah.</p>
+                                <p>1a. Misalnya, lihat fungsi <b>IF</b> di sel B2 di bawah ini.</p>
+                                <p><img width=604 height=207 id="Picture 28" class="img-fluid" src="../img/img-excel/If_files/image001.png" alt="Jika Lebih Besar dari"></p>
+                                <p class="penjelasan"><b>Penjelasan:</b> jika harga lebih besar dari 500, fungsi <b>IF</b> mengembalikan High, jika tidak mengembalikan Low.</p>
+                                <p>1b. fungsi <b>IF</b> berikut menghasilkan hasil yang sama persis. </p>
+                                <p><img width=604 height=207 id="Picture 27" class="img-fluid" src="../img/img-excel/If_files/image002.png" alt="Jika Kurang dari"></p>
+                                <p class="penjelasan"><b>Catatan:</b> Anda dapat menggunakan <a href="https://www.excel-easy.com/examples/comparison-operators.html">operator perbandingan</a> berikut : = (sama dengan), &gt; (lebih besar dari), &lt; (kurang dari), &gt;= (lebih
+                                    besar atau sama dengan), &lt;= (kurang dari atau sama dengan) dan &lt;&gt; (tidak sebanding dengan).</p>
+                                <p>2. Selalu sertakan teks dalam tanda kutip ganda.</p>
+                                <p><img border=0 width=604 height=207 id="Picture 26" class="img-fluid" src="../img/img-excel/If_files/image003.png" alt="fungsi  <b>IF</b> sederhana di Excel"></p>
+                                <p>3a. Rumus di bawah ini menghitung kemajuan antara dua titik waktu.</p>
+                                <p><img border=0 width=604 height=207 id="Picture 25" class="img-fluid" src="../img/img-excel/If_files/image004.png" alt="Hitung Kemajuan"></p>
+                                <p>3b. Anda dapat menggunakan fungsi <b>IF</b> untuk menampilkan string kosong jika nilai akhir belum dimasukkan (lihat baris 5).</p>
+                                <p><img border=0 width=604 height=207 id="Picture 24" class="img-fluid" src="../img/img-excel/If_files/image005.png" alt="Tampilkan String Kosong"></p>
+                                <p class="penjelasan"><b>Penjelasan:</b> jika nilai akhir tidak kosong (&lt;&gt; berarti tidak sama dengan), fungsi <b>IF</b> menghitung kemajuan antara nilai awal dan akhir, selain itu akan menampilkan string kosong (dua tanda kutip ganda tanpa
+                                    apa pun di antaranya).</p>
+                                <p class="h5"> And/Or Kriteria</p>
+                                <p>Gunakan fungsi <b>IF</b> dalam kombinasi dengan fungsi <b>AND</b> dan
+                                    <a href="https://www.excel-easy.com/examples/or.html">fungsi OR</a> dan jadilah ahli Excel.</p>
+                                <p>1. Sebagai contoh, perhatikan fungsi <b>IF</b> pada sel D2 di bawah ini. </p>
+                                <p><img border=0 width=604 height=207 id="Picture 23" class="img-fluid" src="../img/img-excel/If_files/image006.png" alt="Jika ini Dan itu"></p>
+                                <p class="penjelasan"><b>Penjelasan:</b> fungsi <b>AND</b> mengembalikan <b>TRUE</b>
+                                    </b> jika skor pertama lebih besar atau sama dengan 60 dan skor kedua lebih besar atau sama dengan 90, selain itu mengembalikan
+                                    <b>FALSE</b>. Jika <b>TRUE</b>
+                                    </b>, fungsi <b>IF</b> mengembalikan Pass, jika <b>FALSE</b>, fungsi <b>IF</b> mengembalikan Fail. </p>
+                                <p>2. Sebagai contoh, perhatikan fungsi <b>IF</b> pada sel D2 di bawah ini. </p>
+                                <p><img border=0 width=604 height=207 id="Picture 22" class="img-fluid" src="../img/img-excel/If_files/image007.png"></p>
+                                <p class="penjelasan"><b>Penjelasan:</b> fungsi OR mengembalikan <b>TRUE</b>
+                                    </b> jika setidaknya satu skor lebih besar dari atau sama dengan 60, selain itu mengembalikan <b>FALSE</b>. Jika <b>TRUE</b>
+                                    </b>, fungsi <b>IF</b> mengembalikan Pass, jika <b>FALSE</b>, fungsi <b>IF</b> mengembalikan Fail. </p>
+                                <p>3. Sebagai contoh, perhatikan fungsi <b>IF</b> pada sel D2 di bawah ini. </p>
+                                <p><img border=0 width=604 height=247 id="Picture 21" class="img-fluid" src="../img/img-excel/If_files/image008.png"></p>
+                                <p class="penjelasan"><b>Penjelasan:</b> fungsi <b>AND</b> di atas memiliki dua argumen yang dipisahkan oleh koma (Tabel, Hijau atau Biru). Fungsi <b>AND</b> mengembalikan <b>TRUE</b>
+                                    </b> jika Produk sama dengan &quot;Tabel&quot; dan Warna sama dengan &quot;Hijau&quot; atau &quot;Biru&quot;. Jika <b>TRUE</b>
+                                    </b>, fungsi <b>IF</b> mengurangi harga sebesar 50%, jika
+                                    <b>FALSE</b>, fungsi <b>IF</b> mengurangi harga sebesar 10%.</p>
+                                <p class="h5">IF Bersarang <span class="fw-light text-capitalize">(Nested IF)</span></p>
+                                <p>Fungsi IF di Excel bisa disarangkan, saat Anda memiliki beberapa kondisi yang harus dipenuhi. Nilai
+                                    <b>FALSE</b> digantikan oleh fungsi <b>IF</b> lain untuk melakukan pengujian lebih lanjut.</p>
+                                <p>1. Misalnya, lihat rumus <b>IF Bersarang <span class="fw-light text-capitalize">(Nested <b>IF</b>)</span>
+                                    </b> di sel C2 di bawah ini.
+                                </p>
+                                <p><img border=0 width=604 height=207 id="Picture 20" class="img-fluid" src="../img/img-excel/If_files/image009.png"></p>
+                                <p class="penjelasan"><b>Penjelasan:</b> jika skor sama dengan 1, rumus <b>IF Bersarang <span
+                    class="fw-light text-capitalize">(Nested <b>IF</b>)</span>
+                                    </b> menghasilkan Buruk, jika skor sama dengan 2, rumus <b>IF Bersarang <span
+                    class="fw-light text-capitalize">(Nested <b>IF</b>)</span>
+                                    </b> menghasilkan Baik, jika skor sama dengan 3, rumus <b>IF Bersarang <span
+                    class="fw-light text-capitalize">(Nested <b>IF</b>)</span>
+                                    </b> menghasilkan Sangat Baik, jika tidak maka mengembalikan Tidak Valid. Jika Anda memiliki Excel 2016 atau lebih baru, cukup gunakan <a href="https://www.excel-easy.com/examples/ifs.html">fungsi IFS</a> .</p>
+                                <p>2. Misalnya, lihat rumus <b>IF Bersarang <span class="fw-light text-capitalize">(Nested <b>IF</b>)</span>
+                                    </b> di sel C2 di bawah ini.
+                                </p>
+                                <p><img border=0 width=604 height=207 id="Picture 19" class="img-fluid" src="../img/img-excel/If_files/image010.png"></p>
+                                <p class="penjelasan"><b>Penjelasan:</b> jika skor kurang dari <b>60</b>, rumus <b>IF Bersarang <span
+                    class="fw-light text-capitalize">(Nested <b>IF</b>)</span>
+                                    </b> mengembalikan <b>F</b>, jika skor lebih besar atau sama dengan <b>60</b> dan kurang dari <b>70</b>, rumus mengembalikan <b>D</b>, jika skor lebih besar atau sama dengan <b>70</b> dan kurang dari <b>80</b>, rumus mengembalikan
+                                    <b>C</b>, jika skor lebih besar atau sama dengan <b>80</b> dan kurang dari <b>90</b>, rumus mengembalikan <b>B</b>, selain itu mengembalikan <b>A</b>.</p>
+                                <p class="h5">
+                                    Lebih lanjut mengenai <b>IF</b></p>
+                                <p>fungsi <b>IF</b> adalah fungsi yang bagus. Mari kita lihat beberapa contoh keren lainnya.</p>
+                                <p>1. Misalnya, gunakan <b>IF</b> dan <b>AND</b> untuk menguji apakah suatu nilai berada di antara dua angka.
+                                </p>
+                                <p><img border=0 width=604 height=207 id="Picture 18" class="img-fluid" src="../img/img-excel/If_files/image011.png"></p>
+                                <p class="penjelasan"><b>Penjelasan:</b> fungsi <b>AND</b> mengembalikan <b>TRUE</b>
+                                    </b> jika orang tersebut lebih tua dari 12 tahun dan lebih muda dari 20 tahun, selain itu mengembalikan
+                                    <b>FALSE</b>. Jika
+                                    <b>TRUE</b>
+                                    </b>, fungsi <b>IF</b> mengembalikan Ya, jika <b>FALSE</b>, fungsi
+                                    <b>IF</b> mengembalikan Tidak.</p>
+                                <p>2. Anda dapat menggabungkan <b>IF</b> dengan AVERAGE, SUM dan fungsi Excel lainnya. Langit adalah batasnya!
+                                </p>
+                                <p><img border=0 width=604 height=207 id="Picture 17" class="img-fluid" src="../img/img-excel/If_files/image012.png"></p>
+                                <p class="penjelasan"><b>Penjelasan:</b> fungsi <b>AND</b> mengembalikan <b>TRUE</b>
+                                    </b> jika nilai input lebih besar dari 100 dan rata-rata nilai dalam <a href="https://www.excel-easy.com/examples/named-range.html">Range bernama</a> Data1 lebih besar dari 100, selain itu mengembalikan
+                                    <b>FALSE</b>. Jika <b>TRUE</b>
+                                    </b>, fungsi <b>IF</b> mengembalikan jumlah Data2, jika
+                                    <b>FALSE</b>, fungsi
+                                    <b>IF</b> mengembalikan 0.</p>
+                                <p>Bingung? Anda selalu dapat menggunakan alat Evaluasi Rumus untuk menelusuri rumus JIKA Anda. Alat Excel ini membantu Anda memahami rumus.</p>
+                                <p>3. Misalnya, pilih sel G3 di atas.</p>
+                                <p>4. Pada tab Rumus, dalam grup Audit Rumus, klik Evaluasi Rumus.
+                                </p>
+                                <p><img border=0 width=320 height=100 id="Picture 16" class="img-fluid" src="../img/img-excel/If_files/image013.png"></p>
+                                <p>5. Klik Evaluasi beberapa kali.</p>
+                                <p><img border=0 width=604 height=586 id="Picture 15" class="img-fluid" src="../img/img-excel/If_files/image014.png"></p>
+                                <p class="penjelasan"><b>Catatan:</b> coba sendiri. Unduh file Excel dan pilih salah satu rumus <b>IF</b> yang dijelaskan di halaman ini. Anda dapat menggunakan alat ini untuk menelusuri semua jenis rumus.</p>
+                            </details>
+                        </p>
+
+                        <h4 id="item-4"></h4>
+                        <!-- AVERAGE -->
+                        <p id="average" class="h5">4. <b>AVERAGE</b> <span class="fw-light text-capitalize">(rata-rata)</span></p>
+                        <p>Untuk menghitung rata-rata sekelompok angka, gunakan fungsi <b>AVERAGE</b> (tidak ada ilmu roket di sini). Rumus di bawah ini menghitung rata-rata dari 3 angka teratas dalam Range A1:A6.</p>
+                        <p><img class="img-fluid" src="../img/img-excel/Most-Used-Functions_files/image005.png" alt="Fungsi RATA-RATA">
+                        </p>
+                        <p class="penjelasan"><strong>Penjelasan:</strong> fungsi <b>LARGE</b> mengembalikan konstanta array {20,15,10}. Konstanta array ini dig class="h5"unakan sebagai argumen untuk <a href="https://www.excel-easy.com/examples/<b>AVERAGE</b>.html">fungsi</a>,
+                            memberikan hasil <b>15</b>.</p>
+                        <p>
+                            <details>
+                                <summary>Selengkapnya <b>Fungsi AVERAGE</b></summary>
+                                <p><a href="https://www.excel-easy.com/examples/average.html#average">AVERAGE</a> |
+                                    <a href="https://www.excel-easy.com/examples/average.html#averagea">AVERAGEA</a> | <a href="https://www.excel-easy.com/examples/average.html#average-top-3">AVERAGE Top 3</a> | <a href="https://www.excel-easy.com/examples/average.html#averageif">AVERAGEIF</a>                                    |
+                                    <a href="https://www.excel-easy.com/examples/average.html#weighted-average">Weighted AVERAGE</a> | <a href="https://www.excel-easy.com/examples/average.html#moving-average">Moving AVERAGE</a></p>
+                                <p>Fungsi <b>AVERAGE</b> di Excel menghitung rata-rata (rata-rata aritmatika) dari sekelompok angka. Fungsi
+                                    <b>AVERAGE</b> mengabaikan nilai logika, sel kosong, dan sel yang berisi teks.</p>
+                                <p class="h5">AVERAGE</p>
+                                <p>Alih-alih menggunakan fungsi <b>AVERAGE</b>, gunakan <b>SUM</b> dan <b>COUNT</b>.</p>
+                                <p>1. Misalnya, fungsi <b>AVERAGE</b> di bawah ini menghitung rata - rata angka dalam sel A1 hingga A3.</p>
+                                <p><img border=0 width=604 height=167 id="Picture 24" class="img-fluid" src="../img/img-excel/AVERAGE_files/image001.png" alt="Fungsi AVERAGE di Excel"></p>
+                                <p>2. Rumus di bawah ini menghasilkan hasil yang sama persis.</p>
+                                <p><img border=0 width=604 height=167 id="Picture 23" class="img-fluid" src="../img/img-excel/AVERAGE_files/image002.png" alt="Jumlah dan Hitung"></p>
+                                <p>3. Fungsi <b>AVERAGE</b> berikut menghitung rata-rata angka dalam sel A1 sampai A3 dan angka 8.</p>
+                                <p><img border=0 width=604 height=167 id="Picture 22" class="img-fluid" src="../img/img-excel/AVERAGE_files/image003.png" alt="Hitung AVERAGE"></p>
+                                <p>4. Fungsi <b>AVERAGE</b> mengabaikan nilai logika (<b>TRUE</b>
+                                    </b> atau <b>FALSE</b>), sel kosong dan sel yang berisi teks.
+                                </p>
+                                <p><img border=0 width=604 height=227 id="Picture 21" class="img-fluid" src="../img/img-excel/AVERAGE_files/image004.png" alt="Nilai Logika, Sel Kosong dan Sel yang Mengandung Teks Diabaikan"></p>
+                                <p class="h5">AVERAGEA</p>
+                                <p>Fungsi <b>AVERAGEA</b> juga mengembalikan rata-rata (rata-rata aritmatika) dari sekelompok angka. Namun, nilai logika <b>FALSE</b> dan sel yang berisi teks bernilai 0 dan nilai logika <b>TRUE</b>
+                                    </b>
+                                    bernilai 1. Fungsi <b>AVERAGEA</b> juga mengabaikan sel kosong.</p>
+                                <p>1. Sebagai contoh, perhatikan fungsi <b>AVERAGEA</b> di bawah ini.</p>
+                                <p><img border=0 width=604 height=227 id="Picture 20" class="img-fluid" src="../img/img-excel/AVERAGE_files/image005.png" alt="Fungsi AVERAGEA di Excel"></p>
+                                <p>2. Anda dapat menggunakan fungsi <b>AVERAGE</b> normal untuk memeriksa hasil ini.</p>
+                                <p><img border=0 width=604 height=227 id="Picture 19" class="img-fluid" src="../img/img-excel/AVERAGE_files/image006.png" alt="Fungsi AVERAGE Normal"></p>
+                                <p class="h5">AVERAGE Top 3 <span class="fw-light text-capitalize">(AVERAGE 3 Teratas)</span></p>
+                                <p>Gunakan <b>AVERAGE</b> dan <b>LARGE</b> di Excel untuk menghitung rata-rata dari 3 angka teratas dalam kumpulan data.
+                                </p>
+                                <p>1. Pertama, fungsi <b>AVERAGE</b> di bawah ini menghitung rata-rata angka dalam sel <b>A1</b> hingga
+                                    <b>A6</b>.</p>
+                                <p><img border=0 width=604 height=227 id="Picture 18" class="img-fluid" src="../img/img-excel/AVERAGE_files/image007.png" alt="AVERAGE Sederhana"></p>
+                                <p>2. Misalnya, untuk mencari bilangan terbesar ketiga, gunakan fungsi <b>LARGE</b> berikut.</p>
+                                <p><img border=0 width=604 height=227 id="Picture 17" class="img-fluid" src="../img/img-excel/AVERAGE_files/image008.png" alt="Fungsi Besar"></p>
+                                <p>3. Rumus di bawah ini menghitung rata-rata dari 3 angka teratas.</p>
+                                <p><img border=0 width=604 height=227 id="Picture 16" class="img-fluid" src="../img/img-excel/AVERAGE_files/image009.png" alt="AVERAGE 3 Teratas"></p>
+                                <p class="penjelasan"><b>Penjelasan:</b> fungsi <b>LARGE</b> mengembalikan konstanta array {20,15,10}. Konstanta array ini digunakan sebagai argumen untuk fungsi <b>AVERAGE</b>, memberikan hasil <b>15</b>.</p>
+                                <p class="h5">AVERAGEIF</p>
+                                <p>Untuk menghitung rata-rata sel yang memenuhi satu kriteria, gunakan
+                                    <a href="https://www.excel-easy.com/examples/averageif.html">fungsi AVERAGEIF</a> di Excel.</p>
+                                <p><img border=0 width=604 height=267 id="Picture 15" class="img-fluid" src="../img/img-excel/AVERAGE_files/image010.png" alt="Fungsi AVERAGEIF"></p>
+                                <p class="h5">Weighted Average <span class="fw-light text-capitalize">(Rata-rata Tertimbang)</span></p>
+                                <p>Untuk menghitung <a href="https://www.excel-easy.com/examples/weighted-average.html">rata-rata tertimbang</a> di Excel, gunakan <b>SUMPRODUCT</b> dan <b>SUM</b>.</p>
+                                <p><img border=0 width=604 height=207 id="Picture 14" class="img-fluid" src="../img/img-excel/AVERAGE_files/image011.png" alt="Weighted Average"></p>
+                                <p class="h5">Moving Average <span class="fw-light text-capitalize">(Rata-Rata Bergerak)</span></p>
+                                <p>Gunakan Analysis Toolpak untuk menghitung <a href="https://www.excel-easy.com/examples/moving-average.html">rata-rata bergerak</a> dari deret waktu di Excel.</p>
+                                <p><img border=0 width=604 height=487 id="Picture 13" class="img-fluid" src="../img/img-excel/AVERAGE_files/image012.png" alt="Rata-Rata Bergerak"></p>
+                                <p class="penjelasan"><b>Catatan:</b> rata-rata bergerak digunakan untuk menghaluskan ketidakteraturan (puncak dan lembah) untuk mengenali tren dengan mudah.</p>
+                            </details>
+                        </p>
+
+                        <h4 id="item-5"></h4>
+                        <!-- <b>COUNTIF</b> -->
+                        <p id="countif" class="h5">5. <b>COUNTIF</b></p>
+                        <p>Fungsi <b>COUNTIF</b> di bawah ini menghitung jumlah sel yang berisi persis bintang + serangkaian karakter nol atau lebih.
+                        </p>
+                        <p><img class="img-fluid" src="../img/img-excel/Most-Used-Functions_files/image006.png" alt=""></p>
+                        <p class="penjelasan"><strong>Penjelasan:</strong> tanda bintang (*) cocok dengan serangkaian karakter nol atau lebih. Kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/<b>COUNTIF</b>.html">fungsi <b>COUNTIF</b></a> untuk informasi
+                            dan contoh lebih lanjut.
+                        </p>
+                        <p>
+                            <details>
+                                <summary>Selengkapnya Fungsi <b>COUNTIF</b>
+                                </summary>
+                                <p class="sub-materi"><b>COUNTIF</b></p>
+                                <p class="fw-light"><a href="#">Kriteria Numerik</a> | <a href="#">Trik Teks</a> | <a href="#">Hitung Boolean</a> | <a href="#">Count Errors</a> | <a href="#">And Kriteria</a> | <a href="#">Or Kriteria</a> | <a href="#">Lebih lanjut tentang <b>COUNTIF</b></a>                                    | <a href="#">Count Magic</a>
+                                </p>
+                                <p>Fungsi <b>COUNTIF</b> yang kuat di Excel menghitung sel berdasarkan satu kriteria. Halaman ini berisi banyak contoh <b>COUNTIF</b> yang mudah diikuti.</p>
+                                <p class="h5">
+                                    Kriteria Numerik</p>
+                                <p>Gunakan fungsi <b>COUNTIF</b> di Excel untuk menghitung sel yang sama dengan nilai, menghitung sel yang lebih besar atau sama dengan nilai, dll.</p>
+                                <p>1. Fungsi <b>COUNTIF</b> di bawah ini menghitung jumlah sel yang sama dengan 20.</p>
+                                <p><img border=0 width=604 height=227 id="Picture 52" class="img-fluid" src="../img/img-excel/Countif_files/image001.png" alt="Fungsi <b>COUNTIF</b> sederhana di Excel"></p>
+                                <p>2. Fungsi <b>COUNTIF</b> berikut memberikan hasil yang sama persis.</p>
+                                <p><img border=0 width=604 height=227 id="Picture 51" class="img-fluid" src="../img/img-excel/Countif_files/image002.png" alt="Hitung Sel Sama dengan Nilai Sel"></p>
+                                <p>3. Fungsi <b>COUNTIF</b> di bawah ini menghitung jumlah sel yang lebih besar atau sama dengan 10.</p>
+                                <p><img border=0 width=604 height=227 id="Picture 50" class="img-fluid" src="../img/img-excel/Countif_files/image003.png" alt="Hitung Sel Lebih Besar dari Atau Sama dengan Nilai">
+                                </p>
+                                <p>4. Fungsi <b>COUNTIF</b> berikut memberikan hasil yang sama persis.</p>
+                                <p><img border=0 width=604 height=227 id="Picture 49" class="img-fluid" src="../img/img-excel/Countif_files/image004.png" alt="Fungsi <b>COUNTIF</b> dan Operator Ampersand"></p>
+                                <p class="penjelasan"><b>Penjelasan:</b> operator &amp; menggabungkan simbol 'lebih besar dari atau sama dengan
+                                    <span class="fw-light text-capitalize">(greater than or equal to)</span>' dan nilai di sel <b>C1</b>.</p>
+                                <p>5. Fungsi <b>COUNTIF</b> di bawah ini menghitung jumlah sel yang
+                                    <u>tidak</u> sama dengan <b>7</b>.</p>
+                                <p><img border=0 width=604 height=227 id="Picture 48" class="img-fluid" src="../img/img-excel/Countif_files/image005.png" alt="Hitung Sel Tidak Sama dengan Nilai"></p>
+                                <p>6. Fungsi <b>COUNTIF</b> di bawah ini menghitung jumlah sel yang sama dengan <b>3</b> <u>atau</u> <b>7</b>.
+                                </p>
+                                <p><img border=0 width=604 height=227 id="Picture 47" class="img-fluid" src="../img/img-excel/Countif_files/image006.png" alt="Dua fungsi <b>COUNTIF</b> di Excel"></p>
+                                <p class="h5">
+                                    Trik Teks</p>
+                                <p>Gunakan fungsi <b>COUNTIF</b> di Excel dan beberapa trik untuk menghitung sel yang berisi teks tertentu. Selalu sertakan teks dalam tanda kutip ganda.</p>
+                                <p>1. Fungsi <b>COUNTIF</b> di bawah ini menghitung jumlah sel yang berisi persis bintang.</p>
+                                <p><img border=0 width=604 height=267 id="Picture 46" class="img-fluid" src="../img/img-excel/Countif_files/image007.png" alt="Fungsi <b>COUNTIF</b> di Excel, Tepat"></p>
+                                <p>2. Fungsi <b>COUNTIF</b> di bawah ini menghitung jumlah sel yang berisi persis bintang + 1 karakter. Tanda tanya (?) cocok dengan tepat satu karakter.</p>
+                                <p><img border=0 width=604 height=267 id="Picture 45" class="img-fluid" src="../img/img-excel/Countif_files/image008.png" alt="Fungsi <b>COUNTIF</b>, Tanda Tanya"></p>
+                                <p>3. Fungsi <b>COUNTIF</b> di bawah ini menghitung jumlah sel yang berisi persis bintang + serangkaian karakter nol atau lebih. Tanda bintang (*) cocok dengan serangkaian karakter nol atau lebih.</p>
+                                <p><img border=0 width=604 height=267 id="Picture 44" class="img-fluid" src="../img/img-excel/Countif_files/image009.png" alt="Fungsi <b>COUNTIF</b>, Asterisk"></p>
+                                <p>4. Fungsi <b>COUNTIF</b> di bawah ini menghitung jumlah sel yang mengandung bintang dengan cara apa pun.</p>
+                                <p><img border=0 width=604 height=267 id="Picture 43" class="img-fluid" src="../img/img-excel/Countif_files/image010.png" alt="Hitung Semua Kejadian"></p>
+                                <p>5. Fungsi <b>COUNTIF</b> di bawah ini menghitung jumlah sel yang berisi teks.</p>
+                                <p><img border=0 width=604 height=267 id="Picture 42" class="img-fluid" src="../img/img-excel/Countif_files/image011.png" alt="Hitung Sel Yang Mengandung Teks"></p>
+                                <p class="h5">
+                                    Hitung Boolean</p>
+                                <p>Gunakan fungsi <b>COUNTIF</b> di Excel untuk menghitung nilai Boolean (<b>TRUE</b> atau <b>FALSE</b>).
+                                </p>
+                                <p>1. Fungsi <b>COUNTIF</b> di bawah ini menghitung jumlah sel yang berisi Boolean <b>TRUE</b>.</p>
+                                <p><img border=0 width=604 height=227 id="Picture 41" class="img-fluid" src="../img/img-excel/Countif_files/image012.png" alt="Hitung BENAR"></p>
+                                <p>2. Fungsi <b>COUNTIF</b> di bawah ini menghitung jumlah sel yang berisi Boolean <b>FALSE</b>.</p>
+                                <p><img border=0 width=604 height=227 id="Picture 40" class="img-fluid" src="../img/img-excel/Countif_files/image013.png" alt="Hitung SALAH"></p>
+                                <p class="h5">
+                                    Hitung Kesalahan</p>
+                                <p>Gunakan fungsi <b>COUNTIF</b> di Excel untuk menghitung kesalahan tertentu.
+                                </p>
+                                <p>1. Fungsi <b>COUNTIF</b> di bawah ini menghitung jumlah sel yang berisi <b>#NAME?</b> kesalahan.</p>
+                                <p><img border=0 width=604 height=187 id="Picture 39" class="img-fluid" src="../img/img-excel/Countif_files/image014.png" alt="Hitung #Nama?  kesalahan"></p>
+                                <p>2. Rumus array di bawah ini menghitung jumlah total kesalahan dalam Range sel.</p>
+                                <p><img border=0 width=604 height=187 id="Picture 38" class="img-fluid" src="../img/img-excel/Countif_files/image015.png" alt="Hitung Kesalahan"></p>
+                                <p class="penjelasan"><b>Catatan:</b> selesaikan rumus array dengan menekan
+                                    <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>. Excel menambahkan kurung kurawal <b>{}</b>. Kunjungi halaman kami tentang
+                                    <a href="https://www.excel-easy.com/examples/count-errors.html">Menghitung Kesalahan</a> untuk petunjuk terperinci tentang cara membuat rumus array ini.
+                                </p>
+                                <p class="h5">
+                                    Dan Kriteria</p>
+                                <p>Menghitung dengan kriteria Dan di Excel itu mudah. Fungsi <b>COUNTIFS</b> (dengan huruf S di akhir) di Excel menghitung sel berdasarkan dua atau lebih kriteria.</p>
+                                <p>1. Misalnya, untuk menghitung jumlah baris yang berisi Google
+                                    <u>dan</u> Stanford, cukup gunakan fungsi <b>COUNTIFS</b>.</p>
+                                <p><img border=0 width=604 height=287 id="Picture 37" class="img-fluid" src="../img/img-excel/Countif_files/image016.png" alt=""></p>
+                                <p class="h5">
+                                    Atau Kriteria</p>
+                                <p>Menghitung dengan kriteria Or di Excel bisa jadi rumit.</p>
+                                <p>1. Fungsi <b>COUNTIF</b> di bawah ini menghitung jumlah sel yang berisi Google atau Facebook (satu kolom). Tidak ada ilmu roket sejauh ini.</p>
+                                <p><img border=0 width=604 height=287 id="Picture 36" class="img-fluid" src="../img/img-excel/Countif_files/image017.png" alt="Sederhana Atau Kriteria"></p>
+                                <p>2. Namun, jika Anda ingin menghitung jumlah baris yang berisi Google <u>atau</u> Stanford (dua kolom), Anda tidak bisa begitu saja menggunakan fungsi <b>COUNTIF</b> dua kali (lihat gambar di bawah).</p>
+                                <p><img border=0 width=604 height=287 id="Picture 35" class="img-fluid" src="../img/img-excel/Countif_files/image018.png" alt="Formula yang salah"></p>
+                                <p class="penjelasan"><b>Catatan:</b> baris yang berisi Google dan Stanford dihitung dua kali, tetapi seharusnya hanya dihitung sekali. 4 adalah jawaban yang kita cari.
+                                </p>
+                                <p>3. Rumus array di bawah ini berhasil.</p>
+                                <p><img border=0 width=604 height=287 id="Picture 34" class="img-fluid" src="../img/img-excel/Countif_files/image019.png" alt="Hitung dengan Atau Kriteria di Excel"></p>
+                                <p class="penjelasan"><b>Catatan:</b> selesaikan rumus array dengan menekan
+                                    <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>. Excel menambahkan kurung kurawal <b>{}</b>. Kunjungi halaman kami tentang
+                                    <a href="https://www.excel-easy.com/examples/count-with-or-criteria.html">Menghitung dengan Atau Kriteria</a> untuk instruksi terperinci tentang cara membuat rumus array ini.</p>
+                                <p class="h5">
+                                    Lebih lanjut tentang <b>COUNTIF</b></p>
+                                <p>Fungsi <b>COUNTIF</b> adalah fungsi yang hebat. Mari kita lihat beberapa contoh keren lainnya.</p>
+                                <p>1. Fungsi <b>COUNTIF</b> di bawah ini menggunakan <a href="https://www.excel-easy.com/examples/named-range.html">Range bernama</a> . Range bernama Ages mengacu pada Range A1:A6.</p>
+                                <p><img border=0 width=604 height=247 id="Picture 33" class="img-fluid" src="../img/img-excel/Countif_files/image020.png" alt="<b>COUNTIF</b> dan Range Bernama"></p>
+                                <p>2. Fungsi <b>COUNTIF</b> di bawah ini menghitung jumlah sel yang kurang dari rata-rata usia (32,2).</p>
+                                <p><img border=0 width=604 height=247 id="Picture 32" class="img-fluid" src="../img/img-excel/Countif_files/image021.png" alt="<b>COUNTIF</b> dan RATA-RATA"></p>
+                                <p>3. Untuk menghitung sel di antara dua angka, gunakan fungsi <b>COUNTIFS</b> (dengan huruf S di akhir).</p>
+                                <p><img border=0 width=604 height=247 id="Picture 31" class="img-fluid" src="../img/img-excel/Countif_files/image022.png" alt="Hitung Sel Antara Dua Angka"></p>
+                                <p>4. Gunakan fungsi <b>COUNTIF</b> untuk menghitung berapa kali setiap nilai muncul dalam Range bernama Ages.
+                                </p>
+                                <p><img border=0 width=604 height=207 id="Picture 30" class="img-fluid" src="../img/img-excel/Countif_files/image023.png" alt="Hitung Berapa Kali Setiap Nilai Terjadi"></p>
+                                <p class="penjelasan"><b>Catatan:</b> sel B2 berisi rumus =<b>COUNTIF</b>(Usia,A2), sel B3 =
+                                    <b>COUNTIF</b>(Usia,A3), dll.</p>
+                                <p>5. Tambahkan <a href="https://www.excel-easy.com/examples/if.html">fungsi IF</a> untuk menemukan duplikatnya.
+                                </p>
+                                <p><img border=0 width=604 height=207 id="Picture 29" class="img-fluid" src="../img/img-excel/Countif_files/image024.png" alt="Gunakan <b>COUNTIF</b> untuk Menemukan Duplikat">
+                                </p>
+                                <p>Tip: gunakan <b>COUNTIF</b> dan pemformatan bersyarat untuk <a href="https://www.excel-easy.com/examples/find-duplicates.html">menemukan dan menyorot duplikat</a> di Excel.</p>
+                                <p class="h5">
+                                    Count Magic</p>
+                                <p>Fungsi <b>COUNTIF</b> tidak dapat menghitung berapa kali kata tertentu muncul <u>dalam</u> sel atau Range sel. Yang kita butuhkan hanyalah sedikit sihir!</p>
+                                <p>1. Rumus di bawah ini menghitung berapa kali kata &quot;anjing&quot; muncul di sel A1.</p>
+                                <p><img border=0 width=604 height=107 id="Picture 28" class="img-fluid" src="../img/img-excel/Countif_files/image025.png" alt="Hitung Berapa Kali Kata Tertentu Terjadi di Sel">
+                                </p>
+                                <p>2. Rumus di bawah ini menghitung berapa kali kata &quot;anjing&quot; muncul dalam Range A1:A2.</p>
+                                <p><img border=0 width=604 height=127 id="Picture 27" class="img-fluid" src="../img/img-excel/Countif_files/image026.png" alt="Hitung Berapa Kali Kata Tertentu Terjadi dalam Range"></p>
+                                <p class="penjelasan"><b>Catatan:</b> kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/count-words.html">menghitung kata</a> untuk mempelajari lebih lanjut tentang rumus ini.</p>
+                            </details>
+                        </p>
+
+                        <h4 id="item-6"></h4>
+                        <!-- SUMIF -->
+                        <p id="sumif" class="h5">6. <b>SUMIF</b></p>
+                        <p>Fungsi SUMIF di bawah ini menjumlahkan nilai dalam Range B1:B5 jika sel yang sesuai dalam Range A1:A5 berisi persis lingkaran + 1 karakter.</p>
+                        <p><img class="img-fluid" src="../img/img-excel/Most-Used-Functions_files/image007.png" alt=""></p>
+                        <p class="penjelasan"><strong>Penjelasan:</strong> tanda tanya (?) cocok dengan tepat satu karakter. Kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/sumif.html">fungsi SUMIF</a> untuk informasi dan contoh lebih lanjut.</p>
+                        <p>
+                            <details>
+                                <summary>Selengkapnya <b>Fungsi SUMIF</b></summary>
+                                <p class="sub-materi"><b>Sumif</b></p>
+                                <p><a href="#">Kriteria Numerik</a> | <a href="#">Kriteria Teks</a> | <a href="#">Kriteria Tanggal</a> | <a href="#">Dan Kriteria</a> | <a href="#">Atau Kriteria</a></p>
+                                <p>Fungsi <b>SUMIF</b> yang kuat di Excel menjumlahkan sel berdasarkan satu kriteria. Halaman ini berisi banyak contoh <b>SUMIF</b> yang mudah diikuti.</p>
+                                <p class="h5">Kriteria Numerik</p>
+                                <p>Gunakan fungsi <b>SUMIF</b> di Excel untuk menjumlahkan sel berdasarkan angka yang memenuhi kriteria tertentu.
+                                </p>
+                                <p>1. Fungsi <b>SUMIF</b> di bawah (dua argumen) menjumlahkan nilai dalam Range A1:A5 yang kurang dari atau sama dengan 10.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Sumif_files/image001.png" alt="Fungsi xcel dengan Dua Argumen"></p>
+                                <p>2. Fungsi <b>SUMIF</b> berikut memberikan hasil yang sama persis. Operator &amp; menggabungkan simbol 'kurang dari atau sama dengan' dan nilai dalam sel C1.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Sumif_files/image002.png" alt="Fungsierator Ampersand"></p>
+                                <p>3. Fungsi <b>SUMIF</b> di bawah ini (tiga argumen, argumen terakhir adalah Range yang akan dijumlahkan) menjumlahkan nilai dalam Range B1:B5 jika sel terkait dalam Range A1:A5 berisi nilai 25.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Sumif_files/image003.png" alt="Fungsi xcel dengan Tiga Argumen">
+                                </p>
+                                <p>4. Fungsi <b>SUMIF</b> berikut memberikan hasil yang sama persis (argumen kedua mengacu pada sel D1).</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Sumif_files/image004.png" alt="Argumen Kedua Mengacu pada Sel D1">
+                                </p>
+                                <p class="h5">Kriteria Teks</p>
+                                <p>Gunakan fungsi <b>SUMIF</b> di Excel untuk menjumlahkan sel berdasarkan string teks yang memenuhi kriteria tertentu. Selalu sertakan teks dalam tanda kutip ganda.</p>
+                                <p>1. Fungsi <b>SUMIF</b> di bawah ini menjumlahkan nilai dalam Range B1:B5 jika sel yang sesuai dalam Range A1:A5 berisi lingkaran persis.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Sumif_files/image005.png" alt="Jumlahkan Jika Sama dengan Nilai Teks"></p>
+                                <p>2. Fungsi <b>SUMIF</b> di bawah ini menjumlahkan nilai dalam Range B1:B5 jika sel terkait dalam Range A1:A5
+                                    <u>tidak</u> berisi segitiga sama persis.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Sumif_files/image006.png" alt="Jumlahkan Jika Tidak Sama dengan Nilai Teks"></p>
+                                <p>3. Fungsi <b>SUMIF</b> di bawah ini menjumlahkan nilai dalam Range B1:B5 jika sel yang sesuai dalam Range A1:A5 berisi persis lingkaran + 1 karakter. Tanda tanya (?) cocok dengan tepat satu karakter.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Sumif_files/image007.png" alt="Fungsi  dengan Tanda Tanya"></p>
+                                <p>4. Fungsi <b>SUMIF</b> di bawah ini menjumlahkan nilai dalam Range B1:B5 jika sel terkait dalam Range A1:A5 berisi rangkaian nol atau lebih karakter + file. Tanda bintang (*) cocok dengan serangkaian karakter nol atau lebih.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Sumif_files/image008.png" alt="Fungsi  dengan Asterisk"></p>
+                                <p>5. Fungsi <b>SUMIF</b> di bawah jumlah nilai dalam Range B1:B5 jika sel yang sesuai dalam Range A1:A5 berisi segitiga <u>atau</u> lingkaran8 yang tepat.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Sumif_files/image009.png" alt="Dua Fungsi  di Excel"></p>
+                                <p class="h5">Kriteria Tanggal</p>
+                                <p>Gunakan fungsi <b>SUMIF</b> di Excel untuk menjumlahkan sel berdasarkan tanggal yang memenuhi kriteria tertentu.
+                                </p>
+                                <p>1. Fungsi <b>SUMIF</b> di bawah ini menjumlahkan penjualan setelah 20 Januari 2018.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Sumif_files/image010.png" alt="Jumlahkan Jika Tanggal Lebih Besar dari"></p>
+                                <p class="penjelasan"><b>Catatan:</b> fungsi DATE di Excel menerima tiga argumen: tahun, bulan, dan hari.</p>
+                                <p>2. Fungsi <b>SUMIF</b> di bawah ini menjumlahkan penjualan hari ini.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Sumif_files/image011.png" alt="Fungsi  dan Fungsi Hari Ini"></p>
+                                <p class="penjelasan"><b>Catatan:</b> hari ini adalah 3 Agustus 2018.</p>
+                                <p>3. Fungsi SUMIFS (dengan huruf S di akhir) di bawah ini menjumlahkan penjualan antara dua tanggal.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Sumif_files/image012.png" alt="Jumlahkan Jika Tanggal Antara"></p>
+                                <p class="penjelasan"><b>Catatan:</b> fungsi SUMIFS di Excel menjumlahkan sel berdasarkan dua atau lebih kriteria (argumen pertama adalah Range yang akan dijumlahkan, diikuti oleh dua atau lebih pasangan Range/kriteria). Sesuaikan tanggal untuk
+                                    menjumlahkan penjualan pada bulan, tahun, dll.</p>
+                                <p class="h5">Dan Kriteria</p>
+                                <p>Menjumlahkan dengan kriteria Dan di Excel itu mudah.</p>
+                                <p>1. Misalnya, untuk menjumlahkan sel yang memenuhi kriteria berikut: Google <u>dan</u> Stanford (dua Range kriteria), cukup gunakan fungsi SUMIFS (dengan huruf S di akhir).</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Sumif_files/image013.png" alt="Fungsi  di Excel"></p>
+                                <p class="penjelasan"><b>Catatan:</b> ingat, saat menggunakan fungsi SUMIFS, argumen pertama adalah Range yang akan dijumlahkan, diikuti oleh dua atau lebih pasangan Range/kriteria.</p>
+                                <p class="h5">Atau Kriteria</p>
+                                <p>Menjumlahkan dengan kriteria Or di Excel bisa jadi rumit.</p>
+                                <p>1. Rumus di bawah ini menjumlahkan sel yang memenuhi kriteria berikut: Google atau Facebook (satu Range kriteria). Tidak ada ilmu roket sejauh ini.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Sumif_files/image014.png" alt="2x Fungsi di Excel"></p>
+                                <p>2. Namun, jika Anda ingin menjumlahkan sel yang memenuhi kriteria berikut: Google <u>atau</u> Stanford (dua Range kriteria), Anda tidak bisa begitu saja menggunakan fungsi <b>SUMIF</b> dua kali (lihat gambar di bawah).
+                                </p>
+                                <p><img class="img-fluid" src="../img/img-excel/Sumif_files/image015.png" alt="Formula yang salah"></p>
+                                <p class="penjelasan"><b>Catatan:</b> sel yang memenuhi kriteria Google dan Stanford ditambahkan dua kali, tetapi hanya boleh ditambahkan satu kali. 10 adalah jawaban yang kita cari.</p>
+                                <p>3. Rumus array di bawah ini berhasil.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Sumif_files/image016.png" alt="Jumlahkan dengan Atau Kriteria di Excel"></p>
+                                <p class="penjelasan"><b>Catatan:</b> selesaikan rumus array dengan menekan
+                                    <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>. Excel menambahkan kurung kurawal {}. Kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/sum-with-or-criteria.html">Menjumlahkan dengan Atau Kriteria</a>                                    untuk instruksi terperinci tentang cara membuat rumus array ini.</p>
+                            </details>
+                        </p>
+
+                        <h4 id="item-7"></h4>
+                        <!-- VLOOKUP -->
+                        <p id="vlookup" class="h5">7. <b>VLOOKUP</b></p>
+                        <p>Fungsi <b>VLOOKUP</b> di bawah ini mencari nilai 53 (argumen pertama) di kolom paling kiri dari tabel merah (argumen kedua). Nilai 4 (argumen ketiga) memberi tahu fungsi <b>VLOOKUP</b> untuk mengembalikan nilai pada baris yang
+                            sama dari kolom keempat tabel merah.</p>
+                        <p><img class="img-fluid" src="../img/img-excel/Most-Used-Functions_files/image008.png" alt=""></p>
+                        <p class="penjelasan"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/vlookup.html">fungsi VLOOKUP</a> untuk mempelajari lebih lanjut tentang fungsi Excel yang hebat ini.</p>
+                        <p>
+                            <details>
+                                <summary>Selengkapnya <b>Fungsi VLOOKUP</b></summary>
+                                <p class="sub-materi"><b>VLOOKUP</b></p>
+                                <p class="fw-light"><a href="#">Pencocokan Tepat</a> | <a href="#">Approximate Match</a> | <a href="#">Vlookup Looks Right</a> | <a href="#">First Match</a> | <a href="#">Vlookup is Case-insensitive</a> | <a href="#">Beberapa Kriteria</a>                                    | <a href="#">#N/A Errors</a> | <a href="#">Beberapa Tabel Pencarian</a> | <a href="#">Index dan Match</a> | <a href="#">Xlookup</a></p>
+                                <p>Fungsi <b>VLOOKUP</b> adalah salah satu fungsi yang paling populer di Excel. Halaman ini berisi banyak contoh
+                                    <b>VLOOKUP</b> yang mudah diikuti.</p>
+                                <p class="h5">Exact Match <span class="fw-light text-capitalize">(Benar-benar cocok)</span></p>
+                                <p>Sebagian besar waktu Anda mencari kecocokan yang tepat saat Anda menggunakan fungsi <b>VLOOKUP</b> di Excel. Mari kita lihat argumen dari fungsi <b>VLOOKUP</b>.</p>
+                                <p>1. Fungsi <b>VLOOKUP</b> di bawah ini mencari nilai 53 (argumen pertama) di kolom paling kiri tabel merah (argumen kedua).</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Vlookup_files/image001.png" alt="Argumen "></p>
+                                <p>2. Nilai 4 (argumen ketiga) memberitahu fungsi <b>VLOOKUP</b> untuk mengembalikan nilai pada baris yang sama dari kolom keempat tabel merah.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Vlookup_files/image002.png" alt="Hasil  di Excel"></p>
+                                <p class="penjelasan"><b>Catatan:</b> Boolean <b>FALSE</b> (argumen keempat) memberi tahu fungsi <b>VLOOKUP</b> untuk mengembalikan kecocokan yang sama persis. Jika fungsi <b>VLOOKUP</b> tidak dapat menemukan nilai 53 di kolom pertama, itu akan
+                                    mengembalikan kesalahan
+                                    <a href="https://www.excel-easy.com/examples/<b>vlookup</b>.html#na-error">#N/A</a>.</p>
+                                <p>3. Ini contoh lain. Alih-alih mengembalikan gaji, fungsi <b>VLOOKUP</b> di bawah ini mengembalikan nama belakang (argumen ketiga disetel ke 3) dari ID 79.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Vlookup_files/image003.png" alt="Benar-benar cocok"></p>
+                                <p class="h5">Approximate Match <span class="fw-light text-capitalize">(Perkiraan Kecocokan)</span>
+                                </p>
+                                <p>Mari kita lihat contoh fungsi <b>VLOOKUP</b> dalam mode pencocokan perkiraan (argumen keempat disetel ke
+                                    <b>TRUE</b>).</p>
+                                <p>1. Fungsi <b>VLOOKUP</b> di bawah ini mencari nilai 85 (argumen pertama) di kolom paling kiri dari tabel merah (argumen kedua). Hanya ada satu masalah. Tidak ada nilai 85 di kolom pertama.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Vlookup_files/image004.png" alt="Fungsi  dalam Mode Pencocokan Perkiraan"></p>
+                                <p>2. Untungnya, Boolean <b>TRUE</b> (argumen keempat) memberi tahu fungsi <b>VLOOKUP</b> untuk mengembalikan perkiraan kecocokan. Jika fungsi <b>VLOOKUP</b> tidak dapat menemukan nilai 85 di kolom pertama, itu akan mengembalikan
+                                    nilai terbesar yang lebih kecil dari 85. Dalam contoh ini, ini akan menjadi nilai 80.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Vlookup_files/image005.png" alt="Nilai Terbesar Lebih Kecil dari Nilai Pencarian"></p>
+                                <p>3. Nilai 2 (argumen ketiga) memberitahu fungsi <b>VLOOKUP</b> untuk mengembalikan nilai pada baris yang sama dari kolom kedua tabel merah.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Vlookup_files/image006.png" alt="Approximate Match di Excel"></p>
+                                <p class="penjelasan"><b>Catatan:</b> selalu urutkan kolom paling kiri dari tabel merah dalam urutan menaik jika Anda menggunakan fungsi <b>VLOOKUP</b> dalam mode pencocokan perkiraan (argumen keempat disetel ke
+                                    <b>TRUE</b>).</p>
+                                <p class="h5">Vlookup Looks Right <span class="fw-light text-capitalize">(Vlookup Pencocokan ke Kanan)</span></p>
+                                <p>Fungsi <b>VLOOKUP</b> selalu mencari nilai di kolom paling kiri dari tabel dan mengembalikan nilai yang sesuai dari kolom ke <u>kanan</u>.</p>
+                                <p>1. Misalnya, fungsi <b>VLOOKUP</b> di bawah ini mencari nama depan dan mengembalikan nama belakang.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Vlookup_files/image007.png" alt="Pencarian Kanan"></p>
+                                <p>2. Jika Anda mengubah nomor indeks kolom (argumen ketiga) menjadi 3, fungsi <b>VLOOKUP</b> akan mencari nama depan dan mengembalikan gaji.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Vlookup_files/image008.png" alt="Ubah Nomor Indeks Kolom"></p>
+                                <p class="penjelasan"><b>Catatan:</b> dalam contoh ini, fungsi <b>VLOOKUP</b> tidak dapat mencari nama depan dan mengembalikan ID. Fungsi <b>VLOOKUP</b> hanya melihat ke kanan. Jangan khawatir, Anda dapat menggunakan
+                                    <b>INDEX</b> dan <b>MATCH</b> di Excel untuk melakukan
+                                    <a href="https://www.excel-easy.com/examples/left-lookup.html">pencarian kiri</a> .</p>
+                                <p class="h5">First Match</p>
+                                <p>Jika kolom paling kiri dari tabel berisi duplikat, fungsi <b>VLOOKUP</b> cocok dengan instance pertama. Sebagai contoh, lihatlah fungsi <b>VLOOKUP</b> di bawah ini.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Vlookup_files/image009.png" alt="First Match"></p>
+                                <p class="penjelasan"><b>Penjelasan:</b> fungsi <b>VLOOKUP</b> mengembalikan gaji Mia Clark, bukan Mia Reed.</p>
+                                <p class="h5">Vlookup adalah Case-insensitive</p>
+                                <p>Fungsi <b>VLOOKUP</b> di Excel melakukan pencarian kasus-tidak sensitif. Misalnya, fungsi <b>VLOOKUP</b> di bawah ini mencari MIA (sel G2) di kolom paling kiri tabel.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Vlookup_files/image010.png" alt="pencarian kasus-tidak sensitif">
+                                </p>
+                                <p class="penjelasan"><b>Penjelasan:</b> Fungsi <b>VLOOKUP</b> bersifat case-insensitive sehingga mencari MIA atau Mia atau mia atau miA, dll. Akibatnya, fungsi <b>VLOOKUP</b> mengembalikan gaji Mia Clark (contoh pertama). Gunakan <b>INDEX</b>,
+                                    <b>MATCH</b>, dan <b>EXACT</b> di Excel untuk melakukan
+                                    <a href="https://www.excel-easy.com/examples/case-sensitive-lookup.html">pencarian kasus-tidak sensitif</a>.
+                                </p>
+                                <p class="h5">Beberapa Kriteria</p>
+                                <p>Apakah Anda ingin mencari nilai berdasarkan beberapa kriteria? Gunakan <b>INDEX</b> dan <b>MATCH</b> di Excel untuk melakukan <a href="https://www.excel-easy.com/examples/two-column-lookup.html">pencarian dua kolom</a>.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Vlookup_files/image011.png" alt="Pencarian dua kolom"></p>
+                                <p class="penjelasan"><b>Catatan:</b> rumus array di atas mencari gaji James Clark, bukan James Smith, bukan James Anderson.</p>
+                                <p class="h5">#N/A Errors</p>
+                                <p>Jika fungsi <b>VLOOKUP</b> tidak dapat menemukan kecocokan, ia mengembalikan kesalahan #N/A.</p>
+                                <p>1. Misalnya, fungsi <b>VLOOKUP</b> di bawah ini tidak dapat menemukan nilai 28 di kolom paling kiri.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Vlookup_files/image012.png" alt="#T/A Kesalahan"></p>
+                                <p>2. Jika mau, Anda dapat menggunakan fungsi IFNA untuk mengganti kesalahan #N/A dengan pesan ramah.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Vlookup_files/image013.png" alt="Fungsi Ifna"></p>
+                                <p class="penjelasan"><b>Catatan:</b> fungsi IFNA diperkenalkan di Excel 2013. Jika Anda menggunakan Excel 2010 atau Excel 2007, cukup ganti IFNA dengan IFERROR. Ingat, fungsi IFERROR juga menangkap kesalahan lain. Misalnya, #NAME? kesalahan
+                                    jika Anda tidak sengaja salah mengeja kata <b>VLOOKUP</b>.</p>
+                                <p class="h5">Beberapa Tabel Pencarian</p>
+                                <p>Saat menggunakan fungsi <b>VLOOKUP</b> di Excel, Anda dapat memiliki beberapa tabel pencarian. Anda dapat menggunakan <a href="https://www.excel-easy.com/examples/if.html">fungsi IF</a> untuk memeriksa apakah suatu kondisi
+                                    terpenuhi, dan mengembalikan satu tabel pencarian jika <b>TRUE</b> dan tabel pencarian lainnya jika <b>FALSE</b>.</p>
+                                <p>1. Buat dua <a href="https://www.excel-easy.com/examples/named-range.html">rentang bernama</a> : Tabel1 dan Tabel2.
+                                </p>
+                                <p><img border=0 width=604 height=287 id="Picture 23" class="img-fluid" src="../img/img-excel/Vlookup_files/image014.png" alt="Meja Pertama"></p>
+                                <p>2. Pilih sel E4 dan masukkan fungsi <b>VLOOKUP</b> yang ditunjukkan di bawah ini.</p>
+                                <p><img border=0 width=604 height=287 id="Picture 22" class="img-fluid" src="../img/img-excel/Vlookup_files/image015.png" alt="Fungsi <b>Vlookup</b> dengan Beberapa Tabel Pencarian"></p>
+                                <p class="penjelasan"><b>Penjelasan:</b> bonus tergantung pada pasar (Inggris atau USA) dan jumlah penjualan. Argumen kedua dari fungsi <b>VLOOKUP</b> berhasil. Jika Inggris, fungsi <b>VLOOKUP</b> menggunakan Tabel1, jika AS, fungsi <b>VLOOKUP</b>                                    menggunakan Tabel2. Setel argumen keempat fungsi <b>VLOOKUP</b> ke <b>TRUE</b> untuk mengembalikan perkiraan kecocokan.</p>
+                                <p>3. Tekan Enter.</p>
+                                <p>4. Pilih sel E4, klik di sudut kanan bawah sel E4 dan seret ke bawah ke sel E10.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Vlookup_files/image016.png" alt="Salin Fungsi <b>Vlookup</b>"></p>
+                                <p class="penjelasan"><b>Catatan:</b> misalnya, Walker menerima bonus $1.500. Karena kami menggunakan rentang bernama, kami dapat dengan mudah menyalin fungsi <b>VLOOKUP</b> ini ke sel lain tanpa mengkhawatirkan referensi sel.</p>
+                                <p class="h5">Index and Match</p>
+                                <p>Alih-alih menggunakan <b>VLOOKUP</b>, gunakan <a href="https://www.excel-easy.com/examples/index-match.html"><b>INDEX</b> dan <b>MATCH</b></a>. Untuk melakukan pencarian lanjutan, Anda memerlukan <b>INDEX</b> dan <b>MATCH</b>.
+                                    Mungkin ini satu langkah terlalu jauh untuk Anda pada tahap ini, tetapi ini menunjukkan kepada Anda salah satu dari banyak formula hebat lainnya yang ditawarkan Excel.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Vlookup_files/image017.png" alt="Index and Match"></p>
+                                <p class="h5">Xlookup</p>
+                                <p>Jika Anda memiliki Excel 365, gunakan <a href="https://www.excel-easy.com/examples/xlookup.html">XLOOKUP,</a> bukan <b>VLOOKUP</b>. Fungsi XLOOKUP lebih mudah digunakan dan memiliki beberapa keuntungan tambahan.</p>
+                                <p><img class="img-fluid" src="../img/img-excel/Vlookup_files/image018.png" alt="Fungsi XLOOKUP di Excel"></p>
+                            </details>
+                        </p>
+
+                        <h4 id="item-8"></h4>
+                        <!-- MIN -->
+                        <p id="min" class="h5">8. <b>MIN</b></p>
+                        <p>Untuk mencari nilai minimum, gunakan fungsi <b>MIN</b>. Ini sesederhana kedengarannya.</p>
+                        <p><img class="img-fluid" src="../img/img-excel/Most-Used-Functions_files/image009.png" alt="fungsi MIN"></p>
+
+                        <h4 id="item-9"></h4>
+                        <!-- MAX -->
+                        <p id="max" class="h5">9. <b>MAX</b></p>
+                        <p>Untuk mencari nilai maksimum, gunakan fungsi <b>MAX</b>.</p>
+                        <p><img class="img-fluid" src="../img/img-excel/Most-Used-Functions_files/image010.png" alt="fungsi MAX"></p>
+                        <p class="penjelasan"><strong>Catatan:</strong> kunjungi bab kami tentang <a href="https://www.excel-easy.com/functions/statistical-functions.html">fungsi statistik</a> untuk mempelajari lebih lanjut tentang Excel dan Statistik.</p>
+
+                        <h4 id="item-10"></h4>
+                        <!-- SUMPRODUCT -->
+                        <p id="sumproduct" class="h5">10. <b>SUMPRODUCT</b></p>
+                        <p>Untuk menghitung jumlah produk dari angka yang sesuai dalam satu atau beberapa Range, gunakan fungsi <b>SUMPRODUCT</b> Excel yang kuat.</p>
+                        <p><img class="img-fluid" src="../img/img-excel/Most-Used-Functions_files/image011.png" alt="Fungsi SUMPRODUCT"></p>
+                        <p class="penjelasan"><strong>Penjelasan:</strong> <a href="https://www.excel-easy.com/examples/sumproduct.html">fungsi SUMPRODUCT</a> melakukan perhitungan ini: (2 * 1000) + (4 * 250) + (4 * 100) + (2 * 50) = 3500.</p>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <!-- <nav id="navbar-example3" class="navbar navbar-light bg-light flex-column align-items-stretch p-3 sticky-top"> -->
+                    <nav id="list-example" class="navbar navbar-light flex-column align-items-stretch p-0 sticky-top">
+                        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                        <strong class="d-block h6 my-2 pb-2 border-bottom">Introduction</strong>
+                        <nav class="nav nav-pills flex-column fw-light">
+                            <a class="nav-link border-bottom" href="#item-1">Range</a>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link border-bottom ms-3 my-1" href="#AutoFill">AutoFill</a>
+                                <a class="nav-link border-bottom ms-3 my-1" href="#FibonacciSequence">Fibonacci Sequence</a>
+                                <a class="nav-link border-bottom ms-3 my-1" href="#CustomLists">Custom Lists</a>
+                                <a class="nav-link border-bottom ms-3 my-1" href="#Comments">Comments</a>
+                                <a class="nav-link border-bottom ms-3 my-1" href="#HideColumnsRows">Hide Columns or Rows</a>
+                                <a class="nav-link border-bottom ms-3 my-1" href="#Skip Blanks">Skip Blanks</a>
+                                <a class="nav-link border-bottom ms-3 my-1" href="#AutoFit">AutoFit</a>
+                                <a class="nav-link border-bottom ms-3 my-1" href="#Transpose">Transpose</a>
+                                <a class="nav-link border-bottom ms-3 my-1" href="#SplitCells">Split Cells</a>
+                                <a class="nav-link border-bottom ms-3 my-1" href="#FlashFill">Flash Fill</a>
+                                <a class="nav-link border-bottom ms-3 my-1" href="#MoveColumns">Move Columns</a>
+                            </nav>
+                            <a class="nav-link border-bottom" href="#item-2">Rumus dan Fungsi</a>
+
+                        </nav>
+                    </nav>
+
+                </div>
+            </div>
+        </div>
 
         <div w3-include-html="kursus-programs.html"></div>
         <!-- scroll keatas -->

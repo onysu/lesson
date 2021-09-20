@@ -332,7 +332,7 @@
         </main>
 
         <!-- scroll keatas -->
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <button onclick="topFunction()" id="myBtn" title="Kembali ke atas">Top</button>
 
     </div>
     <!-- /container-xxl -->
@@ -399,28 +399,9 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
     <script src="https://getbootstrap.com/docs/5.1/assets/js/docs.min.js"></script>
-    <!-- scroll to top -->
-    <script>
-        // Dapatkan tombolnya
-        var mybutton = document.getElementById("myBtn");
-        // Saat pengguna menggulir ke bawah 20px dari atas dokumen, perlihatkan tombol
-        window.onscroll = function() {
-            scrollFunction()
-        };
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-        // Saat pengguna mengklik tombol, gulir ke atas dokumen
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
+    <script src="excel.js"></script>
+
     <script>
         var scrollSpy = new bootstrap.ScrollSpy(document.body, {
             target: '#list-example'

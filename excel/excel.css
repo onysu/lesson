@@ -50,6 +50,10 @@ a {
     }
 }
 
+.bd-toc {
+    z-index: 1;
+}
+
 .bd-layout {
     display: grid;
     gap: 1.5rem;
@@ -59,6 +63,7 @@ a {
 
 .bd-navbar {
     background-color: darkgreen;
+    padding: 0.5rem 0;
 }
 
 .nav-link {
@@ -100,23 +105,29 @@ a {
 .nav-underline .nav-link {
     padding-top: .75rem;
     padding-bottom: .75rem;
-    font-size: .875rem;
+    /* font-size: .875rem; */
     color: #6c757d;
 }
 
 .nav-underline .nav-link:hover {
-    color: #007bff;
+    color: #111;
+    font-weight: bold;
+    /* color: #007bff; */
 }
 
 .nav-underline .active {
-    font-weight: 500;
-    color: #343a40;
+    font-weight: bold;
+    color: #222;
+    /* color: #343a40; */
 }
 
-
-/* .bg-hijau {
+.bg-hijau {
     background-color: darkgreen;
-} */
+}
+
+nav#TableOfContents ul li {
+    font-weight: 300;
+}
 
 
 /* /offcanvas */

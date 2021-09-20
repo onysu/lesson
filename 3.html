@@ -13,38 +13,7 @@
     <!-- <style class="anchorjs"></style> -->
     <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link href="https://getbootstrap.com/docs/5.1/assets/css/docs.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-        
-        @media (min-width: 992px) {
-            .bd-layout {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        .bd-layout {
-            display: grid;
-            gap: 1.5rem;
-            grid-template-areas: "main";
-            grid-template-columns: 1fr;
-        }
-        
-        .bd-navbar {
-            background-color: darkgreen;
-        }
-        
-        .nav-link {
-            color: #6c757d;
-            font-weight: 300;
-        }
-        
-        .bd-subnavbar {
-            background-color: seashell;
-        }
-    </style>
+    <link rel="stylesheet" href="excel/excel.css">
 </head>
 
 <body>
@@ -138,18 +107,18 @@
     </header>
 
     <!-- nav kedua -->
-    <div class="bd-subnavbar py-2" aria-label="Secondary navigation">
-        <nav class="nav nav-underline" aria-label="Secondary navigation">
+    <div class="nav-scroller shadow-sm">
+        <nav class="nav nav-underline sticky-top" aria-label="Secondary navigation">
             <a class="nav-link fw-bold active" aria-current="page" href="index.html">Beranda</a>
             <a class="nav-link fw-light" href="index.html">Excel</a>
             <a class="nav-link fw-light" href="introduction.html">Introduction</a>
             <a class="nav-link fw-light" href="dasar-dasar.html">Dasar-dasar</a>
             <a class="nav-link fw-light" href="fungsi.html">Fungsi</a>
             <a class="nav-link fw-light" href="analisisdata.html">Analisis data</a>
-            <!-- <a class="nav-link fw-light" href="#">VBA</a> -->
             <a class="nav-link fw-light" href="latihan.html">Latihan</a>
         </nav>
     </div>
+
     <!-- <div class="container-xxl my-md-4 bd-layout"> -->
     <div class="container my-md-4 bd-layout">
         <main class="bd-main order-1">
@@ -233,7 +202,7 @@
                     <li>
                         <p>Pilih sel B2 dan sel B3, klik di sudut kanan bawah Range ini dan seret ke bawah.</p>
                         <p><img class="img-fluid" src="excel/files/Jangkauan_files/image012.png" alt="Pola Tanggal Diseret Ke Bawah"></p>
-                        <p>Catatan: kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/autofill.html">IsiOtomatis</a> untuk lebih banyak contoh.</p>
+                        <p class="info"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/autofill.html">IsiOtomatis</a> untuk lebih banyak contoh.</p>
                     </li>
                 </ol>
                 <p class="h3" id="PindahkanRange">Pindahkan Range</p>
@@ -365,7 +334,7 @@
                         <p><img class="img-fluid" src="excel/files/RumusdanFungsi_files/image016.png" alt="Kotak Dialog Argumen Fungsi"></p>
                         <p>Hasil. Fungsi COUNTIF menghitung jumlah sel yang lebih besar dari 5.</p>
                         <p><img class="img-fluid" src="excel/files/RumusdanFungsi_files/image017.png" alt="Hasil COUNTIF"></p>
-                        <p>Catatan: daripada menggunakan fitur Insert Function, cukup ketik =COUNTIF(A1:C2,&quot;&gt;5&quot;). Saat Anda tiba di: =COUNTIF( alih-alih mengetik A1:C2, cukup pilih Range A1:C2.</p>
+                        <p class="info"><strong>Catatan:</strong> daripada menggunakan fitur Insert Function, cukup ketik =COUNTIF(A1:C2,&quot;&gt;5&quot;). Saat Anda tiba di: =COUNTIF( alih-alih mengetik A1:C2, cukup pilih Range A1:C2.</p>
                     </li>
                 </ol>
             </div>

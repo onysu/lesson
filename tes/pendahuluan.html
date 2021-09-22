@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<script>
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /*loop through a collection of all HTML elements:*/
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+                /*make an HTTP request using the attribute value as the file name:*/
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {
+                            elmnt.innerHTML = this.responseText;
+                        }
+                        if (this.status == 404) {
+                            elmnt.innerHTML = "Page not found.";
+                        }
+                        /*remove the attribute, and call this function once more:*/
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /*exit the function:*/
+                return;
+            }
+        }
+    };
+</script>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Belajar Online">
+    <meta name="author" content="Ony">
+    <meta name="generator" content="E-Learning">
+    <meta name="docsearch:language" content="id">
+    <meta name="docsearch:version" content="5.1">
+    <title>Microsoft Excel</title>
+    <!-- Bootstrap core CSS -->
+    <style class="anchorjs"></style>
+    <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="docs.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="../img/aku-bulat.ico" type="image/x-icon" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Gaya khusus untuk template ini -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- top -->
+    <div w3-include-html="top.html"></div>
+
+    <!-- Navigasi kedua -->
+    <nav class="bd-subnavbar" aria-label="Navigasi kedua">
+        <div class="nav-scroller shadow-sm">
+            <nav class="nav nav-underline" aria-label="Navigasi kedua">
+                <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                <a class="nav-link" href="#">Friends<span
+                        class="badge bg-light text-dark rounded-pill align-text-bottom">27</span></a>
+                <a class="nav-link" href="#">Explore</a>
+                <a class="nav-link" href="#">Suggestions</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+            </nav>
+        </div>
+    </nav>
+
+    <!-- <div class="container-xxl my-md-4 bd-layout"> -->
+    <div class="container my-md-4 bd-layout">
+        <main class="bd-main order-1">
+
+            <!-- intro -->
+            <!-- <div class="bd-intro ps-lg-4"> -->
+            <div class="bd-intro">
+                <div class="d-md-flex align-items-center justify-content-between">
+                    <h1 class="bd-title" id="content">Introduction</h1>
+                </div>
+                <p class="bd-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nostrum quasi magni ratione minus ipsam impedit, repellat placeat nam error!</p>
+            </div>
+            <!-- /intro -->
+
+            <!-- menu kanan -->
+            <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+                <strong class="d-block h6 my-2 pb-2 border-bottom">Di halaman ini</strong>
+                <nav id="TableOfContents">
+                    <ul>
+                        <li><a href="#quick-start">Quick start</a>
+                            <ul>
+                                <li><a href="#css">CSS</a></li>
+                                <li><a href="#js">JS</a>
+                                    <ul>
+                                        <li><a href="#bundle">Bundle</a></li>
+                                        <li><a href="#separate">Separate</a></li>
+                                        <li><a href="#modules">Modules</a></li>
+                                        <li><a href="#components">Components</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#starter-template">Starter template</a></li>
+                        <li><a href="#important-globals">Important globals</a>
+                            <ul>
+                                <li><a href="#html5-doctype">HTML5 doctype</a></li>
+                                <li><a href="#responsive-meta-tag">Responsive meta tag</a></li>
+                                <li><a href="#box-sizing">Box-sizing</a></li>
+                                <li><a href="#reboot">Reboot</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#community">Community</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- /menu kanan -->
+
+            <!-- konten -->
+            <!-- <div class="bd-content ps-lg-4"> -->
+            <div class="bd-content">
+                <h2 id="quick-start">h2 Quick start
+                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#quick-start" style="padding-left: 0.375em;"></a>
+                </h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio maiores porro doloribus! Provident earum sit cumque optio. Harum, quos inventore?</p>
+
+                <h3 id="css">h3 CSS
+                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#css" style="padding-left: 0.375em;"></a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero at blanditiis necessitatibus maxime excepturi facere dolores distinctio laudantium eligendi nihil.</p>
+
+                <h3 id="js">h3 JS
+                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#js" style="padding-left: 0.375em;"></a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint animi amet quaerat voluptatum quod expedita aut ad porro quia blanditiis!</p>
+
+                <h4 id="bundle">h4 Bundle
+                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#bundle" style="padding-left: 0.375em;"></a>
+                </h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim sit, perferendis ab autem ducimus obcaecati pariatur ad blanditiis earum maiores?</p>
+
+                <h4 id="separate">h4 Separate
+                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#separate" style="padding-left: 0.375em;"></a>
+                </h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium nulla velit doloremque ea illum vero officia nobis porro doloribus corporis?</p>
+
+                <h4 id="modules">h4 Modules
+                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#modules" style="padding-left: 0.375em;"></a>
+                </h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, debitis aperiam. Consequuntur nemo excepturi neque esse consequatur necessitatibus quae nihil?</p>
+
+                <h4 id="components">h4 Components
+                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#components" style="padding-left: 0.375em;"></a>
+                </h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae quos deserunt autem repellendus eveniet sit blanditiis asperiores. Voluptates, sapiente aspernatur!</p>
+                <details>
+                    <summary class="text-primary mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </summary>
+                    <ul>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+                    </ul>
+                </details>
+
+                <h2 id="starter-template">h2 Starter template
+                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#starter-template" style="padding-left: 0.375em;"></a>
+                </h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat nesciunt nisi dolorem vitae doloribus iure, eius fuga dolore aspernatur ullam.</p>
+
+                <h2 id="important-globals">h2 Important globals
+                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#important-globals" style="padding-left: 0.375em;"></a>
+                </h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam natus laboriosam, eaque illum est totam rem labore reprehenderit temporibus quaerat!</p>
+
+                <h3 id="html5-doctype">h3 HTML5 doctype
+                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#html5-doctype" style="padding-left: 0.375em;"></a>
+                </h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis quod labore minima consequatur fugiat magnam dolorem id nulla cupiditate quo.</p>
+
+                <h3 id="responsive-meta-tag">h3 Responsive meta tag
+                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#responsive-meta-tag" style="padding-left: 0.375em;"></a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem officia neque, iusto libero nostrum esse officiis? In earum modi reiciendis.</p>
+
+                <h3 id="box-sizing">h3 Box-sizing
+                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#box-sizing" style="padding-left: 0.375em;"></a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore repudiandae quasi adipisci deserunt tempore reprehenderit delectus accusantium minus praesentium excepturi.</p>
+
+                <h3 id="reboot">h3 Reboot
+                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#reboot" style="padding-left: 0.375em;"></a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi impedit qui eius ipsum illum ratione distinctio adipisci facilis, temporibus earum!</p>
+
+                <h2 id="community">h2 Community
+                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#community" style="padding-left: 0.375em;"></a>
+                </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nam repudiandae quia distinctio architecto id in ut debitis ratione a!</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut, dignissimos.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vero enim praesentium explicabo dicta officia omnis consequuntur nihil nobis eum?</p>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- footer -->
+    <div w3-include-html="footer.html"></div>
+
+    <!-- scroll top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script src="docs.min.js"></script>
+    <script src="scroll.js"></script>
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+</html>

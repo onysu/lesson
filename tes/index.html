@@ -130,9 +130,8 @@
                                 <li><a href="#IsiRange">Isi Range</a>
                                     <ul>
                                         <li><a href="#detailTanggal">Fungsi Tanggal</a></li>
-                                        <ul>
-                                            <li><a href="#FungsiTanggalWaktu">Format Tanggal dan Waktu</a></li>
-                                        </ul>
+                                        <li><a href="#FungsiTanggalWaktu">Fungsi Tanggal dan Waktu</a></li>
+                                        <li><a href="#Tanggal-hari-ini">Fungsi Tanggal Hari Ini</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="#PindahkanRange">Pindahkan Range</a></li>
@@ -218,7 +217,7 @@
                         <p>Excel secara otomatis mengisi Range berdasarkan pola dua nilai pertama. Itu cukup keren ya!? Berikut contoh lain.</p>
                     </li>
                     <li>
-                        <p>Masukkan <a href="#">tanggal</a> 13/6/2016 ke dalam sel <strong>B2</strong> dan tanggal
+                        <p>Masukkan <a href="#detailTanggal">tanggal</a> 13/6/2016 ke dalam sel <strong>B2</strong> dan tanggal
                             <strong>16/6/2016</strong> ke dalam sel <strong>B3</strong>.</p>
                         <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image011.png" alt="Pola Tanggal">
                         </p>
@@ -226,59 +225,15 @@
                             <details id="detailTanggal">
                                 <summary class="fw-bold">Selengkapnya Fungsi Tanggal</summary>
                                 <p class="link-text"><a href="#Tahunbulanhari">Tahun, Bulan, Hari</a> | <a href="#FungsiTanggal">Fungsi Tanggal</a> | <a href="#TanggalWaktuSaatIni">Tanggal &amp; Waktu Saat Ini</a> | <a href="#JamMenitDetik">Jam, Menit, Detik</a> | <a href="#FungsiWaktu">Fungsi Waktu</a></p>
-
                                 <p>Untuk memasukkan tanggal di Excel, gunakan karakter &quot;/&quot; atau &quot;-&quot;. Untuk memasukkan waktu, gunakan &quot;:&quot; (titik dua). Anda juga dapat memasukkan tanggal dan waktu dalam satu sel.</p>
                                 <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image001.png" alt="Tanggal dan Waktu di Excel"></p>
                                 <p class="info"><strong>Catatan:</strong> Tanggal dalam Format AS. Bulan pertama, Hari kedua. Jenis format ini tergantung pada pengaturan regional windows Anda. Pelajari lebih lanjut tentang <a href="#FungsiTanggalWaktu">format Tanggal
                                         dan Waktu</a>.</p>
-                                <p>
-                                    <details id="FungsiTanggalWaktu">
-                                        <summary class="fw-bold">Format Tanggal dan Waktu</summary>
-                                        <p>Tanggal dan waktu di Excel dapat ditampilkan dalam berbagai cara. Untuk menerapkan format Tanggal atau Waktu , jalankan langkah-langkah berikut.</p>
-
-                                        <p>1. Pilih sel A1.</p>
-
-                                        <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image001.png" alt="Format Tanggal dan Waktu di Excel"></p>
-
-                                        <p>2. Klik kanan, lalu klik Format Sel.</p>
-
-                                        <p>3. Dalam daftar Kategori, pilih Tanggal, lalu pilih format Tanggal.
-                                        </p>
-
-                                        <p><img width=529 height=465 id="Picture 17" class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image002.png" alt="Format Sel"></p>
-
-                                        <p>4. Klik Oke.</p>
-
-                                        <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image003.png" alt="Format Tanggal Panjang"></p>
-
-                                        <p class="info"><strong>Catatan:</strong> untuk menerapkan format Waktu, dalam daftar Kategori, pilih Waktu.</p>
-
-                                        <p>5. Tanggal disimpan sebagai angka di Excel dan menghitung jumlah hari sejak 0, Januari 1900. Waktu ditangani secara internal sebagai angka antara 0 dan 1. Untuk melihat ini dengan jelas, ubah format angka sel A1,
-                                            B1 dan C1 ke Umum .</p>
-
-                                        <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image004.png" alt="Format Umum"></p>
-
-                                        <p class="info"><strong>Catatan:</strong> ternyata, 42544 hari setelah 0, 1900 sama dengan 23 Juni 2016. 6:00 direpresentasikan sebagai 0,25 (seperempat sepanjang hari).</p>
-
-                                        <p>6. Anda dapat memasukkan waktu sebagai 6:00, tetapi Excel menampilkan waktu ini sebagai 6:00:00 di bilah rumus. AM digunakan untuk waktu malam dan pagi hari. PM digunakan untuk waktu pada sore dan malam hari.
-                                        </p>
-
-                                        <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image005.png" alt="Format waktu"></p>
-
-                                        <p>7. Ubah format angka sel C1 menjadi Date only.</p>
-
-                                        <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image006.png" alt="Format tanggal"></p>
-
-                                        <p class="info"><strong>Catatan:</strong> sel C1 masih berisi angka 42544.25. Kami hanya mengubah tampilan nomor, bukan nomor itu sendiri.</p>
-                                    </details>
-                                </p>
-
                                 <p class="h4" id="Tahunbulanhari">
                                     Tahun Bulan Hari</p>
                                 <p>Untuk mendapatkan tahun dari suatu tanggal, gunakan fungsi YEAR.</p>
                                 <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image002.png" alt="Fungsi Tahun"></p>
                                 <p class="info"><strong>Catatan:</strong> gunakan fungsi MONTH dan DAY untuk mendapatkan bulan dan hari dari suatu tanggal.</p>
-
                                 <p class="h4" id="FungsiTanggal">
                                     Fungsi Tanggal</p>
                                 <ol>
@@ -294,7 +249,6 @@
                                     </li>
                                 </ol>
                                 <p class="info"><strong>Catatan:</strong> fungsi DATE menerima tiga argumen: tahun, bulan dan hari. Excel tahu bahwa 6 + 2 = 8 = Agustus memiliki 31 hari dan bergulir ke bulan berikutnya (23 Agustus + 9 hari = 1 September).</p>
-
                                 <p class="h4" id="TanggalWaktuSaatIni">
                                     Tanggal &amp; Waktu Saat Ini
                                 </p>
@@ -303,18 +257,92 @@
                                 <p class="info"><strong>Catatan:</strong> gunakan fungsi TODAY untuk memasukkan tanggal
                                     <a href="https://www.excel-easy.com/examples/todays-date.html">hari ini</a> di Excel.
                                 </p>
-
                                 <p class="h4" id="JamMenitDetik">
                                     Jam, Menit, Detik</p>
                                 <p>Untuk mengembalikan jam, gunakan fungsi HOUR.</p>
                                 <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image006.png" alt="Fungsi Jam"></p>
                                 <p class="info"><strong>Catatan:</strong> gunakan fungsi MINUTE dan SECOND untuk mengembalikan menit dan detik.</p>
-
                                 <p class="h4" id="FungsiWaktu">
                                     Fungsi Waktu</p>
                                 <p>Untuk menambahkan jumlah jam, menit dan/atau detik, gunakan fungsi TIME.</p>
                                 <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image007.png" alt="Tambahkan Jam, Menit, dan Detik"></p>
                                 <p class="info"><strong>Catatan:</strong> Excel menambahkan 2 jam, 10 + 1 = 11 menit dan 70 - 60 = 10 detik.</p>
+                            </details>
+                        </p>
+                        <p>
+                            <details id="FungsiTanggalWaktu">
+                                <summary class="fw-bold">Format Tanggal dan Waktu</summary>
+                                <p>Tanggal dan waktu di Excel dapat ditampilkan dalam berbagai cara. Untuk menerapkan format Tanggal atau Waktu, jalankan langkah-langkah berikut.</p>
+                                <p>1. Pilih sel A1.</p>
+                                <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image001.png" alt="Format Tanggal dan Waktu di Excel"></p>
+                                <p>2. Klik kanan, lalu klik Format Sel.</p>
+                                <p>3. Dalam daftar Kategori, pilih Tanggal, lalu pilih format Tanggal.
+                                </p>
+                                <p><img width=529 height=465 id="Picture 17" class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image002.png" alt="Format Sel"></p>
+                                <p>4. Klik Oke.</p>
+                                <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image003.png" alt="Format Tanggal Panjang"></p>
+                                <p class="info"><strong>Catatan:</strong> untuk menerapkan format Waktu, dalam daftar Kategori, pilih Waktu.</p>
+                                <p>5. Tanggal disimpan sebagai angka di Excel dan menghitung jumlah hari sejak 0, Januari 1900. Waktu ditangani secara internal sebagai angka antara 0 dan 1. Untuk melihat ini dengan jelas, ubah format angka sel A1, B1 dan
+                                    C1 ke Umum.</p>
+                                <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image004.png" alt="Format Umum"></p>
+                                <p class="info"><strong>Catatan:</strong> ternyata, 42544 hari setelah 0, 1900 sama dengan 23 Juni 2016. 6:00 direpresentasikan sebagai 0,25 (seperempat sepanjang hari).</p>
+                                <p>6. Anda dapat memasukkan waktu sebagai 6:00, tetapi Excel menampilkan waktu ini sebagai 6:00:00 di bilah rumus. AM digunakan untuk waktu malam dan pagi hari. PM digunakan untuk waktu pada sore dan malam hari.
+                                </p>
+                                <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image005.png" alt="Format waktu"></p>
+                                <p>7. Ubah format angka sel C1 menjadi Date only.</p>
+                                <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image006.png" alt="Format tanggal"></p>
+                                <p class="info"><strong>Catatan:</strong> sel C1 masih berisi angka 42544.25. Kami hanya mengubah tampilan nomor, bukan nomor itu sendiri.</p>
+                            </details>
+                        </p>
+                        <p>
+                            <details id="Tanggal-hari-ini">
+                                <summary class="fw-bold">Fungsi Tanggal hari ini</summary>
+                                <p class="link-text"><a href="#HariinidanSekarang">Hari ini dan Sekarang</a> | <a href="#TanggaldanWaktuStatis">Tanggal dan Waktu Statis</a></p>
+                                <p>Untuk memasukkan tanggal hari ini di Excel, gunakan fungsi TODAY. Untuk memasukkan tanggal dan waktu saat ini, gunakan fungsi <strong>NOW</strong>. Untuk memasukkan tanggal dan waktu saat ini sebagai nilai statis, gunakan
+                                    pintasan keyboard.
+                                </p>
+
+                                <p class="h4" id="HariinidanSekarang">
+                                    Hari ini dan Sekarang <span class="span-text">(Today and Now)</span></p>
+                                <ol>
+                                    <li>
+                                        <p>Untuk memasukkan tanggal hari ini di Excel, gunakan fungsi <strong>TODAY</strong>.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Tanggal-hari-ini_files/image001.png" alt="Fungsi hari ini"></p>
+                                        <p class="info"><strong>Catatan:</strong> fungsi <strong>TODAY</strong> tidak membutuhkan argumen. Tanggal ini akan diperbarui secara otomatis saat Anda membuka buku kerja pada tanggal lain.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Untuk memasukkan tanggal dan waktu sekarang, gunakan fungsi
+                                            <STRong>NOW</STRong>.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Tanggal-hari-ini_files/image002.png" alt="Sekarang Fungsi"></p>
+                                        <p class="info"><strong>Catatan:</strong> fungsi <strong>NOW</strong> tidak membutuhkan argumen. Waktu ini akan diperbarui secara otomatis setiap kali lembar dihitung ulang. Ini terjadi saat Anda membuat perubahan ke sel mana pun
+                                            atau saat Anda membuka buku kerja. Tekan F9 untuk menghitung ulang buku kerja secara manual.</p>
+                                    </li>
+                                    <li>
+                                        <p>Untuk memasukkan waktu saat ini saja, gunakan <strong>NOW</strong>()-<strong>TODAY</strong>() dan terapkan <a href="#">format waktu</a>.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Tanggal-hari-ini_files/image003.png" alt="Waktu saat ini"></p>
+                                        <p class="info"><strong>Catatan:</strong> tanggal disimpan sebagai angka di Excel dan menghitung jumlah hari sejak 0, Januari 1900. Waktu ditangani secara internal sebagai angka antara 0 dan 1. Kunjungi halaman kami tentang
+                                            <a href="#FungsiTanggalWaktu">format tanggal dan waktu</a> untuk informasi selengkapnya.</p>
+                                    </li>
+                                </ol>
+
+                                <p class="h4" id="TanggaldanWaktuStatis">Tanggal dan Waktu Statis</p>
+                                <ol>
+                                    <li>
+                                        <p>Untuk memasukkan tanggal saat ini sebagai nilai statis, tekan <kbd>Ctrl</kbd>+<kbd>;</kbd> (titik koma).</p>
+                                        <p><img class="img-fluid" src="../excel/files/Tanggal-hari-ini_files/image004.png" alt="Tanggal Statis"></p>
+                                        <p class="info"><strong>Catatan:</strong> tanggal ini tidak akan berubah saat Anda membuka buku kerja pada tanggal lain.</p>
+                                    </li>
+                                    <li>
+                                        <p>Untuk memasukkan waktu saat ini sebagai nilai statis, tekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>;</kbd>(titik koma).</p>
+                                        <p><img class="img-fluid" src="../excel/files/Tanggal-hari-ini_files/image005.png" alt="Waktu Statis"></p>
+                                        <p class="info"><strong>Catatan:</strong> waktu ini tidak akan berubah saat Anda membuat perubahan ke sel atau saat Anda membuka buku kerja.</p>
+                                    </li>
+                                    <li>
+                                        <p>Untuk memasukkan tanggal dan waktu saat ini sebagai nilai statis, cukup tekan <kbd>Ctrl</kbd>+<kbd>;</kbd> (titik koma), masukkan spasi dan tekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>;</kbd>(titik koma).</p>
+                                        <p><img class="img-fluid" src="../excel/files/Tanggal-hari-ini_files/image006.png" alt="Tanggal dan Waktu Statis"></p>
+                                    </li>
+                                </ol>
                             </details>
                         </p>
                     </li>
@@ -393,7 +421,6 @@
                         <p>Excel secara otomatis menghitung ulang nilai sel A3. Ini adalah salah satu fitur Excel yang paling kuat!</p>
                     </li>
                 </ol>
-
                 <p class="h3" id="MengeditRumus">
                     Mengedit Rumus</p>
                 <p>Saat Anda memilih sel, Excel memperlihatkan nilai atau rumus sel di bilah rumus.</p>
@@ -408,7 +435,6 @@
                         <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image006.png" alt="Formula yang Diedit"></p>
                     </li>
                 </ol>
-
                 <p class="h3" id="PrioritasOperator">
                     Prioritas Operator</p>
                 <p>Excel menggunakan urutan default di mana perhitungan terjadi. Jika bagian dari rumus ada dalam tanda kurung, bagian itu akan dihitung terlebih dahulu. Kemudian melakukan perhitungan perkalian atau pembagian. Setelah ini selesai, Excel
@@ -419,7 +445,6 @@
                 <p>Contoh lain,</p>
                 <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image008.png" alt="Tanda kurung"></p>
                 <p>Pertama, Excel menghitung bagian dalam tanda kurung (A2+A3). Selanjutnya, hasil ini dikalikan dengan nilai sel A1.</p>
-
                 <p class="h3" id="SalinTempelRumus">
                     Salin/Tempel Rumus</p>
                 <p>Saat Anda menyalin rumus, Excel secara otomatis menyesuaikan referensi sel untuk setiap sel baru tempat rumus disalin. Untuk memahaminya, lakukan langkah-langkah berikut.</p>
@@ -441,7 +466,6 @@
                         <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image013.png" alt="Salin Hasil Rumus"></p>
                     </li>
                 </ol>
-
                 <p class="h3" id="SisipkanRumus">
                     Sisipkan Rumus</p>
                 <p>Setiap fungsi memiliki struktur yang sama. Misalnya, <strong>SUM(A1:A4)</strong>. Nama fungsi ini adalah <strong>SUM</strong>. Bagian antara tanda kurung (argumen) berarti kami memberikan Excel Range <strong>A1:A4</strong> sebagai input.

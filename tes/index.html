@@ -130,6 +130,9 @@
                                 <li><a href="#IsiRange">Isi Range</a>
                                     <ul>
                                         <li><a href="#detailTanggal">Fungsi Tanggal</a></li>
+                                        <ul>
+                                            <li><a href="#FungsiTanggalWaktu">Format Tanggal dan Waktu</a></li>
+                                        </ul>
                                     </ul>
                                 </li>
                                 <li><a href="#PindahkanRange">Pindahkan Range</a></li>
@@ -226,11 +229,52 @@
 
                                 <p>Untuk memasukkan tanggal di Excel, gunakan karakter &quot;/&quot; atau &quot;-&quot;. Untuk memasukkan waktu, gunakan &quot;:&quot; (titik dua). Anda juga dapat memasukkan tanggal dan waktu dalam satu sel.</p>
                                 <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image001.png" alt="Tanggal dan Waktu di Excel"></p>
-                                <p class="info"><strong>Catatan:</strong> Tanggal dalam Format AS. Bulan pertama, Hari kedua. Jenis format ini tergantung pada pengaturan regional windows Anda. Pelajari lebih lanjut tentang <a href="https://www.excel-easy.com/examples/date-time-formats.html">format Tanggal
+                                <p class="info"><strong>Catatan:</strong> Tanggal dalam Format AS. Bulan pertama, Hari kedua. Jenis format ini tergantung pada pengaturan regional windows Anda. Pelajari lebih lanjut tentang <a href="#FungsiTanggalWaktu">format Tanggal
                                         dan Waktu</a>.</p>
+                                <p>
+                                    <details id="FungsiTanggalWaktu">
+                                        <summary class="fw-bold">Format Tanggal dan Waktu</summary>
+                                        <p>Tanggal dan waktu di Excel dapat ditampilkan dalam berbagai cara. Untuk menerapkan format Tanggal atau Waktu , jalankan langkah-langkah berikut.</p>
+
+                                        <p>1. Pilih sel A1.</p>
+
+                                        <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image001.png" alt="Format Tanggal dan Waktu di Excel"></p>
+
+                                        <p>2. Klik kanan, lalu klik Format Sel.</p>
+
+                                        <p>3. Dalam daftar Kategori, pilih Tanggal, lalu pilih format Tanggal.
+                                        </p>
+
+                                        <p><img width=529 height=465 id="Picture 17" class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image002.png" alt="Format Sel"></p>
+
+                                        <p>4. Klik Oke.</p>
+
+                                        <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image003.png" alt="Format Tanggal Panjang"></p>
+
+                                        <p class="info"><strong>Catatan:</strong> untuk menerapkan format Waktu, dalam daftar Kategori, pilih Waktu.</p>
+
+                                        <p>5. Tanggal disimpan sebagai angka di Excel dan menghitung jumlah hari sejak 0, Januari 1900. Waktu ditangani secara internal sebagai angka antara 0 dan 1. Untuk melihat ini dengan jelas, ubah format angka sel A1,
+                                            B1 dan C1 ke Umum .</p>
+
+                                        <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image004.png" alt="Format Umum"></p>
+
+                                        <p class="info"><strong>Catatan:</strong> ternyata, 42544 hari setelah 0, 1900 sama dengan 23 Juni 2016. 6:00 direpresentasikan sebagai 0,25 (seperempat sepanjang hari).</p>
+
+                                        <p>6. Anda dapat memasukkan waktu sebagai 6:00, tetapi Excel menampilkan waktu ini sebagai 6:00:00 di bilah rumus. AM digunakan untuk waktu malam dan pagi hari. PM digunakan untuk waktu pada sore dan malam hari.
+                                        </p>
+
+                                        <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image005.png" alt="Format waktu"></p>
+
+                                        <p>7. Ubah format angka sel C1 menjadi Date only.</p>
+
+                                        <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image006.png" alt="Format tanggal"></p>
+
+                                        <p class="info"><strong>Catatan:</strong> sel C1 masih berisi angka 42544.25. Kami hanya mengubah tampilan nomor, bukan nomor itu sendiri.</p>
+                                    </details>
+                                </p>
 
                                 <p class="h4" id="Tahunbulanhari">
-                                    Tahun bulan hari</p>
+                                    Tahun Bulan Hari</p>
                                 <p>Untuk mendapatkan tahun dari suatu tanggal, gunakan fungsi YEAR.</p>
                                 <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image002.png" alt="Fungsi Tahun"></p>
                                 <p class="info"><strong>Catatan:</strong> gunakan fungsi MONTH dan DAY untuk mendapatkan bulan dan hari dari suatu tanggal.</p>

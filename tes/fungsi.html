@@ -85,9 +85,14 @@
                 </div>
                 <p class="bd-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nostrum quasi magni ratione minus ipsam impedit, repellat placeat nam error!</p> -->
                     <p class="h2" id="FungsiTanggalWaktu">Fungsi Tanggal & Waktu</p>
+
                     <p class="link-text"><a href="#Tahunbulanhari">Tahun, Bulan, Hari</a> | <a href="#FungsiTanggal">Fungsi Tanggal</a> | <a href="#TanggalWaktuSaatIni">Tanggal &amp; Waktu Saat Ini</a> | <a href="#JamMenitDetik">Jam, Menit, Detik</a> | <a href="#FungsiWaktu">Fungsi Waktu</a></p>
-                    <p>Untuk memasukkan tanggal di Excel, gunakan karakter &quot;/&quot; atau &quot;-&quot;. Untuk memasukkan waktu, gunakan &quot;:&quot; (titik dua). Anda juga dapat memasukkan tanggal dan waktu dalam satu sel.</p>
+
+                    <p>Untuk memasukkan tanggal di Excel, gunakan karakter <strong>&quot;/&quot;</strong> atau <strong>&quot;-&quot;</strong>. Untuk memasukkan waktu, gunakan <strong>&quot;:&quot;</strong> (titik dua). Anda juga dapat memasukkan tanggal
+                        dan waktu dalam satu sel.</p>
+
                     <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image001.png" alt="Tanggal dan Waktu di Excel"></p>
+
                     <p class="info"><strong>Catatan:</strong> Tanggal dalam Format AS. Bulan pertama, Hari kedua. Jenis format ini tergantung pada pengaturan regional windows Anda. Pelajari lebih lanjut tentang <a href="#FungsiTanggalWaktu">format Tanggal
                                         dan Waktu</a>.</p>
                 </div>
@@ -121,8 +126,8 @@
                         <li><a href="#HarisampaiUlangTahun">Hari Sampai Ulang Tahun</a></li>
                         <li><a href="#Hariterakhirbulanini">Hari Terakhir Bulan Ini</a></li>
                         <li><a href="#TambahatauKurangiWaktu">Tambah Atau Kurangi Waktu</a></li>
-                        <li><a href="#">Quarter</a></li>
-                        <li><a href="#">Hari Tahun Ini</a></li>
+                        <li><a href="#Perempat">Quarter</a></li>
+                        <li><a href="#HariTahun">Hari Dalam Setahun</a></li>
                     </ul>
                 </nav>
             </div>
@@ -135,9 +140,9 @@
                 <!-- Tahun, Bulan, Hari -->
                 <section id="FungsiTanggalWaktu">
                     <p class="h3" id="Tahunbulanhari">Tahun, Bulan, Hari <span class="span-text">(Year, Month, Day)</span></p>
-                    <p>Untuk mendapatkan tahun dari suatu tanggal, gunakan fungsi YEAR.</p>
+                    <p>Untuk mendapatkan tahun dari suatu tanggal, gunakan fungsi <strong>YEAR</strong>.</p>
                     <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image002.png" alt="Fungsi Tahun"></p>
-                    <p class="info"><strong>Catatan:</strong> gunakan fungsi MONTH dan DAY untuk mendapatkan bulan dan hari dari suatu tanggal.</p>
+                    <p class="info"><strong>Catatan:</strong> gunakan fungsi <strong>MONTH</strong> dan <strong>DAY</strong> untuk mendapatkan bulan dan hari dari suatu tanggal.</p>
                     <p class="h3" id="FungsiTanggal">
                         Fungsi Tanggal</p>
                     <ol>
@@ -147,27 +152,27 @@
                             <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image003.png" alt="Tambahkan Hari"></p>
                         </li>
                         <li>
-                            <p>Untuk menambahkan jumlah tahun, bulan dan/atau hari, gunakan fungsi TANGGAL.
+                            <p>Untuk menambahkan jumlah tahun, bulan dan/atau hari, gunakan fungsi <strong>DATE</strong>.
                             </p>
                             <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image004.png" alt="Tambahkan Tahun, Bulan, dan Hari"></p>
                         </li>
                     </ol>
-                    <p class="info"><strong>Catatan:</strong> fungsi DATE menerima tiga argumen: tahun, bulan dan hari. Excel tahu bahwa 6 + 2 = 8 = Agustus memiliki 31 hari dan bergulir ke bulan berikutnya (23 Agustus + 9 hari = 1 September).</p>
+                    <p class="info"><strong>Catatan:</strong> fungsi <strong>DATE</strong> menerima tiga argumen: tahun, bulan dan hari. Excel tahu bahwa 6 + 2 = 8 = Agustus memiliki 31 hari dan bergulir ke bulan berikutnya (23 Agustus + 9 hari = 1 September).</p>
                     <p class="h3" id="TanggalWaktuSaatIni">
                         Tanggal &amp; Waktu Saat Ini
                     </p>
-                    <p>Untuk mendapatkan tanggal dan waktu saat ini, gunakan fungsi SEKARANG.</p>
+                    <p>Untuk mendapatkan tanggal dan waktu saat ini, gunakan fungsi <strong>NOW</strong>.</p>
                     <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image005.png" alt="Sekarang Fungsi"></p>
-                    <p class="info"><strong>Catatan:</strong> gunakan fungsi TODAY untuk memasukkan tanggal
-                        <a href="https://www.excel-easy.com/examples/todays-date.html">hari ini</a> di Excel.
+                    <p class="info"><strong>Catatan:</strong> gunakan fungsi <strong>TODAY</strong> untuk memasukkan tanggal
+                        <a href="#Tanggal-hari-ini">hari ini</a> di Excel.
                     </p>
                     <p class="h3" id="JamMenitDetik">Jam, Menit, Detik <span class="span-text">(Hour, Minute, Second)</span></p>
-                    <p>Untuk mengembalikan jam, gunakan fungsi HOUR.</p>
+                    <p>Untuk mengembalikan jam, gunakan fungsi <strong>HOUR</strong>.</p>
                     <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image006.png" alt="Fungsi Jam"></p>
-                    <p class="info"><strong>Catatan:</strong> gunakan fungsi MINUTE dan SECOND untuk mengembalikan menit dan detik.</p>
+                    <p class="info"><strong>Catatan:</strong> gunakan fungsi <strong>MINUTE</strong> dan <strong>SECOND</strong> untuk mengembalikan menit dan detik.</p>
                     <p class="h3" id="FungsiWaktu">
                         Fungsi Waktu</p>
-                    <p>Untuk menambahkan jumlah jam, menit dan/atau detik, gunakan fungsi TIME.</p>
+                    <p>Untuk menambahkan jumlah jam, menit dan/atau detik, gunakan fungsi <strong>TIME</strong>.</p>
                     <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image007.png" alt="Tambahkan Jam, Menit, dan Detik"></p>
                     <p class="info"><strong>Catatan:</strong> Excel menambahkan 2 jam, 10 + 1 = 11 menit dan 70 - 60 = 10 detik.</p>
                 </section>
@@ -494,7 +499,7 @@
                 </section>
 
                 <section id="Hariterakhirbulanini">
-                    <p class="h3">Hari terakhir bulan ini</p>
+                    <p class="h3">Hari Terakhir Bulan Ini</p>
                     <p>Untuk mendapatkan tanggal hari terakhir bulan di Excel, gunakan fungsi <strong>EOMONTH</strong> (Akhir Bulan.</p>
                     <ol>
                         <li>
@@ -619,6 +624,48 @@
                             <p>Rumus di bawah ini menghitung selisih antara dua kali dalam jam sebagai nilai desimal.</p>
                             <p><img class="img-fluid" src="../excel/files/TambahatauKurangiWaktu_files/image016.png" alt="Perbedaan Waktu dalam Jam sebagai Nilai Desimal"></p>
                             <p class="info"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="#PerbedaanWaktu">Perbedaan Waktu</a> untuk memahami logika di balik rumus ini.</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section id="Perempat">
+                    <p class="h3">Quarter</p>
+                    <p>Rumus mudah yang mengembalikan kuartal untuk tanggal tertentu. Tidak ada fungsi bawaan di Excel yang dapat melakukan ini.</p>
+                    <ol>
+                        <li>
+                            <p>Masukkan rumus yang ditunjukkan di bawah ini.</p>
+                            <p><img class="img-fluid" src="../excel/files/Quarter_files/image001.png" alt="Rumus Kuartal di Excel"></p>
+                            <p class="info"><strong>Penjelasan:</strong> <strong>ROUNDUP</strong>(x,0) selalu membulatkan x ke atas ke bilangan bulat terdekat. Fungsi <strong>MONTH</strong> mengembalikan nomor bulan dari suatu tanggal. Dalam contoh ini, rumus dikurangi
+                                menjadi <strong>ROUNDUP</strong>=(5/3,0),
+                                <strong>ROUNDUP</strong>=(1.666667,0), 2. Mei ada di Kuartal 2.
+                            </p>
+                        </li>
+                        <li>
+                            <p>Mari kita lihat apakah formula ini bekerja untuk semua bulan.</p>
+                            <p><img class="img-fluid" src="../excel/files/Quarter_files/image002.png" alt=Bulan></p>
+                            <p class="info"><strong>Penjelasan:</strong> sekarang tidak sulit untuk melihat bahwa tiga nilai (bulan) pertama di kolom <strong>B</strong> dibulatkan menjadi <strong>1</strong> (Kuartal <strong>1</strong>), tiga nilai (bulan) berikutnya
+                                di kolom <strong>B</strong> dibulatkan menjadi <strong>2</strong> (Kuartal <strong>2</strong>), dst .</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section id="HariTahun">
+                    <p class="h3">Hari Dalam Setahun <span class="span-text">(Day of the Year)</span></p>
+                    <p>Rumus mudah yang mengembalikan hari dalam setahun untuk tanggal tertentu. Tidak ada fungsi bawaan di Excel yang dapat melakukan ini.</p>
+                    <ol>
+                        <li>
+                            <p>Untuk mendapatkan tahun dari suatu tanggal, gunakan fungsi <strong>YEAR</strong>.</p>
+                            <p><img class="img-fluid" src="../excel/files/DayoftheYear_files/image001.png" alt="Fungsi Tahun"></p>
+                        </li>
+                        <li>
+                            <p>Gunakan fungsi <strong>DATE</strong> di bawah ini untuk mengembalikan 1 Januari 2016. Fungsi <strong>DATE</strong> menerima tiga argumen: tahun, bulan, dan hari.</p>
+                            <p><img class="img-fluid" src="../excel/files/DayoftheYear_files/image002.png" alt="Fungsi Tanggal"></p>
+                        </li>
+                        <li>
+                            <p>Rumus di bawah ini mengembalikan hari dalam setahun.</p>
+                            <p><img class="img-fluid" src="../excel/files/DayoftheYear_files/image003.png" alt="Hari Tahun di Excel"></p>
+                            <p class="info"><strong>Penjelasan:</strong> tanggal dan waktu disimpan sebagai angka di Excel dan menghitung jumlah hari sejak 0, 1900 Januari. 23 Juni 2016 sama dengan 42544. 1 Januari 2016 sama dengan 42370. Mengurangi angka-angka ini dan
+                                menambahkan 1 menghasilkan hari dalam setahun. 42544 - 42370 + 1 = 174 + 1 = 175.</p>
                         </li>
                     </ol>
                 </section>

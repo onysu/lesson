@@ -100,8 +100,13 @@
                 <nav id="TableOfContents">
                     <ul>
                         <li><a href="#FungsiTanggalWaktu">Pendahuluan</a></li>
-                        <li><a href="#">DateDif</a></li>
-                        <li><a href="#Tanggal-hari-ini">Tanggal Hari Ini</a></li>
+                        <li><a href="#DateDif">DateDif</a></li>
+                        <li><a href="#Tanggal-hari-ini">Tanggal Hari Ini</a>
+                            <ul>
+                                <li><a href="#HariinidanSekarang">Hari ini dan Sekarang</a></li>
+                                <li><a href="#TanggaldanWaktuStatis">Tanggal dan Waktu Statis</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#FormatTanggaldanWaktu">Format Tanggal dan Waktu</a></li>
                         <li><a href="#">Hitung Umur</a></li>
                         <li><a href="#">Perbedaan Waktu</a></li>
@@ -121,6 +126,7 @@
             <!-- konten -->
             <div class="bd-content ps-lg-4">
 
+                <!-- Tahun, Bulan, Hari -->
                 <section id="FungsiTanggalWaktu">
                     <p class="h3" id="Tahunbulanhari">Tahun, Bulan, Hari <span class="span-text">(Year, Month, Day)</span></p>
                     <p>Untuk mendapatkan tahun dari suatu tanggal, gunakan fungsi YEAR.</p>
@@ -160,40 +166,52 @@
                     <p class="info"><strong>Catatan:</strong> Excel menambahkan 2 jam, 10 + 1 = 11 menit dan 70 - 60 = 10 detik.</p>
                 </section>
 
-                <!-- Format Tanggal dan Waktu -->
-                <section id="FormatTanggaldanWaktu">
-                    <p class="h3">Format Tanggal dan Waktu</p>
-                    <p>Tanggal dan waktu di Excel dapat ditampilkan dalam berbagai cara. Untuk menerapkan format Tanggal atau Waktu, jalankan langkah-langkah berikut.</p>
-                    <p>1. Pilih sel A1.</p>
-                    <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image001.png" alt="Format Tanggal dan Waktu di Excel"></p>
-                    <p>2. Klik kanan, lalu klik Format Sel.</p>
-                    <p>3. Dalam daftar Kategori, pilih Tanggal, lalu pilih format Tanggal.
-                    </p>
-                    <p><img width=529 height=465 id="Picture 17" class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image002.png" alt="Format Sel"></p>
-                    <p>4. Klik Oke.</p>
-                    <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image003.png" alt="Format Tanggal Panjang"></p>
-                    <p class="info"><strong>Catatan:</strong> untuk menerapkan format Waktu, dalam daftar Kategori, pilih Waktu.</p>
-                    <p>5. Tanggal disimpan sebagai angka di Excel dan menghitung jumlah hari sejak 0, Januari 1900. Waktu ditangani secara internal sebagai angka antara 0 dan 1. Untuk melihat ini dengan jelas, ubah format angka sel A1, B1 dan C1 ke Umum.</p>
-                    <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image004.png" alt="Format Umum"></p>
-                    <p class="info"><strong>Catatan:</strong> ternyata, 42544 hari setelah 0, 1900 sama dengan 23 Juni 2016. 6:00 direpresentasikan sebagai 0,25 (seperempat sepanjang hari).</p>
-                    <p>6. Anda dapat memasukkan waktu sebagai 6:00, tetapi Excel menampilkan waktu ini sebagai 6:00:00 di bilah rumus. AM digunakan untuk waktu malam dan pagi hari. PM digunakan untuk waktu pada sore dan malam hari.
-                    </p>
-                    <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image005.png" alt="Format waktu"></p>
-                    <p>7. Ubah format angka sel C1 menjadi Date only.</p>
-                    <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image006.png" alt="Format tanggal"></p>
-                    <p class="info"><strong>Catatan:</strong> sel C1 masih berisi angka 42544.25. Kami hanya mengubah tampilan nomor, bukan nomor itu sendiri.</p>
+                <section id="DateDif">
+                    <p class="h3">DateDif</p>
+                    <p>Untuk mendapatkan jumlah hari, minggu atau tahun antara dua tanggal di Excel, gunakan fungsi <strong>DATEDIF</strong>. Fungsi <strong>DATEDIF</strong> memiliki tiga argumen.</p>
+                    <ol>
+                        <li>
+                            <p>Isi &quot;d&quot; untuk argumen ketiga untuk mendapatkan jumlah hari di antara dua tanggal.</p>
+                            <p><img class="img-fluid" src="../excel/files/DateDif_files/image001.png" alt="Hari Antara Dua Tanggal di Excel"></p>
+                            <p class="info"><strong>Catatan:</strong> <strong>=A2-A1</strong> menghasilkan hasil yang sama persis!</p>
+                        </li>
+                        <li>
+                            <p>Isi &quot;m&quot; untuk argumen ketiga untuk mendapatkan jumlah bulan di antara dua tanggal.</p>
+                            <p><img class="img-fluid" src="../excel/files/DateDif_files/image002.png" alt="Bulan Antara Dua Tanggal di Excel"></p>
+                        </li>
+                        <li>
+                            <p>Isi &quot;y&quot; untuk argumen ketiga untuk mendapatkan jumlah tahun di antara dua tanggal.</p>
+                            <p><img class="img-fluid" src="../excel/files/DateDif_files/image003.png" alt="Tahun Antara Dua Tanggal di Excel"></p>
+                        </li>
+                        <li>
+                            <p>Isi &quot;yd&quot; untuk argumen ketiga untuk mengabaikan tahun dan mendapatkan jumlah hari di antara dua tanggal.</p>
+                            <p><img class="img-fluid" src="../excel/files/DateDif_files/image004.png" alt="Abaikan Tahun, Dapatkan Hari"></p>
+                        </li>
+                        <li>
+                            <p>Isi &quot;md&quot; untuk argumen ketiga untuk mengabaikan bulan dan mendapatkan jumlah hari di antara dua tanggal.</p>
+                            <p><img class="img-fluid" src="../excel/files/DateDif_files/image005.png" alt="Abaikan Bulan, Dapatkan Hari"></p>
+                        </li>
+                        <li>
+                            <p>Isi &quot;ym&quot; untuk argumen ketiga untuk mengabaikan tahun dan mendapatkan jumlah bulan di antara dua tanggal.</p>
+                            <p><img class="img-fluid" src="../excel/files/DateDif_files/image006.png" alt="Abaikan Tahun, Dapatkan Bulan"></p>
+                        </li>
+                        <p class="info"><strong>Catatan penting:</strong> fungsi <strong>DATEDIF</strong> mengembalikan jumlah <u>lengkap</u> hari, bulan atau tahun. Ini mungkin memberikan hasil yang tidak terduga ketika nomor hari/bulan dari tanggal kedua lebih rendah
+                            dari nomor hari/bulan dari tanggal pertama. Lihat contoh di bawah ini.</p>
+                        <p><img class="img-fluid" src="../excel/files/DateDif_files/image007.png" alt="Hasil Tak Terduga"></p>
+                        <p>Bedanya 6 tahun. Hampir 7 tahun! Gunakan rumus berikut untuk mengembalikan 7 tahun.</p>
+                        <p><img class="img-fluid" src="../excel/files/DateDif_files/image008.png" alt="Fungsi Tahun Dua Kali"></p>
+                    </ol>
                 </section>
 
-                <!-- Fungsi Tanggal hari ini -->
+                <!-- Today's Date -->
                 <section id="Tanggal-hari-ini">
-                    <p class="h3">Fungsi Tanggal hari ini <span class="span-text">(Today's Date)</span></p>
+                    <p class="h3">Tanggal hari ini <span class="span-text">(Today's Date)</span></p>
                     <p class="link-text"><a href="#HariinidanSekarang">Hari ini dan Sekarang</a> | <a href="#TanggaldanWaktuStatis">Tanggal dan Waktu Statis</a></p>
-                    <p>Untuk memasukkan tanggal hari ini di Excel, gunakan fungsi TODAY. Untuk memasukkan tanggal dan waktu saat ini, gunakan fungsi <strong>NOW</strong>. Untuk memasukkan tanggal dan waktu saat ini sebagai nilai statis, gunakan pintasan
-                        keyboard.
+                    <p>Untuk memasukkan tanggal hari ini di Excel, gunakan fungsi <strong>TODAY</strong>. Untuk memasukkan tanggal dan waktu saat ini, gunakan fungsi <strong>NOW</strong>. Untuk memasukkan tanggal dan waktu saat ini sebagai nilai statis,
+                        gunakan pintasan keyboard.
                     </p>
                 </section>
-
-                <!-- Hari ini dan Sekarang -->
+                <!-- Today and Now -->
                 <section id="HariinidanSekarang">
                     <p class="h4">Hari ini dan Sekarang <span class="span-text">(Today and Now)</span></p>
                     <ol>
@@ -218,8 +236,7 @@
                         </li>
                     </ol>
                 </section>
-
-                <!-- Tanggal dan Waktu Statis -->
+                <!-- Static Date and Time -->
                 <section id="TanggaldanWaktuStatis">
                     <p class="h4">Tanggal dan Waktu Statis</p>
                     <ol>
@@ -239,6 +256,46 @@
                         </li>
                     </ol>
                 </section>
+
+                <!-- Format Tanggal dan Waktu -->
+                <section id="FormatTanggaldanWaktu">
+                    <p class="h3">Format Tanggal dan Waktu</p>
+                    <p>Tanggal dan waktu di Excel dapat ditampilkan dalam berbagai cara. Untuk menerapkan format Tanggal atau Waktu, jalankan langkah-langkah berikut.</p>
+                    <ol>
+                        <li>
+                            <p>Pilih sel A1.</p>
+                            <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image001.png" alt="Format Tanggal dan Waktu di Excel"></p>
+                        </li>
+                        <li>Klik kanan, lalu klik Format Sel.</li>
+                        <li>
+                            <p>Dalam daftar Kategori, pilih Tanggal, lalu pilih format Tanggal.</p>
+                            <p><img width=529 height=465 id="Picture 17" class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image002.png" alt="Format Sel"></p>
+                        </li>
+                        <li>
+                            <p>Klik Oke.</p>
+                            <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image003.png" alt="Format Tanggal Panjang"></p>
+                            <p class="info"><strong>Catatan:</strong> untuk menerapkan format Waktu, dalam daftar Kategori, pilih Waktu.</p>
+                        </li>
+                        <li>
+                            <p>Tanggal disimpan sebagai angka di Excel dan menghitung jumlah hari sejak 0, Januari 1900. Waktu ditangani secara internal sebagai angka antara 0 dan 1. Untuk melihat ini dengan jelas, ubah format angka sel A1, B1 dan C1 ke
+                                Umum.
+                            </p>
+                            <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image004.png" alt="Format Umum"></p>
+                            <p class="info"><strong>Catatan:</strong> ternyata, 42544 hari setelah 0, 1900 sama dengan 23 Juni 2016. 6:00 direpresentasikan sebagai 0,25 (seperempat sepanjang hari).</p>
+                        </li>
+                        <li>
+                            <p>Anda dapat memasukkan waktu sebagai 6:00, tetapi Excel menampilkan waktu ini sebagai 6:00:00 di bilah rumus. AM digunakan untuk waktu malam dan pagi hari. PM digunakan untuk waktu pada sore dan malam hari.
+                            </p>
+                            <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image005.png" alt="Format waktu"></p>
+                        </li>
+                        <li>
+                            <p>Ubah format angka sel C1 menjadi <u>Date only</u>.</p>
+                            <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image006.png" alt="Format tanggal"></p>
+                            <p class="info"><strong>Catatan:</strong> sel C1 masih berisi angka 42544.25. Kami hanya mengubah tampilan nomor, bukan nomor itu sendiri.</p>
+                        </li>
+                    </ol>
+                </section>
+
 
             </div>
         </main>

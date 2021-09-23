@@ -108,8 +108,8 @@
                             </ul>
                         </li>
                         <li><a href="#FormatTanggaldanWaktu">Format Tanggal dan Waktu</a></li>
-                        <li><a href="#">Hitung Umur</a></li>
-                        <li><a href="#">Perbedaan Waktu</a></li>
+                        <li><a href="#HitungUmur">Hitung Umur</a></li>
+                        <li><a href="#PerbedaanWaktu">Perbedaan Waktu</a></li>
                         <li><a href="#">Hari Kerja</a></li>
                         <li><a href="#">Hari Sampai Ulang Tahun</a></li>
                         <li><a href="#">Hari Terakhir Bulan Ini</a></li>
@@ -257,7 +257,7 @@
                     </ol>
                 </section>
 
-                <!-- Format Tanggal dan Waktu -->
+                <!-- Date and Time Formats - Format Tanggal dan Waktu -->
                 <section id="FormatTanggaldanWaktu">
                     <p class="h3">Format Tanggal dan Waktu</p>
                     <p>Tanggal dan waktu di Excel dapat ditampilkan dalam berbagai cara. Untuk menerapkan format Tanggal atau Waktu, jalankan langkah-langkah berikut.</p>
@@ -296,6 +296,98 @@
                     </ol>
                 </section>
 
+                <!-- Hitung Umur -->
+                <section id="HitungUmur">
+                    <p class="h3">Hitung Umur</p>
+                    <p>Untuk menghitung usia seseorang di Excel, gunakan <a href="#DateDif">DATEDIF</a> dan <strong>TODAY</strong>. Fungsi <strong>DATEDIF</strong> memiliki tiga argumen.</p>
+                    <ol>
+                        <li>
+                            <p>Masukkan tanggal lahir ke dalam sel <strong>A2</strong>.</p>
+                            <p><img class="img-fluid" src="../excel/files/HitungUmur_files/image001.png" alt="Tanggal Lahir di Excel"></p>
+                        </li>
+                        <li>
+                            <p>Masukkan fungsi <strong>TODAY</strong> ke sel <strong>B2</strong> untuk mengembalikan tanggal hari ini.</p>
+                            <p><img class="img-fluid" src="../excel/files/HitungUmur_files/image002.png" alt="Fungsi hari ini"></p>
+                        </li>
+                        <li>
+                            <p>Fungsi <strong>DATEDIF</strong> di bawah ini menghitung usia seseorang.</p>
+                            <p><img class="img-fluid" src="../excel/files/HitungUmur_files/image003.png" alt="Fungsi DateDif"></p>
+                            <p class="info"><strong>Catatan:</strong> isi &quot;y&quot; untuk argumen ketiga untuk mendapatkan jumlah tahun lengkap antara tanggal lahir dan tanggal hari ini.</p>
+                        </li>
+                        <li>
+                            <p>Hitung usia seseorang tanpa menampilkan tanggal hari ini.</p>
+                            <p><img class="img-fluid" src="../excel/files/HitungUmur_files/image004.png" alt="Hitung Umur dalam Tahun"></p>
+                        </li>
+                        <li>
+                            <p>Hitung usia seseorang pada tanggal tertentu.</p>
+                            <p><img class="img-fluid" src="../excel/files/HitungUmur_files/image005.png" alt="Hitung Usia pada Tanggal Tertentu"></p>
+                            <p class="info"><strong>Catatan:</strong> fungsi <strong>DATE</strong> menerima tiga argumen: tahun, bulan dan hari.</p>
+                        </li>
+                        <li>
+                            <p>Hitung usia seseorang dalam tahun, bulan dan hari.</p>
+                            <p><img class="img-fluid" src="../excel/files/HitungUmur_files/image006.png" alt="Hitung Usia dalam Tahun, Bulan dan Hari"></p>
+                            <p class="info"><strong>Catatan:</strong> isi &quot;ym&quot; untuk argumen ketiga untuk mengabaikan tahun dan mendapatkan jumlah bulan di antara dua tanggal. Isi &quot;md&quot; untuk argumen ketiga untuk mengabaikan bulan dan mendapatkan jumlah
+                                hari di antara dua tanggal. Gunakan operator &amp; untuk menggabungkan string.</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section id="PerbedaanWaktu">
+                    <p class="h3">Perbedaan waktu</p>
+                    <p class="link-text"><a href="#RumusSederhana">Rumus Sederhana</a> | <a href="#RumusPerbedaanWaktu">Rumus Selisih Waktu</a> | <a href="#PerbedaanWaktudalamJamsebagaiNilaiDesimal">Selisih Waktu dalam Jam sebagai Nilai Desimal</a> | <a href="#LembarWaktu">Lembar Waktu</a></p>
+                    <p>Menghitung perbedaan antara dua kali di Excel bisa jadi rumit. Waktu ditangani secara internal sebagai angka antara 0 dan 1.</p>
+                    <p class="h4" id="RumusSederhana">
+                        Rumus Sederhana</p>
+                    <p>Mari kita mulai dengan rumus sederhana yang menghitung selisih antara dua waktu di hari yang sama.</p>
+                    <ol>
+                        <li>
+                            <p>Cukup kurangi waktu mulai dari waktu akhir.</p>
+                            <p><img class="img-fluid" src="../excel/files/PerbedaanWaktu_files/image001.png" alt="Hitung Perbedaan Antara Dua Kali di Excel"></p>
+                            <p>Catatan: AM digunakan untuk waktu malam dan pagi hari. PM digunakan untuk waktu pada sore dan malam hari. Ubah
+                                <a href="https://www.excel-easy.com/examples/date-time-formats.html">format Waktu</a> untuk menampilkan waktu dengan atau tanpa AM/PM.
+                            </p>
+                        </li>
+                        <li>
+                            <p>Ubah format angka nilai di sel A2, B2 dan C2 menjadi Umum.
+                            </p>
+                            <p><img class="img-fluid" src="../excel/files/PerbedaanWaktu_files/image002.png" alt="Angka Antara 0 dan 1"></p>
+                            <p>Catatan: waktu ditangani secara internal sebagai angka antara 0 dan 1. Misalnya, pukul 06:00 direpresentasikan sebagai 0,25 (seperempat sepanjang hari).</p>
+                        </li>
+                    </ol>
+                    <p class="h4" id="RumusPerbedaanWaktu">
+                        Rumus Perbedaan Waktu</p>
+                    <p>Rumus sederhana yang ditunjukkan di atas tidak berfungsi jika waktu mulai sebelum tengah malam dan waktu berakhir setelah tengah malam.</p>
+                    <ol>
+                        <li>
+                            <p>Waktu yang negatif ditampilkan sebagai ######.</p>
+                            <p><img class="img-fluid" src="../excel/files/PerbedaanWaktu_files/image003.png" alt="Waktu Negatif"></p>
+                        </li>
+                        <li>
+                            <p>Untuk melihat ini dengan jelas, ubah format angka dari nilai di sel A2, B2 dan C2 ke Umum.</p>
+                            <p><img class="img-fluid" src="../excel/files/PerbedaanWaktu_files/image004.png" alt="Perhitungan Waktu"></p>
+                        </li>
+                        <li>
+                            <p>Rumus perbedaan waktu di bawah ini selalu berhasil.</p>
+                            <p><img class="img-fluid" src="../excel/files/PerbedaanWaktu_files/image005.png" alt="Rumus Perbedaan Waktu"></p>
+                            <p>Penjelasan: jika waktu akhir lebih besar atau sama dengan waktu mulai, cukup kurangi waktu mulai dari waktu akhir. Jika tidak, tambahkan 1 (hari penuh) ke waktu akhir untuk menunjukkan waktu pada hari berikutnya dan kurangi
+                                waktu mulai.</p>
+                        </li>
+                    </ol>
+                    <p class="h4" id="PerbedaanWaktudalamJamsebagaiNilaiDesimal">
+                        Perbedaan Waktu dalam Jam sebagai Nilai Desimal</p>
+                    <p>Untuk menghitung selisih antara dua kali dalam jam sebagai nilai desimal, kalikan rumus sebelumnya dengan 24 dan ubah format angka menjadi Umum.
+                    </p>
+                    <p>Rumus di bawah ini berhasil.</p>
+                    <p>
+                        <img class="img-fluid" src="../excel/files/PerbedaanWaktu_files/image006.png" alt="Perbedaan Waktu dalam Jam sebagai Nilai Desimal">
+                    </p>
+                    <p class="h4" id="LembarWaktu">
+                        Lembar Waktu</p>
+                    <p>Hitung total jam, jam reguler, dan jam lembur dengan <a href="https://www.excel-easy.com/examples/time-sheet.html">kalkulator absen</a> kami.</p>
+                    <p>
+                        <img class="img-fluid" src="../excel/files/PerbedaanWaktu_files/image007.png" alt="Kalkulator Timesheet di Excel">
+                    </p>
+                </section>
 
             </div>
         </main>

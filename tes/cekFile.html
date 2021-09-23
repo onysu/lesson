@@ -1,36 +1,55 @@
-<section id="DateDif">
-    <p class="h3">DateDif</p>
-    <p>Untuk mendapatkan jumlah hari, minggu atau tahun antara dua tanggal di Excel, gunakan fungsi <strong>DATEDIF</strong>. Fungsi <strong>DATEDIF</strong> memiliki tiga argumen.</p>
+<section id="PerbedaanWaktu">
+    <p class="h3">Perbedaan waktu</p>
+    <p><a href="#RumusSederhana">Rumus Sederhana</a> | <a href="#RumusPerbedaanWaktu">Rumus Selisih Waktu</a> | <a href="#PerbedaanWaktudalamJamsebagaiNilaiDesimal">Selisih Waktu dalam Jam sebagai Nilai Desimal</a> | <a href="#LembarWaktu">Lembar Waktu</a></p>
+    <p>Menghitung perbedaan antara dua kali di Excel bisa jadi rumit. Waktu ditangani secara internal sebagai angka antara 0 dan 1.</p>
+    <p class="h4" id="RumusSederhana">
+        Rumus Sederhana</p>
+    <p>Mari kita mulai dengan rumus sederhana yang menghitung selisih antara dua waktu di hari yang sama.</p>
     <ol>
         <li>
-            <p>Isi &quot;d&quot; untuk argumen ketiga untuk mendapatkan jumlah hari di antara dua tanggal.</p>
-            <p><img class="img-fluid" src="../excel/files/DateDif_files/image001.png" alt="Hari Antara Dua Tanggal di Excel"></p>
-            <p class="info"><strong>Catatan:</strong> <strong>=A2-A1</strong> menghasilkan hasil yang sama persis!</p>
+            <p>Cukup kurangi waktu mulai dari waktu akhir.</p>
+            <p><img class="img-fluid" src="../excel/files/PerbedaanWaktu_files/image001.png" alt="Hitung Perbedaan Antara Dua Kali di Excel"></p>
+            <p>Catatan: AM digunakan untuk waktu malam dan pagi hari. PM digunakan untuk waktu pada sore dan malam hari. Ubah
+                <a href="https://www.excel-easy.com/examples/date-time-formats.html">format Waktu</a> untuk menampilkan waktu dengan atau tanpa AM/PM.
+            </p>
         </li>
         <li>
-            <p>Isi &quot;m&quot; untuk argumen ketiga untuk mendapatkan jumlah bulan di antara dua tanggal.</p>
-            <p><img class="img-fluid" src="../excel/files/DateDif_files/image002.png" alt="Bulan Antara Dua Tanggal di Excel"></p>
+            <p>Ubah format angka nilai di sel A2, B2 dan C2 menjadi Umum.
+            </p>
+            <p><img class="img-fluid" src="../excel/files/PerbedaanWaktu_files/image002.png" alt="Angka Antara 0 dan 1"></p>
+            <p>Catatan: waktu ditangani secara internal sebagai angka antara 0 dan 1. Misalnya, pukul 06:00 direpresentasikan sebagai 0,25 (seperempat sepanjang hari).</p>
         </li>
-        <li>
-            <p>Isi &quot;y&quot; untuk argumen ketiga untuk mendapatkan jumlah tahun di antara dua tanggal.</p>
-            <p><img class="img-fluid" src="../excel/files/DateDif_files/image003.png" alt="Tahun Antara Dua Tanggal di Excel"></p>
-        </li>
-        <li>
-            <p>Isi &quot;yd&quot; untuk argumen ketiga untuk mengabaikan tahun dan mendapatkan jumlah hari di antara dua tanggal.</p>
-            <p><img class="img-fluid" src="../excel/files/DateDif_files/image004.png" alt="Abaikan Tahun, Dapatkan Hari"></p>
-        </li>
-        <li>
-            <p>Isi &quot;md&quot; untuk argumen ketiga untuk mengabaikan bulan dan mendapatkan jumlah hari di antara dua tanggal.</p>
-            <p><img class="img-fluid" src="../excel/files/DateDif_files/image005.png" alt="Abaikan Bulan, Dapatkan Hari"></p>
-        </li>
-        <li>
-            <p>Isi &quot;ym&quot; untuk argumen ketiga untuk mengabaikan tahun dan mendapatkan jumlah bulan di antara dua tanggal.</p>
-            <p><img class="img-fluid" src="../excel/files/DateDif_files/image006.png" alt="Abaikan Tahun, Dapatkan Bulan"></p>
-        </li>
-        <p class="info"><strong>Catatan penting:</strong> fungsi <strong>DATEDIF</strong> mengembalikan jumlah <u>lengkap</u> hari, bulan atau tahun. Ini mungkin memberikan hasil yang tidak terduga ketika nomor hari/bulan dari tanggal kedua lebih rendah dari nomor hari/bulan
-            dari tanggal pertama. Lihat contoh di bawah ini.</p>
-        <p><img class="img-fluid" src="../excel/files/DateDif_files/image007.png" alt="Hasil Tak Terduga"></p>
-        <p>Bedanya 6 tahun. Hampir 7 tahun! Gunakan rumus berikut untuk mengembalikan 7 tahun.</p>
-        <p><img class="img-fluid" src="../excel/files/DateDif_files/image008.png" alt="Fungsi Tahun Dua Kali"></p>
     </ol>
+    <p class="h4" id="RumusPerbedaanWaktu">
+        Rumus Perbedaan Waktu</p>
+    <p>Rumus sederhana yang ditunjukkan di atas tidak berfungsi jika waktu mulai sebelum tengah malam dan waktu berakhir setelah tengah malam.</p>
+    <ol>
+        <li>
+            <p>Waktu yang negatif ditampilkan sebagai ######.</p>
+            <p><img class="img-fluid" src="../excel/files/PerbedaanWaktu_files/image003.png" alt="Waktu Negatif"></p>
+        </li>
+        <li>
+            <p>Untuk melihat ini dengan jelas, ubah format angka dari nilai di sel A2, B2 dan C2 ke Umum.</p>
+            <p><img class="img-fluid" src="../excel/files/PerbedaanWaktu_files/image004.png" alt="Perhitungan Waktu"></p>
+        </li>
+        <li>
+            <p>Rumus perbedaan waktu di bawah ini selalu berhasil.</p>
+            <p><img class="img-fluid" src="../excel/files/PerbedaanWaktu_files/image005.png" alt="Rumus Perbedaan Waktu"></p>
+            <p>Penjelasan: jika waktu akhir lebih besar atau sama dengan waktu mulai, cukup kurangi waktu mulai dari waktu akhir. Jika tidak, tambahkan 1 (hari penuh) ke waktu akhir untuk menunjukkan waktu pada hari berikutnya dan kurangi waktu mulai.</p>
+        </li>
+    </ol>
+    <p class="h4" id="PerbedaanWaktudalamJamsebagaiNilaiDesimal">
+        Perbedaan Waktu dalam Jam sebagai Nilai Desimal</p>
+    <p>Untuk menghitung selisih antara dua kali dalam jam sebagai nilai desimal, kalikan rumus sebelumnya dengan 24 dan ubah format angka menjadi Umum.
+    </p>
+    <p>Rumus di bawah ini berhasil.</p>
+    <p>
+        <img class="img-fluid" src="../excel/files/PerbedaanWaktu_files/image006.png" alt="Perbedaan Waktu dalam Jam sebagai Nilai Desimal">
+    </p>
+    <p class="h4" id="LembarWaktu">
+        Lembar Waktu</p>
+    <p>Hitung total jam, jam reguler, dan jam lembur dengan <a href="https://www.excel-easy.com/examples/time-sheet.html">kalkulator absen</a> kami.</p>
+    <p>
+        <img class="img-fluid" src="../excel/files/PerbedaanWaktu_files/image007.png" alt="Kalkulator Timesheet di Excel">
+    </p>
 </section>

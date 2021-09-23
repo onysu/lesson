@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<script>
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /*loop through a collection of all HTML elements:*/
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+                /*make an HTTP request using the attribute value as the file name:*/
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {
+                            elmnt.innerHTML = this.responseText;
+                        }
+                        if (this.status == 404) {
+                            elmnt.innerHTML = "Page not found.";
+                        }
+                        /*remove the attribute, and call this function once more:*/
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /*exit the function:*/
+                return;
+            }
+        }
+    };
+</script>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Belajar Online">
+    <meta name="author" content="Ony">
+    <meta name="generator" content="E-Learning">
+    <meta name="docsearch:language" content="id">
+    <meta name="docsearch:version" content="5.1">
+    <title>Microsoft Excel</title>
+    <!-- Bootstrap core CSS -->
+    <style class="anchorjs"></style>
+    <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="docs.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="../img/aku-bulat.ico" type="image/x-icon" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Gaya khusus untuk template ini -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- top -->
+    <div w3-include-html="top.html"></div>
+    <!-- Navigasi kedua -->
+    <nav class="bd-subnavbar" aria-label="Navigasi kedua">
+        <div class="nav-scroller shadow-sm">
+            <nav class="nav nav-underline" aria-label="Navigasi kedua">
+                <a class="nav-link fw-bold active" aria-current="page" href="index.html">Beranda</a>
+                <a class="nav-link fw-bold active" href="index.html">Excel</a>
+                <a class="nav-link fw-light" href="pendahuluan.html">Pendahuluan <span
+                        style="color: orange;">+</span></a>
+                <a class="nav-link fw-light" href="dasar-dasar.html">Dasar-dasar</a>
+                <a class="nav-link fw-light" href="fungsi.html">Fungsi</a>
+                <a class="nav-link fw-light" href="analisisdata.html">Analisis data</a>
+                <a class="nav-link fw-light" href="latihan.html">Latihan</a>
+            </nav>
+        </div>
+    </nav>
+    <!-- <div class="container-xxl my-md-4 bd-layout"> -->
+    <div class="container my-md-4 bd-layout">
+        <main class="bd-main order-1">
+
+            <!-- intro -->
+            <div class="bd-intro ps-lg-4">
+                <div class="bd-intro">
+                    <!-- <div class="d-md-flex align-items-center justify-content-between">
+                    <h1 class="bd-title" id="content">Introduction</h1>
+                </div>
+                <p class="bd-lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt nostrum quasi magni ratione minus ipsam impedit, repellat placeat nam error!</p> -->
+                    <p class="h2" id="FungsiTanggalWaktu">Fungsi Tanggal & Waktu</p>
+                    <p class="link-text"><a href="#Tahunbulanhari">Tahun, Bulan, Hari</a> | <a href="#FungsiTanggal">Fungsi Tanggal</a> | <a href="#TanggalWaktuSaatIni">Tanggal &amp; Waktu Saat Ini</a> | <a href="#JamMenitDetik">Jam, Menit, Detik</a> | <a href="#FungsiWaktu">Fungsi Waktu</a></p>
+                    <p>Untuk memasukkan tanggal di Excel, gunakan karakter &quot;/&quot; atau &quot;-&quot;. Untuk memasukkan waktu, gunakan &quot;:&quot; (titik dua). Anda juga dapat memasukkan tanggal dan waktu dalam satu sel.</p>
+                    <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image001.png" alt="Tanggal dan Waktu di Excel"></p>
+                    <p class="info"><strong>Catatan:</strong> Tanggal dalam Format AS. Bulan pertama, Hari kedua. Jenis format ini tergantung pada pengaturan regional windows Anda. Pelajari lebih lanjut tentang <a href="#FungsiTanggalWaktu">format Tanggal
+                                        dan Waktu</a>.</p>
+                </div>
+            </div>
+            <!-- /intro -->
+
+            <!-- menu kanan -->
+            <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+                <strong class="d-block h6 my-2 pb-2 border-bottom">Di halaman ini</strong>
+                <nav id="TableOfContents">
+                    <ul>
+                        <li><a href="#FungsiTanggalWaktu">Pendahuluan</a></li>
+                        <li><a href="#">DateDif</a></li>
+                        <li><a href="#Tanggal-hari-ini">Tanggal Hari Ini</a></li>
+                        <li><a href="#FormatTanggaldanWaktu">Format Tanggal dan Waktu</a></li>
+                        <li><a href="#">Hitung Umur</a></li>
+                        <li><a href="#">Perbedaan Waktu</a></li>
+                        <li><a href="#">Hari Kerja</a></li>
+                        <li><a href="#">Hari Sampai Ulang Tahun</a></li>
+                        <li><a href="#">Hari Terakhir Bulan Ini</a></li>
+                        <li><a href="#">Tambah Atau Kurangi Waktu</a></li>
+                        <li><a href="#">Quarter</a></li>
+                        <li><a href="#">Hari Tahun Ini</a></li>
+                    </ul>
+                </nav>
+                <strong class="d-block h6 border-top text-warning" style="padding-top: .5rem; margin-bottom: 0;">Download File Latihan</strong>
+                <a href="../excel/files/bahan/date-time-functions.xlsx" class="fw-light" style="font-size: .875rem;">tanggal-waktu-fungsi.xlsx</a>
+            </div>
+            <!-- /menu kanan -->
+
+            <!-- konten -->
+            <div class="bd-content ps-lg-4">
+
+                <section id="FungsiTanggalWaktu">
+                    <div class="bd-content">
+                        <p class="h3" id="Tahunbulanhari">Tahun, Bulan, Hari <span class="span-text">(Year, Month, Day)</span></p>
+                        <p>Untuk mendapatkan tahun dari suatu tanggal, gunakan fungsi YEAR.</p>
+                        <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image002.png" alt="Fungsi Tahun"></p>
+                        <p class="info"><strong>Catatan:</strong> gunakan fungsi MONTH dan DAY untuk mendapatkan bulan dan hari dari suatu tanggal.</p>
+                        <p class="h3" id="FungsiTanggal">
+                            Fungsi Tanggal</p>
+                        <ol>
+                            <li>
+                                <p>Untuk menambahkan jumlah hari ke tanggal, gunakan rumus sederhana berikut.
+                                </p>
+                                <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image003.png" alt="Tambahkan Hari"></p>
+                            </li>
+                            <li>
+                                <p>Untuk menambahkan jumlah tahun, bulan dan/atau hari, gunakan fungsi TANGGAL.
+                                </p>
+                                <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image004.png" alt="Tambahkan Tahun, Bulan, dan Hari"></p>
+                            </li>
+                        </ol>
+                        <p class="info"><strong>Catatan:</strong> fungsi DATE menerima tiga argumen: tahun, bulan dan hari. Excel tahu bahwa 6 + 2 = 8 = Agustus memiliki 31 hari dan bergulir ke bulan berikutnya (23 Agustus + 9 hari = 1 September).</p>
+                        <p class="h3" id="TanggalWaktuSaatIni">
+                            Tanggal &amp; Waktu Saat Ini
+                        </p>
+                        <p>Untuk mendapatkan tanggal dan waktu saat ini, gunakan fungsi SEKARANG.</p>
+                        <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image005.png" alt="Sekarang Fungsi"></p>
+                        <p class="info"><strong>Catatan:</strong> gunakan fungsi TODAY untuk memasukkan tanggal
+                            <a href="https://www.excel-easy.com/examples/todays-date.html">hari ini</a> di Excel.
+                        </p>
+                        <p class="h3" id="JamMenitDetik">Jam, Menit, Detik <span class="span-text">(Hour, Minute, Second)</span></p>
+                        <p>Untuk mengembalikan jam, gunakan fungsi HOUR.</p>
+                        <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image006.png" alt="Fungsi Jam"></p>
+                        <p class="info"><strong>Catatan:</strong> gunakan fungsi MINUTE dan SECOND untuk mengembalikan menit dan detik.</p>
+                        <p class="h3" id="FungsiWaktu">
+                            Fungsi Waktu</p>
+                        <p>Untuk menambahkan jumlah jam, menit dan/atau detik, gunakan fungsi TIME.</p>
+                        <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image007.png" alt="Tambahkan Jam, Menit, dan Detik"></p>
+                        <p class="info"><strong>Catatan:</strong> Excel menambahkan 2 jam, 10 + 1 = 11 menit dan 70 - 60 = 10 detik.</p>
+                </section>
+
+                <!-- Format Tanggal dan Waktu -->
+                <section id="FormatTanggaldanWaktu">
+                    <p class="h3">Format Tanggal dan Waktu</p>
+                    <p>Tanggal dan waktu di Excel dapat ditampilkan dalam berbagai cara. Untuk menerapkan format Tanggal atau Waktu, jalankan langkah-langkah berikut.</p>
+                    <p>1. Pilih sel A1.</p>
+                    <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image001.png" alt="Format Tanggal dan Waktu di Excel"></p>
+                    <p>2. Klik kanan, lalu klik Format Sel.</p>
+                    <p>3. Dalam daftar Kategori, pilih Tanggal, lalu pilih format Tanggal.
+                    </p>
+                    <p><img width=529 height=465 id="Picture 17" class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image002.png" alt="Format Sel"></p>
+                    <p>4. Klik Oke.</p>
+                    <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image003.png" alt="Format Tanggal Panjang"></p>
+                    <p class="info"><strong>Catatan:</strong> untuk menerapkan format Waktu, dalam daftar Kategori, pilih Waktu.</p>
+                    <p>5. Tanggal disimpan sebagai angka di Excel dan menghitung jumlah hari sejak 0, Januari 1900. Waktu ditangani secara internal sebagai angka antara 0 dan 1. Untuk melihat ini dengan jelas, ubah format angka sel A1, B1 dan C1 ke Umum.</p>
+                    <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image004.png" alt="Format Umum"></p>
+                    <p class="info"><strong>Catatan:</strong> ternyata, 42544 hari setelah 0, 1900 sama dengan 23 Juni 2016. 6:00 direpresentasikan sebagai 0,25 (seperempat sepanjang hari).</p>
+                    <p>6. Anda dapat memasukkan waktu sebagai 6:00, tetapi Excel menampilkan waktu ini sebagai 6:00:00 di bilah rumus. AM digunakan untuk waktu malam dan pagi hari. PM digunakan untuk waktu pada sore dan malam hari.
+                    </p>
+                    <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image005.png" alt="Format waktu"></p>
+                    <p>7. Ubah format angka sel C1 menjadi Date only.</p>
+                    <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image006.png" alt="Format tanggal"></p>
+                    <p class="info"><strong>Catatan:</strong> sel C1 masih berisi angka 42544.25. Kami hanya mengubah tampilan nomor, bukan nomor itu sendiri.</p>
+                </section>
+
+                <!-- Fungsi Tanggal hari ini -->
+                <section id="Tanggal-hari-ini">
+                    <p class="h3">Fungsi Tanggal hari ini <span class="span-text">(Today's Date)</span></p>
+                    <p class="link-text"><a href="#HariinidanSekarang">Hari ini dan Sekarang</a> | <a href="#TanggaldanWaktuStatis">Tanggal dan Waktu Statis</a></p>
+                    <p>Untuk memasukkan tanggal hari ini di Excel, gunakan fungsi TODAY. Untuk memasukkan tanggal dan waktu saat ini, gunakan fungsi <strong>NOW</strong>. Untuk memasukkan tanggal dan waktu saat ini sebagai nilai statis, gunakan pintasan
+                        keyboard.
+                    </p>
+                </section>
+
+                <!-- Hari ini dan Sekarang -->
+                <section id="HariinidanSekarang">
+                    <p class="h4">Hari ini dan Sekarang <span class="span-text">(Today and Now)</span></p>
+                    <ol>
+                        <li>
+                            <p>Untuk memasukkan tanggal hari ini di Excel, gunakan fungsi <strong>TODAY</strong>.</p>
+                            <p><img class="img-fluid" src="../excel/files/Tanggal-hari-ini_files/image001.png" alt="Fungsi hari ini"></p>
+                            <p class="info"><strong>Catatan:</strong> fungsi <strong>TODAY</strong> tidak membutuhkan argumen. Tanggal ini akan diperbarui secara otomatis saat Anda membuka buku kerja pada tanggal lain.
+                            </p>
+                        </li>
+                        <li>
+                            <p>Untuk memasukkan tanggal dan waktu sekarang, gunakan fungsi
+                                <STRong>NOW</STRong>.</p>
+                            <p><img class="img-fluid" src="../excel/files/Tanggal-hari-ini_files/image002.png" alt="Sekarang Fungsi"></p>
+                            <p class="info"><strong>Catatan:</strong> fungsi <strong>NOW</strong> tidak membutuhkan argumen. Waktu ini akan diperbarui secara otomatis setiap kali lembar dihitung ulang. Ini terjadi saat Anda membuat perubahan ke sel mana pun atau saat
+                                Anda membuka buku kerja. Tekan F9 untuk menghitung ulang buku kerja secara manual.</p>
+                        </li>
+                        <li>
+                            <p>Untuk memasukkan waktu saat ini saja, gunakan <strong>NOW</strong>()-<strong>TODAY</strong>() dan terapkan <a href="#FungsiTanggalWaktu">format waktu</a>.</p>
+                            <p><img class="img-fluid" src="../excel/files/Tanggal-hari-ini_files/image003.png" alt="Waktu saat ini"></p>
+                            <p class="info"><strong>Catatan:</strong> tanggal disimpan sebagai angka di Excel dan menghitung jumlah hari sejak 0, Januari 1900. Waktu ditangani secara internal sebagai angka antara 0 dan 1. Kunjungi halaman kami tentang
+                                <a href="#FungsiTanggalWaktu">format tanggal dan waktu</a> untuk informasi selengkapnya.</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <!-- Tanggal dan Waktu Statis -->
+                <section id="TanggaldanWaktuStatis">
+                    <p class="h4">Tanggal dan Waktu Statis</p>
+                    <ol>
+                        <li>
+                            <p>Untuk memasukkan tanggal saat ini sebagai nilai statis, tekan <kbd>Ctrl</kbd>+<kbd>;</kbd> (titik koma).</p>
+                            <p><img class="img-fluid" src="../excel/files/Tanggal-hari-ini_files/image004.png" alt="Tanggal Statis"></p>
+                            <p class="info"><strong>Catatan:</strong> tanggal ini tidak akan berubah saat Anda membuka buku kerja pada tanggal lain.</p>
+                        </li>
+                        <li>
+                            <p>Untuk memasukkan waktu saat ini sebagai nilai statis, tekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>;</kbd>(titik koma).</p>
+                            <p><img class="img-fluid" src="../excel/files/Tanggal-hari-ini_files/image005.png" alt="Waktu Statis"></p>
+                            <p class="info"><strong>Catatan:</strong> waktu ini tidak akan berubah saat Anda membuat perubahan ke sel atau saat Anda membuka buku kerja.</p>
+                        </li>
+                        <li>
+                            <p>Untuk memasukkan tanggal dan waktu saat ini sebagai nilai statis, cukup tekan <kbd>Ctrl</kbd>+<kbd>;</kbd> (titik koma), masukkan spasi dan tekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>;</kbd>(titik koma).</p>
+                            <p><img class="img-fluid" src="../excel/files/Tanggal-hari-ini_files/image006.png" alt="Tanggal dan Waktu Statis"></p>
+                        </li>
+                    </ol>
+                </section>
+
+                </div>
+        </main>
+        </div>
+
+        <!-- footer -->
+        <div w3-include-html="footer.html"></div>
+        <!-- scroll top button -->
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <!-- <a href="#">Back to top</a> -->
+
+        <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+        <script src="docs.min.js"></script>
+        <script src="scroll.js"></script>
+        <script>
+            includeHTML();
+        </script>
+</body>
+
+</html>

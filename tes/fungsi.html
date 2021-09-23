@@ -102,29 +102,35 @@
                         <li><a href="#FungsiTanggalWaktu">Pendahuluan</a></li>
                         <li><a href="#DateDif">DateDif</a></li>
                         <li><a href="#Tanggal-hari-ini">Tanggal Hari Ini</a>
-                            <ul>
+                            <!-- <ul>
                                 <li><a href="#HariinidanSekarang">Hari ini dan Sekarang</a></li>
                                 <li><a href="#TanggaldanWaktuStatis">Tanggal dan Waktu Statis</a></li>
-                            </ul>
+                            </ul> -->
                         </li>
                         <li><a href="#FormatTanggaldanWaktu">Format Tanggal dan Waktu</a></li>
                         <li><a href="#HitungUmur">Hitung Umur</a></li>
-                        <li><a href="#PerbedaanWaktu">Perbedaan Waktu</a></li>
-                        <li><a href="#">Hari Kerja</a></li>
-                        <li><a href="#">Hari Sampai Ulang Tahun</a></li>
+                        <li><a href="#PerbedaanWaktu">Perbedaan Waktu</a>
+                            <!-- <ul>
+                                <li><a href="#RumusSederhana">Rumus Sederhana</a></li>
+                                <li><a href="#RumusSelisihWaktu">Rumus Selisih Waktu</a></li>
+                                <li><a href="#PerbedaanWaktudalamJamsebagaiNilaiDesimal">Perbedaan Waktu dalam Jam sebagai Nilai Desimal</a></li>
+                                <li><a href="#LembarWaktu">Lembar Waktu</a></li>
+                            </ul> -->
+                        </li>
+                        <li><a href="#harikerja">Hari Kerja</a></li>
+                        <li><a href="#HarisampaiUlangTahun">Hari Sampai Ulang Tahun</a></li>
                         <li><a href="#">Hari Terakhir Bulan Ini</a></li>
                         <li><a href="#">Tambah Atau Kurangi Waktu</a></li>
                         <li><a href="#">Quarter</a></li>
                         <li><a href="#">Hari Tahun Ini</a></li>
                     </ul>
                 </nav>
-                <strong class="d-block h6 border-top text-warning" style="padding-top: .5rem; margin-bottom: 0;">Download File Latihan</strong>
-                <a href="../excel/files/bahan/date-time-functions.xlsx" class="fw-light" style="font-size: .875rem;">tanggal-waktu-fungsi.xlsx</a>
             </div>
             <!-- /menu kanan -->
 
             <!-- konten -->
-            <div class="bd-content ps-lg-4">
+            <!-- <div class="bd-content ps-lg-4"> -->
+            <div class="bd-content">
 
                 <!-- Tahun, Bulan, Hari -->
                 <section id="FungsiTanggalWaktu">
@@ -332,6 +338,7 @@
                     </ol>
                 </section>
 
+                <!-- Perbedaan waktu -->
                 <section id="PerbedaanWaktu">
                     <p class="h3">Perbedaan waktu</p>
                     <p class="link-text"><a href="#RumusSederhana">Rumus Sederhana</a> | <a href="#RumusPerbedaanWaktu">Rumus Selisih Waktu</a> | <a href="#PerbedaanWaktudalamJamsebagaiNilaiDesimal">Selisih Waktu dalam Jam sebagai Nilai Desimal</a> | <a href="#LembarWaktu">Lembar Waktu</a></p>
@@ -342,6 +349,7 @@
                     </p>
 
                     <p>Menghitung perbedaan antara dua kali di Excel bisa jadi rumit. Waktu ditangani secara internal sebagai angka antara 0 dan 1.</p>
+
                     <p class="h4" id="RumusSederhana">
                         Rumus Sederhana</p>
                     <p>Mari kita mulai dengan rumus sederhana yang menghitung selisih antara dua waktu di hari yang sama.</p>
@@ -360,8 +368,9 @@
                             <p>Catatan: waktu ditangani secara internal sebagai angka antara 0 dan 1. Misalnya, pukul 06:00 direpresentasikan sebagai 0,25 (seperempat sepanjang hari).</p>
                         </li>
                     </ol>
-                    <p class="h4" id="RumusPerbedaanWaktu">
-                        Rumus Perbedaan Waktu</p>
+
+                    <p class="h4" id="RumusSelisihWaktu">
+                        Rumus Selisih Waktu</p>
                     <p>Rumus sederhana yang ditunjukkan di atas tidak berfungsi jika waktu mulai sebelum tengah malam dan waktu berakhir setelah tengah malam.</p>
                     <ol>
                         <li>
@@ -373,12 +382,13 @@
                             <p><img class="img-fluid" src="../excel/files/PerbedaanWaktu_files/image004.png" alt="Perhitungan Waktu"></p>
                         </li>
                         <li>
-                            <p>Rumus perbedaan waktu di bawah ini selalu berhasil.</p>
-                            <p><img class="img-fluid" src="../excel/files/PerbedaanWaktu_files/image005.png" alt="Rumus Perbedaan Waktu"></p>
+                            <p>Rumus Selisih Waktu di bawah ini selalu berhasil.</p>
+                            <p><img class="img-fluid" src="../excel/files/PerbedaanWaktu_files/image005.png" alt="Rumus Selisih Waktu"></p>
                             <p>Penjelasan: jika waktu akhir lebih besar atau sama dengan waktu mulai, cukup kurangi waktu mulai dari waktu akhir. Jika tidak, tambahkan 1 (hari penuh) ke waktu akhir untuk menunjukkan waktu pada hari berikutnya dan kurangi
                                 waktu mulai.</p>
                         </li>
                     </ol>
+
                     <p class="h4" id="PerbedaanWaktudalamJamsebagaiNilaiDesimal">
                         Perbedaan Waktu dalam Jam sebagai Nilai Desimal</p>
                     <p>Untuk menghitung selisih antara dua kali dalam jam sebagai nilai desimal, kalikan rumus sebelumnya dengan 24 dan ubah format angka menjadi Umum.
@@ -387,12 +397,100 @@
                     <p>
                         <img class="img-fluid" src="../excel/files/PerbedaanWaktu_files/image006.png" alt="Perbedaan Waktu dalam Jam sebagai Nilai Desimal">
                     </p>
+
                     <p class="h4" id="LembarWaktu">
                         Lembar Waktu</p>
                     <p>Hitung total jam, jam reguler, dan jam lembur dengan <a href="https://www.excel-easy.com/examples/time-sheet.html">kalkulator absen</a> kami.</p>
                     <p>
                         <img class="img-fluid" src="../excel/files/PerbedaanWaktu_files/image007.png" alt="Kalkulator Timesheet di Excel">
                     </p>
+                </section>
+
+                <!-- hari kerja -->
+                <section id="harikerja">
+                    <p class="h3">Hari Kerja <span class="span-text">(Weekdays)</span></p>
+                    <p><a href="#">Fungsi hari kerja</a> | <a href="#">Fungsi hari jaringan</a> | <a href="#">Fungsi hari kerja</a></p>
+
+                    <p>
+                        <strong class="d-block h6 text-warning p-0 m-0">Download file latihan</strong>
+                        <a href="../excel/files/bahan/weekdays.xlsx" class="fw-light p-0 m-0">hari kerja.xlsx</a>
+                    </p>
+
+                    <p>Pelajari cara mendapatkan hari dalam seminggu dari sebuah tanggal di Excel dan cara mendapatkan jumlah hari kerja atau hari kerja di antara dua tanggal.</p>
+                    <p class="h4">
+                        Fungsi hari kerja</p>
+                    <ol>
+                        <li>
+                            <p>Fungsi <strong>WEEKDAY</strong> di Excel mengembalikan angka dari 1 (Minggu) hingga 7 (Sabtu) yang mewakili hari dalam seminggu dari suatu tanggal. Ternyata, 18/12/2017 jatuh pada hari Senin.</p>
+                            <p><img class="img-fluid" src="../excel/files/hari%20kerja_files/image001.png" alt="Fungsi Hari Kerja di Excel"></p>
+                        </li>
+                        <li>
+                            <p>Anda juga dapat menggunakan <a href="https://www.excel-easy.com/examples/text.html">fungsi TEXT</a> untuk menampilkan hari dalam seminggu.</p>
+                            <p><img class="img-fluid" src="../excel/files/hari%20kerja_files/image002.png" alt="Fungsi Teks"></p>
+                        </li>
+                        <li>
+                            <p>Atau buat <a href="https://www.excel-easy.com/examples/custom-number-format.html#dates-times">format tanggal khusus</a> ( <b>dddd</b> ) untuk menampilkan hari dalam seminggu.
+                            </p>
+                            <p><img class="img-fluid" src="../excel/files/hari%20kerja_files/image003.png" alt="Format Tanggal Kustom"></p>
+                        </li>
+                    </ol>
+
+                    <p class="h4">
+                        Fungsi Networkdays</p>
+                    <ol>
+                        <li>
+                            <p>Fungsi <strong>NETWORKDAYS</strong> mengembalikan jumlah hari kerja (tidak termasuk akhir pekan) di antara dua tanggal.</p>
+                            <p><img class="img-fluid" src="../excel/files/hari%20kerja_files/image004.png" alt="Fungsi Networkdays"></p>
+                        </li>
+                        <li>
+                            <p>Jika Anda memberikan daftar hari libur, fungsi <strong>NETWORKDAYS</strong> mengembalikan jumlah hari kerja (tidak termasuk akhir pekan dan hari libur) di antara dua tanggal.</p>
+                            <p><img class="img-fluid" src="../excel/files/hari%20kerja_files/image005.png" alt="hari kerja"></p>
+                            <p>Kalender di bawah ini membantu Anda memahami fungsi <strong>NETWORKDAYS</strong>.</p>
+                            <p><img class="img-fluid" src="../excel/files/hari%20kerja_files/image006.png" alt=Kalender></p>
+                        </li>
+                        <li>
+                            <p>Tanggal disimpan sebagai angka di Excel dan menghitung jumlah hari sejak 01 Januari 1900. Alih-alih menyediakan daftar, berikan konstanta array dari angka yang mewakili tanggal ini. Untuk mencapai ini, pilih E1:E2 dalam rumus
+                                dan tekan F9.
+                            </p>
+                            <p><img class="img-fluid" src="../excel/files/hari%20kerja_files/image007.png" alt="Konstanta Array"></p>
+                            <p class="h4">
+                                Fungsi hari kerja</p>
+                            <p>Fungsi <strong>WORKDAY</strong> adalah (hampir) kebalikan dari fungsi <strong>NETWORKDAYS</strong>. Ini mengembalikan tanggal sebelum atau setelah jumlah hari kerja tertentu (akhir pekan tidak termasuk).</p>
+                            <p><img class="img-fluid" src="../excel/files/hari%20kerja_files/image008.png" alt="Fungsi hari kerja"></p>
+                            <p>Catatan: fungsi <strong>WORKDAY</strong> mengembalikan nomor seri tanggal. Terapkan
+                                <a href="https://www.excel-easy.com/examples/date-time-formats.html">format Tanggal</a> untuk menampilkan tanggal.</p>
+                            <p>Kalender di bawah ini membantu Anda memahami fungsi <strong>WORKDAY</strong>.</p>
+                            <p><img class="img-fluid" src="../excel/files/hari%20kerja_files/image009.png" alt=Kalender></p>
+                            <p>Sekali lagi, jika Anda memberikan daftar hari libur, fungsi <strong>WORKDAY</strong> mengembalikan tanggal sebelum atau setelah jumlah hari kerja tertentu (tidak termasuk akhir pekan dan hari libur).</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <!-- Hari sampai Ulang Tahun -->
+                <section id="HarisampaiUlangTahun">
+                    <p class="h3">Hari sampai Ulang Tahun</p>
+                    <p>Untuk menghitung jumlah hari hingga ulang tahun Anda di Excel, jalankan langkah-langkah berikut.</p>
+                    <ol>
+                        <li>
+                            <p>Masukkan tanggal lahir ke dalam sel <strong>A2</strong>.</p>
+                            <p><img class="img-fluid" src="../excel/files/HarisampaiUlangTahun_files/image001.png" alt="Tanggal lahir"></p>
+                        </li>
+                        <li>
+                            <p>Masukkan fungsi <strong>TODAY</strong> ke sel <strong>B2</strong> untuk mengembalikan tanggal hari ini.</p>
+                            <p><img class="img-fluid" src="../excel/files/HarisampaiUlangTahun_files/image002.png" alt="Hari ini"></p>
+                        </li>
+                        <li>
+                            <p>Bagian tersulit untuk mendapatkan jumlah hari sampai ulang tahun Anda adalah menemukan ulang tahun Anda berikutnya. Rumus di bawah ini berhasil.</p>
+                            <p><img class="img-fluid" src="../excel/files/HarisampaiUlangTahun_files/image003.png" alt="Ulang Tahun Berikutnya"></p>
+                            <p class="info"><strong>Penjelasan:</strong> Fungsi <strong>DATE</strong> menerima tiga argumen: tahun, bulan dan hari. Kami menggunakan <a href="https://www.excel-easy.com/examples/datedif.html">fungsi DATEDIF</a> untuk menemukan jumlah tahun
+                                lengkap (&quot;y&quot;) antara Tanggal Lahir dan Hari Ini. <strong>DATEDIF</strong>(A2,B2,&quot;y&quot;) sama dengan 38. Jika 38 tahun penuh telah berlalu sejak tanggal lahir Anda (dengan kata lain, Anda telah merayakan
+                                ulang tahun ke-38), ulang tahun Anda berikutnya adalah 38 + 1 = 39 tahun setelahnya tanggal lahirmu.</p>
+                        </li>
+                        <li>
+                            <p>Selanjutnya, kita menggunakan fungsi <strong>DATEDIF</strong> untuk mencari jumlah hari (&quot;d&quot;) antara Hari Ini dan Ulang Tahun Berikutnya.</p>
+                            <p><img class="img-fluid" src="../excel/files/HarisampaiUlangTahun_files/image004.png" alt="Hari sampai Ulang Tahun di Excel"></p>
+                        </li>
+                    </ol>
                 </section>
 
             </div>

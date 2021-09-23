@@ -1,0 +1,25 @@
+<section id="HarisampaiUlangTahun">
+    <p class="h3">Hari sampai Ulang Tahun</p>
+    <p>Untuk menghitung jumlah hari hingga ulang tahun Anda di Excel, jalankan langkah-langkah berikut.</p>
+    <ol>
+        <li>
+            <p>Masukkan tanggal lahir ke dalam sel <strong>A2</strong>.</p>
+            <p><img class="img-fluid" src="../excel/files/HarisampaiUlangTahun_files/image001.png" alt="Tanggal lahir"></p>
+        </li>
+        <li>
+            <p>Masukkan fungsi <strong>TODAY</strong> ke sel <strong>B2</strong> untuk mengembalikan tanggal hari ini.</p>
+            <p><img class="img-fluid" src="../excel/files/HarisampaiUlangTahun_files/image002.png" alt="Hari ini"></p>
+        </li>
+        <li>
+            <p>Bagian tersulit untuk mendapatkan jumlah hari sampai ulang tahun Anda adalah menemukan ulang tahun Anda berikutnya. Rumus di bawah ini berhasil.</p>
+            <p><img class="img-fluid" src="../excel/files/HarisampaiUlangTahun_files/image003.png" alt="Ulang Tahun Berikutnya"></p>
+            <p class="info"><strong>Penjelasan:</strong> Fungsi DATE menerima tiga argumen: tahun, bulan dan hari. Kami menggunakan <a href="https://www.excel-easy.com/examples/datedif.html">fungsi DATEDIF</a> untuk menemukan jumlah tahun lengkap (&quot;y&quot;) antara
+                Tanggal Lahir dan Hari Ini. <strong>DATEDIF</strong>(A2,B2,&quot;y&quot;) sama dengan 38. Jika 38 tahun penuh telah berlalu sejak tanggal lahir Anda (dengan kata lain, Anda telah merayakan ulang tahun ke-38), ulang tahun Anda berikutnya
+                adalah 38 + 1 = 39 tahun setelahnya tanggal lahirmu.</p>
+        </li>
+        <li>
+            <p>Selanjutnya, kita menggunakan fungsi <strong>DATEDIF</strong> untuk mencari jumlah hari (&quot;d&quot;) antara Hari Ini dan Ulang Tahun Berikutnya.</p>
+            <p><img class="img-fluid" src="../excel/files/HarisampaiUlangTahun_files/image004.png" alt="Hari sampai Ulang Tahun di Excel"></p>
+        </li>
+    </ol>
+</section>

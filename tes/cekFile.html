@@ -1,0 +1,107 @@
+<section id="TambahatauKurangiWaktu">
+    <p class="h3">Tambah atau Kurangi Waktu</p>
+    <p><a href="#TambahkanJamMenitdanDetik">Tambahkan Jam, Menit, dan Detik</a> | <a href="#TambahkanWaktu">Tambahkan Waktu</a> | <a href="#KurangiMenit">Kurangi Menit</a> | <a href="#Perbedaanwaktu">Perbedaan waktu</a></p>
+
+    <p>Gunakan fungsi <strong>TIME</strong> di Excel untuk menambah atau mengurangi jam, menit dan detik. Untuk menambahkan waktu di Excel, cukup gunakan fungsi <strong>SUM</strong>.</p>
+
+    <p class="h4" id="TambahkanJamMenitdanDetik">
+        Tambahkan Jam, Menit, dan Detik</p>
+    <p>Ingat, untuk memasukkan waktu, gunakan &quot;:&quot; (titik dua).</p>
+    <ol>
+        <li>
+            <p>Masukkan waktu ke dalam sel A1.</p>
+            <p><img class="img-fluid" src="../excel/files/TambahatauKurangiWaktu_files/image001.png" alt=Waktu></p>
+        </li>
+        <li>
+            <p>Untuk menambahkan 2 jam 30 menit ke waktu ini, masukkan rumus yang ditunjukkan di bawah ini.</p>
+            <p><img class="img-fluid" src="../excel/files/TambahatauKurangiWaktu_files/image002.png" alt="Tambahkan Waktu di Excel"></p>
+            <p class="info"><strong>Penjelasan:</strong> fungsi <strong>TIME</strong> memiliki 3 argumen. Pertama, gunakan <strong>HOUR</strong>, <strong>MINUTE</strong> dan <strong>SECOND</strong> untuk membuat waktu yang dimasukkan di sel A1. Selanjutnya, tambahkan
+                2 jam 30 menit.</p>
+            <p>Untuk mengubah format Waktu, jalankan langkah-langkah berikut.</p>
+        </li>
+        <li>Pilih sel <strong>B1</strong>.</li>
+        <li>Klik kanan, lalu klik <a href="https://www.excel-easy.com/basics/format-cells.html">Format Cells</a> (atau tekan CTRL + 1).</li>
+        <li>
+            <p>Dalam daftar Kategori, pilih Waktu, lalu pilih format Waktu.</p>
+            <p><img class="img-fluid" src="../excel/files/TambahatauKurangiWaktu_files/image003.png" alt="Ubah Format Waktu"></p>
+        </li>
+        <li>
+            <p>Klik Oke.</p>
+            <p><img class="img-fluid" src="../excel/files/TambahatauKurangiWaktu_files/image004.png" alt="Tambahkan Jam dan Menit"></p>
+        </li>
+        <li>
+            <p>Masukkan waktu ke dalam sel <strong>A1</strong> (gunakan 2 titik dua untuk memasukkan detik).</p>
+            <p><img class="img-fluid" src="../excel/files/TambahatauKurangiWaktu_files/image005.png" alt="Waktu Dengan Detik"></p>
+        </li>
+        <li>
+            <p>Untuk menambahkan 10 detik ke waktu ini, masukkan rumus yang ditunjukkan di bawah ini.</p>
+            <p><img class="img-fluid" src="../excel/files/TambahatauKurangiWaktu_files/image006.png" alt="Tambahkan Detik"></p>
+            <p class="info"><strong>Catatan:</strong> kami mengubah format Waktu menjadi 13:30:55 (lihat langkah 5).</p>
+        </li>
+    </ol>
+
+    <p class="h4" id="TambahkanWaktu">
+        Tambahkan Waktu</p>
+    <p>Untuk menambahkan waktu di Excel, cukup gunakan fungsi <strong>SUM</strong>. Untuk menampilkan total lebih dari 24 jam, ubah format Waktu.</p>
+    <ol>
+        <li>
+            <p>Misalnya, tugas A membutuhkan 8 jam untuk diselesaikan, tugas B membutuhkan 4 jam dan 30 menit untuk diselesaikan, dll.</p>
+            <p><img class="img-fluid" src="../excel/files/TambahatauKurangiWaktu_files/image007.png" alt="Durasi Tugas"></p>
+        </li>
+        <li>
+            <p>Untuk menghitung total durasi, cukup gunakan fungsi <strong>SUM</strong>.</p>
+            <p><img class="img-fluid" src="../excel/files/TambahatauKurangiWaktu_files/image008.png" alt="Durasi total"></p>
+        </li>
+        <li>
+            <p>Ubah durasi tugas <strong>D</strong> dari 5 jam menjadi 7 jam.</p>
+            <p><img class="img-fluid" src="../excel/files/TambahatauKurangiWaktu_files/image009.png" alt="Total Melebihi 24 Jam"></p>
+            <p>Untuk menampilkan total lebih dari 24 jam, jalankan langkah-langkah berikut.</p>
+        </li>
+        <li>Pilih sel <strong>B6</strong>.</li>
+        <li>Klik kanan, lalu klik Format Cells (atau <kbd>Ctrl</kbd>+<kbd>1</kbd>).</li>
+        <li>Pilih kategori Kustom.</li>
+        <li>
+            <p>Ketik kode format angka berikut: <b>[h]:mm</b></p>
+            <p><img class="img-fluid" src="../excel/files/TambahatauKurangiWaktu_files/image010.png" alt="Format Waktu Kustom"></p>
+        </li>
+        <li>
+            <p>Klik Oke.</p>
+            <p><img class="img-fluid" src="../excel/files/TambahatauKurangiWaktu_files/image011.png" alt="Tambahkan Waktu di Excel"></p>
+            <p class="info"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/date-time-formats.html">format Tanggal dan Waktu</a> untuk mempelajari lebih lanjut tentang topik ini.</p>
+        </li>
+    </ol>
+
+    <p class="h4" id="KurangiMenit">
+        Kurangi Menit</p>
+    <p>Untuk mengurangi jam, menit, atau detik dari suatu waktu, gunakan fungsi <strong>TIME</strong> (dan <strong>HOUR</strong>, <strong>MINUTE</strong> dan <strong>SECOND</strong>).</p>
+    <ol>
+        <li>
+            <p>Masukkan waktu ke dalam sel A1.</p>
+            <p><img class="img-fluid" src="../excel/files/TambahatauKurangiWaktu_files/image012.png" alt="Masukkan Waktu"></p>
+        </li>
+        <li>
+            <p>Untuk mengurangi 33 menit dari waktu ini, masukkan rumus yang ditunjukkan di bawah ini.</p>
+            <p><img class="img-fluid" src="../excel/files/TambahatauKurangiWaktu_files/image013.png" alt="Kurangi Waktu"></p>
+        </li>
+    </ol>
+
+    <p class="h4" id="Perbedaanwaktu">
+        Perbedaan waktu</p>
+    <p>Menghitung perbedaan antara dua kali di Excel bisa jadi rumit.</p>
+    <ol>
+        <li>
+            <p>Untuk menghitung selisih antara dua waktu di hari yang sama, cukup kurangi waktu mulai dari waktu berakhir.</p>
+            <p><img class="img-fluid" src="../excel/files/TambahatauKurangiWaktu_files/image014.png" alt="Hitung Perbedaan Antara Dua Kali di Excel"></p>
+            <p class="info"><strong>Catatan:</strong> kami mengubah format Waktu menjadi 13:30 (lihat langkah 5 di bawah &quot; <a href="https://www.excel-easy.com/examples/add-subtract-time.html#add-hours-minutes-seconds">Tambahkan Jam, Menit, dan Detik</a> &quot;).</p>
+        </li>
+        <li>
+            <p>Rumus sederhana ini tidak bekerja jika waktu mulai sebelum tengah malam dan waktu berakhir setelah tengah malam. <a href="https://www.excel-easy.com/examples/time-difference.html">Waktu Perbedaan</a> rumus di bawah ini selalu bekerja.</p>
+            <p><img class="img-fluid" src="../excel/files/TambahatauKurangiWaktu_files/image015.png" alt="Rumus Perbedaan Waktu"></p>
+        </li>
+        <li>
+            <p>Rumus di bawah ini menghitung selisih antara dua kali dalam jam sebagai nilai desimal.</p>
+            <p><img class="img-fluid" src="../excel/files/TambahatauKurangiWaktu_files/image016.png" alt="Perbedaan Waktu dalam Jam sebagai Nilai Desimal"></p>
+            <p class="info"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/time-difference.html">Perbedaan Waktu</a> untuk memahami logika di balik rumus ini.</p>
+        </li>
+    </ol>
+</section>

@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<script>
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /*loop through a collection of all HTML elements:*/
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+                /*make an HTTP request using the attribute value as the file name:*/
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {
+                            elmnt.innerHTML = this.responseText;
+                        }
+                        if (this.status == 404) {
+                            elmnt.innerHTML = "Page not found.";
+                        }
+                        /*remove the attribute, and call this function once more:*/
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /*exit the function:*/
+                return;
+            }
+        }
+    };
+</script>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Belajar Online">
+    <meta name="author" content="Ony">
+    <meta name="generator" content="E-Learning">
+    <meta name="docsearch:language" content="id">
+    <meta name="docsearch:version" content="5.1">
+    <title>Microsoft Excel</title>
+    <!-- Bootstrap core CSS -->
+    <style class="anchorjs"></style>
+    <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="docs.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="../img/aku-bulat.ico" type="image/x-icon" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Gaya khusus untuk template ini -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- top -->
+    <div w3-include-html="top.html"></div>
+    <!-- Navigasi kedua -->
+    <nav class="bd-subnavbar" aria-label="Navigasi kedua">
+        <div class="nav-scroller shadow-sm">
+            <nav class="nav nav-underline" aria-label="Navigasi kedua">
+                <a class="nav-link fw-light" aria-current="page" href="index.html">Beranda</a>
+                <a class="nav-link fw-light" href="index.html">Excel</a>
+                <a class="nav-link fw-light" href="pendahuluan.html">Pendahuluan <span style="color: orange;">+</span></a>
+                <a class="nav-link fw-light" href="dasar-dasar.html">Dasar-dasar</a>
+                <a class="nav-link fw-bold active" href="fungsi.html">Fungsi</a>
+                <a class="nav-link fw-light" href="analisisdata.html">Analisis data</a>
+                <a class="nav-link fw-light" href="latihan.html">Latihan</a>
+            </nav>
+        </div>
+    </nav>
+    <!-- <div class="container-xxl my-md-4 bd-layout"> -->
+    <div class="container my-md-4 bd-layout">
+        <main class="bd-main order-1">
+
+            <!-- intro -->
+            <div class="bd-intro">
+                <p class="h2">Fungsi</p>
+                <p>Temukan bagaimana fungsi di Excel membantu Anda menghemat waktu. Jika Anda baru mengenal fungsi di Excel, kami menyarankan Anda untuk membaca pengantar kami tentang <a href="#">Rumus dan Fungsi</a> terlebih dahulu.</p>
+            </div>
+            <!-- /intro -->
+
+            <!-- menu kanan -->
+            <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+                <strong class="d-block h6 my-2 pb-2 border-bottom">Di halaman ini</strong>
+                <nav id="TableOfContents">
+                    <ul>
+                        <li><a href="#1CountandSum">Count dan Sum</a></li>
+                        <li><a href="#2Logika">Logika</a></li>
+                        <li><a href="#">Referensi Sel</a></li>
+                        <li><a href="#">Tanggal & Waktu</a></li>
+                        <li><a href="#">Teks</a></li>
+                        <li><a href="#">Pencarian & Referensi</a></li>
+                        <li><a href="#">Financial</a></li>
+                        <li><a href="#">Statistik</a></li>
+                        <li><a href="#">Round</a></li>
+                        <li><a href="#">Rumus Errors</a></li>
+                        <li><a href="#">Rumus Array</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- /menu kanan -->
+
+            <!-- konten -->
+            <div class="bd-content">
+                <div class="accordion accordion-flush" id="accordionFungsi">
+
+                    <!-- Count dan Sum -->
+                    <section id="1CountandSum">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="CountandSum">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-CountandSum" aria-expanded="false" aria-controls="flush-CountandSum">Count dan Sum</button>
+                            </h2>
+                            <div id="flush-CountandSum" class="accordion-collapse collapse" aria-labelledby="CountandSum" data-bs-parent="#accordionFungsi">
+                                <div class="accordion-body">
+                                    Hitung | Hitung Sel Kosong/Tidak Kosong | Hitung Karakter | Tidak Sama Dengan | Hitung Sel dengan Teks | Jumlah | Total Berjalan | Sumif | Produk sampingan
+                                    <!--  -->
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Logika -->
+                    <section id="2Logika">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="Logika">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-Logika" aria-expanded="false" aria-controls="flush-Logika">Logika</button>
+                            </h2>
+                            <div id="flush-Logika" class="accordion-collapse collapse" aria-labelledby="Logika" data-bs-parent="#accordionFungsi">
+                                <div class="accordion-body">
+                                    Jika | Operator Perbandingan | Atau | Melempar Dadu | jika | Berisi Teks Tertentu | Beralih | Jika Sel Kosong | Nilai mutlak
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Referensi Sel -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="ReferensiSel">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-ReferensiSel" aria-expanded="false" aria-controls="flush-ReferensiSel">Referensi Sel</button>
+                        </h2>
+                        <div id="flush-ReferensiSel" class="accordion-collapse collapse" aria-labelledby="ReferensiSel" data-bs-parent="#accordionFungsi">
+                            <div class="accordion-body">
+                                Salin Rumus | Referensi 3D | Referensi Eksternal | Hyperlink | Persatuan dan Perpotongan | Perubahan Persen | Tambahkan Kolom | Referensi Mutlak | Alamat
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tanggal & Waktu -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="TanggaldanWaktu">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-TanggaldanWaktu" aria-expanded="false" aria-controls="flush-TanggaldanWaktu">Tanggal & Waktu</button>
+                        </h2>
+                        <div id="flush-TanggaldanWaktu" class="accordion-collapse collapse" aria-labelledby="TanggaldanWaktu" data-bs-parent="#accordionFungsi">
+                            <div class="accordion-body">
+                                DateDif | Tanggal Hari Ini | Format Tanggal dan Waktu | Hitung Umur | Perbedaan Waktu | hari kerja | Hari sampai Ulang Tahun | Hari Terakhir Bulan Ini | Tambah atau Kurangi Waktu | Kuartal | Hari Tahun
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Teks -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="Teks">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-Teks" aria-expanded="false" aria-controls="flush-Teks">Teks</button>
+                        </h2>
+                        <div id="flush-Teks" class="accordion-collapse collapse" aria-labelledby="Teks" data-bs-parent="#accordionFungsi">
+                            <div class="accordion-body">
+                                String Terpisah | Hitung Kata | Teks ke Kolom | Temukan | Cari | Ubah Kasus | Hapus Spasi | Bandingkan Teks | Pengganti vs Ganti | Teks | Gabungkan | Substring
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pencarian & Referensi -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="PencariandanReferensi">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-PencariandanReferensi" aria-expanded="false" aria-controls="flush-PencariandanReferensi">Pencarian & Referensi</button>
+                        </h2>
+                        <div id="flush-PencariandanReferensi" class="accordion-collapse collapse" aria-labelledby="PencariandanReferensi" data-bs-parent="#accordionFungsi">
+                            <div class="accordion-body">
+                                String Terpisah | Hitung Kata | Teks ke Kolom | Temukan | Cari | Ubah Kasus | Hapus Spasi | Bandingkan Teks | Pengganti vs Ganti | Teks | Gabungkan | Substring
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Financial -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="Financial">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-Financial" aria-expanded="false" aria-controls="flush-Financial">Financial</button>
+                        </h2>
+                        <div id="flush-Financial" class="accordion-collapse collapse" aria-labelledby="Financial" data-bs-parent="#accordionFungsi">
+                            <div class="accordion-body">
+                                PMT | Pinjaman dengan Jangka Waktu Berbeda | Investasi atau Anuitas | Bunga Majemuk | CAGR | Jadwal Amortisasi Pinjaman | NPV | Rp | Depresiasi | Margin Keuntungan
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Statistik -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="Statistik">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-Statistik" aria-expanded="false" aria-controls="flush-Statistik">Statistik</button>
+                        </h2>
+                        <div id="flush-Statistik" class="accordion-collapse collapse" aria-labelledby="Statistik" data-bs-parent="#accordionFungsi">
+                            <div class="accordion-body">
+                                Rata-rata | Bilangan Negatif ke Nol | Angka Acak | Peringkat | Persentil dan Kuartil | Plot Kotak dan Kumis | Rata-rataJika | Prakiraan | MaxIf dan MinIf | Rata-rata Tertimbang | Modus | Standar Deviasi | Frekuensi
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Round -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="Round">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-Round" aria-expanded="false" aria-controls="flush-Round">Round</button>
+                        </h2>
+                        <div id="flush-Round" class="accordion-collapse collapse" aria-labelledby="Round" data-bs-parent="#accordionFungsi">
+                            <div class="accordion-body">
+                                Potong Desimal | Kelipatan Terdekat | Genap dan Ganjil | Mod
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rumus Errors -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="RumusErrors">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-RumusErrors" aria-expanded="false" aria-controls="flush-RumusErrors">Rumus Errors</button>
+                        </h2>
+                        <div id="flush-RumusErrors" class="accordion-collapse collapse" aria-labelledby="RumusErrors" data-bs-parent="#accordionFungsi">
+                            <div class="accordion-body">
+                                IFERROR | ISERROR | AGGREGATE | Referensi Edaran | Audit Rumus | Kesalahan Titik Mengambang | IFNA
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rumus Array -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="RumusArray">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-RumusArray" aria-expanded="false" aria-controls="flush-RumusArray">Rumus Array</button>
+                        </h2>
+                        <div id="flush-RumusArray" class="accordion-collapse collapse" aria-labelledby="RumusArray" data-bs-parent="#accordionFungsi">
+                            <div class="accordion-body">
+                                Hitung Kesalahan | Hitung Nilai Unik | Hitung dengan Atau Kriteria | Jumlahkan Setiap Baris Ke-N | Jumlahkan Bilangan Terbesar | Jumlah Rentang dengan Kesalahan | Jumlahkan dengan Atau Kriteria | Kata Yang Paling Sering Muncul | Sistem Persamaan Linier
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- footer -->
+    <div w3-include-html="footer.html"></div>
+    <!-- scroll top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- <a href="#">Back to top</a> -->
+
+    <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script src="docs.min.js"></script>
+    <script src="scroll.js"></script>
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+</html>

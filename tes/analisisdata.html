@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<script>
+    function includeHTML() {
+        var z, i, elmnt, file, xhttp;
+        /*loop through a collection of all HTML elements:*/
+        z = document.getElementsByTagName("*");
+        for (i = 0; i < z.length; i++) {
+            elmnt = z[i];
+            /*search for elements with a certain atrribute:*/
+            file = elmnt.getAttribute("w3-include-html");
+            if (file) {
+                /*make an HTTP request using the attribute value as the file name:*/
+                xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4) {
+                        if (this.status == 200) {
+                            elmnt.innerHTML = this.responseText;
+                        }
+                        if (this.status == 404) {
+                            elmnt.innerHTML = "Page not found.";
+                        }
+                        /*remove the attribute, and call this function once more:*/
+                        elmnt.removeAttribute("w3-include-html");
+                        includeHTML();
+                    }
+                }
+                xhttp.open("GET", file, true);
+                xhttp.send();
+                /*exit the function:*/
+                return;
+            }
+        }
+    };
+</script>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Belajar Online">
+    <meta name="author" content="Ony">
+    <meta name="generator" content="E-Learning">
+    <meta name="docsearch:language" content="id">
+    <meta name="docsearch:version" content="5.1">
+    <title>Microsoft Excel</title>
+    <!-- Bootstrap core CSS -->
+    <style class="anchorjs"></style>
+    <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="docs.css" rel="stylesheet">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="../img/aku-bulat.ico" type="image/x-icon" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Gaya khusus untuk template ini -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- top -->
+    <div w3-include-html="top.html"></div>
+    <!-- Navigasi kedua -->
+    <nav class="bd-subnavbar" aria-label="Navigasi kedua">
+        <div class="nav-scroller shadow-sm">
+            <nav class="nav nav-underline" aria-label="Navigasi kedua">
+                <a class="nav-link fw-light" aria-current="page" href="index.html">Beranda</a>
+                <a class="nav-link fw-light" href="index.html">Excel</a>
+                <a class="nav-link fw-light" href="pendahuluan.html">Pendahuluan <span style="color: orange;">+</span></a>
+                <a class="nav-link fw-light" href="dasar.html">Dasar-dasar</a>
+                <a class="nav-link fw-light" href="fungsi.html">Fungsi</a>
+                <a class="nav-link fw-bold active" href="analisisdata.html">Analisis data</a>
+                <a class="nav-link fw-light" href="latihan.html">Latihan</a>
+            </nav>
+        </div>
+    </nav>
+    <!-- <div class="container-xxl my-md-4 bd-layout"> -->
+    <div class="container my-md-4 bd-layout">
+        <main class="bd-main order-1">
+
+            <!-- intro -->
+            <div class="bd-intro">
+                <p class="h2">Analisis data</p>
+                <p>Bagian ini menjelaskan fitur canggih yang ditawarkan Excel untuk menganalisis data.</p>
+            </div>
+            <!-- /intro -->
+
+            <!-- menu kanan -->
+            <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+                <strong class="d-block h6 my-2 pb-2 border-bottom">Di halaman ini</strong>
+                <nav id="TableOfContents">
+                    <ul>
+                        <li><a href="#Sortir">Sortir</a></li>
+                        <li><a href="#Filter">Filter</a></li>
+                        <li><a href="#ConditionalFormatting">Conditional Formatting</a></li>
+                        <li><a href="#Charts">Charts</a></li>
+                        <li><a href="#TabelPivot">Tabel Pivot</a></li>
+                        <li><a href="#Tabel">Tabel</a></li>
+                        <li><a href="#What-IfAnalysis">What-If Analysis</a></li>
+                        <li><a href="#Solver">Solver</a></li>
+                        <li><a href="#AnalysisToolPak">Analysis ToolPak</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- /menu kanan -->
+
+            <!-- konten -->
+            <div class="bd-content">
+                <div class="accordion accordion-flush" id="accordionAnalisisData">
+
+                    <!-- Sortir -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="Sortir">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-Sortir" aria-expanded="false" aria-controls="flush-Sortir">Sortir</button>
+                        </h2>
+                        <div id="flush-Sortir" class="accordion-collapse collapse" aria-labelledby="Sortir" data-bs-parent="#accordionAnalisisData">
+                            <div class="accordion-body">
+                                Urutan Sortir Kustom | Urutkan berdasarkan Warna | Daftar Terbalik | Acak Daftar | fungsi SORT
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Filter -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="Filter">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-Filter" aria-expanded="false" aria-controls="flush-Filter">Filter</button>
+                        </h2>
+                        <div id="flush-Filter" class="accordion-collapse collapse" aria-labelledby="Filter" data-bs-parent="#accordionAnalisisData">
+                            <div class="accordion-body">
+                                Filter Angka dan Teks | Filter Tanggal | Filter Lanjutan | Formulir Data | Hapus Duplikat | Menguraikan Data | Subtotal | Nilai Unik | fungsi FILTER
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conditional Formatting -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="ConditionalFormatting">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-ConditionalFormatting" aria-expanded="false" aria-controls="flush-ConditionalFormatting">Conditional Formatting</button>
+                        </h2>
+                        <div id="flush-ConditionalFormatting" class="accordion-collapse collapse" aria-labelledby="ConditionalFormatting" data-bs-parent="#accordionAnalisisData">
+                            <div class="accordion-body">
+                                Kelola Aturan | Bilah Data | Timbangan Warna | Kumpulan Ikon | Temukan Duplikat | Bayangan Baris Alternatif | Bandingkan Dua Daftar | Aturan yang Bertentangan | Peta Panas
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Charts -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="Charts">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-Charts" aria-expanded="false" aria-controls="flush-Charts">Charts</button>
+                        </h2>
+                        <div id="flush-Charts" class="accordion-collapse collapse" aria-labelledby="Charts" data-bs-parent="#accordionAnalisisData">
+                            <div class="accordion-body">
+                                Bagan Kolom | Bagan Garis | Bagan Pai | Diagram Batang | Bagan Luas | Plot Sebar | Seri Data | Sumbu | Lembar Bagan | Garis tren | Bilah Kesalahan | Sparkline | Bagan Kombinasi | Bagan Pengukur | Bagan Termometer | Bagan Gantt | Bagan Pareto
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tabel Pivot -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="TabelPivot">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-TabelPivot" aria-expanded="false" aria-controls="flush-TabelPivot">Tabel Pivot</button>
+                        </h2>
+                        <div id="flush-TabelPivot" class="accordion-collapse collapse" aria-labelledby="TabelPivot" data-bs-parent="#accordionAnalisisData">
+                            <div class="accordion-body">
+                                Item Tabel Pivot Grup | Tabel Pivot Multi-level | Distribusi Frekuensi | Bagan Pivot | Pemotong | Perbarui Tabel Pivot | Bidang/Item Terhitung | DapatkanPivotData
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tabel -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="Tabel">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-Tabel" aria-expanded="false" aria-controls="flush-Tabel">Tabel</button>
+                        </h2>
+                        <div id="flush-Tabel" class="accordion-collapse collapse" aria-labelledby="Tabel" data-bs-parent="#accordionAnalisisData">
+                            <div class="accordion-body">
+                                Referensi Terstruktur | Gaya Tabel | Analisis Cepat
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- What-If Analysis -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="What-IfAnalysis">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-What-IfAnalysis" aria-expanded="false" aria-controls="flush-What-IfAnalysis">What-If Analysis</button>
+                        </h2>
+                        <div id="flush-What-IfAnalysis" class="accordion-collapse collapse" aria-labelledby="What-IfAnalysis" data-bs-parent="#accordionAnalisisData">
+                            <div class="accordion-body">
+                                Tabel Data | Pencarian Tujuan | Persamaan kuadrat
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Solver -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="Solver">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-Solver" aria-expanded="false" aria-controls="flush-Solver">Solver</button>
+                        </h2>
+                        <div id="flush-Solver" class="accordion-collapse collapse" aria-labelledby="Solver" data-bs-parent="#accordionAnalisisData">
+                            <div class="accordion-body">
+                                Masalah Transportasi | Soal Tugas | Investasi Modal | Soal Jalur Terpendek | Masalah Aliran Maksimum | Analisis Sensitivitas
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Analysis ToolPak -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="AlatAnalisis">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-AlatAnalisis" aria-expanded="false" aria-controls="flush-AlatAnalisis">Analysis ToolPak</button>
+                        </h2>
+                        <div id="flush-AlatAnalisis" class="accordion-collapse collapse" aria-labelledby="AlatAnalisis" data-bs-parent="#accordionAnalisisData">
+                            <div class="accordion-body">
+                                Histogram | Statistik Deskriptif | Anova | Uji-F | Uji-t | Rata-Rata Bergerak | Penghalusan Eksponensial | Korelasi | Regresi
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- footer -->
+    <div w3-include-html="footer.html"></div>
+    <!-- scroll top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- <a href="#">Back to top</a> -->
+
+    <script src="https://getbootstrap.com/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script src="docs.min.js"></script>
+    <script src="scroll.js"></script>
+    <script>
+        includeHTML();
+    </script>
+</body>
+
+</html>

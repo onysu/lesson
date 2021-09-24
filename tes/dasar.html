@@ -64,7 +64,8 @@
             <nav class="nav nav-underline" aria-label="Navigasi kedua">
                 <!-- <a class="nav-link fw-light" aria-current="page" href="index.html">Beranda</a> -->
                 <a class="nav-link fw-light" href="index.html">Excel</a>
-                <a class="nav-link fw-light" href="pendahuluan.html">Pendahuluan <span style="color: orange;">+</span></a>
+                <a class="nav-link fw-light" href="pendahuluan.html">Pendahuluan <span
+                        style="color: orange;">+</span></a>
                 <a class="nav-link fw-bold active" href="dasar.html">Dasar-dasar</a>
                 <a class="nav-link fw-light" href="fungsi.html">Fungsi</a>
                 <a class="nav-link fw-light" href="analisisdata.html">Analisis data</a>
@@ -89,7 +90,7 @@
                 <nav id="TableOfContents">
                     <ul>
                         <li><a href="#Ribbon">Ribbon</a></li>
-                        <li><a href="#BukuKerja">Buku Kerja</a></li>
+                        <li><a href="#Workbook">Buku Kerja</a></li>
                         <li><a href="#FormatSel">Format Sel</a></li>
                         <li><a href="#FinddanSelect">Find & Select</a></li>
                         <li><a href="#Template">Template</a></li>
@@ -118,19 +119,24 @@
 
                                 <section id="pita">
                                     <p class="h4">Ribbon</p>
-                                    <p><a href="#Tab">Tab</a> | <a href="#Grup">Grup</a> | <a href="#GunakanRibbon">Gunakan Ribbon</a> | <a href="#TutupRibbon">Tutup Ribbon</a></p>
-                                    <p>Excel memilih Beranda Tab Ribbon saat Anda membukanya. Pelajari cara menggunakan Ribbon.</p>
+                                    <p><a href="#Tab">Tab</a> | <a href="#Grup">Grup</a> | <a href="#GunakanRibbon">Gunakan Ribbon</a> | <a href="#TutupRibbon">Tutup
+                                            Ribbon</a></p>
+                                    <p>Excel memilih Beranda Tab Ribbon saat Anda membuka Excel. Pelajari cara menggunakan Ribbon.</p>
 
                                     <p class="h5" id="Tab">
                                         Tab</p>
-                                    <p>Tab pada Ribbon adalah: File, Beranda, Sisipkan, Tata letak halaman, Rumus, Data, Tinjauan, Tampilan, dan Bantuan. Tab Beranda berisi perintah yang paling sering digunakan di Excel.</p>
-                                    <p><img class="img-fluid" src="../excel/files/ribbon_files/image001.png" alt=tab></p>
+                                    <p>Tab pada Ribbon adalah: <kbd>File</kbd>, <kbd>Home</kbd>, <kbd>Insert</kbd>,
+                                        <kbd>Page layout</kbd>, <kbd>Formulas</kbd>, <kbd>Data</kbd>, <kbd>Review</kbd>,
+                                        <kbd>View</kbd> dan <kbd>Help</kbd>. Tab Beranda berisi perintah yang paling sering digunakan di Excel.</p>
+                                    <p><img class="img-fluid" src="../excel/files/ribbon_files/image001.png" alt=tab>
+                                    </p>
 
                                     <p class="h5" id="Grup">
                                         Grup</p>
                                     <p>Setiap tab berisi grup perintah terkait. Misalnya, tab Tata Letak Halaman berisi grup Tema, grup Penyetelan Halaman, dll.
                                     </p>
-                                    <p><img class="img-fluid" src="../excel/files/ribbon_files/image002.png" alt=Grup></p>
+                                    <p><img class="img-fluid" src="../excel/files/ribbon_files/image002.png" alt=Grup>
+                                    </p>
 
                                     <p class="h5" id="GunakanRibbon">
                                         Gunakan Ribbon</p>
@@ -155,7 +161,8 @@
 
                                     <p class="h5" id="TutupRibbon">
                                         Tutup Ribbon <span class="span-text">(Collapse the Ribbon)</span></p>
-                                    <p>Anda dapat menciutkan Ribbon untuk mendapatkan ruang ekstra di layar. Klik kanan di mana saja pada Ribbon, lalu klik Tutup Ribbon (atau tekan <kbd>Ctrl</kbd>+<kbd>F1</kbd>).</p>
+                                    <p>Anda dapat menciutkan Ribbon untuk mendapatkan ruang ekstra di layar. Klik kanan di mana saja pada Ribbon, lalu klik Tutup Ribbon (atau tekan
+                                        <kbd>Ctrl</kbd>+<kbd>F1</kbd>).</p>
                                     <p><img class="img-fluid" src="../excel/files/ribbon_files/image006.png" alt="Tutup Ribbon"></p>
                                     <p>Hasil.</p>
                                     <p><img class="img-fluid" src="../excel/files/ribbon_files/image007.png" alt="Ribbon Tersembunyi"></p>
@@ -172,7 +179,54 @@
                         </h2>
                         <div id="flush-Workbook" class="accordion-collapse collapse" aria-labelledby="Workbook" data-bs-parent="#accordionDasar">
                             <div class="accordion-body">
-                                <a href="#">Tema</a> | <a href="#">Lihat Beberapa Buku Kerja</a> | <a href="#">AutoRecover</a> | <a href="#">Simpan Dalam Format 97-2003</a>
+                                <!-- <a href="#">Tema</a> | <a href="#">Lihat Beberapa Buku Kerja</a> | <a href="#">AutoRecover</a> | <a href="#">Simpan Dalam Format 97-2003</a> -->
+
+                                <section id="Workbook">
+                                    <p class="h3">Buku Kerja <span class="span-text">(Workbook)</span></p>
+                                    <p><a href="#BukaBukuKerjayangsudahAda">Buka Buku Kerja yang sudah Ada</a> | <a href="#TutupBukuKerja">Tutup Buku Kerja</a> | <a href="#BuatBukuKerjaBaru">Buat Buku Kerja Baru</a> | <a href="#MatikanlayarMulai">Matikan layar Mulai</a></p>
+                                    <p>Buku kerja adalah kata lain untuk file Excel Anda. Saat Anda memulai Excel, klik Buku kerja kosong untuk membuat buku kerja Excel dari awal.
+                                    </p>
+                                    <p class="h5" id="BukaBukuKerjayangsudahAda">
+                                        Buka Buku Kerja yang sudah Ada</p>
+                                    <p>Untuk membuka buku kerja yang telah Anda buat sebelumnya, jalankan langkah-langkah berikut.</p>
+                                    <ol>
+                                        <li>Pada tab File, klik Buka.</li>
+                                        <li>
+                                            <p>Terbaru menampilkan daftar buku kerja yang baru saja Anda gunakan. Anda dapat dengan cepat membuka buku kerja dari sini.</p>
+                                            <p><img class="img-fluid" src="../excel/files/Workbook_files/image001.png" alt="Tampilan Belakang Panggung di Excel"></p>
+                                        </li>
+                                        <li>Klik Telusuri untuk membuka buku kerja yang tidak ada dalam daftar.</li>
+                                    </ol>
+                                    <p class="h5" id="TutupBukuKerja">
+                                        Tutup Buku Kerja</p>
+                                    <p>Untuk menutup buku kerja (dan Excel), klik kanan atas X. Jika Anda memiliki beberapa buku kerja yang terbuka, mengklik kanan atas X akan menutup buku kerja yang aktif.</p>
+                                    <p><img class="img-fluid" src="../excel/files/Workbook_files/image002.png" alt="Tutup Buku Kerja Excel"></p>
+                                    <p class="h5" id="BuatBukuKerjaBaru">
+                                        Buat Buku Kerja Baru</p>
+                                    <p>Terkadang Anda ingin memulai dari awal lagi. Untuk membuat buku kerja baru, jalankan langkah-langkah berikut.</p>
+                                    <ol>
+                                        <li>Pada tab File, klik Baru.</li>
+                                        <li>
+                                            <p>Klik Buku kerja kosong.</p>
+                                            <p><img class="img-fluid" src="../excel/files/Workbook_files/image003.png" alt="Buat Buku Kerja Excel Baru"></p>
+                                        </li>
+                                    </ol>
+                                    <p></p>
+                                    <p class="h5" id="MatikanlayarMulai">
+                                        Matikan layar Mulai</p>
+                                    <p>Saat Anda memulai Excel, ini menunjukkan layar mulai yang mencantumkan file dan templat Excel yang baru saja digunakan. Untuk melewati layar mulai dan selalu memulai dengan buku kerja kosong, jalankan langkah-langkah
+                                        berikut.
+                                    </p>
+                                    <ol>
+                                        <li>Pada tab File, klik Opsi.</li>
+                                        <li>
+                                            <p>Di bawah opsi Mulai, hapus centang 'Tampilkan layar Mulai saat aplikasi ini dimulai'.</p>
+                                            <p><img class="img-fluid" src="../excel/files/Workbook_files/image004.png" alt="Matikan layar Mulai"></p>
+                                        </li>
+                                        <li>Klik Oke.</li>
+                                    </ol>
+                                </section>
+
                             </div>
                         </div>
                     </div>
@@ -183,7 +237,8 @@
                         </h2>
                         <div id="flush-Worksheets" class="accordion-collapse collapse" aria-labelledby="Worksheets" data-bs-parent="#accordionDasar">
                             <div class="accordion-body">
-                                <a href="#">Zoom</a> | <a href="#">Split</a> | <a href="#">Freeze Panel</a> | <a href="#">Group Lembar Kerja</a> | <a href="#">Konsolidasi</a> | <a href="#">Lihat Beberapa Lembar Kerja</a> | <a href="#">Dapatkan Nama Lembar Kreja</a>                                | <a href="#">Cek Ejaan</a>
+                                <a href="#">Zoom</a> | <a href="#">Split</a> | <a href="#">Freeze Panel</a> | <a href="#">Group Lembar Kerja</a> | <a href="#">Konsolidasi</a> | <a href="#">Lihat
+                                    Beberapa Lembar Kerja</a> | <a href="#">Dapatkan Nama Lembar Kreja</a> | <a href="#">Cek Ejaan</a>
                             </div>
                         </div>
                     </div>
@@ -194,7 +249,9 @@
                         </h2>
                         <div id="flush-FormatSel" class="accordion-collapse collapse" aria-labelledby="FormatSel" data-bs-parent="#accordionDasar">
                             <div class="accordion-body">
-                                <a href="#">Tempat Desimal</a> | <a href="#">Pecahan</a> | <a href="#">Mata Uang Vs Akuntansi</a> | <a href="#">Teks ke Angka</a> | <a href="#">Angka ke Teks</a> | <a href="#">Kustom Format Angka</a> | <a href="#">Format Painter</a>                                | <a href="#">Sel Style</a> | <a href="#">Bungkus Teks</a> | <a href="#">Merge Sel</a> | <a href="#">Strikethrough</a> | <a href="#">Superskrip dan Subskrip</a> | <a href="#">Tanda Cek</a>
+                                <a href="#">Tempat Desimal</a> | <a href="#">Pecahan</a> | <a href="#">Mata Uang Vs
+                                    Akuntansi</a> | <a href="#">Teks ke Angka</a> | <a href="#">Angka ke Teks</a> | <a href="#">Kustom Format Angka</a> | <a href="#">Format Painter</a> | <a href="#">Sel
+                                    Style</a> | <a href="#">Bungkus Teks</a> | <a href="#">Merge Sel</a> | <a href="#">Strikethrough</a> | <a href="#">Superskrip dan Subskrip</a> | <a href="#">Tanda Cek</a>
                             </div>
                         </div>
                     </div>
@@ -216,7 +273,8 @@
                         </h2>
                         <div id="flush-Template" class="accordion-collapse collapse" aria-labelledby="Template" data-bs-parent="#accordionDasar">
                             <div class="accordion-body">
-                                <a href="#">Budget</a> | <a href="#">Kalender</a> | <a href="#">Liburan</a> | <a href="#">Perencana Makanan</a> | <a href="#">Faktur</a> | <a href="#">Faktur Otomatis</a> | <a href="#">Template Bawaan</a> | <a href="#">Lembar Waktu</a>                                | <a href="#">Kalkulator BMI</a>
+                                <a href="#">Budget</a> | <a href="#">Kalender</a> | <a href="#">Liburan</a> | <a href="#">Perencana Makanan</a> | <a href="#">Faktur</a> | <a href="#">Faktur
+                                    Otomatis</a> | <a href="#">Template Bawaan</a> | <a href="#">Lembar Waktu</a> | <a href="#">Kalkulator BMI</a>
                             </div>
                         </div>
                     </div>
@@ -227,7 +285,9 @@
                         </h2>
                         <div id="flush-ValidasiData" class="accordion-collapse collapse" aria-labelledby="ValidasiData" data-bs-parent="#accordionDasar">
                             <div class="accordion-body">
-                                <a href="#">Tolak Tanggal Tidak Valid</a> | <a href="#">Budget Limit</a> | <a href="#">Cegah Entri Duplikat</a> | <a href="#">Kode Produk</a> | <a href="#">Daftar Drop-Down</a> | <a href="#">Daftar Drop-Down Dependen</a>                                | <a href="#">Cm ke Inci | <a href="#">Kg ke Lbs</a>
+                                <a href="#">Tolak Tanggal Tidak Valid</a> | <a href="#">Budget Limit</a> | <a href="#">Cegah Entri Duplikat</a> | <a href="#">Kode Produk</a> | <a href="#">Daftar
+                                    Drop-Down</a> | <a href="#">Daftar Drop-Down Dependen</a> | <a href="#">Cm ke Inci |
+                                    <a href="#">Kg ke Lbs</a>
                             </div>
                         </div>
                     </div>
@@ -238,7 +298,8 @@
                         </h2>
                         <div id="flush-PintasanKeyboard" class="accordion-collapse collapse" aria-labelledby="PintasanKeyboard" data-bs-parent="#accordionDasar">
                             <div class="accordion-body">
-                                <a href="#">Tombol Fungsi</a> | <a href="#">Sisipkan Baris</a> | <a href="#">Save As</a> | <a href="#">Hapus Baris</a> | <a href="#">Kunci Scroll</a> | <a href="#">Poin Bullet</a> | <a href="#">Line Break</a> | <a href="#">Tampilkan Rumus</a>
+                                <a href="#">Tombol Fungsi</a> | <a href="#">Sisipkan Baris</a> | <a href="#">Save As</a> | <a href="#">Hapus Baris</a> | <a href="#">Kunci Scroll</a> | <a href="#">Poin
+                                    Bullet</a> | <a href="#">Line Break</a> | <a href="#">Tampilkan Rumus</a>
                             </div>
                         </div>
                     </div>
@@ -249,7 +310,8 @@
                         </h2>
                         <div id="flush-Print" class="accordion-collapse collapse" aria-labelledby="Print" data-bs-parent="#accordionDasar">
                             <div class="accordion-body">
-                                <a href="#">Tampilan Buku Kerja</a> | <a href="#">Page Breaks</a> | <a href="#">Header Dan Footer</a> | <a href="#">Nomor Halaman</a> | <a href="#">Print Judul</a> | <a href="#">Pusat Di Halaman</a> | <a href="#">Print Gridlines & Headings</a>                                | <a href="#">Print Area</a>
+                                <a href="#">Tampilan Buku Kerja</a> | <a href="#">Page Breaks</a> | <a href="#">Header
+                                    Dan Footer</a> | <a href="#">Nomor Halaman</a> | <a href="#">Print Judul</a> | <a href="#">Pusat Di Halaman</a> | <a href="#">Print Gridlines & Headings</a> | <a href="#">Print Area</a>
                             </div>
                         </div>
                     </div>
@@ -260,7 +322,8 @@
                         </h2>
                         <div id="flush-Share" class="accordion-collapse collapse" aria-labelledby="Share" data-bs-parent="#accordionDasar">
                             <div class="accordion-body">
-                                <a href="#">Sematkan</a> | <a href="#">PDF</a>| <a href="#">Berbagi Buku Kerja</a> | <a href="#">Onedrive</a> | <a href="#">Online<a/a> | <a href="#">Impor Data Akses</a> | <a href="#">Kueri Microsoft</a> | <a href="#">Impor/Ekspor File Teks</a>                                | <a href="#">XML</a>
+                                <a href="#">Sematkan</a> | <a href="#">PDF</a>| <a href="#">Berbagi Buku Kerja</a> | <a href="#">Onedrive</a> | <a href="#">Online<a/a> | <a href="#">Impor Data Akses</a> |
+                                <a href="#">Kueri Microsoft</a> | <a href="#">Impor/Ekspor File Teks</a> | <a href="#">XML</a>
                             </div>
                         </div>
                     </div>
@@ -271,7 +334,9 @@
                         </h2>
                         <div id="flush-Protect" class="accordion-collapse collapse" aria-labelledby="Protect" data-bs-parent="#accordionDasar">
                             <div class="accordion-body">
-                                <a href="#">Protect Buku Kerja</a> | <a href="#">Protect Sheet</a> | <a href="#">Kunci Sel</a> | <a href="#">Buku Kerja Read-Only</a> | <a href="#">Tandai Sebagai Final</a>
+                                <a href="#">Protect Buku Kerja</a> | <a href="#">Protect Sheet</a> | <a href="#">Kunci
+                                    Sel</a> | <a href="#">Buku Kerja Read-Only</a> | <a href="#">Tandai Sebagai
+                                    Final</a>
                             </div>
                         </div>
                     </div>

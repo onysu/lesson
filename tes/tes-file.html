@@ -1,27 +1,63 @@
-<section>
-    <p class="h4">Hitung Sel Kosong/Tidak Kosong <span class="span-text">(Count Blank/Nonblank Cells)</span></p>
-    <p>Contoh ini menunjukkan Anda bagaimana untuk menghitung kosong dan nonblank sel di Excel.
-    </p>
-    <ol>
-        <li>
-            <p>Fungsi <strong>COUNTBLANK</strong> di bawah ini menghitung jumlah sel kosong dalam Range <strong>A1:A7</strong>.</p>
-            <p><img class="img-fluid" src="../excel/files/CountBlankNonblankCells_files/image001.png" alt="Fungsi COUNTBLANK di Excel"></p>
-        </li>
-        <li>
-            <p>Fungsi <strong>COUNTA</strong> di bawah ini menghitung jumlah sel yang tidak kosong dalam Range <strong>A1:A7</strong>. <strong>COUNTA</strong> adalah singkatan dari hitung semua.</p>
-            <p><img class="img-fluid" src="../excel/files/CountBlankNonblankCells_files/image002.png" alt="Fungsi COUNTA di Excel"></p>
-        </li>
-        <li>
-            <p>Fungsi <strong>COUNTIFS</strong> di bawah ini menghitung jumlah sel kosong dalam Range <strong>B1:B7</strong> dengan satu kriteria tambahan (biru).
-            </p>
-            <p><img class="img-fluid" src="../excel/files/CountBlankNonblankCells_files/image003.png" alt="Hitung Sel Kosong menggunakan COUNTIFS"></p>
-            <p class="info">Penjelasan: fungsi <strong>COUNTIFS</strong> (dengan huruf <strong>S</strong> di akhir) di Excel menghitung sel berdasarkan dua atau lebih kriteria. Gunakan string kosong (dua tanda kutip ganda tanpa apa pun di antaranya) untuk menemukan sel
-                kosong.
-            </p>
-        </li>
-        <li>
-            <p>Fungsi <strong>COUNTIFS</strong> di bawah ini menghitung jumlah sel tidak kosong dalam Range <strong>B1:B7</strong> dengan satu kriteria tambahan (merah muda).</p>
-            <p><img class="img-fluid" src="../excel/files/CountBlankNonblankCells_files/image004.png" alt="Hitung Sel Nonblank menggunakan COUNTIFS"></p>
-        </li>
-    </ol>
-</section>
+<p class="h4">Jumlah</p>
+<p><a href="#JumlahRange">Jumlah Range</a> | <a href="#JumlahkanSeluruhKolom">Jumlahkan Seluruh Kolom</a> | <a href="#JumlahSelyangTidakBersebelahan">Jumlahkan Sel yang Tidak Bersebelahan</a> | <a href="#JumlahOtomatis">JumlahOtomatis</a> | <a href="#JumlahkanSetiapBarisKe-N">Jumlahkan Setiap Baris Ke-N</a>    | <a href="#JumlahkanBilanganTerbesar">Jumlahkan Bilangan Terbesar</a> | <a href="#JumlahRangedenganKesalahan">Jumlah Range dengan Kesalahan</a></p>
+
+<p>Gunakan fungsi <strong>SUM</strong> di Excel untuk menjumlahkan Range sel, seluruh kolom, atau sel yang tidak bersebelahan. Untuk membuat rumus SUM yang mengagumkan, gabungkan fungsi <strong>SUM</strong> dengan fungsi Excel lainnya.</p>
+
+<p class="h5" id="JumlahRange">
+    Jumlah Range</p>
+<p>Sebagian besar waktu, Anda akan menggunakan fungsi <strong>SUM</strong> di Excel untuk menjumlahkan Range sel.</p>
+<p><img class="img-fluid" src="../excel/files/Sum_files/image001.png" alt="Jumlah Range"></p>
+
+<p class="h5" id="JumlahkanSeluruhKolom">
+    Jumlahkan Seluruh Kolom</p>
+<p>Anda juga dapat menggunakan fungsi <strong>SUM</strong> di Excel untuk menjumlahkan seluruh kolom.</p>
+<p><img class="img-fluid" src="../excel/files/Sum_files/image002.png" alt="Jumlahkan Seluruh Kolom"></p>
+<p><img class="img-fluid" src="../excel/files/Sum_files/image003.png" alt="Sel A99"></p>
+<p class="info"><strong>Catatan:</strong> Anda juga dapat menggunakan fungsi <strong>SUM</strong> di Excel untuk menjumlahkan seluruh baris. Misalnya, =<strong>SUM</strong>(5:5) menjumlahkan semua nilai di baris ke-5.</p>
+
+<p class="h5" id="JumlahSelyangTidakBersebelahan">
+    Jumlah Sel yang Tidak Bersebelahan.</p>
+<p>Anda juga dapat menggunakan fungsi <strong>SUM</strong> di Excel untuk menjumlahkan sel yang tidak bersebelahan. Tidak bersebelahan berarti tidak bersebelahan.</p>
+<p><img class="img-fluid" src="../excel/files/Sum_files/image004.png" alt="Jumlah Sel yang Tidak Bersebelahan"></p>
+<p class="info"><strong>Catatan:</strong> =A3+A5+A8 menghasilkan hasil yang sama persis!</p>
+
+<p class="h5" id="JumlahOtomatis">
+    JumlahOtomatis</p>
+<p>Gunakan JumlahOtomatis atau tekan <kbd>Alt</kbd> <kbd>+</kbd> <kbd>=</kbd> untuk menjumlahkan kolom atau baris angka dengan cepat.</p>
+<ol>
+    <li>
+        <p>Pertama, pilih sel di bawah kolom angka (atau di sebelah deretan angka) yang ingin Anda jumlahkan.</p>
+        <p><img class="img-fluid" src="../excel/files/Sum_files/image005.png" alt="Pilih Sel"></p>
+    </li>
+    <li>
+        <p>Pada tab Beranda, dalam grup Pengeditan, klik JumlahOtomatis (atau tekan <kbd>Alt</kbd> <kbd>+</kbd> <kbd>=</kbd>).</p>
+        <p><img class="img-fluid" src="../excel/files/Sum_files/image006.png" alt="Klik JumlahOtomatis"></p>
+    </li>
+    <li>
+        <p>Tekan Enter.</p>
+        <p><img class="img-fluid" src="../excel/files/Sum_files/image007.png" alt=JumlahOtomatis></p>
+    </li>
+</ol>
+
+<p class="h5" id="JumlahkanSetiapBarisKe-N">
+    Jumlahkan Setiap Baris Ke-N</p>
+<p>Rumus <strong>SUM</strong> di bawah ini menggunakan <strong>SUM</strong>, <strong>MOD</strong> dan <strong>ROW</strong> untuk
+    <a href="https://www.excel-easy.com/examples/sum-every-nth-row.html">menjumlahkan
+    setiap baris ke-n</a>. Ubah 3 menjadi 4 untuk menjumlahkan setiap baris ke-4, menjadi 5 untuk menjumlahkan setiap baris ke-5, dst.</p>
+<p><img class="img-fluid" src="../excel/files/Sum_files/image008.png" alt="Jumlahkan Setiap Baris Ke-N"></p>
+<p class="info"><strong>Catatan:</strong> bilah rumus menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal <strong>{}</strong>. Jangan mengetik ini sendiri. Untuk memasukkan rumus array, selesaikan dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
+
+<p class="h5" id="JumlahkanBilanganTerbesar">
+    Jumlahkan Bilangan Terbesar</p>
+<p>Rumus <strong>SUM</strong> di bawah ini menggunakan <strong>SUM</strong> dan <strong>LARGE</strong> untuk <a href="https://www.excel-easy.com/examples/sum-largest-numbers.html">menjumlahkan
+    angka terbesar</a> dalam suatu Range. Ubah {1,2,3,4} menjadi {1,2,3,4,5} untuk menjumlahkan 5 bilangan terbesar.</p>
+<p><img class="img-fluid" src="../excel/files/Sum_files/image009.png" alt="Jumlahkan Bilangan Terbesar"></p>
+<p class="info"><strong>Catatan:</strong> =<strong>LARGE</strong>(A1:A11,2) cukup mengembalikan angka terbesar kedua.</p>
+
+<p class="h5" id="JumlahRangedenganKesalahan">
+    Jumlah Range dengan Kesalahan</p>
+<p>Rumus SUM di bawah ini menggunakan <strong>SUM</strong> dan <strong>IFERROR</strong> untuk
+    <a href="https://www.excel-easy.com/examples/sum-range-with-errors.html">menjumlahkan
+    Range dengan kesalahan</a>. Anda juga dapat menggunakan <a href="https://www.excel-easy.com/examples/aggregate.html">fungsi <strong>AGGREGATE</strong></a> di Excel untuk menjumlahkan Range dengan kesalahan.</p>
+<p><img class="img-fluid" src="../excel/files/Sum_files/image010.png" alt="Jumlah Range dengan Kesalahan"></p>
+<p class="info"><strong>Catatan:</strong> fungsi <strong>SUM</strong> di Excel secara otomatis mengabaikan nilai teks.</p>

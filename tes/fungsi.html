@@ -64,7 +64,8 @@
             <nav class="nav nav-underline" aria-label="Navigasi kedua">
                 <!-- <a class="nav-link fw-light" aria-current="page" href="index.html">Beranda</a> -->
                 <a class="nav-link fw-light" href="index.html">Excel</a>
-                <a class="nav-link fw-light" href="pendahuluan.html">Pendahuluan <span style="color: orange;">+</span></a>
+                <a class="nav-link fw-light" href="pendahuluan.html">Pendahuluan <span
+                        style="color: orange;">+</span></a>
                 <a class="nav-link fw-light" href="dasar.html">Dasar-dasar</a>
                 <a class="nav-link fw-bold active" href="fungsi.html">Fungsi</a>
                 <a class="nav-link fw-light" href="analisisdata.html">Analisis data</a>
@@ -79,7 +80,8 @@
             <!-- intro -->
             <div class="bd-intro">
                 <p class="h2">Fungsi</p>
-                <p>Jika Anda baru mengenal fungsi di Excel, kami menyarankan Anda untuk membaca pengantar kami tentang <a href="#">Rumus dan Fungsi</a> terlebih dahulu.
+                <p>Jika Anda baru mengenal fungsi di Excel, kami menyarankan Anda untuk membaca pengantar kami tentang
+                    <a href="#">Rumus dan Fungsi</a> terlebih dahulu.
                 </p>
             </div>
             <!-- /intro -->
@@ -89,7 +91,27 @@
                 <strong class="d-block h6 my-2 pb-2 border-bottom">Di halaman ini</strong>
                 <nav id="TableOfContents">
                     <ul>
-                        <li><a href="#CountandSum">Count dan Sum</a></li>
+                        <li><a href="#CountandSum">Count dan Sum</a>
+                            <ul>
+                                <li>
+                                    <a href="#count">Count</a></li>
+                                <li>
+                                    <a href="#countif">Countif</a>
+                                </li>
+                                <li>
+                                    <a href="#countifs">Countifs</a>
+                                </li>
+                                <li>
+                                    <a href="#sum">Sum</a>
+                                </li>
+                                <li>
+                                    <a href="#sumif">Sumif</a>
+                                </li>
+                                <li>
+                                    <a href="#sumifs">Sumifs</a>
+                                </li>
+                            </ul>
+                        </li>
                         <li><a href="#Logika">Logika</a></li>
                         <li><a href="#ReferensiSel">Referensi Sel</a></li>
                         <li><a href="#TanggaldanWaktu">Tanggal & Waktu</a></li>
@@ -118,79 +140,354 @@
                             <div class="accordion-body">
                                 <!-- <a href="#">Count <span class="span-text">(Hitung)</span></a> | <a href="#">Hitung Sel Kosong/Tidak Kosong</a> | <a href="#">Hitung Karakter</a> | <a href="#">Tidak Sama Dengan</a> | <a href="#">Hitung Sel dengan Teks</a> | <a href="#">Jumlah</a> | <a href="#">Total Berjalan</a> | <a href="#">SUMIF</a> | <a href="#">SUMPRODUCT</a> -->
 
+                                <!-- Fungsi COUNT dan SUM -->
                                 <section>
                                     <p class="h4">Fungsi COUNT dan SUM</p>
                                     <p><a href="#count">COUNT</a> | <a href="#countif">COUNTIF</a> | <a href="#countifs">COUNTIFS</a> | <a href="#sum">SUM</a> | <a href="#sumif">SUMIF</a> | <a href="#sumifs">SUMIFS</a></p>
-                                    <p>Fungsi yang paling banyak digunakan di Excel adalah fungsi COUNT dan SUM. Anda dapat menghitung dan menjumlahkan berdasarkan satu kriteria atau beberapa kriteria.</p>
-                                    <p class="h5" id="count">
-                                        COUNT</p>
-                                    <p>Untuk menghitung jumlah sel yang berisi angka, gunakan fungsi COUNT.</p>
-                                    <p><img class="img-fluid" src="../excel/files/CountandSumFunctions_files/image001.png" alt="Hitung Fungsi"></p>
-                                    <p class="info"><strong>Catatan:</strong> untuk <a href="#CountBlankNonblankCells">menghitung sel kosong dan tidak kosong</a> di Excel, gunakan COUNTBLANK dan COUNTA.</p>
-                                    <p>
-                                        <details id="CountBlankNonblankCells">
-                                            <summary>selengkapnya Hitung Sel Kosong/Tidak Kosong (Count Blank/Nonblank Cells)</summary>
-                                            <section>
-                                                <p class="h4">Hitung Sel Kosong/Tidak Kosong <span class="span-text">(Count Blank/Nonblank Cells)</span></p>
-                                                <p>Contoh ini menunjukkan Anda bagaimana untuk menghitung kosong dan nonblank sel di Excel.
-                                                </p>
-                                                <ol>
-                                                    <li>
-                                                        <p>Fungsi <strong>COUNTBLANK</strong> di bawah ini menghitung jumlah sel kosong dalam Range <strong>A1:A7</strong>.</p>
-                                                        <p><img class="img-fluid" src="../excel/files/CountBlankNonblankCells_files/image001.png" alt="Fungsi COUNTBLANK di Excel"></p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Fungsi <strong>COUNTA</strong> di bawah ini menghitung jumlah sel yang tidak kosong dalam Range <strong>A1:A7</strong>. <strong>COUNTA</strong> adalah singkatan dari hitung semua.</p>
-                                                        <p><img class="img-fluid" src="../excel/files/CountBlankNonblankCells_files/image002.png" alt="Fungsi COUNTA di Excel"></p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Fungsi <strong>COUNTIFS</strong> di bawah ini menghitung jumlah sel kosong dalam Range <strong>B1:B7</strong> dengan satu kriteria tambahan (biru).
-                                                        </p>
-                                                        <p><img class="img-fluid" src="../excel/files/CountBlankNonblankCells_files/image003.png" alt="Hitung Sel Kosong menggunakan COUNTIFS"></p>
-                                                        <p class="info">Penjelasan: fungsi <strong>COUNTIFS</strong> (dengan huruf <strong>S</strong> di akhir) di Excel menghitung sel berdasarkan dua atau lebih kriteria. Gunakan string kosong (dua tanda kutip ganda tanpa
-                                                            apa pun di antaranya) untuk menemukan sel kosong.
-                                                        </p>
-                                                    </li>
-                                                    <li>
-                                                        <p>Fungsi <strong>COUNTIFS</strong> di bawah ini menghitung jumlah sel tidak kosong dalam Range <strong>B1:B7</strong> dengan satu kriteria tambahan (merah muda).</p>
-                                                        <p><img class="img-fluid" src="../excel/files/CountBlankNonblankCells_files/image004.png" alt="Hitung Sel Nonblank menggunakan COUNTIFS"></p>
-                                                    </li>
-                                                </ol>
-                                            </section>
-                                        </details>
-                                    </p>
 
+                                    <p>
+                                        <strong class="d-block h6 text-warning p-0 m-0">Download file latihan</strong>
+                                        <a href="../excel/files/bahan/count-sum-functions.xlsx" class="fw-light p-0 m-0">count-sum-functions.xlsx</a>
+                                    </p>
+                                </section>
+
+                                <!-- COUNT -->
+                                <section>
+                                    <p>Fungsi yang paling banyak digunakan di Excel adalah fungsi <strong>COUNT</strong> dan <strong>SUM</strong>. Anda dapat menghitung dan menjumlahkan berdasarkan satu kriteria atau beberapa kriteria.
+                                    </p>
+                                    <p class="h5" id="count">COUNT</p>
+                                    <p>Untuk menghitung jumlah sel yang berisi angka, gunakan fungsi <strong>COUNT</strong>.</p>
+                                    <p><img class="img-fluid" src="../excel/files/CountandSumFunctions_files/image001.png" alt="Hitung Fungsi"></p>
+                                    <p class="info"><strong>Catatan:</strong> untuk <a href="#CountBlankNonblankCells">Hitung Sel Kosong/Tidak Kosong <span
+                                                    class="span-text">(Count Blank/Nonblank Cells)</a> di Excel, gunakan <strong>COUNTBLANK</strong> dan <strong>COUNTA</strong>.</p>
+                                    <details id="CountBlankNonblankCells">
+                                        <summary class="text-primary mb-3">Contoh Penggunaan Hitung Sel Kosong/Tidak Kosong</summary>
+                                        <p class="h4">Hitung Sel Kosong/Tidak Kosong <span class="span-text">(Count Blank/Nonblank Cells)</span></p>
+                                        <p>Contoh ini menunjukkan Anda bagaimana untuk menghitung kosong dan nonblank sel di Excel.</p>
+                                        <ol>
+                                            <li>
+                                                <p>Fungsi <strong>COUNTBLANK</strong> di bawah ini menghitung jumlah sel kosong dalam Range <strong>A1:A7</strong>.</p>
+                                                <p><img class="img-fluid" src="../excel/files/CountBlankNonblankCells_files/image001.png" alt="Fungsi COUNTBLANK di Excel"></p>
+                                            </li>
+                                            <li>
+                                                <p>Fungsi <strong>COUNTA</strong> di bawah ini menghitung jumlah sel yang tidak kosong dalam Range <strong>A1:A7</strong>.
+                                                    <strong>COUNTA</strong> adalah singkatan dari hitung semua.
+                                                </p>
+                                                <p><img class="img-fluid" src="../excel/files/CountBlankNonblankCells_files/image002.png" alt="Fungsi COUNTA di Excel"></p>
+                                            </li>
+                                            <li>
+                                                <p>Fungsi <strong>COUNTIFS</strong> di bawah ini menghitung jumlah sel kosong dalam Range <strong>B1:B7</strong> dengan satu kriteria tambahan (biru).
+                                                </p>
+                                                <p><img class="img-fluid" src="../excel/files/CountBlankNonblankCells_files/image003.png" alt="Hitung Sel Kosong menggunakan COUNTIFS"></p>
+                                                <p class="info">Penjelasan: fungsi <strong>COUNTIFS</strong> (dengan huruf <strong>S</strong> di akhir) di Excel menghitung sel berdasarkan dua atau lebih kriteria. Gunakan string kosong (dua tanda kutip ganda tanpa apa
+                                                    pun di antaranya) untuk menemukan sel kosong.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>Fungsi <strong>COUNTIFS</strong> di bawah ini menghitung jumlah sel tidak kosong dalam Range <strong>B1:B7</strong> dengan satu kriteria tambahan (merah muda).</p>
+                                                <p><img class="img-fluid" src="../excel/files/CountBlankNonblankCells_files/image004.png" alt="Hitung Sel Nonblank menggunakan COUNTIFS"></p>
+                                            </li>
+                                        </ol>
+                                    </details>
+                                </section>
+
+                                <!-- COUNTIF -->
+                                <section>
                                     <p class="h5" id="countif">
                                         COUNTIF</p>
-                                    <p>Untuk menghitung sel berdasarkan satu kriteria (misalnya, lebih besar dari 9), gunakan fungsi COUNTIF berikut.</p>
+                                    <p>Untuk menghitung sel berdasarkan satu kriteria (misalnya, lebih besar dari 9), gunakan fungsi <strong>COUNTIF</strong> berikut.</p>
                                     <p><img class="img-fluid" src="../excel/files/CountandSumFunctions_files/image002.png" alt="Fungsi Hitung"></p>
-                                    <p class="info"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/countif.html">fungsi COUNTIF</a> untuk lebih banyak contoh.</p>
+                                    <p class="info"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="#FungsiCOUNTIF">fungsi COUNTIF</a> untuk lebih banyak contoh.</p>
+                                    <details id="FungsiCOUNTIF">
+                                        <summary class="text-primary mb-3">Contoh Penggunaan Fungsi COUNTIF</summary>
+                                        <p class="h4">COUNTIF</p>
+                                        <p><a href="#KriteriaNumerik">Kriteria Numerik</a> | <a href="#TrikTeks">Trik Teks</a> | <a href="#CountBoolean">Count Boolean</a> | <a href="#CountErrors">Count Errors</a> | <a href="#AndKriteria">And Kriteria</a>                                            |
+                                            <a href="#OrKriteria">Or Kriteria</a> | <a href="#LebihlanjuttentangCountif">Lebih lanjut tentang Countif</a> | <a href="#CountMagic">Count Magic</a></p>
+                                        <p>
+                                            <strong class="d-block h6 text-warning p-0 m-0">Download file latihan</strong>
+                                            <a href="../excel/files/bahan/countif.xlsx" class="fw-light p-0 m-0">countif.xlsx</a>
+                                        </p>
+                                        <p>Fungsi <strong>COUNTIF</strong> yang kuat di Excel menghitung sel berdasarkan satu kriteria. Halaman ini berisi banyak contoh <strong>COUNTIF</strong> yang mudah diikuti.</p>
+                                        <p class="h5" id="KriteriaNumerik">
+                                            Kriteria Numerik</p>
+                                        <p>Gunakan fungsi <strong>COUNTIF</strong> di Excel untuk menghitung sel yang sama dengan nilai, menghitung sel yang lebih besar atau sama dengan nilai, dll.</p>
+                                        <ol>
+                                            <li>
+                                                <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang sama dengan 20.</p>
+                                                <p><img class="img-fluid" src="../excel/files/Countif_files/image001.png" alt="Fungsi COUNTIF sederhana di Excel"></p>
+                                            </li>
+                                            <li>
+                                                <p>Fungsi <strong>COUNTIF</strong> berikut memberikan hasil yang sama persis.</p>
+                                                <p><img class="img-fluid" src="../excel/files/Countif_files/image002.png" alt="Hitung Sel Sama dengan Nilai Sel"></p>
+                                            </li>
+                                            <li>
+                                                <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang lebih besar atau sama dengan 10.</p>
+                                                <p><img class="img-fluid" src="../excel/files/Countif_files/image003.png" alt="Hitung Sel Lebih Besar dari Atau Sama dengan Nilai"></p>
+                                            </li>
+                                            <li>
+                                                <p>Fungsi <strong>COUNTIF</strong> berikut memberikan hasil yang sama persis.</p>
+                                                <p><img class="img-fluid" src="../excel/files/Countif_files/image004.png" alt="Fungsi COUNTIF dan Operator Ampersand">
+                                                </p>
+                                                <p class="info"><strong>Penjelasan:</strong> operator &amp; menggabungkan simbol 'lebih besar dari atau sama dengan' dan nilai di sel C1.</p>
+                                            </li>
+                                            <li>
+                                                <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang tidak sama dengan 7.</p>
+                                                <p><img class="img-fluid" src="../excel/files/Countif_files/image005.png" alt="Hitung Sel Tidak Sama dengan Nilai"></p>
+                                            </li>
+                                            <li>
+                                                <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang sama dengan 3 atau 7.</p>
+                                                <p><img class="img-fluid" src="../excel/files/Countif_files/image006.png" alt="Dua fungsi COUNTIF di Excel"></p>
+                                            </li>
+                                        </ol>
+                                        <p class="h5" id="TrikTeks">
+                                            Trik Teks</p>
+                                        <p>Gunakan fungsi <strong>COUNTIF</strong> di Excel dan beberapa trik untuk menghitung sel yang berisi teks tertentu. Selalu sertakan teks dalam tanda kutip ganda.</p>
+                                        <ol>
+                                            <li>
+                                                <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang berisi persis bintang.</p>
+                                                <p><img class="img-fluid" src="../excel/files/Countif_files/image007.png" alt="Fungsi COUNTIF di Excel, Tepat"></p>
+                                            </li>
+                                            <li>
+                                                <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang berisi persis bintang + 1 karakter. Tanda tanya <strong>(?)</strong> cocok dengan tepat satu karakter.</p>
+                                                <p><img class="img-fluid" src="../excel/files/Countif_files/image008.png" alt="Fungsi COUNTIF, Tanda Tanya"></p>
+                                            </li>
+                                            <li>
+                                                <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang berisi persis bintang + serangkaian karakter nol atau lebih. Tanda bintang <strong>(*)</strong> cocok dengan serangkaian karakter nol
+                                                    atau lebih.
+                                                </p>
+                                                <p><img class="img-fluid" src="../excel/files/Countif_files/image009.png" alt="Fungsi COUNTIF, Asterisk"></p>
+                                            </li>
+                                            <li>
+                                                <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang mengandung bintang dengan cara apa pun.
+                                                </p>
+                                                <p><img class="img-fluid" src="../excel/files/Countif_files/image010.png" alt="Hitung Semua Kejadian"></p>
+                                            </li>
+                                            <li>
+                                                <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang berisi teks.</p>
+                                                <p><img class="img-fluid" src="../excel/files/Countif_files/image011.png" alt="Hitung Sel Yang Mengandung Teks"></p>
+                                            </li>
+                                        </ol>
+                                        <p class="h5" id="CountBoolean">
+                                            Count Boolean</p>
+                                        <p>Gunakan fungsi <strong>COUNTIF</strong> di Excel untuk menghitung nilai Boolean (<strong>TRUE</strong> atau
+                                            <strong>FALSE</strong>).</p>
+                                        <ol>
+                                            <li>
+                                                <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang berisi Boolean <strong>TRUE</strong>.</p>
+                                                <p><img class="img-fluid" src="../excel/files/Countif_files/image012.png" alt="Hitung BENAR"></p>
+                                            </li>
+                                            <li>
+                                                <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang berisi Boolean FALSE.</p>
+                                                <p><img class="img-fluid" src="../excel/files/Countif_files/image013.png" alt="Hitung SALAH"></p>
+                                            </li>
+                                        </ol>
+                                        <p class="h5" id="CountErrors">
+                                            Count Errors</p>
+                                        <p>Gunakan fungsi <strong>COUNTIF</strong> di Excel untuk menghitung kesalahan tertentu.
+                                        </p>
+                                        <ol>
+                                            <li>
+                                                <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang berisi <strong>#NAME?</strong> kesalahan.
+                                                </p>
+                                                <p><img class="img-fluid" src="../excel/files/Countif_files/image014.png" alt="Hitung #Nama?  kesalahan"></p>
+                                            </li>
+                                            <li>
+                                                <p>Rumus array di bawah ini menghitung jumlah total kesalahan dalam Range sel.</p>
+                                                <p><img class="img-fluid" src="../excel/files/Countif_files/image015.png" alt="Hitung Kesalahan"></p>
+                                                <p class="info"><strong>Catatan:</strong> selesaikan rumus array dengan menekan
+                                                    <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>. Excel menambahkan kurung kurawal <strong>{}</strong>. Kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/count-errors.html">Menghitung Kesalahan</a>                                                    untuk petunjuk terperinci tentang cara membuat rumus array ini.
+                                                </p>
+                                            </li>
+                                        </ol>
+                                        <p class="h5" id="AndKriteria">
+                                            And Kriteria</p>
+                                        <p>Menghitung dengan kriteria Dan di Excel itu mudah. Fungsi <strong>COUNTIFS</strong> (dengan huruf <strong>S</strong> di akhir) di Excel menghitung sel berdasarkan dua atau lebih kriteria.</p>
+                                        <p>Misalnya, untuk menghitung jumlah baris yang berisi Google dan Stanford, cukup gunakan fungsi
+                                            <strong>COUNTIFS</strong>.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Countif_files/image016.png" alt="Fungsi COUNTIFS di Excel"></p>
+                                        <p class="h5" id="OrKriteria">
+                                            Or Kriteria</p>
+                                        <p>Menghitung dengan kriteria <strong>Or</strong> di Excel bisa jadi rumit.</p>
+                                        <ol>
+                                            <li>
+                                                <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang berisi Google atau Facebook (satu kolom). Tidak ada ilmu roket sejauh ini.</p>
+                                                <p><img class="img-fluid" src="../excel/files/Countif_files/image017.png" alt="Sederhana Atau Kriteria"></p>
+                                            </li>
+                                            <li>
+                                                <p>Namun, jika Anda ingin menghitung jumlah baris yang berisi Google atau Stanford (dua kolom), Anda tidak bisa begitu saja menggunakan fungsi <strong>COUNTIF</strong> dua kali (lihat gambar di bawah).</p>
+                                                <p><img class="img-fluid" src="../excel/files/Countif_files/image018.png" alt="Formula yang salah"></p>
+                                                <p class="info"><strong>Catatan:</strong> baris yang berisi Google dan Stanford dihitung dua kali, tetapi seharusnya hanya dihitung sekali. 4 adalah jawaban yang kita cari.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>Rumus array di bawah ini berhasil.</p>
+                                                <p><img class="img-fluid" src="../excel/files/Countif_files/image019.png" alt="Hitung dengan Atau Kriteria di Excel">
+                                                </p>
+                                                <p class="info"><strong>Catatan:</strong> selesaikan rumus array dengan menekan
+                                                    <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>. Excel menambahkan kurung kurawal <strong>{}</strong>. Kunjungi halaman kami tentang
+                                                    <a href="https://www.excel-easy.com/examples/count-with-or-criteria.html">Menghitung dengan Atau Kriteria</a> untuk instruksi terperinci tentang cara membuat rumus array ini.</p>
+                                            </li>
+                                        </ol>
+                                        <p class="h5" id="LebihlanjuttentangCountif">
+                                            Lebih lanjut tentang Countif</p>
+                                        <p>Fungsi <strong>COUNTIF</strong> adalah fungsi yang hebat. Mari kita lihat beberapa contoh keren lainnya.</p>
+                                        <ol>
+                                            <li>
+                                                <p>Fungsi <strong>COUNTIF</strong> di bawah ini menggunakan <a href="https://www.excel-easy.com/examples/named-range.html">Range bernama</a>. Range bernama Ages mengacu pada Range
+                                                    <strong>A1:A6</strong>.</p>
+                                                <p><img class="img-fluid" src="../excel/files/Countif_files/image020.png" alt="COUNTIF dan Range Bernama"></p>
+                                            </li>
+                                            <li>
+                                                <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang kurang dari rata-rata usia (32,2).</p>
+                                                <p><img class="img-fluid" src="../excel/files/Countif_files/image021.png" alt="COUNTIF dan RATA-RATA"></p>
+                                            </li>
+                                            <li>
+                                                <p>Untuk menghitung sel di antara dua angka, gunakan fungsi <strong>COUNTIFS</strong> (dengan huruf
+                                                    <strong>S</strong> di akhir).</p>
+                                                <p><img class="img-fluid" src="../excel/files/Countif_files/image022.png" alt="Hitung Sel Antara Dua Angka"></p>
+                                            </li>
+                                            <li>
+                                                <p>Gunakan fungsi <strong>COUNTIF</strong> untuk menghitung berapa kali setiap nilai muncul dalam Range bernama Ages.
+                                                </p>
+                                                <p><img class="img-fluid" src="../excel/files/Countif_files/image023.png" alt="Hitung Berapa Kali Setiap Nilai Terjadi">
+                                                </p>
+                                                <p class="info"><strong>Catatan:</strong> sel <strong>B2</strong> berisi rumus =<strong>COUNTIF</strong>(Usia,A2), sel
+                                                    <strong>B3</strong> =<strong>COUNTIF</strong>(Usia,A3), dll.</p>
+                                            </li>
+                                            <li>
+                                                <p>Tambahkan <a href="https://www.excel-easy.com/examples/if.html">fungsi IF</a> untuk menemukan duplikatnya.</p>
+                                                <p><img class="img-fluid" src="../excel/files/Countif_files/image024.png" alt="Gunakan COUNTIF untuk Menemukan Duplikat"></p>
+                                                <p><strong>Tip:</strong> gunakan <strong>COUNTIF</strong> dan pemformatan bersyarat untuk <a href="https://www.excel-easy.com/examples/find-duplicates.html">menemukan dan menyorot duplikat</a> di Excel.</p>
+                                            </li>
+                                        </ol>
+                                        <p class="h5" id="CountMagic">
+                                            Count Magic</p>
+                                        <p>Fungsi <strong>COUNTIF</strong> tidak dapat menghitung berapa kali kata tertentu muncul dalam sel atau Range sel. Yang kita butuhkan hanyalah sedikit sihir!</p>
+                                        <ol>
+                                            <li>
+                                                <p>Rumus di bawah ini menghitung berapa kali kata &quot;dog&quot; muncul di sel <strong>A1</strong>.</p>
+                                                <p><img class="img-fluid" src="../excel/files/Countif_files/image025.png" alt="Hitung Berapa Kali Kata Tertentu Terjadi di Sel"></p>
+                                            </li>
+                                            <li>
+                                                <p>Rumus di bawah ini menghitung berapa kali kata &quot;dog&quot; muncul dalam Range <strong>A1:A2</strong>.</p>
+                                                <p><img class="img-fluid" src="../excel/files/Countif_files/image026.png" alt="Hitung Berapa Kali Kata Tertentu Terjadi dalam Range"></p>
+                                                <p class="info"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/count-words.html">menghitung kata</a> untuk mempelajari lebih lanjut tentang rumus ini.</p>
+                                            </li>
+                                        </ol>
+                                    </details>
+                                </section>
+
+                                <!-- COUNTIFS -->
+                                <section>
                                     <p class="h5" id="countifs">
                                         COUNTIFS</p>
-                                    <p>Untuk menghitung baris berdasarkan beberapa kriteria (misalnya, hijau dan lebih besar dari 9), gunakan fungsi COUNTIFS berikut.</p>
+                                    <p>Untuk menghitung baris berdasarkan beberapa kriteria (misalnya, hijau dan lebih besar dari 9, gunakan fungsi <strong>COUNTIFS</strong> berikut.</p>
                                     <p><img class="img-fluid" src="../excel/files/CountandSumFunctions_files/image003.png" alt="Fungsi Hitung"></p>
+                                </section>
+
+                                <!-- SUM -->
+                                <section>
                                     <p class="h5" id="sum">
                                         SUM</p>
-                                    <p>Untuk menjumlahkan rentang sel, gunakan fungsi SUM.</p>
+                                    <p>Untuk menjumlahkan rentang sel, gunakan fungsi <strong>SUM</strong>.</p>
                                     <p><img class="img-fluid" src="../excel/files/CountandSumFunctions_files/image004.png" alt="Jumlah Fungsi"></p>
                                     <p class="info"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/sum.html">fungsi SUM</a> untuk lebih banyak contoh.</p>
+                                    <details>
+                                        <summary class="text-primary mb-3">Contoh Penggunaan Fungsi SUM</summary>
+                                        <p class="h4">SUM</p>
+                                        <p><a href="#JumlahRange">Sum Range</a> | <a href="#JumlahkanSeluruhKolom">Jumlahkan Seluruh Kolom</a> | <a href="#JumlahSelyangTidakBersebelahan">Jumlahkan Sel yang Tidak Bersebelahan</a> | <a href="#AutoSum">AutoSum</a>                                            | <a href="#JumlahkanSetiapBarisKe-N">Jumlahkan Setiap Baris Ke-N</a> | <a href="#JumlahkanBilanganTerbesar">Jumlahkan Bilangan Terbesar</a> | <a href="#JumlahRangedenganKesalahan">Sum Range dengan Error</a></p>
+
+                                        <p>Gunakan fungsi <strong>SUM</strong> di Excel untuk menjumlahkan Range sel, seluruh kolom, atau sel yang tidak bersebelahan. Untuk membuat rumus SUM yang mengagumkan, gabungkan fungsi <strong>SUM</strong> dengan
+                                            fungsi Excel lainnya.</p>
+
+                                        <p class="h5" id="JumlahRange">
+                                            Sum Range</p>
+                                        <p>Sebagian besar waktu, Anda akan menggunakan fungsi <strong>SUM</strong> di Excel untuk menjumlahkan Range sel.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Sum_files/image001.png" alt="Jumlah Range"></p>
+
+                                        <p class="h5" id="JumlahkanSeluruhKolom">
+                                            Jumlahkan Seluruh Kolom <span class="span-text">(Sum Entire Column)</span></p>
+                                        <p>Anda juga dapat menggunakan fungsi <strong>SUM</strong> di Excel untuk menjumlahkan seluruh kolom.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Sum_files/image002.png" alt="Jumlahkan Seluruh Kolom"></p>
+                                        <p><img class="img-fluid" src="../excel/files/Sum_files/image003.png" alt="Sel A99"></p>
+                                        <p class="info"><strong>Catatan:</strong> Anda juga dapat menggunakan fungsi <strong>SUM</strong> di Excel untuk menjumlahkan seluruh baris. Misalnya, =<strong>SUM</strong>(5:5) menjumlahkan semua nilai di baris ke-5.</p>
+
+                                        <p class="h5" id="JumlahSelyangTidakBersebelahan">
+                                            Jumlah Sel yang Tidak Bersebelahan <span class="span-text">(Sum Non-contiguous Cells)</span></p>
+                                        <p>Anda juga dapat menggunakan fungsi <strong>SUM</strong> di Excel untuk menjumlahkan sel yang tidak bersebelahan. Tidak bersebelahan berarti tidak bersebelahan.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Sum_files/image004.png" alt="Jumlah Sel yang Tidak Bersebelahan"></p>
+                                        <p class="info"><strong>Catatan:</strong> =A3+A5+A8 menghasilkan hasil yang sama persis!</p>
+
+                                        <p class="h5" id="AutoSum">AutoSum <span class="span-text">(Sum Otomatis)</span></p>
+                                        <p>Gunakan <strong>AutoSum</strong> atau tekan <kbd>Alt</kbd> <kbd>+</kbd> <kbd>=</kbd> untuk menjumlahkan kolom atau baris angka dengan cepat.</p>
+                                        <ol>
+                                            <li>
+                                                <p>Pertama, pilih sel di bawah kolom angka (atau di sebelah deretan angka) yang ingin Anda jumlahkan.</p>
+                                                <p><img class="img-fluid" src="../excel/files/Sum_files/image005.png" alt="Pilih Sel"></p>
+                                            </li>
+                                            <li>
+                                                <p>Pada tab Beranda, dalam grup Pengeditan, klik <strong>AutoSum</strong> (atau tekan <kbd>Alt</kbd> <kbd>+</kbd> <kbd>=</kbd>).</p>
+                                                <p><img class="img-fluid" src="../excel/files/Sum_files/image006.png" alt="Klik AutoSum"></p>
+                                            </li>
+                                            <li>
+                                                <p>Tekan Enter.</p>
+                                                <p><img class="img-fluid" src="../excel/files/Sum_files/image007.png" alt=AutoSum></p>
+                                            </li>
+                                        </ol>
+
+                                        <p class="h5" id="JumlahkanSetiapBarisKe-N">
+                                            Jumlahkan Setiap Baris Ke-N</p>
+                                        <p>Rumus <strong>SUM</strong> di bawah ini menggunakan <strong>SUM</strong>, <strong>MOD</strong> dan <strong>ROW</strong> untuk
+                                            <a href="https://www.excel-easy.com/examples/sum-every-nth-row.html">menjumlahkan setiap baris ke-n</a>. Ubah 3 menjadi 4 untuk menjumlahkan setiap baris ke-4, menjadi 5 untuk menjumlahkan setiap baris ke-5,
+                                            dst.
+                                        </p>
+                                        <p><img class="img-fluid" src="../excel/files/Sum_files/image008.png" alt="Jumlahkan Setiap Baris Ke-N"></p>
+                                        <p class="info"><strong>Catatan:</strong> bilah rumus menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal <strong>{}</strong>. Jangan mengetik ini sendiri. Untuk memasukkan rumus array, selesaikan dengan
+                                            menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
+
+                                        <p class="h5" id="JumlahkanBilanganTerbesar">
+                                            Jumlahkan Bilangan Terbesar</p>
+                                        <p>Rumus <strong>SUM</strong> di bawah ini menggunakan <strong>SUM</strong> dan <strong>LARGE</strong> untuk <a href="https://www.excel-easy.com/examples/sum-largest-numbers.html">menjumlahkan angka terbesar</a> dalam
+                                            suatu Range. Ubah {1,2,3,4} menjadi {1,2,3,4,5} untuk menjumlahkan 5 bilangan terbesar.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Sum_files/image009.png" alt="Jumlahkan Bilangan Terbesar"></p>
+                                        <p class="info"><strong>Catatan:</strong> =<strong>LARGE</strong>(A1:A11,2) cukup mengembalikan angka terbesar kedua.</p>
+
+                                        <p class="h5" id="JumlahRangedenganKesalahan">
+                                            Sum Range dengan Error</p>
+                                        <p>Rumus SUM di bawah ini menggunakan <strong>SUM</strong> dan <strong>IFERROR</strong> untuk
+                                            <a href="https://www.excel-easy.com/examples/sum-range-with-errors.html">menjumlahkan Range dengan kesalahan</a>. Anda juga dapat menggunakan <a href="https://www.excel-easy.com/examples/aggregate.html">fungsi <strong>AGGREGATE</strong></a>                                            di Excel untuk menjumlahkan Range dengan kesalahan.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Sum_files/image010.png" alt="Jumlah Range dengan Kesalahan"></p>
+                                        <p class="info"><strong>Catatan:</strong> fungsi <strong>SUM</strong> di Excel secara otomatis mengabaikan nilai teks.</p>
+                                    </details>
+                                </section>
+
+                                <!-- SUMIF -->
+                                <section>
                                     <p class="h5" id="sumif">
                                         SUMIF</p>
                                     <p>Untuk menjumlahkan sel berdasarkan satu kriteria (misalnya, lebih besar dari 9), gunakan fungsi SUMIF berikut (dua argumen).
                                     </p>
                                     <p><img class="img-fluid" src="../excel/files/CountandSumFunctions_files/image005.png" alt="Fungsi Sumif, Dua Argumen">
                                     </p>
-                                    <p>Untuk menjumlahkan sel berdasarkan satu kriteria (misalnya, hijau), gunakan fungsi SUMIF berikut (tiga argumen, argumen terakhir adalah rentang yang akan dijumlahkan).</p>
+                                    <p>Untuk menjumlahkan sel berdasarkan satu kriteria (misalnya, hijau), gunakan fungsi SUMIF berikut (tiga argumen, argumen terakhir adalah rentang yang akan dijumlahkan).
+                                    </p>
                                     <p><img class="img-fluid" src="../excel/files/CountandSumFunctions_files/image006.png" alt="Fungsi Sumif, Tiga Argumen">
                                     </p>
                                     <p class="info"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/sumif.html">fungsi SUMIF</a> untuk lebih banyak contoh.</p>
+                                </section>
+
+                                <!-- SUMIFS -->
+                                <section>
                                     <p class="h5" id="sumifs">
                                         SUMIFS</p>
-                                    <p>Untuk menjumlahkan sel berdasarkan beberapa kriteria (misalnya, lingkaran dan merah), gunakan fungsi SUMIFS berikut (argumen pertama adalah rentang yang akan dijumlahkan).</p>
+                                    <p>Untuk menjumlahkan sel berdasarkan beberapa kriteria (misalnya, lingkaran dan merah), gunakan fungsi SUMIFS berikut (argumen pertama adalah rentang yang akan dijumlahkan).
+                                    </p>
                                     <p><img class="img-fluid" src="../excel/files/CountandSumFunctions_files/image007.png" alt="Fungsi Sumif"></p>
                                     <p class="info"><strong></strong> dengan cara yang sama, Anda dapat menggunakan
-                                        <a href="https://www.excel-easy.com/examples/averageif.html">fungsi AVERAGEIF</a> untuk rata-rata sel berdasarkan satu kriteria dan fungsi AVERAGEIFS untuk rata-rata sel berdasarkan beberapa kriteria.</p>
+                                        <a href="https://www.excel-easy.com/examples/averageif.html">fungsi
+                                                AVERAGEIF</a> untuk rata-rata sel berdasarkan satu kriteria dan fungsi AVERAGEIFS untuk rata-rata sel berdasarkan beberapa kriteria.</p>
                                 </section>
+
 
                             </div>
                         </div>
@@ -203,7 +500,8 @@
                         </h2>
                         <div id="flush-Logika" class="accordion-collapse collapse" aria-labelledby="Logika" data-bs-parent="#accordionFungsi">
                             <div class="accordion-body">
-                                <a href="#">IF</a> | <a href="#">Operator Perbandingan</a> | <a href="#">OR</a>| <a href="#">Melempar Dadu</a> | <a href="#">IFS</a>| <a href="#">Berisi Teks Tertentu</a> | <a href="#">Beralih</a> | <a href="#">Jika Sel Kosong</a>                                | <a href="#">Nilai Mutlak</a>
+                                <a href="#">IF</a> | <a href="#">Operator Perbandingan</a> | <a href="#">OR</a>| <a href="#">Melempar Dadu</a> | <a href="#">IFS</a>| <a href="#">Berisi Teks
+                                    Tertentu</a> | <a href="#">Beralih</a> | <a href="#">Jika Sel Kosong</a> | <a href="#">Nilai Mutlak</a>
                             </div>
                         </div>
                     </div>
@@ -212,11 +510,13 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="ReferensiSel">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-ReferensiSel" aria-expanded="false" aria-controls="flush-ReferensiSel">Referensi
-                Sel</button>
+                                Sel</button>
                         </h2>
                         <div id="flush-ReferensiSel" class="accordion-collapse collapse" aria-labelledby="ReferensiSel" data-bs-parent="#accordionFungsi">
                             <div class="accordion-body">
-                                <a href="#">Salin Rumus</a> | <a href="#">Referensi 3D</a> | <a href="#">Referensi Eksternal</a> | <a href="#">Hyperlink</a> | <a href="#">Persatuan dan Perpotongan</a> | <a href="#">Perubahan Persen</a> | <a href="#">Tambahkan Kolom</a>                                | <a href="#">Referensi Mutlak</a> | <a href="#">Alamat</a>
+                                <a href="#">Salin Rumus</a> | <a href="#">Referensi 3D</a> | <a href="#">Referensi
+                                    Eksternal</a> | <a href="#">Hyperlink</a> | <a href="#">Persatuan dan
+                                    Perpotongan</a> | <a href="#">Perubahan Persen</a> | <a href="#">Tambahkan Kolom</a> | <a href="#">Referensi Mutlak</a> | <a href="#">Alamat</a>
                             </div>
                         </div>
                     </div>
@@ -231,10 +531,13 @@
 
                                 <!-- Tahun, Bulan, Hari -->
                                 <section id="FungsiTanggalWaktu">
-                                    <p class="h3" id="Tahunbulanhari">Tahun, Bulan, Hari <span class="span-text">(Year, Month, Day)</span></p>
-                                    <p>Untuk mendapatkan tahun dari suatu tanggal, gunakan fungsi <strong>YEAR</strong>.</p>
+                                    <p class="h3" id="Tahunbulanhari">Tahun, Bulan, Hari <span class="span-text">(Year,
+                                            Month, Day)</span></p>
+                                    <p>Untuk mendapatkan tahun dari suatu tanggal, gunakan fungsi <strong>YEAR</strong>.
+                                    </p>
                                     <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image002.png" alt="Fungsi Tahun"></p>
-                                    <p class="info"><strong>Catatan:</strong> gunakan fungsi <strong>MONTH</strong> dan <strong>DAY</strong> untuk mendapatkan bulan dan hari dari suatu tanggal.</p>
+                                    <p class="info"><strong>Catatan:</strong> gunakan fungsi <strong>MONTH</strong> dan
+                                        <strong>DAY</strong> untuk mendapatkan bulan dan hari dari suatu tanggal.</p>
                                     <p class="h3" id="FungsiTanggal">
                                         Fungsi Tanggal</p>
                                     <ol>
@@ -244,7 +547,8 @@
                                             <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image003.png" alt="Tambahkan Hari"></p>
                                         </li>
                                         <li>
-                                            <p>Untuk menambahkan jumlah tahun, bulan dan/atau hari, gunakan fungsi <strong>DATE</strong>.
+                                            <p>Untuk menambahkan jumlah tahun, bulan dan/atau hari, gunakan fungsi
+                                                <strong>DATE</strong>.
                                             </p>
                                             <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image004.png" alt="Tambahkan Tahun, Bulan, dan Hari"></p>
                                         </li>
@@ -253,18 +557,22 @@
                                     <p class="h3" id="TanggalWaktuSaatIni">
                                         Tanggal &amp; Waktu Saat Ini
                                     </p>
-                                    <p>Untuk mendapatkan tanggal dan waktu saat ini, gunakan fungsi <strong>NOW</strong>.</p>
+                                    <p>Untuk mendapatkan tanggal dan waktu saat ini, gunakan fungsi
+                                        <strong>NOW</strong>.</p>
                                     <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image005.png" alt="Sekarang Fungsi"></p>
                                     <p class="info"><strong>Catatan:</strong> gunakan fungsi <strong>TODAY</strong> untuk memasukkan tanggal
                                         <a href="#Tanggal-hari-ini">hari ini</a> di Excel.
                                     </p>
-                                    <p class="h3" id="JamMenitDetik">Jam, Menit, Detik <span class="span-text">(Hour, Minute, Second)</span></p>
+                                    <p class="h3" id="JamMenitDetik">Jam, Menit, Detik <span class="span-text">(Hour,
+                                            Minute, Second)</span></p>
                                     <p>Untuk mengembalikan jam, gunakan fungsi <strong>HOUR</strong>.</p>
                                     <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image006.png" alt="Fungsi Jam"></p>
-                                    <p class="info"><strong>Catatan:</strong> gunakan fungsi <strong>MINUTE</strong> dan <strong>SECOND</strong> untuk mengembalikan menit dan detik.</p>
+                                    <p class="info"><strong>Catatan:</strong> gunakan fungsi <strong>MINUTE</strong> dan
+                                        <strong>SECOND</strong> untuk mengembalikan menit dan detik.</p>
                                     <p class="h3" id="FungsiWaktu">
                                         Fungsi Waktu</p>
-                                    <p>Untuk menambahkan jumlah jam, menit dan/atau detik, gunakan fungsi <strong>TIME</strong>.</p>
+                                    <p>Untuk menambahkan jumlah jam, menit dan/atau detik, gunakan fungsi
+                                        <strong>TIME</strong>.</p>
                                     <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image007.png" alt="Tambahkan Jam, Menit, dan Detik"></p>
                                     <p class="info"><strong>Catatan:</strong> Excel menambahkan 2 jam, 10 + 1 = 11 menit dan 70 - 60 = 10 detik.</p>
                                 </section>
@@ -277,7 +585,8 @@
                                         <a href="../excel/files/bahan/datedif.xlsx" class="fw-light p-0 m-0">datedif.xlsx</a>
                                     </p>
                                     <p>Untuk mendapatkan jumlah hari, minggu atau tahun antara dua tanggal di Excel, gunakan fungsi
-                                        <strong>DATEDIF</strong>. Fungsi <strong>DATEDIF</strong> memiliki tiga argumen.</p>
+                                        <strong>DATEDIF</strong>. Fungsi <strong>DATEDIF</strong> memiliki tiga argumen.
+                                    </p>
                                     <ol>
                                         <li>
                                             <p>Isi &quot;d&quot; untuk argumen ketiga untuk mendapatkan jumlah hari di antara dua tanggal.</p>
@@ -307,11 +616,13 @@
                                             <p>Isi &quot;ym&quot; untuk argumen ketiga untuk mengabaikan tahun dan mendapatkan jumlah bulan di antara dua tanggal.</p>
                                             <p><img class="img-fluid" src="../excel/files/DateDif_files/image006.png" alt="Abaikan Tahun, Dapatkan Bulan"></p>
                                         </li>
-                                        <p class="info"><strong>Catatan penting:</strong> fungsi <strong>DATEDIF</strong> mengembalikan jumlah <u>lengkap</u> hari, bulan atau tahun. Ini mungkin memberikan hasil yang tidak terduga ketika nomor hari/bulan dari tanggal
-                                            kedua lebih rendah dari nomor hari/bulan dari tanggal pertama. Lihat contoh di bawah ini.</p>
+                                        <p class="info"><strong>Catatan penting:</strong> fungsi
+                                            <strong>DATEDIF</strong> mengembalikan jumlah <u>lengkap</u> hari, bulan atau tahun. Ini mungkin memberikan hasil yang tidak terduga ketika nomor hari/bulan dari tanggal kedua lebih rendah dari nomor hari/bulan
+                                            dari tanggal pertama. Lihat contoh di bawah ini.</p>
                                         <p><img class="img-fluid" src="../excel/files/DateDif_files/image007.png" alt="Hasil Tak Terduga">
                                         </p>
-                                        <p>Bedanya 6 tahun. Hampir 7 tahun! Gunakan rumus berikut untuk mengembalikan 7 tahun.</p>
+                                        <p>Bedanya 6 tahun. Hampir 7 tahun! Gunakan rumus berikut untuk mengembalikan 7 tahun.
+                                        </p>
                                         <p><img class="img-fluid" src="../excel/files/DateDif_files/image008.png" alt="Fungsi Tahun Dua Kali"></p>
                                     </ol>
                                 </section>
@@ -325,17 +636,19 @@
                                         <a href="../excel/files/bahan/todays-date.xlsx" class="fw-light p-0 m-0">todays-date.xlsx</a>
                                     </p>
 
-                                    <p>Untuk memasukkan tanggal hari ini di Excel, gunakan fungsi <strong>TODAY</strong>. Untuk memasukkan tanggal dan waktu saat ini, gunakan fungsi <strong>NOW</strong>. Untuk memasukkan tanggal dan waktu saat ini sebagai
-                                        nilai statis, gunakan pintasan keyboard.
+                                    <p>Untuk memasukkan tanggal hari ini di Excel, gunakan fungsi
+                                        <strong>TODAY</strong>. Untuk memasukkan tanggal dan waktu saat ini, gunakan fungsi <strong>NOW</strong>. Untuk memasukkan tanggal dan waktu saat ini sebagai nilai statis, gunakan pintasan keyboard.
                                     </p>
                                 </section>
                                 <!-- Today and Now -->
                                 <section id="HariinidanSekarang">
-                                    <p class="h4">Hari ini dan Sekarang <span class="span-text">(Today and Now)</span></p>
+                                    <p class="h4">Hari ini dan Sekarang <span class="span-text">(Today and Now)</span>
+                                    </p>
 
                                     <ol>
                                         <li>
-                                            <p>Untuk memasukkan tanggal hari ini di Excel, gunakan fungsi <strong>TODAY</strong>.</p>
+                                            <p>Untuk memasukkan tanggal hari ini di Excel, gunakan fungsi
+                                                <strong>TODAY</strong>.</p>
                                             <p><img class="img-fluid" src="../excel/files/Tanggal-hari-ini_files/image001.png" alt="Fungsi hari ini"></p>
                                             <p class="info"><strong>Catatan:</strong> fungsi <strong>TODAY</strong> tidak membutuhkan argumen. Tanggal ini akan diperbarui secara otomatis saat Anda membuka buku kerja pada tanggal lain.
                                             </p>
@@ -349,7 +662,8 @@
                                             </p>
                                         </li>
                                         <li>
-                                            <p>Untuk memasukkan waktu saat ini saja, gunakan <strong>NOW</strong>()-<strong>TODAY</strong>() dan terapkan <a href="#FungsiTanggalWaktu">format waktu</a>.</p>
+                                            <p>Untuk memasukkan waktu saat ini saja, gunakan
+                                                <strong>NOW</strong>()-<strong>TODAY</strong>() dan terapkan <a href="#FungsiTanggalWaktu">format waktu</a>.</p>
                                             <p><img class="img-fluid" src="../excel/files/Tanggal-hari-ini_files/image003.png" alt="Waktu saat ini"></p>
                                             <p class="info"><strong>Catatan:</strong> tanggal disimpan sebagai angka di Excel dan menghitung jumlah hari sejak <b>0</b>, Januari 1900. Waktu ditangani secara internal sebagai angka antara
                                                 <b>0</b> dan <b>1</b>. Kunjungi halaman kami tentang
@@ -362,7 +676,8 @@
                                     <p class="h4">Tanggal dan Waktu Statis</p>
                                     <ol>
                                         <li>
-                                            <p>Untuk memasukkan tanggal saat ini sebagai nilai statis, tekan <kbd>Ctrl</kbd>+<kbd>;</kbd> (titik koma).</p>
+                                            <p>Untuk memasukkan tanggal saat ini sebagai nilai statis, tekan
+                                                <kbd>Ctrl</kbd>+<kbd>;</kbd> (titik koma).</p>
                                             <p><img class="img-fluid" src="../excel/files/Tanggal-hari-ini_files/image004.png" alt="Tanggal Statis"></p>
                                             <p class="info"><strong>Catatan:</strong> tanggal ini tidak akan berubah saat Anda membuka buku kerja pada tanggal lain.</p>
                                         </li>
@@ -405,8 +720,8 @@
                                             <p class="info"><strong>Catatan:</strong> untuk menerapkan format Waktu, dalam daftar Kategori, pilih Waktu.</p>
                                         </li>
                                         <li>
-                                            <p>Tanggal disimpan sebagai angka di Excel dan menghitung jumlah hari sejak <b>0</b>, Januari 1900. Waktu ditangani secara internal sebagai angka antara <b>0</b> dan <b>1</b>. Untuk melihat ini dengan jelas, ubah
-                                                format angka sel <b>A1</b>, <b>B1</b> dan <b>C1</b> ke Umum.
+                                            <p>Tanggal disimpan sebagai angka di Excel dan menghitung jumlah hari sejak
+                                                <b>0</b>, Januari 1900. Waktu ditangani secara internal sebagai angka antara <b>0</b> dan <b>1</b>. Untuk melihat ini dengan jelas, ubah format angka sel <b>A1</b>, <b>B1</b> dan <b>C1</b> ke Umum.
                                             </p>
                                             <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image004.png" alt="Format Umum"></p>
                                             <p class="info"><strong>Catatan:</strong> ternyata, <b>42544</b> hari setelah <b>0</b>, 1900 sama dengan 23 Juni 2016. <b>6:00</b> direpresentasikan sebagai <b>0,25</b> (seperempat sepanjang hari).
@@ -421,7 +736,9 @@
                                         <li>
                                             <p>Ubah format angka sel <b>C1</b> menjadi <u>Date only</u>.</p>
                                             <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image006.png" alt="Format tanggal"></p>
-                                            <p class="info"><strong>Catatan:</strong> sel <b>C1</b> masih berisi angka <b>42544.25</b>. Kami hanya mengubah tampilan nomor, bukan nomor itu sendiri.</p>
+                                            <p class="info"><strong>Catatan:</strong> sel <b>C1</b> masih berisi angka
+                                                <b>42544.25</b>. Kami hanya mengubah tampilan nomor, bukan nomor itu sendiri.
+                                            </p>
                                         </li>
                                     </ol>
                                 </section>
@@ -434,7 +751,8 @@
                                         <a href="../excel/files/bahan/calculate-age.xlsx" class="fw-light p-0 m-0">hitung-umur.xlsx</a>
                                     </p>
                                     <p>Untuk menghitung usia seseorang di Excel, gunakan <a href="#DateDif">DATEDIF</a> dan
-                                        <strong>TODAY</strong>. Fungsi <strong>DATEDIF</strong> memiliki tiga argumen.</p>
+                                        <strong>TODAY</strong>. Fungsi <strong>DATEDIF</strong> memiliki tiga argumen.
+                                    </p>
                                     <ol>
                                         <li>
                                             <p>Masukkan tanggal lahir ke dalam sel <strong>A2</strong>.</p>
@@ -445,7 +763,8 @@
                                             <p><img class="img-fluid" src="../excel/files/HitungUmur_files/image002.png" alt="Fungsi hari ini"></p>
                                         </li>
                                         <li>
-                                            <p>Fungsi <strong>DATEDIF</strong> di bawah ini menghitung usia seseorang.</p>
+                                            <p>Fungsi <strong>DATEDIF</strong> di bawah ini menghitung usia seseorang.
+                                            </p>
                                             <p><img class="img-fluid" src="../excel/files/HitungUmur_files/image003.png" alt="Fungsi DateDif">
                                             </p>
                                             <p class="info"><strong>Catatan:</strong> isi &quot;y&quot; untuk argumen ketiga untuk mendapatkan jumlah tahun lengkap antara tanggal lahir dan tanggal hari ini.</p>
@@ -472,12 +791,13 @@
                                 <!-- Perbedaan waktu -->
                                 <section id="PerbedaanWaktu">
                                     <p class="h3">Perbedaan waktu</p>
-                                    <p class="link-text"><a href="#RumusSederhana">Rumus Sederhana</a> | <a href="#RumusPerbedaanWaktu">Rumus Selisih Waktu</a> | <a href="#PerbedaanWaktudalamJamsebagaiNilaiDesimal">Selisih Waktu dalam Jam sebagai Nilai
-                      Desimal</a> | <a href="#LembarWaktu">Lembar Waktu</a></p>
+                                    <p class="link-text"><a href="#RumusSederhana">Rumus Sederhana</a> | <a href="#RumusPerbedaanWaktu">Rumus Selisih Waktu</a> | <a href="#PerbedaanWaktudalamJamsebagaiNilaiDesimal">Selisih Waktu dalam Jam
+                                            sebagai Nilai
+                                            Desimal</a> | <a href="#LembarWaktu">Lembar Waktu</a></p>
 
                                     <p>
                                         <strong class="d-block h6 text-warning" style="padding-top: .5rem; margin-bottom: 0;">Download file
-                      latihan</strong>
+                                            latihan</strong>
                                         <a href="../excel/files/bahan/time-difference.xlsx" class="fw-light" style="font-size: .875rem;">perbedaan-waktu.xlsx</a>
                                     </p>
 
@@ -492,7 +812,8 @@
                                             <p>Cukup kurangi waktu mulai dari waktu akhir.</p>
                                             <p><img class="img-fluid" src="../excel/files/PerbedaanWaktu_files/image001.png" alt="Hitung Perbedaan Antara Dua Kali di Excel"></p>
                                             <p class="info"><strong>Catatan:</strong> AM digunakan untuk waktu malam dan pagi hari. PM digunakan untuk waktu pada sore dan malam hari. Ubah
-                                                <a href="https://www.excel-easy.com/examples/date-time-formats.html">format Waktu</a> untuk menampilkan waktu dengan atau tanpa AM/PM.
+                                                <a href="https://www.excel-easy.com/examples/date-time-formats.html">format
+                                                    Waktu</a> untuk menampilkan waktu dengan atau tanpa AM/PM.
                                             </p>
                                         </li>
                                         <li>
@@ -534,7 +855,8 @@
 
                                     <p class="h4" id="LembarWaktu">
                                         Lembar Waktu</p>
-                                    <p>Hitung total jam, jam reguler, dan jam lembur dengan <a href="https://www.excel-easy.com/examples/time-sheet.html">kalkulator absen</a> kami.</p>
+                                    <p>Hitung total jam, jam reguler, dan jam lembur dengan <a href="https://www.excel-easy.com/examples/time-sheet.html">kalkulator
+                                            absen</a> kami.</p>
                                     <p>
                                         <img class="img-fluid" src="../excel/files/PerbedaanWaktu_files/image007.png" alt="Kalkulator Timesheet di Excel">
                                     </p>
@@ -543,7 +865,8 @@
                                 <!-- hari kerja -->
                                 <section id="harikerja">
                                     <p class="h3">Hari Kerja <span class="span-text">(Weekdays)</span></p>
-                                    <p class="link-text"><a href="#">Fungsi hari kerja</a> | <a href="#">Fungsi hari jaringan</a> | <a href="#">Fungsi hari kerja</a></p>
+                                    <p class="link-text"><a href="#">Fungsi hari kerja</a> | <a href="#">Fungsi hari
+                                            jaringan</a> | <a href="#">Fungsi hari kerja</a></p>
 
                                     <p>
                                         <strong class="d-block h6 text-warning p-0 m-0">Download file latihan</strong>
@@ -561,13 +884,13 @@
                                         </li>
                                         <li>
                                             <p>Anda juga dapat menggunakan <a href="https://www.excel-easy.com/examples/text.html">fungsi
-                          TEXT</a> untuk menampilkan hari dalam seminggu.</p>
+                                                    TEXT</a> untuk menampilkan hari dalam seminggu.</p>
                                             <p><img class="img-fluid" src="../excel/files/hari%20kerja_files/image002.png" alt="Fungsi Teks">
                                             </p>
                                         </li>
                                         <li>
                                             <p>Atau buat <a href="https://www.excel-easy.com/examples/custom-number-format.html#dates-times">format
-                          tanggal khusus</a> ( <b>dddd</b> ) untuk menampilkan hari dalam seminggu.
+                                                    tanggal khusus</a> ( <b>dddd</b> ) untuk menampilkan hari dalam seminggu.
                                             </p>
                                             <p><img class="img-fluid" src="../excel/files/hari%20kerja_files/image003.png" alt="Format Tanggal Kustom"></p>
                                         </li>
@@ -581,11 +904,14 @@
                                             <p><img class="img-fluid" src="../excel/files/hari%20kerja_files/image004.png" alt="Fungsi Networkdays"></p>
                                         </li>
                                         <li>
-                                            <p>Jika Anda memberikan daftar hari libur, fungsi <strong>NETWORKDAYS</strong> mengembalikan jumlah hari kerja (tidak termasuk akhir pekan dan hari libur) di antara dua tanggal.</p>
+                                            <p>Jika Anda memberikan daftar hari libur, fungsi
+                                                <strong>NETWORKDAYS</strong> mengembalikan jumlah hari kerja (tidak termasuk akhir pekan dan hari libur) di antara dua tanggal.</p>
                                             <p><img class="img-fluid" src="../excel/files/hari%20kerja_files/image005.png" alt="hari kerja">
                                             </p>
-                                            <p>Kalender di bawah ini membantu Anda memahami fungsi <strong>NETWORKDAYS</strong>.</p>
-                                            <p><img class="img-fluid" src="../excel/files/hari%20kerja_files/image006.png" alt=Kalender></p>
+                                            <p>Kalender di bawah ini membantu Anda memahami fungsi
+                                                <strong>NETWORKDAYS</strong>.</p>
+                                            <p><img class="img-fluid" src="../excel/files/hari%20kerja_files/image006.png" alt=Kalender>
+                                            </p>
                                         </li>
                                         <li>
                                             <p>Tanggal disimpan sebagai angka di Excel dan menghitung jumlah hari sejak 01 Januari 1900. Alih-alih menyediakan daftar, berikan konstanta array dari angka yang mewakili tanggal ini. Untuk mencapai ini, pilih
@@ -598,10 +924,15 @@
                                                 <strong>NETWORKDAYS</strong>. Ini mengembalikan tanggal sebelum atau setelah jumlah hari kerja tertentu (akhir pekan tidak termasuk).</p>
                                             <p><img class="img-fluid" src="../excel/files/hari%20kerja_files/image008.png" alt="Fungsi hari kerja"></p>
                                             <p class="info"><strong>Catatan:</strong> fungsi <strong>WORKDAY</strong> mengembalikan nomor seri tanggal. Terapkan
-                                                <a href="#FormatTanggaldanWaktu">format Tanggal</a> untuk menampilkan tanggal.</p>
-                                            <p>Kalender di bawah ini membantu Anda memahami fungsi <strong>WORKDAY</strong>.</p>
-                                            <p><img class="img-fluid" src="../excel/files/hari%20kerja_files/image009.png" alt=Kalender></p>
-                                            <p>Sekali lagi, jika Anda memberikan daftar hari libur, fungsi <strong>WORKDAY</strong> mengembalikan tanggal sebelum atau setelah jumlah hari kerja tertentu (tidak termasuk akhir pekan dan hari libur).</p>
+                                                <a href="#FormatTanggaldanWaktu">format Tanggal</a> untuk menampilkan tanggal.
+                                            </p>
+                                            <p>Kalender di bawah ini membantu Anda memahami fungsi
+                                                <strong>WORKDAY</strong>.</p>
+                                            <p><img class="img-fluid" src="../excel/files/hari%20kerja_files/image009.png" alt=Kalender>
+                                            </p>
+                                            <p>Sekali lagi, jika Anda memberikan daftar hari libur, fungsi
+                                                <strong>WORKDAY</strong> mengembalikan tanggal sebelum atau setelah jumlah hari kerja tertentu (tidak termasuk akhir pekan dan hari libur).
+                                            </p>
                                         </li>
                                     </ol>
                                 </section>
@@ -612,7 +943,7 @@
                                     <p>
                                         <strong class="d-block h6 text-warning p-0 m-0">Download file latihan</strong>
                                         <a href="../excel/files/bahan/days-until-birthday.xlsx" class="fw-light p-0 m-0">hari-sampai-ulang
-                      tahun.xlsx</a>
+                                            tahun.xlsx</a>
                                     </p>
                                     <p>Untuk menghitung jumlah hari hingga ulang tahun Anda di Excel, jalankan langkah-langkah berikut.
                                     </p>
@@ -626,15 +957,17 @@
                                             <p><img class="img-fluid" src="../excel/files/HarisampaiUlangTahun_files/image002.png" alt="Hari ini"></p>
                                         </li>
                                         <li>
-                                            <p>Bagian tersulit untuk mendapatkan jumlah hari sampai ulang tahun Anda adalah menemukan ulang tahun Anda berikutnya. Rumus di bawah ini berhasil.</p>
+                                            <p>Bagian tersulit untuk mendapatkan jumlah hari sampai ulang tahun Anda adalah menemukan ulang tahun Anda berikutnya. Rumus di bawah ini berhasil.
+                                            </p>
                                             <p><img class="img-fluid" src="../excel/files/HarisampaiUlangTahun_files/image003.png" alt="Ulang Tahun Berikutnya"></p>
-                                            <p class="info"><strong>Penjelasan:</strong> Fungsi <strong>DATE</strong> menerima tiga argumen: tahun, bulan dan hari. Kami menggunakan <a href="https://www.excel-easy.com/examples/datedif.html">fungsi DATEDIF</a> untuk menemukan
-                                                jumlah tahun lengkap (&quot;y&quot;) antara Tanggal Lahir dan Hari Ini.
+                                            <p class="info"><strong>Penjelasan:</strong> Fungsi <strong>DATE</strong> menerima tiga argumen: tahun, bulan dan hari. Kami menggunakan <a href="https://www.excel-easy.com/examples/datedif.html">fungsi
+                                                    DATEDIF</a> untuk menemukan jumlah tahun lengkap (&quot;y&quot;) antara Tanggal Lahir dan Hari Ini.
                                                 <strong>DATEDIF</strong>(A2,B2,&quot;y&quot;) sama dengan 38. Jika 38 tahun penuh telah berlalu sejak tanggal lahir Anda (dengan kata lain, Anda telah merayakan ulang tahun ke-38), ulang tahun Anda berikutnya
                                                 adalah 38 + 1 = 39 tahun setelahnya tanggal lahirmu.</p>
                                         </li>
                                         <li>
-                                            <p>Selanjutnya, kita menggunakan fungsi <strong>DATEDIF</strong> untuk mencari jumlah hari (&quot;d&quot;) antara Hari Ini dan Ulang Tahun Berikutnya.</p>
+                                            <p>Selanjutnya, kita menggunakan fungsi <strong>DATEDIF</strong> untuk mencari jumlah hari (&quot;d&quot;) antara Hari Ini dan Ulang Tahun Berikutnya.
+                                            </p>
                                             <p><img class="img-fluid" src="../excel/files/HarisampaiUlangTahun_files/image004.png" alt="Hari sampai Ulang Tahun di Excel"></p>
                                         </li>
                                     </ol>
@@ -647,13 +980,15 @@
                                         <strong class="d-block h6 text-warning p-0 m-0">Download file latihan</strong>
                                         <a href="../excel/files/bahan/last-day-of-the-month.xlsx" class="fw-light p-0 m-0">hari-terakhir-bulan-ini.xlsx</a>
                                     </p>
-                                    <p>Untuk mendapatkan tanggal hari terakhir bulan di Excel, gunakan fungsi <strong>EOMONTH</strong> (Akhir Bulan.</p>
+                                    <p>Untuk mendapatkan tanggal hari terakhir bulan di Excel, gunakan fungsi
+                                        <strong>EOMONTH</strong> (Akhir Bulan.</p>
                                     <ol>
                                         <li>
                                             <p>Misalnya, dapatkan tanggal hari terakhir bulan ini.</p>
                                             <p><img class="img-fluid" src="../excel/files/Hariterakhirbulanini_files/image001.png" alt="Hari Terakhir, Bulan Ini"></p>
                                             <p class="info"><strong>Catatan:</strong> fungsi <strong>EOMONTH</strong> mengembalikan nomor seri tanggal. Terapkan
-                                                <a href="#FormatTanggaldanWaktu">format Tanggal</a> untuk menampilkan tanggal.</p>
+                                                <a href="#FormatTanggaldanWaktu">format Tanggal</a> untuk menampilkan tanggal.
+                                            </p>
                                         </li>
                                         <li>
                                             <p>Misalnya, dapatkan tanggal hari terakhir bulan berikutnya.</p>
@@ -669,18 +1004,22 @@
                                 <!-- Tambah atau Kurangi Waktu -->
                                 <section id="TambahatauKurangiWaktu">
                                     <p class="h3">Tambah atau Kurangi Waktu</p>
-                                    <p class="link-text"><a href="#TambahkanJamMenitdanDetik">Tambahkan Jam, Menit, dan Detik</a> | <a href="#TambahkanWaktu">Tambahkan Waktu</a> | <a href="#KurangiMenit">Kurangi Menit</a> | <a href="#Perbedaanwaktu">Perbedaan waktu</a></p>
+                                    <p class="link-text"><a href="#TambahkanJamMenitdanDetik">Tambahkan Jam, Menit, dan
+                                            Detik</a> | <a href="#TambahkanWaktu">Tambahkan Waktu</a> | <a href="#KurangiMenit">Kurangi Menit</a> | <a href="#Perbedaanwaktu">Perbedaan
+                                            waktu</a></p>
 
                                     <p>
                                         <strong class="d-block h6 text-warning p-0 m-0">Download file latihan</strong>
                                         <a href="../excel/files/bahan/add-subtract-time.xlsx" class="fw-light p-0 m-0">tambah-kurang-waktu.xlsx</a>
                                     </p>
 
-                                    <p>Gunakan fungsi <strong>TIME</strong> di Excel untuk menambah atau mengurangi jam, menit dan detik. Untuk menambahkan waktu di Excel, cukup gunakan fungsi <strong>SUM</strong>.</p>
+                                    <p>Gunakan fungsi <strong>TIME</strong> di Excel untuk menambah atau mengurangi jam, menit dan detik. Untuk menambahkan waktu di Excel, cukup gunakan fungsi
+                                        <strong>SUM</strong>.</p>
 
                                     <p class="h4" id="TambahkanJamMenitdanDetik">
                                         Tambahkan Jam, Menit, dan Detik</p>
-                                    <p>Ingat, untuk memasukkan waktu, gunakan <strong>&quot;:&quot;</strong> (titik dua).</p>
+                                    <p>Ingat, untuk memasukkan waktu, gunakan <strong>&quot;:&quot;</strong> (titik dua).
+                                    </p>
                                     <ol>
                                         <li>
                                             <p>Masukkan waktu ke dalam sel <strong>A1</strong>.</p>
@@ -690,14 +1029,15 @@
                                             <p>Untuk menambahkan 2 jam 30 menit ke waktu ini, masukkan rumus yang ditunjukkan di bawah ini.
                                             </p>
                                             <p><img class="img-fluid" src="../excel/files/TambahatauKurangiWaktu_files/image002.png" alt="Tambahkan Waktu di Excel"></p>
-                                            <p class="info"><strong>Penjelasan:</strong> fungsi <strong>TIME</strong> memiliki 3 argumen. Pertama, gunakan <strong>HOUR</strong>, <strong>MINUTE</strong> dan <strong>SECOND</strong> untuk membuat waktu yang dimasukkan di
-                                                sel <strong>A1</strong>. Selanjutnya, tambahkan <strong>2</strong> jam <strong>30</strong> menit.
+                                            <p class="info"><strong>Penjelasan:</strong> fungsi <strong>TIME</strong> memiliki 3 argumen. Pertama, gunakan <strong>HOUR</strong>,
+                                                <strong>MINUTE</strong> dan <strong>SECOND</strong> untuk membuat waktu yang dimasukkan di sel <strong>A1</strong>. Selanjutnya, tambahkan <strong>2</strong> jam
+                                                <strong>30</strong> menit.
                                             </p>
                                         </li>
                                         <p>Untuk mengubah format Waktu, jalankan langkah-langkah berikut.</p>
                                         <li>Pilih sel <strong>B1</strong>.</li>
                                         <li>Klik kanan, lalu klik <a href="https://www.excel-easy.com/basics/format-cells.html">Format
-                        Cells</a> (atau tekan <kbd>Ctrl</kbd>+<kbd>1</kbd>).</li>
+                                                Cells</a> (atau tekan <kbd>Ctrl</kbd>+<kbd>1</kbd>).</li>
                                         <li>
                                             <p>Dalam daftar Kategori, pilih Waktu, lalu pilih format Waktu.</p>
                                             <p><img class="img-fluid" src="../excel/files/TambahatauKurangiWaktu_files/image003.png" alt="Ubah Format Waktu"></p>
@@ -707,7 +1047,8 @@
                                             <p><img class="img-fluid" src="../excel/files/TambahatauKurangiWaktu_files/image004.png" alt="Tambahkan Jam dan Menit"></p>
                                         </li>
                                         <li>
-                                            <p>Masukkan waktu ke dalam sel <strong>A1</strong> (gunakan <strong>2</strong> titik dua untuk memasukkan detik).</p>
+                                            <p>Masukkan waktu ke dalam sel <strong>A1</strong> (gunakan
+                                                <strong>2</strong> titik dua untuk memasukkan detik).</p>
                                             <p><img class="img-fluid" src="../excel/files/TambahatauKurangiWaktu_files/image005.png" alt="Waktu Dengan Detik"></p>
                                         </li>
                                         <li>
@@ -720,19 +1061,23 @@
 
                                     <p class="h4" id="TambahkanWaktu">
                                         Tambahkan Waktu</p>
-                                    <p>Untuk menambahkan waktu di Excel, cukup gunakan fungsi <strong>SUM</strong>. Untuk menampilkan total lebih dari <strong>24</strong> jam, ubah format Waktu.</p>
+                                    <p>Untuk menambahkan waktu di Excel, cukup gunakan fungsi <strong>SUM</strong>. Untuk menampilkan total lebih dari <strong>24</strong> jam, ubah format Waktu.
+                                    </p>
                                     <ol>
                                         <li>
                                             <p>Misalnya, tugas <strong>A</strong> membutuhkan <strong>8</strong> jam untuk diselesaikan, tugas
-                                                <strong>B</strong> membutuhkan <strong>4</strong> jam dan <strong>30</strong> menit untuk diselesaikan, dll.</p>
+                                                <strong>B</strong> membutuhkan <strong>4</strong> jam dan
+                                                <strong>30</strong> menit untuk diselesaikan, dll.</p>
                                             <p><img class="img-fluid" src="../excel/files/TambahatauKurangiWaktu_files/image007.png" alt="Durasi Tugas"></p>
                                         </li>
                                         <li>
-                                            <p>Untuk menghitung total durasi, cukup gunakan fungsi <strong>SUM</strong>.</p>
+                                            <p>Untuk menghitung total durasi, cukup gunakan fungsi <strong>SUM</strong>.
+                                            </p>
                                             <p><img class="img-fluid" src="../excel/files/TambahatauKurangiWaktu_files/image008.png" alt="Durasi total"></p>
                                         </li>
                                         <li>
-                                            <p>Ubah durasi tugas <strong>D</strong> dari <strong>5</strong> jam menjadi <strong>7</strong> jam.
+                                            <p>Ubah durasi tugas <strong>D</strong> dari <strong>5</strong> jam menjadi
+                                                <strong>7</strong> jam.
                                             </p>
                                             <p><img class="img-fluid" src="../excel/files/TambahatauKurangiWaktu_files/image009.png" alt="Total Melebihi 24 Jam"></p>
                                             <p>Untuk menampilkan total lebih dari <strong>24</strong> jam, jalankan langkah-langkah berikut.
@@ -754,7 +1099,8 @@
 
                                     <p class="h4" id="KurangiMenit">
                                         Kurangi Menit</p>
-                                    <p>Untuk mengurangi jam, menit, atau detik dari suatu waktu, gunakan fungsi <strong>TIME</strong> (dan
+                                    <p>Untuk mengurangi jam, menit, atau detik dari suatu waktu, gunakan fungsi
+                                        <strong>TIME</strong> (dan
                                         <strong>HOUR</strong>, <strong>MINUTE</strong> dan <strong>SECOND</strong>).</p>
                                     <ol>
                                         <li>
@@ -775,10 +1121,13 @@
                                             <p>Untuk menghitung selisih antara dua waktu di hari yang sama, cukup kurangi waktu mulai dari waktu berakhir.</p>
                                             <p><img class="img-fluid" src="../excel/files/TambahatauKurangiWaktu_files/image014.png" alt="Hitung Perbedaan Antara Dua Kali di Excel"></p>
                                             <p class="info"><strong>Catatan:</strong> kami mengubah format Waktu menjadi
-                                                <strong>13:30</strong> (lihat langkah <strong>5</strong> di bawah &quot;<a href="#TambahkanJamMenitdanDetik">Tambahkan Jam, Menit, dan Detik</a>&quot;).</p>
+                                                <strong>13:30</strong> (lihat langkah <strong>5</strong> di bawah &quot;
+                                                <a href="#TambahkanJamMenitdanDetik">Tambahkan Jam, Menit, dan
+                                                    Detik</a>&quot;).</p>
                                         </li>
                                         <li>
-                                            <p>Rumus sederhana ini tidak bekerja jika waktu mulai sebelum tengah malam dan waktu berakhir setelah tengah malam. <a href="#PerbedaanWaktu">Waktu Perbedaan</a> rumus di bawah ini selalu bekerja.
+                                            <p>Rumus sederhana ini tidak bekerja jika waktu mulai sebelum tengah malam dan waktu berakhir setelah tengah malam. <a href="#PerbedaanWaktu">Waktu
+                                                    Perbedaan</a> rumus di bawah ini selalu bekerja.
                                             </p>
                                             <p><img class="img-fluid" src="../excel/files/TambahatauKurangiWaktu_files/image015.png" alt="Rumus Perbedaan Waktu"></p>
                                         </li>
@@ -802,8 +1151,8 @@
                                         <li>
                                             <p>Masukkan rumus yang ditunjukkan di bawah ini.</p>
                                             <p><img class="img-fluid" src="../excel/files/Quarter_files/image001.png" alt="Rumus Kuartal di Excel"></p>
-                                            <p class="info"><strong>Penjelasan:</strong> <strong>ROUNDUP</strong>(x,0) selalu membulatkan x ke atas ke bilangan bulat terdekat. Fungsi <strong>MONTH</strong> mengembalikan nomor bulan dari suatu tanggal. Dalam contoh ini,
-                                                rumus dikurangi menjadi <strong>ROUNDUP</strong>=(5/3,0),
+                                            <p class="info"><strong>Penjelasan:</strong> <strong>ROUNDUP</strong>(x,0) selalu membulatkan x ke atas ke bilangan bulat terdekat. Fungsi
+                                                <strong>MONTH</strong> mengembalikan nomor bulan dari suatu tanggal. Dalam contoh ini, rumus dikurangi menjadi <strong>ROUNDUP</strong>=(5/3,0),
                                                 <strong>ROUNDUP</strong>=(1.666667,0), 2. Mei ada di Kuartal 2.
                                             </p>
                                         </li>
@@ -811,7 +1160,8 @@
                                             <p>Mari kita lihat apakah formula ini bekerja untuk semua bulan.</p>
                                             <p><img class="img-fluid" src="../excel/files/Quarter_files/image002.png" alt=Bulan></p>
                                             <p class="info"><strong>Penjelasan:</strong> sekarang tidak sulit untuk melihat bahwa tiga nilai (bulan) pertama di kolom <strong>B</strong> dibulatkan menjadi <strong>1</strong> (Kuartal
-                                                <strong>1</strong>), tiga nilai (bulan) berikutnya di kolom <strong>B</strong> dibulatkan menjadi <strong>2</strong> (Kuartal
+                                                <strong>1</strong>), tiga nilai (bulan) berikutnya di kolom
+                                                <strong>B</strong> dibulatkan menjadi <strong>2</strong> (Kuartal
                                                 <strong>2</strong>), dst .</p>
                                         </li>
                                     </ol>
@@ -819,7 +1169,8 @@
 
                                 <!-- Hari Dalam Setahun -->
                                 <section id="HariTahun">
-                                    <p class="h3">Hari Dalam Setahun <span class="span-text">(Day of the Year)</span></p>
+                                    <p class="h3">Hari Dalam Setahun <span class="span-text">(Day of the Year)</span>
+                                    </p>
                                     <p>
                                         <strong class="d-block h6 text-warning p-0 m-0">Download file latihan</strong>
                                         <a href="../excel/files/bahan/day-of-the-year.xlsx" class="fw-light p-0 m-0">hari-dalam-setahun.xlsx</a>
@@ -827,7 +1178,8 @@
                                     <p>Rumus mudah yang mengembalikan hari dalam setahun untuk tanggal tertentu. Tidak ada fungsi bawaan di Excel yang dapat melakukan ini.</p>
                                     <ol>
                                         <li>
-                                            <p>Untuk mendapatkan tahun dari suatu tanggal, gunakan fungsi <strong>YEAR</strong>.</p>
+                                            <p>Untuk mendapatkan tahun dari suatu tanggal, gunakan fungsi
+                                                <strong>YEAR</strong>.</p>
                                             <p><img class="img-fluid" src="../excel/files/DayoftheYear_files/image001.png" alt="Fungsi Tahun">
                                             </p>
                                         </li>
@@ -841,7 +1193,8 @@
                                             <p><img class="img-fluid" src="../excel/files/DayoftheYear_files/image003.png" alt="Hari Tahun di Excel"></p>
                                             <p class="info"><strong>Penjelasan:</strong> tanggal dan waktu disimpan sebagai angka di Excel dan menghitung jumlah hari sejak <b>0</b>, 1900 Januari. 23 Juni 2016 sama dengan <b>42544</b>. 1 Januari 2016 sama dengan <b>42370</b>.
                                                 Mengurangi angka-angka ini dan menambahkan <b>1</b> menghasilkan hari dalam setahun.
-                                                <b>42544</b> - <b>42370</b> + <b>1</b> = <b>174</b> + <b>1</b> = <b>175</b>.</p>
+                                                <b>42544</b> - <b>42370</b> + <b>1</b> = <b>174</b> + <b>1</b> =
+                                                <b>175</b>.</p>
                                         </li>
                                     </ol>
                                 </section>
@@ -857,7 +1210,10 @@
                         </h2>
                         <div id="flush-Teks" class="accordion-collapse collapse" aria-labelledby="Teks" data-bs-parent="#accordionFungsi">
                             <div class="accordion-body">
-                                <a href="#">String Terpisah</a> | <a href="#">Hitung Kata</a> | <a href="#">Teks ke Kolom</a> | <a href="#">Temukan</a> | <a href="#">Cari</a> | <a href="#">Ubah Kasus</a> | <a href="#">Hapus Spasi</a> | <a href="#">Bandingkan Teks</a>                                | <a href="#">Pengganti vs Ganti</a> | <a href="#">Teks</a> | <a href="#">Gabungkan</a> | <a href="#">Substring</a>
+                                <a href="#">String Terpisah</a> | <a href="#">Hitung Kata</a> | <a href="#">Teks ke
+                                    Kolom</a> | <a href="#">Temukan</a> | <a href="#">Cari</a> | <a href="#">Ubah
+                                    Kasus</a> | <a href="#">Hapus Spasi</a> | <a href="#">Bandingkan Teks</a> | <a href="#">Pengganti vs Ganti</a> | <a href="#">Teks</a> | <a href="#">Gabungkan</a> |
+                                <a href="#">Substring</a>
                             </div>
                         </div>
                     </div>
@@ -869,7 +1225,10 @@
                         </h2>
                         <div id="flush-PencariandanReferensi" class="accordion-collapse collapse" aria-labelledby="PencariandanReferensi" data-bs-parent="#accordionFungsi">
                             <div class="accordion-body">
-                                <a href="#">String Terpisah</a> | <a href="#">Hitung Kata</a> | <a href="#">Teks ke Kolom</a> | <a href="#">Temukan</a> | <a href="#">Cari</a> | <a href="#">Ubah Kasus</a> | <a href="#">Hapus Spasi</a> | <a href="#">Bandingkan Teks</a>                                | <a href="#">Pengganti vs Ganti</a> | <a href="#">Teks</a> | <a href="#">Gabungkan</a> | <a href="#">Substring</a>
+                                <a href="#">String Terpisah</a> | <a href="#">Hitung Kata</a> | <a href="#">Teks ke
+                                    Kolom</a> | <a href="#">Temukan</a> | <a href="#">Cari</a> | <a href="#">Ubah
+                                    Kasus</a> | <a href="#">Hapus Spasi</a> | <a href="#">Bandingkan Teks</a> | <a href="#">Pengganti vs Ganti</a> | <a href="#">Teks</a> | <a href="#">Gabungkan</a> |
+                                <a href="#">Substring</a>
                             </div>
                         </div>
                     </div>
@@ -894,8 +1253,10 @@
                         </h2>
                         <div id="flush-Statistik" class="accordion-collapse collapse" aria-labelledby="Statistik" data-bs-parent="#accordionFungsi">
                             <div class="accordion-body">
-                                <a href="#">Rata-rata</a> | <a href="#">Bilangan Negatif ke Nol</a> | <a href="#">Angka Acak</a> | <a href="#">Peringkat</a> | <a href="#">Persentil dan Kuartil</a> | <a href="#">Plot Kotak dan Kumis</a> | <a href="#">AVERAGEIF</a>|
-                                <a href="#">Prakiraan</a> | <a href="#">MaxIf dan MinIf</a> | <a href="#">Rata-rata Tertimbang</a> | <a href="#">Modus</a> | <a href="#">Standar Deviasi</a> | <a href="#">Frekuensi</a>
+                                <a href="#">Rata-rata</a> | <a href="#">Bilangan Negatif ke Nol</a> | <a href="#">Angka
+                                    Acak</a> | <a href="#">Peringkat</a> | <a href="#">Persentil dan Kuartil</a> | <a href="#">Plot Kotak dan Kumis</a> | <a href="#">AVERAGEIF</a>|
+                                <a href="#">Prakiraan</a> | <a href="#">MaxIf dan MinIf</a> | <a href="#">Rata-rata
+                                    Tertimbang</a> | <a href="#">Modus</a> | <a href="#">Standar Deviasi</a> | <a href="#">Frekuensi</a>
                             </div>
                         </div>
                     </div>
@@ -907,7 +1268,8 @@
                         </h2>
                         <div id="flush-Round" class="accordion-collapse collapse" aria-labelledby="Round" data-bs-parent="#accordionFungsi">
                             <div class="accordion-body">
-                                <a href="#">Potong Desimal</a> | <a href="#">Kelipatan Terdekat</a> | <a href="#">Genap dan Ganjil</a> | <a href="#">Mod</a>
+                                <a href="#">Potong Desimal</a> | <a href="#">Kelipatan Terdekat</a> | <a href="#">Genap
+                                    dan Ganjil</a> | <a href="#">Mod</a>
                             </div>
                         </div>
                     </div>
@@ -916,11 +1278,12 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="RumusErrors">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-RumusErrors" aria-expanded="false" aria-controls="flush-RumusErrors">Rumus
-                Errors</button>
+                                Errors</button>
                         </h2>
                         <div id="flush-RumusErrors" class="accordion-collapse collapse" aria-labelledby="RumusErrors" data-bs-parent="#accordionFungsi">
                             <div class="accordion-body">
-                                <a href="#">IFERROR</a> | <a href="#">ISERROR</a> | <a href="#">AGGREGATE</a> | <a href="#">Referensi Edaran</a> | <a href="#">Audit Rumus</a> | <a href="#">Kesalahan Titik Mengambang</a> | <a href="#">IFNA</a>
+                                <a href="#">IFERROR</a> | <a href="#">ISERROR</a> | <a href="#">AGGREGATE</a> | <a href="#">Referensi Edaran</a> | <a href="#">Audit Rumus</a> | <a href="#">Kesalahan
+                                    Titik Mengambang</a> | <a href="#">IFNA</a>
                             </div>
                         </div>
                     </div>
@@ -929,11 +1292,14 @@
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="RumusArray">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-RumusArray" aria-expanded="false" aria-controls="flush-RumusArray">Rumus
-                Array</button>
+                                Array</button>
                         </h2>
                         <div id="flush-RumusArray" class="accordion-collapse collapse" aria-labelledby="RumusArray" data-bs-parent="#accordionFungsi">
                             <div class="accordion-body">
-                                <a href="#">Hitung Kesalahan</a> | <a href="#">Hitung Nilai Unik</a> | <a href="#">Hitung dengan Atau Kriteria</a> | <a href="#">Jumlahkan Setiap Baris Ke-N</a> | <a href="#">Jumlahkan Bilangan Terbesar</a> | <a href="#">Jumlah Rentang dengan Kesalahan</a>                                | <a href="#">Jumlahkan dengan Atau Kriteria</a> | <a href="#">Kata Yang Paling Sering Muncul</a> | <a href="#">Sistem Persamaan Linier</a>
+                                <a href="#">Hitung Kesalahan</a> | <a href="#">Hitung Nilai Unik</a> | <a href="#">Hitung dengan Atau Kriteria</a> | <a href="#">Jumlahkan Setiap Baris
+                                    Ke-N</a> | <a href="#">Jumlahkan Bilangan Terbesar</a> | <a href="#">Jumlah Rentang
+                                    dengan Kesalahan</a> | <a href="#">Jumlahkan dengan Atau Kriteria</a> | <a href="#">Kata Yang Paling Sering Muncul</a> | <a href="#">Sistem Persamaan
+                                    Linier</a>
                             </div>
                         </div>
                     </div>

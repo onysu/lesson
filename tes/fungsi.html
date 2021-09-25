@@ -75,48 +75,6 @@
         </div>
     </nav>
 
-    <!-- mega menu -->
-    <!-- <div class="megamenu">
-        <a class="nav-link fw-light" href="index.html">Excel</a>
-        <div class="megamenusubnav">
-            <button class="megamenusubnavbtn">Pendahuluan <span
-                        style="color: orange;">+</span> <i class="fa fa-caret-down"></i></button>
-            <div class="megamenusubnav-content">
-                <a class="nav-link fw-bold active" href="#">Rumus dan Fungsi</a>
-                <a class="nav-link" href="#">Ribbon</a>
-            </div>
-        </div>
-        <div class="megamenusubnav">
-            <button class="megamenusubnavbtn">Dasar-dasar <i class="fa fa-caret-down"></i></button>
-            <div class="megamenusubnav-content">
-                <a class="nav-link" href="#">Dasar-dasar 1</a>
-                <a class="nav-link" href="#">Dasar-dasar 2</a>
-                <a class="nav-link" href="#">Dasar-dasar 3</a>
-                <a class="nav-link" href="#">Dasar-dasar 4</a>
-            </div>
-        </div>
-        <div class="megamenusubnav">
-            <button class="megamenusubnavbtn">Fungsi <i class="fa fa-caret-down"></i></button>
-            <div class="megamenusubnav-content">
-                <a class="nav-link" href="#">Fungsi 1</a>
-                <a class="nav-link" href="#">Fungsi 2</a>
-                <a class="nav-link" href="#">Fungsi 3</a>
-                <a class="nav-link" href="#">Fungsi 4</a>
-            </div>
-        </div>
-        <div class="megamenusubnav">
-            <button class="megamenusubnavbtn">Analisis data <i class="fa fa-caret-down"></i></button>
-            <div class="megamenusubnav-content">
-                <a class="nav-link" href="#">Analisis data 1</a>
-                <a class="nav-link" href="#">Analisis data 2</a>
-                <a class="nav-link" href="#">Analisis data 3</a>
-                <a class="nav-link" href="#">Analisis data 4</a>
-            </div>
-        </div>
-        <a href="#">Latihan</a>
-    </div> -->
-    <!-- /mega menu -->
-
     <!-- <div class="container-xxl my-md-4 bd-layout"> -->
     <div class="container my-md-4 bd-layout">
         <main class="bd-main order-1">
@@ -133,7 +91,82 @@
             <!-- menu kanan -->
             <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
                 <strong class="d-block h6 my-2 pb-2 border-bottom">Di halaman ini</strong>
-                <nav id="TableOfContents">
+
+                <div class="accordion accordion-flush" id="accordionFunctions">
+                    <!-- Count dan Sum -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-CountandSum" aria-expanded="false" aria-controls="flush-CountandSum">Count dan Sum</button>
+                        </h2>
+                        <div id="flush-CountandSum" class="accordion-collapse collapse" aria-labelledby="flush-1" data-bs-parent="#accordionFunctions">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li><a href="#count">Count</a></li>
+                                    <li><a href="#countif">Countif</a></li>
+                                    <li><a href="#countifs">Countifs</a></li>
+                                    <li><a href="#sum">Sum</a></li>
+                                    <li><a href="#sumif">Sumif</a></li>
+                                    <li><a href="#sumifs">Sumifs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Logika -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-Logika" aria-expanded="false" aria-controls="flush-Logika">Logika</button>
+                        </h2>
+                        <div id="flush-Logika" class="accordion-collapse collapse" aria-labelledby="flush-2" data-bs-parent="#accordionFunctions">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li><a href="#LogikaIF">If</a>
+                                        <ul>
+                                            <li><a href="#LogikaAND">And</a></li>
+                                            <li><a href="#LogikaOR">Or</a></li>
+                                            <li><a href="#LogikaNOT">Not</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                                <ul>
+                                    <li><a href="#OperatorPerbandingan">Operator Perbandingan</a>
+                                        <ul>
+                                            <li><a href="#SamaDengan">Sama Dengan</a></li>
+                                            <li><a href="#LebihBesarDari">Lebih Besar Dari</a></li>
+                                            <li><a href="#KurangDari">Kurang Dari</a></li>
+                                            <li><a href="#LebihBesarDariAtauSamaDengan">Lebih Besar Dari Atau Sama Dengan</a></li>
+                                            <li><a href="#KurangDariAtauSamaDengan">Kurang Dari Atau Sama Dengan</a></li>
+                                            <li><a href="#TidakSebandingDengan">Tidak Sebanding Dengan</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-ReferensiSel" aria-expanded="false" aria-controls="flush-ReferensiSel">Referensi Sel</button>
+                        </h2>
+                        <div id="flush-ReferensiSel" class="accordion-collapse collapse" aria-labelledby="flush-3" data-bs-parent="#accordionFunctions">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li><a href="#SalinRumus">Salin Rumus</a></li>
+                                    <li><a href="#referensi3D">referensi 3D</a></li>
+                                    <li><a href="#ReferensiEksternal">Referensi Eksternal</a></li>
+                                    <li><a href="#Hyperlink">Hyperlink</a></li>
+                                    <li><a href="#SerikatdanIntersect">Serikat dan Intersect</a></li>
+                                    <li><a href="#PerubahanPersen">Perubahan Persen</a></li>
+                                    <li><a href="#TambahkanKolom">Tambahkan Kolom</a></li>
+                                    <li><a href="#ReferensiMutlak">Referensi Mutlak</a></li>
+                                    <li><a href="#Alamat">Alamat</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <nav id="TableOfContents">
                     <ul>
                         <li><a href="#CountandSum">Count dan Sum</a>
                             <ul>
@@ -160,18 +193,18 @@
                             <ul>
                                 <li>
                                     <a href="#LogikaIF">If</a>
-                                    <!-- <ul>
+                                    <ul>
                                         <li>
                                             <a href="#LogikaAND">And</a></li>
                                         <li>
                                             <a href="#LogikaOR">Or</a></li>
                                         <li>
                                             <a href="#LogikaNOT">Not</a></li>
-                                    </ul> -->
+                                    </ul>
                                 </li>
                                 <li>
                                     <a href="#OperatorPerbandingan">Operator Perbandingan</a>
-                                    <!-- <ul>
+                                    <ul>
                                         <li><a href="#SamaDengan">Sama Dengan</a></li>
                                         <li>
                                             <a href="#LebihBesarDari">Lebih Besar Dari</a></li>
@@ -184,7 +217,7 @@
                                         <li>
                                             <a href="#TidakSebandingDengan">Tidak Sebanding Dengan</a>
                                         </li>
-                                    </ul> -->
+                                    </ul>
                                 </li>
                                 <li><a href="#OperatorPerbandinganOr">Or</a></li>
                                 <li><a href="#OperatorPerbandinganRolltheDice">Melempar Dadu</a></li>
@@ -206,7 +239,7 @@
                         <li><a href="#RumusErrors">Rumus Errors</a></li>
                         <li><a href="#RumusArray">Rumus Array</a></li>
                     </ul>
-                </nav>
+                </nav> -->
             </div>
             <!-- /menu kanan -->
 

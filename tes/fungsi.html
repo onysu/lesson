@@ -58,11 +58,12 @@
 <body>
     <!-- top -->
     <div w3-include-html="top.html"></div>
+
     <!-- Navigasi kedua -->
-    <nav class="bd-subnavbar" aria-label="Navigasi kedua">
+    <!-- <nav class="bd-subnavbar" aria-label="Navigasi kedua">
         <div class="nav-scroller shadow-sm">
             <nav class="nav nav-underline" aria-label="Navigasi kedua">
-                <!-- <a class="nav-link fw-light" aria-current="page" href="index.html">Beranda</a> -->
+                <a class="nav-link fw-light" aria-current="page" href="index.html">Beranda</a>
                 <a class="nav-link fw-light" href="index.html">Excel</a>
                 <a class="nav-link fw-light" href="pendahuluan.html">Pendahuluan <span
                         style="color: orange;">+</span></a>
@@ -72,7 +73,50 @@
                 <a class="nav-link fw-light" href="latihan.html">Latihan</a>
             </nav>
         </div>
-    </nav>
+    </nav> -->
+
+    <!-- mega menu -->
+    <div class="megamenu">
+        <a class="nav-link fw-light" href="index.html">Excel</a>
+        <div class="megamenusubnav">
+            <button class="megamenusubnavbtn">Pendahuluan <span
+                        style="color: orange;">+</span> <i class="fa fa-caret-down"></i></button>
+            <div class="megamenusubnav-content">
+                <a class="nav-link fw-bold active" href="#">Rumus dan Fungsi</a>
+                <a class="nav-link" href="#">Ribbon</a>
+            </div>
+        </div>
+        <div class="megamenusubnav">
+            <button class="megamenusubnavbtn">Dasar-dasar <i class="fa fa-caret-down"></i></button>
+            <div class="megamenusubnav-content">
+                <a class="nav-link" href="#">Dasar-dasar 1</a>
+                <a class="nav-link" href="#">Dasar-dasar 2</a>
+                <a class="nav-link" href="#">Dasar-dasar 3</a>
+                <a class="nav-link" href="#">Dasar-dasar 4</a>
+            </div>
+        </div>
+        <div class="megamenusubnav">
+            <button class="megamenusubnavbtn">Fungsi <i class="fa fa-caret-down"></i></button>
+            <div class="megamenusubnav-content">
+                <a class="nav-link" href="#">Fungsi 1</a>
+                <a class="nav-link" href="#">Fungsi 2</a>
+                <a class="nav-link" href="#">Fungsi 3</a>
+                <a class="nav-link" href="#">Fungsi 4</a>
+            </div>
+        </div>
+        <div class="megamenusubnav">
+            <button class="megamenusubnavbtn">Analisis data <i class="fa fa-caret-down"></i></button>
+            <div class="megamenusubnav-content">
+                <a class="nav-link" href="#">Analisis data 1</a>
+                <a class="nav-link" href="#">Analisis data 2</a>
+                <a class="nav-link" href="#">Analisis data 3</a>
+                <a class="nav-link" href="#">Analisis data 4</a>
+            </div>
+        </div>
+        <a href="#">Latihan</a>
+    </div>
+    <!-- /mega menu -->
+
     <!-- <div class="container-xxl my-md-4 bd-layout"> -->
     <div class="container my-md-4 bd-layout">
         <main class="bd-main order-1">
@@ -142,6 +186,13 @@
                                         </li>
                                     </ul> -->
                                 </li>
+                                <li><a href="#OperatorPerbandinganOr">Or</a></li>
+                                <li><a href="#OperatorPerbandinganRolltheDice">Melempar Dadu</a></li>
+                                <li><a href="#OperatorPerbandinganIfs">Ifs</a></li>
+                                <li><a href="#OperatorPerbandinganContainsSpecificText">Berisi Teks Tertentu</a></li>
+                                <li><a href="#OperatorPerbandinganSwitch">Switch</a></li>
+                                <li><a href="#OperatorPerbandinganIfCellisBlank">Jika Sel Kosong</a></li>
+                                <li><a href="#OperatorPerbandinganAbsoluteValue">Nilai Mutlak</a></li>
 
                             </ul>
                         </li>

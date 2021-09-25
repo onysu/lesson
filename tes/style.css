@@ -255,3 +255,68 @@ kbd {
 details {
     padding-bottom: 1.5rem;
 }
+
+
+/* mega menu */
+
+.megamenu {
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 5%), inset 0 -1px 0 rgb(0 0 0 / 15%);
+    background-color: ghostwhite;
+}
+
+.megamenu a {
+    float: left;
+    font-size: 16px;
+    color: #6c757d;
+    text-align: center;
+    padding: .75rem;
+    text-decoration: none;
+}
+
+.megamenusubnav {
+    float: left;
+    overflow: hidden;
+}
+
+.megamenusubnav .megamenusubnavbtn {
+    /* font-size: 16px; */
+    border: none;
+    outline: none;
+    color: #6c757d;
+    padding: .75rem;
+    /* padding: 14px 16px; */
+    background-color: inherit;
+    /* font-family: inherit; */
+    margin: 0;
+}
+
+.megamenu a:hover,
+.megamenusubnav:hover .megamenusubnavbtn {
+    background-color: #eee;
+}
+
+.megamenusubnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #eee;
+    width: 100%;
+    z-index: 1;
+}
+
+.megamenusubnav-content a {
+    float: left;
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.megamenusubnav-content a:hover {
+    background-color: #eee;
+    color: black;
+}
+
+.megamenusubnav:hover .megamenusubnav-content {
+    display: block;
+}

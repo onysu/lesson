@@ -57,78 +57,28 @@
 
 <body>
     <!-- top -->
-    <div w3-include-html="top2.html"></div>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-        </div>
-    </nav>
+    <div w3-include-html="top.html"></div>
 
     <!-- Navigasi kedua -->
-    <!-- <nav class="bd-subnavbar" aria-label="Navigasi kedua">
+    <nav class="bd-subnavbar" aria-label="Navigasi kedua">
         <div class="nav-scroller shadow-sm">
             <nav class="nav nav-underline" aria-label="Navigasi kedua">
-                <a class="nav-link fw-bold active" aria-current="page" href="index.html">Beranda</a>
-                <a class="nav-link fw-bold active" href="index.html">Excel</a>
+                <!-- <a class="nav-link fw-bold active" aria-current="page" href="index.html">Beranda</a> -->
+                <a class="nav-link fw-bold active" aria-current="page" href="index.html">Excel</a>
                 <a class="nav-link fw-light" href="pendahuluan.html">Pendahuluan <span
                         style="color: orange;">+</span></a>
                 <a class="nav-link fw-light" href="dasar.html">Dasar-dasar</a>
                 <a class="nav-link fw-light" href="fungsi.html">Fungsi</a>
                 <a class="nav-link fw-light" href="analisisdata.html">Analisis data</a>
                 <a class="nav-link fw-light" href="latihan.html">Latihan</a>
-                <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
             </nav>
         </div>
-    </nav> -->
-
+    </nav>
 
     <!-- <div class="container-xxl my-md-4 bd-layout"> -->
     <div class="container my-md-4 bd-layout">
         <main class="bd-main order-1">
+
             <!-- intro -->
             <!-- <div class="bd-intro ps-lg-4"> -->
             <div class="bd-intro">
@@ -156,7 +106,7 @@
                             </figure>
                         </div>
                         <div class="col-md-6">
-                            <p class="h2">Panduan</p>
+                            <p class="h4">Panduan</p>
                             <p>Baca instruksi dan dokumentasi yang lebih mendetail tentang penggunaan Microsoft Excel.
                             </p>
                             <ul class="icon-list">
@@ -210,203 +160,72 @@
             <!-- konten -->
             <!-- <div class="bd-content ps-lg-4"> -->
             <div class="bd-content">
-                <p class="h3" id="jangakauan">Range</p>
-                <p class="link-text"><a href="#SelBarisKolom">Sel, Baris, Kolom</a> | <a href="#ContohRange">Contoh
-                        Range</a> | <a href="#IsiRange">Isi Range</a> | <a href="#PindahkanRange">Pindahkan Range</a> |
-                    <a href="#SalinTempelRange">Salin/Tempel Range</a> | <a href="#SisipkanBarisKolom">Sisipkan Baris,
-                        Kolom</a></p>
+                <p class="h4" id="jangakauan">Range</p>
+                <p class="link-text"><a href="#SelBarisKolom">Sel, Baris, Kolom</a> | <a href="#ContohRange">Contoh Range</a> | <a href="#IsiRange">Isi Range</a> | <a href="#PindahkanRange">Pindahkan Range</a> | <a href="#SalinTempelRange">Salin/Tempel Range</a> | <a href="#SisipkanBarisKolom">Sisipkan Baris, Kolom</a></p>
                 <p>Sebuah Range di Excel adalah kumpulan dua atau lebih sel. Bab ini memberikan gambaran umum tentang beberapa operasi jangkauan yang sangat penting.</p>
-                <p class="h3" id="SelBarisKolom">Sel, Baris, Kolom</p>
+
+                <p class="h5" id="SelBarisKolom">Sel, Baris, Kolom</p>
                 <p>Mari kita mulai dengan memilih sel, baris, dan kolom.</p>
                 <ol>
                     <li>
-                        <p>Untuk memilih sel <strong>C3</strong>, klik kotak di persimpangan kolom <strong>C</strong> dan baris <strong>3</strong>.</p>
+                        <p>Untuk memilih sel C3, klik kotak di persimpangan kolom C dan baris 3.</p>
                         <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image001.png" alt="Pilih Sel"></p>
                     </li>
                     <li>
-                        <p>Untuk memilih kolom <strong>C</strong>, klik pada header kolom <strong>C</strong>.</p>
+                        <p>Untuk memilih kolom C, klik pada header kolom C.</p>
                         <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image002.png" alt="Pilih Kolom di Excel"></p>
                     </li>
                     <li>
-                        <p>Untuk memilih baris <strong>3</strong>, klik header baris <strong>3</strong>.</p>
-                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image003.png" alt="Pilih Baris">
-                        </p>
+                        <p>Untuk memilih baris 3, klik header baris 3.</p>
+                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image003.png" alt="Pilih Baris"></p>
                     </li>
                 </ol>
-                <p class="h3" id="ContohRange">Contoh Range</p>
+                <p class="h5" id="ContohRange">Contoh Range</p>
                 <p>Range adalah kumpulan dari dua atau lebih sel.</p>
                 <ol>
                     <li>
-                        <p>Untuk memilih Range <strong>B2:C4</strong>, klik sel <strong>B2</strong> dan seret ke sel
-                            <strong>C4</strong>.</p>
+                        <p>1. Untuk memilih Range B2:C4, klik sel B2 dan seret ke sel C4.</p>
                         <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image004.png" alt="Range di Excel"></p>
                     </li>
                     <li>
-                        <p>Untuk memilih Range sel individual, tahan <kbd>Ctrl</kbd> dan klik pada setiap sel yang ingin Anda sertakan dalam Range.</p>
+                        <p>2. Untuk memilih Range sel individual, tahan CTRL dan klik pada setiap sel yang ingin Anda sertakan dalam Range.</p>
                         <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image005.png" alt="Range Sel Individu"></p>
                     </li>
                 </ol>
-                <p class="h3" id="IsiRange">Isi Range</p>
+                <p class="h5" id="IsiRange">Isi Range</p>
                 <p>Untuk mengisi Range, jalankan langkah-langkah berikut.</p>
                 <ol>
                     <li>
-                        <p>Masukkan nilai <strong>2</strong> ke dalam sel <strong>B2</strong>.</p>
+                        <p>Masukkan nilai 2 ke dalam sel B2.</p>
                         <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image006.png" alt="Masukkan Nilai"></p>
                     </li>
                     <li>
-                        <p>Pilih sel <strong>B2</strong>, klik di sudut kanan bawah sel <strong>B2</strong> dan seret ke bawah ke sel <strong>B8</strong>.</p>
+                        <p>Pilih sel B2, klik di sudut kanan bawah sel B2 dan seret ke bawah ke sel B8.</p>
                         <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image007.png" alt="Tarik ke bawah"></p>
                         <p>Hasil:</p>
                         <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image008.png" alt="Tarik ke Bawah Hasil"></p>
                         <p>Teknik menyeret ini sangat penting dan Anda akan sering menggunakannya di Excel. Berikut contoh lain.</p>
                     </li>
                     <li>
-                        <p>Masukkan nilai <strong>2</strong> ke dalam sel <strong>B2</strong> dan nilai <strong>4</strong> ke dalam sel
-                            <strong>B3</strong>.</p>
-                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image009.png" alt="Sebuah pola">
-                        </p>
+                        <p>Masukkan nilai 2 ke dalam sel B2 dan nilai 4 ke dalam sel B3.</p>
+                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image009.png" alt="Sebuah pola"></p>
                     </li>
                     <li>
-                        <p>Pilih sel <strong>B2</strong> dan sel <strong>B3</strong>, klik di sudut kanan bawah Range ini dan seret ke bawah.</p>
+                        <p>Pilih sel B2 dan sel B3, klik di sudut kanan bawah Range ini dan seret ke bawah.</p>
                         <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image010.png" alt="Pola Diseret ke Bawah"></p>
                         <p>Excel secara otomatis mengisi Range berdasarkan pola dua nilai pertama. Itu cukup keren ya!? Berikut contoh lain.</p>
                     </li>
                     <li>
-                        <p>Masukkan <a href="#detailTanggal">tanggal</a> 13/6/2016 ke dalam sel <strong>B2</strong> dan tanggal
-                            <strong>16/6/2016</strong> ke dalam sel <strong>B3</strong>.</p>
-                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image011.png" alt="Pola Tanggal">
-                        </p>
-                        <p>
-                            <details id="detailTanggal">
-                                <summary class="text-primary mb-3">Selengkapnya Fungsi Tanggal</summary>
-                                <p class="link-text"><a href="#Tahunbulanhari">Tahun, Bulan, Hari</a> | <a href="#FungsiTanggal">Fungsi Tanggal</a> | <a href="#TanggalWaktuSaatIni">Tanggal &amp; Waktu Saat Ini</a> | <a href="#JamMenitDetik">Jam, Menit, Detik</a> | <a href="#FungsiWaktu">Fungsi Waktu</a></p>
-                                <p>Untuk memasukkan tanggal di Excel, gunakan karakter &quot;/&quot; atau &quot;-&quot;. Untuk memasukkan waktu, gunakan &quot;:&quot; (titik dua). Anda juga dapat memasukkan tanggal dan waktu dalam satu sel.</p>
-                                <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image001.png" alt="Tanggal dan Waktu di Excel"></p>
-                                <p class="info"><strong>Catatan:</strong> Tanggal dalam Format AS. Bulan pertama, Hari kedua. Jenis format ini tergantung pada pengaturan regional windows Anda. Pelajari lebih lanjut tentang <a href="#FungsiTanggalWaktu">format Tanggal
-                                        dan Waktu</a>.</p>
-                                <p class="h4" id="Tahunbulanhari">
-                                    Tahun Bulan Hari</p>
-                                <p>Untuk mendapatkan tahun dari suatu tanggal, gunakan fungsi YEAR.</p>
-                                <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image002.png" alt="Fungsi Tahun"></p>
-                                <p class="info"><strong>Catatan:</strong> gunakan fungsi MONTH dan DAY untuk mendapatkan bulan dan hari dari suatu tanggal.</p>
-                                <p class="h4" id="FungsiTanggal">
-                                    Fungsi Tanggal</p>
-                                <ol>
-                                    <li>
-                                        <p>Untuk menambahkan jumlah hari ke tanggal, gunakan rumus sederhana berikut.
-                                        </p>
-                                        <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image003.png" alt="Tambahkan Hari"></p>
-                                    </li>
-                                    <li>
-                                        <p>Untuk menambahkan jumlah tahun, bulan dan/atau hari, gunakan fungsi TANGGAL.
-                                        </p>
-                                        <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image004.png" alt="Tambahkan Tahun, Bulan, dan Hari"></p>
-                                    </li>
-                                </ol>
-                                <p class="info"><strong>Catatan:</strong> fungsi DATE menerima tiga argumen: tahun, bulan dan hari. Excel tahu bahwa 6 + 2 = 8 = Agustus memiliki 31 hari dan bergulir ke bulan berikutnya (23 Agustus + 9 hari = 1 September).</p>
-                                <p class="h4" id="TanggalWaktuSaatIni">
-                                    Tanggal &amp; Waktu Saat Ini
-                                </p>
-                                <p>Untuk mendapatkan tanggal dan waktu saat ini, gunakan fungsi SEKARANG.</p>
-                                <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image005.png" alt="Sekarang Fungsi"></p>
-                                <p class="info"><strong>Catatan:</strong> gunakan fungsi TODAY untuk memasukkan tanggal
-                                    <a href="https://www.excel-easy.com/examples/todays-date.html">hari ini</a> di Excel.
-                                </p>
-                                <p class="h4" id="JamMenitDetik">
-                                    Jam, Menit, Detik</p>
-                                <p>Untuk mengembalikan jam, gunakan fungsi HOUR.</p>
-                                <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image006.png" alt="Fungsi Jam"></p>
-                                <p class="info"><strong>Catatan:</strong> gunakan fungsi MINUTE dan SECOND untuk mengembalikan menit dan detik.</p>
-                                <p class="h4" id="FungsiWaktu">
-                                    Fungsi Waktu</p>
-                                <p>Untuk menambahkan jumlah jam, menit dan/atau detik, gunakan fungsi TIME.</p>
-                                <p><img class="img-fluid" src="../excel/files/FungsiTanggalWaktu_files/image007.png" alt="Tambahkan Jam, Menit, dan Detik"></p>
-                                <p class="info"><strong>Catatan:</strong> Excel menambahkan 2 jam, 10 + 1 = 11 menit dan 70 - 60 = 10 detik.</p>
-                            </details>
-                        </p>
-                        <p>
-                            <details id="FungsiTanggalWaktu">
-                                <summary class="text-primary mb-3">Format Tanggal dan Waktu</summary>
-                                <p>Tanggal dan waktu di Excel dapat ditampilkan dalam berbagai cara. Untuk menerapkan format Tanggal atau Waktu, jalankan langkah-langkah berikut.</p>
-                                <p>1. Pilih sel A1.</p>
-                                <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image001.png" alt="Format Tanggal dan Waktu di Excel"></p>
-                                <p>2. Klik kanan, lalu klik Format Sel.</p>
-                                <p>3. Dalam daftar Kategori, pilih Tanggal, lalu pilih format Tanggal.
-                                </p>
-                                <p><img width=529 height=465 id="Picture 17" class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image002.png" alt="Format Sel"></p>
-                                <p>4. Klik Oke.</p>
-                                <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image003.png" alt="Format Tanggal Panjang"></p>
-                                <p class="info"><strong>Catatan:</strong> untuk menerapkan format Waktu, dalam daftar Kategori, pilih Waktu.</p>
-                                <p>5. Tanggal disimpan sebagai angka di Excel dan menghitung jumlah hari sejak 0, Januari 1900. Waktu ditangani secara internal sebagai angka antara 0 dan 1. Untuk melihat ini dengan jelas, ubah format angka sel A1, B1 dan
-                                    C1 ke Umum.</p>
-                                <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image004.png" alt="Format Umum"></p>
-                                <p class="info"><strong>Catatan:</strong> ternyata, 42544 hari setelah 0, 1900 sama dengan 23 Juni 2016. 6:00 direpresentasikan sebagai 0,25 (seperempat sepanjang hari).</p>
-                                <p>6. Anda dapat memasukkan waktu sebagai 6:00, tetapi Excel menampilkan waktu ini sebagai 6:00:00 di bilah rumus. AM digunakan untuk waktu malam dan pagi hari. PM digunakan untuk waktu pada sore dan malam hari.
-                                </p>
-                                <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image005.png" alt="Format waktu"></p>
-                                <p>7. Ubah format angka sel C1 menjadi Date only.</p>
-                                <p><img class="img-fluid" src="../excel/files/FormatTanggaldanWaktu_files/image006.png" alt="Format tanggal"></p>
-                                <p class="info"><strong>Catatan:</strong> sel C1 masih berisi angka 42544.25. Kami hanya mengubah tampilan nomor, bukan nomor itu sendiri.</p>
-                            </details>
-                        </p>
-                        <p>
-                            <details id="Tanggal-hari-ini">
-                                <summary class="text-primary mb-3">Fungsi Tanggal hari ini</summary>
-                                <p class="link-text"><a href="#HariinidanSekarang">Hari ini dan Sekarang</a> | <a href="#TanggaldanWaktuStatis">Tanggal dan Waktu Statis</a></p>
-                                <p>Untuk memasukkan tanggal hari ini di Excel, gunakan fungsi TODAY. Untuk memasukkan tanggal dan waktu saat ini, gunakan fungsi <strong>NOW</strong>. Untuk memasukkan tanggal dan waktu saat ini sebagai nilai statis, gunakan
-                                    pintasan keyboard.
-                                </p>
-
-                                <p class="h4" id="HariinidanSekarang">
-                                    Hari ini dan Sekarang <span class="span-text">(Today and Now)</span></p>
-                                <ol>
-                                    <li>
-                                        <p>Untuk memasukkan tanggal hari ini di Excel, gunakan fungsi <strong>TODAY</strong>.</p>
-                                        <p><img class="img-fluid" src="../excel/files/Tanggal-hari-ini_files/image001.png" alt="Fungsi hari ini"></p>
-                                        <p class="info"><strong>Catatan:</strong> fungsi <strong>TODAY</strong> tidak membutuhkan argumen. Tanggal ini akan diperbarui secara otomatis saat Anda membuka buku kerja pada tanggal lain.
-                                        </p>
-                                    </li>
-                                    <li>
-                                        <p>Untuk memasukkan tanggal dan waktu sekarang, gunakan fungsi
-                                            <STRong>NOW</STRong>.</p>
-                                        <p><img class="img-fluid" src="../excel/files/Tanggal-hari-ini_files/image002.png" alt="Sekarang Fungsi"></p>
-                                        <p class="info"><strong>Catatan:</strong> fungsi <strong>NOW</strong> tidak membutuhkan argumen. Waktu ini akan diperbarui secara otomatis setiap kali lembar dihitung ulang. Ini terjadi saat Anda membuat perubahan ke sel mana pun
-                                            atau saat Anda membuka buku kerja. Tekan F9 untuk menghitung ulang buku kerja secara manual.</p>
-                                    </li>
-                                    <li>
-                                        <p>Untuk memasukkan waktu saat ini saja, gunakan <strong>NOW</strong>()-<strong>TODAY</strong>() dan terapkan <a href="#FungsiTanggalWaktu">format waktu</a>.</p>
-                                        <p><img class="img-fluid" src="../excel/files/Tanggal-hari-ini_files/image003.png" alt="Waktu saat ini"></p>
-                                        <p class="info"><strong>Catatan:</strong> tanggal disimpan sebagai angka di Excel dan menghitung jumlah hari sejak 0, Januari 1900. Waktu ditangani secara internal sebagai angka antara 0 dan 1. Kunjungi halaman kami tentang
-                                            <a href="#FungsiTanggalWaktu">format tanggal dan waktu</a> untuk informasi selengkapnya.</p>
-                                    </li>
-                                </ol>
-
-                                <p class="h4" id="TanggaldanWaktuStatis">Tanggal dan Waktu Statis</p>
-                                <ol>
-                                    <li>
-                                        <p>Untuk memasukkan tanggal saat ini sebagai nilai statis, tekan <kbd>Ctrl</kbd>+<kbd>;</kbd> (titik koma).</p>
-                                        <p><img class="img-fluid" src="../excel/files/Tanggal-hari-ini_files/image004.png" alt="Tanggal Statis"></p>
-                                        <p class="info"><strong>Catatan:</strong> tanggal ini tidak akan berubah saat Anda membuka buku kerja pada tanggal lain.</p>
-                                    </li>
-                                    <li>
-                                        <p>Untuk memasukkan waktu saat ini sebagai nilai statis, tekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>;</kbd>(titik koma).</p>
-                                        <p><img class="img-fluid" src="../excel/files/Tanggal-hari-ini_files/image005.png" alt="Waktu Statis"></p>
-                                        <p class="info"><strong>Catatan:</strong> waktu ini tidak akan berubah saat Anda membuat perubahan ke sel atau saat Anda membuka buku kerja.</p>
-                                    </li>
-                                    <li>
-                                        <p>Untuk memasukkan tanggal dan waktu saat ini sebagai nilai statis, cukup tekan <kbd>Ctrl</kbd>+<kbd>;</kbd> (titik koma), masukkan spasi dan tekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>;</kbd>(titik koma).</p>
-                                        <p><img class="img-fluid" src="../excel/files/Tanggal-hari-ini_files/image006.png" alt="Tanggal dan Waktu Statis"></p>
-                                    </li>
-                                </ol>
-                            </details>
-                        </p>
+                        <p>Masukkan <a href="https://www.excel-easy.com/functions/date-time-functions.html">tanggal</a> 13/6/2016 ke dalam sel B2 dan tanggal 16/6/2016 ke dalam sel B3.</p>
+                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image011.png" alt="Pola Tanggal"></p>
                     </li>
                     <li>
-                        <p>Pilih sel <strong>B2</strong> dan sel <strong>B3</strong>, klik di sudut kanan bawah Range ini dan seret ke bawah.</p>
+                        <p>Pilih sel B2 dan sel B3, klik di sudut kanan bawah Range ini dan seret ke bawah.</p>
                         <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image012.png" alt="Pola Tanggal Diseret Ke Bawah"></p>
+                        <p class="info"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/autofill.html">IsiOtomatis</a> untuk lebih banyak contoh.</p>
                     </li>
                 </ol>
-                <p class="h3" id="PindahkanRange">Pindahkan Range</p>
+                <p class="h5" id="PindahkanRange">Pindahkan Range</p>
                 <p>Untuk memindahkan Range, jalankan langkah-langkah berikut.</p>
                 <ol>
                     <li>
@@ -415,11 +234,10 @@
                     </li>
                     <li>
                         <p>Seret Range ke lokasi barunya.</p>
-                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image014.png" alt="Hasil Pindah">
-                        </p>
+                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image014.png" alt="Hasil Pindah"></p>
                     </li>
                 </ol>
-                <p class="h3" id="SalinTempelRange">Salin/Tempel Range</p>
+                <p class="h5" id="SalinTempelRange">Salin/Tempel Range</p>
                 <p>Untuk menyalin dan menempelkan Range, jalankan langkah-langkah berikut.</p>
                 <ol>
                     <li>
@@ -432,7 +250,7 @@
                         <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image016.png" alt="Hasil Salin/Tempel"></p>
                     </li>
                 </ol>
-                <p class="h3" id="SisipkanBarisKolom">Sisipkan Baris, Kolom</p>
+                <p class="h5" id="SisipkanBarisKolom">Sisipkan Baris, Kolom</p>
                 <p>Untuk menyisipkan baris antara nilai 20 dan 40 di bawah, jalankan langkah-langkah berikut.</p>
                 <ol>
                     <li>
@@ -441,24 +259,20 @@
                     </li>
                     <li>
                         <p>Klik kanan, lalu klik Sisipkan.</p>
-                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image018.png" alt="Klik Sisipkan">
-                        </p>
+                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image018.png" alt="Klik Sisipkan"></p>
                         <p>Hasil.</p>
                         <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image019.png" alt="Baris yang Disisipkan"></p>
-                        <p>Baris di bawah baris baru digeser ke bawah. Dengan cara yang sama, Anda dapat menyisipkan kolom.
-                        </p>
+                        <p>Baris di bawah baris baru digeser ke bawah. Dengan cara yang sama, Anda dapat menyisipkan kolom.</p>
                     </li>
                 </ol>
-                <p class="h2" id="RumusdanFungsi">Rumus dan Fungsi</p>
-                <p class="link-text"><a href="#MasukkanRumus">Masukkan Rumus</a> | <a href="#MengeditRumus">Mengedit Rumus</a> | <a href="#PrioritasOperator">Prioritas Operator</a> | <a href="#SalinTempelRumus">Salin/Tempel Rumus</a> | <a href="#SisipkanRumus">Sisipkan Rumus</a></p>
-                <p>Sebuah rumus adalah ekspresi yang menghitung nilai sel. Fungsi adalah rumus yang telah ditentukan sebelumnya dan sudah tersedia di Excel.</p>
+                <p class="h4" id="RumusdanFungsi">Rumus dan Fungsi</p>
+                <p class="link-text"><a href="#">Masukkan Rumus</a> | <a href="#">Mengedit Rumus</a> | <a href="#">Prioritas Operator</a> | <a href="#">Salin/Tempel Rumus</a> | <a href="#">Insert Function</a></p>
+                <p>Sebuah rumus adalah ekspresi yang menghitung nilai sel. Fungsi adalah rumus yang telah ditentukan sebelumnya dan sudah tersedia di Excel .</p>
                 <p>Misalnya, sel A3 di bawah ini berisi rumus yang menambahkan nilai sel A2 ke nilai sel A1.</p>
-                <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image001.png" alt="Rumus di Excel">
-                </p>
+                <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image001.png" alt="Rumus di Excel"></p>
                 <p>Misalnya, sel A3 di bawah ini berisi fungsi SUM yang menghitung jumlah Range A1:A2.</p>
-                <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image002.png" alt="Fungsi di Excel">
-                </p>
-                <p class="h3" id="MasukkanRumus">
+                <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image002.png" alt="Fungsi di Excel"></p>
+                <p class="h5" id="MasukkanRumus">
                     Masukkan Rumus</p>
                 <p>Untuk memasukkan rumus, jalankan langkah-langkah berikut.</p>
                 <ol>
@@ -467,8 +281,7 @@
                     <li>
                         <p>Misalnya, ketikkan rumus A1+A2.</p>
                         <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image001.png" alt="Masukkan Formula"></p>
-                        <p class="info"><strong>Tips:</strong> daripada mengetik A1 dan A2, cukup pilih sel A1 dan sel A2.
-                        </p>
+                        <p>Tip: daripada mengetik A1 dan A2, cukup pilih sel A1 dan sel A2.</p>
                     </li>
                     <li>
                         <p>Ubah nilai sel A1 menjadi 3.</p>
@@ -476,31 +289,24 @@
                         <p>Excel secara otomatis menghitung ulang nilai sel A3. Ini adalah salah satu fitur Excel yang paling kuat!</p>
                     </li>
                 </ol>
-                <p class="h3" id="MengeditRumus">
+                <p class="h5" id="MengeditRumus">
                     Mengedit Rumus</p>
                 <p>Saat Anda memilih sel, Excel memperlihatkan nilai atau rumus sel di bilah rumus.</p>
                 <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image004.png" alt="Formula Bar"></p>
-                <ol>
-                    <li>
-                        <p>Untuk mengedit rumus, klik di bilah rumus dan ubah rumus.</p>
-                        <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image005.png" alt="Mengedit Rumus di Excel"></p>
-                    </li>
-                    <li>
-                        <p>Tekan Enter.</p>
-                        <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image006.png" alt="Formula yang Diedit"></p>
-                    </li>
-                </ol>
-                <p class="h3" id="PrioritasOperator">
+                <p>1. Untuk mengedit rumus, klik di bilah rumus dan ubah rumus.</p>
+                <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image005.png" alt="Mengedit Rumus di Excel"></p>
+                <p>2. Tekan Enter.</p>
+                <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image006.png" alt="Formula yang Diedit"></p>
+                <p class="h5" id="PrioritasOperator">
                     Prioritas Operator</p>
                 <p>Excel menggunakan urutan default di mana perhitungan terjadi. Jika bagian dari rumus ada dalam tanda kurung, bagian itu akan dihitung terlebih dahulu. Kemudian melakukan perhitungan perkalian atau pembagian. Setelah ini selesai, Excel
                     akan menambah dan mengurangi sisa rumus Anda. Lihat contoh di bawah ini.</p>
                 <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image007.png" alt="Prioritas Operator"></p>
-                <p>Pertama, Excel melakukan perkalian (A1 * A2). Selanjutnya, Excel menambahkan nilai sel A3 ke hasil ini.
-                </p>
+                <p>Pertama, Excel melakukan perkalian (A1 * A2). Selanjutnya, Excel menambahkan nilai sel A3 ke hasil ini.</p>
                 <p>Contoh lain,</p>
                 <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image008.png" alt="Tanda kurung"></p>
                 <p>Pertama, Excel menghitung bagian dalam tanda kurung (A2+A3). Selanjutnya, hasil ini dikalikan dengan nilai sel A1.</p>
-                <p class="h3" id="SalinTempelRumus">
+                <p class="h5" id="SalinTempelRumus">
                     Salin/Tempel Rumus</p>
                 <p>Saat Anda menyalin rumus, Excel secara otomatis menyesuaikan referensi sel untuk setiap sel baru tempat rumus disalin. Untuk memahaminya, lakukan langkah-langkah berikut.</p>
                 <ol>
@@ -521,11 +327,10 @@
                         <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image013.png" alt="Salin Hasil Rumus"></p>
                     </li>
                 </ol>
-                <p class="h3" id="SisipkanRumus">
+                <p class="h5" id="SisipkanRumus">
                     Sisipkan Rumus</p>
-                <p>Setiap fungsi memiliki struktur yang sama. Misalnya, <strong>SUM(A1:A4)</strong>. Nama fungsi ini adalah <strong>SUM</strong>. Bagian antara tanda kurung (argumen) berarti kami memberikan Excel Range <strong>A1:A4</strong> sebagai input.
-                    Fungsi ini menambahkan nilai dalam sel <strong>A1</strong>, <strong>A2, A3</strong> dan
-                    <strong>A4</strong>. Tidak mudah untuk mengingat fungsi dan argumen mana yang digunakan untuk setiap tugas. Untungnya, fitur Insert Function di Excel membantu Anda dalam hal ini.</p>
+                <p>Setiap fungsi memiliki struktur yang sama. Misalnya, SUM(A1:A4). Nama fungsi ini adalah SUM. Bagian antara tanda kurung (argumen) berarti kami memberikan Excel Range A1:A4 sebagai input. Fungsi ini menambahkan nilai dalam sel A1, A2, A3
+                    dan A4. Tidak mudah untuk mengingat fungsi dan argumen mana yang digunakan untuk setiap tugas. Untungnya, fitur Insert Function di Excel membantu Anda dalam hal ini.</p>
                 <p>Untuk menyisipkan fungsi, jalankan langkah-langkah berikut.</p>
                 <ol>
                     <li>Pilih sel.</li>
@@ -535,25 +340,25 @@
                         <p>Kotak dialog 'Insert Function' muncul.</p>
                     </li>
                     <li>
-                        <p>Cari fungsi atau pilih fungsi dari kategori. Misalnya, pilih <strong>COUNTIF</strong> dari kategori Statistik.
-                        </p>
+                        <p>Cari fungsi atau pilih fungsi dari kategori. Misalnya, pilih COUNTIF dari kategori Statistik.</p>
                         <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image015.png" alt="Masukkan Kotak Dialog Fungsi"></p>
                     </li>
                     <li>
-                        <p>Klik Oke. <br> Kotak dialog 'Function Arguments' muncul.</p>
+                        <p>Klik Oke.</p>
+                        <p>Kotak dialog 'Function Arguments' muncul.</p>
                     </li>
-                    <li>Klik pada kotak Range dan pilih range <strong>A1:C2</strong>.</li>
-                    <li>Klik di kotak Kriteria dan ketik <strong>&gt;5</strong>.</li>
+                    <li>Klik pada kotak Range dan pilih range A1:C2.</li>
+                    <li>Klik di kotak Kriteria dan ketik &gt;5.</li>
                     <li>
                         <p>Klik Oke.</p>
                         <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image016.png" alt="Kotak Dialog Argumen Fungsi"></p>
-                        <p>Hasil. Fungsi <strong>COUNTIF</strong> menghitung jumlah sel yang lebih besar dari 5.</p>
-                        <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image017.png" alt="Hasil <strong>COUNTIF</strong>"></p>
-                        <p class="info"><strong>Catatan:</strong> daripada menggunakan fitur Insert Function, cukup ketik =<strong>COUNTIF</strong>(<strong>A1:C2</strong>,&quot;&gt;5&quot;). Saat Anda tiba di: =<strong>COUNTIF</strong>( alih-alih mengetik <strong>A1:C2</strong>,
-                            cukup pilih Range <strong>A1:C2</strong>.</p>
+                        <p>Hasil. Fungsi COUNTIF menghitung jumlah sel yang lebih besar dari 5.</p>
+                        <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image017.png" alt="Hasil COUNTIF"></p>
+                        <p class="info"><strong>Catatan:</strong> daripada menggunakan fitur Insert Function, cukup ketik =COUNTIF(A1:C2,&quot;&gt;5&quot;). Saat Anda tiba di: =COUNTIF( alih-alih mengetik A1:C2, cukup pilih Range A1:C2.</p>
                     </li>
                 </ol>
             </div>
+
         </main>
     </div>
     <!-- footer -->

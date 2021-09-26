@@ -1,0 +1,50 @@
+<p class="h4">Referensi Sel</p>
+<p><a href="#ReferensiRelatif">Referensi Relatif</a> | <a href="#ReferensiMutlak">Referensi Mutlak</a> | <a href="#ReferensiCampuran">Referensi Campuran</a></p>
+<p>Referensi sel di Excel sangat penting. Pahami perbedaan antara referensi relatif, absolut, dan campuran, dan Anda sedang menuju kesuksesan.</p>
+<p class="h5" id="ReferensiRelatif">
+    Referensi Relatif</p>
+<p>Secara default, Excel menggunakan referensi relatif. Lihat rumus di sel D2 di bawah ini. Referensi sel D2 (menunjuk ke) sel B2 dan sel C2. Kedua referensi itu relatif.</p>
+<p><img class="img-fluid" src="../excel/files/ReferensiSel_files/image001.png" alt="Contoh Referensi Relatif"></p>
+<p>Pilih sel D2, klik di sudut kanan bawah sel D2 dan seret ke bawah ke sel D5.</p>
+<p><img class="img-fluid" src="../excel/files/ReferensiSel_files/image002.png" alt="Referensi Relatif di Excel"></p>
+<p>Sel D3 mereferensikan sel B3 dan sel C3. Sel D4 mereferensikan sel B4 dan sel C4. Sel D5 mereferensikan sel B5 dan sel C5. Dengan kata lain: setiap sel mereferensikan dua tetangganya di sebelah kiri.</p>
+<p class="h5" id="ReferensiMutlak">
+    Referensi Mutlak</p>
+<p>Lihat rumus di sel E3 di bawah ini.</p>
+<ol>
+    <li>
+        <p>Untuk membuat referensi absolut ke sel H3, letakkan simbol $ di depan huruf kolom dan nomor baris ($H$3) dalam rumus sel E3.
+        </p>
+        <p><img class="img-fluid" src="../excel/files/ReferensiSel_files/image003.png" alt="Contoh Referensi Absolut"></p>
+    </li>
+    <li>
+        <p>Sekarang kita dapat dengan cepat menyeret rumus ini ke sel lain.</p>
+        <p><img class="img-fluid" src="../excel/files/ReferensiSel_files/image004.png" alt="Referensi Mutlak di Excel"></p>
+        <p>Referensi ke sel H3 diperbaiki (saat kita menyeret rumus ke bawah dan ke seberang). Akibatnya, panjang dan lebar yang benar dalam inci dihitung. Kunjungi halaman kami tentang <a href="#">referensi absolut</a> untuk mempelajari lebih lanjut tentang
+            jenis referensi ini.</p>
+    </li>
+</ol>
+<p class="h5" id="ReferensiCampuran">
+    Referensi Campuran</p>
+<p>Terkadang kita membutuhkan kombinasi referensi relatif dan absolut ( referensi campuran ).</p>
+<ol>
+    <li>
+        <p>Lihat rumus di sel F2 di bawah ini.</p>
+        <p><img class="img-fluid" src="../excel/files/ReferensiSel_files/image005.png" alt="Contoh Referensi Campuran"></p>
+    </li>
+    <li>
+        <p>Kami ingin menyalin rumus ini ke sel lain dengan cepat. Seret sel F2 melintasi satu sel, dan lihat rumus di sel G2.</p>
+        <p><img class="img-fluid" src="../excel/files/ReferensiSel_files/image006.png" alt="Contoh Referensi Campuran"></p>
+        <p>Apakah Anda melihat apa yang terjadi? Referensi ke harga harus menjadi referensi tetap ke kolom B. Solusi: letakkan simbol $ di depan huruf kolom ($B2) pada rumus sel F2. Dengan cara yang sama, ketika kita menyeret sel F2 ke bawah, referensi ke
+            pengurangan harus menjadi referensi tetap ke baris 6. Solusi: letakkan simbol $ di depan nomor baris (B$6) dalam rumus sel F2.</p>
+        <p>Hasil:</p>
+        <p><img class="img-fluid" src="../excel/files/ReferensiSel_files/image007.png" alt="Contoh Referensi Campuran"></p>
+        <p class="info"><strong>Catatan:</strong> kami tidak menempatkan simbol $ di depan nomor baris $B2 (dengan cara ini kami mengizinkan referensi untuk berubah dari $B2 (Jeans) menjadi $B3 (Shirts) saat kami menyeret rumus ke bawah). Dengan cara yang sama, kita
+            tidak menempatkan simbol $ di depan huruf kolom B$6 (dengan cara ini kita mengizinkan referensi berubah dari B$6 (Jan) ke C$6 (Feb) dan D$6 (Mar) ketika kami menyeret rumus ke seberang).</p>
+    </li>
+    <li>
+        <p>Sekarang kita dapat dengan cepat menyeret rumus ini ke sel lain.</p>
+        <p><img class="img-fluid" src="../excel/files/ReferensiSel_files/image008.png" alt="Referensi Campuran di Excel"></p>
+        <p>Referensi ke kolom B dan baris 6 adalah tetap.</p>
+    </li>
+</ol>

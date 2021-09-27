@@ -1,38 +1,97 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                </li>
-            </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-        </div>
-    </div>
-</nav>
+<p class="h4">Rumus dan Fungsi</p>
+<p><a href="#">Masukkan Rumus</a> | <a href="#">Mengedit Rumus</a> | <a href="#">Prioritas Operator</a> | <a href="#">Salin/Tempel
+Rumus</a> | <a href="#">Sisipkan Fungsi</a></p>
+<p>Sebuah rumus adalah ekspresi yang menghitung nilai sel. Fungsi adalah rumus yang telah ditentukan sebelumnya dan sudah tersedia di Excel.</p>
+<p>Misalnya, sel <b>A3</b> di bawah ini berisi rumus yang menambahkan nilai sel <b>A2</b> ke nilai sel <b>A1</b>.</p>
+<p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image001.png" alt="Rumus di Excel"></p>
+<p>Misalnya, sel <b>A3</b> di bawah ini berisi fungsi <b>SUM</b> yang menghitung jumlah rentang <b>A1:A2</b>.</p>
+<p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image002.png" alt="Fungsi di Excel"></p>
+<p class="h5">
+    <b>Masukkan Formula</b></p>
+<p>Untuk memasukkan rumus, jalankan langkah-langkah berikut.</p>
+<ol>
+    <li>Pilih sel.</li>
+    <li>Untuk memberi tahu Excel bahwa Anda ingin memasukkan rumus, ketikkan tanda sama dengan <b>(=)</b>.</li>
+    <li>
+        <p>Misalnya, ketikkan rumus <b>A1+A2</b>.</p>
+        <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image001.png" alt="Masukkan Formula"></p>
+        <p><b>Tip:</b> daripada mengetik <b>A1</b> dan <b>A2</b>, cukup pilih sel <b>A1</b> dan sel <b>A2</b>.</p>
+    </li>
+    <li>
+        <p>Ubah nilai sel <b>A1</b> menjadi <b>3</b>.</p>
+        <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image003.png" alt="Perhitungan ulang"></p>
+        <p>Excel secara otomatis menghitung ulang nilai sel <b>A3</b>. Ini adalah salah satu fitur Excel yang paling kuat!</p>
+    </li>
+</ol>
+<p class="h5">
+    <b>Mengedit Formula</b></p>
+<p>Saat Anda memilih sel, Excel memperlihatkan nilai atau rumus sel di bilah rumus.</p>
+<p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image004.png" alt="Formula Bar"></p>
+<ol>
+    <li>
+        <p>Untuk mengedit rumus, klik di bilah rumus dan ubah rumus.</p>
+        <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image005.png" alt="Mengedit Rumus di Excel"></p>
+    </li>
+    <li>
+        <p>Tekan Enter.</p>
+        <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image006.png" alt="Formula yang Diedit"></p>
+    </li>
+</ol>
+<p class="h5">
+    <b>Prioritas Operator</b></p>
+<p>Excel menggunakan urutan default di mana perhitungan terjadi. Jika bagian dari rumus ada dalam tanda kurung, bagian itu akan dihitung terlebih dahulu. Kemudian melakukan perhitungan perkalian atau pembagian. Setelah ini selesai, Excel akan menambah dan
+    mengurangi sisa rumus Anda. Lihat contoh di bawah ini.</p>
+<p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image007.png" alt="Prioritas Operator"></p>
+<p>Pertama, Excel melakukan perkalian (<b>A1 * A2</b>). Selanjutnya, Excel menambahkan nilai sel <b>A3</b> ke hasil ini.</p>
+<p>Contoh lain,</p>
+<p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image008.png" alt="Tanda kurung"></p>
+<p>Pertama, Excel menghitung bagian dalam tanda kurung (<b>A2+A3</b>). Selanjutnya, hasil ini dikalikan dengan nilai sel <b>A1</b>.</p>
+<p class="h5">
+    <b>Copy/Paste Rumus</b></p>
+<p>Saat Anda menyalin rumus, Excel secara otomatis menyesuaikan referensi sel untuk setiap sel baru tempat rumus disalin. Untuk memahaminya, lakukan langkah-langkah berikut.</p>
+<ol>
+    <li>
+        <p>Masukkan rumus yang ditunjukkan di bawah ini ke dalam sel <b>A4</b>.</p>
+        <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image009.png" alt="Salin Contoh Rumus"></p>
+    </li>
+    <li>
+        <p>Pilih sel <b>A4</b>, klik kanan, lalu klik Salin (atau tekan <kbd>Ctrl</kbd>+<kbd>C</kbd>)...</p>
+        <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image010.png" alt="Klik Salin"></p>
+        <p>... selanjutnya, pilih sel <b>B4</b>, klik kanan, lalu klik Tempel di bawah 'Paste Options:' (atau tekan <kbd>Ctrl</kbd>+<kbd>V</kbd>).</p>
+        <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image011.png" alt="Klik Tempel"></p>
+    </li>
+    <li>
+        <p>Anda juga dapat menyeret rumus ke sel <b>B4</b>. Pilih sel <b>A4</b>, klik di sudut kanan bawah sel <b>A4</b> dan seret ke sel <b>B4</b>. Ini jauh lebih mudah dan memberikan hasil yang sama persis!</p>
+        <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image012.png" alt="Seret Rumus Excel"></p>
+        <p>Hasil. Rumus di sel B4 mereferensikan nilai di kolom B.</p>
+        <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image013.png" alt="Salin Hasil Rumus"></p>
+    </li>
+</ol>
+<p class="h5">
+    <b>Sisipkan Fungsi</b></p>
+<p>Setiap fungsi memiliki struktur yang sama. Misalnya,
+    <b>SUM</b>(A1:A4). Nama fungsi ini adalah <b>SUM</b>. Bagian antara tanda kurung (argumen) berarti kami memberikan Excel rentang <b>A1:A4</b> sebagai input. Fungsi ini menambahkan nilai dalam sel <b>A1</b>, <b>A2</b>,
+    <b>A3</b> dan <b>A4</b>. Tidak mudah untuk mengingat fungsi dan argumen mana yang digunakan untuk setiap tugas. Untungnya, fitur Sisipkan Fungsi di Excel membantu Anda dalam hal ini.</p>
+<p>Untuk menyisipkan fungsi, jalankan langkah-langkah berikut.</p>
+<ol>
+    <li>Pilih sel.</li>
+    <li>
+        <p>Klik tombol Sisipkan Fungsi.</p>
+        <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image014.png" alt="Sisipkan Fungsi"></p>
+        <p>Kotak dialog 'Insert Function' muncul.</p>
+    </li>
+    <li>
+        <p>Cari fungsi atau pilih fungsi dari kategori. Misalnya, pilih <b>COUNTIF</b> dari kategori Statistik.</p>
+        <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image015.png" alt="Masukkan Kotak Dialog Fungsi"></p>
+    </li>
+    <li>Klik Oke. <br> Kotak dialog 'Function Arguments' muncul.</li>
+    <li>Klik pada kotak Range dan pilih range <b>A1:C2</b>.</li>
+    <li>Klik di kotak Kriteria dan ketik <b>&gt;5</b>.</li>
+    <li>
+        <p>Klik Oke.</p>
+        <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image016.png" alt="Kotak Dialog Argumen Fungsi"></p>
+        <p>Hasil. Fungsi <b>COUNTIF</b> menghitung jumlah sel yang lebih besar dari <b>5</b>.</p>
+        <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image017.png" alt="Hasil COUNTIF"></p>
+        <p class="info"><b>Catatan:</b> daripada menggunakan fitur Sisipkan Fungsi, cukup ketik =<b>COUNTIF</b>(<b>A1:C2,&quot;&gt;5&quot;</b>). Saat Anda tiba di: =<b>COUNTIF</b>( alih-alih mengetik <b>A1:C2</b>, cukup pilih rentang <b>A1:C2</b>.</p>
+    </li>
+</ol>

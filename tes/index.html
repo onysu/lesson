@@ -82,8 +82,8 @@
             <!-- intro -->
             <!-- <div class="bd-intro ps-lg-4"> -->
             <div class="bd-intro">
-<aside class="bd-sidebar">
-                <!-- <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation">
+                <aside class="bd-sidebar">
+                    <!-- <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation">
                     <ul class="list-unstyled mb-0 py-3 pt-md-1">
                         <li class="mb-1">
                             <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#getting-started-collapse" aria-expanded="true" aria-current="true">
@@ -292,7 +292,7 @@
                         </li>
                     </ul>
                 </nav> -->
-            </aside>
+                </aside>
                 <!-- <div class="d-md-flex align-items-center justify-content-between">
                     <h1 class="bd-title" id="content">Introduction</h1>
                 </div>
@@ -379,220 +379,261 @@
             <!-- konten -->
             <!-- <div class="bd-content ps-lg-4"> -->
             <div class="bd-content">
-                <p class="h4" id="jangakauan">Range</p>
-                <p class="link-text"><a href="#SelBarisKolom">Sel, Baris, Kolom</a> | <a href="#ContohRange">Contoh
-                        Range</a> | <a href="#IsiRange">Isi Range</a> | <a href="#PindahkanRange">Pindahkan Range</a> |
-                    <a href="#SalinTempelRange">Salin/Tempel Range</a> | <a href="#SisipkanBarisKolom">Sisipkan Baris,
-                        Kolom</a></p>
-                <p>Sebuah Range di Excel adalah kumpulan dua atau lebih sel. Bab ini memberikan gambaran umum tentang beberapa operasi jangkauan yang sangat penting.</p>
+                <div class="accordion accordion-flush" id="accordionPendahuluan1Konten">
+                    <!-- Range -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="Pendahuluan1-Range">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-Pendahuluan1-Range" aria-expanded="false" aria-controls="flush-Pendahuluan1-Range">
+                    <figure>
+                        <blockquote class="blockquote">
+                            <p>Range</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer fw-light">
+                            Sebuah Range di Excel adalah kumpulan dua atau lebih sel. Bab ini memberikan gambaran umum tentang beberapa operasi jangkauan yang sangat penting.
+                        </figcaption>
+                    </figure>
+                </button>
+                        </h2>
+                        <div id="flush-Pendahuluan1-Range" class="accordion-collapse collapse" aria-labelledby="Pendahuluan1-Range" data-bs-parent="#accordionPendahuluan1Konten">
+                            <div class="accordion-body">
 
-                <p class="h5" id="SelBarisKolom">Sel, Baris, Kolom</p>
-                <p>Mari kita mulai dengan memilih sel, baris, dan kolom.</p>
-                <ol>
-                    <li>
-                        <p>Untuk memilih sel C3, klik kotak di persimpangan kolom C dan baris 3.</p>
-                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image001.png" alt="Pilih Sel"></p>
-                    </li>
-                    <li>
-                        <p>Untuk memilih kolom C, klik pada header kolom C.</p>
-                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image002.png" alt="Pilih Kolom di Excel"></p>
-                    </li>
-                    <li>
-                        <p>Untuk memilih baris 3, klik header baris 3.</p>
-                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image003.png" alt="Pilih Baris">
-                        </p>
-                    </li>
-                </ol>
-                <p class="h5" id="ContohRange">Contoh Range</p>
-                <p>Range adalah kumpulan dari dua atau lebih sel.</p>
-                <ol>
-                    <li>
-                        <p>1. Untuk memilih Range B2:C4, klik sel B2 dan seret ke sel C4.</p>
-                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image004.png" alt="Range di Excel"></p>
-                    </li>
-                    <li>
-                        <p>2. Untuk memilih Range sel individual, tahan CTRL dan klik pada setiap sel yang ingin Anda sertakan dalam Range.</p>
-                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image005.png" alt="Range Sel Individu"></p>
-                    </li>
-                </ol>
-                <p class="h5" id="IsiRange">Isi Range</p>
-                <p>Untuk mengisi Range, jalankan langkah-langkah berikut.</p>
-                <ol>
-                    <li>
-                        <p>Masukkan nilai 2 ke dalam sel B2.</p>
-                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image006.png" alt="Masukkan Nilai"></p>
-                    </li>
-                    <li>
-                        <p>Pilih sel B2, klik di sudut kanan bawah sel B2 dan seret ke bawah ke sel B8.</p>
-                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image007.png" alt="Tarik ke bawah"></p>
-                        <p>Hasil:</p>
-                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image008.png" alt="Tarik ke Bawah Hasil"></p>
-                        <p>Teknik menyeret ini sangat penting dan Anda akan sering menggunakannya di Excel. Berikut contoh lain.</p>
-                    </li>
-                    <li>
-                        <p>Masukkan nilai 2 ke dalam sel B2 dan nilai 4 ke dalam sel B3.</p>
-                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image009.png" alt="Sebuah pola">
-                        </p>
-                    </li>
-                    <li>
-                        <p>Pilih sel B2 dan sel B3, klik di sudut kanan bawah Range ini dan seret ke bawah.</p>
-                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image010.png" alt="Pola Diseret ke Bawah"></p>
-                        <p>Excel secara otomatis mengisi Range berdasarkan pola dua nilai pertama. Itu cukup keren ya!? Berikut contoh lain.</p>
-                    </li>
-                    <li>
-                        <p>Masukkan <a href="https://www.excel-easy.com/functions/date-time-functions.html">tanggal</a> 13/6/2016 ke dalam sel B2 dan tanggal 16/6/2016 ke dalam sel B3.</p>
-                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image011.png" alt="Pola Tanggal">
-                        </p>
-                    </li>
-                    <li>
-                        <p>Pilih sel B2 dan sel B3, klik di sudut kanan bawah Range ini dan seret ke bawah.</p>
-                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image012.png" alt="Pola Tanggal Diseret Ke Bawah"></p>
-                        <p class="info"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/autofill.html">IsiOtomatis</a> untuk lebih banyak contoh.</p>
-                    </li>
-                </ol>
-                <p class="h5" id="PindahkanRange">Pindahkan Range</p>
-                <p>Untuk memindahkan Range, jalankan langkah-langkah berikut.</p>
-                <ol>
-                    <li>
-                        <p>Pilih Range dan klik batas Range.</p>
-                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image013.png" alt="Pindahkan Range"></p>
-                    </li>
-                    <li>
-                        <p>Seret Range ke lokasi barunya.</p>
-                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image014.png" alt="Hasil Pindah">
-                        </p>
-                    </li>
-                </ol>
-                <p class="h5" id="SalinTempelRange">Salin/Tempel Range</p>
-                <p>Untuk menyalin dan menempelkan Range, jalankan langkah-langkah berikut.</p>
-                <ol>
-                    <li>
-                        <p>Pilih Range, klik kanan, lalu klik Salin (atau tekan CTRL + c).</p>
-                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image015.png" alt="Salin/Tempel Range"></p>
-                    </li>
-                    <li>
-                        <p>Pilih sel di mana Anda ingin sel pertama dari Range muncul, klik kanan, lalu klik Tempel di bawah 'Opsi Tempel:' (atau tekan CTRL + v).
-                        </p>
-                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image016.png" alt="Hasil Salin/Tempel"></p>
-                    </li>
-                </ol>
-                <p class="h5" id="SisipkanBarisKolom">Sisipkan Baris, Kolom</p>
-                <p>Untuk menyisipkan baris antara nilai 20 dan 40 di bawah, jalankan langkah-langkah berikut.</p>
-                <ol>
-                    <li>
-                        <p>Pilih baris 3.</p>
-                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image017.png" alt="Sisipkan Baris"></p>
-                    </li>
-                    <li>
-                        <p>Klik kanan, lalu klik Sisipkan.</p>
-                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image018.png" alt="Klik Sisipkan">
-                        </p>
-                        <p>Hasil.</p>
-                        <p><img class="img-fluid" src="../excel/files/Jangkauan_files/image019.png" alt="Baris yang Disisipkan"></p>
-                        <p>Baris di bawah baris baru digeser ke bawah. Dengan cara yang sama, Anda dapat menyisipkan kolom.
-                        </p>
-                    </li>
-                </ol>
-                <p class="h4" id="RumusdanFungsi">Rumus dan Fungsi <span class="span-text">(Formulas and
-                        Functions)</span></p>
-                <p class="link-text"><a href="#">Masukkan Rumus</a> | <a href="#">Mengedit Rumus</a> | <a href="#">Prioritas Operator</a> | <a href="#">Salin/Tempel Rumus</a> | <a href="#">Insert
-                        Function</a></p>
-                <p>Sebuah rumus adalah ekspresi yang menghitung nilai sel. Fungsi adalah rumus yang telah ditentukan sebelumnya dan sudah tersedia di Excel .</p>
-                <p>Misalnya, sel A3 di bawah ini berisi rumus yang menambahkan nilai sel A2 ke nilai sel A1.</p>
-                <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image001.png" alt="Rumus di Excel">
-                </p>
-                <p>Misalnya, sel A3 di bawah ini berisi fungsi SUM yang menghitung jumlah Range A1:A2.</p>
-                <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image002.png" alt="Fungsi di Excel">
-                </p>
-                <p class="h5" id="MasukkanRumus">
-                    Masukkan Rumus</p>
-                <p>Untuk memasukkan rumus, jalankan langkah-langkah berikut.</p>
-                <ol>
-                    <li>Pilih sel.</li>
-                    <li>Untuk memberi tahu Excel bahwa Anda ingin memasukkan rumus, ketikkan tanda sama dengan (=).</li>
-                    <li>
-                        <p>Misalnya, ketikkan rumus A1+A2.</p>
-                        <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image001.png" alt="Masukkan Formula"></p>
-                        <p>Tip: daripada mengetik A1 dan A2, cukup pilih sel A1 dan sel A2.</p>
-                    </li>
-                    <li>
-                        <p>Ubah nilai sel A1 menjadi 3.</p>
-                        <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image003.png" alt="Perhitungan ulang"></p>
-                        <p>Excel secara otomatis menghitung ulang nilai sel A3. Ini adalah salah satu fitur Excel yang paling kuat!</p>
-                    </li>
-                </ol>
-                <p class="h5" id="MengeditRumus">
-                    Mengedit Rumus</p>
-                <p>Saat Anda memilih sel, Excel memperlihatkan nilai atau rumus sel di bilah rumus.</p>
-                <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image004.png" alt="Formula Bar"></p>
-                <p>1. Untuk mengedit rumus, klik di bilah rumus dan ubah rumus.</p>
-                <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image005.png" alt="Mengedit Rumus di Excel"></p>
-                <p>2. Tekan Enter.</p>
-                <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image006.png" alt="Formula yang Diedit"></p>
-                <p class="h5" id="PrioritasOperator">
-                    Prioritas Operator</p>
-                <p>Excel menggunakan urutan default di mana perhitungan terjadi. Jika bagian dari rumus ada dalam tanda kurung, bagian itu akan dihitung terlebih dahulu. Kemudian melakukan perhitungan perkalian atau pembagian. Setelah ini selesai, Excel
-                    akan menambah dan mengurangi sisa rumus Anda. Lihat contoh di bawah ini.</p>
-                <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image007.png" alt="Prioritas Operator"></p>
-                <p>Pertama, Excel melakukan perkalian (A1 * A2). Selanjutnya, Excel menambahkan nilai sel A3 ke hasil ini.
-                </p>
-                <p>Contoh lain,</p>
-                <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image008.png" alt="Tanda kurung"></p>
-                <p>Pertama, Excel menghitung bagian dalam tanda kurung (A2+A3). Selanjutnya, hasil ini dikalikan dengan nilai sel A1.</p>
-                <p class="h5" id="SalinTempelRumus">
-                    Salin/Tempel Rumus</p>
-                <p>Saat Anda menyalin rumus, Excel secara otomatis menyesuaikan referensi sel untuk setiap sel baru tempat rumus disalin. Untuk memahaminya, lakukan langkah-langkah berikut.</p>
-                <ol>
-                    <li>
-                        <p>Masukkan rumus yang ditunjukkan di bawah ini ke dalam sel A4.</p>
-                        <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image009.png" alt="Salin Contoh Rumus"></p>
-                    </li>
-                    <li>
-                        <p>Pilih sel A4, klik kanan, lalu klik Salin (atau tekan CTRL + c)...</p>
-                        <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image010.png" alt="Klik Salin"></p>
-                        <p>... selanjutnya, pilih sel B4, klik kanan, lalu klik Tempel di bawah 'Opsi Tempel:' (atau tekan CTRL + v).</p>
-                        <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image011.png" alt="Klik Tempel"></p>
-                    </li>
-                    <li>
-                        <p>Anda juga dapat menyeret rumus ke sel B4. Pilih sel A4, klik di sudut kanan bawah sel A4 dan seret ke sel B4. Ini jauh lebih mudah dan memberikan hasil yang sama persis!</p>
-                        <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image012.png" alt="Seret Rumus Excel"></p>
-                        <p>Hasil. Rumus di sel B4 mereferensikan nilai di kolom B.</p>
-                        <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image013.png" alt="Salin Hasil Rumus"></p>
-                    </li>
-                </ol>
-                <p class="h5" id="SisipkanRumus">
-                    Sisipkan Rumus</p>
-                <p>Setiap fungsi memiliki struktur yang sama. Misalnya, SUM(A1:A4). Nama fungsi ini adalah SUM. Bagian antara tanda kurung (argumen) berarti kami memberikan Excel Range A1:A4 sebagai input. Fungsi ini menambahkan nilai dalam sel A1, A2, A3
-                    dan A4. Tidak mudah untuk mengingat fungsi dan argumen mana yang digunakan untuk setiap tugas. Untungnya, fitur Insert Function di Excel membantu Anda dalam hal ini.</p>
-                <p>Untuk menyisipkan fungsi, jalankan langkah-langkah berikut.</p>
-                <ol>
-                    <li>Pilih sel.</li>
-                    <li>
-                        <p>Klik tombol Insert Function.</p>
-                        <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image014.png" alt="Insert Function"></p>
-                        <p>Kotak dialog 'Insert Function' muncul.</p>
-                    </li>
-                    <li>
-                        <p>Cari fungsi atau pilih fungsi dari kategori. Misalnya, pilih COUNTIF dari kategori Statistik.
-                        </p>
-                        <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image015.png" alt="Masukkan Kotak Dialog Fungsi"></p>
-                    </li>
-                    <li>
-                        <p>Klik Oke.</p>
-                        <p>Kotak dialog 'Function Arguments' muncul.</p>
-                    </li>
-                    <li>Klik pada kotak Range dan pilih range A1:C2.</li>
-                    <li>Klik di kotak Kriteria dan ketik &gt;5.</li>
-                    <li>
-                        <p>Klik Oke.</p>
-                        <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image016.png" alt="Kotak Dialog Argumen Fungsi"></p>
-                        <p>Hasil. Fungsi COUNTIF menghitung jumlah sel yang lebih besar dari 5.</p>
-                        <p><img class="img-fluid" src="../excel/files/RumusdanFungsi_files/image017.png" alt="Hasil COUNTIF"></p>
-                        <p class="info"><strong>Catatan:</strong> daripada menggunakan fitur Insert Function, cukup ketik =COUNTIF(A1:C2,&quot;&gt;5&quot;). Saat Anda tiba di: =COUNTIF( alih-alih mengetik A1:C2, cukup pilih Range A1:C2.</p>
-                    </li>
-                </ol>
+                                <!-- <p>Range </p> -->
+                                <p><a href="#">Sel, Baris, Kolom</a> | <a href="#">Contoh Range</a> | <a href="#">Isi Range</a> | <a href="#">Pindahkan Range</a> | <a href="#">Salin/Tempel Range</a> | <a href="#">Sisipkan Baris, Kolom</a></p>
+
+                                <p><a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="img/bahan/excel/..." title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                <p>Sebuah Range di Excel adalah kumpulan dua atau lebih sel. Bab ini memberikan gambaran umum tentang beberapa operasi jangkauan yang sangat penting.</p>
+                                <p class="h5">
+                                    <b>Sel, Baris, Kolom</b></p>
+                                <p>Mari kita mulai dengan memilih Sel, Baris, dan Kolom.</p>
+                                <ol>
+                                    <li>
+                                        <p>Untuk memilih sel C3, klik kotak di persimpangan kolom C dan baris 3.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Range_files/image001.png" alt="Pilih Sel"></p>
+                                    </li>
+                                    <li>
+                                        <p>Untuk memilih kolom C, klik pada header kolom C.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Range_files/image002.png" alt="Pilih Kolom di Excel"></p>
+                                    </li>
+                                    <li>
+                                        <p>Untuk memilih baris 3, klik header baris 3.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Range_files/image003.png" alt="Pilih Baris"></p>
+                                    </li>
+                                </ol>
+                                <p class="h5">
+                                    <b>Contoh Range</b></p>
+                                <p>Range adalah kumpulan dari dua atau lebih sel.</p>
+                                <ol>
+                                    <li>
+                                        <p>Untuk memilih Range B2:C4, klik sel B2 dan seret ke sel C4.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Range_files/image004.png" alt="Rentang di Excel"></p>
+                                    </li>
+                                    <li>
+                                        <p>Untuk memilih Range sel individual, tahan CTRL dan klik pada setiap sel yang ingin Anda sertakan dalam Range.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Range_files/image005.png" alt="Rentang Sel Individu"></p>
+                                    </li>
+                                </ol>
+                                <p class="h5">
+                                    <b>Isi Range</b></p>
+                                <p>Untuk mengisi Range, jalankan langkah-langkah berikut.</p>
+                                <ol>
+                                    <li>
+                                        <p>1a. Masukkan nilai 2 ke dalam sel B2.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Range_files/image006.png" alt="Masukkan Nilai"></p>
+                                    </li>
+                                    <li>
+                                        <p>Pilih sel B2, klik di sudut kanan bawah sel B2 dan seret ke bawah ke sel B8.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Range_files/image007.png" alt="Tarik ke bawah"></p>
+                                        <p>Hasil:</p>
+                                        <p><img class="img-fluid" src="../excel/files/Range_files/image008.png" alt="Tarik ke Bawah Hasil"></p>
+                                        <p>Teknik menyeret ini sangat penting dan Anda akan sering menggunakannya di Excel. Berikut contoh lain.</p>
+                                    </li>
+                                    <li>
+                                        <p>Masukkan nilai 2 ke dalam sel B2 dan nilai 4 ke dalam sel B3.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Range_files/image009.png" alt="Sebuah pola"></p>
+                                    </li>
+                                    <li>
+                                        <p>Pilih sel B2 dan sel B3, klik di sudut kanan bawah Range ini dan seret ke bawah.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Range_files/image010.png" alt="Pola Diseret ke Bawah"></p>
+                                        <p>Excel secara otomatis mengisi Range berdasarkan pola dua nilai pertama. Itu cukup keren ya!? Berikut contoh lain.</p>
+                                    </li>
+                                    <li>
+                                        <p>Masukkan <a href="https://www.excel-easy.com/functions/date-time-functions.html">tanggal</a> 13/6/2016 ke dalam sel B2 dan tanggal 16/6/2016 ke dalam sel B3.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Range_files/image011.png" alt="Pola Tanggal"></p>
+                                    </li>
+                                    <li>
+                                        <p>Pilih sel B2 dan sel B3, klik di sudut kanan bawah Range ini dan seret ke bawah.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Range_files/image012.png" alt="Pola Tanggal Diseret Ke Bawah"></p>
+                                        <p class="info"><b>Catatan:</b> kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/autofill.html">IsiOtomatis</a> untuk lebih banyak contoh.</p>
+                                    </li>
+                                </ol>
+                                <p class="h5">
+                                    <b>Pindahkan Range</b></p>
+                                <p>Untuk memindahkan Range, jalankan langkah-langkah berikut.</p>
+                                <ol>
+                                    <li>
+                                        <p>Pilih Range dan klik batas Range.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Range_files/image013.png" alt="Pindahkan Rentang"></p>
+                                    </li>
+                                    <li>
+                                        <p>Seret Range ke lokasi barunya.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Range_files/image014.png" alt="Hasil Pindah"></p>
+                                    </li>
+                                </ol>
+                                <p class="h5">
+                                    <b>Copy/Paste Range</b></p>
+                                <p>Untuk menyalin dan menempelkan Range, jalankan langkah-langkah berikut.</p>
+                                <ol>
+                                    <li>
+                                        <p>Pilih Range, klik kanan, lalu klik Salin (atau tekan <kbd>Ctrl</kbd>+<kbd>C</kbd>).</p>
+                                        <p><img class="img-fluid" src="../excel/files/Range_files/image015.png" alt="Salin/Tempel Rentang"></p>
+                                    </li>
+                                    <li>
+                                        <p>Pilih sel di mana Anda ingin sel pertama dari Range muncul, klik kanan, lalu klik Tempel di bawah 'Paste Options:' (atau tekan <kbd>Ctrl</kbd>+<kbd>V</kbd>).</p>
+                                        <p><img class="img-fluid" src="../excel/files/Range_files/image016.png" alt="Hasil Salin/Tempel"></p>
+                                    </li>
+                                </ol>
+                                <p class="h5">
+                                    <b>Sisipkan Baris, Kolom</b></p>
+                                <p>Untuk menyisipkan baris antara nilai 20 dan 40 di bawah, jalankan langkah-langkah berikut.</p>
+                                <ol>
+                                    <li>
+                                        <p>Pilih baris 3.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Range_files/image017.png" alt="Sisipkan Baris"></p>
+                                    </li>
+                                    <li>
+                                        <p>Klik kanan, lalu klik Sisipkan.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Range_files/image018.png" alt="Klik Sisipkan"></p>
+                                        <p>Hasil.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Range_files/image019.png" alt="Baris yang Disisipkan"></p>
+                                        <p>Baris di bawah baris baru digeser ke bawah. Dengan cara yang sama, Anda dapat menyisipkan kolom.</p>
+                                    </li>
+                                </ol>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rumus dan Fungsi -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="Pendahuluan1-RumusdanFungsi">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-Pendahuluan1-RumusdanFungsi" aria-expanded="false" aria-controls="flush-Pendahuluan1-RumusdanFungsi">
+                                <figure>
+                        <blockquote class="blockquote">
+                            <p>Rumus dan Fungsi</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer fw-light">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ea mollitia obcaecati eligendi facilis minima.
+                        </figcaption>
+                    </figure>
+                            </button>
+                        </h2>
+                        <div id="flush-Pendahuluan1-RumusdanFungsi" class="accordion-collapse collapse" aria-labelledby="Pendahuluan1-RumusdanFungsi" data-bs-parent="#accordionPendahuluan1Konten">
+                            <div class="accordion-body">
+                                <!-- <p class="h4">Rumus dan Fungsi</p> -->
+                                <p><a href="#">Masukkan Rumus</a> | <a href="#">Mengedit Rumus</a> | <a href="#">Prioritas Operator</a> | <a href="#">Salin/Tempel Rumus</a> | <a href="#">Sisipkan Fungsi</a></p>
+
+                                <p><a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="img/bahan/excel/..." title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                <p>Sebuah rumus adalah ekspresi yang menghitung nilai sel. Fungsi adalah rumus yang telah ditentukan sebelumnya dan sudah tersedia di Excel.</p>
+                                <p>Misalnya, sel <b>A3</b> di bawah ini berisi rumus yang menambahkan nilai sel <b>A2</b> ke nilai sel <b>A1</b>.</p>
+                                <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image001.png" alt="Rumus di Excel"></p>
+                                <p>Misalnya, sel <b>A3</b> di bawah ini berisi fungsi <b>SUM</b> yang menghitung jumlah rentang <b>A1:A2</b>.</p>
+                                <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image002.png" alt="Fungsi di Excel"></p>
+                                <p class="h5">
+                                    <b>Masukkan Formula</b></p>
+                                <p>Untuk memasukkan rumus, jalankan langkah-langkah berikut.</p>
+                                <ol>
+                                    <li>Pilih sel.</li>
+                                    <li>Untuk memberi tahu Excel bahwa Anda ingin memasukkan rumus, ketikkan tanda sama dengan <b>(=)</b>.</li>
+                                    <li>
+                                        <p>Misalnya, ketikkan rumus <b>A1+A2</b>.</p>
+                                        <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image001.png" alt="Masukkan Formula"></p>
+                                        <p><b>Tip:</b> daripada mengetik <b>A1</b> dan <b>A2</b>, cukup pilih sel <b>A1</b> dan sel <b>A2</b>.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ubah nilai sel <b>A1</b> menjadi <b>3</b>.</p>
+                                        <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image003.png" alt="Perhitungan ulang"></p>
+                                        <p>Excel secara otomatis menghitung ulang nilai sel <b>A3</b>. Ini adalah salah satu fitur Excel yang paling kuat!</p>
+                                    </li>
+                                </ol>
+                                <p class="h5">
+                                    <b>Mengedit Formula</b></p>
+                                <p>Saat Anda memilih sel, Excel memperlihatkan nilai atau rumus sel di bilah rumus.</p>
+                                <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image004.png" alt="Formula Bar"></p>
+                                <ol>
+                                    <li>
+                                        <p>Untuk mengedit rumus, klik di bilah rumus dan ubah rumus.</p>
+                                        <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image005.png" alt="Mengedit Rumus di Excel"></p>
+                                    </li>
+                                    <li>
+                                        <p>Tekan Enter.</p>
+                                        <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image006.png" alt="Formula yang Diedit"></p>
+                                    </li>
+                                </ol>
+                                <p class="h5">
+                                    <b>Prioritas Operator</b></p>
+                                <p>Excel menggunakan urutan default di mana perhitungan terjadi. Jika bagian dari rumus ada dalam tanda kurung, bagian itu akan dihitung terlebih dahulu. Kemudian melakukan perhitungan perkalian atau pembagian. Setelah ini
+                                    selesai, Excel akan menambah dan mengurangi sisa rumus Anda. Lihat contoh di bawah ini.</p>
+                                <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image007.png" alt="Prioritas Operator"></p>
+                                <p>Pertama, Excel melakukan perkalian (<b>A1 * A2</b>). Selanjutnya, Excel menambahkan nilai sel <b>A3</b> ke hasil ini.</p>
+                                <p>Contoh lain,</p>
+                                <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image008.png" alt="Tanda kurung"></p>
+                                <p>Pertama, Excel menghitung bagian dalam tanda kurung (<b>A2+A3</b>). Selanjutnya, hasil ini dikalikan dengan nilai sel <b>A1</b>.</p>
+                                <p class="h5">
+                                    <b>Copy/Paste Rumus</b></p>
+                                <p>Saat Anda menyalin rumus, Excel secara otomatis menyesuaikan referensi sel untuk setiap sel baru tempat rumus disalin. Untuk memahaminya, lakukan langkah-langkah berikut.</p>
+                                <ol>
+                                    <li>
+                                        <p>Masukkan rumus yang ditunjukkan di bawah ini ke dalam sel <b>A4</b>.</p>
+                                        <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image009.png" alt="Salin Contoh Rumus"></p>
+                                    </li>
+                                    <li>
+                                        <p>Pilih sel <b>A4</b>, klik kanan, lalu klik Salin (atau tekan <kbd>Ctrl</kbd>+<kbd>C</kbd>)...</p>
+                                        <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image010.png" alt="Klik Salin"></p>
+                                        <p>... selanjutnya, pilih sel <b>B4</b>, klik kanan, lalu klik Tempel di bawah 'Paste Options:' (atau tekan <kbd>Ctrl</kbd>+<kbd>V</kbd>).</p>
+                                        <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image011.png" alt="Klik Tempel"></p>
+                                    </li>
+                                    <li>
+                                        <p>Anda juga dapat menyeret rumus ke sel <b>B4</b>. Pilih sel <b>A4</b>, klik di sudut kanan bawah sel <b>A4</b> dan seret ke sel <b>B4</b>. Ini jauh lebih mudah dan memberikan hasil yang sama persis!</p>
+                                        <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image012.png" alt="Seret Rumus Excel"></p>
+                                        <p>Hasil. Rumus di sel B4 mereferensikan nilai di kolom B.</p>
+                                        <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image013.png" alt="Salin Hasil Rumus"></p>
+                                    </li>
+                                </ol>
+                                <p class="h5">
+                                    <b>Sisipkan Fungsi</b></p>
+                                <p>Setiap fungsi memiliki struktur yang sama. Misalnya,
+                                    <b>SUM</b>(A1:A4). Nama fungsi ini adalah <b>SUM</b>. Bagian antara tanda kurung (argumen) berarti kami memberikan Excel rentang <b>A1:A4</b> sebagai input. Fungsi ini menambahkan nilai dalam sel <b>A1</b>, <b>A2</b>,
+                                    <b>A3</b> dan <b>A4</b>. Tidak mudah untuk mengingat fungsi dan argumen mana yang digunakan untuk setiap tugas. Untungnya, fitur Sisipkan Fungsi di Excel membantu Anda dalam hal ini.</p>
+                                <p>Untuk menyisipkan fungsi, jalankan langkah-langkah berikut.</p>
+                                <ol>
+                                    <li>Pilih sel.</li>
+                                    <li>
+                                        <p>Klik tombol Sisipkan Fungsi.</p>
+                                        <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image014.png" alt="Sisipkan Fungsi"></p>
+                                        <p>Kotak dialog 'Insert Function' muncul.</p>
+                                    </li>
+                                    <li>
+                                        <p>Cari fungsi atau pilih fungsi dari kategori. Misalnya, pilih <b>COUNTIF</b> dari kategori Statistik.</p>
+                                        <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image015.png" alt="Masukkan Kotak Dialog Fungsi"></p>
+                                    </li>
+                                    <li>Klik Oke. <br> Kotak dialog 'Function Arguments' muncul.</li>
+                                    <li>Klik pada kotak Range dan pilih range <b>A1:C2</b>.</li>
+                                    <li>Klik di kotak Kriteria dan ketik <b>&gt;5</b>.</li>
+                                    <li>
+                                        <p>Klik Oke.</p>
+                                        <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image016.png" alt="Kotak Dialog Argumen Fungsi"></p>
+                                        <p>Hasil. Fungsi <b>COUNTIF</b> menghitung jumlah sel yang lebih besar dari <b>5</b>.</p>
+                                        <p><img class="img-fluid" src="../excel/files/FormulasandFunctions_files/image017.png" alt="Hasil COUNTIF"></p>
+                                        <p class="info"><b>Catatan:</b> daripada menggunakan fitur Sisipkan Fungsi, cukup ketik =<b>COUNTIF</b>(<b>A1:C2,&quot;&gt;5&quot;</b>). Saat Anda tiba di: =<b>COUNTIF</b>( alih-alih mengetik <b>A1:C2</b>, cukup pilih rentang <b>A1:C2</b>.</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </main>
     </div>
     <!-- footer -->

@@ -93,67 +93,87 @@
             <!-- menu kanan -->
             <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
                 <strong class="d-block h6 my-2 pb-2 border-bottom">Di halaman ini</strong>
-                <nav id="TableOfContents">
-                    <ul>
-                        <li><a href="#quick-start">Quick start</a>
-                            <ul>
-                                <li><a href="#css">CSS</a></li>
-                                <li><a href="#js">JS</a>
-                                    <ul>
-                                        <li><a href="#bundle">Bundle</a></li>
-                                        <li><a href="#separate">Separate</a></li>
-                                        <li><a href="#modules">Modules</a></li>
-                                        <li><a href="#components">Components</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="#starter-template">Starter template</a></li>
-                        <li><a href="#important-globals">Important globals</a>
-                            <ul>
-                                <li><a href="#html5-doctype">HTML5 doctype</a></li>
-                                <li><a href="#responsive-meta-tag">Responsive meta tag</a></li>
-                                <li><a href="#box-sizing">Box-sizing</a></li>
-                                <li><a href="#reboot">Reboot</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#community">Community</a></li>
-                    </ul>
-                </nav>
+                <div class="accordion accordion-flush" id="accordionPendahuluan">
+                    <!-- Range -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="AnalisisData-Range">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-Pendahuluan-Range" aria-expanded="false" aria-controls="flush-Pendahuluan-Range">Range</button>
+                        </h2>
+                        <div id="flush-Pendahuluan-Range" class="accordion-collapse collapse" aria-labelledby="AnalisisData-Range" data-bs-parent="#accordionPendahuluan">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li><a href="#AutoFill">Isi Otomatis</a></li>
+                                    <li><a href="#FibonacciSequence">Urutan Fibonacci</a></li>
+                                    <li><a href="#CustomLists">Kustom Daftar</a></li>
+                                    <li><a href="#Comments">Komentar</a></li>
+                                    <li><a href="#HideColumnsorRows">Sembunyikan Kolom atau Baris</a></li>
+                                    <li><a href="#SkipBlanks">Skip Blanks</a></li>
+                                    <li><a href="#AutoFit">AutoFit</a></li>
+                                    <li><a href="#Transpose">Mengubah Urutan</a></li>
+                                    <li><a href="#SplitCells">Pisahkan Sel</a></li>
+                                    <li><a href="#FlashFill">Flash Fill</a></li>
+                                    <li><a href="#MoveColumns">Pindahkan Kolom</a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Rumus dan Fungsi -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="AnalisisData-RumusdanFungsi">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-Pendahuluan-RumusdanFungsi" aria-expanded="false" aria-controls="flush-Pendahuluan-RumusdanFungsi">Rumus dan Fungsi</button>
+                        </h2>
+                        <div id="flush-Pendahuluan-RumusdanFungsi" class="accordion-collapse collapse" aria-labelledby="AnalisisData-RumusdanFungsi" data-bs-parent="#accordionPendahuluan">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li><a href="#MostUsedFunctions">Fungsi yang Paling Banyak Digunakan</a></li>
+                                    <li><a href="#Subtract">Pengurangan</a></li>
+                                    <li><a href="#Multiply">Perkalian</a></li>
+                                    <li><a href="#Divide">Pembagian</a></li>
+                                    <li><a href="#SquareRoot">Akar Pangkat Dua</a></li>
+                                    <li><a href="#Percentage">Persentase</a></li>
+                                    <li><a href="#NamedRange">Nama Range</a></li>
+                                    <li><a href="#DynamicNamedRange">Nama Range Dinamis</a></li>
+                                    <li><a href="#PasteOptions">Opsi Paste</a></li>
+                                    <li><a href="#Discount">Diskon</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- /menu kanan -->
 
             <!-- konten -->
             <!-- <div class="bd-content ps-lg-4"> -->
             <div class="bd-content">
 
                 <p class="h4 bg-subjudul">Range</p>
+
                 <div class="accordion accordion-flush mb-3" id="Range">
+
                     <!-- AutoFill -->
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="AutoFill">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#listAutoFill" aria-expanded="false" aria-controls="listAutoFill">
-                                <figure>
-                                    <!-- <blockquote class="blockquote"> -->
-                                    <p>AutoFill <span class="fw-light text-capitalize">(IsiOtomatis)</span></p>
-                                    </p>
-                                    <!-- </blockquote> -->
-                                    <figcaption class="blockquote-footer fw-light">
-                                        Gunakan AutoFill untuk mengisi serangkaian Sel secara otomatis.
-                                    </figcaption>
-                                </figure>
-                            </button>
+                        <h2 class="accordion-header" id="Pendahuluan-AutoFill">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-Pendahuluan-AutoFill" aria-expanded="false" aria-controls="flush-Pendahuluan-AutoFill">
+                    <figure>
+                        <blockquote class="blockquote">
+                            <p>AutoFill <span class="span-text">(IsiOtomatis)</span></p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer fw-light">
+                            Gunakan AutoFill untuk mengisi serangkaian Sel secara otomatis.
+                        </figcaption>
+                    </figure>
+                </button>
                         </h2>
-
-                        <div id="listAutoFill" class="accordion-collapse collapse" aria-labelledby="AutoFill" data-bs-parent="#Range">
+                        <div id="flush-Pendahuluan-AutoFill" class="accordion-collapse collapse" aria-labelledby="Pendahuluan-AutoFill" data-bs-parent="#accordionPendahuluanKonten">
                             <div class="accordion-body">
-                                <p>Gunakan AutoFill di Excel untuk mengisi serangkaian Sel secara otomatis. Halaman ini berisi banyak contoh AutoFill yang mudah diikuti.</p>
-                                <p class="tip"><strong>Tips :</strong> unduh <a href="img/bahan/excel/autofill.xlsx">file Excel</a> dan coba masukkan fungsi-fungsi ini.</p>
-                                <p>Misalnya, masukkan nilai 10 ke dalam Sel A1 dan nilai 20 ke dalam Sel A2.</p>
-                                <p><img class="img-fluid" src="https://www.excel-easy.com/examples/images/autofill/numbers.png" alt=Angka>
-                                </p>
-                                <p>Pilih Sel A1 dan Sel A2 dan seret kotak kecil pojok kanan-bawah ke bawah. Pegangan isian adalah kotak hijau kecil di kanan bawah Sel yang dipilih atau Range Sel yang dipilih.
-                                </p>
+                                <!--  -->
+
+                                <p><a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="img/bahan/excel/autofill.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                <p>Gunakan AutoFill di Excel untuk mengisi serangkaian Sel secara otomatis. Halaman ini berisi banyak contoh AutoFill yang mudah diikuti. <br> Misalnya, masukkan nilai 10 ke dalam Sel A1 dan nilai 20 ke dalam Sel A2.</p>
+                                <p><img class="img-fluid" src="https://www.excel-easy.com/examples/images/autofill/numbers.png" alt=Angka></p>
+                                <p>Pilih Sel A1 dan Sel A2 dan seret kotak kecil pojok kanan-bawah ke bawah. Pegangan isian adalah kotak hijau kecil di kanan bawah Sel yang dipilih atau Range Sel yang dipilih.</p>
                                 <p><img class="img-fluid" src="https://www.excel-easy.com/examples/images/autofill/autofill-numbers.png" alt="Nomor AutoFill di Excel"></p>
                                 <p class="note"><strong>Catatan :</strong> AutoFill mengisi angka berdasarkan pola dua angka pertama.</p>
                                 <p>Masukkan Jan ke Sel A1.</p>
@@ -175,36 +195,30 @@
                                 <p>Alih-alih mengisi hari, gunakan opsi AutoFill untuk mengisi hari kerja (mengabaikan hari akhir pekan), bulan (lihat contoh di bawah) atau tahun.</p>
                                 <p><img class="img-fluid" src="https://www.excel-easy.com/examples/images/autofill/autofill-options.png" alt="Opsi AutoFill"></p>
                                 <p class="note"><strong>Catatan :</strong> lihat juga opsi untuk mengisi pemformatan saja dan untuk mengisi rangkaian tanpa pemformatan.</p>
-                                <p>Masukkan tanggal 14/1/2019 ke dalam Sel A1 dan tanggal 21/01/2019 ke dalam Sel A2.
-                                </p>
-                                <p><img class="img-fluid" src="https://www.excel-easy.com/examples/images/autofill/dates.png" alt=tanggal>
-                                </p>
+                                <p>Masukkan tanggal 14/1/2019 ke dalam Sel A1 dan tanggal 21/01/2019 ke dalam Sel A2.</p>
+                                <p><img class="img-fluid" src="https://www.excel-easy.com/examples/images/autofill/dates.png" alt=tanggal></p>
                                 <p>Pilih Sel A1 dan Sel A2 dan seret kotak kecil pojok kanan-bawah ke bawah. AutoFill secara otomatis mengisi tanggal berdasarkan pola dua tanggal pertama.</p>
                                 <p><img class="img-fluid" src="https://www.excel-easy.com/examples/images/autofill/autofill-dates.png" alt="Tanggal AutoFill"></p>
                                 <p>Masukkan waktu 6:00 pagi ke Sel A1.</p>
-                                <p><img class="img-fluid" src="https://www.excel-easy.com/examples/images/autofill/time.png" alt=Waktu>
-                                </p>
-                                <p>Pilih Sel A1 dan seret kotak kecil pojok kanan-bawah. AutoFill mengisi waktu secara otomatis.
-                                </p>
+                                <p><img class="img-fluid" src="https://www.excel-easy.com/examples/images/autofill/time.png" alt=Waktu></p>
+                                <p>Pilih Sel A1 dan seret kotak kecil pojok kanan-bawah. AutoFill mengisi waktu secara otomatis.</p>
                                 <p><img class="img-fluid" src="https://www.excel-easy.com/examples/images/autofill/autofill-times.png" alt="Waktu AutoFill"></p>
-                                <p>Jika Excel tidak mengenali daftar, cukup buat <a href="https://www.excel-easy.com/examples/custom-lists.html">daftar kustom</a> .
-                                </p>
+                                <p>Jika Excel tidak mengenali daftar, cukup buat <a href="https://www.excel-easy.com/examples/custom-lists.html">daftar kustom</a>.</p>
                                 <p><img class="img-fluid" src="https://www.excel-easy.com/examples/images/autofill/first-entry.png" alt="Entri Pertama"></p>
                                 <p><img class="img-fluid" src="https://www.excel-easy.com/examples/images/autofill/custom-list.png" alt="Daftar Kustom"></p>
                                 <p>Gunakan <a href="https://www.excel-easy.com/examples/flash-fill.html">flash fill</a> di Excel 2013 atau yang lebih baru untuk mengekstrak secara otomatis atau menggabungkan data secara otomatis.</p>
                                 <p><img class="img-fluid" src="https://www.excel-easy.com/examples/images/autofill/use-flash-fill.png" alt="Gunakan Isi Flash"></p>
                                 <p><img class="img-fluid" src="https://www.excel-easy.com/examples/images/autofill/flash-fill.png" alt="Isi Flash"></p>
-                                <p>Jika Anda memiliki Excel 365, Anda juga dapat menggunakan fungsi
-                                    <strong>SEQUENCE</strong> untuk mengisi serangkaian Sel. Fungsi ini cukup keren.</p>
+                                <p>Jika Anda memiliki Excel 365, Anda juga dapat menggunakan fungsi <strong>SEQUENCE</strong> untuk mengisi serangkaian Sel. Fungsi ini cukup keren.</p>
                                 <p>Fungsi <strong>SEQUENCE</strong> di bawah ini menghasilkan array dua dimensi. Baris = 7, Kolom = 4, Mulai = 0, Langkah = 5.</p>
                                 <p><img class="img-fluid" src="https://www.excel-easy.com/examples/images/autofill/sequence-function.png" alt="Fungsi SEQUENCE"></p>
                                 <p>Fungsi <strong>SEQUENCE</strong> di bawah ini menghasilkan daftar angka ganjil. Baris = 10, Kolom = 1, Mulai = 1, Langkah = 2.</p>
                                 <p><img class="img-fluid" src="https://www.excel-easy.com/examples/images/autofill/list-of-odd-numbers.png" alt="Daftar Angka Ganjil"></p>
-                                <p class="note"><strong>Catatan :</strong> fungsi <strong>SEQUENCE</strong>, dimasukkan ke dalam Sel A1, mengisi beberapa Sel. Wow! Perilaku di Excel 365 ini disebut tumpahan.
-                                </p>
+                                <p class="note"><strong>Catatan :</strong> fungsi <strong>SEQUENCE</strong>, dimasukkan ke dalam Sel A1, mengisi beberapa Sel. Wow! Perilaku di Excel 365 ini disebut tumpahan.</p>
                             </div>
                         </div>
                     </div>
+
                     <!-- Urutan Fibonacci -->
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="Fibonacci">

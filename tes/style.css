@@ -95,18 +95,6 @@ figure {
     }
 }
 
-@media (min-width: 992px) {
-    .bd-toc {
-        position: -webkit-sticky;
-        position: sticky;
-        top: 4rem;
-        right: 0;
-        z-index: 2;
-        height: calc(100vh - 0rem);
-        overflow-y: auto;
-    }
-}
-
 .navbar-nav {
     flex-direction: row;
 }
@@ -235,10 +223,6 @@ figure {
     z-index: 1021;
 }
 
-.bd-toc nav ul {
-    list-style: square;
-}
-
 #TableOfContents {
     padding-left: 1.2rem;
 }
@@ -274,6 +258,29 @@ details {
 
 ul {
     list-style: square;
+}
+
+
+/* bd-toc */
+
+.bd-toc nav ul {
+    list-style: square;
+}
+
+.bd-toc .accordion-button::after {
+    background-image: none;
+}
+
+@media (min-width: 992px) {
+    .bd-toc {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 4rem;
+        right: 0;
+        z-index: 2;
+        height: calc(100vh - 0rem);
+        overflow-y: auto;
+    }
 }
 
 @media (max-width: 768px) {

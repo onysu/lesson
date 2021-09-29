@@ -1,365 +1,829 @@
-<div class="accordion-item">
-    <h2 class="accordion-header" id="What-IfAnalysis">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-AnalisisData-What-IfAnalysis" aria-expanded="false" aria-controls="flush-AnalisisData-What-IfAnalysis">
-      <figure>
-        <blockquote class="blockquote">
-          <p>What-If Analysis</p>
-        </blockquote>
-        <figcaption class="blockquote-footer fw-light">
-          Analisis data Excel untuk mencari nilai yang berbeda untuk rumus
-        </figcaption>
-      </figure>
-    </button>
-    </h2>
-    <div id="flush-AnalisisData-What-IfAnalysis" class="accordion-collapse collapse" aria-labelledby="What-IfAnalysis" data-bs-parent="#accordionAnalisisDataKonten">
-        <div class="accordion-body">
+<p>Solver</p>
+<p><a href="#Solver-MuatAdd-inSolver">Muat Add-in Solver</a> | <a href="#Solver-RumuskanModel">Rumuskan Model</a> | <a href="#Solver-PercobaandanKesalahan">Percobaan dan Kesalahan</a> | <a href="#Solver-MemecahkanModel">Memecahkan Model</a></p>
 
-            <p><a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/what-if-analysis.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+<p>
+    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/solver.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+    <p class="lead mb-0" id=""></p>
+</p>
 
+<p>Excel menyertakan alat yang disebut Solver yang menggunakan teknik dari riset operasi untuk menemukan solusi optimal untuk semua jenis masalah keputusan.</p>
+<p class="h5" id="Solver-MuatAdd-inSolver">
+    Muat Add-in Solver</p>
+<p>Untuk memuat add-in Solver, jalankan langkah-langkah berikut.</p>
+<p>1. Pada tab File, klik Opsi.</p>
+<p>2. Di bawah Add-in, pilih Solver Add-in dan klik tombol Go.</p>
+<p><img class="img-fluid" src="../excel/files/Solver_files/image001.png" alt="Klik Add-in Solver"></p>
+<p>3. Periksa Add-in Solver dan klik OK.</p>
+<p><img class="img-fluid" src="../excel/files/Solver_files/image002.png" alt="Periksa Add-in Solver"></p>
+<p>4. Anda dapat menemukan Solver pada tab Data, di grup Analisis.</p>
+<p><img class="img-fluid" src="../excel/files/Solver_files/image003.png" alt="Klik Solver"></p>
 
-            <p>Analisis Bagaimana-Jika</p>
-            <p><a href="#">Buat Skenario Berbeda</a> | <a href="#">Ringkasan Skenario</a> | <a href="#">Pencarian Tujuan</a></p>
+<p class="h5" id="Solver-RumuskanModel">
+    Formulasikan Modelnya</p>
+<p>Para Model kita akan menyelesaikan penampilan sebagai berikut di Excel.</p>
+<p><img class="img-fluid" src="../excel/files/Solver_files/image004.png" alt="Formulasikan Modelnya"></p>
+<p>1. Untuk merumuskan model program linier ini, jawablah tiga pertanyaan berikut.</p>
+<p>A. Apa keputusan yang harus diambil? Untuk masalah ini, kami membutuhkan Excel untuk mengetahui berapa banyak pesanan setiap produk (sepeda, moped, dan kursi anak).</p>
+<p>B. Apa kendala dalam keputusan ini? Kendala di sini adalah jumlah modal dan penyimpanan yang digunakan oleh produk tidak dapat melebihi jumlah modal dan penyimpanan (sumber daya) yang tersedia. Misalnya, setiap sepeda menggunakan 300 unit modal dan 0,5
+    unit penyimpanan.</p>
+<p>C. Apa ukuran kinerja keseluruhan untuk keputusan ini? Ukuran kinerja keseluruhan adalah keuntungan total dari ketiga produk, jadi tujuannya adalah untuk memaksimalkan kuantitas ini.</p>
+<p>2. Untuk membuat model lebih mudah dipahami, buat <a href="https://www.excel-easy.com/examples/named-range.html">rentang bernama</a> berikut.</p>
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=292 style='width:219.0pt;border-collapse:collapse'>
+    <tr>
+        <td width=178 style='width:133.5pt;border:solid #212121 1.0pt;background:
+  #E6E6E6;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+            <p><b>Nama Rentang</b></p>
+        </td>
+        <td width=114 style='width:85.5pt;border:solid #212121 1.0pt;border-left:
+  none;background:#E6E6E6;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+            <p><b><span style='color:black'>Sel</span></b></p>
+        </td>
+    </tr>
+    <tr>
+        <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+            <p><span style='color:black'>Keuntungan Satuan</span></p>
+        </td>
+        <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+            <p><span style='color:black'>C4:E4</span></p>
+        </td>
+    </tr>
+    <tr>
+        <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+            <p><span style='color:black'>Ukuran Pesanan</span></p>
+        </td>
+        <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+            <p><span style='color:black'>C12:E12</span></p>
+        </td>
+    </tr>
+    <tr>
+        <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+            <p><span style='color:black'>Sumber Daya yang Digunakan</span></p>
+        </td>
+        <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+            <p><span style='color:black'>G7:G8</span></p>
+        </td>
+    </tr>
+    <tr>
+        <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+            <p><span style='color:black'>Sumber DayaTersedia</span></p>
+        </td>
+        <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+            <p><span style='color:black'>I7:I8</span></p>
+        </td>
+    </tr>
+    <tr>
+        <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+            <p><span style='color:black'>Total keuntungan</span></p>
+        </td>
+        <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+            <p><span style='color:black'>I12</span></p>
+        </td>
+    </tr>
+</table>
+<p><span style='color:white'><br>
+    <br>
+  </span></p>
+<p>3. Sisipkan tiga fungsi SUMPRODUCT berikut.</p>
+<p><img class="img-fluid" src="../excel/files/Solver_files/image005.png" alt="Fungsi Sumproduk"></p>
+<p class="info"><strong>Penjelasan:</strong> Jumlah modal yang digunakan sama dengan hasil
+    <a href="https://www.excel-easy.com/examples/sumproduct.html">penjumlahan</a> dari range C7:E7 dan OrderSize. Jumlah penyimpanan yang digunakan sama dengan jumlah produk dari rentang C8:E8 dan OrderSize. Total Profit sama dengan jumlah produk dari
+    UnitProfit dan OrderSize.</p>
 
-            <p>Analisis Bagaimana-Jika di Excel memungkinkan Anda mencoba nilai (skenario) yang berbeda untuk rumus. Contoh berikut membantu Anda menguasai analisis bagaimana-jika dengan cepat dan mudah.</p>
-            <p>Asumsikan Anda memiliki toko buku dan memiliki 100 buku di gudang. Anda menjual % tertentu untuk harga tertinggi $50 dan % tertentu untuk harga lebih rendah $20.</p>
-            <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image001.png" alt="Contoh Analisis Bagaimana-Jika Excel"></p>
-            <p>Jika Anda menjual 60% dengan harga tertinggi, sel D10 menghitung total keuntungan 60 * $50 + 40 * $20 = $3800.</p>
+<p class="h5" id="Solver-PercobaandanKesalahan">
+    Percobaan dan Kesalahan</p>
+<p>Dengan formulasi ini, menjadi mudah untuk menganalisis solusi percobaan apa pun.</p>
+<p>Misalnya, jika kita memesan 20 sepeda, 40 moped, dan 100 kursi anak, jumlah total sumber daya yang digunakan tidak melebihi jumlah sumber daya yang tersedia. Solusi ini memiliki total keuntungan 19.000.</p>
+<p><img class="img-fluid" src="../excel/files/Solver_files/image006.png" alt="Solusi Percobaan"></p>
+<p>Tidak perlu menggunakan trial and error. Kami akan menjelaskan selanjutnya bagaimana Excel Solver dapat digunakan untuk menemukan solusi optimal dengan cepat.</p>
 
-            <p class="h5" id="">
-                <a name=create-different-scenarios></a>Buat Skenario Berbeda</p>
-            <p>Tetapi bagaimana jika Anda menjual 70% dengan harga tertinggi? Dan bagaimana jika Anda menjual 80% dengan harga tertinggi? Atau 90%, atau bahkan 100%? Setiap persentase yang berbeda adalah skenario yang berbeda. Anda dapat menggunakan Manajer
-                Skenario untuk membuat skenario ini.</p>
-            <p class="info"><strong>Catatan:</strong> Anda cukup mengetikkan persentase yang berbeda ke dalam sel C4 untuk melihat hasil yang sesuai dari skenario di sel D10. Namun, analisis bagaimana-jika memungkinkan Anda membandingkan hasil skenario yang berbeda dengan
-                mudah. Baca terus.</p>
-            <p>1. Pada tab Data, dalam grup Prakiraan, klik Analisis Bagaimana-Jika.</p>
-            <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image002.png" alt="Klik Analisis Bagaimana-Jika"></p>
-            <p>2. Klik Manajer Skenario.</p>
-            <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image003.png" alt="Klik Manajer Skenario"></p>
-            <p>Kotak dialog Manajer Skenario muncul.</p>
-            <p>3. Tambahkan skenario dengan mengklik Add.</p>
-            <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image004.png" alt="Tambahkan Skenario"></p>
-            <p>4. Ketik nama (60% tertinggi), pilih sel C4 (% dijual untuk harga tertinggi) untuk Mengubah sel dan klik OK.</p>
-            <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image005.png" alt="Mengedit Skenario"></p>
-            <p>5. Masukkan nilai yang sesuai 0,6 dan klik OK lagi.</p>
-            <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image006.png" alt="Masukkan Nilai Skenario"></p>
-            <p>6. Selanjutnya, tambahkan 4 skenario lainnya (70%, 80%, 90% dan 100%).</p>
-            <p>Terakhir, Manajer Skenario Anda harus konsisten dengan gambar di bawah ini:</p>
-            <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image007.png" alt="Semua Skenario"></p>
-            <p class="info"><strong>Catatan:</strong> untuk melihat hasil skenario, pilih skenario dan klik tombol Show. Excel akan mengubah nilai sel C4 agar Anda dapat melihat hasil yang sesuai pada lembar.</p>
+<p class="h5" id="Solver-MemecahkanModel">
+    Memecahkan Model</p>
+<p>Untuk menemukan solusi optimal, lakukan langkah-langkah berikut.</p>
+<p>1. Pada tab Data, di grup Analisis, klik Solver.</p>
+<p><img class="img-fluid" src="../excel/files/Solver_files/image003.png" alt="Klik Solver"></p>
+<p>Masukkan parameter Solver (baca terus). Hasilnya harus konsisten dengan gambar di bawah ini.</p>
+<p><img class="img-fluid" src="../excel/files/Solver_files/image007.png" alt="Parameter Solver"></p>
+<p>Anda memiliki pilihan untuk mengetikkan nama rentang atau mengklik sel di spreadsheet.</p>
+<p>2. Masukkan TotalProfit untuk Objective.</p>
+<p>3. Klik Maks.</p>
+<p>4. Masukkan OrderSize untuk Mengubah Sel Variabel.</p>
+<p>5. Klik Add untuk memasukkan batasan berikut.</p>
+<p><img class="img-fluid" src="../excel/files/Solver_files/image008.png" alt="Tambahkan Kendala"></p>
+<p>6. Centang 'Make Unconstrained Variables Non-Negative' dan pilih 'Simplex LP'.</p>
+<p>7. Terakhir, klik Selesaikan.</p>
+<p>Hasil:</p>
+<p><img class="img-fluid" src="../excel/files/Solver_files/image009.png" alt="Hasil Solver"></p>
+<p>Solusi optimal:</p>
+<p><img class="img-fluid" src="../excel/files/Solver_files/image010.png" alt="Solusi Optimal"></p>
+<p class="info"><strong>Kesimpulan:</strong> optimal untuk memesan 94 sepeda dan 54 moped. Solusi ini memberikan keuntungan maksimum 25600. Solusi ini menggunakan semua sumber daya yang tersedia.</p>
 
+<details>
+    <summary class="lead">Contoh Penggunaan Solver</summary>
 
-            <p class="h5" id="">
-                <a name=scenario-summary></a>Ringkasan Skenario</p>
-            <p>Untuk membandingkan hasil skenario ini dengan mudah, jalankan langkah-langkah berikut.</p>
-            <p>1. Klik tombol Ringkasan di Manajer Skenario.</p>
-            <p>2. Selanjutnya, pilih sel D10 (keuntungan total) untuk sel hasil dan klik OK.</p>
-            <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image008.png" alt="Buat Ringkasan Skenario"></p>
-            <p>Hasil:</p>
-            <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image009.png" alt="Hasil Analisis Bagaimana-Jika"></p>
-            <p class="info"><strong>Kesimpulan:</strong> jika Anda menjual 70% untuk harga tertinggi, Anda memperoleh total keuntungan $4100, jika Anda menjual 80% untuk harga tertinggi, Anda memperoleh total keuntungan $4400, dst. Begitulah cara mudah analisis what-if
-                di Excel menjadi.</p>
+    <p>
+        <a href="#MasalahTransportasi">Masalah Transportasi</a> |
+        <a href="#MasalahTugas">Masalah Tugas</a> |
+        <a href="#SoalJalurTerpendek">Soal Jalur Terpendek</a> |
+        <a href="#MasalahAliranMaksimum">Masalah Aliran Maksimum</a> |
+        <a href="#PenanamanModal">Penanaman Modal</a> |
+        <a href="#AnalisisSensitivitas">Analisis Sensitivitas</a>
+    </p>
 
-            <p class="h5" id="">
-                <a name=goal-seek></a>Pencarian Tujuan</p>
-            <p>Bagaimana jika Anda ingin mengetahui berapa banyak buku yang harus Anda jual dengan harga tertinggi, untuk memperoleh keuntungan total tepat $4700? Anda dapat menggunakan fitur Goal Seek Excel untuk menemukan jawabannya.
-            </p>
-            <p>1. Pada tab Data, dalam grup Prakiraan, klik Analisis Bagaimana-Jika.</p>
-            <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image002.png" alt="Klik Analisis Bagaimana-Jika"></p>
-            <p>2. Klik Pencarian Sasaran.</p>
-            <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image010.png" alt="Klik Pencarian Sasaran"></p>
-            <p>Kotak dialog Pencarian Sasaran muncul.</p>
-            <p>3. Pilih sel D10.</p>
-            <p>4. Klik di kotak 'To value' dan ketik 4700.</p>
-            <p>5. Klik di kotak 'By changing cell' dan pilih sel C4.</p>
-            <p>6. Klik Oke.</p>
-            <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image011.png" alt="Parameter Pencarian Sasaran"></p>
-            <p>Hasil. Anda harus menjual 90% buku dengan harga tertinggi untuk mendapatkan total keuntungan persis $4700.</p>
-            <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image012.png" alt="Pencarian Tujuan di Excel"></p>
-            <p class="info"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="#">Goal Seek</a> untuk lebih banyak contoh dan tip.</p>
-
-            <details>
-                <summary class="lead">Contoh Penggunaan What-If Analysis</summary>
-                <p>
-                    <a href="#TabelData">Tabel Data</a> |
-                    <a href="#PencarianTujuan">Pencarian Tujuan</a> |
-                    <a href="#PersamaanKuadrat">Persamaan Kuadrat</a>
-                </p>
-                <p class="h5"></p>
-                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
-                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/data-tables.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-                    <p class="h5 mb-0" id="ReferensiTerstruktur">Tabel Data</p>
-                </div>
-
-                <p><a href="#">Tabel Data Satu Variabel</a> | <a href="#">Tabel Data Dua Variabel</a></p>
-
-                <p>Alih-alih <a href="#">membuat skenario yang berbeda</a>, Anda dapat membuat tabel data untuk mencoba nilai yang berbeda untuk rumus dengan cepat. Anda dapat membuat tabel data satu variabel atau tabel data dua variabel.</p>
-                <p>Asumsikan Anda memiliki toko buku dan memiliki 100 buku di gudang. Anda menjual % tertentu untuk harga tertinggi $50 dan % tertentu untuk harga lebih rendah $20. Jika Anda menjual 60% untuk harga tertinggi, sel D10 di bawah menghitung
-                    total keuntungan 60 * $50 + 40 * $20 = $3800.</p>
-
-                <p class="h5" id="">
-                    <a name=one-variable-data-table></a>Tabel Data Satu Variabel</p>
-                <p>Untuk membuat tabel data satu variabel, jalankan langkah-langkah berikut.</p>
-                <p>1. Pilih sel B12 dan ketik =D10 (lihat sel total keuntungan).</p>
-                <p>2. Ketik persentase yang berbeda di kolom A.</p>
-                <p>3. Pilih rentang A12:B17.</p>
-                <p>Kami akan menghitung total keuntungan jika Anda menjual 60% untuk harga tertinggi, 70% untuk harga tertinggi, dll.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image013.png" alt="Satu Tabel Data Variabel di Excel"></p>
-                <p>4. Pada tab Data, dalam grup Prakiraan, klik Analisis Bagaimana-Jika.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image002.png" alt="Klik Analisis Bagaimana-Jika"></p>
-                <p>5. Klik Tabel Data.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image014.png" alt="Klik Tabel Data"></p>
-                <p>6. Klik di kotak 'Column input cell' (persentase ada di kolom) dan pilih sel C4.</p>
-                <p>Kami memilih sel C4 karena persentase merujuk ke sel C4 (% dijual dengan harga tertinggi). Bersama dengan rumus di sel B12, Excel sekarang tahu bahwa ia harus mengganti sel C4 dengan 60% untuk menghitung total keuntungan, mengganti sel
-                    C4 dengan 70% untuk menghitung total keuntungan, dll.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image015.png" alt="Sel Masukan Kolom"></p>
-                <p class="info"><strong>Catatan:</strong> ini adalah tabel data satu variabel jadi kami membiarkan sel input Baris kosong.</p>
-                <p>7. Klik Oke.</p>
-                <p>Hasil.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image016.png" alt="Hasil Tabel Data Satu Variabel"></p>
-                <p class="info"><strong>Kesimpulan:</strong> jika Anda menjual 60% untuk harga tertinggi, Anda memperoleh total keuntungan $3800, jika Anda menjual 70% untuk harga tertinggi, Anda memperoleh total keuntungan $4100, dst.</p>
-                <p class="info"><strong>Catatan:</strong> bilah rumus menunjukkan bahwa sel berisi rumus larik. Oleh karena itu, Anda tidak dapat menghapus satu hasil pun. Untuk menghapus hasil, pilih rentang B13:B17 dan tekan Hapus.</p>
-
-                <p class="h5" id="">
-                    <a name=two-variable-data-table></a>Tabel Data Dua Variabel</p>
-                <p>Untuk membuat tabel data dua variabel, jalankan langkah-langkah berikut.</p>
-                <p>1. Pilih sel A12 dan ketik =D10 (lihat sel total keuntungan).</p>
-                <p>2. Ketik keuntungan unit yang berbeda (harga tertinggi) di baris 12.</p>
-                <p>3. Ketik persentase yang berbeda di kolom A.</p>
-                <p>4. Pilih rentang A12:D17.</p>
-                <p>Kita akan menghitung total keuntungan untuk berbagai kombinasi 'laba satuan (harga tertinggi)' dan '% terjual untuk harga tertinggi' <span class="span-text">('unit profit (highest price)' dan '% sold for the highest price')</span> .</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image017.png" alt="Dua Tabel Data Variabel di Excel"></p>
-                <p>5. Pada tab Data, dalam grup Prakiraan, klik Analisis Bagaimana-Jika.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image002.png" alt="Klik Analisis Bagaimana-Jika"></p>
-                <p>6. Klik Tabel Data.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image014.png" alt="Klik Tabel Data"></p>
-                <p>7. Klik pada kotak 'Row input cell' (unit profit berada dalam satu baris) dan pilih cell D7.</p>
-                <p>8. Klik di kotak 'Column input cell' (persentase ada di kolom) dan pilih sel C4.</p>
-                <p>Kami memilih sel D7 karena keuntungan unit merujuk ke sel D7. Kami memilih sel C4 karena persentase merujuk ke sel C4. Bersama dengan rumus di sel A12, Excel sekarang tahu bahwa ia harus mengganti sel D7 dengan $50 dan sel C4 dengan 60%
-                    untuk menghitung total keuntungan, mengganti sel D7 dengan $50 dan sel C4 dengan 70% untuk menghitung total keuntungan, dll.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image018.png" alt="Sel Input Baris dan Kolom"></p>
-                <p>9. Klik Oke.</p>
-                <p>Hasil.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image019.png" alt="Hasil Tabel Data Dua Variabel"></p>
-                <p class="info"><strong>Kesimpulan:</strong> jika Anda menjual 60% untuk harga tertinggi, dengan keuntungan per unit $50, Anda memperoleh keuntungan total $3800, jika Anda menjual 80% untuk harga tertinggi, dengan keuntungan unit $60, Anda memperoleh
-                    total keuntungan sebesar $5200, dll.</p>
-                <p class="info"><strong>Catatan:</strong> bilah rumus menunjukkan bahwa sel berisi rumus larik. Oleh karena itu, Anda tidak dapat menghapus satu hasil pun. Untuk menghapus hasil, pilih rentang B13:D17 dan tekan Delete.</p>
-
-                <p class="h5" id="">Pencarian Tujuan</p>
-                <p><a href="#">Contoh Pencarian Sasaran 1</a> | <a href="#">Contoh Pencarian Sasaran 2</a> | <a href="#">Ketepatan Pencarian Sasaran</a> | <a href="#">Lebih lanjut tentang Pencarian Tujuan</a></p>
-
-                <p>Jika Anda mengetahui hasil yang Anda inginkan dari rumus, gunakan Goal Seek di Excel untuk menemukan nilai input yang menghasilkan hasil rumus ini.</p>
-
-                <p class="h5" id="">
-                    <a name=goal-seek-example-1></a>Contoh Pencarian Tujuan 1</p>
-                <p>Gunakan Goal Seek di Excel untuk menemukan nilai pada ujian keempat yang menghasilkan nilai akhir 70.</p>
-                <p>1. Rumus di sel B7 menghitung nilai akhir.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image020.png" alt="Hasil Rumus"></p>
-                <p>2. Nilai pada ujian keempat di sel B5 adalah sel input.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image021.png" alt="Sel Masukan"></p>
-                <p>3. Pada tab Data, dalam grup Prakiraan, klik Analisis Bagaimana-Jika.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image002.png" alt="Klik Analisis Bagaimana-Jika"></p>
-                <p>4. Klik Pencarian Sasaran.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image010.png" alt="Klik Pencarian Sasaran"></p>
-                <p>Kotak dialog Pencarian Sasaran muncul.</p>
-                <p>5. Pilih sel B7.</p>
-                <p>6. Klik pada kotak 'To value' dan ketik 70.</p>
-                <p>7. Klik di kotak 'By changing cell' dan pilih sel B5.</p>
-                <p>8. Klik Oke.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image022.png" alt="Parameter Pencarian Sasaran"></p>
-                <p>Hasil. Nilai 90 pada ujian keempat menghasilkan nilai akhir 70.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image023.png" alt="Solusi Pencarian Tujuan"></p>
-
-                <p class="h5" id="">
-                    <a name=goal-seek-example-2></a>Contoh Pencarian Tujuan 2</p>
-                <p>Gunakan Goal Seek di Excel untuk menemukan jumlah pinjaman yang menghasilkan pembayaran bulanan $1500.</p>
-                <p>1. Rumus di sel B5 menghitung pembayaran bulanan.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image024.png" alt="fungsi PMT"></p>
-                <p>Penjelasan: <a href="https://www.excel-easy.com/examples/pmt.html">fungsi PMT</a> menghitung pembayaran pinjaman. Jika Anda belum pernah mendengar fungsi ini sebelumnya, tidak apa-apa. Semakin tinggi jumlah pinjaman, semakin tinggi pembayaran
-                    bulanan. Asumsikan, Anda hanya mampu membayar $1500 sebulan. Berapa jumlah pinjaman maksimum Anda?</p>
-                <p>2. Jumlah pinjaman di sel B3 adalah sel input.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image025.png" alt="Jumlah pinjaman"></p>
-                <p>3. Pada tab Data, dalam grup Prakiraan, klik Analisis Bagaimana-Jika.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image002.png" alt="Klik Analisis Bagaimana-Jika"></p>
-                <p>4. Klik Pencarian Sasaran.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image010.png" alt="Klik Pencarian Sasaran"></p>
-                <p>Kotak dialog Pencarian Sasaran muncul.</p>
-                <p>5. Pilih sel B5.</p>
-                <p>6. Klik di kotak 'To value' dan ketik -1500 (negatif, Anda membayar uang).</p>
-                <p>7. Klik di kotak 'By changing cell' dan pilih sel B3.</p>
-                <p>8. Klik Oke.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image026.png" alt="Variabel Pencarian Tujuan"></p>
-                <p>Hasil. Jumlah pinjaman sebesar $250.187 menghasilkan pembayaran bulanan sebesar $1500.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image027.png" alt="Pencarian Tujuan Menemukan Solusi"></p>
-
-                <p class="h5" id="">
-                    <a name=goal-seek-precision></a>Ketepatan Pencarian Tujuan</p>
-                <p>Pencarian tujuan mengembalikan solusi perkiraan. Anda dapat mengubah pengaturan iterasi di Excel untuk menemukan solusi yang lebih tepat.</p>
-                <p>1. Rumus di sel B1 menghitung kuadrat dari nilai di sel A1.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image028.png" alt="Sel Rumus"></p>
-                <p>2. Gunakan goal seek untuk mencari nilai input yang menghasilkan hasil rumus 25.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image029.png" alt="Contoh Pencarian Tujuan"></p>
-                <p>Hasil. Excel mengembalikan solusi perkiraan.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image030.png" alt="Solusi Perkiraan"></p>
-                <p>3. Pada tab File, klik Opsi, Rumus.</p>
-                <p>4. Di bawah opsi Perhitungan, kurangi nilai Perubahan Maksimum dengan memasukkan beberapa angka nol. Nilai defaultnya adalah 0,001.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image031.png" alt="Nilai Perubahan Maksimum"></p>
-                <p>5. Klik Oke.</p>
-                <p>6. Gunakan Goal Seek lagi. Excel mengembalikan solusi yang lebih tepat.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image032.png" alt="Solusi Lebih Tepat"></p>
-
-                <p class="h5" id="">
-                    <a name=more-about-goal-seek></a>Lebih lanjut tentang Pencarian Tujuan</p>
-                <p>Ada banyak masalah yang tidak bisa diselesaikan Goal Seek. Goal Seek membutuhkan satu sel input dan satu sel output (rumus). Gunakan
-                    <a href="https://www.excel-easy.com/data-analysis/solver.html">Solver</a> di Excel untuk memecahkan masalah dengan beberapa sel input. Terkadang Anda perlu memulai dengan nilai input yang berbeda untuk menemukan solusi.
-                </p>
-                <p>1. Rumus di sel B1 di bawah ini menghasilkan hasil -0,25.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image033.png" alt=Rumus></p>
-                <p>2. Gunakan Goal Seek untuk menemukan nilai input yang menghasilkan hasil rumus +0,25.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image034.png" alt="Masalah Pencarian Tujuan"></p>
-                <p>Hasil. Excel tidak dapat menemukan solusi.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image035.png" alt="Status Pencarian Tujuan"></p>
-                <p>3. Klik Batal.</p>
-                <p>4. Mulai dengan nilai input lebih besar dari 8.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image036.png" alt="Nilai Masukan Lebih Besar dari 8"></p>
-                <p>5. Gunakan Goal Seek lagi. Excel menemukan solusi.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image037.png" alt="Pencarian Tujuan di Excel"></p>
-                <p>Penjelasan: y = 1 / (x - 8) diskontinu di x = 8 (tidak mungkin membagi dengan 0). Dalam contoh ini, Goal seek tidak dapat mencapai satu sisi sumbu x (x&gt;8) jika dimulai pada sisi lain dari sumbu x (x&lt;8) atau sebaliknya.</p>
-
-                <p class="h5" id="">Persamaan kuadrat</p>
-                <p>Sebuah persamaan kuadrat adalah dari bentuk kapak
-                    <sup>2</sup> + bx + c = 0 dimana &#8800; 0. persamaan kuadrat bisa diselesaikan dengan menggunakan rumus kuadrat. Anda juga dapat menggunakan fitur Goal Seek Excel untuk menyelesaikan persamaan kuadrat.</p>
-                <p>1. Sebagai contoh, kita memiliki rumus y = 3x <sup>2</sup> - 12x + 9.5. Sangat mudah untuk menghitung y untuk setiap x yang diberikan. Untuk x = 1, y = 0,5</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image038.png" alt="Rumus Excel, x = 1"></p>
-                <p>2. Untuk x = 2, y = -2,5</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image039.png" alt="Rumus Excel, x = 2"></p>
-                <p>3. Tetapi bagaimana jika kita ingin mengetahui x untuk setiap y yang diberikan? Misalnya, y = 24,5. Kita perlu menyelesaikan 3x <sup>2</sup> - 12x + 9,5 = 24,5. Kita dapat menyelesaikan persamaan kuadrat 3x <sup>2</sup> - 12x + 9,5 - 24,5
-                    = 0 dengan menggunakan rumus kuadrat.</p>
-                <p>3x <sup>2</sup> - 12x -15 = 0<br> a = 3, b = -12, c = -15<br> D = b <sup>2</sup> - 4ac = (-12) <sup>2</sup> - 4 * 3 * -15 = 144 + 180 = 324</p>
-                <table border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse'>
-                    <tr>
-                        <td width=25 nowrap rowspan=2 style='width:18.75pt;padding:0cm 0cm 0cm 0cm'>
-                            <p>x =</p>
-                        </td>
-                        <td width=75 nowrap style='width:56.25pt;padding:0cm 0cm 0cm 0cm'>
-                            <p>-b + D</p>
-                        </td>
-                        <td width=50 nowrap rowspan=2 style='width:37.5pt;padding:0cm 0cm 0cm 0cm'>
-                            <p>atau</p>
-                        </td>
-                        <td width=25 nowrap rowspan=2 style='width:18.75pt;padding:0cm 0cm 0cm 0cm'>
-                            <p>x =</p>
-                        </td>
-                        <td width=75 nowrap style='width:56.25pt;padding:0cm 0cm 0cm 0cm'>
-                            <p>-b - D</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style='border:none;border-top:solid #212121 1.0pt;padding:0cm 0cm 0cm 0cm'>
-                            <p>2a</p>
-                        </td>
-                        <td style='border:none;border-top:solid #212121 1.0pt;padding:0cm 0cm 0cm 0cm'>
-                            <p>2a</p>
-                        </td>
-                    </tr>
-                </table>
-                <p><span style='display:none'> </span></p>
-                <table border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse'>
-                    <tr>
-                        <td width=25 nowrap rowspan=2 style='width:18.75pt;padding:0cm 0cm 0cm 0cm'>
-                            <p>x =</p>
-                        </td>
-                        <td width=75 nowrap style='width:56.25pt;padding:0cm 0cm 0cm 0cm'>
-                            <p>12 + 324</p>
-                        </td>
-                        <td width=50 nowrap rowspan=2 style='width:37.5pt;padding:0cm 0cm 0cm 0cm'>
-                            <p>atau</p>
-                        </td>
-                        <td width=25 nowrap rowspan=2 style='width:18.75pt;padding:0cm 0cm 0cm 0cm'>
-                            <p>x =</p>
-                        </td>
-                        <td width=75 nowrap style='width:56.25pt;padding:0cm 0cm 0cm 0cm'>
-                            <p>12 - 324</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style='border:none;border-top:solid #212121 1.0pt;padding:0cm 0cm 0cm 0cm'>
-                            <p>6</p>
-                        </td>
-                        <td style='border:none;border-top:solid #212121 1.0pt;padding:0cm 0cm 0cm 0cm'>
-                            <p>6</p>
-                        </td>
-                    </tr>
-                </table>
-                <p><span style='display:none'> </span></p>
-                <table border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse'>
-                    <tr>
-                        <td width=25 nowrap rowspan=2 style='width:18.75pt;padding:0cm 0cm 0cm 0cm'>
-                            <p>x =</p>
-                        </td>
-                        <td width=75 nowrap style='width:56.25pt;padding:0cm 0cm 0cm 0cm'>
-                            <p>12 + 18</p>
-                        </td>
-                        <td width=50 nowrap rowspan=2 style='width:37.5pt;padding:0cm 0cm 0cm 0cm'>
-                            <p>atau</p>
-                        </td>
-                        <td width=25 nowrap rowspan=2 style='width:18.75pt;padding:0cm 0cm 0cm 0cm'>
-                            <p>x =</p>
-                        </td>
-                        <td width=75 nowrap style='width:56.25pt;padding:0cm 0cm 0cm 0cm'>
-                            <p>12 - 18</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style='border:none;border-top:solid #212121 1.0pt;padding:0cm 0cm 0cm 0cm'>
-                            <p>6</p>
-                        </td>
-                        <td style='border:none;border-top:solid #212121 1.0pt;padding:0cm 0cm 0cm 0cm'>
-                            <p>6</p>
-                        </td>
-                    </tr>
-                </table>
-                <p><span style='display:none'> </span></p>
-                <table border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse'>
-                    <tr style='height:22.5pt'>
-                        <td width=25 nowrap rowspan=2 style='width:18.75pt;padding:0cm 0cm 0cm 0cm; height:22.5pt'>
-                            <p>x =</p>
-                        </td>
-                        <td width=75 nowrap rowspan=2 style='width:56.25pt;padding:0cm 0cm 0cm 0cm; height:22.5pt'>
-                            <p>5</p>
-                        </td>
-                        <td width=50 nowrap rowspan=2 style='width:37.5pt;padding:0cm 0cm 0cm 0cm; height:22.5pt'>
-                            <p>atau</p>
-                        </td>
-                        <td width=25 nowrap rowspan=2 style='width:18.75pt;padding:0cm 0cm 0cm 0cm; height:22.5pt'>
-                            <p>x =</p>
-                        </td>
-                        <td width=75 nowrap rowspan=2 style='width:56.25pt;padding:0cm 0cm 0cm 0cm; height:22.5pt'>
-                            <p>-1</p>
-                        </td>
-                        <td style='height:22.5pt;border:none' width=0 height=30></td>
-                    </tr>
-                    <tr style='height:22.5pt'>
-                        <span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'>
-            <td style='height:22.5pt;border:none' width=0 height=30></td>
-          </span>
-                    </tr>
-                </table>
-                <p><span style='color:white'>4. Anda dapat menggunakan fitur Goal Seek Excel untuk mendapatkan hasil yang sama persis. Pada tab Data, dalam grup Prakiraan, klik Analisis Bagaimana-Jika.</span></p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image002.png" alt="Klik Analisis Bagaimana-Jika"></p>
-                <p>5. Klik Pencarian Sasaran.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image010.png" alt="Klik Pencarian Sasaran"> </p>
-                <p>Kotak dialog Pencarian Sasaran muncul.</p>
-                <p>6. Pilih sel B2.</p>
-                <p>7. Klik di kotak 'To value' dan ketik 24.5</p>
-                <p>8. Klik di kotak 'By changing cell' dan pilih sel A2.</p>
-                <p>9. Klik Oke.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image040.png" alt="Parameter Pencarian Sasaran"></p>
-                <p>Hasil.</p>
-                <p><img class="img-fluid" src="../excel/files/What-IfAnalysis_files/image041.png" alt="Memecahkan Persamaan Kuadrat di Excel"></p>
-                <p class="info"><strong>Catatan:</strong> Excel mengembalikan solusi x = 5. Excel menemukan solusi lain jika Anda memulai dengan nilai x yang lebih dekat ke x = -1. Misalnya, masukkan nilai 0 ke dalam sel A2 dan ulangi langkah 5 hingga 9. Untuk menemukan
-                    akarnya, tetapkan y = 0 dan selesaikan persamaan kuadrat 3x <sup>2</sup> - 12x + 9,5 = 0. Dalam kasus ini, atur 'To value' ke 0.</p>
-            </details>
-
-        </div>
+    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/solver.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+        <p class="lead mb-0" id="MasalahTransportasi">Masalah Transportasi <span class="span-text">(Transportation Problem)</span></p>
     </div>
-</div>
+
+    <p><a href="#MasalahTransportasi-RumuskanModel">Rumuskan Model</a> | <a href="#MasalahTransportasi-PercobaandanKesalahan">Percobaan dan Kesalahan</a> | <a href="#MasalahTransportasi-MemecahkanModel">Memecahkan Model</a></p>
+
+    <p>Gunakan Solver di Excel untuk menemukan jumlah unit yang akan dikirim dari setiap pabrik ke setiap pelanggan yang meminimalkan total biaya.</p>
+
+    <p class="h5" id="MasalahTransportasi-RumuskanModel">Formulasikan Modelnya</p>
+    <p>Model yang akan kita pecahkan terlihat sebagai berikut di Excel.
+    </p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image011.png" alt="Masalah Transportasi di Excel"></p>
+    <p>1. Untuk merumuskan masalah transportasi ini, jawablah tiga pertanyaan berikut.</p>
+    <p>A. Apa keputusan yang harus diambil? Untuk masalah ini, kita membutuhkan Excel untuk mengetahui berapa banyak unit yang akan dikirim dari setiap pabrik ke setiap pelanggan.</p>
+    <p>B. Apa kendala dalam keputusan ini? Setiap pabrik memiliki pasokan tetap dan setiap pelanggan memiliki permintaan tetap.
+    </p>
+    <p>C. Apa ukuran kinerja keseluruhan untuk keputusan ini? Ukuran kinerja keseluruhan adalah total biaya pengiriman, jadi tujuannya adalah untuk meminimalkan kuantitas ini.</p>
+    <p>2. Untuk membuat model lebih mudah dipahami, buat <a href="https://www.excel-easy.com/examples/named-range.html">rentang bernama</a> berikut.</p>
+    <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=292 style='width:219.0pt;border-collapse:collapse'>
+        <tr>
+            <td width=178 style='width:133.5pt;border:solid #212121 1.0pt;background:
+  #E6E6E6;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><b>Nama Rentang</b></p>
+            </td>
+            <td width=114 style='width:85.5pt;border:solid #212121 1.0pt;border-left:
+  none;background:#E6E6E6;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><b><span style='color:black'>Sel</span></b></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Biaya Satuan</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>C4:E6</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>pengiriman</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>C10:E12</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>TotalIn</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>C14:E14</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Tuntutan</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>C16:E16</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Total Keluar</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>G10:G12</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Memasok</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>I10: I12</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Total biaya</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>I16</span></p>
+            </td>
+        </tr>
+    </table>
+    <p><span style='color:white'><br>
+    <br>
+  </span></p>
+    <p>3. Sisipkan fungsi berikut.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image012.png" alt="Sisipkan Fungsi"></p>
+    <p class="info"><strong>Penjelasan:</strong> Fungsi SUM menghitung total yang dikirim dari setiap pabrik (Total Out) ke setiap pelanggan (Total In). Total Biaya sama dengan jumlah <a href="https://www.excel-easy.com/examples/sumproduct.html">produk</a> dari UnitCost
+        dan Pengiriman.</p>
+
+    <p class="h5" id="MasalahTransportasi-PercobaandanKesalahan">Percobaan dan Kesalahan</p>
+    <p>Dengan formulasi ini, menjadi mudah untuk menganalisis solusi percobaan apa pun.</p>
+    <p>Misalnya, jika kita mengirimkan 100 unit dari Pabrik 1 ke Pelanggan 1, 200 unit dari Pabrik 2 ke Pelanggan 2, 100 unit dari Pabrik 3 ke Pelanggan 1 dan 200 unit dari Pabrik 3 ke Pelanggan 3, Total Out sama dengan Supply dan Total In sama dengan Tuntutan.
+        Solusi ini memiliki total biaya 27800.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image013.png" alt="Solusi Percobaan"></p>
+    <p>Tidak perlu menggunakan trial and error. Kami akan menjelaskan selanjutnya bagaimana Excel Solver dapat digunakan untuk menemukan solusi optimal dengan cepat.</p>
+
+    <p class="h5" id="MasalahTransportasi-MemecahkanModel">Memecahkan Model</p>
+    <p>Untuk menemukan solusi optimal, lakukan langkah-langkah berikut.</p>
+    <p>1. Pada tab Data, dalam grup Analisis, klik Solver.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image003.png" alt="Klik Solver"></p>
+    <p class="info"><strong>Catatan:</strong> tidak dapat menemukan tombol Solver? Klik di sini untuk memuat <a href="#">add-in
+    Solver</a>.</p>
+    <p>Masukkan parameter Solver (baca terus). Hasilnya harus konsisten dengan gambar di bawah ini.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image014.png" alt="Parameter Solver"></p>
+    <p>Anda memiliki pilihan untuk mengetikkan nama rentang atau mengklik sel di spreadsheet.</p>
+    <p>2. Masukkan TotalCost untuk Objective.</p>
+    <p>3. Klik Min.</p>
+    <p>4. Masukkan Pengiriman untuk Sel Variabel yang Berubah.</p>
+    <p>5. Klik Add untuk memasukkan batasan berikut.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image015.png" alt="Batasan Permintaan"></p>
+    <p>6. Klik Add untuk memasukkan batasan berikut.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image016.png" alt="Kendala Pasokan"></p>
+    <p>7. Centang 'Make Unconstrained Variables Non-Negative' dan pilih 'Simplex LP'.</p>
+    <p>8. Terakhir, klik Selesaikan.</p>
+    <p>Hasil:</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image017.png" alt="Hasil Solver"></p>
+    <p>Solusi optimal:</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image018.png" alt="Hasil Soal Transportasi"></p>
+    <p class="info"><strong>Kesimpulan:</strong> optimal untuk mengirimkan 100 unit dari Pabrik 1 ke Pelanggan 2, 100 unit dari Pabrik 2 ke Pelanggan 2, 100 unit dari Pabrik 2 ke Pelanggan 3, 200 unit dari Pabrik 3 ke Pelanggan 1 dan 100 unit dari Pabrik 3 ke Pelanggan
+        3. Solusi ini memberikan biaya minimum 26000. Semua kendala terpenuhi.</p>
+
+
+    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/transportation-problem.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+        <p class="lead mb-0" id="MasalahTugas">Masalah Tugas</p>
+    </div>
+
+    <p><a href="#MasalahTugas-RumuskanModel">Rumuskan Model</a> | <a href="#MasalahTugas-PercobaandanKesalahan">Percobaan dan Kesalahan</a> | <a href="#MasalahTugas-MemecahkanModel">Memecahkan Model</a></p>
+
+    <p>Gunakan Solver di Excel untuk menemukan penugasan orang ke tugas yang meminimalkan total biaya.</p>
+
+    <p class="h5" id="MasalahTugas-RumuskanModel">Formulasikan Modelnya</p>
+    <p>Model yang akan kita pecahkan terlihat sebagai berikut di Excel.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image019.png" alt="Masalah Tugas di Excel"></p>
+    <p>1. Untuk merumuskan masalah penugasan ini, jawablah tiga pertanyaan berikut.</p>
+    <p>A. Apa keputusan yang harus diambil? Untuk masalah ini, kita perlu Excel untuk mencari tahu orang mana yang akan ditugaskan untuk tugas mana (Ya=1, Tidak=0). Misalnya, jika kita menetapkan Orang 1 ke Tugas 1, sel C10 sama dengan 1. Jika tidak, sel
+        C10 sama dengan 0.</p>
+    <p>B. Apa kendala dalam keputusan ini? Setiap orang hanya dapat melakukan satu tugas (Supply=1). Setiap tugas hanya membutuhkan satu orang (Permintaan = 1).</p>
+    <p>C. Apa ukuran kinerja keseluruhan untuk keputusan ini? Ukuran kinerja keseluruhan adalah total biaya penugasan, jadi tujuannya adalah untuk meminimalkan kuantitas ini.</p>
+    <p>2. Untuk membuat model lebih mudah dipahami, buat <a href="https://www.excel-easy.com/examples/named-range.html">rentang bernama</a> berikut.</p>
+    <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=292 style='width:219.0pt;border-collapse:collapse'>
+        <tr>
+            <td width=178 style='width:133.5pt;border:solid #212121 1.0pt;background:
+  #E6E6E6;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><b>Nama Rentang</b></p>
+            </td>
+            <td width=114 style='width:85.5pt;border:solid #212121 1.0pt;border-left:
+  none;background:#E6E6E6;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><b><span style='color:black'>Sel</span></b></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Biaya</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>C4:E6</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Penugasan</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>C10:E12</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Orang yang Ditugaskan</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>C14:E14</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Tuntutan</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>C16:E16</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Tugas Ditugaskan</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>G10:G12</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Memasok</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>I10: I12</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Total biaya</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>I16</span></p>
+            </td>
+        </tr>
+    </table>
+    <p><span style='color:white'><br>
+    <br>
+  </span></p>
+    <p>3. Sisipkan fungsi berikut.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image020.png" alt="Sisipkan Fungsi"></p>
+    <p class="info"><strong>Penjelasan:</strong> Fungsi SUM menghitung jumlah tugas yang diberikan kepada seseorang dan jumlah orang yang ditugaskan untuk suatu tugas. Total Biaya sama dengan jumlah <a href="#">produk</a> dari Biaya dan Penugasan.</p>
+
+    <p class="h5" id="MasalahTugas-PercobaandanKesalahan">Percobaan dan Kesalahan</p>
+    <p>Dengan formulasi ini, menjadi mudah untuk menganalisis solusi percobaan apa pun.</p>
+    <p>Misalnya, jika kita menetapkan Orang 1 ke Tugas 1, Orang 2 ke tugas 2 dan Orang 3 ke Tugas 3, Tugas yang Ditugaskan sama dengan Penawaran dan Orang yang Ditugaskan sama dengan Permintaan. Solusi ini memiliki total biaya 147.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image021.png" alt="Solusi Percobaan"></p>
+    <p>Tidak perlu menggunakan trial and error. Kami akan menjelaskan selanjutnya bagaimana Excel Solver dapat digunakan untuk menemukan solusi optimal dengan cepat.</p>
+
+    <p class="h5" id="MasalahTugas-MemecahkanModel">Memecahkan Model</p>
+    <p>Untuk menemukan solusi optimal, lakukan langkah-langkah berikut.</p>
+    <p>1. Pada tab Data, dalam grup Analisis, klik Solver.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image003.png" alt="Klik Solver"></p>
+    <p class="info"><strong>Catatan:</strong> tidak dapat menemukan tombol Solver? Klik di sini untuk memuat <a href="#">add-in Solver</a>.</p>
+    <p>Masukkan parameter Solver (baca terus). Hasilnya harus konsisten dengan gambar di bawah ini.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image022.png" alt="Parameter Solver"></p>
+    <p>Anda memiliki pilihan untuk mengetikkan nama rentang atau mengklik sel di spreadsheet.</p>
+    <p>2. Masukkan TotalCost untuk Objective.</p>
+    <p>3. Klik Min.</p>
+    <p>4. Masukkan Tugas untuk Mengubah Sel Variabel.</p>
+    <p>5. Klik Add untuk memasukkan batasan berikut.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image023.png" alt="Batasan Biner"></p>
+    <p class="info"><strong>Catatan:</strong> variabel biner adalah 0 atau 1.</p>
+    <p>6. Klik Add untuk memasukkan batasan berikut.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image024.png" alt="Batasan Permintaan"></p>
+    <p>7. Klik Add untuk memasukkan batasan berikut.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image025.png" alt="Kendala Pasokan"></p>
+    <p>8. Centang 'Make Unconstrained Variables Non-Negative' dan pilih 'Simplex LP'.</p>
+    <p>9. Terakhir, klik Selesaikan.</p>
+    <p>Hasil:</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image017.png" alt="Hasil Solver"></p>
+    <p>Solusi optimal:</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image026.png" alt="Hasil Soal Tugas"></p>
+    <p class="info"><strong>Kesimpulan:</strong> optimal untuk menugaskan Orang 1 ke tugas 2, Orang 2 ke Tugas 3 dan Orang 3 ke Tugas 1. Solusi ini memberikan biaya minimum 129. Semua kendala terpenuhi.</p>
+
+
+    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/..." title="unduh file latihan" rel="noopener">unduh file latihan</a>
+        <p class="lead mb-0" id="SoalJalurTerpendek">Soal Jalur Terpendek <span class="span-text">(Shortest Path Problem)</span></p>
+    </div>
+
+    <p><a href="#SoalJalurTerpendek-RumuskanModel">Rumuskan Model</a> | <a href="#SoalJalurTerpendek-PercobaandanKesalahan">Percobaan dan Kesalahan</a> | <a href="#SoalJalurTerpendek-MemecahkanModel">Memecahkan Model</a></p>
+
+    <p>Gunakan solver di Excel untuk menemukan jalur terpendek dari node S ke node T dalam jaringan yang tidak diarahkan. Titik-titik dalam jaringan disebut node (S, A, B, C, D, E dan T). Garis dalam jaringan disebut busur (SA, SB, SC, AC, dll).
+    </p>
+    <p class="h5" id="SoalJalurTerpendek-RumuskanModel">Formulasikan Modelnya</p>
+    <p>Model yang akan kita pecahkan terlihat sebagai berikut di Excel.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image027.png" alt="Masalah Jalur Terpendek di Excel"></p>
+    <p>1. Untuk merumuskan masalah jalur terpendek ini, jawablah tiga pertanyaan berikut.</p>
+    <p>A. Apa keputusan yang harus diambil? Untuk masalah ini, kita membutuhkan Excel untuk mengetahui apakah sebuah busur berada pada jalur terpendek atau tidak (Ya=1, Tidak=0). Misalnya, jika SB adalah bagian dari jalur terpendek, sel F5 sama dengan 1.
+        Jika tidak, sel F5 sama dengan 0.</p>
+    <p>B. Apa kendala dalam keputusan ini? Arus Bersih (Aliran Keluar - Arus Masuk) setiap node harus sama dengan Supply/Demand. Node S seharusnya hanya memiliki satu busur keluar (Aliran Bersih = 1). Node T seharusnya hanya memiliki satu arc yang masuk
+        (Net Flow = -1). Semua node lain harus memiliki satu busur keluar dan satu busur masuk jika simpul berada di jalur terpendek (Aliran Bersih = 0) atau tidak ada aliran (Aliran Bersih = 0).</p>
+    <p>C. Apa ukuran kinerja keseluruhan untuk keputusan ini? Ukuran kinerja keseluruhan adalah total jarak dari jalur terpendek, jadi tujuannya adalah untuk meminimalkan kuantitas ini.</p>
+    <p>2. Untuk membuat model lebih mudah dipahami, buat <a href="https://www.excel-easy.com/examples/named-range.html">rentang bernama</a> berikut.</p>
+    <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=292 style='width:219.0pt;border-collapse:collapse'>
+        <tr>
+            <td width=178 style='width:133.5pt;border:solid #212121 1.0pt;background:
+  #E6E6E6;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><b>Nama Rentang</b></p>
+            </td>
+            <td width=114 style='width:85.5pt;border:solid #212121 1.0pt;border-left:
+  none;background:#E6E6E6;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><b><span style='color:black'>Sel</span></b></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Dari</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>B4:B21</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Ke</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>C4:C21</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Jarak</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>D4:D21</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Pergi</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>F4:F21</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Arus Bersih</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>I4: I10</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Permintaan persediaan</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>K4: K10</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Jarak Total</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>F23</span></p>
+            </td>
+        </tr>
+    </table>
+    <p><span style='color:white'><br>
+    <br>
+  </span></p>
+    <p>3. Sisipkan fungsi berikut.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image028.png" alt="Sisipkan Fungsi"></p>
+    <p class="info"><strong>Penjelasan:</strong> Fungsi <a href="https://www.excel-easy.com/examples/sumif.html">SUMIF</a> menghitung Net Flow setiap node. Untuk node S, fungsi SUMIF menjumlahkan nilai di kolom Go dengan &quot;S&quot; di kolom From. Akibatnya, hanya
+        sel F4, F5 atau F6 yang dapat menjadi 1 (satu busur keluar). Untuk node T, fungsi SUMIF menjumlahkan nilai di kolom Go dengan &quot;T&quot; di kolom To. Akibatnya, hanya sel F15, F18 atau F21 yang dapat menjadi 1 (satu busur masuk). Untuk semua
+        node lainnya, Excel terlihat di kolom From dan To. Total Jarak sama dengan jumlah <a href="https://www.excel-easy.com/examples/sumproduct.html">hasil</a> dari Jarak dan Pergi.</p>
+
+    <p class="h5" id="SoalJalurTerpendek-PercobaandanKesalahan">Percobaan dan Kesalahan</p>
+    <p>Dengan formulasi ini, menjadi mudah untuk menganalisis solusi percobaan apa pun.</p>
+    <p>1. Misalnya, jalur SBET memiliki total jarak 16.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image029.png" alt="Solusi Percobaan"></p>
+    <p>Tidak perlu menggunakan trial and error. Kami akan menjelaskan selanjutnya bagaimana Excel Solver dapat digunakan untuk menemukan solusi optimal dengan cepat.</p>
+
+    <p class="h5" id="SoalJalurTerpendek-MemecahkanModel">Memecahkan Model</p>
+    <p>Untuk menemukan solusi optimal, lakukan langkah-langkah berikut.</p>
+    <p>1. Pada tab Data, dalam grup Analisis, klik Solver.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image003.png" alt="Klik Solver"></p>
+    <p class="info"><strong>Catatan:</strong> tidak dapat menemukan tombol Solver? Klik di sini untuk memuat <a href="#">add-in Solver</a>.</p>
+    <p>Masukkan parameter Solver (baca terus). Hasilnya harus konsisten dengan gambar di bawah ini.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image030.png" alt="Parameter Solver"></p>
+    <p>Anda memiliki pilihan untuk mengetikkan nama rentang atau mengklik sel di spreadsheet.</p>
+    <p>2. Masukkan TotalDistance untuk Objective.</p>
+    <p>3. Klik Min.</p>
+    <p>4. Masukkan Go untuk Mengubah Sel Variabel.</p>
+    <p>5. Klik Add untuk memasukkan batasan berikut.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image031.png" alt="Batasan Aliran Bersih"></p>
+    <p>6. Centang 'Make Unconstrained Variables Non-Negative' dan pilih 'Simplex LP'.</p>
+    <p>7. Terakhir, klik Selesaikan.</p>
+    <p>Hasil:</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image017.png" alt="Hasil Solver"></p>
+    <p>Solusi optimal:</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image032.png" alt="Hasil Soal Jalur Terpendek"></p>
+    <p class="info"><strong>Kesimpulan:</strong> SADCT merupakan jalur terpendek dengan total jarak 11.</p>
+
+
+    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/maximum-flow-problem.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+        <p class="lead mb-0" id="MasalahAliranMaksimum">Masalah Aliran Maksimum</p>
+    </div>
+
+    <p><a href="#MasalahAliranMaksimum-RumuskanModel">Rumuskan Model</a> | <a href="#MasalahAliranMaksimum-PercobaandanKesalahan">Percobaan dan Kesalahan</a> | <a href="#MasalahAliranMaksimum-MemecahkanModel">Memecahkan Model</a></p>
+
+    <p>Gunakan solver di Excel untuk menemukan aliran maksimum dari node S ke node T dalam jaringan terarah. Titik-titik dalam jaringan disebut node (S, A, B, C, D, E dan T). Garis dalam jaringan disebut busur (SA, SB, SC, AC, dll).</p>
+
+    <p class="h5" id="MasalahAliranMaksimum-RumuskanModel">Formulasikan Modelnya</p>
+    <p>Model yang akan kita pecahkan terlihat sebagai berikut di Excel.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image033.png" alt="Masalah Aliran Maksimum di Excel"></p>
+    <p>1. Untuk merumuskan masalah aliran maksimum ini, jawablah tiga pertanyaan berikut.</p>
+    <p>A. Apa keputusan yang harus diambil? Untuk masalah ini, kita membutuhkan Excel untuk menemukan aliran pada setiap busur. Misalnya, jika aliran pada SB adalah 2, sel D5 sama dengan 2.</p>
+    <p>B. Apa kendala dalam keputusan ini? Arus Bersih (Arus Keluar – Arus Masuk) node A, B, C, D dan E harus sama dengan 0. Dengan kata lain, Arus Keluar = Arus Masuk. Juga, setiap busur memiliki kapasitas tetap. Aliran pada setiap busur harus kurang dari
+        kapasitas ini.
+    </p>
+    <p>C. Apa ukuran kinerja keseluruhan untuk keputusan ini? Ukuran kinerja keseluruhan adalah aliran maksimum, jadi tujuannya adalah untuk memaksimalkan kuantitas ini. Aliran maksimum sama dengan Aliran Keluar dari node S.</p>
+    <p>2. Untuk membuat model lebih mudah dipahami, buat <a href="https://www.excel-easy.com/examples/named-range.html">rentang bernama</a> berikut.</p>
+    <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=292 style='width:219.0pt;border-collapse:collapse'>
+        <tr>
+            <td width=178 style='width:133.5pt;border:solid #212121 1.0pt;background:
+  #E6E6E6;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><b>Nama Rentang</b></p>
+            </td>
+            <td width=114 style='width:85.5pt;border:solid #212121 1.0pt;border-left:
+  none;background:#E6E6E6;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><b><span style='color:black'>Sel</span></b></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Dari</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>B4:B15</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Ke</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>C4:C15</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Mengalir</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>D4:D15</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Kapasitas</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>F4:F15</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Permintaan persediaan</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>K5: K9</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Arus Maksimum</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>H17</span></p>
+            </td>
+        </tr>
+    </table>
+    <p><span style='color:white'><br>
+    <br>
+  </span></p>
+    <p>3. Sisipkan fungsi berikut.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image034.png" alt="Sisipkan Fungsi"></p>
+    <p class="info"><strong>Penjelasan:</strong> Fungsi <a href="#">SUMIF</a> menghitung Net Flow setiap node. Untuk node A, fungsi SUMIF pertama menjumlahkan nilai di kolom Flow dengan &quot;A&quot; di kolom From (Flow Out). Fungsi SUMIF kedua menjumlahkan nilai di
+        kolom Flow dengan &quot;A&quot; di kolom To (Flow In). Arus Maksimum sama dengan nilai pada sel I4, yaitu arus keluar dari simpul S. Karena simpul A, B, C, D dan E memiliki Arus Bersih sebesar 0, Arus Keluar dari simpul S akan sama dengan Arus
+        Masuk dari simpul T.</p>
+
+    <p class="h5" id="MasalahAliranMaksimum-PercobaandanKesalahan">Percobaan dan Kesalahan</p>
+    <p>Dengan formulasi ini, menjadi mudah untuk menganalisis solusi percobaan apa pun.</p>
+    <p>1. Misalnya jalur SADT dengan arus 2. Jalur SCT dengan arus 4. Jalur SBET dengan arus 2. Jalur ini memberikan total arus 8.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image035.png" alt="Solusi Percobaan"></p>
+    <p>Tidak perlu menggunakan trial and error. Kami akan menjelaskan selanjutnya bagaimana Excel Solver dapat digunakan untuk menemukan solusi optimal dengan cepat.</p>
+
+    <p class="h5" id="MasalahAliranMaksimum-MemecahkanModel">Memecahkan Model</p>
+    <p>Untuk menemukan solusi optimal, lakukan langkah-langkah berikut.</p>
+    <p>1. Pada tab Data, dalam grup Analisis, klik Solver.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image003.png" alt="Klik Solver"></p>
+    <p class="info"><strong>Catatan:</strong> tidak dapat menemukan tombol Solver? Klik di sini untuk memuat <a href="#">add-in
+    Solver</a>.</p>
+    <p>Masukkan parameter Solver (baca terus). Hasilnya harus konsisten dengan gambar di bawah ini.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image036.png" alt="Parameter Solver"></p>
+    <p>Anda memiliki pilihan untuk mengetikkan nama rentang atau mengklik sel di spreadsheet.</p>
+    <p>2. Masukkan MaximumFlow untuk Objective.</p>
+    <p>3. Klik Maks.</p>
+    <p>4. Masukkan Flow untuk Mengubah Sel Variabel.</p>
+    <p>5. Klik Add untuk memasukkan batasan berikut.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image037.png" alt="Batasan Aliran Bersih"></p>
+    <p>6. Klik Add untuk memasukkan batasan berikut.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image038.png" alt="Batasan Kapasitas"></p>
+    <p>7. Centang 'Make Unconstrained Variables Non-Negative' dan pilih 'Simplex LP'.</p>
+    <p>8. Terakhir, klik Selesaikan.</p>
+    <p>Hasil:</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image017.png" alt="Hasil Solver"></p>
+    <p>Solusi optimal:</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image039.png" alt="Hasil Masalah Aliran Maksimum"></p>
+    <p>Kesimpulan : jalur SADT dengan arus 2. Jalur SCT dengan arus 4. Jalur SBET dengan arus 2. Jalur SCET dengan arus 2. Jalur SACET dengan arus 1. Jalur SACDT dengan aliran 1. Jalur ini memberikan aliran maksimum 12.</p>
+
+
+    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/..." title="unduh file latihan" rel="noopener">unduh file latihan</a>
+        <p class="lead mb-0" id="PenanamanModal">Penanaman Modal <span class="span-text">(Capital Investment)</span></p>
+    </div>
+
+    <p><a href="#PenanamanModal-RumuskanModel">Rumuskan Model</a> | <a href="#PenanamanModal-PercobaandanKesalahan">Percobaan dan Kesalahan</a> | <a href="#PenanamanModal-MemecahkanModel">Memecahkan Model</a></p>
+
+    <p>Gunakan Solver di Excel untuk menemukan kombinasi investasi modal yang memaksimalkan total keuntungan.</p>
+
+    <p class="h5" id="PenanamanModal-RumuskanModel">Formulasikan Modelnya</p>
+    <p>Model yang akan kita pecahkan terlihat sebagai berikut di Excel.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image040.png" alt="Investasi Modal di Excel"></p>
+    <p>1. Untuk merumuskan model binary integer programming (BIP) ini, jawablah tiga pertanyaan berikut.</p>
+    <p>A. Apa keputusan yang harus diambil? Untuk masalah ini, kita membutuhkan Excel untuk mengetahui investasi modal mana yang harus dilakukan (Ya=1, Tidak=0).</p>
+    <p>B. Apa kendala dalam keputusan ini? Pertama, jumlah modal yang digunakan untuk investasi tidak boleh melebihi jumlah modal yang tersedia (50). Misalnya, investasi Satu menggunakan 12 unit modal. Kedua, hanya investasi Satu atau Investasi Dua yang
+        dapat dilakukan. Ketiga, hanya investasi Tiga atau investasi Empat yang dapat dilakukan. Keempat, investasi Enam dan investasi Tujuh hanya dapat dilakukan jika investasi Lima dilakukan.</p>
+    <p>C. Apa ukuran kinerja keseluruhan untuk keputusan ini? Ukuran kinerja keseluruhan adalah keuntungan total dari investasi modal yang dilakukan, jadi tujuannya adalah untuk memaksimalkan kuantitas ini.</p>
+    <p>2. Untuk membuat model lebih mudah dipahami, buat <a href="https://www.excel-easy.com/examples/named-range.html">rentang bernama</a> berikut.</p>
+    <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=292 style='width:219.0pt;border-collapse:collapse'>
+        <tr>
+            <td width=178 style='width:133.5pt;border:solid #212121 1.0pt;background:
+  #E6E6E6;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><b>Nama Rentang</b></p>
+            </td>
+            <td width=114 style='width:85.5pt;border:solid #212121 1.0pt;border-left:
+  none;background:#E6E6E6;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><b><span style='color:black'>Sel</span></b></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Laba</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>C5:I5</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Ya Tidak</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>C13:I13</span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
+  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>Total keuntungan</span></p>
+            </td>
+            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
+  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
+                <p><span style='color:black'>M13</span></p>
+            </td>
+        </tr>
+    </table>
+    <p><span style='color:white'><br>
+    <br>
+  </span></p>
+    <p>3. Sisipkan lima fungsi SUMPRODUCT berikut.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image041.png" alt="Fungsi Sumproduk"></p>
+    <p class="info"><strong>Penjelasan:</strong> sel K7 (jumlah modal yang digunakan) sama dengan hasil
+        <a href="https://www.excel-easy.com/examples/sumproduct.html">penjumlahan</a> dari range C7:I7 dan YesNo, sel K8 sama dengan penjumlahan dari range C8:I8 dan YesNo, dst. Total Profit sama dengan penjumlahan dari Profit dan YesNo.</p>
+
+    <p class="h5" id="PenanamanModal-PercobaandanKesalahan">Percobaan dan Kesalahan</p>
+    <p>Dengan formulasi ini, menjadi mudah untuk menganalisis solusi percobaan apa pun.</p>
+    <p>1. Misalnya, jika kita melakukan investasi Satu dan Dua, kendala kedua dilanggar.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image042.png" alt="Batasan Kedua Dilanggar"></p>
+    <p>2. Misalnya, jika kita melakukan investasi Enam dan Tujuh, tanpa melakukan investasi Lima, kendala keempat dilanggar.
+    </p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image043.png" alt="Batasan Keempat Dilanggar"></p>
+    <p>3. Namun, tidak apa-apa untuk melakukan investasi Satu, Lima dan Enam. Semua kendala terpenuhi.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image044.png" alt="Semua Kendala Terpuaskan"></p>
+    <p>Tidak perlu menggunakan trial and error. Kami akan menjelaskan selanjutnya bagaimana Excel Solver dapat digunakan untuk menemukan solusi optimal dengan cepat.</p>
+
+    <p class="h5" id="PenanamanModal-MemecahkanModel">Memecahkan Model</p>
+    <p>Untuk menemukan solusi optimal, lakukan langkah-langkah berikut.</p>
+    <p>1. Pada tab Data, dalam grup Analisis, klik Solver.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image003.png" alt="Klik Solver"></p>
+    <p class="info"><strong>Catatan:</strong> tidak dapat menemukan tombol Solver? Klik di sini untuk memuat <a href="#">add-in Solver</a>.</p>
+    <p>Masukkan parameter Solver (baca terus). Hasilnya harus konsisten dengan gambar di bawah ini.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image045.png" alt="Parameter Solver"></p>
+    <p>2. Masukkan TotalProfit untuk Objective.</p>
+    <p>3. Klik Maks.</p>
+    <p>4. Masukkan YesNo untuk Mengubah Sel Variabel.</p>
+    <p>5. Klik Add untuk memasukkan batasan berikut.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image046.png" alt=Paksaan></p>
+    <p>6. Klik Add untuk memasukkan batasan berikut.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image047.png" alt="Batasan Biner"></p>
+    <p class="info"><strong>Catatan:</strong> variabel biner adalah 0 atau 1.</p>
+    <p>7. Centang 'Make Unconstrained Variables Non-Negative' dan pilih 'Simplex LP'.</p>
+    <p>8. Terakhir, klik Selesaikan.</p>
+    <p>Hasil:</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image048.png" alt="Solver Menemukan Solusi"></p>
+    <p>Solusi optimal:</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image049.png" alt="Hasil Penanaman Modal"></p>
+    <p class="info"><strong>Kesimpulan:</strong> optimal untuk melakukan investasi Dua, Empat, Lima dan Tujuh. Solusi ini memberikan keuntungan maksimum 146. Semua kendala terpenuhi.</p>
+
+
+    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/sensitivity-analysis.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+        <p class="lead mb-0" id="AnalisisSensitivitas">Analisis Sensitivitas</p>
+    </div>
+
+    <p><a href="#AnalisisSensitivitas-PenguranganBiaya">Pengurangan Biaya</a> | <a href="#AnalisisSensitivitas-BayanganHarga">Bayangan Harga</a></p>
+
+    <p>Analisis sensitivitas memberi Anda wawasan tentang bagaimana solusi optimal berubah ketika Anda mengubah koefisien model. Setelah Solver menemukan solusi, Anda dapat membuat laporan sensitivitas.</p>
+    <p>1. Sebelum Anda mengklik OK, pilih Sensitivitas dari bagian Laporan.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image050.png" alt="Pilih Sensitivitas"></p>
+    <p>Di bawah ini Anda dapat menemukan solusi optimal dan laporan sensitivitas.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image010.png" alt="Solusi Optimal"></p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image051.png" alt="Laporan Sensitivitas di Excel"></p>
+    <p>Ini optimal untuk memesan 94 sepeda dan 54 moped. Solusi ini memberikan keuntungan maksimum 25600. Solusi ini menggunakan semua sumber daya yang tersedia (93000 unit modal dan 101 unit penyimpanan). Anda dapat menemukan angka-angka ini di kolom Nilai
+        Akhir.
+    </p>
+    <p class="h5" id="AnalisisSensitivitas-PenguranganBiaya">
+        Biaya yang dikurangi</p>
+    <p>Pengurangan biaya memberi tahu kita seberapa besar koefisien objektif (laba unit) dapat ditingkatkan atau diturunkan sebelum solusi optimal berubah. Jika kita meningkatkan keuntungan unit Kursi Anak dengan 20 unit atau lebih, solusi optimal berubah.</p>
+    <p>1. Dengan keuntungan unit 69, masih optimal untuk memesan 94 sepeda dan 54 moped. Di bawah ini Anda dapat menemukan solusi optimal.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image052.png" alt="Contoh Pengurangan Biaya"></p>
+    <p>2. Pada keuntungan unit 71, solusi optimal berubah.</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image053.png" alt="Hasil Pengurangan Biaya"></p>
+    <p class="info"><strong>Kesimpulan:</strong> memesan kursi anak hanya menguntungkan jika Anda dapat menjualnya setidaknya 70 unit.</p>
+    <p class="h5" id="AnalisisSensitivitas-BayanganHarga">
+        Bayangan Harga</p>
+    <p>Harga bayangan memberi tahu kita seberapa banyak solusi optimal dapat ditingkatkan atau diturunkan jika kita mengubah nilai sisi kanan (sumber daya tersedia) dengan satu unit.</p>
+    <p>1. Dengan 101 unit penyimpanan yang tersedia, total keuntungan adalah 25600. Di bawah ini Anda dapat menemukan solusi optimal.
+    </p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image054.png" alt="Contoh Harga Bayangan"></p>
+    <p>2. Dengan 102 unit penyimpanan yang tersedia, total keuntungan adalah 25700 (+100).</p>
+    <p><img class="img-fluid" src="../excel/files/Solver_files/image055.png" alt="Hasil Harga Bayangan"></p>
+    <p class="info"><strong>Catatan:</strong> dengan harga bayangan 100 untuk sumber daya ini, ini sesuai dengan harapan kami. Harga bayangan ini hanya berlaku antara 101 - 23,5 dan 101 + 54 (lihat laporan sensitivitas).</p>
+</details>

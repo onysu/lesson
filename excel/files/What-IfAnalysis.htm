@@ -1,0 +1,865 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-ID link="#0563C1" vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal>Analisis Bagaimana-Jika</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><a
+href="https://www.excel-easy.com/data-analysis/what-if-analysis.html#create-different-scenarios">Buat
+Skenario Berbeda</a> | <a
+href="https://www.excel-easy.com/data-analysis/what-if-analysis.html#scenario-summary">Ringkasan
+Skenario</a> | <a
+href="https://www.excel-easy.com/data-analysis/what-if-analysis.html#goal-seek">Pencarian
+Tujuan</a></p>
+
+<p class=MsoNormal>Analisis Bagaimana-Jika&nbsp;di&nbsp;Excel&nbsp;memungkinkan
+Anda mencoba nilai (skenario) yang berbeda untuk rumus.&nbsp;Contoh berikut
+membantu Anda menguasai analisis bagaimana-jika dengan cepat dan mudah.</p>
+
+<p class=MsoNormal>Asumsikan Anda memiliki toko buku dan memiliki 100 buku di
+gudang.&nbsp;Anda menjual % tertentu untuk harga tertinggi $50 dan % tertentu
+untuk harga lebih rendah $20.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=300 id="Picture 26"
+src="What-IfAnalysis_files/image001.png"
+alt="Contoh Analisis Bagaimana-Jika Excel"></p>
+
+<p class=MsoNormal>Jika Anda menjual 60% dengan harga tertinggi, sel D10
+menghitung total keuntungan 60 * $50 + 40 * $20 = $3800.</p>
+
+<p class=MsoNormal><a name=create-different-scenarios></a>Buat Skenario Berbeda</p>
+
+<p class=MsoNormal>Tetapi bagaimana jika Anda menjual 70% dengan harga
+tertinggi?&nbsp;Dan bagaimana jika Anda menjual 80% dengan harga
+tertinggi?&nbsp;Atau 90%, atau bahkan 100%?&nbsp;Setiap persentase yang berbeda
+adalah&nbsp;skenario yang&nbsp;berbeda&nbsp;.&nbsp;Anda dapat menggunakan
+Manajer Skenario untuk membuat skenario ini.</p>
+
+<p class=MsoNormal>Catatan: Anda cukup mengetikkan persentase yang berbeda ke
+dalam sel C4 untuk melihat hasil yang sesuai dari skenario di sel
+D10.&nbsp;Namun, analisis bagaimana-jika memungkinkan Anda membandingkan hasil
+skenario yang berbeda dengan mudah.&nbsp;Baca terus.</p>
+
+<p class=MsoNormal>1. Pada tab Data, dalam grup Prakiraan, klik Analisis
+Bagaimana-Jika.</p>
+
+<p class=MsoNormal><img border=0 width=567 height=100 id="Picture 25"
+src="What-IfAnalysis_files/image002.png" alt="Klik Analisis Bagaimana-Jika"></p>
+
+<p class=MsoNormal>2. Klik Manajer Skenario.</p>
+
+<p class=MsoNormal><img border=0 width=162 height=76 id="Picture 24"
+src="What-IfAnalysis_files/image003.png" alt="Klik Manajer Skenario"></p>
+
+<p class=MsoNormal>Kotak dialog Manajer Skenario muncul.</p>
+
+<p class=MsoNormal>3. Tambahkan skenario dengan mengklik Add.</p>
+
+<p class=MsoNormal><img border=0 width=376 height=360 id="Picture 23"
+src="What-IfAnalysis_files/image004.png" alt="Tambahkan Skenario"></p>
+
+<p class=MsoNormal>4. Ketik nama (60% tertinggi), pilih sel C4 (% dijual untuk
+harga tertinggi) untuk Mengubah sel dan klik OK.</p>
+
+<p class=MsoNormal><img border=0 width=386 height=326 id="Picture 22"
+src="What-IfAnalysis_files/image005.png" alt="Mengedit Skenario"></p>
+
+<p class=MsoNormal>5. Masukkan nilai yang sesuai 0,6 dan klik OK lagi.</p>
+
+<p class=MsoNormal><img border=0 width=305 height=128 id="Picture 21"
+src="What-IfAnalysis_files/image006.png" alt="Masukkan Nilai Skenario"></p>
+
+<p class=MsoNormal>6. Selanjutnya, tambahkan 4 skenario lainnya (70%, 80%, 90%
+dan 100%).</p>
+
+<p class=MsoNormal>Terakhir, Manajer Skenario Anda harus konsisten dengan
+gambar di bawah ini:</p>
+
+<p class=MsoNormal><img border=0 width=350 height=360 id="Picture 20"
+src="What-IfAnalysis_files/image007.png" alt="Semua Skenario"></p>
+
+<p class=MsoNormal>Catatan: untuk melihat hasil skenario, pilih skenario dan
+klik tombol Show.&nbsp;Excel akan mengubah nilai sel C4 agar Anda dapat melihat
+hasil yang sesuai pada lembar.</p>
+
+<p class=MsoNormal><a name=scenario-summary></a>Ringkasan Skenario</p>
+
+<p class=MsoNormal>Untuk membandingkan hasil skenario ini dengan mudah,
+jalankan langkah-langkah berikut.</p>
+
+<p class=MsoNormal>1. Klik tombol Ringkasan di Manajer Skenario.</p>
+
+<p class=MsoNormal>2. Selanjutnya, pilih sel D10 (keuntungan total) untuk sel
+hasil dan klik OK.</p>
+
+<p class=MsoNormal><img border=0 width=224 height=179 id="Picture 19"
+src="What-IfAnalysis_files/image008.png" alt="Buat Ringkasan Skenario"></p>
+
+<p class=MsoNormal>Hasil:</p>
+
+<p class=MsoNormal><img border=0 width=604 height=187 id="Picture 18"
+src="What-IfAnalysis_files/image009.png" alt="Hasil Analisis Bagaimana-Jika"></p>
+
+<p class=MsoNormal>Kesimpulan: jika Anda menjual 70% untuk harga tertinggi,
+Anda memperoleh total keuntungan $4100, jika Anda menjual 80% untuk harga
+tertinggi, Anda memperoleh total keuntungan $4400, dst. Begitulah cara mudah
+analisis what-if di Excel menjadi.</p>
+
+<p class=MsoNormal><a name=goal-seek></a>Pencarian Tujuan</p>
+
+<p class=MsoNormal>Bagaimana jika Anda ingin mengetahui berapa banyak buku yang
+harus Anda jual dengan harga tertinggi, untuk memperoleh keuntungan total tepat
+$4700?&nbsp;Anda dapat menggunakan&nbsp;fitur Goal Seek Excel&nbsp;untuk
+menemukan jawabannya.</p>
+
+<p class=MsoNormal>1. Pada tab Data, dalam grup Prakiraan, klik Analisis
+Bagaimana-Jika.</p>
+
+<p class=MsoNormal><img border=0 width=567 height=100 id="Picture 17"
+src="What-IfAnalysis_files/image002.png" alt="Klik Analisis Bagaimana-Jika"></p>
+
+<p class=MsoNormal>2. Klik Pencarian Sasaran.</p>
+
+<p class=MsoNormal><img border=0 width=162 height=76 id="Picture 16"
+src="What-IfAnalysis_files/image010.png" alt="Klik Pencarian Sasaran"></p>
+
+<p class=MsoNormal>Kotak dialog Pencarian Sasaran muncul.</p>
+
+<p class=MsoNormal>3. Pilih sel D10.</p>
+
+<p class=MsoNormal>4. Klik di kotak 'Untuk nilai' dan ketik 4700.</p>
+
+<p class=MsoNormal>5. Klik di kotak 'Dengan mengubah sel' dan pilih sel C4.</p>
+
+<p class=MsoNormal>6. Klik Oke.</p>
+
+<p class=MsoNormal><img border=0 width=211 height=146 id="Picture 15"
+src="What-IfAnalysis_files/image011.png" alt="Parameter Pencarian Sasaran"></p>
+
+<p class=MsoNormal>Hasil.&nbsp;Anda harus menjual 90% buku dengan harga
+tertinggi untuk mendapatkan total keuntungan persis $4700.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=300 id="Picture 14"
+src="What-IfAnalysis_files/image012.png" alt="Pencarian Tujuan di Excel"></p>
+
+<p class=MsoNormal>Catatan: kunjungi halaman kami tentang&nbsp;<a
+href="https://www.excel-easy.com/examples/goal-seek.html">Goal Seek</a>&nbsp;untuk
+lebih banyak contoh dan tip.</p>
+
+<p class=MsoNormal>Tabel Data</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><a
+href="https://www.excel-easy.com/examples/data-tables.html#one-variable-data-table">Tabel
+Data Satu Variabel</a> | <a
+href="https://www.excel-easy.com/examples/data-tables.html#two-variable-data-table">Tabel
+Data Dua Variabel</a></p>
+
+<p class=MsoNormal>Alih-alih&nbsp;<a
+href="https://www.excel-easy.com/data-analysis/what-if-analysis.html#create-different-scenarios">membuat
+skenario yang berbeda</a>&nbsp;, Anda dapat membuat&nbsp;tabel data&nbsp;untuk
+mencoba nilai yang berbeda untuk rumus dengan cepat.&nbsp;Anda dapat membuat
+tabel data satu variabel atau tabel data dua variabel.</p>
+
+<p class=MsoNormal>Asumsikan Anda memiliki toko buku dan memiliki 100 buku di
+gudang.&nbsp;Anda menjual % tertentu untuk harga tertinggi $50 dan % tertentu
+untuk harga lebih rendah $20.&nbsp;Jika Anda menjual 60% untuk harga tertinggi,
+sel D10 di bawah menghitung total keuntungan 60 * $50 + 40 * $20 = $3800.</p>
+
+<p class=MsoNormal><a name=one-variable-data-table></a>Tabel Data Satu Variabel</p>
+
+<p class=MsoNormal>Untuk membuat tabel data satu variabel, jalankan
+langkah-langkah berikut.</p>
+
+<p class=MsoNormal>1. Pilih sel B12 dan ketik =D10 (lihat sel total
+keuntungan).</p>
+
+<p class=MsoNormal>2. Ketik persentase yang berbeda di kolom A.</p>
+
+<p class=MsoNormal>3. Pilih rentang A12:B17.</p>
+
+<p class=MsoNormal>Kami akan menghitung total keuntungan jika Anda menjual 60%
+untuk harga tertinggi, 70% untuk harga tertinggi, dll.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=440 id="Picture 46"
+src="What-IfAnalysis_files/image013.png" alt="Satu Tabel Data Variabel di Excel"></p>
+
+<p class=MsoNormal>4. Pada tab Data, dalam grup Prakiraan, klik Analisis
+Bagaimana-Jika.</p>
+
+<p class=MsoNormal><img border=0 width=567 height=100 id="Picture 45"
+src="What-IfAnalysis_files/image002.png" alt="Klik Analisis Bagaimana-Jika"></p>
+
+<p class=MsoNormal>5. Klik Tabel Data.</p>
+
+<p class=MsoNormal><img border=0 width=162 height=81 id="Picture 44"
+src="What-IfAnalysis_files/image014.png" alt="Klik Tabel Data"></p>
+
+<p class=MsoNormal>6. Klik di kotak 'Column input cell' (persentase ada di
+kolom) dan pilih sel C4.</p>
+
+<p class=MsoNormal>Kami memilih sel C4 karena persentase merujuk ke sel C4 (%
+dijual dengan harga tertinggi).&nbsp;Bersama dengan rumus di sel B12, Excel
+sekarang tahu bahwa ia harus mengganti sel C4 dengan 60% untuk menghitung total
+keuntungan, mengganti sel C4 dengan 70% untuk menghitung total keuntungan, dll.</p>
+
+<p class=MsoNormal><img border=0 width=219 height=123 id="Picture 43"
+src="What-IfAnalysis_files/image015.png" alt="Sel Masukan Kolom"></p>
+
+<p class=MsoNormal>Catatan: ini adalah tabel data satu variabel jadi kami
+membiarkan sel input Baris kosong.</p>
+
+<p class=MsoNormal>7. Klik Oke.</p>
+
+<p class=MsoNormal>Hasil.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=440 id="Picture 42"
+src="What-IfAnalysis_files/image016.png" alt="Hasil Tabel Data Satu Variabel"></p>
+
+<p class=MsoNormal>Kesimpulan: jika Anda menjual 60% untuk harga tertinggi,
+Anda memperoleh total keuntungan $3800, jika Anda menjual 70% untuk harga
+tertinggi, Anda memperoleh total keuntungan $4100, dst.</p>
+
+<p class=MsoNormal>Catatan: bilah rumus menunjukkan bahwa sel berisi rumus
+larik.&nbsp;Oleh karena itu, Anda tidak dapat menghapus satu hasil
+pun.&nbsp;Untuk menghapus hasil, pilih rentang B13:B17 dan tekan Hapus.</p>
+
+<p class=MsoNormal><a name=two-variable-data-table></a>Tabel Data Dua Variabel</p>
+
+<p class=MsoNormal>Untuk membuat tabel data dua variabel, jalankan
+langkah-langkah berikut.</p>
+
+<p class=MsoNormal>1. Pilih sel A12 dan ketik =D10 (lihat sel total
+keuntungan).</p>
+
+<p class=MsoNormal>2. Ketik keuntungan unit yang berbeda (harga tertinggi) di
+baris 12.</p>
+
+<p class=MsoNormal>3. Ketik persentase yang berbeda di kolom A.</p>
+
+<p class=MsoNormal>4. Pilih rentang A12:D17.</p>
+
+<p class=MsoNormal>Kita akan menghitung total keuntungan untuk berbagai
+kombinasi 'laba satuan (harga tertinggi)' dan '% terjual untuk harga
+tertinggi'.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=440 id="Picture 41"
+src="What-IfAnalysis_files/image017.png" alt="Dua Tabel Data Variabel di Excel"></p>
+
+<p class=MsoNormal>5. Pada tab Data, dalam grup Prakiraan, klik Analisis
+Bagaimana-Jika.</p>
+
+<p class=MsoNormal><img border=0 width=567 height=100 id="Picture 40"
+src="What-IfAnalysis_files/image002.png" alt="Klik Analisis Bagaimana-Jika"></p>
+
+<p class=MsoNormal>6. Klik Tabel Data.</p>
+
+<p class=MsoNormal><img border=0 width=162 height=81 id="Picture 39"
+src="What-IfAnalysis_files/image014.png" alt="Klik Tabel Data"></p>
+
+<p class=MsoNormal>7. Klik pada kotak 'Row input cell' (unit profit berada
+dalam satu baris) dan pilih cell D7.</p>
+
+<p class=MsoNormal>8. Klik di kotak 'Column input cell' (persentase ada di
+kolom) dan pilih sel C4.</p>
+
+<p class=MsoNormal>Kami memilih sel D7 karena keuntungan unit merujuk ke sel
+D7.&nbsp;Kami memilih sel C4 karena persentase merujuk ke sel C4.&nbsp;Bersama
+dengan rumus di sel A12, Excel sekarang tahu bahwa ia harus mengganti sel D7
+dengan $50 dan sel C4 dengan 60% untuk menghitung total keuntungan, mengganti
+sel D7 dengan $50 dan sel C4 dengan 70% untuk menghitung total keuntungan, dll.</p>
+
+<p class=MsoNormal><img border=0 width=219 height=123 id="Picture 38"
+src="What-IfAnalysis_files/image018.png" alt="Sel Input Baris dan Kolom"></p>
+
+<p class=MsoNormal>9. Klik Oke.</p>
+
+<p class=MsoNormal>Hasil.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=440 id="Picture 37"
+src="What-IfAnalysis_files/image019.png" alt="Hasil Tabel Data Dua Variabel"></p>
+
+<p class=MsoNormal>Kesimpulan: jika Anda menjual 60% untuk harga tertinggi,
+dengan keuntungan per unit $50, Anda memperoleh keuntungan total $3800, jika
+Anda menjual 80% untuk harga tertinggi, dengan keuntungan unit $60, Anda
+memperoleh total keuntungan sebesar $5200, dll.</p>
+
+<p class=MsoNormal>Catatan: bilah rumus menunjukkan bahwa sel berisi rumus
+larik.&nbsp;Oleh karena itu, Anda tidak dapat menghapus satu hasil
+pun.&nbsp;Untuk menghapus hasil, pilih rentang B13:D17 dan tekan Delete.</p>
+
+<p class=MsoNormal>Pencarian Tujuan</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><a
+href="https://www.excel-easy.com/examples/goal-seek.html#goal-seek-example-1">Contoh
+Pencarian Sasaran 1</a> | <a
+href="https://www.excel-easy.com/examples/goal-seek.html#goal-seek-example-2">Contoh
+Pencarian Sasaran 2</a> | <a
+href="https://www.excel-easy.com/examples/goal-seek.html#goal-seek-precision">Ketepatan
+Pencarian Sasaran</a> | <a
+href="https://www.excel-easy.com/examples/goal-seek.html#more-about-goal-seek">Lebih
+lanjut tentang Pencarian Tujuan</a></p>
+
+<p class=MsoNormal>Jika Anda mengetahui hasil yang Anda inginkan dari rumus,
+gunakan&nbsp;Goal Seek&nbsp;di&nbsp;Excel&nbsp;untuk menemukan nilai input yang
+menghasilkan hasil rumus ini.</p>
+
+<p class=MsoNormal><a name=goal-seek-example-1></a>Contoh Pencarian Tujuan 1</p>
+
+<p class=MsoNormal>Gunakan Goal Seek di Excel untuk menemukan nilai pada ujian
+keempat yang menghasilkan nilai akhir 70.</p>
+
+<p class=MsoNormal>1. Rumus di sel B7 menghitung nilai akhir.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=227 id="Picture 90"
+src="What-IfAnalysis_files/image020.png" alt="Hasil Rumus"></p>
+
+<p class=MsoNormal>2. Nilai pada ujian keempat di sel B5 adalah sel input.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=227 id="Picture 89"
+src="What-IfAnalysis_files/image021.png" alt="Sel Masukan"></p>
+
+<p class=MsoNormal>3. Pada tab Data, dalam grup Prakiraan, klik Analisis
+Bagaimana-Jika.</p>
+
+<p class=MsoNormal><img border=0 width=567 height=100 id="Picture 88"
+src="What-IfAnalysis_files/image002.png" alt="Klik Analisis Bagaimana-Jika"></p>
+
+<p class=MsoNormal>4. Klik Pencarian Sasaran.</p>
+
+<p class=MsoNormal><img border=0 width=162 height=76 id="Picture 87"
+src="What-IfAnalysis_files/image010.png" alt="Klik Pencarian Sasaran"></p>
+
+<p class=MsoNormal>Kotak dialog Pencarian Sasaran muncul.</p>
+
+<p class=MsoNormal>5. Pilih sel B7.</p>
+
+<p class=MsoNormal>6. Klik pada kotak 'To value' dan ketik 70.</p>
+
+<p class=MsoNormal>7. Klik di kotak 'Dengan mengubah sel' dan pilih sel B5.</p>
+
+<p class=MsoNormal>8. Klik Oke.</p>
+
+<p class=MsoNormal><img border=0 width=212 height=146 id="Picture 86"
+src="What-IfAnalysis_files/image022.png" alt="Parameter Pencarian Sasaran"></p>
+
+<p class=MsoNormal>Hasil.&nbsp;Nilai 90 pada ujian keempat menghasilkan nilai
+akhir 70.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=227 id="Picture 85"
+src="What-IfAnalysis_files/image023.png" alt="Solusi Pencarian Tujuan"></p>
+
+<p class=MsoNormal><a name=goal-seek-example-2></a>Contoh Pencarian Tujuan 2</p>
+
+<p class=MsoNormal>Gunakan Goal Seek di Excel untuk menemukan jumlah pinjaman
+yang menghasilkan pembayaran bulanan $1500.</p>
+
+<p class=MsoNormal>1. Rumus di sel B5 menghitung pembayaran bulanan.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=187 id="Picture 84"
+src="What-IfAnalysis_files/image024.png" alt="fungsi PMT"></p>
+
+<p class=MsoNormal>Penjelasan:&nbsp;<a
+href="https://www.excel-easy.com/examples/pmt.html">fungsi PMT</a>&nbsp;menghitung
+pembayaran pinjaman.&nbsp;Jika Anda belum pernah mendengar fungsi ini
+sebelumnya, tidak apa-apa.&nbsp;Semakin tinggi jumlah pinjaman, semakin tinggi
+pembayaran bulanan.&nbsp;Asumsikan, Anda hanya mampu membayar $1500
+sebulan.&nbsp;Berapa jumlah pinjaman maksimum Anda?</p>
+
+<p class=MsoNormal>2. Jumlah pinjaman di sel B3 adalah sel input.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=187 id="Picture 83"
+src="What-IfAnalysis_files/image025.png" alt="Jumlah pinjaman"></p>
+
+<p class=MsoNormal>3. Pada tab Data, dalam grup Prakiraan, klik Analisis
+Bagaimana-Jika.</p>
+
+<p class=MsoNormal><img border=0 width=567 height=100 id="Picture 82"
+src="What-IfAnalysis_files/image002.png" alt="Klik Analisis Bagaimana-Jika"></p>
+
+<p class=MsoNormal>4. Klik Pencarian Sasaran.</p>
+
+<p class=MsoNormal><img border=0 width=162 height=76 id="Picture 81"
+src="What-IfAnalysis_files/image010.png" alt="Klik Pencarian Sasaran"></p>
+
+<p class=MsoNormal>Kotak dialog Pencarian Sasaran muncul.</p>
+
+<p class=MsoNormal>5. Pilih sel B5.</p>
+
+<p class=MsoNormal>6. Klik di kotak 'Untuk nilai' dan ketik -1500 (negatif,
+Anda membayar uang).</p>
+
+<p class=MsoNormal>7. Klik di kotak 'Dengan mengubah sel' dan pilih sel B3.</p>
+
+<p class=MsoNormal>8. Klik Oke.</p>
+
+<p class=MsoNormal><img border=0 width=212 height=146 id="Picture 80"
+src="What-IfAnalysis_files/image026.png" alt="Variabel Pencarian Tujuan"></p>
+
+<p class=MsoNormal>Hasil.&nbsp;Jumlah pinjaman sebesar $250.187 menghasilkan
+pembayaran bulanan sebesar $1500.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=187 id="Picture 79"
+src="What-IfAnalysis_files/image027.png" alt="Pencarian Tujuan Menemukan Solusi"></p>
+
+<p class=MsoNormal><a name=goal-seek-precision></a>Ketepatan Pencarian Tujuan</p>
+
+<p class=MsoNormal>Pencarian tujuan mengembalikan solusi perkiraan.&nbsp;Anda
+dapat mengubah pengaturan iterasi di Excel untuk menemukan solusi yang lebih
+tepat.</p>
+
+<p class=MsoNormal>1. Rumus di sel B1 menghitung kuadrat dari nilai di sel A1.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=107 id="Picture 78"
+src="What-IfAnalysis_files/image028.png" alt="Sel Rumus"></p>
+
+<p class=MsoNormal>2. Gunakan goal seek untuk mencari nilai input yang
+menghasilkan hasil rumus 25.</p>
+
+<p class=MsoNormal><img border=0 width=212 height=146 id="Picture 77"
+src="What-IfAnalysis_files/image029.png" alt="Contoh Pencarian Tujuan"></p>
+
+<p class=MsoNormal>Hasil.&nbsp;Excel mengembalikan solusi perkiraan.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=107 id="Picture 76"
+src="What-IfAnalysis_files/image030.png" alt="Solusi Perkiraan"></p>
+
+<p class=MsoNormal>3. Pada tab File, klik Opsi, Rumus.</p>
+
+<p class=MsoNormal>4. Di bawah opsi Perhitungan, kurangi nilai Perubahan
+Maksimum dengan memasukkan beberapa angka nol.&nbsp;Nilai defaultnya adalah
+0,001.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=449 id="Picture 75"
+src="What-IfAnalysis_files/image031.png" alt="Nilai Perubahan Maksimum"></p>
+
+<p class=MsoNormal>5. Klik Oke.</p>
+
+<p class=MsoNormal>6. Gunakan Goal Seek lagi.&nbsp;Excel mengembalikan solusi
+yang lebih tepat.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=107 id="Picture 74"
+src="What-IfAnalysis_files/image032.png" alt="Solusi Lebih Tepat"></p>
+
+<p class=MsoNormal><a name=more-about-goal-seek></a>Lebih lanjut tentang
+Pencarian Tujuan</p>
+
+<p class=MsoNormal>Ada banyak masalah yang tidak bisa diselesaikan Goal
+Seek.&nbsp;Goal Seek membutuhkan satu sel input dan satu sel output
+(rumus).&nbsp;Gunakan&nbsp;<a
+href="https://www.excel-easy.com/data-analysis/solver.html">Solver</a>&nbsp;di
+Excel untuk memecahkan masalah dengan beberapa sel input.&nbsp;Terkadang Anda
+perlu memulai dengan nilai input yang berbeda untuk menemukan solusi.</p>
+
+<p class=MsoNormal>1. Rumus di sel B1 di bawah ini menghasilkan hasil -0,25.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=107 id="Picture 73"
+src="What-IfAnalysis_files/image033.png" alt=Rumus></p>
+
+<p class=MsoNormal>2. Gunakan Goal Seek untuk menemukan nilai input yang
+menghasilkan hasil rumus +0,25.</p>
+
+<p class=MsoNormal><img border=0 width=212 height=146 id="Picture 72"
+src="What-IfAnalysis_files/image034.png" alt="Masalah Pencarian Tujuan"></p>
+
+<p class=MsoNormal>Hasil.&nbsp;Excel tidak dapat menemukan solusi.</p>
+
+<p class=MsoNormal><img border=0 width=259 height=149 id="Picture 71"
+src="What-IfAnalysis_files/image035.png" alt="Status Pencarian Tujuan"></p>
+
+<p class=MsoNormal>3. Klik Batal.</p>
+
+<p class=MsoNormal>4. Mulai dengan nilai input lebih besar dari 8.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=107 id="Picture 70"
+src="What-IfAnalysis_files/image036.png" alt="Nilai Masukan Lebih Besar dari 8"></p>
+
+<p class=MsoNormal>5. Gunakan Goal Seek lagi.&nbsp;Excel menemukan solusi.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=107 id="Picture 69"
+src="What-IfAnalysis_files/image037.png" alt="Pencarian Tujuan di Excel"></p>
+
+<p class=MsoNormal>Penjelasan: y = 1 / (x - 8) diskontinu di x = 8 (tidak
+mungkin membagi dengan 0).&nbsp;Dalam contoh ini, Goal seek tidak dapat
+mencapai satu sisi sumbu x (x&gt;8) jika dimulai pada sisi lain dari sumbu x
+(x&lt;8) atau sebaliknya.</p>
+
+<p class=MsoNormal>Persamaan kuadrat</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>Sebuah&nbsp;persamaan kuadrat&nbsp;adalah dari bentuk
+kapak&nbsp;<sup>2</sup>&nbsp;+ bx + c = 0 dimana &#8800; 0. persamaan kuadrat
+bisa diselesaikan dengan menggunakan rumus kuadrat.&nbsp;Anda juga dapat
+menggunakan&nbsp;fitur Goal Seek Excel&nbsp;untuk menyelesaikan persamaan
+kuadrat.</p>
+
+<p class=MsoNormal>1. Sebagai contoh, kita memiliki rumus y = 3x&nbsp;<sup>2</sup>&nbsp;-
+12x + 9.5.&nbsp;Sangat mudah untuk menghitung y untuk setiap x yang
+diberikan.&nbsp;Untuk x = 1, y = 0,5</p>
+
+<p class=MsoNormal><img border=0 width=604 height=127 id="Picture 102"
+src="What-IfAnalysis_files/image038.png" alt="Rumus Excel, x = 1"></p>
+
+<p class=MsoNormal>2. Untuk x = 2, y = -2,5</p>
+
+<p class=MsoNormal><img border=0 width=604 height=127 id="Picture 101"
+src="What-IfAnalysis_files/image039.png" alt="Rumus Excel, x = 2"></p>
+
+<p class=MsoNormal>3. Tetapi bagaimana jika kita ingin mengetahui x untuk
+setiap y yang diberikan?&nbsp;Misalnya, y = 24,5.&nbsp;Kita perlu menyelesaikan
+3x&nbsp;<sup>2</sup>&nbsp;- 12x + 9,5 = 24,5.&nbsp;Kita dapat menyelesaikan
+persamaan kuadrat 3x&nbsp;<sup>2</sup>&nbsp;- 12x + 9,5 - 24,5 = 0 dengan
+menggunakan rumus kuadrat.</p>
+
+<p class=MsoNormal>3x&nbsp;<sup>2</sup>&nbsp;- 12x -15 = 0<br>
+a = 3, b = -12, c = -15<br>
+D = b&nbsp;<sup>2</sup>&nbsp;- 4ac = (-12)&nbsp;<sup>2</sup>&nbsp;- 4 * 3 * -15
+= 144 + 180 = 324</p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=25 nowrap rowspan=2 style='width:18.75pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal>x =</p>
+  </td>
+  <td width=75 nowrap style='width:56.25pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal>-b + D</p>
+  </td>
+  <td width=50 nowrap rowspan=2 style='width:37.5pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal>atau</p>
+  </td>
+  <td width=25 nowrap rowspan=2 style='width:18.75pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal>x =</p>
+  </td>
+  <td width=75 nowrap style='width:56.25pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal>-b - D</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:none;border-top:solid #212121 1.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal>2a</p>
+  </td>
+  <td style='border:none;border-top:solid #212121 1.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal>2a</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='display:none'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=25 nowrap rowspan=2 style='width:18.75pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal>x =</p>
+  </td>
+  <td width=75 nowrap style='width:56.25pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal>12 + 324</p>
+  </td>
+  <td width=50 nowrap rowspan=2 style='width:37.5pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal>atau</p>
+  </td>
+  <td width=25 nowrap rowspan=2 style='width:18.75pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal>x =</p>
+  </td>
+  <td width=75 nowrap style='width:56.25pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal>12 - 324</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:none;border-top:solid #212121 1.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal>6</p>
+  </td>
+  <td style='border:none;border-top:solid #212121 1.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal>6</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='display:none'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td width=25 nowrap rowspan=2 style='width:18.75pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal>x =</p>
+  </td>
+  <td width=75 nowrap style='width:56.25pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal>12 + 18</p>
+  </td>
+  <td width=50 nowrap rowspan=2 style='width:37.5pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal>atau</p>
+  </td>
+  <td width=25 nowrap rowspan=2 style='width:18.75pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal>x =</p>
+  </td>
+  <td width=75 nowrap style='width:56.25pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal>12 - 18</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:none;border-top:solid #212121 1.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal>6</p>
+  </td>
+  <td style='border:none;border-top:solid #212121 1.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal>6</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='display:none'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr style='height:22.5pt'>
+  <td width=25 nowrap rowspan=2 style='width:18.75pt;padding:0cm 0cm 0cm 0cm;
+  height:22.5pt'>
+  <p class=MsoNormal>x =</p>
+  </td>
+  <td width=75 nowrap rowspan=2 style='width:56.25pt;padding:0cm 0cm 0cm 0cm;
+  height:22.5pt'>
+  <p class=MsoNormal>5</p>
+  </td>
+  <td width=50 nowrap rowspan=2 style='width:37.5pt;padding:0cm 0cm 0cm 0cm;
+  height:22.5pt'>
+  <p class=MsoNormal>atau</p>
+  </td>
+  <td width=25 nowrap rowspan=2 style='width:18.75pt;padding:0cm 0cm 0cm 0cm;
+  height:22.5pt'>
+  <p class=MsoNormal>x =</p>
+  </td>
+  <td width=75 nowrap rowspan=2 style='width:56.25pt;padding:0cm 0cm 0cm 0cm;
+  height:22.5pt'>
+  <p class=MsoNormal>-1</p>
+  </td>
+  <td style='height:22.5pt;border:none' width=0 height=30></td>
+ </tr>
+ <tr style='height:22.5pt'>
+  <span style='font-size:11.0pt;line-height:107%;font-family:"Calibri",sans-serif'>
+  <td style='height:22.5pt;border:none' width=0 height=30></td>
+  </span>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='color:white'>4. Anda dapat menggunakan fitur
+Goal Seek Excel untuk mendapatkan hasil yang sama persis.&nbsp;Pada tab Data,
+dalam grup Prakiraan, klik Analisis Bagaimana-Jika.</span></p>
+
+<p class=MsoNormal><img border=0 width=567 height=100 id="Picture 100"
+src="What-IfAnalysis_files/image002.png" alt="Klik Analisis Bagaimana-Jika"></p>
+
+<p class=MsoNormal>5. Klik Pencarian Sasaran.</p>
+
+<p class=MsoNormal><img border=0 width=162 height=76 id="Picture 99"
+src="What-IfAnalysis_files/image010.png" alt="Klik Pencarian Sasaran"></p>
+
+<p class=MsoNormal>Kotak dialog Pencarian Sasaran muncul.</p>
+
+<p class=MsoNormal>6. Pilih sel B2.</p>
+
+<p class=MsoNormal>7. Klik di kotak 'Untuk nilai' dan ketik 24.5</p>
+
+<p class=MsoNormal>8. Klik di kotak 'Dengan mengubah sel' dan pilih sel A2.</p>
+
+<p class=MsoNormal>9. Klik Oke.</p>
+
+<p class=MsoNormal><img border=0 width=212 height=146 id="Picture 98"
+src="What-IfAnalysis_files/image040.png" alt="Parameter Pencarian Sasaran"></p>
+
+<p class=MsoNormal>Hasil.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=127 id="Picture 97"
+src="What-IfAnalysis_files/image041.png"
+alt="Memecahkan Persamaan Kuadrat di Excel"></p>
+
+<p class=MsoNormal>Catatan: Excel mengembalikan solusi x = 5. Excel menemukan
+solusi lain jika Anda memulai dengan nilai x yang lebih dekat ke x =
+-1.&nbsp;Misalnya, masukkan nilai 0 ke dalam sel A2 dan ulangi langkah 5 hingga
+9. Untuk menemukan akarnya, tetapkan y = 0 dan selesaikan persamaan kuadrat
+3x&nbsp;<sup>2</sup>&nbsp;- 12x + 9,5 = 0. Dalam kasus ini, atur 'Untuk nilai'
+ke 0.</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>3x&nbsp;<sup>2</sup>&nbsp;- 12x -15 = 0<br>
+a = 3, b = -12, c = -15<br>
+D = b&nbsp;<sup>2</sup>&nbsp;- 4ac = (-12)&nbsp;<sup>2</sup>&nbsp;- 4 * 3 * -15
+= 144 + 180 = 324</p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='background:white;border-collapse:collapse'>
+ <tr>
+  <td width=25 nowrap rowspan=2 style='width:18.75pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal>x =</p>
+  </td>
+  <td width=75 nowrap style='width:56.25pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='color:black'>-b + D</span></p>
+  </td>
+  <td width=50 nowrap rowspan=2 style='width:37.5pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='color:black'>atau</span></p>
+  </td>
+  <td width=25 nowrap rowspan=2 style='width:18.75pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='color:black'>x =</span></p>
+  </td>
+  <td width=75 nowrap style='width:56.25pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='color:black'>-b - D</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:none;border-top:solid #212121 1.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='color:black'>2a</span></p>
+  </td>
+  <td style='border:none;border-top:solid #212121 1.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='color:black'>2a</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='display:none'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='background:white;border-collapse:collapse'>
+ <tr>
+  <td width=25 nowrap rowspan=2 style='width:18.75pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal>x =</p>
+  </td>
+  <td width=75 nowrap style='width:56.25pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='color:black'>12 + 324</span></p>
+  </td>
+  <td width=50 nowrap rowspan=2 style='width:37.5pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='color:black'>atau</span></p>
+  </td>
+  <td width=25 nowrap rowspan=2 style='width:18.75pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='color:black'>x =</span></p>
+  </td>
+  <td width=75 nowrap style='width:56.25pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='color:black'>12 - 324</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:none;border-top:solid #212121 1.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='color:black'>6</span></p>
+  </td>
+  <td style='border:none;border-top:solid #212121 1.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='color:black'>6</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='display:none'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='background:white;border-collapse:collapse'>
+ <tr>
+  <td width=25 nowrap rowspan=2 style='width:18.75pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal>x =</p>
+  </td>
+  <td width=75 nowrap style='width:56.25pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='color:black'>12 + 18</span></p>
+  </td>
+  <td width=50 nowrap rowspan=2 style='width:37.5pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='color:black'>atau</span></p>
+  </td>
+  <td width=25 nowrap rowspan=2 style='width:18.75pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='color:black'>x =</span></p>
+  </td>
+  <td width=75 nowrap style='width:56.25pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='color:black'>12 - 18</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:none;border-top:solid #212121 1.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='color:black'>6</span></p>
+  </td>
+  <td style='border:none;border-top:solid #212121 1.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNormal><span style='color:black'>6</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='display:none'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='background:white;border-collapse:collapse'>
+ <tr style='height:22.5pt'>
+  <td width=25 nowrap rowspan=2 style='width:18.75pt;padding:0cm 0cm 0cm 0cm;
+  height:22.5pt'>
+  <p class=MsoNormal>x =</p>
+  </td>
+  <td width=75 nowrap rowspan=2 style='width:56.25pt;padding:0cm 0cm 0cm 0cm;
+  height:22.5pt'>
+  <p class=MsoNormal><span style='color:black'>5</span></p>
+  </td>
+  <td width=50 nowrap rowspan=2 style='width:37.5pt;padding:0cm 0cm 0cm 0cm;
+  height:22.5pt'>
+  <p class=MsoNormal><span style='color:black'>atau</span></p>
+  </td>
+  <td width=25 nowrap rowspan=2 style='width:18.75pt;padding:0cm 0cm 0cm 0cm;
+  height:22.5pt'>
+  <p class=MsoNormal><span style='color:black'>x =</span></p>
+  </td>
+  <td width=75 nowrap rowspan=2 style='width:56.25pt;padding:0cm 0cm 0cm 0cm;
+  height:22.5pt'>
+  <p class=MsoNormal><span style='color:black'>-1</span></p>
+  </td>
+  <td style='height:22.5pt;border:none' width=0 height=30></td>
+ </tr>
+ <tr style='height:22.5pt'>
+  <td style='height:22.5pt;border:none' width=0 height=30></td>
+ </tr>
+</table>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

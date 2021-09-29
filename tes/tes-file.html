@@ -1,827 +1,317 @@
-<p>Solver</p>
-<p><a href="#Solver-MuatAdd-inSolver">Muat Add-in Solver</a> | <a href="#Solver-RumuskanModel">Rumuskan Model</a> | <a href="#Solver-PercobaandanKesalahan">Percobaan dan Kesalahan</a> | <a href="#Solver-MemecahkanModel">Memecahkan Model</a></p>
-
-<p>
-    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/solver.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-    <p class="lead mb-0" id=""></p>
-</p>
-
-<p>Excel menyertakan alat yang disebut Solver yang menggunakan teknik dari riset operasi untuk menemukan solusi optimal untuk semua jenis masalah keputusan.</p>
-<p class="h5" id="Solver-MuatAdd-inSolver">
-    Muat Add-in Solver</p>
-<p>Untuk memuat add-in Solver, jalankan langkah-langkah berikut.</p>
+<p>Alat Analisis Pak</p>
+<p>Analisis ToolPak adalah add-in Excel program yang menyediakan alat analisis data untuk keuangan, data teknik statistik dan analisis.</p>
+<p>Untuk memuat add-in Analysis ToolPak, jalankan langkah-langkah berikut.</p>
 <p>1. Pada tab File, klik Opsi.</p>
-<p>2. Di bawah Add-in, pilih Solver Add-in dan klik tombol Go.</p>
-<p><img class="img-fluid" src="../excel/files/Solver_files/image001.png" alt="Klik Add-in Solver"></p>
-<p>3. Periksa Add-in Solver dan klik OK.</p>
-<p><img class="img-fluid" src="../excel/files/Solver_files/image002.png" alt="Periksa Add-in Solver"></p>
-<p>4. Anda dapat menemukan Solver pada tab Data, di grup Analisis.</p>
-<p><img class="img-fluid" src="../excel/files/Solver_files/image003.png" alt="Klik Solver"></p>
-
-<p class="h5" id="Solver-RumuskanModel">
-    Formulasikan Modelnya</p>
-<p>Para Model kita akan menyelesaikan penampilan sebagai berikut di Excel.</p>
-<p><img class="img-fluid" src="../excel/files/Solver_files/image004.png" alt="Formulasikan Modelnya"></p>
-<p>1. Untuk merumuskan model program linier ini, jawablah tiga pertanyaan berikut.</p>
-<p>A. Apa keputusan yang harus diambil? Untuk masalah ini, kami membutuhkan Excel untuk mengetahui berapa banyak pesanan setiap produk (sepeda, moped, dan kursi anak).</p>
-<p>B. Apa kendala dalam keputusan ini? Kendala di sini adalah jumlah modal dan penyimpanan yang digunakan oleh produk tidak dapat melebihi jumlah modal dan penyimpanan (sumber daya) yang tersedia. Misalnya, setiap sepeda menggunakan 300 unit modal dan 0,5
-    unit penyimpanan.</p>
-<p>C. Apa ukuran kinerja keseluruhan untuk keputusan ini? Ukuran kinerja keseluruhan adalah keuntungan total dari ketiga produk, jadi tujuannya adalah untuk memaksimalkan kuantitas ini.</p>
-<p>2. Untuk membuat model lebih mudah dipahami, buat <a href="https://www.excel-easy.com/examples/named-range.html">Nama Range</a> berikut.</p>
-<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=292 style='width:219.0pt;border-collapse:collapse'>
-    <tr>
-        <td width=178 style='width:133.5pt;border:solid #212121 1.0pt;background:
-  #E6E6E6;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-            <p><b>Nama Rentang</b></p>
-        </td>
-        <td width=114 style='width:85.5pt;border:solid #212121 1.0pt;border-left:
-  none;background:#E6E6E6;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-            <p><b><span style='color:black'>Sel</span></b></p>
-        </td>
-    </tr>
-    <tr>
-        <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-            <p><span style='color:black'>Keuntungan Satuan</span></p>
-        </td>
-        <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-            <p><span style='color:black'>C4:E4</span></p>
-        </td>
-    </tr>
-    <tr>
-        <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-            <p><span style='color:black'>Ukuran Pesanan</span></p>
-        </td>
-        <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-            <p><span style='color:black'>C12:E12</span></p>
-        </td>
-    </tr>
-    <tr>
-        <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-            <p><span style='color:black'>Sumber Daya yang Digunakan</span></p>
-        </td>
-        <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-            <p><span style='color:black'>G7:G8</span></p>
-        </td>
-    </tr>
-    <tr>
-        <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-            <p><span style='color:black'>Sumber DayaTersedia</span></p>
-        </td>
-        <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-            <p><span style='color:black'>I7:I8</span></p>
-        </td>
-    </tr>
-    <tr>
-        <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-            <p><span style='color:black'>Total keuntungan</span></p>
-        </td>
-        <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-            <p><span style='color:black'>I12</span></p>
-        </td>
-    </tr>
-</table>
-<p><span style='color:white'><br>
-    <br>
-  </span></p>
-<p>3. Sisipkan tiga fungsi SUMPRODUCT berikut.</p>
-<p><img class="img-fluid" src="../excel/files/Solver_files/image005.png" alt="Fungsi Sumproduk"></p>
-<p class="info"><strong>Penjelasan:</strong> Jumlah modal yang digunakan sama dengan hasil
-    <a href="https://www.excel-easy.com/examples/sumproduct.html">penjumlahan</a> dari range C7:E7 dan OrderSize. Jumlah penyimpanan yang digunakan sama dengan jumlah produk dari rentang C8:E8 dan OrderSize. Total Profit sama dengan jumlah produk dari
-    UnitProfit dan OrderSize.</p>
-
-<p class="h5" id="Solver-PercobaandanKesalahan">
-    Percobaan dan Kesalahan</p>
-<p>Dengan formulasi ini, menjadi mudah untuk menganalisis solusi percobaan apa pun.</p>
-<p>Misalnya, jika kita memesan 20 sepeda, 40 moped, dan 100 kursi anak, jumlah total sumber daya yang digunakan tidak melebihi jumlah sumber daya yang tersedia. Solusi ini memiliki total keuntungan 19.000.</p>
-<p><img class="img-fluid" src="../excel/files/Solver_files/image006.png" alt="Solusi Percobaan"></p>
-<p>Tidak perlu menggunakan trial and error. Kami akan menjelaskan selanjutnya bagaimana Excel Solver dapat digunakan untuk menemukan solusi optimal dengan cepat.</p>
-
-<p class="h5" id="Solver-MemecahkanModel">
-    Memecahkan Model</p>
-<p>Untuk menemukan solusi optimal, lakukan langkah-langkah berikut.</p>
-<p>1. Pada tab Data, di grup Analisis, klik Solver.</p>
-<p><img class="img-fluid" src="../excel/files/Solver_files/image003.png" alt="Klik Solver"></p>
-<p>Masukkan parameter Solver (baca terus). Hasilnya harus konsisten dengan gambar di bawah ini.</p>
-<p><img class="img-fluid" src="../excel/files/Solver_files/image007.png" alt="Parameter Solver"></p>
-<p>Anda memiliki pilihan untuk mengetikkan nama rentang atau mengklik sel di spreadsheet.</p>
-<p>2. Masukkan TotalProfit untuk Objective.</p>
-<p>3. Klik Maks.</p>
-<p>4. Masukkan OrderSize untuk Mengubah Sel Variabel.</p>
-<p>5. Klik Add untuk memasukkan batasan berikut.</p>
-<p><img class="img-fluid" src="../excel/files/Solver_files/image008.png" alt="Tambahkan Kendala"></p>
-<p>6. Centang 'Make Unconstrained Variables Non-Negative' dan pilih 'Simplex LP'.</p>
-<p>7. Terakhir, klik Selesaikan.</p>
-<p>Hasil:</p>
-<p><img class="img-fluid" src="../excel/files/Solver_files/image009.png" alt="Hasil Solver"></p>
-<p>Solusi optimal:</p>
-<p><img class="img-fluid" src="../excel/files/Solver_files/image010.png" alt="Solusi Optimal"></p>
-<p class="info"><strong>Kesimpulan:</strong> optimal untuk memesan 94 sepeda dan 54 moped. Solusi ini memberikan keuntungan maksimum 25600. Solusi ini menggunakan semua sumber daya yang tersedia.</p>
+<p>2. Di bawah Add-in, pilih Analysis ToolPak dan klik tombol Go.</p>
+<p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image001.png" alt="Klik Alat Analisis Pak"></p>
+<p>3. Periksa Analysis ToolPak dan klik OK.</p>
+<p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image002.png" alt="Periksa Alat Analisis Pak"></p>
+<p>4. Pada tab Data, di grup Analisis, Anda sekarang dapat mengklik Analisis Data.</p>
+<p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image003.png" alt="Klik Analisis Data"></p>
+<p>Kotak dialog berikut di bawah ini muncul.</p>
+<p>5. Misalnya, pilih Histogram dan klik OK untuk membuat Histogram di Excel.</p>
+<p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image004.png" alt="Pilih Histogram"></p>
 
 <details>
-    <summary class="lead">Contoh Penggunaan Solver</summary>
+    <summary class="lead">Contoh Penggunaan Analysis ToolPak</summary>
 
-    <p>
-        <a href="#MasalahTransportasi">Masalah Transportasi</a> |
-        <a href="#MasalahTugas">Masalah Tugas</a> |
-        <a href="#SoalJalurTerpendek">Soal Jalur Terpendek</a> |
-        <a href="#MasalahAliranMaksimum">Masalah Aliran Maksimum</a> |
-        <a href="#PenanamanModal">Penanaman Modal</a> |
-        <a href="#AnalisisSensitivitas">Analisis Sensitivitas</a>
-    </p>
+    <P>
+        <a href="#Histogram">Histogram</a> |
+        <a href="#StatistikDeskriptif">Statistik Deskriptif</a> |
+        <a href="#Anova">Anova</a> |
+        <a href="#F-Tes">F-Tes</a> |
+        <a href="#t-test">t-test</a> |
+        <a href="#Rata-RataBergerak">Rata-Rata Bergerak</a> |
+        <a href="#PenghalusanEksponensial">Penghalusan Eksponensial</a> |
+        <a href="#Korelasi">Korelasi</a> |
+        <a href="#Regresi">Regresi</a>
+
+    </P>
 
     <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
-        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/transportation-problem.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-        <p class="lead mb-0" id="MasalahTransportasi">Masalah Transportasi <span class="span-text">(Transportation Problem)</span></p>
+        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/histogram.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+        <p class="lead mb-0" id="Histogram">Histogram</p>
     </div>
 
-    <p><a href="#MasalahTransportasi-RumuskanModel">Rumuskan Model</a> | <a href="#MasalahTransportasi-PercobaandanKesalahan">Percobaan dan Kesalahan</a> | <a href="#MasalahTransportasi-MemecahkanModel">Memecahkan Model</a></p>
-
-    <p>Gunakan Solver di Excel untuk menemukan jumlah unit yang akan dikirim dari setiap pabrik ke setiap pelanggan yang meminimalkan total biaya.</p>
-
-    <p class="h5" id="MasalahTransportasi-RumuskanModel">Formulasikan Modelnya</p>
-    <p>Model yang akan kita pecahkan terlihat sebagai berikut di Excel. </p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image011.png" alt="Masalah Transportasi di Excel"></p>
-    <p>1. Untuk merumuskan masalah transportasi ini, jawablah tiga pertanyaan berikut.</p>
-    <p>A. Apa keputusan yang harus diambil? Untuk masalah ini, kita membutuhkan Excel untuk mengetahui berapa banyak unit yang akan dikirim dari setiap pabrik ke setiap pelanggan.</p>
-    <p>B. Apa kendala dalam keputusan ini? Setiap pabrik memiliki pasokan tetap dan setiap pelanggan memiliki permintaan tetap.
-    </p>
-    <p>C. Apa ukuran kinerja keseluruhan untuk keputusan ini? Ukuran kinerja keseluruhan adalah total biaya pengiriman, jadi tujuannya adalah untuk meminimalkan kuantitas ini.</p>
-    <p>2. Untuk membuat model lebih mudah dipahami, buat <a href="#">Nama Range</a> berikut.</p>
-    <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=292 style='width:219.0pt;border-collapse:collapse'>
-        <tr>
-            <td width=178 style='width:133.5pt;border:solid #212121 1.0pt;background:
-  #E6E6E6;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><b>Nama Rentang</b></p>
-            </td>
-            <td width=114 style='width:85.5pt;border:solid #212121 1.0pt;border-left:
-  none;background:#E6E6E6;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><b><span style='color:black'>Sel</span></b></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Biaya Satuan</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>C4:E6</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>pengiriman</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>C10:E12</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>TotalIn</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>C14:E14</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Tuntutan</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>C16:E16</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Total Keluar</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>G10:G12</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Memasok</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>I10: I12</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Total biaya</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>I16</span></p>
-            </td>
-        </tr>
-    </table>
-    <p><span style='color:white'><br>
-    <br>
-  </span></p>
-    <p>3. Sisipkan fungsi berikut.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image012.png" alt="Sisipkan Fungsi"></p>
-    <p class="info"><strong>Penjelasan:</strong> Fungsi SUM menghitung total yang dikirim dari setiap pabrik (Total Out) ke setiap pelanggan (Total In). Total Biaya sama dengan jumlah <a href="#">produk</a> dari UnitCost dan Pengiriman.</p>
-
-    <p class="h5" id="MasalahTransportasi-PercobaandanKesalahan">Percobaan dan Kesalahan</p>
-    <p>Dengan formulasi ini, menjadi mudah untuk menganalisis solusi percobaan apa pun.</p>
-    <p>Misalnya, jika kita mengirimkan 100 unit dari Pabrik 1 ke Pelanggan 1, 200 unit dari Pabrik 2 ke Pelanggan 2, 100 unit dari Pabrik 3 ke Pelanggan 1 dan 200 unit dari Pabrik 3 ke Pelanggan 3, Total Out sama dengan Supply dan Total In sama dengan Tuntutan.
-        Solusi ini memiliki total biaya 27800.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image013.png" alt="Solusi Percobaan"></p>
-    <p>Tidak perlu menggunakan trial and error. Kami akan menjelaskan selanjutnya bagaimana Excel Solver dapat digunakan untuk menemukan solusi optimal dengan cepat.</p>
-
-    <p class="h5" id="MasalahTransportasi-MemecahkanModel">Memecahkan Model</p>
-    <p>Untuk menemukan solusi optimal, lakukan langkah-langkah berikut.</p>
-    <p>1. Pada tab Data, dalam grup Analisis, klik Solver.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image003.png" alt="Klik Solver"></p>
-    <p class="info"><strong>Catatan:</strong> tidak dapat menemukan tombol Solver? Klik di sini untuk memuat <a href="#">add-in
-    Solver</a>.</p>
-    <p>Masukkan parameter Solver (baca terus). Hasilnya harus konsisten dengan gambar di bawah ini.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image014.png" alt="Parameter Solver"></p>
-    <p>Anda memiliki pilihan untuk mengetikkan nama rentang atau mengklik sel di spreadsheet.</p>
-    <p>2. Masukkan TotalCost untuk Objective.</p>
-    <p>3. Klik Min.</p>
-    <p>4. Masukkan Pengiriman untuk Sel Variabel yang Berubah.</p>
-    <p>5. Klik Add untuk memasukkan batasan berikut.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image015.png" alt="Batasan Permintaan"></p>
-    <p>6. Klik Add untuk memasukkan batasan berikut.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image016.png" alt="Kendala Pasokan"></p>
-    <p>7. Centang 'Make Unconstrained Variables Non-Negative' dan pilih 'Simplex LP'.</p>
-    <p>8. Terakhir, klik Selesaikan.</p>
+    <p>Contoh ini mengajarkan Anda cara membuat histogram di Excel.</p>
+    <p>1. Pertama, masukkan nomor bin (tingkat atas) di kisaran C4:C8.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image005.png" alt="Nomor Tempat Sampah"></p>
+    <p>2. Pada tab Data, dalam grup Analisis, klik Analisis Data.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image003.png" alt="Klik Analisis Data"></p>
+    <p class="info"><strong>Catatan:</strong> tidak dapat menemukan tombol Analisis Data? Klik di sini untuk memuat <a href="#">add-in Analysis ToolPak</a>.</p>
+    <p>3. Pilih Histogram dan klik OK.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image004.png" alt="Pilih Histogram"></p>
+    <p>4. Pilih rentang A2:A19.</p>
+    <p>5. Klik pada kotak Bin Range dan pilih range C4:C8.</p>
+    <p>6. Klik tombol pilihan Output Range, klik pada kotak Output Range dan pilih sel F3.</p>
+    <p>7. Periksa Output Grafik.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image006.png" alt="Parameter Histogram"></p>
+    <p>8. Klik Oke.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image007.png" alt="Hasil Pertama Histogram"></p>
+    <p>9. Klik legenda di sisi kanan dan tekan Delete.</p>
+    <p>10. Beri label tempat sampah Anda dengan benar.</p>
+    <p>11. Untuk menghilangkan spasi antar bar, klik kanan bar, klik Format Data Series dan ubah Gap Width menjadi 0%.</p>
+    <p>12. Untuk menambahkan batas, klik kanan bar, klik Format Data Series, klik ikon Fill &amp; Line, klik Border dan pilih warna.</p>
     <p>Hasil:</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image017.png" alt="Hasil Solver"></p>
-    <p>Solusi optimal:</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image018.png" alt="Hasil Soal Transportasi"></p>
-    <p class="info"><strong>Kesimpulan:</strong> optimal untuk mengirimkan 100 unit dari Pabrik 1 ke Pelanggan 2, 100 unit dari Pabrik 2 ke Pelanggan 2, 100 unit dari Pabrik 2 ke Pelanggan 3, 200 unit dari Pabrik 3 ke Pelanggan 1 dan 100 unit dari Pabrik 3 ke Pelanggan
-        3. Solusi ini memberikan biaya minimum 26000. Semua kendala terpenuhi.</p>
-
-
-    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
-        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/assignment-problem.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-        <p class="lead mb-0" id="MasalahTugas">Masalah Tugas <span class="span-text">(Assignment Problem)</span></p>
-    </div>
-
-    <p><a href="#MasalahTugas-RumuskanModel">Rumuskan Model</a> | <a href="#MasalahTugas-PercobaandanKesalahan">Percobaan dan Kesalahan</a> | <a href="#MasalahTugas-MemecahkanModel">Memecahkan Model</a></p>
-
-    <p>Gunakan Solver di Excel untuk menemukan penugasan orang ke tugas yang meminimalkan total biaya.</p>
-
-    <p class="h5" id="MasalahTugas-RumuskanModel">Formulasikan Modelnya</p>
-    <p>Model yang akan kita pecahkan terlihat sebagai berikut di Excel.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image019.png" alt="Masalah Tugas di Excel"></p>
-    <p>1. Untuk merumuskan masalah penugasan ini, jawablah tiga pertanyaan berikut.</p>
-    <p>A. Apa keputusan yang harus diambil? Untuk masalah ini, kita perlu Excel untuk mencari tahu orang mana yang akan ditugaskan untuk tugas mana (Ya=1, Tidak=0). Misalnya, jika kita menetapkan Orang 1 ke Tugas 1, sel C10 sama dengan 1. Jika tidak, sel
-        C10 sama dengan 0.</p>
-    <p>B. Apa kendala dalam keputusan ini? Setiap orang hanya dapat melakukan satu tugas (Supply=1). Setiap tugas hanya membutuhkan satu orang (Permintaan = 1).</p>
-    <p>C. Apa ukuran kinerja keseluruhan untuk keputusan ini? Ukuran kinerja keseluruhan adalah total biaya penugasan, jadi tujuannya adalah untuk meminimalkan kuantitas ini.</p>
-    <p>2. Untuk membuat model lebih mudah dipahami, buat <a href="#">Nama Range</a> berikut.</p>
-    <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=292 style='width:219.0pt;border-collapse:collapse'>
-        <tr>
-            <td width=178 style='width:133.5pt;border:solid #212121 1.0pt;background:
-  #E6E6E6;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><b>Nama Rentang</b></p>
-            </td>
-            <td width=114 style='width:85.5pt;border:solid #212121 1.0pt;border-left:
-  none;background:#E6E6E6;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><b><span style='color:black'>Sel</span></b></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Biaya</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>C4:E6</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Penugasan</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>C10:E12</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Orang yang Ditugaskan</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>C14:E14</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Tuntutan</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>C16:E16</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Tugas Ditugaskan</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>G10:G12</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Memasok</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>I10: I12</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Total biaya</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>I16</span></p>
-            </td>
-        </tr>
-    </table>
-    <p><span style='color:white'><br>
-    <br>
-  </span></p>
-    <p>3. Sisipkan fungsi berikut.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image020.png" alt="Sisipkan Fungsi"></p>
-    <p class="info"><strong>Penjelasan:</strong> Fungsi SUM menghitung jumlah tugas yang diberikan kepada seseorang dan jumlah orang yang ditugaskan untuk suatu tugas. Total Biaya sama dengan jumlah <a href="#">produk</a> dari Biaya dan Penugasan.</p>
-
-    <p class="h5" id="MasalahTugas-PercobaandanKesalahan">Percobaan dan Kesalahan</p>
-    <p>Dengan formulasi ini, menjadi mudah untuk menganalisis solusi percobaan apa pun.</p>
-    <p>Misalnya, jika kita menetapkan Orang 1 ke Tugas 1, Orang 2 ke tugas 2 dan Orang 3 ke Tugas 3, Tugas yang Ditugaskan sama dengan Penawaran dan Orang yang Ditugaskan sama dengan Permintaan. Solusi ini memiliki total biaya 147.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image021.png" alt="Solusi Percobaan"></p>
-    <p>Tidak perlu menggunakan trial and error. Kami akan menjelaskan selanjutnya bagaimana Excel Solver dapat digunakan untuk menemukan solusi optimal dengan cepat.</p>
-
-    <p class="h5" id="MasalahTugas-MemecahkanModel">Memecahkan Model</p>
-    <p>Untuk menemukan solusi optimal, lakukan langkah-langkah berikut.</p>
-    <p>1. Pada tab Data, dalam grup Analisis, klik Solver.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image003.png" alt="Klik Solver"></p>
-    <p class="info"><strong>Catatan:</strong> tidak dapat menemukan tombol Solver? Klik di sini untuk memuat <a href="#">add-in Solver</a>.</p>
-    <p>Masukkan parameter Solver (baca terus). Hasilnya harus konsisten dengan gambar di bawah ini.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image022.png" alt="Parameter Solver"></p>
-    <p>Anda memiliki pilihan untuk mengetikkan nama rentang atau mengklik sel di spreadsheet.</p>
-    <p>2. Masukkan TotalCost untuk Objective.</p>
-    <p>3. Klik Min.</p>
-    <p>4. Masukkan Tugas untuk Mengubah Sel Variabel.</p>
-    <p>5. Klik Add untuk memasukkan batasan berikut.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image023.png" alt="Batasan Biner"></p>
-    <p class="info"><strong>Catatan:</strong> variabel biner adalah 0 atau 1.</p>
-    <p>6. Klik Add untuk memasukkan batasan berikut.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image024.png" alt="Batasan Permintaan"></p>
-    <p>7. Klik Add untuk memasukkan batasan berikut.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image025.png" alt="Kendala Pasokan"></p>
-    <p>8. Centang 'Make Unconstrained Variables Non-Negative' dan pilih 'Simplex LP'.</p>
-    <p>9. Terakhir, klik Selesaikan.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image008.png" alt="Histogram di Excel"></p>
+    <p>Jika Anda memiliki Excel 2016 atau yang lebih baru, cukup gunakan tipe bagan Histogram.</p>
+    <p>13. Pilih rentang A1:A19.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image009.png" alt="Pilih Rentang"></p>
+    <p>14. Pada tab Insert, di grup Charts, klik simbol Histogram.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image010.png" alt="Sisipkan Histogram"></p>
+    <p>15. Klik Histogram.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image011.png" alt="Klik Histogram"></p>
+    <p>Hasil. Histogram dengan 3 bin.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image012.png" alt="Histogram dengan 3 Bins"></p>
+    <p class="info"><strong>Catatan:</strong> Excel menggunakan aturan referensi normal Scott untuk menghitung jumlah nampan dan lebar nampan.</p>
+    <p>16. Klik kanan sumbu horizontal, lalu klik Format Sumbu.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image013.png" alt="Format Sumbu"></p>
+    <p>Panel Format Sumbu muncul.</p>
+    <p>17. Tentukan bin histogram. Kami akan menggunakan nomor bin yang sama seperti sebelumnya (lihat gambar pertama di halaman ini). Lebar nampan: 5. Jumlah nampan: 6. Nampan luapan: 40. Nampan underflow: 20.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image014.png" alt="Tentukan Histogram Bins"></p>
     <p>Hasil:</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image017.png" alt="Hasil Solver"></p>
-    <p>Solusi optimal:</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image026.png" alt="Hasil Soal Tugas"></p>
-    <p class="info"><strong>Kesimpulan:</strong> optimal untuk menugaskan Orang 1 ke tugas 2, Orang 2 ke Tugas 3 dan Orang 3 ke Tugas 1. Solusi ini memberikan biaya minimum 129. Semua kendala terpenuhi.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image015.png" alt="Bagan Histogram"></p>
+    <p>Ingat, kami membuat histogram berikut menggunakan Analysis ToolPak (langkah 1-12).</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image008.png" alt="Histogram di Excel"></p>
+    <p class="info"><strong>Kesimpulan:</strong> label bin terlihat berbeda, tetapi histogramnya sama. 20 sama dengan 0-20, (20, 25] sama dengan 21-25, dst.</p>
 
 
     <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
-        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/shortest-path-problem.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-        <p class="lead mb-0" id="SoalJalurTerpendek">Soal Jalur Terpendek <span class="span-text">(Shortest Path Problem)</span></p>
+        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/descriptive-statistics.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+        <p class="lead mb-0" id="StatistikDeskriptif">Statistik deskriptif</p>
     </div>
 
-    <p><a href="#SoalJalurTerpendek-RumuskanModel">Rumuskan Model</a> | <a href="#SoalJalurTerpendek-PercobaandanKesalahan">Percobaan dan Kesalahan</a> | <a href="#SoalJalurTerpendek-MemecahkanModel">Memecahkan Model</a></p>
-
-    <p>Gunakan solver di Excel untuk menemukan jalur terpendek dari node S ke node T dalam jaringan yang tidak diarahkan. Titik-titik dalam jaringan disebut node (S, A, B, C, D, E dan T). Garis dalam jaringan disebut busur (SA, SB, SC, AC, dll).
-    </p>
-    <p class="h5" id="SoalJalurTerpendek-RumuskanModel">Formulasikan Modelnya</p>
-    <p>Model yang akan kita pecahkan terlihat sebagai berikut di Excel.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image027.png" alt="Masalah Jalur Terpendek di Excel"></p>
-    <p>1. Untuk merumuskan masalah jalur terpendek ini, jawablah tiga pertanyaan berikut.</p>
-    <p>A. Apa keputusan yang harus diambil? Untuk masalah ini, kita membutuhkan Excel untuk mengetahui apakah sebuah busur berada pada jalur terpendek atau tidak (Ya=1, Tidak=0). Misalnya, jika SB adalah bagian dari jalur terpendek, sel F5 sama dengan 1.
-        Jika tidak, sel F5 sama dengan 0.</p>
-    <p>B. Apa kendala dalam keputusan ini? Arus Bersih (Aliran Keluar - Arus Masuk) setiap node harus sama dengan Supply/Demand. Node S seharusnya hanya memiliki satu busur keluar (Aliran Bersih = 1). Node T seharusnya hanya memiliki satu arc yang masuk
-        (Net Flow = -1). Semua node lain harus memiliki satu busur keluar dan satu busur masuk jika simpul berada di jalur terpendek (Aliran Bersih = 0) atau tidak ada aliran (Aliran Bersih = 0).</p>
-    <p>C. Apa ukuran kinerja keseluruhan untuk keputusan ini? Ukuran kinerja keseluruhan adalah total jarak dari jalur terpendek, jadi tujuannya adalah untuk meminimalkan kuantitas ini.</p>
-    <p>2. Untuk membuat model lebih mudah dipahami, buat <a href="#">Nama Range</a> berikut.</p>
-    <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=292 style='width:219.0pt;border-collapse:collapse'>
-        <tr>
-            <td width=178 style='width:133.5pt;border:solid #212121 1.0pt;background:
-  #E6E6E6;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><b>Nama Rentang</b></p>
-            </td>
-            <td width=114 style='width:85.5pt;border:solid #212121 1.0pt;border-left:
-  none;background:#E6E6E6;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><b><span style='color:black'>Sel</span></b></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Dari</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>B4:B21</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Ke</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>C4:C21</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Jarak</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>D4:D21</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Pergi</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>F4:F21</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Arus Bersih</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>I4: I10</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Permintaan persediaan</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>K4: K10</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Jarak Total</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>F23</span></p>
-            </td>
-        </tr>
-    </table>
-    <p><span style='color:white'><br>
-    <br>
-  </span></p>
-    <p>3. Sisipkan fungsi berikut.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image028.png" alt="Sisipkan Fungsi"></p>
-    <p class="info"><strong>Penjelasan:</strong> Fungsi <a href="https://www.excel-easy.com/examples/sumif.html">SUMIF</a> menghitung Net Flow setiap node. Untuk node S, fungsi SUMIF menjumlahkan nilai di kolom Go dengan &quot;S&quot; di kolom From. Akibatnya, hanya
-        sel F4, F5 atau F6 yang dapat menjadi 1 (satu busur keluar). Untuk node T, fungsi SUMIF menjumlahkan nilai di kolom Go dengan &quot;T&quot; di kolom To. Akibatnya, hanya sel F15, F18 atau F21 yang dapat menjadi 1 (satu busur masuk). Untuk semua
-        node lainnya, Excel terlihat di kolom From dan To. Total Jarak sama dengan jumlah <a href="#">hasil</a> dari Jarak dan Pergi.</p>
-
-    <p class="h5" id="SoalJalurTerpendek-PercobaandanKesalahan">Percobaan dan Kesalahan</p>
-    <p>Dengan formulasi ini, menjadi mudah untuk menganalisis solusi percobaan apa pun.</p>
-    <p>1. Misalnya, jalur SBET memiliki total jarak 16.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image029.png" alt="Solusi Percobaan"></p>
-    <p>Tidak perlu menggunakan trial and error. Kami akan menjelaskan selanjutnya bagaimana Excel Solver dapat digunakan untuk menemukan solusi optimal dengan cepat.</p>
-
-    <p class="h5" id="SoalJalurTerpendek-MemecahkanModel">Memecahkan Model</p>
-    <p>Untuk menemukan solusi optimal, lakukan langkah-langkah berikut.</p>
-    <p>1. Pada tab Data, dalam grup Analisis, klik Solver.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image003.png" alt="Klik Solver"></p>
-    <p class="info"><strong>Catatan:</strong> tidak dapat menemukan tombol Solver? Klik di sini untuk memuat <a href="#">add-in Solver</a>.</p>
-    <p>Masukkan parameter Solver (baca terus). Hasilnya harus konsisten dengan gambar di bawah ini.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image030.png" alt="Parameter Solver"></p>
-    <p>Anda memiliki pilihan untuk mengetikkan nama rentang atau mengklik sel di spreadsheet.</p>
-    <p>2. Masukkan TotalDistance untuk Objective.</p>
-    <p>3. Klik Min.</p>
-    <p>4. Masukkan Go untuk Mengubah Sel Variabel.</p>
-    <p>5. Klik Add untuk memasukkan batasan berikut.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image031.png" alt="Batasan Aliran Bersih"></p>
-    <p>6. Centang 'Make Unconstrained Variables Non-Negative' dan pilih 'Simplex LP'.</p>
-    <p>7. Terakhir, klik Selesaikan.</p>
+    <p>Anda dapat menggunakan add-in Analysis Toolpak untuk menghasilkan statistik deskriptif. Misalnya, Anda mungkin memiliki skor 14 peserta untuk ujian.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image016.png" alt="Contoh Statistik Deskriptif"></p>
+    <p>Untuk menghasilkan statistik deskriptif untuk skor ini, lakukan langkah-langkah berikut.</p>
+    <p>1. Pada tab Data, dalam grup Analisis, klik Analisis Data.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image003.png" alt="Klik Analisis Data"></p>
+    <p class="info"><strong>Catatan:</strong> tidak dapat menemukan tombol Analisis Data? Klik di sini untuk memuat <a href="#">add-in Analysis ToolPak</a>.</p>
+    <p>2. Pilih Statistik Deskriptif dan klik OK.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image017.png" alt="Pilih Statistik Deskriptif"></p>
+    <p>3. Pilih rentang A2:A15 sebagai Rentang Input.</p>
+    <p>4. Pilih sel C1 sebagai Rentang Output.</p>
+    <p>5. Pastikan Ringkasan statistik dicentang.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image018.png" alt=Pilihan></p>
+    <p>6. Klik Oke.</p>
     <p>Hasil:</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image017.png" alt="Hasil Solver"></p>
-    <p>Solusi optimal:</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image032.png" alt="Hasil Soal Jalur Terpendek"></p>
-    <p class="info"><strong>Kesimpulan:</strong> SADCT merupakan jalur terpendek dengan total jarak 11.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image019.png" alt="Statistik Deskriptif di Excel"></p>
 
 
     <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
-        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/maximum-flow-problem.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-        <p class="lead mb-0" id="MasalahAliranMaksimum">Masalah Aliran Maksimum <span class="span-text">(Maximum Flow Problem)</span></p>
+        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/anova.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+        <p class="lead mb-0" id="Anova">Anova</p>
     </div>
 
-    <p><a href="#MasalahAliranMaksimum-RumuskanModel">Rumuskan Model</a> | <a href="#MasalahAliranMaksimum-PercobaandanKesalahan">Percobaan dan Kesalahan</a> | <a href="#MasalahAliranMaksimum-MemecahkanModel">Memecahkan Model</a></p>
-
-    <p>Gunakan solver di Excel untuk menemukan aliran maksimum dari node S ke node T dalam jaringan terarah. Titik-titik dalam jaringan disebut node (S, A, B, C, D, E dan T). Garis dalam jaringan disebut busur (SA, SB, SC, AC, dll).</p>
-
-    <p class="h5" id="MasalahAliranMaksimum-RumuskanModel">Formulasikan Modelnya</p>
-    <p>Model yang akan kita pecahkan terlihat sebagai berikut di Excel.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image033.png" alt="Masalah Aliran Maksimum di Excel"></p>
-    <p>1. Untuk merumuskan masalah aliran maksimum ini, jawablah tiga pertanyaan berikut.</p>
-    <p>A. Apa keputusan yang harus diambil? Untuk masalah ini, kita membutuhkan Excel untuk menemukan aliran pada setiap busur. Misalnya, jika aliran pada SB adalah 2, sel D5 sama dengan 2.</p>
-    <p>B. Apa kendala dalam keputusan ini? Arus Bersih (Arus Keluar – Arus Masuk) node A, B, C, D dan E harus sama dengan 0. Dengan kata lain, Arus Keluar = Arus Masuk. Juga, setiap busur memiliki kapasitas tetap. Aliran pada setiap busur harus kurang dari
-        kapasitas ini.
-    </p>
-    <p>C. Apa ukuran kinerja keseluruhan untuk keputusan ini? Ukuran kinerja keseluruhan adalah aliran maksimum, jadi tujuannya adalah untuk memaksimalkan kuantitas ini. Aliran maksimum sama dengan Aliran Keluar dari node S.</p>
-    <p>2. Untuk membuat model lebih mudah dipahami, buat <a href="https://www.excel-easy.com/examples/named-range.html">Nama Range</a> berikut.</p>
-    <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=292 style='width:219.0pt;border-collapse:collapse'>
-        <tr>
-            <td width=178 style='width:133.5pt;border:solid #212121 1.0pt;background:
-  #E6E6E6;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><b>Nama Rentang</b></p>
-            </td>
-            <td width=114 style='width:85.5pt;border:solid #212121 1.0pt;border-left:
-  none;background:#E6E6E6;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><b><span style='color:black'>Sel</span></b></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Dari</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>B4:B15</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Ke</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>C4:C15</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Mengalir</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>D4:D15</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Kapasitas</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>F4:F15</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Permintaan persediaan</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>K5: K9</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Arus Maksimum</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>H17</span></p>
-            </td>
-        </tr>
-    </table>
-    <p><span style='color:white'><br>
-    <br>
-  </span></p>
-    <p>3. Sisipkan fungsi berikut.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image034.png" alt="Sisipkan Fungsi"></p>
-    <p class="info"><strong>Penjelasan:</strong> Fungsi <a href="#">SUMIF</a> menghitung Net Flow setiap node. Untuk node A, fungsi SUMIF pertama menjumlahkan nilai di kolom Flow dengan &quot;A&quot; di kolom From (Flow Out). Fungsi SUMIF kedua menjumlahkan nilai di
-        kolom Flow dengan &quot;A&quot; di kolom To (Flow In). Arus Maksimum sama dengan nilai pada sel I4, yaitu arus keluar dari simpul S. Karena simpul A, B, C, D dan E memiliki Arus Bersih sebesar 0, Arus Keluar dari simpul S akan sama dengan Arus
-        Masuk dari simpul T.</p>
-
-    <p class="h5" id="MasalahAliranMaksimum-PercobaandanKesalahan">Percobaan dan Kesalahan</p>
-    <p>Dengan formulasi ini, menjadi mudah untuk menganalisis solusi percobaan apa pun.</p>
-    <p>1. Misalnya jalur SADT dengan arus 2. Jalur SCT dengan arus 4. Jalur SBET dengan arus 2. Jalur ini memberikan total arus 8.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image035.png" alt="Solusi Percobaan"></p>
-    <p>Tidak perlu menggunakan trial and error. Kami akan menjelaskan selanjutnya bagaimana Excel Solver dapat digunakan untuk menemukan solusi optimal dengan cepat.</p>
-
-    <p class="h5" id="MasalahAliranMaksimum-MemecahkanModel">Memecahkan Model</p>
-    <p>Untuk menemukan solusi optimal, lakukan langkah-langkah berikut.</p>
-    <p>1. Pada tab Data, dalam grup Analisis, klik Solver.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image003.png" alt="Klik Solver"></p>
-    <p class="info"><strong>Catatan:</strong> tidak dapat menemukan tombol Solver? Klik di sini untuk memuat <a href="#">add-in
-    Solver</a>.</p>
-    <p>Masukkan parameter Solver (baca terus). Hasilnya harus konsisten dengan gambar di bawah ini.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image036.png" alt="Parameter Solver"></p>
-    <p>Anda memiliki pilihan untuk mengetikkan nama rentang atau mengklik sel di spreadsheet.</p>
-    <p>2. Masukkan MaximumFlow untuk Objective.</p>
-    <p>3. Klik Maks.</p>
-    <p>4. Masukkan Flow untuk Mengubah Sel Variabel.</p>
-    <p>5. Klik Add untuk memasukkan batasan berikut.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image037.png" alt="Batasan Aliran Bersih"></p>
-    <p>6. Klik Add untuk memasukkan batasan berikut.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image038.png" alt="Batasan Kapasitas"></p>
-    <p>7. Centang 'Make Unconstrained Variables Non-Negative' dan pilih 'Simplex LP'.</p>
-    <p>8. Terakhir, klik Selesaikan.</p>
+    <p>Contoh ini mengajarkan Anda bagaimana melakukan ANOVA faktor tunggal (analisis varians) di Excel. Faktor tunggal atau ANOVA satu arah digunakan untuk menguji hipotesis nol bahwa rata-rata dari beberapa populasi semuanya sama.</p>
+    <p>Di bawah ini Anda dapat menemukan gaji orang-orang yang memiliki gelar di bidang ekonomi, kedokteran atau sejarah.</p>
+    <p>H 0 : 1 = 2 = 3<br> H 1 : paling sedikit salah satu cara berbeda.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image020.png" alt="Anova di Excel"></p>
+    <p>Untuk melakukan ANOVA faktor tunggal, jalankan langkah-langkah berikut.</p>
+    <p>1. Pada tab Data, dalam grup Analisis, klik Analisis Data.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image003.png" alt="Klik Analisis Data"></p>
+    <p class="info"><strong>Catatan:</strong> tidak dapat menemukan tombol Analisis Data? Klik di sini untuk memuat <a href="#">add-in Analysis ToolPak</a>.</p>
+    <p>2. Pilih Anova: Single Factor dan klik OK.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image021.png" alt="Pilih Anova: Faktor Tunggal"></p>
+    <p>3. Klik pada kotak Input Range dan pilih range A2:C10.</p>
+    <p>4. Klik pada kotak Output Range dan pilih sel E1.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image022.png" alt="Parameter Anova"></p>
+    <p>5. Klik Oke.</p>
     <p>Hasil:</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image017.png" alt="Hasil Solver"></p>
-    <p>Solusi optimal:</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image039.png" alt="Hasil Masalah Aliran Maksimum"></p>
-    <p>Kesimpulan : jalur SADT dengan arus 2. Jalur SCT dengan arus 4. Jalur SBET dengan arus 2. Jalur SCET dengan arus 2. Jalur SACET dengan arus 1. Jalur SACDT dengan aliran 1. Jalur ini memberikan aliran maksimum 12.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image023.png" alt="Hasil Anova di Excel"></p>
+    <p class="info"><strong>Kesimpulan:</strong> jika F &gt; F crit, kami menolak hipotesis nol. Ini adalah kasusnya, 15,196 &gt; 3,443. Oleh karena itu, kami menolak hipotesis nol. Rata-rata dari ketiga populasi tidak semuanya sama. Setidaknya salah satu caranya berbeda.
+        Namun, ANOVA tidak memberi tahu Anda di mana letak perbedaannya. Anda memerlukan <a href="#">Uji-t</a> untuk menguji setiap pasangan rata-rata.</p>
 
 
     <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
-        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/capital-investment.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-        <p class="lead mb-0" id="PenanamanModal">Penanaman Modal <span class="span-text">(Capital Investment)</span></p>
+        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/f-test.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+        <p class="lead mb-0" id="F-Tes">F-Tes</p>
     </div>
 
-    <p><a href="#PenanamanModal-RumuskanModel">Rumuskan Model</a> | <a href="#PenanamanModal-PercobaandanKesalahan">Percobaan dan Kesalahan</a> | <a href="#PenanamanModal-MemecahkanModel">Memecahkan Model</a></p>
-
-    <p>Gunakan Solver di Excel untuk menemukan kombinasi investasi modal yang memaksimalkan total keuntungan.</p>
-
-    <p class="h5" id="PenanamanModal-RumuskanModel">Formulasikan Modelnya</p>
-    <p>Model yang akan kita pecahkan terlihat sebagai berikut di Excel.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image040.png" alt="Investasi Modal di Excel"></p>
-    <p>1. Untuk merumuskan model binary integer programming (BIP) ini, jawablah tiga pertanyaan berikut.</p>
-    <p>A. Apa keputusan yang harus diambil? Untuk masalah ini, kita membutuhkan Excel untuk mengetahui investasi modal mana yang harus dilakukan (Ya=1, Tidak=0).</p>
-    <p>B. Apa kendala dalam keputusan ini? Pertama, jumlah modal yang digunakan untuk investasi tidak boleh melebihi jumlah modal yang tersedia (50). Misalnya, investasi Satu menggunakan 12 unit modal. Kedua, hanya investasi Satu atau Investasi Dua yang
-        dapat dilakukan. Ketiga, hanya investasi Tiga atau investasi Empat yang dapat dilakukan. Keempat, investasi Enam dan investasi Tujuh hanya dapat dilakukan jika investasi Lima dilakukan.</p>
-    <p>C. Apa ukuran kinerja keseluruhan untuk keputusan ini? Ukuran kinerja keseluruhan adalah keuntungan total dari investasi modal yang dilakukan, jadi tujuannya adalah untuk memaksimalkan kuantitas ini.</p>
-    <p>2. Untuk membuat model lebih mudah dipahami, buat <a href="https://www.excel-easy.com/examples/named-range.html">Nama Range</a> berikut.</p>
-    <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=292 style='width:219.0pt;border-collapse:collapse'>
-        <tr>
-            <td width=178 style='width:133.5pt;border:solid #212121 1.0pt;background:
-  #E6E6E6;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><b>Nama Rentang</b></p>
-            </td>
-            <td width=114 style='width:85.5pt;border:solid #212121 1.0pt;border-left:
-  none;background:#E6E6E6;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><b><span style='color:black'>Sel</span></b></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Laba</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>C5:I5</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Ya Tidak</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>C13:I13</span></p>
-            </td>
-        </tr>
-        <tr>
-            <td style='border:solid #212121 1.0pt;border-top:none;background:white;
-  padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>Total keuntungan</span></p>
-            </td>
-            <td style='border-top:none;border-left:none;border-bottom:solid #212121 1.0pt;
-  border-right:solid #212121 1.0pt;background:white;padding:3.0pt 3.0pt 3.0pt 3.0pt'>
-                <p><span style='color:black'>M13</span></p>
-            </td>
-        </tr>
-    </table>
-    <p><span style='color:white'><br>
-    <br>
-  </span></p>
-    <p>3. Sisipkan lima fungsi SUMPRODUCT berikut.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image041.png" alt="Fungsi Sumproduk"></p>
-    <p class="info"><strong>Penjelasan:</strong> sel K7 (jumlah modal yang digunakan) sama dengan hasil
-        <a href="https://www.excel-easy.com/examples/sumproduct.html">penjumlahan</a> dari range C7:I7 dan YesNo, sel K8 sama dengan penjumlahan dari range C8:I8 dan YesNo, dst. Total Profit sama dengan penjumlahan dari Profit dan YesNo.</p>
-
-    <p class="h5" id="PenanamanModal-PercobaandanKesalahan">Percobaan dan Kesalahan</p>
-    <p>Dengan formulasi ini, menjadi mudah untuk menganalisis solusi percobaan apa pun.</p>
-    <p>1. Misalnya, jika kita melakukan investasi Satu dan Dua, kendala kedua dilanggar.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image042.png" alt="Batasan Kedua Dilanggar"></p>
-    <p>2. Misalnya, jika kita melakukan investasi Enam dan Tujuh, tanpa melakukan investasi Lima, kendala keempat dilanggar.
-    </p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image043.png" alt="Batasan Keempat Dilanggar"></p>
-    <p>3. Namun, tidak apa-apa untuk melakukan investasi Satu, Lima dan Enam. Semua kendala terpenuhi.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image044.png" alt="Semua Kendala Terpuaskan"></p>
-    <p>Tidak perlu menggunakan trial and error. Kami akan menjelaskan selanjutnya bagaimana Excel Solver dapat digunakan untuk menemukan solusi optimal dengan cepat.</p>
-
-    <p class="h5" id="PenanamanModal-MemecahkanModel">Memecahkan Model</p>
-    <p>Untuk menemukan solusi optimal, lakukan langkah-langkah berikut.</p>
-    <p>1. Pada tab Data, dalam grup Analisis, klik Solver.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image003.png" alt="Klik Solver"></p>
-    <p class="info"><strong>Catatan:</strong> tidak dapat menemukan tombol Solver? Klik di sini untuk memuat <a href="#">add-in Solver</a>.</p>
-    <p>Masukkan parameter Solver (baca terus). Hasilnya harus konsisten dengan gambar di bawah ini.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image045.png" alt="Parameter Solver"></p>
-    <p>2. Masukkan TotalProfit untuk Objective.</p>
-    <p>3. Klik Maks.</p>
-    <p>4. Masukkan YesNo untuk Mengubah Sel Variabel.</p>
-    <p>5. Klik Add untuk memasukkan batasan berikut.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image046.png" alt=Paksaan></p>
-    <p>6. Klik Add untuk memasukkan batasan berikut.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image047.png" alt="Batasan Biner"></p>
-    <p class="info"><strong>Catatan:</strong> variabel biner adalah 0 atau 1.</p>
-    <p>7. Centang 'Make Unconstrained Variables Non-Negative' dan pilih 'Simplex LP'.</p>
-    <p>8. Terakhir, klik Selesaikan.</p>
+    <p>Contoh ini mengajarkan Anda bagaimana melakukan F-Test di Excel. Uji-F digunakan untuk menguji hipotesis nol bahwa varians dari dua populasi adalah sama.</p>
+    <p>Di bawah ini Anda dapat menemukan jam belajar 6 siswa perempuan dan 5 siswa laki-laki.</p>
+    <p>H 0 : &#963; 1 2 = &#963; 2 2<br> H 1 : &#963; 1 2 &#8800; &#963; 2 2</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image024.png" alt="Uji-F di Excel"></p>
+    <p>Untuk melakukan F-Test, jalankan langkah-langkah berikut.</p>
+    <p>1. Pada tab Data, dalam grup Analisis, klik Analisis Data.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image003.png" alt="Klik Analisis Data"></p>
+    <p class="info"><strong>Catatan:</strong> tidak dapat menemukan tombol Analisis Data? Klik di sini untuk memuat <a href="#">add-in Analysis ToolPak</a>.</p>
+    <p>2. Pilih F-Test Two-Sample for Variances dan klik OK.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image025.png" alt="Pilih Dua-Sampel Uji-F untuk Varians"></p>
+    <p>3. Klik pada kotak Variable 1 Range dan pilih range A2:A7.</p>
+    <p>4. Klik pada kotak Variable 2 Range dan pilih range B2:B6.</p>
+    <p>5. Klik pada kotak Output Range dan pilih sel E1.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image026.png" alt="Parameter Uji-F"></p>
+    <p>6. Klik Oke.</p>
     <p>Hasil:</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image048.png" alt="Solver Menemukan Solusi"></p>
-    <p>Solusi optimal:</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image049.png" alt="Hasil Penanaman Modal"></p>
-    <p class="info"><strong>Kesimpulan:</strong> optimal untuk melakukan investasi Dua, Empat, Lima dan Tujuh. Solusi ini memberikan keuntungan maksimum 146. Semua kendala terpenuhi.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image027.png" alt="Hasil Uji-F di Excel"></p>
+    <p>Penting: pastikan bahwa varians dari Variabel 1 lebih tinggi dari varians dari Variabel 2. Hal ini terjadi, 160 &gt; 21.7. Jika tidak, tukar data Anda. Hasilnya, Excel menghitung nilai F yang benar, yaitu rasio Varians 1 terhadap Varians 2 (F = 160
+        / 21,7 = 7,373).</p>
+    <p class="info"><strong>Kesimpulan:</strong> jika F &gt; F Kritis satu arah, kami menolak hipotesis nol. Ini kasusnya, 7,373 &gt; 6,256. Oleh karena itu, kami menolak hipotesis nol. Varians dari kedua populasi tidak sama.</p>
 
 
     <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
-        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/sensitivity-analysis.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-        <p class="lead mb-0" id="AnalisisSensitivitas">Analisis Sensitivitas</p>
+        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/t-test.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+        <p class="lead mb-0" id="t-test">t-test</p>
     </div>
 
-    <p><a href="#AnalisisSensitivitas-PenguranganBiaya">Pengurangan Biaya</a> | <a href="#AnalisisSensitivitas-BayanganHarga">Bayangan Harga</a></p>
+    <p>Contoh ini mengajarkan Anda bagaimana melakukan t-Test di Excel. Uji-t digunakan untuk menguji hipotesis nol bahwa rata-rata dua populasi adalah sama.</p>
+    <p>Di bawah ini Anda dapat menemukan jam belajar 6 siswa perempuan dan 5 siswa laki-laki.</p>
+    <p>H 0 : 1 - 2 = 0<br> H 1 : 1 - 2 0</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image024.png" alt="Uji-t di Excel"></p>
+    <p>Untuk melakukan t-Test, jalankan langkah-langkah berikut.</p>
+    <p>1. Pertama, lakukan <a href="https://www.excel-easy.com/examples/f-test.html">Uji-F</a> untuk menentukan apakah varians dari dua populasi sama. Ini bukan kasusnya.</p>
+    <p>2. Pada tab Data, dalam grup Analisis, klik Analisis Data.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image003.png" alt="Klik Analisis Data"></p>
+    <p class="info"><strong>Catatan:</strong> tidak dapat menemukan tombol Analisis Data? Klik di sini untuk memuat <a href="#">add-in Analysis ToolPak</a>.</p>
+    <p>3. Pilih t-Test: Two-Sample Assuming Unequal Variances dan klik OK.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image028.png" alt="Pilih Uji-t: Dua Sampel Dengan Asumsi Varians Tidak Sama"></p>
+    <p>4. Klik pada kotak Variable 1 Range dan pilih range A2:A7.</p>
+    <p>5. Klik pada kotak Variable 2 Range dan pilih range B2:B6.</p>
+    <p>6. Klik pada kotak Hypothesized Mean Difference dan ketik 0 (H 0 : 1 - 2 = 0).</p>
+    <p>7. Klik pada kotak Output Range dan pilih sel E1.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image029.png" alt="Parameter Uji-t"></p>
+    <p>8. Klik Oke.</p>
+    <p>Hasil:</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image030.png" alt="Hasil Uji-t di Excel"></p>
+    <p class="info"><strong>Kesimpulan:</strong> Kami melakukan uji dua sisi (ketidaksetaraan). Jika t Stat &lt; -t Critical two-tail atau t Stat &gt; t Critical two-tail, kami menolak hipotesis nol. Ini tidak terjadi, -2,365 &lt; 1,473 &lt; 2,365. Oleh karena itu, kami
+        tidak menolak hipotesis nol. Perbedaan yang diamati antara rata-rata sampel (33 - 24,8) tidak cukup meyakinkan untuk mengatakan bahwa rata-rata jumlah jam belajar antara siswa perempuan dan laki-laki berbeda secara signifikan.</p>
 
-    <p>Analisis sensitivitas memberi Anda wawasan tentang bagaimana solusi optimal berubah ketika Anda mengubah koefisien model. Setelah Solver menemukan solusi, Anda dapat membuat laporan sensitivitas.</p>
-    <p>1. Sebelum Anda mengklik OK, pilih Sensitivitas dari bagian Laporan.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image050.png" alt="Pilih Sensitivitas"></p>
-    <p>Di bawah ini Anda dapat menemukan solusi optimal dan laporan sensitivitas.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image010.png" alt="Solusi Optimal"></p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image051.png" alt="Laporan Sensitivitas di Excel"></p>
-    <p>Ini optimal untuk memesan 94 sepeda dan 54 moped. Solusi ini memberikan keuntungan maksimum 25600. Solusi ini menggunakan semua sumber daya yang tersedia (93000 unit modal dan 101 unit penyimpanan). Anda dapat menemukan angka-angka ini di kolom Nilai
-        Akhir.
+
+    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/moving-average.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+        <p class="lead mb-0" id="Rata-RataBergerak">Rata-Rata Bergerak</p>
+    </div>
+
+    <p>Contoh ini mengajarkan Anda bagaimana menghitung rata-rata bergerak dari deret waktu di Excel. Rata-rata bergerak digunakan untuk menghaluskan ketidakteraturan (puncak dan lembah) untuk dengan mudah mengenali tren.</p>
+    <p>1. Pertama, mari kita lihat rangkaian waktu kita.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image031.png" alt="Seri Waktu di Excel"></p>
+    <p>2. Pada tab Data, dalam grup Analisis, klik Analisis Data.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image003.png" alt="Klik Analisis Data"></p>
+    <p class="info"><strong>Catatan:</strong> tidak dapat menemukan tombol Analisis Data? Klik di sini untuk memuat <a href="#">add-in Analysis ToolPak</a>.</p>
+    <p>3. Pilih Moving Average dan klik OK.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image032.png" alt="Pilih Rata-Rata Pergerakan"></p>
+    <p>4. Klik pada kotak Input Range dan pilih range B2:M2.</p>
+    <p>5. Klik di kotak Interval dan ketik 6.</p>
+    <p>6. Klik pada kotak Output Range dan pilih sel B3.</p>
+    <p>7. Klik Oke.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image033.png" alt="Parameter Rata-Rata Bergerak"></p>
+    <p>8. Buat grafik dari nilai-nilai ini.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image034.png" alt="Tren yang meningkat"></p>
+    <p>Penjelasan: karena interval kita atur menjadi 6 maka moving average adalah rata-rata dari 5 titik data sebelumnya dan titik data saat ini. Akibatnya, puncak dan lembah dihaluskan. Grafik menunjukkan tren yang meningkat. Excel tidak dapat menghitung
+        rata-rata bergerak untuk 5 titik data pertama karena titik data sebelumnya tidak cukup.</p>
+    <p>9. Ulangi langkah 2 sampai 8 untuk interval = 2 dan interval = 4.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image035.png" alt="Interval yang berbeda"></p>
+    <p class="info"><strong>Kesimpulan:</strong> Semakin besar intervalnya, semakin banyak puncak dan lembah yang dihaluskan. Semakin kecil intervalnya, semakin dekat rata-rata bergerak ke titik data aktual.</p>
+
+
+    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/exponential-smoothing.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+        <p class="lead mb-0" id="PenghalusanEksponensial">Penghalusan Eksponensial</p>
+    </div>
+
+    <p>Contoh ini mengajarkan Anda bagaimana menerapkan pemulusan eksponensial ke deret waktu di Excel. Pemulusan eksponensial digunakan untuk menghaluskan ketidakteraturan (puncak dan lembah) untuk mengenali tren dengan mudah.</p>
+    <p>1. Pertama, mari kita lihat rangkaian waktu kita.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image036.png" alt="Seri Waktu di Excel"></p>
+    <p>2. Pada tab Data, dalam grup Analisis, klik Analisis Data.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image003.png" alt="Klik Analisis Data"></p>
+    <p class="info"><strong>Catatan:</strong> tidak dapat menemukan tombol Analisis Data? Klik di sini untuk memuat <a href="#">add-in Analysis ToolPak</a>.</p>
+    <p>3. Pilih Penghalusan Eksponensial dan klik OK.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image037.png" alt="Pilih Penghalusan Eksponensial"></p>
+    <p>4. Klik pada kotak Input Range dan pilih range B2:M2.</p>
+    <p>5. Klik pada kotak Damping factor dan ketik 0.9. Sastra sering berbicara tentang konstanta pemulusan (alfa). Nilai (1- ) disebut faktor redaman.</p>
+    <p>6. Klik pada kotak Output Range dan pilih sel B3.</p>
+    <p>7. Klik Oke.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image038.png" alt="Parameter Penghalusan Eksponensial"></p>
+    <p>8. Buat grafik dari nilai-nilai ini.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image039.png" alt="Tren yang meningkat"></p>
+    <p>Penjelasan: karena kita menyetel alpha menjadi 0.1, maka titik data sebelumnya diberi bobot yang relatif kecil sedangkan nilai pemulusan sebelumnya diberi bobot yang besar (yaitu 0.9). Akibatnya, puncak dan lembah dihaluskan. Grafik menunjukkan tren
+        yang meningkat. Excel tidak dapat menghitung nilai pemulusan untuk titik data pertama karena tidak ada titik data sebelumnya. Nilai yang dihaluskan untuk titik data kedua sama dengan titik data sebelumnya.</p>
+    <p>9. Ulangi langkah 2 sampai 8 untuk alfa = 0,3 dan alfa = 0,8.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image040.png" alt="Alfa yang berbeda"></p>
+    <p class="info"><strong>Kesimpulan:</strong> Semakin kecil alpha (semakin besar faktor redamannya), semakin banyak puncak dan lembah yang dihaluskan. Semakin besar alfa (semakin kecil faktor redaman), semakin dekat nilai yang dihaluskan dengan titik data aktual.</p>
+
+
+    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/correlation.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+        <p class="lead mb-0" id="Korelasi">Korelasi</p>
+    </div>
+
+    <p>The korelasi koefisien (nilai antara -1 dan +1) memberitahu Anda seberapa kuat dua variabel terkait satu sama lain. Kita dapat menggunakan fungsi CORREL atau add-in Analysis Toolpak di Excel untuk menemukan koefisien korelasi antara dua variabel.</p>
+    <p>- Koefisien korelasi +1 menunjukkan korelasi positif yang sempurna. Ketika variabel X meningkat, variabel Y meningkat. Saat variabel X menurun, variabel Y menurun.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image041.png" alt="Korelasi Positif Sempurna di Excel"></p>
+    <p>- Koefisien korelasi -1 menunjukkan korelasi negatif yang sempurna. Ketika variabel X meningkat, variabel Z menurun. Saat variabel X berkurang, variabel Z meningkat.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image042.png" alt="Korelasi Negatif Sempurna di Excel"></p>
+    <p>- Koefisien korelasi mendekati 0 menunjukkan tidak ada korelasi.</p>
+    <p>Untuk menggunakan add-in Analysis Toolpak di Excel untuk menghasilkan koefisien korelasi antara beberapa variabel dengan cepat, lakukan langkah-langkah berikut.</p>
+    <p>1. Pada tab Data, dalam grup Analisis, klik Analisis Data.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image003.png" alt="Klik Analisis Data"></p>
+    <p class="info"><strong>Catatan:</strong> tidak dapat menemukan tombol Analisis Data? Klik di sini untuk memuat <a href="#">add-in Analysis ToolPak</a>.</p>
+    <p>2. Pilih Korelasi dan klik OK.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image043.png" alt="Pilih Korelasi"></p>
+    <p>3. Misalnya, pilih rentang A1:C6 sebagai Rentang Input.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image044.png" alt="Pilih Rentang Masukan"></p>
+    <p>4. Periksa Label di baris pertama.</p>
+    <p>5. Pilih sel A8 sebagai Rentang Output.</p>
+    <p>6. Klik Oke.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image045.png" alt="Opsi Masukan dan Keluaran"></p>
+    <p>Hasil.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image046.png" alt="Koefisien korelasi"></p>
+    <p class="info"><strong>Kesimpulan:</strong> variabel A dan C berkorelasi positif (0,91). Variabel A dan B tidak berkorelasi (0,19). Variabel B dan C juga tidak berkorelasi (0,11). Anda dapat memverifikasi kesimpulan ini dengan melihat grafik.</p>
+
+
+    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/regression.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+        <p class="lead mb-0" id="Regresi">Regresi</p>
+    </div>
+
+    <p><a href="#KotakR">Kotak R</a> | <a href="#SignifikansiFdanP-Nilai">Signifikansi F dan P-Nilai</a> | <a href="#Koefisien">Koefisien</a> | <a href="#Residu">Residu</a></p>
+
+    <p>Contoh ini mengajarkan Anda cara menjalankan analisis regresi linier di Excel dan cara menginterpretasikan Output Ringkasan.</p>
+    <p>Di bawah ini Anda dapat menemukan data kami. Pertanyaan besarnya adalah: apakah ada hubungan antara Quantity Sold (Output) dan Price and Advertising (Input). Dengan kata lain: dapatkah kita memprediksi Quantity Sold jika kita mengetahui Price dan
+        Advertising?
     </p>
-    <p class="h5" id="AnalisisSensitivitas-PenguranganBiaya">
-        Biaya yang dikurangi</p>
-    <p>Pengurangan biaya memberi tahu kita seberapa besar koefisien objektif (laba unit) dapat ditingkatkan atau diturunkan sebelum solusi optimal berubah. Jika kita meningkatkan keuntungan unit Kursi Anak dengan 20 unit atau lebih, solusi optimal berubah.</p>
-    <p>1. Dengan keuntungan unit 69, masih optimal untuk memesan 94 sepeda dan 54 moped. Di bawah ini Anda dapat menemukan solusi optimal.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image052.png" alt="Contoh Pengurangan Biaya"></p>
-    <p>2. Pada keuntungan unit 71, solusi optimal berubah.</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image053.png" alt="Hasil Pengurangan Biaya"></p>
-    <p class="info"><strong>Kesimpulan:</strong> memesan kursi anak hanya menguntungkan jika Anda dapat menjualnya setidaknya 70 unit.</p>
-    <p class="h5" id="AnalisisSensitivitas-BayanganHarga">
-        Bayangan Harga</p>
-    <p>Harga bayangan memberi tahu kita seberapa banyak solusi optimal dapat ditingkatkan atau diturunkan jika kita mengubah nilai sisi kanan (sumber daya tersedia) dengan satu unit.</p>
-    <p>1. Dengan 101 unit penyimpanan yang tersedia, total keuntungan adalah 25600. Di bawah ini Anda dapat menemukan solusi optimal.
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image047.png" alt="Data Regresi di Excel"></p>
+    <p>1. Pada tab Data, dalam grup Analisis, klik Analisis Data.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image003.png" alt="Klik Analisis Data"></p>
+    <p class="info"><strong>Catatan:</strong> tidak dapat menemukan tombol Analisis Data? Klik di sini untuk memuat <a href="#">add-in Analysis ToolPak</a>.</p>
+    <p>2. Pilih Regresi dan klik OK.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image048.png" alt="Pilih Regresi"></p>
+    <p>3. Pilih Rentang Y (A1:A8). Ini adalah variabel prediktor (juga disebut variabel dependen).</p>
+    <p>4. Pilih Rentang X (B1:C8). Ini adalah variabel penjelas (juga disebut variabel independen). Kolom-kolom ini harus berdekatan satu sama lain.</p>
+    <p>5. Periksa Label.</p>
+    <p>6. Klik pada kotak Output Range dan pilih sel A11.</p>
+    <p>7. Periksa Residu.</p>
+    <p>8. Klik Oke.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image049.png" alt="Masukan dan Keluaran Regresi"></p>
+    <p>Excel menghasilkan Output Ringkasan berikut (dibulatkan ke 3 tempat desimal).</p>
+
+    <p class="h5" id="KotakR">
+        Kotak R</p>
+    <p>R Square sama dengan 0,962, yang sangat cocok. 96% variasi Quantity Sold dijelaskan oleh variabel independen Price dan Advertising. Semakin mendekati 1, semakin baik garis regresi (baca terus) cocok dengan data.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image050.png" alt="R Square"></p>
+
+    <p class="h5" id="SignifikansiFdanP-Nilai">
+        Signifikansi F dan P-nilai
     </p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image054.png" alt="Contoh Harga Bayangan"></p>
-    <p>2. Dengan 102 unit penyimpanan yang tersedia, total keuntungan adalah 25700 (+100).</p>
-    <p><img class="img-fluid" src="../excel/files/Solver_files/image055.png" alt="Hasil Harga Bayangan"></p>
-    <p class="info"><strong>Catatan:</strong> dengan harga bayangan 100 untuk sumber daya ini, ini sesuai dengan harapan kami. Harga bayangan ini hanya berlaku antara 101 - 23,5 dan 101 + 54 (lihat laporan sensitivitas).</p>
+    <p>Untuk memeriksa apakah hasil Anda dapat diandalkan (signifikan secara statistik), lihat Signifikansi F ( 0,001 ). Jika nilai ini kurang dari 0,05, Anda baik-baik saja. Jika Signifikansi F lebih besar dari 0,05, mungkin lebih baik untuk berhenti menggunakan
+        kumpulan variabel independen ini. Hapus variabel dengan nilai P tinggi (lebih besar dari 0,05) dan jalankan kembali regresi hingga Signifikansi F turun di bawah 0,05.
+    </p>
+    <p>Sebagian besar atau semua nilai P harus di bawah 0,05. Dalam contoh kita ini adalah kasusnya. ( 0,000, 0,001 dan 0,005 ).</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image051.png" alt=Anova></p>
+
+    <p class="h5" id="Koefisien">
+        Koefisien</p>
+    <p>Garis regresinya adalah: y = Quantity Sold = 8536.214 -835.722 * Price + 0.592 * Advertising. Dengan kata lain, untuk setiap kenaikan harga satu unit, Kuantitas Terjual berkurang menjadi 835.722 unit. Untuk setiap kenaikan unit dalam Periklanan, Kuantitas
+        Terjual meningkat sebesar 0,592 unit. Ini adalah informasi yang berharga.</p>
+    <p>Anda juga dapat menggunakan koefisien ini untuk melakukan perkiraan. Misalnya, jika harga sama dengan $4 dan Periklanan sama dengan $3000, Anda mungkin dapat mencapai Kuantitas Terjual sebesar 8536.214 -835.722 * 4 + 0,592 * 3000 = 6970.</p>
+
+    <p class="h5" id="Residu">
+        Residu</p>
+    <p>Residu menunjukkan seberapa jauh titik data aktual dari titik data yang diprediksi (menggunakan persamaan). Misalnya, titik data pertama sama dengan 8500. Dengan menggunakan persamaan, titik data yang diprediksi sama dengan 8536.214 -835.722 * 2 +
+        0.592 * 2800 = 8523.009, menghasilkan sisa 8500 - 8523.009 = -23.009.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image052.png" alt=Residu></p>
+    <p>Anda juga dapat membuat plot pencar dari residu ini.</p>
+    <p><img class="img-fluid" src="../excel/files/AnalysisToolPak_files/image053.png" alt="Plot Pencar"></p>
+
 </details>

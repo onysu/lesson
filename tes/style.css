@@ -76,6 +76,14 @@ figure {
     font-weight: 300;
 }
 
+@media (min-width: 992px) {
+    .bd-main {
+        grid-template-areas: "intro intro" "content toc";
+        grid-template-columns: 4fr 1fr;
+        grid-template-rows: auto 1fr;
+    }
+}
+
 @media (min-width: 768px) {
     .bd-layout {
         display: grid;

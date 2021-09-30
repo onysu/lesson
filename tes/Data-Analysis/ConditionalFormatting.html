@@ -14,7 +14,7 @@
     <div id="flush-AnalisisData-PemformatanBersyarat" class="accordion-collapse collapse" aria-labelledby="ConditionalFormatting" data-bs-parent="#accordionAnalisisDataKonten">
         <div class="accordion-body">
 
-            <p><a href="#SorotAturanSel">Sorot Aturan Sel</a> | <a href="#HapusAturan">Hapus Aturan</a> | <a href="#AturanAtasBawah">Aturan Atas/Bawah</a> | <a href="#PemformatanBersyaratdenganRumus">Pemformatan
+            <p class="link-text"><a href="#SorotAturanSel">Sorot Aturan Sel</a> | <a href="#HapusAturan">Hapus Aturan</a> | <a href="#AturanAtasBawah">Aturan Atas/Bawah</a> | <a href="#PemformatanBersyaratdenganRumus">Pemformatan
           Bersyarat dengan Rumus</a></p>
 
             <p><a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/conditional-formatting.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
@@ -104,21 +104,25 @@
             <p class="info"><strong>Penjelasan:</strong> kami memperbaiki <a href="#">referensi</a> ke kolom C dengan menempatkan simbol $ di depan huruf kolom ($C2). Akibatnya, sel B2, C2 dan sel D2 juga berisi rumus =$C2=&quot;USA&quot;, sel A3, B3, C3 dan D3 berisi
                 rumus =$C3=&quot;USA&quot;, dll.</p>
 
-            <details>
-                <summary class="h5">Contoh Penggunaan Conditional Formatting</summary>
-                <p>
+            <details id="ContohPenggunaanConditionalFormatting">
+                <summary class="lead">Contoh Penggunaan Conditional Formatting</summary>
+                <p class="link-text">
                     <a href="#KelolaAturan">Kelola Aturan</a> |
                     <a href="#DataBars">Data Bars</a> |
                     <a href="#SkalaWarna">Skala Warna</a> |
                     <a href="#SetIkon">Set Ikon</a> |
                     <a href="#TemukanDuplikat">Temukan Duplikat</a> |
-                    <a href="#BarisAlternatifWarna">Baris Alternatif Warna</a> |
+                    <a href="#BarisAlternatifWarna">Baris Warna Alternatif </a> |
                     <a href="#BandingkanDuaDaftar">Bandingkan Dua Daftar</a> |
                     <a href="#AturanyangBertentangan">Aturan yang Bertentangan</a> |
                     <a href="#HeatMap">Heat Map</a>
                 </p>
 
-                <p class="h5" id="KelolaAturan">Kelola Aturan</p>
+                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/kelola-aturan.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                    <p class="bd-lead mb-0" id="KelolaAturan">Kelola Aturan</p>
+                </div>
+
                 <p>Untuk menampilkan semua aturan pemformatan bersyarat dalam buku kerja, gunakan Pengelola Aturan Pemformatan Bersyarat. Anda juga dapat menggunakan layar ini untuk membuat, mengedit, dan menghapus aturan.</p>
                 <p>1. Pilih sel A1.</p>
                 <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image020.png" alt="Aturan Pemformatan Bersyarat di Excel"></p>
@@ -133,7 +137,11 @@
                 <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image023.png" alt="Tampilkan aturan pemformatan untuk Lembar Kerja Ini"></p>
                 <p class="info"><strong>Catatan:</strong> klik Aturan Baru, Edit Aturan, dan Hapus Aturan untuk membuat, mengedit, dan menghapus aturan.</p>
 
-                <p class="h5" id="DataBars">Bar Data</p>
+                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/data-bars.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                    <p class="bd-lead mb-0" id="DataBars">Bar Data</p>
+                </div>
+
                 <p>Bilah data di Excel membuatnya sangat mudah untuk memvisualisasikan nilai dalam rentang sel. Bilah yang lebih panjang mewakili nilai yang lebih tinggi.</p>
                 <p>Untuk menambahkan bilah data, jalankan langkah-langkah berikut.</p>
                 <p>1. Pilih rentang.</p>
@@ -144,14 +152,12 @@
                 <p>Hasil:</p>
                 <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image025.png" alt="Bilah Data di Excel"></p>
                 <p class="info"><strong>Penjelasan:</strong> secara default, sel yang menyimpan nilai minimum (0 jika tidak ada nilai negatif) tidak memiliki bilah data dan sel yang menyimpan nilai maksimum (95) memiliki bilah data yang mengisi seluruh sel. Semua sel
-                    lainnya diisi secara proporsional.
-                </p>
+                    lainnya diisi secara proporsional.</p>
                 <p>4. Ubah nilainya.</p>
-                <p>Hasil. Excel memperbarui bilah data secara otomatis. Baca terus untuk menyesuaikan lebih lanjut bilah data ini.
-                </p>
+                <p>Hasil. Excel memperbarui bilah data secara otomatis. Baca terus untuk menyesuaikan lebih lanjut bilah data ini.</p>
                 <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image026.png" alt="Bilah Data yang Diperbarui"></p>
                 <p>5. Pilih rentang A1:A10.</p>
-                <p>6. Pada tab Beranda, dalam grup Gaya, klik Pemformatan Bersyarat, <a href="https://www.excel-easy.com/examples/manage-rules.html">Kelola Aturan</a>.</p>
+                <p>6. Pada tab Beranda, dalam grup Gaya, klik Pemformatan Bersyarat, <a href="#">Kelola Aturan</a>.</p>
                 <p>7. Klik Edit aturan.</p>
                 <p>Excel meluncurkan kotak dialog Edit Aturan Pemformatan. Di sini Anda dapat menyesuaikan lebih lanjut bilah data Anda (Show Bar Only, Minimum dan Maximum, Bar Appearance, Negative Value and Axis, Bar Direction, dll).
                 </p>
@@ -164,7 +170,11 @@
                 <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image029.png" alt="Nilai Minimum dan Maksimum"></p>
                 <p class="info"><strong>Penjelasan:</strong> sel yang menyimpan nilai 100 (jika ada) tidak memiliki bilah data dan sel yang menyimpan nilai 150 (jika ada) memiliki bilah data yang mengisi seluruh sel. Semua sel lainnya diisi secara proporsional.</p>
 
-                <p class="h5" id="SkalaWarna">Timbangan Warna</p>
+                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/color-scales.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                    <p class="bd-lead mb-0" id="SkalaWarna">Skala Warna</p>
+                </div>
+
                 <p>Skala Warna di Excel membuatnya sangat mudah untuk memvisualisasikan nilai dalam rentang sel. Bayangan warna mewakili nilai dalam sel.</p>
                 <p>Untuk menambahkan skala warna, jalankan langkah-langkah berikut.</p>
                 <p>1. Pilih rentang.</p>
@@ -190,7 +200,11 @@
                 <p>Hasil.</p>
                 <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image034.png" alt="Skala 2-Warna"></p>
 
-                <p class="h5" id="SetIkon">Set Ikon</p>
+                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/icon-sets.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                    <p class="bd-lead mb-0" id="SetIkon">Set Ikon</p>
+                </div>
+
                 <p>Kumpulan Ikon di Excel membuatnya sangat mudah untuk memvisualisasikan nilai dalam rentang sel. Setiap ikon mewakili rentang nilai.</p>
                 <p>Untuk menambahkan kumpulan ikon, jalankan langkah-langkah berikut.</p>
                 <p>1. Pilih rentang.</p>
@@ -222,7 +236,11 @@
                 <p>Hasil.</p>
                 <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image040.png" alt="Selesai dan Belum Dimulai"></p>
 
-                <p class="h5" id="TemukanDuplikat">Temukan Duplikat</p>
+                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/temukan-duplikat.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                    <p class="bd-lead mb-0" id="TemukanDuplikat">Temukan Duplikat</p>
+                </div>
+
                 <p><a href="#NilaiDuplikat">Nilai Duplikat</a> | <a href="#Triplicates">Triplicates</a> | <a href="#BarisDuplikat">Baris Duplikat</a></p>
 
                 <p>Contoh ini mengajarkan Anda cara menemukan nilai duplikat (atau rangkap tiga) dan cara menemukan baris duplikat di Excel.</p>
@@ -290,7 +308,11 @@
                 <p class="info"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="#">menghapus duplikat</a> untuk mempelajari lebih lanjut tentang alat Excel yang hebat ini.
                 </p>
 
-                <p class="h5" id="BarisAlternatifWarna">Baris Alternatif Warna</p>
+                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/shade-alternate-rows.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                    <p class="bd-lead mb-0" id="BarisAlternatifWarna">Baris Warna Alternatif</p>
+                </div>
+
                 <p>Contoh ini menunjukkan cara menggunakan pemformatan bersyarat untuk menaungi baris alternatif. Mengarsir setiap baris lain dalam rentang membuatnya lebih mudah untuk membaca data Anda.</p>
                 <p>1. Pilih rentang.</p>
                 <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image053.png" alt="Contoh Baris Alternatif Naungan"></p>
@@ -308,7 +330,11 @@
                 <p class="info"><strong>Penjelasan:</strong> <a href="#">fungsi MOD</a> memberikan sisa pembagian. Fungsi ROW() mengembalikan nomor baris. Misalnya, untuk baris ketujuh, MOD(7,2) = 1 karena 7 dibagi 2 sama dengan 3 dengan sisa 1. Untuk baris kedelapan,
                     MOD(8,2) = 0 karena 8 dibagi 2 sama dengan 4 dengan sisa 0. Akibatnya, semua baris ganjil menghasilkan 1 (TRUE) dan akan diarsir.</p>
 
-                <p class="h5" id="BandingkanDuaDaftar">Bandingkan Dua Daftar</p>
+                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/bandingkan-dua-daftar.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                    <p class="bd-lead mb-0" id="BandingkanDuaDaftar">Bandingkan Dua Daftar</p>
+                </div>
+
                 <p>Contoh ini menjelaskan cara membandingkan dua daftar menggunakan pemformatan bersyarat. Misalnya, Anda mungkin memiliki dua daftar tim NFL.</p>
                 <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image056.png" alt="Bandingkan Dua Daftar Contoh"></p>
                 <p>Untuk menyorot tim di daftar pertama yang tidak ada di daftar kedua, jalankan langkah-langkah berikut.</p>
@@ -333,7 +359,11 @@
                 </p>
                 <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image059.png" alt="Bandingkan Dua Daftar di Excel"></p>
 
-                <p class="h5" id="AturanyangBertentangan">Aturan yang Bertentangan</p>
+                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/bertentangan-aturan.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                    <p class="bd-lead mb-0" id="AturanyangBertentangan">Aturan yang Bertentangan</p>
+                </div>
+
                 <p>Terkadang beberapa aturan pemformatan bersyarat dalam konflik Excel. Aturan yang lebih tinggi selalu menang. Contoh ini menggambarkan dua hasil yang berbeda.</p>
                 <p>1. Nilai 95 lebih tinggi dari 80 tetapi juga merupakan nilai tertinggi (Top 1). Format (isian kuning vs isian hijau dan warna teks kuning vs warna teks hijau) bertentangan. Aturan yang lebih tinggi selalu menang. Akibatnya, nilai 95 berwarna
                     kuning.
@@ -348,7 +378,11 @@
                 <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image063.png" alt="Aturan Pemformatan Bersyarat yang Berkonflik 2 Hasil"></p>
                 <p class="info"><strong>Catatan:</strong> hanya gunakan kotak centang Stop If True untuk kompatibilitas mundur dengan versi Microsoft Excel yang lebih lama.</p>
 
-                <p class="h5" id="HeatMap">Heat Map</p>
+                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/heat-map.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                    <p class="bd-lead mb-0" id="HeatMap">Heat Map</p>
+                </div>
+
                 <p>Untuk membuat peta panas di Excel, cukup gunakan pemformatan bersyarat. Peta panas adalah representasi grafis dari data di mana nilai-nilai individual direpresentasikan sebagai warna.</p>
                 <p>Untuk membuat peta panas, jalankan langkah-langkah berikut.</p>
                 <p>1. Pilih rentang B3:M11.</p>

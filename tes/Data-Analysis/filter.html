@@ -69,12 +69,26 @@
             <details id="ContohPenggunaanFilter">
                 <summary class="lead mb-3">Contoh Penggunaan Filter</summary>
 
+                <p class="link-text">
+                    <a href="#FilterAngka">Filter Angka</a> |
+                    <a href="#FilterTeks">Filter Teks</a> |
+                    <a href="#FilterTanggal">Filter Tanggal</a> |
+                    <a href="#FilterTingkatLanjut">Filter Tingkat Lanjut</a> |
+                    <a href="#FormulirData">Formulir Data</a> |
+                    <a href="#HapusDuplikat">Hapus Duplikat</a> |
+                    <a href="#MenguraikanData">Menguraikan Data</a> |
+                    <a href="#Subtotal">Subtotal</a> |
+                    <a href="#NilaiUnik">Nilai Unik</a> |
+                    <a href="#FungsiFILTER">Fungsi FILTER</a>
+                </p>
+
                 <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
                     <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/filter.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-                    <p class="lead mb-0" id="NumberandTextFilters">Filter Nomor dan Teks</p>
+                    <p class="bd-lead mb-0" id="NumberandTextFilters">Filter Angka dan Teks</p>
                 </div>
 
-                <p><a href="#">Filter Angka</a> | <a href="#FilterTeks">Filter Teks</a></p>
+                <!-- <p><a href="#FilterAngka">Filter Angka</a> | <a href="#FilterTeks">Filter Teks</a></p> -->
+
                 <p>Contoh ini mengajarkan Anda cara menerapkan filter angka dan filter teks untuk hanya menampilkan rekaman yang memenuhi kriteria tertentu.</p>
                 <ol>
                     <li>Klik salah satu sel di dalam kumpulan data.</li>
@@ -85,8 +99,9 @@
                         <p><img class="img-fluid" src="../excel/files/Filter_files/image002.png" alt="Filter Panah"></p>
                     </li>
                 </ol>
-                <p class="h5" id="">
-                    Filter Nomor</p>
+
+                <p class="h5" id="FilterAngka">
+                    Filter Angka</p>
                 <p>Untuk menerapkan filter angka, jalankan langkah-langkah berikut.</p>
                 <ol>
                     <li>Klik panah di sebelah Penjualan.</li>
@@ -103,6 +118,7 @@
                         </p>
                     </li>
                 </ol>
+
                 <p class="h5" id="FilterTeks">
                     Filter Teks</p>
                 <p>Untuk menerapkan filter teks, jalankan langkah-langkah berikut.</p>
@@ -122,7 +138,8 @@
                         </p>
                     </li>
                 </ol>
-                <p class="h5">Filter Tanggal</p>
+
+                <p class="h5" id="FilterTanggal">Filter Tanggal</p>
                 <p>Contoh ini mengajarkan Anda cara menerapkan filter tanggal untuk hanya menampilkan rekaman yang memenuhi kriteria tertentu.</p>
                 <ol>
                     <li>Klik salah satu sel di dalam kumpulan data.</li>
@@ -153,13 +170,15 @@
                         <p class="info"><strong>Catatan:</strong> filter tanggal ini dan banyak filter tanggal lainnya bergantung pada tanggal hari ini.</p>
                     </li>
                 </ol>
-                <p class="h5">Filter Tingkat Lanjut</p>
+
+                <p class="h5" id="FilterTingkatLanjut">Filter Tingkat Lanjut</p>
                 <p><a href="#">Dan Kriteria</a> | <a href="#">Atau Kriteria</a> | <a href="#">Rumus sebagai Kriteria</a></p>
                 <p>Contoh ini mengajarkan Anda bagaimana menerapkan filter lanjutan di Excel untuk hanya menampilkan catatan yang memenuhi kriteria kompleks.</p>
                 <p>Saat Anda menggunakan Filter Tingkat Lanjut, Anda harus memasukkan kriteria pada lembar kerja. Buat rentang Kriteria (batas biru di bawah hanya untuk ilustrasi) di atas kumpulan data Anda. Gunakan header kolom yang sama. Pastikan setidaknya
                     ada satu baris kosong antara rentang Kriteria dan kumpulan data Anda.</p>
-                <p class="h5" id="">
-                    Dan Kriteria</p>
+
+                <p class="h5" id="AndKriteria">
+                    And Kriteria</p>
                 <p>Untuk menampilkan penjualan di AS dan di Qtr 4, lakukan langkah-langkah berikut.</p>
                 <ol>
                     <li>
@@ -181,8 +200,9 @@
                         <p>Tidak ada ilmu roket sejauh ini. Kami dapat mencapai hasil yang sama dengan filter normal. Kami membutuhkan Filter Lanjutan untuk kriteria Or.</p>
                     </li>
                 </ol>
-                <p class="h5" id="">
-                    Atau Kriteria</p>
+
+                <p class="h5" id="OrKriteria">
+                    Or Kriteria</p>
                 <p>Untuk menampilkan penjualan di AS di Qtr 4 atau di Inggris di Qtr 1, lakukan langkah-langkah berikut.</p>
                 <ol>
                     <li>Masukkan kriteria yang ditunjukkan di bawah ini pada lembar kerja.</li>
@@ -195,7 +215,7 @@
                         <p><img class="img-fluid" src="../excel/files/Filter_files/image027.png" alt="Atau Kriteria Hasil"></p>
                     </li>
                 </ol>
-                <p class="h5" id="">
+                <p class="h5" id="RumussebagaiKriteria">
                     Rumus sebagai Kriteria</p>
                 <p>Untuk menampilkan penjualan di AS di Qtr 4 lebih besar dari $10.000 atau di Inggris di Qtr 1, jalankan langkah-langkah berikut.</p>
                 <ol>
@@ -212,7 +232,7 @@
                             ke TRUE atau FALSE.</p>
                     </li>
                 </ol>
-                <p class="h5">Formulir Data</p>
+                <p class="h5" id="FormulirData">Formulir Data</p>
                 <p>The data formulir di Excel memungkinkan Anda untuk menambahkan, mengedit, dan catatan delete (baris) dan hanya menampilkan catatan-catatan yang memenuhi kriteria tertentu. Terutama ketika Anda memiliki baris yang lebar dan Anda ingin menghindari
                     pengguliran berulang ke kanan dan kiri, formulir data dapat berguna.</p>
                 <ol>
@@ -238,7 +258,7 @@
                         <p class="info"><strong>Catatan:</strong> untuk mengedit kriteria, klik tombol Kriteria lagi. Untuk menutup formulir data, klik tombol Tutup.</p>
                     </li>
                 </ol>
-                <p class="h5">Hapus Duplikat</p>
+                <p class="h5" id="HapusDuplikat">Hapus Duplikat</p>
                 <p>Contoh ini mengajarkan Anda cara menghapus duplikat di Excel.</p>
                 <ol>
                     <li>Klik salah satu sel di dalam kumpulan data.</li>
@@ -292,7 +312,7 @@
                         <p class="info"><strong>Tip:</strong> kunjungi halaman kami tentang <a href="#">menemukan duplikat</a> untuk mempelajari lebih lanjut tentang trik ini.</p>
                     </li>
                 </ol>
-                <p class="h5">Menguraikan Data</p>
+                <p class="h5" id="MenguraikanData">Menguraikan Data</p>
                 <p>Menguraikan data membuat data Anda lebih mudah dilihat. Dalam contoh ini kita akan menjumlahkan baris data terkait dan menciutkan sekelompok kolom.</p>
                 <ol>
                     <li>
@@ -336,7 +356,7 @@
                     </li>
                 </ol>
 
-                <p class="h5">Subtotal</p>
+                <p class="h5" id="Subtotal">Subtotal</p>
                 <p><a href="#">Baris Tersembunyi oleh Filter</a> | <a href="#">Baris Tersembunyi Secara Manual</a></p>
 
                 <p>Gunakan fungsi SUBTOTAL di Excel alih-alih SUM, COUNT, MAX, dll. untuk mengabaikan baris yang disembunyikan oleh filter atau untuk mengabaikan baris yang disembunyikan secara manual.</p>
@@ -366,7 +386,7 @@
                             ada perbedaan antara angka 101-111 dan angka 1-11. Kami merekomendasikan menggunakan angka 101-111 karena Excel menggunakan angka-angka ini dalam <a href="#">baris total</a> di akhir tabel.</p>
                     </li>
                 </ol>
-                <p class="h5" id="">Baris Tersembunyi Secara Manual</p>
+                <p class="h5" id="BarisTersembunyiSecaraManual">Baris Tersembunyi Secara Manual</p>
                 <ol>
                     <li>
                         <p>Misalnya, fungsi SUM di bawah ini menjumlahkan rentang sel.</p>
@@ -383,7 +403,7 @@
                         <p class="info"><strong>Catatan:</strong> angka 101-111 mengabaikan baris yang disembunyikan secara manual. Namun, angka 1-11 menyertakan baris yang disembunyikan secara manual!</p>
                     </li>
                 </ol>
-                <p class="h5">Nilai Unik</p>
+                <p class="h5" id="NilaiUnik">Nilai Unik</p>
                 <p><a href="#">Ekstrak Nilai Unik</a> | <a href="#">Filter untuk Nilai Unik</a> | <a href="#">Fungsi Unik</a> |
                     <a href="#">Hapus Duplikat</a></p>
                 <p>Untuk mengekstrak nilai unik di Excel atau untuk memfilter nilai unik, gunakan Filter Tingkat Lanjut. Jika Anda memiliki Excel 365, cukup gunakan fungsi UNIK ajaib untuk mengekstrak nilai unik.</p>
@@ -413,7 +433,7 @@
                         <p class="info"><strong>Catatan:</strong> Excel menghapus semua nilai duplikat (Singa di sel A7 dan Gajah di sel A9) dan mengirimkan nilai unik ke kolom C. Anda juga bisa menggunakan alat ini untuk mengekstrak baris unik di Excel.</p>
                     </li>
                 </ol>
-                <p class="h5" id="">Filter untuk Nilai Unik</p>
+                <p class="h5" id="FilteruntukNilaiUnik">Filter untuk Nilai Unik</p>
                 <p>Memfilter nilai unik di Excel adalah hal yang mudah.</p>
                 <ol>
                     <li>
@@ -434,7 +454,7 @@
                         <p class="info"><strong>Catatan:</strong> baris 7 dan 9 disembunyikan. Untuk menghapus filter ini, pada tab Data, di grup Urutkan &amp; Filter, klik Hapus. Anda juga dapat menggunakan alat ini untuk memfilter baris unik di Excel.</p>
                     </li>
                 </ol>
-                <p class="h5" id="">
+                <p class="h5" id="FungsiUnik">
                     Fungsi Unik</p>
                 <p>Jika Anda memiliki Excel 365, cukup gunakan fungsi UNIK ajaib untuk mengekstrak nilai unik.</p>
                 <ol>
@@ -450,15 +470,16 @@
                             mengekstrak nilai yang muncul tepat satu kali.</p>
                     </li>
                 </ol>
-                <p class="h5" id="">
+                <p class="h5" id="HapusDuplikat">
                     Hapus Duplikat</p>
                 <p>Untuk menemukan nilai unik (atau baris unik) dan menghapus nilai duplikat (atau baris duplikat) secara bersamaan, gunakan alat <a href="#">Hapus Duplikat</a> di Excel.</p>
                 <p>Pada tab Data, dalam grup Alat Data, klik Hapus Duplikat.</p>
                 <p><img class="img-fluid" src="../excel/files/Filter_files/image034.png" alt="Klik Hapus Duplikat"></p>
                 <p>Pada contoh di bawah ini, Excel menghapus semua baris identik (biru) kecuali baris identik pertama yang ditemukan (kuning).</p>
                 <p><img class="img-fluid" src="../excel/files/Filter_files/image036.png" alt="Hapus Duplikat Contoh"> <img class="img-fluid" src="../excel/files/Filter_files/image037.png" alt="Hapus Hasil Duplikat"></p>
-                <p class="info"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="#">menghapus duplikat</a> untuk mempelajari lebih lanjut tentang alat Excel yang hebat ini.</p>
-                <p class="h5" id="">Fungsi FILTER</p>
+                <p class="info"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="#">menghapus duplikat</a> untuk mempelajari lebih lanjut tentang alat Excel yang hebat ini.</p>.
+
+                <p class="h5" id="FungsiFILTER">Fungsi FILTER</p>
                 <p>Gunakan fungsi FILTER ajaib di Excel 365 untuk mengekstrak rekaman yang memenuhi kriteria tertentu. Fungsi FILTER cukup serbaguna.</p>
                 <ol>
                     <li>

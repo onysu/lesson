@@ -4,54 +4,445 @@
     </h2>
     <div id="flush-FormatSel" class="accordion-collapse collapse" aria-labelledby="FormatSel" data-bs-parent="#accordionDasar">
         <div class="accordion-body">
-            <!-- <a href="#">Tempat Desimal</a> | <a href="#">Pecahan</a> | <a href="#">Mata Uang Vs
-                                    Akuntansi</a> | <a href="#">Teks ke Angka</a> | <a href="#">Angka ke Teks</a> | <a href="#">Kustom Format Angka</a> | <a href="#">Format Painter</a> | <a href="#">Sel
-                                    Style</a> | <a href="#">Bungkus Teks</a> | <a href="#">Merge Sel</a> | <a href="#">Strikethrough</a> | <a href="#">Superskrip dan Subskrip</a> | <a href="#">Tanda Cek</a> -->
 
-            <section>
-                <!-- <p class="h4">Format Sel</p> -->
-                <p>Saat kami memformat sel di Excel, kami mengubah tampilan angka tanpa mengubah angka itu sendiri. Kita dapat menerapkan format angka (0.8, $0.80, 80%, dll) atau format lain (perataan, font, batas, dll).</p>
-                <ol>
-                    <li>
-                        <p>Masukkan nilai 0,8 ke dalam sel B2.</p>
-                        <p><img class="img-fluid" src="../excel/files/FormatSel_files/image001.png" alt="Format Umum di Excel"></p>
-                        <p>Secara default, Excel menggunakan format Umum (tidak ada format angka tertentu) untuk angka. Untuk menerapkan format angka, gunakan kotak dialog 'Format Sel'.</p>
-                    </li>
-                    <li>Pilih sel B2.</li>
-                    <li>
-                        <p>Klik kanan, lalu klik Format Cells (atau tekan
-                            <kbd>Ctrl</kbd>+<kbd>1</kbd>).</p>
-                        <p><img class="img-fluid" src="../excel/files/FormatSel_files/image002.png" alt="Format Sel"></p>
-                        <p>Kotak dialog 'Format Sel' muncul.</p>
-                    </li>
-                    <li>
-                        <p>Misalnya, pilih Mata Uang.</p>
-                        <p><img class="img-fluid" src="../excel/files/FormatSel_files/image003.png" alt="Pilih Mata Uang"></p>
-                        <p class="info"><strong>Catatan:</strong> Excel memberi Anda pratinjau langsung tentang bagaimana nomor akan diformat (di bawah Contoh).</p>
-                    </li>
-                    <li>
-                        <p>Klik Oke.</p>
-                        <p><img class="img-fluid" src="../excel/files/FormatSel_files/image004.png" alt="Format Mata Uang"></p>
-                        <p>Sel B2 masih berisi angka 0.8. Kami hanya mengubah tampilan nomor ini. Perintah pemformatan yang paling sering digunakan tersedia di tab Beranda.</p>
-                    </li>
-                    <li>
-                        <p>Pada tab Beranda, di grup Angka, klik simbol persentase untuk menerapkan format Persentase.</p>
-                        <p><img class="img-fluid" src="../excel/files/FormatSel_files/image005.png" alt="Format Persentase"></p>
-                    </li>
-                    <li>
-                        <p>Pada tab Home, di grup Alignment, pusatkan angka.</p>
-                        <p><img class="img-fluid" src="../excel/files/FormatSel_files/image006.png" alt="Penjajaran Tengah"></p>
-                    </li>
-                    <li>
-                        <p>Pada tab Home, di grup Font, tambahkan batas luar dan ubah warna font menjadi biru.</p>
-                        <p><img class="img-fluid" src="../excel/files/FormatSel_files/image007.png" alt="Batas dan Warna Font"></p>
-                        <p>Hasil:</p>
-                        <p>
-                            <img class="img-fluid" src="../excel/files/FormatSel_files/image008.png" alt="Format Baru">
-                        </p>
-                    </li>
-                </ol>
-            </section>
+            <p><a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/format-cells.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+            <p>Saat kami memformat sel di Excel, kami mengubah tampilan angka tanpa mengubah angka itu sendiri. Kita dapat menerapkan format angka (0.8, $0.80, 80%, dll) atau format lain (perataan, font, batas, dll).</p>
+            <p>1. Masukkan nilai 0,8 ke dalam sel B2.</p>
+            <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image001.png" alt="Format Umum di Excel"></p>
+            <p>Secara default, Excel menggunakan format Umum (tidak ada format angka tertentu) untuk angka. Untuk menerapkan format angka, gunakan kotak dialog 'Format Sel'.</p>
+            <p>2. Pilih sel B2.</p>
+            <p>3. Klik kanan, lalu klik Format Cells (atau tekan <kbd>Ctrl</kbd>+<kbd>1</kbd>).</p>
+            <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image002.png" alt="Format Sel"></p>
+            <p>Kotak dialog 'Format Sel' muncul.</p>
+            <p>4. Misalnya, pilih Mata Uang.</p>
+            <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image003.png" alt="Pilih Mata Uang"></p>
+            <p class="info"><strong>Catatan:</strong> Excel memberi Anda pratinjau langsung tentang bagaimana nomor akan diformat (di bawah Contoh).</p>
+            <p>5. Klik Oke.</p>
+            <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image004.png" alt="Format Mata Uang"></p>
+            <p>Sel B2 masih berisi angka 0.8. Kami hanya mengubah tampilan nomor ini. Perintah pemformatan yang paling sering digunakan tersedia di tab Beranda.</p>
+            <p>6. Pada tab Beranda, di grup Angka, klik simbol persentase untuk menerapkan format Persentase.</p>
+            <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image005.png" alt="Format Persentase"></p>
+            <p>7. Pada tab Home, di grup Alignment, pusatkan angka.</p>
+            <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image006.png" alt="Penjajaran Tengah"></p>
+            <p>8. Pada tab Home, di grup Font, tambahkan batas luar dan ubah warna font menjadi biru.</p>
+            <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image007.png" alt="Batas dan Warna Font"></p>
+            <p>Hasil:</p>
+            <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image008.png" alt="Format Baru"></p>
+
+            <details>
+                <summary class="lead border-bottom py-2">Contoh Penggunaan Format Sel</summary>
+                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/decimal-places.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                    <p class="bd-lead mb-0" id="TempatDesimal">Tempat Desimal <span class="span-text">(Decimal Places)</span></p>
+                </div>
+
+                <p>Pelajari cara menampilkan lebih sedikit Tempat Desimal di Excel tanpa mengubah angka itu sendiri. Anda juga dapat <a href="#">membulatkan</a> angka.</p>
+                <p>1. Masukkan nilai 2.175 ke dalam sel A1.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image009.png" alt="Tiga Tempat Desimal di Excel">
+                </p>
+                <p>2. Pada tab Beranda, di grup Angka, klik tombol Kurangi Desimal dua kali.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image010.png" alt="Kurangi Desimal"></p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image011.png" alt="Satu Tempat Desimal"></p>
+                <p class="info"><strong>Catatan:</strong> jika Anda melihat bilah rumus, Anda dapat melihat bahwa sel A1 masih berisi nilai 2.175.</p>
+                <p>3. Kita masih dapat menggunakan nilai presisi yang mendasari ini dalam perhitungan.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image012.png" alt=Perhitungan></p>
+                <p class="info"><strong>Catatan:</strong> jika Anda ingin menggunakan 2.2 untuk mendapatkan hasil 6.6, <a href="#">bulatkan</a> nilainya di sel A1.</p>
+
+
+
+                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/fractions.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                    <p class="bd-lead mb-0" id="Pecahan">Pecahan <span class="span-text">(Fractions)</span></p>
+                </div>
+                <p>Contoh ini mengajarkan Anda cara memasukkan pecahan di Excel dan bagaimana mengubah format pecahan.</p>
+                <p>1. Untuk memasukkan pecahan campuran 1 4/7 (satu dan empat per tujuh), ketik 1 4/7. Untuk memasukkan pecahan 4/7 (empat per tujuh) ke dalam sel A1, pilih sel A1 dan ketik 0 4/7 (dengan 0 atau Excel mengira Anda ingin memasukkan tanggal).</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image013.png" alt="Pecahan di Excel"></p>
+                <p>Sekarang setelah Anda memasukkan pecahan dengan benar, Excel telah menerapkan format Pecahan ke sel A1 dan Anda dapat mengedit pecahan hanya dengan mengetik 5/7 (tanpa 0). Anda dapat menemukan nilai desimal dari pecahan di bilah rumus.</p>
+                <p>2. Mari kita lihat format Pecahan yang diterapkan. Pilih sel A1, klik kanan, lalu klik Format Sel.</p>
+                <p>Excel telah menerapkan tipe Hingga satu digit.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image014.png" alt="Format Pecahan"></p>
+                <p class="info"><strong>Catatan:</strong> untuk memasukkan pecahan seperti 4/11 ke dalam sel A1, ubah jenisnya menjadi Hingga dua digit. Untuk memasukkan pecahan seperti 1/148 ke dalam sel A1, ubah jenisnya menjadi Hingga tiga digit.</p>
+                <p>3a. Excel membulatkan pecahan Anda jika tidak dapat menampilkan pecahan yang tepat. Misalnya, jika Anda mengetik 4/11 ke dalam sel A1 (dengan tipe Hingga satu digit diterapkan), Excel menampilkan 1/3. Bilah rumus selalu menunjukkan nilai
+                    desimal yang benar.
+                </p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image015.png" alt="pecahan bulat"></p>
+                <p>3b. Ubah jenisnya menjadi Hingga dua digit.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image016.png" alt="Pecahan yang benar"></p>
+                <p class="info"><strong>Catatan:</strong> tentu saja, jika Anda mengetik 0 4/11 ke dalam sel baru, Excel secara otomatis menerapkan tipe Hingga dua digit dan menampilkan 4/11 dengan benar.</p>
+                <p>4. Excel selalu mengurangi pecahan ke penyebut terkecilnya. Jika Anda memasukkan pecahan 2/8, Excel mengonversi pecahan menjadi 1/4. Namun, Anda dapat menggunakan tipe As delapan (4/8) untuk memperbaiki penyebut menjadi 8.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image017.png" alt="Penyebut tetap"></p>
+                <p>5. Terkadang, Anda tidak dapat menemukan penyebut yang tepat untuk pecahan Anda. Misalnya, Anda ingin menampilkan 40/50, tetapi Excel mengonversi 40/50 menjadi 4/5. Namun, tipe As lima puluh (25/50) tidak tersedia. Buat <a href="#">format angka khusus</a>                    ( # ??/50 ) untuk memperbaikinya.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image018.png" alt="Format Pecahan Kustom"></p>
+                <p class="info"><strong>Catatan:</strong> ubah 50 menjadi 60 untuk membuat tipe As enam puluh (30/60), dll.</p>
+
+
+                <p></p>
+                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/currency-vs-accounting.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                    <p class="bd-lead mb-0" id="Mata UangvsAkuntansi">Mata Uang vs Akuntansi <span class="span-text">(Currency vs Accounting)</span></p>
+                </div>
+
+                <p> format mata uang dan format yang Akuntansi di Excel sangat mirip satu sama lain. Contoh ini menunjukkan perbedaannya.</p>
+                <p>1. Masukkan nilai berikut.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image019.png" alt="Format Umum"></p>
+                <p>2. Format Mata Uang menempatkan tanda dolar tepat di sebelah nomor.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image020.png" alt="Format Mata Uang"></p>
+                <p>3. Format Akuntansi menyelaraskan tanda dolar di tepi kiri sel dan menampilkan tanda hubung untuk nilai nol.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image021.png" alt="Format Akuntansi"></p>
+                <p class="info"><strong>Catatan:</strong> Format mata uang dapat menampilkan angka negatif dengan tanda minus, merah, dengan tanda kurung, atau merah dengan tanda kurung. Format Akuntansi menampilkan angka negatif dalam tanda kurung.</p>
+
+                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/text-to-numbers.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                    <p class="bd-lead mb-0" id="TekskeAngka">Teks ke Angka <span class="span-text">(Text to Numbers)</span></p>
+                </div>
+
+                <p>Secara default, teks rata kiri dan angka rata kanan. Contoh ini mengajarkan Anda cara mengonversi 'string teks yang mewakili angka' menjadi angka.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image022.png" alt="Teks ke Angka di Excel"></p>
+                <p>1. Pilih Range A1:A4 dan ubah <a href="#">format angka</a> menjadi Umum.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image023.png" alt="Format Umum"></p>
+                <p>2. Angka yang diawali dengan apostrof juga diperlakukan sebagai teks. Pilih sel A5 dan hapus apostrof secara manual.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image024.png" alt="Hapus Apostrof"></p>
+                <p>3a. Anda juga dapat menggabungkan langkah 1 dan 2 dengan menambahkan sel kosong ke Range A1:A5. Dengan melakukan ini, Anda memberi tahu Excel bahwa string teks ini adalah angka. Salin sel kosong.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image025.png" alt="Salin Sel Kosong"></p>
+                <p>3b. Pilih Range A1:A5, klik kanan, lalu klik Tempel Spesial.</p>
+                <p>3c. Klik Tambahkan.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image026.png" alt="Tambahkan Sel Kosong"></p>
+                <p>3d. Klik Oke.</p>
+                <p>Hasil. Semua angka rata kanan dan diperlakukan sebagai angka.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image027.png" alt="Hasil Teks ke Angka"></p>
+                <p>4a. Anda juga dapat menggunakan fungsi VALUE.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image028.png" alt="Fungsi Nilai"></p>
+                <p>4b. Berikut contoh lain. Gunakan fungsi KANAN (atau
+                    <a href="#">fungsi teks</a> lainnya ) untuk mengekstrak karakter dari string teks, lalu gunakan fungsi VALUE untuk mengonversi karakter ini menjadi angka.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image029.png" alt="Fungsi Kanan"></p>
+
+
+
+                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/numbers-to-text.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                    <p class="bd-lead mb-0" id="Angka ke Teks">Angka ke Teks <span class="span-text">(Numbers to Text)</span></p>
+                </div>
+
+                <p>Secara default, angka rata kanan dan teks rata kiri. Contoh ini mengajarkan Anda cara mengonversi angka menjadi 'string teks yang mewakili angka'.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image030.png" alt="Angka ke Teks di Excel"></p>
+                <p>1. Pilih Range A1:A4 dan ubah <a href="#">format angka</a> menjadi Teks.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image031.png" alt="Format Teks"></p>
+                <p>2. Awali angka dengan tanda kutip dan itu juga akan diperlakukan sebagai teks.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image032.png" alt=Apostrof></p>
+                <p>3a. Jika Anda menambahkan teks ke nomor dan masih ingin memformat nomor ini, gunakan fungsi TEXT. Tanpa menggunakan fungsi TEXT, inilah hasilnya.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image033.png" alt="Tanpa Fungsi Teks"></p>
+                <p>3b. Dengan fungsi TEKS.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image034.png" alt="Dengan Fungsi Teks"></p>
+                <p class="info"><strong>Catatan:</strong> #,## digunakan untuk menambahkan koma ke angka besar.</p>
+                <p>3c. Berikut contoh lain. Terapkan format persentase.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image035.png" alt="Format Persentase"></p>
+                <p class="info"><strong>Catatan:</strong> gunakan 0 untuk menampilkan nilai integer terdekat. Gunakan 0,0 untuk satu Tempat Desimal. Gunakan 0,00 untuk dua Tempat Desimal, dll.</p>
+                <p>3d. Dan contoh lain. Memformat tanggal.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image036.png" alt="Format tanggal"></p>
+                <p class="info"><strong>Catatan:</strong> gunakan less/more m's, d's dan y's untuk mengubah tampilan tanggal. Kunjungi halaman kami tentang <a href="#">fungsi TEXT</a> untuk lebih banyak contoh.</p>
+
+
+                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/custom-number-format.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                    <p class="bd-lead mb-0" id="FormatNomorKustom">Format Nomor Kustom <span class="span-text">(Custom Number Format)</span></p>
+                </div>
+                <p><a href="#leading-zeros">Awalan Nol</a> | <a href="#decimal-places">Tempat Desimal</a> | <a href="#add-text">Tambahkan Teks</a> | <a href="#large-numbers">Angka Besar</a> | <a href="#repeat-characters">Ulangi Karakter</a> | <a href="#colors">Warna</a>                    | <a href="#dates-times">Tanggal &amp; Waktu</a></p>
+
+                <p>Excel memiliki banyak format bawaan yang dapat Anda gunakan: Mata Uang, Akuntansi, Tanggal, Waktu, Persentase, dll. Jika Anda tidak dapat menemukan format yang tepat, Anda dapat membuat format angka kustom.</p>
+
+
+                <p class="h5" id="leading-zeros">
+                    Awalan Nol</p>
+                <p>Misalnya, Anda mungkin memiliki kode yang terdiri dari 5 angka. Alih-alih mengetik 00041, cukup ketik 41 dan biarkan Excel menambahkan nol di depan.</p>
+                <p>1. Masukkan nilai 41 ke dalam sel A1.</p>
+                <p>2. Pilih sel A1, klik kanan, lalu klik Format Sel.</p>
+                <p>3. Pilih Kustom.</p>
+                <p>4. Ketik kode format angka berikut : 00000</p>
+                <p>5. Klik Oke.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image037.png" alt="Ketik Kode Format Angka"></p>
+                <p class="info"><strong>Catatan:</strong> Excel memberi Anda pratinjau langsung tentang bagaimana nomor akan diformat (di bawah Contoh).</p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image038.png" alt="Awalan Nol di Excel"></p>
+                <p class="info"><strong>Catatan:</strong> sel A1 masih berisi angka 41. Kami hanya mengubah tampilan angka ini, bukan angka itu sendiri.</p>
+
+
+                <p class="h5" id="decimal-places">
+                    Tempat Desimal</p>
+                <p>Anda juga dapat mengontrol jumlah Tempat Desimal. Gunakan 0 untuk menampilkan nilai integer terdekat. Gunakan 0,0 untuk satu Tempat Desimal. Gunakan 0,00 untuk dua Tempat Desimal, dll.</p>
+                <p>1. Masukkan nilai 839.1274 ke dalam sel A1.</p>
+                <p>2. Gunakan kode format angka berikut: 0,00</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image039.png" alt="Tempat Desimal"></p>
+
+
+                <p class="h5" id="add-text">
+                    Tambahkan Teks</p>
+                <p>Anda juga dapat menambahkan teks ke nomor Anda. Misalnya, tambahkan &quot;ft&quot;.</p>
+                <p>1. Masukkan nilai 839.1274 ke dalam sel A1.</p>
+                <p>2. Gunakan kode format angka berikut: 0.0 &quot;ft&quot;
+                </p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image040.png" alt="Tambahkan Teks"></p>
+                <p class="info"><strong>Catatan:</strong> ingat, kami hanya mengubah tampilan nomor ini, bukan nomor itu sendiri. Anda masih dapat menggunakan nomor ini dalam perhitungan Anda.</p>
+
+
+                <p class="h5" id="large-numbers">
+                    Angka besar</p>
+                <p>Anda juga dapat mengontrol jumlah besar. Gunakan satu koma (,) untuk menampilkan ribuan dan gunakan dua koma (,,) untuk menampilkan jutaan.</p>
+                <p>1. Masukkan nilai berikut di sel A1, B1, C1 dan D1: 1000000, 2500000, 81000000 dan 700000.</p>
+                <p>2. Gunakan kode format angka berikut: 0.0,, &quot;M&quot;</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image041.png" alt="Angka besar"></p>
+                <p class="info"><strong>Catatan:</strong> kami menggunakan 0,0 untuk satu Tempat Desimal dan &quot;M&quot; untuk menambahkan huruf M.</p>
+
+
+                <p class="h5" id="repeat-characters">
+                    Ulangi Karakter</p>
+                <p>Gunakan tanda bintang (*) diikuti dengan karakter untuk mengisi sel dengan karakter tersebut.</p>
+                <p>1. Ketik Hi ke sel A1.</p>
+                <p>2. Gunakan kode format angka berikut: @ *-</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image042.png" alt="Ulangi Karakter"></p>
+                <p class="info"><strong>Catatan:</strong> simbol @ digunakan untuk mendapatkan input teks.</p>
+
+
+                <p class="h5" id="colors">
+                    warna</p>
+                <p>Anda dapat mengontrol angka positif, angka negatif, nilai nol, dan teks secara bersamaan! Setiap bagian dipisahkan dengan titik koma (;) dalam kode format angka Anda.</p>
+                <p>1. Masukkan nilai berikut di sel A1, B1, C1 dan A2: 5000000, 0, Hi dan -5,89.</p>
+                <p>2. Gunakan kode format angka berikut: [Hijau]$#,##0_);[Merah]$(#,##0);&quot;nol&quot;;[Biru]&quot;Teks:&quot; @</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image043.png" alt=warna></p>
+                <p class="info"><strong>Catatan:</strong> #,## digunakan untuk menambahkan koma ke angka besar. Untuk menambahkan spasi, gunakan garis bawah &quot;_&quot; diikuti dengan karakter. Panjang spasi akan menjadi panjang karakter ini. Dalam contoh kami, kami
+                    menambahkan tanda kurung &quot;)&quot;. Akibatnya, angka positif berbaris dengan benar dengan angka negatif yang diapit tanda kurung. Gunakan dua bagian yang dipisahkan dengan titik koma (;) untuk mengontrol angka positif dan negatif
+                    saja. Gunakan tiga bagian yang dipisahkan dengan titik koma (;) untuk mengontrol angka positif, angka negatif, dan nilai nol saja.</p>
+
+
+                <p class="h5" id="dates-times">
+                    Tanggal dan Waktu</p>
+                <p>Anda juga dapat mengontrol tanggal dan waktu. Gunakan salah satu format Tanggal atau Waktu yang ada sebagai titik awal.</p>
+                <p>1. Masukkan nilai 42855 ke dalam sel A1.</p>
+                <p>2. Pilih sel A1, klik kanan, lalu klik Format Sel.</p>
+                <p>3. Pilih Tanggal dan pilih Tanggal Panjang.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image044.png" alt="Tanggal Panjang"></p>
+                <p class="info"><strong>Catatan:</strong> Excel memberi Anda pratinjau langsung tentang bagaimana nomor akan diformat (di bawah Contoh).</p>
+                <p>4. Pilih Kustom.</p>
+                <p>5. Ubah sedikit kode format angka menjadi: mm/hh/tttt, dddd</p>
+                <p>6. Klik Oke.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image045.png" alt="Format Tanggal Kustom"></p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image046.png" alt=Tanggal></p>
+                <p class="info"><strong>Catatan umum:</strong> format angka kustom disimpan dalam buku kerja tempat Anda membuatnya. Jika Anda menyalin nilai dengan format angka kustom ke buku kerja lain, nilai tersebut juga akan tersedia di buku kerja tersebut.</p>
+
+
+                <p></p>
+                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/format-painter.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                    <p class="bd-lead mb-0" id="FormatPainter">Format Painter</p>
+                </div>
+                <p>Format Painter adalah salah satu fitur yang paling kurang dimanfaatkan dari Excel. Format Painter menyalin pemformatan dari satu tempat dan menerapkannya ke tempat lain.</p>
+                <p>1. Misalnya, pilih sel B2 di bawah ini.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image047.png" alt="Contoh Pelukis Format"></p>
+                <p>2. Pada tab Beranda, dalam grup Clipboard, klik Format Painter.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image048.png" alt="Klik Format Painter"></p>
+                <p>Garis putus-putus bergerak muncul di sekitar sel B2 dan penunjuk tetikus berubah menjadi plus dan kuas.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image049.png" alt="Memindahkan Perbatasan dan Kuas Bergaris-garis"></p>
+                <p>3. Pilih sel D2.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image050.png" alt="Format Painter di Excel"></p>
+                <p class="info"><strong>Catatan:</strong> Format Painter menerapkan format mata uang, warna latar belakang, dan batas sel B2 ke sel D2. Itu menghemat waktu! Alih-alih memilih sel D2, Anda juga bisa memilih Range sel untuk menerapkan format sel B2 ke Range
+                    sel.
+                </p>
+                <p>4. Klik dua kali tombol Format Painter untuk menerapkan pemformatan yang sama ke beberapa sel.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image051.png" alt="Terapkan Pemformatan ke Beberapa Sel"></p>
+                <p class="info"><strong>Catatan:</strong> klik tombol Format Painter lagi (atau tekan Esc) untuk keluar dari mode Format Painter.
+                </p>
+
+                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/cell-styles.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                    <p class="bd-lead mb-0" id="SelStyle">Sel Style</p>
+                </div>
+
+                <p>Memformat sel dengan cepat dengan memilih Sel Style. Anda juga dapat membuat Sel Style Anda sendiri. Memformat Range sel dengan cepat dengan memilih <a href="https://www.excel-easy.com/examples/table-styles.html">gaya tabel</a>.</p>
+                <p>1. Misalnya, pilih sel B2 di bawah ini.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image052.png" alt="Pilih Sel"></p>
+                <p>2. Pada tab Beranda, dalam grup Gaya, pilih Sel Style.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image053.png" alt="Pilih Sel Style"></p>
+                <p>Hasil.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image054.png" alt="Sel Style di Excel"></p>
+                <p>Untuk membuat Sel Style Anda sendiri, jalankan langkah-langkah berikut.</p>
+                <p>3. Pada tab Beranda, di grup Gaya, klik panah kanan bawah.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image055.png" alt="Klik Panah Bawah Kanan Bawah"></p>
+                <p>Di sini Anda dapat menemukan lebih banyak Sel Style.</p>
+                <p>4. Klik Sel Style Baru.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image056.png" alt="Klik Sel Style Baru"></p>
+                <p>5. Masukkan nama dan klik tombol Format untuk menentukan Format Angka, Perataan, Font, Batas, Isi, dan Perlindungan Sel Style Anda. Cukup hapus centang pada kotak centang jika Anda tidak ingin mengontrol jenis pemformatan ini.</p>
+                <p>6. Klik Oke.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image057.png" alt="Gaya Termasuk:"></p>
+                <p>7. Pada tab Beranda, di grup Gaya, terapkan Sel Style Anda sendiri.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image058.png" alt="Terapkan Sel Style Anda Sendiri"></p>
+                <p>Hasil.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image059.png" alt="Sel Style Anda sendiri di Excel"></p>
+                <p class="info"><strong>Catatan:</strong> klik kanan Sel Style untuk mengubah atau menghapusnya. Mengubah Sel Style memengaruhi semua sel dalam buku kerja yang menggunakan Sel Style tersebut. Ini dapat menghemat banyak waktu. Sel Style disimpan dalam
+                    buku kerja tempat Anda membuatnya. Buka buku kerja baru dan klik Gabungkan Gaya (di bawah Sel Style Baru) untuk mengimpor Sel Style (biarkan buku kerja lama dengan Sel Style terbuka).</p>
+
+                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/wrap-text.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                    <p class="bd-lead mb-0" id="BungkusTeks">Bungkus Teks <span class="span-text">(Wrap Text)</span></p>
+                </div>
+                <p><a href="#wrap-text-automatically">Bungkus Teks Secara Otomatis</a> | <a href="#manual-line-break">Hentian Baris Manual</a></p>
+                <p>Bungkus teks di Excel jika Anda ingin menampilkan teks panjang pada beberapa baris dalam satu sel. Bungkus teks secara otomatis atau masukkan jeda baris manual.</p>
+
+
+                <p class="h5" id="wrap-text-automatically">
+                    Bungkus Teks Secara Otomatis</p>
+                <p>1. Misalnya, lihat string teks panjang di sel A1 di bawah ini. Sel B1 kosong.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image060.png" alt="String Teks Panjang di Excel"></p>
+                <p>2. Pada tab Beranda, di grup Perataan, klik Bungkus Teks.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image061.png" alt="Klik Bungkus Teks"></p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image062.png" alt="Teks yang Dibungkus di Excel"></p>
+                <p>3. Klik pada batas kanan header kolom A dan seret pemisah untuk menambah lebar kolom.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image063.png" alt="Ubah Lebar Kolom"></p>
+                <p>4. Klik dua kali batas bawah header baris 1 untuk menyesuaikan tinggi baris secara otomatis.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image064.png" alt="Secara Otomatis Menyesuaikan Tinggi Baris"></p>
+                <p class="info"><strong>Catatan:</strong> jika Anda mengatur tinggi baris secara manual (dengan mengklik batas bawah header baris dan menyeret pemisah), Excel tidak mengubah tinggi baris saat Anda mengklik tombol Bungkus Teks. Cukup klik dua kali batas
+                    bawah header baris untuk memperbaikinya.</p>
+                <p>5. Masukkan string teks ekstra panjang di sel B1 dan bungkus teks di sel ini.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image065.png" alt="String Teks ekstra panjang"></p>
+                <p class="info"><strong>Catatan:</strong> secara default, Excel meratakan teks ke bawah (lihat sel A1).</p>
+                <p>6. Pilih sel A1.</p>
+                <p>7. Pada tab Home, di grup Alignment, klik Top Align.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image066.png" alt="Klik Rata Atas"></p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image067.png" alt="Penjajaran Atas"></p>
+
+
+                <p class="h5" id="manual-line-break">
+                    Hentian Baris Manual</p>
+                <p>Untuk menyisipkan jeda baris manual, jalankan langkah-langkah berikut.</p>
+                <p>1. Misalnya, klik dua kali sel A1.</p>
+                <p>2. Tempatkan kursor Anda di lokasi di mana Anda ingin garis putus.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image068.png" alt=kursor></p>
+                <p>3. Tekan <kbd>Alt</kbd>+<kbd>Enter</kbd>.</p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image069.png" alt="Pemisahan Baris Manual di Excel"></p>
+                <p class="info"><strong>Catatan:</strong> untuk menghapus jeda baris manual, klik dua kali sel, tempatkan kursor Anda di awal baris dan tekan Backspace.</p>
+
+                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/merge-cells.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                    <p class="bd-lead mb-0" id="GabungkanSel">Gabungkan Sel <span class="span-text">(Merge Cells)</span></p>
+                </div>
+                <p>Halaman ini mengilustrasikan cara menggabungkan sel yang dipilih menjadi satu sel besar. Ini bisa berguna jika Anda ingin memperjelas bahwa label di Excel berlaku untuk beberapa kolom.</p>
+                <p>Sebelum Anda mulai: fitur ini hanya menyimpan nilai di sel kiri atas dan menghapus semua nilai lainnya. Gunakan <a href="#">fungsi CONCATENATE</a> di Excel untuk menggabungkan (menggabungkan) string.</p>
+                <p>1. Masukkan label di sel A1.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image070.png" alt="Masukkan Label di Excel"></p>
+                <p>2. Pilih Range A1:G1.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image071.png" alt="Pilih Range"></p>
+                <p>3. Pada tab Beranda, dalam grup Alignment, klik Merge &amp; Center.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image072.png" alt="Klik Gabung &amp; Tengah"></p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image073.png" alt="Sel yang Digabung di Excel"></p>
+                <p class="info"><strong>Catatan:</strong> pada tab Beranda, di grup Perataan, gunakan 6 tombol perataan untuk mengubah perataan teks dalam sel.</p>
+                <p>Ingat, Excel hanya menyimpan nilai di sel kiri atas dan menghapus semua nilai lainnya.</p>
+                <p>1. Misalnya, masukkan label di sel A1, B1 dan C1 dan pilih sel ini.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image074.png" alt="Pilih Beberapa Sel"></p>
+                <p>2. Pada tab Beranda, dalam grup Alignment, klik Merge &amp; Center.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image072.png" alt="Klik Gabung &amp; Tengah"></p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image075.png" alt="Excel Menghapus Semua Nilai Lainnya"></p>
+                <p class="info"><strong>Catatan:</strong> pada tab Beranda, dalam grup Perataan, klik Gabungkan &amp; Tengahkan lagi untuk memisahkan sel (sel B1 dan C1 akan kosong). Tekan <kbd>Ctrl</kbd>+<kbd>Z</kbd> untuk membatalkan tindakan ini.</p>
+
+                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/strikethrough.xlsm" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                    <p class="bd-lead mb-0" id="Dicoret">Dicoret <span class="span-text">(Strikethrough)</span></p>
+                </div>
+                <p>Contoh ini mengajarkan Anda bagaimana menerapkan pemformatan coret di Excel. Anda masih dapat membaca teks dengan efek coret.</p>
+                <p>1. Misalnya, pilih Range A2:A4.</p>
+                <p>2. Klik kanan, lalu klik Format Cells (atau tekan <kbd>Ctrl</kbd>+<kbd>1</kbd>).</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image076.png" alt="Format Sel"></p>
+                <p>Kotak dialog 'Format Sel' muncul.</p>
+                <p>3. Pada tab Font, di bawah Efek, klik Coret.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image077.png" alt="Klik Dicoret"></p>
+                <p>4. Klik Oke.</p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image078.png" alt="Pemformatan Coret di Excel"></p>
+                <p>Anda juga dapat menggunakan pintasan keyboard untuk menerapkan pemformatan coret dengan cepat di Excel.</p>
+                <p>5. Misalnya, pilih sel A7.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image079.png" alt="Pilih Sel"></p>
+                <p>6. Tekan <kbd>Ctrl</kbd>+<kbd>5</kbd>.</p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image080.png" alt="Pintasan Coret"></p>
+                <p class="info"><strong>Catatan:</strong> cukup tekan <kbd>Ctrl</kbd>+
+                    <5bd>1</kbd> lagi untuk menghilangkan efek coret. Tidak ada opsi coretan ganda di Excel.</p>
+                <p>7. Untuk menerapkan pemformatan coret hanya pada bagian sel, pertama-tama pilih teks di bilah rumus.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image081.png" alt="Pilih Teks"></p>
+                <p>8. Tekan <kbd>Ctrl</kbd>+<kbd>5</kbd>.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image082.png" alt="Bagian Sel yang Dicoret"></p>
+                <p>Mari kita lihat 2 cara keren lainnya untuk menerapkan pemformatan coret dengan cepat di Excel.</p>
+                <p>9. Tambahkan tombol coret ke <a href="#">Bilah Alat Akses Cepat</a>.</p>
+                <p>10. Pilih sel A5 dan klik tombol coret.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image083.png" alt="Klik Tombol Dicoret"></p>
+                <p>11. Tambahkan baris kode berikut ke <a href="#">BeforeDoubleClick Event</a> :</p>
+                <p>Target.Font.Strikethrough = Benar<br> Batal = Benar</p>
+                <p>12. Klik dua kali sel A6.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image084.png" alt="Klik Dua Kali untuk Dicoret"></p>
+                <p class="info"><strong>Catatan:</strong> coba sendiri. Unduh file Excel, gunakan tombol coret atau klik dua kali sel untuk menerapkan pemformatan coretan dengan cepat.</p>
+
+                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/superscript-subscript.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                    <p class="bd-lead mb-0" id="SuperskripdanSubskrip">Superskrip dan Subskrip <span class="span-text">(Superscript and Subscript)</span></p>
+                </div>
+                <p>Sangat mudah untuk memformat karakter sebagai superskrip (sedikit di atas garis dasar) atau subskrip (sedikit di bawah garis dasar) di Excel.</p>
+                <p>1. Misalnya, klik dua kali sel A1.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image085.png" alt="Sel Klik Dua Kali"></p>
+                <p>2. Pilih nilai 2.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image086.png" alt="Pilih Karakter"></p>
+                <p>3. Klik kanan, lalu klik Format Cells (atau tekan <kbd>Ctrl</kbd>+<kbd>1</kbd>).</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image087.png" alt="Format Sel"></p>
+                <p>Kotak dialog 'Format Sel' muncul.</p>
+                <p>4. Pada tab Font, di bawah Efek, klik Superscript.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image088.png" alt="Klik Superskrip"></p>
+                <p>5. Klik Oke.</p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image089.png" alt="Superskrip di Excel"></p>
+                <p>6. Tak perlu dikatakan, efek superskrip tidak dapat mengembalikan hasil. Untuk mengkuadratkan angka, gunakan rumus seperti ini:
+                </p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image090.png" alt="Kuadratkan Angka"></p>
+                <p class="info"><strong>Catatan:</strong> untuk menyisipkan simbol tanda sisipan ^, tekan <kbd>Shift</kbd>+<kbd>6</kbd>.</p>
+                <p>7. Untuk memformat karakter sebagai subskrip (sedikit di bawah garis dasar), ulangi langkah 1-5 tetapi pada langkah 4 klik Subskrip.</p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image091.png" alt="Subskrip di Excel"></p>
+                <p>8. Tahukah Anda bahwa Anda juga dapat menyisipkan persamaan di Excel? Pada tab Sisipkan, di grup Simbol, klik Persamaan.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image092.png" alt="Sisipkan Persamaan"></p>
+                <p class="info"><strong>Catatan:</strong> persamaan di Excel adalah objek mengambang dan tidak mengembalikan hasil.</p>
+
+                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/check-mark.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                    <p class="bd-lead mb-0" id="TandaCek">Tanda Cek <span class="span-text">(Check Mark)</span></p>
+                </div>
+                <p>Untuk menyisipkan simbol tanda centang di Excel, cukup tekan <kbd>Shift</kbd>+<kbd>P</kbd> dan gunakan font Wingdings 2. Anda juga dapat menyisipkan <a href="#">kotak centang</a> di Excel.</p>
+                <p>1. Pilih sel A1 dan tekan <kbd>Shift</kbd>+<kbd>P</kbd> untuk menyisipkan huruf besar P.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image093.png" alt="SHIFT + P"></p>
+                <p>2. Pada tab Home, di grup Font, pilih font Wingdings 2. Untuk menyisipkan tanda centang mewah, ubah warna font menjadi hijau, ubah ukuran font menjadi 12 dan terapkan pemformatan tebal.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image094.png" alt="Sayap 2 Font"></p>
+                <p>3. Pada tab Home, di grup Alignment, gunakan tombol Align untuk memusatkan tanda centang secara horizontal dan vertikal.
+                </p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image095.png" alt="Tanda Centang Tengah"></p>
+                <p>Hasil. Tanda centang di Excel.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image096.png" alt="Tanda Centang di Excel"></p>
+                <p>4. Untuk menyisipkan X merah mewah, tekan <kbd>Shift</kbd>+<kbd>O</kbd> untuk memasukkan huruf kapital O dan ubah warna font menjadi merah.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image097.png" alt="X merah"></p>
+                <p>5. Sekarang Anda dapat membuat daftar tugas yang bagus yang menggunakan tanda centang. Gunakan
+                    <kbd>Ctrl</kbd>+<kbd>C</kbd> dan <kbd>Ctrl</kbd>+<kbd>V</kbd> untuk menyalin/menempelkan tanda centang atau X merah.
+                </p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image098.png" alt="Tanda Centang di Excel"></p>
+                <p>Alih-alih menjalankan langkah 1 dan 2, Anda juga dapat menggunakan tab Sisipkan untuk menyisipkan simbol tanda centang. Di sini Anda dapat menemukan simbol lain juga.</p>
+                <p>6. Pada tab Sisipkan, di grup Simbol, klik Simbol.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image099.png" alt="Klik Simbol"></p>
+                <p>7. Pilih Wingdings 2 dari daftar drop-down, pilih tanda centang dan klik Insert.</p>
+                <p><img class="img-fluid" src="../excel/files/FormatCells-contoh_files/image100.png" alt="Sisipkan Tanda Centang"></p>
+                <p class="info"><strong>Catatan:</strong> Anda juga dapat menyisipkan simbol tanda centang dengan kotak di sekitarnya (lihat gambar di atas). Setelah menyisipkan satu tanda centang, Anda dapat menggunakan simbol Baru-baru ini digunakan untuk menyisipkan
+                    tanda centang lainnya dengan cepat.
+                </p>
+            </details>
+
         </div>
     </div>
 </div>

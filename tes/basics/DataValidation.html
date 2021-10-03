@@ -1,66 +1,80 @@
 <div class="accordion-item">
     <h2 class="accordion-header" id="ValidasiData">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-ValidasiData" aria-expanded="false" aria-controls="flush-ValidasiData">Validasi Data</button>
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-ValidasiData" aria-expanded="false" aria-controls="flush-ValidasiData">
+            <figure>
+                <blockquote class="blockquote">
+                    <p>Data Validation</p>
+                </blockquote>
+                <figcaption class="blockquote-footer fw-light">
+                    memasukkan nilai tertentu ke dalam sel.
+                </figcaption>
+            </figure>
+        </button>
     </h2>
     <div id="flush-ValidasiData" class="accordion-collapse collapse" aria-labelledby="ValidasiData" data-bs-parent="#accordionDasar">
         <div class="accordion-body">
-            <!-- <a href="#">Tolak Tanggal Tidak Valid</a> | <a href="#">Budget Limit</a> | <a href="#">Cegah Entri Duplikat</a> | <a href="#">Kode Produk</a> | <a href="#">Daftar
-                                    Drop-Down</a> | <a href="#">Daftar Drop-Down Dependen</a> | <a href="#">Cm ke Inci |
-                                    <a href="#">Kg ke Lbs</a> -->
 
             <section>
-                <!-- <p class="h4">Validasi data</p> -->
-                <p class="link-text"><a href="#ContohValidasiData">Contoh Validasi Data</a> | <a href="#BuatAturanValidasiData">Buat Aturan Validasi Data</a> | <a href="#PesanMasukan">Masukkan Pesan</a> | <a href="#PeringatanKesalahan">Peringatan Kesalahan</a> | <a href="#HasilValidasiData">Hasil Validasi Data</a></p>
-                <p>Gunakan validasi data di Excel untuk memastikan bahwa pengguna memasukkan nilai tertentu ke dalam sel.</p>
-                <p class="h5" id="ContohValidasiData">
-                    Contoh Validasi Data</p>
+                <p class="link-text"><a href="#ContohValidasiData">Contoh Data Validation</a> | <a href="#BuatAturanValidasiData">Buat Aturan Data Validation</a> | <a href="#PesanMasukan">Masukkan Pesan</a> | <a href="#PeringatanKesalahan">Peringatan Kesalahan</a> | <a href="#HasilValidasiData">Hasil Data Validation</a></p>
+
+                <p>Gunakan Data Validation di Excel untuk memastikan bahwa pengguna memasukkan nilai tertentu ke dalam sel.</p>
+
+                <p class="h5" id="ContohValidasiData">Contoh Data Validation</p>
+
                 <p>Dalam contoh ini, kami membatasi pengguna untuk memasukkan bilangan bulat antara 0 dan 10.</p>
-                <p><img class="img-fluid" src="../excel/files/DataValidation_files/image001.png" alt="Contoh Validasi Data Excel"></p>
+                <p><img class="img-fluid" src="../excel/files/DataValidation_files/image001.png" alt="Contoh Data Validation Excel"></p>
+
                 <p class="h5" id="BuatAturanValidasiData">
-                    Buat Aturan Validasi Data
+                    Buat Aturan Data Validation
                 </p>
-                <p>Untuk membuat aturan validasi data, jalankan langkah-langkah berikut.</p>
+                <p>Untuk membuat aturan Data Validation, jalankan langkah-langkah berikut.</p>
                 <ol>
                     <li>Pilih sel C2.</li>
                     <li>
-                        <p>Pada tab Data, dalam grup Alat Data, klik Validasi Data.</p>
-                        <p><img class="img-fluid" src="../excel/files/DataValidation_files/image002.png" alt="Klik Validasi Data"></p>
-                        <p>Pada tab Pengaturan:</p>
+                        <p>Pada tab Data, dalam grup Data Tools, klik Data Validation.</p>
+                        <p><img class="img-fluid" src="../excel/files/DataValidation_files/image002.png" alt="Klik Data Validation"></p>
+                        <p>Pada tab Settings:</p>
                     </li>
-                    <li>Dalam daftar Izinkan, klik Bilangan bulat.</li>
-                    <li>Dalam daftar Data, klik di antara.</li>
+                    <li>Dalam daftar Allow, klik Whole number.</li>
+                    <li>Dalam daftar Data, klik di between.</li>
                     <li>
                         <p>Masukkan nilai Minimum dan Maksimum.</p>
                         <p><img class="img-fluid" src="../excel/files/DataValidation_files/image003.png" alt="Kriteria Validasi"></p>
                     </li>
                 </ol>
+
+
                 <p class="h5" id="PesanMasukan">
                     Pesan Masukan</p>
                 <p>Pesan input muncul ketika pengguna memilih sel dan memberi tahu pengguna apa yang harus dimasukkan.</p>
-                <p>Pada tab Pesan Masukan:</p>
+                <p>Pada tab Input Message:</p>
                 <ol>
-                    <li>Centang 'Tampilkan pesan masukan saat sel dipilih'.</li>
-                    <li>Masukkan judul.</li>
+                    <li>Centang 'Show input message when cell is selected'.</li>
+                    <li>Masukkan Title.</li>
                     <li>
-                        <p>Masukkan pesan masukan.</p>
-                        <p><img class="img-fluid" src="../excel/files/DataValidation_files/image004.png" alt="Masukkan Pesan Masukan"></p>
+                        <p>Masukkan Input message.</p>
+                        <p><img class="img-fluid" src="../excel/files/DataValidation_files/image004.png" alt=""></p>
                     </li>
                 </ol>
+
+
                 <p class="h5" id="PeringatanKesalahan">
                     Peringatan Kesalahan</p>
                 <p>Jika pengguna mengabaikan pesan input dan memasukkan nomor yang tidak valid, Anda dapat menunjukkan peringatan kesalahan kepada mereka.</p>
-                <p>Pada tab Peringatan Kesalahan:</p>
+                <p>Pada tab Error Alert:</p>
                 <ol>
-                    <li>Centang 'Tampilkan peringatan kesalahan setelah data yang dimasukkan tidak valid'.</li>
-                    <li>Masukkan judul.</li>
+                    <li>Centang 'Show error alert after invalid data is entered'.</li>
+                    <li>Masukkan Title.</li>
                     <li>
-                        <p>Masukkan pesan kesalahan.</p>
-                        <p><img class="img-fluid" src="../excel/files/DataValidation_files/image005.png" alt="Masukkan Pesan Kesalahan"></p>
+                        <p>Masukkan Error message.</p>
+                        <p><img class="img-fluid" src="../excel/files/DataValidation_files/image005.png" alt="Masukkan Error message"></p>
                     </li>
                     <li>Klik Oke.</li>
                 </ol>
+
+
                 <p class="h5" id="HasilValidasiData">
-                    Hasil Validasi Data</p>
+                    Hasil Data Validation</p>
                 <ol>
                     <li>
                         <p>Pilih sel C2.</p>
@@ -70,10 +84,23 @@
                         <p>Coba masukkan angka yang lebih tinggi dari 10.</p>
                         <p>Hasil:</p>
                         <p><img class="img-fluid" src="../excel/files/DataValidation_files/image007.png" alt="Peringatan Kesalahan"></p>
-                        <p class="info"><strong>Catatan:</strong> untuk menghapus validasi data dari sel, pilih sel, pada tab Data, dalam grup Alat Data, klik Validasi Data, lalu klik Hapus Semua. Anda dapat menggunakan fitur <a href="#FindDanSelect">Go To Special</a>                            Excel untuk memilih semua sel dengan cepat dengan validasi data.
-                        </p>
+                        <p class="info text-break"><strong>Catatan:</strong> untuk menghapus Data Validation dari sel, pilih sel, pada tab Data, dalam grup Data Tools, klik Data Validation, lalu klik Hapus Semua. Anda dapat menggunakan fitur <a href="#FindDanSelect">Go To Special</a>                            Excel untuk memilih semua sel dengan cepat dengan Data Validation.</p>
                     </li>
                 </ol>
+                <a class="d-flex justify-content-end" href="#ValidasiData">kembali keatas</a>
+            </section>
+
+            <section id="ContohPenggunaanDataValidation">
+                <details>
+                    <summary class="lead border-bottom py-2">Contoh Penggunaan Data Validation</summary>
+                    <p class="link-text mt-2">
+                        <a href="#">Tolak Tanggal Tidak Valid</a> | <a href="#">Budget Limit</a> | <a href="#">Cegah
+                            Entri Duplikat</a> | <a href="#">Kode Produk</a> | <a href="#">Daftar Drop-Down</a> | <a href="#">Daftar Drop-Down Dependen</a> | <a href="#">Cm ke Inci | <a href="#">Kg ke Lbs</a>
+                    </p>
+
+                    <a class="d-flex justify-content-end" href="#ContohPenggunaanDataValidation">kembali keatas</a>
+
+                </details>
             </section>
 
         </div>

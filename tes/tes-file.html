@@ -4,426 +4,373 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-<kbd>F3</kbd>w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <title>Hello, world!</title>
 </head>
 
 <body>
-
-    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
-        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-        <p class="bd-lead mb-0" id="TolakDateTidakValid">Tolak Date Tidak Valid <span class="span-text">(Reject Invalid Dates)</span></p>
-    </div>
+    <p>Pintasan Keyboard </p>
     <p>
-        <a href="#outside-date-range">Di luar Rentang Date</a> |
-        <a href="#sundays-saturdays">Minggu dan Sabtu</a>
+        <a href="#basic">Dasar</a> |
+        <a href="#moving">Bergerak</a> |
+        <a href="#selecting">Memilih</a> |
+        <a href="#formulas">Rumus</a> |
+        <a href="#formatting">Memformat</a>
     </p>
-
-    <p>Contoh ini mengajarkan Anda bagaimana menggunakan Data Validation untuk menolak tanggal yang tidak valid.</p>
-    <p>1. Pilih range A2:A4.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image001.png" alt="Pilih Rentang di Excel"></p>
-    <p>2. Pada tab Data, dalam grup Data Tools, klik Data Validation. </p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image002.png" alt="Klik Data Validation">
+    <p>Pintasan keyboard memungkinkan Anda melakukan berbagai hal dengan keyboard daripada mouse untuk meningkatkan kecepatan.
     </p>
-
-
-    <p class="sub-judul" id="outside-date-range">
-        Di luar Rentang Date <span class="span-text">(Outside a Date Range)</span></p>
-    <p>3. Dalam daftar Allow, klik Date.</p>
-    <p>4. Dalam daftar Data, klik between.</p>
-    <p>5. Masukkan Start date dan End date yang ditunjukkan di bawah ini dan klik OK.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image003.png" alt="Kriteria Validasi"></p>
-    <p class="info"><strong>Penjelasan:</strong> semua tanggal antara 20/5/2016 dan tanggal hari ini + 5 hari diperbolehkan. Semua tanggal di luar range tanggal ini ditolak. </p>
-    <p>6. Masukkan tanggal 19/5/2016 ke dalam sel A2.</p>
-    <p>Hasil. Excel menunjukkan peringatan error.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image004.png" alt="Date Di Luar Rentang Date Ditolak"></p>
-    <p class="info"><strong>Catatan:</strong> untuk memasukkan pesan input dan pesan peringatan error, buka tab Input Message dan Error Alert.</p>
-
-
-    <p class="sub-judul" id="sundays-saturdays">
-        Minggu dan Sabtu <span class="span-text">(Sundays and Saturdays)</span></p>
-    <p>3. Dalam daftar Allow, klik Custom.</p>
-    <p>4. Di kotak Formula, masukkan rumus yang ditunjukkan di bawah ini dan klik OK.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image005.png" alt="Rumus Data Validation"></p>
-    <p class="info"><strong>Penjelasan:</strong> fungsi WEEKDAY mengembalikan angka dari 1 (Minggu) hingga 7 (Sabtu) yang mewakili hari dalam seminggu dari suatu tanggal. Jika hari kerja tanggal tidak sama dengan 1 (Minggu) DAN tidak sama dengan 7 (Sabtu), tanggal diperbolehkan
-        (&lt;&gt; berarti tidak sama dengan). Dengan kata lain, Senin, Selasa, Rabu, Kamis dan Jumat diperbolehkan. Minggu dan Sabtu ditolak. Karena kami memilih range A2:A4 sebelum kami mengklik Data Validation, Excel secara otomatis menyalin rumus ke
-        sel lain.</p>
-    <p>5. Untuk memeriksa ini, pilih sel A3 dan klik Data Validation.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image006.png" alt="Pemeriksaan Rumus"></p>
-    <p>Seperti yang Anda lihat, sel ini juga berisi rumus yang benar.</p>
-    <p>6. Masukkan tanggal 27/8/2016 (Saturday) ke sel A2.</p>
-    <p>Hasil. Excel menunjukkan peringatan error.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image007.png" alt="Minggu dan Sabtu Ditolak"></p>
-    <p class="info"><strong>Catatan:</strong> untuk memasukkan pesan input dan pesan peringatan error, buka tab Input Message dan Error Alert.</p>
-
-
-    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
-        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-        <p class="bd-lead mb-0" id="BatasAnggaran">Batas Anggaran <span class="span-text">(Budget Limit)</span></p>
-    </div>
-    <p>Contoh ini mengajarkan Anda cara menggunakan Data Validation untuk mencegah pengguna melebihi batas anggaran.</p>
-    <p>1. Pilih range B2:B8.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image008.png" alt="Contoh Batas Anggaran di Excel"></p>
-    <p class="info"><strong>Catatan:</strong> sel B10 berisi fungsi <strong>SUM</strong> yang menghitung jumlah range B2:B8.</p>
-    <p>2. Pada tab Data, dalam grup Data Tools, klik Data Validation.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image002.png" alt="Klik Data Validation"></p>
-    <p>3. Dalam daftar Allow, klik Custom.</p>
-    <p>4. Di kotak Formula, masukkan rumus yang ditunjukkan di bawah ini dan klik OK.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image009.png" alt="Rumus Data Validation"></p>
-    <p class="info"><strong>Penjelasan:</strong> jumlah range B2:B8 tidak boleh melebihi batas anggaran $100. Oleh karena itu, kami menerapkan Data Validation ke range B2:B8 (bukan sel B10!) karena di sinilah nilai dimasukkan. Karena kami memilih range B2:B8 sebelum
-        kami mengklik Data Validation, Excel secara otomatis menyalin rumus ke sel lain. Perhatikan bagaimana kami membuat <a href="#">referensi absolut</a> ($B$2:$B$8) untuk memperbaiki referensi ini.</p>
-    <p>5. Untuk memeriksa ini, pilih sel B3 dan klik Data Validation.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image010.png" alt="Pemeriksaan Rumus"></p>
-    <p>Seperti yang Anda lihat, sel ini juga berisi rumus yang benar.</p>
-    <p>6. Masukkan nilai 30 ke dalam sel B7.</p>
-    <p>Hasil. Excel menunjukkan peringatan error. Anda tidak dapat melebihi batas anggaran Anda sebesar $100.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image011.png" alt="Hasil Batas Anggaran">
+    <p class="sub-judul" id="">
+        Dasar</p>
+    <p>Pilih sel B2.</p>
+    <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image001.png" alt="Contoh Dasar"></p>
+    <p>1. Untuk memilih seluruh range, tekan <kbd>Ctrl</kbd>+<kbd>A</kbd> (jika Anda menekan
+        <kbd>Ctrl</kbd>+<kbd>A</kbd> sekali lagi Excel memilih seluruh lembar).</p>
+    <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image002.png" alt=" a"></p>
+    <p>2. Untuk menyalin range, tekan <kbd>Ctrl</kbd>+<kbd>C</kbd> (untuk memotong range, tekan
+        <kbd>Ctrl</kbd>+<kbd>X</kbd>).</p>
+    <p>3. Pilih sel A6 dan tekan <kbd>Ctrl</kbd>+<kbd>V</kbd> untuk menempelkan range ini.</p>
+    <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image003.png" alt=" v"></p>
+    <p>4. Untuk membatalkan operasi ini, tekan <kbd>Ctrl</kbd>+<kbd>Z</kbd></p>
+    <p class="sub-judul" id="">
+        Bergerak</p>
+    <p>Pilih sel B2.</p>
+    <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image001.png" alt="Contoh Bergerak">
     </p>
-    <p class="info"><strong>Catatan:</strong> untuk memasukkan pesan peringatan error, buka tab Error Alert.
+    <p>1. Untuk berpindah ke bagian bawah range dengan cepat, tahan <kbd>Ctrl</kbd> dan tekan <kbd>↓</kbd></p>
+    <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image004.png" alt=" bawah"></p>
+    <p>2. Untuk bergerak cepat ke kanan range, tahan <kbd>Ctrl</kbd> dan tekan <kbd>&#8594;</kbd></p>
+    <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image005.png" alt=" kanan"></p>
+    <p>Cobalah sendiri. Tahan <kbd>Ctrl</kbd> dan tekan tombol panah untuk berpindah dari ujung ke ujung.</p>
+    <p class="sub-judul" id="">
+        Memilih</p>
+    <p>Pilih sel A1.</p>
+    <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image006.png" alt="Memilih Contoh"></p>
+    <p>1. Untuk memilih sel saat bergerak ke bawah, tahan <kbd>Shift</kbd> dan tekan <kbd>↓</kbd> beberapa kali.</p>
+    <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image007.png" alt="Shift + bawah"></p>
+    <p>2. Untuk memilih sel sambil bergerak ke kanan, tahan <kbd>Shift</kbd> dan tekan <kbd>&#8594;</kbd> beberapa kali.
     </p>
-
-    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
-        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-        <p class="bd-lead mb-0" id="CegahEntriDuplikat">Cegah Entri Duplikat <span class="span-text">(Prevent Duplicate Entries)</span></p>
-    </div>
-    <p>Contoh ini mengajarkan Anda cara menggunakan Data Validation untuk mencegah pengguna memasukkan nilai duplikat.</p>
-    <p>1. Pilih range A2:A20.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image012.png" alt="Mencegah Duplikat Entri Contoh"></p>
-    <p>2. Pada tab Data, dalam grup Data Tools, klik Data Validation. </p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image002.png" alt="Klik Data Validation">
+    <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image008.png" alt="Shift + kanan"></p>
+    <p class="sub-judul" id="">
+        Rumus</p>
+    <p>Pilih sel F2.</p>
+    <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image009.png" alt="Contoh Rumus"></p>
+    <p>1. Untuk memasukkan fungsi SUM dengan cepat, tekan <kbd>Alt</kbd>+<kbd>+</kbd>+<kbd>=</kbd>, dan tekan Enter.</p>
+    <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image010.png" alt="Atl + ="></p>
+    <p>2. Pilih sel F2, tahan <kbd>Shift</kbd> dan tekan <kbd>↓</kbd> dua kali.</p>
+    <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image011.png" alt="Shift + bawah"></p>
+    <p>3. Untuk mengisi rumus ke bawah, tekan <kbd>Ctrl</kbd>+<kbd>D</kbd> (bawah).</p>
+    <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image012.png" alt=" d"></p>
+    <p class="info"><strong>Catatan:</strong> dengan cara yang sama, Anda dapat mengisi rumus dengan benar dengan menekan <kbd>Ctrl</kbd>+<kbd>R</kbd> (kanan).</p>
+    <p class="sub-judul" id="">
+        Memformat</p>
+    <p>Pilih range B2:F4.</p>
+    <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image013.png" alt="Contoh Pemformatan">
     </p>
-    <p>3. Dalam daftar Allow, klik Custom.</p>
-    <p>4. Di kotak Formula, masukkan rumus yang ditunjukkan di bawah ini dan klik OK.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image013.png" alt="Rumus Data Validation">
+    <p>1. Untuk meluncurkan kotak dialog 'Format sel', tekan <kbd>Ctrl</kbd>+<kbd>1</kbd></p>
+    <p>2. Tekan TAB dan tekan <kbd>↓</kbd> dua kali untuk memilih format Currency <span class="span-text">(Mata
+            Uang)</span>.
     </p>
-    <p class="info"><strong>Penjelasan:</strong> Fungsi <a href="#">COUNTIF</a> membutuhkan dua argumen. =COUNTIF($A$2:$A$20,A2) menghitung jumlah nilai dalam range A2:A20 yang sama dengan nilai di sel A2. Nilai ini hanya dapat muncul sekali (=1) karena kami tidak ingin
-        entri duplikat. Karena kami memilih range A2:A20 sebelum kami mengklik Data Validation, Excel secara otomatis menyalin rumus ke sel lain. Perhatikan bagaimana kami membuat <a href="#">referensi absolut</a> ($A$2:$A$20) untuk memperbaiki referensi
-        ini.
-    </p>
-    <p>5. Untuk memeriksa ini, pilih sel A3 dan klik Data Validation.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image014.png" alt="Pemeriksaan Rumus"></p>
-    <p>Seperti yang Anda lihat, fungsi ini menghitung jumlah nilai dalam range A2:A20 yang sama dengan nilai di sel A3. Sekali lagi, nilai ini hanya dapat muncul sekali (=1) karena kami tidak ingin entri duplikat.</p>
-    <p>6. Masukkan nomor faktur duplikat.</p>
-    <p>Hasil. Excel menunjukkan peringatan error. Anda telah memasukkan nomor invoice number.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image015.png" alt="Cegah Entri Duplikat di Excel"></p>
-    <p class="info"><strong>Catatan:</strong> untuk memasukkan pesan input dan pesan peringatan error, buka tab Input Message dan Error Alert.</p>
-
-
-    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
-        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-        <p class="bd-lead mb-0" id="KodeProduk">Kode Produk <span class="span-text">(Product Codes)</span></p>
-    </div>
-    <p>Contoh ini mengajarkan Anda cara menggunakan Data Validation untuk mencegah pengguna memasukkan kode produk yang salah.
-    </p>
-    <p>1. Pilih range A2:A7.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image016.png" alt="Pilih Rentang di Excel"></p>
-    <p>2. Pada tab Data, dalam grup Data Tools, klik Data Validation.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image002.png" alt="Klik Data Validation">
-    </p>
-    <p>3. Dalam daftar Allow, klik Custom.</p>
-    <p>4. Di kotak Formula, masukkan rumus yang ditunjukkan di bawah ini dan klik OK.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image017.png" alt="Rumus Data Validation">
-    </p>
-    <p class="info"><strong>Penjelasan:</strong> fungsi <strong>AND</strong> ini memiliki tiga argumen. <strong>LEFT</strong>(A2)=&quot;C&quot; memaksa pengguna untuk memulai dengan huruf C. <strong>LEN</strong>(A2)=4 memaksa pengguna untuk memasukkan string dengan panjang
-        4 karakter. <strong>ISNUMBER</strong>(VALUE(RIGHT(A2,3))) memaksa pengguna untuk mengakhiri dengan 3 angka. <strong>RIGHT</strong>(A2,3) mengekstrak 3 karakter paling kanan dari string teks. Fungsi <strong>VALUE</strong> mengonversi string teks
-        ini menjadi angka. <strong>ISNUMBER</strong> memeriksa apakah nilai ini adalah angka. Fungsi <strong>AND</strong> mengembalikan <strong>TRUE</strong> jika semua kondisi benar. Karena kami memilih range A2:A7 sebelum kami mengklik Data Validation,
-        Excel secara otomatis menyalin rumus ke sel lain.</p>
-    <p>5. Untuk memeriksa ini, pilih sel A3 dan klik Data Validation.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image018.png" alt="Pemeriksaan Rumus"></p>
-    <p>Seperti yang Anda lihat, sel ini juga berisi rumus yang benar.</p>
-    <p>6. Masukkan kode produk yang salah.</p>
-    <p>Hasil. Excel menunjukkan peringatan error.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image019.png" alt="Kode Produk Salah"></p>
-    <p class="info"><strong>Catatan:</strong> untuk memasukkan pesan input dan pesan peringatan error, buka tab Input Message dan Error Alert.</p>
-
-
-    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
-        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-        <p class="bd-lead mb-0" id="DaftarDrop-down">Daftar Drop-down</p>
-    </div>
+    <p>3. Tekan TAB dan tekan <kbd>↓</kbd> dua kali untuk mengatur jumlah tempat desimal ke 0.</p>
+    <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image014.png" alt="Kotak dialog Format Sel"></p>
+    <p>4. Tekan <kbd>Enter</kbd>.</p>
+    <p>Hasil:</p>
+    <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image015.png" alt=" 1"></p>
+    <p>5. Untuk menebalkan range dengan cepat, pilih range dan tekan <kbd>Ctrl</kbd>+<kbd>B</kbd></p>
+    <p>Tombol Fungsi</p>
     <p>
-        <a href="#create-drop-down-list">Buat List Drop-down</a> |
-        <a href="#allow-other-entries">Ijinkan Entri Lainnya</a> |
-        <a href="#add-remove-items">Tambah/Hapus Item</a> |
-        <a href="#dynamic-drop-down-list">List Drop-down Dinamis</a> |
-        <a href="#remove-drop-down-list">Hapus List Drop-down</a> |
-        <a href="#dependent-drop-down-lists">List Drop-down Dependen</a> |
-        <a href="#table-magic">Table Magic</a>
+        <a href="#f1"><kbd>F1</kbd></a> |
+        <a href="#f2"><kbd>F2</kbd></a> |
+        <a href="#f3"><kbd>F3</kbd></a> |
+        <a href="#f4"><kbd>F4</kbd></a> |
+        <a href="#f5"><kbd>F5</kbd></a> |
+        <a href="#f6"><kbd>F6</kbd></a> |
+        <a href="#f7"><kbd>F7</kbd></a> |
+        <a href="#f8"><kbd>F8</kbd></a> |
+        <a href="#f9"><kbd>F9</kbd></a> |
+        <a href="#f10"><kbd>F10</kbd></a> |
+        <a href="#f11"><kbd>F11</kbd></a> |
+        <a href="#f12"><kbd>F12</kbd></a>
     </p>
-    <p>List drop-down di Excel sangat membantu jika Anda ingin memastikan bahwa pengguna memilih item dari daftar, daripada mengetik nilainya sendiri.</p>
-
-
-    <p class="sub-judul" id="create-drop-down-list">
-        Buat List Drop-down</p>
-    <p>Untuk membuat daftar drop-down di Excel, jalankan langkah-langkah berikut.</p>
-    <p>1. Pada lembar kedua, ketik item yang ingin Anda tampilkan di daftar drop-down.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image020.png" alt=item></p>
-    <p class="info"><strong>Catatan:</strong> jika Anda tidak ingin pengguna mengakses item di Sheet2, Anda dapat menyembunyikan Sheet2. Untuk mencapai ini, klik kanan pada tab lembar Sheet2 dan klik Hide.</p>
-    <p>2. Pada lembar pertama, pilih sel B1.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image021.png" alt="Pilih Sel"></p>
-    <p>3. Pada tab Data, dalam grup Data Tools, klik Data Validation.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image002.png" alt="Klik Data Validation">
+    <p>Tombol fungsi memungkinkan Anda melakukan berbagai hal dengan keyboard daripada mouse untuk meningkatkan kecepatan.
     </p>
-    <p>Kotak dialog 'Data Validation' muncul.</p>
-    <p>4. Dalam kotak Allow, klik List.</p>
-    <p>5. Klik di kotak Source dan pilih range A1:A3 pada Sheet2.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image022.png" alt="Kriteria Validasi"></p>
-    <p>6. Klik Oke.</p>
-    <p>Hasil:</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image023.png" alt="List Drop-down di Excel"></p>
-    <p class="info"><strong>Catatan:</strong> untuk menyalin/menempelkan daftar drop-down, pilih sel dengan daftar drop-down dan tekan <kbd>Ctrl</kbd>+<kbd>C</kbd>, pilih sel lain dan tekan <kbd>Ctrl</kbd>+<kbd>V</kbd>.</p>
-    <p>7. Anda juga dapat mengetikkan item secara langsung ke dalam kotak Source, daripada menggunakan referensi range.
+    <p class="sub-judul" id="">
+        <kbd>F1</kbd></p>
+    <p>Membuka Bantuan Excel.</p>
+    <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image016.png" alt=<kbd>F1</kbd>></p>
+    <p class="sub-judul" id="">
+        <kbd>F2</kbd></p>
+    <p>Memindahkan titik penyisipan ke akhir konten sel yang aktif. Misalnya, pilih sel B6 di bawah ini dan tekan
+        <kbd>F2</kbd>.</p>
+    <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image017.png" alt=<kbd>F2</kbd>></p>
+    <p class="info"><strong>Catatan:</strong> matikan Izinkan pengeditan langsung di sel (File, Opsi, Tingkat Lanjut, Opsi Pengeditan) dan menekan <kbd>F2</kbd> akan memindahkan titik penyisipan ke rumus bar.</p>
+    <p class="sub-judul" id="">
+        <kbd>F3</kbd></p>
+    <p>Menampilkan kotak dialog Tempel Nama. Misalnya, pilih sel E2 di bawah ini, ketik =SUM(, tekan <kbd>F3</kbd> dan pilih nama.</p>
+    <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image018.png" alt=<kbd>F3</kbd>></p>
+    <p class="info"><strong>Catatan:</strong> tentu saja, pertama-tama buat setidaknya satu
+        <a href="https://www.excel-easy.com/examples/named-range.html">nama range</a>.</p>
+    <p class="sub-judul" id="">
+        <kbd>F4</kbd></p>
+    <p>Siklus melalui semua 4 jenis <a href="https://www.excel-easy.com/functions/cell-references.html">referensi
+            sel</a> (absolut, referensi campuran (2x) dan relatif). Misalnya, pilih sel B5 di bawah ini, klik di rumus bar, pindahkan titik penyisipan ke dalam atau ke kanan G2, dan tekan <kbd>F4</kbd>.</p>
+    <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image019.png" alt=<kbd>F4</kbd>></p>
+    <p class="info"><strong>Catatan:</strong> jika Anda tidak mengedit sel, <kbd>F4</kbd> mengulangi tindakan terakhir, jika memungkinkan.</p>
+    <p class="sub-judul" id="">
+        <kbd>F5</kbd></p>
+    <p>Menampilkan kotak dialog Go To. Misalnya, untuk memilih sel C15, dalam kotak Referensi, ketik C15, dan klik OK.
     </p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image024.png" alt="List Drop-down Sederhana"></p>
-    <p class="info"><strong>Catatan:</strong> ini membuat daftar drop-down Anda peka huruf besar/kecil. Misalnya, jika pengguna mengetik ya, peringatan error akan ditampilkan.</p>
-
-
-    <p class="sub-judul" id="allow-other-entries">
-        Ijinkan Entri Lainnya</p>
-    <p>Anda juga dapat membuat daftar drop-down di Excel yang memungkinkan entri lain.</p>
-    <p>1. Pertama, jika Anda mengetikkan nilai yang tidak ada dalam daftar, Excel akan menampilkan peringatan error.
+    <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image020.png" alt=<kbd>F5</kbd>></p>
+    <p class="info"><strong>Catatan:</strong> Anda juga dapat memilih nama range, atau klik
+        <a href="https://www.excel-easy.com/basics/find-select.html#go-to-special">Khusus</a> untuk memilih semua sel dengan cepat dengan rumus, komentar, pemformatan bersyarat, konstanta, validasi data, dll.</p>
+    <p class="sub-judul" id="">
+        <kbd>F6</kbd></p>
+    <p>Pindah ke panel berikutnya di lembar kerja yang telah
+        <a href="https://www.excel-easy.com/examples/split.html">dipisah</a>.</p>
+    <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image021.png" alt=<kbd>F6</kbd>></p>
+    <p class="sub-judul" id="">
+        <kbd>F7</kbd></p>
+    <p>Menampilkan kotak dialog <a href="https://www.excel-easy.com/examples/spell-check.html">Ejaan</a> (sama seperti mengklik Ejaan pada tab Review).</p>
+    <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image022.png" alt=<kbd>F7</kbd>></p>
+    <p class="sub-judul" id="">
+        <kbd>F8</kbd></p>
+    <p>Mengaktifkan/menonaktifkan mode Perpanjang. Jika mode Perluas diaktifkan, pilih sel A1 dan tekan
+        <kbd>&#8594;</kbd> dan beberapa kali.</p>
+    <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image023.png" alt=<kbd>F8</kbd>></p>
+    <p class="info"><strong>Catatan:</strong> jika mode Perpanjang dimatikan, tahan <kbd>Shift</kbd> dan tekan
+        <kbd>&#8594;</kbd> dan beberapa kali.</p>
+    <p class="sub-judul" id="">
+        <kbd>F9</kbd></p>
+    <p>Menghitung buku kerja. Secara default, setiap kali Anda mengubah nilai, Excel secara otomatis menghitung buku kerja. Aktifkan Perhitungan manual (pada tab Rumus, dalam grup Perhitungan, klik Opsi Perhitungan, Manual) dan ubah nilai di sel A1 dari
+        5 menjadi 6.</p>
+    <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image024.png" alt="<kbd>F9</kbd> Sebelumnya"></p>
+    <p>Tekan <kbd>F9</kbd>.</p>
+    <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image025.png" alt="<kbd>F9</kbd> Setelah"></p>
+    <p class="info"><strong>Catatan:</strong> jika Anda mengedit sel, <kbd>F9</kbd> mengganti rumus dengan hasilnya sendiri.
     </p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image025.png" alt="Error Alert">
-    </p>
-    <p>Untuk mengizinkan entri lain, jalankan langkah-langkah berikut.</p>
-    <p>2. Pada tab Data, dalam grup Data Tools, klik Data Validation.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image002.png" alt="Klik Data Validation">
-    </p>
-    <p>Kotak dialog 'Data Validation' muncul.</p>
-    <p>3. Pada tab Error Alert, hapus centang 'Show error alert after invalid data is entered'.
-    </p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image026.png" alt="Allow Entri Lainnya">
-    </p>
-    <p>4. Klik Oke.</p>
-    <p>5. Sekarang Anda dapat memasukkan nilai yang tidak ada dalam daftar.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image027.png" alt="Masukan Manual"></p>
-
-
-    <p class="sub-judul" id="add-remove-items">
-        Tambah/Hapus Item</p>
-    <p>Anda dapat menambah atau menghapus item dari daftar drop-down di Excel tanpa membuka kotak dialog 'Data Validation' dan mengubah referensi range. Ini menghemat waktu.</p>
-    <p>1. Untuk menambahkan item ke daftar drop-down, buka item dan pilih item.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image028.png" alt="Pilih Barang"></p>
-    <p>2. Klik kanan, lalu klik Insert.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image029.png" alt="Klik Insert"></p>
-    <p>3. Pilih &quot;Shift cell down&quot; dan klik OK.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image030.png" alt="Geser Sel ke Bawah">
-    </p>
-    <p>Hasil:</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image031.png" alt="Referensi Rentang Baru"></p>
-    <p class="info"><strong>Catatan:</strong> Excel secara otomatis mengubah referensi range dari Sheet2!$A$1:$A$3 menjadi Sheet2!$A$1:$A$4. Anda dapat memeriksanya dengan membuka kotak dialog 'Data Validation'.</p>
-    <p>4. Ketik item baru.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image032.png" alt="Ketik Barang Baru"></p>
-    <p>Hasil:</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image033.png" alt="List Drop-down yang Diperbarui"></p>
-    <p>5. Untuk menghapus item dari daftar drop-down, pada langkah 2, klik Hapus, pilih &quot;Shift cells up&quot; dan klik OK.</p>
-
-
-    <p class="sub-judul" id="dynamic-drop-down-list">
-        Daftar Drop-down Dinamis
-    </p>
-    <p>Anda juga dapat menggunakan rumus yang memperbarui daftar turun bawah secara otomatis saat Anda menambahkan item ke akhir daftar.</p>
-    <p>1. Pada lembar pertama, pilih sel B1.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image021.png" alt="Pilih Sel"></p>
-    <p>2. Pada tab Data, dalam grup Data Tools, klik Data Validation.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image002.png" alt="Klik Data Validation">
-    </p>
-    <p>Kotak dialog 'Data Validation' muncul.</p>
-    <p>3. Dalam kotak Allow, klik List.</p>
-    <p>4. Klik di kotak Source dan masukkan rumus: <span class="mark">=OFFSET(Sheet2!$A$1,0,0,COUNTA(Sheet2!$A:$A),1)</span></p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image034.png" alt="Fungsi Offset"></p>
-    <p class="info"><strong>Penjelasan:</strong> <a href="#">fungsi OFFSET</a> membutuhkan 5 argumen. Referensi: Sheet2!$A$1, baris untuk diimbangi: 0, kolom untuk diimbangi: 0, tinggi: <strong>COUNTA</strong>(Sheet2!$A:$A) dan lebar: 1. <strong>COUNTA</strong>(Sheet2!$A:$A)
-        menghitung angka nilai di kolom A pada Sheet2 yang tidak kosong. Saat Anda menambahkan item ke daftar di Sheet2, <strong>COUNTA</strong>(Sheet2!$A:$A) meningkat. Akibatnya, range yang dikembalikan oleh fungsi <strong>OFFSET</strong> meluas dan
-        daftar drop-down akan diperbarui.</p>
-    <p>5. Klik Oke.</p>
-    <p>6. Pada lembar kedua, cukup tambahkan item baru ke akhir daftar.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image035.png" alt="Tambahkan Barang Baru">
-    </p>
-    <p>Hasil:</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image036.png" alt="List Drop-down Dinamis"></p>
-
-
-    <p class="sub-judul" id="remove-drop-down-list">
-        Hapus List Drop-down</p>
-    <p>Untuk menghapus daftar drop-down di Excel, jalankan langkah-langkah berikut.</p>
-    <p>1. Pilih sel dengan daftar drop-down.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image037.png" alt="Pilih Sel dengan List Drop-down"></p>
-    <p>2. Pada tab Data, dalam grup Data Tools, klik Data Validation.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image002.png" alt="Klik Data Validation">
-    </p>
-    <p>Kotak dialog 'Data Validation' muncul.</p>
-    <p>3. Klik Clear All.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image038.png" alt="Klik Clear All"></p>
-    <p class="info"><strong>Catatan:</strong> untuk menghapus semua daftar drop-down lainnya dengan pengaturan yang sama, centang <q>Apply these changes to all other cells with the same settings</q> sebelum Anda mengklik Clear All.</p>
-    <p>4. Klik Oke.</p>
-
-
-    <p class="sub-judul" id="dependent-drop-down-lists">
-        Daftar Drop-down Dependen
-    </p>
-    <p>Ingin mempelajari lebih lanjut tentang daftar drop-down di Excel? Pelajari cara membuat daftar <a href="#">drop-down dependen</a>.</p>
-    <p>1. Misalnya, jika pengguna memilih Pizza dari daftar drop-down pertama.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image039.png" alt="Daftar Drop-down Pertama"></p>
-    <p>2. Daftar drop-down kedua berisi item Pizza.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image040.png" alt="List Drop-down Kedua"></p>
-    <p>3. Tetapi jika pengguna memilih Chinese dari daftar drop-down pertama, daftar drop-down kedua berisi masakan Chinese.
-    </p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image041.png" alt=""></p>
-
-
-    <p class="sub-judul" id="table-magic">
-        Table Magic</p>
-    <p>Anda juga dapat menyimpan item Anda dalam <a href="#">tabel Excel</a> untuk membuat daftar drop-down dinamis.</p>
-    <p>1. Pada lembar kedua, pilih item daftar.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image042.png" alt="Pilih Item List"></p>
-    <p>2. Pada tab Insert, dalam group Tables, klik Table.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image043.png" alt="Insert Tabel"></p>
-    <p>3. Excel secara otomatis memilih data untuk Anda. Klik Oke.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image044.png" alt="Buat tabel"></p>
-    <p>4. Jika Anda memilih daftar, Excel menampilkan <a href="#">referensi terstruktur</a>.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image045.png" alt="Referensi Terstruktur">
-    </p>
-    <p>5. Gunakan referensi terstruktur ini untuk membuat daftar drop-down dinamis.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image046.png" alt="Tabel dan TIDAK LANGSUNG"></p>
-    <p class="info"><strong>Penjelasan:</strong> <a href="#">fungsi INDIRECT</a> di Excel mengubah string teks menjadi referensi yang valid.</p>
-    <p>6. Pada lembar kedua, cukup tambahkan item baru ke akhir daftar.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image047.png" alt="Tambahkan Barang"></p>
-    <p>Hasil:</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image036.png" alt="List Drop-down Dinamis"></p>
-
-    <p>7. Saat menggunakan tabel, gunakan fungsi <strong>UNIQUE</strong> di <strong>Excel 365</strong> untuk mengekstrak item daftar unik.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image048.png" alt="Item List Unik"></p>
-    <p class="info"><strong>Catatan:</strong> fungsi array dinamis ini, dimasukkan ke dalam sel F1, mengisi beberapa sel. Wow! Perilaku ini di Excel 365 disebut spill.</p>
-    <p>8. Gunakan range spill ini untuk membuat daftar magic drop-down.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image049.png" alt="Buat List Drop-down">
-    </p>
-    <p class="info"><strong>Penjelasan:</strong> selalu gunakan sel pertama (F1) dan karakter hash untuk merujuk ke range spill.</p>
-    <p>Hasil:</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image050.png" alt="List Drop-down Dengan Nilai Unik"></p>
-    <p class="info"><strong>Catatan:</strong> saat Anda menambahkan catatan baru, fungsi <strong>UNIQUE</strong> secara otomatis mengekstrak item daftar unik baru dan Excel secara otomatis memperbarui daftar turun bawah.</p>
-
-
-    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
-        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-        <p class="bd-lead mb-0" id="dependent-drop-down-lists">Daftar Drop-down Dependen</p>
-    </div>
-    <p>Contoh ini menjelaskan cara membuat daftar drop-down dependen di Excel. Inilah yang kami coba capai:</p>
-    <p>Pengguna memilih Pizza dari daftar drop-down.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image039.png" alt="List Drop-down Pertama"></p>
-    <p>Akibatnya, daftar drop-down kedua berisi item Pizza.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image040.png" alt="List Drop-down Kedua"></p>
-    <p>Untuk membuat daftar drop-down dependen ini, jalankan langkah-langkah berikut.</p>
-    <p>1. Pada lembar kedua, buat <a href="#">nama range</a> berikut.</p>
-
-    <table class="table table-sm table-bordered">
-        <thead class="table-light">
-            <tr>
-                <th scope="col">Nama</th>
-                <th scope="col">Range Address</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Food</td>
-                <td>A1:A3</td>
-            </tr>
-            <tr>
-                <td>Pizza</td>
-                <td>B1:B4</td>
-            </tr>
-            <tr>
-                <td>Pancakes</td>
-                <td>C1:C2</td>
-            </tr>
-            <tr>
-                <td>Chinese</td>
-                <td>D1:D3</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image051.png" alt="Rentang Bernama"></p>
-    <p>2. Pada lembar pertama, pilih sel B1.</p>
-    <p>3. Pada tab Data, dalam grup Data Tools, klik Data Validation.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image002.png" alt="Klik Data Validation">
-    </p>
-    <p>Kotak dialog 'Data Validation' muncul.</p>
-    <p>4. Dalam kotak Allow, klik List.</p>
-    <p>5. Klik di kotak Source dan ketik =Food.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image052.png" alt="Kriteria Validasi"></p>
-    <p>6. Klik Oke.</p>
-    <p>Hasil:</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image053.png" alt="List Drop-down"></p>
-    <p>7. Selanjutnya, pilih sel E1.</p>
-    <p>8. Dalam kotak Allow, klik List.</p>
-    <p>9. Klik di kotak Source dan ketik =<strong>INDIRECT</strong>($B$1).</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image054.png" alt="Fungsi Tidak Langsung">
-    </p>
-    <p>10. Klik Oke.</p>
-    <p>Hasil:</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image041.png" alt=""></p>
-    <p class="info"><strong>Penjelasan:</strong> <a href="#">fungsi INDIRECT</a> mengembalikan referensi yang ditentukan oleh string teks. Misalnya, pengguna memilih Chinese dari daftar drop-down pertama. =<strong>INDIRECT</strong>($B$1) mengembalikan referensi Chinese.
-        Hasilnya, daftar drop-down kedua berisi item Chinese.</p>
-
-    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
-        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-        <p class="bd-lead mb-0" id="CmkeInci">Cm ke Inci</p>
-    </div>
-    <p>1 cm = 0,3937 inci dan 1 inci = 2,54 cm. Gunakan rumus sederhana, fungsi <strong>CONVERT</strong> atau unduh pengonversi satuan gratis kami untuk mengonversi dari cm ke inci atau sebaliknya (lihat di bawah).</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image055.png" alt="Konverter Satuan Gratis"></p>
-    <p>1. Pertama, untuk mengubah dari centimeter ke inci, bagi dengan 2,54. Rumus sederhana di bawah ini berhasil.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image056.png" alt="cm ke inci"></p>
-    <p>2. Untuk mengonversi dari inci ke centimeter, kalikan dengan 2,54.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image057.png" alt="inci ke cm"></p>
-    <p>3. Anda juga dapat menggunakan fungsi <strong>CONVERT</strong> di Excel untuk mengonversi dari centimeter ke inci.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image058.png" alt="Sentimeter ke Inci">
-    </p>
-    <p class="info"><strong>Catatan:</strong> fungsi <strong>CONVERT</strong> memiliki tiga argumen (angka, dari_unit dan ke_unit).</p>
-    <p>4. Anda juga dapat menggunakan fungsi <strong>CONVERT</strong> di Excel untuk mengonversi dari inci ke centimeter.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image059.png" alt="Inci ke Sentimeter">
-    </p>
-
-    <p>5. Pilih Length dari daftar drop-down kategori.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image060.png" alt="Kategori Length"></p>
-    <p class="info"><strong>Penjelasan:</strong> karena Anda memilih Length dari <a href="">daftar drop-down ini</a>,
-        <a href="">daftar drop-down dependen</a> di sel B5 dan sel E5 sekarang berisi satuan panjang.
-    </p>
-    <p>6. Masukkan angka dan pilih satuan panjang yang benar.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image061.png" alt="Konversi di Excel"></p>
-    <p class="info"><strong>Penjelasan:</strong> konverter unit menggunakan <a href="#">perubahan lembar kerja</a> untuk mengeksekusi kode VBA secara otomatis saat Anda mengubah sel (B2, B4, B5, E4 atau E5). Kode VBA menggunakan fungsi <strong>CONVERT</strong> untuk
-        mengonversi dari satu unit pengukuran ke unit lainnya dan menggunakan <a href="#">fungsi VLOOKUP</a> untuk mencari singkatan unit yang benar (cm, in, yd, ft, dll.) yang disimpan di lembar kerja kedua.</p>
-
-    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
-        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-        <p class="bd-lead mb-0" id="KgkeLbs">Kg ke Lbs</p>
-    </div>
-    <p>1 kg = 2.20462 lbs (pound) dan 1 lb (pound) = 0.45359 kg. Gunakan rumus sederhana, fungsi <strong>CONVERT</strong> atau unduh pengonversi satuan gratis kami untuk mengonversi dari kg ke lbs atau sebaliknya (lihat di bawah).</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image062.png" alt="Konverter Satuan Gratis"></p>
-    <p>1. Pertama, untuk mengonversi dari kg ke lbs, kalikan dengan 2.20462. Rumus sederhana di bawah ini berhasil.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image063.png" alt="kg ke lbs"></p>
-    <p>2. Untuk mengkonversi dari lbs ke kg, bagi dengan 2.20462.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image064.png" alt="lbs ke kg"></p>
-    <p>3. Anda juga dapat menggunakan fungsi <strong>CONVERT</strong> di Excel untuk mengonversi dari kg ke lbs.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image065.png" alt="Kilogram ke Pound"></p>
-    <p class="info"><strong>Catatan:</strong> fungsi <strong>CONVERT</strong> memiliki tiga argumen (angka, dari_unit dan ke_unit). Satuan singkatan lbm adalah singkatan dari pound mass.</p>
-    <p>4. Anda juga dapat menggunakan fungsi <strong>CONVERT</strong> di Excel untuk mengonversi dari lbs ke kg.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image066.png" alt="Pound ke Kilogram"></p>
-
-    <p>5. Pilih Mass dari daftar drop-down kategori.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image067.png" alt="Kategori Massa"></p>
-    <p class="info"><strong>Penjelasan:</strong> karena Anda memilih Mass dari <a href="">daftar drop-down ini</a>, <a href="">daftar drop-down dependen</a> di sel B5 dan sel E5 sekarang berisi satuan massa.</p>
-    <p>6. Masukkan nomor dan pilih satuan massa yang benar.</p>
-    <p><img class="img-fluid" src="../excel/files/DataValidation-contoh_files/image068.png" alt="Konversi di Excel"></p>
-    <p class="info"><strong>Penjelasan:</strong> konverter unit menggunakan <a href="#">perubahan lembar kerja</a> untuk mengeksekusi kode VBA secara otomatis saat Anda mengubah sel (B2, B4, B5, E4 atau E5). Kode VBA menggunakan fungsi <strong>CONVERT</strong> untuk
-        mengonversi dari satu unit pengukuran ke unit lainnya dan menggunakan <a href="#">fungsi VLOOKUP</a> untuk mencari singkatan unit yang benar (kg, g, lbm, ozm, dll.) yang disimpan di lembar kerja kedua.</p>
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
-    </script>
+    <p class="sub-judul" id="">
+        <kbd>F10</kbd></p>
+    <p>Menunjukkan tip kunci (sama seperti menekan <kbd>Alt</kbd>). Tips Kunci memungkinkan Anda dengan cepat melakukan tugas apa pun yang tersedia di Ribbon tanpa menggunakan mouse.</p>
+    <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image026.png" </p>
+        <p class="sub-judul" id="">
+            <kbd>F11</kbd></p>
+        <p>Membuat <a href="#">lembar bagan</a> dari range yang dipilih.</p>
+        <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image027.png" </p>
+            <p class="sub-judul" id="">
+                <kbd>F12</kbd></p>
+            <p>Menampilkan kotak dialog Save As.</p>
+            <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image028.png" </p>
+                <p class="info"><strong>Catatan:</strong> untuk mengubah lokasi file default, pada tab File, klik Opsi, Simpan.
+                </p>
+                <p>Insert Baris</p>
+                <p>
+                    <a href="#insert-row">Insert Baris</a> |
+                    <a href="#insert-rows">Insert Baris</a> |
+                    <a href="#insert-cells">Insert Sel</a>
+                </p>
+                <p>Untuk menyisipkan baris dengan cepat di Excel, pilih satu baris dan gunakan pintasan
+                    <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>+</kbd>. Untuk menyisipkan beberapa baris dengan cepat, pilih beberapa baris dan gunakan pintasan yang sama.</p>
+                <p class="sub-judul" id="">
+                    Insert Baris</p>
+                <p>Untuk menyisipkan baris di Excel, jalankan langkah-langkah berikut.</p>
+                <p>1. Pilih satu baris.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image029.png" alt="Pilih Baris"></p>
+                <p>2. Klik kanan, lalu klik Insert.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image030.png" alt="Klik Insert"></p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image031.png" alt="Baris yang Disisipkan"></p>
+                <p class="info"><strong>Catatan:</strong> daripada menjalankan langkah 2, gunakan pintasan
+                    <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>+</kbd>.</p>
+                <p class="sub-judul" id="">
+                    Insert Baris</p>
+                <p>Untuk menyisipkan beberapa baris dengan cepat di Excel, jalankan langkah-langkah berikut.</p>
+                <p>1. Pilih beberapa baris dengan mengklik dan menyeret header baris.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image032.png" alt="Pilih Beberapa Baris"></p>
+                <p>2. Tekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>+</kbd>.</p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image033.png" alt="Baris yang Disisipkan"></p>
+                <p class="sub-judul" id="">
+                    Insert Sel</p>
+                <p>Excel menampilkan kotak dialog Insert Sel jika Anda tidak memilih satu atau beberapa baris sebelum menggunakan pintasan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>+</kbd>.
+                </p>
+                <p>1. Pilih sel A3.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image034.png" alt="Pilih Sel"></p>
+                <p>2. Tekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>+</kbd>.</p>
+                <p>3a. Excel secara otomatis memilih &quot;Shift cell down&quot;. Klik Oke.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image035.png" alt="Masukkan Kotak Dialog Sel"></p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image036.png" alt="Geser Sel ke Bawah">
+                </p>
+                <p>3b. Untuk menyisipkan baris, pilih &quot;Seluruh baris&quot; dan klik OK.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image037.png" alt="Pilih Seluruh Baris"></p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image038.png" alt="Insert Seluruh Baris"></p>
+                <p>Simpan Sebagai</p>
+                <p>
+                    <a href="#save-as">Simpan Sebagai</a> |
+                    <a href="#save">Menyimpan</a>
+                </p>
+                <p>Gunakan pintasan <kbd>F12</kbd> untuk menampilkan kotak dialog Simpan Sebagai di Excel. Tekan
+                    <kbd>Ctrl</kbd>+<kbd>S</kbd> untuk menyimpan buku kerja yang ada. Ini adalah praktik yang baik untuk menyimpan secara berkala saat Anda sedang mengerjakan file Excel Anda.
+                </p>
+                <p class="sub-judul" id="">
+                    Simpan Sebagai</p>
+                <p>Untuk menampilkan kotak dialog Save As, jalankan langkah-langkah berikut.</p>
+                <p>1. Pada tab File, klik Simpan Sebagai.</p>
+                <p>2. Klik Telusuri.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image039.png" alt="Klik Jelajahi"></p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image028.png" alt="Simpan Sebagai Kotak Dialog"></p>
+                <p class="info"><strong>Catatan:</strong> daripada menjalankan langkah 1 dan langkah 2, cukup gunakan pintasan
+                    <kbd>F12</kbd>.</p>
+                <p>3. Pilih lokasi file.</p>
+                <p>4. Masukkan nama file.</p>
+                <p>5. Klik Simpan.</p>
+                <p class="sub-judul" id="">
+                    Menyimpan</p>
+                <p>Sekali lagi, ini adalah praktik yang baik untuk menyimpan secara berkala saat Anda mengerjakan file Excel Anda. Sering menabung dapat mencegah pekerjaan Anda hilang.</p>
+                <p>1. Mengedit buku kerja yang ada.</p>
+                <p>2. Cukup tekan <kbd>Ctrl</kbd>+<kbd>S</kbd> untuk menyimpan perubahan.</p>
+                <p>3. Tekan <kbd>F12</kbd> (Excel membuka kotak dialog Save As lagi) untuk membuat salinan buku kerja ini sambil menyimpan aslinya.</p>
+                <p>Hapus Baris</p>
+                <p>
+                    <a href="#delete-row">Hapus Baris</a> |
+                    <a href="#delete-rows">Hapus Baris</a> |
+                    <a href="#delete-cells">Hapus Sel</a>
+                </p>
+                <p>Untuk menghapus baris dengan cepat di Excel, pilih satu baris dan gunakan pintasan <kbd>Ctrl</kbd>+<kbd>-</kbd> (tanda minus). Untuk menghapus beberapa baris dengan cepat, pilih beberapa baris dan gunakan pintasan yang sama.
+                </p>
+                <p class="sub-judul" id="">
+                    Hapus Baris</p>
+                <p>Untuk menghapus baris di Excel, jalankan langkah-langkah berikut.</p>
+                <p>1. Pilih satu baris.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image040.png" alt="Pilih Baris"></p>
+                <p>2. Klik kanan, lalu klik Hapus.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image041.png" alt="Klik Hapus"></p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image042.png" alt="Baris Dihapus"></p>
+                <p class="info"><strong>Catatan:</strong> daripada menjalankan langkah 2, gunakan pintasan
+                    <kbd>Ctrl</kbd>+<kbd>-</kbd> (tanda minus).</p>
+                <p class="sub-judul" id="">
+                    Hapus Baris</p>
+                <p>Untuk menghapus beberapa baris dengan cepat di Excel, jalankan langkah-langkah berikut.</p>
+                <p>1. Pilih beberapa baris dengan mengklik dan menyeret header baris.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image043.png" alt="Pilih Beberapa Baris"></p>
+                <p>2. Tekan <kbd>Ctrl</kbd>+<kbd>-</kbd> (tanda minus).</p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image044.png" alt="Baris Dihapus"></p>
+                <p class="sub-judul" id="">
+                    Hapus Sel</p>
+                <p>Excel menampilkan kotak dialog Hapus Sel jika Anda tidak memilih baris atau beberapa baris sebelum menggunakan pintasan <kbd>Ctrl</kbd>+<kbd>-</kbd> (tanda minus).</p>
+                <p>1. Pilih sel A3.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image045.png" alt="Pilih Sel"></p>
+                <p>2. Tekan <kbd>Ctrl</kbd>+<kbd>-</kbd> (tanda minus).</p>
+                <p>3a. Excel secara otomatis memilih &quot;Shift cells up&quot;. Klik Oke.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image046.png" alt="Hapus Kotak Dialog Sel"></p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image047.png" alt="Geser Sel ke Atas">
+                </p>
+                <p>3b. Untuk menghapus satu baris, pilih &quot;Seluruh baris&quot; dan klik OK.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image048.png" alt="Pilih Seluruh Baris"></p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image049.png" alt="Hapus Seluruh Baris"></p>
+                <p>Scroll Lock</p>
+                <p>
+                    <a href="#what-is-scroll-lock?">Apa itu Scroll Lock? </a>|
+                    <a href="#turn-off-scroll-lock">Matikan Scroll Lock</a>
+                </p>
+                <p>Saat <kbd>Scroll Lock</kbd> dihidupkan, Anda dapat menggunakan tombol panah untuk menggulir lembar kerja tanpa mengubah sel yang aktif. Excel menampilkan <kbd>Scroll Lock</kbd> di status bar.</p>
+                <p class="sub-judul" id="">
+                    Apa itu Scroll Lock?</p>
+                <p>Pertama, ketika <kbd>Scroll Lock</kbd> dimatikan, Anda dapat menggunakan tombol panah untuk mengubah sel yang aktif.
+                </p>
+                <p>1. Misalnya, pilih sel A1.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image050.png" alt="Pilih Sel"></p>
+                <p>2. Tekan <kbd>↓</kbd> dua kali.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image051.png" alt="Ubah Sel Aktif"></p>
+                <p>Saat <kbd>Scroll Lock</kbd> dihidupkan, Anda dapat menggunakan tombol panah untuk menggulir lembar kerja tanpa mengubah sel yang aktif.</p>
+                <p>3. Pilih sel A1 lagi.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image050.png" alt="Pilih Sel"></p>
+                <p>4. Sekali lagi, tekan <kbd>↓</kbd> dua kali.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image052.png" alt="Gulir Melalui Lembar Kerja"></p>
+                <p class="info"><strong>Catatan:</strong> tekan <kbd>Ctrl</kbd>+<kbd>Backspace</kbd> untuk menggulir kembali ke sel yang aktif.</p>
+                <p class="sub-judul" id="">
+                    Matikan Scroll Lock</p>
+                <p>Untuk mematikan scroll lock, jalankan langkah-langkah berikut.</p>
+                <p>1. Tekan tombol <kbd>Scroll Lock</kbd> (<kbd>Scroll Lock</kbd> atau <kbd>ScrLk</kbd>) pada keyboard Anda. Selesai.
+                </p>
+                <p>Jika keyboard Anda tidak memiliki tombol <kbd>Scroll Lock</kbd>, luncurkan keyboard di layar.</p>
+                <p>2. Klik Start &gt; Settings &gt; Ease of Access &gt; Keyboard &gt; Gunakan Papan Ketik di Layar (atau tekan tombol logo <kbd>Windows</kbd>+<kbd>Ctrl</kbd>+<kbd>O</kbd>).</p>
+                <p>3. Klik tombol <kbd>ScrLk</kbd>.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image053.png" alt="Matikan Scroll Lock"></p>
+                <p class="info"><strong>Catatan:</strong> untuk mengaktifkan scroll lock, cukup ulangi langkah 1 atau langkah 2 dan 3.
+                </p>
+                <p>Saat <kbd>Scroll Lock</kbd> dihidupkan, Excel menampilkan <kbd>Scroll Lock</kbd> di status bar (hanya jika status bar dikustomisasi untuk menampilkan status <kbd>Scroll Lock</kbd>).</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image054.png" alt="Scroll Lock Diaktifkan"></p>
+                <p>4. Klik kanan <a href="https://www.excel-easy.com/examples/status-bar.html">status bar</a> untuk menampilkan atau menyembunyikan status <kbd>Scroll Lock</kbd>.</p>
+                <p>Poin Peluru</p>
+                <p>Halaman ini menggambarkan tiga cara untuk menyisipkan poin-poin di Excel. Anda dapat menggunakan pintasan keyboard, menyisipkan simbol, atau membuat format angka khusus.</p>
+                <p>Jika Anda memiliki papan angka di sisi kanan keyboard Anda, jalankan langkah 1 atau langkah 2.</p>
+                <p>1. Untuk menyisipkan titik peluru bulat yang terisi, tekan <kbd>Alt</kbd>+<kbd>Numpad 7</kbd>.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image055.png" alt="Titik Peluru Bulat Terisi"></p>
+                <p>2. Untuk menyisipkan titik peluru bulat berongga, tekan <kbd>Alt</kbd>+<kbd>Numpad 9</kbd>.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image056.png" alt="Titik Peluru Bulat Berongga"></p>
+                <p>Jika Anda tidak memiliki papan angka di sisi kanan keyboard, jalankan langkah 3 dan langkah 4.</p>
+                <p>3. Pada tab Insert, di grup Symbol, klik Symbol.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image057.png" alt="Klik Symbol"></p>
+                <p>4. Pilih font dari daftar drop-down, ketik 2022 di kotak Kode Character dan klik Insert.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image058.png" alt="Masukkan Poin Peluru"></p>
+                <p>Hasil.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image055.png" alt="Titik Peluru Bulat Terisi"></p>
+                <p>5. Untuk menyisipkan beberapa poin bullet dalam satu sel, tekan <kbd>Alt</kbd>+<kbd>Enter</kbd> untuk memulai baris baru di sel Excel.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image059.png" alt="Beberapa Poin Peluru"></p>
+                <p>Buat <a href="#">format angka khusus</a> dan memasukkan daftar berpoin di Excel akan menjadi hal yang mudah.</p>
+                <p>6. Pilih range A1:A3.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image060.png" alt="Pilih Rentang"></p>
+                <p>7. Klik kanan, lalu klik Format Cells.</p>
+                <p>8. Pilih Kustom.</p>
+                <p>9. Pada kotak Type, tekan <kbd>Alt</kbd>+<kbd>Numpad 7</kbd> untuk memasukkan bullet point (atau copy/paste bullet point), masukkan spasi dan ketik @</p>
+                <p>10. Klik Oke.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image061.png" alt="Format Nomor Kustom"></p>
+                <p>11. Anda sekarang dapat membuat daftar berpoin hanya dengan mengetik item daftar. Excel secara otomatis menambahkan poin-poin!</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image062.png" alt="Daftar Bullet di Excel"></p>
+                <p class="info"><strong>Catatan:</strong> gunakan <a href="#">Format Painter</a> untuk menyalin format poin-poin dengan cepat ke sel lain.</p>
+                <p>Garis putus</p>
+                <p>Masukkan jeda baris di Excel dengan menekan <kbd>Alt</kbd>+<kbd>Enter</kbd>. Saat menggabungkan string, gunakan CHAR(10) untuk menyisipkan jeda baris.</p>
+                <p>Untuk menyisipkan jeda baris, jalankan langkah-langkah berikut.</p>
+                <p>1. Misalnya, masukkan string teks panjang di sel A1.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image063.png" alt="String Teks Panjang"></p>
+                <p>2. Klik dua kali sel A1.</p>
+                <p>3. Tempatkan kursor Anda di lokasi di mana Anda ingin garis putus.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image064.png" alt=kursor></p>
+                <p>4. Tekan <kbd>Alt</kbd>+<kbd>Enter</kbd>.</p>
+                <p>5. Klik pada batas kanan header kolom A dan seret pemisah untuk menambah lebar kolom.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image065.png" alt="Tambah Lebar Kolom">
+                </p>
+                <p>6. Klik dua kali batas bawah header baris 1 untuk menyesuaikan tinggi baris secara otomatis.</p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image066.png" alt="Pemisahan Baris di Excel"></p>
+                <p class="info"><strong>Catatan:</strong> untuk menghapus jeda baris, klik dua kali sel, tempatkan kursor Anda di awal baris dan tekan Backspace.</p>
+                <p>7. Saat <a href="#">menggabungkan</a> string, gunakan CHAR(10) untuk menyisipkan jeda baris. Misalnya, alamat di bawah ini berisi dua jeda baris. Gunakan operator &amp; untuk menggabungkan string.
+                </p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image067.png" alt="Penggabungan dengan Line Breaks"></p>
+                <p class="info"><strong>Catatan:</strong> jangan lupa untuk mengaktifkan <a href="#">pembungkusan teks</a>.</p>
+                <p>Tampilkan Rumus</p>
+                <p>Secara default, Excel memperlihatkan hasil rumus. Untuk menampilkan rumus daripada hasilnya, tekan
+                    <kbd>Ctrl</kbd>+<kbd>`</kbd> (Anda dapat menemukan kunci ini di atas tombol tab).</p>
+                <p>1. Saat Anda memilih sel, Excel memperlihatkan rumus sel di rumus bar.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image068.png" alt="Formula Bar"></p>
+                <p>2. Untuk menampilkan semua rumus, di semua sel, tekan <kbd>Ctrl</kbd>+<kbd>`</kbd> (Anda dapat menemukan tombol ini di atas tombol tab).</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image069.png" alt="Tampilkan Rumus di Excel"></p>
+                <p>3. Tekan <kbd>↓</kbd> dua kali.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image070.png" alt="Sel yang Direferensikan"></p>
+                <p class="info"><strong>Catatan:</strong> seperti yang Anda lihat, Excel menyoroti semua sel yang direferensikan oleh rumus.</p>
+                <p>4. Untuk menyembunyikan semua rumus, tekan <kbd>Ctrl</kbd>+<kbd>`</kbd> lagi.</p>
+                <p>5. Jika Anda tidak dapat menemukan aksen grave (<kbd>`</kbd>) pada keyboard Anda, pada tab Rumus, dalam grup Audit Rumus, klik Perlihatkan Rumus.</p>
+                <p><img class="img-fluid" src="../excel/files/KeyboardShortcuts-contoh_files/image071.png" alt="Klik Tampilkan Rumus"></p>
+                <p class="info"><strong>Catatan:</strong> untuk menyembunyikan semua rumus, klik lagi Perlihatkan Rumus. Kunjungi halaman kami tentang <a href="#">audit formula</a> di Excel untuk mempelajari lebih lanjut tentang melacak preseden, melacak tanggungan,
+                    pemeriksaan kesalahan, dll.</p>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+                </script>
 </body>
 
 </html>

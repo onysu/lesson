@@ -16,7 +16,7 @@
 
             <!-- Keyboard Shortcuts -->
             <section>
-                <p>
+                <p class="link-text mt-2">
                     <a href="#basic">Dasar</a> |
                     <a href="#moving">Bergerak</a> |
                     <a href="#selecting">Memilih</a> |
@@ -93,12 +93,12 @@
                     <p class="link-text mt-2">
                         <a href="#FungsiTombol">Fungsi Tombol</a> |
                         <a href="#InsertBaris">Menyisipkan Baris</a> |
-                        <a href="#">Save As</a> |
-                        <a href="#">Delete Row</a> |
-                        <a href="#">Scroll Lock</a> |
-                        <a href="#">Bullet Points</a> |
-                        <a href="#">Line Break</a> |
-                        <a href="#">Show Formulas</a>
+                        <a href="#SaveAs">Save As</a> |
+                        <a href="#DeleteRow">Hapus Baris</a> |
+                        <a href="#ScrollLock">Kunci Scrol</a> |
+                        <a href="#BulletPoints">Poin Bullet</a> |
+                        <a href="#LineBreak">Jeda Baris</a> |
+                        <a href="#ShowFormulas">Tampilkan Rumus</a>
                     </p>
 
                     <!-- Function Keys -->
@@ -247,7 +247,10 @@
 
                     <!-- Save As -->
                     <section>
-                        <p>Simpan Sebagai</p>
+                        <div class="d-md-flex align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                            <!-- <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/" title="unduh file latihan" rel="noopener">unduh file latihan</a> -->
+                            <p class="bd-lead mb-0" id="SaveAs">Simpan Sebagai <span class="span-text">(Save As)</span></p>
+                        </div>
                         <p>
                             <a href="#save-as">Simpan Sebagai</a> |
                             <a href="#save">Menyimpan</a>
@@ -278,7 +281,11 @@
 
                     <!-- Delete Row -->
                     <section>
-                        <p>Hapus Baris</p>
+                        <p></p>
+                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/delete-row.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                            <p class="bd-lead mb-0" id="DeleteRow">Hapus Baris <span class="span-text">(Delete Row)</span></p>
+                        </div>
                         <p>
                             <a href="#delete-row">Hapus Baris</a> |
                             <a href="#delete-rows">Hapus Baris</a> |
@@ -324,7 +331,11 @@
 
                     <!-- Scroll Lock -->
                     <section>
-                        <p>Scroll Lock</p>
+                        <p></p>
+                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/scroll-lock.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                            <p class="bd-lead mb-0" id="ScrollLock">Kunci Scrol <span class="span-text">(Scroll Lock)</span></p>
+                        </div>
                         <p>
                             <a href="#what-is-scroll-lock?">Apa itu Scroll Lock?</a> |
                             <a href="#turn-off-scroll-lock">Matikan Scroll Lock</a>
@@ -362,7 +373,10 @@
 
                     <!-- Bullet Points -->
                     <section>
-                        <p>Poin Peluru</p>
+                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/bullet-points.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                            <p class="bd-lead mb-0" id="BulletPoints">Poin Bullet <span class="span-text">(Bullet Points)</span></p>
+                        </div>
                         <p>Halaman ini menggambarkan tiga cara untuk menyisipkan poin-poin di Excel. Anda dapat menggunakan pintasan keyboard, menyisipkan simbol, atau membuat format angka khusus.</p>
                         <p>Jika Anda memiliki papan angka di sisi kanan keyboard Anda, jalankan langkah 1 atau langkah 2.</p>
                         <p>1. Untuk menyisipkan titik peluru bulat yang terisi, tekan <kbd>Alt</kbd>+<kbd>Numpad 7</kbd>.</p>
@@ -393,7 +407,10 @@
 
                     <!-- Line Break -->
                     <section>
-                        <p>Garis putus</p>
+                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/line-break.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                            <p class="bd-lead mb-0" id="LineBreak">Jeda Baris <span class="span-text">(Line Break)</span></p>
+                        </div>
                         <p>Masukkan jeda baris di Excel dengan menekan <kbd>Alt</kbd>+<kbd>Enter</kbd>. Saat menggabungkan string, gunakan CHAR(10) untuk menyisipkan jeda baris.</p>
                         <p>Untuk menyisipkan jeda baris, jalankan langkah-langkah berikut.</p>
                         <p>1. Misalnya, masukkan string teks panjang di sel A1.</p>
@@ -417,7 +434,10 @@
 
                     <!-- Show Formulas -->
                     <section>
-                        <p>Tampilkan Rumus</p>
+                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/show-formulas.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                            <p class="bd-lead mb-0" id="ShowFormulas">Tampilkan Rumus <span class="span-text">(Show Formulas)</span></p>
+                        </div>
                         <p>Secara default, Excel memperlihatkan hasil rumus. Untuk menampilkan rumus daripada hasilnya, tekan
                             <kbd>Ctrl</kbd>+<kbd>`</kbd> (Anda dapat menemukan kunci ini di atas tombol tab).</p>
                         <p>1. Saat Anda memilih sel, Excel memperlihatkan rumus sel di rumus bar.</p>

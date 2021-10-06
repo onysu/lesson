@@ -1,0 +1,767 @@
+<div class="accordion-item">
+    <h2 class="accordion-header" id="CountandSum">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-CountandSum" aria-expanded="false" aria-controls="flush-CountandSum">
+      <figure>
+        <blockquote class="blockquote">
+          <p>Fungsi Count dan Sum</p>
+        </blockquote>
+        <figcaption class="blockquote-footer fw-light">
+          alat Data Analysis, data teknik statistik dan Analysis.
+        </figcaption>
+      </figure>
+    </button>
+    </h2>
+    <div id="flush-CountandSum" class="accordion-collapse collapse" aria-labelledby="CountandSum" data-bs-parent="#accordionFungsi">
+        <div class="accordion-body">
+
+            <!-- Fungsi COUNT dan SUM -->
+            <section>
+                <p class="link-text">
+                    <a href="#count">Count</a> |
+                    <a href="#countif">CountIf</a> |
+                    <a href="#countifs">CountIfs</a> |
+                    <a href="#sum">Sum</a> |
+                    <a href="#sumif">SumIf</a> |
+                    <a href="#sumifs">SumIfs</a>
+                </p>
+                <p><a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/count-sum-functions.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+            </section>
+
+            <!-- COUNT -->
+            <section>
+                <p>Fungsi yang paling banyak digunakan di Excel adalah fungsi
+                    <strong>COUNT</strong> dan <strong>SUM</strong>. Anda dapat menghitung dan menjumlahkan berdasarkan satu kriteria atau beberapa kriteria.
+                </p>
+
+                <p class="h5" id="count">COUNT</p>
+                <p>Untuk menghitung jumlah sel yang berisi angka, gunakan fungsi
+                    <strong>COUNT</strong>.</p>
+                <p><img class="img-fluid" src="../excel/files/CountandSumFunctions_files/image001.png" alt="Hitung Fungsi"></p>
+                <p class="info"><strong>Catatan:</strong> untuk <a href="#CountBlankNonblankCells">Hitung Sel Kosong/Tidak Kosong <span class="span-text">(Count Blank/Nonblank Cells)</a> di Excel, gunakan
+                    <strong>COUNTBLANK</strong> dan <strong>COUNTA</strong>.</p>
+                <details id="CountBlankNonblankCells">
+                    <summary>Contoh Penggunaan Hitung Sel Kosong/Tidak Kosong</summary>
+                    <p class="h5">Hitung Sel Kosong/Tidak Kosong <span class="span-text">(Count Blank/Nonblank Cells)</span></p>
+                    <p>Contoh ini menunjukkan Anda bagaimana untuk menghitung kosong dan nonblank sel di Excel.</p>
+                    <ol>
+                        <li>
+                            <p>Fungsi <strong>COUNTBLANK</strong> di bawah ini menghitung jumlah sel kosong dalam Range
+                                <strong>A1:A7</strong>.</p>
+                            <p><img class="img-fluid" src="../excel/files/CountBlankNonblankCells_files/image001.png" alt="Fungsi COUNTBLANK di Excel"></p>
+                        </li>
+                        <li>
+                            <p>Fungsi <strong>COUNTA</strong> di bawah ini menghitung jumlah sel yang tidak kosong dalam Range
+                                <strong>A1:A7</strong>.
+                                <strong>COUNTA</strong> adalah singkatan dari hitung semua.
+                            </p>
+                            <p><img class="img-fluid" src="../excel/files/CountBlankNonblankCells_files/image002.png" alt="Fungsi COUNTA di Excel"></p>
+                        </li>
+                        <li>
+                            <p>Fungsi <strong>COUNTIFS</strong> di bawah ini menghitung jumlah sel kosong dalam Range
+                                <strong>B1:B7</strong> dengan satu kriteria tambahan (biru).
+                            </p>
+                            <p><img class="img-fluid" src="../excel/files/CountBlankNonblankCells_files/image003.png" alt="Hitung Sel Kosong menggunakan COUNTIFS"></p>
+                            <p class="info">Penjelasan: fungsi <strong>COUNTIFS</strong> (dengan huruf <strong>S</strong> di akhir) di Excel menghitung sel berdasarkan dua atau lebih kriteria. Gunakan string kosong (dua tanda kutip ganda tanpa apa pun di antaranya) untuk
+                                menemukan sel kosong.
+                            </p>
+                        </li>
+                        <li>
+                            <p>Fungsi <strong>COUNTIFS</strong> di bawah ini menghitung jumlah sel tidak kosong dalam Range
+                                <strong>B1:B7</strong> dengan satu kriteria tambahan (merah muda).</p>
+                            <p><img class="img-fluid" src="../excel/files/CountBlankNonblankCells_files/image004.png" alt="Hitung Sel Nonblank menggunakan COUNTIFS"></p>
+                        </li>
+                    </ol>
+                    <p>
+                        <a href="#CountBlankNonblankCells">kembali keatas</a>
+                    </p>
+                </details>
+            </section>
+
+            <!-- COUNTIF -->
+            <section>
+
+                <p class="h5" id="countif">
+                    COUNTIF</p>
+                <p>Untuk menghitung sel berdasarkan satu kriteria (misalnya, lebih besar dari 9), gunakan fungsi
+                    <strong>COUNTIF</strong> berikut.</p>
+                <p><img class="img-fluid" src="../excel/files/CountandSumFunctions_files/image002.png" alt="Fungsi Hitung"></p>
+
+                <details id="FungsiCOUNTIF">
+                    <summary>Contoh Penggunaan Fungsi COUNTIF</summary>
+                    <p class="h5">COUNTIF</p>
+                    <p class="link-text"><a href="#KriteriaNumerik">Kriteria Numerik</a> |
+                        <a href="#TrikTeks">Trik Teks</a> | <a href="#CountBoolean">Count
+              Boolean</a> | <a href="#CountErrors">Count Errors</a> | <a href="#AndKriteria">And Kriteria</a> |
+                        <a href="#OrKriteria">Or Kriteria</a> | <a href="#LebihlanjuttentangCountif">Lebih lanjut tentang
+              Countif</a> | <a href="#CountMagic">Count Magic</a></p>
+                    <p>
+                        <strong class="d-block h6 text-warning p-0 m-0">Download file
+              latihan</strong>
+                        <a href="../excel/files/bahan/countif.xlsx" class="fw-light p-0 m-0">countif.xlsx</a>
+                    </p>
+                    <p>Fungsi <strong>COUNTIF</strong> yang kuat di Excel menghitung sel berdasarkan satu kriteria. Halaman ini berisi banyak contoh
+                        <strong>COUNTIF</strong> yang mudah diikuti.</p>
+
+                    <p class="h5" id="KriteriaNumerik">
+                        Kriteria Numerik</p>
+                    <p>Gunakan fungsi <strong>COUNTIF</strong> di Excel untuk menghitung sel yang sama dengan nilai, menghitung sel yang lebih besar atau sama dengan nilai, dll.</p>
+                    <ol>
+                        <li>
+                            <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang sama dengan 20.</p>
+                            <p><img class="img-fluid" src="../excel/files/Countif_files/image001.png" alt="Fungsi COUNTIF sederhana di Excel"></p>
+                        </li>
+                        <li>
+                            <p>Fungsi <strong>COUNTIF</strong> berikut memberikan hasil yang sama persis.</p>
+                            <p><img class="img-fluid" src="../excel/files/Countif_files/image002.png" alt="Hitung Sel Sama dengan Nilai Sel"></p>
+                        </li>
+                        <li>
+                            <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang lebih besar atau sama dengan 10.
+                            </p>
+                            <p><img class="img-fluid" src="../excel/files/Countif_files/image003.png" alt="Hitung Sel Lebih Besar dari Atau Sama dengan Nilai">
+                            </p>
+                        </li>
+                        <li>
+                            <p>Fungsi <strong>COUNTIF</strong> berikut memberikan hasil yang sama persis.</p>
+                            <p><img class="img-fluid" src="../excel/files/Countif_files/image004.png" alt="Fungsi COUNTIF dan Operator Ampersand">
+                            </p>
+                            <p class="info"><strong>Penjelasan:</strong> operator &amp; menggabungkan simbol 'lebih besar dari atau sama dengan' dan nilai di sel C1.</p>
+                        </li>
+                        <li>
+                            <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang tidak sama dengan 7.</p>
+                            <p><img class="img-fluid" src="../excel/files/Countif_files/image005.png" alt="Hitung Sel Tidak Sama dengan Nilai"></p>
+                        </li>
+                        <li>
+                            <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang sama dengan 3 atau 7.</p>
+                            <p><img class="img-fluid" src="../excel/files/Countif_files/image006.png" alt="Dua fungsi COUNTIF di Excel"></p>
+                        </li>
+                    </ol>
+
+                    <p class="h5" id="TrikTeks">
+                        Trik Teks</p>
+                    <p>Gunakan fungsi <strong>COUNTIF</strong> di Excel dan beberapa trik untuk menghitung sel yang berisi teks tertentu. Selalu sertakan teks dalam tanda kutip ganda.</p>
+                    <ol>
+                        <li>
+                            <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang berisi persis bintang.</p>
+                            <p><img class="img-fluid" src="../excel/files/Countif_files/image007.png" alt="Fungsi COUNTIF di Excel, Tepat"></p>
+                        </li>
+                        <li>
+                            <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang berisi persis bintang + 1 karakter. Tanda tanya <strong>(?)</strong> cocok dengan tepat satu karakter.
+                            </p>
+                            <p><img class="img-fluid" src="../excel/files/Countif_files/image008.png" alt="Fungsi COUNTIF, Tanda Tanya"></p>
+                        </li>
+                        <li>
+                            <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang berisi persis bintang + serangkaian karakter nol atau lebih. Tanda bintang <strong>(*)</strong> cocok dengan serangkaian karakter nol atau lebih.
+                            </p>
+                            <p><img class="img-fluid" src="../excel/files/Countif_files/image009.png" alt="Fungsi COUNTIF, Asterisk">
+                            </p>
+                        </li>
+                        <li>
+                            <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang mengandung bintang dengan cara apa pun.
+                            </p>
+                            <p><img class="img-fluid" src="../excel/files/Countif_files/image010.png" alt="Hitung Semua Kejadian"></p>
+                        </li>
+                        <li>
+                            <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang berisi teks.</p>
+                            <p><img class="img-fluid" src="../excel/files/Countif_files/image011.png" alt="Hitung Sel Yang Mengandung Teks"></p>
+                        </li>
+                    </ol>
+
+                    <p class="h5" id="CountBoolean">
+                        Count Boolean</p>
+                    <p>Gunakan fungsi <strong>COUNTIF</strong> di Excel untuk menghitung nilai Boolean (<strong>TRUE</strong> atau
+                        <strong>FALSE</strong>).</p>
+                    <ol>
+                        <li>
+                            <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang berisi Boolean
+                                <strong>TRUE</strong>.</p>
+                            <p><img class="img-fluid" src="../excel/files/Countif_files/image012.png" alt="Hitung BENAR"></p>
+                        </li>
+                        <li>
+                            <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang berisi Boolean FALSE.</p>
+                            <p><img class="img-fluid" src="../excel/files/Countif_files/image013.png" alt="Hitung SALAH"></p>
+                        </li>
+                    </ol>
+
+                    <p class="h5" id="CountErrors">
+                        Count Errors</p>
+                    <p>Gunakan fungsi <strong>COUNTIF</strong> di Excel untuk menghitung kesalahan tertentu.
+                    </p>
+                    <ol>
+                        <li>
+                            <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang berisi <strong>#NAME?</strong> kesalahan.
+                            </p>
+                            <p><img class="img-fluid" src="../excel/files/Countif_files/image014.png" alt="Hitung #Nama?  kesalahan">
+                            </p>
+                        </li>
+                        <li>
+                            <p>Rumus array di bawah ini menghitung jumlah total kesalahan dalam Range sel.</p>
+                            <p><img class="img-fluid" src="../excel/files/Countif_files/image015.png" alt="Hitung Kesalahan"></p>
+                            <p class="info"><strong>Catatan:</strong> selesaikan rumus array dengan menekan
+                                <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>. Excel menambahkan kurung kurawal <strong>{}</strong>. Kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/count-errors.html">Menghitung
+                  Kesalahan</a> untuk petunjuk terperinci tentang cara membuat rumus array ini.
+                            </p>
+                        </li>
+                    </ol>
+
+                    <p class="h5" id="AndKriteria">
+                        And Kriteria</p>
+                    <p>Menghitung dengan kriteria Dan di Excel itu mudah. Fungsi
+                        <strong>COUNTIFS</strong> (dengan huruf <strong>S</strong> di akhir) di Excel menghitung sel berdasarkan dua atau lebih kriteria.</p>
+                    <p>Misalnya, untuk menghitung jumlah baris yang berisi Google dan Stanford, cukup gunakan fungsi
+                        <strong>COUNTIFS</strong>.</p>
+                    <p><img class="img-fluid" src="../excel/files/Countif_files/image016.png" alt="Fungsi COUNTIFS di Excel"></p>
+
+                    <p class="h5" id="OrKriteria">
+                        Or Kriteria</p>
+                    <p>Menghitung dengan kriteria <strong>Or</strong> di Excel bisa jadi rumit.
+                    </p>
+                    <ol>
+                        <li>
+                            <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang berisi Google atau Facebook (satu kolom). Tidak ada ilmu roket sejauh ini.</p>
+                            <p><img class="img-fluid" src="../excel/files/Countif_files/image017.png" alt="Sederhana Atau Kriteria">
+                            </p>
+                        </li>
+                        <li>
+                            <p>Namun, jika Anda ingin menghitung jumlah baris yang berisi Google atau Stanford (dua kolom), Anda tidak bisa begitu saja menggunakan fungsi <strong>COUNTIF</strong> dua kali (lihat gambar di bawah).
+                            </p>
+                            <p><img class="img-fluid" src="../excel/files/Countif_files/image018.png" alt="Formula yang salah"></p>
+                            <p class="info"><strong>Catatan:</strong> baris yang berisi Google dan Stanford dihitung dua kali, tetapi seharusnya hanya dihitung sekali. 4 adalah jawaban yang kita cari.
+                            </p>
+                        </li>
+                        <li>
+                            <p>Rumus array di bawah ini berhasil.</p>
+                            <p><img class="img-fluid" src="../excel/files/Countif_files/image019.png" alt="Hitung dengan Atau Kriteria di Excel">
+                            </p>
+                            <p class="info"><strong>Catatan:</strong> selesaikan rumus array dengan menekan
+                                <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>. Excel menambahkan kurung kurawal <strong>{}</strong>. Kunjungi halaman kami tentang
+                                <a href="https://www.excel-easy.com/examples/count-with-or-criteria.html">Menghitung
+                  dengan Atau Kriteria</a> untuk instruksi terperinci tentang cara membuat rumus array ini.</p>
+                        </li>
+                    </ol>
+
+                    <p class="h5" id="LebihlanjuttentangCountif">
+                        Lebih lanjut tentang Countif</p>
+                    <p>Fungsi <strong>COUNTIF</strong> adalah fungsi yang hebat. Mari kita lihat beberapa contoh keren lainnya.
+                    </p>
+                    <ol>
+                        <li>
+                            <p>Fungsi <strong>COUNTIF</strong> di bawah ini menggunakan <a href="https://www.excel-easy.com/examples/named-range.html">Range
+                  bernama</a>. Range bernama Ages mengacu pada Range
+                                <strong>A1:A6</strong>.</p>
+                            <p><img class="img-fluid" src="../excel/files/Countif_files/image020.png" alt="COUNTIF dan Range Bernama">
+                            </p>
+                        </li>
+                        <li>
+                            <p>Fungsi <strong>COUNTIF</strong> di bawah ini menghitung jumlah sel yang kurang dari rata-rata usia (32,2).
+                            </p>
+                            <p><img class="img-fluid" src="../excel/files/Countif_files/image021.png" alt="COUNTIF dan RATA-RATA"></p>
+                        </li>
+                        <li>
+                            <p>Untuk menghitung sel di antara dua angka, gunakan fungsi
+                                <strong>COUNTIFS</strong> (dengan huruf
+                                <strong>S</strong> di akhir).</p>
+                            <p><img class="img-fluid" src="../excel/files/Countif_files/image022.png" alt="Hitung Sel Antara Dua Angka"></p>
+                        </li>
+                        <li>
+                            <p>Gunakan fungsi <strong>COUNTIF</strong> untuk menghitung berapa kali setiap nilai muncul dalam Range bernama Ages.
+                            </p>
+                            <p><img class="img-fluid" src="../excel/files/Countif_files/image023.png" alt="Hitung Berapa Kali Setiap Nilai Terjadi">
+                            </p>
+                            <p class="info"><strong>Catatan:</strong> sel
+                                <strong>B2</strong> berisi rumus =
+                                <strong>COUNTIF</strong>(Usia,A2), sel
+                                <strong>B3</strong> =<strong>COUNTIF</strong>(Usia,A3), dll.
+                            </p>
+                        </li>
+                        <li>
+                            <p>Tambahkan <a href="https://www.excel-easy.com/examples/if.html">fungsi
+                  IF</a> untuk menemukan duplikatnya.</p>
+                            <p><img class="img-fluid" src="../excel/files/Countif_files/image024.png" alt="Gunakan COUNTIF untuk Menemukan Duplikat"></p>
+                            <p><strong>Tip:</strong> gunakan <strong>COUNTIF</strong> dan pemformatan bersyarat untuk <a href="https://www.excel-easy.com/examples/find-duplicates.html">menemukan
+                  dan menyorot duplikat</a> di Excel.</p>
+                        </li>
+                    </ol>
+
+                    <p class="h5" id="CountMagic">
+                        Count Magic</p>
+                    <p>Fungsi <strong>COUNTIF</strong> tidak dapat menghitung berapa kali kata tertentu muncul dalam sel atau Range sel. Yang kita butuhkan hanyalah sedikit sihir!</p>
+                    <ol>
+                        <li>
+                            <p>Rumus di bawah ini menghitung berapa kali kata &quot;dog&quot; muncul di sel <strong>A1</strong>.</p>
+                            <p><img class="img-fluid" src="../excel/files/Countif_files/image025.png" alt="Hitung Berapa Kali Kata Tertentu Terjadi di Sel">
+                            </p>
+                        </li>
+                        <li>
+                            <p>Rumus di bawah ini menghitung berapa kali kata &quot;dog&quot; muncul dalam Range
+                                <strong>A1:A2</strong>.
+                            </p>
+                            <p><img class="img-fluid" src="../excel/files/Countif_files/image026.png" alt="Hitung Berapa Kali Kata Tertentu Terjadi dalam Range">
+                            </p>
+                            <p class="info"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/count-words.html">menghitung
+                  kata</a> untuk mempelajari lebih lanjut tentang rumus ini.
+                            </p>
+                        </li>
+                    </ol>
+                    <p>
+                        <a href="#FungsiCOUNTIF">kembali keatas</a>
+                    </p>
+                </details>
+            </section>
+
+            <!-- COUNTIFS -->
+            <section>
+
+                <p class="h5" id="countifs">
+                    COUNTIFS</p>
+                <p>Untuk menghitung baris berdasarkan beberapa kriteria (misalnya, hijau dan lebih besar dari 9, gunakan fungsi
+                    <strong>COUNTIFS</strong> berikut.
+                </p>
+                <p><img class="img-fluid" src="../excel/files/CountandSumFunctions_files/image003.png" alt="Fungsi Hitung"></p>
+            </section>
+
+            <!-- SUM -->
+            <section>
+
+                <p class="h5" id="sum">
+                    SUM</p>
+                <p>Untuk menjumlahkan range sel, gunakan fungsi <strong>SUM</strong>.</p>
+                <p><img class="img-fluid" src="../excel/files/CountandSumFunctions_files/image004.png" alt="Jumlah Fungsi"></p>
+
+                <details id="detailSum">
+                    <summary>Contoh Penggunaan Fungsi SUM</summary>
+                    <p class="h5">SUM</p>
+                    <p class="link-text"><a href="#JumlahRange">Sum Range</a> | <a href="#JumlahkanSeluruhKolom">Jumlahkan Seluruh
+              Kolom</a> | <a href="#JumlahSelyangTidakBersebelahan">Jumlahkan Sel yang Tidak
+              Bersebelahan</a> | <a href="#AutoSum">AutoSum</a> | <a href="#JumlahkanSetiapBarisKe-N">Jumlahkan Setiap
+              Baris Ke-N</a> | <a href="#JumlahkanBilanganTerbesar">Jumlahkan Bilangan
+              Terbesar</a> | <a href="#JumlahRangedenganKesalahan">Sum Range
+              dengan Error</a></p>
+
+                    <p>Gunakan fungsi <strong>SUM</strong> di Excel untuk menjumlahkan Range sel, seluruh kolom, atau sel yang tidak bersebelahan. Untuk membuat rumus SUM yang mengagumkan, gabungkan fungsi <strong>SUM</strong> dengan fungsi Excel lainnya.</p>
+
+
+                    <p class="h5" id="JumlahRange">
+                        Sum Range</p>
+                    <p>Sebagian besar waktu, Anda akan menggunakan fungsi
+                        <strong>SUM</strong> di Excel untuk menjumlahkan Range sel.</p>
+                    <p><img class="img-fluid" src="../excel/files/Sum_files/image001.png" alt="Jumlah Range"></p>
+
+
+                    <p class="h5" id="JumlahkanSeluruhKolom">
+                        Jumlahkan Seluruh Kolom <span class="span-text">(Sum Entire
+              Column)</span></p>
+                    <p>Anda juga dapat menggunakan fungsi <strong>SUM</strong> di Excel untuk menjumlahkan seluruh kolom.</p>
+                    <p><img class="img-fluid" src="../excel/files/Sum_files/image002.png" alt="Jumlahkan Seluruh Kolom"></p>
+                    <p><img class="img-fluid" src="../excel/files/Sum_files/image003.png" alt="Sel A99"></p>
+                    <p class="info"><strong>Catatan:</strong> Anda juga dapat menggunakan fungsi <strong>SUM</strong> di Excel untuk menjumlahkan seluruh baris. Misalnya, =<strong>SUM</strong>(5:5) menjumlahkan semua nilai di baris ke-5.
+                    </p>
+
+
+                    <p class="h5" id="JumlahSelyangTidakBersebelahan">
+                        Jumlah Sel yang Tidak Bersebelahan <span class="span-text">(Sum
+              Non-contiguous Cells)</span></p>
+                    <p>Anda juga dapat menggunakan fungsi <strong>SUM</strong> di Excel untuk menjumlahkan sel yang tidak bersebelahan. Tidak bersebelahan berarti tidak bersebelahan.</p>
+                    <p><img class="img-fluid" src="../excel/files/Sum_files/image004.png" alt="Jumlah Sel yang Tidak Bersebelahan"></p>
+                    <p class="info"><strong>Catatan:</strong> =A3+A5+A8 menghasilkan hasil yang sama persis!</p>
+
+
+                    <p class="h5" id="AutoSum">AutoSum <span class="span-text">(Sum
+              Otomatis)</span></p>
+                    <p>Gunakan <strong>AutoSum</strong> atau tekan <kbd>Alt</kbd>
+                        <kbd>+</kbd> <kbd>=</kbd> untuk menjumlahkan kolom atau baris angka dengan cepat.</p>
+                    <ol>
+                        <li>
+                            <p>Pertama, pilih sel di bawah kolom angka (atau di sebelah deretan angka) yang ingin Anda jumlahkan.</p>
+                            <p><img class="img-fluid" src="../excel/files/Sum_files/image005.png" alt="Pilih Sel"></p>
+                        </li>
+                        <li>
+                            <p>Pada tab Beranda, dalam grup Pengeditan, klik
+                                <strong>AutoSum</strong> (atau tekan <kbd>Alt</kbd>
+                                <kbd>+</kbd> <kbd>=</kbd>).</p>
+                            <p><img class="img-fluid" src="../excel/files/Sum_files/image006.png" alt="Klik AutoSum"></p>
+                        </li>
+                        <li>
+                            <p>Tekan Enter.</p>
+                            <p><img class="img-fluid" src="../excel/files/Sum_files/image007.png" alt=AutoSum>
+                            </p>
+                        </li>
+                    </ol>
+
+
+                    <p class="h5" id="JumlahkanSetiapBarisKe-N">
+                        Jumlahkan Setiap Baris Ke-N</p>
+                    <p>Rumus <strong>SUM</strong> di bawah ini menggunakan
+                        <strong>SUM</strong>, <strong>MOD</strong> dan <strong>ROW</strong> untuk
+                        <a href="https://www.excel-easy.com/examples/sum-every-nth-row.html">menjumlahkan
+              setiap baris ke-n</a>. Ubah 3 menjadi 4 untuk menjumlahkan setiap baris ke-4, menjadi 5 untuk menjumlahkan setiap baris ke-5, dst.
+                    </p>
+                    <p><img class="img-fluid" src="../excel/files/Sum_files/image008.png" alt="Jumlahkan Setiap Baris Ke-N"></p>
+                    <p class="info"><strong>Catatan:</strong> rumus bar menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal
+                        <strong>{}</strong>. Jangan mengetik ini sendiri. Untuk memasukkan rumus array, selesaikan dengan menekan
+                        <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.
+                    </p>
+
+
+                    <p class="h5" id="JumlahkanBilanganTerbesar">
+                        Jumlahkan Bilangan Terbesar</p>
+                    <p>Rumus <strong>SUM</strong> di bawah ini menggunakan
+                        <strong>SUM</strong> dan <strong>LARGE</strong> untuk <a href="https://www.excel-easy.com/examples/sum-largest-numbers.html">menjumlahkan
+              angka terbesar</a> dalam suatu Range. Ubah {1,2,3,4} menjadi {1,2,3,4,5} untuk menjumlahkan 5 bilangan terbesar.
+                    </p>
+                    <p><img class="img-fluid" src="../excel/files/Sum_files/image009.png" alt="Jumlahkan Bilangan Terbesar"></p>
+                    <p class="info"><strong>Catatan:</strong> =
+                        <strong>LARGE</strong>(A1:A11,2) cukup mengembalikan angka terbesar kedua.
+                    </p>
+
+
+                    <p class="h5" id="JumlahRangedenganKesalahan">
+                        Sum Range dengan Error</p>
+                    <p>Rumus SUM di bawah ini menggunakan <strong>SUM</strong> dan
+                        <strong>IFERROR</strong> untuk
+                        <a href="https://www.excel-easy.com/examples/sum-range-with-errors.html">menjumlahkan
+              Range dengan kesalahan</a>. Anda juga dapat menggunakan <a href="https://www.excel-easy.com/examples/aggregate.html">fungsi
+              <strong>AGGREGATE</strong></a> di Excel untuk menjumlahkan Range dengan kesalahan.</p>
+                    <p><img class="img-fluid" src="../excel/files/Sum_files/image010.png" alt="Jumlah Range dengan Kesalahan"></p>
+                    <p class="info"><strong>Catatan:</strong> fungsi <strong>SUM</strong> di Excel secara otomatis mengabaikan nilai teks.</p>
+                    <p>
+                        <a href="#detailSum">kembali keatas</a>
+                    </p>
+                </details>
+            </section>
+
+            <!-- SUMIF -->
+            <section>
+
+                <p class="h5" id="sumif">
+                    SUMIF</p>
+                <p>Untuk menjumlahkan sel berdasarkan satu kriteria (misalnya, lebih besar dari 9), gunakan fungsi SUMIF berikut (dua argumen).
+                </p>
+                <p><img class="img-fluid" src="../excel/files/CountandSumFunctions_files/image005.png" alt="Fungsi Sumif, Dua Argumen">
+                </p>
+                <p>Untuk menjumlahkan sel berdasarkan satu kriteria (misalnya, hijau), gunakan fungsi SUMIF berikut (tiga argumen, argumen terakhir adalah range yang akan dijumlahkan).
+                </p>
+                <p><img class="img-fluid" src="../excel/files/CountandSumFunctions_files/image006.png" alt="Fungsi Sumif, Tiga Argumen">
+                </p>
+
+                <details id="fungsiSUMIF">
+                    <summary>Contoh Penggunaan Fungsi SUMIF</summary>
+                    <p class="h5"><strong>SUMIF</strong></p>
+
+                    <p class="link-text"><a href="#KriteriaNumerikSumif">Kriteria
+              Numerik</a> | <a href="#KriteriaTeks">Kriteria Teks</a> | <a href="#KriteriaTanggal">Kriteria Tanggal</a> | <a href="#AndKriteriaSumif">And Kriteria</a> | <a href="#OrKriteriaSumif">Or Kriteria</a></p>
+
+                    <p>
+                        <strong class="d-block h6 text-warning p-0 m-0">Download file
+              latihan</strong>
+                        <a href="../excel/files/bahan/sumif.xlsx" class="fw-light p-0 m-0">sumif.xlsx</a>
+                    </p>
+
+                    <p>Fungsi <strong>SUMIF</strong> yang kuat di Excel menjumlahkan sel berdasarkan satu kriteria. Halaman ini berisi banyak contoh
+                        <strong>SUMIF</strong> yang mudah diikuti.</p>
+
+                    <p class="h5" id="KriteriaNumerikSumif">
+                        Kriteria Numerik</p>
+                    <p>Gunakan fungsi <strong>SUMIF</strong> di Excel untuk menjumlahkan sel berdasarkan angka yang memenuhi kriteria tertentu.</p>
+                    <ol>
+                        <li>
+                            <p>Fungsi <strong>SUMIF</strong> di bawah (dua argumen) menjumlahkan nilai dalam range A1:A5 yang kurang dari atau sama dengan 10.
+                            </p>
+                            <p><img class="img-fluid" src="../excel/files/Sumif_files/image001.png" alt="Fungsi Sumif di Excel dengan Dua Argumen">
+                            </p>
+                        </li>
+                        <li>
+                            <p>Fungsi <strong>SUMIF</strong> berikut memberikan hasil yang sama persis. Operator &amp; menggabungkan simbol 'kurang dari atau sama dengan' dan nilai dalam sel C1.</p>
+                            <p><img class="img-fluid" src="../excel/files/Sumif_files/image002.png" alt="Fungsi Sumif dan Operator Ampersand">
+                            </p>
+                        </li>
+                        <li>
+                            <p>Fungsi <strong>SUMIF</strong> di bawah ini (tiga argumen, argumen terakhir adalah range yang akan dijumlahkan) menjumlahkan nilai dalam range B1:B5 jika sel terkait dalam range A1:A5 berisi nilai 25.
+                            </p>
+                            <p><img class="img-fluid" src="../excel/files/Sumif_files/image003.png" alt="Fungsi Sumif di Excel dengan Tiga Argumen">
+                            </p>
+                        </li>
+                        <li>
+                            <p>Fungsi <strong>SUMIF</strong> berikut memberikan hasil yang sama persis (argumen kedua mengacu pada sel D1).
+                            </p>
+                            <p><img class="img-fluid" src="../excel/files/Sumif_files/image004.png" alt="Argumen Kedua Mengacu pada Sel D1"></p>
+                        </li>
+                    </ol>
+
+                    <p class="h5" id="KriteriaTeks">
+                        Kriteria Teks</p>
+                    <p>Gunakan fungsi <strong>SUMIF</strong> di Excel untuk menjumlahkan sel berdasarkan string teks yang memenuhi kriteria tertentu. Selalu sertakan teks dalam tanda kutip ganda.</p>
+                    <ol>
+                        <li>
+                            <p>Fungsi <strong>SUMIF</strong> di bawah ini menjumlahkan nilai dalam range B1:B5 jika sel yang sesuai dalam range A1:A5 berisi lingkaran persis.</p>
+                            <p><img class="img-fluid" src="../excel/files/Sumif_files/image005.png" alt="Jumlahkan Jika Sama dengan Nilai Teks">
+                            </p>
+                        </li>
+                        <li>
+                            <p>Fungsi <strong>SUMIF</strong> di bawah ini menjumlahkan nilai dalam range B1:B5 jika sel terkait dalam range A1:A5 tidak berisi segitiga sama persis.</p>
+                            <p><img class="img-fluid" src="../excel/files/Sumif_files/image006.png" alt="Jumlahkan Jika Tidak Sama dengan Nilai Teks"></p>
+                        </li>
+                        <li>
+                            <p>Fungsi <strong>SUMIF</strong> di bawah ini menjumlahkan nilai dalam range B1:B5 jika sel yang sesuai dalam range A1:A5 berisi persis lingkaran + 1 karakter. Tanda tanya (?) cocok dengan tepat satu karakter.
+                            </p>
+                            <p><img class="img-fluid" src="../excel/files/Sumif_files/image007.png" alt="Fungsi Sumif dengan Tanda Tanya"></p>
+                        </li>
+                        <li>
+                            <p>Fungsi <strong>SUMIF</strong> di bawah ini menjumlahkan nilai dalam range B1:B5 jika sel terkait dalam range A1:A5 berisi rangkaian nol atau lebih karakter + file. Tanda bintang (*) cocok dengan serangkaian karakter nol atau
+                                lebih.
+                            </p>
+                            <p><img class="img-fluid" src="../excel/files/Sumif_files/image008.png" alt="Fungsi Sumif dengan Asterisk"></p>
+                        </li>
+                        <li>
+                            <p>Fungsi <strong>SUMIF</strong> di bawah jumlah nilai dalam range B1:B5 jika sel yang sesuai dalam range A1:A5 berisi segitiga atau circle8 yang tepat.</p>
+                            <p><img class="img-fluid" src="../excel/files/Sumif_files/image009.png" alt="Dua Fungsi Sumif di Excel">
+                            </p>
+                        </li>
+                    </ol>
+
+                    <p class="h5" id="KriteriaTanggal">
+                        Kriteria Tanggal</p>
+                    <p>Gunakan fungsi <strong>SUMIF</strong> di Excel untuk menjumlahkan sel berdasarkan tanggal yang memenuhi kriteria tertentu.</p>
+                    <ol>
+                        <li>
+                            <p>Fungsi <strong>SUMIF</strong> di bawah ini menjumlahkan penjualan setelah 20 Januari 2018.</p>
+                            <p><img class="img-fluid" src="../excel/files/Sumif_files/image010.png" alt="Jumlahkan Jika Tanggal Lebih Besar dari">
+                            </p>
+                            <p class="info"><strong>Catatan:</strong> fungsi
+                                <strong>DATE</strong> di Excel menerima tiga argumen: tahun, bulan, dan hari.</p>
+                        </li>
+                        <li>
+                            <p>Fungsi <strong>SUMIF</strong> di bawah ini menjumlahkan penjualan hari ini.
+                            </p>
+                            <p><img class="img-fluid" src="../excel/files/Sumif_files/image011.png" alt="Fungsi Sumif dan Fungsi Hari Ini"></p>
+                            <p class="info"><strong>Catatan:</strong> hari ini adalah 3 Agustus 2018.
+                            </p>
+                        </li>
+                        <li>
+                            <p>Fungsi <strong>SUMIF</strong>S (dengan huruf S di akhir) di bawah ini menjumlahkan penjualan antara dua tanggal.
+                            </p>
+                            <p><img class="img-fluid" src="../excel/files/Sumif_files/image012.png" alt="Jumlahkan Jika Tanggal Antara"></p>
+                            <p class="info"><strong>Catatan:</strong> fungsi
+                                <strong>SUMIF</strong>S di Excel menjumlahkan sel berdasarkan dua atau lebih kriteria (argumen pertama adalah range yang akan dijumlahkan, diikuti oleh dua atau lebih pasangan range/kriteria). Sesuaikan tanggal untuk menjumlahkan
+                                penjualan pada bulan, tahun, dll.</p>
+                        </li>
+                    </ol>
+
+                    <p class="h5" id="AndKriteriaSumif">
+                        And Kriteria</p>
+                    <p>Menjumlahkan dengan kriteria Dan di Excel itu mudah.</p>
+                    <p>Misalnya, untuk menjumlahkan sel yang memenuhi kriteria berikut: Google dan Stanford (dua range kriteria), cukup gunakan fungsi
+                        <strong>SUMIF</strong>S (dengan huruf <strong>S</strong> di akhir).
+                    </p>
+                    <p><img class="img-fluid" src="../excel/files/Sumif_files/image013.png" alt="Fungsi Sumif di Excel"></p>
+                    <p class="info"><strong>Catatan:</strong> ingat, saat menggunakan fungsi
+                        <strong>SUMIF</strong>S, argumen pertama adalah range yang akan dijumlahkan, diikuti oleh dua atau lebih pasangan range/kriteria.
+                    </p>
+
+                    <p class="h5" id="OrKriteriaSumif">
+                        Or Kriteria</p>
+                    <p>Menjumlahkan dengan kriteria <strong>Or</strong> di Excel bisa jadi rumit.
+                    </p>
+                    <ol>
+                        <li>
+                            <p>Rumus di bawah ini menjumlahkan sel yang memenuhi kriteria berikut: Google atau Facebook (satu range kriteria). Tidak ada ilmu roket sejauh ini.</p>
+                            <p><img class="img-fluid" src="../excel/files/Sumif_files/image014.png" alt="2x Fungsi Sumif di Excel">
+                            </p>
+                        </li>
+                        <li>
+                            <p>Namun, jika Anda ingin menjumlahkan sel yang memenuhi kriteria berikut: Google atau Stanford (dua range kriteria), Anda tidak bisa begitu saja menggunakan fungsi
+                                <strong>SUMIF</strong> dua kali (lihat gambar di bawah).
+                            </p>
+                            <p><img class="img-fluid" src="../excel/files/Sumif_files/image015.png" alt="Formula yang salah"></p>
+                            <p class="info"><strong>Catatan:</strong> sel yang memenuhi kriteria Google dan Stanford ditambahkan dua kali, tetapi hanya boleh ditambahkan satu kali. 10 adalah jawaban yang kita cari.</p>
+                        </li>
+                        <li>
+                            <p>Rumus Array di bawah ini berhasil.</p>
+                            <p><img class="img-fluid" src="../excel/files/Sumif_files/image016.png" alt="Jumlahkan dengan Atau Kriteria di Excel">
+                            </p>
+                            <p class="info"><strong>Catatan:</strong> selesaikan rumus array dengan menekan
+                                <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>. Excel menambahkan kurung kurawal
+                                <strong>{}</strong>. Kunjungi halaman kami tentang <a href="https://www.excel-easy.com/examples/sum-with-or-criteria.html">Penjumlahan
+                  dengan Atau Kriteria</a> untuk instruksi mendetail tentang cara membuat Rumus Array ini.</p>
+                        </li>
+                    </ol>
+                    <p>
+                        <a href="#fungsiSUMIF">kembali ke atas</a>
+                    </p>
+                </details>
+            </section>
+
+            <!-- SUMIFS -->
+            <section>
+
+                <p class="h5" id="sumifs">
+                    SUMIFS</p>
+                <p>Untuk menjumlahkan sel berdasarkan beberapa kriteria (misalnya, lingkaran dan merah), gunakan fungsi SUMIFS berikut (argumen pertama adalah range yang akan dijumlahkan).
+                </p>
+                <p><img class="img-fluid" src="../excel/files/CountandSumFunctions_files/image007.png" alt="Fungsi Sumif"></p>
+                <p class="info"><strong></strong> dengan cara yang sama, Anda dapat menggunakan
+                    <a href="#">fungsi
+            AVERAGEIF</a> untuk rata-rata sel berdasarkan satu kriteria dan fungsi AVERAGEIFS untuk rata-rata sel berdasarkan beberapa kriteria.</p>
+
+                <a class="d-flex justify-content-end fw-light" href="#">kembali keatas</a>
+            </section>
+
+            <section id="ContohPenggunaanFungsiCOUNTdanSUM">
+                <details>
+                    <summary class="lead border-bottom py-2">Contoh Penggunaan Fungsi COUNT dan SUM</summary>
+                    <p class="link-text mt-2">
+                        <a href="#CountSum-Countif">Countif</a> |
+                        <a href="#CountSum-CountBlankNonblankCells">Hitung Sel Kosong/Tidak Kosong</a> |
+                        <a href="#CountSum-HitungKarakter">Hitung Karakter</a> |
+                        <a href="#CountSum-TidakSebandingDengan">Tidak sebanding dengan</a> |
+                        <a href="#CountSum-HitungSelDenganTeks">Hitung Sel dengan Teks</a> |
+                        <a href="#CountSum-Jumlah">Sum</a> |
+                        <a href="#CountSum-TotalBerjalan">Total Berjalan</a> |
+                        <a href="#CountSum-Sumif">Sumif</a> |
+                        <a href="#CountSum-Sumproduct">Sumproduct</a>
+                    </p>
+                    <!-- Countif -->
+                    <section>
+                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/countif.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                            <p class="bd-lead mb-0" id="CountSum-Countif">Countif</p>
+                        </div>
+                        <p class="link-text">
+                            <a href="#Countif-Kriteria Numerik">Numerik Kriteria</a> |
+                            <a href="#Countif-Trik Teks">Teks Trik</a> |
+                            <a href="#Countif-Hitung Boolean">Hitung Boolean</a> |
+                            <a href="#Countif-Hitung Kesalahan">Hitung Kesalahan</a> |
+                            <a href="#Countif-Dan Kriteria">And Kriteria</a> |
+                            <a href="#Countif-Atau Kriteria">Or Kriteria</a> |
+                            <a href="#Countif-Lebih lanjut tentang Countif">Lebih lanjut tentang Countif</a> |
+                            <a href="#Countif-Hitung Magic">Hitung Magic</a>
+                        </p>
+                        <p class="sub-judul" id="Countif-Kriteria Numerik">Numerik Kriteria</a>
+                        </p>
+                        <p class="sub-judul" id="Countif-Trik Teks">Teks Trik</a>
+                        </p>
+                        <p class="sub-judul" id="Countif-Hitung Boolean">Hitung Boolean</a>
+                        </p>
+                        <p class="sub-judul" id="Countif-Hitung Kesalahan">Hitung Kesalahan</a>
+                        </p>
+                        <p class="sub-judul" id="Countif-Dan Kriteria">And Kriteria</a>
+                        </p>
+                        <p class="sub-judul" id="Countif-Atau Kriteria">Or Kriteria</a>
+                        </p>
+                        <p class="sub-judul" id="Countif-Lebih lanjut tentang Countif">Lebih lanjut tentang Countif</a>
+                        </p>
+                        <p class="sub-judul" id="Countif-Hitung Magic">Hitung Magic</a>
+                        </p>
+                    </section>
+
+                    <!-- Count Blank/Nonblank Cells -->
+                    <section>
+                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/count-blank-nonblank-cells.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                            <p class="bd-lead mb-0" id="CountSum-CountBlankNonblankCells">Hitung Sel Kosong/Tidak Kosong <span class="span-text">(Count Blank/Nonblank Cells)</span></p>
+                        </div>
+                    </section>
+
+                    <!-- Count Characters -->
+                    <section>
+                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/count-characters.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                            <p class="bd-lead mb-0" id="CountSum-HitungKarakter">Hitung Karakter <span class="span-text">(Count Characters)</span></p>
+                        </div>
+                    </section>
+
+                    <!-- Not Equal To -->
+                    <section>
+                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/not-equal-to.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                            <p class="bd-lead mb-0" id="CountSum-TidakSebandingDengan">Tidak sebanding dengan <span class="span-text">(Not Equal To)</span></p>
+                        </div>
+                    </section>
+
+                    <!-- Count Cells with Text -->
+                    <section>
+                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/count-cells-with-text.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                            <p class="bd-lead mb-0" id="CountSum-HitungSelDenganTeks">Hitung Sel dengan Teks <span class="span-text">(Count Cells with Text)</span></p>
+                        </div>
+                    </section>
+
+                    <!-- Sum -->
+                    <section>
+                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/sum.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                            <p class="bd-lead mb-0" id="CountSum-Jumlah">Sum</p>
+                        </div>
+                        <p class="link-text">
+                            <a href="#sum-range">Sum Range</a> |
+                            <a href="#sum-entire-column">Menjumlahkan Seluruh Kolom</a> |
+                            <a href="#sum-non-contiguous-cells">Sum Sel Non-bersebelahan</a> |
+                            <a href="#autosum">AutoSum</a> |
+                            <a href="#sum-every-nth-row">Sum Setiap Baris Nth</a> |
+                            <a href="#sum-largest-numbers">Sum Angka Terbesar</a> |
+                            <a href="#sum-range-with-errors">Sum Range dengan Errors</a>
+                        </p>
+                        <p class="sub-judul" id="sum-range">Sum Range</a>
+                        </p>
+                        <p class="sub-judul" id="sum-entire-column">Menjumlahkan Seluruh Kolom</a>
+                        </p>
+                        <p class="sub-judul" id="sum-non-contiguous-cells">Sum Sel Non-bersebelahan</a>
+                        </p>
+                        <p class="sub-judul" id="autosum">AutoSum</a>
+                        </p>
+                        <p class="sub-judul" id="sum-every-nth-row">Sum Setiap Baris Nth</a>
+                        </p>
+                        <p class="sub-judul" id="sum-largest-numbers">Sum Angka Terbesar</a>
+                        </p>
+                        <p class="sub-judul" id="sum-range-with-errors">Sum Range dengan Errors</a>
+                        </p>
+                    </section>
+
+                    <!-- Running Total -->
+                    <section>
+                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/running-total.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                            <p class="bd-lead mb-0" id="CountSum-TotalBerjalan">Total Berjalan <span class="span-text">(Running Total)</span></p>
+                        </div>
+                    </section>
+
+                    <!-- Sumif -->
+                    <section>
+                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/sumif.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                            <p class="bd-lead mb-0" id="CountSum-Sumif">Sumif</p>
+                        </div>
+                        <p class="link-text">
+                            <a href="#Sumif-numeric-criteria">Numerik Kriteria</a> |
+                            <a href="#Sumif-text-criteria">Teks Kriteria</a> |
+                            <a href="#Sumif-date-criteria">Tanggal Kriteria</a> |
+                            <a href="#Sumif-and-criteria">And Kriteria</a> |
+                            <a href="#Sumif-or-criteria">Or Kriteria</a>
+                        </p>
+                        <p class="sub-judul" id="Sumif-numeric-criteria">Numerik Kriteria</p>
+                        <p class="sub-judul" id="Sumif-text-criteria">Teks Kriteria</p>
+                        <p class="sub-judul" id="Sumif-date-criteria">Tanggal Kriteria</p>
+                        <p class="sub-judul" id="Sumif-and-criteria">And Kriteria</p>
+                        <p class="sub-judul" id="Sumif-or-criteria">Or Kriteria</p>
+                    </section>
+
+                    <!-- Sumproduct -->
+                    <section>
+                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/sumproduct.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                            <p class="bd-lead mb-0" id="CountSum-Sumproduct">Sumproduct</p>
+                        </div>
+                        <p class="link-text">
+                            <a href="#Sumproduct-basic-use">Penggunaan Dasar</a> |
+                            <a href="#Sumproduct-advanced-use">Penggunaan Lanjutan</a>
+                        </p>
+                        <p class="sub-judul" id="Sumproduct-basic-use">Penggunaan Dasar</p>
+                        <p class="sub-judul" id="Sumproduct-advanced-use">Penggunaan Lanjutan</p>
+                    </section>
+
+                    <a class="d-flex justify-content-end fw-light" href="#ContohPenggunaanFungsiCOUNTdanSUM">kembali keatas</a>
+                </details>
+            </section>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,539 @@
+<div class="accordion-item">
+    <h2 class="accordion-header" id="ReferensiSel">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-ReferensiSel" aria-expanded="false" aria-controls="flush-ReferensiSel">
+      <figure>
+        <blockquote class="blockquote">
+          <p>Referensi Sel</p>
+        </blockquote>
+        <figcaption class="blockquote-footer fw-light">
+          Cell References
+        </figcaption>
+      </figure>
+    </button>
+    </h2>
+    <div id="flush-ReferensiSel" class="accordion-collapse collapse" aria-labelledby="ReferensiSel" data-bs-parent="#accordionFungsi">
+        <div class="accordion-body">
+
+            <section>
+                <p class="link-text">
+                    <a href="#ReferensiRelatif">Referensi Relatif</a> |
+                    <a href="#ReferensiMutlak">Referensi Mutlak</a> |
+                    <a href="#ReferensiCampuran">Referensi Campuran</a>
+                </p>
+                <p>Referensi sel di Excel sangat penting. Pahami perbedaan antara referensi relatif, absolut, dan campuran, dan Anda sedang menuju kesuksesan.</p>
+                <p><a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/cell-references.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                <p class="h5" id="ReferensiRelatif">
+                    Referensi Relatif</p>
+                <p>Secara default, Excel menggunakan referensi relatif. Lihat rumus di sel D2 di bawah ini. Referensi sel D2 (menunjuk ke) sel B2 dan sel C2. Kedua referensi itu relatif.</p>
+                <p><img class="img-fluid" src="../excel/files/ReferensiSel_files/image001.png" alt="Contoh Referensi Relatif"></p>
+                <p>Pilih sel D2, klik di sudut kanan bawah sel D2 dan seret ke bawah ke sel D5.
+                </p>
+                <p><img class="img-fluid" src="../excel/files/ReferensiSel_files/image002.png" alt="Referensi Relatif di Excel">
+                </p>
+                <p>Sel D3 mereferensikan sel B3 dan sel C3. Sel D4 mereferensikan sel B4 dan sel C4. Sel D5 mereferensikan sel B5 dan sel C5. Dengan kata lain: setiap sel mereferensikan dua tetangganya di sebelah kiri.</p>
+
+                <p class="h5" id="ReferensiMutlak">
+                    Referensi Mutlak</p>
+                <p>Lihat rumus di sel E3 di bawah ini.</p>
+                <ol>
+                    <li>
+                        <p>Untuk membuat referensi absolut ke sel H3, letakkan simbol $ di depan huruf kolom dan nomor baris ($H$3) dalam rumus sel E3.
+                        </p>
+                        <p><img class="img-fluid" src="../excel/files/ReferensiSel_files/image003.png" alt="Contoh Referensi Absolut">
+                        </p>
+                    </li>
+                    <li>
+                        <p>Sekarang kita dapat dengan cepat menyeret rumus ini ke sel lain.</p>
+                        <p><img class="img-fluid" src="../excel/files/ReferensiSel_files/image004.png" alt="Referensi Mutlak di Excel"></p>
+                        <p>Referensi ke sel H3 diperbaiki (saat kita menyeret rumus ke bawah dan ke seberang). Akibatnya, panjang dan lebar yang benar dalam inci dihitung. Kunjungi halaman kami tentang <a href="#">referensi
+              absolut</a> untuk mempelajari lebih lanjut tentang jenis referensi ini.</p>
+                    </li>
+                </ol>
+
+                <p class="h5" id="ReferensiCampuran">
+                    Referensi Campuran</p>
+                <p>Terkadang kita membutuhkan kombinasi referensi relatif dan absolut ( referensi campuran ).</p>
+                <ol>
+                    <li>
+                        <p>Lihat rumus di sel F2 di bawah ini.</p>
+                        <p><img class="img-fluid" src="../excel/files/ReferensiSel_files/image005.png" alt="Contoh Referensi Campuran"></p>
+                    </li>
+                    <li>
+                        <p>Kami ingin menyalin rumus ini ke sel lain dengan cepat. Seret sel F2 melintasi satu sel, dan lihat rumus di sel G2.</p>
+                        <p><img class="img-fluid" src="../excel/files/ReferensiSel_files/image006.png" alt="Contoh Referensi Campuran"></p>
+                        <p>Apakah Anda melihat apa yang terjadi? Referensi ke harga harus menjadi referensi tetap ke kolom B. Solusi: letakkan simbol $ di depan huruf kolom ($B2) pada rumus sel F2. Dengan cara yang sama, ketika kita menyeret sel F2 ke bawah,
+                            referensi ke pengurangan harus menjadi referensi tetap ke baris 6. Solusi: letakkan simbol $ di depan nomor baris (B$6) dalam rumus sel F2.</p>
+                        <p>Hasil:</p>
+                        <p><img class="img-fluid" src="../excel/files/ReferensiSel_files/image007.png" alt="Contoh Referensi Campuran"></p>
+                        <p class="info"><strong>Catatan:</strong> kami tidak menempatkan simbol $ di depan nomor baris $B2 (dengan cara ini kami mengizinkan referensi untuk berubah dari $B2 (Jeans) menjadi $B3 (Shirts) saat kami menyeret rumus ke bawah). Dengan cara
+                            yang sama, kita tidak menempatkan simbol $ di depan huruf kolom B$6 (dengan cara ini kita mengizinkan referensi berubah dari B$6 (Jan) ke C$6 (Feb) dan D$6 (Mar) ketika kami menyeret rumus ke seberang).</p>
+                    </li>
+                    <li>
+                        <p>Sekarang kita dapat dengan cepat menyeret rumus ini ke sel lain.</p>
+                        <p><img class="img-fluid" src="../excel/files/ReferensiSel_files/image008.png" alt="Referensi Campuran di Excel"></p>
+                        <p>Referensi ke kolom B dan baris 6 adalah tetap.</p>
+                    </li>
+                </ol>
+
+                <a class="d-flex justify-content-end fw-light" href="#ReferensiSel">kembali keatas</a>
+            </section>
+
+            <section id="ContohPenggunaanFungsiReferensiSel">
+                <details>
+                    <summary class="lead border-bottom py-2">Contoh Penggunaan Fungsi Referensi Sel</summary>
+                    <p class="link-text mt-2">
+                        <a href="#CellReferences-copy-formula.html">Salin Rumus</a> |
+                        <a href="#CellReferences-3d-reference.html">Referensi 3D</a> |
+                        <a href="#CellReferences-external-references.html">Referensi Eksternal</a> |
+                        <a href="#CellReferences-hyperlinks.html">Hyperlinks</a> |
+                        <a href="#CellReferences-union-intersect.html">Union and Intersect</a> |
+                        <a href="#CellReferences-percent-change.html">Perubahan Persen</a> |
+                        <a href="#CellReferences-add-column.html">Menambahkan Kolom</a> |
+                        <a href="#CellReferences-absolute-reference.html">Referensi Mutlak</a> |
+                        <a href="#CellReferences-address.html">Alamat</a>
+                    </p>
+
+                    <!-- Copy a Formula -->
+                    <section>
+                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/copy-formula.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                            <p class="bd-lead mb-0" id="CellReferences-copy-formula.html">Salin Rumus <span class="span-text">(Copy a Formula)</span></p>
+                        </div>
+                        <p class="link-text">
+                            <a href="#copy-101">Copy 101</a> |
+                            <a href="#fill-handle">Fill Handle</a> |
+                            <a href="#absolute-reference">Referensi Mutlak</a> |
+                            <a href="#move-formula">Memindahkan Rumus</a> |
+                            <a href="#exact-copy">Exact Copy</a> |
+                            <a href="#copy-magic">Copy Magic</a>
+                        </p>
+                        <p>Saat Anda menyalin rumus, Excel secara otomatis menyesuaikan referensi sel untuk setiap sel baru tempat rumus disalin.</p>
+
+                        <p class="sub-judul" id="copy-101">Copy 101</p>
+                        <p>Cukup gunakan <kbd>Ctrl</kbd>+<kbd>C</kbd> dan
+                            <kbd>Ctrl</kbd>+<kbd>V</kbd> untuk menyalin dan menempelkan rumus di Excel.
+                        </p>
+                        <p>1. Misalnya, untuk menyalin rumus, pilih sel A3 di bawah dan tekan
+                            <kbd>Ctrl</kbd>+<kbd>C</kbd>.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image001.png" alt="Salin Rumus di Excel"></p>
+                        <p>2. Untuk menempelkan rumus ini, pilih sel B3 dan tekan
+                            <kbd>Ctrl</kbd>+<kbd>V</kbd>.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image002.png" alt="Tempel Formula">
+                        </p>
+                        <p>3. Klik di rumus bar untuk melihat dengan jelas bahwa rumus mereferensikan nilai di kolom B.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image003.png" alt="Formula Bar"></p>
+
+                        <p class="sub-judul" id="fill-handle">Fill Handle</p>
+                        <p>Gunakan Fill Handle di Excel untuk menyalin rumus dengan cepat ke sel lain.
+                        </p>
+                        <p>1. Misalnya, pilih sel A3 di bawah, klik di sudut kanan bawah sel A3 (pegangan isian) dan seret ke sel F3.
+                        </p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image004.png" alt="Salin Rumus Di seberang"></p>
+                        <p>Hasil.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image005.png" alt="Rumus Disalin ke Seluruh"></p>
+                        <p>Anda juga dapat menggunakan Fill Handle untuk menyalin rumus dengan cepat ke bawah kolom.</p>
+                        <p>2. Misalnya, pilih sel C1 di bawah ini, klik di sudut kanan bawah sel C1 dan seret ke bawah ke sel C6.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image006.png" alt="Salin Rumus Bawah">
+                        </p>
+                        <p>Hasil.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image007.png" alt="Rumus Disalin ke Bawah"></p>
+
+                        <p class="sub-judul" id="absolute-reference">Referensi Mutlak</p>
+                        <p>Buat referensi absolut untuk memperbaiki referensi ke sel atau Range sel. Saat Anda menyalin rumus, referensi absolut tidak pernah berubah.</p>
+                        <p>1. Misalnya, perbaiki referensi ke sel E2 di bawah ini dengan menempatkan simbol $ di depan huruf kolom dan nomor baris.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image008.png" alt="Referensi Sel Absolut"></p>
+                        <p>2. Pilih sel C2, klik di sudut kanan bawah sel C2 dan seret ke bawah ke sel C7.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image009.png" alt="Salin Referensi Sel Mutlak"></p>
+                        <p>Memeriksa:</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image010.png" alt="Referensi Sel Tetap"></p>
+                        <p class="info"><strong>Penjelasan:</strong> referensi absolut ($E$2) tetap sama, sedangkan referensi relatif (B2) berubah menjadi B3, B4, B5, B6 dan B7. Kunjungi halaman kami tentang <a href="#">referensi absolut</a> untuk mempelajari lebih lanjut
+                            tentang topik ini.</p>
+
+                        <p class="sub-judul" id="move-formula">Memindahkan Rumus</p>
+                        <p>Untuk memindahkan rumus di Excel, cukup gunakan cut (
+                            <kbd>Ctrl</kbd>+<kbd>X</kbd>) dan paste (<kbd>Ctrl</kbd>+<kbd>V</kbd>). Excel pro menggunakan trik berikut untuk memindahkan rumus.</p>
+                        <p>1. Pilih sel dengan rumus.</p>
+                        <p>2. Arahkan kursor ke batas seleksi. Panah empat sisi muncul.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image011.png" alt="Panah Empat Sisi">
+                        </p>
+                        <p>3. Klik dan tahan tombol kiri mouse.</p>
+                        <p>4. Pindahkan rumus ke posisi baru.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image012.png" alt="Memindahkan Rumus di Excel"></p>
+                        <p>5. Lepaskan tombol kiri mouse.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image013.png" alt="Rumus yang Dipindahkan"></p>
+
+                        <p class="sub-judul" id="exact-copy">Exact Copy</p>
+                        <p>Untuk membuat salinan rumus yang tepat, tanpa mengubah referensi sel, jalankan langkah-langkah mudah berikut ini.
+                        </p>
+                        <p>1. Klik di rumus bar dan pilih rumus.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image014.png" alt="Pilih Rumus"></p>
+                        <p>2. Tekan <kbd>Ctrl</kbd>+<kbd>C</kbd> dan tekan Enter.</p>
+                        <p>3. Pilih sel lain dan tekan <kbd>Ctrl</kbd>+<kbd>V</kbd>.</p>
+                        <p>Hasil:</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image015.png" alt="Salinan yang Tepat"></p>
+                        <p>Kesimpulan: sel A3 dan sel B3 mengandung rumus yang sama persis.</p>
+
+                        <p class="sub-judul" id="copy-magic">Copy Magic</p>
+                        <p>Untuk membuat salinan persis dari beberapa rumus, ulangi langkah sebelumnya untuk setiap rumus. Anda juga bisa menggunakan trik sulap berikut.
+                        </p>
+                        <p>1. Pilih beberapa rumus.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image016.png" alt="Pilih Beberapa Rumus"></p>
+                        <p>2. <a href="#">Replace</a> semua tanda sama dengan xxx.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image017.png" alt="Menggantikan semua"></p>
+                        <p>Hasil.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image018.png" alt="Siap Menyalin"></p>
+                        <p>3. Gunakan <kbd>Ctrl</kbd>+<kbd>C</kbd> dan <kbd>Ctrl</kbd>+<kbd>V</kbd> untuk menyalin dan menempelkan string teks.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image019.png" alt="String Teks"></p>
+                        <p>4. Pilih Range B6:B10, tahan <kbd>Ctrl</kbd>, pilih Range E6:E10 dan
+                            <a href="#">Replace</a> semua kemunculan 'xxx' dengan tanda sama dengan (kebalikan dari langkah 2).</p>
+                        <p>Hasil.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image020.png" alt="Salin Magic"></p>
+                        <p class="info"><strong>Kesimpulan:</strong> sel B6 dan sel E6 berisi rumus yang sama persis, sel B7 dan sel E7 berisi rumus yang sama persis, dll.
+                        </p>
+                    </section>
+
+                    <!-- 3D-reference -->
+                    <section>
+                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/3d-reference.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                            <p class="bd-lead mb-0" id="CellReferences-3d-reference.html">Referensi 3D <span class="span-text">(3D-reference)</span></p>
+                        </div>
+                        <p>Sebuah 3D-referensi di Excel mengacu pada sel yang sama atau range di beberapa lembar kerja. Pertama, kita akan melihat alternatifnya.</p>
+                        <p>1. Pada lembar Perusahaan, pilih sel B2 dan ketik tanda sama dengan =</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image021.png" alt="Alternatif, Langkah 1"></p>
+                        <p>2. Pergi ke lembar Utara, pilih sel B2 dan ketik a +</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image022.png" alt="Alternatif, Langkah 2"></p>
+                        <p>3. Ulangi langkah 2 untuk lembar Tengah dan Selatan.</p>
+                        <p>Hasil.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image023.png" alt=Rumus></p>
+                        <p>4. Ini cukup banyak pekerjaan. daripada melakukan ini, gunakan referensi 3D berikut: Utara:Selatan!B2 sebagai argumen untuk fungsi SUM.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image024.png" alt="Referensi 3D di Excel"></p>
+                        <p>5. Jika Anda menambahkan lembar kerja antara Utara dan Selatan, lembar kerja ini secara otomatis disertakan dalam rumus di sel B2.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image025.png" alt="Tambahkan Lembar Kerja"></p>
+                    </section>
+
+                    <!-- External References -->
+                    <section>
+                        <div class="d-md-flex  align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                            <p class="bd-lead mb-0" id="CellReferences-external-references.html">Referensi Eksternal <span class="span-text">(External References)</span></p>
+                        </div>
+                        <p class="link-text">
+                            <a href="#">Buat Referensi Eksternal</a> |
+                            <a href="#">Waspada</a> |
+                            <a href="#">Edit Tautan</a>
+                        </p>
+                        <p>
+                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/North.xlsx" title="unduh file latihan" rel="noopener">unduh file North.xlsx</a>
+                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/Mid.xlsx" title="unduh file latihan" rel="noopener">unduh file Mid.xlsx</a>
+                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/South.xlsx" title="unduh file latihan" rel="noopener">unduh file South.xlsx</a>
+                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/Company.xlsx" title="unduh file latihan" rel="noopener">unduh file Company.xlsx</a>
+                        </p>
+                        <p>Sebuah referensi eksternal di Excel adalah referensi ke sel atau range sel di buku kerja yang lain. Di bawah ini Anda dapat menemukan buku kerja dari tiga divisi (Utara, Tengah dan Selatan).</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image026.png" alt=Utara></p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image027.png" alt=Pertengahan></p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image028.png" alt=Selatan></p>
+
+                        <p class="sub-judul" id="">
+                            Buat Referensi Eksternal
+                        </p>
+                        <p>Untuk membuat referensi eksternal, jalankan langkah-langkah berikut.</p>
+                        <p>1. Buka semua buku kerja.</p>
+                        <p>2. Di buku kerja Perusahaan, pilih sel B2 dan ketik tanda sama dengan =
+                        </p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image029.png" alt="Contoh Referensi Eksternal"></p>
+                        <p>3. Pada tab View, di grup Window, klik Switch Windows.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image030.png" alt="Beralih Windows">
+                        </p>
+                        <p>4. Klik Utara.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image031.png" alt="Klik Utara"></p>
+                        <p>5. Di buku kerja Utara, pilih sel B2.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image032.png" alt="Pilih Sel"></p>
+                        <p>6. Ketik <strong>+</strong></p>
+                        <p>7. Ulangi langkah 3 hingga 6 untuk buku kerja Pertengahan.</p>
+                        <p>8. Ulangi langkah 3 hingga 5 untuk buku kerja Selatan.</p>
+                        <p>9. Hapus simbol $ dalam rumus sel B2.</p>
+                        <p>Hasil:</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image033.png" alt="Referensi Eksternal di Excel"></p>
+                        <p>10. <a href="#">Salin rumus</a> ke sel lain.</p>
+
+                        <p class="sub-judul" id="">
+                            Peringatan</p>
+                        <p>Tutup semua buku kerja. Mengubah nomor dalam buku kerja divisi. Tutup semua buku kerja lagi. Buka buku kerja Perusahaan.
+                        </p>
+                        <p>A. Untuk memperbarui semua tautan, klik Aktifkan Konten.</p>
+                        <p>B. Untuk tidak memperbarui tautan, klik X.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image034.png" alt="Aktifkan Konten">
+                        </p>
+                        <p class="info"><strong>Catatan:</strong> jika Anda melihat peringatan lain, klik Perbarui atau Jangan Perbarui.
+                        </p>
+
+                        <p class="sub-judul" id="">
+                            Edit Tautan</p>
+                        <p>Pada tab Data, dalam grup Kueri &amp; Koneksi, klik Edit Tautan untuk meluncurkan kotak dialog Edit Tautan.
+                        </p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image035.png" alt="Klik Edit Tautan">
+                        </p>
+                        <p>1. Jika Anda tidak memperbarui tautan, Anda masih dapat memperbarui tautan di sini. Pilih buku kerja dan klik Perbarui Nilai untuk memperbarui tautan ke buku kerja ini. Perhatikan bagaimana Status berubah menjadi OK.
+                        </p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image036.png" alt="Perbarui Nilai">
+                        </p>
+                        <p>2. Jika Anda tidak ingin menampilkan peringatan dan memperbarui tautan secara otomatis, Klik Prompt Startup, pilih opsi ketiga, dan klik OK.
+                        </p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image037.png" alt="Jangan Tampilkan Peringatan dan Perbarui Tautan"></p>
+                    </section>
+
+                    <!-- Hyperlinks -->
+                    <section>
+                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/hyperlinks.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                            <p class="bd-lead mb-0" id="CellReferences-hyperlinks.html">Hyperlinks</p>
+                        </div>
+                        <p class="link-text">
+                            <a href="#existing-file-web-page">File atau Halaman Web yang Ada</a> |
+                            <a href="#place-in-this-document">Menempatkan di Dokumen</a> |
+                            <a href="#hyperlink-function">Fungsi Hyperlink</a>
+                        </p>
+
+                        <p>Gunakan kotak dialog 'Sisipkan Hyperlink' di Excel untuk membuat hyperlink ke file yang ada, halaman web, atau tempat dalam dokumen ini. Anda juga dapat menggunakan fungsi HYPERLINK.</p>
+
+                        <p class="sub-judul" id="existing-file-web-page">File atau Halaman Web yang Ada</p>
+                        <p>Untuk membuat hyperlink ke file atau halaman web yang ada, jalankan langkah-langkah berikut</p>
+                        <p>1. Pilih sel A1.</p>
+                        <p>2. Pada tab Sisipkan, dalam grup Tautan, klik Tautan.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image038.png" alt="Klik tautan"></p>
+                        <p>Kotak dialog 'Sisipkan Hyperlink' muncul.</p>
+                        <p>3a. Untuk membuat hyperlink ke file yang ada, pilih file (gunakan daftar drop-down Lihat di, jika perlu).</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image039.png" alt="File yang ada"></p>
+                        <p>3b. Untuk membuat hyperlink ke halaman web, ketik Teks untuk ditampilkan, Alamat, dan klik OK.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image040.png" alt="Halaman web"></p>
+                        <p>Hasil:</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image041.png" alt="Pergi ke Halaman Web"></p>
+                        <p class="info"><strong>Catatan:</strong> jika Anda ingin mengubah teks yang muncul saat Anda mengarahkan kursor ke tautan, klik Tip Layar.</p>
+
+                        <p class="sub-judul" id="place-in-this-document">Menempatkan di Dokumen</p>
+                        <p>Untuk membuat hyperlink ke suatu tempat di dokumen ini, jalankan langkah-langkah berikut.</p>
+                        <p>1. Pilih sel A2.</p>
+                        <p>2. Pada tab Sisipkan, dalam grup Tautan, klik Tautan.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image038.png" alt="Klik tautan"></p>
+                        <p>Kotak dialog 'Sisipkan Hyperlink' muncul.</p>
+                        <p>3. Klik 'Place in This Document' di bawah Link to.</p>
+                        <p>4. Ketik Teks yang akan ditampilkan, referensi sel, dan klik OK.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image042.png" alt="Tempatkan di Dokumen Ini"></p>
+                        <p>Hasil:</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image043.png" alt="Pergi ke Tempat di Dokumen Ini"></p>
+                        <p class="info"><strong>Catatan:</strong> jika Anda ingin mengubah teks yang muncul saat Anda mengarahkan kursor ke hyperlink, klik Tip Layar.</p>
+
+                        <p class="sub-judul" id="hyperlink-function">Fungsi Hyperlink</p>
+                        <p>Anda juga dapat menggunakan fungsi HYPERLINK di Excel untuk membuat hyperlink. Fungsi HYPERLINK memiliki dua argumen.
+                        </p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image044.png" alt="Fungsi HYPERLINK di Excel"></p>
+                        <p class="info"><strong>Catatan:</strong> daripada membuat hyperlink ke halaman web, buat hyperlink ke file yang sudah ada. Misalnya, ganti argumen pertama dengan &quot;C:\Reports\sales2020.docx&quot; dan argumen kedua dengan &quot;Buka Laporan&quot;.
+                        </p>
+                    </section>
+
+                    <!-- Union and Intersect -->
+                    <section>
+                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/union-intersect.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                            <p class="bd-lead mb-0" id="CellReferences-union-intersect.html">Union and Intersect</p>
+                        </div>
+                        <p>Contoh ini mengilustrasikan cara menggunakan operator gabungan dan intersect (batas di bawah hanya untuk ilustrasi) di Excel.</p>
+                        <p>1. Operator gabungan (koma) menambahkan dua Range.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image045.png" alt="Operator Serikat di Excel"></p>
+                        <p class="info"><strong>Penjelasan:</strong> fungsi SUM direduksi menjadi =SUM(C4:D8) + SUM(D7:E11), 20.</p>
+                        <p>2. Operator intersect (spasi tunggal) mengembalikan perpotongan dua Range.
+                        </p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image046.png" alt="Intersect Operator di Excel"></p>
+                        <p class="info"><strong>Penjelasan:</strong> fungsi SUM direduksi menjadi =SUM(D7:D8), 2.</p>
+                        <p>Mari kita lihat beberapa contoh keren.</p>
+                        <p>3. Excel secara otomatis menambahkan operator serikat (koma). Misalnya, ketik =SUM( dan tahan CTRL untuk memilih Range di bawah ini.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image047.png" alt="Beberapa Operator Serikat"></p>
+                        <p class="info"><strong>Catatan:</strong> tekan Enter untuk menyisipkan fungsi ini. Excel menambahkan tanda kurung penutup untuk Anda.</p>
+                        <p>4. Anda dapat menggunakan operator intersect (spasi) untuk mengembalikan perpotongan dua Nama Range.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image048.png" alt="Persimpangan Nama Range"></p>
+                        <p class="info"><strong>Catatan:</strong> <a href="#">Nama Range</a> Feb mengacu pada Range B3:D3 dan Nama Range Cokelat mengacu pada Range B2:B13.
+                        </p>
+                    </section>
+
+                    <!-- Percent Change -->
+                    <section>
+                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/percent-change.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                            <p class="bd-lead mb-0" id="CellReferences-percent-change.html">Perubahan Persen <span class="span-text">(Percent Change)</span></p>
+                        </div>
+                        <p>The Rumus perubahan persen sangat sering digunakan di Excel. Misalnya untuk menghitung Monthly Change dan Total Change.</p>
+                        <p>1a. Pilih sel C3 dan masukkan rumus yang ditunjukkan di bawah ini.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image049.png" alt="Rumus Perubahan Persen di Excel"></p>
+                        <p>1b. Pilih sel C3. Pada tab Beranda, dalam grup Angka, terapkan format Persentase.
+                        </p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image050.png" alt="Format Persentase">
+                        </p>
+                        <p>1c. Pilih sel C3, klik di sudut kanan bawah sel C3 dan seret ke bawah ke sel C13.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image051.png" alt="Tarik Rumus ke Bawah"></p>
+                        <p>1d. Periksa apakah semuanya berjalan baik-baik saja.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image052.png" alt="Referensi Relatif">
+                        </p>
+                        <p>2a. Dengan cara yang sama, kita dapat menghitung Total Change. Kali ini kami memperbaiki referensi ke sel B2. Pilih sel D3 dan masukkan rumus yang ditunjukkan di bawah ini.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image053.png" alt="Perubahan Total">
+                        </p>
+                        <p>2b. Pilih sel D3. Pada tab Beranda, dalam grup Angka, terapkan format Persentase.
+                        </p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image050.png" alt="Format Persentase">
+                        </p>
+                        <p>2c. Pilih sel D3, klik di sudut kanan bawah sel D3 dan seret ke bawah ke sel D13.</p>
+                        <p>2d. Periksa apakah semuanya berjalan baik-baik saja.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image054.png" alt="Referensi Mutlak">
+                        </p>
+                        <p class="info"><strong>Penjelasan:</strong> ketika kita menyeret rumus ke bawah, <a href="#">referensi absolut</a> ($B$2) tetap sama, sedangkan referensi relatif (B3) berubah menjadi B4, B5, B6, dll.</p>
+                    </section>
+
+                    <!-- Add a Column -->
+                    <section>
+                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/add-column.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                            <p class="bd-lead mb-0" id="CellReferences-add-column.html">Menambahkan Kolom <span class="span-text">(Add a Column)</span></p>
+                        </div>
+                        <p>Untuk menambahkan kolom di Excel, klik kanan huruf kolom dan klik Sisipkan. Saat Anda menyisipkan kolom atau baris, referensi sel diperbarui secara otomatis.</p>
+                        <p>1. Pertama, pilih sel A10 di bawah dan tekan ALT + = untuk menjumlahkan kolom angka dengan cepat.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image055.png" alt="Jumlahkan Kolom Angka"></p>
+                        <p>2. Pilih kolom A.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image056.png" alt="Pilih Kolom"></p>
+                        <p class="info"><strong>Catatan:</strong> kolom baru akan ditambahkan di sebelah kiri pilihan.</p>
+                        <p>3. Klik kanan, lalu klik Sisipkan.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image057.png" alt="Klik Sisipkan"></p>
+                        <p>Hasil:</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image058.png" alt="Tambahkan Kolom di Excel"></p>
+                        <p>Untuk menambahkan beberapa kolom, jalankan langkah-langkah berikut.</p>
+                        <p>4. Pilih beberapa kolom dengan mengklik dan menyeret header kolom. Misalnya, pilih kolom A dan kolom B.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image059.png" alt="Pilih Beberapa Kolom"></p>
+                        <p>5. Klik kanan, lalu klik Sisipkan.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image057.png" alt="Klik Sisipkan"></p>
+                        <p>Hasil:</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image060.png" alt="Tambahkan Beberapa Kolom di Excel"></p>
+                        <p>6. Klik dua kali sel D10.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image061.png" alt="Referensi Sel Diperbarui Secara Otomatis"></p>
+                        <p class="info"><strong>Catatan:</strong> saat Anda menyisipkan kolom atau baris, referensi sel diperbarui secara otomatis.</p>
+                        <p>Anda juga dapat menggunakan opsi Sisipkan pada tab Beranda.</p>
+                        <p>7. Misalnya pilih kolom A, B, C dan D.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image062.png" alt="Pilih Kolom"></p>
+                        <p>8. Pada tab Beranda, di grup Sel, klik Sisipkan, Sisipkan Kolom Lembar.
+                        </p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image063.png" alt="Sisipkan Kolom Lembar"></p>
+                        <p>Hasil:</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image064.png" alt="Tambahkan Kolom di Excel"></p>
+                        <p>Untuk menambahkan kolom dengan cepat, pilih kolom dan gunakan pintasan
+                            <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>+</kbd>.</p>
+                        <p>9. Misalnya pilih kolom F.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image065.png" alt="Pilih Satu Kolom">
+                        </p>
+                        <p>10. Tekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>+</kbd>.</p>
+                        <p>Hasil:</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image066.png" alt="Tambahkan Satu Kolom di Excel"></p>
+                        <p class="info"><strong>Catatan:</strong> untuk menambahkan beberapa kolom dengan cepat, pilih beberapa kolom dan gunakan pintasan yang sama.</p>
+                    </section>
+
+                    <!-- Absolute Reference -->
+                    <section>
+                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/absolute-reference.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                            <p class="bd-lead mb-0" id="CellReferences-absolute-reference.html">Referensi Mutlak <span class="span-text">(Absolute Reference)</span></p>
+                        </div>
+                        <p class="link-text">
+                            <a href="#">Sel</a> |
+                            <a href="#">Range</a> |
+                            <a href="#">Range Bernama</a> |
+                            <a href="#">F4</a>
+                        </p>
+                        <p>Sebuah referensi mutlak dalam Excel mengacu pada lokasi tetap pada lembar kerja. Saat Anda menyalin rumus, referensi absolut tidak pernah berubah.
+                        </p>
+
+                        <p class="sub-judul" id="">
+                            Sel</p>
+                        <p>Mari kita mulai dengan memperbaiki referensi ke sel.</p>
+                        <p>1. Sel C2 di bawah ini mengacu pada sel B2 dan sel E2. Kedua referensi itu relatif.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image067.png" alt="Referensi Sel Relatif"></p>
+                        <p>2. Inilah yang terjadi ketika kita <a href="#">menyalin rumus</a> di sel C2 ke sel C3.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image068.png" alt="Salin Referensi Sel Relatif"></p>
+                        <p>3. Perbaiki referensi ke sel E2 dengan menempatkan simbol $ di depan huruf kolom dan nomor baris.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image008.png" alt="Referensi Sel Absolut"></p>
+                        <p>4. Untuk menyalin rumus di sel C2 ke sel lain dengan cepat, pilih sel C2, klik di sudut kanan bawah sel C2 dan seret ke bawah ke sel C7.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image009.png" alt="Salin Referensi Sel Mutlak"></p>
+                        <p>Memeriksa:</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image010.png" alt="Referensi Sel Tetap"></p>
+                        <p class="info"><strong>Penjelasan:</strong> referensi absolut ($E$2) tetap sama, sedangkan referensi relatif (B2) berubah menjadi B3, B4, B5, B6 dan B7.</p>
+
+                        <p class="sub-judul" id="">
+                            Jangkauan</p>
+                        <p>Terkadang Anda perlu memperbaiki referensi ke Range. Misalnya, saat menggunakan <a href="#">fungsi RANK</a> untuk memberi peringkat angka dalam kumpulan data.</p>
+                        <p>1. Sel C2 di bawah mengacu pada sel B2 dan Range B2:B7. Kedua referensi itu relatif.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image069.png" alt="Referensi Range Relatif"></p>
+                        <p>2. Inilah yang terjadi ketika kita <a href="#">menyalin rumus</a> di sel C2 ke sel C3.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image070.png" alt="Salin Referensi Range Relatif"></p>
+                        <p>3. Perbaiki referensi ke Range B2:B7 dengan menempatkan simbol $ di depan huruf kolom dan nomor baris.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image071.png" alt="Referensi Range Absolut"></p>
+                        <p>4. Untuk menyalin rumus di sel C2 ke sel lain dengan cepat, pilih sel C2, klik di sudut kanan bawah sel C2 dan seret ke bawah ke sel C7.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image072.png" alt="Salin Referensi Range Absolut"></p>
+                        <p>Memeriksa:</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image073.png" alt="Referensi Range Tetap"></p>
+                        <p class="info"><strong>Penjelasan:</strong> referensi absolut ($B$2:$B$7) tetap sama, sedangkan referensi relatif (B2) berubah menjadi B3, B4, B5, B6 dan B7.</p>
+
+                        <p class="sub-judul" id="">
+                            Nama Range</p>
+                        <p>daripada menggunakan referensi Range absolut, buat Nama Range. Dengan cara ini Anda dapat membuat rumus Anda lebih mudah dipahami.</p>
+                        <p>1. Pilih Range B2:B7, ketik nama di kotak Nama dan tekan Enter.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image074.png" alt="Buat Nama Range">
+                        </p>
+                        <p>2. Sekarang Anda dapat menggunakan Nama Range ini dalam rumus Anda. Pilih sel C2, masukkan fungsi RANK yang ditunjukkan di bawah ini dan salin rumus ini ke sel lain.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image075.png" alt="Salin Rumus"></p>
+
+                        <p class="sub-judul" id="">Memeriksa:</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image076.png" alt="Nama Range"></p>
+                        <p class="info"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="#">Nama Range</a> untuk mempelajari lebih lanjut tentang topik ini.
+                        </p>
+
+                        <p class="sub-judul" id="">
+                            F4</p>
+                        <p>Gunakan tombol F4 untuk beralih cepat di antara semua 4 jenis referensi sel.
+                        </p>
+                        <p>1. Misalnya, pilih sel C2 di bawah, klik di rumus bar dan pindahkan titik penyisipan ke dalam atau ke kanan E2.
+                        </p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image077.png" alt="Referensi Relatif">
+                        </p>
+                        <p>2. Tekan F4 untuk membuat referensi mutlak.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image078.png" alt="Referensi Mutlak">
+                        </p>
+                        <p>3. Tekan F4 lagi untuk membuat referensi campuran di mana kolomnya relatif dan barisnya absolut.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image079.png" alt="Referensi Baris Absolut"></p>
+                        <p>4. Tekan F4 lagi untuk membuat referensi campuran di mana kolomnya absolut dan barisnya relatif.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image080.png" alt="Referensi Kolom Absolut"></p>
+                        <p class="info"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="#">referensi sel</a> untuk mempelajari lebih lanjut tentang referensi campuran di Excel.</p>
+                    </section>
+
+                    <!-- Address -->
+                    <section>
+                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/address.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                            <p class="bd-lead mb-0" id="CellReferences-address.html">Alamat <span class="span-text">(Address)</span></p>
+                        </div>
+                        <p>Fungsi ADDRESS di Excel membuat referensi sel sebagai teks, berdasarkan nomor baris dan kolom tertentu.</p>
+                        <p>1. Fungsi ADDRESS di bawah ini mengembalikan $E$8. Nomor baris adalah 8 dan nomor kolom adalah 5.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image081.png" alt="Fungsi ADDRESS di Excel"></p>
+                        <p>2. Fungsi ADDRESS di bawah mengembalikan $G$3. Nomor baris adalah 3 dan nomor kolom adalah 7.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image082.png" alt="Referensi Mutlak">
+                        </p>
+                        <p>3. Secara default, fungsi ADDRESS membuat referensi absolut. Untuk membuat referensi relatif, gunakan 4 untuk argumen ketiga.</p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image083.png" alt="Referensi Relatif">
+                        </p>
+                        <p>4. Misalnya, gunakan fungsi ADDRESS di Excel untuk menemukan alamat sel dengan nilai maksimum dalam sebuah kolom.
+                        </p>
+                        <p><img class="img-fluid" src="../excel/files/ContohReferensi%20Sel_files/image084.png" alt="Alamat Sel Nilai Maksimum"></p>
+                        <p class="info"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="#">menemukan nilai maksimum</a> di kolom untuk petunjuk terperinci tentang cara membuat rumus ini.</p>
+                    </section>
+
+                    <a class="d-flex justify-content-end fw-light" href="#ContohPenggunaanFungsiReferensiSel">kembali keatas</a>
+                </details>
+            </section>
+        </div>
+    </div>
+</div>

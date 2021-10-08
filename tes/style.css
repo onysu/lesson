@@ -180,8 +180,10 @@ mark {
 }
 
 .nav-scroller {
-    position: relative;
-    z-index: 2;
+    position: sticky;
+    top: 0;
+    /* position: relative; */
+    z-index: 1020;
     height: 2.5rem;
     /* height: 2.75rem; */
     overflow-y: hidden;
@@ -377,7 +379,7 @@ ul {
     .bd-toc {
         position: -webkit-sticky;
         position: sticky;
-        top: 5rem;
+        top: 4rem;
         right: 0;
         z-index: 2;
         height: calc(100vh - 7rem);

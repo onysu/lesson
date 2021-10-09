@@ -23,7 +23,7 @@
                     <a href="#fv">FV</a>
                 </p>
 
-                <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/financial-functions.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                <p><a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/financial-functions.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
 
                 <p>Untuk mengilustrasikan fungsi keuangan Excel yang paling populer, kami mempertimbangkan pinjaman dengan pembayaran bulanan, tingkat bunga tahunan 6%, durasi 20 tahun, nilai sekarang $150.000 (jumlah yang dipinjam) dan nilai masa depan
                     0 (itulah yang Anda harapkan untuk dicapai ketika Anda melunasi pinjaman).</p>
@@ -141,7 +141,7 @@
                     <section>
                         <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
                             <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/loans-with-different-durations.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-                            <p class="bd-lead mb-0" id="FinancialFunctions-loans-with-different-durations.html">Pinjaman dengan Jangka Waktu Berbeda <span class="span-text">(Loans with Different Durations)</span></p>
+                            <p class="bd-lead mb-0" id="FinancialFunctions-loans-with-different-durations.html">Pinjaman dengan Jangka Waktu Berbeda <br> <span class="span-text">(Loans with Different Durations)</span></p>
                         </div>
                         <p>Contoh ini mengajarkan Anda bagaimana membandingkan pinjaman dengan jangka waktu yang berbeda di Excel.</p>
                         <p>1. Pertama, kami menghitung pembayaran bulanan pinjaman dengan tingkat bunga tahunan 6%, durasi 20 tahun dan nilai sekarang (jumlah yang dipinjam) sebesar $150.000.</p>
@@ -276,7 +276,7 @@
                             <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/npv.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
                             <p class="bd-lead mb-0" id="FinancialFunctions-npv.html">NPV</p>
                         </div>
-                        <p>
+                        <p class="link-text">
                             <a href="#net-present-value">Nilai Sekarang Bersih</a> |
                             <a href="#understanding-the-npv-function">Memahami fungsi NPV</a>
                         </p>
@@ -455,25 +455,21 @@
                         <p>Asumsikan bisnis Anda memiliki total pendapatan $10.000 pada bulan Juli dan harga pokok penjualan (COGS) sama dengan $4.000.</p>
                         <p><img class="img-fluid" src="../excel/files/FinancialFunctions-details_files/image068.png" alt="Total Pendapatan dan COGS"></p>
                         <p>Untuk menghitung margin laba kotor, gunakan rumus berikut:</p>
-                        <table class=MsoNormalTable cellspacing=0 cellpadding=0 style='border-collapse:collapse'>
-                            <tr>
-                                <td nowrap rowspan=2 style='padding:0cm 0cm 0cm 0cm'>
-                                    <p>Marjin laba kotor</p>
-                                </td>
-                                <td width=24 nowrap rowspan=2 style='width:18.0pt;padding:0cm 0cm 0cm 0cm'>
-                                    <p>=</p>
-                                </td>
-                                <td nowrap style='padding:0cm 0cm 0cm 0cm'>
-                                    <p>Total Pendapatan - HPP</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style='border:none;border-top:solid #212121 1.0pt;padding:0cm 0cm 0cm 0cm'>
-                                    <p>Total pendapatan</p>
-                                </td>
-                            </tr>
+
+                        <table class="table table-sm w-75 align-content-center" style="vertical-align: middle;">
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2" style="border-style: none; width: 50%;">Total Revenue - COGS</td>
+                                    <td rowspan="2" style="border-style: none;">=</td>
+                                    <td style="border-bottom: 1px solid #222;">Total Revenue - COGS</td>
+                                </tr>
+                                <tr>
+                                    <td style="border-style: none;">Total Revenue</td>
+                                </tr>
+                            </tbody>
                         </table>
-                        <p><span style='color:white'>1. Rumus di bawah ini menghitung angka di atas garis pecahan. Ini disebut laba kotor.</span></p>
+
+                        <p>1. Rumus di bawah ini menghitung angka di atas garis pecahan. Ini disebut laba kotor.</p>
                         <p><img class="img-fluid" src="../excel/files/FinancialFunctions-details_files/image069.png" alt="Laba kotor"></p>
                         <p>2. Bagi hasil ini dengan total pendapatan untuk menghitung margin laba kotor di Excel.</p>
                         <p><img class="img-fluid" src="../excel/files/FinancialFunctions-details_files/image070.png" alt="Hitung Margin Laba Kotor"></p>
@@ -486,25 +482,21 @@
                         <p>Margin laba operasi juga mencakup biaya operasi (OPEX) seperti sewa, peralatan, biaya persediaan, pemasaran, dll.</p>
                         <p><img class="img-fluid" src="../excel/files/FinancialFunctions-details_files/image073.png" alt="Biaya operasional"></p>
                         <p>Untuk menghitung margin laba operasi, gunakan rumus berikut:</p>
-                        <table class=MsoNormalTable cellspacing=0 cellpadding=0 style='border-collapse:collapse'>
-                            <tr>
-                                <td nowrap rowspan=2 style='padding:0cm 0cm 0cm 0cm'>
-                                    <p>Margin Laba Operasi</p>
-                                </td>
-                                <td width=24 nowrap rowspan=2 style='width:18.0pt;padding:0cm 0cm 0cm 0cm'>
-                                    <p>=</p>
-                                </td>
-                                <td nowrap style='padding:0cm 0cm 0cm 0cm'>
-                                    <p>Pendapatan Total - HPP - OPEX</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style='border:none;border-top:solid #212121 1.0pt;padding:0cm 0cm 0cm 0cm'>
-                                    <p>Total pendapatan</p>
-                                </td>
-                            </tr>
+
+                        <table class="table table-sm w-75 align-content-center" style="vertical-align: middle;">
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2" style="border-style: none; width: 50%;">Operating Profit Margin</td>
+                                    <td rowspan="2" style="border-style: none;">=</td>
+                                    <td style="border-bottom: 1px solid #222;">Total Revenue - COGS - OPEX</td>
+                                </tr>
+                                <tr>
+                                    <td style="border-style: none;">Total Revenue</td>
+                                </tr>
+                            </tbody>
                         </table>
-                        <p><span style='color:white'>1. Rumus di bawah ini menghitung angka di atas garis pecahan. Ini disebut laba operasi.</span></p>
+
+                        <p>1. Rumus di bawah ini menghitung angka di atas garis pecahan. Ini disebut laba operasi.</p>
                         <p><img class="img-fluid" src="../excel/files/FinancialFunctions-details_files/image074.png" alt="Laba usaha"></p>
                         <p>2. Bagi hasil ini dengan total pendapatan untuk menghitung margin laba operasi di Excel.</p>
                         <p><img class="img-fluid" src="../excel/files/FinancialFunctions-details_files/image075.png" alt="Hitung Margin Laba Operasi"></p>
@@ -517,25 +509,21 @@
                         <p>Margin laba bersih juga termasuk biaya non-operasional seperti bunga (utang) dan pajak.</p>
                         <p><img class="img-fluid" src="../excel/files/FinancialFunctions-details_files/image077.png" alt="Total Pendapatan dan Semua Beban"></p>
                         <p>Untuk menghitung margin laba bersih, gunakan rumus berikut :</p>
-                        <table class=MsoNormalTable cellspacing=0 cellpadding=0 style='border-collapse:collapse'>
-                            <tr>
-                                <td nowrap rowspan=2 style='padding:0cm 0cm 0cm 0cm'>
-                                    <p>Margin Laba Bersih</p>
-                                </td>
-                                <td width=24 nowrap rowspan=2 style='width:18.0pt;padding:0cm 0cm 0cm 0cm'>
-                                    <p>=</p>
-                                </td>
-                                <td nowrap style='padding:0cm 0cm 0cm 0cm'>
-                                    <p>Pendapatan Total - HPP - OPEX - I - T</p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style='border:none;border-top:solid #212121 1.0pt;padding:0cm 0cm 0cm 0cm'>
-                                    <p>Total pendapatan</p>
-                                </td>
-                            </tr>
+
+                        <table class="table table-sm w-75 align-content-center" style="vertical-align: middle;">
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2" style="border-style: none; width: 50%;">Net Profit Margin</td>
+                                    <td rowspan="2" style="border-style: none;">=</td>
+                                    <td style="border-bottom: 1px solid #222;">Total Revenue - COGS - OPEX - I - T</td>
+                                </tr>
+                                <tr>
+                                    <td style="border-style: none;">Total Revenue</td>
+                                </tr>
+                            </tbody>
                         </table>
-                        <p><span style='color:white'>di mana:</span></p>
+
+                        <p>di mana:</p>
                         <p>HPP = Harga Pokok Penjualan</p>
                         <p>OPEX = Biaya operasional</p>
                         <p>saya = minat</p>

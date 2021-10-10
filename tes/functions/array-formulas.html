@@ -38,7 +38,7 @@
                 <p><img class="img-fluid" src="../excel/files/ArrayFormulas-details_files/image005.png" alt="Dengan Rumus Array Excel, Langkah 3"></p>
                 <p class="info"><strong>Catatan:</strong> Bilah rumus menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.
                 </p>
-                <p class="info text-truncate"><strong>Penjelasan:</strong> Range (konstanta array) disimpan dalam memori Excel, bukan dalam range. Konstanta array terlihat sebagai berikut:
+                <p class="info text-break"><strong>Penjelasan:</strong> Range (konstanta array) disimpan dalam memori Excel, bukan dalam range. Konstanta array terlihat sebagai berikut:
                 </p>
                 <p>{19;33;63;48;13}</p>
                 <p>Konstanta array ini digunakan sebagai argumen untuk fungsi MAX, memberikan hasil 63.</p>
@@ -77,7 +77,7 @@
                         <p>1. Kami menggunakan IF dan ISERROR untuk memeriksa kesalahan.
                         </p>
                         <p><img class="img-fluid" src="../excel/files/ArrayFormulas-details_files/image008.png" alt="Fungsi If dan IsError"></p>
-                        <p class="info text-truncate"><strong>Penjelasan:</strong> fungsi IF mengembalikan 1, jika ditemukan kesalahan. Jika tidak, ia mengembalikan string kosong.</p>
+                        <p class="info text-break"><strong>Penjelasan:</strong> fungsi IF mengembalikan 1, jika ditemukan kesalahan. Jika tidak, ia mengembalikan string kosong.</p>
                         <p>2. Untuk menghitung error (jangan kewalahan), kita tambahkan fungsi COUNT dan ganti A1 dengan A1:C3.</p>
                         <p><img class="img-fluid" src="../excel/files/ArrayFormulas-details_files/image009.png" alt="Rumus Array">
                         </p>
@@ -85,8 +85,8 @@
                         <p><img class="img-fluid" src="../excel/files/ArrayFormulas-details_files/image010.png" alt="Hitung Kesalahan di Excel"></p>
                         <p class="info"><strong>Catatan:</strong> Bilah rumus menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.
                         </p>
-                        <p class="info text-truncate"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh fungsi IF disimpan dalam memori Excel , bukan dalam range. Konstanta array terlihat sebagai berikut:</p>
-                        <p class="text-truncate">
+                        <p class="info text-break"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh fungsi IF disimpan dalam memori Excel , bukan dalam range. Konstanta array terlihat sebagai berikut:</p>
+                        <p class="text-break">
                             {1,&quot;&quot;,1;&quot;&quot;,&quot;&quot;,&quot;&quot;;&quot;&quot;,&quot;&quot;,1}</p>
                         <p>Konstanta array ini digunakan sebagai argumen untuk fungsi COUNT, memberikan hasil 3.</p>
                         <p>4. Untuk menghitung kesalahan tertentu, gunakan <a href="#">fungsi COUNTIF</a> . Misalnya, hitung jumlah sel yang berisi #DIV/0! kesalahan.</p>
@@ -111,8 +111,8 @@
                         <p><img class="img-fluid" src="../excel/files/ArrayFormulas-details_files/image014.png" alt="Hitung Nilai Unik di Excel"></p>
                         <p class="info"><strong>Catatan:</strong> Bilah rumus menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.
                         </p>
-                        <p class="info text-truncate"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh <a href="#">fungsi COUNTIF</a> disimpan dalam memori Excel , bukan dalam range. Konstanta array terlihat sebagai berikut:</p>
-                        <p class="text-truncate">{3;1;1;1;3;3} - (tiga 7, satu matahari, satu bulan, satu 5, tiga 7, tiga 7)</p>
+                        <p class="info text-break"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh <a href="#">fungsi COUNTIF</a> disimpan dalam memori Excel , bukan dalam range. Konstanta array terlihat sebagai berikut:</p>
+                        <p class="text-break">{3;1;1;1;3;3} - (tiga 7, satu matahari, satu bulan, satu 5, tiga 7, tiga 7)</p>
                         <p>Ini dikurangi menjadi:<br> {1/3;1/1;1/1;1/1;1/3;1/3}
                         </p>
                         <p>Konstanta array ini digunakan sebagai argumen untuk fungsi SUM, memberikan hasil 1/3+1+1+1+1+1/3+1/3 = 4.
@@ -120,7 +120,7 @@
                         <p>4. Rumus array di bawah ini menghitung jumlah nilai yang muncul tepat satu kali.</p>
                         <p><img class="img-fluid" src="../excel/files/ArrayFormulas-details_files/image015.png" alt="Tepat Sekali">
                         </p>
-                        <p class="info text-truncate"><strong>Penjelasan:</strong> fungsi IF mengubah konstanta array {3;1;1;1;3;3} menjadi {0;1;1;1;0;0}. Konstanta array ini digunakan sebagai argumen untuk fungsi SUM, memberikan hasil 3.
+                        <p class="info text-break"><strong>Penjelasan:</strong> fungsi IF mengubah konstanta array {3;1;1;1;3;3} menjadi {0;1;1;1;0;0}. Konstanta array ini digunakan sebagai argumen untuk fungsi SUM, memberikan hasil 3.
                         </p>
                         <p>5. Jika Anda memiliki Excel 365, cukup gunakan fungsi UNIQUE ajaib untuk mengekstrak nilai unik.</p>
                         <p><img class="img-fluid" src="../excel/files/ArrayFormulas-details_files/image016.png" alt="Fungsi UNIK">
@@ -150,7 +150,7 @@
                         <p>2b. Yang kita butuhkan adalah rumus array. Kami menggunakan fungsi IF untuk memeriksa apakah Google atau Stanford terjadi.
                         </p>
                         <p><img class="img-fluid" src="../excel/files/ArrayFormulas-details_files/image021.png" alt="Hitung dengan Kriteria Atau, Langkah 1"></p>
-                        <p class="info text-truncate"><strong>Penjelasan:</strong> TRUE = 1, FALSE = 0. Untuk baris 1, fungsi IF dievaluasi menjadi IF(TRUE+TRUE,1,0), IF(2,1,0), 1. Jadi baris pertama akan dihitung. Untuk baris 2, fungsi IF dievaluasi menjadi IF(FALSE+FALSE,1,0), IF(0,1,0),
+                        <p class="info text-break"><strong>Penjelasan:</strong> TRUE = 1, FALSE = 0. Untuk baris 1, fungsi IF dievaluasi menjadi IF(TRUE+TRUE,1,0), IF(2,1,0), 1. Jadi baris pertama akan dihitung. Untuk baris 2, fungsi IF dievaluasi menjadi IF(FALSE+FALSE,1,0), IF(0,1,0),
                             0. Jadi baris kedua tidak akan dihitung. Untuk baris 3, fungsi IF dievaluasi menjadi IF(FALSE+TRUE,1,0), IF(1,1,0), 1. Jadi baris ketiga akan dihitung, dst.</p>
                         <p>2c. Yang kita butuhkan hanyalah fungsi SUM yang menghitung 1 ini. Untuk mencapai ini (jangan kewalahan), kami menambahkan fungsi SUM dan mengganti A1 dengan A1:A8 dan B1 dengan B1:B8.</p>
                         <p><img class="img-fluid" src="../excel/files/ArrayFormulas-details_files/image022.png" alt="Hitung dengan Atau Kriteria, Langkah 2"></p>
@@ -158,7 +158,7 @@
                         <p><img class="img-fluid" src="../excel/files/ArrayFormulas-details_files/image023.png" alt="Hitung dengan Atau Kriteria, Langkah 3"></p>
                         <p class="info"><strong>Catatan:</strong> Bilah rumus menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.
                         </p>
-                        <p class="info text-truncate"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh fungsi IF disimpan dalam memori Excel , bukan dalam range. Konstanta array terlihat sebagai berikut:</p>
+                        <p class="info text-break"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh fungsi IF disimpan dalam memori Excel , bukan dalam range. Konstanta array terlihat sebagai berikut:</p>
                         <p>{1;0;1;0;1;0;1;0}</p>
                         <p>Konstanta array ini digunakan sebagai argumen untuk fungsi SUM, memberikan hasil 4.</p>
                         <p>3. Kita bisa melangkah lebih jauh. Misalnya, kami ingin menghitung jumlah baris yang berisi (Google dan Stanford) atau Columbia.</p>
@@ -184,7 +184,7 @@
                         <p><img class="img-fluid" src="../excel/files/ArrayFormulas-details_files/image028.png" alt="Jumlahkan Setiap Baris ke-n di Excel"></p>
                         <p class="info"><strong>Catatan:</strong> Bilah rumus menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.
                         </p>
-                        <p class="info text-truncate"><strong>Penjelasan:</strong> Produk dari dua range ini (konstanta array) disimpan dalam memori Excel , bukan dalam range. Konstanta array terlihat sebagai berikut.</p>
+                        <p class="info text-break"><strong>Penjelasan:</strong> Produk dari dua range ini (konstanta array) disimpan dalam memori Excel , bukan dalam range. Konstanta array terlihat sebagai berikut.</p>
                         <p>{0;0;5;0;0;66;0;0;21}</p>
                         <p>Konstanta array ini digunakan sebagai argumen untuk fungsi SUM, memberikan hasil 92.</p>
                     </section>
@@ -208,7 +208,7 @@
                         <p><img class="img-fluid" src="../excel/files/ArrayFormulas-details_files/image031.png" alt="Jumlahkan Angka Terbesar di Excel"></p>
                         <p class="info"><strong>Catatan:</strong> Bilah rumus menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.
                         </p>
-                        <p class="info text-truncate"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh fungsi LARGE disimpan dalam memori Excel , bukan dalam range. Konstanta array terlihat sebagai berikut.</p>
+                        <p class="info text-break"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh fungsi LARGE disimpan dalam memori Excel , bukan dalam range. Konstanta array terlihat sebagai berikut.</p>
                         <p>{22,10,8,6}</p>
                         <p>Konstanta array ini digunakan sebagai argumen untuk fungsi SUM, memberikan hasil 46.</p>
                     </section>
@@ -223,7 +223,7 @@
                         </p>
                         <p>1. Kami menggunakan fungsi IFERROR untuk memeriksa kesalahan.</p>
                         <p><img class="img-fluid" src="../excel/files/ArrayFormulas-details_files/image032.png" alt="Fungsi IfError"></p>
-                        <p class="info text-truncate"><strong>Penjelasan:</strong> fungsi IFERROR mengembalikan 0, jika ditemukan kesalahan. Jika tidak, itu mengembalikan nilai sel.</p>
+                        <p class="info text-break"><strong>Penjelasan:</strong> fungsi IFERROR mengembalikan 0, jika ditemukan kesalahan. Jika tidak, itu mengembalikan nilai sel.</p>
                         <p>2. Untuk menjumlahkan range dengan kesalahan (jangan kewalahan), kami menambahkan fungsi SUM dan mengganti A1 dengan A1:A7.</p>
                         <p><img class="img-fluid" src="../excel/files/ArrayFormulas-details_files/image033.png" alt="Rumus Array">
                         </p>
@@ -231,7 +231,7 @@
                         <p><img class="img-fluid" src="../excel/files/ArrayFormulas-details_files/image034.png" alt="Jumlahkan Range dengan Kesalahan di Excel"></p>
                         <p class="info"><strong>Catatan:</strong> Bilah rumus menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.
                         </p>
-                        <p class="info text-truncate"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh fungsi IFERROR disimpan dalam memori Excel , bukan dalam range. Konstanta array terlihat sebagai berikut:</p>
+                        <p class="info text-break"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh fungsi IFERROR disimpan dalam memori Excel , bukan dalam range. Konstanta array terlihat sebagai berikut:</p>
                         <p>{0;5;4;0;0;1;3}</p>
                         <p>Konstanta array ini digunakan sebagai argumen untuk fungsi SUM, memberikan hasil 13.</p>
                     </section>
@@ -250,7 +250,7 @@
                         <p><img class="img-fluid" src="../excel/files/ArrayFormulas-details_files/image036.png" alt="Formula yang salah"></p>
                         <p>2b. Kita membutuhkan rumus array. Kami menggunakan <a href="#">fungsi IF</a> untuk memeriksa apakah Google atau Stanford terjadi.</p>
                         <p><img class="img-fluid" src="../excel/files/ArrayFormulas-details_files/image037.png" alt="Jumlahkan dengan Kriteria Atau, Langkah 1"></p>
-                        <p class="info text-truncate"><strong>Penjelasan:</strong> TRUE = 1, FALSE = 0. Untuk baris 1, fungsi IF dievaluasi menjadi IF(TRUE+TRUE,1,0)*3, IF(2,1,0)*3, 3. Jadi nilai 3 akan ditambahkan. Untuk baris 2, fungsi IF dievaluasi menjadi IF(FALSE+FALSE,1,0)*5,
+                        <p class="info text-break"><strong>Penjelasan:</strong> TRUE = 1, FALSE = 0. Untuk baris 1, fungsi IF dievaluasi menjadi IF(TRUE+TRUE,1,0)*3, IF(2,1,0)*3, 3. Jadi nilai 3 akan ditambahkan. Untuk baris 2, fungsi IF dievaluasi menjadi IF(FALSE+FALSE,1,0)*5,
                             IF(0,1,0)*5, 0. Jadi nilai 5 tidak akan ditambahkan. Untuk baris 3, fungsi IF dievaluasi menjadi IF(FALSE+TRUE,1,0)*2, IF(1,1,0)*2, 2. Jadi nilai 2 akan ditambahkan, dst.</p>
                         <p>2c. Yang kita butuhkan hanyalah fungsi SUM yang menjumlahkan nilai-nilai ini. Untuk mencapai ini (jangan kewalahan), kami menambahkan fungsi SUM dan mengganti A1 dengan A1:A8, B1 dengan B1:B8 dan C1 dengan C1:C8.
                         </p>
@@ -259,7 +259,7 @@
                         <p><img class="img-fluid" src="../excel/files/ArrayFormulas-details_files/image039.png" alt="Jumlahkan dengan Kriteria Atau, Langkah 3"></p>
                         <p class="info"><strong>Catatan:</strong> Bilah rumus menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.
                         </p>
-                        <p class="info text-truncate"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh fungsi IF disimpan dalam memori Excel , bukan dalam range. Konstanta array terlihat sebagai berikut:</p>
+                        <p class="info text-break"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh fungsi IF disimpan dalam memori Excel , bukan dalam range. Konstanta array terlihat sebagai berikut:</p>
                         <p>{1;0;1;0;1;0;1;0}</p>
                         <p>dikalikan dengan C1:C8 ini menghasilkan:</p>
                         <p>{3;0;2;0;4;0;1;0}</p>
@@ -283,14 +283,14 @@
                         <p>1. Fungsi MATCH mengembalikan posisi nilai dalam range tertentu.
                         </p>
                         <p><img class="img-fluid" src="../excel/files/ArrayFormulas-details_files/image043.png" alt="Fungsi Pertandingan"></p>
-                        <p class="info text-truncate"><strong>Penjelasan:</strong> lingkaran (A7) terdapat pada posisi 2 pada range A1:A7. Setel argumen ketiga ke 0 untuk mengembalikan kecocokan yang sama persis.</p>
+                        <p class="info text-break"><strong>Penjelasan:</strong> lingkaran (A7) terdapat pada posisi 2 pada range A1:A7. Setel argumen ketiga ke 0 untuk mengembalikan kecocokan yang sama persis.</p>
                         <p>2. Untuk mencari posisi kata yang paling sering muncul (jangan kewalahan), kita tambahkan fungsi MODE dan ganti A7 dengan A1:A7.</p>
                         <p>3. Selesai dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
                         <p><img class="img-fluid" src="../excel/files/ArrayFormulas-details_files/image044.png" alt="Fungsi Modus">
                         </p>
                         <p class="info"><strong>Catatan:</strong> Bilah rumus menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.
                         </p>
-                        <p class="info text-truncate"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh fungsi MATCH disimpan dalam memori Excel, bukan dalam range. Konstanta array terlihat sebagai berikut:</p>
+                        <p class="info text-break"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh fungsi MATCH disimpan dalam memori Excel, bukan dalam range. Konstanta array terlihat sebagai berikut:</p>
                         <p>{1;2;2;2;5;5;2} - (segitiga ditemukan di posisi 1, lingkaran ditemukan di posisi 2, lingkaran ditemukan di posisi 2, dll.)</p>
                         <p>Konstanta array ini digunakan sebagai argumen untuk fungsi MODE, memberikan hasil 2 (posisi kata yang paling sering muncul).</p>
                         <p>4. Gunakan hasil ini dan fungsi INDEX untuk mengembalikan kata ke-2 dalam range A1:A7, kata yang paling sering muncul.</p>

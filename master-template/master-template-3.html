@@ -1,16 +1,16 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
 <script>
     function includeHTML() {
         var z, i, elmnt, file, xhttp;
-        /*loop through a collection of all HTML elements:*/
+        /* Loop through a collection of all HTML elements: */
         z = document.getElementsByTagName("*");
         for (i = 0; i < z.length; i++) {
             elmnt = z[i];
             /*search for elements with a certain atrribute:*/
             file = elmnt.getAttribute("w3-include-html");
             if (file) {
-                /*make an HTTP request using the attribute value as the file name:*/
+                /* Make an HTTP request using the attribute value as the file name: */
                 xhttp = new XMLHttpRequest();
                 xhttp.onreadystatechange = function() {
                     if (this.readyState == 4) {
@@ -20,27 +20,27 @@
                         if (this.status == 404) {
                             elmnt.innerHTML = "Page not found.";
                         }
-                        /*remove the attribute, and call this function once more:*/
+                        /* Remove the attribute, and call this function once more: */
                         elmnt.removeAttribute("w3-include-html");
                         includeHTML();
                     }
                 }
                 xhttp.open("GET", file, true);
                 xhttp.send();
-                /*exit the function:*/
+                /* Exit the function: */
                 return;
             }
         }
-    };
+    }
 </script>
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Master Template</title>
-    <!-- Bootstrap core CSS -->
-    <style class="anchorjs"></style>
-    <link rel="stylesheet" href="../dist/bootstrap-5.1.1/css/bootstrap.min.css">
+    <title>Hello, world!</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../dist/docs.css">
     <style>
         @media (min-width: 992px) {
@@ -76,7 +76,68 @@
 
 <body>
     <div w3-include-html="header.html"></div>
-    <div class="sticky-top" w3-include-html="nav.html"></div>
+
+    <nav class="bd-subnavbar py-2" aria-label="Secondary navigation">
+        <div class="container-xxl d-flex align-items-md-center">
+
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-dasar-tab" data-bs-toggle="tab" data-bs-target="#nav-dasar" type="button" role="tab" aria-controls="nav-dasar" aria-selected="true">Dasar</button>
+
+                    <button class="nav-link" id="nav-BekerjadenganTeks-tab" data-bs-toggle="tab" data-bs-target="#nav-BekerjadenganTeks" type="button" role="tab" aria-controls="nav-BekerjadenganTeks" aria-selected="false">Bekerja dengan Teks</button>
+
+                    <button class="nav-link" id="nav-LayoutandPrinting-tab" data-bs-toggle="tab" data-bs-target="#nav-LayoutandPrinting" type="button" role="tab" aria-controls="nav-LayoutandPrinting" aria-selected="false">Layout dan Printing</button>
+
+                    <button class="nav-link" id="nav-BekerjadenganObjek-tab" data-bs-toggle="tab" data-bs-target="#nav-BekerjadenganObjek" type="button" role="tab" aria-controls="nav-BekerjadenganObjek" aria-selected="true">Bekerja dengan Objek</button>
+
+                    <button class="nav-link" id="nav-KolaborasidanPeninjauan-tab" data-bs-toggle="tab" data-bs-target="#nav-KolaborasidanPeninjauan" type="button" role="tab" aria-controls="nav-KolaborasidanPeninjauan" aria-selected="false">Kolaborasi dan Peninjauan</button>
+
+                    <button class="nav-link" id="nav-LebihBanyakdenganWord-tab" data-bs-toggle="tab" data-bs-target="#nav-LebihBanyakdenganWord" type="button" role="tab" aria-controls="nav-LebihBanyakdenganWord" aria-selected="false">Lebih Banyak dengan Word</button>
+
+                </div>
+            </nav>
+
+
+            <!-- <form class="bd-search position-relative me-auto">
+            <input type="search" class="form-control" id="search-input" placeholder="Cari dokumen..." aria-label="Search docs for..." autocomplete="off" data-bd-docs-version="5.1">
+        </form>
+        <div class="dropdown ms-3">
+            <button class="btn btn-bd-light dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+        <span class="d-none d-lg-inline">Bootstrap</span> v5.1
+      </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-versions">
+                <li><a class="dropdown-item current" aria-current="true" href="#">Terbaru (5.1.x)</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">v4.6.x</a></li>
+                <li><a class="dropdown-item" href="#">v3.4.1</a></li>
+                <li><a class="dropdown-item" href="#">v2.3.2</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Semua versi</a></li>
+            </ul>
+        </div>
+        <button class="btn bd-sidebar-toggle d-md-none py-0 px-1 ms-3 order-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-expand" fill="currentColor"
+        viewBox="0 0 16 16">
+        <title>Expand</title>
+        <path fill-rule="evenodd"
+          d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10z">
+        </path>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-collapse" fill="currentColor"
+        viewBox="0 0 16 16">
+        <title>Collapse</title>
+        <path fill-rule="evenodd"
+          d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zm7-8a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0zm-.5 11.707l-1.146 1.147a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 11.707V15.5a.5.5 0 0 1-1 0v-3.793z">
+        </path>
+      </svg>
+    </button> -->
+
+        </div>
+    </nav>
 
 
 
@@ -321,14 +382,7 @@
         </aside>
         <main class="bd-main order-1">
             <!-- intro -->
-            <div class="bd-intro ps-lg-4">
-                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
-                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="#" title="View and edit this file on GitHub" target="_blank" rel="noopener">Tampilan di GitHub</a>
-                    <h1 class="bd-title" id="content">Pendahuluan</h1>
-                </div>
-                <p class="bd-lead">Mulailah dengan Bootstrap, kerangka kerja paling populer di dunia untuk membangun situs responsif, mobile-first, dengan jsDelivr dan halaman starter template.</p>
-                <script async="" src="#" id="_carbonads_js"></script>
-            </div>
+
 
             <!-- menu kanan -->
             <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
@@ -363,126 +417,145 @@
             </div>
 
             <!-- isi konten -->
-            <div class="bd-content ps-lg-4">
+            <div class="bd-intro">
+                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="#" title="View and edit this file on GitHub" target="_blank" rel="noopener">Tampilan di GitHub</a>
+                    <h1 class="bd-title" id="content">Pendahuluan</h1>
+                </div>
+                <p class="bd-lead">Mulailah dengan Bootstrap, kerangka kerja paling populer di dunia untuk membangun situs responsif, mobile-first, dengan jsDelivr dan halaman starter template.</p>
+                <script async="" src="#" id="_carbonads_js"></script>
+            </div>
+
+            <div class="bd-content">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <h2 id="quick-start">Quick start h2
+                            <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#quick-start" style="padding-left: 0.375em;"></a>
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ex eos eveniet ipsum repudiandae suscipit. Exercitationem eius omnis, voluptas a temporibus eos neque quis sed officiis rem, accusantium nisi impedit provident,
+                            est quia iure? Ad omnis nam ex? Accusantium exercitationem eligendi consequatur assumenda autem quas maxime voluptas laudantium sit quam.</p>
 
 
-                <h2 id="quick-start">Quick start h2
-                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#quick-start" style="padding-left: 0.375em;"></a>
-                </h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum ex eos eveniet ipsum repudiandae suscipit. Exercitationem eius omnis, voluptas a temporibus eos neque quis sed officiis rem, accusantium nisi impedit provident, est quia
-                    iure? Ad omnis nam ex? Accusantium exercitationem eligendi consequatur assumenda autem quas maxime voluptas laudantium sit quam.</p>
+                        <h3 id="css">CSS h3
+                            <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#css" style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi deleniti in iste, at similique minima numquam tempore vero blanditiis omnis enim odio, soluta, delectus laudantium?</p>
 
 
-                <h3 id="css">CSS h3
-                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#css" style="padding-left: 0.375em;"></a>
-                </h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi deleniti in iste, at similique minima numquam tempore vero blanditiis omnis enim odio, soluta, delectus laudantium?</p>
+                        <h3 id="js">JS h3
+                            <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#js" style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eligendi qui accusamus id earum suscipit laboriosam quasi enim perspiciatis nemo ipsum repudiandae dolor, ea veritatis ratione animi. Doloremque vitae iste, sequi
+                            voluptas repellendus assumenda quo expedita deleniti hic tenetur nemo.</p>
 
 
-                <h3 id="js">JS h3
-                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#js" style="padding-left: 0.375em;"></a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eligendi qui accusamus id earum suscipit laboriosam quasi enim perspiciatis nemo ipsum repudiandae dolor, ea veritatis ratione animi. Doloremque vitae iste, sequi voluptas
-                    repellendus assumenda quo expedita deleniti hic tenetur nemo.</p>
+                        <h4 id="bundle">Bundle h4
+                            <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#bundle" style="padding-left: 0.375em;"></a>
+                        </h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque id totam nihil, unde nesciunt non a temporibus eligendi hic modi? Tempore facilis expedita necessitatibus labore quasi quia aliquam ea odio porro pariatur nihil
+                            eius obcaecati ullam delectus, accusamus deleniti distinctio?</p>
 
 
-                <h4 id="bundle">Bundle h4
-                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#bundle" style="padding-left: 0.375em;"></a>
-                </h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque id totam nihil, unde nesciunt non a temporibus eligendi hic modi? Tempore facilis expedita necessitatibus labore quasi quia aliquam ea odio porro pariatur nihil eius obcaecati
-                    ullam delectus, accusamus deleniti distinctio?</p>
+                        <h4 id="separate">Separate h4
+                            <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#separate" style="padding-left: 0.375em;"></a>
+                        </h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus officia deleniti sapiente id. Sunt hic nisi, pariatur voluptatum cumque harum dolores animi, a aspernatur, aperiam quas adipisci et. Eum, optio.</p>
 
 
-                <h4 id="separate">Separate h4
-                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#separate" style="padding-left: 0.375em;"></a>
-                </h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus officia deleniti sapiente id. Sunt hic nisi, pariatur voluptatum cumque harum dolores animi, a aspernatur, aperiam quas adipisci et. Eum, optio.</p>
+                        <h4 id="modules">Modules h4
+                            <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#modules" style="padding-left: 0.375em;"></a>
+                        </h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum odio facilis fuga harum quaerat necessitatibus dolore. Ex tempora doloribus delectus hic sapiente dolor dicta vero veniam dolorem enim consequuntur, eum saepe odit explicabo?
+                            Debitis minima ipsum earum mollitia voluptate cum nisi rem dolorem velit et.</p>
 
 
-                <h4 id="modules">Modules h4
-                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#modules" style="padding-left: 0.375em;"></a>
-                </h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum odio facilis fuga harum quaerat necessitatibus dolore. Ex tempora doloribus delectus hic sapiente dolor dicta vero veniam dolorem enim consequuntur, eum saepe odit explicabo?
-                    Debitis minima ipsum earum mollitia voluptate cum nisi rem dolorem velit et.</p>
+                        <h4 id="components">Components h4
+                            <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#components" style="padding-left: 0.375em;"></a>
+                        </h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem totam eligendi culpa, ipsa vel consequuntur. Quasi, nulla explicabo quaerat laborum optio quia facilis dolore, id soluta, atque enim corporis inventore earum? Maxime
+                            architecto aperiam explicabo hic enim omnis? Voluptates dicta dolorem, iure rem vel at voluptatibus quasi tempore veniam ducimus.</p>
+                        <details>
+                            <summary class="text-primary mb-3">Show components requiring JavaScript</summary>
+                            <ul>
+                                <li>Alerts for dismissing</li>
+                                <li>Buttons for toggling states and checkbox/radio functionality</li>
+                                <li>Carousel for all slide behaviors, controls, and indicators</li>
+                                <li>Collapse for toggling visibility of content</li>
+                                <li>Dropdowns for displaying and positioning (also requires <a href="#">Popper</a>)</li>
+                                <li>Modals for displaying, positioning, and scroll behavior</li>
+                                <li>Navbar for extending our Collapse plugin to implement responsive behavior</li>
+                                <li>Offcanvases for displaying, positioning, and scroll behavior</li>
+                                <li>Toasts for displaying and dismissing</li>
+                                <li>Tooltips and popovers for displaying and positioning (also requires <a href="#">Popper</a>)
+                                </li>
+                                <li>Scrollspy for scroll behavior and navigation updates</li>
+                            </ul>
+                        </details>
 
 
-                <h4 id="components">Components h4
-                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#components" style="padding-left: 0.375em;"></a>
-                </h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem totam eligendi culpa, ipsa vel consequuntur. Quasi, nulla explicabo quaerat laborum optio quia facilis dolore, id soluta, atque enim corporis inventore earum? Maxime architecto
-                    aperiam explicabo hic enim omnis? Voluptates dicta dolorem, iure rem vel at voluptatibus quasi tempore veniam ducimus.</p>
-                <details>
-                    <summary class="text-primary mb-3">Show components requiring JavaScript</summary>
-                    <ul>
-                        <li>Alerts for dismissing</li>
-                        <li>Buttons for toggling states and checkbox/radio functionality</li>
-                        <li>Carousel for all slide behaviors, controls, and indicators</li>
-                        <li>Collapse for toggling visibility of content</li>
-                        <li>Dropdowns for displaying and positioning (also requires <a href="#">Popper</a>)</li>
-                        <li>Modals for displaying, positioning, and scroll behavior</li>
-                        <li>Navbar for extending our Collapse plugin to implement responsive behavior</li>
-                        <li>Offcanvases for displaying, positioning, and scroll behavior</li>
-                        <li>Toasts for displaying and dismissing</li>
-                        <li>Tooltips and popovers for displaying and positioning (also requires <a href="#">Popper</a>)
-                        </li>
-                        <li>Scrollspy for scroll behavior and navigation updates</li>
-                    </ul>
-                </details>
+                        <h2 id="starter-template">Starter template h2
+                            <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#starter-template" style="padding-left: 0.375em;"></a>
+                        </h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus incidunt eaque ipsam, animi nostrum iste voluptates obcaecati harum sit cupiditate temporibus beatae laborum placeat dignissimos assumenda fugit maxime qui? Sed corporis
+                            hic, tempore accusamus repellat dolorem ad distinctio? Quasi libero incidunt voluptatem culpa vitae veniam magnam iste nemo fuga recusandae magni est dolore, perspiciatis similique eos!</p>
 
 
-                <h2 id="starter-template">Starter template h2
-                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#starter-template" style="padding-left: 0.375em;"></a>
-                </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus incidunt eaque ipsam, animi nostrum iste voluptates obcaecati harum sit cupiditate temporibus beatae laborum placeat dignissimos assumenda fugit maxime qui? Sed corporis hic,
-                    tempore accusamus repellat dolorem ad distinctio? Quasi libero incidunt voluptatem culpa vitae veniam magnam iste nemo fuga recusandae magni est dolore, perspiciatis similique eos!</p>
+                        <h2 id="important-globals">Important globals h2
+                            <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#important-globals" style="padding-left: 0.375em;"></a>
+                        </h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae optio, recusandae sunt cum atque accusamus ad eos fuga officia adipisci exercitationem illum amet quae explicabo repellendus ipsum ratione inventore! Molestias
+                            totam itaque quod libero placeat saepe at sapiente dolorum, officiis et, est quasi excepturi debitis perferendis voluptatibus quisquam, reprehenderit vel.</p>
 
 
-                <h2 id="important-globals">Important globals h2
-                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#important-globals" style="padding-left: 0.375em;"></a>
-                </h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae optio, recusandae sunt cum atque accusamus ad eos fuga officia adipisci exercitationem illum amet quae explicabo repellendus ipsum ratione inventore! Molestias totam
-                    itaque quod libero placeat saepe at sapiente dolorum, officiis et, est quasi excepturi debitis perferendis voluptatibus quisquam, reprehenderit vel.</p>
+                        <h3 id="html5-doctype">HTML5 doctype h3
+                            <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#html5-doctype" style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores consequuntur voluptates nulla, ducimus rem pariatur enim qui hic aut tempore id vel maxime vitae quae!</p>
 
 
-                <h3 id="html5-doctype">HTML5 doctype h3
-                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#html5-doctype" style="padding-left: 0.375em;"></a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores consequuntur voluptates nulla, ducimus rem pariatur enim qui hic aut tempore id vel maxime vitae quae!</p>
+                        <h3 id="responsive-meta-tag">Responsive meta tag h3
+                            <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#responsive-meta-tag" style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ducimus facere, obcaecati exercitationem porro sequi temporibus quasi veniam non amet! Porro corporis itaque quae, provident reprehenderit, impedit in perspiciatis
+                            temporibus saepe illo aspernatur ducimus mollitia aliquid. Ut molestias iste repudiandae rem officia aspernatur quae, velit fuga eius obcaecati ducimus. Saepe.</p>
 
 
-                <h3 id="responsive-meta-tag">Responsive meta tag h3
-                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#responsive-meta-tag" style="padding-left: 0.375em;"></a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ducimus facere, obcaecati exercitationem porro sequi temporibus quasi veniam non amet! Porro corporis itaque quae, provident reprehenderit, impedit in perspiciatis temporibus
-                    saepe illo aspernatur ducimus mollitia aliquid. Ut molestias iste repudiandae rem officia aspernatur quae, velit fuga eius obcaecati ducimus. Saepe.</p>
+                        <h3 id="box-sizing">Box-sizing h3
+                            <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#box-sizing" style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam quae tenetur aspernatur aut, recusandae et obcaecati dolores minima cumque est. Beatae omnis, pariatur voluptatibus eaque id laboriosam dolores at, maxime quisquam facilis
+                            consequuntur quas. Suscipit voluptatum minima aperiam eos, veniam modi placeat repudiandae nisi quam fugit at rerum mollitia. Eveniet?</p>
 
 
-                <h3 id="box-sizing">Box-sizing h3
-                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#box-sizing" style="padding-left: 0.375em;"></a>
-                </h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam quae tenetur aspernatur aut, recusandae et obcaecati dolores minima cumque est. Beatae omnis, pariatur voluptatibus eaque id laboriosam dolores at, maxime quisquam facilis consequuntur
-                    quas. Suscipit voluptatum minima aperiam eos, veniam modi placeat repudiandae nisi quam fugit at rerum mollitia. Eveniet?</p>
+                        <h3 id="reboot">Reboot h3
+                            <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#reboot" style="padding-left: 0.375em;"></a>
+                        </h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet velit cum sunt accusamus, quod esse quos, quia itaque facere, a ullam voluptas! Quod quae consectetur, unde reiciendis ut maiores illum id! Aliquid eaque porro ad repellendus
+                            laboriosam itaque beatae, tempora harum reprehenderit corporis dignissimos. Iusto quas eaque suscipit laboriosam illum.</p>
 
 
-                <h3 id="reboot">Reboot h3
-                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#reboot" style="padding-left: 0.375em;"></a>
-                </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet velit cum sunt accusamus, quod esse quos, quia itaque facere, a ullam voluptas! Quod quae consectetur, unde reiciendis ut maiores illum id! Aliquid eaque porro ad repellendus
-                    laboriosam itaque beatae, tempora harum reprehenderit corporis dignissimos. Iusto quas eaque suscipit laboriosam illum.</p>
+                        <h2 id="community">Community h2
+                            <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#community" style="padding-left: 0.375em;"></a>
+                        </h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure esse error perferendis officia aperiam earum ducimus nostrum molestiae expedita dolorem!</p>
+                        <ul>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, minus.</li>
+                            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad accusamus nihil molestiae incidunt explicabo qui?</li>
+                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur.</li>
+                        </ul>
+                        <p>Lorem ipsum dolor <a href="#">link</a> sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">2</div>
+                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">3</div>
+                    <div class="tab-pane fade" id="nav-XXX" role="tabpanel" aria-labelledby="nav-XXX-tab">4</div>
+                    <div class="tab-pane fade" id="nav-XXXX" role="tabpanel" aria-labelledby="nav-XXXX-tab">5</div>
+                    <div class="tab-pane fade" id="nav-XXXXX" role="tabpanel" aria-labelledby="nav-XXXXX-tab">6</div>
+                </div>
 
 
-                <h2 id="community">Community h2
-                    <a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#community" style="padding-left: 0.375em;"></a>
-                </h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure esse error perferendis officia aperiam earum ducimus nostrum molestiae expedita dolorem!</p>
-                <ul>
-                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod, minus.</li>
-                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
-                    <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad accusamus nihil molestiae incidunt explicabo qui?</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                </ul>
-                <p>Lorem ipsum dolor <a href="#">link</a> sit amet consectetur adipisicing elit.</p>
+
             </div>
         </main>
     </div>

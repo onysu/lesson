@@ -73,7 +73,9 @@
         }
         
         .nav-scroller {
-            position: relative;
+            position: sticky;
+            top: 0;
+            /* position: relative; */
             z-index: 2;
             height: 2.75rem;
             overflow-y: hidden;
@@ -97,45 +99,30 @@
     <div w3-include-html="header.html"></div>
 
     <div class="nav-scroller bg-body shadow-sm">
-        <nav class="nav nav-underline" aria-label="Secondary navigation">
-            <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
-            <a class="nav-link" href="#">
-      Friends
-      <span class="badge bg-light text-dark rounded-pill align-text-bottom">27</span>
-    </a>
-            <a class="nav-link" href="#">Explore</a>
-            <a class="nav-link" href="#">Suggestions</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
-            <a class="nav-link" href="#">Link</a>
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-tab1-tab" data-bs-toggle="tab" data-bs-target="#nav-tab1" type="button" role="tab" aria-controls="nav-tab1" aria-selected="true">Word</button>
+
+                <button class="nav-link" id="nav-tab2-tab" data-bs-toggle="tab" data-bs-target="#nav-tab2" type="button" role="tab" aria-controls="nav-tab2" aria-selected="false">Pendahuluan</button>
+
+                <button class="nav-link" id="nav-tab3-tab" data-bs-toggle="tab" data-bs-target="#nav-tab3" type="button" role="tab" aria-controls="nav-tab3" aria-selected="false">tab3</button>
+
+                <button class="nav-link" id="nav-tab4-tab" data-bs-toggle="tab" data-bs-target="#nav-tab4" type="button" role="tab" aria-controls="nav-tab4" aria-selected="true">tab4</button>
+
+                <button class="nav-link" id="nav-tab5-tab" data-bs-toggle="tab" data-bs-target="#nav-tab5" type="button" role="tab" aria-controls="nav-tab5" aria-selected="false">tab5</button>
+
+                <button class="nav-link" id="nav-tab6-tab" data-bs-toggle="tab" data-bs-target="#nav-tab6" type="button" role="tab" aria-controls="nav-tab6" aria-selected="false">tab6</button>
+            </div>
         </nav>
-    </div>
-
-    <!-- <nav class="bd-subnavbar  py-2" aria-label="Secondary navigation">
-        <div class="container-xxl d-flex align-items-md-center">
-
-            <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                    <button class="nav-link active" id="nav-dasar-tab" data-bs-toggle="tab" data-bs-target="#nav-dasar" type="button" role="tab" aria-controls="nav-dasar" aria-selected="true">Dasar</button>
-
-                    <button class="nav-link" id="nav-BekerjadenganTeks-tab" data-bs-toggle="tab" data-bs-target="#nav-BekerjadenganTeks" type="button" role="tab" aria-controls="nav-BekerjadenganTeks" aria-selected="false">Bekerja dengan Teks</button>
-
-                    <button class="nav-link" id="nav-LayoutandPrinting-tab" data-bs-toggle="tab" data-bs-target="#nav-LayoutandPrinting" type="button" role="tab" aria-controls="nav-LayoutandPrinting" aria-selected="false">Layout dan Printing</button>
-
-                    <button class="nav-link" id="nav-BekerjadenganObjek-tab" data-bs-toggle="tab" data-bs-target="#nav-BekerjadenganObjek" type="button" role="tab" aria-controls="nav-BekerjadenganObjek" aria-selected="true">Bekerja dengan Objek</button>
-
-                    <button class="nav-link" id="nav-KolaborasidanPeninjauan-tab" data-bs-toggle="tab" data-bs-target="#nav-KolaborasidanPeninjauan" type="button" role="tab" aria-controls="nav-KolaborasidanPeninjauan" aria-selected="false">Kolaborasi dan Peninjauan</button>
-
-                    <button class="nav-link" id="nav-LebihBanyakdenganWord-tab" data-bs-toggle="tab" data-bs-target="#nav-LebihBanyakdenganWord" type="button" role="tab" aria-controls="nav-LebihBanyakdenganWord" aria-selected="false">Lebih Banyak dengan Word</button>
-
-                </div>
-            </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-tab1" role="tabpanel" aria-labelledby="nav-tab1-tab">...</div>
+            <div class="tab-pane fade" id="nav-tab2" role="tabpanel" aria-labelledby="nav-tab2-tab">...</div>
+            <div class="tab-pane fade" id="nav-tab3" role="tabpanel" aria-labelledby="nav-tab3-tab">...</div>
+            <div class="tab-pane fade show" id="nav-tab4" role="tabpanel" aria-labelledby="nav-tab4-tab">...</div>
+            <div class="tab-pane fade" id="nav-tab5" role="tabpanel" aria-labelledby="nav-tab5-tab">...</div>
+            <div class="tab-pane fade" id="nav-tab6" role="tabpanel" aria-labelledby="nav-tab6-tab">...</div>
         </div>
-    </nav> -->
-
-
+    </div>
 
     <div class="container-xxl my-md-4 bd-layout">
         <aside class="bd-sidebar">

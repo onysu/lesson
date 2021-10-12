@@ -43,6 +43,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="shortcut icon" href="../img/aku-bulat.ico" type="image/x-icon" />
     <link rel="stylesheet" href="../dist/docs.css">
+    <link rel="stylesheet" href="../dist/style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         html,
@@ -104,9 +105,9 @@
         /* nav scroller */
         
         .nav-scroller {
-            position: sticky;
-            top: 0;
-            /* position: relative; */
+            /* position: sticky; */
+            /* top: 0; */
+            position: relative;
             z-index: 1020;
             height: 2.6rem;
             overflow-y: hidden;
@@ -163,25 +164,23 @@
 <body>
     <div w3-include-html="../top-program.html"></div>
 
-    <div class="nav-scroller bg-body shadow-sm">
-        <nav style="background-color: aqua;">
-            <div class="container nav nav-tabs" id="nav-tab" role="tablist">
-                <button class="nav-link active" id="nav-tab1-tab" data-bs-toggle="tab" data-bs-target="#nav-tab1" type="button" role="tab" aria-controls="nav-tab1" aria-selected="true">Home</button>
+    <nav class="nav-scroller" aria-label="Navigasi kedua" style="background-color: ghostwhite;">
+        <div class="container nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-tab1-tab" data-bs-toggle="tab" data-bs-target="#nav-tab1" type="button" role="tab" aria-controls="nav-tab1" aria-selected="true">Home</button>
 
-                <button class="nav-link" id="nav-tab-tab" data-bs-toggle="tab" data-bs-target="#nav-tab2" type="button" role="tab" aria-controls="nav-tab2" aria-selected="false">Dasar Word</button>
+            <button class="nav-link" id="nav-tab-tab" data-bs-toggle="tab" data-bs-target="#nav-tab2" type="button" role="tab" aria-controls="nav-tab2" aria-selected="false">Dasar Word</button>
 
-                <button class="nav-link" id="nav-tab3-tab" data-bs-toggle="tab" data-bs-target="#nav-tab3" type="button" role="tab" aria-controls="nav-tab3" aria-selected="false">Bekerja dengan Teks</button>
+            <button class="nav-link" id="nav-tab3-tab" data-bs-toggle="tab" data-bs-target="#nav-tab3" type="button" role="tab" aria-controls="nav-tab3" aria-selected="false">Bekerja dengan Teks</button>
 
-                <button class="nav-link" id="nav-tab4-tab" data-bs-toggle="tab" data-bs-target="#nav-tab4" type="button" role="tab" aria-controls="nav-tab4" aria-selected="false">Layout dan Printing</button>
+            <button class="nav-link" id="nav-tab4-tab" data-bs-toggle="tab" data-bs-target="#nav-tab4" type="button" role="tab" aria-controls="nav-tab4" aria-selected="false">Layout dan Printing</button>
 
-                <button class="nav-link" id="nav-tab5-tab" data-bs-toggle="tab" data-bs-target="#nav-tab5" type="button" role="tab" aria-controls="nav-tab5" aria-selected="false">Bekerja dengan Objek</button>
+            <button class="nav-link" id="nav-tab5-tab" data-bs-toggle="tab" data-bs-target="#nav-tab5" type="button" role="tab" aria-controls="nav-tab5" aria-selected="false">Bekerja dengan Objek</button>
 
-                <button class="nav-link" id="nav-tab6-tab" data-bs-toggle="tab" data-bs-target="#nav-tab6" type="button" role="tab" aria-controls="nav-tab6" aria-selected="false">Collaboration dan Reviewing</button>
+            <button class="nav-link" id="nav-tab6-tab" data-bs-toggle="tab" data-bs-target="#nav-tab6" type="button" role="tab" aria-controls="nav-tab6" aria-selected="false">Collaboration dan Reviewing</button>
 
-                <button class="nav-link" id="nav-tab7-tab" data-bs-toggle="tab" data-bs-target="#nav-tab7" type="button" role="tab" aria-controls="nav-tab7" aria-selected="false">Doing More with Word</button>
-            </div>
-        </nav>
-    </div>
+            <button class="nav-link" id="nav-tab7-tab" data-bs-toggle="tab" data-bs-target="#nav-tab7" type="button" role="tab" aria-controls="nav-tab7" aria-selected="false">Doing More with Word</button>
+        </div>
+    </nav>
 
     <div class="container my-md-4 bd-layout">
         <aside class="bd-sidebar"></aside>

@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../dist/lessonpage-en.concat.css">
 <main class="bd-main order-1">
     <!-- intro -->
     <div class="bd-intro">
@@ -70,9 +71,9 @@
                 <p>Untuk mempelajari cara menambahkan tab dan perintah khusus ke Ribbon, tinjau Ekstra kami tentang <a href="http://www.gcflearnfree.org/word2013/customizing-the-ribbon/1/">Menyesuaikan Ribbon</a>.</p>
 
                 <p class="h5" id="">Menggunakan fitur Tell me</p>
-                <p>Jika Anda kesulitan menemukan perintah yang Anda inginkan, fitur Beritahu Saya dapat membantu. Ini berfungsi seperti bilah pencarian biasa. Ketik apa yang Anda cari, dan daftar opsi akan muncul. Anda kemudian dapat menggunakan perintah
-                    langsung dari menu tanpa harus menemukannya di Ribbon.</p>
-                <p><img class="img-fluid" src="../word/files/tab1_files/image007.png" alt="mencari perintah dengan fitur Beritahu Saya"></p>
+                <p>Jika Anda kesulitan menemukan perintah yang Anda inginkan, fitur Tell Me dapat membantu. Ini berfungsi seperti bilah pencarian biasa. Ketik apa yang Anda cari, dan daftar opsi akan muncul. Anda kemudian dapat menggunakan perintah langsung
+                    dari menu tanpa harus menemukannya di Ribbon.</p>
+                <p><img class="img-fluid" src="../word/files/tab1_files/image007.png" alt="mencari perintah dengan fitur Tell Me"></p>
 
                 <p class="h5" id="">Quick Access Toolbar</p>
                 <p>Terletak tepat di atas Ribbon, Quick Access Toolbar memungkinkan Anda mengakses perintah umum apa pun tab yang dipilih. Secara default, ini menunjukkan perintah Save, Undo, dan Redo, tetapi Anda dapat menambahkan perintah lain tergantung
@@ -88,7 +89,7 @@
                 <p class="h5" id="">Ruler <span class="span-text">(Penggaris)</span></p>
                 <p>The R uler terletak di bagian atas dan di sebelah kiri dokumen Anda. Itu membuatnya lebih mudah untuk menyesuaikan dokumen Anda dengan presisi. Jika mau, Anda dapat menyembunyikan Penggaris untuk membuat lebih banyak ruang layar.</p>
                 <p>Untuk menampilkan atau menyembunyikan Penggaris:</p>
-                <p>Klik tab Lihat.</p>
+                <p>Klik tab <strong>View</strong>.</p>
                 <p><img class="img-fluid" src="../word/files/tab1_files/image011.jpg" alt="mengklik tab Lihat"></p>
                 <p>Klik kotak centang di sebelah Ruler untuk menampilkan atau menyembunyikan Ruler.</p>
                 <p><img class="img-fluid" src="../word/files/tab1_files/image012.jpg" alt="menyalakan Penggaris"></p>
@@ -96,8 +97,11 @@
                 <p class="h5" id="">Tampilan Backstage</p>
                 <p>Tampilan Backstage memberi Anda berbagai pilihan untuk menyimpan, membuka file, mencetak, dan berbagi dokumen Anda. Untuk mengakses tampilan Backstage, klik tab File pada Ribbon.</p>
                 <p><img class="img-fluid" src="../word/files/tab1_files/image013.png" alt="mengklik tab File"></p>
-                <p>Klik tombol di interaktif di bawah ini untuk mempelajari lebih lanjut tentang menggunakan tampilan Backstage.</p>
-                <p><img class="img-fluid" src="../word/files/tab1_files/image014.jpg" alt="tampilan Backstage"></p>
+
+                <!-- <p>Klik tombol di interaktif di bawah ini untuk mempelajari lebih lanjut tentang menggunakan tampilan Backstage.</p> -->
+
+                <!-- <p><img class="img-fluid" src="../word/files/tab1_files/image014.jpg" alt="tampilan Backstage"></p> -->
+                <p><img class="img-fluid" src="files/img/backstage.png" alt="tampilan Backstage"></p>
 
                 <p class="h5" id="">Tampilan dokumen dan zoom</p>
                 <p>Word memiliki berbagai opsi tampilan yang mengubah cara dokumen Anda ditampilkan. Anda dapat memilih untuk melihat dokumen Anda dalam Mode Baca, Tata Letak Cetak, atau Tata Letak Web. Tampilan ini dapat berguna untuk berbagai tugas, terutama
@@ -394,3 +398,10 @@
         </div>
     </div>
 </main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl)
+    })
+</script>

@@ -194,6 +194,79 @@
             font-weight: 500;
             line-height: 1.2;
         }
+        /* pop */
+        
+        .popup {
+            position: relative;
+            /* text-align: center; */
+            color: white;
+        }
+        
+        .back {
+            position: absolute;
+            top: 33px;
+            left: 80px;
+        }
+        
+        .new {
+            position: absolute;
+            top: 97px;
+            left: 80px;
+        }
+        
+        .open {
+            position: absolute;
+            top: 128px;
+            left: 80px;
+        }
+        
+        .inpo {
+            position: absolute;
+            top: 170px;
+            left: 80px;
+        }
+        
+        .saveas {
+            position: absolute;
+            top: 234px;
+            left: 80px;
+        }
+        
+        .print {
+            position: absolute;
+            top: 296px;
+            left: 80px;
+        }
+        
+        .share {
+            position: absolute;
+            top: 326px;
+            left: 80px;
+        }
+        
+        .export {
+            position: absolute;
+            top: 357px;
+            left: 80px;
+        }
+        
+        .close {
+            position: absolute;
+            top: 388px;
+            left: 80px;
+        }
+        
+        .akun {
+            position: absolute;
+            top: 514px;
+            left: 80px;
+        }
+        
+        .option {
+            position: absolute;
+            top: 577px;
+            left: 80px;
+        }
     </style>
 </head>
 
@@ -255,10 +328,16 @@
 
     <div w3-include-html="../footer-program.html"></div>
 
-    <script src="../dist/docs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="../dist/docs.min.js"></script>
     <script>
         includeHTML();
+    </script>
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
     </script>
 
 </body>

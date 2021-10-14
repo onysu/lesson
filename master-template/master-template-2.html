@@ -101,6 +101,13 @@
             background-color: rgba(255, 255, 255, 0.95);
             box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 5%), inset 0 -1px 0 rgb(0 0 0 / 15%);
         }
+        
+        .dropdown,
+        .dropend,
+        .dropstart,
+        .dropup {
+            z-index: 1021;
+        }
     </style>
 </head>
 
@@ -136,19 +143,26 @@
                         <a class="nav-link p-2 active" aria-current="true" href="/">Home</a>
                     </li>
                     <li class="nav-item col-6 col-md-auto">
-                        <a class="nav-link p-2" href="#">Microsoft Word</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Office</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Microsoft Word</a></li>
+                                <li><a class="dropdown-item" href="#">Microsoft Excel</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Power Point</a></li>
+                            </ul>
+                        </li>
                     </li>
                     <li class="nav-item col-6 col-md-auto">
-                        <a class="nav-link p-2" href="#">Microsoft Excel</a>
-                    </li>
-                    <li class="nav-item col-6 col-md-auto">
-                        <a class="nav-link p-2" href="#">Power Point</a>
-                    </li>
-                    <li class="nav-item col-6 col-md-auto">
-                        <a class="nav-link p-2" href="#">Photoshop</a>
-                    </li>
-                    <li class="nav-item col-6 col-md-auto">
-                        <a class="nav-link p-2" href="#">CorelDRAW</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Desain</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Photoshop</a></li>
+                                <li><a class="dropdown-item" href="#">CorelDRAW</a></li>
+                            </ul>
+                        </li>
                     </li>
                     <li class="nav-item col-6 col-md-auto">
                         <a class="nav-link p-2" href="#">Web-Desain</a>

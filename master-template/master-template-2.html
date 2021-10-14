@@ -103,7 +103,7 @@
             position: sticky;
             top: 0;
             z-index: 1020;
-            background-color: #00FFFF;
+            background-color: #E0FFFF;
             /* background-color: ghostwhite; */
             /* background-color: rgba(255, 255, 255, 0.95); */
             box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 5%), inset 0 -1px 0 rgb(0 0 0 / 15%);
@@ -114,6 +114,25 @@
         .dropstart,
         .dropup {
             z-index: 1021;
+        }
+        
+        @media (min-width: 768px) {
+            .bd-layout {
+                display: grid;
+                gap: 1.5rem;
+                grid-template-areas: "main main";
+                grid-template-columns: 1fr 3fr;
+            }
+        }
+        
+        @media (min-width: 768px) {
+            .bd-sidebar {
+                display: none;
+            }
+        }
+        
+        .bd-sidebar {
+            grid-area: unset;
         }
     </style>
 </head>
@@ -264,7 +283,7 @@
     </nav> -->
 
 
-    <div class="container-xxl my-md-4 bd-layout">
+    <div class="container my-md-4 bd-layout">
         <aside class="bd-sidebar">
             <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation">
                 <ul class="list-unstyled mb-0 py-3 pt-md-1">

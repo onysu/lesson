@@ -56,6 +56,11 @@
             box-shadow: none;
         }
         
+        .nav-tabs .nav-item.show .nav-link,
+        .nav-tabs .nav-link.active {
+            background-color: transparent;
+        }
+        
         .nav-scroller {
             position: relative;
             z-index: 2;
@@ -88,11 +93,12 @@
         }
         
         .nav-underline .nav-link:hover {
-            color: #007bff;
+            color: #262626;
         }
         
         .nav-underline .active {
-            font-weight: 500;
+            /* font-weight: 500; */
+            font-weight: bold;
             color: #343a40;
         }
         
@@ -167,6 +173,9 @@
                     <li class="nav-item col-6 col-md-auto">
                         <a class="nav-link p-2 active" aria-current="true" href="/">Home</a>
                     </li>
+                    <li class="nav-item col-6 col-md-auto">
+                        <a class="nav-link p-2" href="#">Web-Desain</a>
+                    </li>
                     <li class="nav-item col-6 col-md-auto dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Office</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -178,18 +187,15 @@
                             <li><a class="dropdown-item" href="#">Power Point</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item col-6 col-md-auto">
+                        <a class="nav-link p-2" href="#">Pemrograman</a>
+                    </li>
                     <li class="nav-item col-6 col-md-auto dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Desain</a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="#">Photoshop</a></li>
                             <li><a class="dropdown-item" href="#">CorelDRAW</a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item col-6 col-md-auto">
-                        <a class="nav-link p-2" href="#">Web-Desain</a>
-                    </li>
-                    <li class="nav-item col-6 col-md-auto">
-                        <a class="nav-link p-2" href="#">Pemrograman</a>
                     </li>
                 </ul>
                 <hr class="d-md-none text-white-50">

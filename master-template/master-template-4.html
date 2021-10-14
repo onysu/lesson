@@ -95,6 +95,14 @@
                 display: none;
             }
         }
+        
+        @media (min-width: 992px) {
+            .bd-main {
+                grid-template-areas: "intro intro" "content toc";
+                grid-template-columns: 4fr 1fr;
+                grid-template-rows: auto 1fr;
+            }
+        }
     </style>
 </head>
 
@@ -217,49 +225,10 @@
         </nav>
     </div>
 
-    <!-- nav ketiga -->
-    <!-- <nav class="bd-subnavbar py-2" aria-label="Secondary navigation">
-        <div class="container-xxl d-flex align-items-md-center">
-            <form class="bd-search position-relative me-auto">
-                <input type="search" class="form-control" id="search-input" placeholder="Search docs..." aria-label="Search docs for..." autocomplete="off" data-bd-docs-version="5.1">
-            </form>
-            <div class="dropdown ms-3">
-                <button class="btn btn-bd-light dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static"><span class="d-none d-lg-inline">Bootstrap</span>
-                    v5.1</button>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-versions">
-                    <li><a class="dropdown-item current" aria-current="true" href="/docs/5.1/">Latest (5.1.x)</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="https://getbootstrap.com/docs/4.6/">v4.6.x</a></li>
-                    <li><a class="dropdown-item" href="https://getbootstrap.com/docs/3.4/">v3.4.1</a></li>
-                    <li><a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="/docs/versions/">All versions</a></li>
-                </ul>
-            </div>
-            <button class="btn bd-sidebar-toggle d-md-none py-0 px-1 ms-3 order-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-expand" fill="currentColor"
-                    viewBox="0 0 16 16">
-                    <title>Expand</title>
-                    <path fill-rule="evenodd"
-                        d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10z" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-collapse"
-                    fill="currentColor" viewBox="0 0 16 16">
-                    <title>Collapse</title>
-                    <path fill-rule="evenodd"
-                        d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zm7-8a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0zm-.5 11.707l-1.146 1.147a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 11.707V15.5a.5.5 0 0 1-1 0v-3.793z" />
-                </svg>
-            </button>
-        </div>
-    </nav> -->
 
-    <!-- konten -->
     <div class="container my-md-4 bd-layout">
 
+        <!-- sidebar -->
         <aside class="bd-sidebar">
             <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation">
                 <ul class="list-unstyled mb-0 py-3 pt-md-1">
@@ -439,16 +408,21 @@
             </nav>
         </aside>
 
+        <!-- konten -->
         <main class="bd-main order-1">
+
+            <!-- intro -->
             <div class="bd-intro ps-lg-4">
                 <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
-                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="https://github.com/twbs/bootstrap/blob/main/site/content/docs/5.1/getting-started/introduction.md" title="View and edit this file on GitHub" target="_blank" rel="noopener">View on GitHub</a>
-                    <h1 class="bd-title" id="content">Introduction</h1>
+                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="#" title="View and edit this file on GitHub" target="_blank" rel="noopener">View on GitHub</a>
+                    <h1 class="bd-title" id="content">h1 Introduction</h1>
                 </div>
-                <p class="bd-lead">Get started with Bootstrap, the world&rsquo;s most popular framework for building responsive, mobile-first sites, with jsDelivr and a template starter page.</p>
+                <p class="bd-lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic impedit ea, ex vero placeat id cum omnis illo ut dignissimos.</p>
                 <!-- iklan -->
                 <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJL&placement=getbootstrapcom" id="_carbonads_js"></script>
             </div>
+
+            <!-- menu kanan -->
             <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
                 <strong class="d-block h6 my-2 pb-2 border-bottom">On this page</strong>
                 <nav id="TableOfContents">
@@ -479,138 +453,85 @@
                     </ul>
                 </nav>
             </div>
+
+            <!-- isi konten -->
             <div class="bd-content ps-lg-4">
-                <h2 id="quick-start">Quick start</h2>
-                <p>Looking to quickly add Bootstrap to your project? Use jsDelivr, a free open source CDN. Using a package manager or need to download the source files? <a href="/docs/5.1/getting-started/download/">Head to the downloads page</a>.</p>
-                <h3 id="css">CSS</h3>
-                <p>Copy-paste the stylesheet <code>&lt;link&gt;</code> into your <code>&lt;head&gt;</code> before all other stylesheets to load our CSS.</p>
+                <h2 id="quick-start">h2 Quick start</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur minus quia accusamus tempora, consequuntur, magni natus voluptatibus iusto repellat distinctio eligendi dolor adipisci pariatur? Rem, dolor quibusdam! Doloribus, minima
+                    maxime.
+                </p>
+
+                <h3 id="css">h3 CSS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odio corporis excepturi architecto minima consectetur accusantium placeat, rem harum fuga eaque dolore ratione optio nesciunt.</p>
+
+                <h3 id="js">h3 JS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero dignissimos illum velit est, impedit asperiores, debitis similique error, dolorem reprehenderit quasi ullam nostrum optio repudiandae delectus fugit officiis quam architecto.</p>
+
+                <h4 id="bundle">h4 Bundle</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum eius cupiditate, beatae neque atque quisquam ipsa qui officia repellendus iste consequuntur, rem incidunt cumque? Vitae?</p>
                 <div class="highlight">
-                    <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;</span>
-</code></pre>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi impedit ratione consequatur obcaecati quibusdam. Numquam possimus magni esse natus corporis, ea atque dolore temporibus. Nesciunt?
                 </div>
-                <h3 id="js">JS</h3>
-                <p>Many of our components require the use of JavaScript to function. Specifically, they require our own JavaScript plugins and <a href="https://popper.js.org/">Popper</a>. Place <strong>one of the
-                        following <code>&lt;script&gt;</code>s</strong> near the end of your pages, right before the closing <code>&lt;/body&gt;</code> tag, to enable them.</p>
-                <h4 id="bundle">Bundle</h4>
-                <p>Include every Bootstrap JavaScript plugin and dependency with one of our two bundles. Both
-                    <code>bootstrap.bundle.js</code> and <code>bootstrap.bundle.min.js</code> include <a href="https://popper.js.org/">Popper</a> for our tooltips and popovers. For more information about what&rsquo;s included in Bootstrap, please see
-                    our <a href="/docs/5.1/getting-started/contents/#precompiled-bootstrap">contents</a> section.</p>
-                <div class="highlight">
-                    <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</code></pre>
-                </div>
-                <h4 id="separate">Separate</h4>
-                <p>If you decide to go with the separate scripts solution, Popper must come first (if you&rsquo;re using tooltips or popovers), and then our JavaScript plugins.</p>
-                <div class="highlight">
-                    <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</code></pre>
-                </div>
-                <h4 id="modules">Modules</h4>
-                <p>If you use <code>&lt;script type=&quot;module&quot;&gt;</code>, please refer to our <a href="/docs/5.1/getting-started/javascript/#using-bootstrap-as-a-module">using Bootstrap as a
-                        module</a> section.</p>
-                <h4 id="components">Components</h4>
-                <p>Curious which components explicitly require our JavaScript and Popper? Click the show components link below. If you&rsquo;re at all unsure about the general page structure, keep reading for an example page template.</p>
+
+                <h4 id="separate">h4 Separate</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam suscipit, ipsam sint velit totam eveniet enim, autem dolorem eos aperiam, laboriosam aspernatur ea blanditiis vel?</p>
+
+                <h4 id="modules">h4 Modules</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quis pariatur voluptas asperiores veritatis praesentium natus. Doloremque, fugit? Voluptate, in cupiditate tempora recusandae modi commodi.</p>
+
+                <h4 id="components">h4 Components</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci explicabo accusamus debitis delectus ducimus ullam. Beatae laborum id vitae inventore! Impedit cum commodi sed explicabo.</p>
                 <details>
-                    <summary class="text-primary mb-3">Show components requiring JavaScript</summary>
+                    <summary class="text-primary mb-3">Lorem ipsum dolor sit.</summary>
                     <ul>
-                        <li>Alerts for dismissing</li>
-                        <li>Buttons for toggling states and checkbox/radio functionality</li>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Lorem, ipsum dolor sit amet consectetur adipisicing.</li>
                         <li>Carousel for all slide behaviors, controls, and indicators</li>
                         <li>Collapse for toggling visibility of content</li>
-                        <li>Dropdowns for displaying and positioning (also requires <a href="https://popper.js.org/">Popper</a>)</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, nostrum.</li>
                         <li>Modals for displaying, positioning, and scroll behavior</li>
                         <li>Navbar for extending our Collapse plugin to implement responsive behavior</li>
                         <li>Offcanvases for displaying, positioning, and scroll behavior</li>
                         <li>Toasts for displaying and dismissing</li>
-                        <li>Tooltips and popovers for displaying and positioning (also requires <a href="https://popper.js.org/">Popper</a>)</li>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur blanditiis adipisci quo velit fuga.</li>
                         <li>Scrollspy for scroll behavior and navigation updates</li>
                     </ul>
                 </details>
-                <h2 id="starter-template">Starter template</h2>
-                <p>Be sure to have your pages set up with the latest design and development standards. That means using an HTML5 doctype and including a viewport meta tag for proper responsive behaviors. Put it all together and your pages should look like
-                    this:
-                </p>
+
+                <h2 id="starter-template">h2 Starter template</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi asperiores repellat natus magni? Facere quas ex hic quam nihil. Excepturi nemo beatae voluptas praesentium quaerat, neque voluptatem quasi minus sint doloremque omnis debitis,
+                    saepe doloribus modi sequi, repellendus eligendi reiciendis?</p>
                 <div class="highlight">
-                    <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="c">&lt;!-- Required meta tags --&gt;</span>
-    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width, initial-scale=1&#34;</span><span class="p">&gt;</span>
-    <span class="c">&lt;!-- Bootstrap CSS --&gt;</span>
-    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Hello, world!<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, world!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-    <span class="c">&lt;!-- Optional JavaScript; choose one of the two! --&gt;</span>
-    <span class="c">&lt;!-- Option 1: Bootstrap Bundle with Popper --&gt;</span>
-    <span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-    <span class="c">&lt;!-- Option 2: Separate Popper and Bootstrap JS --&gt;</span>
-    <span class="c">&lt;!--
-</span><span class="c">    &lt;script src=&#34;https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js&#34; integrity=&#34;sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
-</span><span class="c">    &lt;script src=&#34;https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js&#34; integrity=&#34;sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13&#34; crossorigin=&#34;anonymous&#34;&gt;&lt;/script&gt;
-</span><span class="c">    --&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, asperiores nihil. Quam voluptatum alias dolorum libero facere id eos quod laborum nulla sit tenetur debitis, hic numquam fugit laboriosam iure?
                 </div>
-                <p>For next steps, visit the <a href="/docs/5.1/layout/grid/">Layout docs</a> or <a href="/docs/5.1/examples/">our official examples</a> to start laying out your site&rsquo;s content and components.</p>
-                <h2 id="important-globals">Important globals</h2>
-                <p>Bootstrap employs a handful of important global styles and settings that you&rsquo;ll need to be aware of when using it, all of which are almost exclusively geared towards the
-                    <em>normalization</em> of cross browser styles. Let&rsquo;s dive in.</p>
-                <h3 id="html5-doctype">HTML5 doctype</h3>
+
+                <h2 id="important-globals">h2 Important globals</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque non nobis blanditiis adipisci voluptas placeat maxime fuga voluptatum, iusto odio libero? Quidem ab esse minus!</p>
+
+                <h3 id="html5-doctype">h3 HTML5 doctype</h3>
                 <p>Bootstrap requires the use of the HTML5 doctype. Without it, you&rsquo;ll see some funky incomplete styling, but including it shouldn&rsquo;t cause any considerable hiccups.</p>
                 <div class="highlight">
-                    <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
-  ...
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, quod. Natus impedit quas eveniet officia. Magnam, commodi dolorum voluptatem nulla libero incidunt earum veniam quam.
                 </div>
-                <h3 id="responsive-meta-tag">Responsive meta tag</h3>
-                <p>Bootstrap is developed <em>mobile first</em>, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. To ensure proper rendering and touch zooming for all devices,
-                    <strong>add the responsive viewport meta tag</strong> to your <code>&lt;head&gt;</code>.</p>
-                <div class="highlight">
-                    <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width, initial-scale=1&#34;</span><span class="p">&gt;</span>
-</code></pre>
-                </div>
-                <p>You can see an example of this in action in the <a href="#starter-template">starter template</a>.</p>
-                <h3 id="box-sizing">Box-sizing</h3>
-                <p>For more straightforward sizing in CSS, we switch the global <code>box-sizing</code> value from
-                    <code>content-box</code> to <code>border-box</code>. This ensures <code>padding</code> does not affect the final computed width of an element, but it can cause problems with some third-party software like Google Maps and Google Custom
-                    Search Engine.
-                </p>
-                <p>On the rare occasion you need to override it, use something like the following:</p>
-                <div class="highlight">
-                    <pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="p">.</span><span class="nc">selector-for-some-widget</span> <span class="p">{</span>
-  <span class="k">box-sizing</span><span class="p">:</span> <span class="kc">content-box</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre>
-                </div>
-                <p>With the above snippet, nested elements—including generated content via <code>::before</code> and
-                    <code>::after</code>—will all inherit the specified <code>box-sizing</code> for that
-                    <code>.selector-for-some-widget</code>.</p>
-                <p>Learn more about <a href="https://css-tricks.com/box-sizing/">box model and sizing at CSS Tricks</a>.
-                </p>
-                <h3 id="reboot">Reboot</h3>
-                <p>For improved cross-browser rendering, we use <a href="/docs/5.1/content/reboot/">Reboot</a> to correct inconsistencies across browsers and devices while providing slightly more opinionated resets to common HTML elements.</p>
-                <h2 id="community">Community</h2>
-                <p>Stay up to date on the development of Bootstrap and reach out to the community with these helpful resources.
-                </p>
+
+                <h3 id="responsive-meta-tag">h3 Responsive meta tag</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, porro nam suscipit dicta quasi repudiandae culpa ab eum quibusdam vitae?</p>
+
+                <h3 id="box-sizing">h3 Box-sizing</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem quos adipisci similique assumenda porro, ratione numquam deleniti explicabo placeat commodi vel, eius, odio tempora vero!</p>
+
+                <h3 id="reboot">h3 Reboot</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, doloribus neque distinctio molestiae aliquid fugiat fugit vero impedit suscipit ipsum sit amet voluptatem tenetur vitae!</p>
+
+                <h2 id="community">h2 Community</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, ut quia quidem veritatis quibusdam ipsum accusantium blanditiis incidunt necessitatibus modi.</p>
                 <ul>
-                    <li>Read and subscribe to <a href="https://blog.getbootstrap.com/">The Official Bootstrap Blog</a>.
-                    </li>
-                    <li>Join <a href="https://bootstrap-slack.herokuapp.com/">the official Slack room</a>.</li>
-                    <li>Chat with fellow Bootstrappers in IRC. On the <code>irc.libera.chat</code> server, in the
-                        <code>#bootstrap</code> channel.</li>
-                    <li>Implementation help may be found at Stack Overflow (tagged <a href="https://stackoverflow.com/questions/tagged/bootstrap-5"><code>bootstrap-5</code></a>).
-                    </li>
-                    <li>Developers should use the keyword <code>bootstrap</code> on packages that modify or add to the functionality of Bootstrap when distributing through <a href="https://www.npmjs.com/search?q=keywords:bootstrap">npm</a> or similar delivery
-                        mechanisms for maximum discoverability.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus corrupti odio saepe impedit totam nobis sed dolorum aspernatur ab. Aperiam.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, beatae.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates dolorum vitae placeat inventore omnis ullam, quibusdam nostrum tempora dolor voluptatem.</li>
                 </ul>
-                <p>You can also follow <a href="https://twitter.com/getbootstrap">@getbootstrap on Twitter</a> for the latest gossip and awesome music videos.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt dolorum fuga ullam eaque temporibus nam aspernatur, error sed quos unde.</p>
             </div>
         </main>
 

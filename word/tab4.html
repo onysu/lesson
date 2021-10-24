@@ -1,497 +1,1013 @@
-<div class="container my-md-4 bd-layout">
-    <!-- sidebar -->
-    <aside class="bd-sidebar"></aside>
+<!-- sidebar -->
+<aside class="bd-sidebar"></aside>
 
-    <!-- konten -->
-    <main class="bd-main order-1">
+<!-- konten -->
+<main class="bd-main order-1">
 
-        <!-- intro -->
-        <div class="bd-intro">
-            <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
-                <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="files/bahan/word_pagelayout_practice.docx" title="Lihat dan edit file ini di GitHub" target="_blank" rel="noopener">unduh file latihan</a>
-                <div class="d-flex align-items-center gap-2 py-2 lh-sm">
-                    <!-- <img src="..." /> -->
-                    <div>
-                        <h1 class="bd-title" id="content">Tata letak halaman</h1>
+    <!-- intro -->
+    <div class="bd-intro">
+        <div class="d-md-flex align-items-center justify-content-between">
+            <h1>Tata letak halaman <small class="text-muted fw-light">(Page Layout)</small></h1>
+        </div>
+        <p class="lead">Word menawarkan berbagai opsi tata letak dan pemformatan halaman yang memengaruhi tampilan konten di halaman. Anda dapat menyesuaikan orientasi halaman, ukuran kertas, dan margin halaman tergantung pada tampilan dokumen yang Anda inginkan.</p>
+        <a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="../word/files/bahan/word2016_pagelayout_practice.docx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+    </div>
+
+    <!-- menu kanan -->
+    <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted fw-light">
+        <strong class="d-block h5 my-2">Di halaman ini</strong>
+        <nav id="TableOfContents">
+            <div class="accordion accordion-flush" id="tab4MenuKanan">
+
+                <!-- Page Layout -->
+                <div class="accordion-item border-0">
+                    <a href="#PageLayout">Page Layout</a>
+                    <div id="flush-collapse-OrientasiHalaman" class="accordion-collapse collapse" aria-labelledby="flush-heading-OrientasiHalaman" data-bs-parent="#tab4MenuKanan">
+                        <div class="accordion-body p-0">
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li><a href="#Orientasihalaman">Orientasi halaman</a></li>
+                                        <li><a href="#Ukuranhalaman">Ukuran halaman</a></li>
+                                        <li><a href="#MarginHalaman">Margin halaman</a></li>
+                                        <li><a href="#latOrientasihalaman">Latihan</a></li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Printing Documents -->
+                <div class="accordion-item border-0">
+                    <a href="#MencetakDokumen">Mencetak Dokumen</a>
+                    <div id="flush-collapse-MencetakDokumen" class="accordion-collapse collapse" aria-labelledby="flush-heading-MencetakDokumen" data-bs-parent="#tab4MenuKanan">
+                        <div class="accordion-body p-0">
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li><a href="#Mencetakdokumen">Mencetak dokumen</a></li>
+                                        <li><a href="#Mencetakkustom">Mencetak kustom</a></li>
+                                        <li><a href="#lat-print">Latihan</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Breaks -->
+                <div class="accordion-item border-0">
+                    <a href="#Breaks">Breaks</a>
+                    <div id="flush-collapse-Breaks" class="accordion-collapse collapse" aria-labelledby="flush-heading-Breaks" data-bs-parent="#tab4MenuKanan">
+                        <div class="accordion-body p-0">
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li><a href="#Menyisipkanpagebreak">Menyisipkan page break</a></li>
+                                        <li><a href="#Sectionbreaks">Section breaks</a></li>
+                                        <li><a href="#Jenislaindaribreaks">Jenis breaks</a></li>
+                                        <li><a href="#Menghapusbreaks">Menghapus breaks</a></li>
+                                        <li><a href="#lat-break">Latihan</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columns -->
+                <div class="accordion-item border-0">
+                    <a href="#Kolom">Kolom</a>
+                    <div id="flush-collapse-Kolom" class="accordion-collapse collapse" aria-labelledby="flush-heading-Kolom" data-bs-parent="#tab4MenuKanan">
+                        <div class="accordion-body p-0">
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li><a href="#Menambahkankolomkedokumen">Menambahkan kolom ke dokumen</a></li>
+                                        <li><a href="#Menghapuskolom">Menghapus kolom</a></li>
+                                        <li><a href="#Menambahkancolumnbreaks">Menambahkan column breaks</a></li>
+                                        <li><a href="#Menghapuscolumnbreaks">Menghapus column breaks</a></li>
+                                        <li><a href="#lat-kolom">Latihan</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <p class="lead">Word menawarkan berbagai opsi tata letak dan pemformatan halaman yang memengaruhi tampilan konten di halaman. Anda dapat menyesuaikan orientasi halaman, ukuran kertas, dan margin halaman tergantung pada tampilan dokumen yang Anda inginkan.</p>
-        </div>
+        </nav>
+    </div>
 
-        <!-- menu kanan -->
-        <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
-            <strong class="d-block h6 my-2 pb-2 border-bottom">Di halaman ini</strong>
-            <nav id="TableOfContents">
-                <ul>
-                    <li><a href="#Tataletakhalaman" rel="noopener">Tata letak halaman</a>
-                        <ul>
-                            <li><a href="#OrientasiHalaman" rel="noopener">Orientasi Halaman</a></li>
-                            <li><a href="#UkuranKertas" rel="noopener">Ukuran Kertas</a></li>
-                            <li><a href="#MarginHalaman" rel="noopener">Margin Halaman</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#MencetakDokumen" rel="noopener">Mencetak Dokumen</a></li>
-                    <li><a href="#Breaks" rel="noopener">Breaks</a></li>
-                    <li><a href="#Kolom" rel="noopener">Kolom</a></li>
-                    <li><a href="#HeaderdanFooter" rel="noopener">Header dan Footer</a></li>
-                    <li><a href="#NomorHalaman" rel="noopener">Nomor Halaman</a></li>
-                </ul>
-            </nav>
-        </div>
+    <!-- isi konten -->
+    <div class="bd-content">
+        <div class="tab-content" id="nav-tabContent">
+            <div class="accordion accordion-flush" id="tab4Konten">
 
-        <!-- isi konten -->
-        <div class="bd-content">
-            <div class="tab-content" id="nav-tabContent">
 
-                <section id="OrientasiHalaman">
-                    <div class="d-md-flex align-items-center justify-content-between mt-5 mb-1 border-bottom">
-                        <!-- <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../word/files/bahan/" title="unduh file latihan" rel="noopener">unduh file latihan</a> -->
-                        <p class="bd-lead mb-0" id="content">Orientasi halaman <span class="span-text">(Page
-                            orientation)</span></p>
+                <section id="Orientasihalaman">
+                    <div class="accordion-item" id="">
+                        <h2 class="accordion-header" id="flush-heading-OrientasiHalaman">
+                            <button class="accordion-button collapsed" style="padding: 1rem 0rem; box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-OrientasiHalaman" aria-expanded="false" aria-controls="flush-collapse-OrientasiHalaman">
+                                <div class="me-auto">
+                                    <div class="fs-5">Orientasi halaman</div>
+                                    <small class="text-muted fw-light">Pelajari cara mengubah orientasi halaman, margin, dan ukuran.</small>
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-OrientasiHalaman" class="accordion-collapse collapse" aria-labelledby="flush-heading-OrientasiHalaman" data-bs-parent="#tab4Konten">
+                            <div class="accordion-body p-0">
+
+                                <section>
+                                    <p>Word menawarkan dua pilihan orientasi halaman: landscape dan portrait. Bandingkan contoh kita di bawah ini untuk melihat bagaimana orientasi dapat mempengaruhi penampilan dan jarak teks dan gambar.</p>
+                                    <ul>
+                                        <li>
+                                            <p> Lansekap berarti halaman berorientasi horizontal.</p>
+                                            <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image001.png" alt="Orientasi lanskap"></p>
+                                        </li>
+                                        <li>
+                                            <p>Potret berarti halaman diorientasikan secara vertikal.</p>
+                                            <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image002.png" alt="Orientasi tegak"></p>
+                                        </li>
+                                    </ul>
+
+                                    <h6>Untuk mengubah orientasi halaman:</h6>
+                                    <ol>
+                                        <li>Pilih tab Tata Letak.</li>
+                                        <li>
+                                            <p>Klik perintah Orientation di grup Page Setup.</p>
+                                            <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image003.png" alt="Mengklik perintah Orientasi"></p>
+                                        </li>
+                                        <li>
+                                            <p>Menu tarik-turun akan muncul. Klik Portrait atau Landscape untuk mengubah orientasi halaman.</p>
+                                            <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image004.png" alt="Mengubah orientasi halaman"></p>
+                                        </li>
+                                        <li>Orientasi halaman dokumen akan diubah.</li>
+                                    </ol>
+                                </section>
+                                <section id="Ukuranhalaman">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content">Ukuran halaman <small class="fw-light">(Page Size)</small>
+                                        </div>
+                                    </div>
+                                    <p>Secara default, ukuran halaman dokumen baru adalah 8,5 inci kali 11 inci. Bergantung pada proyek Anda, Anda mungkin perlu menyesuaikan ukuran halaman dokumen Anda. Penting untuk dicatat bahwa sebelum mengubah ukuran
+                                        halaman default, Anda harus memeriksa untuk melihat ukuran halaman mana yang dapat diakomodasi oleh printer Anda.</p>
+
+                                    <h6>Untuk mengubah ukuran halaman:</h6>
+                                    <p>Word memiliki berbagai ukuran halaman yang telah ditentukan untuk dipilih.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Pilih tab Layout, lalu klik perintah Size.</p>
+                                            <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image005.png" alt="Mengklik perintah Ukuran"></p>
+                                        </li>
+                                        <li>
+                                            <p>Menu tarik-turun akan muncul. Ukuran halaman saat ini disorot. Klik ukuran halaman standar yang diinginkan.</p>
+                                            <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image006.png" alt="Mengubah ukuran halaman"></p>
+                                        </li>
+                                        <li>Ukuran halaman dokumen akan diubah.</li>
+                                    </ol>
+
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content">Menggunakan ukuran halaman kustom</div>
+                                    </div>
+                                    <h6>Untuk menggunakan ukuran halaman khusus:</h6>
+                                    <p>Word juga memungkinkan Anda untuk menyesuaikan ukuran halaman di kotak dialog Penyetelan Halaman.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Dari tab Tata Letak, klik Ukuran. Pilih Lebih Banyak Ukuran halaman dari menu tarik-turun.</p>
+                                            <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image007.png" alt="Memilih Ukuran halaman Lainnya..."></p>
+                                        </li>
+                                        <li>Kotak dialog Pengaturan Halaman akan muncul.</li>
+                                        <li>
+                                            <p>Sesuaikan nilai Width dan Height, lalu klik OK.</p>
+                                            <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image008.png" alt="Menyesuaikan ukuran halaman"></p>
+                                        </li>
+                                        <li>Ukuran halaman dokumen akan diubah.</li>
+                                    </ol>
+                                </section>
+                                <section id="MarginHalaman">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content">Margin Halaman <small class="fw-light">(Page Margins)</small>
+                                        </div>
+                                    </div>
+                                    <p>Margin adalah ruang antara teks dan tepi dokumen Anda. Secara default, margin dokumen baru ditetapkan sebagai Normal, yang berarti memiliki ruang satu inci antara teks dan tepian. Tergantung pada kebutuhan Anda, Word
+                                        memungkinkan Anda untuk mengubah ukuran margin dokumen Anda.</p>
+
+                                    <h6>Untuk memformat margin halaman:</h6>
+                                    <p>Word memiliki berbagai ukuran marjin yang telah ditetapkan untuk dipilih.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Pilih tab Layout, kemudian klik perintah Margin.</p>
+                                            <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image009.png" alt="Mengklik perintah Margin"></p>
+                                        </li>
+                                        <li>
+                                            <p>Sebuah menu drop-down akan muncul. Klik ukuran margin yang telah ditetapkan yang Anda inginkan.</p>
+                                            <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image010.png" alt="Mengubah margin halaman"></p>
+                                        </li>
+                                        <li>Margin dokumen akan diubah.</li>
+                                    </ol>
+
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content">Menggunakan margin kustom <small class="fw-light">(custom margins)</small>
+                                        </div>
+                                    </div>
+                                    <h6>Untuk menggunakan margin khusus:</h6>
+                                    <p>Word juga memungkinkan Anda untuk menyesuaikan ukuran margin Anda di kotak dialog Penyetelan Halaman.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Dari tab Tata Letak, klik Margin. Pilih Margin Kustom dari menu tarik-turun.</p>
+                                            <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image011.png" alt="Memilih Margin Kustom..."></p>
+                                        </li>
+                                        <li>Kotak dialog Pengaturan Halaman akan muncul.</li>
+                                        <li>
+                                            <p>Sesuaikan nilai untuk setiap margin, lalu klik OK.</p>
+                                            <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image012.png" alt="Kotak dialog Pengaturan Halaman"></p>
+                                        </li>
+                                        <li>Margin dokumen akan diubah.</li>
+                                    </ol>
+                                    <div class="moreInfo">
+                                        <p>Anda juga dapat membuka kotak dialog Page Setup dengan menavigasi ke tab Layout dan klik panah kecil di sudut kanan bawah grup Page Setup.</p>
+                                        <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image013.png" alt="Membuka kotak dialog Pengaturan Halaman"></p>
+                                    </div>
+                                    <div class="moreInfo">Anda dapat menggunakan fitur Word Set as Default sebagai fitur default untuk menyimpan semua perubahan format yang telah Anda buat dan secara otomatis menerapkannya ke dokumen baru.</div>
+                                </section>
+                                <section class="mb-4">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content"><img src="https://img.icons8.com/color/48/000000/youtube-play.png" /> Video</div>
+                                    </div>
+                                    <p>Tonton video di bawah untuk mempelajari lebih lanjut tentang page layout di Word.</p>
+                                    <div class="ratio ratio-16x9">
+
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jgNpoksYOLE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                    </div>
+                                </section>
+                                <section class="highlight" id="latOrientasihalaman">
+                                    <h5>Latihan!</h5>
+                                    <ol>
+                                        <li>Buka <a href="../word/files/bahan/word_pagelayout_practice.docx">dokumen latihan</a> kami.</li>
+                                        <li>Ubah orientasi halaman menjadi Potret.</li>
+                                        <li>Ubah ukuran halaman menjadi Legal. Jika ukuran Legal tidak tersedia, Anda dapat memilih ukuran lain seperti A5.</li>
+                                        <li>Ubah margin ke pengaturan Sempit.</li>
+                                        <li>
+                                            <p>Setelah selesai, dokumen Anda harus menjadi satu halaman jika menggunakan ukuran Legal. Seharusnya terlihat seperti ini:</p>
+                                            <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image014.png" alt="Tantangan Tata Letak Halaman"></p>
+                                        </li>
+                                    </ol>
+                                </section>
+
+                            </div>
+                        </div>
                     </div>
-                    <p>Word menawarkan dua opsi orientasi halaman: lanskap dan potret. Bandingkan contoh kami di bawah ini untuk melihat bagaimana orientasi dapat memengaruhi tampilan dan spasi teks dan gambar.</p>
-                    <p>Lansekap berarti halaman berorientasi horizontal.</p>
-                    <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image001.png" alt="Orientasi lanskap"></p>
-                    <p>Potret berarti halaman diorientasikan secara vertikal.
-                    </p>
-                    <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image002.png" alt="Orientasi tegak">
-                    </p>
-                    <p>Untuk mengubah orientasi halaman:</p>
-                    <p>Pilih tab Tata Letak.</p>
-                    <p>Klik perintah Orientation di grup Page Setup.
-                    </p>
-                    <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image003.png" alt="Mengklik perintah Orientasi"></p>
-                    <p>Menu tarik-turun akan muncul. Klik Portrait atau Landscape untuk mengubah orientasi halaman.</p>
-                    <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image004.png" alt="Mengubah orientasi halaman"></p>
-                    <p>Orientasi halaman dokumen akan diubah.</p>
-                </section>
-
-                <section id="UkuranKertas">
-                    <div class="d-md-flex align-items-center justify-content-between mt-5 mb-1 border-bottom">
-                        <!-- <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../word/files/bahan/" title="unduh file latihan" rel="noopener">unduh file latihan</a> -->
-                        <p class="bd-lead mb-0" id="content">Ukuran Kertas <span class="span-text">(Page Size)</span></p>
-                    </div>
-                    <p>Secara default, ukuran halaman dokumen baru adalah 8,5 inci kali 11 inci. Bergantung pada proyek Anda, Anda mungkin perlu menyesuaikan ukuran halaman dokumen Anda. Penting untuk dicatat bahwa sebelum mengubah ukuran halaman default,
-                        Anda harus memeriksa untuk melihat ukuran halaman mana yang dapat diakomodasi oleh printer Anda.</p>
-                    <p>Untuk mengubah ukuran halaman:</p>
-                    <p>Word memiliki berbagai ukuran halaman yang telah ditentukan untuk dipilih.</p>
-                    <p>Pilih tab Layout, lalu klik perintah Size.
-                    </p>
-                    <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image005.png" alt="Mengklik perintah Ukuran"></p>
-                    <p>Menu tarik-turun akan muncul. Ukuran halaman saat ini disorot. Klik ukuran halaman standar yang diinginkan.
-                    </p>
-                    <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image006.png" alt="Mengubah ukuran halaman"></p>
-                    <p>Ukuran halaman dokumen akan diubah.</p>
-                    <p>Untuk menggunakan ukuran halaman khusus:</p>
-                    <p>Word juga memungkinkan Anda untuk menyesuaikan ukuran halaman di kotak dialog Penyetelan Halaman.</p>
-                    <p>Dari tab Tata Letak, klik Ukuran. Pilih Lebih Banyak Ukuran Kertas dari menu tarik-turun.</p>
-                    <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image007.png" alt="Memilih Ukuran Kertas Lainnya..."></p>
-                    <p>Kotak dialog Pengaturan Halaman akan muncul.
-                    </p>
-                    <p>Sesuaikan nilai Width dan Height, lalu klik OK.</p>
-                    <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image008.png" alt="Menyesuaikan ukuran halaman"></p>
-                    <p>Ukuran halaman dokumen akan diubah.</p>
-                </section>
-
-                <section id="MarginHalaman">
-                    <div class="d-md-flex align-items-center justify-content-between mt-5 mb-1 border-bottom">
-                        <!-- <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../word/files/bahan/" title="unduh file latihan" rel="noopener">unduh file latihan</a> -->
-                        <p class="bd-lead mb-0" id="content">Margin Halaman <span class="span-text">(Page Margins)</span>
-                        </p>
-                    </div>
-                    <p>Sebuah marjin adalah ruang antara teks dan tepi dokumen Anda. Secara default, margin dokumen baru diatur ke Normal, yang berarti memiliki spasi satu inci antara teks dan setiap tepi. Tergantung pada kebutuhan Anda, Word memungkinkan
-                        Anda untuk mengubah ukuran margin dokumen Anda.</p>
-                    <p>Untuk memformat margin halaman:</p>
-                    <p>Word memiliki berbagai ukuran margin yang telah ditentukan untuk dipilih.</p>
-                    <p>Pilih tab Layout, lalu klik perintah Margins.
-                    </p>
-                    <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image009.png" alt="Mengklik perintah Margin"></p>
-                    <p>Menu tarik-turun akan muncul. Klik ukuran margin yang telah ditentukan sebelumnya yang Anda inginkan.
-                    </p>
-                    <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image010.png" alt="Mengubah margin halaman"></p>
-                    <p>Margin dokumen akan diubah.</p>
-                    <p>Untuk menggunakan margin khusus:</p>
-                    <p>Word juga memungkinkan Anda untuk menyesuaikan ukuran margin Anda di kotak dialog Penyetelan Halaman.
-                    </p>
-                    <p>Dari tab Tata Letak, klik Margin. Pilih Margin Kustom dari menu tarik-turun.</p>
-                    <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image011.png" alt="Memilih Margin Kustom..."></p>
-                    <p>Kotak dialog Pengaturan Halaman akan muncul.
-                    </p>
-                    <p>Sesuaikan nilai untuk setiap margin, lalu klik OK.</p>
-                    <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image012.png" alt="Kotak dialog Pengaturan Halaman">
-                    </p>
-                    <p>Margin dokumen akan diubah.</p>
-                    <p>Anda juga dapat membuka kotak dialog Penyetelan Halaman dengan menavigasi ke tab Tata Letak dan mengklik panah kecil di sudut kanan bawah grup Penyetelan Halaman.</p>
-                    <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image013.png" alt="Membuka kotak dialog Pengaturan Halaman"></p>
-                    <p>Anda dapat menggunakan fitur Set as Default dari Word untuk menyimpan semua perubahan pemformatan yang telah Anda buat dan secara otomatis menerapkannya ke dokumen baru. Untuk mempelajari cara melakukannya, baca pelajaran kami tentang
-                        <a href="http://www.gcflearnfree.org/word-tips/changing-your-default-settings-in-word/1/" title="Cara Mengubah Pengaturan Default Anda di Word">Mengubah Pengaturan Default Anda di
-                        Word</a>.</p>
-                    <p>Tantangan!</p>
-                    <p>Buka <a href="https://media.gcflearnfree.org/content/5c09497777c0500354728565_12_06_2018/word_pagelayout_practice.docx">dokumen
-                        latihan</a> kami.</p>
-                    <p>Ubah orientasi halaman menjadi Potret.</p>
-                    <p>Ubah ukuran halaman menjadi Legal. Jika ukuran Legal tidak tersedia, Anda dapat memilih ukuran lain seperti A5.</p>
-                    <p>Ubah margin ke pengaturan Sempit.</p>
-                    <p>Setelah selesai, dokumen Anda harus menjadi satu halaman jika menggunakan ukuran Legal. Seharusnya terlihat seperti ini:
-                    </p>
-                    <p><img class="img-fluid" src="../word/files/Orientasihalaman_files/image014.png" alt="Tantangan Tata Letak Halaman">
-                    </p>
                 </section>
 
                 <section id="MencetakDokumen">
-                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
-                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../word/files/bahan/word_printing_practice.docx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-                        <p class="bd-lead mb-0" id="content">Mencetak Dokumen <span class="span-text">(Printing
-                            Documents)</span></p>
+                    <div class="accordion-item" id="">
+                        <h2 class="accordion-header" id="flush-heading-MencetakDokumen">
+                            <button class="accordion-button collapsed" style="padding: 1rem 0rem; box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-MencetakDokumen" aria-expanded="false" aria-controls="flush-collapse-MencetakDokumen">
+                                <div class="me-auto">
+                                    <div class="fs-5">Mencetak Dokumen</div>
+                                    <small class="text-muted fw-light">Pelajari semua tentang pencetakan di Word.</small>
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-MencetakDokumen" class="accordion-collapse collapse" aria-labelledby="flush-heading-MencetakDokumen" data-bs-parent="#tab4Konten">
+                            <div class="accordion-body p-0">
+
+                                <section>
+                                    <p>Setelah membuat dokumen, Anda mungkin ingin mencetaknya untuk melihat dan membagi pekerjaan Anda secara offline. Sangat mudah untuk melihat dan mencetak dokumen di Word menggunakan panel Print.</p>
+                                    <p><a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../word/files/bahan/word_printing_practice.docx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+                                    <h6>Untuk mengakses panel Print :</h6>
+                                    <ol>
+                                        <li>
+                                            <p>Pilih tab File. Tampilan Backstage akan muncul.</p>
+                                            <p><img class="img-fluid" src="../word/files/MencetakDokumen_files/image001.png" alt="Memilih tab File"></p>
+                                        </li>
+                                        <li>
+                                            <p>Pilih Print. Panel Print akan muncul.</p>
+                                            <p><img class="img-fluid" src="../word/files/MencetakDokumen_files/image002.png" alt="Mengklik Print"></p>
+                                        </li>
+                                    </ol>
+                                    <p>Pelajari lebih lanjut tentang menggunakan panel Print.</p>
+                                    <p><img class="img-fluid" src="../word/files/MencetakDokumen_files/image003.png" alt="Grafik interaktif dengan panel Print"></p>
+                                    <ul>
+                                        <li><strong>Print</strong>: Klik tombol ini untuk mencetak dokumen.</li>
+                                        <li><strong>Copies</strong>: Di sini, Anda dapat memilih berapa banyak salinan yang akan dicetak.</li>
+                                        <li><strong>Printer</strong>: Jika Anda memiliki beberapa printer, pilih salah satu yang ingin Anda gunakan.</li>
+                                        <li><strong>Settings</strong>: Di sini, Anda dapat memilih untuk mencetak seluruh dokumen, hanya halaman ini, atau cetak kustom untuk mencetak halaman tertentu.</li>
+                                        <li><strong>Single and Double-Sided Printing</strong>: Pilih apakah akan mencetak pada satu atau kedua sisi kertas, jika printer Anda mendukung pengaturan ini.</li>
+                                        <li><strong>Collated</strong>: Jika Anda mencetak beberapa salinan, Anda dapat memilih bagaimana halaman akan diurutkan. Collated akan menyortir mereka 1, 2, 3, 1, 2, 3. Uncollated akan menyortir mereka 1, 1, 2, 2,
+                                            3, 3.</li>
+                                        <li><strong>Page Orientation</strong>: Di sini, Anda dapat memilih orientasi portrait (vertikal) atau landscape (horizontal).</li>
+                                        <li><strong>Paper Size</strong>: Anda dapat memilih ukuran kertas yang ingin Anda gunakan, jika printer Anda mendukung pengaturan ini.</li>
+                                        <li><strong>Margin</strong>: Di sini, Anda dapat mengatur margin halaman.</li>
+                                        <li><strong>Scaling</strong>: Opsi ini memungkinkan Anda untuk mencetak lebih dari satu halaman pada satu lembar atau ukuran dokumen agar sesuai dengan ukuran kertas tertentu.</li>
+                                        <li><strong>Page Selection</strong>: Anda dapat mengklik panah, untuk melihat halaman yang berbeda di panel Preview.</li>
+                                        <li><strong>Zoom Control / Zoom to Page</strong>: Klik dan tarik slider untuk menggunakan kontrol pembesaran. Jumlah sebelah kiri slider bar mencerminkan persentase zoom. Anda dapat mengklik Zoom ke tombol Zoom to Page
+                                            untuk mengatur kontrol zoom agar muat satu halaman di jendela.</li>
+                                        <li><strong>Preview Pane</strong>: Di sini, Anda dapat melihat pratinjau tentang bagaimana lembar kerja Anda akan terlihat ketika dicetak.</li>
+                                    </ul>
+                                    <div class="moreInfo">Anda juga dapat mengakses panel Print dengan menekan <kbd>Ctrl</kbd>+<kbd>P</kbd> pada keyboard Anda.</div>
+                                </section>
+
+                                <section id="Mencetakdokumen">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content">Mencetak dokumen</div>
+                                    </div>
+                                    <h6>Untuk mencetak dokumen:</h6>
+                                    <ol>
+                                        <li>
+                                            <p>Arahkan ke panel Print, lalu pilih printer yang diinginkan.</p>
+                                            <p><img class="img-fluid" src="../word/files/MencetakDokumen_files/image004.png" alt="Memilih pencetak"></p>
+                                        </li>
+                                        <li>
+                                            <p>Masukkan jumlah salinan yang ingin Anda cetak.</p>
+                                            <p><img class="img-fluid" src="../word/files/MencetakDokumen_files/image005.png" alt="Memilih jumlah salinan"></p>
+                                        </li>
+                                        <li>
+                                            <p>Pilih pengaturan tambahan jika diperlukan.</p>
+                                            <p><img class="img-fluid" src="../word/files/MencetakDokumen_files/image006.png" alt="Mengubah pengaturan tambahan"></p>
+                                        </li>
+                                        <li>
+                                            <p>Klik Print.</p>
+                                            <p><img class="img-fluid" src="../word/files/MencetakDokumen_files/image007.png" alt="Mengklik cetak"></p>
+                                        </li>
+                                    </ol>
+                                </section>
+
+                                <section id="Mencetakkustom">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content">Mencetak kustom <small class="fw-light">(Custom printing)</small></div>
+                                    </div>
+                                    <p>Kadang-kadang Anda mungkin merasa tidak perlu mencetak seluruh dokumen, di mana pencetakan kasus kustom mungkin lebih cocok untuk kebutuhan Anda. Apakah Anda mencetak beberapa halaman individu atau berbagai halaman,
+                                        Word memungkinkan Anda untuk menentukan persis halaman yang ingin Anda cetak.</p>
+                                    <h6>Untuk mencetak dokumen secara kustom:</h6>
+                                    <p>Jika Anda ingin mencetak halaman atau rentang halaman individual, Anda harus memisahkan setiap entri dengan koma (misalnya 1, 3, 5-7, atau 10-14).</p>
+                                    <ol>
+                                        <li>Arahkan ke panel Print.</li>
+                                        <li>
+                                            <p>Di bidang Halaman :, masukkan halaman yang ingin Anda cetak.</p>
+                                            <p><img class="img-fluid" src="../word/files/MencetakDokumen_files/image008.png" alt="Mengatur halaman untuk dicetak"></p>
+                                        </li>
+                                        <li>
+                                            <p>Klik Print.</p>
+                                            <p><img class="img-fluid" src="../word/files/MencetakDokumen_files/image009.png" alt="Mengklik Print"></p>
+                                        </li>
+                                    </ol>
+                                    <div class="moreInfo">Jika dokumen Anda tidak mencetak seperti yang Anda inginkan, Anda mungkin perlu menyesuaikan beberapa pengaturan tata letak halaman.</div>
+                                </section>
+
+                                <section class="mb-4">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content"><img src="https://img.icons8.com/color/48/000000/youtube-play.png" /> Video</div>
+                                    </div>
+                                    <p>Tonton video di bawah ini untuk mempelajari lebih lanjut tentang mencetak dokumen di Word.</p>
+                                    <div class="ratio ratio-16x9">
+
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7bLQFTCsH8Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                    </div>
+                                </section>
+
+                                <section class="highlight" id="lat-print">
+                                    <h5>Latihan!</h5>
+                                    <ol>
+                                        <li>Buka <a href="../word/files/bahan/word_printing_practice.docx">dokumen latihan</a> kami.</li>
+                                        <li>Di panel Print, ubah pengaturan untuk hanya mencetak halaman 2 dan 5.</li>
+                                        <li>Ubah jumlah salinan menjadi 2.</li>
+                                        <li>Gunakan panah di bagian bawah pratinjau cetak untuk melihat setiap halaman.</li>
+                                        <li>
+                                            <p>Setelah selesai, panel Print Anda akan terlihat seperti ini:</p>
+                                            <p><img class="img-fluid" src="../word/files/MencetakDokumen_files/image010.jpg" alt="Tantangan Percetakan"></p>
+                                        </li>
+                                        <li>Opsional: Jika Anda memiliki printer, Anda dapat mengklik perintah Print. Itu harus mencetak dua salinan halaman 2 dan 5.</li>
+                                    </ol>
+                                </section>
+
+                            </div>
+                        </div>
                     </div>
-                    <p>Setelah membuat dokumen, Anda mungkin ingin mencetaknya untuk melihat dan membagikan pekerjaan Anda secara offline. Sangat mudah untuk melihat dan mencetak dokumen di Word menggunakan panel Print.</p>
-                    <p>Untuk mengakses panel Cetak:</p>
-                    <p>Pilih tab File. Tampilan belakang panggung akan muncul.</p>
-                    <p><img class="img-fluid" src="../word/files/MencetakDokumen_files/image001.png" alt="Memilih tab File">
-                    </p>
-                    <p>Pilih Cetak. The Print panel akan muncul.</p>
-                    <p><img class="img-fluid" src="../word/files/MencetakDokumen_files/image002.png" alt="Mengklik Cetak">
-                    </p>
-                    <p>Klik tombol di interaktif di bawah ini untuk mempelajari lebih lanjut tentang menggunakan panel Cetak.
-                    </p>
-                    <p><img class="img-fluid" src="../word/files/MencetakDokumen_files/image003.png" alt="Grafik interaktif dengan panel Cetak"></p>
-                    <p>Anda juga dapat mengakses panel Print dengan menekan <kbd>Ctrl</kbd>+<kbd>P</kbd> pada keyboard Anda.
-                    </p>
-                    <p>Untuk mencetak dokumen:</p>
-                    <p>Arahkan ke panel Print, lalu pilih printer yang diinginkan.
-                    </p>
-                    <p><img class="img-fluid" src="../word/files/MencetakDokumen_files/image004.png" alt="Memilih pencetak">
-                    </p>
-                    <p>Masukkan jumlah salinan yang ingin Anda cetak.</p>
-                    <p><img class="img-fluid" src="../word/files/MencetakDokumen_files/image005.png" alt="Memilih jumlah salinan"></p>
-                    <p>Pilih pengaturan tambahan jika diperlukan.</p>
-                    <p><img class="img-fluid" src="../word/files/MencetakDokumen_files/image006.png" alt="Mengubah pengaturan tambahan"></p>
-                    <p>Klik Cetak.</p>
-                    <p><img class="img-fluid" src="../word/files/MencetakDokumen_files/image007.png" alt="Mengklik cetak">
-                    </p>
-                    <p>Pencetakan khusus</p>
-                    <p>Terkadang Anda mungkin merasa tidak perlu mencetak seluruh dokumen Anda, dalam hal ini pencetakan kustom mungkin lebih sesuai dengan kebutuhan Anda. Baik Anda mencetak beberapa halaman individual atau rentang halaman, Word memungkinkan
-                        Anda menentukan dengan tepat halaman mana yang ingin Anda cetak.</p>
-                    <p>Untuk mencetak dokumen secara kustom:</p>
-                    <p>Jika Anda ingin mencetak halaman atau rentang halaman individual, Anda harus memisahkan setiap entri dengan koma (1, 3, 5-7, atau 10-14 misalnya).</p>
-                    <p>Arahkan ke panel Cetak.</p>
-                    <p>Di bidang Halaman :, masukkan halaman yang ingin Anda cetak.</p>
-                    <p><img class="img-fluid" src="../word/files/MencetakDokumen_files/image008.png" alt="Mengatur halaman untuk dicetak">
-                    </p>
-                    <p>Klik Cetak.</p>
-                    <p><img class="img-fluid" src="../word/files/MencetakDokumen_files/image009.png" alt="Mengklik Cetak">
-                    </p>
-                    <p>Jika dokumen Anda tidak dicetak seperti yang Anda inginkan, Anda mungkin perlu menyesuaikan beberapa pengaturan tata letak halaman. Untuk mempelajari lebih lanjut, tinjau pelajaran <a href="https://edu.gcfglobal.org/en/word/page-layout/1/">Tata Letak Halaman</a>                        kami.</p>
-                    <p>Tantangan!</p>
-                    <p>Buka <a href="https://media.gcflearnfree.org/content/5c09499e77c0500354728567_12_06_2018/word_printing_practice.docx">dokumen
-                        latihan</a> kami.</p>
-                    <p>Di panel Cetak, ubah pengaturan untuk hanya mencetak halaman 2 dan 5.</p>
-                    <p>Ubah jumlah salinan menjadi 2.</p>
-                    <p>Gunakan panah di bagian bawah pratinjau cetak untuk melihat setiap halaman.</p>
-                    <p>Setelah selesai, panel Print Anda akan terlihat seperti ini:
-                    </p>
-                    <p><img class="img-fluid" src="../word/files/MencetakDokumen_files/image010.jpg" alt="Tantangan Percetakan"></p>
-                    <p>Opsional: Jika Anda memiliki printer, Anda dapat mengklik perintah Cetak. Itu harus mencetak dua salinan halaman 2 dan 5.</p>
                 </section>
 
                 <section id="Breaks">
-                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
-                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../word/files/bahan/word_breaks_practice.docx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-                        <p class="bd-lead mb-0" id="content">Breaks</p>
-                    </div>
-                    <p>Saat Anda sedang mengerjakan dokumen multi-halaman, mungkin ada saatnya Anda ingin memiliki kontrol lebih besar atas bagaimana tepatnya teks mengalir. B reaks dapat membantu dalam kasus ini. Ada banyak jenis jeda untuk dipilih tergantung
-                        pada apa yang Anda butuhkan, termasuk jeda halaman, jeda bagian, dan jeda kolom.
-                    </p>
-                    <p>Untuk menyisipkan hentian halaman:</p>
-                    <p>Dalam contoh kami, tajuk bagian di halaman tiga ( Pendapatan Bulanan dan Menurut Klien ) dipisahkan dari tabel di halaman di bawah ini. Dan sementara kita bisa menekan Enter sampai teks itu mencapai bagian atas halaman empat, itu bisa
-                        dengan mudah digeser jika kita menambahkan atau menghapus sesuatu di bagian lain dari dokumen. Sebagai gantinya, kita akan menyisipkan page break.
-                    </p>
-                    <p>Tempatkan titik penyisipan di mana Anda ingin membuat hentian halaman. Dalam contoh kita, kita akan menempatkannya di awal heading kita.</p>
-                    <p><img class="img-fluid" src="../word/files/Breaks_files/image001.png" alt="menempatkan titik penyisipan"></p>
-                    <p>Pada tab Sisipkan, klik perintah Hentian Halaman. Anda juga dapat menekan Ctrl+Enter pada keyboard Anda.
-                    </p>
-                    <p><img class="img-fluid" src="../word/files/Breaks_files/image002.png" alt="memilih perintah Page Break pada tab Insert"></p>
-                    <p>Hentian halaman akan disisipkan ke dalam dokumen, dan teks akan berpindah ke halaman berikutnya.</p>
-                    <p><img class="img-fluid" src="../word/files/Breaks_files/image003.png" alt="jeda halaman yang disisipkan"></p>
-                    <p>Secara default, jeda tidak terlihat. Jika Anda ingin melihat jeda di dokumen Anda, klik perintah Perlihatkan/Sembunyikan pada tab Beranda.</p>
-                    <p><img class="img-fluid" src="../word/files/Breaks_files/image004.png" alt="menggunakan perintah Tampilkan/Sembunyikan pada tab Beranda"></p>
-                    <p>Istirahat bagian</p>
-                    <p>Pemisahan bagian membuat pembatas antara bagian dokumen yang berbeda, memungkinkan Anda memformat setiap bagian secara independen. Misalnya, Anda mungkin ingin satu bagian memiliki dua kolom tanpa menambahkan kolom ke seluruh dokumen.
-                        Word menawarkan beberapa jenis pemisah bagian.</p>
-                    <p>Halaman Berikutnya : Opsi ini menyisipkan pemisah bagian dan memindahkan teks setelah jeda ke halaman dokumen berikutnya.
-                    </p>
-                    <p>Berkelanjutan : Opsi ini menyisipkan pemisah bagian dan memungkinkan Anda untuk terus mengerjakan halaman yang sama.
-                    </p>
-                    <p>Halaman Genap dan Halaman Ganjil : Opsi ini menambahkan pemisah bagian dan memindahkan teks setelah jeda ke halaman genap atau ganjil berikutnya. Opsi-opsi ini mungkin berguna ketika Anda perlu memulai bagian baru pada halaman genap
-                        atau ganjil (seperti dengan bab baru sebuah buku).</p>
-                    <p><img class="img-fluid" src="../word/files/Breaks_files/image005.png" alt="jenis istirahat bagian">
-                    </p>
-                    <p>Untuk menyisipkan pemisah bagian:</p>
-                    <p>Dalam contoh kita, kita akan menambahkan pemisah bagian untuk memisahkan paragraf dari daftar dua kolom.
-                    </p>
-                    <p>Tempatkan titik penyisipan di tempat Anda ingin membuat jeda. Dalam contoh kita, kita akan menempatkannya di awal paragraf yang ingin kita pisahkan dari pemformatan dua kolom.</p>
-                    <p><img class="img-fluid" src="../word/files/Breaks_files/image006.png" alt="menempatkan titik penyisipan"></p>
-                    <p>Pada tab Page Layout, klik perintah Breaks, lalu pilih section break yang diinginkan dari menu drop-down. Dalam contoh kami, kami akan memilih Berkelanjutan sehingga paragraf kami tetap berada di halaman yang sama dengan kolom.
-                    </p>
-                    <p><img class="img-fluid" src="../word/files/Breaks_files/image007.png" alt="memasukkan jeda bagian Berkelanjutan"></p>
-                    <p>Hentian bagian akan muncul di dokumen.</p>
-                    <p><img class="img-fluid" src="../word/files/Breaks_files/image008.png" alt="istirahat bagian yang dimasukkan"></p>
-                    <p>Teks sebelum dan sesudah pemisah bagian sekarang dapat diformat secara terpisah. Dalam contoh kami, kami akan menerapkan pemformatan satu kolom ke paragraf.</p>
-                    <p><img class="img-fluid" src="../word/files/Breaks_files/image009.png" alt="menghapus format dua kolom dari paragraf">
-                    </p>
-                    <p>Pemformatan akan diterapkan ke bagian dokumen saat ini. Dalam contoh kita, teks di atas pemisah bagian menggunakan pemformatan dua kolom, sedangkan paragraf di bawah pemisah menggunakan pemformatan satu kolom.</p>
-                    <p><img class="img-fluid" src="../word/files/Breaks_files/image010.png" alt="bagian yang diformat secara terpisah"></p>
-                    <p>Jenis istirahat lainnya</p>
-                    <p>Saat Anda ingin memformat tampilan kolom atau mengubah pembungkusan teks di sekitar gambar, Word menawarkan opsi jeda tambahan yang dapat membantu:</p>
-                    <p>Kolom : Saat membuat beberapa kolom, Anda dapat menerapkan pemisah kolom untuk menyeimbangkan tampilan kolom. Teks apa pun yang mengikuti jeda kolom akan dimulai di kolom berikutnya. Untuk mempelajari lebih lanjut tentang cara membuat
-                        kolom di dokumen Anda, tinjau pelajaran kami tentang <a href="https://edu.gcfglobal.org/en/word/columns/1/">Kolom</a>.</p>
-                    <p>Pembungkusan teks : Saat teks telah dibungkus di sekitar gambar atau objek, Anda dapat menggunakan jeda pembungkusan teks untuk mengakhiri pembungkusan dan mulai mengetik pada baris di bawah gambar. Tinjau pelajaran kami tentang
-                        <a href="http://www.gcflearnfree.org/word/pictures-and-text-wrapping/1/">Gambar dan Pembungkusan
-                        Teks</a> untuk mempelajari lebih lanjut.</p>
-                    <p><img class="img-fluid" src="../word/files/Breaks_files/image011.png" alt="pilihan istirahat lainnya">
-                    </p>
-                    <p>Untuk menghapus jeda:</p>
-                    <p>Secara default, jeda disembunyikan. Jika Anda ingin menghapus jeda, pertama-tama Anda harus memperlihatkan jeda di dokumen Anda.</p>
-                    <p>Pada tab Beranda, klik perintah Perlihatkan/Sembunyikan.</p>
-                    <p><img class="img-fluid" src="../word/files/Breaks_files/image012.png" alt="mengklik perintah Tampilkan/Sembunyikan">
-                    </p>
-                    <p>Temukan jeda yang ingin Anda hapus, lalu tempatkan titik penyisipan di awal jeda.</p>
-                    <p><img class="img-fluid" src="../word/files/Breaks_files/image013.png" alt="menempatkan titik penyisipan di depan istirahat"></p>
-                    <p>Tekan tombol Hapus. Istirahat akan dihapus dari dokumen.</p>
-                    <p><img class="img-fluid" src="../word/files/Breaks_files/image014.png" alt="halaman setelah menghapus page break"></p>
-                    <p>Tantangan!</p>
-                    <p>Buka <a href="https://media.gcflearnfree.org/content/5c094af177c0500354728569_12_06_2018/word_breaks_practice.docx">dokumen
-                        latihan</a> kami.</p>
-                    <p>Gulir ke bagian Proyeksi Pendapatan di dekat akhir dokumen.</p>
-                    <p>Hapus jeda halamansetelah grafik Proyeksi Kuartal 2 oleh Klien.</p>
-                    <p>Tempatkan kursor Anda di awal tajuk Proyeksi Aplikasi Web.</p>
-                    <p>Sisipkan jeda bagian Halaman Berikutnya.</p>
-                    <p>Di grup Page Setup pada tab Layout, klik menu drop-down Columns dan pilih One. Ini memformat halaman kembali ke satu kolom dan harus memungkinkan tajuk Proyeksi Aplikasi Web dan tabel di bawahnya terbentang di seluruh halaman. Anda
-                        akan mempelajari lebih lanjut tentang kolom dalam pelajaran berikutnya.</p>
-                    <p>Setelah selesai, dua halaman terakhir akan terlihat seperti ini:</p>
-                    <p><img class="img-fluid" src="../word/files/Breaks_files/image015.jpg" alt="Tantangan Istirahat"></p>
+                    <div class="accordion-item" id="">
+                        <h2 class="accordion-header" id="flush-heading-Breaks">
+                            <button class="accordion-button collapsed" style="padding: 1rem 0rem; box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-Breaks" aria-expanded="false" aria-controls="flush-collapse-Breaks">
+                                <div class="me-auto">
+                                    <div class="fs-5">Breaks</div>
+                                    <small class="text-muted fw-light">Pelajari cara menambahkan jeda halaman, bagian, dan kolom.</small>
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="flush-collapse-Breaks" class="accordion-collapse collapse" aria-labelledby="flush-heading-Breaks" data-bs-parent="#tab4Konten">
+                            <div class="accordion-body p-0">
 
+                                <p>Saat Anda sedang mengerjakan dokumen multi-halaman, mungkin ada saatnya Anda ingin memiliki kontrol lebih besar atas bagaimana tepatnya teks mengalir. Breaks dapat membantu dalam kasus ini. Ada banyak jenis jeda untuk dipilih
+                                    tergantung pada apa yang Anda butuhkan, termasuk jeda halaman, jeda bagian, dan jeda kolom.
+                                </p>
+                                <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="../word/files/bahan/word2016_breaks_practice.docx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                <section id="Menyisipkanpagebreak">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content">Menyisipkan page break</div>
+                                    </div>
+                                    <h6>Untuk Menyisipkan page break:</h6>
+                                    <p>Dalam contoh kami, tajuk bagian di halaman tiga ( Pendapatan Bulanan dan Menurut Klien ) dipisahkan dari tabel di halaman di bawah ini. Dan sementara kita bisa menekan Enter sampai teks itu mencapai bagian atas halaman
+                                        empat, itu bisa dengan mudah digeser jika kita menambahkan atau menghapus sesuatu di bagian lain dari dokumen. Sebagai gantinya, kita akan menyisipkan page break.
+                                    </p>
+                                    <ol>
+                                        <li>
+                                            <p>Tempatkan titik penyisipan di mana Anda ingin membuat hentian halaman. Dalam contoh kita, kita akan menempatkannya di awal heading kita.</p>
+                                            <p><img class="img-fluid" src="../word/files/Breaks_files/image001.png" alt="menempatkan titik penyisipan"></p>
+                                        </li>
+                                        <li>
+                                            <p>Pada tab Sisipkan, klik perintah Hentian Halaman. Anda juga dapat menekan Ctrl+Enter pada keyboard Anda.</p>
+                                            <p><img class="img-fluid" src="../word/files/Breaks_files/image002.png" alt="memilih perintah Page Break pada tab Insert"></p>
+                                        </li>
+                                        <li>
+                                            <p>Hentian halaman akan disisipkan ke dalam dokumen, dan teks akan berpindah ke halaman berikutnya.</p>
+                                            <p><img class="img-fluid" src="../word/files/Breaks_files/image003.png" alt="jeda halaman yang disisipkan"></p>
+                                        </li>
+                                    </ol>
+                                    <div class="moreInfo">
+                                        <p>Secara default, Breaks tidak terlihat. Jika Anda ingin melihat Breaks dalam dokumen Anda, klik perintah Show / Hide pada tab Home.</p>
+                                        <p><img class="img-fluid" src="../word/files/Breaks_files/image004.png" alt="menggunakan perintah Tampilkan/Sembunyikan pada tab Beranda"></p>
+                                    </div>
+                                </section>
+
+                                <section id="Sectionbreaks">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content">Section breaks</div>
+                                    </div>
+                                    <p>Section Breaks menciptakan sebuah penghalang antara bagian yang berbeda dari dokumen, yang memungkinkan Anda untuk memformat setiap bagian secara independen. Misalnya, Anda mungkin ingin satu bagian memiliki dua kolom,
+                                        namun tidak untuk seluruh dokumen. Word menawarkan beberapa jenis section breaks.</p>
+                                    <ul>
+                                        <li><strong>Next Page</strong>: Opsi ini memasukkan section Breaks dan memindahkan teks setelah Breaks ke halaman berikutnya dari dokumen.</li>
+                                        <li><strong>Continous</strong>: Opsi ini memasukkan section Breaks dan memungkinkan Anda untuk bekerja pada halaman yang sama.</li>
+                                        <li>
+                                            <p>
+                                                <strong>Even Page and Odd Page</strong>: Opsi ini menambahkan bagian Breaks dan memindahkan teks setelah Breaks ke halaman genap atau ganjil berikutnya. Pilihan ini mungkin berguna ketika Anda ingin memulai
+                                                bagian baru pada halaman genap atau ganjil (misalnya, sebuah bab baru dari buku).
+                                            </p>
+                                            <p><img class="img-fluid" src="../word/files/Breaks_files/image005.png" alt="jenis istirahat bagian"></p>
+                                        </li>
+                                    </ul>
+                                    <h6>Untuk menyisipkan section breaks:</h6>
+                                    <p>Dalam contoh kita, kita akan menambahkan section Breaks untuk memisahkan paragraf dari daftar dua kolom.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Tempatkan titik penyisipan di mana Anda ingin membuat breaks. Dalam contoh kita, kita akan menempatkannya pada awal paragraf yang kita ingin pisahkan dari format dua kolom.</p>
+                                            <p><img class="img-fluid" src="../word/files/Breaks_files/image006.png" alt="menempatkan titik penyisipan"></p>
+                                        </li>
+                                        <li>
+                                            <p>Pada tab Page Layout, klik perintah Breaks, kemudian pilih Breaks bagian yang diinginkan dari menu drop-down. Dalam contoh kita, kita akan pilih Continous sehingga paragraf kita tetap pada halaman yang sama
+                                                seperti kolom.
+                                            </p>
+                                            <p><img class="img-fluid" src="../word/files/Breaks_files/image007.png" alt="memasukkan jeda bagian Berkelanjutan"></p>
+                                        </li>
+                                        <li>
+                                            <p>Sebuah bagian Breaks akan muncul dalam dokumen.</p>
+                                            <p><img class="img-fluid" src="../word/files/Breaks_files/image008.png" alt="istirahat bagian yang dimasukkan"></p>
+                                        </li>
+                                        <li>
+                                            <p>Teks sebelum dan setelah Breaks bagian sekarang dapat diformat secara terpisah. Dalam contoh kita, kita akan menerapkan format satu-kolom pada paragraf.</p>
+                                            <p><img class="img-fluid" src="../word/files/Breaks_files/image009.png" alt="menghapus format dua kolom dari paragraf"></p>
+                                        </li>
+                                        <li>
+                                            <p>Pemformatan akan diterapkan ke bagian saat ini dalam dokumen. Dalam contoh kita, teks di atas Breaks bagian menggunakan format dua kolom, sedangkan ayat di bawah ini Breaks menggunakan format satu kolom.</p>
+                                            <p><img class="img-fluid" src="../word/files/Breaks_files/image010.png" alt="bagian yang diformat secara terpisah"></p>
+                                        </li>
+                                    </ol>
+                                </section>
+
+                                <section id="Jenislaindaribreaks">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content">Jenis lain dari breaks</div>
+                                    </div>
+                                    <p>Bila Anda ingin memformat tampilan kolom atau memodifikasi text wrapping di sekitar gambar, Word menawarkan tambahan pilihan Breaks yang dapat membantu:</p>
+                                    <ul>
+                                        <li><strong>Column</strong>: Ketika membuat beberapa kolom, Anda dapat menerapkan kolom Breaks untuk menyeimbangkan penampilan kolom. Teks apapun yang mengikuti column Breaks akan dimulai pada kolom berikutnya.</li>
+                                        <li>
+                                            <p><strong>Text wrapping</strong>: Ketika teks telah melingkupi seluruh gambar atau objek, Anda dapat menggunakan teks-wrapping Breaks untuk mengakhiri pembungkus dan mulai mengetik pada baris di bawah gambar.</p>
+                                            <p><img class="img-fluid" src="../word/files/Breaks_files/image011.png" alt="pilihan istirahat lainnya"></p>
+                                        </li>
+                                    </ul>
+                                </section>
+
+                                <section id="Menghapusbreaks">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content">Menghapus breaks</div>
+                                    </div>
+                                    <h6>Untuk menghapus breaks:</h6>
+                                    <p>Secara default, Breaks tersembunyi. Jika Anda ingin menghapus breaks, pertama-tama Anda harus menampilkan Breaks dalam dokumen Anda.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Pada tab Home, klik perintah Show / Hide.</p>
+                                            <p><img class="img-fluid" src="../word/files/Breaks_files/image012.png" alt="mengklik perintah Tampilkan/Sembunyikan"></p>
+                                        </li>
+                                        <li>
+                                            <p>Lokasikan Breaks yang ingin Anda hapus, kemudian menempatkan titik penyisipan pada awal breaks.</p>
+                                            <p><img class="img-fluid" src="../word/files/Breaks_files/image013.png" alt="menempatkan titik penyisipan di depan istirahat"></p>
+                                        </li>
+                                        <li>
+                                            <p>Tekan tombol Delete. Breaks akan dihapus dari dokumen.</p>
+                                            <p><img class="img-fluid" src="../word/files/Breaks_files/image014.png" alt="halaman setelah menghapus page break"></p>
+                                        </li>
+                                    </ol>
+                                </section>
+
+                                <section class="mb-4">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content"><img src="https://img.icons8.com/color/48/000000/youtube-play.png" /> Video</div>
+                                    </div>
+                                    <p>Tonton video di bawah untuk mempelajari lebih lanjut tentang menggunakan Breaks di Word.</p>
+                                    <div class="ratio ratio-16x9">
+
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/78fvQ9Ks8DA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                    </div>
+                                </section>
+
+                                <section class="highlight" id="lat-break">
+                                    <h5>Latihan!</h5>
+                                    <ol>
+                                        <li>Buka <a href="../word/files/bahan/word_breaks_practice.docx">dokumen latihan</a> kami.</li>
+                                        <li>Gulir ke bagian Revenue Projections dekat akhir dokumen.</li>
+                                        <li>Hapus page break setelah Triwulan ke-2 Proyeksi oleh client .</li>
+                                        <li>Tempatkan kursor di awal header Web App Proyeksi.</li>
+                                        <li>Menyisipkan Halaman Berikutnya bagian istirahat.</li>
+                                        <li>Pada Page Setup group pada tab Layout, klik Kolom menu tarik-turun dan pilih salah satu. Ini akan memformat halaman menjadi kembali satu kolom dan harus membolehkan header Web App Proyeksi dan tabel di bawahnya
+                                            akan mencakup seluruh halaman. Anda akan belajar lebih banyak tentang kolom dalam pelajaran berikutnya.</li>
+                                        <li>
+                                            <p>Setelah selesai, dua halaman terakhir harus terlihat seperti ini:</p>
+                                            <p><img class="img-fluid" src="../word/files/Breaks_files/image015.jpg" alt="Tantangan Istirahat"></p>
+                                        </li>
+                                    </ol>
+                                </section>
+
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
                 <section id="Kolom">
-                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
-                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../word/files/bahan/word_columns_practice.docx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-                        <p class="bd-lead mb-0" id="content">Kolom <span class="span-text">(Columns)</span></p>
+                    <div class="accordion-item" id="">
+                        <h2 class="accordion-header" id="flush-heading-Kolom">
+                            <button class="accordion-button collapsed" style="padding: 1rem 0rem; box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-Kolom" aria-expanded="false" aria-controls="flush-collapse-Kolom">
+                            <div class="me-auto">
+                                <div class="fs-5">Kolom</div>
+                                <small class="text-muted fw-light">Pelajari semua tentang bekerja dengan kolom.</small>
+                            </div>
+                        </button>
+                        </h2>
+                        <div id="flush-collapse-Kolom" class="accordion-collapse collapse" aria-labelledby="flush-heading-Kolom" data-bs-parent="#tab4Konten">
+                            <div class="accordion-body p-0">
+
+                                <p>Kadang-kadang informasi yang Anda masukkan ke dalam dokumen, akan lebih baik jika ditampilkan dalam kolom. Tidak hanya dapat kolom membantu meningkatkan keterbacaan, tetapi beberapa jenis dokumen, seperti artikel koran,
+                                    buletin, dan brosur, sering ditulis dalam format kolom. Word juga memungkinkan Anda untuk menyesuaikan kolom dengan menambahkan column break.</p>
+                                <p><a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../word/files/bahan/word2016_columns_practice.docx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                <section id="Menambahkankolomkedokumen">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content">Menambahkan kolom ke dokumen</div>
+                                    </div>
+                                    <h6>Untuk menambahkan kolom ke dokumen:</h6>
+                                    <ol>
+                                        <li>
+                                            <p>Pilih teks yang ingin Anda format.</p>
+                                            <p><img class="img-fluid" src="../word/files/kolom_files/image001.png" alt="Memilih teks untuk diformat"></p>
+                                        </li>
+                                        <li>Pilih tab Layout, kemudian klik perintah Column. Sebuah menu drop-down akan muncul.</li>
+                                        <li>
+                                            <p>Pilih jumlah kolom yang ingin Anda buat.</p>
+                                            <p><img class="img-fluid" src="../word/files/kolom_files/image002.png" alt="Memformat teks menjadi kolom"></p>
+                                        </li>
+                                        <li>
+                                            <p>Teks akan terformat ke dalam kolom.</p>
+                                            <p><img class="img-fluid" src="../word/files/kolom_files/image003.png" alt="Teks yang diformat"></p>
+                                        </li>
+                                    </ol>
+                                    <div class="moreInfo">
+                                        <p>Pilihan kolom tidak terbatas pada menu drop-down yang muncul. Pilih More Column di bagian bawah menu untuk mengakses kotak dialog Column. Klik tanda panah di sebelah Number of columns: untuk mengatur jumlah kolom.</p>
+                                        <p><img class="img-fluid" src="../word/files/kolom_files/image004.png" alt="Kotak dialog Kolom"></p>
+                                    </div>
+                                    <div class="moreInfo">
+                                        <p>Jika Anda ingin mengatur jarak dan alignment kolom, klik dan tarik indent marker pada Ruler sampai kolom muncul seperti yang Anda inginkan.</p>
+                                        <p><img class="img-fluid" src="../word/files/kolom_files/image005.png" alt="Menyesuaikan kolom"></p>
+                                    </div>
+                                </section>
+
+                                <section id="Menghapuskolom">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content">Menghapus kolom</div>
+                                    </div>
+                                    <h6>Untuk menghapus kolom:</h6>
+                                    <p>Untuk menghapus pemformatan pada kolom, menempatkan titik penyisipan di mana saja di kolom, kemudian klik perintah Columns pada tab Layout. Pilih satu dari menu drop-down yang muncul.</p>
+                                    <p><img class="img-fluid" src="../word/files/kolom_files/image006.png" alt="Menghapus pemformatan kolom"></p>
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content">Menambahkan column breaks</div>
+                                    </div>
+                                    <p>Setelah Anda membuat kolom, teks otomatis akan berpindah dari satu kolom ke yang berikutnya. Kadang-kadang, Anda mungkin ingin mengontrol di mana setiap kolom akan dimulai. Anda dapat melakukan ini dengan membuat column
+                                        break.
+                                    </p>
+                                    <h6>Untuk menambahkan column break</h6>
+                                    <p>Dalam contoh kami di bawah ini, kami akan menambahkan column break yang akan memindahkan teks ke awal kolom berikutnya.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Tempatkan titik penyisipan di awal teks yang ingin dipindah.</p>
+                                            <p><img class="img-fluid" src="../word/files/kolom_files/image007.png" alt="Menempatkan titik penyisipan"></p>
+                                        </li>
+                                        <li>Pilih tab Layout, kemudian klik perintah Breaks. Sebuah menu drop-down akan muncul.</li>
+                                        <li>
+                                            <p>Pilih Column dari menu.</p>
+                                            <p><img class="img-fluid" src="../word/files/kolom_files/image008.png" alt="Menambahkan jeda kolom"></p>
+                                        </li>
+                                        <li>
+                                            <p>Teks akan bergerak ke awal kolom. Dalam contoh kita, itu pindah ke awal kolom berikutnya.
+                                            </p>
+                                            <p><img class="img-fluid" src="../word/files/kolom_files/image009.png" alt="Setelah menambahkan jeda kolom"></p>
+                                        </li>
+                                    </ol>
+                                </section>
+
+                                <section id="Menghapuscolumnbreaks">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content">Menghapus column breaks</div>
+                                    </div>
+                                    <p>Untuk menghapus column breaks:</p>
+                                    <ol>
+                                        <li>
+                                            <p>Secara default, lokasi breaks tersembunyi. Jika Anda ingin menampilkan breaks dalam dokumen Anda, klik perintah Show / Hide pada tab Home.</p>
+                                            <p><img class="img-fluid" src="../word/files/kolom_files/image010.png" alt="Perintah Tampilkan/Sembunyikan"></p>
+                                        </li>
+                                        <li>
+                                            <p>Tempatkan titik penyisipan di sebelah kiri breaks yang ingin Anda hapus.</p>
+                                            <p><img class="img-fluid" src="../word/files/kolom_files/image011.png" alt="Menempatkan titik penyisipan"></p>
+                                        </li>
+                                        <li>
+                                            <p>Tekan tombol delete untuk menghapus breaks.</p>
+                                            <p><img class="img-fluid" src="../word/files/kolom_files/image012.png" alt="Istirahat dihapus"></p>
+                                        </li>
+                                    </ol>
+                                </section>
+
+                                <section class="mb-4">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content"><img src="https://img.icons8.com/color/48/000000/youtube-play.png" /> Video</div>
+                                    </div>
+                                    <p>Tonton video di bawah ini untuk mempelajari lebih lanjut tentang kolom di Word.</p>
+                                    <div class="ratio ratio-16x9">
+
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/X1n2VG1yxFs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                    </div>
+                                </section>
+
+                                <section class="highlight" id="lat-kolom">
+                                    <h5>Latihan!</h5>
+                                    <ol>
+                                        <li>Buka <a href="../word/files/bahan/word_columns_practice.docx">dokumen latihan</a> kami.</li>
+                                        <li>Gulir ke halaman 3.</li>
+                                        <li>Pilih semua teks dalam daftar bullet di bawah Community Reminder dan format itu menjadi dua kolom.</li>
+                                        <li>Tempatkan kursor Anda di awal bullet keempat di depan kata Visitors.</li>
+                                        <li>Sisipkan column break.</li>
+                                        <li>
+                                            <p>Setelah selesai, halaman Anda seharusnya terlihat seperti ini:</p>
+                                            <p><img class="img-fluid" src="../word/files/kolom_files/image013.jpg" alt="Tantangan Kolom"></p>
+                                        </li>
+                                    </ol>
+                                </section>
+
+                            </div>
+                        </div>
                     </div>
-                    <p>Terkadang informasi yang Anda sertakan dalam dokumen Anda paling baik ditampilkan dalam kolom. Kolom dapat membantu meningkatkan keterbacaan, terutama dengan jenis dokumen tertentu—seperti artikel surat kabar, buletin, dan selebaran.
-                        Word juga memungkinkan Anda untuk menyesuaikan kolom Anda dengan menambahkan jeda kolom.</p>
-                    <p>Untuk menambahkan kolom ke dokumen:</p>
-                    <p>Pilih teks yang ingin Anda format.</p>
-                    <p><img class="img-fluid" src="../word/files/kolom_files/image001.png" alt="Memilih teks untuk diformat"></p>
-                    <p>Pilih tab Layout, lalu klik perintah Columns. Menu tarik-turun akan muncul.</p>
-                    <p>Pilih jumlah kolom yang ingin Anda buat.</p>
-                    <p><img class="img-fluid" src="../word/files/kolom_files/image002.png" alt="Memformat teks menjadi kolom"></p>
-                    <p>Teks akan diformat menjadi kolom.</p>
-                    <p><img class="img-fluid" src="../word/files/kolom_files/image003.png" alt="Teks yang diformat"></p>
-                    <p>Pilihan kolom Anda tidak terbatas pada menu tarik-turun yang muncul. Pilih Kolom Lainnya di bagian bawah menu untuk mengakses kotak dialog Kolom. Klik panah di sebelah Jumlah kolom: untuk menyesuaikan jumlah kolom.
-                    </p>
-                    <p><img class="img-fluid" src="../word/files/kolom_files/image004.png" alt="Kotak dialog Kolom"></p>
-                    <p>Jika Anda ingin menyesuaikan penspasian dan perataan kolom, klik dan seret penanda indentasi pada Penggaris hingga kolom muncul seperti yang Anda inginkan.</p>
-                    <p><img class="img-fluid" src="../word/files/kolom_files/image005.png" alt="Menyesuaikan kolom"></p>
-                    <p>Untuk menghapus kolom:</p>
-                    <p>Untuk menghapus pemformatan kolom, tempatkan titik penyisipan di mana saja di kolom, lalu klik perintah Kolom pada tab Tata Letak. Pilih Satu dari menu tarik-turun yang muncul.</p>
-                    <p><img class="img-fluid" src="../word/files/kolom_files/image006.png" alt="Menghapus pemformatan kolom"></p>
-                    <p>Menambahkan jeda kolom</p>
-                    <p>Setelah Anda membuat kolom, teks akan otomatis mengalir dari satu kolom ke kolom berikutnya. Namun, terkadang, Anda mungkin ingin mengontrol dengan tepat di mana setiap kolom dimulai. Anda dapat melakukan ini dengan membuat pemisah
-                        kolom.
-                    </p>
-                    <p>Untuk menambahkan jeda kolom:</p>
-                    <p>Dalam contoh kita di bawah ini, kita akan menambahkan pemisah kolom yang akan memindahkan teks ke awal kolom berikutnya.
-                    </p>
-                    <p>Tempatkan titik penyisipan di awal teks yang ingin Anda pindahkan.</p>
-                    <p><img class="img-fluid" src="../word/files/kolom_files/image007.png" alt="Menempatkan titik penyisipan"></p>
-                    <p>Pilih tab Layout, lalu klik perintah Breaks. Menu tarik-turun akan muncul.</p>
-                    <p>Pilih Kolom dari menu.</p>
-                    <p><img class="img-fluid" src="../word/files/kolom_files/image008.png" alt="Menambahkan jeda kolom"></p>
-                    <p>Teks akan pindah ke awal kolom. Dalam contoh kita, itu pindah ke awal kolom berikutnya.</p>
-                    <p><img class="img-fluid" src="../word/files/kolom_files/image009.png" alt="Setelah menambahkan jeda kolom"></p>
-                    <p>Untuk mempelajari lebih lanjut tentang menambahkan jeda ke dokumen Anda, tinjau pelajaran kami tentang <a href="http://www.gcflearnfree.org/word/breaks/1/">Jeda</a>.</p>
-                    <p>Untuk menghapus jeda kolom:</p>
-                    <p>Secara default, jeda disembunyikan. Jika Anda ingin memperlihatkan jeda di dokumen Anda, klik perintah Perlihatkan/Sembunyikan pada tab Beranda.</p>
-                    <p><img class="img-fluid" src="../word/files/kolom_files/image010.png" alt="Perintah Tampilkan/Sembunyikan"></p>
-                    <p>Tempatkan titik penyisipan di sebelah kiri jeda yang ingin Anda hapus.</p>
-                    <p><img class="img-fluid" src="../word/files/kolom_files/image011.png" alt="Menempatkan titik penyisipan"></p>
-                    <p>Tekan tombol hapus untuk menghapus jeda.</p>
-                    <p><img class="img-fluid" src="../word/files/kolom_files/image012.png" alt="Istirahat dihapus"></p>
-                    <p>Tantangan!</p>
-                    <p>Buka <a href="https://media.gcflearnfree.org/content/5c094ef177c050035472856c_12_06_2018/word_columns_practice.docx">dokumen
-                        latihan</a> kami.</p>
-                    <p>Gulir ke halaman 3.</p>
-                    <p>Pilih semua teks dalam daftar berpoin di bawah Pengingat Komunitas dan format sebagai dua kolom.</p>
-                    <p>Tempatkan kursor Anda di awal poin keempat di depan kata Pengunjung.
-                    </p>
-                    <p>Masukkan jeda kolom.</p>
-                    <p>Setelah selesai, halaman Anda akan terlihat seperti ini:</p>
-                    <p><img class="img-fluid" src="../word/files/kolom_files/image013.jpg" alt="Tantangan Kolom"></p>
                 </section>
 
                 <section id="HeaderdanFooter">
-                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
-                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../word/files/bahan/word_headersfooters_practice.docx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-                        <p class="bd-lead mb-0" id="content">Header dan Footer <span class="span-text">(Headers and
-                            Footers)</span></p>
+                    <div class="accordion-item" id="">
+                        <h2 class="accordion-header" id="flush-heading-HeaderdanFooter">
+                            <button class="accordion-button collapsed" style="padding: 1rem 0rem; box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-HeaderdanFooter" aria-expanded="false" aria-controls="flush-collapse-HeaderdanFooter">
+                            <div class="me-auto">
+                                <div class="fs-5">Header dan Footer</div>
+                                <small class="text-muted fw-light">Pelajari cara menambahkan dan memodifikasi header dan footer.</small>
+                            </div>
+                        </button>
+                        </h2>
+                        <div id="flush-collapse-HeaderdanFooter" class="accordion-collapse collapse" aria-labelledby="flush-heading-HeaderdanFooter" data-bs-parent="#tab4Konten">
+                            <div class="accordion-body p-0">
+
+                                <p>Header adalah bagian dari dokumen yang muncul di margin atas, sedangkan footer adalah bagian dari dokumen yang muncul di margin bawah. Header dan footer umumnya mengandung informasi tambahan seperti nomor halaman, tanggal,
+                                    nama pengarang, dan catatan kaki, yang dapat membantu membuat dokumen lebih terorganisir dan mempermudah dibaca. Teks yang dimasukkan pada header atau footer akan muncul pada setiap halaman dokumen.</p>
+                                <p><a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../word/files/bahan/word2016_headersfooters_practice.docx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-5" id="content">Membuat header atau footer</div>
+                                </div>
+                                <h6>Untuk membuat header atau footer:</h6>
+                                <p>Dalam contoh kita, kita ingin menampilkan nama penulis di bagian atas setiap halaman, jadi kami akan menempatkannya di header.</p>
+                                <ol>
+                                    <li>
+                                        <p>klik ganda di mana saja pada margin atas atau bawah dokumen Anda. Dalam contoh kita, kita akan double-klik margin atas.</p>
+                                        <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image001.jpg" alt="Klik dua kali pada header"></p>
+                                    </li>
+                                    <li>
+                                        <p>Header atau footer akan terbuka, dan tab Desain akan muncul di sisi kanan Pita. Titik penyisipan akan muncul di header atau footer.</p>
+                                        <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image002.jpg" alt="Header terbuka"></p>
+                                    </li>
+                                    <li>
+                                        <p>Ketik informasi yang diinginkan ke dalam header atau footer. Dalam contoh kita, kita akan ketik nama penulis dan tanggal.</p>
+                                        <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image003.png" alt="Mengetik teks menjadi header"></p>
+                                    </li>
+                                    <li>
+                                        <p>Setelah selesai, klik Close Header and Footer. Anda juga dapat menekan tombol Esc.</p>
+                                        <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image004.png" alt="Mengklik Tutup Header dan Footer"></p>
+                                    </li>
+                                    <li>
+                                        <p>Header atau footer teks akan muncul.</p>
+                                        <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image005.png" alt="Header yang sudah selesai"></p>
+                                    </li>
+                                </ol>
+
+
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-5" id="content">Menyisipkan header atau footer</div>
+                                </div>
+                                <h6>Untuk menyisipkan header atau footer preset:</h6>
+                                <p>Kata memiliki berbagai header dan footers yang dapat digunakan untuk meningkatkan desain dan tata letak dokumen Anda. Dalam contoh kita, kita akan menambahkan sebuah header preset ke dokumen kita.</p>
+                                <ol>
+                                    <li>
+                                        <p>Pilih tab Insert, kemudian klik perintah Header atau Footer. Dalam contoh kita, kita akan klik perintah header.</p>
+                                        <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image006.jpg" alt="Mengklik perintah Header"></p>
+                                    </li>
+                                    <li>
+                                        <p>Pada menu yang muncul, pilih header atau footer yang disediakan.</p>
+                                        <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image007.png" alt="Memilih tajuk prasetel"></p>
+                                    </li>
+                                    <li>
+                                        <p>Header atau footer akan muncul. Banyak headers dan footers berisi penampung teks yang disebut Content Control Field. Bidang ini baik untuk menambahkan informasi seperti judul dokumen, nama penulis, tanggal, dan
+                                            nomor halaman.</p>
+                                        <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image008.jpg" alt="Bidang Kontrol Konten"></p>
+                                    </li>
+                                    <li>
+                                        <p>Untuk mengedit Content Control Field, klik dan ketik informasi yang diinginkan.</p>
+                                        <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image009.jpg" alt="Mengedit bidang Kontrol Konten"></p>
+                                    </li>
+                                    <li>
+                                        <p>Setelah selesai, klik Tutup Header dan Footer. Anda juga dapat menekan tombol Esc.</p>
+                                        <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image004.png" alt="Menutup Header dan Footer"></p>
+                                    </li>
+                                </ol>
+                                <div class="moreInfo">
+                                    <p>Setelah selesai, klik Close Header and Footer. Anda juga dapat menekan tombol Esc.</p>
+                                    <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image010.png" alt="Menghapus bidang Kontrol Konten"></p>
+                                </div>
+
+
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-5" id="content">Editing header dan footer</div>
+                                </div>
+                                <p>Setelah Anda menutup header atau footer, ini masih akan terlihat, tetapi akan terkunci. Cukup klik ganda header atau footer untuk membuka kunci, yang akan memungkinkan Anda untuk mengeditnya.</p>
+                                <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image011.png" alt="Membuka tajuk">
+                                </p>
+                                <h6>Opsi tab desain</h6>
+                                <p>Ketika header dan footer dokumen Anda akan dibuka, tab Desain akan muncul di sisi kanan Ribbon, ini menyediakan berbagai pilihan pengeditan:</p>
+                                <ul>
+                                    <li>
+                                        <p>Menyembunyikan header dan footer halaman pertama: Pada beberapa dokumen, Anda mungkin tidak ingin halaman pertama menampilkan header dan footer, seperti jika Anda memiliki halaman sampul dan ingin memulai penomoran
+                                            halaman pada halaman kedua. Jika Anda ingin menyembunyikan header dan footer halaman pertama, centang kotak di samping Different First Page.</p>
+                                        <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image012.png" alt="Menyembunyikan header dan footer halaman pertama"></p>
+                                    </li>
+                                    <li>
+                                        <p>Menghapus header atau footer: Jika Anda ingin menghapus semua informasi yang terdapat di header, klik perintah Header dan pilih Remove Header dari menu yang muncul. Demikian pula, Anda dapat menghapus footer menggunakan
+                                            perintah Footer.</p>
+                                        <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image013.png" alt="Menghapus header"></p>
+                                    </li>
+                                    <li>
+                                        <p>Nomor Halaman: Anda dapat menomorkan setiap halaman secara otomatis dengan perintah Page Number.</p>
+                                        <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image014.png" alt="Nomor halaman">
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Opsi tambahan: Dengan perintah yang tersedia dalam kelompok Insert, Anda dapat menambahkan tanggal dan waktu, info dokumen, gambar, dan lainnya header atau footer.</p>
+                                        <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image015.png" alt="Sisipkan grup di Pita"></p>
+                                    </li>
+                                </ul>
+
+
+                                <h6>Memasukkan tanggal atau waktu menjadi header atau footer:</h6>
+                                <p>Kadang-kadang ini membantu untuk memasukkan tanggal atau waktu di header atau footer. Misalnya, Anda mungkin ingin dokumen menunjukkan tanggal ketika dibuat. <br> Di sisi lain, Anda mungkin ingin menampilkan tanggal ketika
+                                    dicetak, yang dapat Anda atur dengan menetapkan update secara otomatis. Hal ini berguna jika Anda sering memperbarui dan mencetak dokumen karena Anda ingin selalu memberitahu versi yang terbaru.</p>
+                                <ol>
+                                    <li>
+                                        <p>Klik ganda di mana saja di header atau footer untuk membukanya. Tempatkan titik penyisipan di mana Anda ingin tanggal atau waktu muncul. Dalam contoh kita, kita akan menempatkan titik penyisipan pada baris di bawah
+                                            nama penulis.
+                                        </p>
+                                        <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image016.png" alt="Menempatkan titik penyisipan di header yang tidak terkunci"></p>
+                                    </li>
+                                    <li>
+                                        <p>Tab Desain akan muncul. Klik perintah Date & Time.</p>
+                                        <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image017.png" alt="Mengklik perintah Tanggal &amp; Waktu"></p>
+                                    </li>
+                                    <li>Kotak dialog Date and Time akan muncul. Pilih tanggal yang diinginkan atau format waktu.</li>
+                                    <li>Centang kotak di samping Update Automatically jika Anda ingin tanggal berubah setiap kali Anda membuka dokumen. Jika Anda tidak ingin tanggalnya berubah, tinggalkan pilihan ini tidak tercentang.</li>
+                                    <li>
+                                        <p>Klik Oke.</p>
+                                        <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image018.png" alt="Memilih opsi tanggal"></p>
+                                    </li>
+                                    <li>
+                                        <p>Tanggal akan muncul di header.</p>
+                                        <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image019.png" alt="Tanggal di header"></p>
+                                    </li>
+                                </ol>
+
+                                <section class="mb-4">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content"><img src="https://img.icons8.com/color/48/000000/youtube-play.png" /> Video</div>
+                                    </div>
+                                    <p>Tonton video di bawah ini untuk mempelajari lebih lanjut tentang header dan footer di Word.</p>
+                                    <div class="ratio ratio-16x9">
+
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lNdjuIYuB3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                    </div>
+                                </section>
+
+                                <section class="highlight" id="lat-HeaderFooter">
+                                    <h5>Latihan!</h5>
+                                    <ol>
+                                        <li>Buka <a href="../word/files/bahan/word_headersfooters_practice.docx">dokumen latihan</a> kami. Jika Anda sudah download dokumen praktik kami dalam rangka untuk mengikuti pelajaran, pastikan untuk mengunduh salinan
+                                            dengan mengklik link dalam langkah ini.</li>
+                                        <li>Buka header.</li>
+                                        <li>Pilih Align Right pada tab Home dan ketik nama Anda.</li>
+                                        <li>Di bawah nama Anda, gunakan perintah Date & Time pada tab Desain dan masukkan tanggal. Anda dapat menggunakan format mana yang Anda suka.</li>
+                                        <li>Pada bagian footer, masukkan footer Grid yang telah ditetapkan.</li>
+                                        <li>Tutup header dan footer.</li>
+                                        <li>
+                                            <p>Setelah selesai, halaman Anda harus terlihat seperti ini:</p>
+                                            <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image020.jpg" alt="dokumen latihan setelah menyelesaikan tantangan"></p>
+                                        </li>
+                                    </ol>
+                                </section>
+                            </div>
+                        </div>
                     </div>
-                    <p>The sundulan adalah bagian dari dokumen yang muncul di margin atas, sedangkan footer adalah bagian dari dokumen yang muncul di margin bawah. Header dan footer umumnya mengandung informasi tambahan seperti nomor halaman, tanggal, seorang
-                        nama penulis, dan catatan kaki, yang dapat membantu menjaga dokumen lagi terorganisir dan membuat mereka lebih mudah dibaca. Teks yang dimasukkan di header atau footer akan muncul di setiap halaman dokumen.
-                    </p>
-                    <p>Untuk membuat header atau footer:</p>
-                    <p>Dalam contoh kami, kami ingin menampilkan nama penulis di bagian atas setiap halaman, jadi kami akan menempatkannya di header.</p>
-                    <p>Klik dua kali di mana saja di margin atas atau bawah dokumen Anda. Dalam contoh kami, kami akan mengklik dua kali margin atas.</p>
-                    <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image001.jpg" alt="Klik dua kali pada header"></p>
-                    <p>Header atau footer akan terbuka, dan tab Desain akan muncul di sisi kanan Pita. Titik penyisipan akan muncul di header atau footer.</p>
-                    <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image002.jpg" alt="Header terbuka">
-                    </p>
-                    <p>Ketik informasi yang diinginkan ke dalam header atau footer. Dalam contoh kita, kita akan mengetikkan nama penulis dan tanggalnya.
-                    </p>
-                    <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image003.png" alt="Mengetik teks menjadi header"></p>
-                    <p>Setelah selesai, klik Tutup Header dan Footer. Anda juga dapat menekan tombol Esc.</p>
-                    <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image004.png" alt="Mengklik Tutup Header dan Footer">
-                    </p>
-                    <p>Teks header atau footer akan muncul.</p>
-                    <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image005.png" alt="Header yang sudah selesai"></p>
-                    <p>Untuk menyisipkan header atau footer preset:</p>
-                    <p>Word memiliki berbagai preset header dan footer yang dapat Anda gunakan untuk menyempurnakan desain dan tata letak dokumen Anda. Dalam contoh kita, kita akan menambahkan header preset ke dokumen kita.
-                    </p>
-                    <p>Pilih tab Sisipkan, lalu klik perintah Header atau Footer. Dalam contoh kita, kita akan mengklik perintah Header.</p>
-                    <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image006.jpg" alt="Mengklik perintah Header"></p>
-                    <p>Di menu yang muncul, pilih header atau footer preset yang diinginkan.
-                    </p>
-                    <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image007.png" alt="Memilih tajuk prasetel"></p>
-                    <p>Header atau footer akan muncul. Banyak header dan footer preset berisi placeholder teks yang disebut bidang Kontrol Konten. Bidang ini bagus untuk menambahkan informasi seperti judul dokumen, nama penulis, tanggal, dan nomor halaman.
-                    </p>
-                    <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image008.jpg" alt="Bidang Kontrol Konten"></p>
-                    <p>Untuk mengedit bidang Kontrol Konten, klik bidang tersebut dan ketik informasi yang diinginkan.</p>
-                    <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image009.jpg" alt="Mengedit bidang Kontrol Konten">
-                    </p>
-                    <p>Setelah selesai, klik Tutup Header dan Footer. Anda juga dapat menekan tombol Esc.</p>
-                    <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image004.png" alt="Menutup Header dan Footer"></p>
-                    <p>Jika Anda ingin menghapus bidang Kontrol Konten, klik kanan bidang tersebut dan pilih Hapus Kontrol Konten dari menu yang muncul.
-                    </p>
-                    <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image010.png" alt="Menghapus bidang Kontrol Konten">
-                    </p>
-                    <p>Mengedit header dan footer</p>
-                    <p>Setelah Anda menutup header atau footer, itu akan tetap terlihat, tetapi akan dikunci. Cukup klik dua kali header atau footer untuk membukanya, yang memungkinkan Anda untuk mengeditnya.</p>
-                    <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image011.png" alt="Membuka tajuk">
-                    </p>
-                    <p>Opsi tab desain</p>
-                    <p>Saat header dan footer dokumen Anda tidak terkunci, tab Desain akan muncul di sisi kanan Pita, memberi Anda berbagai opsi pengeditan:</p>
-                    <p>Sembunyikan header dan footer halaman pertama : Untuk beberapa dokumen, Anda mungkin tidak ingin halaman pertama menampilkan header dan footer, seperti jika Anda memiliki halaman sampul dan ingin memulai penomoran halaman di halaman
-                        kedua. Jika Anda ingin menyembunyikan header dan footer halaman pertama, centang kotak di samping Halaman Pertama Berbeda.
-                    </p>
-                    <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image012.png" alt="Menyembunyikan header dan footer halaman pertama"></p>
-                    <p>Hapus header atau footer : Jika ingin menghapus semua informasi yang terdapat pada header, klik perintah Header dan pilih Remove Header dari menu yang muncul. Demikian pula, Anda dapat menghapus footer menggunakan perintah Footer.</p>
-                    <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image013.png" alt="Menghapus header">
-                    </p>
-                    <p>Nomor Halaman : Anda dapat secara otomatis memberi nomor setiap halaman dengan perintah Nomor Halaman. Tinjau pelajaran
-                        <a href="https://edu.gcfglobal.org/en/word/page-numbers/1/">Nomor Halaman</a> kami untuk mempelajari lebih lanjut.</p>
-                    <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image014.png" alt="Nomor halaman">
-                    </p>
-                    <p>Opsi tambahan : Dengan perintah yang tersedia di grup Sisipkan, Anda dapat menambahkan tanggal dan waktu, info dokumen, gambar, dan lainnya ke header atau footer Anda.</p>
-                    <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image015.png" alt="Sisipkan grup di Pita"></p>
-                    <p>Untuk menyisipkan tanggal atau waktu ke dalam header atau footer:
-                    </p>
-                    <p>Terkadang sangat membantu untuk menyertakan tanggal atau waktu di header atau footer. Misalnya, Anda mungkin ingin dokumen Anda menunjukkan tanggal saat dibuat.</p>
-                    <p>Di sisi lain, Anda mungkin ingin menunjukkan tanggal saat itu dicetak, yang dapat Anda lakukan dengan mengaturnya untuk memperbarui secara otomatis. Ini berguna jika Anda sering memperbarui dan mencetak dokumen karena Anda selalu dapat
-                        mengetahui versi mana yang terbaru.</p>
-                    <p>Klik dua kali di mana saja pada header atau footer untuk membukanya. Tempatkan titik penyisipan di tempat Anda ingin tanggal atau waktu muncul. Dalam contoh kita, kita akan menempatkan titik penyisipan pada baris di bawah nama penulis.
-                    </p>
-                    <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image016.png" alt="Menempatkan titik penyisipan di header yang tidak terkunci"></p>
-                    <p>The Desain tab akan muncul. Klik perintah Tanggal &amp; Waktu.</p>
-                    <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image017.png" alt="Mengklik perintah Tanggal &amp; Waktu"></p>
-                    <p>The Tanggal dan Waktu kotak dialog akan muncul. Pilih format tanggal atau waktu yang diinginkan.</p>
-                    <p>Centang kotak di sebelah Perbarui secara otomatis jika Anda ingin tanggal berubah setiap kali Anda membuka dokumen. Jika Anda tidak ingin tanggal berubah, biarkan opsi ini tidak dicentang.</p>
-                    <p>Klik Oke.</p>
-                    <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image018.png" alt="Memilih opsi tanggal"></p>
-                    <p>Tanggal akan muncul di header.</p>
-                    <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image019.png" alt="Tanggal di header"></p>
-                    <p>Tantangan!</p>
-                    <p>Buka <a href="https://media.gcflearnfree.org/content/5c094f1977c050035472856e_12_06_2018/word_headersfooters_practice.docx">dokumen
-                        latihan</a> kami. Jika Anda telah mengunduh dokumen latihan kami untuk mengikuti pelajaran, pastikan untuk mengunduh salinan baru dengan mengeklik tautan di langkah ini.</p>
-                    <p>Buka headernya.</p>
-                    <p>Pilih Rata Kanan pada tab Beranda dan ketik nama Anda.</p>
-                    <p>Di bawah nama Anda, gunakan perintah Tanggal &amp; Waktu pada tab Desain dan masukkan tanggal menggunakan format apa pun yang Anda inginkan.</p>
-                    <p>Di bagian footer, masukkan Grid footer preset. Jika versi Word Anda tidak memiliki preset Grid, Anda dapat memilih preset yang tersedia.</p>
-                    <p>Tutup header dan footer.</p>
-                    <p>Setelah selesai, halaman Anda akan terlihat seperti ini:</p>
-                    <p><img class="img-fluid" src="../word/files/HeaderdanFooter_files/image020.jpg" alt="dokumen latihan setelah menyelesaikan tantangan"></p>
                 </section>
 
                 <section id="NomorHalaman">
-                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
-                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../word/files/bahan/word_pagenumbers_practice.docx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-                        <p class="bd-lead mb-0" id="content">Nomor Halaman <span class="span-text">(Page Numbers)</span></p>
+                    <div class="accordion-item" id="">
+                        <h2 class="accordion-header" id="flush-heading-PageNumbers">
+                            <button class="accordion-button collapsed" style="padding: 1rem 0rem; box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-PageNumbers" aria-expanded="false" aria-controls="flush-collapse-PageNumbers">
+                            <div class="me-auto">
+                                <div class="fs-5">Nomor halaman</div>
+                                <small class="text-muted fw-light">Pelajari cara menambah dan mengubah nomor halaman.</small>
+                            </div>
+                        </button>
+                        </h2>
+                        <div id="flush-collapse-PageNumbers" class="accordion-collapse collapse" aria-labelledby="flush-heading-PageNumbers" data-bs-parent="#tab4Konten">
+                            <div class="accordion-body p-0">
+
+                                <p>
+                                    Nomor halaman dapat digunakan secara otomatis nomor setiap halaman dalam dokumen Anda. Mereka datang dalam berbagai format penomoran dan dapat disesuaikan dengan kebutuhan Anda. Nomor halaman biasanya ditempatkan di header, footer, atau marjin samping.
+                                    Bila Anda memerlukan nomor halaman pada beberapa halaman yang berbeda, Word memungkinkan Anda untuk me-restart penomoran halaman.</p>
+                                <p><a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../word/files/bahan/word_pagenumbers_practice.docx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                <section id="Menambahkannomorhalaman">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content">Menambahkan nomor halaman</div>
+                                    </div>
+                                    <p>Word dapat secara otomatis melabeli setiap halaman dengan nomor halaman dan menempatkannya di header, footer, atau margin samping. Jika Anda memiliki header atau footer yang ada, itu akan dihapus dan diganti dengan
+                                        nomor halaman.
+                                    </p>
+                                    <h6>Untuk menambahkan nomor halaman:</h6>
+                                    <ol>
+                                        <li>
+                                            <p>Pada tab Insert, klik perintah Page Number.</p>
+                                            <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image001.png" alt="Perintah Nomor Halaman pada tab Sisipkan."></p>
+                                        </li>
+                                        <li>
+                                            <p>Buka Top of Page, Bottom of Page, atau menu Page Margin, tergantung di mana nomor halaman ingin diletakkan. Kemudian pilih gaya header yang diinginkan.</p>
+                                            <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image002.png" alt="Memilih gaya tajuk."></p>
+                                        </li>
+                                        <li>
+                                            <p>Penomoran halaman akan muncul.</p>
+                                            <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image003.png" alt="Penomoran halaman di header."></p>
+                                        </li>
+                                        <li>
+                                            <p>Tekan tombol Esc untuk mengunci header dan footer.</p>
+                                            <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image004.png" alt="Mengunci header."></p>
+                                        </li>
+                                        <li>Jika Anda ingin membuat perubahan pada nomor halaman Anda, cukup klik dua kali header atau footer untuk membukanya.</li>
+                                    </ol>
+                                    <div class="moreInfo">Jika Anda telah membuat nomor halaman di margin sisi, itu akan dianggap sebagai bagian dari header atau footer. Anda tidak dapat mengutakatik nomor halaman kecuali header atau footer diseleksi dahulu.</div>
+                                </section>
+
+                                <section id="Menambahkannomorhalamankeheaderataufooteryangada">
+                                    <h6>Menambahkan nomor halaman ke header atau footer yang ada:</h6>
+                                    <p>Jika Anda sudah memiliki header atau footer dan Anda ingin menambahkan nomor halaman disitu, Word memiliki opsi yang secara otomatis akan memasukkan nomor halaman ke dalam header atau footer yang ada. Dalam contoh kita,
+                                        kita akan menambahkan penomoran halaman untuk header dokumen kita.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Klik ganda di mana saja pada header atau footer untuk membukanya.</p>
+                                            <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image005.jpg" alt="Membuka kunci header"></p>
+                                        </li>
+                                        <li>
+                                            <p>Pada tab Design, klik perintah Page Number. Pada menu yang muncul, arahkan mouse ke Current Position dan pilih gaya penomoran halaman yang diinginkan.</p>
+                                            <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image006.png" alt="Menu Nomor Halaman"></p>
+                                        </li>
+                                        <li>
+                                            <p>Penomoran halaman akan muncul.</p>
+                                            <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image007.png" alt="Penomoran halaman di header"></p>
+                                        </li>
+                                        <li>
+                                            <p>Setelah selesai, tekan tombol Esc.</p>
+                                            <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image008.png" alt="Mengunci header"></p>
+                                        </li>
+                                    </ol>
+                                </section>
+
+                                <section id="Menyembunyikannomorhalamanpadahalamanpertama">
+                                    <h6>Menyembunyikan nomor halaman pada halaman pertama:</h6>
+                                    <p>Dalam beberapa dokumen, Anda mungkin tidak ingin nomor halaman muncul pada halaman pertama. Anda dapat menyembunyikan nomor halaman pertama tanpa mempengaruhi sisa halaman lainnya.</p>
+                                    <ol>
+                                        <li>Klik dua kali header atau footer untuk membukanya.</li>
+                                        <li>
+                                            <p>Dari tab Design, centang tanda di sebelah Different First Page. Header dan footer akan hilang dari halaman pertama. Jika Anda ingin, Anda dapat mengetik hal lain di header atau footer, dan itu hanya akan mempengaruhi
+                                                halaman pertama saja.</p>
+                                            <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image009.png" alt="Mengklik Halaman Pertama yang Berbeda"></p>
+                                        </li>
+                                    </ol>
+                                    <div class="moreInfo">Jika Anda tidak dapat memilih Different First Page, mungkin karena obyek di dalam header atau footer terseleksi. Klik di area kosong di dalam header atau footer untuk memastikan tidak ada yang dipilih.</div>
+                                </section>
+
+                                <section id="Me-restartpenomoranhalaman">
+                                    <h6>Me-restart penomoran halaman</h6>
+                                    <p>Word memungkinkan Anda untuk me-restart penomoran halaman pada setiap halaman dokumen Anda. Anda dapat melakukan ini dengan memasukkan section break dan memilih nomor yang ingin Anda restart penomorannya. Dalam contoh
+                                        kita, kita akan restart penomoran halaman pada Works Cited dokumen kita.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Tempatkan titik penyisipan di bagian atas halaman yang ingin di-restart penomoran halamannya. Jika ada teks pada halaman, tempatkan titik penyisipan pada awal teks.</p>
+                                            <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image010.png" alt="Menempatkan titik penyisipan"></p>
+                                        </li>
+                                        <li>
+                                            <p>Pilih tab Layout, kemudian klik perintah Breaks. Pilih Next Page dari menu drop-down yang muncul.</p>
+                                            <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image011.png" alt="Memilih Halaman Berikutnya"></p>
+                                        </li>
+                                        <li>Section break akan ditambahkan ke dokumen.</li>
+                                        <li>
+                                            <p>Klik dua kali header atau footer yang berisi nomor halaman yang ingin di-restart.</p>
+                                            <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image012.png" alt="Memilih nomor halaman untuk memulai kembali"></p>
+                                        </li>
+                                        <li>
+                                            <p>Klik perintah Page Number. Pada menu yang muncul, pilih Format Page Number.</p>
+                                            <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image013.png" alt="Memformat nomor halaman"></p>
+                                        </li>
+                                        <li>
+                                            <p>Sebuah kotak dialog akan muncul. Klik tombol Start. Secara default, akan mulai dengan 1. Jika Anda ingin, Anda dapat mengubah nomornya. Setelah selesai, klik Close.</p>
+                                            <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image014.png" alt="Memulai ulang penomoran halaman"></p>
+                                        </li>
+                                        <li>
+                                            <p>Penomoran halaman akan dimulai ulang.</p>
+                                            <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image015.png" alt="Penomoran halaman yang dimulai ulang"></p>
+                                        </li>
+                                    </ol>
+                                </section>
+
+                                <section class="mb-4">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content"><img src="https://img.icons8.com/color/48/000000/youtube-play.png" /> Video</div>
+                                    </div>
+                                    <p>Tonton video di bawah ini untuk mempelajari lebih lanjut tentang nomor halaman di Word.
+
+                                    </p>
+                                    <div class="ratio ratio-16x9">
+
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JDqPR98mIZM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                                    </div>
+                                </section>
+
+                                <section class="highlight" id="lat-PageNumbers">
+                                    <h5>Latihan!</h5>
+                                    <ol>
+                                        <li>Buka <a href="../word/files/bahan/word_pagenumbers_practice.docx">dokumen latihan</a> kami.</li>
+                                        <li>Pada halaman 1, masukkan Accent Bar nomor 4 halaman di Buttom of page.</li>
+                                        <li>Dalam Design Options, pilih Dfferent First Page. Nomor halaman sekarang disembunyikan dari halaman pertama.</li>
+                                        <li>Gulir dokumen ke halaman 27.</li>
+                                        <li>Tempatkan kursor di awal judul Works Cited dan sisipkan break Continous Section.</li>
+                                        <li>Pada footer di halaman 27, restart penomoran halaman dari 1.</li>
+                                        <li>
+                                            <p>Setelah selesai, bagian bawah halaman 27 akan terlihat seperti ini:</p>
+                                            <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image016.jpg" alt="Tantangan Nomor Halaman 3"></p>
+                                        </li>
+                                    </ol>
+                                </section>
+                            </div>
+                        </div>
                     </div>
-                    <p>
-                        Nomor halaman dapat digunakan untuk secara otomatis memberi nomor pada setiap halaman dalam dokumen Anda. Mereka datang dalam berbagai format angka dan dapat disesuaikan dengan kebutuhan Anda. Nomor halaman biasanya ditempatkan di header, footer, atau
-                        margin samping. Saat Anda perlu memberi nomor beberapa halaman secara berbeda, Word memungkinkan Anda untuk memulai ulang penomoran halaman.</p>
-                    <p>Untuk menambahkan nomor halaman:</p>
-                    <p>Word dapat secara otomatis melabeli setiap halaman dengan nomor halaman dan menempatkannya di header, footer, atau margin samping. Jika Anda memiliki header atau footer yang ada, itu akan dihapus dan diganti dengan nomor halaman.</p>
-                    <p>Pada tab Sisipkan, klik perintah Nomor Halaman.</p>
-                    <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image001.png" alt="Perintah Nomor Halaman pada tab Sisipkan."></p>
-                    <p>Buka menu Top of Page, Bottom of Page, atau Page Margins, tergantung di mana Anda ingin menempatkan nomor halaman, lalu pilih gaya header yang diinginkan.</p>
-                    <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image002.png" alt="Memilih gaya tajuk."></p>
-                    <p>Penomoran halaman akan muncul.</p>
-                    <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image003.png" alt="Penomoran halaman di header."></p>
-                    <p>Tekan tombol Esc untuk mengunci header dan footer.
-                    </p>
-                    <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image004.png" alt="Mengunci header."></p>
-                    <p>Jika Anda perlu membuat perubahan pada nomor halaman Anda, cukup klik dua kali header atau footer untuk membukanya.</p>
-                    <p>Jika Anda telah membuat nomor halaman di margin samping, nomor tersebut masih dianggap sebagai bagian dari header atau footer. Anda tidak akan dapat memilih nomor halaman kecuali header atau footer dipilih.</p>
-                    <p>Untuk menambahkan nomor halaman ke header atau footer yang ada:</p>
-                    <p>Jika Anda sudah memiliki header atau footer dan Anda ingin menambahkan nomor halaman ke dalamnya, Word memiliki opsi untuk secara otomatis memasukkan nomor halaman ke dalam header atau footer yang ada. Dalam contoh kita, kita akan
-                        menambahkan penomoran halaman ke header dokumen kita.</p>
-                    <p>Klik dua kali di mana saja pada header atau footer untuk membukanya.</p>
-                    <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image005.jpg" alt="Membuka kunci header"></p>
-                    <p>Pada tab Desain, klik perintah Nomor Halaman. Di menu yang muncul, arahkan mouse ke Current Position dan pilih gaya penomoran halaman yang diinginkan.</p>
-                    <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image006.png" alt="Menu Nomor Halaman"></p>
-                    <p>Penomoran halaman akan muncul.</p>
-                    <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image007.png" alt="Penomoran halaman di header"></p>
-                    <p>Setelah selesai, tekan tombol Esc.</p>
-                    <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image008.png" alt="Mengunci header"></p>
-                    <p>Untuk menyembunyikan nomor halaman di halaman pertama:</p>
-                    <p>Di beberapa dokumen, Anda mungkin tidak ingin halaman pertama menampilkan nomor halaman. Anda dapat menyembunyikan nomor halaman pertama tanpa mempengaruhi halaman lainnya.</p>
-                    <p>Klik dua kali header atau footer untuk membukanya.</p>
-                    <p>Dari tab Desain, beri tanda centang di sebelah Halaman Pertama Berbeda. Header dan footer akan hilang dari halaman pertama. Jika mau, Anda bisa mengetikkan sesuatu yang baru di header atau footer, dan itu hanya akan memengaruhi halaman
-                        pertama.
-                    </p>
-                    <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image009.png" alt="Mengklik Halaman Pertama yang Berbeda"></p>
-                    <p>Jika Anda tidak dapat memilih Halaman Pertama Berbeda, mungkin karena objek di dalam header atau footer dipilih. Klik area kosong di dalam header atau footer untuk memastikan tidak ada yang dipilih.</p>
-                    <p>Untuk memulai ulang penomoran halaman:</p>
-                    <p>Word memungkinkan Anda untuk memulai kembali penomoran halaman pada halaman mana pun dari dokumen Anda. Anda dapat melakukan ini dengan menyisipkan pemisah bagian dan memilih nomor yang ingin Anda mulai ulang penomorannya. Dalam contoh
-                        kita, kita akan memulai ulang penomoran halaman untuk bagian Works Cited dokumen kita.</p>
-                    <p>Tempatkan titik penyisipan di bagian atas halaman tempat Anda ingin memulai ulang penomoran halaman. Jika ada teks di halaman, tempatkan titik penyisipan di awal teks.</p>
-                    <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image010.png" alt="Menempatkan titik penyisipan"></p>
-                    <p>Pilih tab Layout, lalu klik perintah Breaks. Pilih Halaman Berikutnya dari menu tarik-turun yang muncul.</p>
-                    <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image011.png" alt="Memilih Halaman Berikutnya"></p>
-                    <p>Hentian bagian akan ditambahkan ke dokumen.</p>
-                    <p>Klik dua kali header atau footer yang berisi nomor halaman yang ingin Anda mulai ulang.</p>
-                    <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image012.png" alt="Memilih nomor halaman untuk memulai kembali"></p>
-                    <p>Klik perintah Nomor Halaman. Pada menu yang muncul, pilih Format Page Numbers.</p>
-                    <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image013.png" alt="Memformat nomor halaman"></p>
-                    <p>Sebuah kotak dialog akan muncul. Klik Mulai di: tombol. Secara default, ini akan dimulai pada 1. Jika mau, Anda dapat mengubah nomornya. Setelah selesai, klik OK.</p>
-                    <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image014.png" alt="Memulai ulang penomoran halaman"></p>
-                    <p>Penomoran halaman akan dimulai ulang.</p>
-                    <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image015.png" alt="Penomoran halaman yang dimulai ulang"></p>
-                    <p>Untuk mempelajari lebih lanjut tentang menambahkan pemisah bagian ke dokumen Anda, tinjau pelajaran kami tentang <a href="https://edu.gcfglobal.org/en/word/breaks/1/">Jeda</a>.</p>
-                    <p>Tantangan!</p>
-                    <p>Buka <a href="https://media.gcflearnfree.org/content/5c09503877c0500354728570_12_06_2018/word_pagenumbers_practice.docx">dokumen latihan</a> kami.</p>
-                    <p>Pada halaman 1, masukkan nomor halaman Accent Bar 4 di Bagian Bawah Halaman.</p>
-                    <p>Pada Design Options, pilih Different First Page. Nomor halaman sekarang harus disembunyikan di halaman pertama.
-                    </p>
-                    <p>Gulir ke halaman 27 dokumen.</p>
-                    <p>Tempatkan kursor Anda di awal judul Works Cited dan sisipkan sebuah Continuous Section break.</p>
-                    <p>Di footer halaman 27, mulai ulang penomoran halaman di 1.
-                    </p>
-                    <p>Setelah selesai, bagian bawah halaman 27 akan terlihat seperti ini:</p>
-                    <p><img class="img-fluid" src="../word/files/NomorHalaman_files/image016.jpg" alt="Tantangan Nomor Halaman 3"></p>
                 </section>
             </div>
         </div>
-    </main>
-</div>
+    </div>
+</main>

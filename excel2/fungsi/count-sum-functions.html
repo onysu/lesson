@@ -336,6 +336,7 @@
                     </h2>
                     <div id="flush-collapse-not-equal-to" class="accordion-collapse collapse" aria-labelledby="flush-not-equal-to" data-bs-parent="#tab2Konten">
                         <div class="accordion-body p-0">
+                            <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/not-equal-to.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
                             Di Excel, &lt;&gt; berarti tidak sama dengan. Operator &lt;&gt; di Excel memeriksa apakah dua nilai tidak sama satu sama lain. Mari kita lihat beberapa contoh.</p>
                             <p>1. Rumus di sel C1 di bawah mengembalikan TRUE karena nilai teks di sel A1 tidak sama dengan nilai teks di sel B1.</p>
                             <p><img class="img-fluid" src="files/not-equal-to_files/image001.png" alt="Tidak Sama Dengan Operator"></p>
@@ -354,6 +355,127 @@
                             <p>7. Fungsi AVERAGEIF di bawah ini menghitung rata-rata nilai dalam rentang A1:A5 yang tidak sama dengan 0.</p>
                             <p><img class="img-fluid" src="files/not-equal-to_files/image007.png" alt="Sel Rata-Rata Tidak Sama Dengan Nol"></p>
                             <p>Catatan: dengan kata lain, fungsi AVERAGEIF di atas menghitung rata-rata tidak termasuk nol.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Count Cells with Text -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-count-cells-with-text">
+                        <button class="accordion-button collapsed" style="padding: 1rem 0rem; box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-count-cells-with-text" aria-expanded="false" aria-controls="flush-collapse-count-cells-with-text">
+                        <div class="me-auto">
+                          <div class="fs-5">Hitung Sel dengan Teks</div>
+                          <small class="text-muted fw-light text-lowercase">menghitung sel dengan teks di Excel.</small>
+                        </div>
+                      </button>
+                    </h2>
+                    <div id="flush-collapse-count-cells-with-text" class="accordion-collapse collapse" aria-labelledby="flush-count-cells-with-text" data-bs-parent="#tab2Konten">
+                        <div class="accordion-body p-0">
+                            <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/count-cells-with-text.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+                            <p>Halaman ini menggambarkan beberapa cara untuk menghitung sel dengan teks di Excel.</p>
+                            <p>1a. Gunakan fungsi COUNTIF dan simbol asterisk (*) untuk menghitung sel dengan teks.</p>
+                            <p><img class="img-fluid" src="files/count-cells-with-text_files/image001.png" alt="Hitung Sel dengan Teks"></p>
+                            <p>1b. Anda juga dapat membuat rumus array untuk menghitung sel dengan teks.</p>
+                            <p><img class="img-fluid" src="files/count-cells-with-text_files/image002.png" alt="Rumus Array"></p>
+                            <p>1c. Anda juga dapat menggunakan fungsi SUMPRODUCT untuk menghitung sel dengan teks.</p>
+                            <p><img class="img-fluid" src="files/count-cells-with-text_files/image003.png" alt="Fungsi Sumproduk"></p>
+                            <p>2a. Angka, Boolean (BENAR atau SALAH), kosong, dan kesalahan tidak dihitung sebagai teks.</p>
+                            <p><img class="img-fluid" src="files/count-cells-with-text_files/image004.png" alt="Angka, Boolean, Kosong, dan Kesalahan Tidak Dihitung sebagai Teks"></p>
+                            <p>2b. Rumus di bawah ini menghitung sel dengan teks dan menghitung sel dengan Boolean.</p>
+                            <p><img class="img-fluid" src="files/count-cells-with-text_files/image005.png" alt="Hitung Sel dengan Teks dan Hitung Boolean"></p>
+                            <p>3a. Masukkan spasi ke dalam sel A4. Fungsi COUNTIF pada langkah 1a dan langkah 2a juga menghitung sel dengan karakter spasi.
+                            </p>
+                            <p><img class="img-fluid" src="files/count-cells-with-text_files/image006.png" alt="Termasuk Ruang"></p>
+                            <p>3b. Fungsi COUNTIFS di bawah ini menghitung sel dengan teks dan mengecualikan sel dengan karakter spasi.</p>
+                            <p><img class="img-fluid" src="files/count-cells-with-text_files/image007.png" alt="Hitung Sel dengan Teks dan Kecualikan Sel dengan Karakter Spasi"></p>
+                            <p>Catatan: fungsi COUNTIFS di Excel menghitung sel berdasarkan dua kriteria atau lebih.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sum -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-count-Sum">
+                        <button class="accordion-button collapsed" style="padding: 1rem 0rem; box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-Sum" aria-expanded="false" aria-controls="flush-collapse-Sum">
+                        <div class="me-auto">
+                          <div class="fs-5">Sum</div>
+                          <small class="text-muted fw-light text-lowercase">menjumlahkan rentang sel, seluruh kolom.</small>
+                        </div>
+                      </button>
+                    </h2>
+                    <div id="flush-collapse-Sum" class="accordion-collapse collapse" aria-labelledby="flush-count-Sum" data-bs-parent="#tab2Konten">
+                        <div class="accordion-body p-0">
+                            <p><a href="#sum-range">Sum Range</a> | <a href="#sum-entire-column">Sum Seluruh Kolom</a> | <a href="#sum-non-contiguous-cells">Sum Sel yang Tidak Bersebelahan</a> | <a href="#autosum">AutoSum</a> | <a href="#sum-every-nth-row">Sum Setiap Baris Ke-N</a>                                | <a href="#sum-largest-numbers">Sum Bilangan Terbesar</a> | <a href="#sum-range-with-errors">Sum Range dengan Error</a></p>
+                            <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/sum.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+                            <p>Gunakan fungsi SUM di Excel untuk menjumlahkan range sel, seluruh kolom, atau sel yang tidak bersebelahan. Untuk membuat rumus SUM yang mengagumkan, gabungkan fungsi SUM dengan fungsi Excel lainnya.</p>
+
+                            <section id="sum-range">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-5" id="content">Sum Range</div>
+                                </div>
+                                <p>Sebagian besar waktu, Anda akan menggunakan fungsi SUM di Excel untuk menjumlahkan range sel.</p>
+                                <p><img class="img-fluid" src="files/sum_files/image001.png" alt="Sum Range"></p>
+                            </section>
+
+                            <section id="sum-entire-column">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-5" id="content">Sum Seluruh Kolom</div>
+                                </div>
+                                <p>Anda juga dapat menggunakan fungsi SUM di Excel untuk menjumlahkan seluruh kolom.</p>
+                                <p><img class="img-fluid" src="files/sum_files/image002.png" alt="Sum Seluruh Kolom"></p>
+                                <p><img class="img-fluid" src="files/sum_files/image003.png" alt="Sel A99"></p>
+                                <p>Catatan: Anda juga dapat menggunakan fungsi SUM di Excel untuk menjumlahkan seluruh baris. Misalnya, =SUM(5:5) menjumlahkan semua nilai di baris ke-5.</p>
+                            </section>
+
+                            <section id="sum-non-contiguous-cells">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-5" id="content">Sum Sel yang Tidak Bersebelahan</div>
+                                </div>
+                                <p>Anda juga dapat menggunakan fungsi SUM di Excel untuk menjumlahkan sel yang tidak bersebelahan. Tidak bersebelahan berarti tidak bersebelahan.</p>
+                                <p><img class="img-fluid" src="files/sum_files/image004.png" alt="Jumlah Sel yang Tidak Bersebelahan"></p>
+                                <p>Catatan: =A3+A5+A8 menghasilkan hasil yang sama persis!</p>
+                            </section>
+
+                            <section id="autosum">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-5" id="content">AutoSum</div>
+                                </div>
+                                <p>Gunakan JumlahOtomatis atau tekan <kbd>Alt</kbd>+<kbd>+</kbd>+<kbd>=</kbd> untuk menjumlahkan kolom atau baris angka dengan cepat.</p>
+                                <p>1. Pertama, pilih sel di bawah kolom angka (atau di sebelah deretan angka) yang ingin Anda jumlahkan.</p>
+                                <p><img class="img-fluid" src="files/sum_files/image005.png" alt="Pilih Sel"></p>
+                                <p>2. Pada tab Beranda, dalam grup Pengeditan, klik JumlahOtomatis (atau tekan <kbd>Alt</kbd>+<kbd>+</kbd>+<kbd>=</kbd>).</p>
+                                <p><img class="img-fluid" src="files/sum_files/image006.png" alt="Klik JumlahOtomatis"></p>
+                                <p>3. Tekan Enter.</p>
+                                <p><img class="img-fluid" src="files/sum_files/image007.png" alt=JumlahOtomatis></p>
+                            </section>
+
+                            <section id="sum-every-nth-row">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-5" id="content">Sum Setiap Baris Ke-N</div>
+                                </div>
+                                <p>Rumus SUM di bawah ini menggunakan SUM, MOD dan ROW untuk <a href="#">menjumlahkan setiap baris ke-n</a>, Ubah 3 menjadi 4 untuk menjumlahkan setiap baris ke-4, menjadi 5 untuk menjumlahkan setiap baris ke-5, dst.</p>
+                                <p><img class="img-fluid" src="files/sum_files/image008.png" alt="Sum Setiap Baris Ke-N"></p>
+                                <p>Catatan: bilah rumus menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Untuk memasukkan rumus array, selesaikan dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
+                            </section>
+
+                            <section id="sum-largest-numbers">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-5" id="content">Sum Bilangan Terbesar</div>
+                                </div>
+                                <p>Rumus SUM di bawah ini menggunakan SUM dan LARGE untuk <a href="#">menjumlahkan angka terbesar</a> dalam suatu range. Ubah {1,2,3,4} menjadi {1,2,3,4,5} untuk menjumlahkan 5 bilangan terbesar.</p>
+                                <p><img class="img-fluid" src="files/sum_files/image009.png" alt="Sum Bilangan Terbesar"></p>
+                                <p>Catatan: =LARGE(A1:A11,2) cukup mengembalikan angka terbesar kedua.</p>
+                            </section>
+
+                            <section id="sum-range-with-errors">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-5" id="content">Sum Range dengan Error</small>
+                                    </div>
+                                </div>
+                                <p>Rumus SUM di bawah ini menggunakan SUM dan IFERROR untuk <a href="#">menjumlahkan range dengan kesalahan</a>. Anda juga dapat menggunakan <a href="#">fungsi AGGREGATE</a> di Excel untuk menjumlahkan range dengan kesalahan.</p>
+                                <p><img class="img-fluid" src="files/sum_files/image010.png" alt="Sum Range dengan Kesalahan"></p>
+                                <p>Catatan: fungsi SUM di Excel secara otomatis mengabaikan nilai teks.</p>
+                            </section>
                         </div>
                     </div>
                 </div>

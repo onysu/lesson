@@ -609,6 +609,79 @@
                     </div>
                 </div>
 
+                <!-- sumproduct -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-count-sumproduct">
+                        <button class="accordion-button collapsed" style="padding: 1rem 0rem; box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-sumproduct" aria-expanded="false" aria-controls="flush-collapse-sumproduct">
+                        <div class="me-auto">
+                          <div class="fs-5">Sumproduct</div>
+                          <small class="text-muted fw-light text-lowercase">menjumlahkan sel berdasarkan satu kriteria.</small>
+                        </div>
+                      </button>
+                    </h2>
+                    <div id="flush-collapse-sumproduct" class="accordion-collapse collapse" aria-labelledby="flush-count-sumproduct" data-bs-parent="#tab2Konten">
+                        <div class="accordion-body p-0">
+                            <p><a href="#basic-use">Penggunaan Dasar</a> | <a href="#advanced-use">Penggunaan Lanjutan</a></p>
+                            <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/sumproduct.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+                            <p>Untuk menghitung jumlah produk dari angka yang sesuai dalam satu atau beberapa rentang, gunakan fungsi SUMPRODUCT Excel yang kuat.
+                            </p>
+
+                            <section id="basic-use">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-5" id="content">Penggunaan Dasar</div>
+                                </div>
+                                <p>1. Misalnya, fungsi SUMPRODUCT di bawah ini menghitung jumlah total yang dibelanjakan.</p>
+                                <p><img class="img-fluid" src="files/sumproduct_files/image001.png" alt="Fungsi Sumproduct di Excel"></p>
+                                <p>Penjelasan: fungsi SUMPRODUCT melakukan perhitungan ini: (2 * 1000) + (4 * 250) + (4 * 100) + (2 * 50) = 3500.</p>
+                                <p>2. Rentang harus memiliki dimensi yang sama atau Excel akan menampilkan #VALUE! kesalahan.</p>
+                                <p><img class="img-fluid" src="files/sumproduct_files/image002.png" alt="Rentang Ukuran Tidak Sama"></p>
+                                <p>3. Fungsi SUMPRODUCT memperlakukan setiap entri yang bukan numerik seolah-olah mereka adalah nol.</p>
+                                <p><img class="img-fluid" src="files/sumproduct_files/image003.png" alt="Entri Non Numerik"></p>
+                                <p>4. Jika Anda menyediakan rentang tunggal, fungsi SUMPRODUCT menghasilkan hasil yang sama persis dengan fungsi SUM.</p>
+                                <p><img class="img-fluid" src="files/sumproduct_files/image004.png" alt="Satu Rentang"></p>
+                            </section>
+
+                            <section id="advanced-use">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-5" id="content">Penggunaan Lanjutan</div>
+                                </div>
+                                <p>Fungsi SUMPRODUCT adalah fungsi yang sangat serbaguna dan dapat menghasilkan hasil yang sama seperti banyak fungsi bawaan di Excel dan bahkan rumus array!</p>
+                                <p>1a. Misalnya, <a href="#">fungsi COUNTIF di</a> bawah ini menghitung jumlah sel yang berisi bintang persis.</p>
+                                <p><img class="img-fluid" src="files/sumproduct_files/image005.png" alt="Fungsi Hitung"></p>
+                                <p>1b. Fungsi SUMPRODUCT di bawah ini menghasilkan hasil yang sama persis.</p>
+                                <p><img class="img-fluid" src="files/sumproduct_files/image006.png" alt="Negatif Ganda"></p>
+                                <p>Penjelasan: --(A1:A7=&quot;star&quot;) direduksi menjadi konstanta array berikut:</p>
+                                <p>--{BENAR; SALAH; SALAH; SALAH; SALAH; BENAR; SALAH}</p>
+                                <p>Negatif ganda -- memaksa Boolean ini menjadi 1 dan 0 (TRUE=1, FALSE=0). Hasil:</p>
+                                <p>{1;0;0;0;0;1;0}</p>
+                                <p>Konstanta array ini digunakan sebagai argumen untuk fungsi SUMPRODUCT, memberikan hasil 2.</p>
+                                <p>1c. Fungsi COUNTIF di bawah ini menghitung jumlah sel yang berisi persis bintang + 1 karakter. Tanda tanya (?) cocok dengan tepat satu karakter.</p>
+                                <p><img class="img-fluid" src="files/sumproduct_files/image007.png" alt="Karakter Wildcard"></p>
+                                <p>1d. Fungsi SUMPRODUCT tidak sempurna! Anda tidak dapat menggunakan karakter wildcard (? dan *) saat Anda menggunakan fungsi SUMPRODUCT.</p>
+                                <p><img class="img-fluid" src="files/sumproduct_files/image008.png" alt="Batasan Produk Sum"></p>
+                                <p>2a. Rumus array di bawah ini menghitung jumlah karakter dalam rentang sel.</p>
+                                <p><img class="img-fluid" src="files/sumproduct_files/image009.png" alt="Hitung Karakter"></p>
+                                <p>Catatan: selesaikan <a href="#">rumus array</a> dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>. Excel menambahkan kurung kurawal {}.</p>
+                                <p>2b. Fungsi SUMPRODUCT di bawah ini menghasilkan hasil yang sama persis.</p>
+                                <p><img class="img-fluid" src="files/sumproduct_files/image010.png" alt="Formula Produk Sum yang Elegan"></p>
+                                <p>Catatan: konstanta array {9;4;6;5} digunakan sebagai argumen untuk fungsi SUMPRODUCT, memberikan hasil 24. Fungsi SUMPRODUCT menangani array secara native sehingga Anda tidak perlu menyelesaikannya dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.
+                                    Ini adalah salah satu keuntungan terbesar dari fungsi SUMPRODUCT karena kurung kurawal {} membingungkan banyak pemula Excel!
+                                </p>
+                                <p>3a. Rumus array di bawah ini menjumlahkan penjualan pada tahun 2018.</p>
+                                <p><img class="img-fluid" src="files/sumproduct_files/image011.png" alt="Jumlah menurut Tahun"></p>
+                                <p>3b. Fungsi SUMPRODUCT di bawah ini menghasilkan hasil yang sama persis.</p>
+                                <p><img class="img-fluid" src="files/sumproduct_files/image012.png" alt="Operator Perkalian"></p>
+                                <p>Penjelasan: (TAHUN(A1:A5)=2018)*B1:B5 dikurangi menjadi:</p>
+                                <p>({2018;2017;2018;2017;2017}=2018)*{10;1;7;20;3} dan ini dikurangi menjadi:</p>
+                                <p>{BENAR; SALAH; BENAR; SALAH; SALAH}*{10;1;7;20;3}</p>
+                                <p>Kita tidak memerlukan negatif ganda (lihat contoh 1b) karena operator perkalian * secara otomatis memaksa Boolean menjadi 1 dan 0 (TRUE=1, FALSE=0). Hasil:</p>
+                                <p>{10;0;7;0;0}</p>
+                                <p>Konstanta array ini digunakan sebagai argumen untuk fungsi SUMPRODUCT, memberikan hasil 17.</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

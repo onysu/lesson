@@ -258,6 +258,7 @@
                     </div>
                 </div>
 
+                <!-- Count Blank/Nonblank Cells -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-count-blank-nonblank-cells">
                         <button class="accordion-button collapsed" style="padding: 1rem 0rem; box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecount-blank-nonblank-cells" aria-expanded="false" aria-controls="flush-collapsecount-blank-nonblank-cells">
@@ -280,6 +281,45 @@
                             <p>Penjelasan: fungsi COUNTIFS (dengan huruf S di akhir) di Excel menghitung sel berdasarkan dua atau lebih kriteria. Gunakan string kosong (dua tanda kutip ganda tanpa apa pun di antaranya) untuk menemukan sel kosong.</p>
                             <p>4. Fungsi COUNTIFS di bawah ini menghitung jumlah sel tidak kosong dalam rentang B1:B7 dengan satu kriteria tambahan (merah muda).</p>
                             <p><img class="img-fluid" src="files/count-blank-nonblank-cells_files/image004.png" alt="Hitung Sel Nonblank menggunakan COUNTIFS"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Count Characters -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-count-characters">
+                        <button class="accordion-button collapsed" style="padding: 1rem 0rem; box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-count-characters" aria-expanded="false" aria-controls="flush-collapse-count-characters">
+                        <div class="me-auto">
+                          <div class="fs-5">Hitung Karakter</div>
+                          <small class="text-muted fw-light text-lowercase">menghitung jumlah karakter dalam sel atau rentang sel.</small>
+                        </div>
+                      </button>
+                    </h2>
+                    <div id="flush-collapse-count-characters" class="accordion-collapse collapse" aria-labelledby="flush-count-characters" data-bs-parent="#tab2Konten">
+                        <div class="accordion-body p-0">
+                            <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/count-characters.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+                            <p>Pelajari cara menghitung jumlah karakter dalam sel atau rentang sel dan cara menghitung berapa kali karakter tertentu muncul dalam sel atau rentang sel.</p>
+                            <p>1. Fungsi LEN di Excel menghitung jumlah karakter dalam sel.</p>
+                            <p><img class="img-fluid" src="files/count-characters_files/image001.png" alt="Hitung Karakter dalam Sel"></p>
+                            <p>Penjelasan: fungsi LEN menghitung 2 angka, 1 spasi dan 6 huruf.</p>
+                            <p>2. Gunakan SUM dan LEN untuk menghitung jumlah karakter dalam rentang sel.</p>
+                            <p><img class="img-fluid" src="files/count-characters_files/image002.png" alt="Fungsi Jumlah dan Len di Excel"></p>
+                            <p>Catatan: seperti yang dapat Anda bayangkan, rumus ini bisa menjadi sangat panjang.</p>
+                            <p>3. Rumus array di bawah ini menghitung jumlah karakter dalam rentang sel.</p>
+                            <p><img class="img-fluid" src="files/count-characters_files/image003.png" alt="Hitung Karakter dalam Rentang Sel"></p>
+                            <p>Catatan: selesaikan <a href="#">rumus array</a> dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>. Excel menambahkan kurung kurawal {}. Konstanta array {9;4;6;5} digunakan sebagai argumen untuk fungsi SUM, memberikan
+                                hasil 24. Mungkin ini satu langkah terlalu jauh untuk Anda pada tahap ini, tetapi ini menunjukkan kepada Anda salah satu dari banyak lainnya fitur canggih yang ditawarkan Excel.</p>
+                            <p>4. Gunakan LEN dan SUBSTITUTE untuk menghitung berapa kali karakter tertentu (dalam contoh ini, karakter a) muncul dalam sel.</p>
+                            <p><img class="img-fluid" src="files/count-characters_files/image004.png" alt="Hitung Karakter Tertentu dalam Sel"></p>
+                            <p>Penjelasan: fungsi SUBSTITUTE menggantikan karakter a (argumen kedua) dengan string kosong (argumen ketiga). LEN(SUBSTITUTE(A1,&quot;a&quot;,&quot;&quot;)) sama dengan 8 (panjang string tanpa karakter a). Jika kita mengurangi
+                                angka ini dari 9 (jumlah total karakter di sel A1), kita mendapatkan jumlah kemunculan karakter a di sel A1.</p>
+                            <p>5. Rumus array di bawah ini menghitung berapa kali karakter tertentu (dalam contoh ini, karakter a) muncul dalam rentang sel.</p>
+                            <p><img class="img-fluid" src="files/count-characters_files/image005.png" alt="Hitung Karakter Tertentu dalam Rentang Sel"></p>
+                            <p>Catatan: selesaikan <a href="#">rumus array</a> dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>. Excel menambahkan kurung kurawal {}. Konstanta larik {1;1;2;1} digunakan sebagai argumen untuk fungsi SUM, memberikan
+                                hasil 5. Fungsi SUBSTITUTE peka huruf besar/kecil. A di Alaska tidak dihitung.</p>
+                            <p>6. Rumus array di bawah ini menghitung kemunculan huruf kecil dan huruf besar dari karakter tertentu (dalam contoh ini, karakter a).</p>
+                            <p><img class="img-fluid" src="files/count-characters_files/image006.png" alt="Jumlah Karakter Tidak Peka Huruf Besar-kecil"></p>
+                            <p>Penjelasan: Fungsi LOWER mengubah semua huruf menjadi huruf kecil terlebih dahulu.</p>
                         </div>
                     </div>
                 </div>

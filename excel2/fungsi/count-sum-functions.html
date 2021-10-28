@@ -69,13 +69,83 @@
                     </div>
                 </div>
 
-                <!-- Count Characters -->
+                <!-- Not Equal To -->
                 <div class="accordion-item border-0">
                     <a href="#NotEqualTo">Tidak sebanding dengan</a>
                     <div id="flush-collapse-not-equal-to" class="accordion-collapse collapse" aria-labelledby="flush-not-equal-to" data-bs-parent="#tab2Konten">
                         <div class="accordion-body p-0">
                             <ul>
                                 <li><a href="#Averageif">Averageif</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Count Cells with Text -->
+                <div class="accordion-item border-0">
+                    <a href="#CountCellswithText">Hitung Sel dengan Teks</a>
+                    <div id="flush-collapse-count-cells-with-text" class="accordion-collapse collapse" aria-labelledby="flush-count-cells-with-text" data-bs-parent="#tab2Konten">
+                        <div class="accordion-body p-0">
+                            <ul>
+                                <li>
+                                    <a href="#"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sum -->
+                <div class="accordion-item border-0">
+                    <a href="#sum">Sum</a>
+                    <div id="flush-collapse-Sum" class="accordion-collapse collapse" aria-labelledby="flush-count-Sum" data-bs-parent="#tab2Konten">
+                        <div class="accordion-body p-0">
+                            <ul>
+                                <li>
+                                    <a href="#"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Running Total -->
+                <div class="accordion-item border-0">
+                    <a href="#runningtotal">Total Berjalan</a>
+                    <div id="flush-collapse-running-total" class="accordion-collapse collapse" aria-labelledby="flush-count-running-total" data-bs-parent="#tab2Konten">
+                        <div class="accordion-body p-0">
+                            <ul>
+                                <li>
+                                    <a href="#"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sumif -->
+                <div class="accordion-item border-0">
+                    <a href="#sumif">Sumif</a>
+                    <div id="flush-collapse-sumif" class="accordion-collapse collapse" aria-labelledby="flush-count-sumif" data-bs-parent="#tab2Konten">
+                        <div class="accordion-body p-0">
+                            <ul>
+                                <li>
+                                    <a href="#"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sumproduct -->
+                <div class="accordion-item border-0">
+                    <a href="#sumproduct">Sumproduct</a>
+                    <div id="flush-collapse-sumproduct" class="accordion-collapse collapse" aria-labelledby="flush-count-sumproduct" data-bs-parent="#tab2Konten">
+                        <div class="accordion-body p-0">
+                            <ul>
+                                <li>
+                                    <a href="#"></a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -239,7 +309,7 @@
 
                                 <p><img class="img-fluid" src="files/countif_files/image019.png" alt="Count dengan Atau Kriteria di Excel"></p>
 
-                                <p class="moreInfo"><b>Catatan:</b> selesaikan rumus array dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>. Excel menambahkan kurung kurawal {}. Kunjungi halaman kami tentang <a href="#">Menghitung dengan Atau Kriteria</a>                                    untuk instruksi terperinci tentang cara membuat rumus array ini.</p>
+                                <p class="moreInfo"><b>Catatan:</b> selesaikan rumus array dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>. Excel menambahkan kurung kurawal {}.</p>
                             </section>
 
                             <section id="more-about-countif">
@@ -399,7 +469,7 @@
                 </div>
 
                 <!-- Count Cells with Text -->
-                <div class="accordion-item">
+                <div class="accordion-item" id="CountCellswithText">
                     <h2 class="accordion-header" id="flush-count-cells-with-text">
                         <button class="accordion-button collapsed" style="padding: 1rem 0rem; box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-count-cells-with-text" aria-expanded="false" aria-controls="flush-collapse-count-cells-with-text">
                         <div class="me-auto">
@@ -433,7 +503,7 @@
                 </div>
 
                 <!-- Sum -->
-                <div class="accordion-item">
+                <div class="accordion-item" id="sum">
                     <h2 class="accordion-header" id="flush-count-Sum">
                         <button class="accordion-button collapsed" style="padding: 1rem 0rem; box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-Sum" aria-expanded="false" aria-controls="flush-collapse-Sum">
                         <div class="me-auto">
@@ -525,7 +595,7 @@
                 </div>
 
                 <!-- running total -->
-                <div class="accordion-item">
+                <div class="accordion-item" id="runningtotal">
                     <h2 class="accordion-header" id="flush-count-running-total">
                         <button class="accordion-button collapsed" style="padding: 1rem 0rem; box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-running-total" aria-expanded="false" aria-controls="flush-collapse-running-total">
                         <div class="me-auto">
@@ -560,7 +630,7 @@
                 </div>
 
                 <!-- sumif -->
-                <div class="accordion-item">
+                <div class="accordion-item" id="sumif">
                     <h2 class="accordion-header" id="flush-count-sumif">
                         <button class="accordion-button collapsed" style="padding: 1rem 0rem; box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-sumif" aria-expanded="false" aria-controls="flush-collapse-sumif">
                         <div class="me-auto">
@@ -657,7 +727,7 @@
                 </div>
 
                 <!-- sumproduct -->
-                <div class="accordion-item">
+                <div class="accordion-item" id="sumproduct">
                     <h2 class="accordion-header" id="flush-count-sumproduct">
                         <button class="accordion-button collapsed" style="padding: 1rem 0rem; box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-sumproduct" aria-expanded="false" aria-controls="flush-collapse-sumproduct">
                         <div class="me-auto">

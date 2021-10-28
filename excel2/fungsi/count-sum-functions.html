@@ -65,9 +65,10 @@
                     <div id="flush-collapseCountif" class="accordion-collapse collapse" aria-labelledby="flush-heading-Countif" data-bs-parent="#tab2Konten">
                         <div class="accordion-body p-0">
 
-                            <p class="fw-light">
+                            <p class="fw-light small">
                                 <a href="#numeric-criteria">Kriteria Numerik</a> | <a href="#text-tricks">Teks Trik</a> | <a href="#count-booleans">Count Booleans</a> | <a href="#count-errors">Count Errors</a> | <a href="#and-criteria">And Kriteria</a>                                | <a href="#or-criteria">Or Kriteria</a> | <a href="#more-about-countif">Lebih lanjut tentang Countif</a> | <a href="#count-magic">Count Magic</a>
                             </p>
+
                             <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/countif.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
 
                             <section id="numeric-criteria">
@@ -93,7 +94,7 @@
 
                                 <p><img class="img-fluid" src="files/countif_files/image004.png" alt="Fungsi COUNTIF dan Operator Ampersand"></p>
 
-                                <p>Penjelasan: operator &amp; menggabungkan simbol 'lebih besar dari atau sama dengan' dan nilai di sel C1.</p>
+                                <p class="moreInfo"><b>Penjelasan:</b> operator &amp; menggabungkan simbol 'lebih besar dari atau sama dengan' dan nilai di sel C1.</p>
 
                                 <p>5. Fungsi COUNTIF di bawah ini menghitung jumlah sel yang tidak sama dengan 7.</p>
 
@@ -278,7 +279,7 @@
                             <p><img class="img-fluid" src="files/count-blank-nonblank-cells_files/image002.png" alt="Fungsi COUNTA di Excel"></p>
                             <p>3. Fungsi COUNTIFS di bawah ini menghitung jumlah sel kosong dalam rentang B1:B7 dengan satu kriteria tambahan (biru).</p>
                             <p><img class="img-fluid" src="files/count-blank-nonblank-cells_files/image003.png" alt="Hitung Sel Kosong menggunakan COUNTIFS"></p>
-                            <p>Penjelasan: fungsi COUNTIFS (dengan huruf S di akhir) di Excel menghitung sel berdasarkan dua atau lebih kriteria. Gunakan string kosong (dua tanda kutip ganda tanpa apa pun di antaranya) untuk menemukan sel kosong.</p>
+                            <p class="moreInfo"><b>Penjelasan:</b> fungsi COUNTIFS (dengan huruf S di akhir) di Excel menghitung sel berdasarkan dua atau lebih kriteria. Gunakan string kosong (dua tanda kutip ganda tanpa apa pun di antaranya) untuk menemukan sel kosong.</p>
                             <p>4. Fungsi COUNTIFS di bawah ini menghitung jumlah sel tidak kosong dalam rentang B1:B7 dengan satu kriteria tambahan (merah muda).</p>
                             <p><img class="img-fluid" src="files/count-blank-nonblank-cells_files/image004.png" alt="Hitung Sel Nonblank menggunakan COUNTIFS"></p>
                         </div>
@@ -301,7 +302,7 @@
                             <p>Pelajari cara menghitung jumlah karakter dalam sel atau rentang sel dan cara menghitung berapa kali karakter tertentu muncul dalam sel atau rentang sel.</p>
                             <p>1. Fungsi LEN di Excel menghitung jumlah karakter dalam sel.</p>
                             <p><img class="img-fluid" src="files/count-characters_files/image001.png" alt="Hitung Karakter dalam Sel"></p>
-                            <p>Penjelasan: fungsi LEN menghitung 2 angka, 1 spasi dan 6 huruf.</p>
+                            <p class="moreInfo"><b>Penjelasan:</b> fungsi LEN menghitung 2 angka, 1 spasi dan 6 huruf.</p>
                             <p>2. Gunakan SUM dan LEN untuk menghitung jumlah karakter dalam rentang sel.</p>
                             <p><img class="img-fluid" src="files/count-characters_files/image002.png" alt="Fungsi Jumlah dan Len di Excel"></p>
                             <p>Catatan: seperti yang dapat Anda bayangkan, rumus ini bisa menjadi sangat panjang.</p>
@@ -311,7 +312,7 @@
                                 hasil 24. Mungkin ini satu langkah terlalu jauh untuk Anda pada tahap ini, tetapi ini menunjukkan kepada Anda salah satu dari banyak lainnya fitur canggih yang ditawarkan Excel.</p>
                             <p>4. Gunakan LEN dan SUBSTITUTE untuk menghitung berapa kali karakter tertentu (dalam contoh ini, karakter a) muncul dalam sel.</p>
                             <p><img class="img-fluid" src="files/count-characters_files/image004.png" alt="Hitung Karakter Tertentu dalam Sel"></p>
-                            <p>Penjelasan: fungsi SUBSTITUTE menggantikan karakter a (argumen kedua) dengan string kosong (argumen ketiga). LEN(SUBSTITUTE(A1,&quot;a&quot;,&quot;&quot;)) sama dengan 8 (panjang string tanpa karakter a). Jika kita mengurangi
+                            <p class="moreInfo"><b>Penjelasan:</b> fungsi SUBSTITUTE menggantikan karakter a (argumen kedua) dengan string kosong (argumen ketiga). LEN(SUBSTITUTE(A1,&quot;a&quot;,&quot;&quot;)) sama dengan 8 (panjang string tanpa karakter a). Jika kita mengurangi
                                 angka ini dari 9 (jumlah total karakter di sel A1), kita mendapatkan jumlah kemunculan karakter a di sel A1.</p>
                             <p>5. Rumus array di bawah ini menghitung berapa kali karakter tertentu (dalam contoh ini, karakter a) muncul dalam rentang sel.</p>
                             <p><img class="img-fluid" src="files/count-characters_files/image005.png" alt="Hitung Karakter Tertentu dalam Rentang Sel"></p>
@@ -319,7 +320,7 @@
                                 hasil 5. Fungsi SUBSTITUTE peka huruf besar/kecil. A di Alaska tidak dihitung.</p>
                             <p>6. Rumus array di bawah ini menghitung kemunculan huruf kecil dan huruf besar dari karakter tertentu (dalam contoh ini, karakter a).</p>
                             <p><img class="img-fluid" src="files/count-characters_files/image006.png" alt="Jumlah Karakter Tidak Peka Huruf Besar-kecil"></p>
-                            <p>Penjelasan: Fungsi LOWER mengubah semua huruf menjadi huruf kecil terlebih dahulu.</p>
+                            <p class="moreInfo"><b>Penjelasan:</b> Fungsi LOWER mengubah semua huruf menjadi huruf kecil terlebih dahulu.</p>
                         </div>
                     </div>
                 </div>
@@ -351,7 +352,7 @@
                             <p><img class="img-fluid" src="files/not-equal-to_files/image005.png" alt="Menggabungkan Operator 'Tidak Sama Dengan' dan Nilai Sel"></p>
                             <p>6. Fungsi COUNTIFS di bawah ini menghitung jumlah sel dalam rentang A1:A5 yang tidak sama dengan &quot;merah&quot; dan tidak sama dengan &quot;biru&quot;.</p>
                             <p><img class="img-fluid" src="files/not-equal-to_files/image006.png" alt="Hitung Sel Tidak Sama Dengan Merah dan Biru"></p>
-                            <p>Penjelasan: fungsi COUNTIFS di Excel menghitung sel berdasarkan dua kriteria atau lebih. Fungsi COUNTIFS ini memiliki 2 pasangan rentang/kriteria.</p>
+                            <p class="moreInfo"><b>Penjelasan:</b> fungsi COUNTIFS di Excel menghitung sel berdasarkan dua kriteria atau lebih. Fungsi COUNTIFS ini memiliki 2 pasangan rentang/kriteria.</p>
                             <p>7. Fungsi AVERAGEIF di bawah ini menghitung rata-rata nilai dalam rentang A1:A5 yang tidak sama dengan 0.</p>
                             <p><img class="img-fluid" src="files/not-equal-to_files/image007.png" alt="Sel Rata-Rata Tidak Sama Dengan Nol"></p>
                             <p>Catatan: dengan kata lain, fungsi AVERAGEIF di atas menghitung rata-rata tidak termasuk nol.</p>
@@ -499,18 +500,18 @@
                             <p><img class="img-fluid" src="files/running-total_files/image001.png" alt="Jumlahkan Fungsi di Excel"></p>
                             <p>2. Pilih sel C2 dan masukkan fungsi SUM yang ditunjukkan di bawah ini.</p>
                             <p><img class="img-fluid" src="files/running-total_files/image002.png" alt="Menjalankan Rumus Total"></p>
-                            <p>Penjelasan: sel pertama (B$2) dalam referensi rentang adalah <a href="#mixed-reference">referensi campuran</a>. Kami memperbaiki referensi ke baris 2 dengan menambahkan simbol $ di depan nomor baris. Sel kedua (B2) dalam referensi
-                                rentang adalah <a href="#relative-reference">referensi relatif</a> normal.</p>
+                            <p class="moreInfo"><b>Penjelasan:</b> sel pertama (B$2) dalam referensi rentang adalah <a href="#mixed-reference">referensi campuran</a>. Kami memperbaiki referensi ke baris 2 dengan menambahkan simbol $ di depan nomor baris. Sel kedua (B2) dalam
+                                referensi rentang adalah <a href="#relative-reference">referensi relatif</a> normal.</p>
                             <p>3. Pilih sel C2, klik di sudut kanan bawah sel C2 dan seret ke bawah ke sel C7.</p>
                             <p><img class="img-fluid" src="files/running-total_files/image003.png" alt="Buat Total Berjalan di Excel"></p>
-                            <p>Penjelasan: ketika kita menyeret rumus ke bawah, referensi campuran (B$2) tetap sama, sedangkan referensi relatif (B2) berubah menjadi B3, B4, B5, dll.</p>
+                            <p class="moreInfo"><b>Penjelasan:</b> ketika kita menyeret rumus ke bawah, referensi campuran (B$2) tetap sama, sedangkan referensi relatif (B2) berubah menjadi B3, B4, B5, dll.</p>
                             <p>4. Misalnya, lihat rumus di sel C3.</p>
                             <p><img class="img-fluid" src="files/running-total_files/image004.png" alt="Referensi Campuran"></p>
                             <p>5. Misalnya, lihat rumus di sel C4.</p>
                             <p><img class="img-fluid" src="files/running-total_files/image005.png" alt="Menjalankan Pemeriksaan Total"></p>
                             <p>6. Pada langkah 2, masukkan fungsi IF yang ditunjukkan di bawah ini (dan seret ke bawah ke sel C7) untuk hanya menampilkan jumlah kumulatif jika data telah dimasukkan.</p>
                             <p><img class="img-fluid" src="files/running-total_files/image006.png" alt="Jumlah Kumulatif"></p>
-                            <p>Penjelasan: jika sel B2 tidak kosong (&lt;&gt; berarti tidak sama dengan), <a href="#">fungsi IF</a> di sel C2 menampilkan jumlah kumulatif, selain itu menampilkan string kosong.</p>
+                            <p class="moreInfo"><b>Penjelasan:</b> jika sel B2 tidak kosong (&lt;&gt; berarti tidak sama dengan), <a href="#">fungsi IF</a> di sel C2 menampilkan jumlah kumulatif, selain itu menampilkan string kosong.</p>
                             <p>7. Masukkan penjualan di bulan April.</p>
                             <p><img class="img-fluid" src="files/running-total_files/image007.png" alt="Penjualan di bulan April"></p>
                         </div>
@@ -529,10 +530,11 @@
                     </h2>
                     <div id="flush-collapse-sumif" class="accordion-collapse collapse" aria-labelledby="flush-count-sumif" data-bs-parent="#tab2Konten">
                         <div class="accordion-body p-0">
-                            <p><a href="#sum-numeric-criteria">Kriteria Numerik</a> | <a href="#sum-text-criteria">Kriteria Teks</a> | <a href="#sum-date-criteria">Kriteria Tanggal</a> | <a href="#sum-and-criteria">And Kriteria</a> | <a href="#sum-or-criteria">Or Kriteria</a></p>
-                            <p>Fungsi SUMIF yang kuat di Excel menjumlahkan sel berdasarkan satu kriteria. Halaman ini berisi banyak contoh SUMIF yang mudah diikuti.</p>
+                            <p class="fw-light small"><a href="#sum-numeric-criteria">Kriteria Numerik</a> | <a href="#sum-text-criteria">Kriteria Teks</a> | <a href="#sum-date-criteria">Kriteria Tanggal</a> | <a href="#sum-and-criteria">And Kriteria</a> | <a href="#sum-or-criteria">Or Kriteria</a></p>
 
                             <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/sumif.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                            <p>Fungsi SUMIF yang kuat di Excel menjumlahkan sel berdasarkan satu kriteria. Halaman ini berisi banyak contoh SUMIF yang mudah diikuti.</p>
 
                             <section id="sum-numeric-criteria">
                                 <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
@@ -623,8 +625,10 @@
                     </h2>
                     <div id="flush-collapse-sumproduct" class="accordion-collapse collapse" aria-labelledby="flush-count-sumproduct" data-bs-parent="#tab2Konten">
                         <div class="accordion-body p-0">
-                            <p><a href="#basic-use">Penggunaan Dasar</a> | <a href="#advanced-use">Penggunaan Lanjutan</a></p>
+                            <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/sumif.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p><a href="#basic-use">Penggunaan Dasar</a> | <a href="#advanced-use">Penggunaan Lanjutan</a></p>
+
                             <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/sumproduct.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
                             <p>Untuk menghitung jumlah produk dari angka yang sesuai dalam satu atau beberapa rentang, gunakan fungsi SUMPRODUCT Excel yang kuat.
                             </p>
 
@@ -634,7 +638,7 @@
                                 </div>
                                 <p>1. Misalnya, fungsi SUMPRODUCT di bawah ini menghitung jumlah total yang dibelanjakan.</p>
                                 <p><img class="img-fluid" src="files/sumproduct_files/image001.png" alt="Fungsi Sumproduct di Excel"></p>
-                                <p>Penjelasan: fungsi SUMPRODUCT melakukan perhitungan ini: (2 * 1000) + (4 * 250) + (4 * 100) + (2 * 50) = 3500.</p>
+                                <p class="moreInfo"><b>Penjelasan:</b> fungsi SUMPRODUCT melakukan perhitungan ini: (2 * 1000) + (4 * 250) + (4 * 100) + (2 * 50) = 3500.</p>
                                 <p>2. Rentang harus memiliki dimensi yang sama atau Excel akan menampilkan #VALUE! kesalahan.</p>
                                 <p><img class="img-fluid" src="files/sumproduct_files/image002.png" alt="Rentang Ukuran Tidak Sama"></p>
                                 <p>3. Fungsi SUMPRODUCT memperlakukan setiap entri yang bukan numerik seolah-olah mereka adalah nol.</p>
@@ -652,7 +656,7 @@
                                 <p><img class="img-fluid" src="files/sumproduct_files/image005.png" alt="Fungsi Hitung"></p>
                                 <p>1b. Fungsi SUMPRODUCT di bawah ini menghasilkan hasil yang sama persis.</p>
                                 <p><img class="img-fluid" src="files/sumproduct_files/image006.png" alt="Negatif Ganda"></p>
-                                <p>Penjelasan: --(A1:A7=&quot;star&quot;) direduksi menjadi konstanta array berikut:</p>
+                                <p class="moreInfo"><b>Penjelasan:</b> --(A1:A7=&quot;star&quot;) direduksi menjadi konstanta array berikut:</p>
                                 <p>--{BENAR; SALAH; SALAH; SALAH; SALAH; BENAR; SALAH}</p>
                                 <p>Negatif ganda -- memaksa Boolean ini menjadi 1 dan 0 (TRUE=1, FALSE=0). Hasil:</p>
                                 <p>{1;0;0;0;0;1;0}</p>
@@ -673,7 +677,7 @@
                                 <p><img class="img-fluid" src="files/sumproduct_files/image011.png" alt="Jumlah menurut Tahun"></p>
                                 <p>3b. Fungsi SUMPRODUCT di bawah ini menghasilkan hasil yang sama persis.</p>
                                 <p><img class="img-fluid" src="files/sumproduct_files/image012.png" alt="Operator Perkalian"></p>
-                                <p>Penjelasan: (TAHUN(A1:A5)=2018)*B1:B5 dikurangi menjadi:</p>
+                                <p class="moreInfo"><b>Penjelasan:</b> (TAHUN(A1:A5)=2018)*B1:B5 dikurangi menjadi:</p>
                                 <p>({2018;2017;2018;2017;2017}=2018)*{10;1;7;20;3} dan ini dikurangi menjadi:</p>
                                 <p>{BENAR; SALAH; BENAR; SALAH; SALAH}*{10;1;7;20;3}</p>
                                 <p>Kita tidak memerlukan negatif ganda (lihat contoh 1b) karena operator perkalian * secara otomatis memaksa Boolean menjadi 1 dan 0 (TRUE=1, FALSE=0). Hasil:</p>

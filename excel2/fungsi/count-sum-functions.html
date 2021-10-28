@@ -44,7 +44,7 @@
 
                 <!-- Count Blank/Nonblank Cells -->
                 <div class="accordion-item border-0">
-                    <a href="#CountBlankNonblankCells">Count Sel Kosong/Tidak Kosong</a>
+                    <a href="#CountBlankNonblankCells">Sel Kosong/Tidak Kosong</a>
                     <div id="flush-collapsecount-blank-nonblank-cells" class="accordion-collapse collapse" aria-labelledby="flush-count-blank-nonblank-cells" data-bs-parent="#tab2Konten">
                         <div class="accordion-body p-0">
                             <ul>
@@ -64,6 +64,18 @@
                             <ul>
                                 <li><a href="#len">Len</a></li>
                                 <li><a href="#substitute">Substitute</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Count Characters -->
+                <div class="accordion-item border-0">
+                    <a href="#NotEqualTo">Tidak sebanding dengan</a>
+                    <div id="flush-collapse-not-equal-to" class="accordion-collapse collapse" aria-labelledby="flush-not-equal-to" data-bs-parent="#tab2Konten">
+                        <div class="accordion-body p-0">
+                            <ul>
+                                <li><a href="#Averageif">Averageif</a></li>
                             </ul>
                         </div>
                     </div>
@@ -352,7 +364,7 @@
                 </div>
 
                 <!-- not-equal-to -->
-                <div class="accordion-item">
+                <div class="accordion-item" id="NotEqualTo">
                     <h2 class="accordion-header" id="flush-not-equal-to">
                         <button class="accordion-button collapsed" style="padding: 1rem 0rem; box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-not-equal-to" aria-expanded="false" aria-controls="flush-collapse-not-equal-to">
                         <div class="me-auto">
@@ -364,7 +376,7 @@
                     <div id="flush-collapse-not-equal-to" class="accordion-collapse collapse" aria-labelledby="flush-not-equal-to" data-bs-parent="#tab2Konten">
                         <div class="accordion-body p-0">
                             <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/not-equal-to.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
-                            Di Excel, &lt;&gt; berarti tidak sama dengan. Operator &lt;&gt; di Excel memeriksa apakah dua nilai tidak sama satu sama lain. Mari kita lihat beberapa contoh.</p>
+                            Di Excel, <b>&lt;&gt;</b> berarti tidak sama dengan. Operator <b>&lt;&gt;</b> di Excel memeriksa apakah dua nilai tidak sama satu sama lain. Mari kita lihat beberapa contoh.</p>
                             <p>1. Rumus di sel C1 di bawah mengembalikan TRUE karena nilai teks di sel A1 tidak sama dengan nilai teks di sel B1.</p>
                             <p><img class="img-fluid" src="files/not-equal-to_files/image001.png" alt="Tidak Sama Dengan Operator"></p>
                             <p>2. Rumus di sel C1 di bawah mengembalikan FALSE karena nilai di sel A1 sama dengan nilai di sel B1.</p>
@@ -372,14 +384,14 @@
                             <p>3. Fungsi <b>IF</b> di bawah ini menghitung kemajuan antara nilai awal dan akhir jika nilai akhir tidak sama dengan string kosong (dua tanda kutip ganda tanpa apa pun di antaranya), selain itu fungsi ini menampilkan string
                                 kosong (lihat baris 5).</p>
                             <p><img class="img-fluid" src="files/not-equal-to_files/image003.png" alt="Jika Tidak Sama Dengan String Kosong"></p>
-                            <p>4. Fungsi <b>COUNTIF</b> di bawah ini menghitung jumlah sel dalam range A1:A5 yang tidak sama dengan &quot;merah&quot;.</p>
+                            <p>4. Fungsi <b>COUNTIF</b> di bawah ini menghitung jumlah sel dalam range A1:A5 yang tidak sama dengan <q>red</q>.</p>
                             <p><img class="img-fluid" src="files/not-equal-to_files/image004.png" alt="Count Sel Tidak Sama Dengan Merah"></p>
-                            <p>5. Fungsi <b>COUNTIF</b> di bawah ini menghasilkan hasil yang sama persis. Operator &amp; menggabungkan operator 'tidak sama dengan' dan nilai teks di sel C1.</p>
+                            <p>5. Fungsi <b>COUNTIF</b> di bawah ini menghasilkan hasil yang sama persis. Operator &amp; menggabungkan operator 'not equal to' dan nilai teks di sel C1.</p>
                             <p><img class="img-fluid" src="files/not-equal-to_files/image005.png" alt="Menggabungkan Operator 'Tidak Sama Dengan' dan Nilai Sel"></p>
-                            <p>6. Fungsi <b>COUNTIFS</b> di bawah ini menghitung jumlah sel dalam range A1:A5 yang tidak sama dengan &quot;merah&quot; dan tidak sama dengan &quot;biru&quot;.</p>
+                            <p>6. Fungsi <b>COUNTIFS</b> di bawah ini menghitung jumlah sel dalam range A1:A5 yang tidak sama dengan <q>red</q> dan tidak sama dengan <q>blue</q>.</p>
                             <p><img class="img-fluid" src="files/not-equal-to_files/image006.png" alt="Count Sel Tidak Sama Dengan Merah dan Biru"></p>
                             <p class="moreInfo"><b>Penjelasan:</b> fungsi <b>COUNTIFS</b> di Excel menghitung sel berdasarkan dua kriteria atau lebih. Fungsi <b>COUNTIFS</b> ini memiliki 2 pasangan range/kriteria.</p>
-                            <p>7. Fungsi <b>AVERAGEIF</b> di bawah ini menghitung rata-rata nilai dalam range A1:A5 yang tidak sama dengan 0.</p>
+                            <p id="Averageif">7. Fungsi <b>AVERAGEIF</b> di bawah ini menghitung rata-rata nilai dalam range A1:A5 yang tidak sama dengan 0.</p>
                             <p><img class="img-fluid" src="files/not-equal-to_files/image007.png" alt="Sel Rata-Rata Tidak Sama Dengan Nol"></p>
                             <p class="moreInfo"><b>Catatan:</b> dengan kata lain, fungsi <b>AVERAGEIF</b> di atas menghitung rata-rata tidak termasuk nol.</p>
                         </div>
@@ -540,7 +552,7 @@
                             <p><img class="img-fluid" src="files/running-total_files/image005.png" alt="Menjalankan Pemeriksaan Total"></p>
                             <p>6. Pada langkah 2, masukkan fungsi <b>IF</b> yang ditunjukkan di bawah ini (dan seret ke bawah ke sel C7) untuk hanya menampilkan jumlah kumulatif jika data telah dimasukkan.</p>
                             <p><img class="img-fluid" src="files/running-total_files/image006.png" alt="Jumlah Kumulatif"></p>
-                            <p class="moreInfo"><b>Penjelasan:</b> jika sel B2 tidak kosong (&lt;&gt; berarti tidak sama dengan), <a href="#">fungsi <b>IF</b></a> di sel C2 menampilkan jumlah kumulatif, selain itu menampilkan string kosong.</p>
+                            <p class="moreInfo"><b>Penjelasan:</b> jika sel B2 tidak kosong (<b>&lt;&gt;</b> berarti tidak sama dengan), <a href="#">fungsi <b>IF</b></a> di sel C2 menampilkan jumlah kumulatif, selain itu menampilkan string kosong.</p>
                             <p>7. Masukkan penjualan di bulan April.</p>
                             <p><img class="img-fluid" src="files/running-total_files/image007.png" alt="Penjualan di bulan April"></p>
                         </div>

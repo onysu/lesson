@@ -1281,6 +1281,221 @@
 
                             </section>
 
+                            <section id="Worksheets-LembarKerjaGrup">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-5" id="content">Group Lembar Kerja <small class="fw-light small text-muted">(Group Worksheets)</small></div>
+                                </div>
+                                <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/group-worksheets.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+                                <p>Anda dapat mengelompokkan lembar kerja di Excel jika Anda ingin mengedit beberapa lembar kerja secara bersamaan. Buku kerja kami berisi 3 lembar kerja serupa (North, Mid and South) dan lembar kerja keempat kosong.</p>
+                                <ol>
+                                    <li>
+                                        <p>Untuk mengelompokkan lembar kerja, tahan <kbd>Ctrl</kbd> dan klik tab lembar dari lembar yang ingin Anda kelompokkan.</p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image023.png" alt="Lembar Kerja Kelompok di Excel"></p>
+                                    </li>
+                                    <li>Lepaskan <kbd>Ctrl</kbd>. <br>Sekarang Anda dapat mengedit beberapa lembar kerja secara bersamaan.
+                                    </li>
+                                    <li>
+                                        <p>Misalnya, pada lembar Utara, ubah nilai sel B2 menjadi $1000 dan hapus baris 4.</p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image024.png" alt=Utara></p>
+                                    </li>
+                                    <li>
+                                        <p>Buka dua lembar kerja lainnya dan Anda akan melihat bahwa lembar kerja ini juga telah diedit.
+                                        </p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image025.png" alt=Pertengahan></p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image026.png" alt=Selatan></p>
+                                    </li>
+                                    <li>
+                                        <p>Untuk memisahkan grup, klik kanan salah satu tab sheet dan klik Ungroup Sheets atau klik tab sheet mana pun di luar grup. Misalnya, tab lembar dari Sheet4.</p>
+                                    </li>
+                                </ol>
+                            </section>
+
+                            <section id="Worksheets-Mengkonsolidasikan">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-5" id="content">Konsolidasi <small class="fw-light small text-muted">(Consolidate)</small></div>
+                                </div>
+                                <p>
+                                    <a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/district1.xlsx" title="unduh file latihan" rel="noopener">unduh file district1.xlsx</a>
+                                    <a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/district2.xlsx" title="unduh file latihan" rel="noopener">unduh file district2.xlsx</a>
+                                    <a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/district3.xlsx" title="unduh file latihan" rel="noopener">unduh file district3.xlsx</a>
+                                    <a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/consolidate.xlsx" title="unduh file latihan" rel="noopener">unduh file consolidate.xlsx</a>
+                                </p>
+                                <p>Anda dapat menggunakan fitur Konsolidasi Excel untuk menggabungkan lembar kerja Anda (terletak di satu buku kerja atau beberapa buku kerja) menjadi satu lembar kerja. Di bawah ini Anda dapat menemukan buku kerja dari tiga
+                                    distrik.
+                                </p>
+                                <p>Sebelum Anda mulai: jika lembar kerja Anda identik, mungkin lebih mudah untuk membuat <a href="#">Referensi 3D</a> (jika Anda memiliki satu buku kerja) atau <a href="#">Referensi Eksternal</a> (jika Anda memiliki beberapa
+                                    buku kerja) untuk menggabungkan data Anda.</p>
+                                <p><img class="img-fluid" src="files/Worksheets-contoh_files/image027.png" alt=distrik1></p>
+                                <p><img class="img-fluid" src="files/Worksheets-contoh_files/image028.png" alt=distrik2></p>
+                                <p><img class="img-fluid" src="files/Worksheets-contoh_files/image029.png" alt=distrik3></p>
+                                <p>Seperti yang Anda lihat, lembar kerja tidak identik. Namun, keindahan fitur Konsolidasi adalah dapat dengan mudah menjumlahkan, menghitung, rata-rata, dll. data ini dengan melihat labelnya. Ini jauh lebih mudah daripada
+                                    membuat formula.
+                                </p>
+                                <ol>
+                                    <li>Buka ketiga buku kerja.</li>
+                                    <li>
+                                        <p>Buka buku kerja kosong <span class="fw-light small text-muted">(blank workbook)</span>. Pada tab Data, dalam grup Data Tools, klik Consolidate.</p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image030.png" alt="Klik Konsolidasi"></p>
+                                    </li>
+                                    <li>Pilih fungsi Sum untuk menjumlahkan data.</li>
+                                    <li>Klik di kotak Reference, pilih Range A1:E4 di buku kerja distrik1, dan klik Add.</li>
+                                    <li>
+                                        <p>Ulangi langkah 4 untuk buku kerja distrik2 dan distrik3.</p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image031.png" alt="Tambahkan Referensi"></p>
+                                    </li>
+                                    <li>
+                                        <p>Centang Top row, Left column dan Create links to source data.</p>
+                                        <p class="info"><strong>Catatan:</strong> jika Anda tidak mencentang Top row dan Left column, Excel akan menjumlahkan semua sel yang memiliki posisi yang sama. Misalnya, sel B2 (di distrik1.xlsx) + sel B2 (di distrik2.xlsx) + sel
+                                            B2 (di distrik3.xlsx). Karena lembar kerja kami tidak identik, kami ingin Excel menjumlahkan sel yang memiliki label yang sama. Jika Anda mencentang Create links to source data, Excel membuat tautan ke data
+                                            sumber Anda (data gabungan Anda akan diperbarui jika data sumber Anda berubah) dan membuat <a href="#">Outlining Data</a>.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Klik Oke.</p>
+                                        <p>Hasil.</p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image032.png" alt="Data Konsolidasi yang Diciutkan"></p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image033.png" alt="Data Konsolidasi yang Diperluas"></p>
+                                    </li>
+                                </ol>
+                            </section>
+
+                            <section id="Worksheets-MenampilkanBeberapaLembarKerja">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-5" id="content">Menampilkan Beberapa Lembar Kerja <small class="fw-light small text-muted">(View Multiple Worksheets)</small></div>
+                                </div>
+                                <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/view-multiple-worksheets.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+                                <p>Jika Anda ingin melihat beberapa lembar kerja Excel secara bersamaan, jalankan langkah-langkah berikut.</p>
+                                <ol>
+                                    <li>Buka buku kerja.</li>
+                                    <li>
+                                        <p>Pada tab View, di grup Window, klik New Window.</p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image034.png" alt="Klik Jendela Baru"></p>
+                                        <p>Excel membuka jendela baru yang berisi tampilan dokumen lainnya.</p>
+                                    </li>
+                                    <li>
+                                        <p>Pada tab View, di group Window, klik Arrange All.</p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image035.png" alt="Klik Arrange All"></p>
+                                    </li>
+                                    <li>
+                                        <p>Pilih pengaturan susunan yang diinginkan. Misalnya, klik Horizontal.</p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image036.png" alt="Pengaturan Pengaturan Horisontal"></p>
+                                    </li>
+                                    <li>
+                                        <p>Klik Oke.</p>
+                                        <p>Judul (view-multiple-worksheets:1 dan view-multiple-worksheets:2) menunjukkan bahwa dua jendela dari file yang sama terbuka.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Di jendela bawah, pilih tab lembar Wk2. Anda sekarang dapat melihat penjualan di minggu 1 dan minggu 2 secara bersamaan.
+                                        </p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image037.png" alt="Lihat Beberapa Lembar Kerja Excel"></p>
+                                        <p class="info"><strong>Catatan:</strong> setiap perubahan yang Anda buat pada satu jendela akan segera tercermin di jendela lainnya.</p>
+                                    </li>
+                                    <li>
+                                        <p>Pada tab View, di grup Window, klik View Side by Side (secara default, Synchronous Scrolling diaktifkan), untuk menggulir kedua lembar kerja secara bersamaan.</p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image038.png" alt="Lihat Berdampingan"></p>
+                                    </li>
+                                </ol>
+                            </section>
+
+                            <section id="Worksheets-DapatkanNamaLembar">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-5" id="content">Dapatkan Nama Sheet <small class="fw-light small text-muted">(Get Sheet Name)</small></div>
+                                </div>
+                                <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/get-sheet-name.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+                                <p>Untuk mengembalikan nama sheet dalam sel, gunakan <strong>CELL</strong>, <strong>FIND</strong> dan <strong>MID</strong> di Excel. Tidak ada fungsi bawaan di Excel yang bisa mendapatkan nama sheet.
+                                </p>
+                                <ol>
+                                    <li>
+                                        <p>Fungsi <strong>CELL</strong> di bawah ini mengembalikan jalur lengkap, nama buku kerja, dan nama lembar kerja saat ini.</p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image039.png" alt="Fungsi Sel di Excel"></p>
+                                        <p class="info"><strong>Catatan:</strong> alih-alih menggunakan A1, Anda bisa merujuk ke sel mana pun di lembar kerja pertama untuk mendapatkan nama lembar kerja ini.</p>
+                                    </li>
+                                    <li>
+                                        <p>Gunakan fungsi <strong>FIND</strong> untuk mencari posisi braket kanan. Tambahkan 1 untuk mengembalikan posisi awal nama sheet.</p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image040.png" alt="Temukan Fungsi di Excel"></p>
+                                    </li>
+                                    <li>
+                                        <p>Untuk mengekstrak substring, mulai dari tengah string, gunakan fungsi
+                                            <strong>MID</strong>. Argumen pertama (rumus dari langkah 1). Argumen kedua (rumus dari langkah 2). Argumen ketiga (31).</p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image041.png" alt="Dapatkan Nama Lembar Kerja Saat Ini"></p>
+                                        <p class="info"><strong>Penjelasan:</strong> fungsi <strong>MID</strong> yang ditunjukkan di atas dimulai pada posisi 24 dan mengekstrak 31 karakter (panjang maksimum nama lembar kerja).
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Untuk mendapatkan nama lembar kerja kedua, cukup merujuk ke sel mana saja di lembar kerja kedua.
+                                        </p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image042.png" alt="Dapatkan Nama Lembar Kerja Kedua"></p>
+                                    </li>
+                                </ol>
+                            </section>
+
+                            <section id="Worksheets-PemeriksaanEjaan">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-5" id="content">Pemeriksaan Ejaan <small class="fw-light small text-muted">(Spell Check)</small></div>
+                                </div>
+                                <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/spell-check.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+                                <p>Pelajari cara memeriksa ejaan teks di Excel, menambahkan kata ke kamus kustom atau daftar Koreksi Otomatis dan mempelajari cara mengubah opsi pemeriksaan ejaan.</p>
+                                <ol>
+                                    <li>
+                                        <p>Buka lembar kerja dengan beberapa kesalahan ejaan.</p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image043.png" alt="Periksa Ejaan Seluruh Lembar Kerja"></p>
+                                        <p class="info"><strong>Catatan:</strong> untuk memeriksa ejaan seluruh lembar kerja, cukup pilih satu sel. Jika Anda memilih beberapa sel, Excel hanya memeriksa ejaan untuk sel tersebut.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Pada tab Review, di grup Proofing, klik Spelling (atau tekan F7).</p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image044.png" alt="Klik Ejaan"></p>
+                                    </li>
+                                    <li>
+                                        <p>Pilih suggestion dan klik Change untuk memperbaiki kesalahan ejaan di sel A2.</p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image045.png" alt=Mengubah></p>
+                                        <p class="info"><strong>Catatan:</strong> gunakan daftar drop-down untuk mengubah bahasa Kamus.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Klik Change All untuk memperbaiki semua contoh kesalahan ejaan ini (sel A2 dan sel A7).
+                                        </p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image046.png" alt="Change All"></p>
+                                    </li>
+                                    <li>Klik Ignore Once untuk mengabaikan kesalahan ejaan di sel A2. Klik Ignore All untuk mengabaikan semua contoh kesalahan ejaan ini.</li>
+                                    <li>
+                                        <p>Klik Add to Dictionary untuk menambahkan kata ini ke kamus khusus Anda.</p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image047.png" alt="Add to Dictionary"></p>
+                                    </li>
+                                    <li>
+                                        <p>Untuk mengedit daftar ini, klik Options (lihat gambar di atas) lalu klik Custom Dictionaries (lihat gambar di bawah).
+                                        </p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image048.png" alt="Kamus Kustom"></p>
+                                        <p class="info"><strong>Catatan:</strong> untuk langsung membuka kotak dialog Custom Dictionaries, klik File, Options, Proofing, lalu klik Custom Dictionaries.</p>
+                                    </li>
+                                    <li>
+                                        <p>Klik AutoCorrect untuk menambahkan kata ini ke daftar AutoCorrect Anda (setiap kali Anda mengetik jawaban, Excel akan menggantinya dengan jawaban).</p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image049.png" alt="Koreksi Otomatis"></p>
+                                    </li>
+                                    <li>
+                                        <p>Untuk mengedit daftar ini, klik Options lalu klik AutoCorrect Options.</p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image050.png" alt="Opsi Koreksi Otomatis"></p>
+                                        <p class="info"><strong>Catatan:</strong> Anda juga dapat menambahkan singkatan ke daftar AutoCorrect Anda. Misalnya, jika Anda mengetik gg.com, Excel dapat menggantinya dengan www.google.com.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Untuk memeriksa ejaan kata di rumus bar, pilih kata dan tekan F7.</p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image051.png" alt="Periksa Ejaan Kata di Formula Bar"></p>
+                                    </li>
+                                    <li>
+                                        <p>Untuk memeriksa ejaan seluruh buku kerja, tahan <kbd>Ctrl</kbd> untuk memilih beberapa lembar dan tekan F7.</p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image052.png" alt="Periksa Ejaan Seluruh Buku Kerja"></p>
+                                    </li>
+                                    <li>
+                                        <p>Secara default, Excel mengabaikan kata-kata di UPPERCASE, mengabaikan kata-kata yang berisi angka, mengabaikan internet dan alamat file dan menandai kata-kata yang berulang.
+                                        </p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image053.png" alt="Opsi Pemeriksaan Ejaan"></p>
+                                        <p class="info"><strong>Catatan:</strong> untuk mengubah opsi pemeriksaan ejaan ini, klik File, Options, Proofing.</p>
+                                    </li>
+                                </ol>
+                            </section>
+
                             <a class="d-flex justify-content-end fw-light" href="#dasar-Worksheets">kembali keatas</a>
                         </div>
                     </div>

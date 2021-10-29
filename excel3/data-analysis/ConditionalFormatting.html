@@ -1,0 +1,388 @@
+<div class="accordion-item">
+    <h2 class="accordion-header" id="ConditionalFormatting">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-AnalisisData-PemformatanBersyarat" aria-expanded="false" aria-controls="flush-AnalisisData-PemformatanBersyarat">
+      <figure>
+        <blockquote class="blockquote">
+          <p>Pemformatan Bersyarat <span class="span-text">(Conditional Formatting)</span></p>
+        </blockquote>
+        <figcaption class="blockquote-footer fw-light">
+          menyorot sel dengan warna tertentu
+        </figcaption>
+      </figure>
+    </button>
+    </h2>
+    <div id="flush-AnalisisData-PemformatanBersyarat" class="accordion-collapse collapse" aria-labelledby="ConditionalFormatting" data-bs-parent="#accordionAnalisisDataKonten">
+        <div class="accordion-body">
+
+            <section>
+                <p class="link-text"><a href="#SorotAturanSel">Sorot Aturan Sel</a> | <a href="#HapusAturan">Hapus Aturan</a> | <a href="#AturanAtasBawah">Aturan Atas/Bawah</a> | <a href="#PemformatanBersyaratdenganRumus">Pemformatan
+                          Bersyarat dengan Rumus</a></p>
+                <p><a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/conditional-formatting.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+                <p>Pemformatan bersyarat di Excel memungkinkan Anda untuk menyorot sel dengan warna tertentu, tergantung pada nilai sel.</p>
+                <p class="h5" id="SorotAturanSel">
+                    Sorot Aturan Sel</p>
+                <p>Untuk menyorot sel yang lebih besar dari nilai, jalankan langkah-langkah berikut.</p>
+                <p>1. Pilih rentang A1:A10.</p>
+                <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image001.png" alt="Contoh Pemformatan Bersyarat"></p>
+                <p>2. Pada tab Beranda, dalam grup Gaya, klik Pemformatan Bersyarat.</p>
+                <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image002.png" alt="Klik Pemformatan Bersyarat"></p>
+                <p>3. Klik Sorot Aturan Sel, Lebih Besar Dari.</p>
+                <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image003.png" alt="Sorot Aturan Sel">
+                </p>
+                <p>4. Masukkan nilai 80 dan pilih gaya pemformatan.</p>
+                <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image004.png" alt="Lebih besar dari">
+                </p>
+                <p>5. Klik Oke.</p>
+                <p>Hasil. Excel menyoroti sel yang lebih besar dari 80.</p>
+                <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image005.png" alt="Lebih Besar Dari Hasil"></p>
+                <p>6. Ubah nilai sel A1 menjadi 81.</p>
+                <p>Hasil. Excel mengubah format sel A1 secara otomatis.</p>
+                <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image006.png" alt="Pemformatan Bersyarat di Excel"></p>
+                <p class="info text-break"><strong>Catatan:</strong> Anda juga dapat menggunakan kategori ini (lihat langkah 3) untuk menyorot sel yang kurang dari nilai, di antara dua nilai, sama dengan nilai, sel yang berisi teks tertentu, tanggal (hari ini, minggu lalu, bulan
+                    depan, dll. ),
+                    <a href="#">duplikat</a> atau nilai unik.</p>
+                <p class="h5" id="HapusAturan">
+                    Hapus Aturan</p>
+                <p>Untuk menghapus aturan pemformatan bersyarat, jalankan langkah-langkah berikut.</p>
+                <p>1. Pilih rentang A1:A10.</p>
+                <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image007.png" alt="Pilih Sel"></p>
+                <p>2. Pada tab Beranda, dalam grup Gaya, klik Pemformatan Bersyarat.</p>
+                <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image002.png" alt="Klik Pemformatan Bersyarat"></p>
+                <p>3. Klik Hapus Aturan, Hapus Aturan dari Sel yang Dipilih.</p>
+                <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image008.png" alt="Hapus Aturan"></p>
+                <p class="h5" id="AturanAtasBawah">
+                    Aturan Atas/Bawah</p>
+                <p>Untuk menyorot sel yang di atas rata-rata, jalankan langkah-langkah berikut.</p>
+                <p>1. Pilih rentang A1:A10.</p>
+                <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image009.png" alt="Contoh Aturan Atas/Bawah"></p>
+                <p>2. Pada tab Beranda, dalam grup Gaya, klik Pemformatan Bersyarat.</p>
+                <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image002.png" alt="Klik Pemformatan Bersyarat"></p>
+                <p>3. Klik Aturan Atas/Bawah, Di Atas Rata-Rata.</p>
+                <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image010.png" alt="Aturan Atas/Bawah">
+                </p>
+                <p>4. Pilih gaya pemformatan.</p>
+                <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image011.png" alt="Diatas rata-rata">
+                </p>
+                <p>5. Klik Oke.</p>
+                <p>Hasil. Excel menghitung rata-rata (42,5) dan memformat sel yang berada di atas rata-rata ini.</p>
+                <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image012.png" alt="Hasil Di Atas Rata-Rata"></p>
+                <p class="info text-break"><strong>Catatan:</strong> Anda juga dapat menggunakan kategori ini (lihat langkah 3) untuk menyorot n item teratas, n persen teratas, n item terbawah, n persen terbawah, atau sel yang berada di bawah rata-rata.
+                </p>
+                <p class="h5" id="PemformatanBersyaratdenganRumus">
+                    Pemformatan Bersyarat dengan Rumus</p>
+                <p>Tingkatkan keterampilan Excel Anda ke tingkat berikutnya dan gunakan rumus untuk menentukan sel mana yang akan diformat. Rumus yang menerapkan pemformatan bersyarat harus dievaluasi ke TRUE atau FALSE.</p>
+                <p>1. Pilih rentang A1:E5.</p>
+                <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image013.png" alt="Sel untuk Memformat">
+                </p>
+                <p>2. Pada tab Beranda, dalam grup Gaya, klik Pemformatan Bersyarat.</p>
+                <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image002.png" alt="Klik Pemformatan Bersyarat"></p>
+                <p>3. Klik Aturan Baru.</p>
+                <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image014.png" alt="Klik Aturan Baru">
+                </p>
+                <p>4. Pilih 'Use a formula to determine which cells to format'.</p>
+                <p>5. Masukkan rumus =ISODD(A1)</p>
+                <p>6. Pilih gaya pemformatan dan klik OK.</p>
+                <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image015.png" alt="Gunakan rumus untuk menentukan sel mana yang akan diformat"></p>
+                <p>Hasil. Excel menyoroti semua angka ganjil.</p>
+                <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image016.png" alt="Angka ganjil"></p>
+                <p class="info text-break"><strong>Penjelasan:</strong> selalu tulis rumus untuk sel kiri atas dalam rentang yang dipilih. Excel secara otomatis menyalin rumus ke sel lain. Jadi, sel A2 berisi rumus =ISODD(A2), sel A3 berisi rumus =ISODD(A3), dll.
+                </p>
+                <p>Berikut contoh lain.</p>
+                <p>7. Pilih rentang A2:D7.</p>
+                <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image017.png" alt="Pilih Rentang"></p>
+                <p>8. Ulangi langkah 2-4 di atas.</p>
+                <p>9. Masukkan rumus =$C2=&quot;USA&quot;</p>
+                <p>10. Pilih gaya pemformatan dan klik OK.</p>
+                <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image018.png" alt="Format nilai di mana rumus ini benar"></p>
+                <p>Hasil. Excel menyoroti semua pesanan AS.</p>
+                <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image019.png" alt="Pemformatan Bersyarat dengan Rumus"></p>
+                <p class="info text-break"><strong>Penjelasan:</strong> kami memperbaiki <a href="#">referensi</a> ke kolom C dengan menempatkan simbol $ di depan huruf kolom ($C2). Akibatnya, sel B2, C2 dan sel D2 juga berisi rumus =$C2=&quot;USA&quot;, sel A3, B3, C3 dan D3 berisi
+                    rumus =$C3=&quot;USA&quot;, dll.</p>
+                <a class="d-flex justify-content-end fw-light" href="#ConditionalFormatting">kembali keatas</a>
+            </section>
+
+            <section id="ContohPenggunaanConditionalFormatting">
+                <details>
+                    <summary class="lead border-bottom py-2">Contoh Penggunaan Conditional Formatting</summary>
+                    <p class="link-text mt-2">
+                        <a href="#KelolaAturan">Kelola Aturan</a> |
+                        <a href="#DataBars">Data Bars</a> |
+                        <a href="#SkalaWarna">Skala Warna</a> |
+                        <a href="#SetIkon">Set Ikon</a> |
+                        <a href="#TemukanDuplikat">Temukan Duplikat</a> |
+                        <a href="#BarisAlternatifWarna">Baris Warna Alternatif </a> |
+                        <a href="#BandingkanDuaDaftar">Bandingkan Dua Daftar</a> |
+                        <a href="#AturanyangBertentangan">Aturan yang Bertentangan</a> |
+                        <a href="#HeatMap">Heat Map</a>
+                    </p>
+                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/kelola-aturan.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                        <p class="bd-lead mb-0" id="KelolaAturan">Kelola Aturan</p>
+                    </div>
+                    <p>Untuk menampilkan semua aturan pemformatan bersyarat dalam buku kerja, gunakan Pengelola Aturan Pemformatan Bersyarat. Anda juga dapat menggunakan layar ini untuk membuat, mengedit, dan menghapus aturan.</p>
+                    <p>1. Pilih sel A1.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image020.png" alt="Aturan Pemformatan Bersyarat di Excel"></p>
+                    <p>2. Pada tab Beranda, dalam grup Gaya, klik Pemformatan Bersyarat.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image002.png" alt="Klik Pemformatan Bersyarat"></p>
+                    <p>3. Klik Kelola Aturan.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image021.png" alt="Klik Kelola Aturan"></p>
+                    <p>Manajer Aturan Pemformatan Bersyarat muncul.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image022.png" alt="Manajer Aturan Pemformatan Bersyarat"></p>
+                    <p class="info text-break"><strong>Catatan:</strong> karena kami memilih sel A1, Excel menunjukkan aturan yang diterapkan pada rentang A1:A10.</p>
+                    <p>4. Dari daftar drop-down, ubah Pilihan Saat Ini ke Lembar Kerja Ini, untuk melihat semua aturan pemformatan bersyarat di lembar kerja ini.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image023.png" alt="Tampilkan aturan pemformatan untuk Lembar Kerja Ini"></p>
+                    <p class="info text-break"><strong>Catatan:</strong> klik Aturan Baru, Edit Aturan, dan Hapus Aturan untuk membuat, mengedit, dan menghapus aturan.</p>
+                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/data-bars.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                        <p class="bd-lead mb-0" id="DataBars">Bar Data</p>
+                    </div>
+                    <p>Bilah data di Excel membuatnya sangat mudah untuk memvisualisasikan nilai dalam rentang sel. Bilah yang lebih panjang mewakili nilai yang lebih tinggi.</p>
+                    <p>Untuk menambahkan bilah data, jalankan langkah-langkah berikut.</p>
+                    <p>1. Pilih rentang.</p>
+                    <p>2. Pada tab Beranda, dalam grup Gaya, klik Pemformatan Bersyarat.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image002.png" alt="Klik Pemformatan Bersyarat"></p>
+                    <p>3. Klik Data Bar dan klik subtipe.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image024.png" alt="Klik Data Bar"></p>
+                    <p>Hasil:</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image025.png" alt="Bilah Data di Excel"></p>
+                    <p class="info text-break"><strong>Penjelasan:</strong> secara default, sel yang menyimpan nilai minimum (0 jika tidak ada nilai negatif) tidak memiliki bilah data dan sel yang menyimpan nilai maksimum (95) memiliki bilah data yang mengisi seluruh sel. Semua
+                        sel lainnya diisi secara proporsional.</p>
+                    <p>4. Ubah nilainya.</p>
+                    <p>Hasil. Excel memperbarui bilah data secara otomatis. Baca terus untuk menyesuaikan lebih lanjut bilah data ini.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image026.png" alt="Bilah Data yang Diperbarui"></p>
+                    <p>5. Pilih rentang A1:A10.</p>
+                    <p>6. Pada tab Beranda, dalam grup Gaya, klik Pemformatan Bersyarat, <a href="#">Kelola Aturan</a>.</p>
+                    <p>7. Klik Edit aturan.</p>
+                    <p>Excel meluncurkan kotak dialog Edit Aturan Pemformatan. Di sini Anda dapat menyesuaikan lebih lanjut bilah data Anda (Show Bar Only, Minimum dan Maximum, Bar Appearance, Negative Value and Axis, Bar Direction, dll).
+                    </p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image027.png" alt="Edit Aturan Pemformatan"></p>
+                    <p class="info text-break"><strong>Catatan:</strong> untuk langsung meluncurkan kotak dialog ini untuk aturan baru, pada langkah 3, klik Aturan Lainnya.</p>
+                    <p>8. Pilih Number dari daftar drop-down Minimum dan masukkan nilai 100. Pilih Number dari daftar drop-down Maximum dan masukkan nilai 150.</p>
+                    <p>9. Klik OK dua kali.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image028.png" alt="Edit Deskripsi Aturan"></p>
+                    <p>Hasil.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image029.png" alt="Nilai Minimum dan Maksimum"></p>
+                    <p class="info text-break"><strong>Penjelasan:</strong> sel yang menyimpan nilai 100 (jika ada) tidak memiliki bilah data dan sel yang menyimpan nilai 150 (jika ada) memiliki bilah data yang mengisi seluruh sel. Semua sel lainnya diisi secara proporsional.</p>
+                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/color-scales.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                        <p class="bd-lead mb-0" id="SkalaWarna">Skala Warna</p>
+                    </div>
+                    <p>Skala Warna di Excel membuatnya sangat mudah untuk memvisualisasikan nilai dalam rentang sel. Bayangan warna mewakili nilai dalam sel.</p>
+                    <p>Untuk menambahkan skala warna, jalankan langkah-langkah berikut.</p>
+                    <p>1. Pilih rentang.</p>
+                    <p>2. Pada tab Beranda, dalam grup Gaya, klik Pemformatan Bersyarat.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image002.png" alt="Klik Pemformatan Bersyarat"></p>
+                    <p>3. Klik Color Scales dan klik subtipe.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image030.png" alt="Klik Skala Warna">
+                    </p>
+                    <p>Hasil:</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image031.png" alt="Skala Warna di Excel"></p>
+                    <p class="info text-break"><strong>Penjelasan:</strong> secara default, untuk skala 3-Warna, Excel menghitung persentil ke-50 (juga dikenal sebagai median, nilai tengah, atau titik tengah). Sel yang memegang nilai minimum (9) berwarna merah. Sel yang memegang
+                        median (36) berwarna kuning, dan sel yang memegang nilai maksimum (80) berwarna hijau. Semua sel lainnya diwarnai secara proporsional.</p>
+                    <p>Baca terus untuk menyesuaikan lebih lanjut skala warna ini.</p>
+                    <p>4. Pilih rentang A1:A7.</p>
+                    <p>5. Pada tab Beranda, dalam grup Gaya, klik Pemformatan Bersyarat, <a href="https://www.excel-easy.com/examples/manage-rules.html">Kelola Aturan</a>.</p>
+                    <p>6. Klik Edit aturan.</p>
+                    <p>Excel meluncurkan kotak dialog Edit Aturan Pemformatan. Di sini Anda dapat menyesuaikan lebih lanjut skala warna Anda (Gaya Format, Minimum, Titik Tengah dan Maksimum, Warna, dll).</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image032.png" alt="Edit Aturan Pemformatan"></p>
+                    <p class="info text-break"><strong>Catatan:</strong> untuk langsung meluncurkan kotak dialog ini untuk aturan baru, pada langkah 3, klik Aturan Lainnya.</p>
+                    <p>7. Pilih Skala 2-Warna dari daftar drop-down Format Style dan pilih putih dan biru.</p>
+                    <p>8. Klik OK dua kali.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image033.png" alt="Edit Deskripsi Aturan"></p>
+                    <p>Hasil.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image034.png" alt="Skala 2-Warna"></p>
+                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/icon-sets.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                        <p class="bd-lead mb-0" id="SetIkon">Set Ikon</p>
+                    </div>
+                    <p>Kumpulan Ikon di Excel membuatnya sangat mudah untuk memvisualisasikan nilai dalam rentang sel. Setiap ikon mewakili rentang nilai.</p>
+                    <p>Untuk menambahkan kumpulan ikon, jalankan langkah-langkah berikut.</p>
+                    <p>1. Pilih rentang.</p>
+                    <p>2. Pada tab Beranda, dalam grup Gaya, klik Pemformatan Bersyarat.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image002.png" alt="Klik Pemformatan Bersyarat"></p>
+                    <p>3. Klik Kumpulan Ikon dan klik subtipe.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image035.png" alt="Klik Set Ikon"></p>
+                    <p>Hasil:</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image036.png" alt="Set Ikon di Excel">
+                    </p>
+                    <p class="info text-break"><strong>Penjelasan:</strong> secara default, untuk 3 ikon, Excel menghitung persen ke-67 dan ke-33. Persen ke-67 = min + 0,67 * (maks-min) = 2 + 0,67 * (95-2) = 64,31. Persen ke-33 = min + 0,33 * (maks-min) = 2 + 0,33 * (95-2) = 32,69.
+                        Panah hijau akan ditampilkan untuk nilai yang sama dengan atau lebih besar dari 64,31. Panah kuning akan ditampilkan untuk nilai kurang dari 64,31 dan sama dengan atau lebih besar dari 32,69. Panah merah akan ditampilkan untuk
+                        nilai kurang dari 32,69.</p>
+                    <p>4. Ubah nilainya.</p>
+                    <p>Hasil. Excel memperbarui set ikon secara otomatis. Baca terus untuk menyesuaikan lebih lanjut kumpulan ikon ini.
+                    </p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image037.png" alt="Set Ikon yang Diperbarui"></p>
+                    <p>5. Pilih rentang A1:A10.</p>
+                    <p>6. Pada tab Beranda, dalam grup Gaya, klik Pemformatan Bersyarat, <a href="https://www.excel-easy.com/examples/manage-rules.html">Kelola Aturan</a>.</p>
+                    <p>7. Klik Edit aturan.</p>
+                    <p>Excel meluncurkan kotak dialog Edit Aturan Pemformatan. Di sini Anda dapat menyesuaikan lebih lanjut set ikon Anda (Gaya Ikon, Urutan Ikon Terbalik, Hanya Tampilkan Ikon, Ikon, Nilai, Jenis, dll).</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image038.png" alt="Edit Aturan Pemformatan"></p>
+                    <p class="info text-break"><strong>Catatan:</strong> untuk langsung meluncurkan kotak dialog ini untuk aturan baru, pada langkah 3, klik Aturan Lainnya.</p>
+                    <p>8. Pilih 3 simbol (Tidak Dilingkari) dari daftar drop-down Icon Style. Pilih No Cell Icon dari daftar drop-down Icon kedua. Ubah Types menjadi Number dan ubah Values &#8203;&#8203;menjadi 100 dan 0. Pilih simbol lebih besar dari (&gt;)
+                        di sebelah nilai 0.
+                    </p>
+                    <p>9. Klik OK dua kali.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image039.png" alt="Edit Deskripsi Aturan"></p>
+                    <p>Hasil.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image040.png" alt="Selesai dan Belum Dimulai"></p>
+                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/temukan-duplikat.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                        <p class="bd-lead mb-0" id="TemukanDuplikat">Temukan Duplikat</p>
+                    </div>
+                    <p><a href="#NilaiDuplikat">Nilai Duplikat</a> | <a href="#Triplicates">Triplicates</a> | <a href="#BarisDuplikat">Baris Duplikat</a></p>
+                    <p>Contoh ini mengajarkan Anda cara menemukan nilai duplikat (atau rangkap tiga) dan cara menemukan baris duplikat di Excel.</p>
+                    <p class="h5" id="NilaiDuplikat">
+                        Nilai Duplikat</p>
+                    <p>Untuk menemukan dan menyorot nilai duplikat di Excel, jalankan langkah-langkah berikut.</p>
+                    <p>1. Pilih rentang A1:C10.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image041.png" alt="Temukan Duplikat di Excel"></p>
+                    <p>2. Pada tab Beranda, dalam grup Gaya, klik Pemformatan Bersyarat.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image002.png" alt="Klik Pemformatan Bersyarat"></p>
+                    <p>3. Klik Sorot Aturan Sel, Nilai Duplikat.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image042.png" alt="Klik Sorot Aturan Sel, Nilai Duplikat"></p>
+                    <p>4. Pilih gaya pemformatan dan klik OK.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image043.png" alt="Pilih Gaya Pemformatan"></p>
+                    <p>Hasil. Excel menyoroti nama duplikat.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image044.png" alt=Duplikat></p>
+                    <p class="info text-break"><strong>Catatan:</strong> pilih Unik dari daftar drop-down pertama untuk menyorot nama unik.</p>
+                    <p class="h5" id="Triplicates">
+                        Triplicates <span class="span-text">(Rangkap Tiga)</span></p>
+                    <p>Secara default, Excel menyoroti duplikat (Juliet, Delta), rangkap tiga (Sierra), dll. (lihat gambar sebelumnya). Jalankan langkah-langkah berikut untuk menyorot rangkap tiga saja.</p>
+                    <p>1. Pertama, <a href="https://www.excel-easy.com/data-analysis/conditional-formatting.html#clear-rules">hapus</a> aturan pemformatan bersyarat sebelumnya.</p>
+                    <p>2. Pilih rentang A1:C10.</p>
+                    <p>3. Pada tab Beranda, dalam grup Gaya, klik Pemformatan Bersyarat.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image002.png" alt="Klik Pemformatan Bersyarat"></p>
+                    <p>4. Klik Aturan Baru.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image014.png" alt="Aturan baru"></p>
+                    <p>5. Pilih 'Use a formula to determine which cells to format'.</p>
+                    <p>6. Masukkan rumus = <a href="#">COUNTIF</a> ($A$1:$C$10,A1)=3</p>
+                    <p>7. Pilih gaya pemformatan dan klik OK.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image045.png" alt="Aturan Pemformatan Baru"></p>
+                    <p>Hasil. Excel menyoroti nama rangkap tiga.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image046.png" alt="rangkap tiga"></p>
+                    <p class="info text-break"><strong>Penjelasan:</strong> = <a href="#">COUNTIF</a> ($A$1:$C$10,A1) menghitung jumlah nama dalam rentang A1:C10 yang sama dengan nama di sel A1. Jika COUNTIF($A$1:$C$10,A1) = 3, Excel memformat sel A1. Selalu tulis rumus untuk sel
+                        kiri atas dalam rentang yang dipilih (A1:C10). Excel secara otomatis menyalin rumus ke sel lain. Jadi, sel A2 berisi rumus =COUNTIF($A$1:$C$10,A2)=3, sel A3 =COUNTIF($A$1:$C$10,A3)=3, dll. Perhatikan bagaimana kita membuat <a href="#">referensi absolut</a>                        ($A$1:$C$10) untuk memperbaiki referensi ini.</p>
+                    <p class="info text-break"><strong>Catatan:</strong> Anda dapat menggunakan formula apa pun yang Anda suka. Misalnya, gunakan rumus ini =COUNTIF($A$1:$C$10,A1)&gt;3 untuk menyorot nama yang muncul lebih dari 3 kali.</p>
+                    <p class="h5" id="BarisDuplikat">
+                        Baris Duplikat</p>
+                    <p>Untuk menemukan dan menyorot baris duplikat di Excel, gunakan COUNTIFS (dengan huruf S di akhir) alih-alih COUNTIF.</p>
+                    <p>1. Pilih rentang A1:C10.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image047.png" alt="Temukan Baris Duplikat di Excel"></p>
+                    <p>2. Pada tab Beranda, dalam grup Gaya, klik Pemformatan Bersyarat.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image002.png" alt="Klik Pemformatan Bersyarat"></p>
+                    <p>3. Klik Aturan Baru.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image014.png" alt="Aturan baru"></p>
+                    <p>4. Pilih 'Use a formula to determine which cells to format'.</p>
+                    <p>5. Masukkan rumus =COUNTIFS(Hewan,$A1,Benua,$B1,Negara,$C1)&gt;1</p>
+                    <p>6. Pilih gaya pemformatan dan klik OK.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image048.png" alt="Sorot Baris Duplikat"></p>
+                    <p class="info text-break"><strong>Catatan:</strong> <a href="#">Nama Range</a> Hewan mengacu pada rentang A1:A10, Nama Range Benua mengacu pada rentang B1:B10 dan Nama Range Negara mengacu pada rentang C1:C10. =COUNTIFS(Animals,$A1,Continents,$B1,Countries,$C1)
+                        menghitung jumlah baris berdasarkan beberapa kriteria (Leopard, Afrika, Zambia).</p>
+                    <p>Hasil. Excel menyoroti baris duplikat.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image049.png" alt="Baris Duplikat">
+                    </p>
+                    <p class="info text-break"><strong>Penjelasan:</strong> jika COUNTIFS(Hewan,$A1, Benua,$B1,Negara,$C1) &gt; 1, dengan kata lain, jika ada beberapa baris (Leopard, Afrika, Zambia), Excel memformat sel A1. Selalu tulis rumus untuk sel kiri atas dalam rentang yang
+                        dipilih (A1:C10). Excel secara otomatis menyalin rumus ke sel lain. Kami memperbaiki <a href="#">referensi</a> ke setiap kolom dengan menempatkan simbol $ di depan huruf kolom ($A1, $B1 dan $C1). Akibatnya, sel A1, B1 dan C1 berisi
+                        rumus yang sama, sel A2, B2 dan C2 berisi rumus =COUNTIFS(Animals,$A2,Continents,$B2,Countries,$C2)&gt;1, dll.
+                    </p>
+                    <p>7. Terakhir, Anda dapat menggunakan alat <a href="#">Hapus Duplikat</a> di Excel untuk menghapus baris duplikat dengan cepat. Pada tab Data, dalam grup Alat Data, klik Hapus Duplikat.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image050.png" alt="Klik Hapus Duplikat"></p>
+                    <p>Pada contoh di bawah ini, Excel menghapus semua baris identik (biru) kecuali baris identik pertama yang ditemukan (kuning).</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image051.png" alt="Hapus Duplikat Contoh"> <img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image052.png" alt="Hapus Hasil Duplikat"></p>
+                    <p class="info text-break"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="#">menghapus duplikat</a> untuk mempelajari lebih lanjut tentang alat Excel yang hebat ini.
+                    </p>
+                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/shade-alternate-rows.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                        <p class="bd-lead mb-0" id="BarisAlternatifWarna">Baris Warna Alternatif</p>
+                    </div>
+                    <p>Contoh ini menunjukkan cara menggunakan pemformatan bersyarat untuk menaungi baris alternatif. Mengarsir setiap baris lain dalam rentang membuatnya lebih mudah untuk membaca data Anda.</p>
+                    <p>1. Pilih rentang.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image053.png" alt="Contoh Baris Alternatif Naungan"></p>
+                    <p>2. Pada tab Beranda, dalam grup Gaya, klik Pemformatan Bersyarat.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image002.png" alt="Klik Pemformatan Bersyarat"></p>
+                    <p>3. Klik Aturan Baru.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image014.png" alt="Klik Aturan Baru">
+                    </p>
+                    <p>4. Pilih 'Use a formula to determine which cells to format'.</p>
+                    <p>5. Masukkan rumus =MOD(ROW(),2)</p>
+                    <p>6. Pilih gaya pemformatan dan klik OK.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image054.png" alt="Aturan Pemformatan Baru"></p>
+                    <p>Hasil.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image055.png" alt="Warnai Baris Alternatif di Excel"></p>
+                    <p class="info text-break"><strong>Penjelasan:</strong> <a href="#">fungsi MOD</a> memberikan sisa pembagian. Fungsi ROW() mengembalikan nomor baris. Misalnya, untuk baris ketujuh, MOD(7,2) = 1 karena 7 dibagi 2 sama dengan 3 dengan sisa 1. Untuk baris kedelapan,
+                        MOD(8,2) = 0 karena 8 dibagi 2 sama dengan 4 dengan sisa 0. Akibatnya, semua baris ganjil menghasilkan 1 (TRUE) dan akan diarsir.</p>
+                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/bandingkan-dua-daftar.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                        <p class="bd-lead mb-0" id="BandingkanDuaDaftar">Bandingkan Dua Daftar</p>
+                    </div>
+                    <p>Contoh ini menjelaskan cara membandingkan dua daftar menggunakan pemformatan bersyarat. Misalnya, Anda mungkin memiliki dua daftar tim NFL.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image056.png" alt="Bandingkan Dua Daftar Contoh"></p>
+                    <p>Untuk menyorot tim di daftar pertama yang tidak ada di daftar kedua, jalankan langkah-langkah berikut.</p>
+                    <p>1. Pertama, pilih range A1:A18 dan beri <a href="#">nama</a> firstList, pilih range B1:B20 dan beri nama secondList.</p>
+                    <p>2. Selanjutnya, pilih rentang A1:A18.</p>
+                    <p>3. Pada tab Beranda, dalam grup Gaya, klik Pemformatan Bersyarat.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image002.png" alt="Klik Pemformatan Bersyarat"></p>
+                    <p>4. Klik Aturan Baru.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image014.png" alt="Aturan baru"></p>
+                    <p>5. Pilih 'Use a formula to determine which cells to format'.</p>
+                    <p>6. Masukkan rumus = <a href="https://www.excel-easy.com/examples/countif.html">COUNTIF</a> (Daftar kedua,A1)=0
+                    </p>
+                    <p>7. Pilih gaya pemformatan dan klik OK.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image057.png" alt="Gunakan Rumus"></p>
+                    <p>Hasil. Miami Dolphins dan Tennessee Titans tidak ada dalam daftar kedua.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image058.png" alt="Hasil Daftar Pertama"></p>
+                    <p class="info text-break"><strong>Penjelasan:</strong> = <a href="https://www.excel-easy.com/examples/countif.html">COUNTIF</a> (secondList,A1) menghitung jumlah tim di SecondList yang sama dengan tim di sel A1. Jika COUNTIF(secondList,A1) = 0, tim di sel A1
+                        tidak ada dalam daftar kedua. Akibatnya, Excel mengisi sel dengan warna latar belakang biru. Selalu tulis rumus untuk sel kiri atas dalam rentang yang dipilih (A1:A18). Excel secara otomatis menyalin rumus ke sel lain. Jadi, sel
+                        A2 berisi rumus =COUNTIF(secondList,A2)=0, sel A3 =COUNTIF(secondList,A3)=0, dst.</p>
+                    <p>8. Untuk menyorot tim di daftar kedua yang tidak ada di daftar pertama, pilih rentang B1:B20, buat aturan baru menggunakan rumus =COUNTIF(firstList,B1)=0, dan atur formatnya menjadi isian oranye.</p>
+                    <p>Hasil. Denver Broncos, Arizona Cardinals, Minnesota Vikings dan Pittsburgh Steelers tidak ada dalam daftar pertama.
+                    </p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image059.png" alt="Bandingkan Dua Daftar di Excel"></p>
+                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/bertentangan-aturan.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                        <p class="bd-lead mb-0" id="AturanyangBertentangan">Aturan yang Bertentangan</p>
+                    </div>
+                    <p>Terkadang beberapa aturan pemformatan bersyarat dalam konflik Excel. Aturan yang lebih tinggi selalu menang. Contoh ini menggambarkan dua hasil yang berbeda.</p>
+                    <p>1. Nilai 95 lebih tinggi dari 80 tetapi juga merupakan nilai tertinggi (Top 1). Format (isian kuning vs isian hijau dan warna teks kuning vs warna teks hijau) bertentangan. Aturan yang lebih tinggi selalu menang. Akibatnya, nilai 95
+                        berwarna kuning.
+                    </p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image060.png" alt="Aturan Pemformatan Bersyarat yang Berkonflik 1"></p>
+                    <p>Hasil:</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image061.png" alt="Aturan Pemformatan Bersyarat yang Berkonflik 1 Hasil"></p>
+                    <p>2. Pindahkan aturan kedua ke atas. Nilai 95 adalah nilai tertinggi (Atas 1) tetapi juga lebih tinggi dari 80. Format (isian hijau vs isian kuning dan warna teks hijau vs warna teks kuning) bertentangan. Aturan yang lebih tinggi selalu
+                        menang. Hasilnya, nilai 95 berwarna hijau.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image062.png" alt="Aturan Pemformatan Bersyarat yang Berkonflik 2"></p>
+                    <p>Hasil:</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image063.png" alt="Aturan Pemformatan Bersyarat yang Berkonflik 2 Hasil"></p>
+                    <p class="info text-break"><strong>Catatan:</strong> hanya gunakan kotak centang Stop If True untuk kompatibilitas mundur dengan versi Microsoft Excel yang lebih lama.</p>
+                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/heat-map.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                        <p class="bd-lead mb-0" id="HeatMap">Heat Map</p>
+                    </div>
+                    <p>Untuk membuat peta panas di Excel, cukup gunakan pemformatan bersyarat. Peta panas adalah representasi grafis dari data di mana nilai-nilai individual direpresentasikan sebagai warna.</p>
+                    <p>Untuk membuat peta panas, jalankan langkah-langkah berikut.</p>
+                    <p>1. Pilih rentang B3:M11.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image064.png" alt="Data Peta Panas">
+                    </p>
+                    <p>2. Pada tab Beranda, dalam grup Gaya, klik Pemformatan Bersyarat.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image002.png" alt="Klik Pemformatan Bersyarat"></p>
+                    <p>3. Klik Color Scales dan klik subtipe.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image065.png" alt="Klik Skala Warna">
+                    </p>
+                    <p>Hasil. Peta panas dengan angka.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image066.png" alt="Peta Panas dengan Angka"></p>
+                    <p>4. Pilih rentang B3:M11.</p>
+                    <p>5. Klik kanan, lalu klik <a href="https://www.excel-easy.com/basics/format-cells.html">Format Cells</a> (atau tekan CTRL + 1).</p>
+                    <p>6. Pilih kategori Kustom.</p>
+                    <p>7. Ketik kode format angka berikut: <b>;;;</b></p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image067.png" alt="Format Nomor Kustom"></p>
+                    <p>8. Klik Oke.</p>
+                    <p>Hasil. Sebuah peta panas di Excel.</p>
+                    <p><img class="img-fluid" src="../excel/files/ConditionalFormatting_files/image068.png" alt="Peta Panas di Excel"></p>
+                    <p class="info text-break"><strong>Catatan:</strong> Anda dapat dengan jelas melihat bahwa musim panas 2014 di New York sejuk dan Natal 2015 di New York hangat.</p>
+                    <a class="d-flex justify-content-end fw-light" href="#ContohPenggunaanConditionalFormatting">kembali keatas</a>
+                </details>
+            </section>
+        </div>
+    </div>
+</div>

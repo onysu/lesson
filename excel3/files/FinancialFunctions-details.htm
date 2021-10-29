@@ -1,0 +1,1177 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+p.MsoNoSpacing, li.MsoNoSpacing, div.MsoNoSpacing
+	{margin:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-ID link=blue vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNoSpacing>Untuk mengilustrasikan&nbsp;fungsi keuangan&nbsp;Excel
+yang&nbsp;paling populer&nbsp;, kami mempertimbangkan&nbsp;pinjaman&nbsp;dengan
+pembayaran bulanan, tingkat bunga tahunan 6%, durasi 20 tahun, nilai sekarang
+$150.000 (jumlah yang dipinjam) dan nilai masa depan 0 (itulah yang Anda
+harapkan untuk dicapai ketika Anda melunasi pinjaman).</p>
+
+<p class=MsoNoSpacing>Kami melakukan pembayaran bulanan, jadi kami menggunakan
+6%/12 = 0,5% untuk Tarif dan 20*12 = 240 untuk Nper (jumlah total
+periode).&nbsp;Jika kami melakukan pembayaran tahunan pada pinjaman yang sama,
+kami menggunakan 6% untuk Tarif dan 20 untuk Nper.</p>
+
+<p class=MsoNoSpacing><a name=pmt></a>PMT</p>
+
+<p class=MsoNoSpacing>Pilih sel A2 dan masukkan&nbsp;fungsi PMT&nbsp;.</p>
+
+<p class=MsoNoSpacing><img width=604 height=147 id="Picture 8"
+src="FinancialFunctions-details_files/image001.png"
+alt="Sisipkan Fungsi Keuangan Paling Populer di Excel"></p>
+
+<p class=MsoNoSpacing>Catatan: dua argumen terakhir adalah opsional.&nbsp;Untuk
+pinjaman, Fv dapat dihilangkan (nilai masa depan pinjaman sama dengan 0, namun,
+ini disertakan di sini untuk klarifikasi).&nbsp;Jika Jenis dihilangkan,
+diasumsikan bahwa pembayaran jatuh tempo pada akhir periode.</p>
+
+<p class=MsoNoSpacing>Hasil.&nbsp;Pembayaran bulanan sama dengan $1.074,65.</p>
+
+<p class=MsoNoSpacing><img width=604 height=127 id="Picture 7"
+src="FinancialFunctions-details_files/image002.png" alt="fungsi PMT"></p>
+
+<p class=MsoNoSpacing>Tip: ketika bekerja dengan fungsi keuangan di Excel,
+selalu tanyakan pada diri sendiri, apakah saya melakukan pembayaran (negatif)
+atau apakah saya menerima uang (positif)?&nbsp;Kami melunasi pinjaman sebesar
+$150.000 (positif, kami menerima jumlah itu) dan kami melakukan pembayaran
+bulanan sebesar $1.074,65 (negatif, kami membayar).&nbsp;Kunjungi halaman kami
+tentang&nbsp;<a href="https://www.excel-easy.com/examples/pmt.html">fungsi PMT</a>&nbsp;untuk
+lebih banyak contoh.</p>
+
+<p class=MsoNoSpacing><a name=rate></a>KECEPATAN</p>
+
+<p class=MsoNoSpacing>Jika Rate adalah satu-satunya variabel yang tidak
+diketahui, kita dapat menggunakan fungsi RATE untuk menghitung suku bunga.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=127 id="Picture 6"
+src="FinancialFunctions-details_files/image003.png" alt="fungsi TINGKATKAN"></p>
+
+<p class=MsoNoSpacing><a name=nper></a>NPER</p>
+
+<p class=MsoNoSpacing>Atau fungsi NPER.&nbsp;Jika kita melakukan pembayaran
+bulanan sebesar $1.074,65 untuk pinjaman 20 tahun, dengan tingkat bunga tahunan
+6%, dibutuhkan 240 bulan untuk melunasi pinjaman ini.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=127 id="Picture 5"
+src="FinancialFunctions-details_files/image004.png" alt="fungsi NPER"></p>
+
+<p class=MsoNoSpacing>Kami sudah mengetahui hal ini, tetapi kami dapat mengubah
+pembayaran bulanan sekarang untuk melihat bagaimana hal ini memengaruhi jumlah
+total periode.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=127 id="Picture 4"
+src="FinancialFunctions-details_files/image005.png" alt="fungsi NPER"></p>
+
+<p class=MsoNoSpacing>Kesimpulan: jika kita melakukan pembayaran bulanan
+sebesar $2.074,65, dibutuhkan waktu kurang dari 90 bulan untuk melunasi
+pinjaman ini.</p>
+
+<p class=MsoNoSpacing><a name=pv></a>PV</p>
+
+<p class=MsoNoSpacing>Atau fungsi PV (Present Value).&nbsp;Jika kita melakukan
+pembayaran bulanan sebesar $1.074,65 untuk pinjaman 20 tahun, dengan tingkat
+bunga tahunan 6%, berapa banyak yang dapat kita pinjam?&nbsp;Anda sudah tahu
+jawabannya.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=127 id="Picture 3"
+src="FinancialFunctions-details_files/image006.png" alt="fungsi PV"></p>
+
+<p class=MsoNoSpacing><a name=fv></a>FV</p>
+
+<p class=MsoNoSpacing>Dan kita menyelesaikan bab ini dengan fungsi FV (Future
+Value).&nbsp;Jika kita melakukan pembayaran bulanan sebesar $1.074,65 untuk
+pinjaman 20 tahun, dengan tingkat bunga tahunan 6%, apakah kita melunasi
+pinjaman ini?&nbsp;Ya.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=127 id="Picture 2"
+src="FinancialFunctions-details_files/image007.png" alt="fungsi FV"></p>
+
+<p class=MsoNoSpacing>Tapi, jika kita melakukan pembayaran bulanan hanya
+$1.000,00, kita masih memiliki hutang setelah 20 tahun.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=127 id="Picture 1"
+src="FinancialFunctions-details_files/image008.png" alt="fungsi FV"></p>
+
+<p class=MsoNoSpacing>PMT</p>
+
+<p class=MsoNoSpacing>&nbsp;</p>
+
+<p class=MsoNoSpacing><a
+href="https://www.excel-easy.com/examples/pmt.html#pmt-examples">Contoh PMT</a>
+| <a href="https://www.excel-easy.com/examples/pmt.html#ppmt-ipmt">PPMT dan
+IPMT</a></p>
+
+<p class=MsoNoSpacing>Fungsi&nbsp;PMT di Excel&nbsp;menghitung pembayaran
+pinjaman berdasarkan pembayaran konstan dan tingkat bunga konstan.&nbsp;Halaman
+ini berisi banyak&nbsp;contoh PMT yang&nbsp;mudah diikuti&nbsp;.</p>
+
+<p class=MsoNoSpacing><a name=pmt-examples></a>Contoh PMT</p>
+
+<p class=MsoNoSpacing>Pertimbangkan pinjaman dengan tingkat bunga tahunan 6%,
+durasi 20 tahun, nilai sekarang $ 150.000 (jumlah yang dipinjam) dan nilai masa
+depan 0 (itulah yang ingin Anda capai saat Anda melunasi pinjaman).</p>
+
+<p class=MsoNoSpacing>1. Fungsi PMT di bawah ini menghitung pembayaran tahunan.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=127 id="Picture 17"
+src="FinancialFunctions-details_files/image009.png" alt="Pembayaran Tahunan"></p>
+
+<p class=MsoNoSpacing>Catatan: jika argumen kelima dihilangkan, diasumsikan
+bahwa pembayaran jatuh tempo pada akhir periode.&nbsp;Kami melunasi pinjaman
+sebesar $150.000 (positif, kami menerima jumlah itu) dan kami melakukan
+pembayaran tahunan sebesar $13.077.68 (negatif, kami membayar).</p>
+
+<p class=MsoNoSpacing>2. Fungsi PMT di bawah ini menghitung pembayaran
+triwulanan.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=127 id="Picture 16"
+src="FinancialFunctions-details_files/image010.png" alt="Pembayaran Triwulanan"></p>
+
+<p class=MsoNoSpacing>Catatan: kami melakukan pembayaran triwulanan, jadi kami
+menggunakan 6%/4 = 1,5% untuk Tarif dan 20*4 = 80 untuk Nper (jumlah total
+periode).</p>
+
+<p class=MsoNoSpacing>3. Fungsi PMT di bawah ini menghitung pembayaran bulanan.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=127 id="Picture 15"
+src="FinancialFunctions-details_files/image011.png" alt="Pembayaran bulanan"></p>
+
+<p class=MsoNoSpacing>Catatan: kami melakukan pembayaran bulanan, jadi kami
+menggunakan 6%/12 = 0,5% untuk Tarif dan 20*12 = 240 untuk Nper (jumlah periode
+total).</p>
+
+<p class=MsoNoSpacing>Pertimbangkan&nbsp;<a
+href="https://www.excel-easy.com/examples/investment-annuity.html#investment">investasi</a>&nbsp;dengan
+tingkat bunga tahunan 8% dan nilai sekarang 0. Berapa banyak uang yang harus
+Anda setorkan pada akhir setiap tahun untuk memiliki $1.448,66 dalam rekening
+dalam 10 tahun?</p>
+
+<p class=MsoNoSpacing>4. Fungsi PMT di bawah ini menghitung setoran tahunan.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=127 id="Picture 14"
+src="FinancialFunctions-details_files/image012.png" alt="Setoran Tahunan"></p>
+
+<p class=MsoNoSpacing>Penjelasan: dalam waktu 10 tahun, Anda membayar 10 * $100
+(negatif) = $1000, dan Anda akan menerima $1.448.66 (positif) setelah 10
+tahun.&nbsp;Semakin tinggi bunga, semakin cepat uang Anda tumbuh.</p>
+
+<p class=MsoNoSpacing>Pertimbangkan&nbsp;<a
+href="https://www.excel-easy.com/examples/investment-annuity.html#annuity">anuitas</a>&nbsp;dengan
+tingkat bunga tahunan 6% dan nilai sekarang $83.748,46 (nilai
+pembelian).&nbsp;Berapa banyak uang yang dapat Anda tarik pada setiap akhir
+bulan selama 20 tahun ke depan?</p>
+
+<p class=MsoNoSpacing>5. Fungsi PMT di bawah ini menghitung penarikan bulanan.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=127 id="Picture 13"
+src="FinancialFunctions-details_files/image013.png" alt="Penarikan Bulanan"></p>
+
+<p class=MsoNoSpacing>Penjelasan: Anda memerlukan pembayaran satu kali sebesar
+$83.748,46 (negatif) untuk membayar anuitas ini.&nbsp;Anda akan menerima 240 *
+$600 (positif) = $144,000 di masa mendatang.&nbsp;Ini adalah contoh lain bahwa
+uang tumbuh dari waktu ke waktu.</p>
+
+<p class=MsoNoSpacing><a name=ppmt-ipmt></a>PPMT dan IPMT</p>
+
+<p class=MsoNoSpacing>Pertimbangkan pinjaman dengan tingkat bunga tahunan 5%,
+durasi 2 tahun dan nilai sekarang (jumlah yang dipinjam) $ 20.000.</p>
+
+<p class=MsoNoSpacing>1. Fungsi PMT di bawah ini menghitung pembayaran bulanan.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=127 id="Picture 12"
+src="FinancialFunctions-details_files/image014.png" alt="Fungsi PMT di Excel"></p>
+
+<p class=MsoNoSpacing>Catatan: kami melakukan pembayaran bulanan, jadi kami
+menggunakan 5%/12 untuk Tarif dan 2*12 untuk Nper (jumlah periode total).</p>
+
+<p class=MsoNoSpacing>2. Fungsi PPMT di Excel menghitung bagian pokok
+pembayaran.&nbsp;Argumen kedua menentukan nomor pembayaran.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=127 id="Picture 11"
+src="FinancialFunctions-details_files/image015.png" alt="fungsi PPMT"></p>
+
+<p class=MsoNoSpacing>Penjelasan: fungsi PPMT di atas menghitung bagian pokok
+pembayaran ke-5.</p>
+
+<p class=MsoNoSpacing>3. Fungsi IPMT di Excel menghitung bagian bunga dari
+pembayaran.&nbsp;Argumen kedua menentukan nomor pembayaran.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=127 id="Picture 10"
+src="FinancialFunctions-details_files/image016.png" alt="fungsi IPMT"></p>
+
+<p class=MsoNoSpacing>Penjelasan: fungsi IPMT di atas menghitung bagian bunga
+dari pembayaran ke-5.</p>
+
+<p class=MsoNoSpacing>4. Diperlukan waktu 24 bulan untuk melunasi pinjaman
+ini.&nbsp;Buat&nbsp;<a
+href="https://www.excel-easy.com/examples/loan-amortization-schedule.html">jadwal
+amortisasi pinjaman</a>&nbsp;(lihat gambar di bawah) untuk melihat dengan jelas
+bagaimana bagian pokok meningkat dan bagian bunga berkurang dengan setiap
+pembayaran.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=707 id="Picture 9"
+src="FinancialFunctions-details_files/image017.png"
+alt="Jadwal Amortisasi Pinjaman"></p>
+
+<p class=MsoNoSpacing>Catatan: bagian pokok dan bagian bunga selalu dijumlahkan
+dengan jumlah pembayaran.</p>
+
+<p class=MsoNoSpacing>Pinjaman dengan Jangka Waktu Berbeda</p>
+
+<p class=MsoNoSpacing>&nbsp;</p>
+
+<p class=MsoNoSpacing>Contoh ini mengajarkan Anda bagaimana membandingkan&nbsp;pinjaman
+dengan jangka waktu yang berbeda&nbsp;di&nbsp;Excel&nbsp;.</p>
+
+<p class=MsoNoSpacing>1. Pertama, kami menghitung pembayaran bulanan pinjaman
+dengan tingkat bunga tahunan 6%, durasi 20 tahun dan nilai sekarang (jumlah
+yang dipinjam) sebesar $150.000.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=127 id="Picture 20"
+src="FinancialFunctions-details_files/image018.png" alt="Pembayaran bulanan"></p>
+
+<p class=MsoNoSpacing>Catatan: kami melakukan pembayaran bulanan, jadi kami
+menggunakan 6%/12 = 0,5% untuk Tarif dan 20*12 = 240 untuk Nper (jumlah periode
+total).</p>
+
+<p class=MsoNoSpacing>2. Selanjutnya, pilih rentang A2:D2 dan seret ke bawah
+dua baris.</p>
+
+<p class=MsoNoSpacing>3. Ubah durasi dua pinjaman lainnya menjadi 25 dan 30
+tahun.</p>
+
+<p class=MsoNoSpacing>Hasil:</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=167 id="Picture 19"
+src="FinancialFunctions-details_files/image019.png"
+alt="Contoh Pinjaman dengan Jangka Waktu Berbeda"></p>
+
+<p class=MsoNoSpacing>Pembayaran bulanan selama 30 tahun ($899,33) terlihat
+bagus dibandingkan dengan $966,45 dan $1.074,65.&nbsp;Benar?</p>
+
+<p class=MsoNoSpacing>4. Tapi sekarang kita menghitung Total Dibayar untuk
+setiap pinjaman.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=167 id="Picture 18"
+src="FinancialFunctions-details_files/image020.png"
+alt="Pinjaman dengan Jangka Waktu Berbeda di Excel"></p>
+
+<p class=MsoNoSpacing>Pembayaran bulanan selama 30 tahun ($899,33) tiba-tiba
+tidak terlihat menarik lagi.&nbsp;Kesimpulan: semakin lama durasi pinjaman,
+semakin banyak bunga yang Anda bayar.</p>
+
+<p class=MsoNoSpacing>Investasi atau Anuitas</p>
+
+<p class=MsoNoSpacing>&nbsp;</p>
+
+<p class=MsoNoSpacing><a
+href="https://www.excel-easy.com/examples/investment-annuity.html#investment">Investasi</a>
+| <a href="https://www.excel-easy.com/examples/investment-annuity.html#annuity">anuitas</a></p>
+
+<p class=MsoNoSpacing>Contoh ini mengajarkan Anda bagaimana menghitung
+nilai&nbsp;masa depan&nbsp;dari suatu&nbsp;investasi&nbsp;atau nilai&nbsp;sekarang&nbsp;dari
+suatu&nbsp;anuitas&nbsp;.</p>
+
+<p class=MsoNoSpacing>Kiat: saat bekerja dengan fungsi keuangan di Excel,
+selalu tanyakan pada diri sendiri, apakah saya melakukan pembayaran (negatif)
+atau apakah saya menerima uang (positif)?</p>
+
+<p class=MsoNoSpacing><a name=investment></a>Investasi</p>
+
+<p class=MsoNoSpacing>Asumsikan bahwa pada akhir setiap tahun, Anda menyetor
+$100 ke rekening tabungan.&nbsp;Pada tingkat bunga tahunan 8%, berapa nilai
+investasi Anda setelah 10 tahun?</p>
+
+<p class=MsoNoSpacing>1. Masukkan fungsi FV (Nilai Masa Depan).</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=227 id="Picture 24"
+src="FinancialFunctions-details_files/image021.png" alt="Masukkan fungsi FV"></p>
+
+<p class=MsoNoSpacing>2. Masukkan argumen.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=207 id="Picture 23"
+src="FinancialFunctions-details_files/image022.png"
+alt="Nilai Investasi Masa Depan"></p>
+
+<p class=MsoNoSpacing>Dalam waktu 10 tahun, Anda membayar 10 * $100 (negatif) =
+$1000, dan Anda akan menerima $1.448,66 (positif) setelah 10
+tahun.&nbsp;Semakin tinggi bunga, semakin cepat uang Anda tumbuh.</p>
+
+<p class=MsoNoSpacing>Catatan: dua argumen terakhir adalah opsional.&nbsp;Jika
+dihilangkan, Pv = 0 (tidak ada nilai sekarang).&nbsp;Jika Jenis dihilangkan,
+diasumsikan bahwa pembayaran jatuh tempo pada akhir periode.</p>
+
+<p class=MsoNoSpacing><a name=annuity></a>anuitas</p>
+
+<p class=MsoNoSpacing>Asumsikan Anda ingin membeli anuitas yang akan membayar
+$600 sebulan, selama 20 tahun ke depan.&nbsp;Pada tingkat bunga tahunan 6%,
+berapa biaya anuitas?</p>
+
+<p class=MsoNoSpacing>1. Masukkan fungsi PV (Present Value).</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=207 id="Picture 22"
+src="FinancialFunctions-details_files/image023.png" alt="Masukkan fungsi PV"></p>
+
+<p class=MsoNoSpacing>2. Masukkan argumen.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=207 id="Picture 21"
+src="FinancialFunctions-details_files/image024.png"
+alt="Nilai Sekarang dari Anuitas"></p>
+
+<p class=MsoNoSpacing>Anda memerlukan pembayaran satu kali sebesar $83.748,46
+(negatif) untuk membayar anuitas ini.&nbsp;Anda akan menerima 240 * $600
+(positif) = $144,000 di masa mendatang.&nbsp;Ini adalah contoh lain bahwa uang
+tumbuh dari waktu ke waktu.</p>
+
+<p class=MsoNoSpacing>Catatan: kami menerima pembayaran bulanan, jadi kami
+menggunakan 6%/12 = 0,5% untuk Tarif dan 20*12 = 240 untuk Nper.&nbsp;Dua
+argumen terakhir adalah opsional.&nbsp;Jika dihilangkan, Fv = 0 (tidak ada
+nilai masa depan).&nbsp;Jika Jenis dihilangkan, diasumsikan bahwa pembayaran
+jatuh tempo pada akhir periode.&nbsp;Anuitas ini tidak memperhitungkan harapan
+hidup, inflasi, dll.</p>
+
+<p class=MsoNoSpacing>Bunga Majemuk</p>
+
+<p class=MsoNoSpacing>&nbsp;</p>
+
+<p class=MsoNoSpacing>Apa itu&nbsp;bunga majemuk&nbsp;dan apa rumus bunga
+majemuk di&nbsp;Excel&nbsp;?&nbsp;Contoh ini memberi Anda jawaban atas
+pertanyaan-pertanyaan ini.</p>
+
+<p class=MsoNoSpacing>1. Asumsikan Anda memasukkan $100 ke bank.&nbsp;Berapa
+nilai investasi Anda setelah 1 tahun dengan tingkat bunga tahunan
+8%?&nbsp;Jawabannya adalah $108.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=127 id="Picture 32"
+src="FinancialFunctions-details_files/image025.png" alt="Contoh Bunga Majemuk"></p>
+
+<p class=MsoNoSpacing>2. Sekarang bunga ($8) ini juga akan menghasilkan bunga
+(bunga majemuk) tahun depan.&nbsp;Berapa nilai investasi Anda setelah 2 tahun
+dengan tingkat bunga tahunan 8%?&nbsp;Jawabannya adalah $116,64.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=147 id="Picture 31"
+src="FinancialFunctions-details_files/image026.png"
+alt="Investasi Setelah 2 Tahun"></p>
+
+<p class=MsoNoSpacing>3. Berapa nilai investasi Anda setelah 5
+tahun?&nbsp;Cukup seret rumus ke bawah ke sel A6.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=207 id="Picture 30"
+src="FinancialFunctions-details_files/image027.png"
+alt="Investasi Setelah 5 Tahun"></p>
+
+<p class=MsoNoSpacing>Jawabannya adalah $146,93.</p>
+
+<p class=MsoNoSpacing>4. Yang kita lakukan hanyalah mengalikan 100 dengan 1,08,
+5 kali.&nbsp;Jadi kita juga bisa langsung menghitung nilai investasi setelah 5
+tahun.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=127 id="Picture 29"
+src="FinancialFunctions-details_files/image028.png" alt="Bunga Majemuk di Excel"></p>
+
+<p class=MsoNoSpacing>yang sama dengan:</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=127 id="Picture 28"
+src="FinancialFunctions-details_files/image029.png" alt="Rumus Bunga Majemuk"></p>
+
+<p class=MsoNoSpacing>Catatan: tidak ada fungsi khusus untuk bunga majemuk di
+Excel.&nbsp;Namun, Anda dapat dengan mudah membuat&nbsp;kalkulator bunga
+majemuk&nbsp;untuk membandingkan tarif yang berbeda dan jangka waktu yang
+berbeda.</p>
+
+<p class=MsoNoSpacing>5. Asumsikan Anda memasukkan $100 ke bank.&nbsp;Berapa
+nilai investasi Anda setelah 5 tahun dengan tingkat bunga tahunan 8%?&nbsp;Anda
+sudah tahu jawabannya.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=227 id="Picture 27"
+src="FinancialFunctions-details_files/image030.png"
+alt="Kalkulator Bunga Majemuk"></p>
+
+<p class=MsoNoSpacing>Catatan:&nbsp;rumus bunga majemuk&nbsp;dikurangi menjadi
+=100*(1+0.08/1)^(1*5), =100*(1.08)^5</p>
+
+<p class=MsoNoSpacing>6. Asumsikan Anda memasukkan $10.000 ke bank.&nbsp;Berapa
+nilai investasi Anda setelah 15 tahun dengan tingkat bunga tahunan 4% yang
+dimajemukkan setiap tiga bulan?&nbsp;Jawabannya adalah $18.167.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=227 id="Picture 26"
+src="FinancialFunctions-details_files/image031.png" alt="Majemuk Triwulanan"></p>
+
+<p class=MsoNoSpacing>Catatan: rumus bunga majemuk dikurangi menjadi
+=10000*(1+0.04/4)^(4*15), =10000*(1.01)^60</p>
+
+<p class=MsoNoSpacing>7. Asumsikan Anda memasukkan $10.000 ke bank.&nbsp;Berapa
+nilai investasi Anda setelah 10 tahun dengan tingkat bunga tahunan 5% majemuk
+bulanan?&nbsp;Jawabannya adalah $16.470.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=227 id="Picture 25"
+src="FinancialFunctions-details_files/image032.png" alt="Dimajemukkan Bulanan"></p>
+
+<p class=MsoNoSpacing>Catatan: rumus bunga majemuk selalu berhasil.&nbsp;Jika
+Anda tertarik, unduh file Excel dan coba sendiri!</p>
+
+<p class=MsoNoSpacing>CAGR</p>
+
+<p class=MsoNoSpacing>&nbsp;</p>
+
+<p class=MsoNoSpacing>Tidak ada&nbsp;fungsi&nbsp;CAGR&nbsp;di&nbsp;Excel&nbsp;.&nbsp;Namun,
+cukup gunakan fungsi RRI di Excel untuk menghitung tingkat pertumbuhan tahunan
+majemuk (CAGR) dari suatu investasi selama periode tahun.</p>
+
+<p class=MsoNoSpacing>1. Fungsi RRI di bawah ini menghitung CAGR
+investasi.&nbsp;Jawabannya adalah 8%.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=267 id="Picture 36"
+src="FinancialFunctions-details_files/image033.png"
+alt="Tingkat Pertumbuhan Tahunan Majemuk"></p>
+
+<p class=MsoNoSpacing>Catatan: fungsi RRI memiliki tiga argumen (jumlah tahun =
+5, awal = 100, akhir = 147).</p>
+
+<p class=MsoNoSpacing>2. CAGR mengukur pertumbuhan investasi seolah-olah itu
+tumbuh pada tingkat yang stabil secara majemuk tahunan.&nbsp;Kita bisa
+memeriksa ini.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=127 id="Picture 35"
+src="FinancialFunctions-details_files/image034.png"
+alt="Dimajemukkan Setiap Tahun"></p>
+
+<p class=MsoNoSpacing>yang sama dengan:</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=127 id="Picture 34"
+src="FinancialFunctions-details_files/image035.png" alt="Tingkat Stabil"></p>
+
+<p class=MsoNoSpacing>Catatan: lagi, jumlah tahun atau n = 5, mulai = 100,
+akhir = 147, CAGR = 8%.</p>
+
+<p class=MsoNoSpacing>3. Mengetahui hal ini, kita dapat dengan mudah
+membuat&nbsp;rumus CAGR&nbsp;yang menghitung tingkat pertumbuhan tahunan
+gabungan dari suatu investasi di Excel.</p>
+
+<p class=MsoNoSpacing>A2 = A1 * (1 + CAGR)&nbsp;n</p>
+
+<p class=MsoNoSpacing>akhir = mulai * (1 + CAGR)&nbsp;n</p>
+
+<p class=MsoNoSpacing>akhir/mulai = (1 + CAGR)&nbsp;n</p>
+
+<p class=MsoNoSpacing>(akhir/mulai)&nbsp;1/n&nbsp;= (1 + CAGR)</p>
+
+<p class=MsoNoSpacing>CAGR = (akhir/mulai)&nbsp;1/n&nbsp;- 1</p>
+
+<p class=MsoNoSpacing>4. Rumus CAGR di bawah ini berhasil.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=267 id="Picture 33"
+src="FinancialFunctions-details_files/image036.png" alt="rumus CAGR di Excel"></p>
+
+<p class=MsoNoSpacing>Catatan: dengan kata lain, untuk menghitung CAGR
+investasi di Excel, bagi nilai investasi di akhir dengan nilai investasi di
+awal.&nbsp;Selanjutnya, naikkan hasil ini ke pangkat 1 dibagi dengan jumlah
+tahun.&nbsp;Akhirnya, kurangi 1 dari hasil ini.</p>
+
+<p class=MsoNoSpacing>Jadwal Amortisasi Pinjaman</p>
+
+<p class=MsoNoSpacing>&nbsp;</p>
+
+<p class=MsoNoSpacing>Contoh ini mengajarkan Anda cara membuat&nbsp;jadwal
+amortisasi pinjaman&nbsp;di&nbsp;Excel&nbsp;.</p>
+
+<p class=MsoNoSpacing>1. Kami menggunakan&nbsp;<a
+href="https://www.excel-easy.com/examples/pmt.html">fungsi PMT</a>&nbsp;untuk
+menghitung pembayaran bulanan pinjaman dengan tingkat bunga tahunan 5%, durasi
+2 tahun dan nilai sekarang (jumlah pinjaman) $20.000.&nbsp;Kami
+menggunakan&nbsp;<a href="https://www.excel-easy.com/examples/named-range.html">rentang
+bernama</a>&nbsp;untuk sel input.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=227 id="Picture 42"
+src="FinancialFunctions-details_files/image037.png" alt="fungsi PMT"></p>
+
+<p class=MsoNoSpacing>2. Gunakan fungsi PPMT untuk menghitung bagian pokok
+pembayaran.&nbsp;Argumen kedua menentukan nomor pembayaran.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=227 id="Picture 41"
+src="FinancialFunctions-details_files/image038.png" alt="Bagian Utama"></p>
+
+<p class=MsoNoSpacing>3. Gunakan fungsi IPMT untuk menghitung bagian bunga dari
+pembayaran.&nbsp;Argumen kedua menentukan nomor pembayaran.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=227 id="Picture 40"
+src="FinancialFunctions-details_files/image039.png" alt="Bagian Bunga"></p>
+
+<p class=MsoNoSpacing>4. Perbarui saldo.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=227 id="Picture 39"
+src="FinancialFunctions-details_files/image040.png" alt="Perbarui Saldo"></p>
+
+<p class=MsoNoSpacing>5. Pilih rentang A7:E7 (pembayaran pertama) dan seret ke
+bawah satu baris.&nbsp;Ubah rumus saldo.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=247 id="Picture 38"
+src="FinancialFunctions-details_files/image041.png" alt="Rumus Saldo Berbeda"></p>
+
+<p class=MsoNoSpacing>6. Pilih rentang A8:E8 (pembayaran kedua) dan seret ke
+bawah ke baris 30.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=707 id="Picture 37"
+src="FinancialFunctions-details_files/image017.png"
+alt="Jadwal Amortisasi Pinjaman"></p>
+
+<p class=MsoNoSpacing>Dibutuhkan 24 bulan untuk melunasi pinjaman
+ini.&nbsp;Lihat bagaimana bagian pokok meningkat dan bagian bunga berkurang
+dengan setiap pembayaran.</p>
+
+<p class=MsoNoSpacing>NPV</p>
+
+<p class=MsoNoSpacing>&nbsp;</p>
+
+<p class=MsoNoSpacing><a
+href="https://www.excel-easy.com/examples/npv.html#net-present-value">Nilai
+Sekarang Bersih</a> | <a
+href="https://www.excel-easy.com/examples/npv.html#understanding-the-npv-function">Memahami
+fungsi NPV</a></p>
+
+<p class=MsoNoSpacing>Rumus NPV yang&nbsp;benar&nbsp;di&nbsp;Excel&nbsp;menggunakan
+fungsi NPV untuk menghitung nilai sekarang dari serangkaian arus kas masa depan
+dan mengurangi investasi awal.</p>
+
+<p class=MsoNoSpacing><a name=net-present-value></a>Nilai bersih sekarang</p>
+
+<p class=MsoNoSpacing>Misalnya, proyek X membutuhkan investasi awal sebesar
+$100 (sel B5).</p>
+
+<p class=MsoNoSpacing>1. Kami mengharapkan laba $0 pada akhir periode pertama,
+laba $50 pada akhir periode kedua, dan laba $150 pada akhir periode ketiga.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=247 id="Picture 51"
+src="FinancialFunctions-details_files/image042.png" alt="Arus kas"></p>
+
+<p class=MsoNoSpacing>2. Tingkat diskonto sama dengan 15%.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=247 id="Picture 50"
+src="FinancialFunctions-details_files/image043.png" alt="Nilai diskon"></p>
+
+<p class=MsoNoSpacing>Penjelasan: ini adalah tingkat pengembalian investasi
+alternatif terbaik.&nbsp;Misalnya, Anda juga dapat menyimpan uang Anda di
+rekening tabungan hasil tinggi dengan tingkat bunga 15%.</p>
+
+<p class=MsoNoSpacing>3. Rumus NPV di bawah ini menghitung nilai&nbsp;sekarang
+bersih&nbsp;dari proyek X.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=287 id="Picture 49"
+src="FinancialFunctions-details_files/image044.png"
+alt="Rumus Nilai Sekarang Bersih"></p>
+
+<p class=MsoNoSpacing>Penjelasan: nilai sekarang bersih positif menunjukkan
+bahwa tingkat pengembalian proyek melebihi tingkat diskonto.&nbsp;Dengan kata
+lain, lebih baik menginvestasikan uang Anda dalam proyek X daripada menyimpan
+uang Anda di rekening tabungan dengan bunga tinggi 15%.</p>
+
+<p class=MsoNoSpacing>4. Rumus NPV di bawah ini menghitung nilai sekarang
+bersih dari proyek Y.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=287 id="Picture 48"
+src="FinancialFunctions-details_files/image045.png" alt="Proyek Y"></p>
+
+<p class=MsoNoSpacing>Penjelasan: net present value proyek Y lebih tinggi dari
+net present value proyek X. Oleh karena itu, proyek Y merupakan investasi yang
+lebih baik.</p>
+
+<p class=MsoNoSpacing><a name=understanding-the-npv-function></a>Memahami
+fungsi NPV</p>
+
+<p class=MsoNoSpacing>Fungsi NPV hanya menghitung nilai sekarang dari
+serangkaian arus kas masa depan.&nbsp;Ini bukan ilmu roket.</p>
+
+<p class=MsoNoSpacing>1. Misalnya, proyek A membutuhkan investasi awal sebesar
+$100 (sel B5).&nbsp;Kami mengharapkan laba $0 pada akhir periode pertama, laba
+$0 pada akhir periode kedua, dan laba $152,09 pada akhir periode ketiga.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=287 id="Picture 47"
+src="FinancialFunctions-details_files/image046.png"
+alt="Nilai Sekarang Bersih 0"></p>
+
+<p class=MsoNoSpacing>Penjelasan: nilai sekarang bersih 0 menunjukkan bahwa
+proyek menghasilkan tingkat pengembalian yang sama dengan tingkat
+diskonto.&nbsp;Dengan kata lain, kedua opsi tersebut, menginvestasikan uang
+Anda dalam proyek A atau memasukkan uang Anda ke dalam rekening tabungan hasil
+tinggi dengan tingkat bunga 15%, menghasilkan pengembalian yang sama.</p>
+
+<p class=MsoNoSpacing>2. Kami dapat memeriksa ini.&nbsp;Asumsikan Anda
+memasukkan $100 ke bank.&nbsp;Berapa nilai investasi Anda setelah 3 tahun
+dengan tingkat bunga tahunan 15%?&nbsp;Jawabannya adalah $152,09.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=127 id="Picture 46"
+src="FinancialFunctions-details_files/image047.png" alt="Bunga Majemuk"></p>
+
+<p class=MsoNoSpacing>Catatan: tingkat pengembalian internal proyek A sama
+dengan 15%.&nbsp;Tingkat pengembalian internal adalah tingkat diskonto yang
+membuat nilai sekarang bersih sama dengan nol.&nbsp;Kunjungi halaman kami
+tentang&nbsp;<a href="https://www.excel-easy.com/examples/irr.html">fungsi IRR</a>&nbsp;untuk
+mempelajari lebih lanjut tentang topik ini.</p>
+
+<p class=MsoNoSpacing>3. Fungsi NPV hanya menghitung nilai sekarang dari
+serangkaian arus kas masa depan.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=287 id="Picture 45"
+src="FinancialFunctions-details_files/image048.png" alt="Fungsi NPV di Excel"></p>
+
+<p class=MsoNoSpacing>4. Kita bisa memeriksa ini.&nbsp;Pertama, kami menghitung
+nilai sekarang (pv) dari setiap arus kas.&nbsp;Selanjutnya, kami menjumlahkan
+nilai-nilai ini.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=287 id="Picture 44"
+src="FinancialFunctions-details_files/image049.png"
+alt="Jumlahkan Nilai Sekarang"></p>
+
+<p class=MsoNoSpacing>Penjelasan: $152,09 dalam 3 tahun bernilai $100
+sekarang.&nbsp;$50 dalam 2 tahun bernilai 37,81 sekarang.&nbsp;$25 dalam 1 tahun
+bernilai $21,74 sekarang.&nbsp;Apakah Anda akan menukar $159,55 dengan $100
+sekarang?&nbsp;Tentu saja, proyek B adalah investasi yang bagus.</p>
+
+<p class=MsoNoSpacing>5. Rumus NPV di bawah ini menghitung nilai sekarang
+bersih dari proyek B.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=287 id="Picture 43"
+src="FinancialFunctions-details_files/image050.png" alt="Nilai bersih sekarang"></p>
+
+<p class=MsoNoSpacing>Penjelasan: proyek B adalah investasi yang baik karena
+nilai sekarang bersih ($159.55 - $100) lebih besar dari 0.</p>
+
+<p class=MsoNoSpacing>IRR</p>
+
+<p class=MsoNoSpacing>&nbsp;</p>
+
+<p class=MsoNoSpacing><a
+href="https://www.excel-easy.com/examples/irr.html#simple-irr-example">Contoh
+IRR sederhana</a> | <a
+href="https://www.excel-easy.com/examples/irr.html#present-values">Nilai
+Sekarang</a> | <a href="https://www.excel-easy.com/examples/irr.html#irr-rule">aturan
+IRR</a></p>
+
+<p class=MsoNoSpacing>Gunakan&nbsp;fungsi IRR&nbsp;di&nbsp;Excel&nbsp;untuk
+menghitung tingkat pengembalian internal proyek.&nbsp;Tingkat pengembalian
+internal adalah tingkat diskonto yang membuat nilai sekarang bersih sama dengan
+nol.</p>
+
+<p class=MsoNoSpacing><a name=simple-irr-example></a>Contoh IRR sederhana</p>
+
+<p class=MsoNoSpacing>Misalnya, proyek A membutuhkan investasi awal sebesar
+$100 (sel B5).</p>
+
+<p class=MsoNoSpacing>1. Kami mengharapkan laba $0 pada akhir periode pertama,
+laba $0 pada akhir periode kedua, dan laba $152,09 pada akhir periode ketiga.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=247 id="Picture 62"
+src="FinancialFunctions-details_files/image051.png" alt="Arus kas"></p>
+
+<p class=MsoNoSpacing>Catatan: tingkat diskonto sama dengan 10%.&nbsp;Ini
+adalah tingkat pengembalian investasi alternatif terbaik.&nbsp;Misalnya, Anda
+juga bisa menyimpan uang Anda di rekening tabungan dengan tingkat bunga 10%.</p>
+
+<p class=MsoNoSpacing>2.&nbsp;<a
+href="https://www.excel-easy.com/examples/npv.html">Rumus NPV yang</a>&nbsp;benar&nbsp;di
+Excel menggunakan fungsi NPV untuk menghitung nilai sekarang dari serangkaian
+arus kas masa depan dan mengurangkan investasi awal.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=287 id="Picture 61"
+src="FinancialFunctions-details_files/image052.png" alt="Nilai bersih sekarang"></p>
+
+<p class=MsoNoSpacing>Penjelasan: nilai sekarang bersih positif menunjukkan
+bahwa tingkat pengembalian proyek melebihi tingkat diskonto.&nbsp;Dengan kata
+lain, lebih baik menginvestasikan uang Anda di proyek A daripada menyimpan uang
+Anda di rekening tabungan dengan tingkat bunga 10%.</p>
+
+<p class=MsoNoSpacing>3. Fungsi IRR di bawah ini menghitung&nbsp;tingkat
+pengembalian internal&nbsp;proyek A.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=307 id="Picture 60"
+src="FinancialFunctions-details_files/image053.png" alt="Fungsi IRR di Excel"></p>
+
+<p class=MsoNoSpacing>4. Tingkat pengembalian internal adalah tingkat diskonto
+yang membuat nilai sekarang bersih sama dengan nol.&nbsp;Untuk melihat ini
+dengan jelas, ganti tingkat diskonto 10% di sel B2 dengan 15%.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=307 id="Picture 59"
+src="FinancialFunctions-details_files/image054.png"
+alt="Nilai Sekarang Bersih 0"></p>
+
+<p class=MsoNoSpacing>Penjelasan: nilai sekarang bersih 0 menunjukkan bahwa
+proyek menghasilkan tingkat pengembalian yang sama dengan tingkat
+diskonto.&nbsp;Dengan kata lain, kedua opsi tersebut, menginvestasikan uang
+Anda dalam proyek A atau memasukkan uang Anda ke dalam rekening tabungan hasil
+tinggi dengan tingkat bunga 15%, menghasilkan pengembalian yang sama.</p>
+
+<p class=MsoNoSpacing>5. Kami dapat memeriksa ini.&nbsp;Asumsikan Anda
+memasukkan $100 ke bank.&nbsp;Berapa nilai investasi Anda setelah 3 tahun
+dengan tingkat bunga tahunan 15%?&nbsp;Jawabannya adalah $152,09.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=127 id="Picture 58"
+src="FinancialFunctions-details_files/image047.png" alt="Bunga Majemuk"></p>
+
+<p class=MsoNoSpacing>Kesimpulan: Anda dapat membandingkan kinerja proyek
+dengan rekening tabungan dengan tingkat bunga yang sama dengan IRR.</p>
+
+<p class=MsoNoSpacing><a name=present-values></a>Nilai Sekarang</p>
+
+<p class=MsoNoSpacing>Misalnya, proyek B membutuhkan investasi awal sebesar
+$100 (sel B5).&nbsp;Kami mengharapkan laba $25 pada akhir periode pertama, laba
+$50 pada akhir periode kedua, dan laba $152,09 pada akhir periode ketiga.</p>
+
+<p class=MsoNoSpacing>1. Fungsi IRR di bawah ini menghitung tingkat
+pengembalian internal proyek B.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=307 id="Picture 57"
+src="FinancialFunctions-details_files/image055.png"
+alt="Tingkat Pengembalian Internal"></p>
+
+<p class=MsoNoSpacing>2. Sekali lagi, tingkat pengembalian internal adalah
+tingkat diskonto yang membuat nilai sekarang bersih sama dengan nol.&nbsp;Untuk
+melihat ini dengan jelas, ganti tingkat diskonto 15% di sel B2 dengan 39%.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=307 id="Picture 56"
+src="FinancialFunctions-details_files/image056.png" alt="NPV sama dengan 0"></p>
+
+<p class=MsoNoSpacing>Penjelasan: nilai sekarang bersih 0 menunjukkan bahwa
+proyek menghasilkan tingkat pengembalian yang sama dengan tingkat
+diskonto.&nbsp;Dengan kata lain, kedua opsi tersebut, menginvestasikan uang
+Anda di proyek B atau memasukkan uang Anda ke dalam rekening tabungan hasil
+tinggi dengan tingkat bunga 39%, menghasilkan pengembalian yang sama.</p>
+
+<p class=MsoNoSpacing>3. Kita dapat memeriksa ini.&nbsp;Pertama, kami
+menghitung nilai sekarang (pv) dari setiap arus kas.&nbsp;Selanjutnya, kami
+menjumlahkan nilai-nilai ini.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=307 id="Picture 55"
+src="FinancialFunctions-details_files/image057.png"
+alt="Jumlahkan Nilai Sekarang"></p>
+
+<p class=MsoNoSpacing>Penjelasan: daripada menginvestasikan $100 dalam proyek
+B, Anda juga dapat menempatkan $17,95 di rekening tabungan selama 1 tahun,
+$25,77 di rekening tabungan selama 2 tahun dan $56,28 di rekening tabungan
+selama tiga tahun, dengan tingkat bunga tahunan sama dengan IRR (39%).</p>
+
+<p class=MsoNoSpacing><a name=irr-rule></a>aturan IRR</p>
+
+<p class=MsoNoSpacing>Aturan IRR menyatakan bahwa jika IRR lebih besar dari
+tingkat pengembalian yang disyaratkan, Anda harus menerima proyek
+tersebut.&nbsp;Nilai IRR sering digunakan untuk membandingkan investasi.</p>
+
+<p class=MsoNoSpacing>1. Fungsi IRR di bawah ini menghitung tingkat
+pengembalian internal proyek X.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=307 id="Picture 54"
+src="FinancialFunctions-details_files/image058.png" alt=IRR></p>
+
+<p class=MsoNoSpacing>Kesimpulan: jika tingkat pengembalian yang diminta sama
+dengan 15%, Anda harus menerima proyek ini karena IRR proyek ini sama dengan
+29%.</p>
+
+<p class=MsoNoSpacing>2. Fungsi IRR di bawah ini menghitung tingkat pengembalian
+internal proyek Y.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=307 id="Picture 53"
+src="FinancialFunctions-details_files/image059.png" alt="IRR lebih tinggi"></p>
+
+<p class=MsoNoSpacing>Kesimpulan: secara umum IRR yang lebih tinggi menunjukkan
+investasi yang lebih baik.&nbsp;Oleh karena itu, proyek Y merupakan investasi
+yang lebih baik daripada proyek X.</p>
+
+<p class=MsoNoSpacing>3. Fungsi IRR di bawah ini menghitung tingkat pengembalian
+internal proyek Z.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=307 id="Picture 52"
+src="FinancialFunctions-details_files/image060.png" alt="Arus Kas Rendah"></p>
+
+<p class=MsoNoSpacing>Kesimpulan: IRR yang lebih tinggi tidak selalu lebih
+baik.&nbsp;Proyek Z memiliki IRR yang lebih tinggi daripada proyek Y tetapi
+arus kasnya jauh lebih rendah.</p>
+
+<p class=MsoNoSpacing>Depresiasi</p>
+
+<p class=MsoNoSpacing>&nbsp;</p>
+
+<p class=MsoNoSpacing><a
+href="https://www.excel-easy.com/examples/depreciation.html#sln">SLN</a> | <a
+href="https://www.excel-easy.com/examples/depreciation.html#syd">SYD</a> | <a
+href="https://www.excel-easy.com/examples/depreciation.html#db">DB</a> | <a
+href="https://www.excel-easy.com/examples/depreciation.html#ddb">DDB</a> | <a
+href="https://www.excel-easy.com/examples/depreciation.html#vdb">VDB</a></p>
+
+<p class=MsoNoSpacing>Excel&nbsp;menawarkan lima&nbsp;fungsi penyusutan yang&nbsp;berbeda&nbsp;.&nbsp;Kami
+mempertimbangkan aset dengan biaya awal $10.000, nilai sisa (nilai sisa) $1000
+dan masa manfaat 10 periode (tahun).&nbsp;Di bawah ini Anda dapat menemukan
+hasil dari kelima fungsi tersebut.&nbsp;Setiap fungsi akan dijelaskan secara
+terpisah dalam 5 paragraf berikutnya.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=701 id="Picture 69"
+src="FinancialFunctions-details_files/image061.png"
+alt="Hasil Depresiasi di Excel"></p>
+
+<p class=MsoNoSpacing>Sebagian besar aset kehilangan nilai lebih di awal masa
+manfaatnya.&nbsp;Fungsi SYD, DB, DDB dan VDB memiliki properti ini.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=353 id="Picture 68"
+src="FinancialFunctions-details_files/image062.png" alt="Bagan Penyusutan"></p>
+
+<p class=MsoNoSpacing><a name=sln></a>SLN</p>
+
+<p class=MsoNoSpacing>Fungsi SLN (Garis Lurus) mudah.&nbsp;Setiap tahun
+nilai&nbsp;penyusutannya&nbsp;sama.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=267 id="Picture 67"
+src="FinancialFunctions-details_files/image063.png"
+alt="Fungsi SLN (Garis Lurus)"></p>
+
+<p class=MsoNoSpacing>Fungsi SLN melakukan perhitungan berikut.&nbsp;Nilai
+Penghentian = (10.000 - 1.000) / 10 = 900,00.&nbsp;Jika kita kurangi nilai ini
+10 kali, aset terdepresiasi dari 10.000 menjadi 1000 dalam 10 tahun (lihat
+gambar pertama, bagian bawah).</p>
+
+<p class=MsoNoSpacing><a name=syd></a>SYD</p>
+
+<p class=MsoNoSpacing>Fungsi SYD (Sum of Years' Digits) juga
+mudah.&nbsp;Seperti yang Anda lihat di bawah, fungsi ini juga membutuhkan nomor
+periode.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=267 id="Picture 66"
+src="FinancialFunctions-details_files/image064.png"
+alt="Fungsi SYD (Jumlah Digit Tahun)"></p>
+
+<p class=MsoNoSpacing>Fungsi SYD melakukan perhitungan berikut.&nbsp;Masa
+manfaat 10 tahun menghasilkan jumlah tahun 10 + 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 +
+1 = 55. Aset kehilangan nilai 9000.&nbsp;Nilai penyusutan periode 1 = 10/55 *
+9000 = 1.636,36.&nbsp;Nilai depresiasi periode 2 = 9/55 * 9000 = 1,472,73, dll.
+Jika kita mengurangi nilai ini, aset terdepresiasi dari 10.000 menjadi 1000
+dalam 10 tahun (lihat gambar pertama, bagian bawah).</p>
+
+<p class=MsoNoSpacing><a name=db></a>DB</p>
+
+<p class=MsoNoSpacing>Fungsi DB (Declining Balance) sedikit lebih
+rumit.&nbsp;Ini menggunakan tarif tetap untuk menghitung nilai depresiasi.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=267 id="Picture 65"
+src="FinancialFunctions-details_files/image065.png"
+alt="Fungsi DB (Saldo Menurun)"></p>
+
+<p class=MsoNoSpacing>Fungsi DB melakukan perhitungan berikut.&nbsp;Tarif tetap
+= 1 - ((sisa / biaya) ^ (1 / kehidupan)) = 1 - (1000/10.000)^(1/10) = 1 -
+0,7943282347 = 0,206 (dibulatkan ke 3 tempat desimal).&nbsp;Nilai penyusutan
+periode 1 = 10.000 * 0.206 = 2.060.00.&nbsp;Nilai depresiasi periode 2 =
+(10.000 - 2.060.00) * 0.206 = 1635.64, dll. Jika kita mengurangi nilai-nilai
+ini, aset terdepresiasi dari 10.000 menjadi 995,88 dalam 10 tahun (lihat gambar
+pertama, bagian bawah).</p>
+
+<p class=MsoNoSpacing>Catatan: fungsi DB memiliki argumen opsional
+kelima.&nbsp;Anda dapat menggunakan argumen ini untuk menunjukkan jumlah bulan
+yang harus dilalui pada tahun pertama (Jika dihilangkan, diasumsikan
+12).&nbsp;Misalnya, setel argumen ini ke 9 jika Anda membeli aset Anda di awal
+kuartal kedua di tahun 1 (9 bulan lagi di tahun pertama).&nbsp;Excel
+menggunakan rumus yang sedikit berbeda untuk menghitung nilai penghentian untuk
+periode pertama dan terakhir (periode terakhir mewakili tahun ke-11 dengan
+hanya 3 bulan).</p>
+
+<p class=MsoNoSpacing><a name=ddb></a>DDB</p>
+
+<p class=MsoNoSpacing>Fungsi DDB (Double Declining Balance) kembali
+mudah.&nbsp;Namun, terkadang Anda tidak mencapai nilai sisa saat menggunakan
+fungsi ini.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=267 id="Picture 64"
+src="FinancialFunctions-details_files/image066.png"
+alt="Fungsi DDB (Saldo Menurun Ganda)"></p>
+
+<p class=MsoNoSpacing>Fungsi DDB melakukan perhitungan berikut.&nbsp;Masa
+manfaat 10 tahun menghasilkan tingkat 1/10 = 0,1.&nbsp;Karena fungsi ini
+disebut Saldo Menurun Ganda, kami menggandakan nilai ini (faktor =
+2).&nbsp;Nilai penyusutan periode 1 = 10.000 * 0.2 = 2.000.00.&nbsp;Deprecation
+value period 2 = (10,000 - 2,000.00) * 0.2 = 16000.00, dst. Seperti yang
+dikatakan sebelumnya, terkadang Anda tidak mencapai nilai sisa saat Anda
+menggunakan fungsi ini.&nbsp;Dalam contoh ini, jika kita mengurangi nilai
+depresiasi, aset terdepresiasi dari 10.000 menjadi 1073,74 dalam 10 tahun (lihat
+gambar pertama, bagian bawah).&nbsp;Namun, baca terus untuk memperbaikinya.</p>
+
+<p class=MsoNoSpacing>Catatan: fungsi DDB memiliki argumen opsional
+kelima.&nbsp;Anda dapat menggunakan argumen ini untuk menggunakan faktor yang
+berbeda.</p>
+
+<p class=MsoNoSpacing><a name=vdb></a>VDB</p>
+
+<p class=MsoNoSpacing>Fungsi VDB (Variable Declining Balance) menggunakan metode
+DDB (Double Declining Balance) secara default.&nbsp;Argumen ke-4 menunjukkan
+periode awal, argumen ke-5 menunjukkan periode akhir.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=447 id="Picture 63"
+src="FinancialFunctions-details_files/image067.png"
+alt="Fungsi VDB (Variabel Menurun Saldo)"></p>
+
+<p class=MsoNoSpacing>Fungsi VDB melakukan perhitungan yang sama dengan fungsi
+DDB.&nbsp;Namun, beralih ke perhitungan Garis Lurus (nilai kuning) untuk
+memastikan Anda mencapai nilai sisa (lihat gambar pertama, bagian
+bawah).&nbsp;Itu hanya beralih ke perhitungan Garis Lurus ketika Nilai
+Penyusutan, Garis Lurus lebih tinggi dari Nilai Penyusutan, DDB.&nbsp;Pada
+periode 8, Nilai Penyusutan, DDB = 419,43.&nbsp;Kami masih memiliki 2097,15 -
+1000 (lihat gambar pertama, bagian bawah) untuk terdepresiasi.&nbsp;Jika kita
+menggunakan metode Garis Lurus ini menghasilkan 3 nilai penyusutan tersisa 1097,15
+/ 3 = 365,72.&nbsp;Nilai Penyusutan, Garis Lurus tidak lebih tinggi sehingga
+kami tidak beralih.&nbsp;Pada periode 9, Nilai Penyusutan, DDB =
+335,54.&nbsp;Kami masih memiliki 1677,72 - 1000 (lihat gambar pertama, bagian
+bawah) untuk terdepresiasi.&nbsp;Jika kita menggunakan metode Garis Lurus ini
+menghasilkan 2 nilai penyusutan yang tersisa sebesar 677,72 / 2 = 338.</p>
+
+<p class=MsoNoSpacing>Catatan: fungsi VDB jauh lebih fleksibel daripada fungsi
+DDB.&nbsp;Hal ini dapat menghitung nilai depresiasi beberapa
+periode.&nbsp;Dalam contoh ini, =VDB(Cost,Salvage,Life,0,3) dikurangi menjadi
+2000 + 1600 + 1280 = 4880. Ini berisi argumen opsional ke-6 dan ke-7.&nbsp;Anda
+dapat menggunakan argumen ke-6 untuk menggunakan faktor yang berbeda.&nbsp;Jika
+Anda menyetel argumen ke-7 ke TRUE, itu tidak beralih ke perhitungan Garis Lurus
+(sama seperti DDB).</p>
+
+<p class=MsoNoSpacing>Margin Keuntungan</p>
+
+<p class=MsoNoSpacing>&nbsp;</p>
+
+<p class=MsoNoSpacing><a
+href="https://www.excel-easy.com/examples/profit-margin.html#gross-profit-margin">Margin
+Laba Kotor</a> | <a
+href="https://www.excel-easy.com/examples/profit-margin.html#operating-profit-margin">Margin
+Laba Operasi</a> | <a
+href="https://www.excel-easy.com/examples/profit-margin.html#net-profit-margin">Margin
+Laba Bersih</a></p>
+
+<p class=MsoNoSpacing>Menghitung&nbsp;margin laba&nbsp;kotor&nbsp;,&nbsp;margin
+laba&nbsp;operasi, dan&nbsp;margin laba bersih di Excel&nbsp;itu
+mudah.&nbsp;Cukup gunakan rumus yang dijelaskan di halaman ini.</p>
+
+<p class=MsoNoSpacing><a name=gross-profit-margin></a>Marjin laba kotor</p>
+
+<p class=MsoNoSpacing>Asumsikan bisnis Anda memiliki total pendapatan $10.000
+pada bulan Juli dan harga pokok penjualan (COGS) sama dengan $4.000.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=81 id="Picture 84"
+src="FinancialFunctions-details_files/image068.png"
+alt="Total Pendapatan dan COGS"></p>
+
+<p class=MsoNoSpacing>Untuk menghitung margin laba kotor&nbsp;, gunakan rumus
+berikut:</p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td nowrap rowspan=2 style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNoSpacing>Marjin laba kotor</p>
+  </td>
+  <td width=24 nowrap rowspan=2 style='width:18.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNoSpacing>=</p>
+  </td>
+  <td nowrap style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNoSpacing>Total Pendapatan - HPP</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:none;border-top:solid #212121 1.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNoSpacing>Total pendapatan</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNoSpacing><span style='color:white'>1. Rumus di bawah ini
+menghitung angka di atas garis pecahan.&nbsp;Ini disebut laba kotor.</span></p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=147 id="Picture 83"
+src="FinancialFunctions-details_files/image069.png" alt="Laba kotor"></p>
+
+<p class=MsoNoSpacing>2. Bagi hasil ini dengan total pendapatan untuk&nbsp;menghitung
+margin laba kotor di Excel&nbsp;.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=147 id="Picture 82"
+src="FinancialFunctions-details_files/image070.png"
+alt="Hitung Margin Laba Kotor"></p>
+
+<p class=MsoNoSpacing>3. Pada tab Beranda, di grup Angka, klik simbol
+persentase untuk menerapkan format Persentase.</p>
+
+<p class=MsoNoSpacing><img border=0 width=148 height=100 id="Picture 81"
+src="FinancialFunctions-details_files/image071.png" alt="Format Persentase"></p>
+
+<p class=MsoNoSpacing>Hasil:</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=147 id="Picture 80"
+src="FinancialFunctions-details_files/image072.png"
+alt="Rumus Margin Laba Kotor di Excel"></p>
+
+<p class=MsoNoSpacing><a name=operating-profit-margin></a>Margin Laba Operasi</p>
+
+<p class=MsoNoSpacing>Margin laba operasi juga mencakup biaya operasi (OPEX)
+seperti sewa, peralatan, biaya persediaan, pemasaran, dll.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=101 id="Picture 79"
+src="FinancialFunctions-details_files/image073.png" alt="Biaya operasional"></p>
+
+<p class=MsoNoSpacing>Untuk menghitung margin laba operasi&nbsp;, gunakan rumus
+berikut:</p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td nowrap rowspan=2 style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNoSpacing>Margin Laba Operasi</p>
+  </td>
+  <td width=24 nowrap rowspan=2 style='width:18.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNoSpacing>=</p>
+  </td>
+  <td nowrap style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNoSpacing>Pendapatan Total - HPP - OPEX</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:none;border-top:solid #212121 1.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNoSpacing>Total pendapatan</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNoSpacing><span style='color:white'>1. Rumus di bawah ini
+menghitung angka di atas garis pecahan.&nbsp;Ini disebut laba operasi.</span></p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=167 id="Picture 78"
+src="FinancialFunctions-details_files/image074.png" alt="Laba usaha"></p>
+
+<p class=MsoNoSpacing>2. Bagi hasil ini dengan total pendapatan untuk
+menghitung margin laba operasi di Excel.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=167 id="Picture 77"
+src="FinancialFunctions-details_files/image075.png"
+alt="Hitung Margin Laba Operasi"></p>
+
+<p class=MsoNoSpacing>3. Pada tab Beranda, di grup Angka, klik simbol
+persentase untuk menerapkan format Persentase.</p>
+
+<p class=MsoNoSpacing><img border=0 width=148 height=100 id="Picture 76"
+src="FinancialFunctions-details_files/image071.png" alt="Format Persentase"></p>
+
+<p class=MsoNoSpacing>Hasil:</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=167 id="Picture 75"
+src="FinancialFunctions-details_files/image076.png"
+alt="Rumus Margin Laba Operasi di Excel"></p>
+
+<p class=MsoNoSpacing><a name=net-profit-margin></a>Margin Laba Bersih</p>
+
+<p class=MsoNoSpacing>Margin laba bersih juga termasuk biaya non-operasional
+seperti bunga (utang) dan pajak.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=141 id="Picture 74"
+src="FinancialFunctions-details_files/image077.png"
+alt="Total Pendapatan dan Semua Beban"></p>
+
+<p class=MsoNoSpacing>Untuk&nbsp;menghitung margin laba bersih&nbsp;,
+gunakan&nbsp;rumus&nbsp;berikut&nbsp;:</p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse'>
+ <tr>
+  <td nowrap rowspan=2 style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNoSpacing>Margin Laba Bersih</p>
+  </td>
+  <td width=24 nowrap rowspan=2 style='width:18.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNoSpacing>=</p>
+  </td>
+  <td nowrap style='padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNoSpacing>Pendapatan Total - HPP - OPEX - I - T</p>
+  </td>
+ </tr>
+ <tr>
+  <td style='border:none;border-top:solid #212121 1.0pt;padding:0cm 0cm 0cm 0cm'>
+  <p class=MsoNoSpacing>Total pendapatan</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNoSpacing><span style='color:white'>di mana:</span></p>
+
+<p class=MsoNoSpacing>HPP = Harga Pokok Penjualan</p>
+
+<p class=MsoNoSpacing>OPEX = Biaya operasional</p>
+
+<p class=MsoNoSpacing>saya = minat</p>
+
+<p class=MsoNoSpacing>T = Pajak</p>
+
+<p class=MsoNoSpacing>1. Rumus di bawah ini menghitung angka di atas garis
+pecahan.&nbsp;Ini disebut laba bersih.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=207 id="Picture 73"
+src="FinancialFunctions-details_files/image078.png" alt="Batas pemasukan"></p>
+
+<p class=MsoNoSpacing>2. Bagi hasil ini dengan total pendapatan untuk
+menghitung margin laba bersih di Excel.</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=207 id="Picture 72"
+src="FinancialFunctions-details_files/image079.png"
+alt="Hitung Margin Laba Bersih"></p>
+
+<p class=MsoNoSpacing>3. Pada tab Beranda, di grup Angka, klik simbol
+persentase untuk menerapkan format Persentase.</p>
+
+<p class=MsoNoSpacing><img border=0 width=148 height=100 id="Picture 71"
+src="FinancialFunctions-details_files/image071.png" alt="Format Persentase"></p>
+
+<p class=MsoNoSpacing>Hasil:</p>
+
+<p class=MsoNoSpacing><img border=0 width=604 height=207 id="Picture 70"
+src="FinancialFunctions-details_files/image080.png"
+alt="Rumus Margin Laba Bersih di Excel"></p>
+
+<p class=MsoNoSpacing>Kesimpulan: margin laba bersih 35% berarti bisnis Anda
+memiliki pendapatan bersih $0,35 untuk setiap dolar penjualan.</p>
+
+</div>
+
+</body>
+
+</html>

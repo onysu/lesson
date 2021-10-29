@@ -1,0 +1,139 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-ID link="#0563C1" vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal>Perbedaan waktu</p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal><a
+href="https://www.excel-easy.com/examples/time-difference.html#simple-formula">Rumus
+Sederhana</a> | <a
+href="https://www.excel-easy.com/examples/time-difference.html#time-difference-formula">Rumus
+Selisih Waktu</a> | <a
+href="https://www.excel-easy.com/examples/time-difference.html#time-difference-in-hours-as-decimal-value">Selisih
+Waktu dalam Jam sebagai Nilai Desimal</a> | <a
+href="https://www.excel-easy.com/examples/time-difference.html#time-sheet">Lembar
+Waktu</a></p>
+
+<p class=MsoNormal>Menghitung&nbsp;perbedaan antara dua kali&nbsp;di&nbsp;Excel&nbsp;bisa
+jadi rumit.&nbsp;Waktu ditangani secara internal sebagai angka antara 0 dan 1.</p>
+
+<p class=MsoNormal><a name=simple-formula></a>Rumus Sederhana</p>
+
+<p class=MsoNormal>Mari kita mulai dengan rumus sederhana yang menghitung
+selisih antara dua waktu di hari yang sama.</p>
+
+<p class=MsoNormal>1. Cukup kurangi waktu mulai dari waktu akhir.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=127 id="Picture 14"
+src="PerbedaanWaktu_files/image001.png"
+alt="Hitung Perbedaan Antara Dua Kali di Excel"></p>
+
+<p class=MsoNormal>Catatan: AM digunakan untuk waktu malam dan pagi
+hari.&nbsp;PM digunakan untuk waktu pada sore dan malam hari.&nbsp;Ubah&nbsp;<a
+href="https://www.excel-easy.com/examples/date-time-formats.html">format Waktu</a>&nbsp;untuk
+menampilkan waktu dengan atau tanpa AM/PM.</p>
+
+<p class=MsoNormal>2. Ubah format angka nilai di sel A2, B2 dan C2 menjadi
+Umum.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=127 id="Picture 13"
+src="PerbedaanWaktu_files/image002.png" alt="Angka Antara 0 dan 1"></p>
+
+<p class=MsoNormal>Catatan: waktu ditangani secara internal sebagai angka
+antara 0 dan 1. Misalnya, pukul 06:00 direpresentasikan sebagai 0,25
+(seperempat sepanjang hari).</p>
+
+<p class=MsoNormal><a name=time-difference-formula></a>Rumus Perbedaan Waktu</p>
+
+<p class=MsoNormal>Rumus sederhana yang ditunjukkan di atas tidak berfungsi
+jika waktu mulai sebelum tengah malam dan waktu berakhir setelah tengah malam.</p>
+
+<p class=MsoNormal>1. Waktu yang negatif ditampilkan sebagai ######.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=127 id="Picture 12"
+src="PerbedaanWaktu_files/image003.png" alt="Waktu Negatif"></p>
+
+<p class=MsoNormal>2. Untuk melihat ini dengan jelas, ubah format angka dari
+nilai di sel A2, B2 dan C2 ke Umum.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=127 id="Picture 11"
+src="PerbedaanWaktu_files/image004.png" alt="Perhitungan Waktu"></p>
+
+<p class=MsoNormal>3.&nbsp;Rumus perbedaan waktu di&nbsp;bawah ini selalu
+berhasil.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=127 id="Picture 10"
+src="PerbedaanWaktu_files/image005.png" alt="Rumus Perbedaan Waktu"></p>
+
+<p class=MsoNormal>Penjelasan: jika waktu akhir lebih besar atau sama dengan
+waktu mulai, cukup kurangi waktu mulai dari waktu akhir.&nbsp;Jika tidak,
+tambahkan 1 (hari penuh) ke waktu akhir untuk menunjukkan waktu pada hari
+berikutnya dan kurangi waktu mulai.</p>
+
+<p class=MsoNormal><a name=time-difference-in-hours-as-decimal-valu></a>Perbedaan
+Waktu dalam Jam sebagai Nilai Desimal</p>
+
+<p class=MsoNormal>Untuk menghitung selisih antara dua kali dalam jam sebagai
+nilai desimal, kalikan rumus sebelumnya dengan 24 dan ubah format angka menjadi
+Umum.</p>
+
+<p class=MsoNormal>1. Rumus di bawah ini berhasil.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=127 id="Picture 9"
+src="PerbedaanWaktu_files/image006.png"
+alt="Perbedaan Waktu dalam Jam sebagai Nilai Desimal"></p>
+
+<p class=MsoNormal><a name=time-sheet></a>Lembar Waktu</p>
+
+<p class=MsoNormal>Hitung total jam, jam reguler, dan jam lembur dengan&nbsp;<a
+href="https://www.excel-easy.com/examples/time-sheet.html">kalkulator absen</a>&nbsp;kami&nbsp;.</p>
+
+<p class=MsoNormal><img border=0 width=604 height=321 id="Picture 8"
+src="PerbedaanWaktu_files/image007.png" alt="Kalkulator Timesheet di Excel"></p>
+
+</div>
+
+</body>
+
+</html>

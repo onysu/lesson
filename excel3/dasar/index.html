@@ -72,11 +72,24 @@
 
                 <!-- Worksheets -->
                 <div class="accordion-item border-0">
-                    <a href="#">Worksheets</a>
+                    <a href="#dasar-Worksheets">Worksheets</a>
                     <div id="flush-collapse-Worksheets" class="accordion-collapse collapse" aria-labelledby="flush-heading-Worksheets" data-bs-parent="#tab2MenuKanan">
                         <div class="accordion-body">
                             <ul>
-                                <li><a href="#XXX">XXX</a></li>
+                                <li><a href="#PilihLembarKerja">Pilih Lembar Kerja</a></li>
+                                <li><a href="#SisipkanLembarKerja">Sisipkan Lembar Kerja</a></li>
+                                <li><a href="#GantinamaLembarKerja">Ganti Nama Lembar Kerja</a></li>
+                                <li><a href="#PindahkanLembarKerja">Pindahkan Lembar Kerja</a></li>
+                                <li><a href="#HapusLembarKerja">Menghapus Lembar Kerja</a></li>
+                                <li><a href="#SalinLembarKerja">Salin Lembar Kerja</a></li>
+                                <li><a href="#Worksheets-Zoom">Zoom</a></li>
+                                <li><a href="#Worksheets-Split">Split</a></li>
+                                <li><a href="#Worksheets-BekukanPanel">Freeze Panes</a></li>
+                                <li><a href="#Worksheets-LembarKerjaGrup">Lembar Kerja Grup</a></li>
+                                <li><a href="#Worksheets-Mengkonsolidasikan">Mengkonsolidasikan</a></li>
+                                <li><a href="#Worksheets-MenampilkanBeberapaLembarKerja">Menampilkan Beberapa Lembar Kerja</a></li>
+                                <li><a href="#Worksheets-DapatkanNamaLembar">Dapatkan Nama Lembar</a></li>
+                                <li><a href="#Worksheets-PemeriksaanEjaan">Pemeriksaan Ejaan</a></li>
                             </ul>
                         </div>
                     </div>
@@ -274,11 +287,11 @@
                                             <p><img class="img-fluid" src="../excel/files/ribbon_files/image004.png" alt="Buat tabel"></p>
                                             <p>Hasil. Excel membuat tabel yang diformat dengan baik untuk Anda.</p>
                                             <p><img class="img-fluid" src="../excel/files/ribbon_files/image005.png" alt="tabel excel"></p>
-                                            
-</li>
+
+                                        </li>
                                     </ol>
-<p class="moreInfo"><strong>Catatan:</strong> gunakan panah drop-down untuk mengurutkan dan memfilter dengan cepat.</p>
-                                        
+                                    <p class="moreInfo"><strong>Catatan:</strong> gunakan panah drop-down untuk mengurutkan dan memfilter dengan cepat.</p>
+
                                 </section>
 
                                 <!-- Collapse the Ribbon -->
@@ -423,10 +436,10 @@
                                             <p>Gunakan penggeser zoom pada Status Bar untuk memperbesar atau memperkecil dengan cepat ke persentase yang telah ditentukan sebelumnya.</p>
                                             <p><img class="img-fluid" src="../excel/files/Pita_files/image017.png" alt="Penggeser Zoom">
                                             </p>
-</li>
+                                        </li>
                                     </ol>
-                                            <p class="moreInfo"><strong>Catatan:</strong> gunakan Ribbon untuk <a href="#">memperbesar</a> persentase tertentu atau untuk memperbesar pilihan.</p>
-                                        
+                                    <p class="moreInfo"><strong>Catatan:</strong> gunakan Ribbon untuk <a href="#">memperbesar</a> persentase tertentu atau untuk memperbesar pilihan.</p>
+
                                 </section>
                                 <section>
                                     <h4>Sesuaikan Status Bar</h4>
@@ -895,7 +908,7 @@
                         <button class="accordion-button collapsed" style="padding: 1rem 0rem; box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-Worksheets" aria-expanded="false" aria-controls="flush-collapse-Worksheets">
                             <div class="me-auto">
                                 <div class="fs-3">Worksheets</div>
-                                <small class="text-muted fw-light text-lowercase">...</small>
+                                <small class="text-muted fw-light text-lowercase">buku kerja Excel dapat berisi beberapa lembar kerja.</small>
                             </div>
                         </button>
                     </h2>
@@ -903,22 +916,226 @@
                     <div id="flush-collapse-Worksheets" class="accordion-collapse collapse" aria-labelledby="flush-heading-Worksheets" data-bs-parent="#tab2Konten">
                         <div class="accordion-body p-0">
 
-                            <section id="...">
-                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-3 mb-2 border-bottom">
-                                    <div class="fs-5" id="content">... <small class="text-muted fw-light">(...)</small>
-                                    </div>
+                            <p class="fw-light small">
+                                <a href="#PilihLembarKerja">Pilih Lembar Kerja</a> |
+                                <a href="#SisipkanLembarKerja">Sisipkan Lembar Kerja</a> |
+                                <a href="#GantinamaLembarKerja">Ganti Nama Lembar Kerja</a> |
+                                <a href="#PindahkanLembarKerja">Pindahkan Lembar Kerja</a> |
+                                <a href="#HapusLembarKerja">Menghapus Lembar Kerja</a> |
+                                <a href="#SalinLembarKerja">Salin Lembar Kerja</a> |
+                                <a href="#Worksheets-Zoom">Zoom</a> |
+                                <a href="#Worksheets-Split">Split</a> |
+                                <a href="#Worksheets-BekukanPanel">Freeze Panes</a> |
+                                <a href="#Worksheets-LembarKerjaGrup">Grup Lembar Kerja</a> |
+                                <a href="#Worksheets-Mengkonsolidasikan">Mengkonsolidasikan</a> |
+                                <a href="#Worksheets-MenampilkanBeberapaLembarKerja">Menampilkan Beberapa Lembar Kerja</a> |
+                                <a href="#Worksheets-DapatkanNamaLembar">Dapatkan Nama Sheet</a> |
+                                <a href="#Worksheets-PemeriksaanEjaan">Pemeriksaan Ejaan</a>
+                            </p>
+
+                            <p>Lembar kerja adalah kumpulan sel tempat Anda menyimpan dan memanipulasi data. Setiap buku kerja Excel dapat berisi beberapa lembar kerja.</p>
+
+                            <section id="PilihLembarKerja">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Pilih Lembar Kerja</div>
                                 </div>
-                                <p class="fw-light">
-                                    <a href="#">...</a> |
-                                    <a href="#">...</a> |
-                                    <a href="#">...</a>
-                                </p>
-                                <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
-                                <P>
-                                    <!--  -->
-                                </P>
+                                <p>Ketika Anda membuka Excel workbook, Excel secara otomatis memilih Sheet1 untuk Anda. Nama lembar kerja muncul pada tab lembarnya di bagian bawah jendela dokumen.</p>
+                                <p><img class="img-fluid" src="../excel/files/Worksheets_files/image001.png" alt=Lembar1></p>
                             </section>
 
+                            <section id="SisipkanLembarKerja">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Sisipkan Lembar Kerja</div>
+                                </div>
+                                <p>Anda dapat menyisipkan lembar kerja sebanyak yang Anda inginkan. Untuk menyisipkan lembar kerja baru dengan cepat, klik tanda plus di bagian bawah jendela dokumen.</p>
+                                <p><img class="img-fluid" src="../excel/files/Worksheets_files/image002.png" alt="Sisipkan Lembar Kerja"></p>
+                                <p>Hasil:</p>
+                                <p><img class="img-fluid" src="../excel/files/Worksheets_files/image003.png" alt="Ditambahkan Lembar"></p>
+                            </section>
+
+                            <section id="GantinamaLembarKerja">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Ganti nama Lembar Kerja</div>
+                                </div>
+                                <p>Untuk memberi lembar kerja nama yang lebih spesifik, jalankan langkah-langkah berikut.</p>
+                                <ol>
+                                    <li>Klik kanan pada tab lembar Sheet1.</li>
+                                    <li>
+                                        <p>Pilih Ganti Nama.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Worksheets_files/image004.png" alt="Ganti nama Lembar Kerja">
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Misalnya, ketik Penjualan 2016.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Worksheets_files/image005.png" alt="Nama Spesifik"></p>
+                                    </li>
+                                </ol>
+                            </section>
+
+                            <section id="PindahkanLembarKerja">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Pindahkan Lembar Kerja</div>
+                                </div>
+                                <p>Untuk memindahkan lembar kerja, klik pada tab lembar lembar kerja yang ingin Anda pindahkan dan seret ke posisi baru.
+                                </p>
+                                <p>Misalnya, klik pada tab lembar Sheet2 dan seret sebelum Penjualan 2016.
+                                </p>
+                                <p><img class="img-fluid" src="../excel/files/Worksheets_files/image006.png" alt="Pindahkan Lembar Kerja"></p>
+                                <p>Hasil:</p>
+                                <p><img class="img-fluid" src="../excel/files/Worksheets_files/image007.png" alt="Urutan yang berbeda">
+                                </p>
+                            </section>
+
+                            <section id="HapusLembarKerja">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Hapus Lembar Kerja</div>
+                                </div>
+                                <p>Untuk menghapus lembar kerja, klik kanan pada tab lembar dan pilih Hapus.
+                                </p>
+                                <p>Misalnya, hapus Sheet2.</p>
+                                <p><img class="img-fluid" src="../excel/files/Worksheets_files/image008.png" alt="Hapus Lembar Kerja">
+                                </p>
+                                <p>Hasil:</p>
+                                <p><img class="img-fluid" src="../excel/files/Worksheets_files/image009.png" alt="Satu Lembar Kerja tersisa">
+                                </p>
+                            </section>
+
+                            <section id="SalinLembarKerja">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Salin Lembar Kerja</div>
+                                </div>
+                                <p>Bayangkan, Anda telah menyiapkan penjualan untuk tahun 2016 dan ingin membuat lembar yang sama persis untuk tahun 2017, tetapi dengan data yang berbeda. Anda dapat membuat ulang lembar kerja, tetapi ini memakan waktu. Jauh
+                                    lebih mudah untuk menyalin seluruh lembar kerja dan hanya mengubah angkanya.</p>
+                                <ol>
+                                    <li>Klik kanan pada tab lembar Sales 2016.</li>
+                                    <li>
+                                        <p>Pilih Pindahkan atau Salin.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Worksheets_files/image010.png" alt="Salin Lembar Kerja"></p>
+                                        <p>Kotak dialog 'Pindahkan atau Salin' muncul.</p>
+                                    </li>
+                                    <li>
+                                        <p>Pilih (pindah ke akhir) dan centang Buat salinan.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Worksheets_files/image011.png" alt="Kotak dialog">
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Klik Oke.</p>
+                                        <p>Hasil:</p>
+                                        <p><img class="img-fluid" src="../excel/files/Worksheets_files/image012.png" alt="Lembar Kerja yang disalin"></p>
+                                    </li>
+                                </ol>
+                                <p class="moreInfo"><strong>Catatan:</strong> Anda bahkan dapat menyalin lembar kerja ke buku kerja Excel lain dengan memilih buku kerja tertentu dari daftar turun bawah (lihat kotak dialog yang diperlihatkan sebelumnya).
+                                </p>
+                            </section>
+
+                            <section id="Worksheets-Zoom">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Zoom</div>
+                                </div>
+                                <p>Dalam kebanyakan kasus, Anda dapat menggunakan simbol minus dan plus di status bar untuk memperbesar dokumen dengan cepat. Gunakan tombol pada tab View untuk memperbesar persentase tertentu dan memperbesar pilihan.</p>
+                                <ol>
+                                    <li>
+                                        <p>Untuk memperbesar dokumen dengan cepat, gunakan simbol minus dan plus di status bar.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Worksheets-contoh_files/image001.png" alt="Memperbesar Dokumen Excel dengan cepat"></p>
+                                        <p>Untuk memperbesar ke persentase tertentu, jalankan langkah-langkah berikut.</p>
+                                    </li>
+                                    <li>
+                                        <p>Pada tab View, di grup Zoom, klik Zoom.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Worksheets-contoh_files/image002.png" alt="Klik Zoom"></p>
+                                    </li>
+                                    <li>
+                                        <p>Masukkan nomor (antara 10 dan 400) dan klik OK.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Worksheets-contoh_files/image003.png" alt="Masukkan Nomor dan klik OK">
+                                        </p>
+                                        <p>Untuk memperbesar pilihan, jalankan langkah-langkah berikut.</p>
+                                    </li>
+                                    <li>Pertama, pilih Range sel.</li>
+                                    <li>
+                                        <p>Pada tab View, di grup Zoom, klik Zoom to Selection.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Worksheets-contoh_files/image004.png" alt="Klik Zoom untuk Memilih"></p>
+                                    </li>
+                                </ol>
+                            </section>
+
+                            <section id="Worksheets-Split">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Split <span class="fw-light small text-muted">(Memisahkan)</span></div>
+                                </div>
+                                <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/split.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                <p>Pisahkan lembar kerja Anda untuk melihat beberapa bagian yang jauh dari lembar kerja Anda sekaligus. Untuk membagi lembar kerja Anda ( jendela ) menjadi bagian atas dan bawah (panel), jalankan langkah-langkah berikut.</p>
+                                <ol>
+                                    <li>
+                                        <p>Pertama, pilih sel di kolom A.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Worksheets-contoh_files/image005.png" alt="Membagi Lembar Kerja">
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Pada tab View, di grup Window, klik Split.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Worksheets-contoh_files/image006.png" alt="Klik Pisahkan"></p>
+                                    </li>
+                                    <li>
+                                        <p>Perhatikan dua bilah Scroll vertikal. Misalnya, gunakan bilah Scroll vertikal bawah untuk pindah ke baris 49. Seperti yang Anda lihat, 6 baris pertama tetap terlihat.</p>
+                                        <p><img class="img-fluid" src="../excel/files/Worksheets-contoh_files/image007.png" alt="Lihat Bagian Jauh"></p>
+                                    </li>
+                                    <li>
+                                        <p>Untuk mengubah tata letak jendela, gunakan bilah pemisah horizontal yang membagi panel.
+                                        </p>
+                                        <p><img class="img-fluid" src="../excel/files/Worksheets-contoh_files/image008.png" alt="Gunakan Bilah Pisah di Excel">
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Untuk menghapus pemisahan, cukup klik dua kali bilah pemisah.</p>
+                                        <p class="info"><strong>Catatan:</strong> dengan cara yang sama, Anda dapat membagi jendela menjadi panel kiri dan kanan dengan memilih sel di baris 1 sebelum Anda mengklik Lihat, Pisahkan. Anda bahkan dapat membagi jendela Anda
+                                            menjadi empat panel dengan memilih sel yang bukan kolom A atau baris 1. Setiap perubahan yang Anda buat pada satu panel akan segera tercermin di panel lainnya.
+                                        </p>
+                                    </li>
+                                </ol>
+                            </section>
+
+                            <section id="Worksheets-BekukanPanel">
+                                <p>Jika Anda memiliki tabel data yang besar di Excel, akan berguna untuk membekukan baris atau kolom. Dengan cara ini Anda dapat membuat baris atau kolom tetap terlihat saat menggulir seluruh lembar kerja.</p>
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Freeze Panes <small class="fw-light small text-muted">(Panel Beku)</small></div>
+                                </div>
+                                <p class="fw-light small">
+                                    <a href="#freeze-top-row">Freeze Top Row</a> |
+                                    <a href="#unfreeze-panes">Unfreeze Panes</a> |
+                                    <a href="#freeze-first-column">Freeze First Column</a> |
+                                    <a href="#freeze-rows">Freeze Rows</a> |
+                                    <a href="#freeze-columns">Freeze Columns</a> |
+                                    <a href="#freeze-cells">Freeze Cells</a> |
+                                    <a href="#magic-freeze-button">Magic Freeze Button</a>
+                                </p>
+                                <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/freeze-panes.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Freeze Top Row <small class="fw-light small text-muted">(Bekukan Baris Atas)</small></div>
+                                </div>
+                                <p>Untuk membekukan baris atas, jalankan langkah-langkah berikut.</p>
+                                <ol>
+                                    <li>
+                                        <p>Pada tab View, di group Window, klik Freeze Panes.</p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image009.png" alt="Klik Freeze Panes di Excel">
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Klik Freeze Baris Atas.</p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image010.png" alt="Freeze Baris Atas">
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Scroll ke bawah ke seluruh lembar kerja.</p>
+                                        <p>Hasil. Excel secara otomatis menambahkan garis horizontal abu-abu gelap untuk menunjukkan bahwa baris atas dibekukan.
+                                        </p>
+                                        <p><img class="img-fluid" src="files/Worksheets-contoh_files/image011.png" alt="Bekukan Hasil Baris Teratas">
+                                        </p>
+                                    </li>
+                                </ol>
+                            </section>
+
+                            <a class="d-flex justify-content-end fw-light" href="#dasar-Worksheets">kembali keatas</a>
                         </div>
                     </div>
                 </div>
@@ -940,7 +1157,7 @@
 
                             <section id="...">
                                 <div class="d-md-flex align-items-center justify-content-between pb-1 mt-3 mb-2 border-bottom">
-                                    <div class="fs-5" id="content">... <small class="text-muted fw-light">(...)</small>
+                                    <div class="fs-4" id="content">... <small class="text-muted fw-light">(...)</small>
                                     </div>
                                 </div>
                                 <p class="fw-light">
@@ -975,7 +1192,7 @@
 
                             <section id="...">
                                 <div class="d-md-flex align-items-center justify-content-between pb-1 mt-3 mb-2 border-bottom">
-                                    <div class="fs-5" id="content">... <small class="text-muted fw-light">(...)</small>
+                                    <div class="fs-4" id="content">... <small class="text-muted fw-light">(...)</small>
                                     </div>
                                 </div>
                                 <p class="fw-light">
@@ -1010,7 +1227,7 @@
 
                             <section id="...">
                                 <div class="d-md-flex align-items-center justify-content-between pb-1 mt-3 mb-2 border-bottom">
-                                    <div class="fs-5" id="content">... <small class="text-muted fw-light">(...)</small>
+                                    <div class="fs-4" id="content">... <small class="text-muted fw-light">(...)</small>
                                     </div>
                                 </div>
                                 <p class="fw-light">
@@ -1045,7 +1262,7 @@
 
                             <section id="...">
                                 <div class="d-md-flex align-items-center justify-content-between pb-1 mt-3 mb-2 border-bottom">
-                                    <div class="fs-5" id="content">... <small class="text-muted fw-light">(...)</small>
+                                    <div class="fs-4" id="content">... <small class="text-muted fw-light">(...)</small>
                                     </div>
                                 </div>
                                 <p class="fw-light">
@@ -1080,7 +1297,7 @@
 
                             <section id="...">
                                 <div class="d-md-flex align-items-center justify-content-between pb-1 mt-3 mb-2 border-bottom">
-                                    <div class="fs-5" id="content">... <small class="text-muted fw-light">(...)</small>
+                                    <div class="fs-4" id="content">... <small class="text-muted fw-light">(...)</small>
                                     </div>
                                 </div>
                                 <p class="fw-light">
@@ -1115,7 +1332,7 @@
 
                             <section id="...">
                                 <div class="d-md-flex align-items-center justify-content-between pb-1 mt-3 mb-2 border-bottom">
-                                    <div class="fs-5" id="content">... <small class="text-muted fw-light">(...)</small>
+                                    <div class="fs-4" id="content">... <small class="text-muted fw-light">(...)</small>
                                     </div>
                                 </div>
                                 <p class="fw-light">
@@ -1150,7 +1367,7 @@
 
                             <section id="...">
                                 <div class="d-md-flex align-items-center justify-content-between pb-1 mt-3 mb-2 border-bottom">
-                                    <div class="fs-5" id="content">... <small class="text-muted fw-light">(...)</small>
+                                    <div class="fs-4" id="content">... <small class="text-muted fw-light">(...)</small>
                                     </div>
                                 </div>
                                 <p class="fw-light">
@@ -1185,7 +1402,7 @@
 
                             <section id="...">
                                 <div class="d-md-flex align-items-center justify-content-between pb-1 mt-3 mb-2 border-bottom">
-                                    <div class="fs-5" id="content">... <small class="text-muted fw-light">(...)</small>
+                                    <div class="fs-4" id="content">... <small class="text-muted fw-light">(...)</small>
                                     </div>
                                 </div>
                                 <p class="fw-light">
@@ -1220,7 +1437,7 @@
 
                             <section id="...">
                                 <div class="d-md-flex align-items-center justify-content-between pb-1 mt-3 mb-2 border-bottom">
-                                    <div class="fs-5" id="content">... <small class="text-muted fw-light">(...)</small>
+                                    <div class="fs-4" id="content">... <small class="text-muted fw-light">(...)</small>
                                     </div>
                                 </div>
                                 <p class="fw-light">
@@ -1255,7 +1472,7 @@
 
                             <section id="...">
                                 <div class="d-md-flex align-items-center justify-content-between pb-1 mt-3 mb-2 border-bottom">
-                                    <div class="fs-5" id="content">... <small class="text-muted fw-light">(...)</small>
+                                    <div class="fs-4" id="content">... <small class="text-muted fw-light">(...)</small>
                                     </div>
                                 </div>
                                 <p class="fw-light">

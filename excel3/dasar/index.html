@@ -1768,7 +1768,7 @@
                                 <p>10. Pilih sel A1 dan seret gagang isian ke bawah. IsiOtomatis mengisi hari secara otomatis.
                                 </p>
                                 <p><img class="img-fluid" src="files/Range-details_files/image010.png" alt="Hari IsiOtomatis"></p>
-                                <p>11. Alih-alih mengisi hari, gunakan opsi IsiOtomatis untuk mengisi hari kerja (mengabaikan hari akhir pekan), bulan (lihat contoh di bawah) atau tahun.</p>
+                                <p>11. daripada mengisi hari, gunakan opsi IsiOtomatis untuk mengisi hari kerja (mengabaikan hari akhir pekan), bulan (lihat contoh di bawah) atau tahun.</p>
                                 <p><img class="img-fluid" src="files/Range-details_files/image011.png" alt="Opsi IsiOtomatis"></p>
                                 <p class="moreInfo"><strong>Catatan:</strong> lihat juga opsi untuk mengisi pemformatan saja dan untuk mengisi rangkaian tanpa pemformatan.
                                 </p>
@@ -2068,7 +2068,7 @@
 
                                 <section id="autofit-row-height">
                                     <h5>Tinggi Baris AutoFit</h5>
-                                    <p>Teknik yang dijelaskan di atas juga dapat digunakan untuk mengubah ketinggian baris. Alih-alih mengklik batas kanan tajuk kolom, cukup klik batas bawah tajuk baris. Ada satu cara lagi untuk menyesuaikan kolom atau baris
+                                    <p>Teknik yang dijelaskan di atas juga dapat digunakan untuk mengubah ketinggian baris. daripada mengklik batas kanan tajuk kolom, cukup klik batas bawah tajuk baris. Ada satu cara lagi untuk menyesuaikan kolom atau baris
                                         secara otomatis.</p>
                                     <p>1. Pertama, pilih beberapa baris dengan mengklik dan menyeret header baris.</p>
                                     <p><img class="img-fluid" src="files/Range-details_files/image065.png" alt="Pilih Beberapa Baris"></p>
@@ -2161,118 +2161,152 @@
                             </section>
 
                             <!-- Split Cells -->
-                            <section>
-                                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
-                                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="bahan/split-cells.xlsx" title="unduh file latihan" rel="noopener">unduh file
-                                                            latihan</a>
-                                    <p class="bd-lead mb-0" id="Range-SplitCells">Pisahkan Sel <span class="fw-light text-muted small">(Split Cells)</span></p>
+                            <section id="Range-SplitCells">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Pisahkan Sel <small class="fw-light small text-muted">(Split Cells)</small></div>
                                 </div>
-                                <p class="link-text">
+                                <p class="fw-light small">
                                     <a href="#SplitCells-split-cell">Membagi Sel</a> |
                                     <a href="#SplitCells-text-to-columns">Teks ke Kolom</a> |
                                     <a href="#SplitCells-flash-fill">Isi Kilat</a> |
-                                    <a href="#SplitCells-formulas-to-split-cells">Rumus untuk
-                                                            Memisahkan Sel</a>
+                                    <a href="#SplitCells-formulas-to-split-cells">Rumus untuk Memisahkan Sel</a>
                                 </p>
-                                <p>Untuk membagi sel di Excel, tambahkan kolom baru, ubah lebar kolom dan gabungkan sel. Untuk membagi konten sel menjadi beberapa sel, gunakan panduan Teks ke Kolom, isian flash, atau rumus.
-                                </p>
+                                <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/split-cells.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+                                <p>Untuk membagi sel di Excel, tambahkan kolom baru, ubah lebar kolom dan gabungkan sel. Untuk membagi konten sel menjadi beberapa sel, gunakan panduan Teks ke Kolom, isian flash, atau rumus.</p>
 
-                                <p class="sub-judul" id="SplitCells-split-cell">
-                                    Membagi Sel</p>
-                                <p>Gunakan trik berikut untuk &quot;membagi&quot; sel di Excel.
-                                </p>
-                                <p>1. Misalnya, tugas B dimulai pada pukul 13:00 dan membutuhkan waktu 2 jam untuk menyelesaikannya.</p>
-                                <p><img class="img-fluid" src="files/Range-details_files/image084.png" alt="Pisahkan Sel B3"></p>
-                                <p>Misalkan tugas B dimulai pada 13:30. Kami ingin membagi sel B3 dan mewarnai bagian kanannya.</p>
-                                <p>2. Pilih kolom C.</p>
-                                <p><img class="img-fluid" src="files/Range-details_files/image085.png" alt="Pilih Kolom"></p>
-                                <p>3. Klik kanan, lalu klik Sisipkan.</p>
-                                <p><img class="img-fluid" src="files/Range-details_files/image086.png" alt="Klik Sisipkan"></p>
-                                <p>Hasil:</p>
-                                <p><img class="img-fluid" src="files/Range-details_files/image087.png" alt="Kolom yang Disisipkan"></p>
-                                <p>4. Lebar default kolom adalah 64 piksel. Ubah lebar kolom B dan C menjadi 32 piksel.</p>
-                                <p><img class="img-fluid" src="files/Range-details_files/image088.png" alt="Ubah Lebar Kolom"></p>
-                                <p>5. Pilih sel B1 dan sel C1.</p>
-                                <p>6. Pada tab Home, di grup Alignment, klik panah bawah di sebelah Merge &amp; Center dan klik Merge Cells.</p>
-                                <p><img class="img-fluid" src="files/Range-details_files/image089.png" alt="Gabungkan Sel"></p>
-                                <p>Hasil:</p>
-                                <p><img class="img-fluid" src="files/Range-details_files/image090.png" alt="Sel yang Digabungkan"></p>
-                                <p>7. Ulangi langkah 5-6 untuk sel B2 dan sel C2 (dan sel B4 dan sel C4).
-                                </p>
-                                <p>8. Ubah warna latar belakang sel B3 menjadi Tanpa Isi.</p>
-                                <p>Hasil:</p>
-                                <p><img class="img-fluid" src="files/Range-details_files/image091.png" alt="Pisahkan Sel"></p>
-                                <p class="moreInfo"><strong>Catatan:</strong> misalkan tugas A berakhir pada pukul 15:30. Gunakan trik yang dijelaskan di atas untuk &quot;membagi&quot; sel E2. Unduh file Excel dan cobalah.</p>
+                                <section id="SplitCells-split-cell">
+                                    <h5>Membagi Sel</h5>
+                                    <p>Gunakan trik berikut untuk <q>split</q> sel di Excel.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Misalnya, tugas B dimulai pada pukul 13:00 dan membutuhkan waktu 2 jam untuk menyelesaikannya.</p>
+                                            <p><img class="img-fluid" src="files/Range-details_files/image084.png" alt="Pisahkan Sel B3"></p>
+                                            <p>Misalkan tugas B dimulai pada 13:30. Kami ingin membagi sel B3 dan mewarnai bagian kanannya.</p>
+                                        </li>
+                                        <li>
+                                            <p>Pilih kolom C.</p>
+                                            <p><img class="img-fluid" src="files/Range-details_files/image085.png" alt="Pilih Kolom"></p>
+                                        </li>
+                                        <li>
+                                            <p>Klik kanan, lalu klik Sisipkan.</p>
+                                            <p><img class="img-fluid" src="files/Range-details_files/image086.png" alt="Klik Sisipkan"></p>
+                                            <p>Hasil:</p>
+                                            <p><img class="img-fluid" src="files/Range-details_files/image087.png" alt="Kolom yang Disisipkan"></p>
+                                        </li>
+                                        <li>
+                                            <p>Lebar default kolom adalah 64 piksel. Ubah lebar kolom B dan C menjadi 32 piksel.</p>
+                                            <p><img class="img-fluid" src="files/Range-details_files/image088.png" alt="Ubah Lebar Kolom"></p>
+                                        </li>
+                                        <li>Pilih sel B1 dan sel C1.</li>
+                                        <li>
+                                            <p>Pada tab Home, di grup Alignment, klik panah bawah di sebelah Merge &amp; Center dan klik Merge Cells.</p>
+                                            <p><img class="img-fluid" src="files/Range-details_files/image089.png" alt="Gabungkan Sel"></p>
+                                            <p>Hasil:</p>
+                                            <p><img class="img-fluid" src="files/Range-details_files/image090.png" alt="Sel yang Digabungkan"></p>
+                                        </li>
+                                        <li>Ulangi langkah 5-6 untuk sel B2 dan sel C2 (dan sel B4 dan sel C4).</li>
+                                        <li>
+                                            <p>Ubah warna latar belakang sel B3 menjadi Tanpa Isi.</p>
+                                            <p>Hasil:</p>
+                                            <p><img class="img-fluid" src="files/Range-details_files/image091.png" alt="Pisahkan Sel"></p>
+                                            <p class="moreInfo"><strong>Catatan:</strong> misalkan tugas A berakhir pada pukul 15:30. Gunakan trik yang dijelaskan di atas untuk &quot;membagi&quot; sel E2. Unduh file Excel dan cobalah.</p>
+                                        </li>
+                                    </ol>
+                                </section>
 
+                                <section id="SplitCells-text-to-columns">
+                                    <h5>Teks ke Kolom</h5>
+                                    <p>Untuk membagi konten sel menjadi beberapa sel, gunakan panduan Teks ke Kolom. Misalnya, mari kita pisahkan nama lengkap menjadi nama belakang dan nama depan.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Pilih rentang dengan nama lengkap.</p>
+                                            <p><img class="img-fluid" src="files/Range-details_files/image092.png" alt="Contoh Teks ke Kolom"></p>
+                                        </li>
+                                        <li>
+                                            <p>Pada tab Data, dalam grup Alat Data, klik Teks ke Kolom.</p>
+                                            <p><img class="img-fluid" src="files/Range-details_files/image093.png" alt="Klik Teks ke Kolom"></p>
+                                            <p>Kotak dialog berikut muncul.</p>
+                                        </li>
+                                        <li>
+                                            <p>Pilih Dibatasi dan klik Berikutnya.</p>
+                                            <p><img class="img-fluid" src="files/Range-details_files/image094.png" alt="Konversi Teks ke Kolom Wizard - Langkah 1"></p>
+                                        </li>
+                                        <li>Kosongkan semua kotak centang di bawah Pembatas kecuali untuk kotak centang Koma dan Spasi.</li>
+                                        <li>
+                                            <p>Klik Selesai.</p>
+                                            <p><img class="img-fluid" src="files/Range-details_files/image095.png" alt="Konversi Teks ke Kolom Wizard - Langkah 2"></p>
+                                            <p>Hasil:</p>
+                                            <p><img class="img-fluid" src="files/Range-details_files/image096.png" alt="Pisahkan Nama Lengkap"></p>
+                                        </li>
+                                    </ol>
+                                    <p class="moreInfo"><strong>Catatan:</strong> contoh ini memiliki koma dan spasi sebagai pembatas. Anda mungkin memiliki pembatas lain dalam data Anda. Bereksperimenlah dengan mencentang dan menghapus centang pada kotak centang yang berbeda.
+                                        Anda mendapatkan pratinjau langsung tentang bagaimana data Anda akan dipisahkan.</p>
+                                </section>
 
-                                <p class="sub-judul" id="SplitCells-text-to-columns">
-                                    Teks ke Kolom</p>
-                                <p>Untuk membagi konten sel menjadi beberapa sel, gunakan panduan Teks ke Kolom. Misalnya, mari kita pisahkan nama lengkap menjadi nama belakang dan nama depan.</p>
-                                <p>1. Pilih rentang dengan nama lengkap.</p>
-                                <p><img class="img-fluid" src="files/Range-details_files/image092.png" alt="Contoh Teks ke Kolom"></p>
-                                <p>2. Pada tab Data, dalam grup Alat Data, klik Teks ke Kolom.
-                                </p>
-                                <p><img class="img-fluid" src="files/Range-details_files/image093.png" alt="Klik Teks ke Kolom"></p>
-                                <p>Kotak dialog berikut muncul.</p>
-                                <p>3. Pilih Dibatasi dan klik Berikutnya.</p>
-                                <p><img class="img-fluid" src="files/Range-details_files/image094.png" alt="Konversi Teks ke Kolom Wizard - Langkah 1"></p>
-                                <p>4. Kosongkan semua kotak centang di bawah Pembatas kecuali untuk kotak centang Koma dan Spasi.</p>
-                                <p>5. Klik Selesai.</p>
-                                <p><img class="img-fluid" src="files/Range-details_files/image095.png" alt="Konversi Teks ke Kolom Wizard - Langkah 2"></p>
-                                <p>Hasil:</p>
-                                <p><img class="img-fluid" src="files/Range-details_files/image096.png" alt="Pisahkan Nama Lengkap"></p>
-                                <p class="moreInfo"><strong>Catatan:</strong> contoh ini memiliki koma dan spasi sebagai pembatas. Anda mungkin memiliki pembatas lain dalam data Anda. Bereksperimenlah dengan mencentang dan menghapus centang pada kotak centang yang berbeda.
-                                    Anda mendapatkan pratinjau langsung tentang bagaimana data Anda akan dipisahkan.</p>
+                                <section id="SplitCells-flash-fill">
+                                    <h5>Isi Flash</h5>
+                                    <p>Apakah Anda suka Magic? daripada menggunakan panduan Teks ke Kolom, gunakan pengisian kilat untuk membagi data dengan cepat menjadi beberapa kolom.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Pertama, pisahkan konten satu sel menjadi beberapa sel.</p>
+                                            <p><img class="img-fluid" src="files/Range-details_files/image097.png" alt="Contoh Isi Flash"></p>
+                                        </li>
+                                        <li>
+                                            <p>Pilih sel B1 dan tekan <kbd>Ctrl</kbd>+<kbd>E</kbd> (shortcut pengisian flash).</p>
+                                            <p><img class="img-fluid" src="files/Range-details_files/image098.png" alt="Pisahkan Data Menjadi Beberapa Kolom"></p>
+                                        </li>
+                                        <li>
+                                            <p>Pilih sel C1 dan tekan <kbd>Ctrl</kbd>+<kbd>E</kbd>.</p>
+                                            <p><img class="img-fluid" src="files/Range-details_files/image099.png" alt="Pisahkan Data Menjadi Beberapa Kolom"></p>
+                                        </li>
+                                        <li>
+                                            <p>Pilih sel D1 dan tekan <kbd>Ctrl</kbd>+<kbd>E</kbd>.</p>
+                                            <p><img class="img-fluid" src="files/Range-details_files/image100.png" alt="Pisahkan Data Menjadi Beberapa Kolom"></p>
+                                        </li>
+                                    </ol>
+                                    <p class="moreInfo"><strong>Catatan:</strong> pengisian kilat di Excel hanya berfungsi saat mengenali pola. Unduh file Excel dan cobalah. Kunjungi halaman kami tentang
+                                        <a href="#">Isi Flash</a> untuk mempelajari lebih lanjut tentang alat Excel yang hebat ini.
+                                    </p>
+                                </section>
 
+                                <section id="SplitCells-formulas-to-split-cells">
+                                    <h5>Rumus untuk Memisahkan Sel</h5>
+                                    <p>Salah satu kelemahan saat menggunakan alat ini adalah output tidak akan diperbarui secara otomatis ketika sumber data berubah. Buat formula untuk mengatasi keterbatasan ini. Mari kita pisahkan nama lengkap menjadi nama
+                                        depan dan nama belakang.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Rumus di bawah ini mengembalikan nama depan.</p>
+                                            <p><img class="img-fluid" src="files/Range-details_files/image101.png" alt="Nama depan"></p>
+                                        </li>
+                                        <li>
+                                            <p>Rumus di bawah ini mengembalikan nama belakang.</p>
+                                            <p><img class="img-fluid" src="files/Range-details_files/image102.png" alt="Nama keluarga"></p>
+                                        </li>
+                                        <li>
+                                            <p>Pilih rentang B2:C2 dan seret ke bawah.</p>
+                                            <p><img class="img-fluid" src="files/Range-details_files/image103.png" alt="Rumus untuk Memisahkan Sel"></p>
+                                        </li>
+                                    </ol>
+                                    <p class="moreInfo"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="#">memisahkan string</a> untuk memahami logika di balik rumus ini.</p>
+                                </section>
 
-                                <p class="sub-judul" id="SplitCells-flash-fill">
-                                    Isi Flash</p>
-                                <p>Apakah Anda suka Sihir? Alih-alih menggunakan panduan Teks ke Kolom, gunakan pengisian kilat untuk membagi data dengan cepat menjadi beberapa kolom.</p>
-                                <p>1. Pertama, pisahkan konten satu sel menjadi beberapa sel.
-                                </p>
-                                <p><img class="img-fluid" src="files/Range-details_files/image097.png" alt="Contoh Isi Flash"></p>
-                                <p>2. Pilih sel B1 dan tekan <kbd>Ctrl</kbd>+<kbd>E</kbd> (shortcut pengisian flash).
-                                </p>
-                                <p><img class="img-fluid" src="files/Range-details_files/image098.png" alt="Pisahkan Data Menjadi Beberapa Kolom"></p>
-                                <p>3. Pilih sel C1 dan tekan <kbd>Ctrl</kbd>+<kbd>E</kbd>.</p>
-                                <p><img class="img-fluid" src="files/Range-details_files/image099.png" alt="Pisahkan Data Menjadi Beberapa Kolom"></p>
-                                <p>4. Pilih sel D1 dan tekan <kbd>Ctrl</kbd>+<kbd>E</kbd>.</p>
-                                <p><img class="img-fluid" src="files/Range-details_files/image100.png" alt="Pisahkan Data Menjadi Beberapa Kolom"></p>
-                                <p class="moreInfo"><strong>Catatan:</strong> pengisian kilat di Excel hanya berfungsi saat mengenali pola. Unduh file Excel dan cobalah. Kunjungi halaman kami tentang
-                                    <a href="#">Isi Flash</a> untuk mempelajari lebih lanjut tentang alat Excel yang hebat ini.
-                                </p>
-
-                                <p class="sub-judul" id="SplitCells-formulas-to-split-cells">
-                                    Rumus untuk Memisahkan Sel</p>
-                                <p>Salah satu kelemahan saat menggunakan alat ini adalah output tidak akan diperbarui secara otomatis ketika sumber data berubah. Buat formula untuk mengatasi keterbatasan ini. Mari kita pisahkan nama lengkap menjadi nama
-                                    depan dan nama belakang.</p>
-                                <p>1. Rumus di bawah ini mengembalikan nama depan.</p>
-                                <p><img class="img-fluid" src="files/Range-details_files/image101.png" alt="Nama depan"></p>
-                                <p>2. Rumus di bawah ini mengembalikan nama belakang.</p>
-                                <p><img class="img-fluid" src="files/Range-details_files/image102.png" alt="Nama keluarga"></p>
-                                <p>3. Pilih rentang B2:C2 dan seret ke bawah.</p>
-                                <p><img class="img-fluid" src="files/Range-details_files/image103.png" alt="Rumus untuk Memisahkan Sel">
-                                </p>
-                                <p class="moreInfo"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="#">memisahkan string</a> untuk memahami logika di balik rumus ini.</p>
                             </section>
 
                             <!-- Flash Fill -->
-                            <section>
-                                <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
-                                    <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="bahan/flash-fill.xlsx" title="unduh file latihan" rel="noopener">unduh file
-                                                            latihan</a>
-                                    <p class="bd-lead mb-0" id="Range-FlashFill">Isi Flash <span class="fw-light text-muted small">(Flash Fill)</span></p>
+                            <section id="Range-FlashFill">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Isi Flash <small class="fw-light small text-muted">(Flash Fill)</small></div>
                                 </div>
-                                <p class="link-text">
+                                <p class="fw-light small">
                                     <a href="#FlashFill-flash-fill-example-1">Contoh Isi Flash 1</a> |
                                     <a href="#FlashFill-flash-fill-example-2">Contoh Isi Flash 2</a> |
                                     <a href="#FlashFill-flash-fill-example-3">Contoh Isi Flash 3</a> |
-                                    <a href="#FlashFill-flash-fill-limitations">Batasan Pengisian
-                                                            Flash</a>
+                                    <a href="#FlashFill-flash-fill-limitations">Batasan Pengisian Flash</a>
                                 </p>
+                                <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/flash-fill.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
                                 <p>Gunakan isian flash di Excel 2013 atau yang lebih baru untuk mengekstrak secara otomatis atau menggabungkan data secara otomatis. Flash Fill di Excel hanya berfungsi saat mengenali sebuah pola.
                                 </p>
-
 
                                 <p class="sub-judul" id="FlashFill-flash-fill-example-1">
                                     Contoh Isi Flash 1</p>

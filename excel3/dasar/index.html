@@ -127,11 +127,25 @@
 
                 <!-- Rumus & Fungsi -->
                 <div class="accordion-item border-0">
-                    <a href="#">Rumus & Fungsi</a>
+                    <a href="#dasar-RumusFungsi">Rumus & Fungsi</a>
                     <div id="flush-collapse-RumusFungsi" class="accordion-collapse collapse" aria-labelledby="flush-heading-RumusFungsi" data-bs-parent="#tab2MenuKanan">
                         <div class="accordion-body">
                             <ul>
-                                <li><a href="#XXX">XXX</a></li>
+                                <li><a href="#MasukkanRumus">Masukkan Rumus</a></li>
+                                <li><a href="#MengeditRumus">Mengedit Rumus</a></li>
+                                <li><a href="#PrioritasOperator">Prioritas Operator</a></li>
+                                <li><a href="#SalinTempelRumus">Salin/Tempel Rumus</a></li>
+                                <li><a href="#SisipkanRumus">Sisipkan Rumus</a></li>
+                                <li><a href="#FormulasandFunctions-MostUsedFunctions">Fungsi yang Paling Banyak Digunakan</a></li>
+                                <li><a href="#FormulasandFunctions-Subtract">Pengurangan</a></li>
+                                <li><a href="#FormulasandFunctions-Multiply">Perkalian</a></li>
+                                <li><a href="#FormulasandFunctions-Divide">Pembagian</a></li>
+                                <li><a href="#FormulasandFunctions-SquareRoot">Akar Pangkat Dua</a></li>
+                                <li><a href="#FormulasandFunctions-Percentage">Persentase</a></li>
+                                <li><a href="#FormulasandFunctions-NamedRange">Range Bernama</a></li>
+                                <li><a href="#FormulasandFunctions-DynamicNamedRange">Range Bernama Dinamis</a></li>
+                                <li><a href="#FormulasandFunctions-PasteOptions">Opsi Paste</a></li>
+                                <li><a href="#FormulasandFunctions-Discount">Diskon</a></li>
                             </ul>
                         </div>
                     </div>
@@ -2489,7 +2503,7 @@
                         <button class="accordion-button collapsed" style="padding: 1rem 0rem; box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-RumusFungsi" aria-expanded="false" aria-controls="flush-collapse-RumusFungsi">
                             <div class="me-auto">
                                 <div class="fs-3">Rumus & Fungsi</div>
-                                <small class="text-muted fw-light text-lowercase">...</small>
+                                <small class="text-muted fw-light text-lowercase small">Rumus adalah ekspresi yang menghitung nilai sel. Fungsi adalah rumus yang telah ditentukan sebelumnya dan sudah tersedia di Excel.</small>
                             </div>
                         </button>
                     </h2>
@@ -2497,21 +2511,173 @@
                     <div id="flush-collapse-RumusFungsi" class="accordion-collapse collapse" aria-labelledby="flush-heading-RumusFungsi" data-bs-parent="#tab2Konten">
                         <div class="accordion-body p-0">
 
-                            <section id="...">
-                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-3 mb-2 border-bottom">
-                                    <div class="fs-4" id="content">... <small class="text-muted fw-light">(...)</small>
-                                    </div>
+                            <p class="fw-light small">
+                                <a href="#MasukkanRumus">Masukkan Rumus</a> |
+                                <a href="#MengeditRumus">Mengedit Rumus</a> |
+                                <a href="#PrioritasOperator">Prioritas Operator</a> |
+                                <a href="#SalinTempelRumus">Salin/Tempel Rumus</a> |
+                                <a href="#SisipkanRumus">Sisipkan Rumus</a> |
+                                <a href="#FormulasandFunctions-MostUsedFunctions">Fungsi yang Paling Banyak Digunakan</a> |
+                                <a href="#FormulasandFunctions-Subtract">Pengurangan</a> |
+                                <a href="#FormulasandFunctions-Multiply">Perkalian</a> |
+                                <a href="#FormulasandFunctions-Divide">Pembagian</a> |
+                                <a href="#FormulasandFunctions-SquareRoot">Akar Pangkat Dua</a> |
+                                <a href="#FormulasandFunctions-Percentage">Persentase</a> |
+                                <a href="#FormulasandFunctions-NamedRange">Range Bernama</a> |
+                                <a href="#FormulasandFunctions-DynamicNamedRange">Range Bernama Dinamis</a> |
+                                <a href="#FormulasandFunctions-PasteOptions">Opsi Paste</a> |
+                                <a href="#FormulasandFunctions-Discount">Diskon</a>
+                            </p>
+
+                            <p>Sebuah rumus adalah ekspresi yang menghitung nilai sel. Fungsi adalah rumus yang telah ditentukan sebelumnya dan sudah tersedia di Excel.</p>
+                            <p>Misalnya, sel <strong>A3</strong> di bawah ini berisi rumus yang menambahkan nilai sel
+                                <strong>A2</strong> ke nilai sel <strong>A1</strong>.</p>
+                            <p><img class="img-fluid" src="files/FormulasandFunctions_files/image001.png" alt="Rumus di Excel"></p>
+                            <p>Misalnya, sel <strong>A3</strong> di bawah ini berisi fungsi
+                                <strong>SUM</strong> yang menghitung jumlah range
+                                <strong>A1:A2</strong>.</p>
+                            <p><img class="img-fluid" src="files/FormulasandFunctions_files/image002.png" alt="Fungsi di Excel"></p>
+
+                            <section id="MasukkanRumus">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Masukkan Rumus <small class="fw-light small text-muted">(Enter a Formula)</small></div>
                                 </div>
-                                <p class="fw-light">
-                                    <a href="#">...</a> |
-                                    <a href="#">...</a> |
-                                    <a href="#">...</a>
-                                </p>
-                                <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
-                                <P>
-                                    <!--  -->
-                                </P>
+                                <p>Untuk memasukkan rumus, jalankan langkah-langkah berikut.</p>
+                                <ol>
+                                    <li>Pilih sel.</li>
+                                    <li>Untuk memberi tahu Excel bahwa Anda ingin memasukkan rumus, ketikkan tanda sama dengan
+                                        <strong>(=)</strong>.</li>
+                                    <li>
+                                        <p>Misalnya, ketikkan rumus <strong>A1+A2</strong>.</p>
+                                        <p><img class="img-fluid" src="files/FormulasandFunctions_files/image001.png" alt="Masukkan Rumus">
+                                        </p>
+                                        <p class="info"><strong>Tip:</strong> daripada mengetik
+                                            <strong>A1</strong> dan <strong>A2</strong>, cukup pilih sel
+                                            <strong>A1</strong> dan sel <strong>A2</strong>.</p>
+                                    </li>
+                                    <li>
+                                        <p>Ubah nilai sel <strong>A1</strong> menjadi <strong>3</strong>.
+                                        </p>
+                                        <p><img class="img-fluid" src="files/FormulasandFunctions_files/image003.png" alt="Perhitungan ulang"></p>
+                                        <p>Excel secara otomatis menghitung ulang nilai sel
+                                            <strong>A3</strong>. Ini adalah salah satu fitur Excel yang paling kuat!</p>
+                                    </li>
+                                </ol>
                             </section>
+
+                            <section id="MengeditRumus">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Mengedit Rumus <small class="fw-light small text-muted">(Edit a Formula)</small></div>
+                                </div>
+                                <p>Saat Anda memilih sel, Excel memperlihatkan nilai atau rumus sel di rumus bar.
+                                </p>
+                                <p><img class="img-fluid" src="files/FormulasandFunctions_files/image004.png" alt="Rumus Bar">
+                                </p>
+                                <ol>
+                                    <li>
+                                        <p>Untuk mengedit rumus, klik di rumus bar dan ubah rumus.</p>
+                                        <p><img class="img-fluid" src="files/FormulasandFunctions_files/image005.png" alt="Mengedit Rumus di Excel"></p>
+                                    </li>
+                                    <li>
+                                        <p>Tekan <kbd>Enter</kbd>.</p>
+                                        <p><img class="img-fluid" src="files/FormulasandFunctions_files/image006.png" alt="Rumus yang Diedit"></p>
+                                    </li>
+                                </ol>
+                            </section>
+
+                            <section id="PrioritasOperator">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Prioritas Operator <small class="fw-light small text-muted">(Operator Precedence)</small></div>
+                                </div>
+                                <p>Excel menggunakan urutan default di mana perhitungan terjadi. Jika bagian dari rumus ada dalam tanda kurung, bagian itu akan dihitung terlebih dahulu. Kemudian melakukan perhitungan perkalian atau pembagian. Setelah ini
+                                    selesai, Excel akan menambah dan mengurangi sisa rumus Anda. Lihat contoh di bawah ini.</p>
+                                <p><img class="img-fluid" src="files/FormulasandFunctions_files/image007.png" alt="Prioritas Operator">
+                                </p>
+                                <p>Pertama, Excel melakukan perkalian (<strong>A1 * A2</strong>). Selanjutnya, Excel menambahkan nilai sel
+                                    <strong>A3</strong> ke hasil ini.
+                                </p>
+                                <p>Contoh lain,</p>
+                                <p><img class="img-fluid" src="files/FormulasandFunctions_files/image008.png" alt="Tanda kurung"></p>
+                                <p>Pertama, Excel menghitung bagian dalam tanda kurung (
+                                    <strong>A2+A3</strong>). Selanjutnya, hasil ini dikalikan dengan nilai sel <strong>A1</strong>.</p>
+                            </section>
+
+                            <section id="SalinTempelRumus">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Copy/Paste Rumus</div>
+                                </div>
+                                <p>Saat Anda menyalin rumus, Excel secara otomatis menyesuaikan referensi sel untuk setiap sel baru tempat rumus disalin. Untuk memahaminya, lakukan langkah-langkah berikut.</p>
+                                <ol>
+                                    <li>
+                                        <p>Masukkan rumus yang ditunjukkan di bawah ini ke dalam sel
+                                            <strong>A4</strong>.
+                                        </p>
+                                        <p><img class="img-fluid" src="files/FormulasandFunctions_files/image009.png" alt="Salin Contoh Rumus"></p>
+                                    </li>
+                                    <li>
+                                        <p>Pilih sel <strong>A4</strong>, klik kanan, lalu klik Salin (atau tekan
+                                            <kbd>Ctrl</kbd>+<kbd>C</kbd>)...</p>
+                                        <p><img class="img-fluid" src="files/FormulasandFunctions_files/image010.png" alt="Klik Salin"></p>
+                                        <p>... selanjutnya, pilih sel <strong>B4</strong>, klik kanan, lalu klik Tempel di bawah 'Paste Options:' (atau tekan
+                                            <kbd>Ctrl</kbd>+<kbd>V</kbd>).
+                                        </p>
+                                        <p><img class="img-fluid" src="files/FormulasandFunctions_files/image011.png" alt="Klik Tempel">
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>Anda juga dapat menyeret rumus ke sel <strong>B4</strong>. Pilih sel <strong>A4</strong>, klik di sudut kanan bawah sel
+                                            <strong>A4</strong> dan seret ke sel <strong>B4</strong>. Ini jauh lebih mudah dan memberikan hasil yang sama persis!</p>
+                                        <p><img class="img-fluid" src="files/FormulasandFunctions_files/image012.png" alt="Seret Rumus Excel"></p>
+                                        <p>Hasil. Rumus di sel B4 mereferensikan nilai di kolom B.</p>
+                                        <p><img class="img-fluid" src="files/FormulasandFunctions_files/image013.png" alt="Salin Hasil Rumus"></p>
+                                    </li>
+                                </ol>
+                            </section>
+
+                            <section id="SisipkanRumus">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Sisipkan Fungsi <small class="text-muted fw-light">(Insert Function)</small></div>
+                                </div>
+                                <p>Setiap fungsi memiliki struktur yang sama. Misalnya,
+                                    <strong>SUM</strong>(A1:A4). Nama fungsi ini adalah
+                                    <strong>SUM</strong>. Bagian antara tanda kurung (argumen) berarti kami memberikan Excel range
+                                    <strong>A1:A4</strong> sebagai input. Fungsi ini menambahkan nilai dalam sel <strong>A1</strong>,
+                                    <strong>A2</strong>,
+                                    <strong>A3</strong> dan <strong>A4</strong>. Tidak mudah untuk mengingat fungsi dan argumen mana yang digunakan untuk setiap tugas. Untungnya, fitur Insert Function di Excel membantu Anda dalam hal ini.
+                                </p>
+                                <p>Untuk menyisipkan fungsi, jalankan langkah-langkah berikut.</p>
+                                <ol>
+                                    <li>Pilih sel.</li>
+                                    <li>
+                                        <p>Klik tombol Insert Function.</p>
+                                        <p><img class="img-fluid" src="files/FormulasandFunctions_files/image014.png" alt="Insert Function"></p>
+                                        <p>Kotak dialog 'Insert Function' muncul.</p>
+                                    </li>
+                                    <li>
+                                        <p>Cari fungsi atau pilih fungsi dari kategori. Misalnya, pilih
+                                            <strong>COUNTIF</strong> dari kategori Statistical.</p>
+                                        <p><img class="img-fluid" src="files/FormulasandFunctions_files/image015.png" alt="Masukkan Kotak Dialog Fungsi"></p>
+                                    </li>
+                                    <li>Klik Oke. <br> Kotak dialog 'Function Arguments' muncul.</li>
+                                    <li>Klik pada kotak Range dan pilih range <strong>A1:C2</strong>.</li>
+                                    <li>Klik di kotak Criteria dan ketik <strong>&gt;5</strong>.</li>
+                                    <li>
+                                        <p>Klik Oke.</p>
+                                        <p><img class="img-fluid" src="files/FormulasandFunctions_files/image016.png" alt="Kotak Dialog Argumen Fungsi"></p>
+                                        <p>Hasil: Fungsi <strong>COUNTIF</strong> menghitung jumlah sel yang lebih besar dari
+                                            <strong>5</strong>.
+                                        </p>
+                                        <p><img class="img-fluid" src="files/FormulasandFunctions_files/image017.png" alt="Hasil COUNTIF">
+                                        </p>
+                                        <p class="info"><strong>Catatan:</strong> daripada menggunakan fitur Insert Function, cukup ketik =
+                                            <strong>COUNTIF</strong>(<strong>A1:C2,&quot;&gt;5&quot;</strong>). Saat Anda tiba di: =
+                                            <strong>COUNTIF</strong>( bukan mengetik <strong>A1:C2</strong>, cukup pilih range
+                                            <strong>A1:C2</strong>.</p>
+                                    </li>
+                                </ol>
+                            </section>
+
+                            <a class="d-flex justify-content-end" href="#dasar-RumusFungsi">kembali keatas</a>
 
                         </div>
                     </div>

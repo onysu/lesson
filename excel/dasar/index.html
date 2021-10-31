@@ -241,7 +241,11 @@
                     <div id="flush-collapse-Protect" class="accordion-collapse collapse" aria-labelledby="flush-heading-Protect" data-bs-parent="#tab2MenuKanan">
                         <div class="accordion-body">
                             <ul>
-                                <li><a href="#XXX">XXX</a></li>
+                                <li><a href="#protect-workbook">Melindungi File</a></li>
+                                <li><a href="#protect-sheet">Melindungi Lembar Kerja</a></li>
+                                <li><a href="#lock-cells">Kunci Sel</a></li>
+                                <li><a href="#read-only-workbook">File hanya-baca</a></li>
+                                <li><a href="#mark-as-final">Tandai sebagai Final</a></li>
                             </ul>
                         </div>
                     </div>
@@ -3521,6 +3525,147 @@
                                 <p class="moreInfo"><strong>Catatan:</strong> untuk membuka proteksi buku kerja, klik Protect Workbook dan masukkan password. Password untuk file Excel yang dapat diunduh adalah <q>easy</q>.</p>
                             </section>
 
+                            <section id="protect-sheet">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Proteksi Lembar Kerja <small class="text-muted fw-light">(Protect Sheet)</small></div>
+                                </div>
+                                <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/protect-sheet.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                <p>Saat Anda berbagi file Excel dengan pengguna lain, Anda mungkin ingin memproteksi lembar kerja untuk membantu mencegahnya diubah.</p>
+                                <p>1. Klik kanan tab lembar kerja.</p>
+                                <p>2. Klik Protect Sheet.</p>
+                                <p><img class="img-fluid" src="files/Protect-contoh_files/image010.png" alt="Lindungi Lembar"></p>
+                                <p>3. Masukkan password.</p>
+                                <p>4. Centang yang Anda izinkan untuk dilakukan oleh pengguna pada lembar kerja Anda.</p>
+                                <p>5. Klik Oke.</p>
+                                <p><img class="img-fluid" src="files/Protect-contoh_files/image011.png" alt="Izinkan Pengguna Untuk"></p>
+                                <p class="moreInfo"><strong>Catatan:</strong> jika Anda tidak centang apa pun, pengguna hanya dapat melihat file Excel!</p>
+                                <p>6. Konfirmasikan password dan klik OK.</p>
+                                <p><img class="img-fluid" src="files/Protect-contoh_files/image012.png" alt="konfirmasi sandi"></p>
+                                <p>Lembar kerja Anda sekarang terlindungi. Untuk membuka proteksi lembar kerja, klik kanan pada tab worksheet dan klik Unprotect Sheet. Password untuk file Excel yang dapat diunduh adalah <q>easy</q>.</p>
+                            </section>
+
+                            <section id="lock-cells">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Kunci Sel <small class="text-muted fw-light">(Lock Cells)</small></div>
+                                </div>
+                                <p class="link-text mt-2">
+                                    <a href="#lock-all-cells">Kunci Semua Sel</a> |
+                                    <a href="#lock-specific-cells">Kunci Sel Tertentu</a> |
+                                    <a href="#lock-formula-cells">Kunci Sel Formula</a>
+                                </p>
+                                <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/lock-cells.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+                                <p>Anda dapat mengunci sel di Excel jika Anda ingin melindungi sel agar tidak diedit.</p>
+
+                                <section id="lock-all-cells">
+                                    <h5>Kunci Semua Sel</h5>
+                                    <p>Secara default, semua sel dikunci. Namun, mengunci sel tidak berpengaruh hingga Anda memproteksi lembar kerja.</p>
+                                    <p>1. Pilih semua sel.</p>
+                                    <p><img class="img-fluid" src="files/Protect-contoh_files/image013.png" alt="Pilih Semua Sel"></p>
+                                    <p>2. Klik kanan, lalu klik Format Sel (atau tekan <kbd>Ctrl</kbd>+<kbd>1</kbd>).</p>
+                                    <p>3. Pada tab Perlindungan, Anda dapat memverifikasi bahwa semua sel dikunci secara default.
+                                    </p>
+                                    <p><img class="img-fluid" src="files/Protect-contoh_files/image014.png" alt="Semua Sel Dikunci Secara Default"></p>
+                                    <p>4. Klik OK atau Batal.</p>
+                                    <p>5. <a href="#">Lindungi lembaran</a>.</p>
+                                    <p>Semua sel terkunci sekarang. Untuk membuka proteksi lembar kerja, klik kanan pada tab lembar kerja dan klik Buka Proteksi Lembar. Password untuk file Excel yang dapat diunduh adalah <q>easy</q>.</p>
+                                </section>
+
+                                <section id="lock-specific-cells">
+                                    <h5>Kunci Sel Tertentu</h5>
+                                    <p>Untuk mengunci sel tertentu di Excel, pertama-tama buka kunci semua sel. Selanjutnya, kunci sel tertentu. Terakhir, lindungi lembaran.
+                                    </p>
+                                    <p>1. Pilih semua sel.</p>
+                                    <p><img class="img-fluid" src="files/Protect-contoh_files/image013.png" alt="Pilih Semua Sel"></p>
+                                    <p>2. Klik kanan, lalu klik Format Sel (atau tekan <kbd>Ctrl</kbd>+<kbd>1</kbd>).
+                                    </p>
+                                    <p>3. Pada tab Perlindungan, hapus centang pada kotak Terkunci dan klik OK.</p>
+                                    <p><img class="img-fluid" src="files/Protect-contoh_files/image015.png" alt="Buka Kunci Semua Sel"></p>
+                                    <p>4. Misalnya, pilih sel A1 dan sel A2.</p>
+                                    <p><img class="img-fluid" src="files/Protect-contoh_files/image016.png" alt="Pilih Sel Tertentu"></p>
+                                    <p>5. Klik kanan, lalu klik Format Cells (atau tekan <kbd>Ctrl</kbd>+<kbd>1</kbd>).
+                                    </p>
+                                    <p>6. Pada tab Proteksi, centang kotak Terkunci dan klik OK.</p>
+                                    <p><img class="img-fluid" src="files/Protect-contoh_files/image017.png" alt="Kunci Sel Tertentu"></p>
+                                    <p>Sekali lagi, mengunci sel tidak berpengaruh sampai Anda melindungi lembar kerja.</p>
+                                    <p>7. <a href="#">Lindungi lembaran</a>.</p>
+                                    <p>Sel A1 dan sel A2 terkunci sekarang. Untuk mengedit sel-sel ini, Anda harus membuka proteksi lembar. Password untuk file Excel yang dapat diunduh adalah <q>easy</q>. Anda masih dapat mengedit semua sel lainnya.
+                                    </p>
+                                </section>
+
+                                <section id="lock-formula-cells">
+                                    <h5>Kunci Sel Formula</h5>
+                                    <p>Untuk mengunci semua sel yang berisi rumus, pertama-tama buka kunci semua sel. Selanjutnya, kunci semua sel rumus. Terakhir, lindungi lembaran.</p>
+                                    <p>1. Pilih semua sel.</p>
+                                    <p><img class="img-fluid" src="files/Protect-contoh_files/image013.png" alt="Pilih Semua Sel"></p>
+                                    <p>2. Klik kanan, lalu klik Format Sel (atau tekan <kbd>Ctrl</kbd>+<kbd>1</kbd>).
+                                    </p>
+                                    <p>3. Pada tab Perlindungan, hapus centang pada kotak Terkunci dan klik OK.</p>
+                                    <p><img class="img-fluid" src="files/Protect-contoh_files/image015.png" alt="Buka Kunci Semua Sel"></p>
+                                    <p>4. Pada tab Beranda, dalam grup Pengeditan, klik Temukan &amp; Pilih.</p>
+                                    <p><img class="img-fluid" src="files/Protect-contoh_files/image018.png" alt="Klik Temukan &amp; Pilih">
+                                    </p>
+                                    <p>5. Klik Ke Spesial.</p>
+                                    <p><img class="img-fluid" src="files/Protect-contoh_files/image019.png" alt="Klik Pergi Ke Spesial">
+                                    </p>
+                                    <p>6. Pilih Rumus dan klik OK.</p>
+                                    <p><img class="img-fluid" src="files/Protect-contoh_files/image020.png" alt="Pilih Rumus"> </p>
+                                    <p>Excel memilih semua sel rumus.</p>
+                                    <p><img class="img-fluid" src="files/Protect-contoh_files/image021.png" alt="Semua Sel Yang Mengandung Rumus"></p>
+                                    <p>7. Tekan <kbd>Ctrl</kbd>+<kbd>1</kbd>.</p>
+                                    <p>8. Pada tab Proteksi, centang kotak Terkunci dan klik OK.</p>
+                                    <p><img class="img-fluid" src="files/Protect-contoh_files/image017.png" alt="Kunci Sel Formula"></p>
+                                    <p class="moreInfo"><strong>Catatan:</strong> jika Anda juga mencentang kotak Tersembunyi, pengguna tidak dapat melihat rumus di bilah rumus saat mereka memilih sel A2, B2, C2, atau D2.</p>
+                                    <p>Sekali lagi, mengunci sel tidak berpengaruh sampai Anda melindungi lembar kerja.</p>
+                                    <p>9. <a href="#">Lindungi lembaran</a>.</p>
+                                    <p>Semua sel formula terkunci sekarang. Untuk mengedit sel-sel ini, Anda harus membuka proteksi lembar. Password untuk file Excel yang dapat diunduh adalah <q>easy</q>. Anda masih dapat mengedit semua sel lainnya.
+                                    </p>
+                                </section>
+                            </section>
+
+                            <section id="read-only-workbook">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">File hanya-baca <small class="text-muted fw-light">(Read-only Workbook)</small></div>
+                                </div>
+                                <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/read-only-workbook.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                <p>Contoh ini menunjukkan cara membuat buku kerja Anda hanya-baca. Pengguna masih bisa menyimpan perubahan dengan membuat salinan baru dari buku kerja. Untuk perlindungan yang lebih baik, <a href="#">lindungi lembaran</a>.</p>
+                                <p>1. Buka buku kerja.</p>
+                                <p>2. Pada tab File, klik Simpan Sebagai.</p>
+                                <p>3. Klik Telusuri.</p>
+                                <p><img class="img-fluid" src="files/Protect-contoh_files/image001.png" alt="Klik Jelajahi"></p>
+                                <p>4. Klik tombol Alat dan klik Opsi Umum.</p>
+                                <p><img class="img-fluid" src="files/Protect-contoh_files/image002.png" alt="Alat, Opsi Umum"></p>
+                                <p>5. Di kotak Password untuk mengubah, masukkan password dan klik OK.</p>
+                                <p><img class="img-fluid" src="files/Protect-contoh_files/image022.png" alt="Masukan password"></p>
+                                <p class="moreInfo"><strong>Catatan:</strong> Jika Anda hanya ingin merekomendasikan pengguna untuk membuka file Excel sebagai hanya-baca, tanpa melindunginya, jangan masukkan password dan centang Disarankan baca-saja.
+                                </p>
+                                <p>6. Masukkan kembali password dan klik OK.</p>
+                                <p><img class="img-fluid" src="files/Protect-contoh_files/image023.png" alt="Masukkan kembali Kata Sandi"></p>
+                                <p class="moreInfo"><strong>Catatan:</strong> fitur ini tidak mengenkripsi file Excel Anda. Pengguna jahat dapat mengedit file dan menghapus password.</p>
+                                <p>7. Masukkan nama file dan klik Simpan.</p>
+                                <p><img class="img-fluid" src="files/Protect-contoh_files/image024.png" alt="Klik Simpan"></p>
+                                <p>Buku kerja Anda sekarang hanya-baca. Password untuk file Excel yang dapat diunduh adalah <q>easy</q>.
+                                </p>
+                            </section>
+
+                            <section id="mark-as-final">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Tandai sebagai Final <small class="text-muted fw-light">(Mark as Final)</small></div>
+                                </div>
+                                <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/mark-as-final.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                <p>Tandai buku kerja sebagai final di Excel untuk menunjukkan bahwa ini adalah versi final dari buku kerja Anda. Hanya gunakan fitur ini untuk mencegah pengeditan. Pengguna masih dapat mengedit buku kerja.</p>
+                                <p>1. Buka buku kerja.</p>
+                                <p>2. Pada tab File, klik Info.</p>
+                                <p>3. Klik Protect Workbook, Tandai sebagai Final.</p>
+                                <p><img class="img-fluid" src="files/Protect-contoh_files/image025.png" alt="Tandai sebagai Final di Excel"></p>
+                                <p>4. Klik Oke.</p>
+                                <p><img class="img-fluid" src="files/Protect-contoh_files/image026.png" alt="File akan Ditandai sebagai Final dan Disimpan"></p>
+                                <p>Hasil.</p>
+                                <p><img class="img-fluid" src="files/Protect-contoh_files/image027.png" alt="Edit Pokoknya"></p>
+                                <p class="moreInfo"><strong>Catatan:</strong> pengguna masih dapat mengedit buku kerja dengan mengklik Tetap Edit. Perhatikan juga ikon Ditandai sebagai Final di bilah status.</p>
+                            </section>
 
                             <a class="d-flex justify-content-end" href="#dasar-Protect">kembali keatas</a>
                         </div>

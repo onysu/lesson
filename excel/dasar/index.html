@@ -229,7 +229,15 @@
                     <div id="flush-collapse-Share" class="accordion-collapse collapse" aria-labelledby="flush-heading-Share" data-bs-parent="#tab2MenuKanan">
                         <div class="accordion-body">
                             <ul>
-                                <li><a href="#XXX">XXX</a></li>
+                                <li><a href="#embed">Embed</a></li>
+                                <li><a href="#pdf">PDF</a></li>
+                                <li><a href="#share-workbooks">Bagikan Buku Kerja</a></li>
+                                <li><a href="#onedrive">OneDrive</a></li>
+                                <li><a href="#online">Online</a></li>
+                                <li><a href="#import-access-data">Import Access Data</a></li>
+                                <li><a href="#microsoft-query">Microsoft Query</a></li>
+                                <li><a href="#import-export-text-files">Import/Export Text Files</a></li>
+                                <li><a href="#xml">XML</a></li>
                             </ul>
                         </div>
                     </div>
@@ -3419,8 +3427,8 @@
                     <h2 class="accordion-header" id="flush-heading-Share">
                         <button class="accordion-button collapsed" style="padding: 1rem 0rem; box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-Share" aria-expanded="false" aria-controls="flush-collapse-Share">
                             <div class="me-auto">
-                                <div class="fs-3">Share</div>
-                                <small class="text-muted fw-light text-lowercase">...</small>
+                                <div class="fs-3">Share <small class="fw-light small text-muted">(Berbagi)</small></div>
+                                <small class="text-muted fw-light text-lowercase">berbagi data Excel dengan dokumen Word dan file lainnya.</small>
                             </div>
                         </button>
                     </h2>
@@ -3428,20 +3436,316 @@
                     <div id="flush-collapse-Share" class="accordion-collapse collapse" aria-labelledby="flush-heading-Share" data-bs-parent="#tab2Konten">
                         <div class="accordion-body p-0">
 
-                            <section id="...">
-                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-3 mb-2 border-bottom">
-                                    <div class="fs-4" id="content">... <small class="text-muted fw-light">(...)</small>
-                                    </div>
+                            <p class="fw-light small">
+                                <a href="#embed">Embed</a> |
+                                <a href="#pdf">PDF</a> |
+                                <a href="#share-workbooks">Bagikan Buku Kerja</a> |
+                                <a href="#onedrive">OneDrive</a> |
+                                <a href="#online">Online</a> |
+                                <a href="#import-access-data">Import Access Data</a> |
+                                <a href="#microsoft-query">Microsoft Query</a> |
+                                <a href="#import-export-text-files">Import/Export Text Files</a> |
+                                <a href="#xml">XML</a>
+                            </p>
+
+                            <section id="embed">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Menyematkan <small class="fw-light small text-muted">(Embed)</small></div>
                                 </div>
-                                <p class="fw-light">
-                                    <a href="#">...</a> |
-                                    <a href="#">...</a> |
-                                    <a href="#">...</a>
+                                <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/embed.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                <p>Sematkan lembar kerja Excel dalam dokumen Word dan bekerja dengan Excel di Word. Anda juga dapat menyematkan file di Excel.</p>
+                                <p>1. Pilih data Excel.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image001.png" alt="Lembar Kerja Excel"></p>
+                                <p>2. Klik kanan, lalu klik Copy (atau tekan <kbd>Ctrl</kbd>+<kbd>C</kbd>).</p>
+                                <p>3. Open dokumen Word.</p>
+                                <p>4. Di Word, pada tab Home, di grup Clipboard, klik Paste.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image009.png" alt="Di Word, klik Paste"></p>
+                                <p>5. Klik Paste Special.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image010.png" alt="Klik Paste Special"></p>
+                                <p>Kotak dialog Paste Special muncul.</p>
+                                <p>6. Klik Paste, Objek Lembar Kerja Microsoft Excel.</p>
+                                <p>7. Klik Oke.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image011.png" alt="Klik Paste, Objek Lembar Kerja Microsoft Excel"></p>
+                                <p>8. Klik dua kali objek untuk bekerja dengannya. Misalnya, format tabel dan sisipkan fungsi SUM.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image012.png" alt="Lembar Kerja Tertanam di Word"></p>
+                                <p class="moreInfo"><strong>Catatan:</strong> objek yang disematkan adalah bagian dari file Word. Tidak ada tautan ke file Excel asli. Untuk membuat tautan, pada langkah 6, klik Paste Link, Objek Lembar Kerja Microsoft Excel. Sekarang, jika
+                                    Anda mengklik dua kali objek tersebut, Excel membuka file Excel. Untuk menyematkan file di Excel, pada tab Insert, di grup Text, klik Objek.</p>
+                            </section>
+
+                            <section id="pdf">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">PDF</div>
+                                </div>
+                                <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/pdf.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                <p>Halaman ini mengajarkan Anda bagaimana untuk mengkonversi sebuah berkas Excel ke PDF berkas.</p>
+                                <p>1. Open buku kerja.</p>
+                                <p>2. Pada tab File, klik Save As.</p>
+                                <p>3. Klik Browse.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image013.png" alt="Klik Jelajahi"></p>
+                                <p>4. Pilih PDF dari daftar drop-down.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image014.png" alt="Save sebagai PDF"></p>
+                                <p>5. Klik Options.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image015.png" alt="Klik Options"></p>
+                                <p>6. Anda dapat menerbitkan pilihan, lembar aktif atau seluruh buku kerja.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image016.png" alt="Publikasikan Apa"></p>
+                                <p>7. Klik OK lalu Klik Save.</p>
+                            </section>
+
+                            <section id="share-workbooks">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Bagikan Buku Kerja <small class="fw-light small text-muted">(Share Workbooks)</small></div>
+                                </div>
+                                <p>
+                                    <a href="#highlight-changes">Sorot Perubahan</a> |
+                                    <a href="#accept-reject-changes">Terima/Tolak Perubahan</a>
                                 </p>
-                                <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
-                                <P>
-                                    <!--  -->
-                                </P>
+
+                                <p>Jika Anda berbagi sebuah buku kerja di Excel 2016 atau versi yang lebih tua, Anda dapat bekerja dengan orang lain pada buku kerja yang sama pada waktu yang sama. Buku kerja harus disimpan ke lokasi jaringan di mana orang
+                                    lain bisa membukanya. Anda dapat melacak perubahan yang dilakukan orang lain dan menerima atau menolak perubahan tersebut.
+                                </p>
+                                <p>Untuk berbagi buku kerja, jalankan langkah-langkah berikut.</p>
+                                <p>1. Open buku kerja.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image017.png" alt="Buku kerja di Excel"></p>
+                                <p>2. Pada tab Review, di grup Changes, klik Share Workbook.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image018.png" alt="Klik Share Workbook"></p>
+                                <p>Kotak dialog Share Workbook muncul.</p>
+                                <p>3. Pada tab Editing, klik kotak centang dan klik OK.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image019.png" alt="Siapa yang memiliki Buku Kerja ini Open Sekarang"></p>
+                                <p>Excel menyimpan buku kerja. Anda sekarang dapat bekerja dengan orang lain di buku kerja yang sama secara bersamaan. Layar di atas menunjukkan kepada Anda siapa yang membuka buku kerja.</p>
+
+                                <section>
+                                    <h5>Soroti Perubahan <small class="text-muted fw-light">(Highlight Changes)</small></h5>
+                                    <p>Anda dapat menyorot perubahan di layar yang dibuat pengguna lain.</p>
+                                    <p>1. Pada tab Review, di grup Changes, klik Track Changes.</p>
+                                    <p><img class="img-fluid" src="files/Share-contoh_files/image020.png" alt="Track Changes"></p>
+                                    <p>2. Klik Highlight Changes.</p>
+                                    <p><img class="img-fluid" src="files/Share-contoh_files/image021.png" alt="Klik Sorot Changes"></p>
+                                    <p>Kotak dialog Highlight Changes muncul.</p>
+                                    <p>3. Klik Oke.</p>
+                                    <p><img class="img-fluid" src="files/Share-contoh_files/image022.png" alt="Soroti Changes Yang Mana"></p>
+                                    <p>Excel menyoroti perubahan di layar.</p>
+                                    <p><img class="img-fluid" src="files/Share-contoh_files/image023.png" alt="Ubah Yang Disorot"></p>
+                                    <p>Rupanya, Aiden telah mengubah Penjualan Smith dari $16.753,00 menjadi $26.753,00.</p>
+                                </section>
+
+                                <section>
+                                    <h5>Menerima/Menolak Perubahan <small class="text-muted fw-light">(Accept/Reject Changes)</small></h5>
+                                    <p>Anda sekarang dapat menerima atau menolak perubahan ini.</p>
+                                    <p>1. Pada tab Review, di grup Changes, klik Track Changes.</p>
+                                    <p><img class="img-fluid" src="files/Share-contoh_files/image020.png" alt="Track Changes"></p>
+                                    <p>2. Klik Accept/Reject Changes.</p>
+                                    <p><img class="img-fluid" src="files/Share-contoh_files/image024.png" alt="Klik Terima/Tolak Changes"></p>
+                                    <p>3. Klik Oke.</p>
+                                    <p><img class="img-fluid" src="files/Share-contoh_files/image025.png" alt="Pilih Changes untuk Menerima atau Menolak"></p>
+                                    <p>4. Klik Accept untuk menerima perubahan atau Reject untuk menolak perubahan.</p>
+                                    <p><img class="img-fluid" src="files/Share-contoh_files/image026.png" alt="Tolak Changes"></p>
+                                    <p class="moreInfo"><strong>Catatan:</strong> tidak semua fitur tersedia di buku kerja bersama.</p>
+                                </section>
+                            </section>
+
+                            <section id="onedrive">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">OneDrive</div>
+                                </div>
+                                <p>Save file Excel Anda ke lokasi OneDrive Anda dan akses file Anda dari komputer mana pun atau bagikan dengan orang lain.</p>
+                                <p>1. Open buku kerja.</p>
+                                <p>2. Pada tab File, klik Save As.</p>
+                                <p>3. Klik OneDrive, Sign In.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image027.png" alt="Masuk ke OneDrive"></p>
+                                <p class="moreInfo"><strong>Catatan:</strong> jika Anda tidak memiliki akun Microsoft, klik Sign up untuk membuat akun. Jika Anda menggunakan Outlook atau Xbox live, Anda sudah memiliki akun Microsoft.</p>
+                                <p>4. Ketik alamat email Anda dan klik Next.</p>
+                                <p>5. Masukkan password Anda dan klik Sign in.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image028.png" alt="Masukkan kata kunci"></p>
+                                <p>6. Pilih folder.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image029.png" alt="Save ke OneDrive"></p>
+                                <p>7. Klik Save.</p>
+                                <p>Anda sekarang dapat mengedit file Excel ini dengan <a href="#">Excel Online</a> dari mana saja tanpa menginstal Excel di komputer Anda. Untuk berbagi file Excel ini dengan orang lain, jalankan langkah-langkah berikut.
+                                </p>
+                                <p>8. Open <a href="https://onedrive.live.com/" target=blank>onedrive.live.com</a> dan masuk dengan akun Microsoft Anda.</p>
+                                <p>9. Klik folder yang dipilih pada langkah 6.</p>
+                                <p>10. Klik kanan file Excel dan klik Share (Bagikan).</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image030.png" alt="Bagikan File OneDrive"></p>
+                                <p>11. Masukkan alamat email, tambahkan pesan dan klik Send.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image031.png" alt="Kirim Tautan"></p>
+                                <p>Penerima menerima tautan dan dapat mengedit file Excel. Anda sekarang dapat menggunakan <a href="#">Excel Online</a> untuk bekerja dengan penerima di buku kerja ini secara bersamaan.</p>
+                            </section>
+
+                            <section id="online">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4">Online</div>
+                                </div>
+                                <p>Anda dapat mengedit file Excel dengan Excel Online dari mana saja tanpa menginstal Excel di komputer Anda</p>
+                                <p>1. Pertama, simpan file Excel ke lokasi <a href="#">OneDrive</a> Anda.</p>
+                                <p>2. Open <a href="https://onedrive.live.com/" target=blank>onedrive.live.com</a> dan masuk dengan akun Microsoft Anda.</p>
+                                <p>3. Klik file Excel.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image032.png" alt="Klik File Excel di OneDrive"></p>
+                                <p>Excel Online membuka buku kerja di browser.</p>
+                                <p>4. Edit file Excel Anda.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image033.png" alt="Excel Online"></p>
+                                <p class="moreInfo"><strong>Catatan:</strong> tidak perlu menyimpan file Anda karena semua perubahan disimpan secara otomatis. Tidak semua fitur tersedia di Excel Online.</p>
+                            </section>
+
+                            <section id="import-access-data">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Import Access Data</div>
+                                </div>
+                                <p>
+                                    <a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/northwind.xlsx" title="unduh file latihan" rel="noopener">unduh file northwind.xlsx</a>
+                                    <a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/northwind.accdb" title="unduh file latihan" rel="noopener">unduh file northwind.accdb</a>
+                                </p>
+
+                                <p>Contoh ini mengajarkan Anda cara mengimpor data dari database Microsoft Access. Di Excel, saat Anda mengimpor data, Anda membuat koneksi permanen yang bisa di-refresh.</p>
+                                <p>1. Pada tab Data, dalam grup Get & Transform Data, klik Get Data.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image034.png" alt="Get Data"></p>
+                                <p>2. Klik From Database, From Microsoft Access Database.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image035.png" alt="Dari Basis Data Microsoft Access"></p>
+                                <p>3. Pilih file Access.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image036.png" alt="Impor Data"></p>
+                                <p>4. Klik Import.</p>
+                                <p>5. Pilih tabel di sisi kiri window Navigator dan klik Load.
+                                </p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image037.png" alt="Pilih Tabel"></p>
+                                <p>Hasil. Catatan database Anda di Excel.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image038.png" alt="Akses Data di Excel"></p>
+                                <p>6. Saat data Access Anda berubah, Anda dapat dengan mudah me-refresh data di Excel. Pertama, pilih sel di dalam tabel. Selanjutnya, pada tab Design, dalam grup External Table Data, klik Refresh.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image039.png" alt="Segarkan Data"></p>
+                            </section>
+
+                            <section id="microsoft-query">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Microsoft Query</div>
+                                </div>
+                                <p>
+                                    <a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/microsoft-query.xlsx" title="unduh file latihan" rel="noopener">unduh file microsoft-query.xlsx</a>
+                                    <a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/microsoft-query.accdb" title="unduh file latihan" rel="noopener">unduh file microsoft-query.accdb</a>
+                                </p>
+
+                                <p>Contoh ini mengajarkan Anda cara mengimpor data dari database Microsoft Access dengan menggunakan Microsoft Query Wizard. Dengan Microsoft Query, Anda bisa memilih kolom data yang Anda inginkan dan hanya mengimpor data
+                                    tersebut ke Excel.</p>
+                                <p>1. Pada tab Data, dalam grup Get & Transform Data, klik Get Data.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image034.png" alt="Get Data"></p>
+                                <p>2. Klik From Other Sources, Dari Microsoft Query.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image040.png" alt="Dari Microsoft Query"></p>
+                                <p>Kotak dialog <q>Choose Data Source</q> muncul.</p>
+                                <p>3. Pilih MS Access Database* dan centang <q>Use the Query Wizard to create/edit queries</q>.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image041.png" alt="Pilih Sumber Data"></p>
+                                <p>4. Klik Oke.</p>
+                                <p>5. Pilih database dan klik OK.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image042.png" alt="Pilih Basis Data"></p>
+                                <p>Database Access ini terdiri dari beberapa tabel. Anda dapat memilih tabel dan kolom yang ingin Anda sertakan dalam query Anda.</p>
+                                <p>6. Pilih Customers dan klik simbol &gt;.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image043.png" alt="Wizard Kueri - Pilih Kolom"></p>
+                                <p>7. Klik Next.</p>
+                                <p>Untuk hanya mengimpor kumpulan rekaman tertentu, filter data.</p>
+                                <p>8. Klik City dari daftar <q>Column to filter</q> dan hanya sertakan baris di mana City sama dengan New York.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image044.png" alt="Panduan Kueri - Filter Data"></p>
+                                <p>9. Klik Next.</p>
+                                <p>Anda dapat mengurutkan data Anda jika Anda mau (kami tidak melakukannya di sini).</p>
+                                <p>10. Klik Next.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image045.png" alt="Wizard Kueri - Urutkan Urutan"></p>
+                                <p>11. Klik Finish untuk mengembalikan data ke Microsoft Excel.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image046.png" alt="Wizard Kueri - Selesai"></p>
+                                <p>12. Pilih bagaimana Anda ingin melihat data ini, di mana Anda ingin meletakkannya, dan klik OK.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image047.png" alt="Impor Data"></p>
+                                <p>Hasil:</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image048.png" alt="Hasil Query Microsoft di Excel"></p>
+                                <p>13. Saat data Access Anda berubah, Anda dapat dengan mudah me-refresh data di Excel. Pertama, pilih sel di dalam tabel. Selanjutnya, pada tab Design, dalam grup External Table Data, klik Refresh.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image039.png" alt="Segarkan Data"></p>
+                            </section>
+
+                            <section id="import-export-text-files">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Impor/Ekspor File Teks</div>
+                                </div>
+                                <p class="fw-light small">
+                                    <a href="#import">Impor</a> |
+                                    <a href="#export">Ekspor</a>
+                                </p>
+                                <p>
+                                    <a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/impor-ekspor.xlsx" title="unduh file latihan" rel="noopener">unduh file impor-ekspor.xlsx</a>
+                                    <a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/impor-ekspor.txt" title="unduh file latihan" rel="noopener">unduh file impor-ekspor.txt</a>
+                                    <a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/impor-ekspor.csv" title="unduh file latihan" rel="noopener">unduh file impor-ekspor.csv</a>
+                                </p>
+
+                                <p>Artikel ini menjelaskan cara mengimpor atau mengekspor file teks. File teks dapat dipisahkan koma (.csv ) atau dipisahkan tab (.txt )</p>
+
+                                <section id="import">
+                                    <h5>Import</h5>
+                                    <p>Untuk mengimpor file teks, jalankan langkah-langkah berikut.</p>
+                                    <p>1. Pada tab File, klik Open.</p>
+                                    <p>2. Klik Browse.</p>
+                                    <p><img class="img-fluid" src="files/Share-contoh_files/image049.png" alt="Klik Jelajahi"></p>
+                                    <p>3. Pilih Text Files dari daftar drop-down.</p>
+                                    <p><img class="img-fluid" src="files/Share-contoh_files/image050.png" alt="Impor File Teks"></p>
+                                    <p>4a. Untuk mengimpor file.csv, pilih Microsoft Excel Comma Separated Values File dan klik Open. Itu saja.</p>
+                                    <p>4b. Untuk mengimpor file.txt, pilih Text Document dan klik Open. Excel meluncurkan Text Import Wizard.</p>
+                                    <p>5. Pilih Delimited dan klik Next.</p>
+                                    <p><img class="img-fluid" src="files/Share-contoh_files/image051.png" alt="Wisaya Impor Teks - Langkah 1 dari 3"></p>
+                                    <p>6. Kosongkan semua kotak centang di bawah Pembatas kecuali kotak centang Tab dan klik Next.</p>
+                                    <p><img class="img-fluid" src="files/Share-contoh_files/image052.png" alt="Wisaya Impor Teks - Langkah 2 dari 3"></p>
+                                    <p>7. Klik Finish.</p>
+                                    <p><img class="img-fluid" src="files/Share-contoh_files/image053.png" alt="Wisaya Impor Teks - Langkah 3 dari 3"></p>
+                                    <p>Hasil:</p>
+                                    <p><img class="img-fluid" src="files/Share-contoh_files/image054.png" alt="Berkas Excel"></p>
+                                </section>
+
+                                <section id="export">
+                                    <h5>Export</h5>
+                                    <p>Untuk mengekspor file teks, jalankan langkah-langkah berikut.</p>
+                                    <p>1. Open file Excel.</p>
+                                    <p>2. Pada tab File, klik Save As.</p>
+                                    <p>3. Klik Browse.</p>
+                                    <p><img class="img-fluid" src="files/Share-contoh_files/image013.png" alt="Klik Jelajahi"></p>
+                                    <p>4. Pilih Text (Tab delimited) atau CSV (Comma delimited) dari daftar drop-down.</p>
+                                    <p><img class="img-fluid" src="files/Share-contoh_files/image055.png" alt="Ekspor File Teks"></p>
+                                    <p>5. Klik Save.</p>
+                                    <p>Hasil. file .csv (dipisahkan koma) atau file .txt (dipisahkan tab).</p>
+                                    <p><img class="img-fluid" src="files/Share-contoh_files/image056.png" alt="File Csv"> <img class="img-fluid" src="files/Share-contoh_files/image057.png" alt="File Txt"></p>
+                                </section>
+                            </section>
+
+                            <section id="xml">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">XML</div>
+                                </div>
+                                <p>
+                                    <a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/xml.xlsx" title="unduh file latihan" rel="noopener">unduh file xml.xlsx</a>
+                                    <a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/schema.xml" title="unduh file latihan" rel="noopener">unduh file schema.xml</a>
+                                    <a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/xml.xml" title="unduh file latihan" rel="noopener">unduh file xml.xml</a>
+                                </p>
+                                <p>Anda dapat mengonversi file Excel menjadi file data XML, atau sebaliknya. Ini memungkinkan Anda untuk bertukar data antara aplikasi yang berbeda. Pertama, aktifkan <a href="#">Developer Tab</a>.</p>
+
+                                <p>Berikut data yang ingin kami konversi ke file data XML.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image058.png" alt="Berkas Excel"></p>
+                                <p>Pertama, kita akan membuat skema berdasarkan data sumber XML. Skema mendefinisikan struktur file XML. Kita harus melakukan ini di luar Excel.</p>
+                                <p>1. Misalnya, buka Notepad dan tambahkan baris berikut.</p>
+                                <div class="code">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;<br> &lt;data-set xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;<br> &nbsp;&nbsp;&nbsp; &lt;record&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;LastName&gt;Smith&lt;/LastName&gt;<br>                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Sales&gt;16753&lt;/Sales&gt;<br> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &lt;Country&gt;UK&lt;/Country&gt;<br> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &lt;Quarter&gt;Qtr 3&lt;/Quarter&gt;<br>                                    &nbsp;&nbsp;&nbsp; &lt;/record&gt;
+                                    <br> &nbsp;&nbsp;&nbsp; &lt;record&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;LastName&gt;Johnson&lt;/LastName&gt;<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;Sales&gt;14808&lt;/Sales&gt;<br> &nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp; &lt;Country&gt;USA&lt;/Country&gt;
+                                    <br> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &lt;Quarter&gt;Qtr 4&lt;/Quarter&gt;<br> &nbsp;&nbsp;&nbsp; &lt;/record&gt;<br> &lt;/data-set&gt;
+                                </div>
+                                <p class="moreInfo"><strong>Catatan:</strong> tag merujuk ke nama kolom, tetapi Anda dapat memberi mereka nama apa pun yang Anda inginkan! Misalnya, alih-alih Nama Belakang gunakan Nama.</p>
+                                <p>2. Save file sebagai <a href="files/bahan/schema.xml">schema.xml</a>.</p>
+                                <p>3. Open <a href="files/bahan/xml.xlsx">data-set.xlsx</a>.</p>
+                                <p>4. Pada <a href="#">Tab Developer</a>, dalam grup XML, klik Source untuk membuka panel tugas Source XML.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image059.png" alt="Open Panel Tugas Sumber XML"></p>
+                                <p>5. Untuk menambahkan peta XML, klik XML Maps.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image060.png" alt="Tambahkan XML Maps"></p>
+                                <p>Kotak dialog XML Maps muncul.</p>
+                                <p>6. Klik Add.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image061.png" alt="Klik Tambahkan"></p>
+                                <p>7. Pilih <a href="files/bahan/schema.xml">schema.xml</a> dan klik OK dua kali.</p>
+                                <p>8. Sekarang cukup seret (petakan) 4 elemen dari pohon ke lembar kerja (baris 1).</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image062.png" alt="Seret Elemen ke Lembar Kerja"></p>
+                                <p>9. Pada Tab Developer, di grup XML, klik Export.</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image063.png" alt="Klik Ekspor"></p>
+                                <p>10. Save file Anda sebagai <a href="files/bahan/data-set.xml">data-set.xml</a> dan tekan Enter.</p>
+                                <p>Hasil:</p>
+                                <p><img class="img-fluid" src="files/Share-contoh_files/image064.png" alt="File Data XML"></p>
+                                <p>Itu menghemat banyak waktu!</p>
+                                <p class="moreInfo"><strong>Catatan:</strong> untuk mengimpor file XML, buka buku kerja kosong, pada tab Developer, dalam grup XML, klik Import, lalu pilih file XML.</p>
                             </section>
 
                         </div>

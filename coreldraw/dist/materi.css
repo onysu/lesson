@@ -1,0 +1,85 @@
+#mainContent {
+    display: flex;
+    /* border: thin blue solid; */
+    /* padding: 10px; */
+    width: 100%;
+    /* margin: 10px auto; */
+}
+
+#tutVidTitle {
+    /* font-family: 'arial narrow', sans-serif; */
+    /* font-weight: 100; */
+    /* background: #222024; */
+    color: inherit;
+    padding: 5px;
+    margin-top: 4px;
+}
+
+#videoSizer {
+    flex: 2;
+    width: 100%;
+}
+
+#videoWrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#videoList {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background: #cccccc;
+    margin: 0 5px;
+    align-items: center;
+}
+
+#videoList a {
+    text-decoration: none;
+    font-family: 'arial narrow', sans-serif;
+    color: black;
+    display: block;
+    padding: 10px;
+    background: #ffffff;
+    margin: 4px;
+    width: 100%;
+    transition: .4s;
+    border: 1px white solid;
+}
+
+#videoList a:hover,
+#videoList a:active {
+    color: #fff;
+    background: gray;
+    border: 1px black solid;
+    text-shadow: .5px .5px black;
+}
+
+input:checked~a {
+    color: #fff;
+    background: #cccccc;
+    border: 1px black solid;
+    text-shadow: .5px .5px black;
+}
+
+@media screen and (max-width: 800px) {
+    #mainContent {
+        flex-direction: column;
+    }
+    #videoList {
+        padding-top: 20px;
+        margin: 5px 0;
+    }
+}

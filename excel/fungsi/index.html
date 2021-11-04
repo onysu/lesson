@@ -191,6 +191,50 @@
 
                             <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/logical-functions.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
 
+                            <p>Pelajari cara menggunakan fungsi logika Excel, seperti IF, AND, OR dan NOT.</p>
+
+                            <section id="if">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">IF</div>
+                                </div>
+                                <p>Fungsi IF memeriksa apakah suatu kondisi terpenuhi, dan mengembalikan satu nilai jika benar dan nilai lain jika salah.</p>
+                                <p>1. Sebagai contoh, perhatikan fungsi IF pada sel C2 di bawah ini.</p>
+                                <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image001.png" alt="Jika Fungsi">
+                                </p>
+                                <p class="moreInfo text-break"><strong>Penjelasan:</strong> jika skor lebih besar atau sama dengan 60, fungsi IF mengembalikan Pass, jika tidak mengembalikan Fail. Kunjungi halaman kami tentang <a href="#">fungsi IF</a> untuk lebih banyak contoh.</p>
+                            </section>
+
+                            <section id="and">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">And</div>
+                                </div>
+                                <p>Fungsi AND mengembalikan TRUE jika semua kondisi benar dan mengembalikan FALSE jika salah satu kondisi salah.</p>
+                                <p>1. Sebagai contoh, perhatikan fungsi AND pada sel D2 di bawah ini.</p>
+                                <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image002.png" alt="Dan Fungsi"></p>
+                                <p class="moreInfo text-break"><strong>Penjelasan:</strong> fungsi AND mengembalikan TRUE jika skor pertama lebih besar atau sama dengan 60 dan skor kedua lebih besar atau sama dengan 90, selain itu mengembalikan FALSE.</p>
+                            </section>
+
+                            <section id="or">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Or</div>
+                                </div>
+                                <p>Fungsi OR mengembalikan TRUE jika salah satu kondisi adalah TRUE dan mengembalikan FALSE jika semua kondisi salah.</p>
+                                <p>1. Sebagai contoh, perhatikan fungsi OR pada sel D2 di bawah ini.</p>
+                                <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image003.png" alt="Atau Fungsi"></p>
+                                <p class="moreInfo text-break"><strong>Penjelasan:</strong> fungsi OR mengembalikan TRUE jika setidaknya satu skor lebih besar dari atau sama dengan 60, selain itu mengembalikan FALSE. Kunjungi halaman kami tentang <a href="#">fungsi OR</a> untuk lebih
+                                    banyak contoh.</p>
+                            </section>
+
+                            <section id="not">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Not</div>
+                                </div>
+                                <p>Fungsi NOT mengubah TRUE menjadi FALSE, dan FALSE menjadi TRUE.</p>
+                                <p>1. Sebagai contoh, perhatikan fungsi NOT pada sel D2 di bawah ini.</p>
+                                <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image004.png" alt="Tidak berfungsi"></p>
+                                <p class="moreInfo text-break"><strong>Penjelasan:</strong> dalam contoh ini, fungsi NOT membalikkan hasil dari fungsi OR (lihat contoh sebelumnya).</p>
+                            </section>
+
                             <p>Fungsi IF adalah salah satu fungsi yang paling banyak digunakan di Excel. Halaman ini berisi banyak contoh IF yang mudah diikuti.</p>
 
                             <section id="simple-if-examples">
@@ -281,6 +325,453 @@
                                 <p class="moreInfo text-break"><strong>Catatan:</strong> coba sendiri. Unduh file Excel dan pilih salah satu rumus IF yang dijelaskan di halaman ini. Anda dapat menggunakan alat ini untuk menelusuri semua jenis rumus.</p>
                             </section>
 
+                            <section id="ContohPenggunaanFungsiLogika">
+                                <details>
+                                    <summary class="lead border-bottom py-2">Contoh Penggunaan Fungsi Logika</summary>
+                                    <p class="link-text mt-2">
+                                        <a href="#Logika-if">If</a> |
+                                        <a href="#Logika-comparison-operators">Operator Perbandingan</a> |
+                                        <a href="#Logika-or">Or</a> |
+                                        <a href="#Logika-roll-the-dice">Melempar Dadu</a> |
+                                        <a href="#Logika-ifs">Ifs</a> |
+                                        <a href="#Logika-contains-specific-text">Berisi Teks Tertentu</a> |
+                                        <a href="#Logika-switch">Switch</a> |
+                                        <a href="#Logika-if-cell-is-blank">Jika Sel Kosong</a> |
+                                        <a href="#Logika-absolute-value">Nilai Mutlak</a>
+                                    </p>
+
+                                    <!-- if -->
+                                    <section>
+                                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/if.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                                            <p class="bd-lead mb-0" id="Logika-if">If</p>
+                                        </div>
+                                        <p>
+                                            <a href="#simple-if-examples">Contoh Sederhana Jika</a> |
+                                            <a href="#and-or-criteria">And/Or Kriteria</a> |
+                                            <a href="#nested-if">Bersarang Jika</a> |
+                                            <a href="#more-about-if">Lebih lanjut mengenai If</a>
+                                        </p>
+                                        <p>Fungsi IF adalah salah satu fungsi yang paling banyak digunakan di Excel. Halaman ini berisi banyak contoh IF yang mudah diikuti.</p>
+                                        <p class="sub-judul" id="simple-if-examples">Contoh Sederhana Jika</p>
+                                        <p>Fungsi IF memeriksa apakah suatu kondisi terpenuhi, dan mengembalikan satu nilai jika benar dan nilai lain jika salah.</p>
+                                        <p>1a. Misalnya, lihat fungsi IF di sel B2 di bawah ini.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image005.png" alt="Jika Lebih Besar dari"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> jika harga lebih besar dari 500, fungsi IF mengembalikan High, jika tidak mengembalikan Low.</p>
+                                        <p>1b. Fungsi IF berikut menghasilkan hasil yang sama persis.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image006.png" alt="Jika Kurang dari"></p>
+                                        <p class="moreInfo text-break"><strong>Catatan:</strong> Anda dapat menggunakan <a href="#">operator
+                                perbandingan</a> berikut : = (sama dengan), &gt; (lebih besar dari), &lt; (kurang dari), &gt;= (lebih besar atau sama dengan), &lt;= (kurang dari atau sama dengan) dan &lt;&gt; (tidak sebanding dengan).</p>
+                                        <p>2. Selalu sertakan teks dalam tanda kutip ganda.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image007.png" alt="Fungsi IF sederhana di Excel"></p>
+                                        <p>3a. Rumus di bawah ini menghitung kemajuan antara dua titik waktu.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image008.png" alt="Hitung Kemajuan"></p>
+                                        <p>3b. Anda dapat menggunakan fungsi IF untuk menampilkan string kosong jika nilai akhir belum dimasukkan (lihat baris 5).</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image009.png" alt="Tampilkan String Kosong"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> jika nilai akhir tidak kosong (&lt;&gt; berarti tidak sama dengan), fungsi IF menghitung kemajuan antara nilai awal dan akhir, selain itu akan menampilkan string kosong (dua tanda kutip
+                                            ganda tanpa apa pun di antaranya).</p>
+
+
+                                        <p class="sub-judul" id="and-or-criteria">And/Or Kriteria</p>
+                                        <p>Gunakan fungsi IF dalam kombinasi dengan fungsi AND dan
+                                            <a href="#">fungsi OR</a> dan jadilah ahli Excel.</p>
+                                        <p>1. Sebagai contoh, perhatikan fungsi IF pada sel D2 di bawah ini.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image010.png" alt="Jika ini Dan itu"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> fungsi AND mengembalikan TRUE jika skor pertama lebih besar atau sama dengan 60 dan skor kedua lebih besar atau sama dengan 90, selain itu mengembalikan FALSE. Jika TRUE, fungsi IF mengembalikan
+                                            Pass, jika FALSE, fungsi IF mengembalikan Fail.
+                                        </p>
+                                        <p>2. Sebagai contoh, perhatikan fungsi IF pada sel D2 di bawah ini.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image011.png" alt="Jika ini Atau itu"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> fungsi OR mengembalikan TRUE jika setidaknya satu skor lebih besar dari atau sama dengan 60, selain itu mengembalikan FALSE. Jika TRUE, fungsi IF mengembalikan Pass, jika FALSE, fungsi
+                                            IF mengembalikan Fail.
+                                        </p>
+                                        <p>3. Sebagai contoh, perhatikan fungsi IF pada sel D2 di bawah ini.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image012.png" alt="Fungsi JIKA lanjutan"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> fungsi AND di atas memiliki dua argumen yang dipisahkan oleh koma (Tabel, Hijau atau Biru). Fungsi AND mengembalikan TRUE jika Produk sama dengan &quot;Tabel&quot; dan Warna sama dengan
+                                            &quot;Hijau&quot; atau &quot;Biru&quot;. Jika TRUE, fungsi IF mengurangi harga sebesar 50%, jika FALSE, fungsi IF mengurangi harga sebesar 10%.</p>
+                                        <p class="sub-judul" id="nested-if">Bersarang Jika</p>
+                                        <p>Fungsi JIKA di Excel bisa disarangkan, saat Anda memiliki beberapa kondisi yang harus dipenuhi. Nilai FALSE digantikan oleh fungsi IF lain untuk melakukan pengujian lebih lanjut.
+                                        </p>
+                                        <p>1. Misalnya, lihat rumus JIKA bersarang di sel C2 di bawah ini.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image013.png" alt="Contoh JIKA bersarang"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> jika skor sama dengan 1, rumus IF bersarang menghasilkan Buruk, jika skor sama dengan 2, rumus JIKA bersarang menghasilkan Baik, jika skor sama dengan 3, rumus IF bersarang mengembalikan
+                                            Sangat Baik, jika tidak maka mengembalikan Tidak Valid. Jika Anda memiliki Excel 2016 atau lebih baru, cukup gunakan <a href="https://www.excel-easy.com/examples/ifs.html">fungsi IFS</a>.</p>
+                                        <p>2. Misalnya, lihat rumus JIKA bersarang di sel C2 di bawah ini.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image014.png" alt="Rumus JIKA bersarang"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> jika skor kurang dari 60, rumus IF bersarang mengembalikan F, jika skor lebih besar atau sama dengan 60 dan kurang dari 70, rumus mengembalikan D, jika skor lebih besar atau sama dengan
+                                            70 dan kurang dari 80, rumus mengembalikan C, jika skor lebih besar atau sama dengan 80 dan kurang dari 90, rumus mengembalikan B, selain itu mengembalikan A.</p>
+                                        <p class="sub-judul" id="more-about-if">Lebih lanjut mengenai If</p>
+                                        <p>Fungsi IF adalah fungsi yang bagus. Mari kita lihat beberapa contoh keren lainnya.</p>
+                                        <p>1. Misalnya, gunakan IF dan AND untuk menguji apakah suatu nilai berada di antara dua angka.
+                                        </p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image015.png" alt="Jika Nilai Antara Dua Angka"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> fungsi AND mengembalikan TRUE jika orang tersebut lebih tua dari 12 tahun dan lebih muda dari 20 tahun, selain itu mengembalikan FALSE. Jika TRUE, fungsi IF mengembalikan Ya, jika FALSE,
+                                            fungsi IF mengembalikan Tidak.
+                                        </p>
+                                        <p>2. Anda dapat menggabungkan IF dengan AVERAGE, SUM dan fungsi Excel lainnya. Langit adalah batasnya!
+                                        </p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image016.png" alt="JIKA, RATA-RATA dan SUM"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> fungsi AND mengembalikan TRUE jika nilai input lebih besar dari 100 dan rata-rata nilai dalam <a href="#">nama range</a> Data1 lebih besar dari 100, selain itu mengembalikan FALSE. Jika
+                                            TRUE, fungsi IF mengembalikan jumlah Data2, jika FALSE, fungsi IF mengembalikan 0.
+                                        </p>
+                                        <p>Bingung? Anda selalu dapat menggunakan alat Evaluasi Rumus untuk menelusuri rumus JIKA Anda. Alat Excel ini membantu Anda memahami rumus.</p>
+                                        <p>3. Misalnya, pilih sel G3 di atas.</p>
+                                        <p>4. Pada tab Rumus, dalam grup Audit Rumus, klik Evaluasi Rumus.
+                                        </p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image017.png" alt="Evaluasi Rumus">
+                                        </p>
+                                        <p>5. Klik Evaluasi beberapa kali.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image018.png" alt="Evaluasi rumus JIKA"></p>
+                                        <p class="moreInfo text-break"><strong>Catatan:</strong> coba sendiri. Unduh file Excel dan pilih salah satu rumus IF yang dijelaskan di halaman ini. Anda dapat menggunakan alat ini untuk menelusuri semua jenis rumus.</p>
+                                    </section>
+
+                                    <!-- Comparison Operators -->
+                                    <section>
+                                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/comparison-operators.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                                            <p class="bd-lead mb-0" id="Logika-comparison-operators">Operator Perbandingan <span class="span-text">(Comparison Operators)</span></p>
+                                        </div>
+                                        <p></p>
+                                        <p>
+                                            <a href="#equal-to"><code>=</code></a> |
+                                            <a href="#greater-than"><code>&gt;</code></a> |
+                                            <a href="#less-than"><code>&lt;</code></a> |
+                                            <a href="#greater-than-or-equal-to"><code>&ge;</code></a> |
+                                            <a href="#less-than-or-equal-to"><code>&le;</code></a> |
+                                            <a href="#not-equal-to"><code>&lt;&gt;</code></a>
+                                        </p>
+                                        <p>Gunakan operator perbandingan di Excel untuk memeriksa apakah dua nilai sama satu sama lain, jika satu nilai lebih besar dari nilai lain, jika satu nilai kurang dari nilai lain, dll.
+                                        </p>
+                                        <p class="sub-judul" id="equal-to">Sama dengan <code>=</code></p>
+                                        <p>Operator sama dengan (=) mengembalikan TRUE jika dua nilai sama satu sama lain.</p>
+                                        <p>1. Misalnya, lihat rumus di sel C1 di bawah ini.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image019.png" alt="Sama Dengan Operator di Excel"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> rumus mengembalikan TRUE karena nilai di sel A1 sama dengan nilai di sel B1. Selalu awali rumus dengan tanda sama dengan (=).</p>
+                                        <p>2. Fungsi IF di bawah ini menggunakan operator sama dengan.
+                                        </p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image020.png" alt="Jika Fungsi">
+                                        </p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> jika dua nilai (angka atau string teks) sama satu sama lain, <a href="#">fungsi IF</a> mengembalikan Ya, jika tidak mengembalikan Tidak.</p>
+                                        <p class="sub-judul" id="greater-than">Lebih besar dari</p>
+                                        <p>Operator lebih besar dari (&gt;) mengembalikan TRUE jika nilai pertama lebih besar dari nilai kedua.
+                                        </p>
+                                        <p>1. Misalnya, lihat rumus di sel C1 di bawah ini.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image021.png" alt="Lebih Besar dari Operator"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> rumus mengembalikan TRUE karena nilai di sel A1 lebih besar dari nilai di sel B1.</p>
+                                        <p>2. Fungsi OR di bawah ini menggunakan operator lebih besar dari.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image022.png" alt="Atau Fungsi">
+                                        </p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> <a href="https://www.excel-easy.com/examples/or.html">fungsi OR</a> ini mengembalikan TRUE jika setidaknya satu nilai lebih besar dari 50, selain itu mengembalikan FALSE.
+                                        </p>
+                                        <p class="sub-judul" id="less-than">Kurang dari</p>
+                                        <p>Operator kurang dari (&lt;) mengembalikan TRUE jika nilai pertama lebih kecil dari nilai kedua.
+                                        </p>
+                                        <p>1. Misalnya, lihat rumus di sel C1 di bawah ini.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image023.png" alt="Kurang dari Operator"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> rumus mengembalikan TRUE karena nilai di sel A1 lebih kecil dari nilai di sel B1.</p>
+                                        <p>2. Fungsi AND di bawah ini menggunakan operator kurang dari.
+                                        </p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image024.png" alt="Dan Fungsi">
+                                        </p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> fungsi AND ini mengembalikan TRUE jika kedua nilai kurang dari 80, selain itu mengembalikan FALSE.</p>
+                                        <p class="sub-judul" id="greater-than-or-equal-to">Lebih besar dari atau sama dengan</p>
+                                        <p>Operator lebih besar dari atau sama dengan (&gt;=) mengembalikan TRUE jika nilai pertama lebih besar dari atau sama dengan nilai kedua.
+                                        </p>
+                                        <p>1. Misalnya, lihat rumus di sel C1 di bawah ini.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image025.png" alt="Lebih Besar dari atau Sama Dengan Operator"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> rumus mengembalikan TRUE karena nilai di sel A1 lebih besar atau sama dengan nilai di sel B1.</p>
+                                        <p>2. Fungsi COUNTIF di bawah ini menggunakan operator yang lebih besar atau sama dengan.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image026.png" alt="Fungsi Hitung">
+                                        </p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> <a href="https://www.excel-easy.com/examples/countif.html">fungsi
+                                COUNTIF</a> ini menghitung jumlah sel yang lebih besar atau sama dengan 10.</p>
+                                        <p class="sub-judul" id="less-than-or-equal-to">Kurang dari atau sama dengan</p>
+                                        <p>Operator kurang dari atau sama dengan (&lt;=) mengembalikan TRUE jika nilai pertama lebih kecil atau sama dengan nilai kedua.</p>
+                                        <p>1. Misalnya, lihat rumus di sel C1 di bawah ini.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image027.png" alt="Kurang Dari atau Sama Dengan Operator"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> rumus mengembalikan TRUE karena nilai di sel A1 kurang dari atau sama dengan nilai di sel B1.</p>
+                                        <p>2. Fungsi SUMIF di bawah ini menggunakan operator kurang dari atau sama dengan.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image028.png" alt="Fungsi Sumif">
+                                        </p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> <a href="https://www.excel-easy.com/examples/sumif.html">fungsi
+                                SUMIF</a> ini <a href="https://www.excel-easy.com/examples/sumif.html">menjumlahkan</a> nilai dalam rentang A1:A5 yang kurang dari atau sama dengan 10.</p>
+                                        <p class="sub-judul" id="not-equal-to">Tidak sebanding dengan</p>
+                                        <p>Operator tidak sama dengan (&lt;&gt;) mengembalikan TRUE jika dua nilai tidak sama satu sama lain.
+                                        </p>
+                                        <p>1. Misalnya, lihat rumus di sel C1 di bawah ini.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image029.png" alt="Tidak Sama Dengan Operator"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> rumus mengembalikan TRUE karena nilai di sel A1 tidak sama dengan nilai di sel B1.</p>
+                                        <p>2. Fungsi IF di bawah ini menggunakan operator tidak sama dengan.
+                                        </p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image030.png" alt="Jika Rumus">
+                                        </p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> jika dua nilai (angka atau string teks) tidak sama satu sama lain,
+                                            <a href="#">fungsi IF</a> mengembalikan Tidak, jika tidak mengembalikan Ya.</p>
+                                    </section>
+
+                                    <!-- Or -->
+                                    <section>
+                                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/or.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                                            <p class="bd-lead mb-0" id="Logika-or">Or</p>
+                                        </div>
+                                        <p>Fungsi OR di Excel mengembalikan TRUE jika salah satu kondisi benar dan mengembalikan FALSE jika semua kondisi salah. Gabungkan fungsi OR dengan fungsi lain dan jadilah ahli Excel.</p>
+                                        <p>1. Sebagai contoh, perhatikan fungsi OR pada sel D2 di bawah ini.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image031.png" alt="Atau Fungsi di Excel"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> fungsi OR mengembalikan TRUE jika skor pertama lebih besar dari 70 atau skor kedua sama dengan 100, selain itu mengembalikan FALSE.</p>
+                                        <p>2. Gabungkan fungsi OR dengan <a href="#">fungsi IF</a>.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image032.png" alt="Jika &amp; Atau Fungsi"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> fungsi OR mengembalikan TRUE atau FALSE (lihat contoh sebelumnya). Jika TRUE, fungsi IF mengembalikan Pass, jika FALSE, fungsi IF mengembalikan Fail.</p>
+                                        <p>3. Sebagai contoh, perhatikan fungsi OR pada sel E2 di bawah ini.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image033.png" alt="Beberapa Kondisi"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> fungsi OR mengembalikan TRUE jika setidaknya satu skor lebih besar dari atau sama dengan 90, selain itu mengembalikan FALSE. Fungsi OR dapat menguji hingga 255 kondisi. Satu-satunya
+                                            cara agar fungsi OR mengembalikan FALSE adalah jika semua kondisinya FALSE (baris 6).
+                                        </p>
+                                        <p>4. Rumus array di bawah ini menggunakan fungsi OR untuk mengembalikan TRUE jika ada sel dalam rentang A1:E6 lebih besar dari atau sama dengan 90.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image034.png" alt="Rumus Array">
+                                        </p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> selesaikan rumus array dengan menekan CTRL + SHIFT + ENTER. Excel menambahkan kurung kurawal {}. Nilai dalam sel D4 lebih besar dari atau sama dengan 90. Akibatnya, rumus array mengembalikan
+                                            TRUE.
+                                        </p>
+                                        <p>5. Gabungkan fungsi OR dengan fungsi AND.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image035.png" alt="Dan &amp; Atau Fungsi"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> Fungsi AND mengembalikan TRUE jika semua kondisi benar dan mengembalikan FALSE jika salah satu kondisi salah. Fungsi AND di atas memiliki dua argumen yang dipisahkan oleh koma (Tabel,
+                                            Hijau atau Biru). Fungsi AND mengembalikan TRUE jika Produk sama dengan &quot;Tabel&quot; dan Warna sama dengan &quot;Hijau&quot; atau &quot;Biru&quot;.
+                                        </p>
+                                        <p>6. Gabungkan fungsi OR dengan fungsi WEEKDAY.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image036.png" alt="Atau &amp; Fungsi Hari Kerja"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> fungsi WEEKDAY di Excel mengembalikan angka dari 1 (Minggu) hingga 7 (Sabtu) yang mewakili hari dalam seminggu dari suatu tanggal. Akibatnya, fungsi OR mengembalikan TRUE jika tanggal
+                                            jatuh pada akhir pekan.
+                                        </p>
+                                        <p>7. Jangan bingung antara fungsi OR dengan fungsi XOR (Exclusive OR).</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image037.png" alt="Fungsi Xor">
+                                        </p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> fungsi XOR mengembalikan TRUE jika sejumlah kondisi ganjil benar, dan FALSE sebaliknya. Dengan dua kondisi (lihat contoh di atas) fungsi XOR mengembalikan TRUE jika satu kondisi benar
+                                            (baris 2) dan mengembalikan FALSE jika kedua kondisi salah (baris 3, 4 dan 6) atau kedua kondisi benar! (baris 5).</p>
+                                    </section>
+
+                                    <!-- Roll the Dice -->
+                                    <section>
+                                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/roll-the-dice.xlsm" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                                            <p class="bd-lead mb-0" id="Logika-roll-the-dice">Melempar Dadu <span class="span-text">(Roll the
+                                    Dice)</span></p>
+                                        </div>
+                                        <p>Contoh ini mengajarkan Anda bagaimana mensimulasikan pelemparan dua dadu di Excel. Jika Anda sedang terburu-buru, cukup unduh file Excel.</p>
+                                        <p class="moreInfo text-break"><strong>Catatan:</strong> petunjuk di bawah ini tidak mengajarkan Anda cara memformat lembar kerja. Kami berasumsi bahwa Anda tahu cara mengubah ukuran font, gaya font, menyisipkan baris dan kolom, menambahkan batas,
+                                            mengubah warna latar belakang, dll.
+                                        </p>
+                                        <p>1. Saat ini, setiap sel berisi huruf l (seperti pada singa). Dengan gaya font Wingdings, saya ini terlihat seperti titik-titik.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image038.png" alt="Gaya Huruf Wingdings"></p>
+                                        <p>2. Masukkan fungsi RANDBETWEEN di sel C2.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image039.png" alt="RandAntara Fungsi"></p>
+                                        <p>3. Masukkan rumus yang ditunjukkan di bawah ini ke dalam sel kuning. Jika kita menggulung 2, 3, 4, 5 atau 6, sel-sel ini harus berisi titik.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image040.png" alt="Sel Kuning">
+                                        </p>
+                                        <p>4. Masukkan rumus yang ditunjukkan di bawah ini ke dalam sel darah merah. Jika kita menggulung 4, 5 atau 6, sel-sel ini harus berisi titik.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image041.png" alt="Sel merah">
+                                        </p>
+                                        <p>5. Masukkan rumus yang ditunjukkan di bawah ini ke dalam sel biru. Jika kita menggulung 6, sel-sel ini harus berisi titik.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image042.png" alt="Sel Biru">
+                                        </p>
+                                        <p>6. Masukkan rumus yang ditunjukkan di bawah ini ke dalam sel abu-abu. Jika kita menggulung 1, 3 atau 5, sel ini harus berisi titik.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image043.png" alt="Sel abu-abu">
+                                        </p>
+                                        <p>7. Salin rentang C2:E5 dan tempel ke rentang G2:I5.</p>
+                                        <p>8. Ubah warna font sel C2 dan sel G2 menjadi hijau (agar angkanya tidak terlihat).</p>
+                                        <p>9. Klik tombol perintah pada lembar (atau tekan F9).</p>
+                                        <p>Hasil.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image044.png" alt="Melempar dadu">
+                                        </p>
+                                    </section>
+
+                                    <!-- Ifs -->
+                                    <section>
+                                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/ifs.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                                            <p class="bd-lead mb-0" id="Logika-ifs">Ifs</p>
+                                        </div>
+                                        <p>Gunakan fungsi IFS di Excel 2016 atau yang lebih baru saat Anda memiliki beberapa kondisi yang harus dipenuhi. Fungsi IFS mengembalikan nilai yang sesuai dengan kondisi TRUE pertama.
+                                        </p>
+                                        <p class="moreInfo text-break"><strong>Catatan:</strong> jika Anda tidak memiliki Excel 2016 atau yang lebih baru, Anda dapat
+                                            <a href="#nested-if">menyarangkan fungsi JIKA</a>.</p>
+                                        <p>1a. Jika nilai di sel A1 sama dengan 1, fungsi IFS mengembalikan Buruk.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image045.png" alt="Fungsi Ifs Pertama di Excel, Nilai 1"></p>
+                                        <p>1b. Jika nilai di sel A1 sama dengan 2, fungsi IFS mengembalikan Baik.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image046.png" alt="Fungsi Ifs Pertama, Nilai 2"></p>
+                                        <p>1c. Jika nilai di sel A1 sama dengan 3, fungsi IFS mengembalikan Sangat Baik.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image047.png" alt="Fungsi Ifs Pertama, Nilai 3"></p>
+                                        <p>1d. Jika nilai di sel A1 sama dengan nilai lain, fungsi IFS mengembalikan Skor Tidak Valid.
+                                        </p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image048.png" alt="Fungsi Ifs Pertama, Else"></p>
+                                        <p class="moreInfo text-break"><strong>Catatan:</strong> alih-alih TRUE, Anda juga dapat menggunakan 1=1 atau hal lain yang selalu TRUE.</p>
+                                        <p class="sub-judul" id="">
+                                            Berikut contoh lain.</p>
+                                        <p>2a. Jika nilai dalam sel A1 kurang dari 60, fungsi IFS mengembalikan F.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image049.png" alt="Fungsi Ifs Kedua di Excel, Nilai 41"></p>
+                                        <p>2b. Jika nilai dalam sel A1 lebih besar atau sama dengan 60 dan kurang dari 70, fungsi IFS mengembalikan D.
+                                        </p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image050.png" alt="Fungsi Ifs Kedua, Nilai 60"></p>
+                                        <p>2c. Jika nilai dalam sel A1 lebih besar atau sama dengan 70 dan kurang dari 80, fungsi IFS mengembalikan C.
+                                        </p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image051.png" alt="Fungsi Ifs Kedua, Nilai 73"></p>
+                                        <p>2d. Jika nilai dalam sel A1 lebih besar dari atau sama dengan 80 dan kurang dari 90, fungsi IFS mengembalikan B.
+                                        </p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image052.png" alt="Fungsi Ifs Kedua, Nilai 82"></p>
+                                        <p>2e. Jika nilai dalam sel A1 lebih besar atau sama dengan 90, fungsi IFS mengembalikan A.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image053.png" alt="Fungsi Ifs Kedua, Nilai 95"></p>
+                                        <p class="moreInfo text-break"><strong>Catatan:</strong> untuk sedikit mengubah batas, Anda mungkin ingin menggunakan &quot;&lt;=&quot; alih-alih &quot;&lt;&quot; dalam fungsi Anda sendiri.
+                                    </section>
+                                    </p>
+
+                                    <!-- Contains Specific Text -->
+                                    <section>
+                                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/contains-specific-text.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                                            <p class="bd-lead mb-0" id="Logika-contains-specific-text">Berisi Teks Tertentu <span class="span-text">(Contains Specific Text)</span></p>
+                                        </div>
+                                        <p>Untuk memeriksa apakah sel berisi teks tertentu, gunakan ISNUMBER dan SEARCH di Excel. Tidak ada fungsi CONTAIN di Excel.</p>
+                                        <p>1. Untuk menemukan posisi substring dalam string teks, gunakan
+                                            <a href="#">fungsi SEARCH</a>.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image054.png" alt="Fungsi Pencarian di Excel"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> &quot;bebek&quot; ditemukan di posisi 10, &quot;keledai&quot; ditemukan di posisi 1, sel A4 tidak berisi kata &quot;kuda&quot; dan &quot;kambing&quot; ditemukan di posisi 12.
+                                        </p>
+                                        <p>2. Tambahkan fungsi ISNUMBER. Fungsi ISNUMBER mengembalikan TRUE jika sel berisi angka, dan FALSE jika tidak.
+                                        </p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image055.png" alt="Fungsi IsNumber"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> sel A2 berisi kata &quot;bebek&quot;, sel A3 berisi kata &quot;keledai&quot;, sel A4 tidak berisi kata &quot;kuda&quot; dan sel A5 berisi kata &quot;kambing&quot;.
+                                        </p>
+                                        <p>3. Anda juga dapat memeriksa apakah sel berisi teks tertentu, tanpa menampilkan substring. Pastikan untuk menyertakan substring dalam tanda kutip ganda.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image056.png" alt="Tanda kutip ganda"></p>
+                                        <p>4. Untuk melakukan pencarian peka huruf besar/kecil, ganti fungsi SEARCH dengan fungsi FIND.
+                                        </p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image057.png" alt="Pencarian peka huruf besar/kecil"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> rumus di sel C3 mengembalikan FALSE sekarang. Sel A3 tidak mengandung kata &quot;keledai&quot; tetapi berisi kata &quot;Keledai&quot;.
+                                        </p>
+                                        <p>5. Tambahkan <a href="#">fungsi JIKA</a>. Rumus di bawah (peka huruf besar/kecil) mengembalikan &quot;Ditemukan&quot; jika sel berisi teks tertentu, dan &quot;Tidak Ditemukan&quot; jika tidak.
+                                        </p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image058.png" alt="Periksa Apakah Sel Berisi Teks Tertentu"></p>
+                                        <p>6. Anda juga dapat menggunakan IF dan COUNTIF di Excel untuk memeriksa apakah sel berisi teks tertentu. Namun, fungsi COUNTIF selalu tidak peka huruf besar-kecil.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image059.png" alt="Jika dan Fungsi Hitung"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> rumus di sel C2 direduksi menjadi =IF(COUNTIF(A2,&quot;*bebek*&quot;),&quot;Ditemukan&quot;,,&quot;Tidak Ditemukan&quot;). Tanda bintang (*) cocok dengan serangkaian karakter nol atau
+                                            lebih. Kunjungi halaman kami tentang
+                                            <a href="https://www.excel-easy.com/examples/countif.html">fungsi COUNTIF</a> untuk mempelajari semua yang perlu Anda ketahui tentang fungsi hebat ini.</p>
+                                    </section>
+
+                                    <!-- Switch -->
+                                    <section>
+                                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/switch.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                                            <p class="bd-lead mb-0" id="Logika-switch">Switch <span class="span-text">(Mengalihkan)</span></p>
+                                        </div>
+                                        <p>Contoh ini mengajarkan Anda cara menggunakan fungsi SWITCH di Excel 2016 atau yang lebih baru, bukan <a href="#">fungsi IFS</a>.</p>
+                                        <p>1a. Misalnya, fungsi IFS di bawah ini menemukan status yang benar.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image060.png" alt="Fungsi Ifs di Excel"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> sel A2 berisi string 85-UT. Fungsi RIGHT mengekstrak 2 karakter paling kanan dari string ini (UT). Akibatnya, fungsi IFS mengembalikan status yang benar (Utah). Jika 2 karakter paling
+                                            kanan tidak sama dengan UT, TX atau OH, fungsi IFS mengembalikan tanda tanya. Alih-alih TRUE, Anda juga dapat menggunakan 1=1 atau sesuatu yang lain yang selalu TRUE.</p>
+                                        <p>1b. Fungsi SWITCH di bawah ini menghasilkan hasil yang sama persis tetapi jauh lebih mudah dibaca.
+                                        </p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image061.png" alt="Beralih Fungsi di Excel"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> jika argumen pertama (RIGHT(A2,2) dalam contoh ini) sama dengan UT, fungsi SWITCH mengembalikan Utah. Jika TX, Texas. Jika OH, Ohio. Argumen terakhir (tanda tanya dalam contoh ini) selalu
+                                            merupakan nilai default (jika tidak ada kecocokan).</p>
+                                        <p>2. Mengapa tidak selalu menggunakan fungsi SWITCH di Excel? Ada banyak contoh di mana Anda tidak dapat menggunakan fungsi SWITCH alih-alih fungsi IFS.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image049.png" alt="Fungsi Ifs Kedua"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> karena kita menggunakan simbol&quot;&lt;&quot; dan &quot;&gt;=&quot; dalam fungsi IFS ini, kita tidak dapat menggunakan fungsi SWITCH.</p>
+                                    </section>
+
+                                    <!-- If Cell is Blank -->
+                                    <section>
+                                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/if-cell-is-blank.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                                            <p class="bd-lead mb-0" id="Logika-if-cell-is-blank">Jika Sel Kosong <span class="span-text">(If Cell is Blank)</span></p>
+                                        </div>
+                                        <p class="link-text">
+                                            <a href="#if-blank">Jika Kosong</a> |
+                                            <a href="#if-not-blank">Jika Tidak Kosong</a> |
+                                            <a href="#highlight-blank-cells">Sorot Sel Kosong</a>
+                                        </p>
+                                        <p>Gunakan fungsi IF dan string kosong di Excel untuk memeriksa apakah sel kosong. Gunakan IF dan ISBLANK untuk menghasilkan hasil yang sama persis.</p>
+                                        <p class="sub-judul" id="if-blank">Jika Kosong</p>
+                                        <p>Ingat, <a href="#">fungsi IF</a> di Excel memeriksa apakah suatu kondisi terpenuhi, dan mengembalikan satu nilai jika benar dan nilai lain jika salah.</p>
+                                        <p>1. Fungsi IF di bawah ini mengembalikan Ya jika nilai input sama dengan string kosong (dua tanda kutip ganda tanpa apa pun di antaranya), jika tidak, fungsi tersebut mengembalikan No.
+                                        </p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image062.png" alt="Periksa Apakah Sel Kosong"></p>
+                                        <p class="moreInfo text-break"><strong>Catatan:</strong> jika sel input berisi spasi, itu terlihat kosong. Namun, jika ini masalahnya, nilai input tidak sama dengan string kosong dan fungsi IF di atas akan mengembalikan No.</p>
+                                        <p>2. Gunakan IF dan ISBLANK untuk menghasilkan hasil yang sama persis.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image063.png" alt="Fungsi IsBlank di Excel"></p>
+                                        <p class="moreInfo text-break"><strong>Catatan:</strong> fungsi ISBLANK mengembalikan TRUE jika sel kosong dan FALSE jika tidak. Jika sel input berisi spasi atau rumus yang mengembalikan string kosong, sel tersebut akan terlihat kosong. Namun,
+                                            jika ini masalahnya, sel input tidak kosong dan rumus di atas akan mengembalikan No.</p>
+                                        <p class="sub-judul" id="if-not-blank">Jika Tidak Kosong</p>
+                                        <p>Di Excel, &lt;&gt; berarti tidak sama dengan.</p>
+                                        <p>1. Fungsi IF di bawah ini mengalikan nilai input dengan 2 jika nilai input tidak sama dengan string kosong (dua tanda kutip ganda tanpa apa-apa di antaranya), selain itu mengembalikan string kosong.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image064.png" alt="Periksa Apakah Sel Tidak Kosong"></p>
+                                        <p>2. Gunakan IF, NOT dan ISBLANK untuk menghasilkan hasil yang sama persis.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image065.png" alt="Tidak dan Fungsi IsBlank di Excel"></p>
+                                        <p class="sub-judul" id="highlight-blank-cells">Sorot Sel Kosong</p>
+                                        <p>Anda dapat menggunakan pemformatan bersyarat di Excel untuk menyorot sel yang kosong.</p>
+                                        <p>1. Misalnya, pilih rentang A1:H8.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image066.png" alt="Pilih Sel">
+                                        </p>
+                                        <p>2. Pada tab Beranda, dalam grup Gaya, klik Pemformatan Bersyarat.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image067.png" alt="Klik Pemformatan Bersyarat"></p>
+                                        <p>3. Klik Sorot Aturan Sel, Aturan Lainnya.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image068.png" alt="Lebih Banyak Aturan"></p>
+                                        <p>4. Pilih Kosong dari daftar drop-down, pilih gaya pemformatan dan klik OK.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image069.png" alt="Pilih Kosong">
+                                        </p>
+                                        <p>Hasil.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image070.png" alt="Sorot Sel Kosong"></p>
+                                        <p class="moreInfo text-break"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="#">pemformatan bersyarat</a> untuk mempelajari lebih lanjut tentang fitur Excel yang keren ini.</p>
+                                    </section>
+
+                                    <!-- Absolute Value -->
+                                    <section>
+                                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/absolute-value.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                                            <p class="bd-lead mb-0" id="Logika-absolute-value">Nilai Mutlak <span class="span-text">(Absolute Value)</span></p>
+                                        </div>
+                                        <p>Fungsi ABS di Excel mengembalikan nilai absolut dari sebuah angka. Dengan kata lain: fungsi ABS menghilangkan tanda minus (-) dari angka negatif, menjadikannya positif.</p>
+                                        <p>1. Misalnya, fungsi ABS di sel B1 di bawah ini mengembalikan nilai absolut dari angka negatif.
+                                        </p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image071.png" alt="Nilai Absolut di Excel"></p>
+                                        <p>Fungsi ABS tidak berpengaruh pada angka 0 (nol) atau positif.</p>
+                                        <p>2. Nilai mutlak 0 adalah 0.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image072.png" alt="Fungsi ABS">
+                                        </p>
+                                        <p>3. Nilai mutlak suatu bilangan positif adalah bilangan positif yang sama.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image073.png" alt="Nomor positif">
+                                        </p>
+                                        <p>Kapan kita membutuhkan fungsi ABS di Excel?</p>
+                                        <p>4. Misalnya, menghitung kesalahan ramalan (selisih antara nilai aktual dan perkiraan) untuk setiap bulan.
+                                        </p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image074.png" alt="Kesalahan Prakiraan"></p>
+                                        <p class="moreInfo text-break"><strong>Catatan:</strong> jika kita melihat jumlah kesalahan ini (nol), model perkiraan ini tampaknya sempurna, tetapi tidak!</p>
+                                        <p>5. Cukup gunakan fungsi ABS untuk menghitung kesalahan absolut setiap bulannya.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image075.png" alt="Kesalahan mutlak"></p>
+                                        <p>6. Jika Anda tidak ingin menampilkan kesalahan perkiraan pada lembar, gunakan SUMPRODUCT dan ABS.
+                                        </p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image076.png" alt="SUMPRODUCT dan ABS"></p>
+                                        <p class="moreInfo text-break"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="#">fungsi SUMPRODUCT</a> untuk mempelajari lebih lanjut tentang fungsi ini.</p>
+                                        <p>Mari kita lihat satu lagi contoh keren.</p>
+                                        <p>7. Gunakan fungsi ABS untuk menghitung nilai absolut dari setiap perbedaan.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image077.png" alt="Nilai Mutlak Setiap Selisih"></p>
+                                        <p>8. Tambahkan fungsi IF untuk menguji apakah nilainya berada dalam toleransi.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image078.png" alt="JIKA dan ABS">
+                                        </p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> jika selisihnya kurang dari atau sama dengan 3, fungsi IF mengembalikan 1, selain itu mengembalikan 0.</p>
+                                        <p>9. Tambahkan ikon.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image079.png" alt=Ikon></p>
+                                        <p>10. Ubah toleransi.</p>
+                                        <p><img class="img-fluid" src="../excel/files/LogicalFunctions+details_files/image080.png" alt="Ubah Toleransi">
+                                        </p>
+                                        <p class="moreInfo text-break"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="#">kumpulan ikon</a> untuk mempelajari lebih lanjut tentang topik ini. Untuk melihat aturan pemformatan ini, unduh file Excel. Selanjutnya pada tab
+                                            Home, pada grup Styles, klik Conditional Formatting, Manage Rules.</p>
+                                    </section>
+
+                                </details>
+                            </section>
+
+                            <a class="d-flex justify-content-end fw-light" href="#fungsi-LogicalFunctions">kembali keatas</a>
                         </div>
                     </div>
                 </div>

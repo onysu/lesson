@@ -32,20 +32,27 @@
         <nav id="TableOfContents">
             <div class="accordion accordion-flush" id="tab3MenuKanan">
 
-                <!-- Countif -->
+                <!-- Count and Sum Functions -->
                 <div class="accordion-item border-0">
-                    <a href="#Countif">Countif</a>
-                    <div id="flush-collapseCountif" class="accordion-collapse collapse" aria-labelledby="flush-heading-Countif" data-bs-parent="#tab3MenuKanan">
+                    <a href="#fungsi-CountandSumFunctions">Fungsi Count dan Sum</a>
+                    <div id="flush-collapse-CountandSumFunctions" class="accordion-collapse collapse" aria-labelledby="flush-heading-CountandSumFunctions" data-bs-parent="#tab3MenuKanan">
                         <div class="accordion-body p-0">
                             <ul>
-                                <li><a href="#numeric-criteria">Kriteria Numerik</a></li>
-                                <li><a href="#text-tricks">Teks Trik</a></li>
-                                <li><a href="#count-booleans">Count Booleans</a></li>
-                                <li><a href="#count-errors">Count Errors</a></li>
-                                <li><a href="#and-criteria">And Kriteria</a></li>
-                                <li><a href="#or-criteria">Or Kriteria</a></li>
-                                <li><a href="#more-about-countif">Lebih lanjut tentang Countif</a></li>
-                                <li><a href="#count-magic">Count Magic</a></li>
+                                <li><a href="#CountandSumFunctions-count">Count</a></li>
+                                <li><a href="#CountandSumFunctions-countif">Countif</a></li>
+                                <li><a href="#CountandSumFunctions-countifs">Countifs</a></li>
+                                <li><a href="#CountandSumFunctions-sum">Sum</a></li>
+                                <li><a href="#CountandSumFunctions-sumif">Sumif</a></li>
+                                <li><a href="#CountandSumFunctions-sumifs">Sumifs</a></li>
+                                <li><a href="countif">Countif</a></li>
+                                <li><a href="count-blank-nonblank-cells">Count Blank/Nonblank Cells</a></li>
+                                <li><a href="count-characters">Count Characters</a></li>
+                                <li><a href="not-equal-to">Not Equal To</a></li>
+                                <li><a href="count-cells-with-text">Count Cells with Text</a></li>
+                                <li><a href="sum">Sum</a></li>
+                                <li><a href="running-total">Running Total</a></li>
+                                <li><a href="sumif">Sumif</a></li>
+                                <li><a href="sumproduct">Sumproduct</a></li>
                             </ul>
                         </div>
                     </div>
@@ -61,45 +68,85 @@
 
             <div class="accordion accordion-flush" id="tab3Konten">
 
-                <!-- Ribbon -->
-                <div class="accordion-item" id="dasar-Ribbon">
+                <!-- Count and Sum Functions -->
+                <div class="accordion-item" id="fungsi-CountandSumFunctions">
                     <!-- judul akordion -->
-                    <h2 class="accordion-header" id="flush-heading-ribbon">
-                        <button class="accordion-button collapsed" style="padding: 1rem 0rem; box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-ribbon" aria-expanded="false" aria-controls="flush-collapse-ribbon">
+                    <h2 class="accordion-header" id="flush-heading-CountandSumFunctions">
+                        <button class="accordion-button collapsed" style="padding: 1rem 0rem; box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-CountandSumFunctions" aria-expanded="false" aria-controls="flush-collapse-CountandSumFunctions">
                             <div class="me-auto">
-                                <div class="fs-3">Ribbon</div>
-                                <small class="text-muted fw-light text-lowercase">Pelajari cara menggunakan
-                                    ribbon.</small>
+                                <div class="fs-3">Fungsi Count dan Sum</div>
+                                <small class="text-muted fw-light text-lowercase">Fungsi yang paling banyak digunakan di Excel adalah fungsi count dan sum.</small>
                             </div>
                         </button>
                     </h2>
                     <!-- isi akordion -->
-                    <div id="flush-collapse-ribbon" class="accordion-collapse collapse" aria-labelledby="flush-heading-ribbon" data-bs-parent="#tab2Konten">
+                    <div id="flush-collapse-CountandSumFunctions" class="accordion-collapse collapse" aria-labelledby="flush-heading-CountandSumFunctions" data-bs-parent="#tab3Konten">
                         <div class="accordion-body p-0">
 
-                            <section id="Ribbon">
-                                <p class="fw-light small">
-                                    <a href="#Tab">Tab</a> |
-                                    <a href="#Grup">Grup</a> |
-                                    <a href="#GunakanRibbon">Gunakan Ribbon</a> |
-                                    <a href="#TutupRibbon">Tutup Ribbon</a> |
-                                    <a href="#QuickAccessToolbar">Quick Access Toolbar</a> |
-                                    <a href="#CustomizetheRibbon">Customize the Ribbon</a> |
-                                    <a href="#DeveloperTab">Developer Tab</a> |
-                                    <a href="#StatusBar">Status Bar</a> |
-                                    <a href="#Checkbox">Checkbox</a>
-                                </p>
-                                <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/ribbon.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+                            <p class="fw-light small">
+                                <a href="#CountandSumFunctions-count">Count</a> |
+                                <a href="#CountandSumFunctions-countif">Countif</a> |
+                                <a href="#CountandSumFunctions-countifs">Countifs</a> |
+                                <a href="#CountandSumFunctions-sum">Sum</a> |
+                                <a href="#CountandSumFunctions-sumif">Sumif</a> |
+                                <a href="#CountandSumFunctions-sumifs">Sumifs</a>
+                            </p>
+                            <p>Fungsi yang paling banyak digunakan di Excel adalah fungsi count dan sum. Anda dapat menghitung dan menjumlahkan berdasarkan satu kriteria atau beberapa kriteria.</p>
+                            <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/count-sum-functions.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
 
-                                <!-- Tab -->
-                                <section id="Tab">
-                                    <h4>Tab</h4>
-                                    <p>Tab pada Ribbon adalah: <mark>File</mark> <mark>Home</mark>
-                                        <mark>Insert</mark> <mark>Page layout</mark> <mark>Formulas</mark>
-                                        <mark>Data</mark> <mark>Review</mark> <mark>View</mark> dan <mark>Help</mark>. Tab Home berisi perintah yang paling sering digunakan di Excel.</p>
-                                    <p><img class="img-fluid" src="files/ribbon_files/image001.png" alt=tab></p>
-                                </section>
+                            <section id="CountandSumFunctions-count">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Count</div>
+                                </div>
+                                <p>Untuk menghitung jumlah sel yang berisi angka, gunakan fungsi COUNT.</p>
+                                <p><img class="img-fluid" src="files/count-sum-functions_files/image001.png" alt="Hitung Fungsi"></p>
+                                <p class="moreInfo"><b>Catatan</b>: untuk menghitung sel kosong dan tidak kosong di Excel, gunakan COUNTBLANK dan COUNTA.</p>
+                            </section>
 
+                            <section id="CountandSumFunctions-countif">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Countif</div>
+                                </div>
+                                <p>Untuk menghitung sel berdasarkan satu kriteria (misalnya, lebih besar dari 9), gunakan fungsi COUNTIF berikut.</p>
+                                <p><img class="img-fluid" src="files/count-sum-functions_files/image002.png" alt="Fungsi Hitung"></p>
+                                <p class="moreInfo"><b>Catatan</b>: kunjungi halaman kami tentang fungsi COUNTIF untuk lebih banyak contoh.</p>
+                            </section>
+
+                            <section id="CountandSumFunctions-countifs">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Countifs</div>
+                                </div>
+                                <p>Untuk menghitung baris berdasarkan beberapa kriteria (misalnya, hijau dan lebih besar dari 9), gunakan fungsi COUNTIFS berikut.</p>
+                                <p><img class="img-fluid" src="files/count-sum-functions_files/image003.png" alt="Fungsi Hitung"></p>
+                            </section>
+
+                            <section id="CountandSumFunctions-sum">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Sum</div>
+                                </div>
+                                <p>Untuk menjumlahkan rentang sel, gunakan fungsi SUM.</p>
+                                <p><img class="img-fluid" src="files/count-sum-functions_files/image004.png" alt="Jumlah Fungsi"></p>
+                                <p class="moreInfo"><b>Catatan</b>: kunjungi halaman kami tentang fungsi SUM untuk lebih banyak contoh.</p>
+                            </section>
+
+                            <section id="CountandSumFunctions-sumif">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Sumif</div>
+                                </div>
+                                <p>Untuk menjumlahkan sel berdasarkan satu kriteria (misalnya, lebih besar dari 9), gunakan fungsi SUMIF berikut (dua argumen).</p>
+                                <p><img class="img-fluid" src="files/count-sum-functions_files/image005.png" alt="Fungsi Sumif, Dua Argumen"></p>
+                                <p>Untuk menjumlahkan sel berdasarkan satu kriteria (misalnya, hijau), gunakan fungsi SUMIF berikut (tiga argumen, argumen terakhir adalah rentang yang akan dijumlahkan).</p>
+                                <p><img class="img-fluid" src="files/count-sum-functions_files/image006.png" alt="Fungsi Sumif, Tiga Argumen"></p>
+                                <p class="moreInfo"><b>Catatan</b>: kunjungi halaman kami tentang fungsi SUMIF untuk lebih banyak contoh.</p>
+                            </section>
+
+                            <section id="CountandSumFunctions-sumifs">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Sumifs</div>
+                                </div>
+                                <p>Untuk menjumlahkan sel berdasarkan beberapa kriteria (misalnya, lingkaran dan merah), gunakan fungsi SUMIFS berikut (argumen pertama adalah rentang yang akan dijumlahkan).</p>
+                                <p><img class="img-fluid" src="files/count-sum-functions_files/image007.png" alt="Fungsi Sumif"></p>
+                                <p class="moreInfo"><b>Catatan umum</b>: dengan cara yang sama, Anda dapat menggunakan fungsi AVERAGEIF untuk rata-rata sel berdasarkan satu kriteria dan fungsi AVERAGEIFS untuk rata-rata sel berdasarkan beberapa kriteria.</p>
                             </section>
 
                         </div>

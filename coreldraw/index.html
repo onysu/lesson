@@ -44,6 +44,7 @@
     <link rel="stylesheet" href="../dist/fancybox/jquery.fancybox.min.css">
     <link rel="stylesheet" href="dist/tutorial.css">
     <link rel="stylesheet" href="dist/materi.css">
+    <link rel="stylesheet" href="../dist/css/all-style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         html {
@@ -525,7 +526,162 @@
             <div class="container my-md-4 bd-layout" w3-include-html="tools.html"></div>
         </div>
         <div class="tab-pane fade" id="nav-tab3" role="tabpanel" aria-labelledby="nav-tab3-tab">
-            <div class="container my-md-4 bd-layout" w3-include-html="materi.html"></div>
+            <div class="container my-md-4 bd-layout">
+                <!-- sidebar -->
+                <aside class="bd-sidebar"></aside>
+
+                <!-- konten -->
+                <main class="bd-main order-1">
+
+                    <!-- intro -->
+                    <div class="bd-intro">
+
+                        <header class="d-flex align-items-center pb-3 mb-3 border-bottom">
+                            <a href="#" class="d-flex align-items-center text-dark text-decoration-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" fill="currentColor" class="bi bi-display" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z" />
+                                </svg>
+                                <span class="fs-4">&nbsp;Langkah-Langkah belajar CorelDRAW</span>
+                            </a>
+                        </header>
+                        <p class="lead">Baca instruksi dan tutorial video yang lebih mendetail tentang penggunaan CorelDRAW.</p>
+
+                        <div id="wrapper">
+                            <div id="mainContent">
+
+                                <!-- Belajar Dasar Photoshop -->
+                                <div class="row">
+
+                                    <div class="col-sm-7 p-0">
+                                        <video class="img-fluid" id="videoarea-cd" controls="controls" poster="files/img/opening-CorelDraw-2021.png" src=""></video>
+                                    </div>
+
+                                    <div class="col-sm-5 col-md-5 col-lg-5 p-0">
+                                        <ul class="list-group list-group-flush" id="playlist">
+
+                                            <!-- langkah 1 -->
+                                            <li class="list-group-item" movieurl="files/videos/langkah-cd-1.webm">
+                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                <span class="fw-light text-muted">Pengenalan tools</span>
+                                                <p class="d-block">
+
+                                                    <strong>Pick</strong> | <strong>Shape</strong> |
+                                                    <strong>Zoom</strong> | <strong>Pan</strong>
+                                                </p>
+                                            </li>
+
+                                            <!-- langkah 2 -->
+                                            <li class="list-group-item" movieurl="files/videos/langkah-cd-2.webm">
+                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                <span class="fw-light text-muted">Pengenalan tools</span>
+                                                <p class="d-block">
+                                                    <strong>Freehand</strong> | <strong>2-Point Line</strong> | <strong>Bezier</strong> | <strong>Pen</strong> | <strong>B-Spline</strong> | <strong>Polyline</strong> | <strong>3-Point Curve</strong> | <strong>Smart Drawing</strong>
+                                                </p>
+                                            </li>
+
+                                            <!-- langkah 3 -->
+                                            <li class="list-group-item" movieurl="files/videos/langkah-cd-3.webm">
+                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                <span class="fw-light text-muted">Pengenalan tools</span>
+                                                <p class="d-block">
+                                                    <strong>Artistic Media</strong> | <strong>Rectangle</strong> | <strong>3-Point Rectangle</strong>
+                                                </p>
+                                            </li>
+
+                                            <!-- langkah 4 -->
+                                            <li class="list-group-item" movieurl="files/videos/langkah-cd-4.webm">
+                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                <span class="fw-light text-muted">Pengenalan tools</span>
+                                                <p class="d-block">
+                                                    <strong>Ellipse</strong> | <strong>3-Point</strong> <strong>Ellipse</strong> | <strong>Combine</strong> | <strong>Weld</strong> | <strong>Trim</strong> | <strong>Intersect Simplify</strong> | <strong>Front Minus Back</strong>                                                    | <strong>Back Minus Front</strong> | <strong>Create Boundary</strong>
+                                                </p>
+                                            </li>
+
+                                            <!-- langkah 5 -->
+                                            <li class="list-group-item" movieurl="files/videos/langkah-cd-5.webm">
+                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                <span class="fw-light text-muted">Pengenalan tools</span>
+                                                <p class="d-block">
+                                                    <strong>Polygon</strong> | <strong>Star</strong> | <strong>Complex Star</strong> | <strong>Graph Paper</strong> | <strong>Spiral</strong> | <strong>Basic Shape</strong> |
+                                                    <strong>Arrow Shape</strong> | <strong>Flowchart Shape</strong> | <strong>Banner Shape</strong> | <strong>Callout Shape</strong> | <strong>Text</strong> | <strong>Table</strong>
+                                                </p>
+                                            </li>
+
+                                            <!-- langkah 6 -->
+                                            <li class="list-group-item" movieurl="files/videos/langkah-cd-6.webm">
+                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                <span class="fw-light text-muted">Pengenalan tools</span>
+                                                <p class="d-block">
+                                                    <strong>Parallel Diemension</strong> | <strong>Horizontal / Vertical Dimension</strong> | <strong>Angular Dimension</strong> | <strong>Segment Dimension</strong> | <strong>3-Point Callout</strong>
+                                                </p>
+                                            </li>
+
+                                            <!-- langkah 7 -->
+                                            <li class="list-group-item" movieurl="files/videos/langkah-cd-7.webm">
+                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                <span class="fw-light text-muted">Pengenalan tools</span>
+                                                <p class="d-block">
+                                                    <strong>Straight-Line Connector</strong> | <strong>Right-Angle Connector</strong> | <strong>Rounded Right Angle-Connector</strong> | <strong>Edit Anchor</strong> | <strong>Drop Shadow</strong>
+                                                </p>
+                                            </li>
+
+                                            <!-- langkah 8 -->
+                                            <li class="list-group-item" movieurl="files/videos/langkah-cd-8.webm">
+                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                <span class="fw-light text-muted">Pengenalan tools</span>
+                                                <p class="d-block">
+                                                    <strong>Contour</strong> | <strong>Blend</strong> | <strong>Distort</strong>
+                                                </p>
+                                            </li>
+
+                                            <!-- langkah 9 -->
+                                            <li class="list-group-item" movieurl="files/videos/langkah-cd-9.webm">
+                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                <span class="fw-light text-muted">Pengenalan tools</span>
+                                                <p class="d-block">
+                                                    <strong>Envelope</strong> | <strong>Extrude</strong> | <strong>Transparency</strong>
+                                                </p>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- <video src="files/videos/langkah-cd-1.mp4"></video> -->
+
+                    <!-- menu kanan -->
+                    <!-- <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted fw-light">
+        <strong class="d-block h5 my-2">Di halaman ini</strong>
+        <nav id="TableOfContents">
+            <div class="accordion accordion-flush" id="tab3MenuKanan">
+                
+                <div class="accordion-item border-0">
+                    <a href="#">...</a>
+                    <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1" data-bs-parent="#tab3MenuKanan">
+                        <div class="accordion-body p-0">
+                            <ul>
+                                <li><a href="#">...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </div> -->
+
+                    <!-- isi konten -->
+                    <!-- <div class="bd-content">
+        <div class="tab-content" id="nav-tabContent">
+        </div>
+    </div> -->
+                </main>
+            </div>
         </div>
         <div class="tab-pane fade" id="nav-tab4" role="tabpanel" aria-labelledby="nav-tab4-tab">
             <div class="container my-md-4 bd-layout" w3-include-html="tutorials.html"></div>
@@ -581,11 +737,11 @@
                             <div class="me-auto">
                                 <div style="font-weight: 300;">Profesi</div>
                                 <span>
-                                <ul style="list-style: square;">
-                                    <li style="font-weight: bold;">Web Development</li>
-                                    <li style="font-weight: bold;">Computer Program Lecturer</li>
-                                </ul>
-                            </span>
+                                    <ul style="list-style: square;">
+                                        <li style="font-weight: bold;">Web Development</li>
+                                        <li style="font-weight: bold;">Computer Program Lecturer</li>
+                                    </ul>
+                                </span>
                             </div>
                         </li>
                     </ol>

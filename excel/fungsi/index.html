@@ -1947,6 +1947,146 @@
                                 </section>
                             </section>
 
+                            <!-- Union and Intersect -->
+                            <section id="CellReferences-union-intersect">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Union and Intersect</div>
+                                </div>
+                                <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/union-intersect.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                <p>Contoh ini mengilustrasikan cara menggunakan operator gabungan dan intersect (batas di bawah hanya untuk ilustrasi) di Excel.</p>
+                                <ol>
+                                    <li>
+                                        <p>Operator gabungan (koma) menambahkan dua Range.</p>
+                                        <p><img class="img-fluid" src="files/ContohReferensi%20Sel_files/image045.png" alt="Operator Serikat di Excel"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> fungsi SUM direduksi menjadi =SUM(C4:D8) + SUM(D7:E11), 20.</p>
+                                    </li>
+                                    <li>
+                                        <p>Operator intersect (spasi tunggal) mengembalikan perpotongan dua Range.</p>
+                                        <p><img class="img-fluid" src="files/ContohReferensi%20Sel_files/image046.png" alt="Intersect Operator di Excel"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> fungsi SUM direduksi menjadi =SUM(D7:D8), 2.</p>
+                                        <p>Mari kita lihat beberapa contoh keren.</p>
+                                    </li>
+                                    <li>
+                                        <p>Excel secara otomatis menambahkan operator serikat (koma). Misalnya, ketik =SUM( dan tahan CTRL untuk memilih Range di bawah ini.</p>
+                                        <p><img class="img-fluid" src="files/ContohReferensi%20Sel_files/image047.png" alt="Beberapa Operator Serikat"></p>
+                                        <p class="moreInfo text-break"><strong>Catatan:</strong> tekan Enter untuk menyisipkan fungsi ini. Excel menambahkan tanda kurung penutup untuk Anda.</p>
+                                    </li>
+                                    <li>
+                                        <p>Anda dapat menggunakan operator intersect (spasi) untuk mengembalikan perpotongan dua Nama Range.</p>
+                                        <p><img class="img-fluid" src="files/ContohReferensi%20Sel_files/image048.png" alt="Persimpangan Nama Range"></p>
+                                        <p class="moreInfo text-break"><strong>Catatan:</strong> <a href="#">Nama Range</a> Feb mengacu pada Range B3:D3 dan Nama Range Cokelat mengacu pada Range B2:B13.</p>
+                                    </li>
+                                </ol>
+                            </section>
+
+                            <!-- Percent Change -->
+                            <section id="CellReferences-percent-change">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Perubahan Persen <small class="fw-light small text-muted">(Percent Change)</small></div>
+                                </div>
+                                <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/percent-change.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                <p>The Rumus perubahan persen sangat sering digunakan di Excel. Misalnya untuk menghitung Monthly Change dan Total Change.</p>
+                                <ol>
+                                    <li>
+                                        <p>Pilih sel C3 dan masukkan rumus yang ditunjukkan di bawah ini.</p>
+                                        <p><img class="img-fluid" src="files/ContohReferensi%20Sel_files/image049.png" alt="Rumus Perubahan Persen di Excel"></p>
+                                    </li>
+                                    <li>
+                                        <p>Pilih sel C3. Pada tab Beranda, dalam grup Angka, terapkan format Persentase.</p>
+                                        <p><img class="img-fluid" src="files/ContohReferensi%20Sel_files/image050.png" alt="Format Persentase"></p>
+                                    </li>
+                                    <li>
+                                        <p>Pilih sel C3, klik di sudut kanan bawah sel C3 dan seret ke bawah ke sel C13.</p>
+                                        <p><img class="img-fluid" src="files/ContohReferensi%20Sel_files/image051.png" alt="Tarik Rumus ke Bawah"></p>
+                                    </li>
+                                    <li>
+                                        <p>Periksa apakah semuanya berjalan baik-baik saja.</p>
+                                        <p><img class="img-fluid" src="files/ContohReferensi%20Sel_files/image052.png" alt="Referensi Relatif"></p>
+                                    </li>
+                                    <li>
+                                        <p>Dengan cara yang sama, kita dapat menghitung Total Change. Kali ini kami memperbaiki referensi ke sel B2. Pilih sel D3 dan masukkan rumus yang ditunjukkan di bawah ini.</p>
+                                        <p><img class="img-fluid" src="files/ContohReferensi%20Sel_files/image053.png" alt="Perubahan Total"></p>
+                                    </li>
+                                    <li>
+                                        <p>Pilih sel D3. Pada tab Beranda, dalam grup Angka, terapkan format Persentase.</p>
+                                        <p><img class="img-fluid" src="files/ContohReferensi%20Sel_files/image050.png" alt="Format Persentase"></p>
+                                    </li>
+                                    <li>Pilih sel D3, klik di sudut kanan bawah sel D3 dan seret ke bawah ke sel D13.</li>
+                                    <li>
+                                        <p>2d. Periksa apakah semuanya berjalan baik-baik saja.</p>
+                                        <p><img class="img-fluid" src="files/ContohReferensi%20Sel_files/image054.png" alt="Referensi Mutlak"></p>
+                                    </li>
+                                </ol>
+                                <p class="moreInfo text-break"><strong>Penjelasan:</strong> ketika kita menyeret rumus ke bawah, <a href="#">referensi absolut</a> ($B$2) tetap sama, sedangkan referensi relatif (B3) berubah menjadi B4, B5, B6, dll.</p>
+                            </section>
+
+                            <!-- Add a Column -->
+                            <section id="CellReferences-add-column">
+                                <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                    <div class="fs-4" id="content">Menambahkan Kolom <small class="fw-light small text-muted">(Add a Column)</small></div>
+                                </div>
+                                <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/add-column.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                <p>Untuk menambahkan kolom di Excel, klik kanan huruf kolom dan klik Sisipkan. Saat Anda menyisipkan kolom atau baris, referensi sel diperbarui secara otomatis.</p>
+                                <ol>
+                                    <li>
+                                        <p>Pertama, pilih sel A10 di bawah dan tekan ALT + = untuk menjumlahkan kolom angka dengan cepat.</p>
+                                        <p><img class="img-fluid" src="files/ContohReferensi%20Sel_files/image055.png" alt="Jumlahkan Kolom Angka"></p>
+                                    </li>
+                                    <li>
+                                        <p>Pilih kolom A.</p>
+                                        <p><img class="img-fluid" src="files/ContohReferensi%20Sel_files/image056.png" alt="Pilih Kolom"></p>
+                                        <p class="moreInfo text-break"><strong>Catatan:</strong> kolom baru akan ditambahkan di sebelah kiri pilihan.</p>
+                                    </li>
+                                    <li>
+                                        <p>Klik kanan, lalu klik Sisipkan.</p>
+                                        <p><img class="img-fluid" src="files/ContohReferensi%20Sel_files/image057.png" alt="Klik Sisipkan"></p>
+                                        <p>Hasil:</p>
+                                        <p><img class="img-fluid" src="files/ContohReferensi%20Sel_files/image058.png" alt="Tambahkan Kolom di Excel"></p>
+                                        <p>Untuk menambahkan beberapa kolom, jalankan langkah-langkah berikut.</p>
+                                    </li>
+                                    <li>
+                                        <p>Pilih beberapa kolom dengan mengklik dan menyeret header kolom. Misalnya, pilih kolom A dan kolom B.</p>
+                                        <p><img class="img-fluid" src="files/ContohReferensi%20Sel_files/image059.png" alt="Pilih Beberapa Kolom"></p>
+                                    </li>
+                                    <li>
+                                        <p>Klik kanan, lalu klik Sisipkan.</p>
+                                        <p><img class="img-fluid" src="files/ContohReferensi%20Sel_files/image057.png" alt="Klik Sisipkan"></p>
+                                        <p>Hasil:</p>
+                                        <p><img class="img-fluid" src="files/ContohReferensi%20Sel_files/image060.png" alt="Tambahkan Beberapa Kolom di Excel"></p>
+                                    </li>
+                                    <li>
+                                        <p>Klik dua kali sel D10.</p>
+                                        <p><img class="img-fluid" src="files/ContohReferensi%20Sel_files/image061.png" alt="Referensi Sel Diperbarui Secara Otomatis"></p>
+                                        <p class="moreInfo text-break"><strong>Catatan:</strong> saat Anda menyisipkan kolom atau baris, referensi sel diperbarui secara otomatis.</p>
+                                        <p>Anda juga dapat menggunakan opsi Sisipkan pada tab Beranda.</p>
+                                    </li>
+                                    <li>
+                                        <p>Misalnya pilih kolom A, B, C dan D.</p>
+                                        <p><img class="img-fluid" src="files/ContohReferensi%20Sel_files/image062.png" alt="Pilih Kolom"></p>
+                                    </li>
+                                    <li>
+                                        <p>Pada tab Beranda, di grup Sel, klik Sisipkan, Sisipkan Kolom Lembar.</p>
+                                        <p><img class="img-fluid" src="files/ContohReferensi%20Sel_files/image063.png" alt="Sisipkan Kolom Lembar"></p>
+                                        <p>Hasil:</p>
+                                        <p><img class="img-fluid" src="files/ContohReferensi%20Sel_files/image064.png" alt="Tambahkan Kolom di Excel"></p>
+                                        <p>Untuk menambahkan kolom dengan cepat, pilih kolom dan gunakan pintasan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>+</kbd>.</p>
+                                    </li>
+                                    <li>
+                                        <p>Misalnya pilih kolom F.</p>
+                                        <p><img class="img-fluid" src="files/ContohReferensi%20Sel_files/image065.png" alt="Pilih Satu Kolom"></p>
+                                    </li>
+                                    <li>
+                                        <p>Tekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>+</kbd>.</p>
+                                        <p>Hasil:</p>
+                                        <p><img class="img-fluid" src="files/ContohReferensi%20Sel_files/image066.png" alt="Tambahkan Satu Kolom di Excel"></p>
+                                    </li>
+                                </ol>
+                                <p class="moreInfo text-break"><strong>Catatan:</strong> untuk menambahkan beberapa kolom dengan cepat, pilih beberapa kolom dan gunakan pintasan yang sama.</p>
+                            </section>
+
                         </div>
                     </div>
                 </div>

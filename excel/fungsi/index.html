@@ -401,6 +401,178 @@
                                     </section>
                                 </section>
 
+                                <section id="CountandSumFunctions-running-total">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-4" id="content">Total Berjalan <small class="fw-light small text-muted">(Running Total)</small></div>
+                                    </div>
+                                    <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/running-total.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                    <p>Contoh ini mengajarkan Anda cara membuat total berjalan (jumlah kumulatif) di Excel. Total berjalan berubah setiap kali data baru ditambahkan ke daftar.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Pilih sel B9 dan masukkan fungsi <b>SUM</b> sederhana.</p>
+                                            <p><img class="img-fluid" src="files/running-total_files/image001.png" alt="Jumlahkan Fungsi di Excel"></p>
+                                        </li>
+                                        <li>
+                                            <p>Pilih sel C2 dan masukkan fungsi <b>SUM</b> yang ditunjukkan di bawah ini.</p>
+                                            <p><img class="img-fluid" src="files/running-total_files/image002.png" alt="Menjalankan Rumus Total"></p>
+                                            <p class="moreInfo text-break"><b>Penjelasan:</b> sel pertama (B$2) dalam referensi range adalah <a href="#mixed-reference">referensi campuran</a>. Kami memperbaiki referensi ke baris 2 dengan menambahkan simbol $ di depan nomor baris. Sel
+                                                kedua (B2) dalam referensi range adalah <a href="#relative-reference">referensi relatif</a> normal.</p>
+                                        </li>
+                                        <li>
+                                            <p>Pilih sel C2, klik di sudut kanan bawah sel C2 dan seret ke bawah ke sel C7.</p>
+                                            <p><img class="img-fluid" src="files/running-total_files/image003.png" alt="Buat Total Berjalan di Excel"></p>
+                                            <p class="moreInfo text-break"><b>Penjelasan:</b> ketika kita menyeret rumus ke bawah, referensi campuran (B$2) tetap sama, sedangkan referensi relatif (B2) berubah menjadi B3, B4, B5, dll.</p>
+                                        </li>
+                                        <li>
+                                            <p>Misalnya, lihat rumus di sel C3.</p>
+                                            <p><img class="img-fluid" src="files/running-total_files/image004.png" alt="Referensi Campuran"></p>
+                                        </li>
+                                        <li>
+                                            <p>Misalnya, lihat rumus di sel C4.</p>
+                                            <p><img class="img-fluid" src="files/running-total_files/image005.png" alt="Menjalankan Pemeriksaan Total"></p>
+                                        </li>
+                                        <li>
+                                            <p>Pada langkah 2, masukkan fungsi <b>IF</b> yang ditunjukkan di bawah ini (dan seret ke bawah ke sel C7) untuk hanya menampilkan jumlah kumulatif jika data telah dimasukkan.</p>
+                                            <p><img class="img-fluid" src="files/running-total_files/image006.png" alt="Jumlah Kumulatif"></p>
+                                            <p class="moreInfo text-break"><b>Penjelasan:</b> jika sel B2 tidak kosong (<b>&lt;&gt;</b> berarti tidak sama dengan), <a href="#">fungsi <b>IF</b></a> di sel C2 menampilkan jumlah kumulatif, selain itu menampilkan string kosong.</p>
+                                        </li>
+                                        <li>
+                                            <p>Masukkan penjualan di bulan April.</p>
+                                            <p><img class="img-fluid" src="files/running-total_files/image007.png" alt="Penjualan di bulan April"></p>
+                                        </li>
+                                    </ol>
+                                </section>
+
+                                <section id="CountandSumFunctions-sumif*">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-4" id="content">Sumif <span class="fw-bold text-warning">+</span></div>
+                                    </div>
+                                    <p class="fw-light small"><a href="#sum-numeric-criteria">Numerik Kriteria</a> | <a href="#sum-text-criteria">Teks Kriteria</a> | <a href="#sum-date-criteria">Tanggal Kriteria</a> | <a href="#sum-and-criteria">And Kriteria</a> | <a href="#sum-or-criteria">Or Kriteria</a></p>
+                                    <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/sumif.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                    <p>Fungsi <b>SUMIF</b> yang kuat di Excel menjumlahkan sel berdasarkan satu kriteria. Halaman ini berisi banyak contoh <b>SUMIF</b> yang mudah diikuti.</p>
+
+                                    <section id="sum-numeric-criteria">
+                                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                            <div class="fs-5" id="content">Kriteria Numerik</div>
+                                        </div>
+
+                                        <p>Gunakan fungsi <b>SUMIF</b> di Excel untuk menjumlahkan sel berdasarkan angka yang memenuhi kriteria tertentu.</p>
+                                        <ol>
+                                            <li>
+                                                <p>Fungsi <b>SUMIF</b> di bawah (dua argumen) menjumlahkan nilai dalam range A1:A5 yang kurang dari atau sama dengan 10.</p>
+                                                <p><img class="img-fluid" src="files/sumif_files/image001.png" alt="Fungsi Sumif di Excel dengan Dua Argumen"></p>
+                                            </li>
+                                            <li>
+                                                <p>Fungsi <b>SUMIF</b> berikut memberikan hasil yang sama persis. Operator &amp; menggabungkan simbol 'kurang dari atau sama dengan' dan nilai dalam sel C1.</p>
+                                                <p><img class="img-fluid" src="files/sumif_files/image002.png" alt="Fungsi Sumif dan Operator Ampersand"></p>
+                                            </li>
+                                            <li>
+                                                <p>Fungsi <b>SUMIF</b> di bawah ini (tiga argumen, argumen terakhir adalah range yang akan dijumlahkan) menjumlahkan nilai dalam range B1:B5 jika sel terkait dalam range A1:A5 berisi nilai 25.</p>
+                                                <p><img class="img-fluid" src="files/sumif_files/image003.png" alt="Fungsi Sumif di Excel dengan Tiga Argumen"></p>
+                                            </li>
+                                            <li>
+                                                <p>Fungsi <b>SUMIF</b> berikut memberikan hasil yang sama persis (argumen kedua mengacu pada sel D1).</p>
+                                                <p><img class="img-fluid" src="files/sumif_files/image004.png" alt="Argumen Kedua Mengacu pada Sel D1"></p>
+                                            </li>
+                                        </ol>
+                                    </section>
+
+                                    <section id="sum-text-criteria">
+                                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                            <div class="fs-5" id="content">Kriteria Teks</div>
+                                        </div>
+
+                                        <p>Gunakan fungsi <b>SUMIF</b> di Excel untuk menjumlahkan sel berdasarkan string teks yang memenuhi kriteria tertentu. Selalu sertakan teks dalam tanda kutip ganda.</p>
+                                        <ol>
+                                            <li>
+                                                <p>Fungsi <b>SUMIF</b> di bawah ini menjumlahkan nilai dalam range B1:B5 jika sel yang sesuai dalam range A1:A5 berisi lingkaran persis.</p>
+                                                <p><img class="img-fluid" src="files/sumif_files/image005.png" alt="Jumlahkan Jika Sama dengan Nilai Teks"></p>
+                                            </li>
+                                            <li>
+                                                <p>Fungsi <b>SUMIF</b> di bawah ini menjumlahkan nilai dalam range B1:B5 jika sel terkait dalam range A1:A5 tidak berisi segitiga sama persis.</p>
+                                                <p><img class="img-fluid" src="files/sumif_files/image006.png" alt="Jumlahkan Jika Tidak Sama dengan Nilai Teks"></p>
+                                            </li>
+                                            <li>
+                                                <p>Fungsi <b>SUMIF</b> di bawah ini menjumlahkan nilai dalam range B1:B5 jika sel yang sesuai dalam range A1:A5 berisi persis lingkaran + 1 karakter. Tanda tanya (?) cocok dengan tepat satu karakter.</p>
+                                                <p><img class="img-fluid" src="files/sumif_files/image007.png" alt="Fungsi Sumif dengan Tanda Tanya"></p>
+                                            </li>
+                                            <li>
+                                                <p>Fungsi <b>SUMIF</b> di bawah ini menjumlahkan nilai dalam range B1:B5 jika sel terkait dalam range A1:A5 berisi rangkaian nol atau lebih karakter + file. Tanda asterisk (*) cocok dengan serangkaian karakter
+                                                    nol atau lebih.
+                                                </p>
+                                                <p><img class="img-fluid" src="files/sumif_files/image008.png" alt="Fungsi Sumif dengan Asterisk"></p>
+                                            </li>
+                                            <li>
+                                                <p>Fungsi <b>SUMIF</b> di bawah jumlah nilai dalam range B1:B5 jika sel yang sesuai dalam range A1:A5 berisi triangle atau circle8.</p>
+                                                <p><img class="img-fluid" src="files/sumif_files/image009.png" alt="Dua Fungsi Sumif di Excel"></p>
+                                            </li>
+                                        </ol>
+                                    </section>
+
+                                    <section id="sum-date-criteria">
+                                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                            <div class="fs-5" id="content">Kriteria Tanggal</div>
+                                        </div>
+
+                                        <p>Gunakan fungsi <b>SUMIF</b> di Excel untuk menjumlahkan sel berdasarkan tanggal yang memenuhi kriteria tertentu.</p>
+                                        <ol>
+                                            <li>
+                                                <p>Fungsi <b>SUMIF</b> di bawah ini menjumlahkan penjualan setelah 20 Januari 2018.</p>
+                                                <p><img class="img-fluid" src="files/sumif_files/image010.png" alt="Jumlahkan Jika Tanggal Lebih Besar dari"></p>
+                                                <p class="moreInfo text-break"><b>Catatan:</b> fungsi <b>DATE</b> di Excel menerima tiga argumen: tahun, bulan, dan hari.</p>
+                                            </li>
+                                            <li>
+                                                <p>Fungsi <b>SUMIF</b> di bawah ini menjumlahkan penjualan hari ini.</p>
+                                                <p><img class="img-fluid" src="files/sumif_files/image011.png" alt="Fungsi Sumif dan Fungsi Hari Ini"></p>
+                                                <p class="moreInfo text-break"><b>Catatan:</b> hari ini adalah 3 Agustus 2018.</p>
+                                            </li>
+                                            <li>
+                                                <p>Fungsi <b>SUMIFS</b> (dengan huruf S di akhir) di bawah ini menjumlahkan penjualan antara dua tanggal.</p>
+                                                <p><img class="img-fluid" src="files/sumif_files/image012.png" alt="Jumlahkan Jika Tanggal Antara"></p>
+                                            </li>
+                                        </ol>
+                                        <p class="moreInfo text-break"><b>Catatan:</b> fungsi <b>SUMIFS</b> di Excel menjumlahkan sel berdasarkan dua atau lebih kriteria (argumen pertama adalah range yang akan dijumlahkan, diikuti oleh dua atau lebih pasangan range/kriteria). Sesuaikan
+                                            tanggal untuk menjumlahkan penjualan pada bulan, tahun, dll.</p>
+                                    </section>
+
+                                    <section id="sum-and-criteria">
+                                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                            <div class="fs-5" id="content">Kriteria And</div>
+                                        </div>
+
+                                        <p>Menjumlahkan dengan kriteria Dan di Excel itu mudah.</p>
+                                        <p>Misalnya, untuk menjumlahkan sel yang memenuhi kriteria berikut: Google dan Stanford (dua range kriteria), cukup gunakan fungsi <b>SUMIFS</b> (dengan huruf S di akhir).</p>
+                                        <p><img class="img-fluid" src="files/sumif_files/image013.png" alt="Fungsi Sumif di Excel"></p>
+                                        <p class="moreInfo text-break"><b>Catatan:</b> ingat, saat menggunakan fungsi <b>SUMIFS</b>, argumen pertama adalah range yang akan dijumlahkan, diikuti oleh dua atau lebih pasangan range/kriteria.</p>
+                                    </section>
+
+                                    <section id="sum-or-criteria">
+                                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                            <div class="fs-5" id="content">Kriteria Or</div>
+                                        </div>
+
+                                        <p>Menjumlahkan dengan kriteria Or di Excel bisa jadi rumit.</p>
+                                        <ol>
+                                            <li>
+                                                <p>Rumus di bawah ini menjumlahkan sel yang memenuhi kriteria berikut: Google atau Facebook (satu range kriteria). Tidak ada ilmu roket sejauh ini.</p>
+                                                <p><img class="img-fluid" src="files/sumif_files/image014.png" alt="2x Fungsi Sumif di Excel"></p>
+                                            </li>
+                                            <li>
+                                                <p>Namun, jika Anda ingin menjumlahkan sel yang memenuhi kriteria berikut: Google atau Stanford (dua range kriteria), Anda tidak bisa begitu saja menggunakan fungsi <b>SUMIF</b> dua kali (lihat gambar di bawah).</p>
+                                                <p><img class="img-fluid" src="files/sumif_files/image015.png" alt="Formula yang salah"></p>
+                                                <p class="moreInfo text-break"><b>Catatan:</b> sel yang memenuhi kriteria Google dan Stanford ditambahkan dua kali, tetapi hanya boleh ditambahkan satu kali. 10 adalah jawaban yang kita cari.</p>
+                                            </li>
+                                            <li>
+                                                <p>Rumus array di bawah ini berhasil.</p>
+                                                <p><img class="img-fluid" src="files/sumif_files/image016.png" alt="Jumlahkan dengan Atau Kriteria di Excel"></p>
+                                                <p class="moreInfo text-break"><b>Catatan:</b> selesaikan rumus array dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>. Excel menambahkan kurung kurawal {}.</p>
+                                            </li>
+                                        </ol>
+                                    </section>
+                                </section>
+
                                 <a class="d-flex justify-content-end fw-light" href="#fungsi-CountandSumFunctions">kembali keatas</a>
                             </section>
                         </div>

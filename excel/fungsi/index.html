@@ -132,6 +132,19 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Text Functions -->
+                <div class="accordion-item border-0">
+                    <a href="#fungsi-text-functions">Text</a>
+                    <div id="flush-collapse-text-functions" class="accordion-collapse collapse" aria-labelledby="flush-heading-text-functions" data-bs-parent="#tab3MenuKanan">
+                        <div class="accordion-body p-0">
+                            <ul>
+                                <!--  -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </nav>
     </div>
@@ -3057,6 +3070,99 @@
                     </div>
                 </div>
 
+                <!-- Text Functions -->
+                <div class="accordion-item" id="fungsi-text-functions">
+                    <!-- judul akordion -->
+                    <h2 class="accordion-header" id="flush-heading-text-functions">
+                        <button class="accordion-button collapsed" style="padding: 1rem 0rem; box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-text-functions" aria-expanded="false" aria-controls="flush-collapse-text-functions">
+                            <div class="me-auto">
+                                <div class="fs-3">Fungsi Teks</div>
+                                <small class="text-muted fw-light text-lowercase">fungsi untuk ditawarkan dalam hal memanipulasi string teks</small>
+                            </div>
+                        </button>
+                    </h2>
+                    <!-- isi akordion -->
+                    <div id="flush-collapse-text-functions" class="accordion-collapse collapse" aria-labelledby="flush-heading-text-functions" data-bs-parent="#tab3Konten">
+                        <div class="accordion-body p-0">
+                            <section>
+                                <p class="link-text mt-2">
+                                    <a href="#join-strings">Gabungkan String</a>
+                                    <a href="#left">Left</a>
+                                    <a href="#right">Right</a>
+                                    <a href="#mid">Mid</a>
+                                    <a href="#len">Len</a>
+                                    <a href="#FungsiText-find">Find</a>
+                                    <a href="#substitute">Substitute</a>
+                                </p>
+                                <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/text-functions.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                <p>Excel memiliki banyak fungsi untuk ditawarkan dalam hal memanipulasi string teks.</p>
+
+                                <section id="join-strings">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content">Gabungkan String</div>
+                                    </div>
+                                    <p>Untuk menggabungkan string, gunakan &amp; operator.</p>
+                                    <p><img class="img-fluid" src="files/TextFunctions-details_files/image001.png" alt="Gabungkan String"></p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> alih-alih menggunakan &amp; operator, gunakan <a href="#">fungsi CONCATENATE</a> di Excel.</p>
+                                </section>
+
+                                <section id="left">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content">Left</div>
+                                    </div>
+                                    <p>Untuk mengekstrak karakter paling kiri dari string, gunakan fungsi LEFT.</p>
+                                    <p><img class="img-fluid" src="files/TextFunctions-details_files/image002.png" alt="Fungsi Kiri"></p>
+                                </section>
+
+                                <section id="right">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content">Right</div>
+                                    </div>
+                                    <p>Untuk mengekstrak karakter paling kanan dari string, gunakan fungsi KANAN.</p>
+                                    <p><img class="img-fluid" src="files/TextFunctions-details_files/image003.png" alt="Fungsi Kanan"></p>
+                                </section>
+
+                                <section id="mid">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content">Mid</div>
+                                    </div>
+                                    <p>Untuk mengekstrak <a href="https://www.excel-easy.com/examples/substring.html">substring</a>, dimulai di tengah string, gunakan fungsi MID.</p>
+                                    <p><img class="img-fluid" src="files/TextFunctions-details_files/image004.png" alt="Fungsi Pertengahan"></p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> dimulai dari posisi 5 (p) dengan panjang 3.</p>
+                                </section>
+
+                                <section id="len">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content">Len</div>
+                                    </div>
+                                    <p>Untuk mendapatkan panjang string, gunakan fungsi LEN.</p>
+                                    <p><img class="img-fluid" src="files/TextFunctions-details_files/image005.png" alt="Fungsi Len"></p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> spasi (posisi 8) disertakan!</p>
+                                </section>
+
+                                <section id="FungsiText-find">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content">Find</div>
+                                    </div>
+                                    <p>Untuk menemukan posisi substring dalam string, gunakan fungsi FIND.</p>
+                                    <p><img class="img-fluid" src="files/TextFunctions-details_files/image006.png" alt="Temukan Fungsi"></p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> string &quot;am&quot; ditemukan di posisi 3. Kunjungi halaman kami tentang <a href="#">fungsi FIND</a> untuk contoh lainnya.</p>
+                                </section>
+
+                                <section id="substitute">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content">Substitute</div>
+                                    </div>
+                                    <p>Untuk mengganti teks yang ada dengan teks baru dalam sebuah string, gunakan fungsi SUBSTITUTE.</p>
+                                    <p><img class="img-fluid" src="files/TextFunctions-details_files/image007.png" alt="Fungsi Pengganti"></p>
+                                </section>
+
+                                <a class="d-flex justify-content-end fw-light" href="#fungsi-text-functions">kembali keatas</a>
+                            </section>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

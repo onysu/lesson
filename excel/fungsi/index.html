@@ -3085,14 +3085,26 @@
                     <div id="flush-collapse-text-functions" class="accordion-collapse collapse" aria-labelledby="flush-heading-text-functions" data-bs-parent="#tab3Konten">
                         <div class="accordion-body p-0">
                             <section>
-                                <p class="link-text mt-2">
-                                    <a href="#join-strings">Gabungkan String</a>
-                                    <a href="#left">Left</a>
-                                    <a href="#right">Right</a>
-                                    <a href="#mid">Mid</a>
-                                    <a href="#len">Len</a>
-                                    <a href="#FungsiText-find">Find</a>
-                                    <a href="#substitute">Substitute</a>
+                                <p class="fw-light small">
+                                    <a href="#join-strings">Gabungkan String</a> |
+                                    <a href="#left">Left</a> |
+                                    <a href="#right">Right</a> |
+                                    <a href="#mid">Mid</a> |
+                                    <a href="#len">Len</a> |
+                                    <a href="#FungsiText-find">Find</a> |
+                                    <a href="#substitute">Substitute</a> |
+                                    <a href="#fungsi-text-separate-strings">String Terpisah</a> |
+                                    <a href="#fungsi-text-count-words">Hitung Kata</a> |
+                                    <a href="#fungsi-text-text-to-columns">Teks ke Kolom</a> |
+                                    <a href="#fungsi-text-find">Temukan</a> |
+                                    <a href="#fungsi-text-search">Pencarian</a> |
+                                    <a href="#fungsi-text-change-case">Mengubah Huruf</a> |
+                                    <a href="#fungsi-text-remove-spaces">Hapus Spasi</a> |
+                                    <a href="#fungsi-text-compare-text">Bandingkan Teks</a> |
+                                    <a href="#fungsi-text-substitute-vs-replace">Substitute vs Replace</a> |
+                                    <a href="#fungsi-text-text">Text</a> |
+                                    <a href="#fungsi-text-concatenate">Concatenate</a> |
+                                    <a href="#fungsi-text-substring">Substring</a>
                                 </p>
                                 <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/text-functions.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
 
@@ -3156,6 +3168,636 @@
                                     </div>
                                     <p>Untuk mengganti teks yang ada dengan teks baru dalam sebuah string, gunakan fungsi SUBSTITUTE.</p>
                                     <p><img class="img-fluid" src="files/TextFunctions-details_files/image007.png" alt="Fungsi Pengganti"></p>
+                                </section>
+
+                                <!-- Separate Strings -->
+                                <section id="fungsi-text-separate-strings">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-4" id="content">String Terpisah <small class="fw-light small text-muted">(Separate Strings)</small></div>
+                                    </div>
+                                    <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/separate-strings.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                    <p>Contoh ini mengajarkan Anda cara memisahkan string di Excel.</p>
+                                    <p><img class="img-fluid" src="files/TextFunctions-details_files/image008.png" alt="Contoh String Terpisah"></p>
+                                    <p>Masalah yang kita hadapi adalah kita perlu memberi tahu Excel di mana kita ingin memisahkan string. Dalam kasus Smith, Mike koma di posisi 6 sedangkan dalam kasus Williams, Janet koma di posisi 9.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Untuk mendapatkan nama depan, gunakan rumus di bawah ini.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image009.png" alt="Nama depan"></p>
+                                            <p class="moreInfo text-break"><strong>Penjelasan:</strong> untuk mencari posisi koma, gunakan fungsi <b>FIND</b> (posisi 6). Untuk mendapatkan panjang string, gunakan fungsi <b>LEN</b> (11 karakter). =RIGHT(A2,LEN(A2)-FIND(&quot;,&quot;,A2)-1)
+                                                dikurangi menjadi =RIGHT(A2,11-6-1). =RIGHT(A2,4) mengekstrak 4 karakter paling kanan dan memberikan hasil yang diinginkan (Mike).</p>
+                                        </li>
+                                        <li>
+                                            <p>Untuk mendapatkan nama belakang, gunakan rumus berikut.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image010.png" alt="Nama keluarga"></p>
+                                            <p class="moreInfo text-break"><strong>Penjelasan:</strong> untuk mencari posisi koma, gunakan fungsi <b>FIND</b> (posisi 6). =LEFT(A2,FIND(&quot;,&quot;, A2)-1) dikurangi menjadi =LEFT(A2,6-1). =LEFT(A2,5) mengekstrak 5 karakter paling kiri
+                                                dan memberikan hasil yang diinginkan (Smith).</p>
+                                        </li>
+                                        <li>
+                                            <p>Pilih range B2:C2 dan seret ke bawah.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image011.png" alt="Pisahkan String di Excel"></p>
+                                        </li>
+                                    </ol>
+                                </section>
+
+                                <!-- Count Words -->
+                                <section id="fungsi-text-count-words">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-4" id="content">Hitung Kata <small class="fw-light small text-muted">(Count Words)</small></div>
+                                    </div>
+                                    <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/count-words.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                    <p>Pertama, mari kita hitung jumlah total kata dalam sel atau range sel. Terakhir, mari kita hitung berapa kali kata tertentu muncul dalam sel atau range sel.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Fungsi <b>TRIM</b> di bawah ini mengembalikan string dengan spasi biasa saja.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image012.png" alt="fungsi <b>TRIM</b>"></p>
+                                        </li>
+                                        <li>
+                                            <p>Untuk mendapatkan panjang string ini, tambahkan fungsi <b>LEN</b>.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image013.png" alt="LEN dan TRIM"></p>
+                                        </li>
+                                        <li>
+                                            <p>Fungsi <b>SUBSTITUTE</b> di bawah ini mengembalikan string tanpa spasi.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image014.png" alt="Fungsi PENGGANTI"></p>
+                                        </li>
+                                        <li>
+                                            <p>Untuk mendapatkan panjang string ini, tambahkan fungsi <b>LEN</b>.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image015.png" alt="LEN dan PENGGANTI"></p>
+                                        </li>
+                                        <li>
+                                            <p>Untuk menghitung jumlah total kata di sel A1, kurangi panjang string tanpa spasi (rumus dari langkah 4) dari panjang string dengan hanya spasi biasa (rumus dari langkah 2) dan tambahkan 1.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image016.png" alt="Hitung Jumlah Total Kata dalam Sel"></p>
+                                            <p class="moreInfo text-break"><strong>Kesimpulan:</strong> untuk menghitung jumlah total kata dalam sel, cukup hitung jumlah spasi dan tambahkan 1 ke hasil ini. 1 spasi berarti 2 kata, 2 spasi berarti 3 kata, dst.</p>
+                                        </li>
+                                        <li>
+                                            <p>Untuk menghitung jumlah total kata dalam range A1:A2, tambahkan fungsi SUMPRODUCT dan replace A1 dengan A1:A2.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image017.png" alt="Hitung Jumlah Total Kata dalam Rentang"></p>
+                                            <p class="moreInfo text-break"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="#">fungsi SUMPRODUCT</a> untuk mempelajari lebih lanjut tentang fungsi Excel ini.</p>
+                                            <p>Terakhir, mari kita hitung berapa kali kata tertentu muncul dalam sel atau range sel. Trik ini cukup keren.</p>
+                                        </li>
+                                        <li>
+                                            <p>Fungsi <b>LEN</b> di bawah ini mengembalikan panjang teks asli di sel A1.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image018.png" alt="Panjang Teks Asli"></p>
+                                        </li>
+                                        <li>
+                                            <p>Fungsi <b>SUBSTITUTE</b> di bawah ini mengembalikan string tanpa kata &quot;anjing&quot;.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image019.png" alt="Hapus Substring"></p>
+                                        </li>
+                                        <li>
+                                            <p>Fungsi <b>LEN</b> di bawah ini mengembalikan panjang string ini.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image020.png" alt="Panjang Teks Tanpa Substring"></p>
+                                        </li>
+                                        <li>
+                                            <p>Kurangi panjang string tanpa kata &quot;anjing&quot; (rumus dari langkah 9) dari panjang teks asli di sel A1 (rumus dari langkah 7).</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image021.png" alt="Karakter yang Hilang"></p>
+                                            <p class="moreInfo text-break"><strong>Kesimpulan:</strong> setelah menghapus kata &quot;anjing&quot; dari teks aslinya, 12 karakter hilang.</p>
+                                        </li>
+                                        <li>
+                                            <p>Kita tahu panjang kata &quot;anjing&quot; (3), jadi kata &quot;anjing&quot; muncul 12 / 3 = 4 kali di sel A1.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image022.png" alt="Hitung Berapa Kali Kata Tertentu Terjadi di Sel"></p>
+                                        </li>
+                                        <li>
+                                            <p>Untuk menghitung berapa kali kata &quot;anjing&quot; muncul pada range A1:A2, tambahkan fungsi SUMPRODUCT dan replace A1 dengan A1:A2.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image023.png" alt="Hitung Berapa Kali Kata Tertentu Terjadi dalam Rentang"></p>
+                                        </li>
+                                        <li>
+                                            <p>Gunakan fungsi COUNTIF di Excel untuk menghitung jumlah sel yang berisi kata tertentu.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image024.png" alt="Fungsi COUNTIF di Excel"></p>
+                                        </li>
+                                    </ol>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> tanda bintang (*) cocok dengan serangkaian karakter nol atau lebih. Kunjungi halaman kami tentang <a href="#">fungsi COUNTIF</a> untuk mempelajari lebih lanjut tentang fungsi Excel yang hebat
+                                        ini.
+                                    </p>
+                                </section>
+
+                                <!-- Text to Columns -->
+                                <section id="fungsi-text-text-to-columns">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-4" id="content">Teks ke Kolom <small class="fw-light small text-muted">(Text to Columns)</small></div>
+                                    </div>
+                                    <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/text-to-columns.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                    <p>Untuk memisahkan konten satu sel Excel menjadi kolom terpisah, Anda dapat menggunakan 'Wisaya Konversi Teks ke Kolom'. Misalnya, ketika Anda ingin memisahkan daftar nama lengkap menjadi nama belakang dan nama depan.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Pilih range dengan nama lengkap.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image025.png" alt="Contoh Teks ke Kolom di Excel"></p>
+                                        </li>
+                                        <li>
+                                            <p>Pada tab Data, dalam grup Alat Data, klik Teks ke Kolom.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image026.png" alt="Klik Teks ke Kolom"></p>
+                                            <p>Kotak dialog berikut muncul.</p>
+                                        </li>
+                                        <li>
+                                            <p>Pilih Dibatasi dan klik Berikutnya.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image027.png" alt="Konversi Teks ke Kolom Wizard - Langkah 1"></p>
+                                        </li>
+                                        <li>Kosongkan semua kotak centang di bawah Pembatas kecuali untuk kotak centang Koma dan Spasi.</li>
+                                        <li>
+                                            <p>Klik Selesai.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image028.png" alt="Konversi Teks ke Kolom Wizard - Langkah 2"></p>
+                                            <p class="moreInfo text-break"><strong>Catatan:</strong> Contoh ini memiliki koma dan spasi sebagai pembatas. Anda mungkin memiliki pembatas lain dalam data Anda. Bereksperimenlah dengan mencentang dan menghapus centang pada kotak centang
+                                                yang berbeda. Anda mendapatkan pratinjau langsung tentang bagaimana data Anda akan dipisahkan.</p>
+                                            <p>Hasil:</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image029.png" alt="Hasil Teks ke Kolom"></p>
+                                        </li>
+                                    </ol>
+                                </section>
+
+                                <!-- Find -->
+                                <section id="fungsi-text-find">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-4" id="content">Find</div>
+                                    </div>
+                                    <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/find.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                    <p>Gunakan fungsi <b>FIND</b> di Excel untuk menemukan posisi substring dalam string. Fungsi <b>FIND</b> sensitive huruf besar/kecil.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Fungsi <b>FIND</b> di bawah ini menemukan string &quot;ro&quot; di posisi 4.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image030.png" alt="Temukan Fungsi di Excel"></p>
+                                        </li>
+                                        <li>
+                                            <p>Fungsi <b>FIND</b> di bawah ini menemukan string &quot;Excel&quot; di posisi 11.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image031.png" alt="Temukan Teks Peka Huruf Besar-kecil"></p>
+                                        </li>
+                                        <li>
+                                            <p>Fungsi <b>FIND</b> sensitive huruf besar/kecil. Fungsi <b>FIND</b> di bawah ini mengembalikan #VALUE! error karena tidak dapat menemukan string &quot;excel&quot;.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image032.png" alt="Temukan Fungsi sensitive huruf besar-kecil"></p>
+                                            <p>Fungsi <b>FIND</b> memiliki argumen opsional ke-3. Anda dapat menggunakan argumen ini untuk menunjukkan posisi, menghitung dari kiri, di mana Anda ingin mulai mencari.</p>
+                                        </li>
+                                        <li>
+                                            <p>Fungsi <b>FIND</b> di bawah ini menemukan string &quot;o&quot; pada posisi 5.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image033.png" alt="Mulai Mencari di Posisi 1"></p>
+                                        </li>
+                                        <li>
+                                            <p>Fungsi <b>FIND</b> di bawah ini mulai mencari di posisi 6 dan menemukan string &quot;o&quot; di posisi 7.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image034.png" alt="Mulai Mencari di Posisi 6"></p>
+                                        </li>
+                                    </ol>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> <a href="#">fungsi SEARCH</a> di Excel tidak sensitive huruf besar-kecil dan mendukung wildcard.</p>
+                                </section>
+
+                                <!-- Search -->
+                                <section id="fungsi-text-search">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-4" id="content">Search</div>
+                                    </div>
+                                    <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/search.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                    <p>Gunakan fungsi <b>SEARCH</b> di Excel untuk menemukan posisi substring dalam string. Fungsi <b>SEARCH</b> tidak sensitive huruf besar-kecil dan mendukung wildcard.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Fungsi <b>SEARCH</b> di bawah ini menemukan string &quot;ro&quot; di posisi 4.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image035.png" alt="Fungsi Pencarian di Excel"></p>
+                                        </li>
+                                        <li>
+                                            <p>Fungsi <b>SEARCH</b> tidak sensitive huruf besar/kecil. Fungsi <b>SEARCH</b> di bawah ini menemukan string &quot;excel&quot;, &quot;Excel&quot;, &quot;EXCEL&quot;, &quot;EXcel&quot;, dll.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image036.png" alt="Fungsi Pencarian tidak sensitive huruf besar-kecil"></p>
+                                            <p>Fungsi <b>SEARCH</b> mendukung karakter wildcard. Tanda tanya (?) cocok dengan tepat satu karakter. Tanda bintang (*) cocok dengan serangkaian karakter nol atau lebih.</p>
+                                        </li>
+                                        <li>
+                                            <p>Fungsi <b>SEARCH</b> di bawah ini menemukan string &quot;2019&quot;, &quot;2018&quot;, &quot;2017&quot;, dll.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image037.png" alt="Fungsi Pencarian dengan Tanda Tanya"></p>
+                                        </li>
+                                        <li>
+                                            <p>Fungsi <b>SEARCH</b> di bawah ini menemukan string &quot;Microsoft Excel 2019&quot;, &quot;Microsoft Word 2019&quot;, &quot;Microsoft Access 2019&quot;, dll.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image038.png" alt="Fungsi Pencarian dengan Asterisk"></p>
+                                            <p>Fungsi <b>SEARCH</b> memiliki argumen opsional ke-3. Anda dapat menggunakan argumen ini untuk menunjukkan posisi, menghitung dari kiri, di mana Anda ingin mulai mencari.</p>
+                                        </li>
+                                        <li>
+                                            <p>Fungsi <b>SEARCH</b> di bawah ini menemukan string &quot;o&quot; pada posisi 5.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image039.png" alt="Mulai Mencari di Posisi 1"></p>
+                                        </li>
+                                        <li>
+                                            <p>Fungsi <b>SEARCH</b> di bawah ini mulai mencari di posisi 6 dan menemukan string &quot;o&quot; di posisi 7.
+                                            </p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image040.png" alt="Mulai Mencari di Posisi 6"></p>
+                                        </li>
+                                    </ol>
+                                </section>
+
+                                <!-- Change Case -->
+                                <section id="fungsi-text-change-case">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-4" id="content">Mengubah Huruf <small class="fw-light small text-muted">(Change Case)</small></div>
+                                    </div>
+                                    <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/change-case.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                    <p>Untuk mengubah huruf besar/kecil teks di Excel, gunakan <b>LOWER</b>, <b>UPPER</b> atau <b>PROPER</b>. Jika Anda bukan pahlawan formula, gunakan <b>Flash Fill</b> untuk mengubah huruf besar/kecil di Excel.</p>
+                                    <p>1. Gunakan fungsi <b>LOWER</b> di Excel untuk mengubah huruf besar teks menjadi huruf kecil.</p>
+                                    <p><img class="img-fluid" src="files/TextFunctions-details_files/image041.png" alt="Huruf kecil di Excel"></p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> klik dua kali sudut kanan bawah sel B1 untuk menyalin rumus ini dengan cepat ke sel lain.
+                                    </p>
+                                    <p>2. Gunakan fungsi <b>UPPER</b> di Excel untuk mengubah huruf besar teks menjadi huruf besar.</p>
+                                    <p><img class="img-fluid" src="files/TextFunctions-details_files/image042.png" alt="Huruf besar di Excel"></p>
+                                    <p>3. Gunakan fungsi <b>PROPER</b> di Excel untuk mengubah huruf pertama setiap kata menjadi huruf besar dan semua huruf lainnya menjadi huruf kecil.</p>
+                                    <p><img class="img-fluid" src="files/TextFunctions-details_files/image043.png" alt="Kasus yang Tepat di Excel"></p>
+                                    <p>Jika Anda bukan pahlawan formula, gunakan <b>Flash Fill</b> untuk mengubah huruf besar/kecil teks di Excel. Dalam contoh di bawah ini, kami mencari campuran antara huruf besar dan huruf besar.
+                                    </p>
+                                    <p>4. Pertama, beri tahu Excel apa yang ingin Anda lakukan dengan memasukkan kota yang benar (huruf besar) dan singkatan negara bagian (huruf besar) ke dalam sel B1.</p>
+                                    <p><img class="img-fluid" src="files/TextFunctions-details_files/image044.png" alt="Benar dan Huruf Besar"></p>
+                                    <p>5. Pada tab <b>Data</b>, di grup <b>Data Tools</b>, klik <b>Flash Fill</b> (atau tekan
+                                        <kbd>Ctrl</kbd>+<kbd>E</kbd>).</p>
+                                    <p><img class="img-fluid" src="files/TextFunctions-details_files/image045.png" alt="Klik Isi Flash"></p>
+                                    <p>Hasil:</p>
+                                    <p><img class="img-fluid" src="files/TextFunctions-details_files/image046.png" alt="Ubah Huruf Besar Teks"></p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> <b>Flash Fill</b> tidak sempurna dan terkadang membutuhkan sedikit bantuan. Kunjungi halaman kami tentang <a href="#">Isi Flash</a> untuk mempelajari lebih lanjut tentang alat Excel yang hebat
+                                        ini.
+                                    </p>
+                                </section>
+
+                                <!-- Remove Spaces -->
+                                <section id="fungsi-text-remove-spaces">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-4" id="content">Hapus Spasi <small class="fw-light small text-muted">(Remove Spaces)</small></div>
+                                    </div>
+                                    <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/remove-spaces.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                    <p>Fungsi <b>TRIM</b> di Excel menghilangkan spasi awal, spasi ekstra, dan spasi tambahan. Gunakan fungsi <b>SUBSTITUTE</b> untuk menghapus semua spasi atau spasi non-breaking.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Fungsi <b>TRIM</b> di bawah menghilangkan 2 spasi awal, 3 spasi tambahan, dan 2 spasi tambahan.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image047.png" alt="Hapus Spasi di Excel"></p>
+                                            <p class="moreInfo text-break"><strong>Catatan:</strong> fungsi <b>TRIM</b> tidak menghapus spasi tunggal di antara kata-kata.</p>
+                                        </li>
+                                        <li>
+                                            <p>Untuk mendapatkan panjang string, gunakan fungsi <b>LEN</b>.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image048.png" alt="Fungsi Len"></p>
+                                            <p class="moreInfo text-break"><strong>Penjelasan:</strong> fungsi <b>LEN</b> menghitung 2 spasi, 2 karakter, 4 spasi, 3 karakter dan 2 spasi.</p>
+                                        </li>
+                                        <li>
+                                            <p>Anda dapat menggunakan fungsi <b>SUBSTITUTE</b> untuk menghapus semua spasi.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image049.png" alt="Hapus Semua Spasi"></p>
+                                            <p class="moreInfo text-break"><strong>Catatan:</strong> fungsi <b>SUBSTITUTE</b> mengganti spasi (argumen kedua) dengan string kosong (argumen ketiga).</p>
+                                            <p>Teks yang diimpor dari aplikasi lain mungkin berisi karakter <b>ASCII</b>. Fungsi <b>CLEAN</b> menghapus 32 karakter <b>ASCII</b> pertama yang tidak dapat dicetak (kode 0 hingga 31).</p>
+                                        </li>
+                                        <li>
+                                            <p>Fungsi <b>CLEAN</b> di bawah ini menghapus karakter yang tidak dapat dicetak, CHAR(7).</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image050.png" alt="Fungsi Bersih"></p>
+                                        </li>
+                                        <li>
+                                            <p>Cukup gabungkan <b>CLEAN</b> dan <b>TRIM</b> untuk menghapus karakter dan spasi yang tidak dapat dicetak.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image051.png" alt="Bersihkan dan Pangkas Fungsi"></p>
+                                        </li>
+                                        <li>
+                                            <p>Fungsi <b>CLEAN</b> menghilangkan jeda baris. Untuk memasukkan jeda baris, tekan <kbd>Alt</kbd>+<kbd>Enter</kbd>.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image052.png" alt="Hapus Jeda Baris"></p>
+                                        </li>
+                                        <li>
+                                            <p>Anda juga dapat menggunakan fungsi <b>SUBSTITUTE</b> untuk menghapus jeda baris, CHAR(10), dan menggantinya dengan yang lain. Misalnya koma dan spasi.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image053.png" alt="Penggantian Line Breaks"></p>
+                                            <p>Fungsi <b>CLEAN</b> tidak menghapus semua karakter <b>ASCII</b>. Cukup gunakan fungsi <b>SUBSTITUTE</b> untuk menghapus karakter <b>ASCII</b> lainnya.</p>
+                                        </li>
+                                        <li>
+                                            <p>Pertama, cari tahu nomor kode karakter.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image054.png" alt="Nomor kode"></p>
+                                        </li>
+                                        <li>
+                                            <p>Selanjutnya, gunakan <b>SUBSTITUTE</b> dan <b>CHAR</b> untuk mengembalikan string teks tanpa karakter ini.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image055.png" alt="Fungsi Pengganti"></p>
+                                        </li>
+                                        <li>
+                                            <p>Jika teks Anda berisi spasi non-breaking, CHAR(160), fungsi <b>TRIM</b> tidak bekerja.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image056.png" alt="Ruang yang Tidak Melanggar"></p>
+                                        </li>
+                                        <li>
+                                            <p>Anda dapat menggunakan fungsi <b>SUBSTITUTE</b> untuk mengganti spasi tanpa putus, CHAR(160) dengan spasi normal, CHAR(32). Jangan lupa untuk menambahkan fungsi <b>TRIM</b> untuk menghilangkan spasi tambahan.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image057.png" alt="Hapus Ruang Non-breaking"></p>
+                                        </li>
+                                    </ol>
+                                </section>
+
+                                <!-- Compare Text -->
+                                <section id="fungsi-text-compare-text">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-4" id="content">Bandingkan Teks <small class="fw-light small text-muted">(Compare Text)</small></div>
+                                    </div>
+                                    <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/compare-text.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                    <p>Contoh ini menunjukkan dua cara untuk membandingkan string teks di Excel. Yang satu sensitive huruf besar-kecil dan yang satu sensitive huruf besar-kecil.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Gunakan fungsi <b>EXACT</b> (sensitive huruf besar-kecil).</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image058.png" alt="Perbandingan sensitive huruf besar-kecil"></p>
+                                            <p class="moreInfo text-break"><strong>Penjelasan:</strong> string &quot;Frog&quot; di sel A1 dan string &quot;frog&quot; di sel B1 tidak sama persis (huruf pertama dalam huruf besar dan huruf pertama dalam huruf kecil).</p>
+                                        </li>
+                                        <li>
+                                            <p>Gunakan rumus =A1=B1 (tidak sensitive huruf besar/kecil).</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image059.png" alt="Perbandingan tidak sensitive huruf besar-kecil"></p>
+                                            <p class="moreInfo text-break"><strong>Penjelasan:</strong> rumus ini mengabaikan perbedaan huruf kecil dan huruf besar. Hasilnya, enam rumus pertama menghasilkan <b>TRUE</b>.</p>
+                                        </li>
+                                        <li>
+                                            <p>Tambahkan <a href="#">fungsi IF</a> untuk mengganti <b>TRUE</b> dan <b>FALSE</b> dengan kata atau pesan. Rumus di bawah ini menggunakan fungsi <b>EXACT</b> (lihat langkah 1).</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image060.png" alt="JIKA dan TEPAT"></p>
+                                        </li>
+                                        <li>
+                                            <p>Apakah Anda ingin membandingkan dua kolom atau lebih dengan menyorot perbedaan di setiap baris? Kunjungi halaman kami tentang <a href="#">Perbedaan Baris</a>.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image061.png" alt="Perbandingan Baris demi Baris"></p>
+                                        </li>
+                                    </ol>
+                                </section>
+
+                                <!-- Substitute vs Replace -->
+                                <section id="fungsi-text-substitute-vs-replace">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-4" id="content">Substitute vs Replace</div>
+                                    </div>
+                                    <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/substitute-vs-replace.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                    <p>Jika Anda mengetahui teks yang akan diganti, gunakan fungsi <b>SUBSTITUTE</b> di Excel. Jika Anda mengetahui posisi teks yang akan diganti, gunakan fungsi REPLACE.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Fungsi <b>SUBSTITUTE</b> di bawah ini menggantikan 2013 dengan 2016.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image062.png" alt="Fungsi <b>SUBSTITUTE</b> di Excel"></p>
+                                        </li>
+                                        <li>
+                                            <p>Argumen ke-4 (opsional) menentukan kemunculan mana yang ingin Anda replace. Fungsi <b>SUBSTITUTE</b> di bawah ini hanya menggantikan kemunculan kedua.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image063.png" alt="Kejadian Kedua Pengganti"></p>
+                                        </li>
+                                        <li>
+                                            <p>Fungsi <b>SUBSTITUTE</b> di bawah ini menggantikan spasi dengan string kosong. Dengan kata lain, rumus ini menghilangkan semua spasi.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image049.png" alt="Hapus Spasi"></p>
+                                        </li>
+                                        <li>
+                                            <p>Fungsi <b>REPLACE</b> di bawah ini dimulai dari posisi 4 dan menggantikan 2 karakter dengan -P.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image064.png" alt="Fungsi <b>REPLACE</b> di Excel"></p>
+                                        </li>
+                                        <li>
+                                            <p>Fungsi <b>REPLACE</b> di bawah ini dimulai dari posisi 1 dan menggantikan 3 karakter dengan string kosong. Dengan kata lain, rumus ini menghilangkan 3 karakter pertama.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image065.png" alt="Hapus 3 karakter pertama"></p>
+                                            <p>Anda juga dapat menggunakan fitur Temukan dan Ganti Excel untuk menemukan teks tertentu dengan cepat dan menggantinya dengan teks lain.</p>
+                                        </li>
+                                        <li>
+                                            <p>Misalnya, pilih range A1:A10.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image066.png" alt="Pilih Rentang"></p>
+                                        </li>
+                                        <li>
+                                            <p>Pada tab <b>Home</b>, di grup <b>Editing</b>, klik <b>Find & Select</b>.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image067.png" alt="Klik Temukan &amp; Pilih"></p>
+                                        </li>
+                                        <li>
+                                            <p>Klik <b>Replace</b>.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image068.png" alt="Klik Ganti"></p>
+                                        </li>
+                                        <li>Ketik teks yang ingin Anda temukan (TX) dan replace dengan (CA).</li>
+                                        <li>
+                                            <p>Klik '<b>Replace All</b>'.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image069.png" alt="Menggantikan semua"></p>
+                                            <p>Hasil. Excel mengganti semua kemunculan TX dengan CA.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image070.png" alt="4 pengganti"></p>
+                                        </li>
+                                    </ol>
+                                </section>
+
+                                <!-- Text -->
+                                <section id="fungsi-text-text">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-4" id="content">Text</div>
+                                    </div>
+                                    <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/text.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                    <p>Saat menggabungkan teks dan angka, gunakan fungsi <b>TEXT</b> di Excel untuk memformat angka tersebut. Halaman ini berisi banyak contoh fungsi <b>TEXT</b> yang mudah diikuti.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Misalnya, tanpa menggunakan fungsi <b>TEXT</b>, inilah hasilnya.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image071.png" alt="Tanpa Fungsi Teks"></p>
+                                        </li>
+                                        <li>
+                                            <p>Dengan fungsi <b>TEXT</b>.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image072.png" alt="Fungsi Teks di Excel"></p>
+                                            <p class="moreInfo text-break"><strong>Catatan:</strong> #,## digunakan untuk menambahkan koma ke angka besar. Selalu sertakan kode format (argumen kedua) dalam tanda kutip ganda.</p>
+                                        </li>
+                                        <li>
+                                            <p>Ini contoh lain. Terapkan format persentase.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image073.png" alt="Format Persentase"></p>
+                                            <p class="moreInfo text-break"><strong>Catatan:</strong> gunakan 0 untuk menampilkan nilai integer terdekat. Gunakan 0,0 untuk satu tempat desimal. Gunakan 0,00 untuk dua tempat desimal, dll.</p>
+                                        </li>
+                                        <li>
+                                            <p>Dan contoh lainnya. Memformat tanggal.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image074.png" alt="Format tanggal"></p>
+                                            <p class="moreInfo text-break"><strong>Catatan:</strong> gunakan less/more m's, d's dan y's untuk mengubah tampilan tanggal.</p>
+                                        </li>
+                                        <li>
+                                            <p>Misalnya, gunakan fungsi <b>TEXT</b> untuk hanya menampilkan hari dalam seminggu. Kali ini kita cukup menggunakan fungsi <b>TEXT</b> tanpa menambahkan teks.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image075.png" alt="Hari di minggu ini"></p>
+                                        </li>
+                                        <li>
+                                            <p>Gunakan fungsi <b>TEXT</b> untuk menampilkan angka dalam notasi ilmiah.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image076.png" alt="Notasi ilmiah"></p>
+                                        </li>
+                                        <li>
+                                            <p>Gunakan fungsi <b>TEXT</b> untuk menampilkan pecahan dan tambahkan fungsi <b>TRIM</b> untuk menghilangkan spasi di depan.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image077.png" alt=Pecahan></p>
+                                            <p>Cukup gunakan kotak dialog '<a href="#">Format Sel</a>' untuk menemukan kode format yang tepat.</p>
+                                        </li>
+                                        <li>
+                                            <p>Misalnya, masukkan waktu ke dalam sel A1 dan pilih sel A1.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image078.png" alt="Pilih Sel"></p>
+                                        </li>
+                                        <li>Klik kanan, lalu klik Format Sel (atau tekan <kbd>Ctrl</kbd>+<kbd>1</kbd>).</li>
+                                        <li>
+                                            <p>Pilih kategori Kustom dan klik kode format. Selanjutnya, klik pada kotak Type, pilih kode format dan tekan <kbd>Ctrl</kbd>+<kbd>C</kbd> untuk menyalin kode ini.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image079.png" alt="Salin Kode Format"></p>
+                                            <p class="moreInfo text-break"><strong>Catatan:</strong> Excel memberi Anda pratinjau hidup tentang bagaimana waktu akan diformat (di bawah Contoh).</p>
+                                        </li>
+                                        <li>Klik Batal.</li>
+                                        <li>
+                                            <p>Tempel (<kbd>Ctrl</kbd>+<kbd>V</kbd>) kode format ke fungsi <b>TEXT</b> Anda. Jangan lupa untuk menyertakan kode format dalam tanda kutip ganda.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image080.png" alt="Format waktu"></p>
+                                        </li>
+                                    </ol>
+                                </section>
+
+                                <!-- Concatenate -->
+                                <section id="fungsi-text-concatenate">
+                                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="files/bahan/concatenate.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                                        <p class="bd-lead mb-0">
+                                            Menggabungkan <span class="span-text">(Concatenate)</span>
+                                        </p>
+                                    </div>
+                                    <p>Gunakan fungsi <b>CONCATENATE</b> di Excel untuk menggabungkan (menggabungkan) string. Daripada menggunakan <b>CONCATENATE</b>, cukup gunakan &amp; operator.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Fungsi <b>CONCATENATE</b> di bawah ini menggabungkan string di sel A1 dan string di sel B1.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image081.png" alt="Fungsi <b>CONCATENATE</b> di Excel"></p>
+                                        </li>
+                                        <li>
+                                            <p>Gunakan operator &amp; untuk menghasilkan hasil yang sama persis.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image082.png" alt="&amp; Operator di Excel"></p>
+                                        </li>
+                                        <li>
+                                            <p>Fungsi <b>CONCATENATE</b> di bawah ini menggabungkan string di sel A1, string &quot; dan &quot; (mencakup teks dalam tanda kutip ganda) dan string di sel B1.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image083.png" alt="Fungsi <b>CONCATENATE</b> dengan Tiga Argumen"></p>
+                                        </li>
+                                        <li>
+                                            <p>Gunakan operator &amp; untuk menghasilkan hasil yang sama persis.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image084.png" alt="Gabungkan String di Excel"></p>
+                                        </li>
+                                        <li>
+                                            <p>Fungsi <b>CONCATENATE</b> di bawah ini menggabungkan string di sel A1, spasi dan string di sel B1.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image085.png" alt=Rangkaian></p>
+                                        </li>
+                                        <li>
+                                            <p>Gunakan operator &amp; untuk menghasilkan hasil yang sama persis.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image086.png" alt="Sisipkan Spasi"></p>
+                                            <p>Fungsi CONCAT di Excel 2016 atau yang lebih baru menghasilkan hasil yang sama persis dengan fungsi <b>CONCATENATE</b>. Cukup replace CONCATENATE dengan CONCAT dalam rumus yang ditunjukkan di atas.</p>
+                                        </li>
+                                        <li>
+                                            <p>Fungsi CONCAT juga dapat menggabungkan serangkaian string. Jika Anda tidak memerlukan pembatas (spasi, koma, tanda hubung, dll.) ini bisa berguna.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image087.png" alt="Fungsi CONCAT di Excel"></p>
+                                            <p>Fungsi TEXTJOIN di Excel 2016 atau yang lebih baru bergabung dengan range string menggunakan pembatas (argumen pertama).</p>
+                                        </li>
+                                        <li>
+                                            <p>Pertama, lihat semua spasi tambahan di kolom E di bawah ini saat Anda menyeret fungsi <b>CONCATENATE</b> di sel E2 ke bawah ke sel E11.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image088.png" alt=MENGGABUNGKAN></p>
+                                        </li>
+                                        <li>
+                                            <p>Keindahan fungsi TEXTJOIN adalah dapat mengabaikan sel kosong (jika argumen kedua disetel ke <b>TRUE</b>).</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image089.png" alt="Fungsi TEXTJOIN di Excel"></p>
+                                        </li>
+                                        <li>
+                                            <p>Saat menggunakan fungsi <b>CONCATENATE</b>, gunakan fungsi <b>TEXT</b> untuk memformat angka.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image090.png" alt="CONCATENATE dan TEKS"></p>
+                                            <p class="moreInfo text-break"><strong>Catatan:</strong> gunakan 0 untuk menampilkan nilai integer terdekat. Gunakan 0,0 untuk satu tempat desimal. Gunakan 0,00 untuk dua tempat desimal, dll. Kunjungi halaman kami tentang <a href="#">fungsi TEXT</a>                                                untuk lebih banyak contoh.</p>
+                                        </li>
+                                        <li>
+                                            <p>Gunakan CHAR(10) untuk menyisipkan jeda baris.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image091.png" alt="Penggabungan dengan Line Breaks"></p>
+                                            <p class="moreInfo text-break"><strong>Catatan:</strong> jangan lupa untuk mengaktifkan pembungkusan teks. Pada tab Home, di grup Perataan, klik Bungkus Teks.</p>
+                                        </li>
+                                        <li>
+                                            <p>Mari kita lihat satu lagi contoh keren yang menggunakan fungsi TEXTJOIN. Pertama, <a href="#">fungsi IF di</a> bawah ini menemukan semua anggota Tim 1.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image092.png" alt="fungsi JIKA"></p>
+                                            <p class="moreInfo text-break"><strong>Penjelasan:</strong> fungsi IF memeriksa setiap sel dalam <a href="#">range bernama</a> Teams. Jika sama dengan nilai di sel E3, ia mengembalikan nama dari range bernama Nama, selain itu ia mengembalikan
+                                                string kosong (dua tanda kutip ganda tanpa apa pun di antaranya).</p>
+                                        </li>
+                                        <li>
+                                            <p>Fungsi IF mengembalikan konstanta array yang disimpan dalam memori Excel. Pilih rumus di bilah rumus dan tekan F9 untuk melihat konstanta array ini.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image093.png" alt="Konstanta Array"></p>
+                                        </li>
+                                        <li>
+                                            <p>Tambahkan fungsi TEXTJOIN yang kuat untuk menggabungkan nama-nama ini. Gunakan koma dan spasi sebagai pembatas (argumen pertama) dan atur argumen kedua ke <b>TRUE</b> untuk mengabaikan string kosong. Selesaikan
+                                                <a href="#">rumus array</a> dengan menekan
+                                                <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
+                                            <p><img class="img-fluid" src="files/TextFunctions-details_files/image094.png" alt="Rumus TEXTJOIN tingkat lanjut"></p>
+                                        </li>
+                                    </ol>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> Excel menambahkan kurung kurawal {}. Mia, James dan Sophia ada di Tim 1. Klik dua kali sudut kanan bawah sel F3 untuk menyalin rumus ini ke sel lain dengan cepat.</p>
+                                </section>
+
+                                <!-- Substring -->
+                                <section id="fungsi-text-substring">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-4" id="content">Substring</div>
+                                    </div>
+                                    <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/substring.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                    <p class="fw-light small">
+                                        <a href="#mid">Mid</a> |
+                                        <a href="#left">Left</a> |
+                                        <a href="#right">Right</a> |
+                                        <a href="#substring-between-parentheses">Substring di antara tanda kurung</a> |
+                                        <a href="#substring-containing-specific-text">Substring yang berisi teks tertentu</a> |
+                                        <a href="#flash-fill">Isi Flash</a>
+                                    </p>
+                                    <p>Tidak ada Fungsi <b>SUBSTRING</b> di Excel. Gunakan <b>MID</b>, <b>LEFT</b>, <b>RIGHT</b>, <b>FIND</b>, <b>LEN</b>, <b>SUBSTITUTE</b>, <b>REPT</b>, <b>TRIM</b> dan <b>MAX</b> di Excel untuk mengekstrak substring.</p>
+
+                                    <section id="mid">
+                                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                            <div class="fs-5" id="content">Mid</div>
+                                        </div>
+                                        <p>Untuk mengekstrak substring, dimulai di tengah string, gunakan fungsi <b>MID</b> di Excel.</p>
+                                        <p><img class="img-fluid" src="files/TextFunctions-details_files/image095.png" alt=""></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> fungsi <b>MID</b> dimulai pada posisi 7 (O) dan mengekstrak 6 karakter.</p>
+                                    </section>
+
+                                    <section id="left">
+                                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                            <div class="fs-5" id="content">Left</div>
+                                        </div>
+                                        <p>Untuk mengekstrak karakter paling kiri dari string, gunakan fungsi <b>LEFT</b> di Excel.</p>
+                                        <p><img class="img-fluid" src="files/TextFunctions-details_files/image096.png" alt="Fungsi Kiri"></p>
+                                        <p>Untuk mengekstrak substring (dengan panjang berapa pun) sebelum tanda hubung, tambahkan fungsi <b>FIND</b>.</p>
+                                        <p><img class="img-fluid" src="files/TextFunctions-details_files/image097.png" alt="Karakter paling kiri"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> fungsi <b>FIND</b> menemukan posisi tanda hubung. Kurangi 1 dari hasil ini untuk mengekstrak jumlah karakter paling kiri yang benar. Rumus yang ditunjukkan di atas direduksi menjadi
+                                            LEFT(A1,4-1).
+                                        </p>
+                                    </section>
+
+                                    <section id="right">
+                                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                            <div class="fs-5" id="content">Right</div>
+                                        </div>
+                                        <p>Untuk mengekstrak karakter paling kanan dari string, gunakan fungsi <b>RIGHT</b> di Excel.</p>
+                                        <p><img class="img-fluid" src="files/TextFunctions-details_files/image098.png" alt="Fungsi Kanan">
+                                        </p>
+                                        <p>Untuk mengekstrak substring (dengan panjang berapa pun) setelah tanda hubung, tambahkan <b>LEN</b> dan <b>FIND</b>.</p>
+                                        <p><img class="img-fluid" src="files/TextFunctions-details_files/image099.png" alt="Karakter Paling Kanan"></p>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> fungsi <b>LEN</b> mengembalikan panjang string. Fungsi <b>FIND</b> menemukan posisi tanda hubung. Kurangi nilai-nilai ini untuk mengekstrak jumlah karakter paling kanan yang benar. Rumus
+                                            yang ditunjukkan di atas direduksi menjadi RIGHT(A1,6-4).
+                                        </p>
+                                    </section>
+
+                                    <section id="substring-between-parentheses">
+                                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                            <div class="fs-5" id="content">Substring di antara tanda kurung</div>
+                                        </div>
+                                        <p>Untuk mengekstrak substring di antara tanda kurung (atau kurung kurawal, kurung, garis miring, dll.), gunakan MID dan FIND di Excel.</p>
+                                        <ol>
+                                            <li>
+                                                <p>Rumus di bawah ini hampir sempurna.</p>
+                                                <p><img class="img-fluid" src="files/TextFunctions-details_files/image100.png" alt="Pertengahan dan Temukan"></p>
+                                                <p class="moreInfo text-break"><strong>Penjelasan:</strong> fungsi <b>FIND</b> menemukan posisi kurung buka. Tambahkan 1 untuk menemukan posisi awal substring. Rumus yang ditunjukkan di atas direduksi menjadi MID(A1,6+1,2). Fungsi <b>MID</b>                                                    ini selalu mengekstrak 2 karakter.</p>
+                                            </li>
+                                            <li>
+                                                <p>Ganti 2 (argumen ketiga) dengan rumus yang mengembalikan panjang substring.</p>
+                                                <p><img class="img-fluid" src="files/TextFunctions-details_files/image101.png" alt="Substring Antara Tanda kurung"></p>
+                                            </li>
+                                        </ol>
+                                        <p class="moreInfo text-break"><strong>Penjelasan:</strong> kurangi posisi kurung buka dan nilai 1 dari posisi kurung tutup untuk menemukan panjang substring yang benar.</p>
+                                    </section>
+
+                                    <section id="substring-containing-specific-text">
+                                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                            <div class="fs-5" id="content">Substring yang berisi teks tertentu</div>
+                                        </div>
+                                        <p>Untuk mengekstrak substring yang berisi teks tertentu (misalnya, simbol @), gunakan <b>SUBSTITUTE</b>, <b>REPT</b>, <b>MID</b>, <b>FIND</b>, <b>TRIM</b>, dan <b>MAX</b> di Excel.</p>
+                                        <ol>
+                                            <li>
+                                                <p>Pertama, gunakan <b>SUBSTITUTE</b> dan <b>REPT</b> untuk mengganti satu spasi dengan 100 spasi (atau angka besar lainnya).</p>
+                                                <p><img class="img-fluid" src="files/TextFunctions-details_files/image102.png" alt="Fungsi Pengganti"></p>
+                                            </li>
+                                            <li>
+                                                <p>Untuk fungsi <b>MID</b> di bawah ini dimulai 50 (1/2 * angka besar) posisi sebelum posisi simbol @ dan mengekstrak 100 (angka besar) karakter.</p>
+                                                <p><img class="img-fluid" src="files/TextFunctions-details_files/image103.png" alt="Substring dengan Spasi"></p>
+                                            </li>
+                                            <li>
+                                                <p>Gunakan fungsi <b>TRIM</b> untuk menghapus spasi awal dan akhir.</p>
+                                                <p><img class="img-fluid" src="files/TextFunctions-details_files/image104.png" alt="Fungsi Pangkas"></p>
+                                            </li>
+                                            <li>
+                                                <p>Gabungkan semuanya.</p>
+                                                <p><img class="img-fluid" src="files/TextFunctions-details_files/image105.png" alt="Substring yang Mengandung Teks Tertentu"></p>
+                                                <p class="moreInfo text-break"><strong>Catatan:</strong> pada langkah 2, fungsi <b>MID</b> dimulai 50 posisi sebelum posisi simbol @. Jika alamat email adalah kata pertama dalam kalimat (sel A3), ini menghasilkan posisi awal yang negatif.
+                                                    Dalam hal ini, fungsi <b>MAX</b> (lihat rumus di atas) mengembalikan 1.</p>
+                                            </li>
+                                        </ol>
+                                    </section>
+
+                                    <section id="flash-fill">
+                                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                            <div class="fs-5" id="content">Flash Fill</div>
+                                        </div>
+                                        <p>Jika Anda bukan pahlawan formula, gunakan <a href="#">Flash Fill</a> di Excel untuk mengekstrak substring secara otomatis.</p>
+                                        <p><img class="img-fluid" src="files/TextFunctions-details_files/image106.png" alt="Isi Flash"></p>
+
+                                        <p class="moreInfo text-break"><strong>Catatan:</strong> Excel tidak menyisipkan rumus, jika Anda mengubah string teks di kolom A, Excel tidak akan memperbarui angka di Kolom B.</p>
+                                    </section>
+
+                                    <a class="d-flex justify-content-end fw-light" href="#ContohPenggunaanFungsiTeks">kembali keatas</a>
                                 </section>
 
                                 <a class="d-flex justify-content-end fw-light" href="#fungsi-text-functions">kembali keatas</a>

@@ -387,7 +387,8 @@
                                     <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
                                         <div class="fs-4" id="content">Count</div>
                                     </div>
-                                    <p>Untuk menghitung jumlah sel yang berisi angka, gunakan fungsi COUNT.</p>
+                                    <p>Untuk menghitung jumlah sel yang berisi angka, gunakan fungsi
+                                        <strong>COUNT</strong>.</p>
                                     <p><img class="img-fluid" src="files/count-sum-functions_files/image001.png" alt="Hitung Fungsi"></p>
                                     <p class="moreInfo"><strong>Catatan</strong>: untuk menghitung sel kosong dan tidak kosong di Excel, gunakan COUNTBLANK dan COUNTA.</p>
                                 </section>
@@ -7886,7 +7887,8 @@
                                         <strong>IFERROR</strong> menangkap kesalahan berikut: <strong>#DIV/0!</strong>,
                                         <strong>#N/A</strong>, <strong>#VALUE!</strong>, <strong>#REF!</strong>,
                                         <strong>#NUM!</strong>, <strong>#NAME?</strong> dan <strong>#NULL!</strong>. Misalnya, fungsi <strong>IFERROR</strong> yang ditunjukkan di atas juga menangkap <strong>#NAME?</strong> kesalahan jika Anda tidak sengaja
-                                        salah mengeja kata <strong>VLOOKUP</strong>. Gunakan <a href="#">fungsi IFNA</a> di Excel 2013 atau yang lebih baru untuk hanya menangkap kesalahan <strong>#N/A</strong>.</p>
+                                        salah mengeja kata <strong>VLOOKUP</strong>. Gunakan <a href="#">fungsi IFNA</a> di Excel 2013 atau yang lebih baru untuk hanya menangkap kesalahan
+                                        <strong>#N/A</strong>.</p>
                                 </section>
 
                                 <section id="FormulaErrors-details-iserror">
@@ -8303,7 +8305,8 @@
                                             <p><img class="img-fluid" src="files/FormulaErrors-details_files/image065.png" alt="Hasil VLOOKUP"></p>
                                             <p class="moreInfo text-break"><strong>Catatan:</strong> fungsi
                                                 <strong>IFNA</strong> diperkenalkan di Excel 2013. Jika Anda menggunakan Excel 2010 atau Excel 2007, cukup ganti IFNA dengan IFERROR. Ingat, <a href="#">fungsi IFERROR</a> juga menangkap kesalahan lain.
-                                                Misalnya, #NAME? kesalahan jika Anda tidak sengaja salah mengeja kata VLOOKUP.</p>
+                                                Misalnya, #NAME? kesalahan jika Anda tidak sengaja salah mengeja kata VLOOKUP.
+                                            </p>
                                         </li>
                                     </ol>
                                 </section>
@@ -8373,8 +8376,8 @@
                                     <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image005.png" alt="Dengan Rumus Array Excel, Langkah 3"></p>
                                     <p class="moreInfo text-break"><strong>Catatan:</strong> Rumus Bar menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.</p>
                                     <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> Range (konstanta array) disimpan dalam memori Excel, bukan dalam range. Konstanta array terlihat sebagai berikut:</p>
-                                    <p>{19;33;63;48;13}</p>
-                                    <p>Konstanta array ini digunakan sebagai argumen untuk fungsi <strong>MAX</strong>, memberikan hasil 63.</p>
+                                    <p>{19;33;63;48;13} <br> Konstanta array ini digunakan sebagai argumen untuk fungsi
+                                        <strong>MAX</strong>, memberikan hasil 63.</p>
                                 </section>
 
                                 <section id="RumusArray-f9-key">
@@ -8400,17 +8403,16 @@
                                     <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image008.png" alt="Fungsi If dan IsError"></p>
                                     <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> fungsi IF mengembalikan 1, jika ditemukan kesalahan. Jika tidak, ia mengembalikan string kosong.
                                     </p>
-                                    <p>2. Untuk menghitung error (jangan kewalahan), kita tambahkan fungsi COUNT dan ganti A1 dengan A1:C3.</p>
+                                    <p>2. Untuk menghitung error (jangan kewalahan), kita tambahkan fungsi
+                                        <strong>COUNT</strong> dan ganti A1 dengan A1:C3.</p>
                                     <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image009.png" alt="Rumus Array">
                                     </p>
                                     <p>3. Selesai dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
                                     <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image010.png" alt="Hitung Kesalahan di Excel"></p>
                                     <p class="moreInfo text-break"><strong>Catatan:</strong> Rumus Bar menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.</p>
-                                    <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh fungsi IF disimpan dalam memori Excel, bukan dalam range. Konstanta array terlihat sebagai berikut:</p>
-                                    <p class="text-break">
-                                        {1,&quot;&quot;,1;&quot;&quot;,&quot;&quot;,&quot;&quot;;&quot;&quot;,&quot;&quot;,1}
-                                    </p>
-                                    <p>Konstanta array ini digunakan sebagai argumen untuk fungsi COUNT, memberikan hasil 3.</p>
+                                    <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh fungsi IF disimpan dalam memori Excel, bukan dalam range. Konstanta array terlihat sebagai berikut: <br> {1,&quot;&quot;,1;&quot;&quot;,&quot;&quot;,&quot;&quot;;&quot;&quot;,&quot;&quot;,1}
+                                        <br> Konstanta array ini digunakan sebagai argumen untuk fungsi
+                                        <strong>COUNT</strong>, memberikan hasil 3.</p>
                                     <p>4. Untuk menghitung kesalahan tertentu, gunakan <a href="#">fungsi COUNTIF</a>. Misalnya, hitung jumlah sel yang berisi #DIV/0! kesalahan.</p>
                                     <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image011.png" alt="Hitung #DIV/0!  kesalahan"></p>
                                 </section>
@@ -8431,9 +8433,9 @@
                                     <p class="moreInfo text-break"><strong>Catatan:</strong> Rumus Bar menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.</p>
                                     <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh <a href="#">fungsi COUNTIF</a> disimpan dalam memori Excel, bukan dalam range. Konstanta array terlihat sebagai berikut:</p>
                                     <p class="text-break">{3;1;1;1;3;3} - (tiga 7, satu matahari, satu bulan, satu 5, tiga 7, tiga 7)</p>
-                                    <p>Ini dikurangi menjadi:<br> {1/3;1/1;1/1;1/1;1/3;1/3}</p>
-                                    <p>Konstanta array ini digunakan sebagai argumen untuk fungsi SUM, memberikan hasil 1/3+1+1+1+1+1/3+1/3 = 4.</p>
-                                    <p>4. Rumus array di bawah ini menghitung jumlah nilai yang muncul tepat satu kali.</p>
+                                    <p>Ini dikurangi menjadi:<br> {1/3;1/1;1/1;1/1;1/3;1/3} <br> Konstanta array ini digunakan sebagai argumen untuk fungsi SUM, memberikan hasil 1/3+1+1+1+1+1/3+1/3 = 4.</p>
+                                    <p>4. Rumus array di bawah ini menghitung jumlah nilai yang muncul tepat satu kali.
+                                    </p>
                                     <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image015.png" alt="Tepat Sekali"></p>
                                     <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> fungsi IF mengubah konstanta array {3;1;1;1;3;3} menjadi {0;1;1;1;0;0}. Konstanta array ini digunakan sebagai argumen untuk fungsi SUM, memberikan hasil 3.</p>
                                     <p>5. Jika Anda memiliki Excel 365, cukup gunakan fungsi UNIQUE ajaib untuk mengekstrak nilai unik.</p>
@@ -8443,8 +8445,9 @@
                                     <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image017.png" alt="COUNTA dan <strong>UNIQUE</strong>"></p>
                                     <p>7. Rumus di bawah ini menghitung jumlah nilai yang muncul tepat satu kali.</p>
                                     <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image018.png" alt="Hitung Nilai yang Terjadi Tepat Sekali"></p>
-                                    <p class="moreInfo text-break"><strong>Catatan:</strong> fungsi <strong>UNIQUE</strong> memiliki 2 argumen opsional. Nilai default 0 (argumen kedua) memberi tahu fungsi <strong>UNIQUE</strong> untuk mengekstrak nilai dari larik vertikal. Nilai 1
-                                        (argumen ketiga) memberi tahu fungsi <strong>UNIQUE</strong> untuk mengekstrak nilai yang muncul tepat satu kali.</p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> fungsi
+                                        <strong>UNIQUE</strong> memiliki 2 argumen opsional. Nilai default 0 (argumen kedua) memberi tahu fungsi <strong>UNIQUE</strong> untuk mengekstrak nilai dari larik vertikal. Nilai 1 (argumen ketiga) memberi tahu
+                                        fungsi <strong>UNIQUE</strong> untuk mengekstrak nilai yang muncul tepat satu kali.</p>
                                 </section>
                                 <!-- Count with Or Criteria -->
                                 <section id="ArrayFormulas-details-count-with-or-criteria">
@@ -8469,10 +8472,8 @@
                                     <p>2d. Akhiri dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
                                     <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image023.png" alt="Hitung dengan Atau Kriteria, Langkah 3"></p>
                                     <p class="moreInfo text-break"><strong>Catatan:</strong> Rumus Bar menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.</p>
-                                    <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh fungsi IF disimpan dalam memori Excel, bukan dalam range. Konstanta array terlihat sebagai berikut:</p>
-                                    <p>{1;0;1;0;1;0;1;0}</p>
-                                    <p>Konstanta array ini digunakan sebagai argumen untuk fungsi SUM, memberikan hasil 4.
-                                    </p>
+                                    <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh fungsi IF disimpan dalam memori Excel, bukan dalam range. Konstanta array terlihat sebagai berikut: <br> {1;0;1;0;1;0;1;0}
+                                        <br> Konstanta array ini digunakan sebagai argumen untuk fungsi SUM, memberikan hasil 4.</p>
                                     <p>3. Kita bisa melangkah lebih jauh. Misalnya, kami ingin menghitung jumlah baris yang berisi (Google dan Stanford) atau Columbia.</p>
                                     <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image024.png" alt="Hitung dengan Dan, Atau Kriteria"></p>
                                 </section>

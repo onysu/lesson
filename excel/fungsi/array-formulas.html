@@ -270,197 +270,86 @@
                             <span class="span-text">(System of Linear Equations)</span></p>
                     </div>
                     <p>Contoh ini menunjukkan kepada Anda bagaimana memecahkan sistem persamaan linier di Excel. Sebagai contoh, kita memiliki sistem persamaan linier berikut:</p>
-                    <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse'>
-                        <tr>
-                            <td width=20 valign=bottom style='width:15.0pt;padding:0cm 0cm 0cm 0cm'>
-                                <p>5x</p>
-                            </td>
-                            <td width=10 valign=bottom style='width:7.5pt;padding:0cm 0cm 0cm 0cm'>
-                                <p>+</p>
-                            </td>
-                            <td width=20 valign=bottom style='width:15.0pt;padding:0cm 0cm 0cm 0cm'>
-                                <p>1 tahun</p>
-                            </td>
-                            <td width=10 valign=bottom style='width:7.5pt;padding:0cm 0cm 0cm 0cm'>
-                                <p>+</p>
-                            </td>
-                            <td width=20 valign=bottom style='width:15.0pt;padding:0cm 0cm 0cm 0cm'>
-                                <p>8z</p>
-                            </td>
-                            <td width=15 valign=bottom style='width:11.25pt;padding:0cm 0cm 0cm 0cm'>
-                                <p>=</p>
-                            </td>
-                            <td width=20 valign=bottom style='width:15.0pt;padding:0cm 0cm 0cm 0cm'>
-                                <p>46</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
-                                <p>4x</p>
-                            </td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
-                                <p>-</p>
-                            </td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
-                                <p>2 tahun</p>
-                            </td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'></td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'></td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
-                                <p>=</p>
-                            </td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
-                                <p>12</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
-                                <p>6x</p>
-                            </td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
-                                <p>+</p>
-                            </td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
-                                <p>7 tahun</p>
-                            </td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
-                                <p>+</p>
-                            </td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
-                                <p>4z</p>
-                            </td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
-                                <p>=</p>
-                            </td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
-                                <p>50</p>
-                            </td>
-                        </tr>
+
+                    <table class="table table-sm table-borderless table-responsive">
+                        <thead>
+                            <tr>
+                                <td>5x</td>
+                                <td>+</td>
+                                <td>1y</td>
+                                <td>+</td>
+                                <td>8z</td>
+                                <td>=</td>
+                                <td>46</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>4x</td>
+                                <td>-</td>
+                                <td>2y</td>
+                                <td></td>
+                                <td></td>
+                                <td>=</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>6x</td>
+                                <td>+</td>
+                                <td>7y</td>
+                                <td>+</td>
+                                <td>4z</td>
+                                <td>=</td>
+                                <td>50</td>
+                            </tr>
+                        </tbody>
                     </table>
+
                     <p>Dalam notasi matriks, ini dapat ditulis sebagai AX = B</p>
-                    <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 style='border-collapse:collapse'>
-                        <tr>
-                            <td width=60 valign=bottom style='width:45.0pt;padding:0cm 0cm 0cm 0cm'></td>
-                            <td width=5 valign=bottom style='width:3.75pt;border-top:solid windowtext 1.0pt;
-  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
-  padding:0cm 0cm 0cm 0cm'></td>
-                            <td width=20 valign=bottom style='width:15.0pt;padding:0cm 0cm 0cm 0cm'>
-                                <p>5</p>
-                            </td>
-                            <td width=20 valign=bottom style='width:15.0pt;padding:0cm 0cm 0cm 0cm'>
-                                <p>1</p>
-                            </td>
-                            <td width=20 valign=bottom style='width:15.0pt;padding:0cm 0cm 0cm 0cm'>
-                                <p>8</p>
-                            </td>
-                            <td width=5 valign=bottom style='width:3.75pt;border-top:solid windowtext 1.0pt;
-  border-left:none;border-bottom:none;border-right:solid windowtext 1.0pt;
-  padding:0cm 0cm 0cm 0cm'></td>
-                            <td width=15 valign=bottom style='width:11.25pt;padding:0cm 0cm 0cm 0cm'></td>
-                            <td width=30 valign=bottom style='width:22.5pt;padding:0cm 0cm 0cm 0cm'></td>
-                            <td width=5 valign=bottom style='width:3.75pt;border-top:solid windowtext 1.0pt;
-  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
-  padding:0cm 0cm 0cm 0cm'></td>
-                            <td width=20 valign=bottom style='width:15.0pt;padding:0cm 0cm 0cm 0cm'>
-                                <p>x</p>
-                            </td>
-                            <td width=5 valign=bottom style='width:3.75pt;border-top:solid windowtext 1.0pt;
-  border-left:none;border-bottom:none;border-right:solid windowtext 1.0pt;
-  padding:0cm 0cm 0cm 0cm'></td>
-                            <td width=15 valign=bottom style='width:11.25pt;padding:0cm 0cm 0cm 0cm'></td>
-                            <td width=30 valign=bottom style='width:22.5pt;padding:0cm 0cm 0cm 0cm'></td>
-                            <td width=5 valign=bottom style='width:3.75pt;border-top:solid windowtext 1.0pt;
-  border-left:solid windowtext 1.0pt;border-bottom:none;border-right:none;
-  padding:0cm 0cm 0cm 0cm'></td>
-                            <td width=20 valign=bottom style='width:15.0pt;padding:0cm 0cm 0cm 0cm'>
-                                <p>46</p>
-                            </td>
-                            <td width=5 valign=bottom style='width:3.75pt;border-top:solid windowtext 1.0pt;
-  border-left:none;border-bottom:none;border-right:solid windowtext 1.0pt;
-  padding:0cm 0cm 0cm 0cm'></td>
-                        </tr>
-                        <tr>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
-                                <p>dengan A =</p>
-                            </td>
-                            <td valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-  padding:0cm 0cm 0cm 0cm'></td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
-                                <p>4</p>
-                            </td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
-                                <p>-2</p>
-                            </td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
-                                <p>0</p>
-                            </td>
-                            <td valign=bottom style='border:none;border-right:solid windowtext 1.0pt;
-  padding:0cm 0cm 0cm 0cm'></td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
-                                <p>,</p>
-                            </td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
-                                <p>X =</p>
-                            </td>
-                            <td valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-  padding:0cm 0cm 0cm 0cm'></td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
-                                <p>kamu</p>
-                            </td>
-                            <td valign=bottom style='border:none;border-right:solid windowtext 1.0pt;
-  padding:0cm 0cm 0cm 0cm'></td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
-                                <p>,</p>
-                            </td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
-                                <p>B =</p>
-                            </td>
-                            <td valign=bottom style='border:none;border-left:solid windowtext 1.0pt;
-  padding:0cm 0cm 0cm 0cm'></td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
-                                <p>12</p>
-                            </td>
-                            <td valign=bottom style='border:none;border-right:solid windowtext 1.0pt;
-  padding:0cm 0cm 0cm 0cm'></td>
-                        </tr>
-                        <tr>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'></td>
-                            <td valign=bottom style='border-top:none;border-left:solid windowtext 1.0pt;
-  border-bottom:solid windowtext 1.0pt;border-right:none;padding:0cm 0cm 0cm 0cm'></td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
-                                <p>6</p>
-                            </td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
-                                <p>7</p>
-                            </td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
-                                <p>4</p>
-                            </td>
-                            <td valign=bottom style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
-  border-right:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm'></td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'></td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'></td>
-                            <td valign=bottom style='border-top:none;border-left:solid windowtext 1.0pt;
-  border-bottom:solid windowtext 1.0pt;border-right:none;padding:0cm 0cm 0cm 0cm'></td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
-                                <p>z</p>
-                            </td>
-                            <td valign=bottom style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
-  border-right:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm'></td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'></td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'></td>
-                            <td valign=bottom style='border-top:none;border-left:solid windowtext 1.0pt;
-  border-bottom:solid windowtext 1.0pt;border-right:none;padding:0cm 0cm 0cm 0cm'></td>
-                            <td valign=bottom style='padding:0cm 0cm 0cm 0cm'>
-                                <p>50</p>
-                            </td>
-                            <td valign=bottom style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
-  border-right:solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm'></td>
-                        </tr>
+
+                    <table class="table table-sm table-borderless table-responsive">
+                        <thead>
+                            <tr>
+                                <td></td>
+                                <td>5</td>
+                                <td>1</td>
+                                <td>8</td>
+                                <td></td>
+                                <td></td>
+                                <td>x</td>
+                                <td></td>
+                                <td></td>
+                                <td>46</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>dengan A =</td>
+                                <td>4</td>
+                                <td>-2</td>
+                                <td>0</td>
+                                <td>,</td>
+                                <td>X =</td>
+                                <td>y</td>
+                                <td>,</td>
+                                <td>B =</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>4</td>
+                                <td></td>
+                                <td></td>
+                                <td>z</td>
+                                <td></td>
+                                <td></td>
+                                <td>50</td>
+                            </tr>
+                        </tbody>
                     </table>
-                    <p><span style='color:white'><br>
-                <br>
-              </span></p>
+
                     <p>Jika A -1 (kebalikan dari A) ada, kita dapat mengalikan kedua ruas dengan A -1 untuk mendapatkan X = A -1 B. Untuk menyelesaikan sistem persamaan linier ini di Excel, lakukan langkah-langkah berikut.</p>
                     <p>1. Gunakan fungsi MINVERSE untuk mengembalikan matriks invers dari A. Pertama, pilih range B6:D8. Selanjutnya, masukkan fungsi MINVERSE yang ditunjukkan di bawah ini. Akhiri dengan menekan
                         <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>

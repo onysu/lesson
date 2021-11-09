@@ -7628,7 +7628,6 @@
                                 </p>
                                 <p>Bab ini mengajarkan Anda bagaimana menangani beberapa kesalahan rumus umum di Excel.</p>
 
-
                                 <section id="not-wide-enough-error">
                                     <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
                                         <div class="fs-5" id="content">##### error</div>
@@ -7639,7 +7638,6 @@
                                     <p><img class="img-fluid" src="files/FormulaErrors-details_files/image002.png" alt="Perbaiki kesalahan #####"></p>
                                     <p>Tip: klik dua kali batas kanan header kolom A untuk secara otomatis memasukkan entri terluas di kolom A.</p>
                                 </section>
-
 
                                 <section id="name-error">
                                     <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
@@ -7652,7 +7650,6 @@
                                     <p><img class="img-fluid" src="files/FormulaErrors-details_files/image004.png" alt="Perbaiki #NAME?  kesalahan"></p>
                                 </section>
 
-
                                 <section id="value-error">
                                     <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
                                         <div class="fs-5" id="content">#VALUE! error</div>
@@ -7662,7 +7659,6 @@
                                     <p>Ubah nilai sel A3 menjadi angka.<br> 1b. Gunakan fungsi untuk mengabaikan sel yang berisi teks.</p>
                                     <p><img class="img-fluid" src="files/FormulaErrors-details_files/image006.png" alt="Perbaiki #VALUE!  kesalahan"></p>
                                 </section>
-
 
                                 <section id="div-error">
                                     <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
@@ -7674,7 +7670,6 @@
                                     <p><img class="img-fluid" src="files/FormulaErrors-details_files/image008.png" alt="Perbaiki #DIV/0!  kesalahan"></p>
                                     <p class="moreInfo text-break"><strong>Penjelasan:</strong> jika sel A2 sama dengan 0, string kosong (&quot;&quot;) ditampilkan. Jika tidak, hasil rumus A1/A2 akan ditampilkan.</p>
                                 </section>
-
 
                                 <section id="ref-error">
                                     <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
@@ -7699,6 +7694,424 @@
                                         </li>
                                     </ol>
                                 </section>
+                            </section>
+
+                            <section>
+                                <section id="FormulaErrors-details-iferror">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-4" id="content">IfError</div>
+                                    </div>
+                                    <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/iferror.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                    <p>Gunakan fungsi <strong>IFERROR</strong> di Excel untuk mengembalikan hasil alternatif, seperti teks, saat rumus mengevaluasi kesalahan.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Misalnya, Excel mengembalikan <strong>#DIV/0!</strong> kesalahan saat rumus mencoba membagi angka dengan 0.</p>
+                                            <p><img class="img-fluid" src="files/FormulaErrors-details_files/image012.png" alt="<strong>#DIV/0!</strong>  kesalahan"></p>
+                                        </li>
+                                        <li>
+                                            <p>Jika rumus mengevaluasi kesalahan, fungsi <strong>IFERROR</strong> di bawah ini mengembalikan pesan ramah.</p>
+                                            <p><img class="img-fluid" src="files/FormulaErrors-details_files/image013.png" alt="Fungsi IFERROR di Excel"></p>
+                                        </li>
+                                        <li>
+                                            <p>Jika rumus tidak mengevaluasi kesalahan, fungsi <strong>IFERROR</strong> hanya mengembalikan hasil rumus.</p>
+                                            <p><img class="img-fluid" src="files/FormulaErrors-details_files/image014.png" alt="Hasil Rumus"></p>
+                                        </li>
+                                        <li>
+                                            <p>Misalnya, Excel mengembalikan kesalahan #N/A saat <a href="#">fungsi <strong>VLOOKUP</strong></a> tidak dapat menemukan kecocokan.</p>
+                                            <p><img class="img-fluid" src="files/FormulaErrors-details_files/image015.png" alt="#T/A kesalahan"></p>
+                                        </li>
+                                        <li>
+                                            <p>Jika fungsi <strong>VLOOKUP</strong> mengevaluasi kesalahan, fungsi <strong>IFERROR</strong> di bawah ini mengembalikan pesan ramah.</p>
+                                            <p><img class="img-fluid" src="files/FormulaErrors-details_files/image016.png" alt="IFERROR dan VLOOKUP"></p>
+                                        </li>
+                                        <li>
+                                            <p>Jika fungsi <strong>VLOOKUP</strong> tidak mengevaluasi kesalahan, fungsi <strong>IFERROR</strong> hanya mengembalikan hasil fungsi <strong>VLOOKUP</strong>.</p>
+                                            <p><img class="img-fluid" src="files/FormulaErrors-details_files/image017.png" alt="Hasil VLOOKUP"></p>
+                                        </li>
+                                    </ol>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> fungsi <strong>IFERROR</strong> menangkap kesalahan berikut: <strong>#DIV/0!</strong>, <strong>#N/A</strong>, <strong>#VALUE!</strong>, <strong>#REF!</strong>, <strong>#NUM!</strong>, <strong>#NAME?</strong>                                        dan <strong>#NULL!</strong>. Misalnya, fungsi <strong>IFERROR</strong> yang ditunjukkan di atas juga menangkap <strong>#NAME?</strong> kesalahan jika Anda tidak sengaja salah mengeja kata <strong>VLOOKUP</strong>.
+                                        Gunakan <a href="#">fungsi <strong>IFNA</strong></a> di Excel 2013 atau yang lebih baru untuk hanya menangkap kesalahan <strong>#N/A</strong>.</p>
+                                </section>
+
+                                <section id="FormulaErrors-details-iserror">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-4" id="content">IsError</div>
+                                    </div>
+                                    <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/iserror.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                    <p>Contoh ini menggambarkan fungsi <strong>ISERROR</strong> di Excel.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Misalnya, Excel menampilkan <strong>#DIV/0!</strong> kesalahan saat rumus mencoba membagi angka dengan 0.</p>
+                                            <p><img class="img-fluid" src="files/FormulaErrors-details_files/image018.png" alt=""></p>
+                                        </li>
+                                        <li>
+                                            <p>Fungsi <strong>ISERROR</strong> di Excel memeriksa apakah suatu nilai adalah kesalahan dan mengembalikan TRUE atau FALSE.
+                                            </p>
+                                            <p><img class="img-fluid" src="files/FormulaErrors-details_files/image019.png" alt=""></p>
+                                        </li>
+                                        <li>
+                                            <p>Tambahkan fungsi <strong>IF</strong>. Jika sel berisi kesalahan, nilai 5 dikembalikan. Jika tidak, nilai 100 dikembalikan.</p>
+                                            <p><img class="img-fluid" src="files/FormulaErrors-details_files/image020.png" alt="JIKA dan ISERROR"></p>
+                                        </li>
+                                        <li>
+                                            <p>Gunakan <a href="#">fungsi <strong>IFERROR</strong></a> untuk mengembalikan hasil rumus (jika tidak ada kesalahan) atau hasil alternatif, seperti teks (jika ada kesalahan).</p>
+                                            <p><img class="img-fluid" src="files/FormulaErrors-details_files/image021.png" alt="Fungsi IFERROR di Excel"></p>
+                                        </li>
+                                        <li>
+                                            <p>Gunakan <strong>COUNT</strong>, <strong>IF</strong> dan <strong>ISERROR</strong> untuk menghitung jumlah total kesalahan dalam rentang sel.</p>
+                                            <p><img class="img-fluid" src="files/FormulaErrors-details_files/image022.png" alt="Hitung Kesalahan"></p>
+                                        </li>
+                                    </ol>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> ini adalah rumus array. Anda dapat menyelesaikan rumus array dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>. Excel menambahkan kurung kurawal {}. Kunjungi halaman kami tentang
+                                        <a href="#">Menghitung Kesalahan</a> untuk petunjuk terperinci tentang cara membuat rumus array ini.</p>
+                                </section>
+
+                                <section id="FormulaErrors-details-aggregate">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-4" id="content">Aggregate</div>
+                                    </div>
+                                    <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/aggregate.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                    <p>Fungsi Excel seperti <strong>SUM</strong>, <strong>COUNT</strong>, <strong>LARGE</strong>, dan <strong>MAX</strong> tidak berfungsi jika rentang menyertakan kesalahan. Namun, Anda dapat dengan mudah menggunakan fungsi
+                                        <strong>AGGREGATE</strong> untuk memperbaikinya.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Misalnya, Excel mengembalikan kesalahan jika Anda menggunakan fungsi <strong>SUM</strong> untuk menjumlahkan rentang dengan kesalahan.</p>
+                                            <p><img class="img-fluid" src="files/FormulaErrors-details_files/image023.png" alt="Tanpa Menggunakan Fungsi Agregat"></p>
+                                        </li>
+                                        <li>
+                                            <p>Gunakan fungsi <strong>AGGREGATE</strong> untuk menjumlahkan rentang dengan kesalahan.</p>
+                                            <p><img class="img-fluid" src="files/FormulaErrors-details_files/image024.png" alt="Fungsi Agregat di Excel"></p>
+                                            <p class="moreInfo text-break"><strong>Penjelasan:</strong> argumen pertama (9) memberitahu Excel bahwa Anda ingin menggunakan fungsi <strong>SUM</strong>. Argumen kedua (6) memberi tahu Excel bahwa Anda ingin mengabaikan nilai kesalahan.</p>
+                                        </li>
+                                        <li>
+                                            <p>Tidak mudah untuk mengingat argumen mana yang termasuk dalam fungsi yang mana. Untungnya, fitur AutoComplete di Excel membantu Anda dalam hal ini.</p>
+                                            <p><img class="img-fluid" src="files/FormulaErrors-details_files/image025.png" alt="Fitur LengkapiOtomatis"></p>
+                                        </li>
+                                        <li>
+                                            <p>Fungsi <strong>AGGREGATE</strong> di bawah ini menemukan angka terbesar kedua dalam rentang dengan kesalahan.</p>
+                                            <p><img class="img-fluid" src="files/FormulaErrors-details_files/image026.png" alt="Fungsi Agregat dan Besar"></p>
+                                            <p class="moreInfo text-break"><strong>Penjelasan:</strong> argumen pertama (14) memberi tahu Excel bahwa Anda ingin menggunakan fungsi LARGE. Argumen kedua (6) memberi tahu Excel bahwa Anda ingin mengabaikan nilai kesalahan. Argumen keempat
+                                                (2) memberi tahu Excel bahwa Anda ingin menemukan angka terbesar kedua.</p>
+                                        </li>
+                                        <li>
+                                            <p>Fungsi <strong>AGGREGATE</strong> di bawah ini menemukan nilai maksimum dengan mengabaikan nilai kesalahan dan baris tersembunyi.
+                                            </p>
+                                            <p><img class="img-fluid" src="files/FormulaErrors-details_files/image027.png" alt="Abaikan Nilai Kesalahan dan Baris Tersembunyi"></p>
+                                        </li>
+                                    </ol>
+                                    <p class="moreInfo text-break"><strong>Penjelasan:</strong> argumen pertama (4) memberitahu Excel bahwa Anda ingin menggunakan fungsi MAX. Argumen kedua (7) memberi tahu Excel bahwa Anda ingin mengabaikan nilai kesalahan dan baris tersembunyi. Dalam
+                                        contoh ini, baris 2 disembunyikan.
+                                    </p>
+                                </section>
+
+                                <section id="FormulaErrors-details-circular-reference">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-4" id="content">Circular Reference</div>
+                                    </div>
+                                    <p class="link-text">
+                                        <a href="#direct-circular-reference">Referensi Edaran Langsung</a> |
+                                        <a href="#indirect-circular-reference">Referensi Edaran Tidak Langsung</a> |
+                                        <a href="#find-circular-references">Temukan Referensi Edaran</a>
+                                    </p>
+                                    <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/referensi-sirkular.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                    <p>Sebuah referensi melingkar di Excel terjadi ketika formula secara langsung atau tidak langsung mengacu ke sel sendiri. Ini tidak mungkin.</p>
+
+                                    <section id="direct-circular-reference">
+                                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                            <div class="fs-5" id="content">Referensi Edaran Langsung <small class="fw-light">(Direct Circular Reference)</small></div>
+                                        </div>
+
+                                        <p>Mari kita mulai dengan sederhana. Referensi melingkar langsung di Excel terjadi saat rumus secara langsung merujuk ke selnya sendiri.</p>
+                                        <ol>
+                                            <li>
+                                                <p>Misalnya, rumus di sel A3 di bawah ini langsung merujuk ke selnya sendiri (A3). Ini tidak mungkin.</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image028.png" alt="Referensi Edaran Langsung di Excel"></p>
+                                            </li>
+                                            <li>
+                                                <p>Tekan Enter. Pesan kesalahan referensi melingkar muncul.</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image029.png" alt="Pesan Kesalahan Referensi Edaran"></p>
+                                            </li>
+                                            <li>
+                                                <p>Klik Oke. Excel mengembalikan 0.</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image030.png" alt="Terima Referensi Edaran Langsung"></p>
+                                            </li>
+                                        </ol>
+                                    </section>
+
+
+                                    <section id="indirect-circular-reference">
+                                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                            <div class="fs-5" id="content">Referensi Edaran Tidak Langsung <small class="fw-light">(Indirect Circular Reference)</small></div>
+                                        </div>
+
+                                        <p>Referensi melingkar tidak langsung di Excel terjadi ketika rumus secara tidak langsung merujuk ke selnya sendiri. Mari kita lihat contoh sederhana.</p>
+                                        <ol>
+                                            <li>
+                                                <p>Misalnya, sel D2 di bawah ini berisi nilai 25.</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image031.png" alt="Sel D2"></p>
+                                            </li>
+                                            <li>
+                                                <p>Sel F4 mengacu pada sel D2.</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image032.png" alt="Referensi Relatif"></p>
+                                            </li>
+                                            <li>
+                                                <p>Sel C5 mengacu pada sel F4.</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image033.png" alt="Referensi Relatif"></p>
+                                            </li>
+                                            <li>
+                                                <p>Sejauh ini, semuanya baik-baik saja. Sekarang ganti nilai 25 di sel D2 dengan rumus yang ditunjukkan di bawah ini.</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image034.png" alt="Buat Referensi Edaran Tidak Langsung"></p>
+                                            </li>
+                                            <li>
+                                                <p>Tekan Enter. Pesan kesalahan referensi melingkar muncul.</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image029.png" alt=""></p>
+                                            </li>
+                                            <li>
+                                                <p>Klik Oke. Excel mengembalikan 0.</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image035.png" alt="Referensi Edaran Tidak Langsung di Excel"></p>
+                                            </li>
+                                            <li>
+                                                <p>Pada tab Rumus, dalam grup Audit Rumus, klik Perlihatkan Rumus.</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image036.png" alt="Tampilkan Rumus">
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>Sel D2 mengacu pada sel C5. Sel C5 mengacu pada sel F4. Sel F4 merujuk kembali ke sel D2.</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image037.png" alt=Lingkaran></p>
+                                            </li>
+                                        </ol>
+                                        <p class="moreInfo text-break"><strong>Kesimpulan:</strong> rumus di sel D2 secara tidak langsung mengacu pada selnya sendiri (D2). Ini tidak mungkin. Rumus di sel C5 dan sel F4 juga merujuk kembali ke sel mereka sendiri (itu lingkaran).</p>
+                                    </section>
+
+
+                                    <section id="find-circular-references">
+                                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                            <div class="fs-5" id="content">Temukan Referensi Edaran <small class="fw-light">(Find Circular References)</small></div>
+                                        </div>
+
+                                        <p>Untuk menemukan referensi melingkar di Excel, dalam grup Audit Rumus, klik panah bawah di samping Pemeriksaan Kesalahan dan klik Referensi Sel.</p>
+                                        <ol>
+                                            <li>
+                                                <p>Lembar kami berisi 2 referensi melingkar. 1 referensi melingkar langsung (A3) dan 1 referensi melingkar tidak langsung (D2, C5 dan F4).</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image038.png" alt="Referensi Melingkar di Excel"></p>
+                                            </li>
+                                            <li>
+                                                <p>Pada tab Rumus, dalam grup Audit Rumus, klik panah bawah di samping Pemeriksaan Kesalahan.</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image039.png" alt="Pemeriksaan Kesalahan"></p>
+                                            </li>
+                                            <li>
+                                                <p>Klik Referensi Edaran. Excel menunjukkan alamat sel dari satu referensi melingkar.</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image040.png" alt="Temukan Referensi Edaran"></p>
+                                            </li>
+                                            <li>
+                                                <p>Anda juga dapat melihat bilah status. Ini jauh lebih mudah.</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image041.png" alt="Status bar"></p>
+                                            </li>
+                                            <li>
+                                                <p>Perbaiki referensi melingkar ini.</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image042.png" alt="Perbaiki Referensi Edaran"></p>
+                                                <p>Untuk menemukan lebih banyak referensi melingkar, ulangi langkah-langkah ini.</p>
+                                            </li>
+                                            <li>
+                                                <p>Pada tab Rumus, di grup Audit Rumus, klik panah bawah di sebelah Pemeriksaan Kesalahan.</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image039.png" alt="Pemeriksaan Kesalahan"></p>
+                                            </li>
+                                            <li>
+                                                <p>Klik Referensi Edaran. Excel menunjukkan alamat sel referensi melingkar tidak langsung.</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image043.png" alt="Beberapa Alamat Sel"></p>
+                                            </li>
+                                            <li>
+                                                <p>Status bar hanya menampilkan satu alamat sel.</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image044.png" alt="Alamat Sel Tunggal"></p>
+                                            </li>
+                                        </ol>
+                                        <p class="moreInfo text-break"><strong>Catatan:</strong> perbaiki referensi melingkar ini dengan mengganti salah satu rumus dengan nilai. Akibatnya, peringatan di bilah status akan hilang.</p>
+                                    </section>
+                                </section>
+
+                                <section id="FormulaErrors-details-formula-auditing">
+                                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="files/bahan/formula-auditing.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                                        <p class="bd-lead mb-0">Audit Rumus <span class="span-text">(Formula Auditing)</span></p>
+                                    </div>
+                                    <p class="link-text">
+                                        <a href="#trace-precedents">Trace Precedents</a> |
+                                        <a href="#remove-arrows">Hapus Panah</a> |
+                                        <a href="#trace-dependents">Trace Dependents</a> |
+                                        <a href="#show-formulas">Tampilkan Rumus</a> |
+                                        <a href="#error-checking">Cek Error</a> |
+                                        <a href="#evaluate-formula">Evaluasi Rumus</a>
+                                    </p>
+                                    <p>Audit rumus di Excel memungkinkan Anda menampilkan hubungan antara rumus dan sel. Contoh di bawah ini membantu Anda menguasai Formula Auditing dengan cepat dan mudah.</p>
+                                    <p><img class="img-fluid" src="files/FormulaErrors-details_files/image045.png" alt="Audit Rumus di Excel"></p>
+
+                                    <section id="trace-precedents">
+                                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                            <div class="fs-5" id="content">Lacak Preseden <small class="fw-light">(Trace Precedents)</small></div>
+                                        </div>
+
+                                        <p>Anda harus membayar $96.00. Untuk memperlihatkan panah yang menunjukkan sel mana yang digunakan untuk menghitung nilai ini, jalankan langkah-langkah berikut.</p>
+                                        <ol>
+                                            <li>Pilih sel C13.</li>
+                                            <li>
+                                                <p>Pada tab Rumus, dalam grup Audit Rumus, klik Lacak Preseden.</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image046.png" alt="Jejak Preseden">
+                                                </p>
+                                                <p>Hasil:</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image047.png" alt="Lacak Hasil Tingkat Pertama Preseden"></p>
+                                                <p>Seperti yang diharapkan, Total biaya dan ukuran Grup digunakan untuk menghitung Biaya per orang.</p>
+                                            </li>
+                                            <li>
+                                                <p>Klik Jejak Preseden lagi.</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image048.png" alt="Lacak Hasil Tingkat Kedua Preseden"></p>
+                                                <p>Seperti yang diharapkan, biaya yang berbeda digunakan untuk menghitung Total biaya.</p>
+                                            </li>
+                                        </ol>
+                                    </section>
+
+
+                                    <section id="remove-arrows">
+                                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                            <div class="fs-5" id="content">Hapus Panah <small class="fw-light">(Remove Arrows)</small></div>
+                                        </div>
+                                        <p>Untuk menghapus panah, jalankan langkah-langkah berikut.</p>
+                                        <p>Pada tab Rumus, dalam grup Audit Rumus, klik Hapus Panah.</p>
+                                        <p><img class="img-fluid" src="files/FormulaErrors-details_files/image049.png" alt="Hapus Panah"></p>
+                                    </section>
+
+
+                                    <section id="trace-dependents">
+                                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                            <div class="fs-5" id="content">Melacak Tanggungan <small class="fw-light">(Trace Dependents)</small></div>
+                                        </div>
+                                        <p>Untuk memperlihatkan panah yang menunjukkan sel mana yang bergantung pada sel yang dipilih, jalankan langkah-langkah berikut.</p>
+                                        <ol>
+                                            <li>Pilih sel C12.</li>
+                                            <li>
+                                                <p>Pada tab Rumus, dalam grup Audit Rumus, klik Lacak Tanggungan.</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image050.png" alt="Melacak Tanggungan"></p>
+                                                <p>Hasil:</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image051.png" alt="Hasil Jejak Dependensi"></p>
+                                                <p>Seperti yang diharapkan, Biaya per orang tergantung pada ukuran Grup.</p>
+                                            </li>
+                                        </ol>
+                                    </section>
+
+
+                                    <section id="show-formulas">
+                                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                            <div class="fs-5" id="content">Tampilkan Rumus <small class="fw-light">(Show Formulas)</small></div>
+                                        </div>
+                                        <p>Secara default, Excel memperlihatkan hasil rumus. Untuk menampilkan rumus alih-alih hasilnya, jalankan langkah-langkah berikut.</p>
+                                        <p>Pada tab Rumus, dalam grup Audit Rumus, klik Perlihatkan Rumus.</p>
+                                        <p><img class="img-fluid" src="files/FormulaErrors-details_files/image036.png" alt="Tampilkan Rumus">
+                                        </p>
+                                        <p>Hasil:</p>
+                                        <p><img class="img-fluid" src="files/FormulaErrors-details_files/image052.png" alt="Tampilkan Hasil Rumus"></p>
+                                        <p class="moreInfo text-break"><strong>Catatan:</strong> daripada mengklik Tampilkan Rumus, tekan
+                                            <kbd>Ctrl</kbd>+<kbd>`</kbd> (Anda dapat menemukan kunci ini di atas tombol tab).</p>
+                                    </section>
+
+
+                                    <section id="error-checking">
+                                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                            <div class="fs-5" id="content">Cek Error <small class="fw-light">(Error Checking)</small></div>
+                                        </div>
+                                        <p>Untuk memeriksa kesalahan umum yang terjadi dalam rumus, jalankan langkah-langkah berikut.</p>
+                                        <ol>
+                                            <li>
+                                                <p>Masukkan nilai 0 ke dalam sel C12.</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image053.png" alt="<strong>#DIV/0!</strong>  Kesalahan"></p>
+                                            </li>
+                                            <li>
+                                                <p>Pada tab Rumus, dalam grup Audit Rumus, klik Pemeriksaan Kesalahan.</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image054.png" alt="Pemeriksaan Kesalahan"></p>
+                                                <p>Hasil. Excel menemukan kesalahan di sel C13. Rumus mencoba membagi angka dengan 0.</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image055.png" alt="Hasil Pemeriksaan Kesalahan"></p>
+                                            </li>
+                                        </ol>
+                                    </section>
+
+
+                                    <section id="evaluate-formula">
+                                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                            <div class="fs-5" id="content">Evaluasi Rumus <small class="fw-light">(Evaluate Formula)</small></div>
+                                        </div>
+                                        <p>Untuk men-debug rumus dengan mengevaluasi setiap bagian rumus satu per satu, jalankan langkah-langkah berikut.</p>
+                                        <ol>
+                                            <li>Pilih sel C13.</li>
+                                            <li>
+                                                <p>Pada tab Rumus, dalam grup Audit Rumus, klik Evaluasi Rumus.</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image056.png" alt="Evaluasi Rumus">
+                                                </p>
+                                            </li>
+                                            <li>
+                                                <p>Klik Evaluasi empat kali.</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image057.png" alt="Klik Evaluasi Empat Kali"></p>
+                                                <p>Excel menunjukkan hasil rumus.</p>
+                                                <p><img class="img-fluid" src="files/FormulaErrors-details_files/image058.png" alt="Evaluasi Hasil Rumus"></p>
+                                            </li>
+                                        </ol>
+                                    </section>
+                                </section>
+
+                                <section id="FormulaErrors-details-floating-point-errors">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-4" id="content">Kesalahan Titik Mengambang <small class="fw-light small text-muted">(Floating Point Errors)</small></div>
+                                    </div>
+                                    <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/floating-point-errors.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                    <p>Excel menyimpan dan menghitung angka floating point. Terkadang, hasil dari sebuah rumus adalah perkiraan yang sangat dekat.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Sebagai contoh, perhatikan rumus di bawah ini. Sekilas, semuanya terlihat baik-baik saja.</p>
+                                            <p><img class="img-fluid" src="files/FormulaErrors-details_files/image059.png" alt="Hasil Rumus"></p>
+                                        </li>
+                                        <li>
+                                            <p>Namun, jika kita menunjukkan 16 tempat desimal, kita dapat melihat bahwa salah satu hasilnya adalah perkiraan yang sangat dekat.</p>
+                                            <p><img class="img-fluid" src="files/FormulaErrors-details_files/image060.png" alt="Kesalahan Titik Mengambang di Excel"></p>
+                                            <p>Anda tidak perlu khawatir tentang kesalahan floating point. Mereka langka.</p>
+                                        </li>
+                                        <li>
+                                            <p>Bahkan jika lembar kerja Anda berisi kesalahan floating point, dalam banyak kasus, ini tidak menyebabkan masalah. Namun, jika Anda membandingkan nilai di sel C8 dengan nilai lain, masalah berikut dapat terjadi.</p>
+                                            <p><img class="img-fluid" src="files/FormulaErrors-details_files/image061.png" alt="Jika Fungsi"></p>
+                                        </li>
+                                        <li>
+                                            <p>Gunakan fungsi <strong>ROUND</strong> untuk memperbaikinya.</p>
+                                            <p><img class="img-fluid" src="files/FormulaErrors-details_files/image062.png" alt="Fungsi Bulat"></p>
+                                        </li>
+                                    </ol>
+                                </section>
+
+                                <section id="FormulaErrors-details-ifna">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-4" id="content">IFNA</div>
+                                    </div>
+                                    <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/ifna.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                    <p>Gunakan fungsi <strong>IFNA</strong> di Excel untuk mengganti kesalahan #N/A dengan pesan ramah. Fungsi <strong>IFNA</strong> hanya menangkap kesalahan #N/A.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Misalnya, Excel mengembalikan kesalahan #N/A saat <a href="#">fungsi <strong>VLOOKUP</strong></a> tidak dapat menemukan kecocokan.</p>
+                                            <p><img class="img-fluid" src="files/FormulaErrors-details_files/image063.png" alt="#T/A kesalahan"></p>
+                                        </li>
+                                        <li>
+                                            <p>Gunakan fungsi <strong>IFNA</strong> untuk mengganti kesalahan #N/A dengan pesan ramah.</p>
+                                            <p class=MsoNoSpacing><img class="img-fluid" src="files/FormulaErrors-details_files/image064.png" alt="Fungsi <strong>IFNA</strong> di Excel"></p>
+                                        </li>
+                                        <li>
+                                            <p>Jika fungsi <strong>VLOOKUP</strong> tidak mengevaluasi kesalahan #N/A, fungsi <strong>IFNA</strong> hanya mengembalikan hasil fungsi <strong>VLOOKUP</strong>.</p>
+                                            <p><img class="img-fluid" src="files/FormulaErrors-details_files/image065.png" alt="Hasil VLOOKUP"></p>
+                                            <p class="moreInfo text-break"><strong>Catatan:</strong> fungsi <strong>IFNA</strong> diperkenalkan di Excel 2013. Jika Anda menggunakan Excel 2010 atau Excel 2007, cukup ganti IFNA dengan IFERROR. Ingat, <a href="#">fungsi <strong>IFERROR</strong> juga</a>                                                menangkap kesalahan lain. Misalnya, #NAME? kesalahan jika Anda tidak sengaja salah mengeja kata VLOOKUP.</p>
+                                        </li>
+                                    </ol>
+                                </section>
+
+                                <a class="d-flex justify-content-end fw-light" href="#fungsi-formula-errors">kembali keatas</a>
                             </section>
                         </div>
                     </div>

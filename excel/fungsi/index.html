@@ -260,7 +260,7 @@
 
                 <!-- Round -->
                 <div class="accordion-item border-0">
-                    <a href="#fungsi-Round">Round</a>
+                    <a href="#fungsi-round">Round</a>
                     <div id="flush-collapse-round" class="accordion-collapse collapse" aria-labelledby="flush-heading-round" data-bs-parent="#tab3Konten">
                         <div class="accordion-body p-0">
                             <ul>
@@ -7593,6 +7593,113 @@
                             </section>
 
                             <a class="d-flex justify-content-end fw-light" href="#fungsi-round">kembali keatas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formula Errors -->
+                <div class="accordion-item" id="fungsi-formula-errors">
+                    <!-- judul akordion -->
+                    <h2 class="accordion-header" id="flush-heading-formula-errors">
+                        <button class="accordion-button collapsed" style="padding: 1rem 0rem; box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-formula-errors" aria-expanded="false" aria-controls="flush-collapse-formula-errors">
+                            <div class="me-auto">
+                                <div class="fs-3">Fungsi Rumus Error</div>
+                                <small class="text-muted fw-light text-lowercase">Bab ini mengajarkan Anda bagaimana menangani beberapa kesalahan rumus umum.</small>
+                            </div>
+                        </button>
+                    </h2>
+                    <!-- isi akordion -->
+                    <div id="flush-collapse-formula-errors" class="accordion-collapse collapse" aria-labelledby="flush-heading-formula-errors" data-bs-parent="#tab3Konten">
+                        <div class="accordion-body p-0">
+                            <section>
+                                <p class="fw-light small">
+                                    <a href="#not-wide-enough-error">##### error</a> |
+                                    <a href="#name-error">#NAME? error</a> |
+                                    <a href="#value-error">#VALUE! error</a> |
+                                    <a href="#div-error">#DIV/0! error</a> |
+                                    <a href="#ref-error">#REF! error</a> |
+                                    <a href="#FormulaErrors-details-iferror">IfError</a> |
+                                    <a href="#FormulaErrors-details-iserror">IsError</a> |
+                                    <a href="#FormulaErrors-details-aggregate">Aggregate</a> |
+                                    <a href="#FormulaErrors-details-circular-reference">Circular Reference</a> |
+                                    <a href="#FormulaErrors-details-formula-auditing">Audit Rumus</a> |
+                                    <a href="#FormulaErrors-details-floating-point-errors">Floating Point Errors</a> |
+                                    <a href="#FormulaErrors-details-ifna">IFNA</a>
+                                </p>
+                                <p>Bab ini mengajarkan Anda bagaimana menangani beberapa kesalahan rumus umum di Excel.</p>
+
+
+                                <section id="not-wide-enough-error">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content">##### error</div>
+                                    </div>
+                                    <p>Saat sel Anda berisi kode kesalahan ini, kolom tidak cukup lebar untuk menampilkan nilai.</p>
+                                    <p><img class="img-fluid" src="files/FormulaErrors-details_files/image001.png" alt="##### kesalahan di Excel"></p>
+                                    <p>Klik pada batas kanan header kolom A dan tambah lebar kolom.</p>
+                                    <p><img class="img-fluid" src="files/FormulaErrors-details_files/image002.png" alt="Perbaiki kesalahan #####"></p>
+                                    <p>Tip: klik dua kali batas kanan header kolom A untuk secara otomatis memasukkan entri terluas di kolom A.</p>
+                                </section>
+
+
+                                <section id="name-error">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content">#NAME? error</div>
+                                    </div>
+                                    <p>Nama? kesalahan terjadi saat Excel tidak mengenali teks dalam rumus.</p>
+                                    <p><img class="img-fluid" src="files/FormulaErrors-details_files/image003.png" alt="#NAMA?  kesalahan">
+                                    </p>
+                                    <p>Cukup koreksi SU menjadi SUM.</p>
+                                    <p><img class="img-fluid" src="files/FormulaErrors-details_files/image004.png" alt="Perbaiki #NAME?  kesalahan"></p>
+                                </section>
+
+
+                                <section id="value-error">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content">#VALUE! error</div>
+                                    </div>
+                                    <p>Excel menampilkan #VALUE! kesalahan ketika rumus memiliki tipe argumen yang salah.</p>
+                                    <p><img class="img-fluid" src="files/FormulaErrors-details_files/image005.png" alt="#NILAI!  kesalahan"></p>
+                                    <p>Ubah nilai sel A3 menjadi angka.<br> 1b. Gunakan fungsi untuk mengabaikan sel yang berisi teks.</p>
+                                    <p><img class="img-fluid" src="files/FormulaErrors-details_files/image006.png" alt="Perbaiki #VALUE!  kesalahan"></p>
+                                </section>
+
+
+                                <section id="div-error">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content">#DIV/0! error</div>
+                                    </div>
+                                    <p>Excel menampilkan #DIV/0! kesalahan saat rumus mencoba membagi angka dengan 0 atau sel kosong.</p>
+                                    <p><img class="img-fluid" src="files/FormulaErrors-details_files/image007.png" alt="#DIV/0!  kesalahan"></p>
+                                    <p>Ubah nilai sel A2 menjadi nilai yang tidak sama dengan 0.<br> 1b. Cegah kesalahan agar tidak ditampilkan dengan menggunakan fungsi logika JIKA.</p>
+                                    <p><img class="img-fluid" src="files/FormulaErrors-details_files/image008.png" alt="Perbaiki #DIV/0!  kesalahan"></p>
+                                    <p class="moreInfo text-break"><strong>Penjelasan:</strong> jika sel A2 sama dengan 0, string kosong (&quot;&quot;) ditampilkan. Jika tidak, hasil rumus A1/A2 akan ditampilkan.</p>
+                                </section>
+
+
+                                <section id="ref-error">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-5" id="content">#REF! error</div>
+                                    </div>
+                                    <p>Excel menampilkan #REF! kesalahan saat rumus merujuk ke sel yang tidak valid.</p>
+                                    <ol>
+                                        <li>
+                                            <p>Sel C1 mereferensikan sel A1 dan sel B1.</p>
+                                            <p><img class="img-fluid" src="files/FormulaErrors-details_files/image009.png" alt="#REF!  Contoh Kesalahan"></p>
+                                        </li>
+                                        <li>
+                                            <p>Hapus kolom B. Untuk melakukannya, klik kanan header kolom B dan klik Hapus.</p>
+                                            <p><img class="img-fluid" src="files/FormulaErrors-details_files/image010.png" alt="Hapus Kolom"></p>
+                                        </li>
+                                        <li>
+                                            <p>Pilih sel B1. Referensi ke sel B1 tidak valid lagi.</p>
+                                            <p><img class="img-fluid" src="files/FormulaErrors-details_files/image011.png" alt="#REF!  Hasil Kesalahan"></p>
+                                        </li>
+                                        <li>
+                                            <p>Untuk memperbaiki kesalahan ini, Anda dapat menghapus +#REF! dalam rumus sel B1 atau Anda dapat membatalkan tindakan Anda dengan menekan <kbd>Ctrl</kbd>+<kbd>Z</kbd></p>
+                                        </li>
+                                    </ol>
+                                </section>
+                            </section>
                         </div>
                     </div>
                 </div>

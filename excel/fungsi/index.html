@@ -8146,6 +8146,377 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Array Formulas -->
+                <div class="accordion-item" id="fungsi-array-formulas">
+                    <!-- judul akordion -->
+                    <h2 class="accordion-header" id="flush-heading-array-formulas">
+                        <button class="accordion-button collapsed" style="padding: 1rem 0rem; box-shadow: none;" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-array-formulas" aria-expanded="false" aria-controls="flush-collapse-array-formulas">
+                            <div class="me-auto">
+                                <div class="fs-3">Fungsi Rumus Array</div>
+                                <small class="text-muted fw-light text-lowercase">Rumus array sel tunggal melakukan beberapa perhitungan dalam satu sel.</small>
+                            </div>
+                        </button>
+                    </h2>
+                    <!-- isi akordion -->
+                    <div id="flush-collapse-array-formulas" class="accordion-collapse collapse" aria-labelledby="flush-heading-array-formulas" data-bs-parent="#tab3Konten">
+                        <div class="accordion-body p-0">
+                            <section>
+                                <p class="fw-light small">
+                                    <a href="#RumusArray-without-array-formula">Tanpa Rumus Array</a> |
+                                    <a href="#RumusArray-with-array-formula">Dengan Rumus Array</a> |
+                                    <a href="#RumusArray-f9-key">Kunci F9</a> |
+                                    <a href="#ArrayFormulas-details-count-errors">Hitung Error</a> |
+                                    <a href="#ArrayFormulas-details-count-unique-values">Hitung Nilai Unik</a> |
+                                    <a href="#ArrayFormulas-details-count-with-or-criteria">Hitung dengan Atau Kriteria</a> |
+                                    <a href="#ArrayFormulas-details-sum-every-nth-row">Jumlahkan Setiap Baris Ke-N</a> |
+                                    <a href="#ArrayFormulas-details-sum-largest-numbers">Jumlahkan Bilangan Terbesar</a> |
+                                    <a href="#ArrayFormulas-details-sum-range-with-errors">Jumlah Range dengan Kesalahan</a> |
+                                    <a href="#ArrayFormulas-details-sum-with-or-criteria">Jumlahkan dengan Atau Kriteria</a> |
+                                    <a href="#ArrayFormulas-details-most-frequently-occurring-word">Kata yang Paling Sering Muncul</a> |
+                                    <a href="#ArrayFormulas-details-system-of-linear-equations">Sistem Persamaan Linier</a>
+                                </p>
+                                <p>Bab ini membantu Anda memahami rumus array di Excel. Rumus array sel tunggal melakukan beberapa perhitungan dalam satu sel.</p>
+
+                                <section id="RumusArray-without-array-formula">
+                                    <p class="sub-judul">Tanpa Rumus Array</p>
+                                    <p>Tanpa menggunakan rumus array, kami akan menjalankan langkah-langkah berikut untuk menemukan kemajuan terbesar.</p>
+                                    <p>1. Pertama, kita akan menghitung kemajuan setiap siswa.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image001.png" alt="Tanpa Rumus Array Excel, Langkah 1"></p>
+                                    <p>2. Selanjutnya, kita akan menggunakan fungsi MAX untuk menemukan kemajuan terbesar.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image002.png" alt="Tanpa Rumus Array Excel, Langkah 2"></p>
+                                </section>
+
+                                <section id="RumusArray-with-array-formula">
+                                    <p class="sub-judul">Dengan Rumus Array</p>
+                                    <p>Kita tidak perlu menyimpan range di kolom D. Excel bisa menyimpan range ini di memorinya. Range yang disimpan dalam memori Excel disebut konstanta array.</p>
+                                    <p>1. Kita sudah mengetahui bahwa kita dapat mencari kemajuan siswa pertama dengan menggunakan rumus di bawah ini.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image003.png" alt="Dengan Rumus Array Excel, Langkah 1"></p>
+                                    <p>2. Untuk mencari progres terbesar (jangan kewalahan), kita tambahkan fungsi MAX, ganti C2 dengan C2:C6 dan B2 dengan B2:B6.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image004.png" alt="Dengan Rumus Array Excel, Langkah 2"></p>
+                                    <p>3. Selesai dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image005.png" alt="Dengan Rumus Array Excel, Langkah 3"></p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> Bilah rumus menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.</p>
+                                    <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> Range (konstanta array) disimpan dalam memori Excel, bukan dalam range. Konstanta array terlihat sebagai berikut:</p>
+                                    <p>{19;33;63;48;13}</p>
+                                    <p>Konstanta array ini digunakan sebagai argumen untuk fungsi MAX, memberikan hasil 63.</p>
+                                </section>
+
+                                <section id="RumusArray-f9-key">
+                                    <p class="sub-judul">Kunci F9</p>
+                                    <p>Saat bekerja dengan rumus array, Anda dapat melihat sendiri konstanta array ini.</p>
+                                    <p>1. Pilih C2:C6-B2:B6 dalam rumus.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image006.png" alt="Pilih Referensi"></p>
+                                    <p>2. Tekan F9.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image007.png" alt="Konstanta Array"></p>
+                                    <p>Itu terlihat bagus. Elemen dalam konstanta array vertikal dipisahkan oleh titik koma. Elemen dalam konstanta array horizontal dipisahkan dengan koma.</p>
+                                </section>
+
+                                <!-- Count Errors -->
+                                <section id="ArrayFormulas-details-count-errors">
+                                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="files/bahan/count-errors.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                                        <p class="bd-lead mb-0">Hitung Error <span class="span-text">(Count Errors)</span></p>
+                                    </div>
+                                    <p>Contoh ini menunjukkan cara membuat rumus array yang menghitung jumlah kesalahan dalam range.</p>
+                                    <p>1. Kami menggunakan IF dan ISERROR untuk memeriksa kesalahan.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image008.png" alt="Fungsi If dan IsError"></p>
+                                    <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> fungsi IF mengembalikan 1, jika ditemukan kesalahan. Jika tidak, ia mengembalikan string kosong.</p>
+                                    <p>2. Untuk menghitung error (jangan kewalahan), kita tambahkan fungsi COUNT dan ganti A1 dengan A1:C3.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image009.png" alt="Rumus Array">
+                                    </p>
+                                    <p>3. Selesai dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image010.png" alt="Hitung Kesalahan di Excel"></p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> Bilah rumus menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.</p>
+                                    <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh fungsi IF disimpan dalam memori Excel, bukan dalam range. Konstanta array terlihat sebagai berikut:</p>
+                                    <p class="text-break">{1,&quot;&quot;,1;&quot;&quot;,&quot;&quot;,&quot;&quot;;&quot;&quot;,&quot;&quot;,1}</p>
+                                    <p>Konstanta array ini digunakan sebagai argumen untuk fungsi COUNT, memberikan hasil 3.</p>
+                                    <p>4. Untuk menghitung kesalahan tertentu, gunakan <a href="#">fungsi COUNTIF</a>. Misalnya, hitung jumlah sel yang berisi #DIV/0! kesalahan.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image011.png" alt="Hitung #DIV/0!  kesalahan"></p>
+                                </section>
+                                <!-- Count Unique Values -->
+                                <section id="ArrayFormulas-details-count-unique-values">
+                                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="files/bahan/count-unique-values.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                                        <p class="bd-lead mb-0">Hitung Nilai Unik <span class="span-text">(Count Unique Values)</span></p>
+                                    </div>
+                                    <p>Contoh ini menunjukkan cara membuat rumus array yang menghitung nilai unik.</p>
+                                    <p>1. Kami menggunakan <a href="#">fungsi COUNTIF</a>. Misalnya, untuk menghitung jumlah 5, gunakan fungsi berikut.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image012.png" alt="Fungsi Hitung"></p>
+                                    <p>2. Untuk menghitung nilai unik (jangan kewalahan), kita tambahkan fungsi SUM, 1/, dan ganti 5 dengan A1:A6.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image013.png" alt="Rumus Array"></p>
+                                    <p>3. Selesai dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image014.png" alt="Hitung Nilai Unik di Excel"></p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> Bilah rumus menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.</p>
+                                    <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh <a href="#">fungsi COUNTIF</a> disimpan dalam memori Excel, bukan dalam range. Konstanta array terlihat sebagai berikut:</p>
+                                    <p class="text-break">{3;1;1;1;3;3} - (tiga 7, satu matahari, satu bulan, satu 5, tiga 7, tiga 7)</p>
+                                    <p>Ini dikurangi menjadi:<br> {1/3;1/1;1/1;1/1;1/3;1/3}</p>
+                                    <p>Konstanta array ini digunakan sebagai argumen untuk fungsi SUM, memberikan hasil 1/3+1+1+1+1+1/3+1/3 = 4.
+                                    </p>
+                                    <p>4. Rumus array di bawah ini menghitung jumlah nilai yang muncul tepat satu kali.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image015.png" alt="Tepat Sekali"></p>
+                                    <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> fungsi IF mengubah konstanta array {3;1;1;1;3;3} menjadi {0;1;1;1;0;0}. Konstanta array ini digunakan sebagai argumen untuk fungsi SUM, memberikan hasil 3.</p>
+                                    <p>5. Jika Anda memiliki Excel 365, cukup gunakan fungsi UNIQUE ajaib untuk mengekstrak nilai unik.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image016.png" alt="Fungsi UNIK"></p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> fungsi larik dinamis ini, yang dimasukkan ke dalam sel C3, mengisi beberapa sel. Wow! Perilaku ini di Excel 365 disebut menumpahkan.</p>
+                                    <p>6. Selanjutnya, tambahkan fungsi COUNTA untuk menghitung nilai unik di Excel 365.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image017.png" alt="COUNTA dan UNIK"></p>
+                                    <p>7. Rumus di bawah ini menghitung jumlah nilai yang muncul tepat satu kali.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image018.png" alt="Hitung Nilai yang Terjadi Tepat Sekali"></p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> fungsi UNIK memiliki 2 argumen opsional. Nilai default 0 (argumen kedua) memberi tahu fungsi UNIQUE untuk mengekstrak nilai dari larik vertikal. Nilai 1 (argumen ketiga) memberi tahu fungsi
+                                        UNIQUE untuk mengekstrak nilai yang muncul tepat satu kali.</p>
+                                </section>
+                                <!-- Count with Or Criteria -->
+                                <section id="ArrayFormulas-details-count-with-or-criteria">
+                                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="files/bahan/count-with-or-criteria.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                                        <p class="bd-lead mb-0">Hitung dengan Atau Kriteria
+                                            <span class="span-text">(Count with Or Criteria)</span></p>
+                                    </div>
+                                    <p>Menghitung dengan kriteria Or di Excel bisa jadi rumit. Artikel ini menunjukkan beberapa contoh yang mudah diikuti.</p>
+                                    <p>1. Kita mulai dari yang sederhana. Misalnya, kita ingin menghitung jumlah sel yang berisi Google atau Facebook (satu kolom).</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image019.png" alt="2x Fungsi Hitung di Excel"></p>
+                                    <p>2a. Namun, jika kita ingin menghitung jumlah baris yang berisi Google atau Stanford (dua kolom), kita tidak bisa begitu saja menggunakan <a href="#">fungsi COUNTIF</a> dua kali (lihat gambar di bawah). Baris yang berisi
+                                        Google dan Stanford dihitung dua kali, tetapi seharusnya hanya dihitung sekali. 4 adalah jawaban yang kita cari.
+                                    </p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image020.png" alt="Formula yang salah"></p>
+                                    <p>2b. Yang kita butuhkan adalah rumus array. Kami menggunakan fungsi IF untuk memeriksa apakah Google atau Stanford terjadi.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image021.png" alt="Hitung dengan Kriteria Atau, Langkah 1"></p>
+                                    <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> TRUE = 1, FALSE = 0. Untuk baris 1, fungsi IF dievaluasi menjadi IF(TRUE+TRUE,1,0), IF(2,1,0), 1. Jadi baris pertama akan dihitung. Untuk baris 2, fungsi IF dievaluasi menjadi IF(FALSE+FALSE,1,0),
+                                        IF(0,1,0), 0. Jadi baris kedua tidak akan dihitung. Untuk baris 3, fungsi IF dievaluasi menjadi IF(FALSE+TRUE,1,0), IF(1,1,0), 1. Jadi baris ketiga akan dihitung, dst.</p>
+                                    <p>2c. Yang kita butuhkan hanyalah fungsi SUM yang menghitung 1 ini. Untuk mencapai ini (jangan kewalahan), kami menambahkan fungsi SUM dan mengganti A1 dengan A1:A8 dan B1 dengan B1:B8.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image022.png" alt="Hitung dengan Atau Kriteria, Langkah 2"></p>
+                                    <p>2d. Akhiri dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image023.png" alt="Hitung dengan Atau Kriteria, Langkah 3"></p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> Bilah rumus menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.</p>
+                                    <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh fungsi IF disimpan dalam memori Excel, bukan dalam range. Konstanta array terlihat sebagai berikut:</p>
+                                    <p>{1;0;1;0;1;0;1;0}</p>
+                                    <p>Konstanta array ini digunakan sebagai argumen untuk fungsi SUM, memberikan hasil 4.</p>
+                                    <p>3. Kita bisa melangkah lebih jauh. Misalnya, kami ingin menghitung jumlah baris yang berisi (Google dan Stanford) atau Columbia.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image024.png" alt="Hitung dengan Dan, Atau Kriteria"></p>
+                                </section>
+                                <!-- Sum Every nth Row -->
+                                <section id="ArrayFormulas-details-sum-every-nth-row">
+                                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="files/bahan/sum-every-nth-row.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                                        <p class="bd-lead mb-0">Jumlahkan Setiap Baris Ke-N <span class="span-text">(Sum Every nth Row)</span></p>
+                                    </div>
+                                    <p>Contoh ini menunjukkan cara membuat rumus array yang menjumlahkan setiap baris ke-n di Excel. Kami akan menunjukkannya untuk n = 3, tetapi Anda dapat melakukannya untuk nomor berapa pun.</p>
+                                    <p>1. Fungsi ROW mengembalikan nomor baris sel.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image025.png" alt="Fungsi Baris di Excel"></p>
+                                    <p>2. Fungsi <a href="#">MOD</a> memberikan sisa pembagian. Misalnya, untuk baris pertama, MOD(1,3) = 1 karena 1 dibagi 3 sama dengan 0 dengan sisa 1. Untuk baris ketiga, MOD(3,3) = 0 karena 3 dibagi 3 sama dengan 1 dengan
+                                        a sisa 0. Akibatnya, rumus mengembalikan 0 untuk setiap baris ke-3.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image026.png" alt="Fungsi Mod"></p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> ubah 3 menjadi 4 untuk menjumlahkan setiap baris ke-4, menjadi 5 untuk menjumlahkan setiap baris ke-5, dst.</p>
+                                    <p>3. Ubah sedikit rumus seperti gambar di bawah ini.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image027.png" alt="Benar atau salah"></p>
+                                    <p>4. Untuk mendapatkan jumlah hasil kali kedua range ini (FALSE=0, TRUE=1), gunakan fungsi SUM dan selesaikan dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image028.png" alt="Jumlahkan Setiap Baris ke-n di Excel"></p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> Bilah rumus menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.</p>
+                                    <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> Produk dari dua range ini (konstanta array) disimpan dalam memori Excel, bukan dalam range. Konstanta array terlihat sebagai berikut.</p>
+                                    <p>{0;0;5;0;0;66;0;0;21}</p>
+                                    <p>Konstanta array ini digunakan sebagai argumen untuk fungsi SUM, memberikan hasil 92.</p>
+                                </section>
+                                <!-- Sum Largest Numbers -->
+                                <section id="ArrayFormulas-details-sum-largest-numbers">
+                                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="files/bahan/sum-largest-numbers.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                                        <p class="bd-lead mb-0">Jumlahkan Bilangan Terbesar <span class="span-text">(Sum Largest Numbers)</span></p>
+                                    </div>
+                                    <p>Contoh ini menunjukkan Anda bagaimana untuk membuat formula array yang merangkum yang jumlah terbesar dalam kisaran.</p>
+                                    <p>1. Kami menggunakan fungsi LARGE. Misalnya, untuk menemukan bilangan terbesar kedua, gunakan fungsi berikut.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image029.png" alt="Fungsi Besar"></p>
+                                    <p>2. Untuk menjumlahkan 4 bilangan terbesar (jangan kewalahan), tambahkan fungsi SUM dan ganti 2 dengan {1,2,3,4}.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image030.png" alt="Rumus Array"></p>
+                                    <p>3. Selesai dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image031.png" alt="Jumlahkan Angka Terbesar di Excel"></p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> Bilah rumus menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.</p>
+                                    <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh fungsi LARGE disimpan dalam memori Excel, bukan dalam range. Konstanta array terlihat sebagai berikut.</p>
+                                    <p>{22,10,8,6}</p>
+                                    <p>Konstanta array ini digunakan sebagai argumen untuk fungsi SUM, memberikan hasil 46.</p>
+                                </section>
+                                <!-- Sum Range with Errors -->
+                                <section id="ArrayFormulas-details-sum-range-with-errors">
+                                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="files/bahan/sum-range-with-errors.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                                        <p class="bd-lead mb-0">Jumlah Range dengan Kesalahan
+                                            <span class="span-text">(Sum Range with Errors)</span></p>
+                                    </div>
+                                    <p>Contoh ini menunjukkan Anda bagaimana untuk membuat formula array yang meringkas sebuah range dengan kesalahan. Anda juga dapat menggunakan <a href="#">fungsi AGGREGATE</a> untuk menjumlahkan range dengan kesalahan.</p>
+                                    <p>1. Kami menggunakan fungsi IFERROR untuk memeriksa kesalahan.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image032.png" alt="Fungsi IfError"></p>
+                                    <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> fungsi IFERROR mengembalikan 0, jika ditemukan kesalahan. Jika tidak, itu mengembalikan nilai sel.</p>
+                                    <p>2. Untuk menjumlahkan range dengan kesalahan (jangan kewalahan), kami menambahkan fungsi SUM dan mengganti A1 dengan A1:A7.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image033.png" alt="Rumus Array"></p>
+                                    <p>3. Selesai dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image034.png" alt="Jumlahkan Range dengan Kesalahan di Excel"></p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> Bilah rumus menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.</p>
+                                    <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh fungsi IFERROR disimpan dalam memori Excel, bukan dalam range. Konstanta array terlihat sebagai berikut:</p>
+                                    <p>{0;5;4;0;0;1;3}</p>
+                                    <p>Konstanta array ini digunakan sebagai argumen untuk fungsi SUM, memberikan hasil 13.</p>
+                                </section>
+                                <!-- Sum with Or Criteria -->
+                                <section id="ArrayFormulas-details-sum-with-or-criteria">
+                                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="files/bahan/sum-with-or-criteria.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                                        <p class="bd-lead mb-0">Jumlahkan dengan Atau Kriteria
+                                            <span class="span-text">(Sum with Or Criteria)</span></p>
+                                    </div>
+                                    <p>Menjumlahkan dengan kriteria Or di Excel bisa jadi rumit. Artikel ini menunjukkan beberapa contoh yang mudah diikuti.</p>
+                                    <p>1. Kita mulai dari yang sederhana. Misalnya, kami ingin menjumlahkan sel yang memenuhi kriteria berikut: Google atau Facebook (satu range kriteria).</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image035.png" alt="2x Fungsi Sumif di Excel"></p>
+                                    <p>2a. Namun, jika kita ingin menjumlahkan sel yang memenuhi kriteria berikut: Google atau Stanford (dua range kriteria), kita tidak bisa begitu saja menggunakan <a href="#">fungsi SUMIF</a> dua kali (lihat gambar di bawah).
+                                        Sel yang memenuhi kriteria Google dan Stanford ditambahkan dua kali, tetapi hanya boleh ditambahkan satu kali. 10 adalah jawaban yang kita cari.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image036.png" alt="Formula yang salah"></p>
+                                    <p>2b. Kita membutuhkan rumus array. Kami menggunakan <a href="#">fungsi IF</a> untuk memeriksa apakah Google atau Stanford terjadi.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image037.png" alt="Jumlahkan dengan Kriteria Atau, Langkah 1"></p>
+                                    <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> TRUE = 1, FALSE = 0. Untuk baris 1, fungsi IF dievaluasi menjadi IF(TRUE+TRUE,1,0)*3, IF(2,1,0)*3, 3. Jadi nilai 3 akan ditambahkan. Untuk baris 2, fungsi IF dievaluasi menjadi IF(FALSE+FALSE,1,0)*5,
+                                        IF(0,1,0)*5, 0. Jadi nilai 5 tidak akan ditambahkan. Untuk baris 3, fungsi IF dievaluasi menjadi IF(FALSE+TRUE,1,0)*2, IF(1,1,0)*2, 2. Jadi nilai 2 akan ditambahkan, dst.</p>
+                                    <p>2c. Yang kita butuhkan hanyalah fungsi SUM yang menjumlahkan nilai-nilai ini. Untuk mencapai ini (jangan kewalahan), kami menambahkan fungsi SUM dan mengganti A1 dengan A1:A8, B1 dengan B1:B8 dan C1 dengan C1:C8.
+                                    </p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image038.png" alt="Jumlahkan dengan Kriteria Atau, Langkah 2"></p>
+                                    <p>2d. Akhiri dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image039.png" alt="Jumlahkan dengan Kriteria Atau, Langkah 3"></p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> Bilah rumus menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.</p>
+                                    <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh fungsi IF disimpan dalam memori Excel, bukan dalam range. Konstanta array terlihat sebagai berikut:</p>
+                                    <p>{1;0;1;0;1;0;1;0}</p>
+                                    <p>dikalikan dengan C1:C8 ini menghasilkan:</p>
+                                    <p>{3;0;2;0;4;0;1;0}</p>
+                                    <p>Konstanta array yang terakhir ini digunakan sebagai argumen untuk fungsi SUM, memberikan hasil 10.</p>
+                                    <p>3. Kita bisa melangkah lebih jauh. Misalnya, kami ingin menjumlahkan sel yang memenuhi kriteria berikut: (Google dan Stanford) atau Columbia.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image040.png" alt="Jumlahkan dengan Dan, Atau Kriteria"></p>
+                                </section>
+                                <section id="ArrayFormulas-details-most-frequently-occurring-word">
+                                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="files/bahan/most-frequently-occurring-word.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                                        <p class="bd-lead mb-0">Kata yang Paling Sering Muncul <span class="span-text">(Most Frequently Occurring Word)</span></p>
+                                    </div>
+                                    <p>Contoh ini mengajarkan Anda bagaimana menemukan kata yang paling sering muncul di Excel.</p>
+                                    <p>Anda dapat menggunakan <a href="#">fungsi MODE</a> untuk menemukan nomor yang paling sering muncul. Namun, fungsi MODE hanya bekerja dengan angka.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image041.png" alt="Nomor Paling Sering Terjadi di Excel"></p>
+                                    <p>Anda dapat menggunakan <a href="#">fungsi COUNTIF</a> untuk menghitung jumlah kemunculan setiap kata. Namun, kami mencari satu formula yang mengembalikan kata yang paling sering muncul (lingkaran dalam contoh kami).</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image042.png" alt="Fungsi Hitung"></p>
+                                    <p>Untuk menemukan kata yang paling sering muncul, lakukan langkah-langkah berikut.</p>
+                                    <p>1. Fungsi MATCH mengembalikan posisi nilai dalam range tertentu.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image043.png" alt="Fungsi Pertandingan"></p>
+                                    <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> lingkaran (A7) terdapat pada posisi 2 pada range A1:A7. Setel argumen ketiga ke 0 untuk mengembalikan kecocokan yang sama persis.</p>
+                                    <p>2. Untuk mencari posisi kata yang paling sering muncul (jangan kewalahan), kita tambahkan fungsi MODE dan ganti A7 dengan A1:A7.</p>
+                                    <p>3. Selesai dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image044.png" alt="Fungsi Modus"></p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> Bilah rumus menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.</p>
+                                    <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh fungsi MATCH disimpan dalam memori Excel, bukan dalam range. Konstanta array terlihat sebagai berikut:</p>
+                                    <p>{1;2;2;2;5;5;2} - (segitiga ditemukan di posisi 1, lingkaran ditemukan di posisi 2, lingkaran ditemukan di posisi 2, dll.)</p>
+                                    <p>Konstanta array ini digunakan sebagai argumen untuk fungsi MODE, memberikan hasil 2 (posisi kata yang paling sering muncul).</p>
+                                    <p>4. Gunakan hasil ini dan fungsi INDEX untuk mengembalikan kata ke-2 dalam range A1:A7, kata yang paling sering muncul.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image045.png" alt="Word yang Paling Sering Muncul di Excel"></p>
+                                </section>
+                                <section id="ArrayFormulas-details-system-of-linear-equations">
+                                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
+                                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="files/bahan/system-of-linear-equations.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                                        <p class="bd-lead mb-0">Sistem Persamaan Linier
+                                            <span class="span-text">(System of Linear Equations)</span></p>
+                                    </div>
+                                    <p>Contoh ini menunjukkan kepada Anda bagaimana memecahkan sistem persamaan linier di Excel. Sebagai contoh, kita memiliki sistem persamaan linier berikut:</p>
+
+                                    <table class="table table-sm table-borderless table-responsive">
+                                        <thead>
+                                            <tr>
+                                                <td>5x</td>
+                                                <td>+</td>
+                                                <td>1y</td>
+                                                <td>+</td>
+                                                <td>8z</td>
+                                                <td>=</td>
+                                                <td>46</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>4x</td>
+                                                <td>-</td>
+                                                <td>2y</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>=</td>
+                                                <td>12</td>
+                                            </tr>
+                                            <tr>
+                                                <td>6x</td>
+                                                <td>+</td>
+                                                <td>7y</td>
+                                                <td>+</td>
+                                                <td>4z</td>
+                                                <td>=</td>
+                                                <td>50</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p>Dalam notasi matriks, ini dapat ditulis sebagai AX = B</p>
+
+                                    <table class="table table-sm table-borderless table-responsive">
+                                        <thead>
+                                            <tr>
+                                                <td></td>
+                                                <td>5</td>
+                                                <td>1</td>
+                                                <td>8</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>x</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>46</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>dengan A =</td>
+                                                <td>4</td>
+                                                <td>-2</td>
+                                                <td>0</td>
+                                                <td>,</td>
+                                                <td>X =</td>
+                                                <td>y</td>
+                                                <td>,</td>
+                                                <td>B =</td>
+                                                <td>12</td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td>6</td>
+                                                <td>7</td>
+                                                <td>4</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>z</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>50</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p>Jika A -1 (kebalikan dari A) ada, kita dapat mengalikan kedua ruas dengan A -1 untuk mendapatkan X = A -1 B. Untuk menyelesaikan sistem persamaan linier ini di Excel, lakukan langkah-langkah berikut.</p>
+                                    <p>1. Gunakan fungsi MINVERSE untuk mengembalikan matriks invers dari A. Pertama, pilih range B6:D8. Selanjutnya, masukkan fungsi MINVERSE yang ditunjukkan di bawah ini. Akhiri dengan menekan
+                                        <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image046.png" alt="Fungsi MINVERSE"></p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> bilah rumus menunjukkan bahwa sel berisi rumus larik. Oleh karena itu, Anda tidak dapat menghapus satu hasil pun. Untuk menghapus hasil, pilih range B6:D8 dan tekan Delete.
+                                    </p>
+                                    <p>2. Gunakan fungsi MMULT untuk mengembalikan hasil kali matriks A -1 dan B. Pertama, pilih range G6:G8. Selanjutnya, masukkan fungsi MMULT yang ditunjukkan di bawah ini. Akhiri dengan menekan
+                                        <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image047.png" alt="Fungsi MMULT">
+                                    </p>
+                                    <p>3. Gabungkan semuanya. Pertama, pilih range G6:G8. Selanjutnya, masukkan rumus yang ditunjukkan di bawah ini. Akhiri dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image048.png" alt=Larutan></p>
+                                </section>
+
+                                <a class="d-flex justify-content-end fw-light" href="#flush-heading-array-formulas">kembali keatas</a>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>

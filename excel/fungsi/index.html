@@ -8424,22 +8424,28 @@
                                     <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/count-errors.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
 
                                     <p>Contoh ini menunjukkan cara membuat rumus array yang menghitung jumlah kesalahan dalam range.</p>
-                                    <p>1. Kami menggunakan IF dan ISERROR untuk memeriksa kesalahan.</p>
-                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image008.png" alt="Fungsi If dan IsError"></p>
-                                    <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> fungsi IF mengembalikan 1, jika ditemukan kesalahan. Jika tidak, ia mengembalikan string kosong.
-                                    </p>
-                                    <p>2. Untuk menghitung error (jangan kewalahan), kita tambahkan fungsi
-                                        <strong>COUNT</strong> dan ganti A1 dengan A1:C3.</p>
-                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image009.png" alt="Rumus Array">
-                                    </p>
-                                    <p>3. Selesai dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
-                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image010.png" alt="Hitung Kesalahan di Excel"></p>
+                                    <ol>
+                                        <li>
+                                            <p>Kami menggunakan <strong>IF</strong> dan <strong>ISERROR</strong> untuk memeriksa kesalahan.</p>
+                                            <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image008.png" alt="Fungsi If dan IsError"></p>
+                                            <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> fungsi <strong>IF</strong> mengembalikan 1, jika ditemukan kesalahan. Jika tidak, ia mengembalikan string kosong.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p>Untuk menghitung error (jangan kewalahan), kita tambahkan fungsi <strong>COUNT</strong> dan ganti A1 dengan A1:C3.</p>
+                                            <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image009.png" alt="Rumus Array"></p>
+                                        </li>
+                                        <li>
+                                            <p>Selesai dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
+                                            <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image010.png" alt="Hitung Kesalahan di Excel"></p>
+                                        </li>
+                                    </ol>
                                     <p class="moreInfo text-break"><strong>Catatan:</strong> Rumus Bar menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.</p>
-                                    <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh fungsi IF disimpan dalam memori Excel, bukan dalam range. Konstanta array terlihat sebagai berikut: <br> {1,&quot;&quot;,1;&quot;&quot;,&quot;&quot;,&quot;&quot;;&quot;&quot;,&quot;&quot;,1}
+                                    <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh fungsi <strong>IF</strong> disimpan dalam memori Excel, bukan dalam range. Konstanta array terlihat sebagai berikut: <br> {1,&quot;&quot;,1;&quot;&quot;,&quot;&quot;,&quot;&quot;;&quot;&quot;,&quot;&quot;,1}
                                         <br> Konstanta array ini digunakan sebagai argumen untuk fungsi
                                         <strong>COUNT</strong>, memberikan hasil 3.</p>
                                     <p>4. Untuk menghitung kesalahan tertentu, gunakan <a href="#">fungsi COUNTIF</a>. Misalnya, hitung jumlah sel yang berisi #DIV/0! kesalahan.</p>
-                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image011.png" alt="Hitung #DIV/0!  kesalahan"></p>
+                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image011.png" alt=""></p>
                                 </section>
                                 <!-- Count Unique Values -->
                                 <section id="ArrayFormulas-details-count-unique-values">
@@ -8449,31 +8455,46 @@
                                     <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/count-unique-values.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
 
                                     <p>Contoh ini menunjukkan cara membuat rumus array yang menghitung nilai unik.</p>
-                                    <p>1. Kami menggunakan <a href="#">fungsi COUNTIF</a>. Misalnya, untuk menghitung jumlah 5, gunakan fungsi berikut.</p>
-                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image012.png" alt="Fungsi Hitung"></p>
-                                    <p>2. Untuk menghitung nilai unik (jangan kewalahan), kita tambahkan fungsi SUM, 1/, dan ganti 5 dengan A1:A6.</p>
-                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image013.png" alt="Rumus Array"></p>
-                                    <p>3. Selesai dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
-                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image014.png" alt="Hitung Nilai Unik di Excel"></p>
-                                    <p class="moreInfo text-break"><strong>Catatan:</strong> Rumus Bar menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.</p>
-                                    <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh <a href="#">fungsi COUNTIF</a> disimpan dalam memori Excel, bukan dalam range. Konstanta array terlihat sebagai berikut: <br> {3;1;1;1;3;3} - (tiga
-                                        7, satu matahari, satu bulan, satu 5, tiga 7, tiga 7) <br> Ini dikurangi menjadi:
-                                        <br> {1/3;1/1;1/1;1/1;1/3;1/3} <br> Konstanta array ini digunakan sebagai argumen untuk fungsi SUM, memberikan hasil 1/3+1+1+1+1+1/3+1/3 = 4.</p>
-                                    <p>4. Rumus array di bawah ini menghitung jumlah nilai yang muncul tepat satu kali.
-                                    </p>
-                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image015.png" alt="Tepat Sekali"></p>
-                                    <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> fungsi IF mengubah konstanta array {3;1;1;1;3;3} menjadi {0;1;1;1;0;0}. Konstanta array ini digunakan sebagai argumen untuk fungsi SUM, memberikan hasil 3.</p>
-                                    <p>5. Jika Anda memiliki Excel 365, cukup gunakan fungsi UNIQUE ajaib untuk mengekstrak nilai unik.</p>
-                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image016.png" alt="Fungsi <strong>UNIQUE</strong>"></p>
-                                    <p class="moreInfo text-break"><strong>Catatan:</strong> fungsi larik dinamis ini, yang dimasukkan ke dalam sel C3, mengisi beberapa sel.</p>
-                                    <p>6. Selanjutnya, tambahkan fungsi <strong>COUNTA</strong> untuk menghitung nilai unik di Excel 365.</p>
-                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image017.png" alt="COUNTA dan <strong>UNIQUE</strong>"></p>
-                                    <p>7. Rumus di bawah ini menghitung jumlah nilai yang muncul tepat satu kali.</p>
-                                    <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image018.png" alt="Hitung Nilai yang Terjadi Tepat Sekali"></p>
-                                    <p class="moreInfo text-break"><strong>Catatan:</strong> fungsi
-                                        <strong>UNIQUE</strong> memiliki 2 argumen opsional. Nilai default 0 (argumen kedua) memberi tahu fungsi <strong>UNIQUE</strong> untuk mengekstrak nilai dari larik vertikal. Nilai 1 (argumen ketiga) memberi tahu
-                                        fungsi <strong>UNIQUE</strong> untuk mengekstrak nilai yang muncul tepat satu kali.
-                                    </p>
+                                    <ol>
+                                        <li>
+                                            <p>Kami menggunakan <a href="#">fungsi COUNTIF</a>. Misalnya, untuk menghitung jumlah 5, gunakan fungsi berikut.</p>
+                                            <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image012.png" alt="Fungsi Hitung"></p>
+                                        </li>
+                                        <li>
+                                            <p>Untuk menghitung nilai unik (jangan kewalahan), kita tambahkan fungsi <strong>SUM</strong>, 1/, dan ganti 5 dengan A1:A6.</p>
+                                            <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image013.png" alt="Rumus Array"></p>
+                                        </li>
+                                        <li>
+                                            <p>Selesai dengan menekan <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Enter</kbd>.</p>
+                                            <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image014.png" alt="Hitung Nilai Unik di Excel"></p>
+                                            <p class="moreInfo text-break"><strong>Catatan:</strong> Rumus Bar menunjukkan bahwa ini adalah rumus larik dengan mengapitnya dalam kurung kurawal {}. Jangan mengetik ini sendiri. Mereka akan hilang saat Anda mengedit rumus.</p>
+                                            <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> Range (konstanta array) yang dibuat oleh <a href="#">fungsi COUNTIF</a> disimpan dalam memori Excel, bukan dalam range. Konstanta array terlihat sebagai berikut: <br> {3;1;1;1;3;3}
+                                                - (tiga 7, satu matahari, satu bulan, satu 5, tiga 7, tiga 7) <br> Ini dikurangi menjadi: <br> {1/3;1/1;1/1;1/1;1/3;1/3} <br> Konstanta array ini digunakan sebagai argumen untuk fungsi <strong>SUM</strong>,
+                                                memberikan hasil 1/3+1+1+1+1+1/3+1/3 = 4.</p>
+                                        </li>
+                                        <li>
+                                            <p>Rumus array di bawah ini menghitung jumlah nilai yang muncul tepat satu kali.</p>
+                                            <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image015.png" alt="Tepat Sekali"></p>
+                                            <p class="moreInfo text-break text-break"><strong>Penjelasan:</strong> fungsi IF mengubah konstanta array {3;1;1;1;3;3} menjadi {0;1;1;1;0;0}. Konstanta array ini digunakan sebagai argumen untuk fungsi <strong>SUM</strong>, memberikan hasil 3.</p>
+                                        </li>
+                                        <li>
+                                            <p>Jika Anda memiliki Excel 365, cukup gunakan fungsi <strong>UNIQUE</strong> ajaib untuk mengekstrak nilai unik.</p>
+                                            <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image016.png" alt="Fungsi <strong>UNIQUE</strong>"></p>
+                                            <p class="moreInfo text-break"><strong>Catatan:</strong> fungsi larik dinamis ini, yang dimasukkan ke dalam sel C3, mengisi beberapa sel.</p>
+                                        </li>
+                                        <li>
+                                            <p>Selanjutnya, tambahkan fungsi <strong>COUNTA</strong> untuk menghitung nilai unik di Excel 365.</p>
+                                            <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image017.png" alt="COUNTA dan <strong>UNIQUE</strong>"></p>
+                                        </li>
+                                        <li>
+                                            <p>Rumus di bawah ini menghitung jumlah nilai yang muncul tepat satu kali.</p>
+                                            <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image018.png" alt="Hitung Nilai yang Terjadi Tepat Sekali"></p>
+                                            <p class="moreInfo text-break"><strong>Catatan:</strong> fungsi
+                                                <strong>UNIQUE</strong> memiliki 2 argumen opsional. Nilai default 0 (argumen kedua) memberi tahu fungsi <strong>UNIQUE</strong> untuk mengekstrak nilai dari larik vertikal. Nilai 1 (argumen ketiga) memberi
+                                                tahu fungsi <strong>UNIQUE</strong> untuk mengekstrak nilai yang muncul tepat satu kali.
+                                            </p>
+                                        </li>
+                                    </ol>
                                 </section>
                                 <!-- Count with Or Criteria -->
                                 <section id="ArrayFormulas-details-count-with-or-criteria">

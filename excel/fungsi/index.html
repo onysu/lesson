@@ -328,9 +328,10 @@
                                 <li><a href="#ArrayFormulas-details-sum-with-or-criteria">Jumlahkan dengan Atau
                                         Kriteria</a></li>
                                 <li><a href="#ArrayFormulas-details-most-frequently-occurring-word">Kata yang Paling
-                                        Sering Muncul</</li>a> <li><a
-                                            href="#ArrayFormulas-details-system-of-linear-equations">Sistem Persamaan
+                                        Sering Muncul</a></li>
+                                <li><a href="#ArrayFormulas-details-system-of-linear-equations">Sistem Persamaan
                                             Linier</a></li>
+                                <li><a href="#ArrayFormulas-details-let-function">fungsi LET</a></li>
                             </ul>
                         </div>
                     </div>
@@ -8348,7 +8349,7 @@
                                     <a href="#ArrayFormulas-details-most-frequently-occurring-word">Kata yang Paling
                                         Sering Muncul</a> |
                                     <a href="#ArrayFormulas-details-system-of-linear-equations">Sistem Persamaan
-                                        Linier</a>
+                                        Linier</a> |
                                     <a href="#ArrayFormulas-details-let-function">fungsi LET</a>
                                 </p>
                                 <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/array-formulas.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
@@ -8805,6 +8806,67 @@
                                             <p><img class="img-fluid" src="files/ArrayFormulas-details_files/image048.png" alt=Larutan></p>
                                         </li>
                                     </ol>
+                                </section>
+                                <section id="ArrayFormulas-details-let-function">
+                                    <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                        <div class="fs-4" id="content">Fungsi LET <small class="fw-light small text-muted">(LET function)</small></div>
+                                    </div>
+                                    <p class="fw-light small">
+                                        <a href="#simple-let-function">Fungsi LET sederhana</a> | <a href="#advanced-let-function">Fungsi LET tingkat lanjut</a>
+                                    </p>
+                                    <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/let-function.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                                    <p>Gunakan fungsi <strong>LET</strong> di Excel 365 untuk mendeklarasikan variabel dan menetapkan nilai (atau hasil perhitungan) ke variabel. Selanjutnya, gunakan variabel-variabel ini dalam perhitungan.</p>
+
+                                    <section id="simple-let-function">
+                                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                            <div class="fs-5" id="content">Fungsi LET sederhana</div>
+                                        </div>
+                                        <p>Mari kita mulai dengan contoh yang mudah.</p>
+                                        <ol>
+                                            <li>
+                                                <p>Fungsi <strong>LET</strong> sederhana di bawah ini mendeklarasikan variabel x (dan memberikan nilai 2) dan mendeklarasikan variabel y (dan memberikan nilai 5).</p>
+                                                <p><img src="https://www.excel-easy.com/examples/images/let-function/let-variables.png" class="img-fluid" alt=""></p>
+                                                <p class="moreInfo text-break"><strong>Catatan:</strong> fungsi <strong>LET</strong> dapat menangani hingga 126 pasangan variabel/nilai.</p>
+                                            </li>
+                                            <li>
+                                                <p>Argumen terakhir dari fungsi <strong>LET</strong> selalu berupa perhitungan. Dalam contoh ini, x+y direduksi menjadi 2+5=7.</p>
+                                                <p><img src="https://www.excel-easy.com/examples/images/let-function/simple-let-function.png" class="img-fluid" alt=""></p>
+                                            </li>
+                                        </ol>
+                                    </section>
+
+                                    <section id="advanced-let-function">
+                                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                                            <div class="fs-5" id="content">Fungsi <strong>LET</strong> tingkat lanjut</div>
+                                        </div>
+                                        <p>Mengapa menggunakan fungsi <strong>LET</strong> di Excel ? Fungsi <strong>LET</strong> dapat membuat rumus Anda lebih mudah dibaca. Mari kita lihat contoh yang keren.</p>
+                                        <ol>
+                                            <li>
+                                                <p>Fungsi <strong>VLOOKUP</strong> di bawah ini mengembalikan penjualan ID 14.</p>
+                                                <p><img src="https://www.excel-easy.com/examples/images/let-function/vlookup-function.png" class="img-fluid" alt=""></p>
+                                                <p class="moreInfo text-break"><strong>Catatan:</strong> kunjungi halaman tentang fungsi <strong>VLOOKUP</strong> untuk mempelajari lebih lanjut tentang fungsi Excel ini.</p>
+                                            </li>
+                                            <li>
+                                                <p>Rumus di bawah menghitung bonus (10 persen dari setiap dolar di atas $5.000).</p>
+                                                <p><img src="https://www.excel-easy.com/examples/images/let-function/bonus-calculation.png" class="img-fluid" alt=""></p>
+                                            </li>
+                                            <li>
+                                                <p>Untuk menulis satu rumus, cukup ganti H3 dengan fungsi <strong>VLOOKUP</strong>.</p>
+                                                <p><img src="https://www.excel-easy.com/examples/images/let-function/single-formula.png" class="img-fluid" alt=""></p>
+                                                <p>Rumus <strong>IF</strong> ini cukup sulit untuk dibaca. Cukup gunakan fungsi <strong>LET</strong> agar lebih mudah dibaca.</p>
+                                            </li>
+                                            <li>
+                                                <p>Fungsi <strong>LET</strong> di bawah ini mendeklarasikan variabel Penjualan dan memberikan hasil perhitungan!</p>
+                                                <p><img src="https://www.excel-easy.com/examples/images/let-function/calculation-result.png" class="img-fluid" alt=""></p>
+                                            </li>
+                                            <li>
+                                                <p>Selanjutnya, gunakan variabel Penjualan dalam perhitungan akhir.</p>
+                                                <p><img src="https://www.excel-easy.com/examples/images/let-function/advanced-let-function.png" class="img-fluid" alt=""></p>
+                                            </li>
+                                            <p class="moreInfo text-break"><strong>Catatan:</strong> rumus <strong>IF</strong> sekarang lebih mudah dipahami. Fungsi <strong>LET</strong> ini hanya memiliki 1 pasangan variabel/nilai.</p>
+                                        </ol>
+                                    </section>
                                 </section>
 
                                 <a class="d-flex justify-content-end fw-light" href="#fungsi-array-formulas">kembali

@@ -14,543 +14,561 @@
     <div id="flush-AnalisisData-Filter" class="accordion-collapse collapse" aria-labelledby="Filter" data-bs-parent="#accordionAnalisisDataKonten">
         <div class="accordion-body">
 
-            <section>
-                <p>Filter data Excel Anda jika Anda hanya ingin menampilkan rekaman yang memenuhi kriteria tertentu.</p>
-                <p><a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/filter.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
-                <ol>
-                    <li>Klik salah satu sel di dalam kumpulan data.</li>
-                    <li>
-                        <p>Pada tab Data, di grup Urutkan &amp; Filter, klik Filter.</p>
-                        <p><img class="img-fluid" src="../excel/files/Filter_files/image001.png" alt="Contoh Filter"></p>
-                        <p>Panah di header kolom muncul.</p>
-                        <p><img class="img-fluid" src="../excel/files/Filter_files/image002.png" alt="Filter Panah"></p>
-                    </li>
-                    <li>Klik panah di sebelah Negara.</li>
-                    <li>
-                        <p>Klik Select All untuk menghapus semua kotak centang, dan klik kotak centang di sebelah USA.</p>
-                        <p><img class="img-fluid" src="../excel/files/Filter_files/image003.png" alt="Klik AS"></p>
-                    </li>
-                    <li>
-                        <p>Klik Oke.</p>
-                        <p>Hasil. Excel hanya menampilkan penjualan di AS.</p>
-                        <p><img class="img-fluid" src="../excel/files/Filter_files/image004.png" alt="Filter di Excel"></p>
-                    </li>
-                    <li>Klik panah di sebelah Quarter.</li>
-                    <li>
-                        <p>Klik Select All untuk menghapus semua kotak centang, dan klik kotak centang di sebelah Qtr 4.</p>
-                        <p><img class="img-fluid" src="../excel/files/Filter_files/image005.png" alt="Klik Qtr 4"></p>
-                    </li>
-                    <li>
-                        <p>Klik Oke.</p>
-                        <p>Hasil. Excel hanya menampilkan penjualan di AS dalam Qtr 4.</p>
-                        <p><img class="img-fluid" src="../excel/files/Filter_files/image006.png" alt="Filter di Excel"></p>
-                    </li>
-                    <li>
-                        <p>Untuk menghapus filter, pada tab Data, di grup Sort &amp; Filter, klik Clear. Untuk menghapus filter dan panah, klik Filter.</p>
-                        <p><img class="img-fluid" src="../excel/files/Filter_files/image007.png" alt="Hapus Filter"></p>
-                        <p>Ada cara yang lebih cepat untuk memfilter data Excel.</p>
-                    </li>
-                    <li>
-                        <p> Pilih sel.</p>
-                        <p><img class="img-fluid" src="../excel/files/Filter_files/image008.png" alt="Filter berdasarkan Pilihan"></p>
-                    </li>
-                    <li>
-                        <p> Klik kanan, lalu klik Filter, Filter by Selected Cell's Value.</p>
-                        <p><img class="img-fluid" src="../excel/files/Filter_files/image009.png" alt="Filter berdasarkan Nilai Sel yang Dipilih"></p>
-                        <p>Hasil. Excel hanya menampilkan penjualan di AS.</p>
-                        <p><img class="img-fluid" src="../excel/files/Filter_files/image010.png" alt="Data yang Difilter">
-                        </p>
-                        <p class="info"><strong>Catatan:</strong> cukup pilih sel lain di kolom lain untuk memfilter kumpulan data ini lebih lanjut.</p>
-                    </li>
-                </ol>
-                <a class="d-flex justify-content-end" href="#Filter">kembali keatas</a>
-            </section>
+
 
             <section id="ContohPenggunaanFilter">
                 <details>
                     <summary class="lead border-bottom py-2">Contoh Penggunaan Filter</summary>
-                    <p class="link-text mt-2">
-                        <a href="#NumberandTextFilters">Filter Angka dan Teks</a> |
-                        <a href="#FilterTanggal">Filter Tanggal</a> |
-                        <a href="#FilterTingkatLanjut">Filter Tingkat Lanjut</a> |
-                        <a href="#FormulirData">Formulir Data</a> |
-                        <a href="#HapusDuplikat">Hapus Duplikat</a> |
-                        <a href="#MenguraikanData">Menguraikan Data</a> |
-                        <a href="#Subtotal">Subtotal</a> |
-                        <a href="#NilaiUnik">Nilai Unik</a> |
-                        <a href="#FungsiFILTER">Fungsi FILTER Excel 365</a>
-                    </p>
-                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
-                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/number-text-filters.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-                        <p class="bd-lead mb-0" id="NumberandTextFilters">Filter Angka dan Teks</p>
-                    </div>
-                    <p>
-                        <a href="#FilterAngka">Filter Angka</a> |
-                        <a href="#FilterTeks">Filter Teks</a>
-                    </p>
-                    <p>Contoh ini mengajarkan Anda cara menerapkan filter angka dan filter teks untuk hanya menampilkan rekaman yang memenuhi kriteria tertentu.</p>
-                    <ol>
-                        <li>Klik salah satu sel di dalam kumpulan data.</li>
-                        <li>
-                            <p>Pada tab Data, di grup Urutkan &amp; Filter, klik Filter.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image001.png" alt="Klik Filter"></p>
-                            <p>Panah di header kolom muncul.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image002.png" alt="Filter Panah"></p>
-                        </li>
-                    </ol>
-                    <p class="h5" id="FilterAngka">
-                        Filter Angka</p>
-                    <p>Untuk menerapkan filter angka, jalankan langkah-langkah berikut.</p>
-                    <ol>
-                        <li>Klik panah di sebelah Penjualan.</li>
-                        <li>
-                            <p>Klik Filter Angka (opsi ini tersedia karena kolom Penjualan berisi data numerik) dan pilih Lebih Besar Dari dari daftar.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image011.png" alt="Filter Angka di Excel"></p>
-                        </li>
-                        <li>
-                            <p>Masukkan 10.000 dan klik OK.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image012.png" alt="Filter Otomatis Kustom"></p>
-                            <p>Hasil. Excel hanya menampilkan catatan di mana Penjualan lebih besar dari $10.000.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image013.png" alt="Hasil Filter Angka"></p>
-                            <p class="info"><strong>Catatan:</strong> Anda juga dapat menampilkan catatan yang sama dengan nilai, kurang dari nilai, di antara dua nilai, catatan x teratas, catatan yang di atas rata-rata, dll. Langit adalah batasnya!
+
+
+
+
+
+                    <section id="NumberandTextFilters">
+                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                            <div class="fs-4" id="content">Filter Nomor dan Teks <small class="fw-light small text-muted">(Number and Text Filters)</small></div>
+                        </div>
+                        <p class="fw-light small">
+                            <a href="#FilterAngka">Filter Angka</a> |
+                            <a href="#FilterTeks">Filter Teks</a>
+                        </p>
+                        <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/number-text-filters.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                        <p>Contoh ini mengajarkan Anda cara menerapkan filter angka dan filter teks untuk hanya menampilkan rekaman yang memenuhi kriteria tertentu.</p>
+                        <ol>
+                            <li>Klik salah satu sel di dalam kumpulan data.</li>
+                            <li>
+                                <p>Pada tab Data, di grup Urutkan &amp; Filter, klik Filter.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image001.png" alt="Klik Filter"></p>
+                                <p>Panah di header kolom muncul.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image002.png" alt="Filter Panah"></p>
+                            </li>
+                        </ol>
+
+                        <section id="FilterAngka">
+                            <p class="h5">
+                                Filter Angka</p>
+                            <p>Untuk menerapkan filter angka, jalankan langkah-langkah berikut.</p>
+                            <ol>
+                                <li>Klik panah di sebelah Penjualan.</li>
+                                <li>
+                                    <p>Klik Filter Angka (opsi ini tersedia karena kolom Penjualan berisi data numerik) dan pilih Lebih Besar Dari dari daftar.</p>
+                                    <p><img class="img-fluid" src="files/Filter_files/image011.png" alt="Filter Angka di Excel"></p>
+                                </li>
+                                <li>
+                                    <p>Masukkan 10.000 dan klik OK.</p>
+                                    <p><img class="img-fluid" src="files/Filter_files/image012.png" alt="Filter Otomatis Kustom"></p>
+                                    <p>Hasil. Excel hanya menampilkan catatan di mana Penjualan lebih besar dari $10.000.</p>
+                                    <p><img class="img-fluid" src="files/Filter_files/image013.png" alt="Hasil Filter Angka"></p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> Anda juga dapat menampilkan catatan yang sama dengan nilai, kurang dari nilai, di antara dua nilai, catatan x teratas, catatan yang di atas rata-rata, dll. Langit adalah batasnya!
+                                    </p>
+                                </li>
+                            </ol>
+                        </section>
+
+                        <section id="FilterTeks">
+                            <p class="h5">
+                                Filter Teks</p>
+                            <p>Untuk menerapkan filter teks, jalankan langkah-langkah berikut.</p>
+                            <ol>
+                                <li>Klik panah di sebelah Nama Belakang.</li>
+                                <li>
+                                    <p>Klik Filter Teks (opsi ini tersedia karena kolom Nama Belakang berisi data teks) dan pilih Sama dengan dari daftar.</p>
+                                    <p><img class="img-fluid" src="files/Filter_files/image014.png" alt="Filter Teks di Excel"></p>
+                                </li>
+                                <li>
+                                    <p>Masukkan ?m* dan klik OK.</p>
+                                    <p><img class="img-fluid" src="files/Filter_files/image015.png" alt="Filter Otomatis Kustom"></p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> Tanda tanya (?) cocok dengan tepat satu karakter. Tanda bintang (*) cocok dengan serangkaian karakter nol atau lebih.</p>
+                                    <p>Hasil. Excel hanya menampilkan catatan di mana karakter kedua Nama Belakang sama dengan m.
+                                    </p>
+                                    <p><img class="img-fluid" src="files/Filter_files/image016.png" alt="Hasil Filter Teks"></p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> Anda juga dapat menampilkan catatan yang dimulai dengan karakter tertentu, diakhiri dengan karakter tertentu, berisi atau tidak berisi karakter tertentu, dll. Langit adalah batasnya!
+                                    </p>
+                                </li>
+                            </ol>
+                        </section>
+                    </section>
+
+                    <section id="FilterTanggal">
+                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                            <div class="fs-4" id="content">Filter Tanggal <small class="fw-light small text-muted">(Date Filters)</small></div>
+                        </div>
+                        <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/date-filters.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                        <p>Contoh ini mengajarkan Anda cara menerapkan filter tanggal untuk hanya menampilkan rekaman yang memenuhi kriteria tertentu.</p>
+                        <ol>
+                            <li>Klik salah satu sel di dalam kumpulan data.</li>
+                            <li>
+                                <p>Pada tab Data, di grup Urutkan &amp; Filter, klik Filter.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image001.png" alt="Klik Filter"></p>
+                                <p>Panah di header kolom muncul.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image017.png" alt="Filter Panah"></p>
+                            </li>
+                            <li>Klik panah di sebelah Tanggal.</li>
+                            <li>
+                                <p>Klik Select All untuk menghapus semua kotak centang, klik tanda + di sebelah 2015, dan klik kotak centang di sebelah Januari.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image018.png" alt="Klik 2015, Januari"></p>
+                            </li>
+                            <li>
+                                <p>Klik Oke.</p>
+                                <p>Hasil. Excel hanya menampilkan penjualan pada tahun 2015, pada bulan Januari.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image019.png" alt="Hasil Filter"></p>
+                            </li>
+                            <li>Klik panah di sebelah Tanggal.</li>
+                            <li>Klik Select All untuk memilih semua kotak centang.</li>
+                            <li>
+                                <p>Klik Filter Tanggal (opsi ini tersedia karena kolom Tanggal berisi tanggal) dan pilih Bulan Terakhir dari daftar.
+                                </p>
+                                <p><img class="img-fluid" src="files/Filter_files/image020.png" alt="Filter Tanggal di Excel"></p>
+                                <p>Hasil. Excel hanya menampilkan penjualan bulan lalu.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image021.png" alt="Bulan lalu"></p>
+                                <p class="moreInfo text-break"><strong>Catatan:</strong> filter tanggal ini dan banyak filter tanggal lainnya bergantung pada tanggal hari ini.</p>
+                            </li>
+                        </ol>
+                    </section>
+
+                    <section id="FilterTingkatLanjut">
+                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                            <div class="fs-4" id="content">Filter Tingkat Lanjut <small class="fw-light small text-muted">(Advanced Filter)</small></div>
+                        </div>
+                        <p class="fw-light small">
+                            <a href="#AndKriteria">Dan Kriteria</a> |
+                            <a href="#OrKriteria">Or Kriteria</a> |
+                            <a href="#RumussebagaiKriteria">Rumus sebagai Kriteria</a>
+                        </p>
+                        <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/filter-lanjutan.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                        <p>Contoh ini mengajarkan Anda bagaimana menerapkan filter lanjutan di Excel untuk hanya menampilkan catatan yang memenuhi kriteria kompleks.</p>
+                        <p>Saat Anda menggunakan Filter Tingkat Lanjut, Anda harus memasukkan kriteria pada lembar kerja. Buat rentang Kriteria (batas biru di bawah hanya untuk ilustrasi) di atas kumpulan data Anda. Gunakan header kolom yang sama. Pastikan
+                            setidaknya ada satu baris kosong antara rentang Kriteria dan kumpulan data Anda.</p>
+
+                        <sect5 id="AndKriteria">
+                            <p class="h5">
+                                And Kriteria</p>
+                            <p>Untuk menampilkan penjualan di AS dan di Qtr 4, lakukan langkah-langkah berikut.</p>
+                            <ol>
+                                <li>
+                                    <p>Masukkan kriteria yang ditunjukkan di bawah ini pada lembar kerja.</p>
+                                    <p><img class="img-fluid" src="files/Filter_files/image022.png" alt="Contoh Filter Lanjutan di Excel"></p>
+                                </li>
+                                <li>Klik salah satu sel di dalam kumpulan data.</li>
+                                <li>
+                                    <p>Pada tab Data, di grup Urutkan &amp; Filter, klik Lanjutan.</p>
+                                    <p><img class="img-fluid" src="files/Filter_files/image023.png" alt="Klik Lanjutan">
+                                    </p>
+                                </li>
+                                <li>Klik pada kotak Criteria range dan pilih range A1:D2 (biru).</li>
+                                <li>
+                                    <p>Klik Oke.</p>
+                                    <p><img class="img-fluid" src="files/Filter_files/image024.png" alt="Dan Kriteria"></p>
+                                    <p>Perhatikan opsi untuk menyalin kumpulan data yang difilter ke lokasi lain dan hanya menampilkan catatan unik (jika kumpulan data Anda berisi duplikat).</p>
+                                    <p>Hasil.</p>
+                                    <p><img class="img-fluid" src="files/Filter_files/image025.png" alt="Dan Kriteria Hasil"></p>
+                                    <p>Tidak ada ilmu roket sejauh ini. Kami dapat mencapai hasil yang sama dengan filter normal. Kami membutuhkan Filter Lanjutan untuk kriteria Or.</p>
+                                </li>
+                            </ol>
+                        </sect5>
+
+                        <section id="OrKriteria">
+                            <p class="h5">
+                                Or Kriteria</p>
+                            <p>Untuk menampilkan penjualan di AS di Qtr 4 atau di Inggris di Qtr 1, lakukan langkah-langkah berikut.
                             </p>
-                        </li>
-                    </ol>
-                    <p class="h5" id="FilterTeks">
-                        Filter Teks</p>
-                    <p>Untuk menerapkan filter teks, jalankan langkah-langkah berikut.</p>
-                    <ol>
-                        <li>Klik panah di sebelah Nama Belakang.</li>
-                        <li>
-                            <p>Klik Filter Teks (opsi ini tersedia karena kolom Nama Belakang berisi data teks) dan pilih Sama dengan dari daftar.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image014.png" alt="Filter Teks di Excel"></p>
-                        </li>
-                        <li>
-                            <p>Masukkan ?m* dan klik OK.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image015.png" alt="Filter Otomatis Kustom"></p>
-                            <p class="info"><strong>Catatan:</strong> Tanda tanya (?) cocok dengan tepat satu karakter. Tanda bintang (*) cocok dengan serangkaian karakter nol atau lebih.</p>
-                            <p>Hasil. Excel hanya menampilkan catatan di mana karakter kedua Nama Belakang sama dengan m.
+                            <ol>
+                                <li>Masukkan kriteria yang ditunjukkan di bawah ini pada lembar kerja.</li>
+                                <li>Pada tab Data, di grup Sortir &amp; Filter, klik Lanjutan, dan sesuaikan rentang Kriteria ke rentang A1:D3 (biru).
+                                </li>
+                                <li>
+                                    <p>Klik Oke.</p>
+                                    <p><img class="img-fluid" src="files/Filter_files/image026.png" alt="Atau Kriteria">
+                                    </p>
+                                    <p>Hasil.</p>
+                                    <p><img class="img-fluid" src="files/Filter_files/image027.png" alt="Atau Kriteria Hasil"></p>
+                                </li>
+                            </ol>
+                        </section>
+
+                        <section id="RumussebagaiKriteria">
+                            <p class="h5">
+                                Rumus sebagai Kriteria</p>
+                            <p>Untuk menampilkan penjualan di AS di Qtr 4 lebih besar dari $10.000 atau di Inggris di Qtr 1, jalankan langkah-langkah berikut.</p>
+                            <ol>
+                                <li>Masukkan kriteria (+rumus) yang ditunjukkan di bawah ini pada lembar kerja.</li>
+                                <li>Pada tab Data, di grup Sort &amp; Filter, klik Advanced, dan sesuaikan rentang Kriteria ke rentang A1:E3 (biru).
+                                </li>
+                                <li>
+                                    <p>Klik Oke.</p>
+                                    <p><img class="img-fluid" src="files/Filter_files/image028.png" alt="Rumus sebagai Kriteria"></p>
+                                    <p>Hasil.</p>
+                                    <p><img class="img-fluid" src="files/Filter_files/image029.png" alt="Rumus sebagai Hasil Kriteria">
+                                    </p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> selalu tempatkan rumus di kolom baru. Jangan gunakan label kolom atau gunakan label kolom yang tidak ada dalam kumpulan data Anda. Buat referensi relatif ke sel pertama di kolom (B6). Rumus
+                                        harus mengevaluasi ke TRUE atau FALSE.</p>
+                                </li>
+                            </ol>
+                        </section>
+                    </section>
+
+                    <section id="FormulirData">
+                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                            <div class="fs-4" id="content">Formulir Data <small class="fw-light small text-muted">(Data Form)</small></div>
+                        </div>
+                        <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/data-form.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                        <p>Data Formulir di Excel memungkinkan Anda untuk menambahkan, mengedit, dan catatan delete (baris) dan hanya menampilkan catatan-catatan yang memenuhi kriteria tertentu. Terutama ketika Anda memiliki baris yang lebar dan Anda ingin
+                            menghindari pengguliran berulang ke kanan dan kiri, formulir data dapat berguna.</p>
+                        <ol>
+                            <li>
+                                <p>Buka file Excel yang dapat diunduh.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image030.png" alt="Contoh Formulir Data"></p>
+                            </li>
+                            <li>Tambahkan perintah Formulir ke <a href="#">Toolbar Akses Cepat</a>.</li>
+                            <li>Klik perintah Formulir.</li>
+                            <li>
+                                <p>Gunakan tombol Temukan Sebelumnya dan Temukan Berikutnya untuk beralih dengan mudah dari satu rekaman (baris) ke rekaman lainnya.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image031.png" alt="Temukan Berikutnya"></p>
+                                <p class="moreInfo text-break"><strong>Catatan:</strong> gunakan tombol Baru atau Hapus untuk menambah atau menghapus rekaman. Setelah Anda mulai mengedit rekaman, Anda dapat menggunakan tombol Pulihkan untuk membatalkan perubahan apa pun yang Anda buat.</p>
+                            </li>
+                            <li>Untuk menampilkan hanya record yang memenuhi kriteria tertentu, klik tombol Criteria.</li>
+                            <li>
+                                <p>Masukkan kriteria dan klik tombol Form.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image032.png" alt="Masukkan Kriteria"></p>
+                            </li>
+                            <li>
+                                <p>Sekarang, saat Anda menggunakan tombol Temukan Sebelumnya dan Temukan Berikutnya, Anda hanya akan melihat catatan yang memenuhi kriteria ini. Dalam contoh kita, hanya mencatat 13.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image033.png" alt="Rekaman yang Difilter"></p>
+                                <p class="moreInfo text-break"><strong>Catatan:</strong> untuk mengedit kriteria, klik tombol Kriteria lagi. Untuk menutup formulir data, klik tombol Tutup.</p>
+                            </li>
+                        </ol>
+                    </section>
+
+                    <section id="HapusDuplikat">
+                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                            <div class="fs-4" id="content">Hapus Duplikat <small class="fw-light small text-muted">(Remove Duplicates)</small></div>
+                        </div>
+                        <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/hapus-duplikat.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                        <p>Contoh ini mengajarkan Anda cara menghapus duplikat di Excel.</p>
+                        <ol>
+                            <li>Klik salah satu sel di dalam kumpulan data.</li>
+                            <li>
+                                <p>Pada tab Data, dalam grup Alat Data, klik Hapus Duplikat.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image034.png" alt="Klik Hapus Duplikat"></p>
+                                <p>Kotak dialog berikut muncul.</p>
+                            </li>
+                            <li>
+                                <p>Biarkan semua kotak centang dicentang dan klik OK.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image035.png" alt="Hapus Duplikat Kotak Dialog">
+                                </p>
+                                <p>Hasil. Excel menghapus semua baris identik (biru) kecuali baris identik pertama yang ditemukan (kuning).
+                                </p>
+                                <p><img class="img-fluid" src="files/Filter_files/image036.png" alt="Hapus Duplikat Contoh"> <img class="img-fluid" src="files/Filter_files/image037.png" alt="Hapus Hasil Duplikat"></p>
+                                <p>Untuk menghapus baris dengan nilai yang sama di kolom tertentu, jalankan langkah-langkah berikut.
+                                </p>
+                            </li>
+                            <li>Misalnya, hapus baris dengan Nama Belakang dan Negara yang sama.</li>
+                            <li>
+                                <p>Periksa Nama Belakang dan Negara dan klik OK.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image038.png" alt="Pilih Kolom"></p>
+                                <p>Hasil. Excel menghapus semua baris dengan Nama Belakang dan Negara yang sama (biru) kecuali untuk contoh pertama yang ditemukan (kuning).</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image039.png" alt="Hapus Duplikat Contoh"> <img class="img-fluid" src="files/Filter_files/image040.png" alt="Hapus Hasil Duplikat"></p>
+                                <p>Mari kita lihat satu lagi fitur Excel keren yang menghapus duplikat. Anda dapat menggunakan Filter Tingkat Lanjut untuk mengekstrak baris unik (atau nilai unik dalam kolom).</p>
+                            </li>
+                            <li>
+                                <p>Pada tab Data, dalam grup Sort &amp; Filter, klik Advanced.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image023.png" alt="Klik Lanjutan">
+                                </p>
+                                <p>Kotak dialog Filter Lanjutan muncul.</p>
+                            </li>
+                            <li>Klik Salin ke lokasi lain.</li>
+                            <li>Klik pada kotak List range dan pilih range A1:A17 (lihat gambar di bawah).</li>
+                            <li>Klik pada kotak Salin ke dan pilih sel F1 (lihat gambar di bawah).</li>
+                            <li>
+                                <p>Periksa Catatan unik saja.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image041.png" alt="Hanya Catatan Unik"></p>
+                            </li>
+                            <li>
+                                <p>Klik Oke.</p>
+                                <p>Hasil. Excel menghapus semua duplikat nama belakang dan mengirimkan hasilnya ke kolom F.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image042.png" alt="Nilai Unik"></p>
+                                <p class="moreInfo text-break"><strong>Catatan:</strong> pada langkah 8, alih-alih memilih rentang A1:A17, pilih rentang A1:D17 untuk mengekstrak baris unik.</p>
+                            </li>
+                            <li>
+                                <p>Terakhir, Anda dapat menggunakan pemformatan bersyarat di Excel untuk menyorot nilai duplikat.
+                                </p>
+                                <p><img class="img-fluid" src="files/Filter_files/image043.png" alt="Nilai Duplikat">
+                                </p>
+                            </li>
+                            <li>
+                                <p>Atau gunakan pemformatan bersyarat di Excel untuk menyorot baris duplikat.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image044.png" alt="Baris Duplikat">
+                                </p>
+                                <p class="moreInfo text-break"><strong>Tip:</strong> kunjungi halaman kami tentang <a href="#">menemukan
+                                        duplikat</a> untuk mempelajari lebih lanjut tentang trik ini.</p>
+                            </li>
+                        </ol>
+                    </section>
+
+                    <section id="MenguraikanData">
+                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                            <div class="fs-4" id="content">Menguraikan Data <small class="fw-light small text-muted">(Outlining Data)</small></div>
+                        </div>
+                        <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/outlining-data.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                        <p>Menguraikan data membuat data Anda lebih mudah dilihat. Dalam contoh ini kita akan menjumlahkan baris data terkait dan menciutkan sekelompok kolom.</p>
+                        <ol>
+                            <li>
+                                <p>Pertama, <a href="#">urutkan</a> data pada kolom Perusahaan.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image045.png" alt="Urutkan pada Satu Kolom"></p>
+                            </li>
+                            <li>
+                                <p>Pada tab Data, di grup Outline, klik Subtotal .</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image046.png" alt="Klik Subtotal">
+                                </p>
+                            </li>
+                            <li>Pilih kolom Company, kolom yang kita gunakan untuk outline lembar kerja kita.</li>
+                            <li>Gunakan fungsi Hitung.</li>
+                            <li>Centang kotak Perusahaan.</li>
+                            <li>
+                                <p>Klik Oke.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image047.png" alt="Kotak Dialog Subtotal"></p>
+                                <p>Hasil:</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image048.png" alt="Ciutkan Grup Sel">
+                                </p>
+                            </li>
+                            <li>
+                                <p>Untuk menciutkan sekelompok sel, klik tanda minus. Anda dapat menggunakan angka untuk menciutkan atau memperluas grup berdasarkan level. Misalnya, klik 2 untuk hanya menampilkan subtotal.
+                                </p>
+                                <p><img class="img-fluid" src="files/Filter_files/image049.png" alt=Subtotal></p>
+                                <p class="moreInfo text-break"><strong>Catatan:</strong> klik 1 untuk hanya menampilkan Grand Count, klik 3 untuk menampilkan semuanya.</p>
+                                <p>Untuk menciutkan sekelompok kolom, jalankan langkah-langkah berikut.</p>
+                            </li>
+                            <li>Misalnya, pilih kolom A dan B.</li>
+                            <li>
+                                <p>Pada tab Data, di grup Outline, klik Group.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image050.png" alt="Klik Grup"></p>
+                            </li>
+                            <li>
+                                <p>Klik tanda minus di atas kolom C (akan berubah menjadi tanda plus).</p>
+                                <p>Hasil:</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image051.png" alt="Grup Kolom yang Diciutkan">
+                                </p>
+                            </li>
+                            <li>
+                                <p>Untuk menghapus kerangka, klik sel mana pun di dalam kumpulan data dan pada tab Data, di grup Kerangka, klik Subtotal, Hapus semua.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image052.png" alt="Hapus semua"></p>
+                            </li>
+                        </ol>
+                    </section>
+
+                    <section id="Subtotal">
+                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                            <div class="fs-4" id="content">Subtotal</div>
+                        </div>
+                        <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/subtotal.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                        <p><a href="#BarisTersembunyiolehFilter">Baris Tersembunyi oleh Filter</a> | <a href="#BarisTersembunyiSecaraManual">Baris Tersembunyi Secara Manual</a></p>
+                        <p>Gunakan fungsi SUBTOTAL di Excel alih-alih SUM, COUNT, MAX, dll. untuk mengabaikan baris yang disembunyikan oleh filter atau untuk mengabaikan baris yang disembunyikan secara manual.</p>
+                        <p class="h5" id="BarisTersembunyiolehFilter">
+                            Baris Tersembunyi oleh Filter</p>
+                        <ol>
+                            <li>
+                                <p>Misalnya, fungsi SUM di bawah ini menghitung total penjualan.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image053.png" alt="Jumlahkan Fungsi di Excel">
+                                </p>
+                            </li>
+                            <li>Terapkan filter.</li>
+                            <li>
+                                <p>Fungsi SUM menyertakan baris yang disembunyikan oleh filter.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image054.png" alt="Baris Tersembunyi oleh Filter Termasuk"></p>
+                            </li>
+                            <li>
+                                <p>Fungsi SUBTOTAL mengabaikan baris yang disembunyikan oleh filter dan menghitung hasil yang benar.
+                                </p>
+                                <p><img class="img-fluid" src="files/Filter_files/image055.png" alt="Fungsi Subtotal Mengabaikan Baris yang Disembunyikan oleh Filter"></p>
+                                <p class="moreInfo text-break"><strong>Catatan:</strong> 109 adalah argumen untuk Sum jika Anda menggunakan fungsi SUBTOTAL.
+                                </p>
+                            </li>
+                            <li>
+                                <p>Tidak mudah untuk mengingat argumen mana yang termasuk dalam fungsi yang mana. Untungnya, fitur AutoComplete di Excel membantu Anda dalam hal ini.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image056.png" alt="Argumen Pertama dari Fungsi Subtotal di Excel"></p>
+                                <p class="moreInfo text-break"><strong>Catatan:</strong> daripada menggunakan 101 (AVERAGE) untuk argumen pertama, Anda juga dapat menggunakan 1 (AVERAGE), daripada menggunakan 102 (COUNT), Anda juga dapat menggunakan 2 (COUNT), dll. Saat memfilter data,
+                                    tidak ada perbedaan antara angka 101-111 dan angka 1-11. Kami merekomendasikan menggunakan angka 101-111 karena Excel menggunakan angka-angka ini dalam <a href="#">baris total</a> di akhir tabel.
+                                </p>
+                            </li>
+                        </ol>
+                        <p class="h5" id="BarisTersembunyiSecaraManual">Baris Tersembunyi Secara Manual</p>
+                        <ol>
+                            <li>
+                                <p>Misalnya, fungsi SUM di bawah ini menjumlahkan rentang sel.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image057.png" alt="Fungsi Dasar di Excel"></p>
+                            </li>
+                            <li><a href="#">Sembunyikan</a> baris 2.</li>
+                            <li>
+                                <p>Fungsi SUM menyertakan baris yang disembunyikan secara manual.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image058.png" alt="Termasuk Baris Tersembunyi Secara Manual"></p>
+                            </li>
+                            <li>
+                                <p>Fungsi SUBTOTAL mengabaikan baris yang disembunyikan secara manual dan menghitung hasil yang benar.
+                                </p>
+                                <p><img class="img-fluid" src="files/Filter_files/image059.png" alt="Fungsi Subtotal Mengabaikan Baris Tersembunyi Secara Manual"></p>
+                                <p class="moreInfo text-break"><strong>Catatan:</strong> angka 101-111 mengabaikan baris yang disembunyikan secara manual. Namun, angka 1-11 menyertakan baris yang disembunyikan secara manual!</p>
+                            </li>
+                        </ol>
+                    </section>
+
+                    <section id="NilaiUnik">
+                        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                            <div class="fs-4" id="content">Nilai Unik <small class="fw-light small text-muted">(Unique Values)</small></div>
+                        </div>
+                        <p class="fw-light small">
+                            <a href="#EkstrakNilaiUnik">Ekstrak Nilai Unik</a> |
+                            <a href="#FilteruntukNilaiUnik">Filter untuk Nilai Unik</a> |
+                            <a href="#FungsiUnik">Fungsi Unik</a> |
+                            <a href="#NilaiUnik-HapusDuplikat">Hapus Duplikat</a>
+                        </p>
+                        <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/unik-nilai.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
+                        <p>Untuk mengekstrak nilai unik di Excel atau untuk memfilter nilai unik, gunakan Filter Tingkat Lanjut. Jika Anda memiliki Excel 365, cukup gunakan fungsi UNIK ajaib untuk mengekstrak nilai unik.</p>
+
+                        <section id="EkstrakNilaiUnik">
+                            <p class="h5">
+                                Ekstrak Nilai Unik</p>
+                            <p>Saat menggunakan Filter Tingkat Lanjut di Excel, selalu masukkan label teks di bagian atas setiap kolom data.
                             </p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image016.png" alt="Hasil Filter Teks"></p>
-                            <p class="info"><strong>Catatan:</strong> Anda juga dapat menampilkan catatan yang dimulai dengan karakter tertentu, diakhiri dengan karakter tertentu, berisi atau tidak berisi karakter tertentu, dll. Langit adalah batasnya!
-                            </p>
-                        </li>
-                    </ol>
-                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
-                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/date-filters.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-                        <p class="bd-lead mb-0" id="FilterTanggal">Filter Tanggal</p>
-                    </div>
-                    <p>Contoh ini mengajarkan Anda cara menerapkan filter tanggal untuk hanya menampilkan rekaman yang memenuhi kriteria tertentu.</p>
-                    <ol>
-                        <li>Klik salah satu sel di dalam kumpulan data.</li>
-                        <li>
-                            <p>Pada tab Data, di grup Urutkan &amp; Filter, klik Filter.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image001.png" alt="Klik Filter"></p>
-                            <p>Panah di header kolom muncul.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image017.png" alt="Filter Panah"></p>
-                        </li>
-                        <li>Klik panah di sebelah Tanggal.</li>
-                        <li>
-                            <p>Klik Select All untuk menghapus semua kotak centang, klik tanda + di sebelah 2015, dan klik kotak centang di sebelah Januari.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image018.png" alt="Klik 2015, Januari"></p>
-                        </li>
-                        <li>
-                            <p>Klik Oke.</p>
-                            <p>Hasil. Excel hanya menampilkan penjualan pada tahun 2015, pada bulan Januari.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image019.png" alt="Hasil Filter"></p>
-                        </li>
-                        <li>Klik panah di sebelah Tanggal.</li>
-                        <li>Klik Select All untuk memilih semua kotak centang.</li>
-                        <li>
-                            <p>Klik Filter Tanggal (opsi ini tersedia karena kolom Tanggal berisi tanggal) dan pilih Bulan Terakhir dari daftar.
-                            </p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image020.png" alt="Filter Tanggal di Excel"></p>
-                            <p>Hasil. Excel hanya menampilkan penjualan bulan lalu.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image021.png" alt="Bulan lalu"></p>
-                            <p class="info"><strong>Catatan:</strong> filter tanggal ini dan banyak filter tanggal lainnya bergantung pada tanggal hari ini.</p>
-                        </li>
-                    </ol>
-                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
-                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/filter-lanjutan.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-                        <p class="bd-lead mb-0" id="FilterTingkatLanjut">Filter Tingkat Lanjut</p>
-                    </div>
-                    <p><a href="#AndKriteria">Dan Kriteria</a> | <a href="#OrKriteria">Or Kriteria</a> | <a href="#RumussebagaiKriteria">Rumus sebagai Kriteria</a></p>
-                    <p>Contoh ini mengajarkan Anda bagaimana menerapkan filter lanjutan di Excel untuk hanya menampilkan catatan yang memenuhi kriteria kompleks.</p>
-                    <p>Saat Anda menggunakan Filter Tingkat Lanjut, Anda harus memasukkan kriteria pada lembar kerja. Buat rentang Kriteria (batas biru di bawah hanya untuk ilustrasi) di atas kumpulan data Anda. Gunakan header kolom yang sama. Pastikan setidaknya
-                        ada satu baris kosong antara rentang Kriteria dan kumpulan data Anda.</p>
-                    <p class="h5" id="AndKriteria">
-                        And Kriteria</p>
-                    <p>Untuk menampilkan penjualan di AS dan di Qtr 4, lakukan langkah-langkah berikut.</p>
-                    <ol>
-                        <li>
-                            <p>Masukkan kriteria yang ditunjukkan di bawah ini pada lembar kerja.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image022.png" alt="Contoh Filter Lanjutan di Excel"></p>
-                        </li>
-                        <li>Klik salah satu sel di dalam kumpulan data.</li>
-                        <li>
-                            <p>Pada tab Data, di grup Urutkan &amp; Filter, klik Lanjutan.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image023.png" alt="Klik Lanjutan">
-                            </p>
-                        </li>
-                        <li>Klik pada kotak Criteria range dan pilih range A1:D2 (biru).</li>
-                        <li>
-                            <p>Klik Oke.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image024.png" alt="Dan Kriteria"></p>
-                            <p>Perhatikan opsi untuk menyalin kumpulan data yang difilter ke lokasi lain dan hanya menampilkan catatan unik (jika kumpulan data Anda berisi duplikat).</p>
-                            <p>Hasil.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image025.png" alt="Dan Kriteria Hasil"></p>
-                            <p>Tidak ada ilmu roket sejauh ini. Kami dapat mencapai hasil yang sama dengan filter normal. Kami membutuhkan Filter Lanjutan untuk kriteria Or.</p>
-                        </li>
-                    </ol>
-                    <p class="h5" id="OrKriteria">
-                        Or Kriteria</p>
-                    <p>Untuk menampilkan penjualan di AS di Qtr 4 atau di Inggris di Qtr 1, lakukan langkah-langkah berikut.
-                    </p>
-                    <ol>
-                        <li>Masukkan kriteria yang ditunjukkan di bawah ini pada lembar kerja.</li>
-                        <li>Pada tab Data, di grup Sortir &amp; Filter, klik Lanjutan, dan sesuaikan rentang Kriteria ke rentang A1:D3 (biru).
-                        </li>
-                        <li>
-                            <p>Klik Oke.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image026.png" alt="Atau Kriteria">
-                            </p>
-                            <p>Hasil.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image027.png" alt="Atau Kriteria Hasil"></p>
-                        </li>
-                    </ol>
-                    <p class="h5" id="RumussebagaiKriteria">
-                        Rumus sebagai Kriteria</p>
-                    <p>Untuk menampilkan penjualan di AS di Qtr 4 lebih besar dari $10.000 atau di Inggris di Qtr 1, jalankan langkah-langkah berikut.</p>
-                    <ol>
-                        <li>Masukkan kriteria (+rumus) yang ditunjukkan di bawah ini pada lembar kerja.</li>
-                        <li>Pada tab Data, di grup Sort &amp; Filter, klik Advanced, dan sesuaikan rentang Kriteria ke rentang A1:E3 (biru).
-                        </li>
-                        <li>
-                            <p>Klik Oke.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image028.png" alt="Rumus sebagai Kriteria"></p>
-                            <p>Hasil.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image029.png" alt="Rumus sebagai Hasil Kriteria">
-                            </p>
-                            <p class="info"><strong>Catatan:</strong> selalu tempatkan rumus di kolom baru. Jangan gunakan label kolom atau gunakan label kolom yang tidak ada dalam kumpulan data Anda. Buat referensi relatif ke sel pertama di kolom (B6). Rumus harus mengevaluasi
-                                ke TRUE atau FALSE.</p>
-                        </li>
-                    </ol>
-                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
-                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/data-form.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-                        <p class="bd-lead mb-0" id="FormulirData">Formulir Data</p>
-                    </div>
-                    <p>Data Formulir di Excel memungkinkan Anda untuk menambahkan, mengedit, dan catatan delete (baris) dan hanya menampilkan catatan-catatan yang memenuhi kriteria tertentu. Terutama ketika Anda memiliki baris yang lebar dan Anda ingin menghindari
-                        pengguliran berulang ke kanan dan kiri, formulir data dapat berguna.</p>
-                    <ol>
-                        <li>
-                            <p>Buka file Excel yang dapat diunduh.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image030.png" alt="Contoh Formulir Data"></p>
-                        </li>
-                        <li>Tambahkan perintah Formulir ke <a href="#">Toolbar Akses Cepat</a>.</li>
-                        <li>Klik perintah Formulir.</li>
-                        <li>
-                            <p>Gunakan tombol Temukan Sebelumnya dan Temukan Berikutnya untuk beralih dengan mudah dari satu rekaman (baris) ke rekaman lainnya.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image031.png" alt="Temukan Berikutnya"></p>
-                            <p class="info"><strong>Catatan:</strong> gunakan tombol Baru atau Hapus untuk menambah atau menghapus rekaman. Setelah Anda mulai mengedit rekaman, Anda dapat menggunakan tombol Pulihkan untuk membatalkan perubahan apa pun yang Anda buat.</p>
-                        </li>
-                        <li>Untuk menampilkan hanya record yang memenuhi kriteria tertentu, klik tombol Criteria.</li>
-                        <li>
-                            <p>Masukkan kriteria dan klik tombol Form.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image032.png" alt="Masukkan Kriteria"></p>
-                        </li>
-                        <li>
-                            <p>Sekarang, saat Anda menggunakan tombol Temukan Sebelumnya dan Temukan Berikutnya, Anda hanya akan melihat catatan yang memenuhi kriteria ini. Dalam contoh kita, hanya mencatat 13.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image033.png" alt="Rekaman yang Difilter"></p>
-                            <p class="info"><strong>Catatan:</strong> untuk mengedit kriteria, klik tombol Kriteria lagi. Untuk menutup formulir data, klik tombol Tutup.</p>
-                        </li>
-                    </ol>
-                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
-                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/hapus-duplikat.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-                        <p class="bd-lead mb-0" id="HapusDuplikat">Hapus Duplikat</p>
-                    </div>
-                    <p>Contoh ini mengajarkan Anda cara menghapus duplikat di Excel.</p>
-                    <ol>
-                        <li>Klik salah satu sel di dalam kumpulan data.</li>
-                        <li>
+                            <ol>
+                                <li>
+                                    <p>Klik sel dalam rentang daftar.</p>
+                                    <p><img class="img-fluid" src="files/Filter_files/image060.png" alt="Daftar Vertikal">
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Pada tab Data, di grup Urutkan &amp; Filter, klik Tingkat Lanjut.</p>
+                                    <p><img class="img-fluid" src="files/Filter_files/image023.png" alt="Klik Lanjutan">
+                                    </p>
+                                    <p>Kotak dialog Filter Lanjutan muncul.</p>
+                                </li>
+                                <li>Klik Salin ke lokasi lain (lihat gambar di bawah).</li>
+                                <li>Klik di kotak Salin ke dan pilih sel C1.</li>
+                                <li>Periksa Catatan unik saja.</li>
+                                <li>
+                                    <p>Klik Oke.</p>
+                                    <p><img class="img-fluid" src="files/Filter_files/image061.png" alt="Hanya Catatan Unik"></p>
+                                    <p>Hasil:</p>
+                                    <p><img class="img-fluid" src="files/Filter_files/image062.png" alt="Ekstrak Nilai Unik di Excel">
+                                    </p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> Excel menghapus semua nilai duplikat (Singa di sel A7 dan Gajah di sel A9) dan mengirimkan nilai unik ke kolom C. Anda juga bisa menggunakan alat ini untuk mengekstrak baris unik di Excel.</p>
+                                </li>
+                            </ol>
+                        </section>
+
+                        <section id="FilteruntukNilaiUnik">
+                            <p class="h5">Filter untuk Nilai Unik</p>
+                            <p>Memfilter nilai unik di Excel adalah hal yang mudah.</p>
+                            <ol>
+                                <li>
+                                    <p>Klik sel dalam rentang daftar.</p>
+                                    <p><img class="img-fluid" src="files/Filter_files/image060.png" alt="Daftar Vertikal">
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Pada tab Data, di grup Urutkan &amp; Filter, klik Tingkat Lanjut.</p>
+                                    <p><img class="img-fluid" src="files/Filter_files/image023.png" alt="Klik Lanjutan">
+                                    </p>
+                                </li>
+                                <li>Klik Filter daftar, di tempat (lihat gambar di bawah).</li>
+                                <li>Periksa Catatan unik saja.</li>
+                                <li>
+                                    <p>Klik Oke.</p>
+                                    <p><img class="img-fluid" src="files/Filter_files/image063.png" alt="Filter Daftar, di tempat"></p>
+                                    <p>Hasil:</p>
+                                    <p><img class="img-fluid" src="files/Filter_files/image064.png" alt="Filter untuk Nilai Unik di Excel"></p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> baris 7 dan 9 disembunyikan. Untuk menghapus filter ini, pada tab Data, di grup Urutkan &amp; Filter, klik Hapus. Anda juga dapat menggunakan alat ini untuk memfilter baris unik di Excel.</p>
+                                </li>
+                            </ol>
+                        </section>
+
+                        <section id="FungsiUnik">
+                            <p class="h5">
+                                Fungsi Unik</p>
+                            <p>Jika Anda memiliki Excel 365, cukup gunakan fungsi UNIK ajaib untuk mengekstrak nilai unik.</p>
+                            <ol>
+                                <li>
+                                    <p>Fungsi UNIQUE di bawah ini (tanpa argumen tambahan) mengekstrak nilai unik.</p>
+                                    <p><img class="img-fluid" src="files/Filter_files/image065.png" alt="Fungsi UNIK di Excel"></p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> fungsi larik dinamis ini, dimasukkan ke dalam sel C1, mengisi beberapa sel. Wow! Perilaku ini di Excel 365 disebut menumpahkan.</p>
+                                </li>
+                                <li>
+                                    <p>Fungsi UNIQUE di bawah ini mengekstrak nilai yang muncul tepat satu kali.</p>
+                                    <p><img class="img-fluid" src="files/Filter_files/image066.png" alt="Nilai yang Terjadi Tepat Sekali"></p>
+                                    <p class="moreInfo text-break"><strong>Catatan:</strong> fungsi UNIK memiliki 2 argumen opsional. Nilai default 0 (argumen kedua) memberi tahu fungsi UNIQUE untuk mengekstrak nilai dari larik vertikal. Nilai 1 (argumen ketiga) memberi tahu fungsi
+                                        UNIQUE untuk mengekstrak nilai yang muncul tepat satu kali.</p>
+                                </li>
+                            </ol>
+                        </section>
+
+                        <section id="NilaiUnik-HapusDuplikat">
+                            <p class="h5">
+                                Hapus Duplikat</p>
+                            <p>Untuk menemukan nilai unik (atau baris unik) dan menghapus nilai duplikat (atau baris duplikat) secara bersamaan, gunakan alat <a href="#">Hapus Duplikat</a> di Excel.</p>
                             <p>Pada tab Data, dalam grup Alat Data, klik Hapus Duplikat.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image034.png" alt="Klik Hapus Duplikat"></p>
-                            <p>Kotak dialog berikut muncul.</p>
-                        </li>
-                        <li>
-                            <p>Biarkan semua kotak centang dicentang dan klik OK.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image035.png" alt="Hapus Duplikat Kotak Dialog">
+                            <p><img class="img-fluid" src="files/Filter_files/image034.png" alt="Klik Hapus Duplikat"></p>
+                            <p>Pada contoh di bawah ini, Excel menghapus semua baris identik (biru) kecuali baris identik pertama yang ditemukan (kuning).</p>
+                            <p><img class="img-fluid" src="files/Filter_files/image036.png" alt="Hapus Duplikat Contoh">
+                                <img class="img-fluid" src="files/Filter_files/image037.png" alt="Hapus Hasil Duplikat">
                             </p>
-                            <p>Hasil. Excel menghapus semua baris identik (biru) kecuali baris identik pertama yang ditemukan (kuning).
-                            </p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image036.png" alt="Hapus Duplikat Contoh"> <img class="img-fluid" src="../excel/files/Filter_files/image037.png" alt="Hapus Hasil Duplikat"></p>
-                            <p>Untuk menghapus baris dengan nilai yang sama di kolom tertentu, jalankan langkah-langkah berikut.
-                            </p>
-                        </li>
-                        <li>Misalnya, hapus baris dengan Nama Belakang dan Negara yang sama.</li>
-                        <li>
-                            <p>Periksa Nama Belakang dan Negara dan klik OK.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image038.png" alt="Pilih Kolom"></p>
-                            <p>Hasil. Excel menghapus semua baris dengan Nama Belakang dan Negara yang sama (biru) kecuali untuk contoh pertama yang ditemukan (kuning).</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image039.png" alt="Hapus Duplikat Contoh"> <img class="img-fluid" src="../excel/files/Filter_files/image040.png" alt="Hapus Hasil Duplikat"></p>
-                            <p>Mari kita lihat satu lagi fitur Excel keren yang menghapus duplikat. Anda dapat menggunakan Filter Tingkat Lanjut untuk mengekstrak baris unik (atau nilai unik dalam kolom).</p>
-                        </li>
-                        <li>
-                            <p>Pada tab Data, dalam grup Sort &amp; Filter, klik Advanced.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image023.png" alt="Klik Lanjutan">
-                            </p>
-                            <p>Kotak dialog Filter Lanjutan muncul.</p>
-                        </li>
-                        <li>Klik Salin ke lokasi lain.</li>
-                        <li>Klik pada kotak List range dan pilih range A1:A17 (lihat gambar di bawah).</li>
-                        <li>Klik pada kotak Salin ke dan pilih sel F1 (lihat gambar di bawah).</li>
-                        <li>
-                            <p>Periksa Catatan unik saja.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image041.png" alt="Hanya Catatan Unik"></p>
-                        </li>
-                        <li>
-                            <p>Klik Oke.</p>
-                            <p>Hasil. Excel menghapus semua duplikat nama belakang dan mengirimkan hasilnya ke kolom F.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image042.png" alt="Nilai Unik"></p>
-                            <p class="info"><strong>Catatan:</strong> pada langkah 8, alih-alih memilih rentang A1:A17, pilih rentang A1:D17 untuk mengekstrak baris unik.</p>
-                        </li>
-                        <li>
-                            <p>Terakhir, Anda dapat menggunakan pemformatan bersyarat di Excel untuk menyorot nilai duplikat.
-                            </p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image043.png" alt="Nilai Duplikat">
-                            </p>
-                        </li>
-                        <li>
-                            <p>Atau gunakan pemformatan bersyarat di Excel untuk menyorot baris duplikat.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image044.png" alt="Baris Duplikat">
-                            </p>
-                            <p class="info"><strong>Tip:</strong> kunjungi halaman kami tentang <a href="#">menemukan
-                                    duplikat</a> untuk mempelajari lebih lanjut tentang trik ini.</p>
-                        </li>
-                    </ol>
-                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
-                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/outlining-data.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-                        <p class="bd-lead mb-0" id="MenguraikanData">Menguraikan Data</p>
-                    </div>
-                    <p>Menguraikan data membuat data Anda lebih mudah dilihat. Dalam contoh ini kita akan menjumlahkan baris data terkait dan menciutkan sekelompok kolom.</p>
-                    <ol>
-                        <li>
-                            <p>Pertama, <a href="#">urutkan</a> data pada kolom Perusahaan.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image045.png" alt="Urutkan pada Satu Kolom"></p>
-                        </li>
-                        <li>
-                            <p>Pada tab Data, di grup Outline, klik Subtotal .</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image046.png" alt="Klik Subtotal">
-                            </p>
-                        </li>
-                        <li>Pilih kolom Company, kolom yang kita gunakan untuk outline lembar kerja kita.</li>
-                        <li>Gunakan fungsi Hitung.</li>
-                        <li>Centang kotak Perusahaan.</li>
-                        <li>
-                            <p>Klik Oke.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image047.png" alt="Kotak Dialog Subtotal"></p>
-                            <p>Hasil:</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image048.png" alt="Ciutkan Grup Sel">
-                            </p>
-                        </li>
-                        <li>
-                            <p>Untuk menciutkan sekelompok sel, klik tanda minus. Anda dapat menggunakan angka untuk menciutkan atau memperluas grup berdasarkan level. Misalnya, klik 2 untuk hanya menampilkan subtotal.
-                            </p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image049.png" alt=Subtotal></p>
-                            <p class="info"><strong>Catatan:</strong> klik 1 untuk hanya menampilkan Grand Count, klik 3 untuk menampilkan semuanya.</p>
-                            <p>Untuk menciutkan sekelompok kolom, jalankan langkah-langkah berikut.</p>
-                        </li>
-                        <li>Misalnya, pilih kolom A dan B.</li>
-                        <li>
-                            <p>Pada tab Data, di grup Outline, klik Group.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image050.png" alt="Klik Grup"></p>
-                        </li>
-                        <li>
-                            <p>Klik tanda minus di atas kolom C (akan berubah menjadi tanda plus).</p>
-                            <p>Hasil:</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image051.png" alt="Grup Kolom yang Diciutkan">
-                            </p>
-                        </li>
-                        <li>
-                            <p>Untuk menghapus kerangka, klik sel mana pun di dalam kumpulan data dan pada tab Data, di grup Kerangka, klik Subtotal, Hapus semua.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image052.png" alt="Hapus semua"></p>
-                        </li>
-                    </ol>
-                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
-                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/subtotal.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-                        <p class="bd-lead mb-0" id="Subtotal">Subtotal</p>
-                    </div>
-                    <p><a href="#BarisTersembunyiolehFilter">Baris Tersembunyi oleh Filter</a> | <a href="#BarisTersembunyiSecaraManual">Baris Tersembunyi Secara Manual</a></p>
-                    <p>Gunakan fungsi SUBTOTAL di Excel alih-alih SUM, COUNT, MAX, dll. untuk mengabaikan baris yang disembunyikan oleh filter atau untuk mengabaikan baris yang disembunyikan secara manual.</p>
-                    <p class="h5" id="BarisTersembunyiolehFilter">
-                        Baris Tersembunyi oleh Filter</p>
-                    <ol>
-                        <li>
-                            <p>Misalnya, fungsi SUM di bawah ini menghitung total penjualan.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image053.png" alt="Jumlahkan Fungsi di Excel">
-                            </p>
-                        </li>
-                        <li>Terapkan filter.</li>
-                        <li>
-                            <p>Fungsi SUM menyertakan baris yang disembunyikan oleh filter.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image054.png" alt="Baris Tersembunyi oleh Filter Termasuk"></p>
-                        </li>
-                        <li>
-                            <p>Fungsi SUBTOTAL mengabaikan baris yang disembunyikan oleh filter dan menghitung hasil yang benar.
-                            </p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image055.png" alt="Fungsi Subtotal Mengabaikan Baris yang Disembunyikan oleh Filter"></p>
-                            <p class="info"><strong>Catatan:</strong> 109 adalah argumen untuk Sum jika Anda menggunakan fungsi SUBTOTAL.
-                            </p>
-                        </li>
-                        <li>
-                            <p>Tidak mudah untuk mengingat argumen mana yang termasuk dalam fungsi yang mana. Untungnya, fitur AutoComplete di Excel membantu Anda dalam hal ini.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image056.png" alt="Argumen Pertama dari Fungsi Subtotal di Excel"></p>
-                            <p class="info"><strong>Catatan:</strong> daripada menggunakan 101 (AVERAGE) untuk argumen pertama, Anda juga dapat menggunakan 1 (AVERAGE), daripada menggunakan 102 (COUNT), Anda juga dapat menggunakan 2 (COUNT), dll. Saat memfilter data,
-                                tidak ada perbedaan antara angka 101-111 dan angka 1-11. Kami merekomendasikan menggunakan angka 101-111 karena Excel menggunakan angka-angka ini dalam <a href="#">baris total</a> di akhir tabel.
-                            </p>
-                        </li>
-                    </ol>
-                    <p class="h5" id="BarisTersembunyiSecaraManual">Baris Tersembunyi Secara Manual</p>
-                    <ol>
-                        <li>
-                            <p>Misalnya, fungsi SUM di bawah ini menjumlahkan rentang sel.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image057.png" alt="Fungsi Dasar di Excel"></p>
-                        </li>
-                        <li><a href="#">Sembunyikan</a> baris 2.</li>
-                        <li>
-                            <p>Fungsi SUM menyertakan baris yang disembunyikan secara manual.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image058.png" alt="Termasuk Baris Tersembunyi Secara Manual"></p>
-                        </li>
-                        <li>
-                            <p>Fungsi SUBTOTAL mengabaikan baris yang disembunyikan secara manual dan menghitung hasil yang benar.
-                            </p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image059.png" alt="Fungsi Subtotal Mengabaikan Baris Tersembunyi Secara Manual"></p>
-                            <p class="info"><strong>Catatan:</strong> angka 101-111 mengabaikan baris yang disembunyikan secara manual. Namun, angka 1-11 menyertakan baris yang disembunyikan secara manual!</p>
-                        </li>
-                    </ol>
-                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
-                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/unik-nilai.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-                        <p class="bd-lead mb-0" id="NilaiUnik">Nilai Unik</p>
-                    </div>
-                    <p><a href="#EkstrakNilaiUnik">Ekstrak Nilai Unik</a> | <a href="#FilteruntukNilaiUnik">Filter untuk
-                            Nilai Unik</a> | <a href="#FungsiUnik">Fungsi Unik</a> | <a href="#NilaiUnik-HapusDuplikat">Hapus Duplikat</a></p>
-                    <p>Untuk mengekstrak nilai unik di Excel atau untuk memfilter nilai unik, gunakan Filter Tingkat Lanjut. Jika Anda memiliki Excel 365, cukup gunakan fungsi UNIK ajaib untuk mengekstrak nilai unik.</p>
-                    <p class="h5" id="EkstrakNilaiUnik">
-                        Ekstrak Nilai Unik</p>
-                    <p>Saat menggunakan Filter Tingkat Lanjut di Excel, selalu masukkan label teks di bagian atas setiap kolom data.
-                    </p>
-                    <ol>
-                        <li>
-                            <p>Klik sel dalam rentang daftar.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image060.png" alt="Daftar Vertikal">
-                            </p>
-                        </li>
-                        <li>
-                            <p>Pada tab Data, di grup Urutkan &amp; Filter, klik Tingkat Lanjut.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image023.png" alt="Klik Lanjutan">
-                            </p>
-                            <p>Kotak dialog Filter Lanjutan muncul.</p>
-                        </li>
-                        <li>Klik Salin ke lokasi lain (lihat gambar di bawah).</li>
-                        <li>Klik di kotak Salin ke dan pilih sel C1.</li>
-                        <li>Periksa Catatan unik saja.</li>
-                        <li>
-                            <p>Klik Oke.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image061.png" alt="Hanya Catatan Unik"></p>
-                            <p>Hasil:</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image062.png" alt="Ekstrak Nilai Unik di Excel">
-                            </p>
-                            <p class="info"><strong>Catatan:</strong> Excel menghapus semua nilai duplikat (Singa di sel A7 dan Gajah di sel A9) dan mengirimkan nilai unik ke kolom C. Anda juga bisa menggunakan alat ini untuk mengekstrak baris unik di Excel.</p>
-                        </li>
-                    </ol>
-                    <p class="h5" id="FilteruntukNilaiUnik">Filter untuk Nilai Unik</p>
-                    <p>Memfilter nilai unik di Excel adalah hal yang mudah.</p>
-                    <ol>
-                        <li>
-                            <p>Klik sel dalam rentang daftar.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image060.png" alt="Daftar Vertikal">
-                            </p>
-                        </li>
-                        <li>
-                            <p>Pada tab Data, di grup Urutkan &amp; Filter, klik Tingkat Lanjut.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image023.png" alt="Klik Lanjutan">
-                            </p>
-                        </li>
-                        <li>Klik Filter daftar, di tempat (lihat gambar di bawah).</li>
-                        <li>Periksa Catatan unik saja.</li>
-                        <li>
-                            <p>Klik Oke.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image063.png" alt="Filter Daftar, di tempat"></p>
-                            <p>Hasil:</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image064.png" alt="Filter untuk Nilai Unik di Excel"></p>
-                            <p class="info"><strong>Catatan:</strong> baris 7 dan 9 disembunyikan. Untuk menghapus filter ini, pada tab Data, di grup Urutkan &amp; Filter, klik Hapus. Anda juga dapat menggunakan alat ini untuk memfilter baris unik di Excel.</p>
-                        </li>
-                    </ol>
-                    <p class="h5" id="FungsiUnik">
-                        Fungsi Unik</p>
-                    <p>Jika Anda memiliki Excel 365, cukup gunakan fungsi UNIK ajaib untuk mengekstrak nilai unik.</p>
-                    <ol>
-                        <li>
-                            <p>Fungsi UNIQUE di bawah ini (tanpa argumen tambahan) mengekstrak nilai unik.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image065.png" alt="Fungsi UNIK di Excel"></p>
-                            <p class="info"><strong>Catatan:</strong> fungsi larik dinamis ini, dimasukkan ke dalam sel C1, mengisi beberapa sel. Wow! Perilaku ini di Excel 365 disebut menumpahkan.</p>
-                        </li>
-                        <li>
-                            <p>Fungsi UNIQUE di bawah ini mengekstrak nilai yang muncul tepat satu kali.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image066.png" alt="Nilai yang Terjadi Tepat Sekali"></p>
-                            <p class="info"><strong>Catatan:</strong> fungsi UNIK memiliki 2 argumen opsional. Nilai default 0 (argumen kedua) memberi tahu fungsi UNIQUE untuk mengekstrak nilai dari larik vertikal. Nilai 1 (argumen ketiga) memberi tahu fungsi UNIQUE
-                                untuk mengekstrak nilai yang muncul tepat satu kali.</p>
-                        </li>
-                    </ol>
-                    <p class="h5" id="NilaiUnik-HapusDuplikat">
-                        Hapus Duplikat</p>
-                    <p>Untuk menemukan nilai unik (atau baris unik) dan menghapus nilai duplikat (atau baris duplikat) secara bersamaan, gunakan alat <a href="#">Hapus Duplikat</a> di Excel.</p>
-                    <p>Pada tab Data, dalam grup Alat Data, klik Hapus Duplikat.</p>
-                    <p><img class="img-fluid" src="../excel/files/Filter_files/image034.png" alt="Klik Hapus Duplikat"></p>
-                    <p>Pada contoh di bawah ini, Excel menghapus semua baris identik (biru) kecuali baris identik pertama yang ditemukan (kuning).</p>
-                    <p><img class="img-fluid" src="../excel/files/Filter_files/image036.png" alt="Hapus Duplikat Contoh">
-                        <img class="img-fluid" src="../excel/files/Filter_files/image037.png" alt="Hapus Hasil Duplikat">
-                    </p>
-                    <p class="info"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="#">menghapus
-                            duplikat</a> untuk mempelajari lebih lanjut tentang alat Excel yang hebat ini.</p>.
-                    <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
-                        <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="../excel/files/bahan/filter-fungsi.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-                        <p class="bd-lead mb-0" id="FungsiFILTER">Fungsi FILTER Excel 365</p>
-                    </div>
-                    <p>Gunakan fungsi FILTER ajaib di Excel 365 untuk mengekstrak catatan yang memenuhi kriteria tertentu. Fungsi FILTER cukup serbaguna.</p>
-                    <ol>
-                        <li>
-                            <p>Fungsi FILTER sederhana di bawah ini memiliki dua argumen dan mengekstrak semua catatan USA.
-                            </p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image067.png" alt="Fungsi FILTER sederhana"></p>
-                            <p class="info"><strong>Catatan:</strong> Fungsi array dinamis ini, dimasukkan ke dalam sel F2, mengisi beberapa sel.</p>
-                        </li>
-                        <li>
-                            <p>Fungsi FILTER dinamis di bawah ini mengekstrak semua catatan UK.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image068.png" alt="Fungsi FILTER Dinamis"></p>
-                        </li>
-                        <li>
-                            <p>Fungsi FILTER memiliki argumen ketiga opsional. Gunakan argumen ini untuk menampilkan pesan yang ramah (bukan kesalahan #CALC! ) jika tidak ada catatan yang ditemukan.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image069.png" alt="Tidak Ada Catatan yang Ditemukan"></p>
-                        </li>
-                        <li>
-                            <p>Fungsi FILTER di bawah ini menggunakan operator perkalian (*) untuk mengekstrak semua catatan di mana Penjualan lebih besar dari $ 10.000 dan Negara sama dengan "USA".</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image070.png" alt="Dan Kriteria"></p>
-                        </li>
-                        <li>
-                            <p>Fungsi FILTER di bawah ini menggunakan operator tambahan (+) untuk mengekstrak semua catatan di mana Nama Belakang sama dengan "Smith" atau Nama Belakang sama dengan "Brown".</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image071.png" alt="Atau Kriteria">
-                            </p>
-                        </li>
-                        <li>
-                            <p>Tambahkan fungsi SORT untuk mengurutkan catatan menurut kolom pertama.</p>
-                            <p><img class="img-fluid" src="../excel/files/Filter_files/image072.png" alt="SORT dan FILTER">
-                            </p>
-                            <p class="info"><strong>Catatan:</strong> secara default, fungsi SORT di Excel 365 mengurutkan menurut kolom pertama, dalam urutan naik.</p>
-                        </li>
-                    </ol>
+                            <p class="moreInfo text-break"><strong>Catatan:</strong> kunjungi halaman kami tentang <a href="#">menghapus
+                                    duplikat</a> untuk mempelajari lebih lanjut tentang alat Excel yang hebat ini.</p>.
+                        </section>
+                    </section>
+
+                    <section id="FungsiFILTER">
+                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mb-2 border-bottom">
+                            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="files/bahan/filter-fungsi.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
+                            <p class="bd-lead mb-0">Fungsi FILTER Excel 365</p>
+                        </div>
+                        <p>Gunakan fungsi FILTER ajaib di Excel 365 untuk mengekstrak catatan yang memenuhi kriteria tertentu. Fungsi FILTER cukup serbaguna.</p>
+                        <ol>
+                            <li>
+                                <p>Fungsi FILTER sederhana di bawah ini memiliki dua argumen dan mengekstrak semua catatan USA.
+                                </p>
+                                <p><img class="img-fluid" src="files/Filter_files/image067.png" alt="Fungsi FILTER sederhana"></p>
+                                <p class="moreInfo text-break"><strong>Catatan:</strong> Fungsi array dinamis ini, dimasukkan ke dalam sel F2, mengisi beberapa sel.</p>
+                            </li>
+                            <li>
+                                <p>Fungsi FILTER dinamis di bawah ini mengekstrak semua catatan UK.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image068.png" alt="Fungsi FILTER Dinamis"></p>
+                            </li>
+                            <li>
+                                <p>Fungsi FILTER memiliki argumen ketiga opsional. Gunakan argumen ini untuk menampilkan pesan yang ramah (bukan kesalahan #CALC! ) jika tidak ada catatan yang ditemukan.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image069.png" alt="Tidak Ada Catatan yang Ditemukan"></p>
+                            </li>
+                            <li>
+                                <p>Fungsi FILTER di bawah ini menggunakan operator perkalian (*) untuk mengekstrak semua catatan di mana Penjualan lebih besar dari $ 10.000 dan Negara sama dengan "USA".</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image070.png" alt="Dan Kriteria"></p>
+                            </li>
+                            <li>
+                                <p>Fungsi FILTER di bawah ini menggunakan operator tambahan (+) untuk mengekstrak semua catatan di mana Nama Belakang sama dengan "Smith" atau Nama Belakang sama dengan "Brown".</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image071.png" alt="Atau Kriteria">
+                                </p>
+                            </li>
+                            <li>
+                                <p>Tambahkan fungsi SORT untuk mengurutkan catatan menurut kolom pertama.</p>
+                                <p><img class="img-fluid" src="files/Filter_files/image072.png" alt="SORT dan FILTER">
+                                </p>
+                                <p class="moreInfo text-break"><strong>Catatan:</strong> secara default, fungsi SORT di Excel 365 mengurutkan menurut kolom pertama, dalam urutan naik.</p>
+                            </li>
+                        </ol>
+                    </section>
+
+
+
                     <a class="d-flex justify-content-end" href="#ContohPenggunaanFilter">kembali keatas</a>
                 </details>
             </section>
+
+            <a class="d-flex justify-content-end" href="#Filter">kembali keatas</a>
         </div>
     </div>
 </div>

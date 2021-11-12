@@ -41,311 +41,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://getbootstrap.com/docs/5.1/assets/css/docs.css" rel="stylesheet">
     <link rel="shortcut icon" href="../img/aku-bulat.ico" type="image/x-icon" />
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        html,
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-        
-        a:not(:hover) {
-            text-decoration: none;
-        }
-        
-        .bd-navbar {
-            background-color: #4D4D4D;
-            /* background-color: #212529; */
-        }
-        
-        .bd-navbar .navbar-toggler {
-            box-shadow: none;
-        }
-        
-        .nav-tabs .nav-item.show .nav-link,
-        .nav-tabs .nav-link.active {
-            background-color: whitesmoke;
-        }
-        
-        .nav-scroller {
-            position: relative;
-            z-index: 2;
-            height: 2.75rem;
-            overflow-y: hidden;
-        }
-        
-        .nav-scroller .nav {
-            display: flex;
-            flex-wrap: nowrap;
-            padding-bottom: 1rem;
-            margin-top: -1px;
-            overflow-x: auto;
-            text-align: center;
-            white-space: nowrap;
-            -webkit-overflow-scrolling: touch;
-        }
-        
-        .nav-scroller .nav-link {
-            padding-top: .75rem;
-            padding-bottom: .75rem;
-            font-size: .875rem;
-        }
-        
-        .nav-underline .nav-link {
-            padding-top: .75rem;
-            padding-bottom: .75rem;
-            font-size: .875rem;
-            color: #6c757d;
-        }
-        
-        .nav-underline .nav-link:hover {
-            color: #262626;
-        }
-        
-        .nav-underline .active {
-            /* font-weight: 500; */
-            font-weight: bold;
-            color: #343a40;
-        }
-        
-        .bd-subnavbar {
-            position: -webkit-sticky;
-            position: sticky;
-            top: 0;
-            z-index: 1020;
-            background-color: #E0FFFF;
-            /* background-color: ghostwhite; */
-            /* background-color: rgba(255, 255, 255, 0.95); */
-            box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 5%), inset 0 -1px 0 rgb(0 0 0 / 15%);
-        }
-        
-        .dropdown,
-        .dropend,
-        .dropstart,
-        .dropup {
-            z-index: 1021;
-        }
-        
-        .dropdown-divider {
-            margin: 0.2rem 0;
-        }
-        /* starter template */
-        
-        .icon-list {
-            padding-left: 0;
-            list-style: none;
-        }
-        
-        .icon-list li {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: .25rem;
-        }
-        
-        .icon-list li::before {
-            display: block;
-            flex-shrink: 0;
-            width: 1.5em;
-            height: 1.5em;
-            margin-right: .5rem;
-            content: "";
-            background: url(files/img/icons/check2-circle.svg) no-repeat center center / 100% auto;
-        }
-        
-        .list-group-item {
-            padding: 0.5rem 0;
-        }
-        
-        @media (min-width: 768px) {
-            .bd-layout {
-                display: grid;
-                gap: 1.5rem;
-                grid-template-areas: "main";
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        @media (min-width: 768px) {
-            .bd-sidebar {
-                display: none;
-            }
-        }
-        
-        @media (min-width: 992px) {
-            .bd-main {
-                grid-template-areas: "intro intro""content toc";
-                grid-template-columns: 4fr 1fr;
-                grid-template-rows: auto 1fr;
-            }
-        }
-        /* accordion menu kanan */
-        
-        #tab2MenuKanan .accordion-button::after {
-            background-image: none;
-        }
-        
-        #tab2MenuKanan .accordion-body {
-            padding: 0rem 1rem;
-        }
-        
-        #tab2MenuKanan .accordion-body ul {
-            list-style-type: square;
-            padding: .2rem .5rem;
-            /* line-height: 1.2; */
-            font-size: small;
-        }
-        
-        #tab3MenuKanan .accordion-body {
-            padding: 0rem 1rem;
-        }
-        
-        #tab3MenuKanan .accordion-body ul {
-            list-style-type: square;
-            padding: .2rem 1.5rem;
-            /* line-height: 1.2; */
-            font-size: small;
-        }
-        
-        #tab4MenuKanan .accordion-body {
-            padding: 0rem 1rem;
-        }
-        
-        #tab4MenuKanan .accordion-body ul {
-            list-style-type: square;
-            padding: .2rem 1.5rem;
-            /* line-height: 1.2; */
-            font-size: small;
-        }
-        
-        #tab5MenuKanan .accordion-body {
-            padding: 0rem 1rem;
-        }
-        
-        #tab5MenuKanan .accordion-body ul {
-            list-style-type: square;
-            padding: .2rem 1.5rem;
-            /* line-height: 1.2; */
-            font-size: small;
-        }
-        
-        #tab6MenuKanan .accordion-body {
-            padding: 0rem 1rem;
-        }
-        
-        #tab6MenuKanan .accordion-body ul {
-            list-style-type: square;
-            padding: .2rem 1.5rem;
-            /* line-height: 1.2; */
-            font-size: small;
-        }
-        
-        #tab7MenuKanan .accordion-body {
-            padding: 0rem 1rem;
-        }
-        
-        #tab7MenuKanan .accordion-body ul {
-            list-style-type: square;
-            padding: .2rem 1.5rem;
-            /* line-height: 1.2; */
-            font-size: small;
-        }
-        
-        .accordion-body {
-            padding: 1rem 0rem;
-        }
-        
-        .accordion-button:not(.collapsed) {
-            background-color: transparent;
-        }
-        
-        ol,
-        ul {
-            padding-left: 1.25rem;
-        }
-        
-        .fs-5 {
-            font-size: 1.25rem !important;
-            font-weight: 500;
-        }
-        
-        .fs-6 {
-            font-size: 1rem !important;
-            font-weight: 500;
-        }
-        
-        kbd {
-            background-color: lavenderblush;
-            color: #262626;
-            /* border-color: #dee2e6; */
-            border: 1px solid #dee2e6;
-        }
-        
-        strong {
-            font-size: 1rem !important;
-            font-weight: 600;
-        }
-        /* icon-tanda */
-        
-        .info {
-            background-color: ivory;
-            padding: .5rem;
-            border-left: 3px solid orange;
-        }
-        
-        .mark {
-            background-color: whitesmoke;
-            padding: .5rem 1rem;
-            font-family: 'Courier New', Courier, monospace;
-        }
-        
-        mark {
-            padding: 0em .3em;
-            background-color: #eee;
-            border-radius: .2em;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 14px;
-        }
-        
-        .moreInfo {
-            clear: both;
-            min-height: 35px;
-            background: url(https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/40/000000/external-man-avatars-vitaliy-gorbachev-flat-vitaly-gorbachev-4.png) no-repeat;
-            background-position-y: top;
-            padding: 0px 0px 30px 45px;
-            margin: 1.27em 0 1em 0;
-        }
-        
-        .warningInfo {
-            clear: both;
-            min-height: 35px;
-            background: url(https://img.icons8.com/emoji/40/000000/warning-emoji.png) no-repeat;
-            padding: 0px 55px 30px 55px;
-            margin: 1.27em 0;
-        }
-        
-        .carouselInfo {
-            clear: both;
-            min-height: 35px;
-            background: url(https://img.icons8.com/fluency/40/000000/view-carousel.png) no-repeat;
-            padding: 0px 55px 30px 55px;
-            margin: 1.27em 0;
-        }
-        
-        .carousel-caption {
-            position: unset;
-            padding: .5rem 1rem;
-            text-align: start;
-            line-height: 1.2;
-            border-top: 1px solid #999;
-        }
-        
-        .carousel-indicators {
-            bottom: -25px;
-        }
-        
-        section {
-            padding: .5rem 0;
-        }
-    </style>
+    <link rel="stylesheet" href="../dist/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="dist/tutorial.css">
+    <link rel="stylesheet" href="dist/materi.css">
+    <link rel="stylesheet" href="dist/corel.css">
 </head>
 
 <body>
@@ -415,7 +114,7 @@
                             <hr class="dropdown-divider">
                             <li>
                                 <a class="dropdown-item" href="../coreldraw/index.html">
-                                    <img src="https://img.icons8.com/fluency/30/000000/coreldraw-2021.png" /> CorelDRAW
+                                    <img src="https://img.icons8.com/fluency/30/000000/coreldraw-2021.png" /> Photoshop
                                 </a>
                             </li>
                         </ul>
@@ -499,7 +198,159 @@
             <div class="container my-md-4 bd-layout" w3-include-html="tools.html"></div>
         </div>
         <div class="tab-pane fade" id="nav-tab3" role="tabpanel" aria-labelledby="nav-tab3-tab">
-            <div class="container my-md-4 bd-layout" w3-include-html="materi.html"></div>
+            <div class="container my-md-4 bd-layout">
+                <!-- sidebar -->
+                <aside class="bd-sidebar"></aside>
+
+                <!-- konten -->
+                <main class="bd-main order-1">
+
+                    <!-- intro -->
+                    <div class="bd-intro">
+
+                        <header class="d-flex align-items-center pb-3 mb-3 border-bottom">
+                            <a href="#" class="d-flex align-items-center text-dark text-decoration-none">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" fill="currentColor" class="bi bi-display" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z" />
+                                </svg>
+                                <span class="fs-4">&nbsp;Langkah-Langkah belajar Photoshop</span>
+                            </a>
+                        </header>
+                        <p class="lead">Baca instruksi dan tutorial video yang lebih mendetail tentang penggunaan Photoshop.</p>
+
+                        <div id="wrapper">
+                            <div id="mainContent">
+
+                                <!-- Langkah-Langkah belajar Photoshop -->
+                                <div class="row g-4">
+
+                                    <div class="col-sm-7">
+                                        <video class="img-fluid" id="videoarea-ps" controls="controls" poster="" src=""></video>
+                                    </div>
+
+                                    <div class="col-sm-5 col-md-5 col-lg-5">
+                                        <ul class="list-group list-group-flush" id="playlist">
+
+                                            <!-- langkah 1 -->
+                                            <li class="list-group-item" clipurl="files/video/1.Tutorial-Part-1.webm">
+                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                <span class="fw-light text-muted">Langkah 1 Pengenalan tools</span>
+                                                <p class="d-block">
+                                                    <strong>Pick</strong> | <strong>Shape</strong> |
+                                                    <strong>Zoom</strong> | <strong>Pan</strong>
+                                                </p>
+                                            </li>
+
+                                            <!-- langkah 2 -->
+                                            <li class="list-group-item" clipurl="files/video/2.Tutorial-Part-2.webm">
+                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                <span class="fw-light text-muted">Langkah 2 Pengenalan tools</span>
+                                                <p class="d-block">
+                                                    <strong>Freehand</strong> | <strong>2-Point Line</strong> | <strong>Bezier</strong> | <strong>Pen</strong> | <strong>B-Spline</strong> | <strong>Polyline</strong> | <strong>3-Point Curve</strong> | <strong>Smart Drawing</strong>
+                                                </p>
+                                            </li>
+
+                                            <!-- langkah 3 -->
+                                            <li class="list-group-item" clipurl="files/video/3.Tutorial-Part-3.webm">
+                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                <span class="fw-light text-muted">Langkah 3 Pengenalan tools</span>
+                                                <p class="d-block">
+                                                    <strong>Artistic Media</strong> | <strong>Rectangle</strong> | <strong>3-Point Rectangle</strong>
+                                                </p>
+                                            </li>
+
+                                            <!-- langkah 4 -->
+                                            <li class="list-group-item" clipurl="files/video/langkah-cd-4.webm">
+                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                <span class="fw-light text-muted">Langkah 4 Pengenalan tools</span>
+                                                <p class="d-block">
+                                                    <strong>Ellipse</strong> | <strong>3-Point</strong> <strong>Ellipse</strong> | <strong>Combine</strong> | <strong>Weld</strong> | <strong>Trim</strong> | <strong>Intersect Simplify</strong> | <strong>Front Minus Back</strong>                                                    | <strong>Back Minus Front</strong> | <strong>Create Boundary</strong>
+                                                </p>
+                                            </li>
+
+                                            <!-- langkah 5 -->
+                                            <li class="list-group-item" clipurl="files/video/langkah-cd-5.webm">
+                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                <span class="fw-light text-muted">Langkah 5 Pengenalan tools</span>
+                                                <p class="d-block">
+                                                    <strong>Polygon</strong> | <strong>Star</strong> | <strong>Complex Star</strong> | <strong>Graph Paper</strong> | <strong>Spiral</strong> | <strong>Basic Shape</strong> |
+                                                    <strong>Arrow Shape</strong> | <strong>Flowchart Shape</strong> | <strong>Banner Shape</strong> | <strong>Callout Shape</strong> | <strong>Text</strong> | <strong>Table</strong>
+                                                </p>
+                                            </li>
+
+                                            <!-- langkah 6 -->
+                                            <li class="list-group-item" clipurl="files/video/langkah-cd-6.webm">
+                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                <span class="fw-light text-muted">Langkah 6 Pengenalan tools</span>
+                                                <p class="d-block">
+                                                    <strong>Parallel Diemension</strong> | <strong>Horizontal / Vertical Dimension</strong> | <strong>Angular Dimension</strong> | <strong>Segment Dimension</strong> | <strong>3-Point Callout</strong>
+                                                </p>
+                                            </li>
+
+                                            <!-- langkah 7 -->
+                                            <li class="list-group-item" clipurl="files/video/langkah-cd-7.webm">
+                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                <span class="fw-light text-muted">Langkah 7 Pengenalan tools</span>
+                                                <p class="d-block">
+                                                    <strong>Straight-Line Connector</strong> | <strong>Right-Angle Connector</strong> | <strong>Rounded Right Angle-Connector</strong> | <strong>Edit Anchor</strong> | <strong>Drop Shadow</strong>
+                                                </p>
+                                            </li>
+
+                                            <!-- langkah 8 -->
+                                            <li class="list-group-item" clipurl="files/video/langkah-cd-8.webm">
+                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                <span class="fw-light text-muted">Langkah 8 Pengenalan tools</span>
+                                                <p class="d-block">
+                                                    <strong>Contour</strong> | <strong>Blend</strong> | <strong>Distort</strong>
+                                                </p>
+                                            </li>
+
+                                            <!-- langkah 9 -->
+                                            <li class="list-group-item" clipurl="files/video/langkah-cd-9.webm">
+                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                <span class="fw-light text-muted">Langkah 9 Pengenalan tools</span>
+                                                <p class="d-block">
+                                                    <strong>Envelope</strong> | <strong>Extrude</strong> | <strong>Transparency</strong>
+                                                </p>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- menu kanan -->
+                    <!-- <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted fw-light">
+        <strong class="d-block h5 my-2">Di halaman ini</strong>
+        <nav id="TableOfContents">
+            <div class="accordion accordion-flush" id="tab3MenuKanan">
+
+                <div class="accordion-item border-0">
+                    <a href="#">...</a>
+                    <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1" data-bs-parent="#tab3MenuKanan">
+                        <div class="accordion-body p-0">
+                            <ul>
+                                <li><a href="#">...</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </div> -->
+
+                    <!-- isi konten -->
+                    <!-- <div class="bd-content">
+        <div class="tab-content" id="nav-tabContent">
+        </div>
+    </div> -->
+                </main>
+            </div>
         </div>
         <div class="tab-pane fade" id="nav-tab4" role="tabpanel" aria-labelledby="nav-tab4-tab">
             <div class="container my-md-4 bd-layout" w3-include-html="tutorials.html"></div>
@@ -553,7 +404,7 @@
                         <li class="mb-2"><a href="#">Microsoft Excel</a></li>
                         <li class="mb-2"><a href="#">Power Point</a></li>
                         <li class="mb-2"><a href="#">Photoshop</a></li>
-                        <li class="mb-2"><a href="#">CorelDRAW</a></li>
+                        <li class="mb-2"><a href="#">Photoshop</a></li>
                         <li class="mb-2"><a href="#">Web-Desain</a></li>
                         <li class="mb-2"><a href="#">Pemrograman</a></li>
                     </ul>
@@ -592,11 +443,38 @@
         </div>
     </footer>
 
-
+    <script src="../plugins/jquery/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
     <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
     <script src="https://getbootstrap.com/docs/5.1/assets/js/docs.min.js"></script>
+    <script src="../dist/fancybox/jquery.fancybox.min.js"></script>
+    <script>
+        // script video pengenalan corel
+        var starttime = 2;
+        $(function() {
+            $("#playlist li").on("click", function() {
+                $("#videoarea-ps").attr({
+                    src: $(this).attr("clipurl"),
+                    poster: "",
+                    autoplay: "autoplay"
+                });
+                starttime = $(this).attr("startt");
+            });
+            $("#videoarea-ps").attr({
+                "src": $("#playlist li").eq(0).attr("clipurl"),
+                "poster": $("#playlist li").eq(0).attr("moviesposter"),
+            })
+        });
+
+        document.getElementById("videoarea-ps").addEventListener(
+            "loadedmetadata",
+            function() {
+                this.currentTime = starttime;
+            },
+            false
+        );
+    </script>
     <script>
         includeHTML();
     </script>

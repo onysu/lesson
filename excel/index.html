@@ -505,6 +505,7 @@
     </div>
 
     <div class="tab-content" id="nav-tabContent">
+
         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
             <div class="container my-md-4 bd-layout" w3-include-html="home.html"></div>
         </div>
@@ -614,6 +615,7 @@
     <script>
         includeHTML();
     </script>
+
     <script>
         var days = new Array(8);
         days[1] = "Minggu";
@@ -641,7 +643,7 @@
         var lmonth = months[dateObj.getMonth() + 1]
         var date = dateObj.getDate()
         var year = dateObj.getFullYear()
-        document.write(wday + ", " + lmonth + " " + date + ", " + year)
+        document.write(wday + ", " + date + " " + lmonth + ", " + year)
     </script>
 
 </body>

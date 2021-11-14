@@ -3,14 +3,14 @@
 <script>
     function includeHTML() {
         var z, i, elmnt, file, xhttp;
-        /* Loop through a collection of all HTML elements: */
+        /* Ulangi koleksi semua elemen HTML: */
         z = document.getElementsByTagName("*");
         for (i = 0; i < z.length; i++) {
             elmnt = z[i];
-            /*search for elements with a certain atrribute:*/
+            /* mencari elemen dengan atribut tertentu: */
             file = elmnt.getAttribute("w3-include-html");
             if (file) {
-                /* Make an HTTP request using the attribute value as the file name: */
+                /* Buat permintaan HTTP menggunakan nilai atribut sebagai nama file: */
                 xhttp = new XMLHttpRequest();
                 xhttp.onreadystatechange = function() {
                     if (this.readyState == 4) {
@@ -18,16 +18,16 @@
                             elmnt.innerHTML = this.responseText;
                         }
                         if (this.status == 404) {
-                            elmnt.innerHTML = "Page not found.";
+                            elmnt.innerHTML = "Halaman tidak ditemukan.";
                         }
-                        /* Remove the attribute, and call this function once more: */
+                        /* Hapus atributnya, dan panggil fungsi ini sekali lagi: */
                         elmnt.removeAttribute("w3-include-html");
                         includeHTML();
                     }
                 }
                 xhttp.open("GET", file, true);
                 xhttp.send();
-                /* Exit the function: */
+                /* Keluar dari fungsi: */
                 return;
             }
         }
@@ -190,238 +190,317 @@
         </nav>
     </div>
 
-    <div class="tab-content" id="nav-tabContent">
-        <!-- tab-home -->
-        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-            <div class="container my-md-4 bd-layout" w3-include-html="home.html"></div>
-        </div>
-        <!-- tab-tools -->
-        <div class="tab-pane fade" id="nav-tab2" role="tabpanel" aria-labelledby="nav-tab2-tab">
-            <div class="container my-md-4 bd-layout" w3-include-html="tools.html"></div>
-        </div>
-        <!-- tab-materi -->
-        <div class="tab-pane fade" id="nav-tab3" role="tabpanel" aria-labelledby="nav-tab3-tab">
-            <div class="container my-md-4 bd-layout">
-                <!-- sidebar -->
+    <div class="container-xxl bd-layout">
+        <div class="tab-content" id="nav-tabContent">
+            <!-- tab-home -->
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <!-- <div class="container-xxl my-md-4 bd-layout"> -->
                 <aside class="bd-sidebar"></aside>
-
                 <!-- konten -->
                 <main class="bd-main order-1">
-
                     <!-- intro -->
                     <div class="bd-intro">
-
-                        <header class="d-flex align-items-center pb-3 mb-3 border-bottom">
-                            <a href="#" class="d-flex align-items-center text-dark text-decoration-none">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" fill="currentColor" class="bi bi-display" viewBox="0 0 16 16">
-                                    <path
-                                        d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z" />
-                                </svg>
-                                <span class="fs-4">&nbsp;Langkah-Langkah belajar Photoshop</span>
-                            </a>
-                        </header>
-                        <p class="lead">Baca instruksi dan tutorial video yang lebih mendetail tentang penggunaan Photoshop.</p>
-
-                        <div id="wrapper">
-                            <div id="mainContent">
-
-                                <!-- Langkah-Langkah belajar Photoshop -->
-                                <div class="row g-4">
-
-                                    <div class="col-sm-7">
-                                        <video class="img-fluid" id="videoarea-ps" controls="controls" poster="" src=""></video>
-                                    </div>
-
-                                    <div class="col-sm-5 col-md-5 col-lg-5">
-                                        <ul class="list-group list-group-flush" id="playlist">
-
-                                            <!-- langkah 1 -->
-                                            <li class="list-group-item" clipurl="files/video/1.Tutorial-Part-1.webm">
-                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
-                                                <span class="fw-light text-muted">Langkah 1 Pengenalan</span>
-                                                <p class="d-block">
-                                                    <strong>Cara Mengatur Tampilan Lembar Kerja</strong>
-                                                </p>
-                                            </li>
-                                            <!-- langkah 2 -->
-                                            <li class="list-group-item" clipurl="files/video/2.Tutorial-Part-2.webm">
-                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
-                                                <span class="fw-light text-muted">Langkah 2 Pengenalan tools</span>
-                                                <p class="d-block">
-                                                    <strong>Move Tool</strong> | <strong>Rectangular Marquee Tool</strong> |
-                                                    <strong>Elliptical Marquee Tool</strong> | <strong>Lasso Tool</strong> |
-                                                    <strong>Polygonal Lasso Tool</strong> | <strong>Magnetic Lasso Tool</strong> dan cara menyimpang ke format PNG.
-                                                </p>
-                                            </li>
-                                            <!-- langkah 3 -->
-                                            <li class="list-group-item" clipurl="files/video/3.Tutorial-Part-3.webm">
-                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
-                                                <span class="fw-light text-muted">Langkah 3 Pengenalan tools</span>
-                                                <p class="d-block">
-                                                    <strong>Quick Selection Tool</strong> | <strong>Magic Wand Tool</strong> | <strong>Crop Tool</strong> | <strong>Eyedropper Tool</strong>.
-                                                </p>
-                                            </li>
-                                            <!-- langkah 4 -->
-                                            <li class="list-group-item" clipurl="files/video/4.Tutorial-Part-4.webm">
-                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
-                                                <span class="fw-light text-muted">Langkah 4 Pengenalan tools</span>
-                                                <p class="d-block">
-                                                    <strong>Spot Healing Brush Tool</strong> |
-                                                    <strong>Patch Tool</strong> |
-                                                    <strong>Brush Tool</strong> |
-                                                    <strong>Clone Stamp Tool</strong>
-                                                </p>
-                                            </li>
-                                            <!-- langkah 5 -->
-                                            <li class="list-group-item" clipurl="files/video/5.Tutorial-Part-5.webm">
-                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
-                                                <span class="fw-light text-muted">Langkah 5 Pengenalan tools</span>
-                                                <p class="d-block">
-                                                    <strong>Eraser Tool</strong> | <strong>Gradient Tool</strong> | <strong>Paint Bucket Tool</strong>
-                                                </p>
-                                            </li>
-                                            <!-- langkah 6 -->
-                                            <li class="list-group-item" clipurl="files/video/6.Tutorial-Part-6.webm">
-                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
-                                                <span class="fw-light text-muted">Langkah 6 Pengenalan tools</span>
-                                                <p class="d-block">
-                                                    <Strong>Blur Tool</Strong> | <strong>Sharpen Tool</strong> | <strong>Smudge Tool</strong> | <strong>Dodge Tool</strong> | <strong>Burn Tool</strong> | <strong>Sponge Tool</strong>
-                                                </p>
-                                            </li>
-                                            <!-- langkah 7 -->
-                                            <li class="list-group-item" clipurl="files/video/7.Tutorial-Part-7.webm">
-                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
-                                                <span class="fw-light text-muted">Langkah 7 Pengenalan tools</span>
-                                                <p class="d-block">
-                                                    <strong>Pen Tool</strong> | <strong>Freeform Pen Tool</strong> | <strong>Add Anchor Point Tool</strong> | <strong>Convert Point Tool</strong> | <strong>Horizontal Type Tool</strong> | <strong>Vertical Type Tool</strong>                                                    | <strong>horizontal Type Mask Tool</strong> | <strong>Vertical Type Mask Tool</strong> | <strong>Path Selection Tool</strong> | <strong>Direct Selection Tool</strong>
-                                                </p>
-                                            </li>
-                                            <!-- langkah 8 -->
-                                            <li class="list-group-item" clipurl="files/video/8.Tutorial-Part-8.webm">
-                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
-                                                <span class="fw-light text-muted">Langkah 8 Pengenalan tools</span>
-                                                <p class="d-block">
-                                                    <strong>Shape Tool</strong> yang meliputi <strong>Rectangle</strong> | <strong>Rounded Rectangle</strong> | <strong>Ellipse</strong> | <strong>Polygon</strong> | <strong>Line</strong> | <strong>Custome Shape Tool</strong>.
-                                                    Dan Pengenalan <strong>Combine</strong> | <strong>Substact</strong> | <strong>Intersect</strong> | <strong>Exclude</strong> | <strong>Merge Shape</strong>
-                                                </p>
-                                            </li>
-                                            <!-- langkah 9 -->
-                                            <li class="list-group-item" clipurl="files/video/9.Tutorial-Part-9.webm">
-                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
-                                                <span class="fw-light text-muted">Langkah 9 Pengenalan tools</span>
-                                                <p class="d-block">
-                                                    <strong>Hand Tool</strong> | <strong>Rotate View Tool</strong> | <strong>Zoom Tool</strong> | <strong>Save</strong> | <strong>Save As</strong> | <strong>Export</strong> | <strong>Place Embedded</strong>                                                    | <strong>Automate</strong>
-                                                </p>
-                                            </li>
-                                            <!-- langkah 10 -->
-                                            <li class="list-group-item" clipurl="files/video/10.Tutorial-Part-10.webm">
-                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
-                                                <span class="fw-light text-muted">Langkah 10 Pengenalan tools</span>
-                                                <p class="d-block">
-                                                    <strong>Check Spelling</strong> | <strong>Find & Replace Text</strong> | <strong>Fill & Stroke</strong> | <strong>Content Content-Aware Scale</strong> |
-                                                    <strong>Puppet Warp</strong>
-                                                </p>
-                                            </li>
-                                            <!-- langkah 11 -->
-                                            <li class="list-group-item" clipurl="files/video/11.Tutorial-Part-11.webm">
-                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
-                                                <span class="fw-light text-muted">Langkah 11 Pengenalan tools</span>
-                                                <p class="d-block">
-                                                    <strong>Perspective Warp</strong> |
-                                                    <strong>Free Transform</strong> |
-                                                    <strong>Transform</strong> yang meliputi
-                                                    <strong>Scale</strong> |
-                                                    <strong>Rotate</strong> |
-                                                    <strong>Skew</strong> | <strong>Distort</strong> |
-                                                    <strong>Perspective</strong> |
-                                                    <strong>Warp</strong>
-                                                </p>
-                                            </li>
-                                            <!-- langkah 12 -->
-                                            <li class="list-group-item" clipurl="files/video/12.Tutorial-Part-12.webm">
-                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
-                                                <span class="fw-light text-muted">Langkah 12 Pengenalan tools</span>
-                                                <p class="d-block">
-                                                    <strong>Rotate 180<sup>0</sup></strong> | <strong>Rotate 90<sup>0</sup> Clockwise</strong> | <strong>Rotate 90<sup>0</sup> Counter Clockwise</strong> |
-                                                    <strong>Flip Horizontal</strong> | <strong>Flip Vertical</strong> | <strong>Auto-Align Layers</strong> | <strong>Auto-Blend Layers</strong>
-                                                </p>
-                                            </li>
-                                            <!-- langkah 13 -->
-                                            <li class="list-group-item" clipurl="files/video/13.Tutorial-Part-13.webm">
-                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
-                                                <span class="fw-light text-muted">Langkah 13 Pengenalan tools</span>
-                                                <p class="d-block">
-                                                    <strong>Define Brush Preset</strong> |
-                                                    <strong>Define Pattern</strong> |
-                                                    <strong>Define Custom Shape</strong>
-                                                </p>
-                                            </li>
-                                            <!-- langkah 14 -->
-                                            <li class="list-group-item" clipurl="files/video/14.Tutorial-Part-14.webm">
-                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
-                                                <span class="fw-light text-muted">Langkah 14 Pengenalan tools</span>
-                                                <p class="d-block">
-                                                    <strong>Mode</strong> | <strong>Adjustment</strong> | <strong>Auto Tone</strong> | <strong>Auto Contrast</strong> | <strong>Auto Color</strong>
-                                                </p>
-                                            </li>
-                                            <!-- langkah 15 -->
-                                            <li class="list-group-item" clipurl="files/video/15.Tutorial-Part-15.webm">
-                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
-                                                <span class="fw-light text-muted">Langkah 15 Pengenalan tools</span>
-                                                <p class="d-block">
-                                                    <strong>Image Size</strong> | <strong>Canvas Size</strong> | <strong>Image Rotation</strong>
-                                                </p>
-                                            </li>
-                                            <!-- langkah 16 -->
-                                            <li class="list-group-item" clipurl="files/video/16.Tutorial-Part-16.webm">
-                                                <img src="files/img/icon/display.svg" alt="">&nbsp;
-                                                <span class="fw-light text-muted">Langkah 16 Pengenalan tools</span>
-                                                <p class="d-block">
-                                                    <strong>Crop</strong> | <strong>Trim</strong> | <strong>Reveal All</strong> |
-                                                    <strong>Duplicate</strong>
-                                                </p>
-                                            </li>
-
-                                        </ul>
+                        <div class="d-md-flex align-items-center justify-content-between mb-4">
+                            <div class="d-flex align-items-center gap-3 py-2">
+                                <img src="files/img/icons/ps_appicon.svg" width="50" />
+                                <div>
+                                    <h1>Mulailah dengan Photoshop</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-2 mb-4">
+                            <h4>Apa itu Photoshop?</h4>
+                            <p class="lead">Adobe Photoshop adalah aplikasi yang sering yang digunakan oleh banyak fotografer dan desainer profesional. Anda dapat menggunakan Photoshop untuk hampir semua jenis pengeditan gambar, mulai dari sentuhan foto hingga membuat
+                                grafik berkualitas tinggi. Tersedia untuk Windows dan Mac.</p>
+                            <h4>Langkah yang di lakukan dalam belajar dasar-dasar Photoshop</h4>
+                            <ul class="icon-list">
+                                <li>Kuasai Tampilan Awal pada photoshop</li>
+                                <li>Kuasai penggunaan Tools bar</li>
+                                <li>Kuasai Fitur yang ada pada Options bar</li>
+                                <li>Mencoba membuat desain berdasarkan tutorial</li>
+                                <li>Membuat desain sendiri</li>
+                            </ul>
+                        </div>
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-6">
+                                <figure class="figure">
+                                    <img src="files/img/opening.png" class="figure-img img-fluid rounded" alt="">
+                                    <figcaption class="figure-caption fw-light">Tampilan Photoshop.
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-6">
+                                <figure class="figure">
+                                    <img src="files/img/1.png" class="figure-img img-fluid rounded" alt="">
+                                    <figcaption class="figure-caption fw-light">Tampilan Pembuka Photoshop.
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="row g-4 mb-4">
+                            <div class="col-md-6">
+                                <figure class="figure">
+                                    <img src="files/img/2.png" class="figure-img img-fluid rounded" alt="">
+                                    <figcaption class="figure-caption fw-light">Tampilan Buat Baru Photoshop.
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-6">
+                                <figure class="figure">
+                                    <img src="files/img/3.png" class="figure-img img-fluid rounded" alt="">
+                                    <figcaption class="figure-caption fw-light">Tampilan Lembar Kerja Photoshop.
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="row g-5">
+                            <div class="col-md-6">
+                                <h2>E-Learning</h2>
+                                <ul>
+                                    <li>Ingin belajar Photoshop dengan cepat?</li>
+                                    <li>Mencari tutorial bergambar lengkap?</li>
+                                    <li>Ingin mempelajari dasar-dasar dan banyak lagi?</li>
+                                    <li>Mencari pelatihan Photoshop gratis?</li>
+                                    <li>Situs ini tepat untuk Anda!</li>
+                                </ul>
+                            </div>
+                            <!-- <div class="col-md-6">
+                    <h2>Langkah yang di lakukan dalam belajar dasar-dasar Photoshop</h2>
+                    <ul>
+                        <li>Kuasai Tampilan Awal pada photoshop</li>
+                        <li>Kuasai penggunaan Tools bar</li>
+                        <li>Kuasai Fitur yang ada pada Options bar</li>
+                        <li>Mencoba membuat desain berdasarkan tutorial</li>
+                        <li>Membuat desain sendiri</li>
+                    </ul>
+                </div> -->
+                        </div>
+                    </div>
+                    <!-- menu kanan -->
+                    <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted">
+                        <strong class="d-block h6 my-2 pb-2 border-bottom">Di halaman ini</strong>
+                        <nav id="TableOfContents">
+                        </nav>
+                    </div>
+                    <!-- isi konten -->
+                    <div class="bd-content"></div>
+                </main>
+                <!-- </div> -->
+            </div>
+            <!-- tab-tools -->
+            <div class="tab-pane fade" id="nav-tab2" role="tabpanel" aria-labelledby="nav-tab2-tab">
+                <div w3-include-html="tools.html"></div>
+            </div>
+            <!-- tab-materi -->
+            <div class="tab-pane fade" id="nav-tab3" role="tabpanel" aria-labelledby="nav-tab3-tab">
+                <div>
+                    <!-- sidebar -->
+                    <aside class="bd-sidebar"></aside>
+                    <!-- konten -->
+                    <main class="bd-main order-1">
+                        <!-- intro -->
+                        <div class="bd-intro">
+                            <header class="d-flex align-items-center pb-3 mb-3 border-bottom">
+                                <a href="#" class="d-flex align-items-center text-dark text-decoration-none">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" fill="currentColor" class="bi bi-display" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 4s0-2 2-2h12s2 0 2 2v6s0 2-2 2h-4c0 .667.083 1.167.25 1.5H11a.5.5 0 0 1 0 1H5a.5.5 0 0 1 0-1h.75c.167-.333.25-.833.25-1.5H2s-2 0-2-2V4zm1.398-.855a.758.758 0 0 0-.254.302A1.46 1.46 0 0 0 1 4.01V10c0 .325.078.502.145.602.07.105.17.188.302.254a1.464 1.464 0 0 0 .538.143L2.01 11H14c.325 0 .502-.078.602-.145a.758.758 0 0 0 .254-.302 1.464 1.464 0 0 0 .143-.538L15 9.99V4c0-.325-.078-.502-.145-.602a.757.757 0 0 0-.302-.254A1.46 1.46 0 0 0 13.99 3H2c-.325 0-.502.078-.602.145z" />
+                                    </svg>
+                                    <span class="fs-4">&nbsp;Langkah-Langkah belajar Photoshop</span>
+                                </a>
+                            </header>
+                            <p class="lead">Baca instruksi dan tutorial video yang lebih mendetail tentang penggunaan Photoshop.</p>
+                            <div id="wrapper">
+                                <div id="mainContent">
+                                    <!-- Langkah-Langkah belajar Photoshop -->
+                                    <div class="row g-4">
+                                        <div class="col-sm-7">
+                                            <video class="img-fluid" id="videoarea-ps" controls="controls" poster="" src=""></video>
+                                        </div>
+                                        <div class="col-sm-5 col-md-5 col-lg-5">
+                                            <ul class="list-group list-group-flush" id="playlist">
+                                                <!-- langkah 1 -->
+                                                <li class="list-group-item" clipurl="files/video/1.Tutorial-Part-1.webm">
+                                                    <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                    <span class="fw-light text-muted">Langkah 1 Pengenalan</span>
+                                                    <p class="d-block">
+                                                        <strong>Cara Mengatur Tampilan Lembar Kerja</strong>
+                                                    </p>
+                                                </li>
+                                                <!-- langkah 2 -->
+                                                <li class="list-group-item" clipurl="files/video/2.Tutorial-Part-2.webm">
+                                                    <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                    <span class="fw-light text-muted">Langkah 2 Pengenalan tools</span>
+                                                    <p class="d-block">
+                                                        <strong>Move Tool</strong> | <strong>Rectangular Marquee Tool</strong> |
+                                                        <strong>Elliptical Marquee Tool</strong> | <strong>Lasso Tool</strong> |
+                                                        <strong>Polygonal Lasso Tool</strong> | <strong>Magnetic Lasso Tool</strong> dan cara menyimpang ke format PNG.
+                                                    </p>
+                                                </li>
+                                                <!-- langkah 3 -->
+                                                <li class="list-group-item" clipurl="files/video/3.Tutorial-Part-3.webm">
+                                                    <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                    <span class="fw-light text-muted">Langkah 3 Pengenalan tools</span>
+                                                    <p class="d-block">
+                                                        <strong>Quick Selection Tool</strong> | <strong>Magic Wand Tool</strong> | <strong>Crop Tool</strong> | <strong>Eyedropper Tool</strong>.
+                                                    </p>
+                                                </li>
+                                                <!-- langkah 4 -->
+                                                <li class="list-group-item" clipurl="files/video/4.Tutorial-Part-4.webm">
+                                                    <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                    <span class="fw-light text-muted">Langkah 4 Pengenalan tools</span>
+                                                    <p class="d-block">
+                                                        <strong>Spot Healing Brush Tool</strong> |
+                                                        <strong>Patch Tool</strong> |
+                                                        <strong>Brush Tool</strong> |
+                                                        <strong>Clone Stamp Tool</strong>
+                                                    </p>
+                                                </li>
+                                                <!-- langkah 5 -->
+                                                <li class="list-group-item" clipurl="files/video/5.Tutorial-Part-5.webm">
+                                                    <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                    <span class="fw-light text-muted">Langkah 5 Pengenalan tools</span>
+                                                    <p class="d-block">
+                                                        <strong>Eraser Tool</strong> | <strong>Gradient Tool</strong> | <strong>Paint Bucket Tool</strong>
+                                                    </p>
+                                                </li>
+                                                <!-- langkah 6 -->
+                                                <li class="list-group-item" clipurl="files/video/6.Tutorial-Part-6.webm">
+                                                    <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                    <span class="fw-light text-muted">Langkah 6 Pengenalan tools</span>
+                                                    <p class="d-block">
+                                                        <Strong>Blur Tool</Strong> | <strong>Sharpen Tool</strong> | <strong>Smudge Tool</strong> | <strong>Dodge Tool</strong> | <strong>Burn Tool</strong> | <strong>Sponge Tool</strong>
+                                                    </p>
+                                                </li>
+                                                <!-- langkah 7 -->
+                                                <li class="list-group-item" clipurl="files/video/7.Tutorial-Part-7.webm">
+                                                    <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                    <span class="fw-light text-muted">Langkah 7 Pengenalan tools</span>
+                                                    <p class="d-block">
+                                                        <strong>Pen Tool</strong> | <strong>Freeform Pen Tool</strong> | <strong>Add Anchor Point Tool</strong> | <strong>Convert Point Tool</strong> | <strong>Horizontal Type Tool</strong> | <strong>Vertical Type Tool</strong>                                                        | <strong>horizontal Type Mask Tool</strong> | <strong>Vertical Type Mask Tool</strong> | <strong>Path Selection Tool</strong> | <strong>Direct Selection Tool</strong>
+                                                    </p>
+                                                </li>
+                                                <!-- langkah 8 -->
+                                                <li class="list-group-item" clipurl="files/video/8.Tutorial-Part-8.webm">
+                                                    <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                    <span class="fw-light text-muted">Langkah 8 Pengenalan tools</span>
+                                                    <p class="d-block">
+                                                        <strong>Shape Tool</strong> yang meliputi <strong>Rectangle</strong> | <strong>Rounded Rectangle</strong> | <strong>Ellipse</strong> | <strong>Polygon</strong> | <strong>Line</strong> | <strong>Custome Shape Tool</strong>.
+                                                        Dan Pengenalan <strong>Combine</strong> | <strong>Substact</strong> | <strong>Intersect</strong> | <strong>Exclude</strong> | <strong>Merge Shape</strong>
+                                                    </p>
+                                                </li>
+                                                <!-- langkah 9 -->
+                                                <li class="list-group-item" clipurl="files/video/9.Tutorial-Part-9.webm">
+                                                    <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                    <span class="fw-light text-muted">Langkah 9 Pengenalan tools</span>
+                                                    <p class="d-block">
+                                                        <strong>Hand Tool</strong> | <strong>Rotate View Tool</strong> | <strong>Zoom Tool</strong> | <strong>Save</strong> | <strong>Save As</strong> | <strong>Export</strong> | <strong>Place Embedded</strong>                                                        | <strong>Automate</strong>
+                                                    </p>
+                                                </li>
+                                                <!-- langkah 10 -->
+                                                <li class="list-group-item" clipurl="files/video/10.Tutorial-Part-10.webm">
+                                                    <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                    <span class="fw-light text-muted">Langkah 10 Pengenalan tools</span>
+                                                    <p class="d-block">
+                                                        <strong>Check Spelling</strong> | <strong>Find & Replace Text</strong> | <strong>Fill & Stroke</strong> | <strong>Content Content-Aware Scale</strong> |
+                                                        <strong>Puppet Warp</strong>
+                                                    </p>
+                                                </li>
+                                                <!-- langkah 11 -->
+                                                <li class="list-group-item" clipurl="files/video/11.Tutorial-Part-11.webm">
+                                                    <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                    <span class="fw-light text-muted">Langkah 11 Pengenalan tools</span>
+                                                    <p class="d-block">
+                                                        <strong>Perspective Warp</strong> |
+                                                        <strong>Free Transform</strong> |
+                                                        <strong>Transform</strong> yang meliputi
+                                                        <strong>Scale</strong> |
+                                                        <strong>Rotate</strong> |
+                                                        <strong>Skew</strong> | <strong>Distort</strong> |
+                                                        <strong>Perspective</strong> |
+                                                        <strong>Warp</strong>
+                                                    </p>
+                                                </li>
+                                                <!-- langkah 12 -->
+                                                <li class="list-group-item" clipurl="files/video/12.Tutorial-Part-12.webm">
+                                                    <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                    <span class="fw-light text-muted">Langkah 12 Pengenalan tools</span>
+                                                    <p class="d-block">
+                                                        <strong>Rotate 180<sup>0</sup></strong> | <strong>Rotate 90<sup>0</sup> Clockwise</strong> | <strong>Rotate 90<sup>0</sup> Counter Clockwise</strong> |
+                                                        <strong>Flip Horizontal</strong> | <strong>Flip Vertical</strong> | <strong>Auto-Align Layers</strong> | <strong>Auto-Blend Layers</strong>
+                                                    </p>
+                                                </li>
+                                                <!-- langkah 13 -->
+                                                <li class="list-group-item" clipurl="files/video/13.Tutorial-Part-13.webm">
+                                                    <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                    <span class="fw-light text-muted">Langkah 13 Pengenalan tools</span>
+                                                    <p class="d-block">
+                                                        <strong>Define Brush Preset</strong> |
+                                                        <strong>Define Pattern</strong> |
+                                                        <strong>Define Custom Shape</strong>
+                                                    </p>
+                                                </li>
+                                                <!-- langkah 14 -->
+                                                <li class="list-group-item" clipurl="files/video/14.Tutorial-Part-14.webm">
+                                                    <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                    <span class="fw-light text-muted">Langkah 14 Pengenalan tools</span>
+                                                    <p class="d-block">
+                                                        <strong>Mode</strong> | <strong>Adjustment</strong> | <strong>Auto Tone</strong> | <strong>Auto Contrast</strong> | <strong>Auto Color</strong>
+                                                    </p>
+                                                </li>
+                                                <!-- langkah 15 -->
+                                                <li class="list-group-item" clipurl="files/video/15.Tutorial-Part-15.webm">
+                                                    <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                    <span class="fw-light text-muted">Langkah 15 Pengenalan tools</span>
+                                                    <p class="d-block">
+                                                        <strong>Image Size</strong> | <strong>Canvas Size</strong> | <strong>Image Rotation</strong>
+                                                    </p>
+                                                </li>
+                                                <!-- langkah 16 -->
+                                                <li class="list-group-item" clipurl="files/video/16.Tutorial-Part-16.webm">
+                                                    <img src="files/img/icon/display.svg" alt="">&nbsp;
+                                                    <span class="fw-light text-muted">Langkah 16 Pengenalan tools</span>
+                                                    <p class="d-block">
+                                                        <strong>Crop</strong> | <strong>Trim</strong> | <strong>Reveal All</strong> |
+                                                        <strong>Duplicate</strong>
+                                                    </p>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                    </div>
-
-                    <!-- menu kanan -->
-                    <!-- <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted fw-light">
-        <strong class="d-block h5 my-2">Di halaman ini</strong>
-        <nav id="TableOfContents">
-            <div class="accordion accordion-flush" id="tab3MenuKanan">
-
-                <div class="accordion-item border-0">
-                    <a href="#">...</a>
-                    <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1" data-bs-parent="#tab3MenuKanan">
-                        <div class="accordion-body p-0">
-                            <ul>
-                                <li><a href="#">...</a></li>
-                            </ul>
+                        <!-- menu kanan -->
+                        <!-- <div class="bd-toc mt-4 mb-5 my-md-0 ps-xl-3 mb-lg-5 text-muted fw-light">
+            <strong class="d-block h5 my-2">Di halaman ini</strong>
+            <nav id="TableOfContents">
+                <div class="accordion accordion-flush" id="tab3MenuKanan">
+                    <div class="accordion-item border-0">
+                        <a href="#">...</a>
+                        <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1" data-bs-parent="#tab3MenuKanan">
+                            <div class="accordion-body p-0">
+                                <ul>
+                                    <li><a href="#">...</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-
+            </nav>
+        </div> -->
+                        <!-- isi konten -->
+                        <!-- <div class="bd-content">
+            <div class="tab-content" id="nav-tabContent">
             </div>
-        </nav>
-    </div> -->
-
-                    <!-- isi konten -->
-                    <!-- <div class="bd-content">
-        <div class="tab-content" id="nav-tabContent">
-        </div>
-    </div> -->
-                </main>
+        </div> -->
+                    </main>
+                </div>
             </div>
-        </div>
-        <!-- tab-tutorials -->
-        <div class="tab-pane fade" id="nav-tab4" role="tabpanel" aria-labelledby="nav-tab4-tab">
-            <div class="container my-md-4 bd-layout" w3-include-html="tutorials.html"></div>
+            <!-- tab-tutorials -->
+            <div class="tab-pane fade" id="nav-tab4" role="tabpanel" aria-labelledby="nav-tab4-tab">
+                <div w3-include-html="tutorials.html"></div>
+            </div>
         </div>
     </div>
 

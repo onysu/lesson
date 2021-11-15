@@ -52,11 +52,27 @@
             grid-area: unset;
         }
 
-        .bd-layout {
-            display: grid;
-            gap: 1.5rem;
-            grid-template-areas: "main";
-            grid-template-columns: 1fr;
+        @media (min-width: 992px) {
+            .bd-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .bd-main {
+                grid-template-areas: "intro toc" "content toc";
+                grid-template-columns: 1fr;
+                grid-template-rows: auto 1fr;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .bd-layout {
+                display: grid;
+                gap: 1.5 rem;
+                grid-template-areas: "main";
+                grid-template-columns: 1fr;
+            }
         }
     </style> -->
 </head>

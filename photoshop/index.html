@@ -1,38 +1,5 @@
 <!doctype html>
 <html lang="en">
-<script>
-    function includeHTML() {
-        var z, i, elmnt, file, xhttp;
-        /* Ulangi koleksi semua elemen HTML: */
-        z = document.getElementsByTagName("*");
-        for (i = 0; i < z.length; i++) {
-            elmnt = z[i];
-            /* mencari elemen dengan atribut tertentu: */
-            file = elmnt.getAttribute("w3-include-html");
-            if (file) {
-                /* Buat permintaan HTTP menggunakan nilai atribut sebagai nama file: */
-                xhttp = new XMLHttpRequest();
-                xhttp.onreadystatechange = function() {
-                    if (this.readyState == 4) {
-                        if (this.status == 200) {
-                            elmnt.innerHTML = this.responseText;
-                        }
-                        if (this.status == 404) {
-                            elmnt.innerHTML = "Halaman tidak ditemukan.";
-                        }
-                        /* Hapus atributnya, dan panggil fungsi ini sekali lagi: */
-                        elmnt.removeAttribute("w3-include-html");
-                        includeHTML();
-                    }
-                }
-                xhttp.open("GET", file, true);
-                xhttp.send();
-                /* Keluar dari fungsi: */
-                return;
-            }
-        }
-    }
-</script>
 
 <head>
     <meta charset="utf-8">
@@ -45,7 +12,7 @@
     <link rel="stylesheet" href="../assets/css/tutorial.css">
     <link rel="stylesheet" href="../assets/css/materi.css">
     <link rel="stylesheet" href="../assets/css/photoshop.css">
-
+    <script src="../assets/js/w3.js"></script>
 </head>
 
 <body>
@@ -639,7 +606,7 @@
         );
     </script>
     <script>
-        includeHTML();
+        w3.includeHTML();
     </script>
 </body>
 

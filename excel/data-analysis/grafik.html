@@ -208,13 +208,13 @@
             </li>
             <li>Pilih diagram garis.</li>
             <li>
-                <p>Klik tombol + di sisi kanan grafik, klik panah di sebelah Garis Tren, lalu klik Opsi Lainnya.</p>
+                <p>Klik tombol + di sisi kanan grafik, klik panah di sebelah Garis Tren, lalu klik More Options.</p>
                 <p><img class="img-fluid" src="files/Charts_files/image026.png" alt="Tambahkan Garis Tren"></p>
                 <p>Panel Format Garis Tren muncul.</p>
             </li>
             <li>Pilih jenis Tren/Regresi. Klik Linier.</li>
             <li>
-                <p>Tentukan jumlah periode yang akan disertakan dalam ramalan. Ketik 2 di kotak Teruskan.</p>
+                <p>Tentukan jumlah periode yang akan disertakan dalam ramalan. Ketik 2 di Forward box.</p>
                 <p><img class="img-fluid" src="files/Charts_files/image027.png" alt="Format Garis Tren"></p>
                 <p>Hasil:</p>
                 <p><img class="img-fluid" src="files/Charts_files/image028.png" alt="Bagan Garis dengan Sumbu Teks"></p>
@@ -608,33 +608,38 @@
     </section>
 
     <section id="Trendline">
-        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
-            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="files/bahan/trendline.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-            <p class="bd-lead mb-0">Trendline</p>
+        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+            <div class="fs-4" id="content">Trendline</div>
         </div>
+        <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/trendline.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
         <p>Contoh ini mengajarkan Anda cara menambahkan Trendline ke Charts di Excel.</p>
-        <p>1. Pilih grafik.</p>
-        <p>2. Klik tombol + di sisi kanan Charts, klik panah di samping Trendline, lalu klik Opsi Lainnya.</p>
-        <p><img class="img-fluid" src="files/Charts_files/image026.png" alt="Tambahkan Trendline"></p>
-        <p>Panel Format Trendline muncul.</p>
-        <p>3. Pilih jenis Tren/Regresi. Klik Linier.</p>
-        <p>4. Tentukan jumlah periode yang akan disertakan dalam ramalan. Ketik 3 di kotak Teruskan.
-        </p>
-        <p>5. Centang &quot;Tampilkan Persamaan pada grafik&quot; dan &quot;Tampilkan nilai R-kuadrat pada grafik&quot;.
-        </p>
-        <p><img class="img-fluid" src="files/Charts_files/image073.png" alt="Format Garis Tren"></p>
-        <p>Hasil:</p>
-        <p><img class="img-fluid" src="files/Charts_files/image074.png" alt="Garis tren di Excel"></p>
-        <p class="moreInfo text-break">Penjelasan: Excel menggunakan metode kuadrat terkecil untuk menemukan garis yang paling sesuai dengan titik-titiknya. Nilai R-kuadrat sama dengan 0,9295, yang merupakan kecocokan yang baik. Semakin mendekati 1, semakin baik garis tersebut sesuai
-            dengan data. Garis tren memprediksi 120 batang Wonka yang terjual pada periode 13. Anda dapat memverifikasi ini dengan menggunakan persamaan. y = 7,7515 * 13 + 18,267 = 119.0365.</p>
-        <p>6. Alih-alih menggunakan persamaan ini, Anda dapat menggunakan fungsi FORECAST.LINEAR di Excel. Fungsi ini memprediksi nilai masa depan yang sama.</p>
-        <p><img class="img-fluid" src="files/Charts_files/image075.png" alt="Tren Linier">
-        </p>
-        <p>7. Fungsi FORECAST.ETS di Excel memprediksi nilai masa depan menggunakan Exponential Triple Smoothing, yang memperhitungkan musiman.</p>
-        <p><img class="img-fluid" src="files/Charts_files/image076.png" alt="Pola Musiman">
-        </p>
-        <p class="moreInfo text-break">Tip: kunjungi halaman kami tentang <a href="#">perkiraan</a> untuk mempelajari lebih lanjut tentang fungsi-fungsi ini.
-        </p>
+        <ol>
+            <li>Pilih grafik.</li>
+            <li>
+                <p>Klik tombol + di sisi kanan Charts, klik panah di samping <strong>Trendline</strong>, lalu klik <strong>More Options</strong>.</p>
+                <p><img class="img-fluid" src="files/Charts_files/image026.png" alt="Tambahkan Trendline"></p>
+                <p>Panel Format Trendline muncul.</p>
+            </li>
+            <li>Pilih tipe <strong>Trend/Regression</strong>. Klik <strong>Linear</strong>.</li>
+            <li>Tentukan jumlah periode yang akan disertakan dalam ramalan. Ketik 3 di <strong>Forward box</strong>.</li>
+            <li>
+                <p>Centang &quot;Tampilkan Persamaan pada grafik&quot; dan &quot;Tampilkan nilai R-kuadrat pada grafik&quot;.</p>
+                <p><img class="img-fluid" src="files/Charts_files/image073.png" alt="Format Garis Tren"></p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="files/Charts_files/image074.png" alt="Garis tren di Excel"></p>
+                <p class="moreInfo text-break"><strong>Penjelasan:</strong> Excel menggunakan metode kuadrat terkecil untuk menemukan garis yang paling sesuai dengan titik-titiknya. Nilai R-kuadrat sama dengan 0,9295, yang merupakan kecocokan yang baik. Semakin mendekati 1, semakin
+                    baik garis tersebut sesuai dengan data. Garis tren memprediksi 120 batang Wonka yang terjual pada periode 13. Anda dapat memverifikasi ini dengan menggunakan persamaan. y = 7,7515 * 13 + 18,267 = 119.0365.</p>
+            </li>
+            <li>
+                <p>Daripada menggunakan persamaan ini, Anda dapat menggunakan fungsi <strong>FORECAST.LINEAR</strong> di Excel. Fungsi ini memprediksi nilai masa depan yang sama.</p>
+                <p><img class="img-fluid" src="files/Charts_files/image075.png" alt="Tren Linier"></p>
+            </li>
+            <li>
+                <p><strong>FORECAST.ETS</strong> di Excel memprediksi nilai masa depan menggunakan Exponential Triple Smoothing, yang memperhitungkan musiman.</p>
+                <p><img class="img-fluid" src="files/Charts_files/image076.png" alt="Pola Musiman"></p>
+            </li>
+        </ol>
     </section>
 
     <section id="ErrorBar">
@@ -645,7 +650,7 @@
         <p>Contoh ini mengajarkan Anda cara menambahkan bilah kesalahan ke Charts di Excel.
         </p>
         <p>1. Pilih grafik.</p>
-        <p>2. Klik tombol + di sisi kanan Charts, klik panah di sebelah Error Bars, lalu klik Opsi Lainnya.</p>
+        <p>2. Klik tombol + di sisi kanan Charts, klik panah di sebelah Error Bars, lalu klik More Options.</p>
         <p><img class="img-fluid" src="files/Charts_files/image077.png" alt="Tambahkan Bilah Kesalahan"></p>
         <p>Perhatikan pintasan untuk menampilkan bilah kesalahan dengan cepat menggunakan Kesalahan Standar, nilai persentase 5% atau 1 standar deviasi.</p>
         <p>Panel Format Error Bars muncul.</p>
@@ -804,7 +809,7 @@
         <p>11. Tahan CTRL dan gunakan tombol dan &#8594; untuk memilih satu titik data. Pada tab Format, dalam grup Gaya Bentuk, ubah Isi Bentuk setiap titik. Poin 1 = Tanpa Isi, poin 2 = hitam dan poin 3 = Tanpa Isi.</p>
         <p>Hasil:</p>
         <p><img class="img-fluid" src="files/Charts_files/image104.png" alt="Pie chart"></p>
-        <p class="moreInfo text-break">Penjelasan: Diagram lingkaran tidak lebih dari irisan transparan 75 poin, irisan hitam 1 titik (jarum) dan irisan transparan 124 poin.
+        <p class="moreInfo text-break"><strong>Penjelasan:</strong> Diagram lingkaran tidak lebih dari irisan transparan 75 poin, irisan hitam 1 titik (jarum) dan irisan transparan 124 poin.
         </p>
         <p>12. Ulangi langkah 9 sampai 11 untuk seri Donat. Poin 1 = merah, poin 2 = kuning, poin 3 = hijau dan poin 4 = Tidak Ada Isi.</p>
         <p>Hasil:</p>

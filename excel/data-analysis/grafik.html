@@ -602,7 +602,7 @@
                 <p><img class="img-fluid" src="files/Charts_files/image071.png" alt="Klik Lembar baru"></p>
                 <p>Hasil:</p>
                 <p><img class="img-fluid" src="files/Charts_files/image072.png" alt="Lembar Bagan di Excel"></p>
-                <p class="moreInfo text-break"><strong>Catatan:</strong> ulangi langkah-langkah ini, tetapi alih-alih Lembar baru di langkah 3, klik Objek di, untuk memindahkan Charts kembali ke lembar kerja yang sama dengan data sumber.</p>
+                <p class="moreInfo text-break"><strong>Catatan:</strong> ulangi langkah-langkah ini, tetapi daripada Lembar baru di langkah 3, klik Objek di, untuk memindahkan Charts kembali ke lembar kerja yang sama dengan data sumber.</p>
             </li>
         </ol>
     </section>
@@ -965,88 +965,109 @@
     </section>
 
     <section id="ChartPareto">
-        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
-            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="files/bahan/pareto-chart.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-            <p class="bd-lead mb-0">Charts Pareto</p>
+        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+            <div class="fs-4" id="content">Charts Pareto</div>
         </div>
+        <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/pareto-chart.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
         <p class="fw-light small">
             <a href="#Excel2016ataulebihbaru">Excel 2016 atau lebih baru</a> |
             <a href="#Semuaversi">Semua versi</a>
         </p>
         <p>Contoh ini mengajarkan Anda cara membuat Charts Pareto di Excel. Prinsip Pareto menyatakan bahwa, untuk banyak peristiwa, kira-kira 80% efeknya berasal dari 20% penyebabnya. Dalam contoh ini, kita akan melihat bahwa sekitar 80% keluhan berasal
             dari 20% jenis keluhan.</p>
+
+        <section id="Excel2016ataulebihbaru">
+            <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                <div class="fs-5" id="content">Excel 2016 atau lebih baru</div>
+            </div>
+            <p>Untuk membuat Charts Pareto di Excel 2016 atau yang lebih baru, jalankan langkah-langkah berikut.</p>
+            <ol>
+                <li>
+                    <p>Pilih range A3:B13.</p>
+                    <p><img class="img-fluid" src="files/Charts_files/image120.png" alt="Data Bagan Pareto di Excel"></p>
+                </li>
+                <li>
+                    <p>Pada tab <strong>Insert</strong>, di grup <strong>Charts</strong>, klik <strong>Histogram symbol</strong>.</p>
+                    <p><img class="img-fluid" src="files/Charts_files/image121.png" alt="Sisipkan Bagan Pareto"></p>
+                </li>
+                <li>
+                    <p>Klik <strong>Pareto</strong>.</p>
+                    <p><img class="img-fluid" src="files/Charts_files/image122.png" alt="Klik Pareto"></p>
+                    <p>Hasil:</p>
+                    <p><img class="img-fluid" src="files/Charts_files/image123.png" alt="Bagan Kolom dan Grafik Garis"></p>
+                    <p class="moreInfo text-break"><strong>Catatan:</strong> Charts Pareto menggabungkan Charts kolom dan grafik garis.</p>
+                </li>
+                <li>Masukkan judul Charts.</li>
+                <li>
+                    <p>Klik tombol + di sisi kanan grafik dan klik kotak centang di sebelah <strong>Data Labels</strong>.</p>
+                    <p><img class="img-fluid" src="files/Charts_files/image124.png" alt="Tambahkan Label Data"></p>
+                    <p>Hasil:</p>
+                    <p><img class="img-fluid" src="files/Charts_files/image125.png" alt="Bagan Pareto di Excel 2016"></p>
+                    <p class="moreInfo text-break"><strong>Kesimpulan:</strong> garis Pareto oranye menunjukkan bahwa (789 + 621) / 1722 80% keluhan berasal dari 2 dari 10 = 20% dari jenis keluhan (Mahal dan Porsi Kecil). Dengan kata lain: prinsip Pareto berlaku.</p>
+                </li>
+            </ol>
+        </section>
+
+        <section id="Semuaversi">
+            <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+                <div class="fs-5" id="content">Semua versi</div>
+            </div>
+            <p>Jika Anda tidak memiliki Excel 2016 atau yang lebih baru, cukup buat Charts Pareto dengan menggabungkan Charts kolom dan grafik garis. Metode ini bekerja dengan semua versi Excel.</p>
+            <ol>
+                <li>
+                    <p>Pertama, pilih nomor di kolom B.</p>
+                    <p><img class="img-fluid" src="files/Charts_files/image126.png" alt="Pilih Nomor"></p>
+                </li>
+                <li>
+                    <p>Selanjutnya, urutkan data Anda dalam urutan menurun. Pada tab <strong>Data</strong>, dalam grup <strong>Sort & Filter</strong>, klik <strong>ZA</strong>.</p>
+                    <p><img class="img-fluid" src="files/Charts_files/image127.png" alt="Urutkan dalam Urutan Menurun"></p>
+                </li>
+                <li>
+                    <p>Hitung jumlah kumulatif. Masukkan rumus yang ditunjukkan di bawah ini ke dalam sel C5 dan seret rumus ke bawah.</p>
+                    <p><img class="img-fluid" src="files/Charts_files/image128.png" alt="Hitung Hitungan Kumulatif"></p>
+                </li>
+                <li>
+                    <p>Hitung % kumulatif. Masukkan rumus yang ditunjukkan di bawah ini ke dalam sel D4 dan seret rumus ke bawah.</p>
+                    <p><img class="img-fluid" src="files/Charts_files/image129.png" alt="Hitung Persentase Kumulatif"></p>
+                    <p class="moreInfo text-break"><strong>Catatan:</strong> sel C13 berisi jumlah total pengaduan. Saat kita menyeret rumus ini ke bawah, <a href="#">referensi absolut</a> ($C$13) tetap sama, sedangkan referensi relatif (C4) berubah menjadi C5, C6, C7, dll.</p>
+                </li>
+                <li>
+                    <p>Pilih data di kolom A, B dan D. Untuk mencapai ini, tahan <kbd>Ctrl</kbd> dan pilih setiap range.</p>
+                    <p><img class="img-fluid" src="files/Charts_files/image130.png" alt="Select Data"></p>
+                </li>
+                <li>
+                    <p>Pada tab <strong>Insert</strong>, di grup <strong>Charts</strong>, klik <strong>Column symbol</strong>.</p>
+                    <p><img class="img-fluid" src="files/Charts_files/image015.png" alt="Sisipkan Bagan Kolom"></p>
+                </li>
+                <li>
+                    <p>klik <strong>Clustered Column</strong>.</p>
+                    <p><img class="img-fluid" src="files/Charts_files/image016.png" alt="Klik Kolom Clustered"></p>
+                </li>
+                <li>
+                    <p>Klik kanan pada bar orange (Cumulative %) dan klik <strong>Change Series Chart Type...</strong></p>
+                    <p><img class="img-fluid" src="files/Charts_files/image131.png" alt="Ubah Jenis Bagan Seri"></p>
+                    <p>Kotak dialog Change Chart Type muncul.</p>
+                </li>
+                <li>Untuk rangkaian % Kumulatif, pilih <strong>Line</strong> dengan <strong>Markers</strong> sebagai jenis chart.</li>
+                <li>Plot deret % Kumulatif pada secondary axis.</li>
+                <li>
+                    <p>Klik OK.</p>
+                    <p><img class="img-fluid" src="files/Charts_files/image132.png" alt="Buat Bagan Kombinasi"></p>
+                    <p class="moreInfo text-break"><strong>Catatan:</strong> Excel 2010 tidak menawarkan Charts kombo sebagai salah satu tipe Charts bawaan. Jika Anda menggunakan Excel 2010, daripada menjalankan langkah 8-10, cukup pilih <strong>Line</strong> with <strong>Markers</strong>                        dan klik <strong>OK</strong>. Selanjutnya, klik kanan pada garis oranye/merah dan klik <strong>Format Data Series</strong>. Pilih <strong>Secondary Axis</strong> dan klik <strong>Close</strong>.</p>
+                </li>
+                <li>
+                    <p>Klik kanan persentase pada grafik, klik <strong>Format Axis</strong> dan atur <strong>Maksimum</strong> ke 100.</p>
+                    <p><img class="img-fluid" src="files/Charts_files/image133.png" alt="Format Sumbu"></p>
+                    <p>Hasil:</p>
+                    <p><img class="img-fluid" src="https://www.excel-easy.com/examples/images/pareto-chart/pareto-chart.png" alt="Bagan Pareto"></p>
+                    <p class="moreInfo text-break"><strong>Kesimpulan:</strong> Grafik Pareto menunjukkan bahwa 80% keluhan berasal dari 20% jenis keluhan (Overpriced dan Porsi Kecil). Dengan kata lain: prinsip Pareto berlaku.</p>
+                </li>
+            </ol>
+        </section>
     </section>
 
-    <section id="Excel2016ataulebihbaru">
-        <p class="h5">
-            Excel 2016 atau lebih baru
-        </p>
-        <p>Untuk membuat Charts Pareto di Excel 2016 atau yang lebih baru, jalankan langkah-langkah berikut.</p>
-        <p>1. Pilih range A3:B13.</p>
-        <p><img class="img-fluid" src="files/Charts_files/image120.png" alt="Data Bagan Pareto di Excel"></p>
-        <p>2. Pada tab <strong>Insert</strong>, di grup <strong>Charts</strong>, klik simbol Histogram.</p>
-        <p><img class="img-fluid" src="files/Charts_files/image121.png" alt="Sisipkan Bagan Pareto"></p>
-        <p>3. Klik Pareto.</p>
-        <p><img class="img-fluid" src="files/Charts_files/image122.png" alt="Klik Pareto">
-        </p>
-        <p>Hasil:</p>
-        <p><img class="img-fluid" src="files/Charts_files/image123.png" alt="Bagan Kolom dan Grafik Garis"></p>
-        <p class="moreInfo text-break"><strong>Catatan:</strong> Charts Pareto menggabungkan Charts kolom dan grafik garis.
-        </p>
-        <p>4. Masukkan judul Charts.</p>
-        <p>5. Klik tombol + di sisi kanan grafik dan klik kotak centang di sebelah Label Data.
-        </p>
-        <p><img class="img-fluid" src="files/Charts_files/image124.png" alt="Tambahkan Label Data"></p>
-        <p>Hasil:</p>
-        <p><img class="img-fluid" src="files/Charts_files/image125.png" alt="Bagan Pareto di Excel 2016"></p>
-        <p class="moreInfo text-break"><strong>Kesimpulan:</strong> garis Pareto oranye menunjukkan bahwa (789 + 621) / 1722 80% keluhan berasal dari 2 dari 10 = 20% dari jenis keluhan (Mahal dan Porsi Kecil). Dengan kata lain: prinsip Pareto berlaku.
-        </p>
-    </section>
 
-    <section id="Semuaversi">
-        <p class="h5">
-            Semua versi</p>
-        <p>Jika Anda tidak memiliki Excel 2016 atau yang lebih baru, cukup buat Charts Pareto dengan menggabungkan Charts kolom dan grafik garis. Metode ini bekerja dengan semua versi Excel.</p>
-        <p>1. Pertama, pilih nomor di kolom B.</p>
-        <p><img class="img-fluid" src="files/Charts_files/image126.png" alt="Pilih Nomor">
-        </p>
-        <p>2. Selanjutnya, urutkan data Anda dalam urutan menurun. Pada tab Data, dalam grup Urutkan &amp; Filter, klik ZA.
-        </p>
-        <p><img class="img-fluid" src="files/Charts_files/image127.png" alt="Urutkan dalam Urutan Menurun"></p>
-        <p>3. Hitung jumlah kumulatif. Masukkan rumus yang ditunjukkan di bawah ini ke dalam sel C5 dan seret rumus ke bawah.
-        </p>
-        <p><img class="img-fluid" src="files/Charts_files/image128.png" alt="Hitung Hitungan Kumulatif"></p>
-        <p>4. Hitung % kumulatif. Masukkan rumus yang ditunjukkan di bawah ini ke dalam sel D4 dan seret rumus ke bawah.
-        </p>
-        <p><img class="img-fluid" src="files/Charts_files/image129.png" alt="Hitung Persentase Kumulatif"></p>
-        <p class="moreInfo text-break"><strong>Catatan:</strong> sel C13 berisi jumlah total pengaduan. Saat kita menyeret rumus ini ke bawah, <a href="#">referensi
-                absolut</a> ($C$13) tetap sama, sedangkan referensi relatif (C4) berubah menjadi C5, C6, C7, dll.</p>
-        <p>5. Pilih data di kolom A, B dan D. Untuk mencapai ini, tahan CTRL dan pilih setiap range.</p>
-        <p><img class="img-fluid" src="files/Charts_files/image130.png" alt="Select Data">
-        </p>
-        <p>6. Pada tab <strong>Insert</strong>, di grup <strong>Charts</strong>, klik <strong>Column symbol</strong>.</p>
-        <p><img class="img-fluid" src="files/Charts_files/image015.png" alt="Sisipkan Bagan Kolom"></p>
-        <p>7. klik <strong>Clustered Column</strong>.</p>
-        <p><img class="img-fluid" src="files/Charts_files/image016.png" alt="Klik Kolom Clustered"></p>
-        <p>8. Klik kanan pada bar orange (Cumulative %) dan klik Change Series Chart Type...
-        </p>
-        <p><img class="img-fluid" src="files/Charts_files/image131.png" alt="Ubah Jenis Bagan Seri"></p>
-        <p>Kotak dialog Ubah Tipe Charts muncul.</p>
-        <p>9. Untuk rangkaian % Kumulatif, pilih Garis dengan Penanda sebagai jenis Charts.
-        </p>
-        <p>10. Plot deret % Kumulatif pada sumbu sekunder.</p>
-        <p>11. Klik OK.</p>
-        <p><img class="img-fluid" src="files/Charts_files/image132.png" alt="Buat Bagan Kombinasi"></p>
-        <p class="moreInfo text-break"><strong>Catatan:</strong> Excel 2010 tidak menawarkan Charts kombo sebagai salah satu tipe Charts bawaan. Jika Anda menggunakan Excel 2010, alih-alih menjalankan langkah 8-10, cukup pilih Line with Markers dan klik OK. Selanjutnya, klik kanan
-            pada garis oranye/merah dan klik Format Data Series. Pilih Sumbu Sekunder dan klik Tutup.</p>
-        <p>12. Klik kanan persentase pada grafik, klik Format Axis dan atur Maksimum ke 100.
-        </p>
-        <p><img class="img-fluid" src="files/Charts_files/image133.png" alt="Format Sumbu">
-        </p>
-        <p>Hasil:</p>
-        <p><img class="img-fluid" src="https://www.excel-easy.com/examples/images/pareto-chart/pareto-chart.png" alt="Bagan Pareto"></p>
-        <p class="moreInfo text-break"><strong>Kesimpulan:</strong> Grafik Pareto menunjukkan bahwa 80% keluhan berasal dari 20% jenis keluhan (Overpriced dan Porsi Kecil). Dengan kata lain: prinsip Pareto berlaku.</p>
-    </section>
 
     <a class="d-flex justify-content-end fw-light" href="#data-analysis-Charts">kembali keatas</a>
 </section>

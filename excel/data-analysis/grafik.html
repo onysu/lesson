@@ -922,36 +922,46 @@
     </section>
 
     <section id="ChartGantt">
-        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between mt-5 mb-1 border-bottom">
-            <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="files/bahan/gantt-chart.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a>
-            <p class="bd-lead mb-0">Gantt Chart</p>
+        <div class="d-md-flex align-items-center justify-content-between pb-1 mt-2 mb-2 border-bottom">
+            <div class="fs-4" id="content">Gantt Chart</div>
         </div>
+        <p><a class="btn btn-sm btn-bd-light mb-1 mb-md-0" href="files/bahan/gantt-chart.xlsx" title="unduh file latihan" rel="noopener">unduh file latihan</a></p>
+
         <p>Excel tidak menawarkan Gantt sebagai tipe Charts, tetapi mudah untuk membuat Charts Gantt dengan menyesuaikan jenis Charts batang bertumpuk. Di bawah ini Anda dapat menemukan data Charts Gantt kami.</p>
         <p><img class="img-fluid" src="files/Charts_files/image112.png" alt="Data Gantt Chart di Excel"></p>
         <p>Untuk membuat Charts Gantt, jalankan langkah-langkah berikut.</p>
-        <p>1. Pilih range A3:C11.</p>
-        <p>2. Pada tab <strong>Insert</strong>, di grup <strong>Charts</strong>, klik <strong>Column symbol</strong>.</p>
-        <p><img class="img-fluid" src="files/Charts_files/image015.png" alt="Sisipkan Bagan Batang"></p>
-        <p>3. Klik Batang Bertumpuk.</p>
-        <p><img class="img-fluid" src="files/Charts_files/image113.png" alt="Klik Batang Bertumpuk"></p>
-        <p>Hasil:</p>
-        <p><img class="img-fluid" src="files/Charts_files/image114.png" alt="Gantt Chart Hasil Pertama"></p>
-        <p>4. Masukkan judul dengan mengklik Judul Charts. Misalnya, Membangun Rumah.</p>
-        <p>5. Klik legenda di bagian bawah dan tekan Delete.</p>
-        <p>6. Tugas (Yayasan, Dinding, dll.) dalam urutan terbalik. Klik kanan tugas pada Charts, klik <strong>Format Axis</strong> dan centang 'Kategori dalam urutan terbalik'.</p>
-        <p><img class="img-fluid" src="files/Charts_files/image115.png" alt="Kategori dalam Urutan Terbalik"></p>
-        <p>Hasil:</p>
-        <p><img class="img-fluid" src="files/Charts_files/image116.png" alt="Hasil Kedua Gantt Chart"></p>
-        <p>7. Klik kanan bar biru, klik Format Data Series, ikon Fill &amp; Line, Fill, No fill.
-        </p>
-        <p><img class="img-fluid" src="files/Charts_files/image117.png" alt="Format Seri Data"></p>
-        <p>8. Tanggal dan waktu disimpan sebagai angka di Excel dan menghitung jumlah hari sejak 0, 1 Januari 1900. 1-jun-2017 (mulai) sama dengan 42887. 15-jul-2017 (akhir) sama dengan 42931 Klik kanan tanggal pada grafik, klik Format Axis dan perbaiki
-            batas minimum ke 42887, batas maksimum ke 42931 dan Unit utama ke 7.</p>
-        <p><img class="img-fluid" src="files/Charts_files/image118.png" alt="Format Sumbu">
-        </p>
-        <p>Hasil. Sebuah Gantt chart di Excel.</p>
-        <p><img class="img-fluid" src="files/Charts_files/image119.png" alt="Gantt Chart di Excel"></p>
-        <p>Perhatikan bahwa pekerjaan pipa dan listrik dapat dilakukan secara bersamaan.</p>
+        <ol>
+            <li>Pilih range A3:C11.</li>
+            <li>
+                <p>Pada tab <strong>Insert</strong>, di grup <strong>Charts</strong>, klik <strong>Column symbol</strong>.</p>
+                <p><img class="img-fluid" src="files/Charts_files/image015.png" alt="Sisipkan Bagan Batang"></p>
+            </li>
+            <li>
+                <p>Klik <strong>Stacked Bar</strong>.</p>
+                <p><img class="img-fluid" src="files/Charts_files/image113.png" alt="Klik Batang Bertumpuk"></p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="files/Charts_files/image114.png" alt="Gantt Chart Hasil Pertama"></p>
+            </li>
+            <li>Masukkan judul dengan mengklik <strong>Chart Title</strong>. Misalnya, <q>Build a House</q>.</li>
+            <li>Klik <strong>legend</strong> di bagian bawah dan tekan <strong>Delete</strong>.</li>
+            <li>
+                <p>Tugas (Foundation, Walls, etc.) dalam urutan terbalik. Klik kanan tugas pada Charts, klik <strong>Format Axis</strong> dan centang <q>Categories in reverse order</q>.</p>
+                <p><img class="img-fluid" src="files/Charts_files/image115.png" alt="Kategori dalam Urutan Terbalik"></p>
+                <p>Hasil:</p>
+                <p><img class="img-fluid" src="files/Charts_files/image116.png" alt="Hasil Kedua Gantt Chart"></p>
+            </li>
+            <li>
+                <p>Klik kanan bar biru, klik <strong>Format Data Series</strong>, ikon Fill &amp; Line, <strong>Fill</strong>, <strong>No fill</strong>.</p>
+                <p><img class="img-fluid" src="files/Charts_files/image117.png" alt="Format Seri Data"></p>
+            </li>
+            <li>
+                <p>Tanggal dan waktu disimpan sebagai angka di Excel dan menghitung jumlah hari sejak 0, 1 Januari 1900. 1-jun-2017 (mulai) sama dengan 42887. 15-jul-2017 (akhir) sama dengan 42931 Klik kanan tanggal pada grafik, klik <strong>Format Axis</strong>                    dan perbaiki minimum bound ke 42887, maximum bound ke 42931 dan Unit utama ke 7.</p>
+                <p><img class="img-fluid" src="files/Charts_files/image118.png" alt="Format Sumbu"></p>
+                <p>Hasil. Sebuah Gantt chart di Excel.</p>
+                <p><img class="img-fluid" src="files/Charts_files/image119.png" alt="Gantt Chart di Excel"></p>
+                <p>Perhatikan bahwa pekerjaan pipa dan listrik dapat dilakukan secara bersamaan.</p>
+            </li>
+        </ol>
     </section>
 
     <section id="ChartPareto">

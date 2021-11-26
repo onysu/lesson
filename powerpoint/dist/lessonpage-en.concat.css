@@ -1,101 +1,4 @@
-a,
-abbr,
-acronym,
-address,
-applet,
-big,
-blockquote,
-body,
-caption,
-cite,
-code,
-dd,
-del,
-dfn,
-div,
-dl,
-dt,
-em,
-fieldset,
-font,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-html,
-iframe,
-img,
-ins,
-kbd,
-label,
-legend,
-li,
-object,
-ol,
-p,
-pre,
-q,
-s,
-samp,
-small,
-span,
-strike,
-sub,
-sup,
-table,
-tbody,
-td,
-tfoot,
-th,
-thead,
-tr,
-tt,
-ul,
-var {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-weight: inherit;
-    font-style: inherit;
-    font-size: 100%;
-    /* font-family: inherit; */
-    vertical-align: baseline
-}
-
-.centerImage {
-    position: relative;
-    text-align: center;
-    margin-bottom: .38em
-}
-
-.leftImage {
-    margin: 0 auto 1.3em
-}
-
-.interactive-wrapper,
-.storyline-wrapper {
-    text-align: center;
-    margin: 0 -145px
-}
-
-.interactive-wrapper {
-    padding-top: 30px;
-    padding-bottom: 30px
-}
-
 @media only screen and (max-width:742px) {
-    h3 {
-        font-size: 2.2em;
-        margin: 1.4em 0 .6em
-    }
-    h4 {
-        font-size: 1.5em;
-        margin: 1.9em auto .7em
-    }
     .chevron,
     .moreInfo,
     .new,
@@ -122,12 +25,6 @@ var {
 }
 
 @media only screen and (max-width:630px) {
-    .header-nodesc h1 {
-        top: 58px !important
-    }
-    h3 {
-        font-size: 2em
-    }
     .attention,
     .chevron,
     .moreInfo,
@@ -222,67 +119,6 @@ var {
     position: fixed;
     bottom: 65px;
     right: 50px
-}
-
-.interactive-quiz-display h3 {
-    background-color: #00ACD7;
-    color: #FFF;
-    letter-spacing: 0;
-    text-shadow: 0 3px 3px rgb(0 0 0 / 12%);
-    font-size: 30.5px;
-    font-style: italic;
-    font-weight: 600;
-    padding: 16px 20px;
-    margin: -10px -5px 0;
-    border-radius: 5px 5px 0 0
-}
-
-.interactive-quiz-question {
-    padding: 20px 30px
-}
-
-.interactive-quiz-answers input[type=radio],
-.interactive-quiz-answers input[type=checkbox] {
-    display: none
-}
-
-.interactive-quiz-answers input:checked+label {
-    color: #FFF;
-    background-color: #00ACD7;
-    border: 4px solid #00ACD7
-}
-
-.interactive-quiz-answers label {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-preferred-size: 40%;
-    flex-basis: 40%;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background: #eee;
-    border-radius: 3px;
-    border: 4px solid #eee;
-    padding: 20px 30px;
-    margin: 7px 20px;
-    cursor: pointer
-}
-
-.interactive-quiz-answers label:hover {
-    background-color: #ddd;
-    border: 4px solid #ddd
-}
-
-.interactive-quiz-message {
-    height: 50px;
-    font-size: 16px;
-    padding: 0 30px;
-    margin-top: 20px
-}
-
-.interactive-quiz-message .wrong {
-    color: #e20000
 }
 
 .iq-complete {
@@ -548,100 +384,6 @@ var {
     }
 }
 
-.lgcanvas {
-    position: relative;
-    min-height: 500px
-}
-
-.lgcanvas div.pucontent * {
-    margin: 0;
-    padding: 0
-}
-
-.lgcanvas #bgimg {
-    position: absolute;
-    top: 0;
-    left: 0
-}
-
-.lgcanvas div.hs {
-    background: url(/powerpoint/files/img/sprite_sheet.png) no-repeat;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-    position: absolute;
-    z-index: 99
-}
-
-.lgcanvas div.pu {
-    border: 3px solid #fff;
-    background: #e4e6e9;
-    box-shadow: 0 0 1px 1px #4e5359;
-    position: absolute;
-    z-index: 100;
-    display: none
-}
-
-.lgcanvas div.pu h3.puhdg {
-    padding: 15px 18px 0;
-    background: #e4e6e9;
-    color: #4e5359;
-    margin: 0 0 8px;
-    line-height: normal;
-    font-weight: 700;
-    font-size: 22px
-}
-
-
-/* .lgcanvas div.pu div.pucontent,
-.lgcanvas div.pu div.pucontent p,
-.lgcanvas div.pu div.pucontent p span {
-    font-family: 'Source Sans Pro' !important;
-    color: #707880 !important;
-    font-size: 16px !important
-} */
-
-.lgcanvas div.pu div.pucontent {
-    padding: 15px 20px 5px;
-    line-height: 18px
-}
-
-.lgcanvas div.pucontent p {
-    margin-bottom: 10px
-}
-
-.lgcanvas div.pucontent ol,
-.lgcanvas div.pucontent ul {
-    margin: 4px 0 8px 14px
-}
-
-.lgcanvas div.pucontent li {
-    margin-top: 4px
-}
-
-#lessoncontent .lgcanvas div.pu h3,
-.textplus .lgcanvas div.pu h3 {
-    color: #4e5359;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 1.1;
-    margin: 0
-}
-
-#lessoncontent .lgcanvas p,
-.textplus .lgcanvas p {
-    margin: 0 0 10px
-}
-
-.lgcanvas.t1 div.pu h3.puhdg {
-    background: 0 0
-}
-
-#lessoncontent .lgcanvas.t1 div.pu h3,
-.textplus .lgcanvas.t1 div.pu h3 {
-    color: #222
-}
-
 .callout .hotspot,
 .tooltip .hotspot {
     width: 22px;
@@ -656,6 +398,7 @@ var {
 
 .tooltip {
     opacity: 1;
+    z-index: unset;
 }
 
 .ict-edit-option,
@@ -684,14 +427,14 @@ var {
 .tooltip .hotspot.active-hs {
     background: url(/powerpoint/files/img/button_clicked_large.png) center no-repeat;
     background-size: 22px 22px;
-    z-index: 80
+    z-index: 80;
 }
 
 .hotspot-content {
     position: absolute;
-    background-color: #FFF;
+    background-color: whitesmoke;
     border: 1px solid #FFF;
-    z-index: 61;
+    /* z-index: 61; */
     height: auto !important;
     /* font-family: 'Source Sans Pro'; */
     text-align: left !important
@@ -702,23 +445,23 @@ var {
 }
 
 .hotspot-content h2 {
-    background-color: #F37E61;
+    background-color: darkorange;
     color: #FFF !important;
     /* font-family: 'Source Sans Pro' !important; */
-    font-size: 16pt !important;
-    font-weight: 700;
-    letter-spacing: 0 !important;
-    line-height: 18pt;
+    /* font-size: 16pt !important; */
+    /* font-weight: 700; */
+    /* letter-spacing: 0 !important; */
+    /* line-height: 18pt; */
     padding: 20px 25px 5px
 }
 
 .hotspot-content p {
-    border-left: 2px solid #B6B9BC;
-    border-right: 2px solid #B6B9BC;
-    border-bottom: 2px solid #B6B9BC;
+    /* border-left: 2px solid #B6B9BC; */
+    /* border-right: 2px solid #B6B9BC; */
+    /* border-bottom: 2px solid #B6B9BC; */
     color: #505860;
-    font-size: 12pt !important;
-    line-height: 1.5;
+    /* font-size: 12pt !important; */
+    /* line-height: 1.5; */
     max-width: 98% !important;
     margin: 0 !important;
     padding: 18px 25px 21px 23px
@@ -877,13 +620,14 @@ var {
     box-shadow: inset 0 -80px 0 #fff
 }
 
-.new-resource-section h4 {
+
+/* .new-resource-section h4 {
     margin-top: 38px;
     text-align: center;
     font-size: 42px;
     font-weight: 700;
     text-transform: uppercase
-}
+} */
 
 .new-resource-section+.new-resource-section {
     margin-top: -30px

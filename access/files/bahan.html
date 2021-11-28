@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>ACCESS</title>
-    <script src="../assets/js/w3.js"></script>
-    <script defer="" src="" type="text/javascript"></script>
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="../assets/css/docs.css" rel="stylesheet">
-    <link rel="shortcut icon" href="../assets/img/aku-bulat.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="dist/css/access.css">
-    <link rel="preload" as="style" href="dist/lessonpage-en.concat.css">
-    <link rel="stylesheet" href="dist/lessonpage-en.concat.css">
+    <script src="../../assets/js/w3.js"></script>
+    <script defer="" src="../dist/lessonpage-en.concat.js" type="text/javascript"></script>
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="../../assets/css/docs.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../../assets/img/aku-bulat.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../dist/css/access.css">
+    <link rel="preload" as="style" href="../dist/lessonpage-en.concat.css">
+    <link rel="stylesheet" href="../dist/lessonpage-en.concat.css">
 </head>
 
 <body>
@@ -187,49 +187,89 @@
             <p>pengantar</p>
             <p>Setiap kali Anda mempelajari program baru, penting untuk membiasakan diri dengan jendela program dan alat-alat di dalamnya. Bekerja dengan Access tidak berbeda. Mengetahui jalan Anda di sekitar lingkungan Access akan membuat belajar dan menggunakan
                 Access lebih mudah.</p>
-            <p>Dalam pelajaran ini, Anda akan membiasakan diri dengan lingkungan Access, termasuk
-                <strong>Ribbon</strong>, <strong>Backstage view</strong>, <strong>Navigation
-        pane</strong>, dan <strong>Document Tabs bar</strong>. Anda juga akan mempelajari cara menavigasi dengan
-                <strong>formulir navigasi</strong> jika database Anda menyertakannya.</p>
+            <p>Dalam pelajaran ini, Anda akan membiasakan diri dengan lingkungan Access, termasuk <strong>Ribbon</strong>, <strong>Backstage view</strong>, <strong>Navigation pane</strong>, dan <strong>Document Tabs bar</strong>. Anda juga akan mempelajari
+                cara menavigasi dengan <strong>formulir navigasi</strong> jika database Anda menyertakannya.</p>
             <p>Sepanjang tutorial ini, kita akan menggunakan database sampel. Jika Anda ingin mengikuti, Anda harus mengunduh
-                <a href="https://media.gcflearnfree.org/content/5c082fea77c05003547284ea_12_05_2018/access_sampledatabase.accdb"> <strong>database
-          sampel Access</strong></a> kami. Anda harus menginstal Access di komputer Anda untuk membuka contoh.
-            </p>
+                <a href="https://media.gcflearnfree.org/content/5c082fea77c05003547284ea_12_05_2018/access_sampledatabase.accdb"> <strong>database sampel Access</strong></a> kami. Anda harus menginstal Access di komputer Anda untuk membuka contoh.</p>
             <p>Tonton video di bawah ini untuk mempelajari selengkapnya tentang memulai di Access.</p>
             <p>Mengenal Akses</p>
-            <p>Access menggunakan <strong>Pita</strong> untuk mengatur perintah. Jika Anda baru menggunakan Access atau memiliki lebih banyak pengalaman dengan versi yang lebih lama, Anda harus meluangkan waktu terlebih dahulu untuk terbiasa dengan <strong>antarmuka Access</strong>.</p>
+            <p>Access menggunakan <strong>Ribbon</strong> untuk mengatur perintah. Jika Anda baru menggunakan Access atau memiliki lebih banyak pengalaman dengan versi yang lebih lama, Anda harus meluangkan waktu terlebih dahulu untuk terbiasa dengan <strong>antarmuka Access</strong>.</p>
 
             <!-- <p>Klik tombol di interaktif di bawah ini untuk menjadi akrab dengan antarmuka Access.</p>
             <p><img class="img-fluid" src="Access_files/image015.png" alt="antarmuka Akses"></p> -->
+            <section>
+                <div class="centerImage">
+                    <div class="ict tooltip"><img src="https://media.gcflearnfree.org/content/56f06139c87fa620e88dccb6_03_21_2016/getting_started_intro_interactive.png">
+                        <div class="hotspot" style="left: 141px; top: 9px; width: 22px; right: auto; height: 22px; bottom: auto;"></div>
+                        <div class="hotspot-content" style="width: 250px; left: 151px; top: 19px; right: auto; height: 76px; bottom: auto; display: none;"><span class="hsPosition"></span><span class="hsDelete"></span>
+                            <h5>Quick Access Toolbar</h5>
+                            <p>Quick Access Toolbar memungkinkan Anda mengakses perintah umum yang tidak peduli tab yang dipilih. Anda dapat menyesuaikan perintah tergantung pada preferensi Anda.</p>
+                        </div>
+                        <div class="hotspot" style="left: 58px; top: 42px; width: 22px; right: auto; height: 22px; bottom: auto;" rel="left: 58px; top: 42px; width: 22px; right: auto; height: 22px; bottom: auto;"></div>
+                        <div class="hotspot-content ui-draggable ui-draggable-handle posLeftTop ui-draggable-disabled" style="width: 250px; left: 68px; top: 52px; right: auto; height: 234px; bottom: auto; display: none;"><span class="hsPosition"></span><span class="hsDelete"></span>
+                            <h5>Ribbon</h5>
+                            <p>Ribbon berisi semua perintah Anda akan perlu untuk melakukan tugas umum di akses. Ini memiliki banyak tab , masing-masing dengan beberapa grup perintah.</p>
+                        </div>
+                        <div class="hotspot" style="left: 551px; top: 61px; width: 22px; right: auto; height: 22px; bottom: auto;" rel="left: 551px; top: 61px; width: 22px; right: auto; height: 22px; bottom: auto;"></div>
+                        <div class="hotspot-content" style="width: 250px; left: 561px; top: 71px; right: auto; height: 76px; bottom: auto; display: none;"><span class="hsPosition"></span><span class="hsDelete"></span>
+                            <h5>Tell Me</h5>
+                            <p>Kotak Tell Me berfungsi seperti bilah pencarian untuk membantu Anda menemukan alat atau perintah yang ingin Anda gunakan dengan cepat.</p>
+                        </div>
+                        <div class="hotspot" style="left: 649px; top: 61px; width: 22px; right: auto; height: 22px; bottom: auto;" rel="left: 649px; top: 61px; width: 22px; right: auto; height: 22px; bottom: auto;"></div>
+                        <div class="hotspot-content" style="width: 250px; left: 410px; top: 72px; display: none;"><span class="hsPosition"></span><span class="hsDelete"></span>
+                            <h5>Akun Microsoft</h5>
+                            <p>Dari sini, Anda dapat mengakses informasi akun Microsoft Anda , melihat profil Anda , dan beralih akun .</p>
+                        </div>
+                        <div class="hotspot" style="left: 156px; top: 217px; width: 22px; right: auto; height: 22px; bottom: auto;" rel="left: 156px; top: 217px; width: 22px; right: auto; height: 22px; bottom: auto;"></div>
+                        <div class="hotspot-content" style="width: 250px; left: 166px; top: 227px; display: none;"><span class="hsPosition"></span><span class="hsDelete"></span>
+                            <h5>Navigation Panel</h5>
+                            <p>Navigasi panel menampilkan semua objek yang terdapat dalam database Anda. Objek dikelompokkan berdasarkan jenisnya. Klik dua kali objek untuk membukanya.</p>
+                        </div>
+                        <div class="hotspot" style="left: 596px; top: 159px; width: 22px; right: auto; height: 22px; bottom: auto;" rel="left: 596px; top: 159px; width: 22px; right: auto; height: 22px; bottom: auto;"></div>
+                        <div class="hotspot-content ui-draggable ui-draggable-handle posLeftTop ui-draggable-disabled" style="width: 250px; left: 356px; top: 169px; display: none; right: auto; height: 186px; bottom: auto;"><span class="hsPosition"></span><span class="hsDelete"></span>
+                            <h5>Document Tabs Bar</h5>
+                            <p>Semua objek yang terbuka ditampilkan dalam tab pada bilah Tab Dokumen . Untuk melihat objek, klik tabnya.</p>
+                        </div>
+                        <div class="hotspot" style="left: 384px; top: 445px; width: 22px; right: auto; height: 22px; bottom: auto;" rel="left: 384px; top: 445px; width: 22px; right: auto; height: 22px; bottom: auto;"></div>
+                        <div class="hotspot-content ui-draggable ui-draggable-handle posLeftTop ui-draggable-disabled" style="width: 250px; left: 144px; top: 149px; display: none;"><span class="hsPosition"></span><span class="hsDelete"></span>
+                            <h5>Rekam Navigation Bar</h5>
+                            <p>Rekam Navigasi bar memungkinkan Anda untuk catatan menavigasi satu per satu. Klik panah untuk menavigasi melalui catatan. Anda dapat melompat ke catatan tertentu dengan mengetikkan nomor ID-nya ke dalam kotak.</p>
+                        </div>
+                        <div class="hotspot" style="left: 569px; top: 445px; width: 22px; right: auto; height: 22px; bottom: auto;" rel="left: 569px; top: 445px; width: 22px; right: auto; height: 22px; bottom: auto;"></div>
+                        <div class="hotspot-content ui-draggable ui-draggable-handle posLeftTop ui-draggable-disabled" style="width: 250px; left: 329px; top: 173px; display: none;"><span class="hsPosition"></span><span class="hsDelete"></span>
+                            <h5>Rekam Kotak Pencarian</h5>
+                            <p>Anda dapat menggunakan kotak Rekam Pencarian untuk mencari istilah apa pun di objek saat ini. Hasil pertama akan dipilih secara otomatis. Untuk menavigasi hasil tambahan, tekan tombol Enter pada keyboard Anda.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            <p>Bekerja di lingkungan Access Anda</p>
-            <p> Access menggunakan fitur seperti <strong>Ribbon</strong> dan <strong>Quick
-        Access Toolbar</strong> —tempat Anda akan menemukan perintah untuk melakukan tugas umum di Access—serta
-                <strong>tampilan Backstage</strong>.</p>
-            <p>Pita</p>
-            <p>Access menggunakan <strong>sistem pita tab</strong> alih-alih menu tradisional.
-                <strong>Pita</strong> berisi <strong>beberapa tab</strong>, masing-masing dengan beberapa
+            <h4>Bekerja di lingkungan Access Anda</h4>
+            <p> Access menggunakan fitur seperti <strong>Ribbon</strong> dan <strong>Quick Access Toolbar</strong> —tempat Anda akan menemukan perintah untuk melakukan tugas umum di Access—serta <strong>tampilan Backstage</strong>.</p>
+            <h5>Ribbon</h5>
+            <p>Access menggunakan <strong>sistem ribbon tab</strong> alih-alih menu tradisional.
+                <strong>Ribbon</strong> berisi <strong>beberapa tab</strong>, masing-masing dengan beberapa
                 <strong>kelompok perintah</strong>. Misalnya, grup Clipboard pada tab Beranda berisi perintah Potong, Salin, dan Tempel.</p>
-            <p><img class="img-fluid" src="Access_files/image016.png" alt=Pita></p>
+            <p><img class="img-fluid" src="Access_files/image016.png" alt=Ribbon></p>
             <p>Beberapa grup juga memiliki panah kecil di sudut kanan bawah yang dapat Anda klik untuk opsi lainnya.</p>
             <p><img class="img-fluid" src="Access_files/image017.png" alt="Lebih banyak pilihan"></p>
             <p>Untuk meminimalkan dan memaksimalkan Ribbon:</p>
-            <p>Pita dirancang untuk menanggapi tugas Anda saat ini; namun, Anda dapat memilih untuk
+            <p>Ribbon dirancang untuk menanggapi tugas Anda saat ini; namun, Anda dapat memilih untuk
                 <strong>meminimalkan</strong> Ribbon jika ternyata terlalu banyak memakan ruang layar.</p>
             <ol>
                 <li>Klik <strong>panah</strong> di sudut kanan bawah Ribbon untuk meminimalkannya.</li>
             </ol>
-            <p><img class="img-fluid" src="Access_files/image018.png" alt="Meminimalkan Pita"></p>
+            <p><img class="img-fluid" src="Access_files/image018.png" alt="Meminimalkan Ribbon"></p>
             <ol style='margin-top:0cm' start=2 type=1>
                 <li>The <strong>Ribbon</strong> akan diminimalkan. Klik
                     <strong>tab</strong> untuk membuat Ribbon muncul kembali. Ini akan hilang lagi saat tidak digunakan.</li>
             </ol>
-            <p><img class="img-fluid" src="Access_files/image019.png" alt="Pita yang diminimalkan">
+            <p><img class="img-fluid" src="Access_files/image019.png" alt="Ribbon yang diminimalkan">
             </p>
             <ol style='margin-top:0cm' start=3 type=1>
-                <li>Untuk <strong>memaksimalkan</strong> Ribbon, klik tab, lalu klik ikon <strong>pin</strong> di pojok kanan bawah. Pita akan muncul setiap saat.</li>
+                <li>Untuk <strong>memaksimalkan</strong> Ribbon, klik tab, lalu klik ikon <strong>pin</strong> di pojok kanan bawah. Ribbon akan muncul setiap saat.</li>
             </ol>
-            <p><img class="img-fluid" src="Access_files/image020.png" alt="Memaksimalkan Pita"></p>
+            <p><img class="img-fluid" src="Access_files/image020.png" alt="Memaksimalkan Ribbon"></p>
             <p>Menggunakan fitur Beri tahu saya</p>
             <p>Jika Anda kesulitan menemukan perintah yang Anda inginkan, fitur
                 <strong>Beri tahu saya</strong> dapat membantu. Ini berfungsi seperti bilah pencarian biasa: Ketik apa yang Anda cari, dan daftar opsi akan muncul. Anda kemudian dapat menggunakan perintah langsung dari menu tanpa harus menemukannya di
@@ -248,7 +288,7 @@
             <p> <strong>Tampilan Backstage</strong> memberi Anda berbagai opsi untuk menyimpan, membuka, dan mencetak database Anda.</p>
             <p>Untuk mengakses tampilan Backstage:</p>
             <ol>
-                <li>Klik tab <strong>File</strong> pada <strong>Pita</strong>.</li>
+                <li>Klik tab <strong>File</strong> pada <strong>Ribbon</strong>.</li>
             </ol>
             <p><img class="img-fluid" src="Access_files/image023.png" alt="Mengklik tab File"></p>
             <ol style='margin-top:0cm' start=2 type=1>
@@ -321,7 +361,7 @@
                 <li>Buka
                     <a href="https://media.gcflearnfree.org/content/5c082fea77c05003547284ea_12_05_2018/access_sampledatabase.accdb"> <strong>database
             latihan</strong></a> kami.</li>
-                <li>Klik semua <strong>tab</strong>, dan perhatikan bagaimana opsi pada Pita berubah.</li>
+                <li>Klik semua <strong>tab</strong>, dan perhatikan bagaimana opsi pada Ribbon berubah.</li>
                 <li> <strong>Minimalkan</strong> Ribbon, lalu <strong>Maksimalkan</strong> lagi.</li>
                 <li>Ubah ukuran <strong>panel Navigasi</strong> agar tidak memakan banyak ruang.</li>
                 <li> <strong>Urutkan</strong> ulang objek di panel Navigasi.</li>
@@ -366,7 +406,7 @@
             <p><img class="img-fluid" src="Access_files/image035.png" alt="Membuka database Access">
             </p>
             <ol style='margin-top:0cm' start=5 type=1>
-                <li>Satu atau beberapa <strong>pesan peringatan</strong> mungkin muncul saat Anda membuka database Anda. Jika database berisi fungsi yang disesuaikan, bilah kuning dengan peringatan keamanan mungkin muncul di bawah Pita. Jika Anda mempercayai
+                <li>Satu atau beberapa <strong>pesan peringatan</strong> mungkin muncul saat Anda membuka database Anda. Jika database berisi fungsi yang disesuaikan, bilah kuning dengan peringatan keamanan mungkin muncul di bawah Ribbon. Jika Anda mempercayai
                     sumber database Anda, klik <strong>Aktifkan
           Konten</strong> agar database Anda ditampilkan dengan benar.</li>
             </ol>
@@ -1160,7 +1200,7 @@
         yang</strong> diterapkan ke tabel.</p>
             <p>Untuk membuat kueri satu tabel sederhana:</p>
             <ol>
-                <li>Pilih tab <strong>Buat</strong> pada Pita dan temukan grup
+                <li>Pilih tab <strong>Buat</strong> pada Ribbon dan temukan grup
                     <strong>Kueri</strong>.</li>
                 <li>Klik perintah <strong>Desain Kueri</strong>.</li>
             </ol>
@@ -1351,7 +1391,7 @@
             <p>Sekarang setelah kami merencanakan kueri kami, kami siap untuk mendesain dan menjalankannya. Jika Anda telah membuat rencana tertulis untuk kueri Anda, pastikan untuk sering merujuknya selama proses desain kueri.</p>
             <p>Untuk membuat kueri multi-tabel:</p>
             <ol>
-                <li>Pilih perintah <strong>Desain Kueri</strong> dari tab <strong>Buat</strong> pada Pita.
+                <li>Pilih perintah <strong>Desain Kueri</strong> dari tab <strong>Buat</strong> pada Ribbon.
                 </li>
             </ol>
             <p><img class="img-fluid" src="Access_files/image142.png" alt="Mengklik Perintah Desain Kueri"></p>
@@ -1455,7 +1495,7 @@
         Data</strong>, artinya Anda akan melihat hasil kueri dalam tabel. Untuk mengubah kueri, Anda harus memasukkan
                 <strong>tampilan Desain</strong>, tampilan yang Anda gunakan saat membuatnya. Ada dua cara untuk beralih ke tampilan Desain:</p>
             <ul>
-                <li>Pada tab <strong>Beranda</strong> Pita, klik perintah
+                <li>Pada tab <strong>Beranda</strong> Ribbon, klik perintah
                     <strong>Lihat</strong>. Pilih <strong>Design View</strong> dari menu drop-down yang muncul.</li>
             </ul>
             <p><img class="img-fluid" src="Access_files/image150.jpg" alt="Beralih ke Design View dengan perintah View pada Ribbon"></p>
@@ -1501,7 +1541,7 @@
             </ol>
             <p><img class="img-fluid" src="Access_files/image156.png" alt="Hasil kueri yang diurutkan"></p>
             <p>Anda juga dapat menerapkan pengurutan bertingkat ke tabel yang tidak memiliki kueri yang diterapkan padanya. Pada tab
-                <strong>Beranda</strong> di Pita, pilih perintah tarik-turun
+                <strong>Beranda</strong> di Ribbon, pilih perintah tarik-turun
                 <strong>Lanjutan</strong> di grup <strong>Urutkan
         &amp; Filter</strong>. Dari menu yang muncul, pilih <strong>Advanced
         Filter/Sort</strong> dan buat pengurutan bertingkat seperti biasa. Setelah selesai, klik perintah
@@ -1668,7 +1708,7 @@
             </ol>
             <p><img class="img-fluid" src="Access_files/image165.png" alt="Kueri Terjual Cookie"></p>
             <ol style='margin-top:0cm' start=2 type=1>
-                <li>Pilih tab <strong>Buat</strong> di Pita. Temukan grup
+                <li>Pilih tab <strong>Buat</strong> di Ribbon. Temukan grup
                     <strong>Laporan</strong>, lalu klik perintah
                     <strong>Laporan</strong>.</li>
             </ol>
@@ -1726,9 +1766,9 @@
             <p><img class="img-fluid" src="Access_files/image172.jpg" alt="Memilih Pratinjau Cetak dari menu Lihat"></p>
             <ol style='margin-top:0cm' start=2 type=1>
                 <li>Jika perlu, ubah <strong>ukuran halaman</strong>, <strong>lebar
-          margin</strong>, dan <strong>orientasi halaman</strong> menggunakan perintah terkait pada Pita.</li>
+          margin</strong>, dan <strong>orientasi halaman</strong> menggunakan perintah terkait pada Ribbon.</li>
             </ol>
-            <p><img class="img-fluid" src="Access_files/image173.jpg" alt="Tab Pratinjau Cetak pada Pita"></p>
+            <p><img class="img-fluid" src="Access_files/image173.jpg" alt="Tab Pratinjau Cetak pada Ribbon"></p>
             <ol style='margin-top:0cm' start=3 type=1>
                 <li>Klik perintah <strong>Cetak</strong>.</li>
             </ol>
@@ -1749,7 +1789,7 @@
                 <li>Dari tab <strong>Beranda</strong>, klik perintah
                     <strong>Lihat</strong>, lalu pilih <strong>Pratinjau
           Cetak</strong> dari daftar turun bawah.</li>
-                <li>Temukan grup <strong>Data</strong> di Pita.</li>
+                <li>Temukan grup <strong>Data</strong> di Ribbon.</li>
                 <li>Pilih salah satu opsi tipe file, atau klik <strong>Lainnya</strong> untuk melihat opsi untuk menyimpan laporan Anda sebagai file <strong>Word</strong> atau <strong>HTML</strong>.</li>
             </ol>
             <p><img class="img-fluid" src="Access_files/image175.jpg" alt="Memilih opsi ekspor"></p>
@@ -1906,7 +1946,7 @@
                 <a href="http://www.gcflearnfree.org/word" title="kata 2013"> <strong>Word</strong></a> kami.</p>
             <p><img class="img-fluid" src="Access_files/image190.png" alt="Laporan dengan pemformatan teks sederhana diterapkan"></p>
             <p>Memodifikasi header dan footer halaman</p>
-            <p>Untuk melihat dan mengubah <strong>header</strong> dan <strong>footer</strong> yang muncul di setiap halaman laporan Anda, pilih perintah <strong>Lihat</strong> di Pita dan alihkan ke <strong>tampilan
+            <p>Untuk melihat dan mengubah <strong>header</strong> dan <strong>footer</strong> yang muncul di setiap halaman laporan Anda, pilih perintah <strong>Lihat</strong> di Ribbon dan alihkan ke <strong>tampilan
         Desain</strong>. Header dan footer terletak di ruang putih di bawah bilah <strong>Page Header</strong> dan <strong>Page
         Footer</strong>.</p>
             <p><img class="img-fluid" src="Access_files/image191.png" alt="Header dan footer halaman dalam Design View"></p>
@@ -1995,7 +2035,7 @@
                 <li>Pilih tab <strong>Design</strong>, cari grup
                     <strong>Themes</strong>, lalu klik perintah <strong>Themes</strong>.</li>
             </ol>
-            <p><img class="img-fluid" src="Access_files/image205.png" alt="Perintah Tema pada pita">
+            <p><img class="img-fluid" src="Access_files/image205.png" alt="Perintah Tema pada ribbon">
             </p>
             <ol style='margin-top:0cm' start=2 type=1>
                 <li>Menu tarik-turun akan muncul. Pilih tema yang diinginkan.
@@ -2012,7 +2052,7 @@
                 <li>Pilih tab <strong>Design</strong>, cari grup
                     <strong>Themes</strong>, lalu klik perintah <strong>Fonts</strong>.</li>
             </ol>
-            <p><img class="img-fluid" src="Access_files/image208.png" alt="Perintah Font pada pita">
+            <p><img class="img-fluid" src="Access_files/image208.png" alt="Perintah Font pada ribbon">
             </p>
             <ol style='margin-top:0cm' start=2 type=1>
                 <li>Menu tarik-turun akan muncul. Pilih satu set <strong>font
@@ -2294,7 +2334,7 @@
             <p>Untuk menambahkan bidang ke formulir:</p>
             <ol>
                 <li>Pilih tab <strong>Desain</strong>, lalu cari grup
-                    <strong>Alat</strong> di sisi kanan Pita.</li>
+                    <strong>Alat</strong> di sisi kanan Ribbon.</li>
                 <li>Klik perintah <strong>Add Existing Fields</strong>.</li>
             </ol>
             <p><img class="img-fluid" src="Access_files/image232.jpg" alt="Mengklik perintah Tambahkan Bidang yang Ada"></p>

@@ -22,7 +22,7 @@
             display: flex;
             flex-direction: column;
             width: 50%;
-            border-right: 1px solid #555;
+            /* border-right: 1px solid #555; */
         }
         
         .code-area textarea {
@@ -31,8 +31,9 @@
             width: 100%;
             /* height: 33.33%; */
             height: 100%;
-            font-size: 18px;
+            /* font-size: 18px; */
             padding: 10px;
+            border: none;
         }
         
         .preview-area {
@@ -49,7 +50,7 @@
 
 <body>
     <div class="code-area">
-        <textarea id="htmlCode" placeholder="HTML" oninput="showPreview()"></textarea>
+        <textarea id="htmlCode" placeholder="Masukkan kode-kode HTML disini ..." oninput="showPreview()"></textarea>
         <!-- <textarea id="cssCode" placeholder="CSS" oninput="showPreview()"></textarea> -->
         <!-- <textarea id="jsCode" placeholder="JavaScript" oninput="showPreview()"></textarea> -->
     </div>

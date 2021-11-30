@@ -304,7 +304,6 @@
 <span class="nt">&lt;/html&gt;</span></code></pre>
                                     </figure>
                                 </div>
-                                <p><img class="img-fluid" src="files/html_files/image002.png" alt="buku catatan"></p>
                             </li>
                             <li>
                                 <p>Langkah 3: Simpan Halaman HTML. <br> Simpan file di komputer Anda. Pilih <strong>File
@@ -382,50 +381,98 @@
                         <h4>Contoh Dasar HTML</h4>
                         <p>Dalam bab ini kita akan menunjukkan beberapa contoh HTML dasar. Jangan khawatir jika kami menggunakan tag yang belum Anda pelajari.</p>
                         <h5>Dokumen HTML</h5>
-                        <p>Semua dokumen HTML harus dimulai dengan deklarasi tipe dokumen: &lt;!DOCTYPE html&gt;. Dokumen HTML itu sendiri dimulai dengan &lt;html&gt; dan diakhiri dengan &lt;/html&gt;. Bagian yang terlihat dari dokumen HTML adalah antara
-                            &lt;body&gt; dan &lt;/body&gt;.
+                        <p>Semua dokumen HTML harus dimulai dengan deklarasi tipe dokumen: <code>&lt;!DOCTYPE
+                                html&gt;</code>. Dokumen HTML itu sendiri dimulai dengan <code>&lt;html&gt;</code> dan diakhiri dengan <code>&lt;/html&gt;</code>. Bagian yang terlihat dari dokumen HTML adalah antara
+                            <code>&lt;body&gt;</code> dan <code>&lt;/body&gt;</code>.
                         </p>
                         <p>Contoh</p>
-                        <p>&lt;!DOCTYPE html&gt;
-                            <br> &lt;html&gt;
-                            <br> &lt;body&gt;
-                            <br>
-                            <br> &lt;h1&gt;My First Heading&lt;/h1&gt;
-                            <br> &lt;p&gt;My first paragraph.&lt;/p&gt;
-                            <br>
-                            <br> &lt;/body&gt;
-                            <br> &lt;/html&gt;
-                        </p>
-                        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_document" target="_blank">Cobalah sendiri</a></p>
-                        <p>Deklarasi &lt;!DOCTYPE&gt;</p>
-                        <p>&lt;!DOCTYPE&gt;deklarasi mewakili jenis dokumen, dan membantu browser untuk tampilan halaman web dengan benar.</p>
-                        <p>Itu hanya boleh muncul sekali, di bagian atas halaman (sebelum tag HTML apa pun).</p>
-                        <p>&lt;!DOCTYPE&gt;deklarasi ini tidak case sensitive.</p>
-                        <p>&lt;!DOCTYPE&gt;deklarasi HTML5 adalah:</p>
-                        <p>&lt;!DOCTYPE html&gt;</p>
+                        <section>
+                            <div class="col col-code">
+                                <figure>
+                                    <pre><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Page title<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;My First Heading&lt;/h1&gt;</span>
+    <span class="nt">&lt;p&gt;My first paragraph.&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre>
+                                </figure>
+                            </div>
+                            <hr>
+                            <!-- <p><a class="btn btn-secondary btn-sm text-light" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro" target="_blank">Cobalah sendiri</a></p> -->
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-secondary btn-sm text-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Cobalah sendiri
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">HTML Editor</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <iframe src="html-editor.html" frameborder="0" name="editor" width="100%" height="300"></iframe>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary text-light" data-bs-dismiss="modal">Tutup</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+
+                    <!-- Deklarasi -->
+                    <section>
+                        <h4>Deklarasi <code>&lt;!DOCTYPE&gt;</code></h4>
+                        <p>deklarasi <code>&lt;!DOCTYPE&gt;</code> mewakili jenis dokumen, dan membantu browser untuk tampilan halaman web dengan benar. Itu hanya boleh muncul sekali, di bagian atas halaman (sebelum tag HTML apa pun).</p>
+                        <p><code>&lt;!DOCTYPE&gt;</code> deklarasi ini tidak case sensitive. <br>
+                            <code>&lt;!DOCTYPE&gt;</code> deklarasi HTML5 adalah: <br> <code>&lt;!DOCTYPE
+                                html&gt;</code></p>
                     </section>
 
                     <!-- Judul HTML -->
-                    <h4>Judul HTML</h4>
-                    <p>Judul HTML didefinisikan dengan tag &lt;h1&gt; to &lt;h6&gt;.</p>
-                    <p>&lt;h1&gt;mendefinisikan judul yang paling penting. &lt;h6&gt;mendefinisikan heading yang paling tidak penting: </p>
-                    <p>Contoh</p>
-                    <p>&lt;h1&gt;This is heading 1&lt;/h1&gt;<br> &lt;h2&gt;This is heading 2&lt;/h2&gt;<br> &lt;h3&gt;This is heading 3&lt;/h3&gt;</p>
-                    <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_headings" target="_blank">Cobalah sendiri</a></p>
-                    <p>Paragraf HTML</p>
-                    <p>Paragraf HTML didefinisikan dengan &lt;p&gt; tag:</p>
-                    <p>Contoh</p>
-                    <p>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br> &lt;p&gt;This is another paragraph.&lt;/p&gt;</p>
-                    <p class="text-break"><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_paragraphs" target="_blank">Cobalah sendiri</a></p>
-                    <p>Tautan HTML</p>
-                    <p>Tautan HTML didefinisikan dengan &lt;a&gt; tag:</p>
-                    <p>Contoh</p>
-                    <p class="text-break">&lt;a href=<q>onysu.github.io/lesson/webdesain/index.html</q>&gt;This is a link&lt;/a&gt;
-                    </p>
-                    <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_link" target="_blank">Cobalah sendiri</a></p>
-                    <p>Tujuan tautan ditentukan dalam hrefatribut. </p>
-                    <p>Atribut digunakan untuk memberikan informasi tambahan tentang elemen HTML.</p>
-                    <p>Anda akan belajar lebih banyak tentang atribut di bab selanjutnya.</p>
+                    <section>
+                        <h4>Judul HTML</h4>
+                        <p>Judul HTML didefinisikan dengan tag <code>&lt;h1&gt;</code> ~ <code>&lt;h6&gt;</code>.
+                            <code>&lt;h1&gt;</code> mendefinisikan judul yang paling penting.
+                            <code>&lt;h6&gt;</code> mendefinisikan heading yang paling tidak penting: </p>
+                        <p>Contoh</p>
+                        <p><code>&lt;h1&gt;</code>Ini adalah heading 1<code>&lt;/h1&gt;</code><br>
+                            <code>&lt;h2&gt;</code>Ini adalah heading 2<code>&lt;/h2&gt;</code><br>
+                            <code>&lt;h3&gt;</code>Ini adalah heading 3<code>&lt;/h3&gt;</code></p>
+                        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_headings" target="_blank">Cobalah sendiri</a></p>
+                    </section>
+
+                    <!-- Paragraf HTML -->
+                    <section>
+                        <p>Paragraf HTML</p>
+                        <p>Paragraf HTML didefinisikan dengan &lt;p&gt; tag:</p>
+                        <p>Contoh</p>
+                        <p>&lt;p&gt;Ini adalah paragraph.&lt;/p&gt;<br> &lt;p&gt;Ini adalah paragraph yang lain.&lt;/p&gt;
+                        </p>
+                        <p class="text-break"><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_paragraphs" target="_blank">Cobalah sendiri</a></p>
+                    </section>
+
+                    <!-- Link HTML -->
+                    <section>
+                        <p>Link HTML</p>
+                        <p>Link HTML didefinisikan dengan &lt;a&gt; tag:</p>
+                        <p>Contoh</p>
+                        <p class="text-break">&lt;a href=<q>onysu.github.io/lesson/webdesain/index.html</q>&gt;This is a link&lt;/a&gt;
+                        </p>
+                        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_link" target="_blank">Cobalah sendiri</a></p>
+                        <p>Tujuan tautan ditentukan dalam hrefatribut. </p>
+                        <p>Atribut digunakan untuk memberikan informasi tambahan tentang elemen HTML.</p>
+                        <p>Anda akan belajar lebih banyak tentang atribut di bab selanjutnya.</p>
+                    </section>
+
                     <p>Gambar HTML</p>
                     <p>Gambar HTML didefinisikan dengan &lt;img&gt; tag.</p>
                     <p>File sumber ( src), teks alternatif ( alt), width, dan heightdisediakan sebagai atribut:</p>

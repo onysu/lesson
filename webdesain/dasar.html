@@ -39,7 +39,7 @@
 
                 <section>
                     <p>HTML adalah bahasa markup standar untuk membuat halaman Web.</p>
-                    <p>Apa itu HTML?</p>
+                    <h4>Apa itu HTML?</h4>
                     <ul type="square">
                         <li>HTML adalah singkatan dari Hyper Text Markup Language</li>
                         <li>HTML adalah bahasa markup standar untuk membuat halaman Web.</li>
@@ -48,40 +48,51 @@
                         <li>Elemen HTML memberi tahu browser cara menampilkan konten</li>
                         <li>Elemen HTML memberi label potongan konten seperti &quot;ini adalah judul&quot;, &quot;ini adalah paragraf&quot;, &quot;ini adalah tautan&quot;, dll.</li>
                     </ul>
-                    <p>Dokumen HTML Sederhana</p>
+                    <h5>Dokumen HTML Sederhana</h5>
                     <p>Contoh</p>
                     <section class="highlight">
-                        <p>&lt;!DOCTYPE html&gt;
-                            <br> &lt;html&gt;
-                            <br> &lt;head&gt;
-                            <br> &lt;title&gt;Page Title&lt;/title&gt;
-                            <br> &lt;/head&gt;
-                            <br> &lt;body&gt;
-                            <br>
-                            <br> &lt;h1&gt;My First Heading&lt;/h1&gt;
-                            <br> &lt;p&gt;My first paragraph.&lt;/p&gt;
-                            <br>
-                            <br> &lt;/body&gt;
-                            <br> &lt;/html&gt;
-                        </p>
-                        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro" target="_blank">Cobalah sendiri</a></p>
+                        <div class="col col-code">
+                            <figure>
+                                <pre><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Page title<span class="nt">&lt;/title&gt;</span>
+  <span class="nt">&lt;/head&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;h1&gt;My First Heading&lt;/h1&gt;</span>
+    <span class="nt">&lt;p&gt;My first paragraph.&lt;/p&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre>
+                            </figure>
+                        </div>
+                        <hr>
+                        <p><a class="btn btn-primary btn-sm" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro" target="_blank">Cobalah sendiri</a></p>
                     </section>
-                    <p>Contoh Dijelaskan</p>
+
+                    <p>Penjelasannya :</p>
                     <ul type="square">
-                        <li>The &lt;!DOCTYPE html&gt;deklarasi mendefinisikan bahwa dokumen ini adalah dokumen HTML5</li>
-                        <li>The &lt;html&gt;elemen elemen akar halaman HTML</li>
-                        <li>The &lt;head&gt;elemen berisi informasi meta tentang halaman HTML</li>
-                        <li>The &lt;title&gt;elemen menentukan judul untuk halaman HTML (yang ditampilkan dalam bar judul browser atau tab halaman ini).</li>
-                        <li>The &lt;body&gt;elemen mendefinisikan tubuh dokumen, dan merupakan wadah untuk semua isi terlihat, seperti judul, paragraf, gambar, hyperlink, tabel, daftar, dll</li>
-                        <li>The &lt;h1&gt;elemen mendefinisikan judul besar</li>
-                        <li>The &lt;p&gt;elemen mendefinisikan sebuah paragraf</li>
+                        <li><strong>&lt;!DOCTYPE html&gt;</strong> deklarasi mendefinisikan bahwa dokumen ini adalah dokumen HTML5.</li>
+                        <li><strong>&lt;html&gt;</strong> elemen elemen akar halaman HTML</li>
+                        <li><strong>&lt;head&gt;</strong> elemen berisi informasi meta tentang halaman HTML</li>
+                        <li><strong>&lt;title&gt;</strong> elemen menentukan judul untuk halaman HTML (yang ditampilkan dalam bar judul browser atau tab halaman ini).</li>
+                        <li><strong>&lt;body&gt;</strong> elemen mendefinisikan tubuh dokumen, dan merupakan wadah untuk semua isi terlihat, seperti judul, paragraf, gambar, hyperlink, tabel, daftar, dll</li>
+                        <li><strong>&lt;h1&gt;</strong> elemen mendefinisikan judul besar</li>
+                        <li><strong>&lt;p&gt;</strong> elemen mendefinisikan sebuah paragraf</li>
                     </ul>
-                    <p>Apa itu Elemen HTML?</p>
+
+                    <h4>Apa itu Elemen HTML?</h4>
                     <p>Elemen HTML didefinisikan oleh tag awal, beberapa konten, dan tag akhir:</p>
-                    <p>&lt;tagname&gt; Konten ada di sini... &lt;/tagname&gt;</p>
+
+                    <code class="language-html" data-lang="html">
+                        <p>&lt;tagname&gt; Konten ada di sini... &lt;/tagname&gt;</p>
+                    </code>
+
                     <p><b>Elemen</b> HTML adalah segalanya mulai dari tag awal hingga tag akhir:</p>
-                    <p>&lt;h1&gt; Judul Pertama Saya &lt;/h1&gt;</p>
-                    <p>&lt;p&gt; Paragraf pertama saya. &lt;/p&gt;</p>
+                    <code class="language-html" data-lang="html">
+                        <p>&lt;h1&gt; Judul Pertama Saya &lt;/h1&gt;</p>
+                        <p>&lt;p&gt; Paragraf pertama saya. &lt;/p&gt;</p>
+                    </code>
+
                     <table class="table table-bordered w-auto">
                         <thead class="table-light">
                             <tr>
@@ -168,7 +179,8 @@
                     <p><b>Catatan:</span></b> Beberapa elemen HTML tidak memiliki konten (seperti elemen &lt;br&gt;). Elemen-elemen ini disebut elemen kosong. Elemen kosong tidak memiliki tag akhir!</p>
                     <p>Peramban Web</p>
                     <p>Tujuan browser web (Chrome, Edge, Firefox, Safari) adalah untuk membaca dokumen HTML dan menampilkannya dengan benar.</p>
-                    <p>Browser tidak menampilkan tag HTML, tetapi menggunakannya untuk menentukan cara menampilkan dokumen:</p>
+                    <p>Browser tidak menampilkan tag HTML, tetapi menggunakannya untuk menentukan cara menampilkan dokumen:
+                    </p>
                     <p><img class="img-fluid" src="files/html_files/image001.png" alt="Lihat di Browser"></p>
                     <p>Struktur Halaman HTML</p>
                     <p>Di bawah ini adalah visualisasi struktur halaman HTML:</p>
@@ -178,10 +190,13 @@
                             </div>
                             &lt;/head&gt;
                         </div>
-                        <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#ddd">&lt;body&gt;
+                        <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#ddd">
+                            &lt;body&gt;
                             <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#fff">
-                                <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;h1&gt;Judul halaman&lt;/h1&gt;</div>
-                                <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;Ini adalah paragraf.&lt;/p&gt;</div>
+                                <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;h1&gt;Judul halaman&lt;/h1&gt;
+                                </div>
+                                <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;Ini adalah paragraf.&lt;/p&gt;
+                                </div>
                                 <div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;Ini adalah paragraf lain.&lt;/p&gt;</div>
                             </div>
                             &lt;/body&gt;
@@ -259,17 +274,20 @@
                     <h5>Belajar HTML Menggunakan Notepad atau TextEdit</h5>
                     <p>Halaman web dapat dibuat dan dimodifikasi dengan menggunakan editor HTML profesional. Namun, untuk mempelajari HTML kami merekomendasikan editor teks sederhana seperti Notepad (PC) atau TextEdit (Mac). Kami percaya bahwa menggunakan
                         editor teks sederhana adalah cara yang baik untuk mempelajari HTML.</p>
-                    <p>Ikuti langkah-langkah di bawah ini untuk membuat halaman web pertama Anda dengan Notepad atau TextEdit.</p>
+                    <p>Ikuti langkah-langkah di bawah ini untuk membuat halaman web pertama Anda dengan Notepad atau TextEdit.
+                    </p>
                     <ul type="square">
                         <li>
                             <p>Langkah 1: Buka Notepad (PC)</p>
                             <p><b>Windows 8 atau lebih baru:</b></p>
-                            <p>Buka <b>Layar Mulai</b> (simbol jendela di kiri bawah layar Anda). Ketik <b>Notepad</b> .</p>
+                            <p>Buka <b>Layar Mulai</b> (simbol jendela di kiri bawah layar Anda). Ketik <b>Notepad</b> .
+                            </p>
                             <p><b>Windows 7 atau sebelumnya:</b></p>
                             <p>Buka <b>Mulai</b> &gt; <b>Program &gt; Aksesori &gt; Notepad</b></p>
                             <p>Langkah 1: Buka TextEdit (Mac)</p>
                             <p>Buka <b>Finder &gt; Aplikasi &gt; TextEdit</b></p>
-                            <p>Ubah juga beberapa preferensi agar aplikasi dapat menyimpan file dengan benar. Di <b>Preferensi&gt; Format&gt; </b>pilih <b>&quot;Teks Biasa&quot;</b></p>
+                            <p>Ubah juga beberapa preferensi agar aplikasi dapat menyimpan file dengan benar. Di
+                                <b>Preferensi&gt; Format&gt; </b>pilih <b>&quot;Teks Biasa&quot;</b></p>
                             <p>Kemudian di bawah &quot;Buka dan Simpan&quot;, centang kotak yang bertuliskan &quot;Tampilkan file HTML sebagai kode HTML alih-alih teks yang diformat&quot;.</p>
                             <p><b>Kemudian buka dokumen baru untuk menempatkan kode.</b></p>
                         </li>
@@ -322,7 +340,8 @@
                     </section>
                     <p><b>Klik tombol &quot;Coba Sendiri&quot; untuk melihat cara kerjanya.</b></p>
                     <!-- <p>Ruang W3Schools</p> -->
-                    <p>Jika Anda ingin membuat situs web Anda sendiri dan menyimpan kode Anda secara online, coba <b>free website builder</b>, yang disebut <b>W3schools Spaces</b> :</p>
+                    <p>Jika Anda ingin membuat situs web Anda sendiri dan menyimpan kode Anda secara online, coba
+                        <b>free website builder</b>, yang disebut <b>W3schools Spaces</b> :</p>
                     <p><img class="img-fluid" src="files/html_files/image004.jpg" alt="Ruang W3Schools"></p>
                     <p>Contoh Dasar HTML</p>
                     <p>Dalam bab ini kita akan menunjukkan beberapa contoh HTML dasar. Jangan khawatir jika kami menggunakan tag yang belum Anda pelajari.</p>
@@ -362,7 +381,8 @@
                     <p>Tautan HTML</p>
                     <p>Tautan HTML didefinisikan dengan &lt;a&gt; tag:</p>
                     <p>Contoh</p>
-                    <p>&lt;a href=<q>https://onysu.github.io/lesson/webdesain/index.html</q>&gt;This is a link&lt;/a&gt;</p>
+                    <p>&lt;a href=<q>https://onysu.github.io/lesson/webdesain/index.html</q>&gt;This is a link&lt;/a&gt;
+                    </p>
                     <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_link" target="_blank">Cobalah sendiri</a></p>
                     <p>Tujuan tautan ditentukan dalam hrefatribut. </p>
                     <p>Atribut digunakan untuk memberikan informasi tambahan tentang elemen HTML.</p>
@@ -371,10 +391,12 @@
                     <p>Gambar HTML didefinisikan dengan &lt;img&gt; tag.</p>
                     <p>File sumber ( src), teks alternatif ( alt), width, dan heightdisediakan sebagai atribut:</p>
                     <p>Contoh</p>
-                    <p>&lt;img src=&quot;w3schools.jpg&quot; alt=&quot;W3Schools.com&quot; width=&quot;104&quot; height=&quot;142&quot;&gt;</p>
+                    <p>&lt;img src=&quot;w3schools.jpg&quot; alt=&quot;W3Schools.com&quot; width=&quot;104&quot; height=&quot;142&quot;&gt;
+                    </p>
                     <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_img" target="_blank">Cobalah sendiri</a></p>
                     <p>Bagaimana Cara Melihat Sumber HTML?</p>
-                    <p>Pernahkah Anda melihat halaman Web dan bertanya-tanya &quot;Hei! Bagaimana mereka melakukannya?&quot;</p>
+                    <p>Pernahkah Anda melihat halaman Web dan bertanya-tanya &quot;Hei! Bagaimana mereka melakukannya?&quot;
+                    </p>
                     <p>Lihat Kode Sumber HTML:</p>
                     <p>Klik kanan di halaman HTML dan pilih &quot;Lihat Sumber Halaman&quot; (di Chrome) atau &quot;Lihat Sumber&quot; (di Edge), atau yang serupa di browser lain. Ini akan membuka jendela yang berisi kode sumber HTML halaman.</p>
                     <p>Periksa Elemen HTML:</p>
@@ -494,11 +516,14 @@
                         <br>
                         <br> &lt;/body&gt;
                     </p>
-                    <p>&lt;body&gt;elemen mendefinisikan tubuh dokumen. Ini memiliki tag awal &lt;body&gt;dan tag akhir &lt;/body&gt;. Kemudian, di dalam &lt;body&gt;elemen ada dua elemen lainnya: &lt;h1&gt;dan &lt;p&gt;:</p>
+                    <p>&lt;body&gt;elemen mendefinisikan tubuh dokumen. Ini memiliki tag awal &lt;body&gt;dan tag akhir &lt;/body&gt;. Kemudian, di dalam &lt;body&gt;elemen ada dua elemen lainnya: &lt;h1&gt;dan &lt;p&gt;:
+                    </p>
                     <p>&lt;h1&gt;My First Heading&lt;/h1&gt;<br> &lt;p&gt;My first paragraph.&lt;/p&gt;</p>
-                    <p>&lt;h1&gt;elemen mendefinisikan heading. Ini memiliki tag awal &lt;h1&gt;dan tag akhir &lt;/h1&gt;:</p>
+                    <p>&lt;h1&gt;elemen mendefinisikan heading. Ini memiliki tag awal &lt;h1&gt;dan tag akhir &lt;/h1&gt;:
+                    </p>
                     <p>&lt;h1&gt;My First Heading&lt;/h1&gt;</p>
-                    <p>&lt;p&gt;elemen mendefinisikan sebuah paragraf. Ini memiliki tag awal &lt;p&gt;dan tag akhir &lt;/p&gt;:</p>
+                    <p>&lt;p&gt;elemen mendefinisikan sebuah paragraf. Ini memiliki tag awal &lt;p&gt;dan tag akhir &lt;/p&gt;:
+                    </p>
                     <p>&lt;p&gt;My first paragraph.&lt;/p&gt;</p>
                     <p>Jangan Lewati Tag Akhir, Beberapa elemen HTML akan ditampilkan dengan benar, bahkan jika Anda lupa tag akhir:</p>
                     <p>Contoh</p>
@@ -509,7 +534,8 @@
                         <br> &lt;/html&gt;
                     </p>
                     <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_no_endtag" target="_blank">Cobalah sendiri</a></p>
-                    <p><b>Namun, jangan pernah mengandalkan ini! Hasil dan kesalahan yang tidak terduga dapat terjadi jika Anda lupa tag akhir!</b></p>
+                    <p><b>Namun, jangan pernah mengandalkan ini! Hasil dan kesalahan yang tidak terduga dapat terjadi
+                            jika Anda lupa tag akhir!</b></p>
                     <p>Elemen HTML Kosong</p>
                     <p>Elemen HTML tanpa konten disebut elemen kosong.</p>
                     <p>&lt;br&gt; tag mendefinisikan satu baris, dan merupakan elemen kosong tanpa tag penutup:</p>
@@ -517,8 +543,8 @@
                     <p>&lt;p&gt;This is a &lt;br&gt; paragraph with a line break.&lt;/p&gt;</p>
                     <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elements_br" target="_blank">Cobalah sendiri</a></p>
                     <p>HTML Tidak Peka Huruf Besar-kecil</p>
-                    <p>Tag HTML tidak peka huruf besar/kecil: &lt;P&gt; artinya sama dengan &lt;p&gt;. Standar HTML tidak memerlukan tag huruf kecil, kami <b>merekomendasikan</b> huruf kecil dalam HTML, dan <b>menuntut</b> huruf kecil untuk jenis dokumen
-                        yang lebih ketat seperti XHTML. Kami selalu menggunakan nama tag huruf kecil.</p>
+                    <p>Tag HTML tidak peka huruf besar/kecil: &lt;P&gt; artinya sama dengan &lt;p&gt;. Standar HTML tidak memerlukan tag huruf kecil, kami <b>merekomendasikan</b> huruf kecil dalam HTML, dan
+                        <b>menuntut</b> huruf kecil untuk jenis dokumen yang lebih ketat seperti XHTML. Kami selalu menggunakan nama tag huruf kecil.</p>
                     <p>Referensi Tag HTML</p>
                     <p>Referensi tag W3Schools berisi informasi tambahan tentang tag ini dan atributnya.</p>
                     <table class="table table-bordered w-auto">
@@ -549,10 +575,12 @@
                         <li>Semua elemen HTML dapat memiliki <b>atribut</b></li>
                         <li>Atribut memberikan <b>informasi tambahan</b> tentang elemen</li>
                         <li>Atribut selalu ditentukan di <b>tag awal</b></li>
-                        <li>Atribut biasanya datang dalam pasangan nama/nilai seperti: <b>nama=&quot;nilai&quot;</b></li>
+                        <li>Atribut biasanya datang dalam pasangan nama/nilai seperti: <b>nama=&quot;nilai&quot;</b>
+                        </li>
                     </ul>
                     <p>Atribut href</p>
-                    <p>&lt;a&gt; tag mendefinisikan hyperlink. The hrefatribut menentukan URL dari halaman link pergi ke:</p>
+                    <p>&lt;a&gt; tag mendefinisikan hyperlink. The hrefatribut menentukan URL dari halaman link pergi ke:
+                    </p>
                     <p>Contoh</p>
                     <p>&lt;a href=&quot;https://www.w3schools.com&quot;&gt;Visit W3Schools&lt;/a&gt;</p>
                     <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_link" target="_blank">Cobalah sendiri</a></p>
@@ -628,7 +656,8 @@
                     <p>Namun, kami <b>merekomendasikan</b> atribut huruf kecil dalam HTML, dan <b>menuntut</b> atribut huruf kecil untuk jenis dokumen yang lebih ketat seperti XHTML.</p>
                     <p>Kami selalu menggunakan nama atribut huruf kecil.</p>
                     <p>Kami Sarankan: Selalu Kutip Nilai Atribut</p>
-                    <p>Standar HTML tidak memerlukan tanda kutip di sekitar nilai atribut. Namun, kami <b>merekomendasikan</b> kutipan dalam HTML, dan <b>meminta</b> kutipan untuk jenis dokumen yang lebih ketat seperti XHTML.</p>
+                    <p>Standar HTML tidak memerlukan tanda kutip di sekitar nilai atribut. Namun, kami
+                        <b>merekomendasikan</b> kutipan dalam HTML, dan <b>meminta</b> kutipan untuk jenis dokumen yang lebih ketat seperti XHTML.</p>
                     <p>Bagus:</p>
                     <p>&lt;a href=&quot;https://www.w3schools.com/html/&quot;&gt;Visit our HTML tutorial&lt;/a&gt;</p>
                     <p>Buruk:</p>
@@ -682,7 +711,8 @@
                         <br> &lt;h6&gt;Heading 6&lt;/h6&gt;
                     </p>
                     <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings" target="_blank">Cobalah sendiri</a></p>
-                    <p><b>Catatan:</b> Browser secara otomatis menambahkan beberapa spasi (margin) sebelum dan sesudah heading.</p>
+                    <p><b>Catatan:</b> Browser secara otomatis menambahkan beberapa spasi (margin) sebelum dan sesudah heading.
+                    </p>
                     <p>Judul Itu Penting</p>
                     <p>Mesin pencari menggunakan judul untuk mengindeks struktur dan konten halaman web Anda. Pengguna sering membaca sepintas halaman berdasarkan judulnya. Penting untuk menggunakan heading untuk menunjukkan struktur dokumen. &lt;h1&gt;heading
                         sebaiknya digunakan untuk heading utama, diikuti &lt;h2&gt; heading, kemudian heading yang kurang penting &lt;h3&gt;, dan seterusnya.</p>
@@ -818,7 +848,8 @@
                         <br> My Bonnie lies over the ocean.<br>
                         <br> Oh, bring back my Bonnie to me.<br> &lt;/p&gt;
                     </p>
-                    <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_poem" target="_blank">Cobalah sendiri</a></p>
+                    <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_poem" target="_blank">Cobalah
+                            sendiri</a></p>
                     <p>Solusi - Elemen &lt;pre&gt; HTML</p>
                     <p>&lt;pre&gt;Elemen HTML mendefinisikan teks yang telah diformat sebelumnya. Teks di dalam &lt;pre&gt;elemen ditampilkan dalam font lebar tetap (biasanya Courier), dan mempertahankan spasi dan jeda baris:</p>
                     <p>Contoh</p>
@@ -827,7 +858,8 @@
                         <br> My Bonnie lies over the ocean.<br>
                         <br> Oh, bring back my Bonnie to me.<br> &lt;/pre&gt;
                     </p>
-                    <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_pre" target="_blank">Cobalah sendiri</a></p>
+                    <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_pre" target="_blank">Cobalah
+                            sendiri</a></p>
                     <p>Referensi Tag HTML</p>
                     <p>Referensi tag W3Schools berisi informasi tambahan tentang elemen HTML dan atributnya.</p>
                     <table class="table table-bordered w-auto">
@@ -861,4 +893,126 @@
             </div>
         </div>
     </div>
+</main>
+<p><span style='color:black'>Defines the document's body</span></p>
+</td>
+</tr>
+<tr>
+    <td valign=top style='border-top:none;border-left:solid #CCCCCC 1.0pt;
+            border-bottom:solid #CCCCCC 1.0pt;border-right:none;background:#E7E9EB;
+            padding:6.0pt 6.0pt 6.0pt 12.0pt'>
+        <p><span style='color:black'><a href="https://www.w3schools.com/tags/tag_hn.asp">&lt;h1&gt; to
+                    &lt;h6&gt;</a></span></p>
+    </td>
+    <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CCCCCC 1.0pt;
+            border-right:solid #CCCCCC 1.0pt;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+        <p><span style='color:black'>Defines HTML headings</span></p>
+    </td>
+</tr>
+</table> -->
+<!-- <p>Untuk daftar lengkap semua tag HTML yang tersedia, kunjungi <a href="https://www.w3schools.com/tags/default.asp">Referensi Tag HTML</a>&nbnbsp;kami.</p> -->
+<p>Paragraf selalu dimulai pada baris baru, dan biasanya berupa blok teks.</p>
+<p>Paragraf HTML</p>
+<p>&lt;p&gt;Elemen HTML mendefinisikan sebuah paragraf.</p>
+<p>Sebuah paragraf selalu dimulai pada baris baru, dan browser secara otomatis menambahkan beberapa spasi (margin) sebelum dan sesudah paragraf.</p>
+<p>Contoh</p>
+<p>&lt;p&gt;This is a paragraph.&lt;/p&gt;<br> &lt;p&gt;This is another paragraph.&lt;/p&gt;</p>
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs1" target="_blank">Cobalah sendiri</a>
+</p>
+<p>Tampilan HTML</p>
+<p>Anda tidak dapat memastikan bagaimana HTML akan ditampilkan. Layar besar atau kecil, dan jendela yang diubah ukurannya akan menghasilkan hasil yang berbeda. Dengan HTML, Anda tidak dapat mengubah tampilan dengan menambahkan spasi atau baris tambahan dalam
+    kode HTML Anda.</p>
+<p>Browser akan secara otomatis menghapus spasi dan garis tambahan saat halaman ditampilkan:</p>
+<p>Contoh</p>
+<p>&lt;p&gt;
+    <br> This paragraph
+    <br> contains a lot of lines
+    <br> in the source code,
+    <br> but the browser
+    <br> ignores it.
+    <br> &lt;/p&gt;
+    <br>
+    <br> &lt;p&gt;
+    <br> This paragraph
+    <br> contains a lot of spaces
+    <br> in the source code,
+    <br> but the browser
+    <br> ignores it.
+    <br> &lt;/p&gt;
+</p>
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs2" target="_blank">Cobalah sendiri</a>
+</p>
+<p>Aturan Horisontal HTML</p>
+<p>&lt;hr&gt; tag mendefinisikan istirahat tematik di halaman HTML, dan yang paling sering ditampilkan sebagai aturan horisontal.
+</p>
+<p>&lt;hr&gt;elemen digunakan untuk memisahkan konten (atau menentukan perubahan) dalam sebuah halaman HTML:</p>
+<p>Contoh</p>
+<p>&lt;h1&gt;This is heading 1&lt;/h1&gt;<br> &lt;p&gt;This is some text.&lt;/p&gt;<br> &lt;hr&gt;
+    <br> &lt;h2&gt;This is heading 2&lt;/h2&gt;<br> &lt;p&gt;This is some other text.&lt;/p&gt;<br> &lt;hr&gt;
+</p>
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings_hr" target="_blank">Cobalah sendiri</a>
+</p>
+<p>&lt;hr&gt; tag adalah tag kosong, yang berarti bahwa ia tidak memiliki tag akhir.</p>
+<p>Pemisahan Baris HTML</p>
+<p>&lt;br&gt;Elemen HTML mendefinisikan jeda baris. Gunakan &lt;br&gt;jika Anda ingin jeda baris (baris baru) tanpa memulai paragraf baru:</p>
+<p>Contoh</p>
+<p>&lt;p&gt;This is&lt;br&gt;a paragraph&lt;br&gt;with line breaks.&lt;/p&gt;</p>
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs" target="_blank">Cobalah sendiri</a>
+</p>
+<p>&lt;br&gt; tag adalah tag kosong, yang berarti bahwa ia tidak memiliki tag akhir.</p>
+<p>Masalah Puisi</p>
+<p>Puisi ini akan ditampilkan dalam satu baris:</p>
+<p>Contoh</p>
+<p>&lt;p&gt;
+    <br> My Bonnie lies over the ocean.
+    <br>
+    <br> My Bonnie lies over the sea.<br>
+    <br> My Bonnie lies over the ocean.<br>
+    <br> Oh, bring back my Bonnie to me.<br> &lt;/p&gt;
+</p>
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_poem" target="_blank">Cobalah
+        sendiri</a></p>
+<p>Solusi - Elemen &lt;pre&gt; HTML</p>
+<p>&lt;pre&gt;Elemen HTML mendefinisikan teks yang telah diformat sebelumnya. Teks di dalam &lt;pre&gt;elemen ditampilkan dalam font lebar tetap (biasanya Courier), dan mempertahankan spasi dan jeda baris:</p>
+<p>Contoh</p>
+<p>&lt;pre&gt;<br> My Bonnie lies over the ocean.<br>
+    <br> My Bonnie lies over the sea.<br>
+    <br> My Bonnie lies over the ocean.<br>
+    <br> Oh, bring back my Bonnie to me.<br> &lt;/pre&gt;
+</p>
+<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_pre" target="_blank">Cobalah
+        sendiri</a></p>
+<p>Referensi Tag HTML</p>
+<p>Referensi tag W3Schools berisi informasi tambahan tentang elemen HTML dan atributnya.</p>
+<table class="table table-bordered w-auto">
+    <thead class="table-light">
+        <tr>
+            <th scope="col">Tag</th>
+            <th scope="col">Keterangan</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>&lt;p&gt;</td>
+            <td>Defines a paragraph</td>
+        </tr>
+        <tr>
+            <td>&lt;hr&gt;</td>
+            <td>Defines a thematic change in the content</td>
+        </tr>
+        <tr>
+            <td>&lt;br&gt;</td>
+            <td>Inserts a single line break</td>
+        </tr>
+        <tr>
+            <td>&lt;pre&gt;</td>
+            <td>Defines pre-formatted text</td>
+        </tr>
+    </tbody>
+</table>
+</section>
+
+</div>
+</div>
+</div>
 </main>

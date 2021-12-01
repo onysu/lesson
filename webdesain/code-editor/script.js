@@ -4,8 +4,8 @@ const left = document.querySelector(".left"),
     editor = document.querySelector(".editor"),
     run = document.querySelector(".btn-run"),
     iframe = document.querySelector(".iframe"),
-    darkMode = document.querySelector(".btn-dark"),
-    lightMode = document.querySelector(".btn-light");
+    darkMode = document.querySelector(".btn-gelap"),
+    lightMode = document.querySelector(".btn-terang");
 
 const drag = (e) => {
     e.preventDefault();

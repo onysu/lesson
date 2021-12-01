@@ -1337,27 +1337,50 @@
                     <section>
                         <h5>Tampilan HTML</h5>
                         <p>Anda tidak dapat memastikan bagaimana HTML akan ditampilkan. Layar besar atau kecil, dan jendela yang diubah ukurannya akan menghasilkan hasil yang berbeda. Dengan HTML, Anda tidak dapat mengubah tampilan dengan menambahkan spasi
-                            atau baris tambahan dalam kode HTML Anda.</p>
-                        <p>Browser akan secara otomatis menghapus spasi dan garis tambahan saat halaman ditampilkan:</p>
-                        <p>Contoh</p>
-                        <p><code>&lt;p&gt;</code>
-                            <br> This paragraph
-                            <br> contains a lot of lines
-                            <br> in the source code,
-                            <br> but the browser
-                            <br> ignores it.
-                            <br> &lt;/p&gt;
-                            <br>
-                            <br> <code>&lt;p&gt;</code>
-                            <br> This paragraph
-                            <br> contains a lot of spaces
-                            <br> in the source code,
-                            <br> but the browser
-                            <br> ignores it.
-                            <br> &lt;/p&gt;
-                        </p>
-                        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs2" target="_blank">Cobalah
-                                sendiri</a></p>
+                            atau baris tambahan dalam kode HTML Anda. Browser akan secara otomatis menghapus spasi dan garis tambahan saat halaman ditampilkan: <br> Contoh :</p>
+                        <div class="highlight">
+                            <code>
+                                &lt;p&gt;This paragraph<br>
+                                contains a lot of lines<br>
+                                in the source code,<br>
+                                but the browser<br>
+                                ignores it.<br>
+                                &lt;/p&gt;
+                            </code>
+                            <br><br>
+                            <code>
+                                &lt;p&gt;This paragraph<br>
+                                contains a lot of spaces<br>
+                                in the source code,<br>
+                                but the browser<br>
+                                ignores it.<br>
+                                &lt;/p&gt;
+                            </code>
+                            <hr>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-secondary btn-sm text-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Cobalah sendiri
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">HTML Editor</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <iframe src="code-editor/editor.html" frameborder="0" name="editor" width="100%" height="300"></iframe>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary text-light" data-bs-dismiss="modal">Tutup</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_paragraphs2" target="_blank">Cobalah
+                                    sendiri</a></p> -->
+                        </div>
                     </section>
                     <!-- Aturan Horisontal HTML -->
                     <section>

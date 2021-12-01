@@ -1170,21 +1170,22 @@
                 <hr>
                 <section id="6">
                     <h5>Judul HTML</h5>
-                    <p>Judul HTML adalah judul atau subjudul yang ingin Anda tampilkan di halaman web.</p>
-                    <p>Contoh</p>
-                    <h1>Heading 1</h1>
-                    <h2>Heading 2</h2>
-                    <h3>Heading 3</h3>
-                    <h4>Heading 4</h4>
-                    <h5>Heading 5</h5>
-                    <h6>Heading 6</h6>
+                    <p>Judul HTML adalah judul atau subjudul yang ingin Anda tampilkan di halaman web. <br> Contoh</p>
+                    <p>
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <h4>Heading 4</h4>
+                        <h5>Heading 5</h5>
+                        <h6>Heading 6</h6>
+                    </p>
 
                     <!-- <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings" target="_blank">Cobalah
                             sendiri</a></p> -->
                     <!-- <p>Judul HTML</p> -->
 
-                    <p>Judul HTML didefinisikan dengan tag &lt;h1&gt; to &lt;h6&gt;. &lt;h1&gt;mendefinisikan judul yang paling penting. &lt;h6&gt; mendefinisikan heading yang paling tidak penting.</p>
-                    <p>Contoh</p>
+                    <p>Judul HTML didefinisikan dengan tag <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>.
+                        <code>&lt;h1&gt;</code>mendefinisikan judul yang paling penting. <code>&lt;h6&gt;</code> mendefinisikan heading yang paling tidak penting. <br> Contoh</p>
                     <div class="highlight">
                         <p>
                             <code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code> <br>
@@ -1217,43 +1218,80 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings" target="_blank">Cobalah
                             sendiri</a></p> -->
-                    <p><strong>Catatan:</strong> Browser secara otomatis menambahkan beberapa spasi (margin) sebelum dan sesudah heading.</p>
-                    <p>Judul Itu Penting</p>
-                    <p>Mesin pencari menggunakan judul untuk mengindeks struktur dan konten halaman web Anda. Pengguna sering membaca sepintas halaman berdasarkan judulnya. Penting untuk menggunakan heading untuk menunjukkan struktur dokumen. &lt;h1&gt;heading
-                        sebaiknya digunakan untuk heading utama, diikuti &lt;h2&gt; heading, kemudian heading yang kurang penting &lt;h3&gt;, dan seterusnya.</p>
-                    <p><strong>Catatan:</strong> Gunakan heading HTML untuk heading saja. Jangan gunakan heading untuk membuat teks menjadi <strong>BESAR</strong> atau <strong>tebal</strong>.</p>
-                    <p>Judul yang lebih besar</p>
-                    <p>Setiap heading HTML memiliki ukuran default. Namun, Anda dapat menentukan ukuran untuk setiap heading dengan styleatribut tersebut, menggunakan font-sizeproperti CSS :</p>
-                    <p>Contoh</p>
-                    <p>&lt;h1 style=&quot;font-size:60px;&quot;&gt;Heading 1&lt;/h1&gt;</p>
-                    <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings_size" target="_blank">Cobalah
-                            sendiri</a></p>
-                    <p>Referensi Tag HTML</p>
-                    <p>Referensi tag W3Schools berisi informasi tambahan tentang tag ini dan atributnya.</p>
-                    <table class="table table-bordered w-auto">
-                        <thead class="table-light">
-                            <tr>
-                                <th scope="col">Tag</th>
-                                <th scope="col">Keterangan</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>&lt;html&gt;</td>
-                                <td>Mendefinisikan akar dari dokumen HTML</td>
-                            </tr>
-                            <tr>
-                                <td>&lt;body&gt;</td>
-                                <td>Mendefinisikan badan dokumen</td>
-                            </tr>
-                            <tr>
-                                <td>&lt;h1&gt; ~ &lt;h6&gt;</td>
-                                <td>Mendefinisikan judul HTML</td>
-                            </tr>
-                        </tbody>
-                    </table>
+
+                    <p class="moreInfo text-break"><strong>Catatan:</strong> Browser secara otomatis menambahkan beberapa spasi (margin) sebelum dan sesudah heading.</p>
+
+                    <section>
+                        <h5>Judul Itu Penting</h5>
+                        <p>Mesin pencari menggunakan judul untuk mengindeks struktur dan konten halaman web Anda. Pengguna sering membaca sepintas halaman berdasarkan judulnya. Penting untuk menggunakan heading untuk menunjukkan struktur dokumen. <code>&lt;h1&gt;</code>                            heading sebaiknya digunakan untuk heading utama, diikuti <code>&lt;h2&gt;</code> heading, kemudian heading yang kurang penting
+                            <code>&lt;h3&gt;</code>, dan seterusnya.</p>
+                        <p class="moreInfo text-break"><strong>Catatan:</strong> Gunakan heading HTML untuk heading saja. Jangan gunakan heading untuk membuat teks menjadi <strong>BESAR</strong> atau
+                            <strong>tebal</strong>.</p>
+                    </section>
+
+                    <section>
+                        <h5>Judul yang lebih besar</h5>
+                        <p>Setiap heading HTML memiliki ukuran default. Namun, Anda dapat menentukan ukuran untuk setiap heading dengan style atribut tersebut, menggunakan <code>font-size</code> properti CSS :
+                            <br> Contoh
+                        </p>
+                        <div class="highlight">
+                            <p><code>&lt;h1 style=&quot;font-size:60px;&quot;&gt;Heading 1&lt;/h1&gt;</code></p>
+                            <hr>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-secondary btn-sm text-light" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Cobalah sendiri
+                            </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-xl">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">HTML Editor</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <iframe src="html-editor.html" frameborder="0" name="editor" width="100%" height="300"></iframe>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary text-light" data-bs-dismiss="modal">Tutup</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings_size" target="_blank">Cobalah
+                                sendiri</a></p> -->
+                    </section>
+
+                    <section>
+                        <h5>Referensi Tag HTML</h5>
+                        <p>Referensi tag ini berisi informasi tambahan tentang tag ini dan atributnya.</p>
+                        <table class="table table-bordered w-auto">
+                            <thead class="table-light">
+                                <tr>
+                                    <th scope="col">Tag</th>
+                                    <th scope="col">Keterangan</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>&lt;html&gt;</td>
+                                    <td>Mendefinisikan akar dari dokumen HTML</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;body&gt;</td>
+                                    <td>Mendefinisikan badan dokumen</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;h1&gt; ~ &lt;h6&gt;</td>
+                                    <td>Mendefinisikan judul HTML</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
                 </section>
                 <hr>
 

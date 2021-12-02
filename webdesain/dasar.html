@@ -837,60 +837,90 @@
                 </section>
                 <section id="Atributstyle">
                     <h5>Atribut style</h5>
-                    <p>The styleatribut digunakan untuk menambah gaya untuk elemen, seperti warna, font, ukuran, dan banyak lagi.
+                    <p><code>style</code> atribut digunakan untuk menambah gaya untuk elemen, seperti warna, font, ukuran, dan banyak lagi.
                     </p>
                     <p>Contoh</p>
-                    <p>&lt;p style=&quot;color:red;&quot;&gt;This is a red paragraph.<code>&lt;/p&gt;</code></p>
-                    <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_style" target="_blank">Cobalah sendiri</a></p>
+                    <div class="highlight">
+                        <code>&lt;p style=&quot;color:red;&quot;&gt;This is a red paragraph.&lt;/p&gt;</code>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                                sendiri</a></p>
+                    </div>
+                    <!-- <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_style" target="_blank">Cobalah sendiri</a></p> -->
                     <!-- <p>Anda akan mempelajari lebih lanjut tentang gaya di <a href="https://www.w3schools.com/html/html_styles.asp">bab Gaya HTML</a>.</p> -->
                 </section>
                 <section id="Atributlang">
                     <h5>Atribut lang</h5>
-                    <p>Anda harus selalu menyertakan langatribut di dalam <code>&lt;html&gt;</code> tag, untuk mendeklarasikan bahasa halaman Web. Ini dimaksudkan untuk membantu mesin pencari dan browser.
-                    </p>
+                    <p>Anda harus selalu menyertakan <code>lang</code> atribut di dalam <code>&lt;html&gt;</code> tag, untuk mendeklarasikan bahasa halaman Web. Ini dimaksudkan untuk membantu mesin pencari dan browser.</p>
                     <p>Contoh berikut menentukan bahasa Inggris sebagai bahasa:</p>
-                    <p>&lt;!DOCTYPE html&gt;<br> &lt;html lang=&quot;en&quot;&gt;
-                        <br> <code>&lt;body&gt;</code>
-                        <br> ...
-                        <br> <code>&lt;/body&gt;</code>
-                        <br> <code>&lt;/html&gt;</code>
-                    </p>
+
+                    <div class="highlight">
+                        <code>
+                            &lt;!DOCTYPE html&gt; <br>
+                            &lt;html lang="en"&gt; <br>
+                                &lt;body&gt; <br>
+                                    ... <br>
+                                &lt;/body&gt; <br>
+                            &lt;/html&gt; <br>
+                        </code>
+                    </div>
+
                     <p>Kode negara juga dapat ditambahkan ke kode bahasa di lang atribut. Jadi, dua karakter pertama menentukan bahasa halaman HTML, dan dua karakter terakhir menentukan negara.</p>
-                    <p>Contoh berikut menentukan bahasa Inggris sebagai bahasa dan Amerika Serikat sebagai negara:
-                    </p>
-                    <p>&lt;!DOCTYPE html&gt;
-                        <br> &lt;html lang=&quot;en-US&quot;&gt;
-                        <br> <code>&lt;body&gt;</code>
-                        <br> ...
-                        <br> <code>&lt;/body&gt;</code>
-                        <br> <code>&lt;/html&gt;</code>
-                    </p>
+                    <p>Contoh berikut menentukan bahasa Inggris sebagai bahasa dan Amerika Serikat sebagai negara:</p>
+                    <div class="highlight">
+                        <code>
+                            &lt;!DOCTYPE html&gt; <br>
+                            &lt;html lang="en-US"&gt; <br>
+                            &lt;body&gt; <br>
+                            ... <br>
+                            &lt;/body&gt; <br>
+                            &lt;/html&gt; <br>
+                        </code>
+                    </div>
                     <!-- <p>Anda dapat melihat semua kode bahasa di <a href="https://www.w3schools.com/tags/ref_language_codes.asp">Referensi Kode Bahasa HTML</a>.</p> -->
                 </section>
                 <section id="Atributtitle">
                     <h5>Atribut title</h5>
-                    <p>Title atribut mendefinisikan beberapa informasi tambahan tentang elemen. Nilai atribut title akan ditampilkan sebagai tooltip saat Anda mengarahkan mouse ke elemen:</p>
+                    <p><code>title</code> atribut mendefinisikan beberapa informasi tambahan tentang elemen. Nilai atribut title akan ditampilkan sebagai tooltip saat Anda mengarahkan mouse ke elemen:</p>
                     <p>Contoh</p>
-                    <p>&lt;p title=&quot;I'm a tooltip&quot;&gt;This is a paragraph.<code>&lt;/p&gt;</code></p>
-                    <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_title" target="_blank">Cobalah sendiri</a></p>
-                    <p>Kami Sarankan: Selalu Gunakan Atribut Huruf Kecil. Standar HTML tidak memerlukan nama atribut huruf kecil. Atribut title (dan semua atribut lainnya) dapat ditulis dengan huruf besar atau kecil seperti
-                        <strong>title</strong> atau <strong>TITLE</strong>.</p>
-                    <p>Namun, kami <strong>merekomendasikan</strong> atribut huruf kecil dalam HTML, dan
-                        <strong>menuntut</strong> atribut huruf kecil untuk jenis dokumen yang lebih ketat seperti XHTML.
-                    </p>
-                    <p>Kami selalu menggunakan nama atribut huruf kecil.</p>
-                    <p>Kami Sarankan: Selalu Kutip Nilai Atribut</p>
+
+                    <div class="highlight">
+                        <code>&lt;p title=&quot;I'm a tooltip&quot;&gt;This is a paragraph.&lt;/p&gt;</code>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                                sendiri</a></p>
+                    </div>
+                    <!-- <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_title" target="_blank">Cobalah sendiri</a></p> -->
+
+                    <p class="moreInfo text-break"><strong>Kami Sarankan:</strong> Selalu Gunakan Atribut Huruf Kecil. Standar HTML tidak memerlukan nama atribut huruf kecil. Atribut title (dan semua atribut lainnya) dapat ditulis dengan huruf besar atau kecil seperti
+                        <strong>title</strong> atau <strong>TITLE</strong>. <br> Namun, kami <strong>merekomendasikan</strong> atribut huruf kecil dalam HTML, dan
+                        <strong>menuntut</strong> atribut huruf kecil untuk jenis dokumen yang lebih ketat seperti XHTML. <br> Kami selalu menggunakan nama atribut huruf kecil.</p>
+
                     <p>Standar HTML tidak memerlukan tanda kutip di sekitar nilai atribut. Namun, kami
                         <strong>merekomendasikan</strong> kutipan dalam HTML, dan <strong>meminta</strong> kutipan untuk jenis dokumen yang lebih ketat seperti XHTML.</p>
-                    <p>Bagus:</p>
-                    <p>&lt;a href=&quot;https://www.w3schools.com/html/&quot;&gt;Visit our HTML tutorial&lt;/a&gt;
-                    </p>
-                    <p>Buruk:</p>
-                    <p>&lt;a href=https://www.w3schools.com/html/&gt;Visit our HTML tutorial&lt;/a&gt;</p>
+
+                    <div class="highlight">
+                        <p><strong>Bagus:</strong></p>
+                        <p><code>&lt;a href=&quot;https://www.w3schools.com/html/&quot;&gt;Visit our HTML tutorial&lt;/a&gt;</code>
+                        </p>
+                    </div>
+
+                    <div class="highlight">
+                        <p><strong>Buruk:</strong></p>
+                        <p><code>&lt;a href=https://www.w3schools.com/html/&gt;Visit our HTML tutorial&lt;/a&gt;</code></p>
+                    </div>
+
                     <p>Terkadang Anda harus menggunakan tanda kutip. Contoh ini tidak akan menampilkan atribut judul dengan benar, karena berisi spasi:</p>
                     <p>Contoh</p>
-                    <p>&lt;p title=About W3Schools&gt;</p>
-                    <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_error" target="_blank">Cobalah sendiri</a></p>
+
+                    <div class="highlight">
+                        <code>&lt;p title=About W3Schools&gt;</code>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                                sendiri</a></p>
+                    </div>
+                    <!-- <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_error" target="_blank">Cobalah sendiri</a></p> -->
+
                     <p>Kami selalu menggunakan tanda kutip di sekitar nilai atribut.</p>
                     <p>Kutipan Tunggal atau Ganda?</p>
                     <p>Tanda kutip ganda di sekitar nilai atribut adalah yang paling umum dalam HTML, tetapi tanda kutip tunggal juga dapat digunakan. Dalam beberapa situasi, ketika nilai atribut itu sendiri berisi tanda kutip ganda, perlu menggunakan tanda

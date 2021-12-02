@@ -21,21 +21,32 @@
     <div class="container-fluid">
         <!-- <div class="grid col-1-1 full-height"> -->
         <div class="row py-4">
+
+
             <div class="col border-bottom">
-                <h5 style="border-bottom-style: inherit;">Code Editor</h5>
+                <h5 class="border-bottom py-2">Code Editor</h5>
                 <!-- HTML selectors to switch the html source used in the editor and preview -->
-                <p>
+                <!-- <p>
                     <label class="radio"><input type="radio" name="html" checked value="1" onclick="setHtml('something')"><span>Editor #1</span></label>
                     <label class="radio"><input type="radio" name="html" value="1" onclick="setHtml('heading')"><span>Editor #2</span></label>
                     <label class="radio"><input type="radio" name="html" value="1" onclick="setHtml('list')"><span>Editor #3</span></label>
-                </p>
-                <!-- The code editor -->
+                </p> -->
+
+                <div class="mb-3">
+                    <input class="btn-check" type="radio" name="html" id="option1" checked autocomplete="off" value="1" onclick="setHtml('something')">
+                    <label class="btn btn-outline-warning" for="option1">Editor #1</label>
+                    <input class="btn-check" type="radio" name="html" id="option2" autocomplete="off" value="1" onclick="setHtml('heading')">
+                    <label class="btn btn-outline-warning" for="option2">Editor #2</label>
+                    <input class="btn-check" type="radio" name="html" id="option3" autocomplete="off" value="1" onclick="setHtml('list')">
+                    <label class="btn btn-outline-warning" for="option3">Editor #3</label>
+                </div>
+
                 <textarea id="code-block"></textarea>
-                <!-- <div><a class="text-link" href="https://codemirror.net/" target="_blank">CodeMirror website</a></div> -->
+
             </div>
             <!-- The preview window -->
             <div class="col border-bottom">
-                <h5 style="border-bottom-style: inherit;">Hasil</h5>
+                <h5 class="border-bottom py-2">Hasil</h5>
                 <div id="output" class="box"></div>
             </div>
         </div>

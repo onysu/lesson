@@ -1,44 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
-<script>
-    function includeHTML() {
-        var z, i, elmnt, file, xhttp;
-        /*loop melalui koleksi semua elemen HTML:*/
-        z = document.getElementsByTagName("*");
-        for (i = 0; i < z.length; i++) {
-            elmnt = z[i];
-            /*mencari elemen dengan atribut tertentu:*/
-            file = elmnt.getAttribute("w3-include-html");
-            if (file) {
-                /*buat permintaan HTTP menggunakan nilai atribut sebagai nama file:*/
-                xhttp = new XMLHttpRequest();
-                xhttp.onreadystatechange = function() {
-                    if (this.readyState == 4) {
-                        if (this.status == 200) {
-                            elmnt.innerHTML = this.responseText;
-                        }
-                        if (this.status == 404) {
-                            elmnt.innerHTML = "Page not found.";
-                        }
-                        /*hapus atributnya, dan panggil fungsi ini sekali lagi:*/
-                        elmnt.removeAttribute("w3-include-html");
-                        includeHTML();
-                    }
-                }
-                xhttp.open("GET", file, true);
-                xhttp.send();
-                /*keluar dari fungsi:*/
-                return;
-            }
-        }
-    };
-</script>
+<html lang="id">
 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>E-LEARNING</title>
+    <script src="assets/js/w3.js"></script>
     <link rel="stylesheet" href="dist/bootstrap502/css/bootstrap.min.css" />
     <link rel="stylesheet" href="dist/css/adminlte.min.css" />
     <link rel="stylesheet" href="dist/bootstrapIcons/bootstrap-icons.css">
@@ -350,7 +318,7 @@
     <script src="dist/js/all-style.js"></script>
     <!-- <script async src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"></script> -->
     <script>
-        includeHTML();
+        w3.includeHTML();
     </script>
 </body>
 

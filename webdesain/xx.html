@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WEB-DESAIN</title>
+    <script src="code-editor/w3color.js"></script>
     <script src="../assets/js/w3.js"></script>
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="../assets/css/docs.css" rel="stylesheet">
@@ -933,7 +934,16 @@ alt=&quot;Trulli&quot;&gt;
                 hitam, setel semua parameter warna ke 00, seperti ini: <code><strong>#000000</strong></code>.
                 <br> Untuk menampilkan putih, setel semua parameter warna ke ff, seperti ini: <code><strong>#ffffff</strong></code>.</p>
 
-            <!-- <section>
+            <p>
+                <h3 style="background-color:#ff0000;">#ff0000</h3>
+                <h3 style="background-color:#0000ff;">#0000ff</h3>
+                <h3 style="background-color:#3cb371;">#3cb371</h3>
+                <h3 style="background-color:#ee82ee;">#ee82ee</h3>
+                <h3 style="background-color:#ffa500;">#ffa500</h3>
+                <h3 style="background-color:#6a5acd;">#6a5acd</h3>
+            </p>
+
+            <section>
                 <p>Percobaan dengan mencampur nilai HEX di bawah ini:</p>
                 <script>
                     //changeRed(255)
@@ -961,7 +971,7 @@ alt=&quot;Trulli&quot;&gt;
                 </script>
                 <div class="row">
                     <div class="col text-center">
-                        <div id="hexresult" style="line-height: 80px; background-color: rgb(255, 99, 71);">
+                        <div id="hexresult" style="line-height: 60px; background-color: rgb(255, 99, 71);">
                             <p id="hexresulttext" style="font-size: x-large; vertical-align: inherit; font-family: monospace; color: rgb(255, 255, 255);">#ff6347</p>
                         </div>
                     </div>
@@ -983,10 +993,10 @@ alt=&quot;Trulli&quot;&gt;
                         <div id="valBlue2Hex" style="vertical-align: inherit;">47</div>
                     </div>
                 </div>
-            </section> -->
+            </section>
 
             <!-- <div class="w3-example"> -->
-            <section>
+            <!-- <section>
                 <p>Contoh :</p>
                 <div class="notranslate w3-white w3-container">
                     <div class="w3-row w3-center" style="line-height:60px;color:white;font-size:x-large;font-family: monospace">
@@ -1010,7 +1020,7 @@ alt=&quot;Trulli&quot;&gt;
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <!-- <br> -->
             <!-- <a target="_blank" href="tryit.asp?filename=tryhtml_color_hex" class="w3-btn w3-margin-bottom">Try it
                     Yourself »</a> -->
@@ -1033,68 +1043,177 @@ alt=&quot;Trulli&quot;&gt;
 
             <hr>
 
-            <p>Bayangan abu-abu</p>
-            <p>Nuansa abu-abu sering didefinisikan menggunakan nilai yang sama untuk ketiga parameter:</p>
-            <p>Contoh</p>
-            <p><b>#404040</b></p>
-            <p><b>#686868</b></p>
-            <p><b>#a0a0a0</b></p>
-            <p><b>#bebebe</b></p>
-            <p><b>#dcdcdc</b></p>
-            <p><b>#f8f8f8</b></p>
-            <p><br>
-                <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_hex_gray " target="_blank ">Cobalah sendiri
-                    &quot;</a></p>
+            <h4>Bayangan abu-abu</h4>
+            <p>Nuansa abu-abu sering didefinisikan menggunakan nilai yang sama untuk ketiga parameter: <br> Contoh</p>
+            <p>
+                <h3 style="background-color:#404040;">#404040</h3>
+                <h3 style="background-color:#686868;">#686868</h3>
+                <h3 style="background-color:#a0a0a0;">#a0a0a0</h3>
+                <h3 style="background-color:#bebebe;">#bebebe</h3>
+                <h3 style="background-color:#dcdcdc;">#dcdcdc</h3>
+                <h3 style="background-color:#f8f8f8;">#f8f8f8</h3>
+            </p>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="highlight">
+                <code>
+&lt;h1 style="background-color:#404040;"&gt;#404040&lt;/h1&gt; <br>
+&lt;h1 style="background-color:#686868;"&gt;#686868&lt;/h1&gt; <br>
+&lt;h1 style="background-color:#a0a0a0;"&gt;#a0a0a0&lt;/h1&gt; <br>
+&lt;h1 style="background-color:#bebebe;"&gt;#bebebe&lt;/h1&gt; <br>
+&lt;h1 style="background-color:#dcdcdc;"&gt;#dcdcdc&lt;/h1&gt; <br>
+&lt;h1 style="background-color:#f8f8f8;"&gt;#f8f8f8&lt;/h1&gt;
+                </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                        sendiri</a></p>
+            </div>
 
             <hr>
 
-            <p>Warna HTML HSL dan HSLA</p>
-            <p>HSL adalah singkatan dari Hue, Saturation, dan Lightness.</p>
-            <p>Nilai warna HSLA merupakan perpanjangan dari HSL dengan saluran Alpha (opacity).</p>
-            <p>Nilai Warna HSL</p>
+            <h4>Warna HTML HSL dan HSLA</h4>
+            <p>HSL adalah singkatan dari Hue, Saturation, dan Lightness. Nilai warna HSLA merupakan perpanjangan dari HSL dengan saluran Alpha (opacity).</p>
+
+            <h5>Nilai Warna HSL</h5>
             <p>Dalam HTML, sebuah warna dapat ditentukan menggunakan hue, saturation, dan lightness (HSL) dalam bentuk:</p>
-            <p><b>hsl ( <i>rona</i>, <i>saturasi</i>, <i>kecerahan</i> )</b></p>
-            <p>Hue adalah derajat pada roda warna dari 0 hingga 360. 0 adalah merah, 120 adalah hijau, dan 240 adalah biru.</p>
-            <p>Saturasi adalah nilai persentase, 0% berarti bayangan abu-abu, dan 100% adalah warna penuh.</p>
-            <p>Lightness juga merupakan nilai persentase, 0% hitam, dan 100% putih.</p>
-            <p>Percobaan dengan mencampur nilai HSL di bawah ini:</p>
-            <p><b>hsl(0, 100%, 50%)</b></p>
-            <p>WARNA</p>
-            <p>0</p>
-            <p>KEJENUHAN</p>
-            <p>100%</p>
-            <p>KERINGANAN</p>
-            <p>50%</p>
-            <p>Contoh</p>
-            <p><b>hsl(0, 100%, 50%)</b></p>
-            <p><b>hsl(240, 100%, 50%)</b></p>
-            <p><b>hsl(147, 50%, 47%)</b></p>
-            <p><b>hsl(300, 76%, 72%)</b></p>
-            <p><b>hsl(39, 100%, 50%)</b></p>
-            <p><b>hsl(248, 53%, 58%)</b></p>
-            <p><br>
-                <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_hsl " target="_blank ">Cobalah
-                    sendiri
-                    &quot;</a></p>
-            <hr>
-            <p>Kejenuhan</p>
-            <p>Saturasi dapat digambarkan sebagai intensitas warna.</p>
-            <p>100% adalah warna murni, tidak ada nuansa abu-abu</p>
-            <p>50% adalah 50% abu-abu, tetapi Anda masih dapat melihat warnanya.
+            <p class="highlight">
+                <code>hsl(hue, saturation, lightness)</code>
             </p>
-            <p>0% benar-benar abu-abu, Anda tidak bisa lagi melihat warnanya.
+            <p><b></b></p>
+
+            <p>Hue adalah derajat pada roda warna dari 0 hingga 360. 0 adalah merah, 120 adalah hijau, dan 240 adalah biru. Saturasi adalah nilai persentase, 0% berarti bayangan abu-abu, dan 100% adalah warna penuh. Lightness juga merupakan nilai persentase,
+                0% hitam, dan 100% putih.</p>
+            <section>
+                <p>Percobaan dengan mencampur nilai HSL di bawah ini:</p>
+
+                <script>
+                    //changeRed(255)
+                    //changeGreen(0)
+                    //changeBlue(0)
+                    changeHsl("h");
+
+                    function changeHsl(x) {
+                        var col, h, s, l;
+                        h = document.getElementById("slideHue").value;
+                        s = document.getElementById("slideSat").value;
+                        l = document.getElementById("slideLight").value;
+                        col = w3color("hsl(" + h + "," + s / 100 + "," + l / 100 + ")");
+                        document.getElementById('valHue').innerHTML = col.toHsl().h;
+                        document.getElementById('valSat').innerHTML = Math.round(col.toHsl().s * 100) + "%";
+                        document.getElementById('valLight').innerHTML = Math.round(col.toHsl().l * 100) + "%";
+                        document.getElementById('hslresult').style.backgroundColor = col.toHslString();
+                        document.getElementById('hslresulttext').innerHTML = col.toHslString();
+                        if (col.isDark(150)) {
+                            document.getElementById('hslresulttext').style.color = "#ffffff";
+                        } else {
+                            document.getElementById('hslresulttext').style.color = "#1f2d3d";
+                        }
+                    }
+                    changeHsla("h");
+
+                    function changeHsla(x) {
+                        var col, h, s, l, a;
+                        h = document.getElementById("slideHueA").value;
+                        s = document.getElementById("slideSatA").value;
+                        l = document.getElementById("slideLightA").value;
+                        a = document.getElementById("slideHslAlpha").value / 10;
+                        col = w3color("hsla(" + h + "," + s / 100 + "," + l / 100 + "," + a + ")");
+                        document.getElementById('valHueA').innerHTML = col.toHsl().h;
+                        document.getElementById('valSatA').innerHTML = Math.round(col.toHsl().s * 100) + "%";
+                        document.getElementById('valLightA').innerHTML = Math.round(col.toHsl().l * 100) + "%";
+                        document.getElementById('valHslAlpha').innerHTML = col.toHsl().a;
+                        document.getElementById('hslaresult').style.backgroundColor = col.toHslaString();
+                        document.getElementById('hslaresulttext').innerHTML = col.toHslaString();
+                        if (col.isDark(150) && a > 0.2) {
+                            document.getElementById('hslaresulttext').style.color = "#ffffff";
+                        } else {
+                            document.getElementById('hslaresulttext').style.color = "#1f2d3d";
+                        }
+                    }
+                </script>
+
+                <div class="row">
+                    <div class="col text-center">
+                        <div id="hslresult" style="line-height: 60px; background-color: rgb(255, 66, 66);">
+                            <p id="hslresulttext" style="font-size: x-large; font-family: monospace; color: rgb(255, 255, 255);">
+                                hsl(0, 100%, 63%)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <p>HUE</p>
+                        <input onchange="changeHsl()" oninput="changeHsl()" type="range" id="slideHue" name="slideHue" value="0" min="0" max="360">
+                        <div id="valHue" style="font-size:x-large;font-family:Consolas, 'Courier New', Courier, monospace;">0</div>
+                    </div>
+                    <div class="col text-center">
+                        <p>SATURATION</p>
+                        <input onchange="changeHsl()" oninput="changeHsl()" type="range" id="slideSat" name="slideSat" value="100" min="0" max="100">
+                        <div id="valSat" style="font-size:x-large;font-family:Consolas, 'Courier New', Courier, monospace;">100%</div>
+                    </div>
+                    <div class="col text-center">
+                        <p>LIGHTNESS</p>
+                        <input onchange="changeHsl()" oninput="changeHsl()" type="range" id="slideLight" name="slideLight" value="50" min="0" max="100">
+                        <div id="valLight" style="font-size:x-large;font-family:Consolas, 'Courier New', Courier, monospace;">63%</div>
+                    </div>
+                </div>
+            </section>
+
+            <p>Contoh :</p>
+            <p>
+                <h5 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h5>
+                <h5 style="background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</h5>
+                <h5 style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</h5>
+                <h5 style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</h5>
+                <h5 style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</h5>
+                <h5 style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</h5>
             </p>
-            <p>Contoh</p>
-            <p><b>hsl(0, 100%, 50%)</b></p>
-            <p><b>hsl(0, 80%, 50%)</b></p>
-            <p><b>hsl(0, 60%, 50%)</b></p>
-            <p><b>hsl(0, 40%, 50%)</b></p>
-            <p><b>hsl(0, 20%, 50%)</b></p>
-            <p><b>hsl(0, 0%, 50%)</b></p>
-            <p><br>
-                <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_hsl_saturation " target="_blank ">Cobalah
-                    sendiri &quot;</a></p>
+
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="highlight">
+                <code>
+&lt;h1 style="background-color:hsl(0, 100%, 50%);"&gt;hsl(0, 100%, 50%)&lt;/h1&gt; <br>
+&lt;h1 style="background-color:hsl(240, 100%, 50%);"&gt;hsl(240, 100%, 50%)&lt;/h1&gt; <br>
+&lt;h1 style="background-color:hsl(147, 50%, 47%);"&gt;hsl(147, 50%, 47%)&lt;/h1&gt; <br>
+&lt;h1 style="background-color:hsl(300, 76%, 72%);"&gt;hsl(300, 76%, 72%)&lt;/h1&gt; <br>
+&lt;h1 style="background-color:hsl(39, 100%, 50%);"&gt;hsl(39, 100%, 50%)&lt;/h1&gt; <br>
+&lt;h1 style="background-color:hsl(248, 53%, 58%);"&gt;hsl(248, 53%, 58%)&lt;/h1&gt;
+                </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                        sendiri</a></p>
+            </div>
+
             <hr>
+
+            <h4>Saturation</h4>
+            <p>Saturasi dapat digambarkan sebagai intensitas warna. 100% adalah warna murni, tidak ada nuansa abu-abu. 50% adalah 50% abu-abu, tetapi Anda masih dapat melihat warnanya. 0% benar-benar abu-abu, Anda tidak bisa lagi melihat warnanya.</p>
+            <p>Contoh</p>
+            <h5 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h5>
+            <h5 style="background-color:hsl(0, 80%, 50%);">hsl(0, 80%, 50%)</h5>
+            <h5 style="background-color:hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</h5>
+            <h5 style="background-color:hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</h5>
+            <h5 style="background-color:hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</h5>
+            <h5 style="background-color:hsl(0, 0%, 50%);">hsl(0, 0%, 50%)</h5>
+
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="highlight">
+                <code>
+&lt;h1 style="background-color:hsl(0, 100%, 50%);"&gt;hsl(0, 100%, 50%)&lt;/h1&gt; <br>
+&lt;h1 style="background-color:hsl(0, 80%, 50%);"&gt;hsl(0, 80%, 50%)&lt;/h1&gt; <br>
+&lt;h1 style="background-color:hsl(0, 60%, 50%);"&gt;hsl(0, 60%, 50%)&lt;/h1&gt; <br>
+&lt;h1 style="background-color:hsl(0, 40%, 50%);"&gt;hsl(0, 40%, 50%)&lt;/h1&gt; <br>
+&lt;h1 style="background-color:hsl(0, 20%, 50%);"&gt;hsl(0, 20%, 50%)&lt;/h1&gt; <br>
+&lt;h1 style="background-color:hsl(0, 0%, 50%);"&gt;hsl(0, 0%, 50%)&lt;/h1&gt;
+
+&lt;p&gt;With HSL colors, less saturation mean less color. 0% is completely gray.&lt;/p&gt;
+                </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                        sendiri</a></p>
+            </div>
+
+            <hr>
+
             <p>Keringanan</p>
             <p>Kecerahan warna dapat digambarkan sebagai seberapa banyak cahaya yang ingin Anda berikan pada warna, di mana 0% berarti tidak ada cahaya (hitam), 50% berarti 50% terang (tidak gelap atau terang) 100% berarti terang penuh (putih).</p>
             <p>Contoh</p>
@@ -2580,13 +2699,12 @@ alt=&quot;Trulli&quot;&gt;
                     Tag
                     HTML</a> kami.</p>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
     <script src="../assets/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous ">
     </script>
     <script src="../assets/js/docsearch.min.js "></script>
     <script src="../assets/js/docs.min.js "></script>
     <script src="../assets/js/countdown.js "></script>
-    <script src="https://www.w3schools.com/lib/w3schools_footer.js?update=20210902"></script>
     <script>
         w3.includeHTML();
     </script>

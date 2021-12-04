@@ -794,8 +794,8 @@
                     data-bs-original-title="Copy to clipboard">Copy</button></div>
             <div class="highlight">
                 <code>
-                    &lt;h1 style=<q>background-color:DodgerBlue;<q>&gt;Hello World&lt;/h1&gt;
-                            <br> &lt;p style=<q>background-color:Tomato;<q>&gt;Lorem ipsum...&lt;/p&gt;
+                    &lt;h1 style="background-color:DodgerBlue;"&gt;Hello World&lt;/h1&gt; <br>
+                    &lt;p style="background-color:Tomato;"&gt;Lorem ipsum...&lt;/p&gt;
                 </code>
                 <hr>
                 <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
@@ -1106,12 +1106,12 @@
             </div>
 
             <p>Contoh :</p>
-            <h5 style="background-color:rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h5>
-            <h5 style="background-color:rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)</h5>
-            <h5 style="background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)</h5>
-            <h5 style="background-color:rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6)</h5>
-            <h5 style="background-color:rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)</h5>
-            <h5 style="background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h5>
+            <h5 style="padding: 10px; background-color:rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h5>
+            <h5 style="padding: 10px; background-color:rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)</h5>
+            <h5 style="padding: 10px; background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)</h5>
+            <h5 style="padding: 10px; background-color:rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6)</h5>
+            <h5 style="padding: 10px; background-color:rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)</h5>
+            <h5 style="padding: 10px; background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h5>
 
             <div class="bd-clipboard"><button type="button" class="btn-clipboard" title=""
                     data-bs-original-title="Copy to clipboard">Copy</button></div>
@@ -1918,36 +1918,44 @@
 
             <hr>
 
-            <p>URL Absolut vs. URL Relatif</p>
-            <p>Kedua contoh di atas menggunakan <b>URL absolut</b> (alamat web lengkap) dalam hrefatribut.</p>
-            <p>Tautan lokal (tautan ke halaman dalam situs web yang sama) ditentukan dengan <b>URL relatif</b> (tanpa bagian <q>https://www<q>):</p>
-            <p>Contoh</p>
-            <p>&lt;h2&gt;Absolute URLs&lt;/h2&gt;<br> &lt;p&gt;&lt;a
-                href=<q>https://www.w3.org/<q>&gt;W3C&lt;/a&gt;&lt;/p&gt;
-                        <br> &lt;p&gt;&lt;a href=<q>https://www.google.com/<q>&gt;Google&lt;/a&gt;&lt;/p&gt;
-                                <br>
-                                <br> &lt;h2&gt;Relative URLs&lt;/h2&gt;<br> &lt;p&gt;&lt;a
-                                href=<q>html_images.asp<q>&gt;HTML Images&lt;/a&gt;&lt;/p&gt;
-                                        <br> &lt;p&gt;&lt;a href=<q>/css/default.asp<q>&gt;CSS
-                                                Tutorial&lt;/a&gt;&lt;/p&gt;
-            </p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links " target="_blank ">Cobalah
-                    sendiri <q></a></p>
+            <h4>URL Absolut vs. URL Relatif</h4>
+            <p>Kedua contoh di atas menggunakan <b>URL absolut</b> (alamat web lengkap) dalam <strong>href</strong> atribut. Tautan lokal (tautan ke halaman dalam situs web yang sama) ditentukan dengan <b>URL relatif</b> (tanpa bagian <q>https://www</q>).</p>
+            <p>Contoh :</p>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="highlight">
+                <code>
+&lt;h2&gt;Absolute URLs&lt;/h2&gt; <br>
+&lt;p&gt;&lt;a href="https://www.w3.org/"&gt;W3C&lt;/a&gt;&lt;/p&gt; <br>
+&lt;p&gt;&lt;a href="https://www.google.com/"&gt;Google&lt;/a&gt;&lt;/p&gt; <br>
+ <br>
+&lt;h2&gt;Relative URLs&lt;/h2&gt; <br>
+&lt;p&gt;&lt;a href="html_images.asp"&gt;HTML Images&lt;/a&gt;&lt;/p&gt; <br>
+&lt;p&gt;&lt;a href="/css/default.asp"&gt;CSS Tutorial&lt;/a&gt;&lt;/p&gt; <br>
+    </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div>
+
             <hr>
+
+            <h4>Tautan HTML - Gunakan Gambar sebagai Tautan</h4>
+            <p>Untuk menggunakan gambar sebagai tautan, cukup letakkan <code>&lt;img&gt;</code> tag di dalam <code>&lt;a&gt;</code> tag:</p>
+            <p>Contoh :</p>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="highlight">
+                <code>
+&lt;a href="default.asp"&gt; <br>
+    &lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"&gt; <br>
+&lt;/a&gt; <br>
+    </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div>
+
             <hr>
-            <p>Tautan HTML - Gunakan Gambar sebagai Tautan</p>
-            <p>Untuk menggunakan gambar sebagai tautan, cukup letakkan &lt;img&gt; tag di dalam &lt;a&gt;tag:</p>
-            <p>Contoh</p>
-            <p>&lt;a href=<q>default.asp<q>&gt;<br> &lt;img src=<q>smiley.gif<q> alt=<q>HTML tutorial<q>
-                                        style=<q>width:42px;height:42px;<q>&gt;
-                                                <br> &lt;/a&gt;
-            </p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image " target="_blank ">Cobalah
-                    sendiri <q></a></p>
-            <hr>
+
             <p>Tautan ke Alamat Email</p>
-            <p>Gunakan mailto:di dalam hrefatribut untuk membuat tautan yang membuka program email pengguna (agar mereka
-                mengirim email baru):</p>
+            <p>Gunakan mailto:di dalam hrefatribut untuk membuat tautan yang membuka program email pengguna (agar mereka mengirim email baru):</p>
             <p>Contoh</p>
             <p>&lt;a href=<q>mailto:someone@example.com<q>&gt;Send email&lt;/a&gt;
             </p>

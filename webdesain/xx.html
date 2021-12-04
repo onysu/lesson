@@ -1764,28 +1764,34 @@ p {<br> border: 2px solid powderblue;<br> margin: 50px;
                 <li>Tautan aktif digaris bawahi dan <span style="color: red;">merah</span></li>
             </ul>
             <p class="moreInfo text-break"><b>Tip:</b> Tautan tentu saja dapat ditata dengan CSS, untuk mendapatkan tampilan lain!</p>
+
             <hr>
-            <p>Tautan HTML - Atribut Target</p>
-            <p>Secara default, halaman tertaut akan ditampilkan di jendela browser saat ini. Untuk mengubahnya, Anda harus menentukan target lain untuk tautan tersebut.</p>
-            <p>The targetmenspesifikasikan atribut mana untuk membuka dokumen terkait.</p>
-            <p>The targetatribut dapat memiliki salah satu dari nilai berikut:
-            </p>
-            <ul style='margin-top:0cm' type=disc>
-                <li>_self- Bawaan. Membuka dokumen di jendela/tab yang sama dengan yang diklik</li>
-                <li>_blank - Membuka dokumen di jendela atau tab baru</li>
-                <li>_parent - Membuka dokumen di bingkai induk</li>
-                <li>_top - Membuka dokumen di seluruh badan jendela</li>
+
+            <h5>Tautan HTML - Atribut Target</h5>
+            <p>Secara default, halaman tertaut akan ditampilkan di jendela browser saat ini. Untuk mengubahnya, Anda harus menentukan <code>target</code> lain untuk tautan tersebut. <code>target</code> menspesifikasikan atribut mana untuk membuka dokumen
+                terkait. <code>target</code> atribut dapat memiliki salah satu dari nilai berikut:</p>
+            <ul type="square">
+                <li><code>_self</code> - Default. Membuka dokumen di jendela/tab yang sama dengan yang diklik</li>
+                <li><code>_blank</code> - Membuka dokumen di jendela atau tab baru</li>
+                <li><code>_parent</code> - Membuka dokumen di bingkai induk</li>
+                <li><code>_top</code> - Membuka dokumen di seluruh badan jendela</li>
             </ul>
-            <p>Contoh</p>
-            <p>Gunakan target=<q>_blank<q> untuk membuka dokumen tertaut di jendela atau tab browser baru:</p>
-        <p>&lt;a href=<q>https://www.w3schools.com/<q> target=<q>_blank<q>&gt;Visit W3Schools!&lt;/a&gt;
-        </p>
-        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_target " target="_blank ">Cobalah
-                        sendiri <q></a></p>
-        <hr>
-        <p>URL Absolut vs. URL Relatif</p>
-        <p>Kedua contoh di atas menggunakan <b>URL absolut</b> (alamat web lengkap) dalam hrefatribut.</p>
-        <p>Tautan lokal (tautan ke halaman dalam situs web yang sama) ditentukan dengan <b>URL relatif</b> (tanpa bagian <q>https://www<q>):</p>
+            <p>Contoh :</p>
+            <p>Gunakan <code>target="_blank"</code> untuk membuka dokumen tertaut di jendela atau tab browser baru:</p>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="highlight">
+                <code>
+&lt;a href="https://www.w3schools.com/" target="_blank"&gt;Visit W3Schools!&lt;/a&gt;
+    </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div>
+
+            <hr>
+
+            <p>URL Absolut vs. URL Relatif</p>
+            <p>Kedua contoh di atas menggunakan <b>URL absolut</b> (alamat web lengkap) dalam hrefatribut.</p>
+            <p>Tautan lokal (tautan ke halaman dalam situs web yang sama) ditentukan dengan <b>URL relatif</b> (tanpa bagian <q>https://www<q>):</p>
         <p>Contoh</p>
         <p>&lt;h2&gt;Absolute URLs&lt;/h2&gt;<br> &lt;p&gt;&lt;a href=<q>https://www.w3.org/<q>&gt;W3C&lt;/a&gt;&lt;/p&gt;
             <br> &lt;p&gt;&lt;a href=<q>https://www.google.com/<q>&gt;Google&lt;/a&gt;&lt;/p&gt;

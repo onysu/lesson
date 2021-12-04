@@ -1713,69 +1713,71 @@ p {<br> border: 2px solid powderblue;<br> margin: 50px;
 
             <h3>Tag Style HTML</h3>
             <table class="table table-bordered w-auto">
-                <tr>
-                    <th>Tag</th>
-                    <th>Keterangan</th>
-                </tr>
-                <tr>
-                    <td><code>&lt;style&gt;</code></td>
-                    <td>Mendefinisikan informasi gaya untuk dokumen HTML.</td>
-                </tr>
-                <tr>
-                    <td><code>&lt;link&gt;</code></td>
-                    <td>Mendefinisikan link antara dokumen dan sumber daya eksternal.</td>
-                </tr>
+                <thead class="table-light">
+                    <tr>
+                        <th>Tag</th>
+                        <th>Keterangan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>&lt;style&gt;</code></td>
+                        <td>Mendefinisikan informasi gaya untuk dokumen HTML.</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;link&gt;</code></td>
+                        <td>Mendefinisikan link antara dokumen dan sumber daya eksternal.</td>
+                    </tr>
+                </tbody>
             </table>
 
-            <p><span style='color:black'>Untuk daftar lengkap semua tag
-                        HTML yang tersedia, kunjungi </span><a href="https://www.w3schools.com/tags/default.asp ">Referensi
-                        Tag
-                        HTML</a> kami.</p>
-            <p>Tautan HTML</p>
+            <!-- <p><span style='color:black'>Untuk daftar lengkap semua tag HTML yang tersedia, kunjungi </span><a href="https://www.w3schools.com/tags/default.asp ">Referensi Tag HTML</a> kami.</p> -->
+
             <hr>
+
+            <h4>Tautan HTML</h4>
             <p>Tautan ditemukan di hampir semua halaman web. Tautan memungkinkan pengguna mengeklik jalan mereka dari halaman ke halaman.</p>
+
+            <h5>Tautan HTML - Hyperlink</h5>
+            <p>Tautan HTML adalah hyperlink. Anda dapat mengklik tautan dan melompat ke dokumen lain. Saat Anda menggerakkan mouse di atas tautan, panah mouse akan berubah menjadi tangan kecil.</p>
+            <p class="moreInfo text-break"><b>Catatan:</b> Tautan tidak harus berupa teks. Tautan dapat berupa gambar atau elemen HTML lainnya!.</p>
+
+            <h5>Tautan HTML - Sintaks</h5>
+            <p><code>&lt;a&gt;</code> Tag HTML mendefinisikan hyperlink. Ini memiliki sintaks berikut:</p>
+            <div class="highlight">
+                <code>&lt;a href="url"&gt;link text&lt;/a&gt;</code>
+            </div>
+            <p>Atribut terpenting dari <code>&lt;a&gt;</code> elemen adalah hrefatribut, yang menunjukkan tujuan tautan. <i>link teks</i> adalah bagian yang akan terlihat pembaca. Mengklik teks tautan, akan mengirim pembaca ke alamat URL yang ditentukan.</p>
+            <p>Contoh :</p>
+            <p>Contoh ini menunjukkan cara membuat tautan ke O-Learning.io:</p>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="highlight">
+                <code>&lt;a href="https://onysu.github.io/lesson/"&gt;Kunjungi O-Learning.io!&lt;/a&gt;</code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div>
+
+            <p>Secara default, tautan akan muncul sebagai berikut di semua browser:</p>
+            <ul type="square">
+                <li>Tautan yang belum dikunjungi digarisbawahi dan berwarna biru.</li>
+                <li>Tautan yang dikunjungi digarisbawahi dan berwarna ungu</li>
+                <li>Tautan aktif digarisbawahi dan merah</li>
+            </ul>
+            <p><b>Tip:</b> Tautan tentu saja dapat ditata dengan CSS, untuk mendapatkan tampilan lain!</p>
             <hr>
-            <p>Tautan HTML - Hyperlink</p>
-            <p>Tautan HTML adalah hyperlink.</p>
-            <p>Anda dapat mengklik tautan dan melompat ke dokumen lain.</p>
-            <p>Saat Anda menggerakkan mouse di atas tautan, panah mouse akan berubah menjadi tangan kecil.</p>
-            <p><b>Catatan:</b> Tautan tidak harus berupa teks. Tautan dapat berupa gambar atau elemen HTML lainnya!
+            <p>Tautan HTML - Atribut Target</p>
+            <p>Secara default, halaman tertaut akan ditampilkan di jendela browser saat ini. Untuk mengubahnya, Anda harus menentukan target lain untuk tautan tersebut.</p>
+            <p>The targetmenspesifikasikan atribut mana untuk membuka dokumen terkait.</p>
+            <p>The targetatribut dapat memiliki salah satu dari nilai berikut:
             </p>
-            <hr>
-            <p>Tautan HTML - Sintaks</p>
-            <p>&lt;a&gt;Tag HTML mendefinisikan hyperlink. Ini memiliki sintaks berikut:</p>
-            <p>&lt;a href=<q><i>url</i><q>&gt;<i>link text</i>&lt;/a&gt;</p>
-        <p>Atribut terpenting dari &lt;a&gt; elemen adalah hrefatribut, yang menunjukkan tujuan tautan.</p>
-        <p>The <i>link teks</i> adalah bagian yang akan terlihat pembaca.</p>
-        <p>Mengklik teks tautan, akan mengirim pembaca ke alamat URL yang ditentukan.</p>
-        <p>Contoh</p>
-        <p>Contoh ini menunjukkan cara membuat tautan ke W3Schools.com:</p>
-        <p>&lt;a href=<q>https://www.w3schools.com/<q>&gt;Visit W3Schools.com!&lt;/a&gt;
-        </p>
-        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_w3schools " target="_blank ">Cobalah sendiri <q></a></p>
-        <p>Secara default, tautan akan muncul sebagai berikut di semua browser:
-        </p>
-        <ul style='margin-top:0cm' type=disc>
-            <li>Tautan yang belum dikunjungi digarisbawahi dan berwarna biru
-            </li>
-            <li>Tautan yang dikunjungi digarisbawahi dan berwarna ungu</li>
-            <li>Tautan aktif digarisbawahi dan merah</li>
-        </ul>
-        <p><b>Tip:</b> Tautan tentu saja dapat ditata dengan CSS, untuk mendapatkan tampilan lain!</p>
-        <hr>
-        <p>Tautan HTML - Atribut Target</p>
-        <p>Secara default, halaman tertaut akan ditampilkan di jendela browser saat ini. Untuk mengubahnya, Anda harus menentukan target lain untuk tautan tersebut.</p>
-        <p>The targetmenspesifikasikan atribut mana untuk membuka dokumen terkait.</p>
-        <p>The targetatribut dapat memiliki salah satu dari nilai berikut:
-        </p>
-        <ul style='margin-top:0cm' type=disc>
-            <li>_self- Bawaan. Membuka dokumen di jendela/tab yang sama dengan yang diklik</li>
-            <li>_blank - Membuka dokumen di jendela atau tab baru</li>
-            <li>_parent - Membuka dokumen di bingkai induk</li>
-            <li>_top - Membuka dokumen di seluruh badan jendela</li>
-        </ul>
-        <p>Contoh</p>
-        <p>Gunakan target=<q>_blank<q> untuk membuka dokumen tertaut di jendela atau tab browser baru:</p>
+            <ul style='margin-top:0cm' type=disc>
+                <li>_self- Bawaan. Membuka dokumen di jendela/tab yang sama dengan yang diklik</li>
+                <li>_blank - Membuka dokumen di jendela atau tab baru</li>
+                <li>_parent - Membuka dokumen di bingkai induk</li>
+                <li>_top - Membuka dokumen di seluruh badan jendela</li>
+            </ul>
+            <p>Contoh</p>
+            <p>Gunakan target=<q>_blank<q> untuk membuka dokumen tertaut di jendela atau tab browser baru:</p>
         <p>&lt;a href=<q>https://www.w3schools.com/<q> target=<q>_blank<q>&gt;Visit W3Schools!&lt;/a&gt;
         </p>
         <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_target " target="_blank ">Cobalah

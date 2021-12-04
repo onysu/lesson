@@ -1498,6 +1498,8 @@
                 <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
             </div>
 
+            <hr>
+
             <h5>Internal CSS</h5>
             <p>Internal CSS digunakan untuk menentukan gaya untuk satu halaman HTML. Internal CSS didefinisikan di
                 <code>&lt;head&gt;</code> bagian halaman HTML, di dalam <code>&lt;style&gt;</code> elemen. Contoh berikut menyetel warna teks SEMUA <code>&lt;h1&gt;</code> elemen (pada halaman itu) menjadi biru, dan warna teks SEMUA <code>&lt;p&gt;</code>                elemen menjadi merah. Selain itu, halaman akan ditampilkan dengan warna latar belakang <q>powderblue</q>.</p>
@@ -1536,7 +1538,7 @@
             <hr>
 
             <h5>External CSS</h5>
-            <p>Lembar gaya eksternal digunakan untuk menentukan gaya untuk banyak halaman HTML. Untuk menggunakan lembar gaya eksternal, tambahkan tautan ke dalamnya di &lt;head&gt;bagian setiap halaman HTML. <br> Contoh :</p>
+            <p>Lembar gaya eksternal digunakan untuk menentukan gaya untuk banyak halaman HTML. Untuk menggunakan lembar style eksternal, tambahkan tautan ke dalamnya di &lt;head&gt;bagian setiap halaman HTML. <br> Contoh :</p>
             <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
             <div class="highlight">
                 <code>
@@ -1573,164 +1575,198 @@ p { <br>
                 <hr>
                 <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
             </div>
-            <p class="moreInfo text-break"><b>Tips:</b> Dengan lembar gaya eksternal, Anda dapat mengubah tampilan seluruh situs web, dengan mengubah satu file!</p>
+            <p class="moreInfo text-break"><b>Tips:</b> Dengan lembar style eksternal, Anda dapat mengubah tampilan seluruh situs web, dengan mengubah satu file!</p>
 
             <hr>
 
-            <p>Warna, Font, dan Ukuran CSS</p>
-            <p>Di sini, kami akan mendemonstrasikan beberapa properti CSS yang umum digunakan. Anda akan belajar lebih banyak tentang mereka nanti.</p>
-            <p>colorProperti CSS mendefinisikan warna teks yang akan digunakan.</p>
-            <p>font-familyProperti CSS mendefinisikan font yang akan digunakan.</p>
-            <p>font-sizeProperti CSS mendefinisikan ukuran teks yang akan digunakan.</p>
-            <p>Contoh</p>
-            <p>Penggunaan warna CSS, font-family dan properti font-size:</p>
-            <p>&lt;!DOCTYPE html&gt;<br> &lt;html&gt;
-                <br> &lt;head&gt;
-                <br> &lt;style&gt;
-                <br> h1 {
-                <br> color: blue;
-                <br> font-family: verdana;
-                <br> font-size: 300%;
-                <br> }
-                <br> p {
-                <br> color: red;<br> font-family: courier;<br> font-size: 160%;<br> }
-                <br> &lt;/style&gt;
-                <br> &lt;/head&gt;
-                <br> &lt;body&gt;
-                <br>
-                <br> &lt;h1&gt;This is a heading&lt;/h1&gt;<br> &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
-                <br> &lt;/body&gt;
-                <br> &lt;/html&gt;
-            </p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_fonts " target="_blank ">Cobalah
-                        sendiri <q></a></p>
-            <hr>
-            <p>Perbatasan CSS</p>
-            <p>borderProperti CSS mendefinisikan perbatasan di sekitar elemen HTML.</p>
-            <p><b>Tip:</b> Anda dapat menentukan batas untuk hampir semua elemen HTML.</p>
-            <p>Contoh</p>
-            <p>Penggunaan properti perbatasan CSS: </p>
-            <p>p {<br> border: 2px solid powderblue;<br> }
-                <br>
-                <br>
-            </p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_borders " target="_blank ">Cobalah
-                        sendiri <q></a></p>
-            <hr>
-            <p>Lapisan CSS</p>
-            <p>paddingProperti CSS mendefinisikan padding (spasi) antara teks dan perbatasan.</p>
-            <p>Contoh</p>
-            <p>Penggunaan perbatasan CSS dan properti padding:</p>
-            <p>p {<br> border: 2px solid powderblue;<br> padding: 30px;<br> }
-            </p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_padding " target="_blank ">Cobalah
-                        sendiri <q></a></p>
-            <hr>
-            <p>Batas CSS</p>
-            <p>marginProperti CSS mendefinisikan margin (spasi) di luar perbatasan.</p>
-            <p>Contoh</p>
-            <p>Penggunaan perbatasan CSS dan properti margin:</p>
-            <p>p {<br> border: 2px solid powderblue;<br> margin: 50px;
-                <br> }
-            </p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_margin " target="_blank ">Cobalah
-                        sendiri <q></a></p>
-            <hr>
-            <p>Tautan ke CSS Eksternal</p>
-            <p>Lembar gaya eksternal dapat direferensikan dengan URL lengkap atau dengan jalur relatif ke halaman web saat ini.</p>
-            <p>Contoh</p>
-            <p>Contoh ini menggunakan URL lengkap untuk menautkan ke lembar gaya:
-            </p>
-            <p>
-                &lt;link rel=<q>stylesheet<q> href=<q>https://www.w3schools.com/html/styles.css<q>&gt;
-        </p>
-        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_external_url " target="_blank ">Cobalah sendiri <q></a></p>
-        <p>Contoh</p>
-        <p>Contoh ini menautkan ke lembar gaya yang terletak di folder html di situs web saat ini: </p>
-        <p>&lt;link rel=<q>stylesheet<q> href=<q>/html/styles.css<q>&gt;</p>
-        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_external_relative " target="_blank ">Cobalah sendiri <q></a></p>
-        <p>Contoh</p>
-        <p>Contoh ini menautkan ke lembar gaya yang terletak di folder yang sama dengan halaman saat ini:</p>
-        <p>&lt;link rel=<q>stylesheet<q> href=<q>styles.css<q>&gt;</p>
-        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_external " target="_blank ">Cobalah
-                        sendiri <q></a></p>
-        <p>Anda dapat membaca lebih lanjut tentang jalur file di bab
-            <a href="https://www.w3schools.com/html/html_filepaths.asp ">Jalur File
-                        HTML</a>.</p>
+            <h5>Warna, Font, dan Ukuran CSS</h5>
+            <p>Di sini, kami akan mendemonstrasikan beberapa properti CSS yang umum digunakan. Anda akan belajar lebih banyak tentang mereka nanti. <br> <code>color</code> properti CSS mendefinisikan warna teks yang akan digunakan.
+                <br> <code>font-family</code> properti CSS mendefinisikan font yang akan digunakan. <br> <code>font-size</code> properti CSS mendefinisikan ukuran teks yang akan digunakan.</p>
+            <p>Contoh :</p>
+            <p>Penggunaan warna CSS, <code>font-family</code> dan properti <code>font-size</code>:</p>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="highlight">
+                <code>
+&lt;!DOCTYPE html&gt;<br> &lt;html&gt;
+<br> &lt;head&gt;
+<br> &lt;style&gt;
+<br> h1 {
+<br> color: blue;
+<br> font-family: verdana;
+<br> font-size: 300%;
+<br> }
+<br> p {
+<br> color: red;<br> font-family: courier;<br> font-size: 160%;<br> }
+<br> &lt;/style&gt;
+<br> &lt;/head&gt;
+<br> &lt;body&gt;
+<br>
+<br> &lt;h1&gt;This is a heading&lt;/h1&gt;<br> &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+<br> &lt;/body&gt;
+<br> &lt;/html&gt;
+    </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div>
 
-        <h4>Ringkasan Bab</h4>
-        <ul style='margin-top:0cm' type=disc>
-            <li>Gunakan styleatribut HTML untuk penataan sebaris.</li>
-            <li>Gunakan <code>&lt;style&gt;</code> elemen HTML untuk mendefinisikan CSS internal.</li>
-            <li>Gunakan <code>&lt;link&gt;</code> elemen HTML untuk merujuk ke file CSS eksternal.</li>
-            <li>Gunakan <code>&lt;head&gt;</code> elemen HTML untuk menyimpan elemen <code>&lt;style&gt;</code> dan
-                <code>&lt;link&gt;</code>.</li>
-            <li>Gunakan <code>color</code> properti CSS untuk warna teks.</li>
-            <li>Gunakan <code>font-family</code> properti CSS untuk font teks.</li>
-            <li>Gunakan <code>font-size</code> properti CSS untuk ukuran teks.</li>
-            <li>Gunakan <code>border</code> properti CSS untuk perbatasan.</li>
-            <li>Gunakan <code>padding</code> properti CSS untuk ruang di dalam perbatasan.</li>
-            <li>Gunakan <code>margin</code> properti CSS untuk ruang di luar perbatasan.</li>
-        </ul>
+            <hr>
 
-        <hr>
+            <h5>CSS Border</h5>
+            <p><code>border</code> properti CSS mendefinisikan perbatasan di sekitar elemen HTML.</p>
+            <p class="moreInfo text-break"><b>Tip:</b> Anda dapat menentukan batas untuk hampir semua elemen HTML.</p>
+            <p>Contoh :</p>
+            <p>Penggunaan properti <code>border</code> CSS: </p>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="highlight">
+                <code>
+p {<br> border: 2px solid powderblue;<br> }
+    </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div>
 
-        <h3>Tag Style HTML</h3>
-        <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=876 style='width:656.85pt;background:white;border-collapse:collapse;border:none'>
-            <tr>
-                <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:solid #CCCCCC 1.0pt;
+            <hr>
+
+            <h5>CSS Padding</h5>
+            <p><code>padding</code> properti CSS mendefinisikan <code>padding</code> (spasi) antara teks dan <code>border</code>.</p>
+            <p>Contoh :</p>
+            <p>Penggunaan <code>border</code> CSS dan properti <code>padding</code>:</p>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="highlight">
+                <code>
+p {<br> border: 2px solid powderblue;<br> padding: 30px;<br> }
+    </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div>
+
+            <hr>
+
+            <h5>CSS Margin</h5>
+            <p><code>margin</code> properti CSS mendefinisikan <code>margin</code> (spasi) di luar <code>border</code>.</p>
+            <p>Contoh :</p>
+            <p>Penggunaan <code>border</code> CSS dan properti <code>margin</code>:</p>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="highlight">
+                <code>
+p {<br> border: 2px solid powderblue;<br> margin: 50px;
+<br> }
+    </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div>
+
+            <hr>
+
+            <h5>Tautan ke CSS Eksternal</h5>
+            <p>Lembar gaya eksternal dapat direferensikan dengan URL lengkap atau dengan jalur relatif ke halaman web saat ini. <br> Contoh :</p>
+            <p>Contoh ini menggunakan URL lengkap untuk menautkan ke lembar style:</p>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="highlight">
+                <code>
+&lt;link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"&gt;
+    </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div>
+
+            <p>Contoh :</p>
+            <p>Contoh ini menautkan ke lembar style yang terletak di folder html di situs web saat ini: </p>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="highlight">
+                <code>
+&lt;link rel="stylesheet" href="/html/styles.css"&gt;
+    </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div>
+
+            <p>Contoh :</p>
+            <p>Contoh ini menautkan ke lembar style yang terletak di folder yang sama dengan halaman saat ini:</p>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="highlight">
+                <code>
+&lt;link rel="stylesheet" href="styles.css"&gt;
+    </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div>
+
+            <hr>
+
+            <h4>Ringkasan Bab</h4>
+            <ul style='margin-top:0cm' type=disc>
+                <li>Gunakan <code>style</code> atribut HTML untuk penataan sebaris.</li>
+                <li>Gunakan <code>&lt;style&gt;</code> elemen HTML untuk mendefinisikan CSS internal.</li>
+                <li>Gunakan <code>&lt;link&gt;</code> elemen HTML untuk merujuk ke file CSS eksternal.</li>
+                <li>Gunakan <code>&lt;head&gt;</code> elemen HTML untuk menyimpan elemen <code>&lt;style&gt;</code> dan
+                    <code>&lt;link&gt;</code>.</li>
+                <li>Gunakan <code>color</code> properti CSS untuk warna teks.</li>
+                <li>Gunakan <code>font-family</code> properti CSS untuk font teks.</li>
+                <li>Gunakan <code>font-size</code> properti CSS untuk ukuran teks.</li>
+                <li>Gunakan <code>border</code> properti CSS untuk perbatasan.</li>
+                <li>Gunakan <code>padding</code> properti CSS untuk ruang di dalam perbatasan.</li>
+                <li>Gunakan <code>margin</code> properti CSS untuk ruang di luar perbatasan.</li>
+            </ul>
+
+            <hr>
+
+            <h3>Tag Style HTML</h3>
+            <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=876 style='width:656.85pt;background:white;border-collapse:collapse;border:none'>
+                <tr>
+                    <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:solid #CCCCCC 1.0pt;
   border-bottom:none;border-right:none;padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                    <p><b>Tag</b></p>
-                </td>
-                <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:none;
+                        <p><b>Tag</b></p>
+                    </td>
+                    <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:none;
   border-bottom:none;border-right:solid #CCCCCC 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><b><span style='color:black'>Description</span></b></p>
-                </td>
-            </tr>
-            <tr>
-                <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;background:
+                        <p><b><span style='color:black'>Description</span></b></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;background:
   #E7E9EB;padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                    <p><span style='color:black'><a
+                        <p><span style='color:black'><a
                                         href="https://www.w3schools.com/tags/tag_style.asp ">&lt;style&gt;</a></span>
-                    </p>
-                </td>
-                <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+                        </p>
+                    </td>
+                    <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
   background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Defines style information for an
+                        <p><span style='color:black'>Defines style information for an
                                     HTML document</span></p>
-                </td>
-            </tr>
-            <tr>
-                <td valign=top style='border-top:none;border-left:solid #CCCCCC 1.0pt;
+                    </td>
+                </tr>
+                <tr>
+                    <td valign=top style='border-top:none;border-left:solid #CCCCCC 1.0pt;
   border-bottom:solid #CCCCCC 1.0pt;border-right:none;padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                    <p><span style='color:black'><a
+                        <p><span style='color:black'><a
                                         href="https://www.w3schools.com/tags/tag_link.asp ">&lt;link&gt;</a></span></p>
-                </td>
-                <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CCCCCC 1.0pt;
+                    </td>
+                    <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CCCCCC 1.0pt;
   border-right:solid #CCCCCC 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Defines a link between a
+                        <p><span style='color:black'>Defines a link between a
                                     document and an external resource</span></p>
-                </td>
-            </tr>
-        </table>
-        <p><span style='color:black'>Untuk daftar lengkap semua tag
+                    </td>
+                </tr>
+            </table>
+            <p><span style='color:black'>Untuk daftar lengkap semua tag
                         HTML yang tersedia, kunjungi </span><a href="https://www.w3schools.com/tags/default.asp ">Referensi
                         Tag
                         HTML</a> kami.</p>
-        <p>Tautan HTML</p>
-        <hr>
-        <p>Tautan ditemukan di hampir semua halaman web. Tautan memungkinkan pengguna mengeklik jalan mereka dari halaman ke halaman.</p>
-        <hr>
-        <p>Tautan HTML - Hyperlink</p>
-        <p>Tautan HTML adalah hyperlink.</p>
-        <p>Anda dapat mengklik tautan dan melompat ke dokumen lain.</p>
-        <p>Saat Anda menggerakkan mouse di atas tautan, panah mouse akan berubah menjadi tangan kecil.</p>
-        <p><b>Catatan:</b> Tautan tidak harus berupa teks. Tautan dapat berupa gambar atau elemen HTML lainnya!
-        </p>
-        <hr>
-        <p>Tautan HTML - Sintaks</p>
-        <p>&lt;a&gt;Tag HTML mendefinisikan hyperlink. Ini memiliki sintaks berikut:</p>
-        <p>&lt;a href=<q><i>url</i><q>&gt;<i>link text</i>&lt;/a&gt;</p>
+            <p>Tautan HTML</p>
+            <hr>
+            <p>Tautan ditemukan di hampir semua halaman web. Tautan memungkinkan pengguna mengeklik jalan mereka dari halaman ke halaman.</p>
+            <hr>
+            <p>Tautan HTML - Hyperlink</p>
+            <p>Tautan HTML adalah hyperlink.</p>
+            <p>Anda dapat mengklik tautan dan melompat ke dokumen lain.</p>
+            <p>Saat Anda menggerakkan mouse di atas tautan, panah mouse akan berubah menjadi tangan kecil.</p>
+            <p><b>Catatan:</b> Tautan tidak harus berupa teks. Tautan dapat berupa gambar atau elemen HTML lainnya!
+            </p>
+            <hr>
+            <p>Tautan HTML - Sintaks</p>
+            <p>&lt;a&gt;Tag HTML mendefinisikan hyperlink. Ini memiliki sintaks berikut:</p>
+            <p>&lt;a href=<q><i>url</i><q>&gt;<i>link text</i>&lt;/a&gt;</p>
         <p>Atribut terpenting dari &lt;a&gt; elemen adalah hrefatribut, yang menunjukkan tujuan tautan.</p>
         <p>The <i>link teks</i> adalah bagian yang akan terlihat pembaca.</p>
         <p>Mengklik teks tautan, akan mengirim pembaca ke alamat URL yang ditentukan.</p>
@@ -2085,7 +2121,7 @@ p { <br>
         <hr>
         <p>Lebar dan Tinggi, atau Style?</p>
         <p>The width, heightdan styleatribut semuanya valid dalam HTML.</p>
-        <p>Namun, kami menyarankan menggunakan styleatribut. Ini mencegah lembar gaya mengubah ukuran gambar:
+        <p>Namun, kami menyarankan menggunakan styleatribut. Ini mencegah lembar style mengubah ukuran gambar:
         </p>
         <p>Contoh</p>
         <p>&lt;!DOCTYPE html&gt;<br> &lt;html&gt;

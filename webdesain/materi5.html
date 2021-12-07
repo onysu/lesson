@@ -200,7 +200,7 @@
                         dan warna teks <code>&lt;p&gt;</code> elemen menjadi <span style="color: red;">merah</span>:</p>
                     <p>Contoh :</p>
 
-                    <div class="contoh p-3">
+                    <div class="contoh p-3 shadow-sm">
                         <h1 style="color:blue;">Judul Biru</h1>
                         <p style="color:red;">Sebuah paragraf merah.</p>
                     </div>
@@ -223,7 +223,7 @@
                     <p>Internal CSS digunakan untuk menentukan gaya untuk satu halaman HTML. Internal CSS didefinisikan di
                         <code>&lt;head&gt;</code> bagian halaman HTML, di dalam <code>&lt;style&gt;</code> elemen. Contoh : berikut menyetel warna teks SEMUA <code>&lt;h1&gt;</code> elemen (pada halaman itu) menjadi biru, dan warna teks SEMUA <code>&lt;p&gt;</code>                        elemen menjadi merah. Selain itu, halaman akan ditampilkan dengan warna latar belakang <q>powderblue</q>.</p>
                     <p>Contoh :</p>
-                    <div class="contoh p-3" style="background-color: powderblue;">
+                    <div class="contoh p-3 shadow-sm" style="background-color: powderblue;">
                         <style>
                             .internal h1 {
                                 color: blue;
@@ -345,7 +345,7 @@
 
                         <p>Contoh :</p>
                         <p>Penggunaan warna CSS, <code>font-family</code> dan properti <code>font-size</code>:</p>
-                        <div class="contoh p-3">
+                        <div class="contoh p-3 shadow-sm">
                             <style>
                                 .WarnaFontUkuranCSS h1 {
                                     color: blue;
@@ -404,7 +404,7 @@
                     <p class="moreInfo text-break"><b>Tip:</b> Anda dapat menentukan batas untuk hampir semua elemen HTML.</p>
                     <p>Contoh : Penggunaan properti <code>border</code> CSS: </p>
 
-                    <div class="contoh p-3">
+                    <div class="contoh p-3 shadow-sm">
                         <h1>Ini adalah judul</h1>
                         <p style="border: 2px solid powderblue;">Ini adalah sebuah paragraf.</p>
                         <p style="border: 2px solid powderblue;">Ini adalah sebuah paragraf.</p>
@@ -443,11 +443,45 @@
                     <h3>Padding CSS</h3>
                     <p><code>padding</code> properti CSS mendefinisikan <code>padding</code> (spasi) antara teks dan
                         <code>border</code>. <br> Penggunaan <code>border</code> CSS dan properti <code>padding</code>:</p>
+
+                    <div class="contoh p-3 shadow-sm">
+                        <style>
+                            .PaddingCSS p {
+                                border: 2px solid powderblue;
+                                padding: 30px;
+                            }
+                        </style>
+                        <div class="PaddingCSS">
+                            <p>This is a paragraph.</p>
+                            <p>This is a paragraph.</p>
+                            <p>This is a paragraph.</p>
+                        </div>
+
+                    </div>
+
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="highlight">
                         <code>
-              p {<br> border: 2px solid powderblue;<br> padding: 30px;<br> }
-            </code>
+                            &lt;!DOCTYPE html&gt; <br>
+                            &lt;html&gt; <br>
+                                &lt;head&gt; <br>
+                                    <b>
+                                        &lt;style&gt; <br>
+                                            p { <br>
+                                            border: 2px solid powderblue; <br>
+                                            padding: 30px; <br>
+                                            } <br>
+                                        &lt;/style&gt; <br>
+                                    </b>
+                                &lt;/head&gt; <br>
+ <br>
+                                &lt;body&gt; <br>
+                                    &lt;p&gt;Ini adalah sebuah paragraf.&lt;/p&gt; <br>
+                                    &lt;p&gt;Ini adalah sebuah paragraf.&lt;/p&gt; <br>
+                                    &lt;p&gt;Ini adalah sebuah paragraf.&lt;/p&gt; <br>
+                                &lt;/body&gt; <br>
+                            &lt;/html&gt; <br>
+                        </code>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
                     </div>

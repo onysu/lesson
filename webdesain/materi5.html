@@ -199,10 +199,12 @@
                     <p>CSS sebaris digunakan untuk menerapkan gaya unik ke satu elemen HTML. CSS sebaris menggunakan styleatribut elemen HTML. <br> Contoh berikut menyetel warna teks <code>&lt;h1&gt;</code> elemen menjadi <span style="color: blue;">biru</span>,
                         dan warna teks <code>&lt;p&gt;</code> elemen menjadi <span style="color: red;">merah</span>:</p>
                     <p>Contoh :</p>
-                    <p>
+
+                    <div class="contoh p-3">
                         <h1 style="color:blue;">Judul Biru</h1>
                         <p style="color:red;">Sebuah paragraf merah.</p>
-                    </p>
+                    </div>
+
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="highlight">
                         <code>
@@ -221,6 +223,22 @@
                     <p>Internal CSS digunakan untuk menentukan gaya untuk satu halaman HTML. Internal CSS didefinisikan di
                         <code>&lt;head&gt;</code> bagian halaman HTML, di dalam <code>&lt;style&gt;</code> elemen. Contoh : berikut menyetel warna teks SEMUA <code>&lt;h1&gt;</code> elemen (pada halaman itu) menjadi biru, dan warna teks SEMUA <code>&lt;p&gt;</code>                        elemen menjadi merah. Selain itu, halaman akan ditampilkan dengan warna latar belakang <q>powderblue</q>.</p>
                     <p>Contoh :</p>
+                    <div class="contoh p-3" style="background-color: powderblue;">
+                        <style>
+                            .internal h1 {
+                                color: blue;
+                            }
+                            
+                            .internal p {
+                                color: red;
+                            }
+                        </style>
+
+                        <div class="internal">
+                            <h1>Ini adalah judul</h1>
+                            <p>Ini adalah sebuah paragraf.</p>
+                        </div>
+                    </div>
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="highlight">
                         <code>
@@ -255,8 +273,16 @@
 
                 <section id="ExternalCSS">
                     <h3>External CSS</h3>
-                    <p>Lembar gaya eksternal digunakan untuk menentukan gaya untuk banyak halaman HTML. Untuk menggunakan lembar style eksternal, tambahkan tautan ke dalamnya di <code>&lt;head&gt;</code> bagian setiap halaman HTML. <br> Contoh :
-                    </p>
+                    <p>Lembar gaya eksternal digunakan untuk menentukan gaya untuk banyak halaman HTML. Untuk menggunakan lembar style eksternal, tambahkan tautan ke dalamnya di <code>&lt;head&gt;</code> bagian setiap halaman HTML.</p>
+
+                    <h6>Latihan :</h6>
+                    <p>ada 2 file :</p>
+                    <ul>
+                        <li>index.html</li>
+                        <li>style.css</li>
+                    </ul>
+
+                    <p><q><strong>index.html</strong></q></p>
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="highlight">
                         <code>

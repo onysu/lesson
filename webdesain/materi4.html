@@ -66,7 +66,7 @@
 
                 <h3>Nama Warna</h3>
                 <p>Dalam HTML, warna dapat ditentukan dengan menggunakan nama warna:</p>
-                <div class="contoh">
+                <div class="contoh p-3">
                     <p>
                         <h5 style="color: white; padding: 10px; background-color:Tomato;">Tomato</h5>
                         <h5 style="color: white; padding: 10px; background-color:Orange;">Orange</h5>
@@ -104,7 +104,7 @@
                 <h3>Warna latar belakang</h3>
                 <p>Anda dapat mengatur warna latar belakang untuk elemen HTML:</p>
                 <p>Contoh :</p>
-                <div class="contoh">
+                <div class="custom-control-input-light">
                     <p style="background-color: dodgerblue;
                 text-align: center;
                 color: white;
@@ -134,12 +134,10 @@
                 <h2>Warna teks</h2>
                 <p>Anda dapat mengatur warna teks:</p>
                 <p>Contoh :</p>
-                <div class="contoh">
-                    <p>
-                        <h2 style="color: tomato;">Hello World</h2>
-                        <p style="color: dodgerblue;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-                        <p style="color: mediumseagreen;">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-                    </p>
+                <div class="contoh p-3">
+                    <h2 style="color: tomato;">Hello World</h2>
+                    <p style="color: dodgerblue;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <p style="color: mediumseagreen;">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
                 </div>
 
 
@@ -191,7 +189,7 @@
                     <strong>HSLA</strong>. Tiga elemen <code>&lt;div&gt;</code> berikut memiliki warna latar belakang yang disetel dengan nilai <strong>RGB</strong>, <strong>HEX</strong>, dan
                     <strong>HSL</strong>:</p>
                 <p>Contoh :</p>
-                <div class="contoh" style="line-height: 60px;
+                <div class="contoh p-3" style="line-height: 60px;
                 color: white;
                 font-size: 14px;
                 font-weight: bold;
@@ -204,7 +202,7 @@
                 <p>Dua elemen <code>&lt;div&gt;</code> berikut memiliki warna latar belakang yang disetel dengan nilai
                     <strong>RGBA</strong> dan <strong>HSLA</strong>, yang menambahkan saluran <strong>Alpha</strong> ke warna (di sini kita memiliki <strong>transparansi 50%</strong>):</p>
 
-                <div class="contoh" style="line-height: 60px;
+                <div class="contoh p-3" style="line-height: 60px;
                 color: white;
                 font-size: 20px;
                 font-weight: bold;
@@ -283,7 +281,14 @@
                     </section>
                 </div>
 
-
+                <div class="contoh p-3">
+                    <h5 style="color: white; padding: 10px; background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h5>
+                    <h5 style="color: white; padding: 10px; background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h5>
+                    <h5 style="color: white; padding: 10px; background-color:rgb(60, 179, 113);">rgb(60, 179, 113)</h5>
+                    <h5 style="color: white; padding: 10px; background-color:rgb(238, 130, 238);">rgb(238, 130, 238)</h5>
+                    <h5 style="color: white; padding: 10px; background-color:rgb(255, 165, 0);">rgb(255, 165, 0)</h5>
+                    <h5 style="color: white; padding: 10px; background-color:rgb(106, 90, 205);">rgb(106, 90, 205)</h5>
+                </div>
 
                 <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                 <div class="highlight">
@@ -304,7 +309,7 @@
             <section id="bayanganabuabu">
                 <h3>Bayangan Abu-abu</h3>
                 <p>Nuansa abu-abu sering didefinisikan menggunakan nilai yang sama untuk ketiga parameter. <br> Contoh :</p>
-                <p>
+                <div class="contoh p-3">
                     <h5 style="color: whitesmoke; padding: 10px; background-color:rgb(60, 60, 60);">rgb(60, 60, 60)</h5>
                     <h5 style="color: whitesmoke; padding: 10px; background-color:rgb(100, 100, 100);">rgb(100, 100, 100)
                     </h5>
@@ -312,7 +317,8 @@
                     <h5 style="padding: 10px; background-color:rgb(180, 180, 180);">rgb(180, 180, 180)</h5>
                     <h5 style="padding: 10px; background-color:rgb(200, 200, 200);">rgb(200, 200, 200)</h5>
                     <h5 style="padding: 10px; background-color:rgb(240, 240, 240);">rgb(240, 240, 240)</h5>
-                </p>
+                </div>
+
                 <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                 <div class="highlight">
                     <code>
@@ -336,43 +342,49 @@
                 <p>Parameter alpha adalah angka antara 0.0 (sepenuhnya transparan) dan 1.0 (tidak transparan sama sekali).</p>
 
                 <p>Percobaan dengan mencampur nilai <strong>RGBA</strong> di bawah ini:</p>
-                <div class="row">
-                    <div class="col text-center">
-                        <div id="rgbaresult" style="line-height: 60px; background-color: rgba(255, 99, 71, 0.5);">
-                            <p id="rgbaresulttext" style="font-size: large; color: rgb(255, 255, 255);">rgba(255, 99, 71, 0.5)
-                            </p>
+                <div class="contoh p-3">
+                    <div class="row">
+                        <div class="col text-center">
+                            <div id="rgbaresult" style="line-height: 60px; background-color: rgba(255, 99, 71, 0.5);">
+                                <p id="rgbaresulttext" style="font-size: large; color: rgb(255, 255, 255);">rgba(255, 99, 71, 0.5)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row container">
+                        <div class="col container text-center">
+                            <p>RED</p>
+                            <input onchange="changeRGBA()" oninput="changeRGBA()" type="range" id="slideRedA" name="slideRedA" value="255" min="0" max="255">
+                            <div id="valRed2A">255</div>
+                        </div>
+                        <div class="col container text-center">
+                            <p>GREEN</p>
+                            <input onchange="changeRGBA()" oninput="changeRGBA()" type="range" id="slideGreenA" name="slideGreenA" value="99" min="0" max="255">
+                            <div id="valGreen2A">0</div>
+                        </div>
+                        <div class="col container text-center">
+                            <p>BLUE</p>
+                            <input onchange="changeRGBA()" oninput="changeRGBA()" type="range" id="slideBlueA" name="slideBlueA" value="71" min="0" max="255">
+                            <div id="valBlue2A">0</div>
+                        </div>
+                        <div class="col container text-center">
+                            <p>ALPHA</p>
+                            <input onchange="changeRGBA()" oninput="changeRGBA()" type="range" id="slideAlphaA" name="slideAlphaA" value="5" min="0" max="10">
+                            <div id="valAlpha2A">0</div>
                         </div>
                     </div>
                 </div>
-                <div class="row container">
-                    <div class="col container text-center">
-                        <p>RED</p>
-                        <input onchange="changeRGBA()" oninput="changeRGBA()" type="range" id="slideRedA" name="slideRedA" value="255" min="0" max="255">
-                        <div id="valRed2A">255</div>
-                    </div>
-                    <div class="col container text-center">
-                        <p>GREEN</p>
-                        <input onchange="changeRGBA()" oninput="changeRGBA()" type="range" id="slideGreenA" name="slideGreenA" value="99" min="0" max="255">
-                        <div id="valGreen2A">0</div>
-                    </div>
-                    <div class="col container text-center">
-                        <p>BLUE</p>
-                        <input onchange="changeRGBA()" oninput="changeRGBA()" type="range" id="slideBlueA" name="slideBlueA" value="71" min="0" max="255">
-                        <div id="valBlue2A">0</div>
-                    </div>
-                    <div class="col container text-center">
-                        <p>ALPHA</p>
-                        <input onchange="changeRGBA()" oninput="changeRGBA()" type="range" id="slideAlphaA" name="slideAlphaA" value="5" min="0" max="10">
-                        <div id="valAlpha2A">0</div>
-                    </div>
-                </div>
                 <p>Contoh :</p>
-                <h5 style="padding: 10px; background-color:rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h5>
-                <h5 style="padding: 10px; background-color:rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)</h5>
-                <h5 style="padding: 10px; background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)</h5>
-                <h5 style="padding: 10px; background-color:rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6)</h5>
-                <h5 style="padding: 10px; background-color:rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)</h5>
-                <h5 style="padding: 10px; background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h5>
+                <div class="contoh p-3">
+                    <h5 style="padding: 10px; background-color:rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h5>
+                    <h5 style="padding: 10px; background-color:rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)</h5>
+                    <h5 style="padding: 10px; background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)</h5>
+                    <h5 style="padding: 10px; background-color:rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6)</h5>
+                    <h5 style="padding: 10px; background-color:rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)</h5>
+                    <h5 style="padding: 10px; background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h5>
+                </div>
+
+
                 <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                 <div class="highlight">
                     <code>

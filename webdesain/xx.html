@@ -591,81 +591,85 @@
 
         <hr>
 
-        <h4>Ukuran Gambar - Lebar & Tinggi <span class="small"><code>Width</code> & <code>Height</code></span>)</h4>
-        <p>Anda dapat menggunakan styleatribut untuk menentukan lebar dan tinggi gambar.</p>
-
-
-
-
-        <div class="w3-code">
-            <div>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                        style="color:mediumblue">&lt;</span>html<span class="attributecolor" style="color:red"> xmlns<span
-                            class="attributevaluecolor" style="color:mediumblue">="http://www.w3.org/1999/xhtml"</span> lang
-                <span class="attributevaluecolor" style="color:mediumblue">="en"</span> xml:lang<span class="attributevaluecolor" style="color:mediumblue">="en"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> ...
-                <br>
-                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                        style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+        <section>
+            <h4>Ukuran Gambar - Lebar & Tinggi <span class="small"><code>-Width & Height-</code></span></h4>
+            <p>Anda dapat menggunakan <code>style</code> atribut untuk menentukan <code>lebar</code> dan <code>tinggi</code> gambar.</p>
+            <p>Contoh :</p>
+            <div class="contoh shadow-sm">
+                <p><img src="files/img/img_girl.jpg" class="img-fluid" alt="Girl in a jacket" style="width:500px;height:600px;"></p>
             </div>
-        </div>
-
-
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <code>
+                    &lt;img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;"&gt;
+                </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div>
+            <div class="contoh shadow-sm">
+                <p><img src="files/img/img_girl.jpg" class="img-fluid" alt="Girl in a jacket" width="500" height="600"></p>
+            </div>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <code>
+                    &lt;img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600"&gt;
+                </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div>
+            <p><code>width</code> dan <code>height</code> atribut selalu menentukan lebar dan tinggi gambar dalam piksel.</p>
+            <p class="moreInfo text-break"><strong>Catatan:</strong> Selalu tentukan lebar dan tinggi gambar. Jika lebar dan tinggi tidak ditentukan, halaman web mungkin berkedip saat gambar dimuat.</p>
+        </section>
 
         <hr>
 
+        <section>
+            <h4>Lebar & Tinggi atau Style?</h4>
+            <p><code>width</code>, <code>height</code> dan <code>style</code> atribut semuanya valid dalam HTML.</p>
+            <p>Namun, kami menyarankan menggunakan <code>style</code> atribut. Ini mencegah lembar <code>style</code> mengubah ukuran gambar:</p>
+            <p>Contoh :</p>
+            <p>Gambar 1 menggunakan atribut <strong>lebar</strong> ke 128 piksel, tetapi <code>style</code> di bagian <code>head</code> <strong>lebar</strong> ke 100%. <br> Gambar 2 menggunakan atribut <code>style</code> untuk menyetel <strong>lebar</strong>                menjadi 128 piksel, ini tidak akan ditimpa oleh
+                <code>style</code> di bagian kepala:</p>
+            <div class="contoh shadow-sm">
+                <!-- style ini mengatur lebar semua gambar menjadi 100%: -->
+                <style>
+                    .contohimg img {
+                        width: 100%;
+                    }
+                </style>
 
+                <div class="contohimg">
+                    <p><img src="files/img/html5.gif" alt="HTML5 Icon" width="128" height="128"></p>
+                    <p><img src="files/img/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"></p>
+                </div>
+            </div>
 
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <code>
+                    &lt;style&gt; <br>
+                        <!-- style ini mengatur lebar semua gambar menjadi 100%: -->
+                        img { <br>
+                            width: 100%; <br>
+                        } <br>
+                    &lt;/style&gt; <br>
+                     <br>
+                        &lt;img src="html5.gif" alt="HTML5 Icon" width="128" height="128"&gt; <br>
+                     <br>
+                        &lt;img src="html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"&gt; <br>
+                </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div>
+        </section>
+
+        <hr>
+
+        <p>Gambar di Folder Lain</p>
+        <p>Jika Anda memiliki gambar di sub-folder, Anda harus menyertakan nama folder di srcatribut:
+        </p>
         <p>Contoh :</p>
-        <p>&lt;img src=<q>img_girl.jpg<q> alt=<q>Girl in a jacket<q>
-                                style=<q>width:500px;height:600px;<q>&gt;
-            </p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_size" target="_blank">Cobalah
-                    sendiri <q></a></p>
-            <p>Atau, Anda dapat menggunakan atribut widthand height:</p>
-            <p>Contoh :</p>
-            <p>&lt;img src=<q>img_girl.jpg<q> alt=<q>Girl in a jacket<q> width=<q>500<q>
-                                        height=<q>600<q>&gt;
-            </p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_attributes"
-                    target="_blank">Cobalah sendiri <q></a></p>
-            <p>The widthdan heightatribut selalu menentukan lebar dan tinggi gambar dalam piksel.</p>
-            <p><strong>Catatan:</strong> Selalu tentukan lebar dan tinggi gambar. Jika lebar dan tinggi tidak
-                ditentukan, halaman
-                web mungkin berkedip saat gambar dimuat.</p>
-            <hr>
-            <p>Lebar dan Tinggi, atau Style?</p>
-            <p>The width, heightdan styleatribut semuanya valid dalam HTML.</p>
-            <p>Namun, kami menyarankan menggunakan styleatribut. Ini mencegah lembar style mengubah
-                ukuran gambar:
-            </p>
-            <p>Contoh :</p>
-            <p>&lt;!DOCTYPE html&gt;<br> &lt;html&gt;
-                <br> &lt;head&gt;
-                <br> &lt;style&gt;
-                <br> img {
-                <br> width: 100%;
-                <br> }
-                <br> &lt;/style&gt;
-                <br> &lt;/head&gt;
-                <br> &lt;body&gt;
-                <br>
-                <br> &lt;img src=<q>html5.gif<q> alt=<q>HTML5 Icon<q> width=<q>128<q>
-                                        height=<q>128<q>&gt;
-                                                <br>
-                                                <br> &lt;img src=<q>html5.gif<q> alt=<q>HTML5 Icon<q>
-                                                                style=<q>width:128px;height:128px;<q>&gt;
-                                                                        <br>
-                                                                        <br> &lt;/body&gt;
-                                                                        <br> &lt;/html&gt;
-            </p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_style" target="_blank">Cobalah
-                    sendiri <q></a></p>
-            <hr>
-            <p>Gambar di Folder Lain</p>
-            <p>Jika Anda memiliki gambar di sub-folder, Anda harus menyertakan nama folder di
-                srcatribut:</p>
-            <p>Contoh :</p>
-            <p>&lt;img src=<q>/images/html5.gif<q> alt=<q>HTML5 Icon<q>
+        <p>&lt;img src=<q>/images/html5.gif<q> alt=<q>HTML5 Icon<q>
                                 style=<q>width:128px;height:128px;<q>&gt;
             </p>
             <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_folder" target="_blank">Cobalah

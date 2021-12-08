@@ -904,7 +904,7 @@
                     &lt;img src="workplace.jpg" alt="Workplace" usemap="#workmap"&gt; <br>
                     <br>
                     &lt;map name="workmap"&gt; <br>
-                        &lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"&gt; <br>
+                        &lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html"&gt; <br>
                         &lt;area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm"&gt; <br>
                         &lt;area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm"&gt; <br>
                     &lt;/map&gt; <br>
@@ -916,97 +916,167 @@
 
         <hr>
 
-        <h4>Bagaimana cara kerjanya?</h4>
-        <p>Gagasan di balik peta gambar adalah bahwa Anda harus dapat melakukan tindakan yang berbeda tergantung di mana dalam gambar yang Anda klik. Untuk membuat peta gambar, Anda memerlukan gambar, dan beberapa kode HTML yang menjelaskan area yang dapat
-            diklik.
-        </p>
+        <section>
+            <h4>Bagaimana cara kerjanya?</h4>
+            <p>Gagasan di balik peta gambar adalah bahwa Anda harus dapat melakukan tindakan yang berbeda tergantung di mana dalam gambar yang Anda klik. Untuk membuat peta gambar, Anda memerlukan gambar, dan beberapa kode HTML yang menjelaskan area yang
+                dapat diklik.
+            </p>
+            <h4>Foto</h4>
+            <p>Gambar disisipkan menggunakan <code>&lt;img&gt;</code> tag. Satu-satunya perbedaan dari gambar lain adalah Anda harus menambahkan <code>usemap</code> atribut:</p>
+            <div class="contoh shadow-sm">
+                <p><img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap"></p>
+            </div>
+            <p><code>nilai usemap</code> dimulai dengan tag hash <strong>#</strong> diikuti dengan nama peta gambar, dan digunakan untuk menciptakan hubungan antara gambar dan peta gambar.</p>
+            <p class="moreInfo"><strong>Tip:</strong> Anda dapat menggunakan gambar apa saja sebagai peta gambar!</p>
+            <h5>Buat Peta Gambar</h5>
+            <p>Kemudian, tambahkan <code>&lt;map&gt;</code> elemen. <code>&lt;map&gt;</code> elemen yang digunakan untuk membuat peta gambar, dan terkait dengan gambar dengan menggunakan diperlukan <code>name</code> atribut:</p>
+            <div class="bd-callout">
+                <code>&lt;map name="workmap"&gt;</code>
+            </div>
+            <p><code>name</code> atribut harus memiliki nilai yang sama sebagai <code>&lt;img&gt;</code>'s <code>usemap</code> atribut.</p>
+            <h3>Area</h3>
+            <p>Kemudian, tambahkan area yang dapat diklik. Area yang dapat diklik didefinisikan menggunakan <code>&lt;area&gt;</code> elemen.</p>
+            <h4>Shape</h4>
+            <p>Anda harus menentukan bentuk area yang dapat diklik, dan Anda dapat memilih salah satu dari nilai berikut:
+            </p>
+            <table class="table table-bordered w-auto">
+                <tr>
+                    <td><code>rect</code></td>
+                    <td>mendefinisikan wilayah persegi panjang</td>
+                </tr>
+                <tr>
+                    <td><code>circle</code></td>
+                    <td>mendefinisikan daerah melingkar</td>
+                </tr>
+                <tr>
+                    <td><code>poly</code></td>
+                    <td>mendefinisikan wilayah poligonal</td>
+                </tr>
+                <tr>
+                    <td><code>default</code></td>
+                    <td>mendefinisikan seluruh wilayah</td>
+                </tr>
+            </table>
+            <p>Anda juga harus menentukan beberapa koordinat untuk dapat menempatkan area yang dapat diklik ke dalam gambar.</p>
+        </section>
 
-        <h4>Foto</h4>
-        <p>Gambar disisipkan menggunakan <code>&lt;img&gt;</code> tag. Satu-satunya perbedaan dari gambar lain adalah Anda harus menambahkan <code>usemap</code> atribut:</p>
-        <div class="contoh shadow-sm">
-            <p><img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap"></p>
+        <section>
+            <h4>Shape="rect"</h4>
+            <p>Koordinat untuk <mark><code>shape="rect"</code></mark> berpasangan, satu untuk <strong>sumbu x</strong> dan satu untuk <strong>sumbu y</strong>.</p>
+            <p>Jadi, koordinatnya 34,44 artinya 34px dari kiri (<code>left:34px;</code>) dan 44px dari atas (<code>top:44px;</code>):</p>
+            <div style="position:relative">
+                <div style="position:absolute;width:2px;height:379px;left:34px;background-color:GreenYellow ;opacity:0.8"></div>
+                <div style="position:absolute;width:400px;height:2px;top:44px;background-color:GreenYellow ;opacity:0.8"></div>
+                <div style="border:2px solid red;border-radius:50%;position:absolute;width:20px;height:20px;left:25px;top:35px;background-color:transparent;opacity:0.8">
+                </div>
+                <img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja">
+            </div>
+            <br>
+            <p>Koordinat 270,350 artinya 270px dari kiri (<code>left:270px;</code>) dan 350px dari atas (<code>top:350px;</code>)</p>
+            <div style="position:relative">
+                <div style="position:absolute;width:2px;height:379px;left:270px;background-color:GreenYellow ;opacity:0.8"></div>
+                <div style="position:absolute;width:400px;height:2px;top:350px;background-color:GreenYellow ;opacity:0.8"></div>
+                <div style="border:2px solid red;border-radius:50%;position:absolute;width:20px;height:20px;left:261px;top:341px;background-color:transparent;opacity:0.8">
+                </div>
+                <img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja">
+            </div>
+            <br>
+            <p>Sekarang kalian memiliki cukup data untuk membuat area persegi panjang yang dapat diklik:</p>
+            <table class="table table-bordered w-auto">
+                <tr>
+                    <td><strong>34,44</strong></td>
+                    <td><code>left:34px;</code></td>
+                    <td><code>top:44px;</code></td>
+                </tr>
+                <tr>
+                    <td><strong>270,350</strong></td>
+                    <td><code>left:270px;</code></td>
+                    <td><code>top:350px;</code></td>
+                </tr>
+            </table>
+
+            <p>Contoh Latihan :</p>
+            <div class="contoh shadow-sm">
+                <h5>Peta Gambar</h5>
+                <p>Klik pada komputer untuk membuka halaman baru dan membaca lebih lanjut tentang topik ini:</p>
+                <p><img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap1" width="400" height="379"></p>
+                <map name="workmap1">
+                    <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html">
+                </map>
+            </div>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <code>
+                    &lt;p&gt;&lt;img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap1" width="400" height="379"&gt;&lt;/p&gt; <br>
+                     <br>
+                    &lt;map name="workmap1"&gt; <br>
+                        &lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html"&gt; <br>
+                    &lt;/map&gt;
+                </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div>
+            <p>Ini adalah area yang dapat diklik dan akan menuju ke halaman &quot;computer.html&quot;:</p>
+            <div style="position:relative">
+                <div style="position:absolute;width:236px;height:306px;left:34px;top:44px;background-color:dodgerblue;opacity:0.8">
+                </div>
+                <img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja">
+            </div>
+        </section>
+
+        <hr>
+
+        <h4>Shape="circle"</h4>
+        <p>Untuk menambahkan luas lingkaran, pertama cari koordinat pusat lingkaran: <strong>337,300</strong></p>
+        <div style="position:relative">
+            <div style="position:absolute;width:2px;height:379px;left:337px;background-color:GreenYellow ;opacity:0.8"></div>
+            <div style="position:absolute;width:400px;height:2px;top:300px;background-color:GreenYellow ;opacity:0.8"></div>
+            <div style="border:2px solid white;border-radius:50%;position:absolute;width:20px;height:20px;left:328px;top:291px;background-color:transparent;opacity:0.8">
+            </div>
+            <img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja">
         </div>
-
-        <p><code>nilai usemap</code> dimulai dengan tag hash <strong>#</strong> diikuti dengan nama peta gambar, dan digunakan untuk menciptakan hubungan antara gambar dan peta gambar.</p>
-        <p class="moreInfo"><strong>Tip:</strong> Anda dapat menggunakan gambar apa saja sebagai peta gambar!</p>
-
-        <h5>Buat Peta Gambar</h5>
-        <p>Kemudian, tambahkan <code>&lt;map&gt;</code> elemen. <code>&lt;map&gt;</code> elemen yang digunakan untuk membuat peta gambar, dan terkait dengan gambar dengan menggunakan diperlukan <code>name</code> atribut:</p>
-
-        <div class="bd-callout">
-            <code>&lt;map name="workmap"&gt;</code>
+        <br>
+        <p>Kemudian tentukan jari-jari lingkaran: <strong>44</strong> </p>
+        <div style="position:relative">
+            <div style="position:absolute;width:44px;height:2px;left:337px;top:300px;background-color:GreenYellow ;opacity:0.8">
+            </div>
+            <div style="border:2px solid yellow;border-radius:50%;position:absolute;width:88px;height:88px;left:293px;top:256px;background-color:transparent;opacity:0.8">
+            </div>
+            <img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja">
         </div>
-
-        <p><code>name</code> atribut harus memiliki nilai yang sama sebagai <code>&lt;img&gt;</code>'s <code>usemap</code> atribut.</p>
-
-        <h4>Area</h4>
-        <p>Kemudian, tambahkan area yang dapat diklik. Area yang dapat diklik didefinisikan menggunakan <code>&lt;area&gt;</code> elemen.</p>
-        <h5>Shape</h5>
-        <p>Anda harus menentukan bentuk area yang dapat diklik, dan Anda dapat memilih salah satu dari nilai berikut:
-        </p>
+        <br>
+        <p>Sekarang Anda memiliki cukup data untuk membuat area melingkar yang dapat diklik:</p>
         <table class="table table-bordered w-auto">
             <tr>
-                <td><code>rect</code></td>
-                <td>mendefinisikan wilayah persegi panjang</td>
+                <td><strong>337,300</strong></td>
+                <td><code>left:337px;</code></td>
+                <td><code>top:300px;</code></td>
             </tr>
             <tr>
-                <td><code>circle</code></td>
-                <td>mendefinisikan daerah melingkar</td>
-            </tr>
-            <tr>
-                <td><code>poly</code></td>
-                <td>mendefinisikan wilayah poligonal</td>
-            </tr>
-            <tr>
-                <td><code>default</code></td>
-                <td>mendefinisikan seluruh wilayah</td>
+                <td><strong>44</strong></td>
+                <td><code>left:337px;</code></td>
+                <td><code>top:300px;</code></td>
             </tr>
         </table>
-
-        <p>Anda juga harus menentukan beberapa koordinat untuk dapat menempatkan area yang dapat diklik ke dalam gambar.</p>
-
-        <h5>Shape="rect"</h5>
-        <p>Koordinat untuk <mark><code>shape="rect"</code></mark> berpasangan, satu untuk <strong>sumbu x</strong> dan satu untuk <strong>sumbu y</strong>.</p>
-
-        <p>Jadi, koordinatnya 34,44 terletak 34 piksel dari margin kiri dan 44 piksel dari atas:</p>
-        <div style="position:relative">
-            <div style="position:absolute;width:2px;height:379px;left:34px;background-color:GreenYellow ;opacity:0.8"></div>
-            <div style="position:absolute;width:400px;height:2px;top:44px;background-color:GreenYellow ;opacity:0.8"></div>
-            <div style="border:2px solid red;border-radius:50%;position:absolute;width:20px;height:20px;left:25px;top:35px;background-color:transparent;opacity:0.8">
-            </div>
-            <img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja">
-        </div>
-        <br>
-        <p>Koordinat 270,350 terletak 270 piksel dari margin kiri dan 350 piksel dari atas:</p>
-        <div style="position:relative">
-            <div style="position:absolute;width:2px;height:379px;left:270px;background-color:GreenYellow ;opacity:0.8"></div>
-            <div style="position:absolute;width:400px;height:2px;top:350px;background-color:GreenYellow ;opacity:0.8"></div>
-            <div style="border:2px solid red;border-radius:50%;position:absolute;width:20px;height:20px;left:261px;top:341px;background-color:transparent;opacity:0.8">
-            </div>
-            <img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja">
-        </div>
-        <br>
-        <p>Sekarang kami memiliki cukup data untuk membuat area persegi panjang yang dapat diklik:</p>
-        <p>Contoh :</p>
-
+        <p>Contoh Latihan :</p>
         <div class="contoh shadow-sm">
             <h5>Peta Gambar</h5>
-            <p>Klik pada komputer untuk membuka halaman baru dan membaca lebih lanjut tentang topik ini:</p>
-            <p><img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379"></p>
+            <p>Klik secangkir kopi untuk membuka halaman baru dan membaca lebih lanjut tentang topik ini:</p>
+            <p><img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap2" width="400" height="379"></p>
 
-            <map name="workmap">
-                <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html">
+            <map name="workmap2">
+                <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.html">
             </map>
         </div>
 
         <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
         <div class="bd-callout">
             <code>
-                &lt;p&gt;&lt;img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379"&gt;&lt;/p&gt; <br>
+                &lt;p&gt;&lt;img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap2" width="400" height="379"&gt;&lt;/p&gt; <br>
                  <br>
-                &lt;map name="workmap"&gt; <br>
-                    &lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html"&gt; <br>
-                &lt;/map&gt;
+                &lt;map name="workmap2"&gt; <br>
+                    &lt;area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.html"&gt; <br>
+                &lt;/map&gt; <br>
             </code>
             <hr>
             <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
@@ -1014,24 +1084,6 @@
 
 
 
-        <!-- <p>&lt;area shape=&quot;rect&quot; coords=&quot;34, 44, 270, 350&quot; href=&quot;computer.htm&quot;q>&gt;</p> -->
-
-        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map3" target="_blank">Cobalah sendiri &quot;</a></p>
-        <p>Ini adalah area yang dapat diklik dan akan mengirim pengguna ke halaman &quot;computer.htm&quot;:</p>
-
-
-
-        <p><img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja"></p>
-        <hr>
-        <p>Bentuk = &quot;lingkaran&quot;</p>
-        <p>Untuk menambahkan luas lingkaran, pertama cari koordinat pusat lingkaran:</p>
-        <p>337,300</p>
-        <p><img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja"></p>
-        <p>Kemudian tentukan jari-jari lingkaran:</p>
-        <p>44 piksel</p>
-        <p><img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja"></p>
-        <p>Sekarang Anda memiliki cukup data untuk membuat area melingkar yang dapat diklik:</p>
-        <p>Contoh :</p>
         <p>&lt;area shape=&quot;circle&quot; coords=&quot;337, 300, 44&quot; href=&quot;coffee.htm&quot;&gt;</p>
         <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map4" target="_blank">Cobalah sendiri &quot;</a></p>
         <p>Ini adalah area yang dapat diklik dan akan mengirim pengguna ke halaman &quot;coffee.htm&quot;: </p>

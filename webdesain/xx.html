@@ -100,7 +100,7 @@
         <section>
             <h4>URL Absolut vs. URL Relatif</h4>
             <p>Kedua contoh di atas menggunakan <strong>URL absolut</strong> (alamat web lengkap) dalam
-                <strong>href</strong> atribut. Links lokal (link ke halaman dalam situs web yang sama) ditentukan dengan <strong>URL relatif</strong> (tanpa bagian <q>https://www</q>).
+                <strong>href</strong> atribut. Links lokal (link ke halaman dalam situs web yang sama) ditentukan dengan <strong>URL relatif</strong> (tanpa bagian &quot;https://www&quot;).
             </p>
             <p>Contoh :</p>
             <div class="contoh shadow-sm">
@@ -431,7 +431,7 @@
                 &lt;h2 id="C4"&gt;Bab 4&lt;/h2&gt;
                 </code>
             </div>
-            <p>Kemudian, tambahkan link ke bookmark (<q>Langsung ke Bab 4</q>), dari dalam halaman yang sama:</p>
+            <p>Kemudian, tambahkan link ke bookmark (&quot;Langsung ke Bab 4&quot;), dari dalam halaman yang sama:</p>
             <div class="contoh shadow-sm">
                 <p><a href="#C4">Langsung ke Bab 4</a></p>
             </div>
@@ -940,8 +940,11 @@
 
         <p><code>name</code> atribut harus memiliki nilai yang sama sebagai <code>&lt;img&gt;</code>'s <code>usemap</code> atribut.</p>
 
-        <h5>Area</h5>
-        <p>Kemudian, tambahkan area yang dapat diklik. Area yang dapat diklik didefinisikan menggunakan <code>&lt;area&gt;</code> elemen. Untuk membentuk Anda harus menentukan bentuk area yang dapat diklik, dan Anda dapat memilih salah satu dari nilai berikut:</p>
+        <h4>Area</h4>
+        <p>Kemudian, tambahkan area yang dapat diklik. Area yang dapat diklik didefinisikan menggunakan <code>&lt;area&gt;</code> elemen.</p>
+        <h5>Shape</h5>
+        <p>Anda harus menentukan bentuk area yang dapat diklik, dan Anda dapat memilih salah satu dari nilai berikut:
+        </p>
         <table class="table table-bordered w-auto">
             <tr>
                 <td><code>rect</code></td>
@@ -963,656 +966,565 @@
 
         <p>Anda juga harus menentukan beberapa koordinat untuk dapat menempatkan area yang dapat diklik ke dalam gambar.</p>
 
-        <p>Bentuk = <q>persegi<q></p>
-            <p>Koordinat untuk shape=<q>rect<q>datang berpasangan, satu untuk sumbu x dan satu untuk sumbu y.</p>
-            <p>Jadi, koordinatnya 34,44terletak 34 piksel dari margin kiri dan 44 piksel dari atas:</p>
-            <p><img border=0 width=400 height=379 id="Picture 23" src="Gaya_files/image001.jpg" alt="tempat kerja">
-            </p>
-            <p>Koordinat 270,350terletak 270 piksel dari margin kiri dan 350 piksel dari atas:</p>
-            <p><img border=0 width=400 height=379 id="Picture 22" src="Gaya_files/image001.jpg" alt="tempat kerja">
-            </p>
-            <p>Sekarang kami memiliki cukup data untuk membuat area persegi panjang yang dapat diklik:
-            </p>
-            <p>Contoh :</p>
-            <p>&lt;area shape=<q>rect<q> coords=<q>34, 44, 270, 350<q> href=<q>computer.htm<q>&gt;
-            </p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map3" target="_blank">Cobalah
-                    sendiri <q></a></p>
-            <p>Ini adalah area yang dapat diklik dan akan mengirim pengguna ke halaman
-                <q>computer.htm<q>:
-            </p>
-            <p><img border=0 width=400 height=379 id="Picture 21" src="Gaya_files/image001.jpg" alt="tempat kerja">
-            </p>
-            <hr>
-            <p>Bentuk = <q>lingkaran<q></p>
-            <p>Untuk menambahkan luas lingkaran, pertama cari koordinat pusat lingkaran:</p>
-            <p>337,300</p>
-            <p><img border=0 width=400 height=379 id="Picture 20" src="Gaya_files/image001.jpg" alt="tempat kerja">
-            </p>
-            <p>Kemudian tentukan jari-jari lingkaran:</p>
-            <p>44 piksel</p>
-            <p><img border=0 width=400 height=379 id="Picture 19" src="Gaya_files/image001.jpg" alt="tempat kerja">
-            </p>
-            <p>Sekarang Anda memiliki cukup data untuk membuat area melingkar yang dapat diklik:</p>
-            <p>Contoh :</p>
-            <p>&lt;area shape=<q>circle<q> coords=<q>337, 300, 44<q> href=<q>coffee.htm<q>&gt;</p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map4" target="_blank">Cobalah
-                    sendiri <q></a></p>
-            <p>Ini adalah area yang dapat diklik dan akan mengirim pengguna ke halaman <q>coffee.htm<q>:
-            </p>
-            <p><img border=0 width=400 height=379 id="Picture 18" src="Gaya_files/image001.jpg" alt="tempat kerja">
-            </p>
-            <hr>
-            <p>Bentuk = <q>poli<q></p>
-            <p>Ini shape=<q>poly<q>berisi beberapa titik koordinat, yang menciptakan bentuk yang
-                        dibentuk dengan garis
-                        lurus (poligon).</p>
-            <p>Ini dapat digunakan untuk membuat bentuk apa pun.</p>
-            <p>Seperti mungkin bentuk croissant!</p>
-            <p>Bagaimana caranya agar croissant pada gambar di bawah ini menjadi link yang bisa diklik?
-            </p>
-            <p><img border=0 width=450 height=675 id="Picture 17" src="Gaya_files/image002.jpg" alt="Makanan Perancis">
-            </p>
-            <p>Kita harus mencari koordinat x dan y untuk semua tepi croissant:
-            </p>
-            <p><img border=0 width=450 height=675 id="Picture 16" src="Gaya_files/image003.jpg" alt="Makanan Perancis">
-            </p>
-            <p>Koordinat datang berpasangan, satu untuk sumbu x dan satu untuk sumbu y:</p>
-            <p>Contoh :</p>
-            <p>
-                &lt;area shape=<q>poly<q>
-                        coords=<q>140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147<q>
-                                href=<q>croissant.htm<q>&gt;
-            </p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map_croissant"
-                    target="_blank">Cobalah sendiri <q></a></p>
-            <p>Ini adalah area yang dapat diklik dan akan mengarahkan pengguna ke halaman
-                <q>croissant.htm<q>:
-            </p>
-            <p><img border=0 width=450 height=675 id="Picture 15" src="Gaya_files/image004.jpg" alt="Makanan Perancis">
-            </p>
-            <hr>
-            <p>Peta Gambar dan JavaScript</p>
-            <p>Area yang dapat diklik juga dapat memicu fungsi JavaScript.</p>
-            <p>Tambahkan clickacara ke &lt;area&gt;elemen untuk menjalankan fungsi JavaScript:</p>
-            <p>Contoh :</p>
-            <p>Di sini, kami menggunakan atribut onclick untuk menjalankan fungsi JavaScript saat area
-                diklik:</p>
-            <p>&lt;map name=<q>workmap<q>&gt;<br> &lt;area shape=<q>circle<q> coords=<q>337,300,44<q>
-                                        href=<q>coffee.htm<q> onclick=<q>myFunction()<q>&gt;
-                                                        <br> &lt;/map&gt;
-                                                        <br>
-                                                        <br> &lt;script&gt;
-                                                        <br> function myFunction() {<br> alert(<q>You
-                                                            clicked the coffee
-                                                            cup!<q>);<br> }
-                                                                <br> &lt;/script&gt;
-            </p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map5" target="_blank">Cobalah
-                    sendiri <q></a></p>
-            <hr>
-            <p>Ringkasan Bab</p>
-            <ul style='margin-top:0cm' type=disc>
-                <li>Gunakan &lt;map&gt;elemen HTML untuk mendefinisikan peta gambar</li>
-                <li>Gunakan &lt;area&gt;elemen HTML untuk menentukan area yang dapat diklik di peta
-                    gambar</li>
-                <li>Gunakan usemapatribut HTML &lt;img&gt;elemen untuk menunjuk ke peta gambar</li>
-            </ul>
-            <hr>
-            <p>Tag Gambar HTML</p>
-            <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=876
-                style='width:656.85pt;background:white;border-collapse:collapse;border:none'>
-                <tr>
-                    <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:solid #CCCCCC 1.0pt;
+        <h5>Shape="rect"</h5>
+        <p>Koordinat untuk <mark><code>shape="rect"</code></mark> berpasangan, satu untuk <strong>sumbu x</strong> dan satu untuk <strong>sumbu y</strong>.</p>
+        <p>Jadi, koordinatnya 34,44 terletak 34 piksel dari margin kiri dan 44 piksel dari atas:</p>
+        <p><img border=0 width=400 height=379 id="Picture 23" src="Gaya_files/image001.jpg" alt="tempat kerja"></p>
+        <p>Koordinat 270,350terletak 270 piksel dari margin kiri dan 350 piksel dari atas:</p>
+        <p><img border=0 width=400 height=379 id="Picture 22" src="Gaya_files/image001.jpg" alt="tempat kerja"></p>
+        <p>Sekarang kami memiliki cukup data untuk membuat area persegi panjang yang dapat diklik:</p>
+        <p>Contoh :</p>
+        <!-- <p>&lt;area shape=&quot;rect&quot; coords=&quot;34, 44, 270, 350&quot; href=&quot;computer.htm&quot;q>&gt;</p> -->
+
+        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map3" target="_blank">Cobalah sendiri &quot;</a></p>
+        <p>Ini adalah area yang dapat diklik dan akan mengirim pengguna ke halaman &quot;computer.htm&quot;:</p>
+        <p><img border=0 width=400 height=379 id="Picture 21" src="Gaya_files/image001.jpg" alt="tempat kerja"></p>
+        <hr>
+        <p>Bentuk = &quot;lingkaran&quot;</p>
+        <p>Untuk menambahkan luas lingkaran, pertama cari koordinat pusat lingkaran:</p>
+        <p>337,300</p>
+        <p><img border=0 width=400 height=379 id="Picture 20" src="Gaya_files/image001.jpg" alt="tempat kerja"></p>
+        <p>Kemudian tentukan jari-jari lingkaran:</p>
+        <p>44 piksel</p>
+        <p><img border=0 width=400 height=379 id="Picture 19" src="Gaya_files/image001.jpg" alt="tempat kerja"></p>
+        <p>Sekarang Anda memiliki cukup data untuk membuat area melingkar yang dapat diklik:</p>
+        <p>Contoh :</p>
+        <p>&lt;area shape=&quot;circle&quot; coords=&quot;337, 300, 44&quot; href=&quot;coffee.htm&quot;&gt;</p>
+        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map4" target="_blank">Cobalah sendiri &quot;</a></p>
+        <p>Ini adalah area yang dapat diklik dan akan mengirim pengguna ke halaman &quot;coffee.htm&quot;: </p>
+        <p><img border=0 width=400 height=379 id="Picture 18" src="Gaya_files/image001.jpg" alt="tempat kerja"></p>
+        <hr>
+        <p>Bentuk = &quot;poli&quot;</p>
+        <p>Ini shape=&quot;poly&quot;berisi beberapa titik koordinat, yang menciptakan bentuk yang dibentuk dengan garis lurus (poligon).</p>
+        <p>Ini dapat digunakan untuk membuat bentuk apa pun.</p>
+        <p>Seperti mungkin bentuk croissant!</p>
+        <p>Bagaimana caranya agar croissant pada gambar di bawah ini menjadi link yang bisa diklik?
+        </p>
+        <p><img border=0 width=450 height=675 id="Picture 17" src="Gaya_files/image002.jpg" alt="Makanan Perancis">
+        </p>
+        <p>Kita harus mencari koordinat x dan y untuk semua tepi croissant:
+        </p>
+        <p><img border=0 width=450 height=675 id="Picture 16" src="Gaya_files/image003.jpg" alt="Makanan Perancis">
+        </p>
+        <p>Koordinat datang berpasangan, satu untuk sumbu x dan satu untuk sumbu y:</p>
+        <p>Contoh :</p>
+        <p>
+            &lt;area shape=&quot;poly&quot; coords=&quot;140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147&quot; href=&quot;croissant.htm&quot;&gt;
+        </p>
+        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map_croissant" target="_blank">Cobalah sendiri &quot;</a></p>
+        <p>Ini adalah area yang dapat diklik dan akan mengarahkan pengguna ke halaman &quot;croissant.htm&quot;:
+        </p>
+        <p><img border=0 width=450 height=675 id="Picture 15" src="Gaya_files/image004.jpg" alt="Makanan Perancis">
+        </p>
+        <hr>
+        <p>Peta Gambar dan JavaScript</p>
+        <p>Area yang dapat diklik juga dapat memicu fungsi JavaScript.</p>
+        <p>Tambahkan clickacara ke &lt;area&gt;elemen untuk menjalankan fungsi JavaScript:</p>
+        <p>Contoh :</p>
+        <p>Di sini, kami menggunakan atribut onclick untuk menjalankan fungsi JavaScript saat area diklik:
+        </p>
+        <p>&lt;map name=&quot;workmap&quot;&gt;<br> &lt;area shape=&quot;circle&quot; coords=&quot;337,300,44&quot; href=&quot;coffee.htm&quot; onclick=&quot;myFunction()&quot;&gt;
+            <br> &lt;/map&gt;
+            <br>
+            <br> &lt;script&gt;
+            <br> function myFunction() {<br> alert(&quot;You clicked the coffee cup!&quot;);
+            <br> }
+            <br> &lt;/script&gt;
+        </p>
+        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map5" target="_blank">Cobalah
+                    sendiri &quot;</a></p>
+        <hr>
+        <p>Ringkasan Bab</p>
+        <ul style='margin-top:0cm' type=disc>
+            <li>Gunakan &lt;map&gt;elemen HTML untuk mendefinisikan peta gambar</li>
+            <li>Gunakan &lt;area&gt;elemen HTML untuk menentukan area yang dapat diklik di peta gambar
+            </li>
+            <li>Gunakan usemapatribut HTML &lt;img&gt;elemen untuk menunjuk ke peta gambar</li>
+        </ul>
+        <hr>
+        <p>Tag Gambar HTML</p>
+        <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=876 style='width:656.85pt;background:white;border-collapse:collapse;border:none'>
+            <tr>
+                <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:solid #CCCCCC 1.0pt;
   border-bottom:none;border-right:none;padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                        <p><strong>Tag</strong></p>
-                    </td>
-                    <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:none;
+                    <p><strong>Tag</strong></p>
+                </td>
+                <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:none;
   border-bottom:none;border-right:solid #CCCCCC 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><strong><span style='color:black'>Description</span></strong></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;background:
+                    <p><strong><span style='color:black'>Description</span></strong></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;background:
   #E7E9EB;padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                        <p><span style='color:black'><a
+                    <p><span style='color:black'><a
                                     href="https://www.w3schools.com/tags/tag_img.asp">&lt;img&gt;</a></span>
-                        </p>
-                    </td>
-                    <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+                    </p>
+                </td>
+                <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
   background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Defines an image</span></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;padding:
+                    <p><span style='color:black'>Defines an image</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;padding:
   6.0pt 6.0pt 6.0pt 12.0pt'>
-                        <p><span style='color:black'><a
+                    <p><span style='color:black'><a
                                     href="https://www.w3schools.com/tags/tag_map.asp">&lt;map&gt;</a></span>
-                        </p>
-                    </td>
-                    <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+                    </p>
+                </td>
+                <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
   padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Defines an image map</span></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;background:
+                    <p><span style='color:black'>Defines an image map</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;background:
   #E7E9EB;padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                        <p><span style='color:black'><a
+                    <p><span style='color:black'><a
                                     href="https://www.w3schools.com/tags/tag_area.asp">&lt;area&gt;</a></span>
-                        </p>
-                    </td>
-                    <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+                    </p>
+                </td>
+                <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
   background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Defines a clickable area inside
+                    <p><span style='color:black'>Defines a clickable area inside
                                 an image map</span></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td valign=top style='border-top:none;border-left:solid #CCCCCC 1.0pt;
+                </td>
+            </tr>
+            <tr>
+                <td valign=top style='border-top:none;border-left:solid #CCCCCC 1.0pt;
   border-bottom:solid #CCCCCC 1.0pt;border-right:none;padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                        <p><span style='color:black'><a
+                    <p><span style='color:black'><a
                                     href="https://www.w3schools.com/tags/tag_picture.asp">&lt;picture&gt;</a></span>
-                        </p>
-                    </td>
-                    <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CCCCCC 1.0pt;
+                    </p>
+                </td>
+                <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CCCCCC 1.0pt;
   border-right:solid #CCCCCC 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Defines a container for multiple
+                    <p><span style='color:black'>Defines a container for multiple
                                 image resources</span></p>
-                    </td>
-                </tr>
-            </table>
-            <p>Untuk daftar lengkap semua tag HTML yang tersedia, kunjungi
-                <a href="https://www.w3schools.com/tags/default.asp">Referensi
+                </td>
+            </tr>
+        </table>
+        <p>Untuk daftar lengkap semua tag HTML yang tersedia, kunjungi
+            <a href="https://www.w3schools.com/tags/default.asp">Referensi
                     Tag HTML</a> kami.
-            </p>
-            <p>Gambar Latar Belakang HTML</p>
-            <hr>
-            <p>Gambar latar belakang dapat ditentukan untuk hampir semua elemen HTML.</p>
-            <hr>
-            <p>Gambar Latar Belakang pada elemen HTML</p>
-            <p>Untuk menambahkan gambar latar belakang pada elemen HTML, gunakan styleatribut HTML dan
-                background-imageproperti CSS :
-            </p>
-            <p>Contoh :</p>
-            <p>Tambahkan gambar latar belakang pada elemen HTML:</p>
-            <p>&lt;div style=<q>background-image: url('img_girl.jpg');<q>&gt;
-            </p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_background3"
-                    target="_blank">Cobalah sendiri <q></a></p>
-            <p>Anda juga dapat menentukan gambar latar belakang di &lt;style&gt; elemen, di &lt;head&gt;
-                bagian:
-            </p>
-            <p>Contoh :</p>
-            <p>Tentukan gambar latar belakang dalam &lt;style&gt; elemen:</p>
-            <p>&lt;style&gt;<br> div {
-                <br> background-image: url('img_girl.jpg');<br> }
-                <br> &lt;/style&gt;
-            </p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_background4"
-                    target="_blank">Cobalah sendiri <q></a></p>
-            <hr>
-            <p>Gambar Latar Belakang pada Halaman</p>
-            <p>Jika Anda ingin seluruh halaman memiliki gambar latar belakang, Anda harus menentukan
-                gambar latar
-                belakang pada &lt;body&gt;elemen:</p>
-            <p>Contoh :</p>
-            <p>Tambahkan gambar latar belakang untuk seluruh halaman:</p>
-            <p>&lt;style&gt;<br> body {
-                <br> background-image: url('img_girl.jpg');<br> }
-                <br> &lt;/style&gt;
-            </p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_background5"
-                    target="_blank">Cobalah sendiri <q></a></p>
-            <hr>
-            <p>Pengulangan Latar Belakang</p>
-            <p>Jika gambar latar lebih kecil dari elemen, gambar akan berulang secara horizontal dan
-                vertikal, hingga
-                mencapai ujung elemen:</p>
-            <p>Contoh :</p>
-            <p>&lt;style&gt;<br> body {
-                <br> background-image: url('example_img_girl.jpg');<br> }
-                <br> &lt;/style&gt;
-            </p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_background6"
-                    target="_blank">Cobalah sendiri <q></a></p>
-            <p>Untuk menghindari gambar latar belakang berulang, setel background-repeatproperti ke
-                no-repeat.</p>
-            <p>Contoh :</p>
-            <p>&lt;style&gt;<br> body {
-                <br> background-image: url('example_img_girl.jpg');<br> background-repeat:
-                no-repeat;<br> }
-                <br> &lt;/style&gt;
-            </p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_background6_1"
-                    target="_blank">Cobalah sendiri <q></a></p>
-            <hr>
-            <p>Sampul Latar Belakang</p>
-            <p>Jika Anda ingin gambar latar belakang menutupi seluruh elemen, Anda dapat mengatur
-                background-sizeproperti ke cover.</p>
-            <p>Juga, untuk memastikan seluruh elemen selalu tertutup, atur background-attachmentproperti
-                kefixed:
-            </p>
-            <p>Dengan cara ini, gambar latar belakang akan menutupi seluruh elemen, tanpa peregangan
-                (gambar akan
-                mempertahankan proporsi aslinya):</p>
-            <p>Contoh :</p>
-            <p>&lt;style&gt;<br> body {
-                <br> background-image: url('img_girl.jpg');<br> background-repeat: no-repeat;<br>
-                background-attachment:
-                fixed;
-                <br> background-size: cover;<br> }
-                <br> &lt;/style&gt;
-            </p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_background7"
-                    target="_blank">Cobalah sendiri <q></a></p>
-            <hr>
-            <p>Peregangan Latar Belakang</p>
-            <p>Jika Anda ingin gambar latar belakang diregangkan agar pas dengan seluruh elemen, Anda
-                dapat mengatur
-                background-sizeproperti ke 100% 100%:</p>
-            <p>Coba ubah ukuran jendela browser, dan Anda akan melihat bahwa gambar akan melebar, tetapi
-                selalu menutupi
-                seluruh elemen.</p>
-            <p>Contoh :</p>
-            <p>&lt;style&gt;<br> body {
-                <br> background-image: url('img_girl.jpg');<br> background-repeat: no-repeat;<br>
-                background-attachment:
-                fixed;
-                <br> background-size: 100% 100%;<br> }
-                <br> &lt;/style&gt;
-            </p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_background8"
-                    target="_blank">Cobalah sendiri <q></a></p>
-            <hr>
-            <p>Pelajari Lebih Lanjut CSS</p>
-            <p>Dari contoh di atas, Anda telah mempelajari bahwa gambar latar belakang dapat ditata
-                dengan menggunakan
-                properti latar belakang CSS.</p>
-            <p>Untuk mempelajari lebih lanjut tentang properti latar belakang CSS, pelajari <a
-                    href="https://www.w3schools.com/css/css_background.asp">Tutorial Latar Belakang
+        </p>
+        <p>Gambar Latar Belakang HTML</p>
+        <hr>
+        <p>Gambar latar belakang dapat ditentukan untuk hampir semua elemen HTML.</p>
+        <hr>
+        <p>Gambar Latar Belakang pada elemen HTML</p>
+        <p>Untuk menambahkan gambar latar belakang pada elemen HTML, gunakan styleatribut HTML dan background-imageproperti CSS :
+        </p>
+        <p>Contoh :</p>
+        <p>Tambahkan gambar latar belakang pada elemen HTML:</p>
+        <p>&lt;div style=&quot;background-image: url('img_girl.jpg');&quot;&gt;
+        </p>
+        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_background3" target="_blank">Cobalah sendiri &quot;</a></p>
+        <p>Anda juga dapat menentukan gambar latar belakang di &lt;style&gt; elemen, di &lt;head&gt; bagian:
+        </p>
+        <p>Contoh :</p>
+        <p>Tentukan gambar latar belakang dalam &lt;style&gt; elemen:</p>
+        <p>&lt;style&gt;<br> div {
+            <br> background-image: url('img_girl.jpg');<br> }
+            <br> &lt;/style&gt;
+        </p>
+        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_background4" target="_blank">Cobalah sendiri &quot;</a></p>
+        <hr>
+        <p>Gambar Latar Belakang pada Halaman</p>
+        <p>Jika Anda ingin seluruh halaman memiliki gambar latar belakang, Anda harus menentukan gambar latar belakang pada &lt;body&gt;elemen:</p>
+        <p>Contoh :</p>
+        <p>Tambahkan gambar latar belakang untuk seluruh halaman:</p>
+        <p>&lt;style&gt;<br> body {
+            <br> background-image: url('img_girl.jpg');<br> }
+            <br> &lt;/style&gt;
+        </p>
+        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_background5" target="_blank">Cobalah sendiri &quot;</a></p>
+        <hr>
+        <p>Pengulangan Latar Belakang</p>
+        <p>Jika gambar latar lebih kecil dari elemen, gambar akan berulang secara horizontal dan vertikal, hingga mencapai ujung elemen:</p>
+        <p>Contoh :</p>
+        <p>&lt;style&gt;<br> body {
+            <br> background-image: url('example_img_girl.jpg');<br> }
+            <br> &lt;/style&gt;
+        </p>
+        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_background6" target="_blank">Cobalah sendiri &quot;</a></p>
+        <p>Untuk menghindari gambar latar belakang berulang, setel background-repeatproperti ke no-repeat.
+        </p>
+        <p>Contoh :</p>
+        <p>&lt;style&gt;<br> body {
+            <br> background-image: url('example_img_girl.jpg');<br> background-repeat: no-repeat;
+            <br> }
+            <br> &lt;/style&gt;
+        </p>
+        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_background6_1" target="_blank">Cobalah sendiri &quot;</a></p>
+        <hr>
+        <p>Sampul Latar Belakang</p>
+        <p>Jika Anda ingin gambar latar belakang menutupi seluruh elemen, Anda dapat mengatur background-sizeproperti ke cover.</p>
+        <p>Juga, untuk memastikan seluruh elemen selalu tertutup, atur background-attachmentproperti kefixed:
+        </p>
+        <p>Dengan cara ini, gambar latar belakang akan menutupi seluruh elemen, tanpa peregangan (gambar akan mempertahankan proporsi aslinya):</p>
+        <p>Contoh :</p>
+        <p>&lt;style&gt;<br> body {
+            <br> background-image: url('img_girl.jpg');<br> background-repeat: no-repeat;<br> background-attachment: fixed;
+            <br> background-size: cover;<br> }
+            <br> &lt;/style&gt;
+        </p>
+        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_background7" target="_blank">Cobalah sendiri &quot;</a></p>
+        <hr>
+        <p>Peregangan Latar Belakang</p>
+        <p>Jika Anda ingin gambar latar belakang diregangkan agar pas dengan seluruh elemen, Anda dapat mengatur background-sizeproperti ke 100% 100%:</p>
+        <p>Coba ubah ukuran jendela browser, dan Anda akan melihat bahwa gambar akan melebar, tetapi selalu menutupi seluruh elemen.</p>
+        <p>Contoh :</p>
+        <p>&lt;style&gt;<br> body {
+            <br> background-image: url('img_girl.jpg');<br> background-repeat: no-repeat;<br> background-attachment: fixed;
+            <br> background-size: 100% 100%;<br> }
+            <br> &lt;/style&gt;
+        </p>
+        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_background8" target="_blank">Cobalah sendiri &quot;</a></p>
+        <hr>
+        <p>Pelajari Lebih Lanjut CSS</p>
+        <p>Dari contoh di atas, Anda telah mempelajari bahwa gambar latar belakang dapat ditata dengan menggunakan properti latar belakang CSS.</p>
+        <p>Untuk mempelajari lebih lanjut tentang properti latar belakang CSS, pelajari <a href="https://www.w3schools.com/css/css_background.asp">Tutorial Latar Belakang
                     CSS</a> kami.</p>
-            <p>Elemen &lt;gambar&gt; HTML</p>
-            <hr>
-            <p>&lt;picture&gt;Elemen HTML memungkinkan Anda untuk menampilkan gambar yang berbeda untuk
-                perangkat atau
-                ukuran layar yang berbeda.</p>
-            <hr>
-            <p><img border=0 width=837 height=327 id="Picture 30" src="Gaya_files/image005.jpg"></p>
-            <hr>
-            <p>Elemen HTML &lt;gambar&gt;</p>
-            <p>&lt;picture&gt;Elemen HTML memberi pengembang web lebih banyak fleksibilitas dalam
-                menentukan sumber daya
-                gambar.
-            </p>
-            <p>The &lt;picture&gt;elemen berisi satu atau lebih &lt;source&gt;elemen, masing-masing
-                mengacu pada gambar
-                yang berbeda melalui srcset atribut. Dengan cara ini browser dapat memilih gambar yang
-                paling sesuai
-                dengan tampilan dan/atau perangkat saat
-                ini.
-            </p>
-            <p>Setiap &lt;source&gt;elemen memiliki mediaatribut yang menentukan kapan gambar paling
-                cocok.</p>
-            <p>Contoh :</p>
-            <p>Tampilkan gambar yang berbeda untuk ukuran layar yang berbeda:
-            </p>
-            <p>&lt;picture&gt;<br> &lt;source media=<q>(min-width: 650px)<q>
-                        srcset=<q>img_food.jpg<q>&gt;
-                                <br> &lt;source media=<q>(min-width: 465px)<q>
-                                        srcset=<q>img_car.jpg<q>&gt;
-                                                <br> &lt;img src=<q>img_girl.jpg<q>&gt;
-                                                        <br> &lt;/picture&gt;
-            </p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_picture1"
-                    target="_blank">Cobalah sendiri <q></a></p>
-            <p><strong>Catatan:</strong> Selalu tentukan &lt;img&gt;elemen sebagai elemen anak terakhir dari
-                &lt;picture&gt;elemen. The &lt;img&gt;elemen yang digunakan oleh browser yang tidak
-                mendukung
-                &lt;picture&gt;elemen, atau jika tidak ada &lt;source&gt;tag cocok.
-            </p>
-            <hr>
-            <p>Kapan menggunakan Elemen Gambar</p>
-            <p>Ada dua tujuan utama untuk &lt;picture&gt;elemen:</p>
-            <p>1. Bandwidth</p>
-            <p>Jika Anda memiliki layar atau perangkat kecil, tidak perlu memuat file gambar besar.
-                Browser akan
-                menggunakan &lt;source&gt; elemen pertama dengan nilai atribut yang cocok, dan
-                mengabaikan salah satu
-                elemen berikut.</p>
-            <p>2. Dukungan Format</p>
-            <p>Beberapa browser atau perangkat mungkin tidak mendukung semua format gambar. Dengan
-                menggunakan
-                &lt;picture&gt;elemen tersebut, Anda dapat menambahkan gambar dari semua format, dan
-                browser akan
-                menggunakan format pertama yang dikenalinya, dan
-                mengabaikan salah satu elemen berikut.</p>
-            <p>Contoh :</p>
-            <p>Browser akan menggunakan format gambar pertama yang dikenalinya:
-            </p>
-            <p>&lt;picture&gt;<br> &lt;source srcset=<q>img_avatar.png<q>&gt;
-                        <br> &lt;source srcset=<q>img_girl.jpg<q>&gt;
-                                <br> &lt;img src=<q>img_beatles.gif<q> alt=<q>Beatles<q>
-                                                style=<q>width:auto;<q>&gt;
-                                                        <br> &lt;/picture&gt;
-            </p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_picture_format"
-                    target="_blank">Cobalah sendiri <q></a></p>
-            <p><strong>Catatan:</strong> Browser akan menggunakan &lt;source&gt;elemen pertama dengan nilai
-                atribut yang cocok,
-                dan mengabaikan &lt;source&gt;elemen berikut.</p>
-            <hr>
-            <p>Tag Gambar HTML</p>
-            <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=876
-                style='width:656.85pt;background:white;border-collapse:collapse;border:none'>
-                <tr>
-                    <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:solid #CCCCCC 1.0pt;
+        <p>Elemen &lt;gambar&gt; HTML</p>
+        <hr>
+        <p>&lt;picture&gt;Elemen HTML memungkinkan Anda untuk menampilkan gambar yang berbeda untuk perangkat atau ukuran layar yang berbeda.</p>
+        <hr>
+        <p><img border=0 width=837 height=327 id="Picture 30" src="Gaya_files/image005.jpg"></p>
+        <hr>
+        <p>Elemen HTML &lt;gambar&gt;</p>
+        <p>&lt;picture&gt;Elemen HTML memberi pengembang web lebih banyak fleksibilitas dalam menentukan sumber daya gambar.
+        </p>
+        <p>The &lt;picture&gt;elemen berisi satu atau lebih &lt;source&gt;elemen, masing-masing mengacu pada gambar yang berbeda melalui srcset atribut. Dengan cara ini browser dapat memilih gambar yang paling sesuai dengan tampilan dan/atau perangkat saat
+            ini.
+        </p>
+        <p>Setiap &lt;source&gt;elemen memiliki mediaatribut yang menentukan kapan gambar paling cocok.
+        </p>
+        <p>Contoh :</p>
+        <p>Tampilkan gambar yang berbeda untuk ukuran layar yang berbeda:
+        </p>
+        <p>&lt;picture&gt;<br> &lt;source media=&quot;(min-width: 650px)&quot; srcset=&quot;img_food.jpg&quot;&gt;
+            <br> &lt;source media=&quot;(min-width: 465px)&quot; srcset=&quot;img_car.jpg&quot;&gt;
+            <br> &lt;img src=&quot;img_girl.jpg&quot;&gt;
+            <br> &lt;/picture&gt;
+        </p>
+        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_picture1" target="_blank">Cobalah sendiri &quot;</a></p>
+        <p><strong>Catatan:</strong> Selalu tentukan &lt;img&gt;elemen sebagai elemen anak terakhir dari &lt;picture&gt;elemen. The &lt;img&gt;elemen yang digunakan oleh browser yang tidak mendukung &lt;picture&gt;elemen, atau jika tidak ada &lt;source&gt;tag
+            cocok.
+        </p>
+        <hr>
+        <p>Kapan menggunakan Elemen Gambar</p>
+        <p>Ada dua tujuan utama untuk &lt;picture&gt;elemen:</p>
+        <p>1. Bandwidth</p>
+        <p>Jika Anda memiliki layar atau perangkat kecil, tidak perlu memuat file gambar besar. Browser akan menggunakan &lt;source&gt; elemen pertama dengan nilai atribut yang cocok, dan mengabaikan salah satu elemen berikut.</p>
+        <p>2. Dukungan Format</p>
+        <p>Beberapa browser atau perangkat mungkin tidak mendukung semua format gambar. Dengan menggunakan &lt;picture&gt;elemen tersebut, Anda dapat menambahkan gambar dari semua format, dan browser akan menggunakan format pertama yang dikenalinya, dan
+            mengabaikan salah satu elemen berikut.</p>
+        <p>Contoh :</p>
+        <p>Browser akan menggunakan format gambar pertama yang dikenalinya:
+        </p>
+        <p>&lt;picture&gt;<br> &lt;source srcset=&quot;img_avatar.png&quot;&gt;
+            <br> &lt;source srcset=&quot;img_girl.jpg&quot;&gt;
+            <br> &lt;img src=&quot;img_beatles.gif&quot; alt=&quot;Beatles&quot; style=&quot;width:auto;&quot;&gt;
+            <br> &lt;/picture&gt;
+        </p>
+        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_picture_format" target="_blank">Cobalah sendiri &quot;</a></p>
+        <p><strong>Catatan:</strong> Browser akan menggunakan &lt;source&gt;elemen pertama dengan nilai atribut yang cocok, dan mengabaikan &lt;source&gt;elemen berikut.</p>
+        <hr>
+        <p>Tag Gambar HTML</p>
+        <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=876 style='width:656.85pt;background:white;border-collapse:collapse;border:none'>
+            <tr>
+                <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:solid #CCCCCC 1.0pt;
   border-bottom:none;border-right:none;padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                        <p><strong>Tag</strong></p>
-                    </td>
-                    <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:none;
+                    <p><strong>Tag</strong></p>
+                </td>
+                <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:none;
   border-bottom:none;border-right:solid #CCCCCC 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><strong><span style='color:black'>Description</span></strong></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;background:
+                    <p><strong><span style='color:black'>Description</span></strong></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;background:
   #E7E9EB;padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                        <p><span style='color:black'><a
+                    <p><span style='color:black'><a
                                     href="https://www.w3schools.com/tags/tag_img.asp">&lt;img&gt;</a></span>
-                        </p>
-                    </td>
-                    <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+                    </p>
+                </td>
+                <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
   background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Defines an image</span></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;padding:
+                    <p><span style='color:black'>Defines an image</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;padding:
   6.0pt 6.0pt 6.0pt 12.0pt'>
-                        <p><span style='color:black'><a
+                    <p><span style='color:black'><a
                                     href="https://www.w3schools.com/tags/tag_map.asp">&lt;map&gt;</a></span>
-                        </p>
-                    </td>
-                    <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+                    </p>
+                </td>
+                <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
   padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Defines an image map</span></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;background:
+                    <p><span style='color:black'>Defines an image map</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;background:
   #E7E9EB;padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                        <p><span style='color:black'><a
+                    <p><span style='color:black'><a
                                     href="https://www.w3schools.com/tags/tag_area.asp">&lt;area&gt;</a></span>
-                        </p>
-                    </td>
-                    <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+                    </p>
+                </td>
+                <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
   background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Defines a clickable area inside
+                    <p><span style='color:black'>Defines a clickable area inside
                                 an image map</span></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td valign=top style='border-top:none;border-left:solid #CCCCCC 1.0pt;
+                </td>
+            </tr>
+            <tr>
+                <td valign=top style='border-top:none;border-left:solid #CCCCCC 1.0pt;
   border-bottom:solid #CCCCCC 1.0pt;border-right:none;padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                        <p><span style='color:black'><a
+                    <p><span style='color:black'><a
                                     href="https://www.w3schools.com/tags/tag_picture.asp">&lt;picture&gt;</a></span>
-                        </p>
-                    </td>
-                    <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CCCCCC 1.0pt;
+                    </p>
+                </td>
+                <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CCCCCC 1.0pt;
   border-right:solid #CCCCCC 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Defines a container for multiple
+                    <p><span style='color:black'>Defines a container for multiple
                                 image resources</span></p>
-                    </td>
-                </tr>
-            </table>
-            <p>Untuk daftar lengkap semua tag HTML yang tersedia, kunjungi
-                <a href="https://www.w3schools.com/tags/default.asp">Referensi
+                </td>
+            </tr>
+        </table>
+        <p>Untuk daftar lengkap semua tag HTML yang tersedia, kunjungi
+            <a href="https://www.w3schools.com/tags/default.asp">Referensi
                     Tag HTML</a> kami.
-            </p>
-            <p>Favicon HTML</p>
-            <hr>
-            <p>Favicon adalah gambar kecil yang ditampilkan di sebelah judul halaman di tab browser.</p>
-            <hr>
-            <p>Cara Menambahkan Favicon di HTML</p>
-            <p>Anda dapat menggunakan gambar apa pun yang Anda suka sebagai favicon Anda. Anda juga
-                dapat membuat
-                favicon sendiri di situs seperti
-                <a href="https://favicon.cc/" target="_blank">https://favicon.cc</a>.
-            </p>
-            <p><strong>Tip:</strong> Favicon adalah gambar kecil, jadi harus gambar sederhana dengan kontras
-                tinggi.</p>
-            <p>Gambar favicon ditampilkan di sebelah kiri judul halaman di tab browser, seperti ini:</p>
-            <p><img border=0 width=485 height=82 id="Picture 32" src="Gaya_files/image006.png" alt="Contoh : favicon">
-            </p>
-            <p>Untuk menambahkan favicon ke situs web Anda, simpan gambar favicon Anda ke direktori root
-                server web
-                Anda, atau buat folder di direktori root yang disebut gambar, dan simpan gambar favicon
-                Anda di folder
-                ini. Nama umum untuk gambar favicon adalah
-                <q>favicon.ico<q>.
-            </p>
-            <p>Selanjutnya, tambahkan &lt;link&gt;elemen ke file <q>index.html<q> Anda, setelah
-                        &lt;title&gt;elemen,
-                        seperti ini:</p>
-            <p>Contoh :</p>
-            <p>&lt;!DOCTYPE html&gt;<br> &lt;html&gt;
-                <br> &lt;head&gt;
-                <br> &lt;title&gt;My Page Title&lt;/title&gt;<br> &lt;link rel=<q>icon<q>
-                        type=<q>image/x-icon<q>
-                                href=<q>/images/favicon.ico<q>&gt;
-                                        <br> &lt;/head&gt;
-                                        <br> &lt;body&gt;
-                                        <br>
-                                        <br> &lt;h1&gt;This is a Heading&lt;/h1&gt;<br> &lt;p&gt;This is
-                                        a
-                                        paragraph.&lt;/p&gt;<br>
-                                        <br> &lt;/body&gt;
-                                        <br> &lt;/html&gt;
-            </p>
-            <p>Sekarang, simpan file <q>index.html<q> dan muat ulang di browser Anda. Tab browser Anda
-                        sekarang akan
-                        menampilkan gambar favicon Anda di sebelah kiri judul halaman.</p>
-            <hr>
-            <p>Dukungan Format File Favicon</p>
-            <p>Tabel berikut menunjukkan dukungan format file untuk gambar favicon:
-            </p>
-            <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=876
-                style='width:656.85pt;background:white;border-collapse:collapse;border:none'>
-                <tr>
-                    <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:solid #CCCCCC 1.0pt;
+        </p>
+        <p>Favicon HTML</p>
+        <hr>
+        <p>Favicon adalah gambar kecil yang ditampilkan di sebelah judul halaman di tab browser.</p>
+        <hr>
+        <p>Cara Menambahkan Favicon di HTML</p>
+        <p>Anda dapat menggunakan gambar apa pun yang Anda suka sebagai favicon Anda. Anda juga dapat membuat favicon sendiri di situs seperti
+            <a href="https://favicon.cc/" target="_blank">https://favicon.cc</a>.
+        </p>
+        <p><strong>Tip:</strong> Favicon adalah gambar kecil, jadi harus gambar sederhana dengan kontras tinggi.
+        </p>
+        <p>Gambar favicon ditampilkan di sebelah kiri judul halaman di tab browser, seperti ini:</p>
+        <p><img border=0 width=485 height=82 id="Picture 32" src="Gaya_files/image006.png" alt="Contoh : favicon">
+        </p>
+        <p>Untuk menambahkan favicon ke situs web Anda, simpan gambar favicon Anda ke direktori root server web Anda, atau buat folder di direktori root yang disebut gambar, dan simpan gambar favicon Anda di folder ini. Nama umum untuk gambar favicon adalah
+            &quot;favicon.ico&quot;.
+        </p>
+        <p>Selanjutnya, tambahkan &lt;link&gt;elemen ke file &quot;index.html&quot; Anda, setelah &lt;title&gt;elemen, seperti ini:</p>
+        <p>Contoh :</p>
+        <p>&lt;!DOCTYPE html&gt;<br> &lt;html&gt;
+            <br> &lt;head&gt;
+            <br> &lt;title&gt;My Page Title&lt;/title&gt;<br> &lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;/images/favicon.ico&quot;&gt;
+            <br> &lt;/head&gt;
+            <br> &lt;body&gt;
+            <br>
+            <br> &lt;h1&gt;This is a Heading&lt;/h1&gt;<br> &lt;p&gt;This is a paragraph.&lt;/p&gt;
+            <br>
+            <br> &lt;/body&gt;
+            <br> &lt;/html&gt;
+        </p>
+        <p>Sekarang, simpan file &quot;index.html&quot; dan muat ulang di browser Anda. Tab browser Anda sekarang akan menampilkan gambar favicon Anda di sebelah kiri judul halaman.</p>
+        <hr>
+        <p>Dukungan Format File Favicon</p>
+        <p>Tabel berikut menunjukkan dukungan format file untuk gambar favicon:
+        </p>
+        <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=876 style='width:656.85pt;background:white;border-collapse:collapse;border:none'>
+            <tr>
+                <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:solid #CCCCCC 1.0pt;
   border-bottom:none;border-right:none;padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                        <p><strong>Browser</strong></p>
-                    </td>
-                    <td valign=top style='border:none;border-top:solid #CCCCCC 1.0pt;padding:
+                    <p><strong>Browser</strong></p>
+                </td>
+                <td valign=top style='border:none;border-top:solid #CCCCCC 1.0pt;padding:
   6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><strong><span style='color:black'>ICO</span></strong></p>
-                    </td>
-                    <td valign=top style='border:none;border-top:solid #CCCCCC 1.0pt;padding:
+                    <p><strong><span style='color:black'>ICO</span></strong></p>
+                </td>
+                <td valign=top style='border:none;border-top:solid #CCCCCC 1.0pt;padding:
   6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><strong><span style='color:black'>PNG</span></strong></p>
-                    </td>
-                    <td valign=top style='border:none;border-top:solid #CCCCCC 1.0pt;padding:
+                    <p><strong><span style='color:black'>PNG</span></strong></p>
+                </td>
+                <td valign=top style='border:none;border-top:solid #CCCCCC 1.0pt;padding:
   6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><strong><span style='color:black'>GIF</span></strong></p>
-                    </td>
-                    <td valign=top style='border:none;border-top:solid #CCCCCC 1.0pt;padding:
+                    <p><strong><span style='color:black'>GIF</span></strong></p>
+                </td>
+                <td valign=top style='border:none;border-top:solid #CCCCCC 1.0pt;padding:
   6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><strong><span style='color:black'>JPEG</span></strong></p>
-                    </td>
-                    <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:none;
+                    <p><strong><span style='color:black'>JPEG</span></strong></p>
+                </td>
+                <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:none;
   border-bottom:none;border-right:solid #CCCCCC 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><strong><span style='color:black'>SVG</span></strong></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;background:
+                    <p><strong><span style='color:black'>SVG</span></strong></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;background:
   #E7E9EB;padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                        <p><span style='color:black'>Edge</span></p>
-                    </td>
-                    <td valign=top style='border:none;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Yes</span></p>
-                    </td>
-                    <td valign=top style='border:none;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Yes</span></p>
-                    </td>
-                    <td valign=top style='border:none;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Yes</span></p>
-                    </td>
-                    <td valign=top style='border:none;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Yes</span></p>
-                    </td>
-                    <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+                    <p><span style='color:black'>Edge</span></p>
+                </td>
+                <td valign=top style='border:none;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                    <p><span style='color:black'>Yes</span></p>
+                </td>
+                <td valign=top style='border:none;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                    <p><span style='color:black'>Yes</span></p>
+                </td>
+                <td valign=top style='border:none;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                    <p><span style='color:black'>Yes</span></p>
+                </td>
+                <td valign=top style='border:none;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                    <p><span style='color:black'>Yes</span></p>
+                </td>
+                <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
   background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Yes</span></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;padding:
+                    <p><span style='color:black'>Yes</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;padding:
   6.0pt 6.0pt 6.0pt 12.0pt'>
-                        <p><span style='color:black'>Chrome</span></p>
-                    </td>
-                    <td valign=top style='border:none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Yes</span></p>
-                    </td>
-                    <td valign=top style='border:none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Yes</span></p>
-                    </td>
-                    <td valign=top style='border:none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Yes</span></p>
-                    </td>
-                    <td valign=top style='border:none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Yes</span></p>
-                    </td>
-                    <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+                    <p><span style='color:black'>Chrome</span></p>
+                </td>
+                <td valign=top style='border:none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                    <p><span style='color:black'>Yes</span></p>
+                </td>
+                <td valign=top style='border:none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                    <p><span style='color:black'>Yes</span></p>
+                </td>
+                <td valign=top style='border:none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                    <p><span style='color:black'>Yes</span></p>
+                </td>
+                <td valign=top style='border:none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                    <p><span style='color:black'>Yes</span></p>
+                </td>
+                <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
   padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Yes</span></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;background:
+                    <p><span style='color:black'>Yes</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;background:
   #E7E9EB;padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                        <p><span style='color:black'>Firefox</span></p>
-                    </td>
-                    <td valign=top style='border:none;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Yes</span></p>
-                    </td>
-                    <td valign=top style='border:none;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Yes</span></p>
-                    </td>
-                    <td valign=top style='border:none;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Yes</span></p>
-                    </td>
-                    <td valign=top style='border:none;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Yes</span></p>
-                    </td>
-                    <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+                    <p><span style='color:black'>Firefox</span></p>
+                </td>
+                <td valign=top style='border:none;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                    <p><span style='color:black'>Yes</span></p>
+                </td>
+                <td valign=top style='border:none;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                    <p><span style='color:black'>Yes</span></p>
+                </td>
+                <td valign=top style='border:none;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                    <p><span style='color:black'>Yes</span></p>
+                </td>
+                <td valign=top style='border:none;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                    <p><span style='color:black'>Yes</span></p>
+                </td>
+                <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
   background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Yes</span></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;padding:
+                    <p><span style='color:black'>Yes</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;padding:
   6.0pt 6.0pt 6.0pt 12.0pt'>
-                        <p><span style='color:black'>Opera</span></p>
-                    </td>
-                    <td valign=top style='border:none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Yes</span></p>
-                    </td>
-                    <td valign=top style='border:none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Yes</span></p>
-                    </td>
-                    <td valign=top style='border:none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Yes</span></p>
-                    </td>
-                    <td valign=top style='border:none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Yes</span></p>
-                    </td>
-                    <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
+                    <p><span style='color:black'>Opera</span></p>
+                </td>
+                <td valign=top style='border:none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                    <p><span style='color:black'>Yes</span></p>
+                </td>
+                <td valign=top style='border:none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                    <p><span style='color:black'>Yes</span></p>
+                </td>
+                <td valign=top style='border:none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                    <p><span style='color:black'>Yes</span></p>
+                </td>
+                <td valign=top style='border:none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                    <p><span style='color:black'>Yes</span></p>
+                </td>
+                <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
   padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Yes</span></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td valign=top style='border-top:none;border-left:solid #CCCCCC 1.0pt;
+                    <p><span style='color:black'>Yes</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign=top style='border-top:none;border-left:solid #CCCCCC 1.0pt;
   border-bottom:solid #CCCCCC 1.0pt;border-right:none;background:#E7E9EB;
   padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                        <p><span style='color:black'>Safari</span></p>
-                    </td>
-                    <td valign=top style='border:none;border-bottom:solid #CCCCCC 1.0pt;
+                    <p><span style='color:black'>Safari</span></p>
+                </td>
+                <td valign=top style='border:none;border-bottom:solid #CCCCCC 1.0pt;
   background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Yes</span></p>
-                    </td>
-                    <td valign=top style='border:none;border-bottom:solid #CCCCCC 1.0pt;
+                    <p><span style='color:black'>Yes</span></p>
+                </td>
+                <td valign=top style='border:none;border-bottom:solid #CCCCCC 1.0pt;
   background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Yes</span></p>
-                    </td>
-                    <td valign=top style='border:none;border-bottom:solid #CCCCCC 1.0pt;
+                    <p><span style='color:black'>Yes</span></p>
+                </td>
+                <td valign=top style='border:none;border-bottom:solid #CCCCCC 1.0pt;
   background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Yes</span></p>
-                    </td>
-                    <td valign=top style='border:none;border-bottom:solid #CCCCCC 1.0pt;
+                    <p><span style='color:black'>Yes</span></p>
+                </td>
+                <td valign=top style='border:none;border-bottom:solid #CCCCCC 1.0pt;
   background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Yes</span></p>
-                    </td>
-                    <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CCCCCC 1.0pt;
+                    <p><span style='color:black'>Yes</span></p>
+                </td>
+                <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CCCCCC 1.0pt;
   border-right:solid #CCCCCC 1.0pt;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Yes</span></p>
-                    </td>
-                </tr>
-            </table>
-            <div><span style='color:white'>
+                    <p><span style='color:black'>Yes</span></p>
+                </td>
+            </tr>
+        </table>
+        <div><span style='color:white'>
                     <hr>
                 </span></div>
-            <p>Ringkasan Bab</p>
-            <ul style='margin-top:0cm' type=disc>
-                <li>Gunakan &lt;link&gt;elemen HTML untuk menyisipkan favicon</li>
-            </ul>
-            <hr>
-            <p>Tag Links HTML</p>
-            <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=876
-                style='width:656.85pt;background:white;border-collapse:collapse;border:none'>
-                <tr>
-                    <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:solid #CCCCCC 1.0pt;
+        <p>Ringkasan Bab</p>
+        <ul style='margin-top:0cm' type=disc>
+            <li>Gunakan &lt;link&gt;elemen HTML untuk menyisipkan favicon</li>
+        </ul>
+        <hr>
+        <p>Tag Links HTML</p>
+        <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=876 style='width:656.85pt;background:white;border-collapse:collapse;border:none'>
+            <tr>
+                <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:solid #CCCCCC 1.0pt;
   border-bottom:none;border-right:none;padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                        <p><strong>Tag</strong></p>
-                    </td>
-                    <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:none;
+                    <p><strong>Tag</strong></p>
+                </td>
+                <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:none;
   border-bottom:none;border-right:solid #CCCCCC 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><strong><span style='color:black'>Description</span></strong></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td valign=top style='border-top:none;border-left:solid #CCCCCC 1.0pt;
+                    <p><strong><span style='color:black'>Description</span></strong></p>
+                </td>
+            </tr>
+            <tr>
+                <td valign=top style='border-top:none;border-left:solid #CCCCCC 1.0pt;
   border-bottom:solid #CCCCCC 1.0pt;border-right:none;background:#E7E9EB;
   padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                        <p><span style='color:black'><a
+                    <p><span style='color:black'><a
                                     href="https://www.w3schools.com/tags/tag_link.asp">&lt;link&gt;</a></span>
-                        </p>
-                    </td>
-                    <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CCCCCC 1.0pt;
+                    </p>
+                </td>
+                <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CCCCCC 1.0pt;
   border-right:solid #CCCCCC 1.0pt;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Defines the relationship between
+                    <p><span style='color:black'>Defines the relationship between
                                 a document and an external resource</span></p>
-                    </td>
-                </tr>
-            </table>
-            <p><span style='color:black'>Untuk daftar lengkap semua tag
+                </td>
+            </tr>
+        </table>
+        <p><span style='color:black'>Untuk daftar lengkap semua tag
                     HTML yang tersedia, kunjungi </span><a href="https://www.w3schools.com/tags/default.asp">Referensi
                     Tag
                     HTML</a> kami.</p>
-        </div>
+    </div>
 
-        <script src="../assets/js/bootstrap.bundle.min.js"
-            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-            </script>
-        <script src="../assets/js/docsearch.min.js"></script>
-        <script src="../assets/js/docs.min.js"></script>
-        <!-- <script src="../assets/js/countdown.js"></script> -->
-        <script>
-            w3.includeHTML();
-        </script>
-    </body>
+    <script src="../assets/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="../assets/js/docsearch.min.js"></script>
+    <script src="../assets/js/docs.min.js"></script>
+    <!-- <script src="../assets/js/countdown.js"></script> -->
+    <script>
+        w3.includeHTML();
+    </script>
+</body>
 
 </html>

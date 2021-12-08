@@ -885,109 +885,86 @@
 
         <hr>
 
-        <h4>Peta Gambar HTML</h4>
-        <p>Dengan peta gambar HTML, Anda dapat membuat area yang dapat diklik pada gambar.</p>
+        <section>
+            <h4>Peta Gambar HTML</h4>
+            <p>Dengan peta gambar HTML, Anda dapat membuat area yang dapat diklik pada gambar.</p>
+            <h5>Peta Gambar</h5>
+            <p><code>&lt;map&gt;</code> Tag HTML mendefinisikan peta gambar. Peta gambar adalah gambar dengan area yang dapat diklik. Area ditentukan dengan satu atau lebih <code>&lt;area&gt;</code> tag. <br> Coba klik pada komputer, ponsel, atau cangkir
+                kopi pada gambar di bawah ini:</p>
+            <div class="contoh shadow-sm">
+                <p><img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap"></p>
+                <map name="workmap">
+                <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htmL">
+                <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htmL">
+                <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htmL">
+            </map>
+            </div>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <code>
+                    &lt;img src="workplace.jpg" alt="Workplace" usemap="#workmap"&gt; <br>
+                    <br>
+                    &lt;map name="workmap"&gt; <br>
+                        &lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"&gt; <br>
+                        &lt;area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm"&gt; <br>
+                        &lt;area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm"&gt; <br>
+                    &lt;/map&gt; <br>
+                </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div>
+        </section>
 
-        <p>Peta Gambar</p>
-        <p><code>&lt;map&gt;</code> Tag HTML mendefinisikan peta gambar. Peta gambar adalah gambar dengan area yang dapat diklik. Area ditentukan dengan satu atau lebih <code>&lt;area&gt;</code> tag.</p>
-        <p>Coba klik pada komputer, ponsel, atau cangkir kopi pada gambar di bawah ini:</p>
+        <hr>
+
+        <h4>Bagaimana cara kerjanya?</h4>
+        <p>Gagasan di balik peta gambar adalah bahwa Anda harus dapat melakukan tindakan yang berbeda tergantung di mana dalam gambar yang Anda klik. Untuk membuat peta gambar, Anda memerlukan gambar, dan beberapa kode HTML yang menjelaskan area yang dapat
+            diklik.
+        </p>
+
+        <h4>Foto</h4>
+        <p>Gambar disisipkan menggunakan <code>&lt;img&gt;</code> tag. Satu-satunya perbedaan dari gambar lain adalah Anda harus menambahkan <code>usemap</code> atribut:</p>
         <div class="contoh shadow-sm">
             <p><img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap"></p>
-
-            <map name="workmap">
-            <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htmL">
-            <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htmL">
-            <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htmL">
-        </map>
         </div>
 
-        <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+        <p><code>nilai usemap</code> dimulai dengan tag hash <strong>#</strong> diikuti dengan nama peta gambar, dan digunakan untuk menciptakan hubungan antara gambar dan peta gambar.</p>
+        <p class="moreInfo"><strong>Tip:</strong> Anda dapat menggunakan gambar apa saja sebagai peta gambar!</p>
+
+        <h5>Buat Peta Gambar</h5>
+        <p>Kemudian, tambahkan <code>&lt;map&gt;</code> elemen. <code>&lt;map&gt;</code> elemen yang digunakan untuk membuat peta gambar, dan terkait dengan gambar dengan menggunakan diperlukan <code>name</code> atribut:</p>
+
         <div class="bd-callout">
-            <code></code>
-            <hr>
-            <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            <code>&lt;map name="workmap"&gt;</code>
         </div>
 
+        <p><code>name</code> atribut harus memiliki nilai yang sama sebagai <code>&lt;img&gt;</code>'s <code>usemap</code> atribut.</p>
 
-        <p><img border=0 width=400 height=379 id="Picture 24" src="Gaya_files/image001.jpg" alt="tempat kerja">
-        </p>
-        <p>Contoh :</p>
-        <p>Berikut adalah kode sumber HTML untuk gambar peta di atas:</p>
-        <p>
-            &lt;img src=<q>workplace.jpg<q> alt=<q>Workplace<q> usemap=<q>#workmap<q>&gt;<br>
-                                        <br> &lt;map name=<q>workmap<q>&gt;
-                                                <br> &lt;area shape=<q>rect<q>
-                                                        coords=<q>34,44,270,350<q>
-                                                                alt=<q>Computer<q>
-                                                                        href=<q>computer.htm<q>&gt;
-                                                                                <br> &lt;area
-                                                                                shape=<q>rect<q>
-                                                                                        coords=<q>290,172,333,250<q>
-                                                                                                alt=<q>Phone<q>
-                                                                                                        href=<q>phone.htm<q>&gt;
-                                                                                                                <br>
-                                                                                                                &lt;area
-                                                                                                                shape=<q>circle<q>
-                                                                                                                        coords=<q>337,300,44<q>
-                                                                                                                                alt=<q>Coffee<q>
-                                                                                                                                        href=<q>coffee.htm<q>&gt;
-                                                                                                                                                <br>
-                                                                                                                                                &lt;/map&gt;
-            </p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map2" target="_blank">Cobalah
-                    sendiri <q></a></p>
-            <hr>
-            <p>Bagaimana cara kerjanya?</p>
-            <p>Gagasan di balik peta gambar adalah bahwa Anda harus dapat melakukan tindakan yang
-                berbeda tergantung di
-                mana dalam gambar yang Anda klik.</p>
-            <p>Untuk membuat peta gambar, Anda memerlukan gambar, dan beberapa kode HTML yang
-                menjelaskan area yang
-                dapat diklik.</p>
-            <hr>
-            <hr>
-            <p>Foto</p>
-            <p>Gambar disisipkan menggunakan &lt;img&gt;tag. Satu-satunya perbedaan dari gambar lain
-                adalah Anda harus
-                menambahkan usemapatribut:</p>
-            <p>
-                &lt;img src=<q>workplace.jpg<q> alt=<q>Workplace<q> usemap=<q>#workmap<q>&gt;</p>
-            <p>The usemapnilai dimulai dengan tag hash #diikuti dengan nama peta gambar, dan digunakan
-                untuk menciptakan
-                hubungan antara gambar dan peta gambar.</p>
-            <p><strong>Tip:</strong> Anda dapat menggunakan gambar apa saja sebagai peta gambar!</p>
-            <hr>
-            <p>Buat Peta Gambar</p>
-            <p>Kemudian, tambahkan &lt;map&gt;elemen.</p>
-            <p>The &lt;map&gt;elemen yang digunakan untuk membuat peta gambar, dan terkait dengan gambar
-                dengan
-                menggunakan diperlukan name atribut:</p>
-            <p>&lt;map name=<q>workmap<q>&gt;</p>
-            <p>The nameatribut harus memiliki nilai yang sama sebagai &lt;img&gt;'s usemapatribut.
-            </p>
-            <hr>
-            <p>Area</p>
-            <p>Kemudian, tambahkan area yang dapat diklik.</p>
-            <p>Area yang dapat diklik didefinisikan menggunakan &lt;area&gt;elemen.</p>
-            <p>Membentuk</p>
-            <p>Anda harus menentukan bentuk area yang dapat diklik, dan Anda dapat memilih salah satu
-                dari nilai
-                berikut:
-            </p>
-            <ul style='margin-top:0cm' type=disc>
-                <li>rect - mendefinisikan wilayah persegi panjang</li>
-                <li>circle - mendefinisikan daerah melingkar</li>
-                <li>poly - mendefinisikan wilayah poligonal</li>
-                <li>default - mendefinisikan seluruh wilayah</li>
-            </ul>
-            <p>Anda juga harus menentukan beberapa koordinat untuk dapat menempatkan area yang dapat
-                diklik ke dalam
-                gambar. </p>
-            <hr>
-            <p>Bentuk = <q>persegi<q></p>
-            <p>Koordinat untuk shape=<q>rect<q>datang berpasangan, satu untuk sumbu x dan satu untuk
-                        sumbu y.
-            </p>
+        <h5>Area</h5>
+        <p>Kemudian, tambahkan area yang dapat diklik. Area yang dapat diklik didefinisikan menggunakan <code>&lt;area&gt;</code> elemen. Untuk membentuk Anda harus menentukan bentuk area yang dapat diklik, dan Anda dapat memilih salah satu dari nilai berikut:</p>
+        <table class="table table-bordered w-auto">
+            <tr>
+                <td><code>rect</code></td>
+                <td>mendefinisikan wilayah persegi panjang</td>
+            </tr>
+            <tr>
+                <td><code>circle</code></td>
+                <td>mendefinisikan daerah melingkar</td>
+            </tr>
+            <tr>
+                <td><code>poly</code></td>
+                <td>mendefinisikan wilayah poligonal</td>
+            </tr>
+            <tr>
+                <td><code>default</code></td>
+                <td>mendefinisikan seluruh wilayah</td>
+            </tr>
+        </table>
+
+        <p>Anda juga harus menentukan beberapa koordinat untuk dapat menempatkan area yang dapat diklik ke dalam gambar.</p>
+
+        <p>Bentuk = <q>persegi<q></p>
+            <p>Koordinat untuk shape=<q>rect<q>datang berpasangan, satu untuk sumbu x dan satu untuk sumbu y.</p>
             <p>Jadi, koordinatnya 34,44terletak 34 piksel dari margin kiri dan 44 piksel dari atas:</p>
             <p><img border=0 width=400 height=379 id="Picture 23" src="Gaya_files/image001.jpg" alt="tempat kerja">
             </p>

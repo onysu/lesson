@@ -377,131 +377,156 @@
                     &lt;a href="https://onysu.github.io/lesson/webdesain/" target="_blank"&gt;HTML Tutorial&lt;/a&gt; <br>
                 </code>
                 <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                            sendiri</a></p>
+            </div>
+        </section>
+
+        <section>
+            <h4>Tombol Links</h4>
+            <p>Links juga dapat ditata sebagai tombol, dengan menggunakan CSS:</p>
+            <!-- <p><a href="javascript:void(0)">Ini adalah link</a></p> -->
+            <p>Contoh :</p>
+            <div class="contoh shadow-sm">
+                <style>
+                    .tombollink a:link,
+                    .tombollink a:visited {
+                        background-color: #f44336;
+                        color: white;
+                        padding: 15px 25px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                    }
+                    
+                    .tombollink a:hover,
+                    .tombollink a:active {
+                        background-color: red;
+                    }
+                </style>
+                <div class="tombollink">
+                    <h2>Tombol Link</h2>
+                    <p>Link yang diatur sebagai tombol:</p>
+                    <p><a href="/" target="_blank">Ini sebuah Link</a></p>
+                </div>
+            </div>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <code>
+            &lt;style&gt; <br>
+                a:link, <br>
+                a:visited { <br>
+            background-color: #f44336; <br>
+            color: white; <br>
+            padding: 15px 25px; <br>
+            text-align: center; <br>
+            text-decoration: none; <br>
+            display: inline-block; <br>
+                } <br>
+             <br>
+                a:hover, <br>
+                a:active { <br>
+            background-color: red; <br>
+                } <br>
+            &lt;/style&gt; <br>
+             <br>
+                &lt;h2&gt;Link Button&lt;/h2&gt; <br>
+                &lt;p&gt;A link styled as a button:&lt;/p&gt; <br>
+                &lt;a href="default.asp" target="_blank"&gt;This is a link&lt;/a&gt; <br>
+                </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                            sendiri</a></p>
+            </div>
+            <!-- <p>Untuk mempelajari lebih lanjut tentang CSS, buka <a href="https://onysu.github.io/lesson/webdesain/materi5.html#16">Tutorial CSS</a> kami.</p> -->
+        </section>
+
+        <section>
+            <h4>Tag Links HTML</h4>
+            <table class="table table-bordered w-auto">
+                <thead class="table-light">
+                    <tr>
+                        <th>Tag</th>
+                        <th>Keterangan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>&lt;a&gt;</code></td>
+                        <td>Mendefinisikan hyperlink</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- <p><span style='color:black'>Untuk daftar lengkap semua tag HTML yang tersedia, kunjungi </span><a href="https://www.w3schools.com/tags/default.asp">Referensi Tag HTML</a> kami.</p> -->
+        </section>
+
+        <!-- LINK BOOKMARKS -->
+
+        <section>
+            <h4>Buat Bookmark</h4>
+            <p>Links HTML dapat digunakan untuk membuat bookmark, sehingga pembaca dapat melompat ke bagian tertentu dari halaman web.</p>
+
+            <h5>Membuat Bookmark di HTML</h5>
+            <p>Bookmark dapat berguna jika halaman web sangat panjang. Untuk membuat bookmark - buat bookmark terlebih dahulu, lalu tambahkan link ke sana. Ketika link diklik, halaman akan bergulir ke bawah atau ke atas ke lokasi dengan bookmark.</p>
+            <p>Contoh :</p>
+            <p>Pertama, gunakan <code>id</code> atribut untuk membuat bookmark:</p>
+            <div class="contoh shadow-sm">
+                <h2 id="C4">Bab 4</h2>
+            </div>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <code>
+                &lt;h2 id="C4"&gt;Bab 4&lt;/h2&gt;
+                </code>
+            </div>
+            <p>Kemudian, tambahkan link ke bookmark (<q>Langsung ke Bab 4</q>), dari dalam halaman yang sama:</p>
+            <div class="contoh shadow-sm">
+                <p><a href="#C4">Langsung ke Bab 4</a></p>
+            </div>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <code>
+                    &lt;a href="#C4"&gt;Langsung ke Bab 4&lt;/a&gt;
+                    </code>
+                <hr>
                 <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
             </div>
         </section>
 
-        <h4>Tombol Links</h4>
-        <p>Links juga dapat ditata sebagai tombol, dengan menggunakan CSS:
-        </p>
-        <p><a href="javascript:void(0)">Ini adalah link</a></p>
-        <p>Contoh :</p>
-        <p>&lt;style&gt;<br> a:link, a:visited {<br> background-color: #f44336;<br> color: white;
-            <br> padding: 15px 25px;
-            <br> text-align: center;<br> text-decoration: none;<br> display: inline-block;<br> }
-            <br>
-            <br> a:hover, a:active {<br> background-color: red;<br> }
-            <br> &lt;/style&gt;
-        </p>
-        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_button" target="_blank">Cobalah
-                    sendiri <q></a></p>
-        <!-- <p>Untuk mempelajari lebih lanjut tentang CSS, buka <a href="https://www.w3schools.com/css/default.asp">Tutorial CSS</a> kami.</p> -->
-
-        <hr>
-
-        <p>Tag Links HTML</p>
-        <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=876 style='width:656.85pt;background:white;border-collapse:collapse;border:none'>
-            <tr>
-                <td width=262 valign=top style='width:196.85pt;border-top:solid #CCCCCC 1.0pt;
-  border-left:solid #CCCCCC 1.0pt;border-bottom:none;border-right:none;
-  padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                    <p><strong>Tag</strong></p>
-                </td>
-                <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:none;
-  border-bottom:none;border-right:solid #CCCCCC 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><strong><span style='color:black'>Description</span></strong></p>
-                </td>
-            </tr>
-            <tr>
-                <td valign=top style='border-top:none;border-left:solid #CCCCCC 1.0pt;
-  border-bottom:solid #CCCCCC 1.0pt;border-right:none;background:#E7E9EB;
-  padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                    <p><span style='color:black'><a
-                                    href="https://www.w3schools.com/tags/tag_a.asp">&lt;a&gt;</a></span>
-                    </p>
-                </td>
-                <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CCCCCC 1.0pt;
-  border-right:solid #CCCCCC 1.0pt;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Defines a hyperlink</span></p>
-                </td>
-            </tr>
-        </table>
-        <p><span style='color:black'>Untuk daftar lengkap semua tag
-                    HTML yang tersedia, kunjungi </span><a href="https://www.w3schools.com/tags/default.asp">Referensi
-                    Tag
-                    HTML</a> kami.</p>
-        <p>Links HTML - Buat Bookmark</p>
-        <hr>
-        <p>Links HTML dapat digunakan untuk membuat bookmark, sehingga pembaca dapat melompat ke bagian tertentu dari halaman web.</p>
-        <hr>
-        <p>Buat Bookmark di HTML</p>
-        <p>Bookmark dapat berguna jika halaman web sangat panjang.</p>
-        <p>Untuk membuat bookmark - buat bookmark terlebih dahulu, lalu tambahkan link ke sana.
-        </p>
-        <p>Ketika link diklik, halaman akan bergulir ke bawah atau ke atas ke lokasi dengan bookmark.
-        </p>
-        <p>Contoh :</p>
-        <p>Pertama, gunakan idatribut untuk membuat bookmark:</p>
-        <p>&lt;h2 id=<q>C4<q>&gt;Chapter 4&lt;/h2&gt;</p>
-            <p>Kemudian, tambahkan link ke bookmark (<q>Langsung ke Bab 4<q>), dari dalam halaman yang
-                        sama:
-            </p>
-            <p>Contoh :</p>
-            <p>&lt;a href=<q>#C4<q>&gt;Jump to Chapter 4&lt;/a&gt;</p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_bookmark"
-                    target="_blank">Cobalah sendiri <q></a></p>
-            <p>Anda juga dapat menambahkan link ke bookmark di halaman lain:
-            </p>
-            <p>&lt;a href=<q>html_demo.html#C4<q>&gt;Jump to Chapter 4&lt;/a&gt;</p>
-            <hr>
-            <p>Ringkasan Bab</p>
-            <ul style='margin-top:0cm' type=disc>
-                <li>Gunakan idatribut (id=<q> <i>value</i> <q>) untuk menentukan bookmark di halaman
-                </li>
-                <li>Gunakan hrefatribut (href=<q># <i>nilai</i> <q>) untuk menautkan ke bookmark</li>
+        <section>
+            <h5>Ringkasan Bab</h5>
+            <ul type="square">
+                <li>Gunakan <code>id</code> atribut (<code>id="value"</code>) untuk menentukan bookmark di halaman.</li>
+                <li>Gunakan <code>href</code> atribut (<code>href="#value"</code>) untuk menautkan ke bookmark</li>
             </ul>
-            <hr>
-            <p><span style='display:none'>Bottom of Form</span></p>
-            <hr>
-            <p>Tag Links HTML</p>
-            <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=876
-                style='width:656.85pt;background:white;border-collapse:collapse;border:none'>
+        </section>
+
+        <hr>
+
+        <section>
+            <h4>Tag Links HTML</h4>
+            <table class="table table-bordered w-auto">
+                <thead class="table-light">
+                    <tr>
+                        <td>Tag</td>
+                        <td>Keterangan</td>
+                    </tr>
+                </thead>
                 <tr>
-                    <td width=262 valign=top style='width:196.85pt;border-top:solid #CCCCCC 1.0pt;
-  border-left:solid #CCCCCC 1.0pt;border-bottom:none;border-right:none;
-  padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                        <p><strong>Tag</strong></p>
-                    </td>
-                    <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:none;
-  border-bottom:none;border-right:solid #CCCCCC 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><strong><span style='color:black'>Description</span></strong></p>
-                    </td>
-                </tr>
-                <tr>
-                    <td valign=top style='border-top:none;border-left:solid #CCCCCC 1.0pt;
-  border-bottom:solid #CCCCCC 1.0pt;border-right:none;background:#E7E9EB;
-  padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                        <p><span style='color:black'><a
-                                    href="https://www.w3schools.com/tags/tag_a.asp">&lt;a&gt;</a></span>
-                        </p>
-                    </td>
-                    <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CCCCCC 1.0pt;
-  border-right:solid #CCCCCC 1.0pt;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                        <p><span style='color:black'>Defines a hyperlink</span></p>
-                    </td>
+                    <td><code>&lt;a&gt;</code></td>
+                    <td>Mendefinisikan hyperlink</td>
                 </tr>
             </table>
-            <p><span style='color:black'>Untuk daftar lengkap semua tag
-                    HTML yang tersedia, kunjungi </span><a href="https://www.w3schools.com/tags/default.asp">Referensi
-                    Tag
-                    HTML</a> kami.</p>
-            <p>Gambar HTML</p>
-            <hr>
-            <p>Gambar dapat meningkatkan desain dan tampilan halaman web.</p>
-            <hr>
-            <p>Contoh :</p>
-            <p>&lt;img src=<q>pic_trulli.jpg<q> alt=<q>Italian Trulli<q>&gt;
-            </p>
+        </section>
+
+        <hr>
+
+        <!-- <p><span style='color:black'>Untuk daftar lengkap semua tag HTML yang tersedia, kunjungi </span><a href="https://www.w3schools.com/tags/default.asp">Referensi Tag HTML</a> kami.</p> -->
+
+        <h4>Gambar HTML</h4>
+        <p>Gambar dapat meningkatkan desain dan tampilan halaman web.</p>
+        <p>Contoh :</p>
+        <p>&lt;img src=<q>pic_trulli.jpg<q> alt=<q>Italian Trulli<q>&gt;</p>
             <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_trulli" target="_blank">Cobalah
                     sendiri <q></a></p>
             <p>Contoh :</p>

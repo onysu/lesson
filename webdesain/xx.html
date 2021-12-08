@@ -906,7 +906,7 @@
                     &lt;map name="workmap"&gt; <br>
                         &lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html"&gt; <br>
                         &lt;area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm"&gt; <br>
-                        &lt;area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm"&gt; <br>
+                        &lt;area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.html"&gt; <br>
                     &lt;/map&gt; <br>
                 </code>
                 <hr>
@@ -997,7 +997,7 @@
 
             <p>Contoh Latihan :</p>
             <div class="contoh shadow-sm">
-                <h5>Peta Gambar</h5>
+                <h5>Peta Gambar Computer</h5>
                 <p>Klik pada komputer untuk membuka halaman baru dan membaca lebih lanjut tentang topik ini:</p>
                 <p><img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap1" width="400" height="379"></p>
                 <map name="workmap1">
@@ -1026,83 +1026,106 @@
 
         <hr>
 
-        <h4>Shape="circle"</h4>
-        <p>Untuk menambahkan luas lingkaran, pertama cari koordinat pusat lingkaran: <strong>337,300</strong></p>
-        <div style="position:relative">
-            <div style="position:absolute;width:2px;height:379px;left:337px;background-color:GreenYellow ;opacity:0.8"></div>
-            <div style="position:absolute;width:400px;height:2px;top:300px;background-color:GreenYellow ;opacity:0.8"></div>
-            <div style="border:2px solid white;border-radius:50%;position:absolute;width:20px;height:20px;left:328px;top:291px;background-color:transparent;opacity:0.8">
+        <section>
+            <h4>Shape="circle"</h4>
+            <p>Untuk menambahkan luas lingkaran, pertama cari koordinat pusat lingkaran: <strong>337,300</strong></p>
+            <div style="position:relative">
+                <div style="position:absolute;width:2px;height:379px;left:337px;background-color:GreenYellow ;opacity:0.8"></div>
+                <div style="position:absolute;width:400px;height:2px;top:300px;background-color:GreenYellow ;opacity:0.8"></div>
+                <div style="border:2px solid white;border-radius:50%;position:absolute;width:20px;height:20px;left:328px;top:291px;background-color:transparent;opacity:0.8">
+                </div>
+                <img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja">
             </div>
-            <img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja">
-        </div>
-        <br>
-        <p>Kemudian tentukan jari-jari lingkaran: <strong>44</strong> </p>
-        <div style="position:relative">
-            <div style="position:absolute;width:44px;height:2px;left:337px;top:300px;background-color:GreenYellow ;opacity:0.8">
+            <br>
+            <p>Kemudian tentukan jari-jari lingkaran: <strong>44</strong> </p>
+            <div style="position:relative">
+                <div style="position:absolute;width:44px;height:2px;left:337px;top:300px;background-color:GreenYellow ;opacity:0.8">
+                </div>
+                <div style="border:2px solid yellow;border-radius:50%;position:absolute;width:88px;height:88px;left:293px;top:256px;background-color:transparent;opacity:0.8">
+                </div>
+                <img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja">
             </div>
-            <div style="border:2px solid yellow;border-radius:50%;position:absolute;width:88px;height:88px;left:293px;top:256px;background-color:transparent;opacity:0.8">
+            <br>
+            <p>Sekarang Anda memiliki cukup data untuk membuat area melingkar yang dapat diklik:</p>
+            <table class="table table-bordered w-auto">
+                <tr>
+                    <td><strong>337,300</strong></td>
+                    <td><code>left:337px;</code></td>
+                    <td><code>top:300px;</code></td>
+                </tr>
+                <tr>
+                    <td><strong>44</strong></td>
+                    <td><code>left:337px;</code></td>
+                    <td><code>top:300px;</code></td>
+                </tr>
+            </table>
+            <p>Contoh Latihan :</p>
+            <div class="contoh shadow-sm">
+                <h5>Peta Gambar Coffee</h5>
+                <p>Klik secangkir kopi untuk membuka halaman baru dan membaca lebih lanjut tentang topik ini:</p>
+                <p><img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap2" width="400" height="379"></p>
+                <map name="workmap2">
+                    <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.html">
+                </map>
             </div>
-            <img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja">
-        </div>
-        <br>
-        <p>Sekarang Anda memiliki cukup data untuk membuat area melingkar yang dapat diklik:</p>
-        <table class="table table-bordered w-auto">
-            <tr>
-                <td><strong>337,300</strong></td>
-                <td><code>left:337px;</code></td>
-                <td><code>top:300px;</code></td>
-            </tr>
-            <tr>
-                <td><strong>44</strong></td>
-                <td><code>left:337px;</code></td>
-                <td><code>top:300px;</code></td>
-            </tr>
-        </table>
-        <p>Contoh Latihan :</p>
-        <div class="contoh shadow-sm">
-            <h5>Peta Gambar</h5>
-            <p>Klik secangkir kopi untuk membuka halaman baru dan membaca lebih lanjut tentang topik ini:</p>
-            <p><img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap2" width="400" height="379"></p>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <code>
+                    &lt;p&gt;&lt;img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap2" width="400" height="379"&gt;&lt;/p&gt; <br>
+                     <br>
+                    &lt;map name="workmap2"&gt; <br>
+                        &lt;area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.html"&gt; <br>
+                    &lt;/map&gt; <br>
+                </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div>
+            <p>Ini adalah area yang dapat diklik dan akan menuju ke halaman &quot;coffee.html&quot;: </p>
+            <div style="position:relative">
+                <div style="border-radius:50%;position:absolute;width:88px;height:88px;left:293px;top:256px;background-color:dodgerblue;opacity:0.8">
+                </div>
+                <img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja">
+            </div>
+        </section>
 
-            <map name="workmap2">
-                <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.html">
-            </map>
+        <hr>
+
+        <h4>Shape="poly"</h4>
+        <p>Ini <mark><code>shape=&quot;poly&quot;</code></mark> berisi beberapa titik koordinat, yang menciptakan bentuk yang dibentuk dengan garis lurus (poligon). Ini dapat digunakan untuk membuat bentuk apa pun. Seperti mungkin bentuk croissant!</p>
+        <p>Bagaimana caranya agar croissant pada gambar di bawah ini menjadi link yang bisa diklik?.</p>
+
+        <!-- <figure class="figure">
+            <img src="files/img/frenchfood.jpg" class="figure-img img-fluid rounded" alt="...">
+            <figcaption class="figure-caption">Kita harus mencari koordinat x dan y untuk semua tepi croissant:</figcaption>
+        </figure> -->
+
+        <!-- <p><img border=0 width=450 height=675 id="Picture 17" src="files/img/frenchfood.jpg" alt="Makanan Perancis"></p> -->
+        <h5>Langkah-langkah :</h5>
+        <p>Kita harus mencari koordinat x dan y untuk semua tepi croissant:</p>
+        <p><img border=0 width=450 height=675 id="Picture 16" src="files/img/frenchfood4.jpg" alt="Makanan Perancis"></p>
+        <p>Koordinat berpasangan, satu untuk sumbu x dan satu untuk sumbu y:</p>
+        <p>Contoh Latihan :</p>
+
+        <div class="contoh shadow-sm">
+            <h5>Peta Gambar Poly</h5>
+            <p>Klik croissant untuk membuka halaman baru dan membaca lebih lanjut tentang topik tersebut:</p>
+
+            <p><img src="files/img/frenchfood.jpg" alt="French Food" usemap="#foodmap" width="450" height="675"></p>
+
+            <map name="foodmap">
+            <area shape="poly"
+                coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147"
+                alt="Croissant" href="croissant.html">
+        </map>
         </div>
 
         <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
         <div class="bd-callout">
-            <code>
-                &lt;p&gt;&lt;img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap2" width="400" height="379"&gt;&lt;/p&gt; <br>
-                 <br>
-                &lt;map name="workmap2"&gt; <br>
-                    &lt;area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.html"&gt; <br>
-                &lt;/map&gt; <br>
-            </code>
+            <code></code>
             <hr>
             <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
         </div>
 
-
-
-        <p>&lt;area shape=&quot;circle&quot; coords=&quot;337, 300, 44&quot; href=&quot;coffee.htm&quot;&gt;</p>
-        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map4" target="_blank">Cobalah sendiri &quot;</a></p>
-        <p>Ini adalah area yang dapat diklik dan akan mengirim pengguna ke halaman &quot;coffee.htm&quot;: </p>
-        <p><img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja"></p>
-        <hr>
-        <p>Bentuk = &quot;poli&quot;</p>
-        <p>Ini shape=&quot;poly&quot;berisi beberapa titik koordinat, yang menciptakan bentuk yang dibentuk dengan garis lurus (poligon).</p>
-        <p>Ini dapat digunakan untuk membuat bentuk apa pun.</p>
-        <p>Seperti mungkin bentuk croissant!</p>
-        <p>Bagaimana caranya agar croissant pada gambar di bawah ini menjadi link yang bisa diklik?
-        </p>
-        <p><img border=0 width=450 height=675 id="Picture 17" src="Gaya_files/image002.jpg" alt="Makanan Perancis">
-        </p>
-        <p>Kita harus mencari koordinat x dan y untuk semua tepi croissant:
-        </p>
-        <p><img border=0 width=450 height=675 id="Picture 16" src="Gaya_files/image003.jpg" alt="Makanan Perancis">
-        </p>
-        <p>Koordinat datang berpasangan, satu untuk sumbu x dan satu untuk sumbu y:</p>
-        <p>Contoh :</p>
         <p>
             &lt;area shape=&quot;poly&quot; coords=&quot;140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147&quot; href=&quot;croissant.htm&quot;&gt;
         </p>
@@ -1118,7 +1141,7 @@
         <p>Contoh :</p>
         <p>Di sini, kami menggunakan atribut onclick untuk menjalankan fungsi JavaScript saat area diklik:
         </p>
-        <p>&lt;map name=&quot;workmap&quot;&gt;<br> &lt;area shape=&quot;circle&quot; coords=&quot;337,300,44&quot; href=&quot;coffee.htm&quot; onclick=&quot;myFunction()&quot;&gt;
+        <p>&lt;map name=&quot;workmap&quot;&gt;<br> &lt;area shape=&quot;circle&quot; coords=&quot;337,300,44&quot; href=&quot;coffee.html&quot; onclick=&quot;myFunction()&quot;&gt;
             <br> &lt;/map&gt;
             <br>
             <br> &lt;script&gt;

@@ -523,60 +523,95 @@
 
         <!-- <p><span style='color:black'>Untuk daftar lengkap semua tag HTML yang tersedia, kunjungi </span><a href="https://www.w3schools.com/tags/default.asp">Referensi Tag HTML</a> kami.</p> -->
 
-        <h4>Gambar HTML</h4>
-        <p>Gambar dapat meningkatkan desain dan tampilan halaman web.</p>
+        <section>
+            <h4>Gambar HTML</h4>
+            <p>Gambar dapat meningkatkan desain dan tampilan halaman web.</p>
+            <p>Contoh :</p>
+            <div class="row text-center">
+                <div class="col-md-4" style="background-image:url('files/img/img1.jpeg');background-size:cover;height:300px;">
+                </div>
+                <div class="col-md-4" style="background-image:url('files/img/img2.jpg');background-size:cover;height:300px;">
+                </div>
+                <div class="col-md-4" style="background-image:url('files/img/img3.jpeg');background-size:cover;height:300px;">
+                </div>
+            </div>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <code>
+                    &lt;img src="img1.jpg" alt="gambar 1"&gt;
+                </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <code>
+                    &lt;img src="img2.jpg" alt="gambar 2"&gt;
+                </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <code>
+                    &lt;img src="img3.jpg" alt="gambar 3"&gt;
+                </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div>
+        </section>
+
+        <section>
+            <h4>Syntax Gambar HTML</h4>
+            <p><code>&lt;img&gt;</code> Tag HTML digunakan untuk menyematkan gambar di halaman web.</p>
+            <p>Gambar secara teknis tidak dimasukkan ke dalam halaman web, gambar ditautkan ke halaman web. <code>&lt;img&gt;</code> tag menciptakan ruang holding untuk gambar direferensikan. <code>&lt;img&gt;</code> tag kosong, berisi atribut saja, dan
+                tidak memiliki tag penutup.</p>
+            <p><code>&lt;img&gt;</code> tag memiliki dua atribut yang diperlukan :</p>
+            <table class="table table-bordered w-auto">
+                <thead class="table-light">
+                    <tbody>
+                        <tr>
+                            <td><code>src</code></td>
+                            <td>Menentukan jalur ke gambar</td>
+                        </tr>
+                        <tr>
+                            <td><code>alt</code></td>
+                            <td>Menentukan teks alternatif untuk gambar</td>
+                        </tr>
+                    </tbody>
+            </table>
+            <div class="bd-callout">
+                <h4>Syntax</h4>
+                <code>&lt;img src="url" alt="alternatetext"&gt;</code>
+            </div>
+            <h4><code>src</code> atribut</h4>
+            <p><code>src</code> atribut yang diperlukan menentukan jalur (URL) ke gambar.</p>
+            <p class="moreInfo text-break"><strong>Catatan:</strong> Saat halaman web dimuat, browserlah yang pada saat itu mengambil gambar dari server web dan menyisipkannya ke halaman. Oleh karena itu, pastikan bahwa gambar tersebut benar-benar berada di tempat yang sama dengan
+                halaman web, jika tidak pengunjung Anda akan mendapatkan ikon link yang rusak. Ikon link rusak dan altteks ditampilkan jika browser tidak dapat menemukan gambar.</p>
+            <p>Contoh :</p>
+            <div class="contoh shadow-sm">
+                <p><img src="https://www.w3schools.com/html/img_chania.jpg" class="img-fluid" alt="Bunga di Chania"></p>
+            </div>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <code>
+                    &lt;img src="img_chania.jpg" alt="Bunga di Chania"&gt;
+                </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div>
+        </section>
+
+        <hr>
+
+        <p>
+            <code>alt</code> atribut</p>
+        <p>
+            <code>alt</code> atribut yang diperlukan menyediakan teks alternatif untuk gambar, jika pengguna karena alasan tertentu tidak dapat melihatnya (karena koneksi yang lambat, kesalahan pada atribut src, atau jika pengguna menggunakan pembaca
+            layar).</p>
+        <p>Nilai altatribut harus mendeskripsikan gambar:</p>
         <p>Contoh :</p>
-        <p>&lt;img src=<q>pic_trulli.jpg<q> alt=<q>Italian Trulli<q>&gt;</p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_trulli" target="_blank">Cobalah
-                    sendiri <q></a></p>
-            <p>Contoh :</p>
-            <p>&lt;img src=<q>img_girl.jpg<q> alt=<q>Girl in a jacket<q>&gt;</p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_girl" target="_blank">Cobalah
-                    sendiri <q></a></p>
-            <p>Contoh :</p>
-            <p>&lt;img src=<q>img_chania.jpg<q> alt=<q>Flowers in Chania<q>&gt;</p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_chania" target="_blank">Cobalah
-                    sendiri <q></a></p>
-            <hr>
-            <p>Sintaks Gambar HTML</p>
-            <p>&lt;img&gt;Tag HTML digunakan untuk menyematkan gambar di halaman web.</p>
-            <p>Gambar secara teknis tidak dimasukkan ke dalam halaman web; gambar ditautkan ke halaman
-                web. The
-                &lt;img&gt;tag menciptakan ruang holding untuk gambar direferensikan.</p>
-            <p>The &lt;img&gt;tag kosong, berisi atribut saja, dan tidak memiliki tag penutup.</p>
-            <p>The &lt;img&gt;tag memiliki dua atribut yang diperlukan:
-            </p>
-            <ul style='margin-top:0cm' type=disc>
-                <li>src - Menentukan jalur ke gambar</li>
-                <li>alt - Menentukan teks alternatif untuk gambar</li>
-            </ul>
-            <p>Sintaksis</p>
-            <p>&lt;img src=<q><i>url</i><q> alt=<q><i>alternatetext</i><q>&gt;</p>
-            <hr>
-            <p>Atribut src</p>
-            <p>srcAtribut yang diperlukan menentukan jalur (URL) ke gambar.</p>
-            <p><strong>Catatan:</strong> Saat halaman web dimuat, browserlah yang pada saat itu mengambil gambar
-                dari server web
-                dan menyisipkannya ke halaman. Oleh karena itu, pastikan bahwa gambar tersebut
-                benar-benar berada di
-                tempat yang sama dengan halaman web, jika
-                tidak pengunjung Anda akan mendapatkan ikon link yang rusak. Ikon link rusak dan
-                altteks ditampilkan
-                jika browser tidak dapat menemukan gambar.</p>
-            <p>Contoh :</p>
-            <p>&lt;img src=<q>img_chania.jpg<q> alt=<q>Flowers in Chania<q>&gt;</p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_alt_chania"
-                    target="_blank">Cobalah sendiri <q></a></p>
-            <hr>
-            <p>Atribut alt</p>
-            <p>altAtribut yang diperlukan menyediakan teks alternatif untuk gambar, jika pengguna karena
-                alasan tertentu
-                tidak dapat melihatnya (karena koneksi yang lambat, kesalahan pada atribut src, atau
-                jika pengguna
-                menggunakan pembaca layar).</p>
-            <p>Nilai altatribut harus mendeskripsikan gambar:</p>
-            <p>Contoh :</p>
-            <p>&lt;img src=<q>img_chania.jpg<q> alt=<q>Flowers in Chania<q>&gt;</p>
+        <p>&lt;img src=<q>img_chania.jpg<q> alt=<q>Flowers in Chania<q>&gt;</p>
             <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_alt_chania"
                     target="_blank">Cobalah sendiri <q></a></p>
             <p>Jika browser tidak dapat menemukan gambar, itu akan menampilkan nilai alt atribut:</p>
@@ -590,8 +625,9 @@
                         mengalami gangguan
                         penglihatan atau ketidakmampuan belajar.
             </p>
+            
             <hr>
-            <hr>
+            
             <p>Ukuran Gambar - Lebar dan Tinggi</p>
             <p>Anda dapat menggunakan styleatribut untuk menentukan lebar dan tinggi gambar.</p>
             <p>Contoh :</p>

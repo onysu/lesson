@@ -967,31 +967,75 @@
 
         <h5>Shape="rect"</h5>
         <p>Koordinat untuk <mark><code>shape="rect"</code></mark> berpasangan, satu untuk <strong>sumbu x</strong> dan satu untuk <strong>sumbu y</strong>.</p>
+
         <p>Jadi, koordinatnya 34,44 terletak 34 piksel dari margin kiri dan 44 piksel dari atas:</p>
-        <p><img border=0 width=400 height=379 id="Picture 23" src="Gaya_files/image001.jpg" alt="tempat kerja"></p>
-        <p>Koordinat 270,350terletak 270 piksel dari margin kiri dan 350 piksel dari atas:</p>
-        <p><img border=0 width=400 height=379 id="Picture 22" src="Gaya_files/image001.jpg" alt="tempat kerja"></p>
+        <div style="position:relative">
+            <div style="position:absolute;width:2px;height:379px;left:34px;background-color:GreenYellow ;opacity:0.8"></div>
+            <div style="position:absolute;width:400px;height:2px;top:44px;background-color:GreenYellow ;opacity:0.8"></div>
+            <div style="border:2px solid red;border-radius:50%;position:absolute;width:20px;height:20px;left:25px;top:35px;background-color:transparent;opacity:0.8">
+            </div>
+            <img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja">
+        </div>
+        <br>
+        <p>Koordinat 270,350 terletak 270 piksel dari margin kiri dan 350 piksel dari atas:</p>
+        <div style="position:relative">
+            <div style="position:absolute;width:2px;height:379px;left:270px;background-color:GreenYellow ;opacity:0.8"></div>
+            <div style="position:absolute;width:400px;height:2px;top:350px;background-color:GreenYellow ;opacity:0.8"></div>
+            <div style="border:2px solid red;border-radius:50%;position:absolute;width:20px;height:20px;left:261px;top:341px;background-color:transparent;opacity:0.8">
+            </div>
+            <img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja">
+        </div>
+        <br>
         <p>Sekarang kami memiliki cukup data untuk membuat area persegi panjang yang dapat diklik:</p>
         <p>Contoh :</p>
+
+        <div class="contoh shadow-sm">
+            <h5>Peta Gambar</h5>
+            <p>Klik pada komputer untuk membuka halaman baru dan membaca lebih lanjut tentang topik ini:</p>
+            <p><img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379"></p>
+
+            <map name="workmap">
+                <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html">
+            </map>
+        </div>
+
+        <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+        <div class="bd-callout">
+            <code>
+                &lt;p&gt;&lt;img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379"&gt;&lt;/p&gt; <br>
+                 <br>
+                &lt;map name="workmap"&gt; <br>
+                    &lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html"&gt; <br>
+                &lt;/map&gt;
+            </code>
+            <hr>
+            <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+        </div>
+
+
+
         <!-- <p>&lt;area shape=&quot;rect&quot; coords=&quot;34, 44, 270, 350&quot; href=&quot;computer.htm&quot;q>&gt;</p> -->
 
         <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map3" target="_blank">Cobalah sendiri &quot;</a></p>
         <p>Ini adalah area yang dapat diklik dan akan mengirim pengguna ke halaman &quot;computer.htm&quot;:</p>
-        <p><img border=0 width=400 height=379 id="Picture 21" src="Gaya_files/image001.jpg" alt="tempat kerja"></p>
+
+
+
+        <p><img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja"></p>
         <hr>
         <p>Bentuk = &quot;lingkaran&quot;</p>
         <p>Untuk menambahkan luas lingkaran, pertama cari koordinat pusat lingkaran:</p>
         <p>337,300</p>
-        <p><img border=0 width=400 height=379 id="Picture 20" src="Gaya_files/image001.jpg" alt="tempat kerja"></p>
+        <p><img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja"></p>
         <p>Kemudian tentukan jari-jari lingkaran:</p>
         <p>44 piksel</p>
-        <p><img border=0 width=400 height=379 id="Picture 19" src="Gaya_files/image001.jpg" alt="tempat kerja"></p>
+        <p><img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja"></p>
         <p>Sekarang Anda memiliki cukup data untuk membuat area melingkar yang dapat diklik:</p>
         <p>Contoh :</p>
         <p>&lt;area shape=&quot;circle&quot; coords=&quot;337, 300, 44&quot; href=&quot;coffee.htm&quot;&gt;</p>
         <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map4" target="_blank">Cobalah sendiri &quot;</a></p>
         <p>Ini adalah area yang dapat diklik dan akan mengirim pengguna ke halaman &quot;coffee.htm&quot;: </p>
-        <p><img border=0 width=400 height=379 id="Picture 18" src="Gaya_files/image001.jpg" alt="tempat kerja"></p>
+        <p><img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja"></p>
         <hr>
         <p>Bentuk = &quot;poli&quot;</p>
         <p>Ini shape=&quot;poly&quot;berisi beberapa titik koordinat, yang menciptakan bentuk yang dibentuk dengan garis lurus (poligon).</p>

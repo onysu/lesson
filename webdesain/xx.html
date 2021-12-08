@@ -12,6 +12,7 @@
     <link href="../assets/css/docs.css" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/img/aku-bulat.ico" type="image/x-icon" />
     <link rel="stylesheet" href="dist/css/webdesain.css">
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/lib/w3schools30.css"> -->
     <!-- <link rel="stylesheet" href="../assets/css/maintenance.css"> -->
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
@@ -20,55 +21,6 @@
     <!-- <link rel="preload" as="style" href="dist/lessonpage-en.concat.css"> -->
     <!-- <link rel="stylesheet" href="dist/lessonpage-en.concat.css"> -->
     <!-- <script defer="" src="dist/lessonpage-en.concat.js" type="text/javascript"></script> -->
-    <style>
-        .bd-callout {
-            padding: 1.25rem;
-            margin-top: 1.25rem;
-            margin-bottom: 1.25rem;
-            border: 1px solid #e9ecef;
-            border-left-width: 0.25rem;
-            border-radius: 0.25rem;
-        }
-        
-        .bd-callout+.bd-callout {
-            margin-top: -0.25rem;
-        }
-        
-        .bd-clipboard+.highlight {
-            margin-top: 0;
-        }
-        
-        .bd-callout-warning {
-            border-left-color: #f0ad4e;
-        }
-        
-        .bd-callout-info {
-            border-left-color: #5bc0de;
-        }
-        
-        .bd-callout-danger {
-            border-left-color: #d9534f;
-        }
-        
-        .highlight {
-            padding: 1rem;
-            margin-bottom: 1rem;
-            background-color: #f8f9fa;
-        }
-        
-        @media (min-width: 576px) {
-            .bd-content .highlight {
-                margin-right: 0;
-                margin-left: 0;
-            }
-        }
-        
-        @media (min-width: 576px) {
-            .highlight {
-                padding: 1rem 1.5rem;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -590,7 +542,7 @@
                 halaman web, jika tidak pengunjung Anda akan mendapatkan ikon link yang rusak. Ikon link rusak dan altteks ditampilkan jika browser tidak dapat menemukan gambar.</p>
             <p>Contoh :</p>
             <div class="contoh shadow-sm">
-                <p><img src="https://www.w3schools.com/html/img_chania.jpg" class="img-fluid" alt="Bunga di Chania"></p>
+                <p><img src="files/img/img_chania.jpg" class="img-fluid" alt="Bunga di Chania"></p>
             </div>
             <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
             <div class="bd-callout">
@@ -604,34 +556,67 @@
 
         <hr>
 
-        <p>
-            <code>alt</code> atribut</p>
-        <p>
-            <code>alt</code> atribut yang diperlukan menyediakan teks alternatif untuk gambar, jika pengguna karena alasan tertentu tidak dapat melihatnya (karena koneksi yang lambat, kesalahan pada atribut src, atau jika pengguna menggunakan pembaca
-            layar).</p>
-        <p>Nilai altatribut harus mendeskripsikan gambar:</p>
-        <p>Contoh :</p>
-        <p>&lt;img src=<q>img_chania.jpg<q> alt=<q>Flowers in Chania<q>&gt;</p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_alt_chania"
-                    target="_blank">Cobalah sendiri <q></a></p>
-            <p>Jika browser tidak dapat menemukan gambar, itu akan menampilkan nilai alt atribut:</p>
-            <p>Contoh :</p>
-            <p>&lt;img src=<q>wrongname.gif<q> alt=<q>Flowers in Chania<q>&gt;</p>
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_wrongname"
-                    target="_blank">Cobalah sendiri <q></a></p>
-            <p><strong>Tip:</strong> Pembaca layar adalah program perangkat lunak yang membaca kode HTML, dan
-                memungkinkan
-                pengguna untuk <q>mendengarkan<q> konten. Pembaca layar berguna bagi orang-orang yang
-                        mengalami gangguan
-                        penglihatan atau ketidakmampuan belajar.
+        <section>
+            <h4><code>alt</code> atribut</h4>
+            <p>
+                <code>alt</code> atribut yang diperlukan menyediakan teks alternatif untuk gambar, jika pengguna karena alasan tertentu tidak dapat melihatnya (karena koneksi yang lambat, kesalahan pada atribut src, atau jika pengguna menggunakan pembaca
+                layar).
             </p>
-            
-            <hr>
-            
-            <p>Ukuran Gambar - Lebar dan Tinggi</p>
-            <p>Anda dapat menggunakan styleatribut untuk menentukan lebar dan tinggi gambar.</p>
+            <p>Nilai altatribut harus mendeskripsikan gambar:</p>
             <p>Contoh :</p>
-            <p>&lt;img src=<q>img_girl.jpg<q> alt=<q>Girl in a jacket<q>
+            <div class="contoh shadow-sm">
+                <p><img src="files/img/img_chania.jpg" class="img-fluid" alt="Bunga di Chania"></p>
+            </div>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <code>
+                    &lt;img src="files/img/img_chania.jpg" alt="Bunga di Chania"&gt;
+                </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div>
+            <p>Jika browser tidak dapat menemukan gambar, itu akan menampilkan nilai alt atribut:</p>
+            <div class="contoh shadow-sm">
+                <p><img src="wrongname.gif" alt="Bunga di Chania"></p>
+            </div>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <code>
+                    &lt;img src="wrongname.gif" alt="Bunga di Chania"&gt;
+                </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div>
+        </section>
+
+        <hr>
+
+        <h4>Ukuran Gambar - Lebar & Tinggi <span class="small"><code>Width</code> & <code>Height</code></span>)</h4>
+        <p>Anda dapat menggunakan styleatribut untuk menentukan lebar dan tinggi gambar.</p>
+
+
+
+
+        <div class="w3-code">
+            <div>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>html<span class="attributecolor" style="color:red"> xmlns<span
+                            class="attributevaluecolor" style="color:mediumblue">="http://www.w3.org/1999/xhtml"</span> lang
+                <span class="attributevaluecolor" style="color:mediumblue">="en"</span> xml:lang<span class="attributevaluecolor" style="color:mediumblue">="en"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> ...
+                <br>
+                <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                        style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+            </div>
+        </div>
+
+
+
+        <hr>
+
+
+
+        <p>Contoh :</p>
+        <p>&lt;img src=<q>img_girl.jpg<q> alt=<q>Girl in a jacket<q>
                                 style=<q>width:500px;height:600px;<q>&gt;
             </p>
             <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_size" target="_blank">Cobalah

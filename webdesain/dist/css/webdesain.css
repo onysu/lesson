@@ -1,7 +1,10 @@
  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ * {
+     -webkit-font-smoothing: antialiased;
+ }
+ 
  body {
      font-family: 'Poppins', sans-serif;
-     -webkit-font-smoothing: antialiased;
  }
  
  a:not(:hover) {
@@ -296,10 +299,12 @@
  }
  
  code {
-     font-size: inherit;
+     /* font-size: inherit; */
      /* background-color: #EEEEEE; */
      font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New;
-     /* color: black; */
+     color: black;
+     /* font-family: Consolas, Menlo, "courier new", monospace; */
+     font-size: 16px;
  }
  
  pre {
@@ -351,4 +356,77 @@
  address {
      display: block;
      font-style: italic;
+ }
+ 
+ .bd-callout {
+     padding: 1.25rem;
+     margin-top: 1.25rem;
+     margin-bottom: 1.25rem;
+     border: 1px solid #e9ecef;
+     border-left-width: 0.25rem;
+     border-radius: 0.25rem;
+ }
+ 
+ .bd-callout+.bd-callout {
+     margin-top: -0.25rem;
+ }
+ 
+ .bd-clipboard+.highlight {
+     margin-top: 0;
+ }
+ 
+ .bd-callout-warning {
+     border-left-color: #f0ad4e;
+ }
+ 
+ .bd-callout-info {
+     border-left-color: #5bc0de;
+ }
+ 
+ .bd-callout-danger {
+     border-left-color: #d9534f;
+ }
+ 
+ .highlight {
+     padding: 1rem;
+     margin-bottom: 1rem;
+     background-color: #f8f9fa;
+ }
+ 
+ @media (min-width: 576px) {
+     .bd-content .highlight {
+         margin-right: 0;
+         margin-left: 0;
+     }
+ }
+ 
+ @media (min-width: 576px) {
+     .highlight {
+         padding: 1rem 1.5rem;
+     }
+ }
+ /* w3 css */
+ 
+ .w3-code {
+     width: auto;
+     background-color: #fff;
+     padding: 8px 12px;
+     border-left: 4px solid #4CAF50;
+     word-wrap: break-word;
+ }
+ 
+ span.tagnamecolor {
+     color: brown;
+ }
+ 
+ span.tagcolor {
+     color: mediumblue;
+ }
+ 
+ span.attributevaluecolor {
+     color: mediumblue;
+ }
+ 
+ span.attributecolor {
+     color: red;
  }

@@ -1102,7 +1102,7 @@
         <!-- <p><img border=0 width=450 height=675 id="Picture 17" src="files/img/frenchfood.jpg" alt="Makanan Perancis"></p> -->
         <h5>Langkah-langkah :</h5>
         <p>Kita harus mencari koordinat x dan y untuk semua tepi croissant:</p>
-        <p><img border=0 width=450 height=675 id="Picture 16" src="files/img/frenchfood4.jpg" alt="Makanan Perancis"></p>
+        <p><img class="img-fluid" src="files/img/frenchfood4.jpg" alt="Makanan Perancis"></p>
         <p>Koordinat berpasangan, satu untuk sumbu x dan satu untuk sumbu y:</p>
         <p>Contoh Latihan :</p>
 
@@ -1121,7 +1121,12 @@
 
         <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
         <div class="bd-callout">
-            <code></code>
+            <code>
+                &lt;p&gt;&lt;img src="files/img/frenchfood.jpg" alt="French Food" usemap="#foodmap" width="450" height="675"&gt;&lt;/p&gt; <br>
+                 <br>
+                &lt;map name="foodmap"&gt; <br>
+                    &lt;area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" alt="Croissant" href="croissant.html"&gt; <br>
+            </code>
             <hr>
             <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
         </div>

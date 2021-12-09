@@ -611,6 +611,746 @@
 
             <hr>
 
+            <!-- HTML Image Maps -->
+
+            <section>
+                <h4>Peta Gambar HTML</h4>
+                <p>Dengan peta gambar HTML, Anda dapat membuat area yang dapat diklik pada gambar.</p>
+                <h5>Peta Gambar</h5>
+                <p><mark><code>&lt;map&gt;</mark></code> Tag HTML mendefinisikan peta gambar. Peta gambar adalah gambar dengan area yang dapat diklik. Area ditentukan dengan satu atau lebih <mark><code>&lt;area&gt;</mark></code> tag. <br> Coba klik pada
+                    komputer, ponsel, atau cangkir kopi pada gambar di bawah ini:</p>
+                <div class="contoh shadow-sm">
+                    <p><img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap"></p>
+                    <map name="workmap">
+                        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html">
+                        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.html">
+                        <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.html">
+                    </map>
+                </div>
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                <div class="bd-callout">
+                    <mark><code>
+                                &lt;img src="workplace.jpg" alt="Workplace" usemap="#workmap"&gt; <br>
+                                <br>
+                                &lt;map name="workmap"&gt; <br>
+                                    &lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html"&gt; <br>
+                                    &lt;area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm"&gt; <br>
+                                    &lt;area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.html"&gt; <br>
+                                &lt;/map&gt; <br>
+                            </mark></code>
+                    <hr>
+                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a>
+                    </p>
+                </div>
+            </section>
+
+            <hr>
+
+            <section>
+                <h4>Bagaimana cara kerjanya?</h4>
+                <p>Gagasan di balik peta gambar adalah bahwa Anda harus dapat melakukan tindakan yang berbeda tergantung di mana dalam gambar yang Anda klik. Untuk membuat peta gambar, Anda memerlukan gambar, dan beberapa kode HTML yang menjelaskan area
+                    yang dapat diklik.
+                </p>
+                <h4>Foto</h4>
+                <p>Gambar disisipkan menggunakan <mark><code>&lt;img&gt;</mark></code> tag. Satu-satunya perbedaan dari gambar lain adalah Anda harus menambahkan <mark><code>usemap</mark></code> atribut:</p>
+                <div class="contoh shadow-sm">
+                    <p><img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap"></p>
+                </div>
+                <p><mark><code>nilai usemap</mark></code> dimulai dengan tag hash <strong>#</strong> diikuti dengan nama peta gambar, dan digunakan untuk menciptakan hubungan antara gambar dan peta gambar.</p>
+                <p class="moreInfo"><strong>Tip:</strong> Anda dapat menggunakan gambar apa saja sebagai peta gambar!</p>
+                <h5>Buat Peta Gambar</h5>
+                <p>Kemudian, tambahkan <mark><code>&lt;map&gt;</mark></code> elemen. <mark><code>&lt;map&gt;</mark></code> elemen yang digunakan untuk membuat peta gambar, dan terkait dengan gambar dengan menggunakan diperlukan
+                    <mark><code>name</mark></code>
+                    atribut:</p>
+                <div class="bd-callout">
+                    <mark><code>&lt;map name="workmap"&gt;</mark></code>
+                </div>
+                <p><mark><code>name</mark></code> atribut harus memiliki nilai yang sama sebagai
+                    <mark><code>&lt;img&gt;</mark></code>'s <mark><code>usemap</mark></code> atribut.</p>
+                <h3>Area</h3>
+                <p>Kemudian, tambahkan area yang dapat diklik. Area yang dapat diklik didefinisikan menggunakan
+                    <mark><code>&lt;area&gt;</mark></code> elemen.</p>
+                <h4>Shape</h4>
+                <p>Anda harus menentukan bentuk area yang dapat diklik, dan Anda dapat memilih salah satu dari nilai berikut:
+                </p>
+                <table class="table table-bordered w-auto">
+                    <tr>
+                        <td><mark><code>rect</mark></code>
+                        </td>
+                        <td>mendefinisikan wilayah persegi panjang</td>
+                    </tr>
+                    <tr>
+                        <td><mark><code>circle</mark></code>
+                        </td>
+                        <td>mendefinisikan daerah melingkar</td>
+                    </tr>
+                    <tr>
+                        <td><mark><code>poly</mark></code>
+                        </td>
+                        <td>mendefinisikan wilayah poligonal</td>
+                    </tr>
+                    <tr>
+                        <td><mark><code>default</mark></code>
+                        </td>
+                        <td>mendefinisikan seluruh wilayah</td>
+                    </tr>
+                </table>
+                <p>Anda juga harus menentukan beberapa koordinat untuk dapat menempatkan area yang dapat diklik ke dalam gambar.</p>
+            </section>
+
+            <section>
+                <h4>Shape="rect"</h4>
+                <p>Koordinat untuk <mark><mark><code>shape="rect"</mark></code>
+                    </mark> berpasangan, satu untuk <strong>sumbu x</strong> dan satu untuk <strong>sumbu y</strong>.</p>
+                <p>Jadi, koordinatnya 34,44 artinya 34px dari kiri (<mark><code>left:34px;</mark></code>) dan 44px dari atas (
+                    <mark><code>top:44px;</mark></code>):</p>
+                <div style="position:relative">
+                    <div style="position:absolute;width:2px;height:379px;left:34px;background-color:GreenYellow ;opacity:0.8"></div>
+                    <div style="position:absolute;width:400px;height:2px;top:44px;background-color:GreenYellow ;opacity:0.8"></div>
+                    <div style="border:2px solid red;border-radius:50%;position:absolute;width:20px;height:20px;left:25px;top:35px;background-color:transparent;opacity:0.8">
+                    </div>
+                    <img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja">
+                </div>
+                <br>
+                <p>Koordinat 270,350 artinya 270px dari kiri (<mark><code>left:270px;</mark></code>) dan 350px dari atas (
+                    <mark><code>top:350px;</mark></code>)</p>
+                <div style="position:relative">
+                    <div style="position:absolute;width:2px;height:379px;left:270px;background-color:GreenYellow ;opacity:0.8">
+                    </div>
+                    <div style="position:absolute;width:400px;height:2px;top:350px;background-color:GreenYellow ;opacity:0.8"></div>
+                    <div style="border:2px solid red;border-radius:50%;position:absolute;width:20px;height:20px;left:261px;top:341px;background-color:transparent;opacity:0.8">
+                    </div>
+                    <img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja">
+                </div>
+                <br>
+                <p>Sekarang kalian memiliki cukup data untuk membuat area persegi panjang yang dapat diklik:</p>
+                <table class="table table-bordered w-auto">
+                    <tr>
+                        <td><strong>34,44</strong></td>
+                        <td><mark><code>left:34px;</mark></code>
+                        </td>
+                        <td><mark><code>top:44px;</mark></code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>270,350</strong></td>
+                        <td><mark><code>left:270px;</mark></code>
+                        </td>
+                        <td><mark><code>top:350px;</mark></code>
+                        </td>
+                    </tr>
+                </table>
+
+                <p>Contoh Latihan :</p>
+                <div class="contoh shadow-sm">
+                    <h5>Peta Gambar Computer</h5>
+                    <p>Klik pada komputer untuk membuka halaman baru dan membaca lebih lanjut tentang topik ini:</p>
+                    <p><img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap1" width="400" height="379"></p>
+                    <map name="workmap1">
+                        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html">
+                    </map>
+                </div>
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                <div class="bd-callout">
+                    <mark><code>
+                                &lt;p&gt;&lt;img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap1" width="400" height="379"&gt;&lt;/p&gt; <br>
+                                 <br>
+                                &lt;map name="workmap1"&gt; <br>
+                                    &lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html"&gt; <br>
+                                &lt;/map&gt;
+                            </mark></code>
+                    <hr>
+                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a>
+                    </p>
+                </div>
+                <p>Ini adalah area yang dapat diklik dan akan menuju ke halaman &quot;computer.html&quot;:</p>
+                <div style="position:relative">
+                    <div style="position:absolute;width:236px;height:306px;left:34px;top:44px;background-color:dodgerblue;opacity:0.8">
+                    </div>
+                    <img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja">
+                </div>
+            </section>
+
+            <hr>
+
+            <section>
+                <h4>Shape="circle"</h4>
+                <p>Untuk menambahkan luas lingkaran, pertama cari koordinat pusat lingkaran: <strong>337,300</strong></p>
+                <div style="position:relative">
+                    <div style="position:absolute;width:2px;height:379px;left:337px;background-color:GreenYellow ;opacity:0.8">
+                    </div>
+                    <div style="position:absolute;width:400px;height:2px;top:300px;background-color:GreenYellow ;opacity:0.8"></div>
+                    <div style="border:2px solid white;border-radius:50%;position:absolute;width:20px;height:20px;left:328px;top:291px;background-color:transparent;opacity:0.8">
+                    </div>
+                    <img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja">
+                </div>
+                <br>
+                <p>Kemudian tentukan jari-jari lingkaran: <strong>44</strong> </p>
+                <div style="position:relative">
+                    <div style="position:absolute;width:44px;height:2px;left:337px;top:300px;background-color:GreenYellow ;opacity:0.8">
+                    </div>
+                    <div style="border:2px solid yellow;border-radius:50%;position:absolute;width:88px;height:88px;left:293px;top:256px;background-color:transparent;opacity:0.8">
+                    </div>
+                    <img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja">
+                </div>
+                <br>
+                <p>Sekarang Anda memiliki cukup data untuk membuat area melingkar yang dapat diklik:</p>
+                <table class="table table-bordered w-auto">
+                    <tr>
+                        <td><strong>337,300</strong></td>
+                        <td><mark><code>left:337px;</mark></code>
+                        </td>
+                        <td><mark><code>top:300px;</mark></code>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>44</strong></td>
+                        <td><mark><code>left:337px;</mark></code>
+                        </td>
+                        <td><mark><code>top:300px;</mark></code>
+                        </td>
+                    </tr>
+                </table>
+                <p>Contoh Latihan :</p>
+                <div class="contoh shadow-sm">
+                    <h5>Peta Gambar Coffee</h5>
+                    <p>Klik secangkir kopi untuk membuka halaman baru dan membaca lebih lanjut tentang topik ini:</p>
+                    <p><img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap2" width="400" height="379"></p>
+                    <map name="workmap2">
+                        <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.html">
+                    </map>
+                </div>
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                <div class="bd-callout">
+                    <mark><code>
+                                &lt;p&gt;&lt;img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap2" width="400" height="379"&gt;&lt;/p&gt; <br>
+                                 <br>
+                                &lt;map name="workmap2"&gt; <br>
+                                    &lt;area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.html"&gt; <br>
+                                &lt;/map&gt; <br>
+                            </mark></code>
+                    <hr>
+                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a>
+                    </p>
+                </div>
+                <p>Ini adalah area yang dapat diklik dan akan menuju ke halaman &quot;coffee.html&quot;: </p>
+                <div style="position:relative">
+                    <div style="border-radius:50%;position:absolute;width:88px;height:88px;left:293px;top:256px;background-color:dodgerblue;opacity:0.8">
+                    </div>
+                    <img class="img-fluid" src="files/img/workplace.jpg" alt="tempat kerja">
+                </div>
+            </section>
+
+            <hr>
+
+            <section>
+                <h4>Shape="poly"</h4>
+                <p>Ini <mark><mark><code>shape=&quot;poly&quot;</mark></code>
+                    </mark> berisi beberapa titik koordinat, yang menciptakan bentuk yang dibentuk dengan garis lurus (poligon). Ini dapat digunakan untuk membuat bentuk apa pun. Seperti mungkin bentuk croissant!</p>
+                <p>Bagaimana caranya agar croissant pada gambar di bawah ini menjadi link yang bisa diklik?.</p>
+                <!-- <figure class="figure">
+                            <img src="files/img/frenchfood.jpg" class="figure-img img-fluid rounded" alt="...">
+                            <figcaption class="figure-caption">Kita harus mencari koordinat x dan y untuk semua tepi croissant:</figcaption>
+                        </figure> -->
+                <!-- <p><img border=0 width=450 height=675 id="Picture 17" src="files/img/frenchfood.jpg" alt="Makanan Perancis"></p> -->
+                <h5>Langkah-langkah :</h5>
+                <p>Kita harus mencari koordinat x dan y untuk semua tepi croissant:</p>
+                <p><img class="img-fluid" src="files/img/frenchfood4.jpg" alt="Makanan Perancis"></p>
+                <p>Koordinat berpasangan, satu untuk sumbu x dan satu untuk sumbu y:</p>
+                <p>Contoh Latihan :</p>
+                <div class="contoh shadow-sm">
+                    <h5>Peta Gambar Poly</h5>
+                    <p>Klik croissant untuk membuka halaman baru dan membaca lebih lanjut tentang topik tersebut:</p>
+                    <p><img src="files/img/frenchfood.jpg" alt="French Food" usemap="#foodmap" width="450" height="675"></p>
+                    <map name="foodmap">
+                        <area shape="poly"
+                            coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147"
+                            alt="Croissant" href="croissant.html">
+                    </map>
+                </div>
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                <div class="bd-callout">
+                    <mark><code>
+                                &lt;p&gt;&lt;img src="files/img/frenchfood.jpg" alt="French Food" usemap="#foodmap" width="450" height="675"&gt;&lt;/p&gt; <br>
+                                 <br>
+                                &lt;map name="foodmap"&gt; <br>
+                                    &lt;area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" alt="Croissant" href="croissant.html"&gt; <br>
+                            </mark></code>
+                    <hr>
+                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a>
+                    </p>
+                </div>
+                <p>Ini adalah area yang dapat diklik dan akan menuju ke halaman &quot;croissant.html&quot;:</p>
+                <p><img class="img-fluid" src="files/img/frenchfood3.jpg" alt="Makanan Perancis"></p>
+            </section>
+
+            <hr>
+
+            <section>
+                <h4>Peta Gambar dan JavaScript</h4>
+                <p>Area yang dapat diklik juga dapat memicu fungsi JavaScript. <br> Tambahkan <mark><code><mark>click</mark> event</mark>
+                    </code> ke <mark><code>&lt;area&gt;</mark></code> elemen untuk menjalankan fungsi JavaScript:</p>
+                <p>Contoh : <br> Di sini, kami menggunakan atribut <mark><code>onclick</mark></code> untuk menjalankan fungsi JavaScript saat area diklik:</p>
+                <div class="contoh shadow-sm">
+                    <h5>Peta Gambar dengan fungsi JavaScript</h5>
+                    <p>Klik secangkir kopi untuk menjalankan fungsi JavaScript:</p>
+                    <p><img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap4" width="400" height="379"></p>
+                    <map name="workmap4">
+                        <area shape="circle" coords="337,300,44" href="coffee.html" onclick="myFunction()">
+                    </map>
+                    <script>
+                        function myFunction() {
+                            alert("Anda mengklik cangkir kopi!");
+                        }
+                    </script>
+                </div>
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                <div class="bd-callout">
+                    <mark><code>
+                                &lt;p&gt;&lt;img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap4" width="400" height="379"&gt;&lt;/p&gt; <br>
+                                 <br>
+                                &lt;map name="workmap4"&gt; <br>
+                                    &lt;area shape="circle" coords="337,300,44" href="coffee.html" onclick="myFunction()"&gt; <br>
+                                &lt;/map&gt; <br>
+                                 <br>
+                                &lt;script&gt; <br>
+                                    function myFunction() { <br>
+                                        alert("Anda mengklik cangkir kopi!"); <br>
+                                    } <br>
+                                &lt;/script&gt;
+                            </mark></code>
+                    <hr>
+                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a>
+                    </p>
+                </div>
+            </section>
+
+            <hr>
+
+            <section>
+                <h4>Ringkasan Bab</h4>
+                <ul style='margin-top:0cm' type=disc>
+                    <li>Gunakan <mark><mark><code>&lt;map&gt;</mark></code>
+                        </mark> elemen HTML untuk mendefinisikan peta gambar</li>
+                    <li>Gunakan <mark><mark><code>&lt;area&gt;</mark></code>
+                        </mark> elemen HTML untuk menentukan area yang dapat diklik di peta gambar
+                    </li>
+                    <li>Gunakan usemapatribut HTML <mark><mark><code>&lt;img&gt;</mark></code>
+                        </mark> elemen untuk menunjuk ke peta gambar</li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section>
+                <h4>Tag Gambar HTML</h4>
+                <table class="table table-bordered w-auto">
+                    <thead class="table-light">
+                        <tr>
+                            <td>Tag</td>
+                            <td>Keterangan</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><mark><code>&lt;img&gt;</mark></code>
+                            </td>
+                            <td>Mendefinisikan gambar</td>
+                        </tr>
+                        <tr>
+                            <td><mark><code>&lt;map&gt;</mark></code>
+                            </td>
+                            <td>Mendefinisikan peta gambar</td>
+                        </tr>
+                        <tr>
+                            <td><mark><code>&lt;area&gt;</mark></code>
+                            </td>
+                            <td>Mendefinisikan area yang dapat diklik di dalam peta gambar</td>
+                        </tr>
+                        <tr>
+                            <td><mark><code>&lt;picture&gt;</mark></code>
+                            </td>
+                            <td>Mendefinisikan wadah untuk beberapa sumber gambar</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>Untuk daftar lengkap semua tag HTML yang tersedia, kunjungi <a href="tag-html.html" target="_blank">Referensi Tag
+                        HTML</a>.</p>
+            </section>
+
+            <hr>
+
+            <!-- HTML Background Images -->
+
+            <section>
+                <h3>Gambar Background HTML</h3>
+                <p>Gambar background dapat ditentukan untuk hampir semua elemen HTML.</p>
+                <h4>Gambar Background pada elemen HTML</h4>
+                <p>Untuk menambahkan gambar background pada elemen HTML, gunakan <mark><mark><code>style</mark></code>
+                    </mark> atribut HTML dan <mark><mark><code>background-image</mark></code>
+                    </mark> properti CSS : <br> Contoh :</p>
+                <p>Tambahkan gambar background pada elemen HTML:</p>
+                <div class="contoh shadow-sm">
+                    <h2>Gambar Background</h2>
+                    <p>Gambar background untuk elemen <mark><mark><code>div</mark></code>
+                        </mark>:</p>
+                    <div style="background-image: url('files/img/img_girl.jpg');">
+                        Anda dapat menentukan gambar background<br> untuk setiap elemen HTML yang terlihat.<br> Dalam contoh ini, gambar background<br> ditentukan untuk elemen div.<br> Secara default, gambar latar<br> akan mengulangi dirinya sendiri ke
+                        arah(s)
+                        <br> di mana itu lebih kecil dari elemen<br> di mana itu ditentukan. (Coba ubah ukuran<br> jendela browser untuk melihat bagaimana<br> gambar background berperilaku.
+                    </div>
+                    <br>
+                    <p>Gambar background untuk elemen <mark><mark><code>p</mark></code>
+                        </mark>:</p>
+                    <p style="background-image: url('files/img/img_girl.jpg');">
+                        Anda dapat menentukan gambar background<br> untuk setiap elemen HTML yang terlihat.<br> Dalam contoh ini, gambar background<br> ditentukan untuk elemen p.<br> Secara default, gambar latar<br> akan mengulangi dirinya sendiri ke
+                        arah(s)
+                        <br> di mana itu lebih kecil dari elemen<br> di mana itu ditentukan. (Coba ubah ukuran<br> jendela browser untuk melihat bagaimana<br> gambar background berperilaku.
+                    </p>
+                </div>
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                <div class="bd-callout">
+                    <mark><code>
+                                &lt;p&gt;Gambar background untuk elemen div:&lt;/p&gt; <br>
+                                 <br>
+                                &lt;div style="background-image: url('files/img/img_girl.jpg');"&gt; <br>
+                                    Anda dapat menentukan gambar background <br> untuk setiap elemen HTML yang terlihat. <br> Dalam contoh ini, gambar
+                                    background <br> ditentukan untuk elemen div. <br> Secara default, gambar latar <br> akan mengulangi dirinya sendiri ke
+                                    arah(s)
+                                     <br> di mana itu lebih kecil dari elemen <br> di mana itu ditentukan. (Coba ubah ukuran <br> jendela browser untuk
+                                    melihat bagaimana <br> gambar background berperilaku. <br>
+                                &lt;/div&gt; <br>
+                                 <br>
+                                &lt;p&gt;Gambar background untuk elemen p:&lt;/p&gt; <br>
+                                 <br>
+                                &lt;p style="background-image: url('files/img/img_girl.jpg');"&gt; <br>
+                                    Anda dapat menentukan gambar background <br> untuk setiap elemen HTML yang terlihat. <br> Dalam contoh ini, gambar
+                                    background <br> ditentukan untuk elemen p. <br> Secara default, gambar latar <br> akan mengulangi dirinya sendiri ke
+                                    arah(s)
+                                     <br> di mana itu lebih kecil dari elemen <br> di mana itu ditentukan. (Coba ubah ukuran <br> jendela browser untuk
+                                    melihat bagaimana <br> gambar background berperilaku. <br>
+                                &lt;/p&gt;
+                            </mark></code>
+                    <hr>
+                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a>
+                    </p>
+                </div>
+                <!-- <div class="contoh shadow-sm">
+                            <style>
+                                div {
+                                    background-image: url('files/img/img_girl.jpg');
+                                }
+                            </style>
+                            <div>
+                                Anda dapat menentukan gambar latar belakang<br> untuk setiap elemen HTML yang terlihat.<br> Dalam contoh ini, gambar latar belakang<br> ditentukan untuk elemen div.<br> Secara default, gambar latar<br> akan mengulangi dirinya sendiri ke
+                                arah(s)
+                                <br> di mana itu lebih kecil dari elemen<br> di mana itu ditentukan. (Coba ubah ukuran<br> jendela browser untuk melihat bagaimana<br> gambar latar belakang berperilaku.
+                            </div>
+                        </div> -->
+                <p>Anda juga dapat menentukan gambar background di <mark><code>&lt;style&gt;</mark></code> elemen, di bagian
+                    <mark><code>&lt;head&gt;</mark></code> : <br> Contoh :</p>
+                <p>Tentukan gambar background dalam <mark><code>&lt;style&gt;</mark></code> elemen:</p>
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                <div class="bd-callout">
+                    <mark><code>
+                                &lt;style&gt; <br>
+                                    div { <br>
+                                        background-image: url('files/img/img_girl.jpg'); <br>
+                                    } <br>
+                                &lt;/style&gt;
+                            </mark></code>
+                    <hr>
+                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a>
+                    </p>
+                </div>
+            </section>
+
+            <hr>
+
+            <section>
+                <h4>Gambar Background pada Halaman</h4>
+                <p>Jika Anda ingin seluruh halaman memiliki gambar background, Anda harus menentukan gambar background pada
+                    <mark><code>&lt;body&gt;</mark></code>elemen:</p>
+                <p>Contoh :</p>
+                <p>Tambahkan gambar background untuk seluruh halaman:</p>
+                <div class="contoh shadow-sm" style="background-image: url('files/img/img_girl.jpg');background-size: contain;">
+                    <h2>Gambar Background</h2>
+                    <p>Secara default, gambar latar akan berulang jika lebih kecil dari elemen yang ditentukan, dalam hal ini elemen tubuh.
+                    </p>
+                </div>
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                <div class="bd-callout">
+                    <mark><code>
+                                &lt;style&gt; <br>
+                                    body { <br>
+                                        background-image: url('img_girl.jpg'); <br>
+                                    } <br>
+                                &lt;/style&gt;
+                            </mark></code>
+                    <hr>
+                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a>
+                    </p>
+                </div>
+            </section>
+
+            <hr>
+
+            <section>
+                <h5>Pengulangan Background</h5>
+                <p>Jika gambar latar lebih kecil dari elemen, gambar akan berulang secara horizontal dan vertikal, hingga mencapai ujung elemen: <br> Contoh :</p>
+                <p>Secara default, gambar latar akan berulang jika lebih kecil dari elemen yang ditentukan, dalam hal ini elemen
+                    <mark><code>body</mark></code>.</p>
+                <div class="contoh shadow-sm" style="background-image: url('files/img/img_girl.jpg');background-size: contain;">
+                    <h2 style="color: deepskyblue;">Pengulangan Latar Belakang</h2>
+                    <p style=" color: deepskyblue;">Secara default, gambar latar akan berulang jika lebih kecil dari elemen yang ditentukan, dalam hal ini elemen body.
+                    </p>
+                </div>
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                <div class="bd-callout">
+                    <mark><code>
+                                &lt;style&gt; <br>
+                                    body { <br>
+                                        background-image: url('example_img_girl.jpg'); <br>
+                                    } <br>
+                                &lt;/style&gt;
+                            </mark></code>
+                    <hr>
+                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a>
+                    </p>
+                </div>
+                <p>Untuk menghindari gambar background berulang, setel <mark><mark><code>background-repeat</mark></code>
+                    </mark> properti ke <mark><mark><code>no-repeat</mark></code>
+                    </mark>.</p>
+                <p>Contoh :</p>
+                <div class="contoh shadow-sm" style="background-image: url('files/img/img_girl.jpg');background-repeat: no-repeat;background-size: contain;">
+                    <h2>Background Tidak Ada Pengulangan</h2>
+                    <p>Anda dapat menghindari pengulangan gambar dengan menyetel properti background-repeat ke "no-repeat".</p>
+                </div>
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                <div class="bd-callout">
+                    <mark><code>
+                        &lt;style&gt; <br>
+                        body { <br>
+                        background-image: url('files/img/img_girl.jpg'); <br>
+                        background-repeat: no-repeat; <br>
+                        } <br>
+                        &lt;/style&gt;
+                            </mark></code>
+                    <hr>
+                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a>
+                    </p>
+                </div>
+            </section>
+
+            <hr>
+
+            <section>
+                <h4>Sampul Background</h4>
+                <p>Jika Anda ingin gambar background menutupi seluruh elemen, Anda dapat mengatur
+                    <mark><mark><code>background-size</mark></code>
+                    </mark> properti ke cover. Juga, untuk memastikan seluruh elemen selalu tertutup, atur
+                    <mark><mark><code>background-attachment</mark></code>
+                    </mark> properti ke <mark><mark><code>fixed</mark></code>
+                    </mark>. Dengan cara ini, gambar background akan menutupi seluruh elemen, tanpa peregangan (gambar akan mempertahankan proporsi aslinya):</p>
+                <p>Contoh :</p>
+                <div class="contoh shadow-sm" style="background-image: url('files/img/img_girl.jpg'); background-repeat: no-repeat;  background-size: cover;height: 400px;">
+                    <h2>Background Cover</h2>
+                    <p>Setel properti background-size ke "cover" dan gambar latar belakang akan menutupi seluruh elemen, dalam hal ini elemen body.</p>
+                </div>
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                <div class="bd-callout">
+                    <mark><code>
+                                &lt;style&gt; <br>
+                                    body { <br>
+                                        background-image: url('img_girl.jpg'); <br>
+                                        background-repeat: no-repeat; <br>
+                                        background-attachment: fixed; <br>
+                                        background-size: cover; <br>
+                                    } <br>
+                                &lt;/style&gt; <br>
+                            </mark></code>
+                    <hr>
+                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a>
+                    </p>
+                </div>
+            </section>
+
+            <hr>
+
+            <section>
+                <h4>Peregangan Background</h4>
+                <p>Jika Anda ingin gambar background diregangkan agar pas dengan seluruh elemen, Anda dapat mengatur
+                    <mark><mark><code>background-size</mark></code>
+                    </mark> properti ke <mark><mark><code>100% 100%</mark></code>
+                    </mark>. Coba ubah ukuran jendela browser, dan Anda akan melihat bahwa gambar akan melebar, tetapi selalu menutupi seluruh elemen.</p>
+                <p>Contoh :</p>
+                <div class="contoh shadow-sm" style="background-image: url(files/img/img_girl.jpg); background-repeat: no-repeat;   background-size: 100% 100%; height: 100vh;">
+                    <h2>Peregangan Background</h2>
+                    <p>Setel properti background-size ke "100% 100%" dan gambar latar belakang akan diregangkan untuk menutupi seluruh elemen, dalam hal ini elemen body.</p>
+                </div>
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                <div class="bd-callout">
+                    <mark><code>
+                                &lt;style&gt; <br>
+                                    body { <br>
+                                        background-image: url('img_girl.jpg'); <br>
+                                        background-repeat: no-repeat; <br>
+                                        background-size: 100% 100%; <br>
+                                    } <br>
+                                &lt;/style&gt;
+                            </mark></code>
+                    <hr>
+                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a>
+                    </p>
+                </div>
+            </section>
+
+            <hr>
+
+            <!-- HTML <picture> Element -->
+
+            <section>
+                <h4>Elemen &lt;picture&gt; HTML</h4>
+                <p><mark><mark><code>&lt;picture&gt;</mark></code>
+                    </mark> elemen HTML memungkinkan Anda untuk menampilkan gambar yang berbeda untuk perangkat atau ukuran layar yang berbeda.</p>
+                <p><img class="img-fluid" src="files/img/picture_example.jpg"></p>
+                <h6>Elemen HTML &lt;picture&gt;</h6>
+                <p><mark><mark><code>&lt;picture&gt;</mark></code>
+                    </mark> elemen HTML memberi pengembang web lebih banyak fleksibilitas dalam menentukan sumber daya gambar.
+                    <mark><mark><code>&lt;picture&gt;</mark></code>
+                    </mark>elemen berisi satu atau lebih <mark><mark><code>&lt;source&gt;</mark></code>
+                    </mark> elemen, masing-masing mengacu pada gambar yang berbeda melalui srcset atribut. Dengan cara ini browser dapat memilih gambar yang paling sesuai dengan tampilan dan/atau perangkat saat ini. Setiap <mark><mark><code>&lt;source&gt;</mark></code>
+                    </mark>
+                    elemen memiliki mediaatribut yang menentukan kapan gambar paling cocok.</p>
+                <p>Contoh :</p>
+                <p>Tampilkan gambar yang berbeda untuk ukuran layar yang berbeda:</p>
+                <div class="contoh shadow-sm">
+                    <h2>Elemen gambar</h2>
+                    <picture>
+                        <source media="(min-width: 650px)" srcset="files/img/img_food.jpg">
+                        <source media="(min-width: 465px)" srcset="files/img/img_car.jpg">
+                        <img src="files/img/img_girl.jpg" style="width:auto;">
+                    </picture>
+                    <br>
+                    <br>
+                    <p>Ubah ukuran browser untuk melihat versi berbeda dari pemuatan gambar pada ukuran viewport yang berbeda. Browser mencari elemen sumber pertama tempat kueri media cocok dengan lebar area pandang pengguna saat ini, dan mengambil gambar
+                        yang ditentukan di atribut srcset.</p>
+                    <p>Elemen img diperlukan sebagai tag anak terakhir dari blok deklarasi gambar. Elemen img digunakan untuk menyediakan kompatibilitas mundur untuk browser yang tidak mendukung elemen gambar, atau jika tidak ada tag sumber yang cocok.
+                    </p>
+                    <p><strong>Catatan</strong>: Elemen gambar tidak didukung di IE12 dan versi sebelumnya atau Safari 9.0 dan versi sebelumnya.
+                    </p>
+                </div>
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                <div class="bd-callout">
+                    <mark><code>
+                                &lt;picture&gt; <br>
+                                    &lt;source media="(min-width: 650px)" srcset="img_food.jpg"&gt; <br>
+                                    &lt;source media="(min-width: 465px)" srcset="img_car.jpg"&gt; <br>
+                                    &lt;img src="img_girl.jpg" style="width:auto;"&gt; <br>
+                                &lt;/picture&gt; <br>
+                            </mark></code>
+                    <hr>
+                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a>
+                    </p>
+                </div>
+                <p class="moreInfo"><strong>Catatan:</strong> Selalu tentukan <mark><mark><code>&lt;img&gt;</mark></code>
+                    </mark> elemen sebagai elemen child terakhir dari <mark><mark><code>&lt;picture&gt;</mark></code>
+                    </mark> elemen. <mark><mark><code>&lt;img&gt;</mark></code>
+                    </mark> elemen yang digunakan oleh browser yang tidak mendukung
+                    <mark><mark><code>&lt;picture&gt;</mark></code>
+                    </mark> elemen, atau jika tidak ada <mark><mark><code>&lt;source&gt;</mark></code>
+                    </mark> tag yang cocok.
+                </p>
+            </section>
+
+            <hr>
+
+            <section>
+                <h4>Kapan menggunakan Elemen Gambar?</h4>
+                <p>Ada dua tujuan utama untuk <mark><mark><code>&lt;picture&gt;</mark></code>
+                    </mark> elemen:</p>
+                <ol>
+                    <li>
+                        <p><strong>Bandwidth</strong></p>
+                        <p>Jika Anda memiliki layar atau perangkat kecil, tidak perlu memuat file gambar besar. Browser akan menggunakan &lt;source&gt; elemen pertama dengan nilai atribut yang cocok, dan mengabaikan salah satu elemen berikut.</p>
+                    </li>
+                    <li>
+                        <p><strong>Dukungan Format</strong></p>
+                        <p>Beberapa browser atau perangkat mungkin tidak mendukung semua format gambar. Dengan menggunakan
+                            <mark><mark><code>&lt;picture&gt;</mark></code>
+                            </mark> elemen tersebut, Anda dapat menambahkan gambar dari semua format, dan browser akan menggunakan format pertama yang dikenalinya, dan mengabaikan salah satu elemen berikut.</p>
+                    </li>
+                </ol>
+                <p>Contoh :</p>
+                <p>Browser akan menggunakan format gambar pertama yang dikenalinya:</p>
+                <div class="contoh shadow-sm">
+                    <h2>Elemen gambar</h2>
+                    <picture>
+                        <source srcset="files/img/img_avatar.png">
+                        <source srcset="files/img/img_girl.jpg">
+                        <img src="files/img/img_beatles.gif" alt="Beatles" style="width:auto;">
+                    </picture>
+                    <br><br>
+                    <p>Elemen gambar tidak akan dapat digunakan jika format gambar tidak didukung oleh semua perangkat. <br> Perangkat akan menggunakan format gambar pertama yang didukungnya, dan mengabaikan gambar lainnya.</p>
+                </div>
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                <div class="bd-callout">
+                    <mark><code>
+                                &lt;picture&gt; <br>
+                                    &lt;source srcset="img_avatar.png"&gt; <br>
+                                    &lt;source srcset="img_girl.jpg"&gt; <br>
+                                    &lt;img src="img_beatles.gif" alt="Beatles" style="width:auto;"&gt; <br>
+                                &lt;/picture&gt; <br>
+                            </mark></code>
+                    <hr>
+                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a>
+                    </p>
+                </div>
+                <p class="moreInfo"><strong>Catatan:</strong> Browser akan menggunakan
+                    <mark><mark><code>&lt;source&gt;</mark></code>
+                    </mark> elemen pertama dengan nilai atribut yang cocok, dan mengabaikan
+                    <mark><mark><code>&lt;source&gt;</mark></code>
+                    </mark> elemen berikut.</p>
+            </section>
+
+            <hr>
+
+            <section>
+                <h3>Tag Gambar HTML</h3>
+                <table class="table table-bordered w-auto">
+                    <thead class="table-light">
+                        <tr>
+                            <td>Tag</td>
+                            <td>Keterangan</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><mark><code>&lt;img&gt;</mark></code>
+                            </td>
+                            <td>Mendefinisikan gambar</td>
+                        </tr>
+                        <tr>
+                            <td><mark><code>&lt;map&gt;</mark></code>
+                            </td>
+                            <td>Mendefinisikan peta gambar</td>
+                        </tr>
+                        <tr>
+                            <td><mark><code>&lt;area&gt;</mark></code>
+                            </td>
+                            <td>Mendefinisikan area yang dapat diklik di dalam peta gambar</td>
+                        </tr>
+                        <tr>
+                            <td><mark><code>&lt;picture&gt;</mark></code>
+                            </td>
+                            <td>Mendefinisikan wadah untuk beberapa sumber gambar</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- <p>Untuk daftar lengkap semua tag HTML yang tersedia, kunjungi <a href="https://www.w3schools.com/tags/default.asp">Referensi Tag HTML</a> kami.</p> -->
+            </section>
+
         </div>
     </div>
 </main>

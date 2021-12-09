@@ -1500,220 +1500,139 @@
 
         <hr>
 
-        <h3>Tag Gambar HTML</h3>
-        <table class="table table-bordered w-auto">
-            <thead class="table-light">
-                <tr>
-                    <td>Tag</td>
-                    <td>Keterangan</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>&lt;img&gt;</td>
-                    <td>Mendefinisikan gambar</td>
-                </tr>
-                <tr>
-                    <td>&lt;map&gt;</td>
-                    <td>Mendefinisikan peta gambar</td>
-                </tr>
-                <tr>
-                    <td>&lt;area&gt;</td>
-                    <td>Mendefinisikan area yang dapat diklik di dalam peta gambar</td>
-                </tr>
-                <tr>
-                    <td>&lt;picture&gt;</td>
-                    <td>Mendefinisikan wadah untuk beberapa sumber gambar</td>
-                </tr>
-            </tbody>
-        </table>
+        <section>
+            <h3>Tag Gambar HTML</h3>
+            <table class="table table-bordered w-auto">
+                <thead class="table-light">
+                    <tr>
+                        <td>Tag</td>
+                        <td>Keterangan</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>&lt;img&gt;</code></td>
+                        <td>Mendefinisikan gambar</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;map&gt;</code></td>
+                        <td>Mendefinisikan peta gambar</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;area&gt;</code></td>
+                        <td>Mendefinisikan area yang dapat diklik di dalam peta gambar</td>
+                    </tr>
+                    <tr>
+                        <td><code>&lt;picture&gt;</code></td>
+                        <td>Mendefinisikan wadah untuk beberapa sumber gambar</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
         <!-- <p>Untuk daftar lengkap semua tag HTML yang tersedia, kunjungi <a href="https://www.w3schools.com/tags/default.asp">Referensi Tag HTML</a> kami.</p> -->
 
         <hr>
 
         <h3>Favicon HTML</h3>
-
-
-        <p>Favicon adalah gambar kecil yang ditampilkan di sebelah judul halaman di tab browser.</p>
-        <hr>
-        <p>Cara Menambahkan Favicon di HTML</p>
-        <p>Anda dapat menggunakan gambar apa pun yang Anda suka sebagai favicon Anda. Anda juga dapat membuat favicon sendiri di situs seperti
-            <a href="https://favicon.cc/" target="_blank">https://favicon.cc</a>.
-        </p>
-        <p><strong>Tip:</strong> Favicon adalah gambar kecil, jadi harus gambar sederhana dengan kontras tinggi.
-        </p>
+        <p>Favicon adalah gambar kecil yang ditampilkan di sebelah judul halaman di tab browser. <br> Cara Menambahkan Favicon di HTML. Anda dapat menggunakan gambar apa pun yang Anda suka sebagai favicon Anda. Anda juga dapat membuat favicon sendiri di
+            situs seperti <a href="https://favicon.cc/" target="_blank">https://favicon.cc</a>.</p>
+        <p class="moreInfo"><strong>Tip:</strong> Favicon adalah gambar kecil, jadi harus gambar sederhana dengan kontras tinggi.</p>
         <p>Gambar favicon ditampilkan di sebelah kiri judul halaman di tab browser, seperti ini:</p>
-        <p><img border=0 width=485 height=82 id="Picture 32" src="Gaya_files/image006.png" alt="Contoh : favicon">
-        </p>
+        <p><img border=0 width=485 height=82 id="Picture 32" src="files/Gaya_files/image006.png" alt="Contoh : favicon"></p>
         <p>Untuk menambahkan favicon ke situs web Anda, simpan gambar favicon Anda ke direktori root server web Anda, atau buat folder di direktori root yang disebut gambar, dan simpan gambar favicon Anda di folder ini. Nama umum untuk gambar favicon adalah
             &quot;favicon.ico&quot;.
         </p>
-        <p>Selanjutnya, tambahkan &lt;link&gt;elemen ke file &quot;index.html&quot; Anda, setelah &lt;title&gt;elemen, seperti ini:</p>
+        <p>Selanjutnya, tambahkan <mark><code>&lt;link&gt;</code></mark> elemen ke file &quot;index.html&quot; Anda, setelah <mark><code>&lt;title&gt;</code></mark> elemen, seperti ini:</p>
         <p>Contoh :</p>
-        <p>&lt;!DOCTYPE html&gt;<br> &lt;html&gt;
-            <br> &lt;head&gt;
-            <br> &lt;title&gt;My Page Title&lt;/title&gt;<br> &lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;/images/favicon.ico&quot;&gt;
-            <br> &lt;/head&gt;
-            <br> &lt;body&gt;
-            <br>
-            <br> &lt;h1&gt;This is a Heading&lt;/h1&gt;<br> &lt;p&gt;This is a paragraph.&lt;/p&gt;
-            <br>
-            <br> &lt;/body&gt;
-            <br> &lt;/html&gt;
-        </p>
+        <!-- <div class="contoh shadow-sm">
+
+        </div> -->
+
+        <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+        <div class="bd-callout">
+            <code>
+        &lt;!DOCTYPE html&gt; <br>
+        &lt;html&gt; <br>
+            &lt;head&gt; <br>
+                &lt;title&gt;My Page Title&lt;/title&gt; <br>
+                &lt;<b>link rel="icon" type="image/x-icon" href="/images/favicon.ico"</b>&gt; <br>
+            &lt;/head&gt; <br>
+            &lt;body&gt; <br>
+                &lt;h1&gt;This is a Heading&lt;/h1&gt; <br>
+                &lt;p&gt;This is a paragraph.&lt;/p&gt; <br>
+            &lt;/body&gt; <br>
+        &lt;/html&gt; <br>
+    </code>
+        </div>
+        <!-- <hr>
+            <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+        </div> -->
+
         <p>Sekarang, simpan file &quot;index.html&quot; dan muat ulang di browser Anda. Tab browser Anda sekarang akan menampilkan gambar favicon Anda di sebelah kiri judul halaman.</p>
+
         <hr>
-        <p>Dukungan Format File Favicon</p>
-        <p>Tabel berikut menunjukkan dukungan format file untuk gambar favicon:
-        </p>
-        <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=876 style='width:656.85pt;background:white;border-collapse:collapse;border:none'>
-            <tr>
-                <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:solid #CCCCCC 1.0pt;
-  border-bottom:none;border-right:none;padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                    <p><strong>Browser</strong></p>
-                </td>
-                <td valign=top style='border:none;border-top:solid #CCCCCC 1.0pt;padding:
-  6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><strong><span style='color:black'>ICO</span></strong></p>
-                </td>
-                <td valign=top style='border:none;border-top:solid #CCCCCC 1.0pt;padding:
-  6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><strong><span style='color:black'>PNG</span></strong></p>
-                </td>
-                <td valign=top style='border:none;border-top:solid #CCCCCC 1.0pt;padding:
-  6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><strong><span style='color:black'>GIF</span></strong></p>
-                </td>
-                <td valign=top style='border:none;border-top:solid #CCCCCC 1.0pt;padding:
-  6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><strong><span style='color:black'>JPEG</span></strong></p>
-                </td>
-                <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:none;
-  border-bottom:none;border-right:solid #CCCCCC 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><strong><span style='color:black'>SVG</span></strong></p>
-                </td>
-            </tr>
-            <tr>
-                <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;background:
-  #E7E9EB;padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                    <p><span style='color:black'>Edge</span></p>
-                </td>
-                <td valign=top style='border:none;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Yes</span></p>
-                </td>
-                <td valign=top style='border:none;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Yes</span></p>
-                </td>
-                <td valign=top style='border:none;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Yes</span></p>
-                </td>
-                <td valign=top style='border:none;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Yes</span></p>
-                </td>
-                <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
-  background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Yes</span></p>
-                </td>
-            </tr>
-            <tr>
-                <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;padding:
-  6.0pt 6.0pt 6.0pt 12.0pt'>
-                    <p><span style='color:black'>Chrome</span></p>
-                </td>
-                <td valign=top style='border:none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Yes</span></p>
-                </td>
-                <td valign=top style='border:none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Yes</span></p>
-                </td>
-                <td valign=top style='border:none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Yes</span></p>
-                </td>
-                <td valign=top style='border:none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Yes</span></p>
-                </td>
-                <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
-  padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Yes</span></p>
-                </td>
-            </tr>
-            <tr>
-                <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;background:
-  #E7E9EB;padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                    <p><span style='color:black'>Firefox</span></p>
-                </td>
-                <td valign=top style='border:none;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Yes</span></p>
-                </td>
-                <td valign=top style='border:none;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Yes</span></p>
-                </td>
-                <td valign=top style='border:none;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Yes</span></p>
-                </td>
-                <td valign=top style='border:none;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Yes</span></p>
-                </td>
-                <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
-  background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Yes</span></p>
-                </td>
-            </tr>
-            <tr>
-                <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;padding:
-  6.0pt 6.0pt 6.0pt 12.0pt'>
-                    <p><span style='color:black'>Opera</span></p>
-                </td>
-                <td valign=top style='border:none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Yes</span></p>
-                </td>
-                <td valign=top style='border:none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Yes</span></p>
-                </td>
-                <td valign=top style='border:none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Yes</span></p>
-                </td>
-                <td valign=top style='border:none;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Yes</span></p>
-                </td>
-                <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
-  padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Yes</span></p>
-                </td>
-            </tr>
-            <tr>
-                <td valign=top style='border-top:none;border-left:solid #CCCCCC 1.0pt;
-  border-bottom:solid #CCCCCC 1.0pt;border-right:none;background:#E7E9EB;
-  padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                    <p><span style='color:black'>Safari</span></p>
-                </td>
-                <td valign=top style='border:none;border-bottom:solid #CCCCCC 1.0pt;
-  background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Yes</span></p>
-                </td>
-                <td valign=top style='border:none;border-bottom:solid #CCCCCC 1.0pt;
-  background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Yes</span></p>
-                </td>
-                <td valign=top style='border:none;border-bottom:solid #CCCCCC 1.0pt;
-  background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Yes</span></p>
-                </td>
-                <td valign=top style='border:none;border-bottom:solid #CCCCCC 1.0pt;
-  background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Yes</span></p>
-                </td>
-                <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CCCCCC 1.0pt;
-  border-right:solid #CCCCCC 1.0pt;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Yes</span></p>
-                </td>
-            </tr>
+
+        <h4>Dukungan Format File Favicon</h4>
+        <p>Tabel berikut menunjukkan dukungan format file untuk gambar favicon:</p>
+        <table class="table table-bordered w-auto">
+            <thead class="table-light">
+                <tr>
+                    <td>Browser</td>
+                    <td>ICO</td>
+                    <td>PNG</td>
+                    <td>GIF</td>
+                    <td>JPEG</td>
+                    <td>SVG</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Edge</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Chrome</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Firefox</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Opera</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>Safari</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                </tr>
+            </tbody>
         </table>
-        <div><span style='color:white'>
-                    <hr>
-                </span></div>
-        <p>Ringkasan Bab</p>
+
+        <hr>
+
+        <h4>Ringkasan Bab</h4>
         <ul style='margin-top:0cm' type=disc>
             <li>Gunakan &lt;link&gt;elemen HTML untuk menyisipkan favicon</li>
         </ul>

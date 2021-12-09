@@ -1365,7 +1365,7 @@
             <h4>Sampul Background</h4>
             <p>Jika Anda ingin gambar background menutupi seluruh elemen, Anda dapat mengatur <mark><code>background-size</code></mark> properti ke cover. Juga, untuk memastikan seluruh elemen selalu tertutup, atur <mark><code>background-attachment</code></mark>                properti ke <mark><code>fixed</code></mark>. Dengan cara ini, gambar background akan menutupi seluruh elemen, tanpa peregangan (gambar akan mempertahankan proporsi aslinya):</p>
             <p>Contoh :</p>
-            <div class="contoh shadow-sm" style="background-image: url('files/img/img_girl.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;height: 400px;">
+            <div class="contoh shadow-sm" style="background-image: url('files/img/img_girl.jpg'); background-repeat: no-repeat;  background-size: cover;height: 400px;">
                 <h2>Background Cover</h2>
                 <p>Setel properti background-size ke "cover" dan gambar latar belakang akan menutupi seluruh elemen, dalam hal ini elemen body.</p>
             </div>
@@ -1388,135 +1388,153 @@
 
         <hr>
 
-        <p>Peregangan Background</p>
-        <p>Jika Anda ingin gambar background diregangkan agar pas dengan seluruh elemen, Anda dapat mengatur background-sizeproperti ke 100% 100%:</p>
-        <p>Coba ubah ukuran jendela browser, dan Anda akan melihat bahwa gambar akan melebar, tetapi selalu menutupi seluruh elemen.</p>
-        <p>Contoh :</p>
-        <p>&lt;style&gt;<br> body {
-            <br> background-image: url('img_girl.jpg');<br> background-repeat: no-repeat;<br> background-attachment: fixed;
-            <br> background-size: 100% 100%;<br> }
-            <br> &lt;/style&gt;
-        </p>
-        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_background8" target="_blank">Cobalah sendiri &quot;</a></p>
+        <section>
+            <h4>Peregangan Background</h4>
+            <p>Jika Anda ingin gambar background diregangkan agar pas dengan seluruh elemen, Anda dapat mengatur <mark><code>background-size</code></mark> properti ke <mark><code>100% 100%</code></mark>. Coba ubah ukuran jendela browser, dan Anda akan melihat
+                bahwa gambar akan melebar, tetapi selalu menutupi seluruh elemen.</p>
+            <p>Contoh :</p>
+            <div class="contoh shadow-sm" style="background-image: url(files/img/img_girl.jpg); background-repeat: no-repeat;   background-size: 100% 100%; height: 100vh;">
+                <h2>Peregangan Background</h2>
+                <p>Setel properti background-size ke "100% 100%" dan gambar latar belakang akan diregangkan untuk menutupi seluruh elemen, dalam hal ini elemen body.</p>
+            </div>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <code>
+                    &lt;style&gt; <br>
+                        body { <br>
+                            background-image: url('img_girl.jpg'); <br>
+                            background-repeat: no-repeat; <br>
+                            background-size: 100% 100%; <br>
+                        } <br>
+                    &lt;/style&gt;
+                </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div>
+        </section>
+
         <hr>
-        <p>Pelajari Lebih Lanjut CSS</p>
-        <p>Dari contoh di atas, Anda telah mempelajari bahwa gambar background dapat ditata dengan menggunakan properti background CSS.</p>
-        <p>Untuk mempelajari lebih lanjut tentang properti background CSS, pelajari <a href="https://www.w3schools.com/css/css_background.asp">Tutorial Background
-                    CSS</a> kami.</p>
-        <p>Elemen &lt;gambar&gt; HTML</p>
+
+        <section>
+            <h4>Elemen &lt;picture&gt; HTML</h4>
+            <p><mark><code>&lt;picture&gt;</code></mark> elemen HTML memungkinkan Anda untuk menampilkan gambar yang berbeda untuk perangkat atau ukuran layar yang berbeda.</p>
+            <p><img class="img-fluid" src="files/img/picture_example.jpg"></p>
+            <h6>Elemen HTML &lt;picture&gt;</h6>
+            <p><mark><code>&lt;picture&gt;</code></mark> elemen HTML memberi pengembang web lebih banyak fleksibilitas dalam menentukan sumber daya gambar. <mark><code>&lt;picture&gt;</code></mark>elemen berisi satu atau lebih <mark><code>&lt;source&gt;</code></mark>                elemen, masing-masing mengacu pada gambar yang berbeda melalui srcset atribut. Dengan cara ini browser dapat memilih gambar yang paling sesuai dengan tampilan dan/atau perangkat saat ini. Setiap <mark><code>&lt;source&gt;</code></mark>                elemen memiliki mediaatribut yang menentukan kapan gambar paling cocok.</p>
+            <p>Contoh :</p>
+            <p>Tampilkan gambar yang berbeda untuk ukuran layar yang berbeda:</p>
+            <div class="contoh shadow-sm">
+                <h2>Elemen gambar</h2>
+                <picture>
+                    <source media="(min-width: 650px)" srcset="files/img/img_food.jpg">
+                    <source media="(min-width: 465px)" srcset="files/img/img_car.jpg">
+                    <img src="files/img/img_girl.jpg" style="width:auto;">
+                </picture>
+                <br>
+                <br>
+                <p>Ubah ukuran browser untuk melihat versi berbeda dari pemuatan gambar pada ukuran viewport yang berbeda. Browser mencari elemen sumber pertama tempat kueri media cocok dengan lebar area pandang pengguna saat ini, dan mengambil gambar yang
+                    ditentukan di atribut srcset.</p>
+                <p>Elemen img diperlukan sebagai tag anak terakhir dari blok deklarasi gambar. Elemen img digunakan untuk menyediakan kompatibilitas mundur untuk browser yang tidak mendukung elemen gambar, atau jika tidak ada tag sumber yang cocok.
+                </p>
+                <p><strong>Catatan</strong>: Elemen gambar tidak didukung di IE12 dan versi sebelumnya atau Safari 9.0 dan versi sebelumnya.</p>
+            </div>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <code>
+                    &lt;picture&gt; <br>
+                        &lt;source media="(min-width: 650px)" srcset="img_food.jpg"&gt; <br>
+                        &lt;source media="(min-width: 465px)" srcset="img_car.jpg"&gt; <br>
+                        &lt;img src="img_girl.jpg" style="width:auto;"&gt; <br>
+                    &lt;/picture&gt; <br>
+                </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div>
+            <p class="moreInfo"><strong>Catatan:</strong> Selalu tentukan <mark><code>&lt;img&gt;</code></mark> elemen sebagai elemen child terakhir dari <mark><code>&lt;picture&gt;</code></mark> elemen. <mark><code>&lt;img&gt;</code></mark> elemen yang digunakan oleh browser
+                yang tidak mendukung <mark><code>&lt;picture&gt;</code></mark> elemen, atau jika tidak ada <mark><code>&lt;source&gt;</code></mark> tag yang cocok.
+            </p>
+        </section>
+
         <hr>
-        <p>&lt;picture&gt;Elemen HTML memungkinkan Anda untuk menampilkan gambar yang berbeda untuk perangkat atau ukuran layar yang berbeda.</p>
+
+        <section>
+            <h4>Kapan menggunakan Elemen Gambar?</h4>
+            <p>Ada dua tujuan utama untuk <mark><code>&lt;picture&gt;</code></mark> elemen:</p>
+            <ol>
+                <li>
+                    <p><strong>Bandwidth</strong></p>
+                    <p>Jika Anda memiliki layar atau perangkat kecil, tidak perlu memuat file gambar besar. Browser akan menggunakan &lt;source&gt; elemen pertama dengan nilai atribut yang cocok, dan mengabaikan salah satu elemen berikut.</p>
+                </li>
+                <li>
+                    <p><strong>Dukungan Format</strong></p>
+                    <p>Beberapa browser atau perangkat mungkin tidak mendukung semua format gambar. Dengan menggunakan <mark><code>&lt;picture&gt;</code></mark> elemen tersebut, Anda dapat menambahkan gambar dari semua format, dan browser akan menggunakan
+                        format pertama yang dikenalinya, dan mengabaikan salah satu elemen berikut.</p>
+                </li>
+            </ol>
+            <p>Contoh :</p>
+            <p>Browser akan menggunakan format gambar pertama yang dikenalinya:</p>
+            <div class="contoh shadow-sm">
+                <h2>Elemen gambar</h2>
+                <picture>
+                    <source srcset="files/img/img_avatar.png">
+                    <source srcset="files/img/img_girl.jpg">
+                    <img src="files/img/img_beatles.gif" alt="Beatles" style="width:auto;">
+                </picture>
+                <br><br>
+                <p>Elemen gambar tidak akan dapat digunakan jika format gambar tidak didukung oleh semua perangkat. <br> Perangkat akan menggunakan format gambar pertama yang didukungnya, dan mengabaikan gambar lainnya.</p>
+            </div>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <code>
+                    &lt;picture&gt; <br>
+                        &lt;source srcset="img_avatar.png"&gt; <br>
+                        &lt;source srcset="img_girl.jpg"&gt; <br>
+                        &lt;img src="img_beatles.gif" alt="Beatles" style="width:auto;"&gt; <br>
+                    &lt;/picture&gt; <br>
+                </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div>
+            <p class="moreInfo"><strong>Catatan:</strong> Browser akan menggunakan <mark><code>&lt;source&gt;</code></mark> elemen pertama dengan nilai atribut yang cocok, dan mengabaikan <mark><code>&lt;source&gt;</code></mark> elemen berikut.</p>
+        </section>
+
         <hr>
-        <p><img border=0 width=837 height=327 id="Picture 30" src="Gaya_files/image005.jpg"></p>
-        <hr>
-        <p>Elemen HTML &lt;gambar&gt;</p>
-        <p>&lt;picture&gt;Elemen HTML memberi pengembang web lebih banyak fleksibilitas dalam menentukan sumber daya gambar.
-        </p>
-        <p>The &lt;picture&gt;elemen berisi satu atau lebih &lt;source&gt;elemen, masing-masing mengacu pada gambar yang berbeda melalui srcset atribut. Dengan cara ini browser dapat memilih gambar yang paling sesuai dengan tampilan dan/atau perangkat saat
-            ini.
-        </p>
-        <p>Setiap &lt;source&gt;elemen memiliki mediaatribut yang menentukan kapan gambar paling cocok.
-        </p>
-        <p>Contoh :</p>
-        <p>Tampilkan gambar yang berbeda untuk ukuran layar yang berbeda:
-        </p>
-        <p>&lt;picture&gt;<br> &lt;source media=&quot;(min-width: 650px)&quot; srcset=&quot;img_food.jpg&quot;&gt;
-            <br> &lt;source media=&quot;(min-width: 465px)&quot; srcset=&quot;img_car.jpg&quot;&gt;
-            <br> &lt;img src=&quot;img_girl.jpg&quot;&gt;
-            <br> &lt;/picture&gt;
-        </p>
-        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_picture1" target="_blank">Cobalah sendiri &quot;</a></p>
-        <p><strong>Catatan:</strong> Selalu tentukan &lt;img&gt;elemen sebagai elemen anak terakhir dari &lt;picture&gt;elemen. The &lt;img&gt;elemen yang digunakan oleh browser yang tidak mendukung &lt;picture&gt;elemen, atau jika tidak ada &lt;source&gt;tag
-            cocok.
-        </p>
-        <hr>
-        <p>Kapan menggunakan Elemen Gambar</p>
-        <p>Ada dua tujuan utama untuk &lt;picture&gt;elemen:</p>
-        <p>1. Bandwidth</p>
-        <p>Jika Anda memiliki layar atau perangkat kecil, tidak perlu memuat file gambar besar. Browser akan menggunakan &lt;source&gt; elemen pertama dengan nilai atribut yang cocok, dan mengabaikan salah satu elemen berikut.</p>
-        <p>2. Dukungan Format</p>
-        <p>Beberapa browser atau perangkat mungkin tidak mendukung semua format gambar. Dengan menggunakan &lt;picture&gt;elemen tersebut, Anda dapat menambahkan gambar dari semua format, dan browser akan menggunakan format pertama yang dikenalinya, dan
-            mengabaikan salah satu elemen berikut.</p>
-        <p>Contoh :</p>
-        <p>Browser akan menggunakan format gambar pertama yang dikenalinya:
-        </p>
-        <p>&lt;picture&gt;<br> &lt;source srcset=&quot;img_avatar.png&quot;&gt;
-            <br> &lt;source srcset=&quot;img_girl.jpg&quot;&gt;
-            <br> &lt;img src=&quot;img_beatles.gif&quot; alt=&quot;Beatles&quot; style=&quot;width:auto;&quot;&gt;
-            <br> &lt;/picture&gt;
-        </p>
-        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_picture_format" target="_blank">Cobalah sendiri &quot;</a></p>
-        <p><strong>Catatan:</strong> Browser akan menggunakan &lt;source&gt;elemen pertama dengan nilai atribut yang cocok, dan mengabaikan &lt;source&gt;elemen berikut.</p>
-        <hr>
-        <p>Tag Gambar HTML</p>
-        <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=876 style='width:656.85pt;background:white;border-collapse:collapse;border:none'>
-            <tr>
-                <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:solid #CCCCCC 1.0pt;
-  border-bottom:none;border-right:none;padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                    <p><strong>Tag</strong></p>
-                </td>
-                <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:none;
-  border-bottom:none;border-right:solid #CCCCCC 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><strong><span style='color:black'>Description</span></strong></p>
-                </td>
-            </tr>
-            <tr>
-                <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;background:
-  #E7E9EB;padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                    <p><span style='color:black'><a
-                                    href="https://www.w3schools.com/tags/tag_img.asp">&lt;img&gt;</a></span>
-                    </p>
-                </td>
-                <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
-  background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Defines an image</span></p>
-                </td>
-            </tr>
-            <tr>
-                <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;padding:
-  6.0pt 6.0pt 6.0pt 12.0pt'>
-                    <p><span style='color:black'><a
-                                    href="https://www.w3schools.com/tags/tag_map.asp">&lt;map&gt;</a></span>
-                    </p>
-                </td>
-                <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
-  padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Defines an image map</span></p>
-                </td>
-            </tr>
-            <tr>
-                <td valign=top style='border:none;border-left:solid #CCCCCC 1.0pt;background:
-  #E7E9EB;padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                    <p><span style='color:black'><a
-                                    href="https://www.w3schools.com/tags/tag_area.asp">&lt;area&gt;</a></span>
-                    </p>
-                </td>
-                <td valign=top style='border:none;border-right:solid #CCCCCC 1.0pt;
-  background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Defines a clickable area inside
-                                an image map</span></p>
-                </td>
-            </tr>
-            <tr>
-                <td valign=top style='border-top:none;border-left:solid #CCCCCC 1.0pt;
-  border-bottom:solid #CCCCCC 1.0pt;border-right:none;padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                    <p><span style='color:black'><a
-                                    href="https://www.w3schools.com/tags/tag_picture.asp">&lt;picture&gt;</a></span>
-                    </p>
-                </td>
-                <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CCCCCC 1.0pt;
-  border-right:solid #CCCCCC 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Defines a container for multiple
-                                image resources</span></p>
-                </td>
-            </tr>
+
+        <h3>Tag Gambar HTML</h3>
+        <table class="table table-bordered w-auto">
+            <thead class="table-light">
+                <tr>
+                    <td>Tag</td>
+                    <td>Keterangan</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;img&gt;</td>
+                    <td>Mendefinisikan gambar</td>
+                </tr>
+                <tr>
+                    <td>&lt;map&gt;</td>
+                    <td>Mendefinisikan peta gambar</td>
+                </tr>
+                <tr>
+                    <td>&lt;area&gt;</td>
+                    <td>Mendefinisikan area yang dapat diklik di dalam peta gambar</td>
+                </tr>
+                <tr>
+                    <td>&lt;picture&gt;</td>
+                    <td>Mendefinisikan wadah untuk beberapa sumber gambar</td>
+                </tr>
+            </tbody>
         </table>
-        <p>Untuk daftar lengkap semua tag HTML yang tersedia, kunjungi
-            <a href="https://www.w3schools.com/tags/default.asp">Referensi
-                    Tag HTML</a> kami.
-        </p>
-        <p>Favicon HTML</p>
+
+        <!-- <p>Untuk daftar lengkap semua tag HTML yang tersedia, kunjungi <a href="https://www.w3schools.com/tags/default.asp">Referensi Tag HTML</a> kami.</p> -->
+
         <hr>
+
+        <h3>Favicon HTML</h3>
+
+
         <p>Favicon adalah gambar kecil yang ditampilkan di sebelah judul halaman di tab browser.</p>
         <hr>
         <p>Cara Menambahkan Favicon di HTML</p>

@@ -26,10 +26,12 @@
 <body>
     <div class="container-fluid">
 
-        <h2>Links HTML</h2>
-        <p>Links ditemukan di hampir semua halaman web. Links memungkinkan pengguna mengeklik jalan mereka dari halaman ke halaman.</p>
+
 
         <section>
+            <h2>Links HTML</h2>
+            <p>Links ditemukan di hampir semua halaman web. Links memungkinkan pengguna mengeklik jalan mereka dari halaman ke halaman
+            </p>
             <h4>Hyperlink</h5>
                 <p>Links HTML adalah hyperlink. Anda dapat mengklik link dan melompat ke dokumen lain. Saat Anda menggerakkan mouse di atas link, panah mouse akan berubah menjadi tangan kecil.</p>
                 <p class="bd-callout bd-callout-warning"><strong>Catatan:</strong> Links tidak harus berupa teks. Links dapat berupa gambar atau elemen HTML lainnya!.</p>
@@ -468,11 +470,11 @@
                     <td>Mendefinisikan hyperlink</td>
                 </tr>
             </table>
+
+            <!-- <p><span style='color:black'>Untuk daftar lengkap semua tag HTML yang tersedia, kunjungi </span><a href="https://www.w3schools.com/tags/default.asp">Referensi Tag HTML</a> kami.</p> -->
         </section>
 
         <hr>
-
-        <!-- <p><span style='color:black'>Untuk daftar lengkap semua tag HTML yang tersedia, kunjungi </span><a href="https://www.w3schools.com/tags/default.asp">Referensi Tag HTML</a> kami.</p> -->
 
         <section>
             <h4>Gambar HTML</h4>
@@ -1528,146 +1530,132 @@
                     </tr>
                 </tbody>
             </table>
+
+            <!-- <p>Untuk daftar lengkap semua tag HTML yang tersedia, kunjungi <a href="https://www.w3schools.com/tags/default.asp">Referensi Tag HTML</a> kami.</p> -->
         </section>
 
-        <!-- <p>Untuk daftar lengkap semua tag HTML yang tersedia, kunjungi <a href="https://www.w3schools.com/tags/default.asp">Referensi Tag HTML</a> kami.</p> -->
+        <hr>
+
+        <section>
+            <h3>Favicon HTML</h3>
+            <p>Favicon adalah gambar kecil yang ditampilkan di sebelah judul halaman di tab browser. <br> Cara Menambahkan Favicon di HTML. Anda dapat menggunakan gambar apa pun yang Anda suka sebagai favicon Anda. Anda juga dapat membuat favicon sendiri
+                di situs seperti <a href="https://favicon.cc/" target="_blank">https://favicon.cc</a>.</p>
+            <p class="moreInfo"><strong>Tip:</strong> Favicon adalah gambar kecil, jadi harus gambar sederhana dengan kontras tinggi.</p>
+            <p>Gambar favicon ditampilkan di sebelah kiri judul halaman di tab browser, seperti ini:</p>
+            <p><img border=0 width=485 height=82 id="Picture 32" src="files/Gaya_files/image006.png" alt="Contoh : favicon"></p>
+            <p>Untuk menambahkan favicon ke situs web Anda, simpan gambar favicon Anda ke direktori root server web Anda, atau buat folder di direktori root yang disebut gambar, dan simpan gambar favicon Anda di folder ini. Nama umum untuk gambar favicon
+                adalah &quot;favicon.ico&quot;.
+            </p>
+            <p>Selanjutnya, tambahkan <mark><code>&lt;link&gt;</code></mark> elemen ke file &quot;index.html&quot; Anda, setelah <mark><code>&lt;title&gt;</code></mark> elemen, seperti ini:</p>
+            <p>Contoh :</p>
+            <!-- <div class="contoh shadow-sm">
+            </div> -->
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <code>
+            &lt;!DOCTYPE html&gt; <br>
+            &lt;html&gt; <br>
+                &lt;head&gt; <br>
+                    &lt;title&gt;My Page Title&lt;/title&gt; <br>
+                    &lt;<b>link rel="icon" type="image/x-icon" href="/images/favicon.ico"</b>&gt; <br>
+                &lt;/head&gt; <br>
+                &lt;body&gt; <br>
+                    &lt;h1&gt;This is a Heading&lt;/h1&gt; <br>
+                    &lt;p&gt;This is a paragraph.&lt;/p&gt; <br>
+                &lt;/body&gt; <br>
+            &lt;/html&gt; <br>
+                </code>
+            </div>
+            <!-- <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div> -->
+            <p>Sekarang, simpan file &quot;index.html&quot; dan muat ulang di browser Anda. Tab browser Anda sekarang akan menampilkan gambar favicon Anda di sebelah kiri judul halaman.</p>
+            <hr>
+            <h4>Dukungan Format File Favicon</h4>
+            <p>Tabel berikut menunjukkan dukungan format file untuk gambar favicon:</p>
+            <table class="table table-bordered table-striped w-auto">
+                <thead class="table-light">
+                    <tr>
+                        <th>Browser</th>
+                        <th>ICO</th>
+                        <th>PNG</th>
+                        <th>GIF</th>
+                        <th>JPEG</th>
+                        <th>SVG</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Edge</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Chrome</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Firefox</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Opera</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>Safari</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
         <hr>
 
-        <h3>Favicon HTML</h3>
-        <p>Favicon adalah gambar kecil yang ditampilkan di sebelah judul halaman di tab browser. <br> Cara Menambahkan Favicon di HTML. Anda dapat menggunakan gambar apa pun yang Anda suka sebagai favicon Anda. Anda juga dapat membuat favicon sendiri di
-            situs seperti <a href="https://favicon.cc/" target="_blank">https://favicon.cc</a>.</p>
-        <p class="moreInfo"><strong>Tip:</strong> Favicon adalah gambar kecil, jadi harus gambar sederhana dengan kontras tinggi.</p>
-        <p>Gambar favicon ditampilkan di sebelah kiri judul halaman di tab browser, seperti ini:</p>
-        <p><img border=0 width=485 height=82 id="Picture 32" src="files/Gaya_files/image006.png" alt="Contoh : favicon"></p>
-        <p>Untuk menambahkan favicon ke situs web Anda, simpan gambar favicon Anda ke direktori root server web Anda, atau buat folder di direktori root yang disebut gambar, dan simpan gambar favicon Anda di folder ini. Nama umum untuk gambar favicon adalah
-            &quot;favicon.ico&quot;.
-        </p>
-        <p>Selanjutnya, tambahkan <mark><code>&lt;link&gt;</code></mark> elemen ke file &quot;index.html&quot; Anda, setelah <mark><code>&lt;title&gt;</code></mark> elemen, seperti ini:</p>
-        <p>Contoh :</p>
-        <!-- <div class="contoh shadow-sm">
-
-        </div> -->
-
-        <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-        <div class="bd-callout">
-            <code>
-        &lt;!DOCTYPE html&gt; <br>
-        &lt;html&gt; <br>
-            &lt;head&gt; <br>
-                &lt;title&gt;My Page Title&lt;/title&gt; <br>
-                &lt;<b>link rel="icon" type="image/x-icon" href="/images/favicon.ico"</b>&gt; <br>
-            &lt;/head&gt; <br>
-            &lt;body&gt; <br>
-                &lt;h1&gt;This is a Heading&lt;/h1&gt; <br>
-                &lt;p&gt;This is a paragraph.&lt;/p&gt; <br>
-            &lt;/body&gt; <br>
-        &lt;/html&gt; <br>
-    </code>
-        </div>
-        <!-- <hr>
-            <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
-        </div> -->
-
-        <p>Sekarang, simpan file &quot;index.html&quot; dan muat ulang di browser Anda. Tab browser Anda sekarang akan menampilkan gambar favicon Anda di sebelah kiri judul halaman.</p>
+        <section>
+            <h4>Ringkasan Bab</h4>
+            <ul>
+                <li>Gunakan <mark><code>&lt;link&gt;</code></mark> elemen HTML untuk menyisipkan favicon</li>
+            </ul>
+        </section>
 
         <hr>
 
-        <h4>Dukungan Format File Favicon</h4>
-        <p>Tabel berikut menunjukkan dukungan format file untuk gambar favicon:</p>
-        <table class="table table-bordered w-auto">
-            <thead class="table-light">
+        <section>
+            <h4>Tag Links HTML</h4>
+            <table class="table table-bordered w-auto">
+                <thead class="table-light">
+                    <tr>
+                        <td>Tag</td>
+                        <td>Keterangan</td>
+                    </tr>
+                </thead>
                 <tr>
-                    <td>Browser</td>
-                    <td>ICO</td>
-                    <td>PNG</td>
-                    <td>GIF</td>
-                    <td>JPEG</td>
-                    <td>SVG</td>
+                    <td><code>&lt;link&gt;</code></td>
+                    <td>Mendefinisikan hubungan antara dokumen dan sumber daya eksternal</td>
                 </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Edge</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                </tr>
-                <tr>
-                    <td>Chrome</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                </tr>
-                <tr>
-                    <td>Firefox</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                </tr>
-                <tr>
-                    <td>Opera</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                </tr>
-                <tr>
-                    <td>Safari</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <hr>
-
-        <h4>Ringkasan Bab</h4>
-        <ul style='margin-top:0cm' type=disc>
-            <li>Gunakan &lt;link&gt;elemen HTML untuk menyisipkan favicon</li>
-        </ul>
-        <hr>
-        <p>Tag Links HTML</p>
-        <table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width=876 style='width:656.85pt;background:white;border-collapse:collapse;border:none'>
-            <tr>
-                <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:solid #CCCCCC 1.0pt;
-  border-bottom:none;border-right:none;padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                    <p><strong>Tag</strong></p>
-                </td>
-                <td valign=top style='border-top:solid #CCCCCC 1.0pt;border-left:none;
-  border-bottom:none;border-right:solid #CCCCCC 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><strong><span style='color:black'>Description</span></strong></p>
-                </td>
-            </tr>
-            <tr>
-                <td valign=top style='border-top:none;border-left:solid #CCCCCC 1.0pt;
-  border-bottom:solid #CCCCCC 1.0pt;border-right:none;background:#E7E9EB;
-  padding:6.0pt 6.0pt 6.0pt 12.0pt'>
-                    <p><span style='color:black'><a
-                                    href="https://www.w3schools.com/tags/tag_link.asp">&lt;link&gt;</a></span>
-                    </p>
-                </td>
-                <td valign=top style='border-top:none;border-left:none;border-bottom:solid #CCCCCC 1.0pt;
-  border-right:solid #CCCCCC 1.0pt;background:#E7E9EB;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                    <p><span style='color:black'>Defines the relationship between
-                                a document and an external resource</span></p>
-                </td>
-            </tr>
-        </table>
-        <p><span style='color:black'>Untuk daftar lengkap semua tag
-                    HTML yang tersedia, kunjungi </span><a href="https://www.w3schools.com/tags/default.asp">Referensi
-                    Tag
-                    HTML</a> kami.</p>
+            </table>
+            <p><span style='color:black'>Untuk daftar lengkap semua tag HTML yang tersedia, kunjungi </span><a href="tag-html.html" target="_blank">Referensi Tag HTML</a> kami.</p>
+        </section>
     </div>
 
     <script src="../assets/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">

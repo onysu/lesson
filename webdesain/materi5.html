@@ -183,8 +183,9 @@
                     <p>CSS dapat ditambahkan ke dokumen HTML dengan 3 cara:</p>
                     <ul type="square">
                         <li><b>Inline</b> - dengan menggunakan styleatribut di dalam elemen HTML</li>
-                        <li><b>Internal</b> - dengan menggunakan <code>&lt;style&gt;</code> elemen di bagian <code>&lt;head&gt;</code></li>
-                        <li><b>Eksternal</b> - dengan menggunakan <code>&lt;link&gt;</code> elemen untuk menautkan ke file CSS eksternal.
+                        <li><b>Internal</b> - dengan menggunakan <mark><code>&lt;style&gt;</mark></code> elemen di bagian <mark><code>&lt;head&gt;</mark></code>
+                        </li>
+                        <li><b>Eksternal</b> - dengan menggunakan <mark><code>&lt;link&gt;</mark></code> elemen untuk menautkan ke file CSS eksternal.
                         </li>
                     </ul>
                     <p>Cara paling umum untuk menambahkan CSS, adalah dengan menyimpan gaya di file CSS eksternal. Namun, dalam tutorial ini kita akan menggunakan gaya inline dan internal, karena ini lebih mudah untuk didemonstrasikan, dan lebih mudah bagi
@@ -193,22 +194,22 @@
 
                 <section id="InlineCSS">
                     <h3>Inline CSS / CSS sebaris</h3>
-                    <p>CSS sebaris digunakan untuk menerapkan gaya unik ke satu elemen HTML. CSS sebaris menggunakan styleatribut elemen HTML. <br> Contoh berikut menyetel warna teks <code>&lt;h1&gt;</code> elemen menjadi <span style="color: blue;">biru</span>,
-                        dan warna teks <code>&lt;p&gt;</code> elemen menjadi <span style="color: red;">merah</span>:</p>
+                    <p>CSS sebaris digunakan untuk menerapkan gaya unik ke satu elemen HTML. CSS sebaris menggunakan styleatribut elemen HTML. <br> Contoh berikut menyetel warna teks <mark><code>&lt;h1&gt;</mark></code> elemen menjadi <span style="color: blue;">biru</span>,
+                        dan warna teks <mark><code>&lt;p&gt;</mark></code> elemen menjadi <span style="color: red;">merah</span>:</p>
                     <p>Contoh :</p>
 
-                    <div class="contoh p-3 shadow-sm">
+                    <div class="contoh">
                         <h1 style="color:blue;">Judul Biru</h1>
                         <p style="color:red;">Sebuah paragraf merah.</p>
                     </div>
 
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="highlight">
-                        <code>
+                        <mark><code>
               &lt;h1 style="color:blue;"&gt;Judul Biru&lt;/h1&gt; <br>
               <br>
               &lt;p style="color:red;"&gt;Sebuah paragraf merah.&lt;/p&gt; <br>
-            </code>
+            </mark></code>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                 sendiri</a></p>
@@ -218,9 +219,10 @@
                 <section id="InternalCSS">
                     <h3>Internal CSS</h3>
                     <p>Internal CSS digunakan untuk menentukan gaya untuk satu halaman HTML. Internal CSS didefinisikan di
-                        <code>&lt;head&gt;</code> bagian halaman HTML, di dalam <code>&lt;style&gt;</code> elemen. Contoh : berikut menyetel warna teks SEMUA <code>&lt;h1&gt;</code> elemen (pada halaman itu) menjadi biru, dan warna teks SEMUA <code>&lt;p&gt;</code>                        elemen menjadi merah. Selain itu, halaman akan ditampilkan dengan warna latar belakang <q>powderblue</q>.</p>
+                        <mark><code>&lt;head&gt;</mark></code> bagian halaman HTML, di dalam <mark><code>&lt;style&gt;</mark></code> elemen. Contoh : berikut menyetel warna teks SEMUA <mark><code>&lt;h1&gt;</mark></code> elemen (pada halaman itu) menjadi
+                        biru, dan warna teks SEMUA <mark><code>&lt;p&gt;</mark></code> elemen menjadi merah. Selain itu, halaman akan ditampilkan dengan warna latar belakang <q>powderblue</q>.</p>
                     <p>Contoh :</p>
-                    <div class="contoh p-3 shadow-sm" style="background-color: powderblue;">
+                    <div class="contoh p-3" style="background-color: powderblue;">
                         <style>
                             .internal h1 {
                                 color: blue;
@@ -238,7 +240,7 @@
                     </div>
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="highlight">
-                        <code>
+                        <mark><code>
               &lt;!DOCTYPE html&gt; <br>
               &lt;html&gt; <br>
               &lt;head&gt; <br>
@@ -261,7 +263,7 @@
               &lt;p&gt;Ini adalah sebuah paragraf.&lt;/p&gt; <br>
               &lt;/body&gt; <br>
               &lt;/html&gt; <br>
-            </code>
+            </mark></code>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                 sendiri</a></p>
@@ -270,7 +272,7 @@
 
                 <section id="ExternalCSS">
                     <h3>External CSS</h3>
-                    <p>Lembar gaya eksternal digunakan untuk menentukan gaya untuk banyak halaman HTML. Untuk menggunakan lembar style eksternal, tambahkan tautan ke dalamnya di <code>&lt;head&gt;</code> bagian setiap halaman HTML.</p>
+                    <p>Lembar gaya eksternal digunakan untuk menentukan gaya untuk banyak halaman HTML. Untuk menggunakan lembar style eksternal, tambahkan tautan ke dalamnya di <mark><code>&lt;head&gt;</mark></code> bagian setiap halaman HTML.</p>
 
                     <h6>Latihan :</h6>
                     <p>ada 2 file :</p>
@@ -282,7 +284,7 @@
                     <p><q><strong>index.html</strong></q></p>
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="highlight">
-                        <code>
+                        <mark><code>
               &lt;!DOCTYPE html&gt; <br>
               &lt;html&gt; <br>
               &lt;head&gt; <br>
@@ -293,7 +295,7 @@
               &lt;p&gt;Ini adalah sebuah paragraf.&lt;/p&gt; <br>
               &lt;/body&gt; <br>
               &lt;/html&gt; <br>
-            </code>
+            </mark></code>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                 sendiri</a></p>
@@ -304,7 +306,7 @@
                     <p><q><strong>styles.css</strong></q></p>
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="highlight">
-                        <code>
+                        <mark><code>
               body { <br>
               &nbsp;&nbsp;background-color: powderblue; <br>
               } <br>
@@ -314,7 +316,7 @@
               p { <br>
               &nbsp;&nbsp;color: red; <br>
               } <br>
-            </code>
+            </mark></code>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                 sendiri</a></p>
@@ -327,22 +329,25 @@
                     <p>Di sini, kami akan mendemonstrasikan beberapa properti CSS yang umum digunakan. Anda akan belajar lebih banyak tentang mereka nanti.
                         <table class="table table-bordered w-auto">
                             <tr>
-                                <td><code>color</code></td>
+                                <td><mark><code>color</mark></code>
+                                </td>
                                 <td>properti CSS mendefinisikan warna teks yang akan digunakan.</td>
                             </tr>
                             <tr>
-                                <td><code>font-family</code></td>
+                                <td><mark><code>font-family</mark></code>
+                                </td>
                                 <td>properti CSS mendefinisikan font yang akan digunakan.</td>
                             </tr>
                             <tr>
-                                <td><code>font-size</code></td>
+                                <td><mark><code>font-size</mark></code>
+                                </td>
                                 <td>properti CSS mendefinisikan ukuran teks yang akan digunakan.</td>
                             </tr>
                         </table>
 
                         <p>Contoh :</p>
-                        <p>Penggunaan warna CSS, <code>font-family</code> dan properti <code>font-size</code>:</p>
-                        <div class="contoh p-3 shadow-sm">
+                        <p>Penggunaan warna CSS, <mark><code>font-family</mark></code> dan properti <mark><code>font-size</mark></code>:</p>
+                        <div class="contoh">
                             <style>
                                 .WarnaFontUkuranCSS h1 {
                                     color: blue;
@@ -366,7 +371,7 @@
 
                         <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                         <div class="highlight">
-                            <code>
+                            <mark><code>
                 &lt;!DOCTYPE html&gt;<br> &lt;html&gt;
                 <br> &lt;head&gt;
                 <b>
@@ -388,7 +393,7 @@
                 <br> &lt;h1&gt;Ini adalah judul&lt;/h1&gt;<br> &lt;p&gt;Ini adalah sebuah paragraf.&lt;/p&gt;<br>
                 <br> &lt;/body&gt;
                 <br> &lt;/html&gt;
-              </code>
+              </mark></code>
                             <hr>
                             <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                   sendiri</a></p>
@@ -397,11 +402,11 @@
 
                 <section id="BorderCSS">
                     <h3>Border CSS</h3>
-                    <p><code>border</code> properti CSS mendefinisikan perbatasan di sekitar elemen HTML.</p>
+                    <p><mark><code>border</mark></code> properti CSS mendefinisikan perbatasan di sekitar elemen HTML.</p>
                     <p class="moreInfo text-break"><b>Tip:</b> Anda dapat menentukan batas untuk hampir semua elemen HTML.</p>
-                    <p>Contoh : Penggunaan properti <code>border</code> CSS: </p>
+                    <p>Contoh : Penggunaan properti <mark><code>border</mark></code> CSS: </p>
 
-                    <div class="contoh p-3 shadow-sm">
+                    <div class="contoh">
                         <h1>Ini adalah judul</h1>
                         <p style="border: 2px solid powderblue;">Ini adalah sebuah paragraf.</p>
                         <p style="border: 2px solid powderblue;">Ini adalah sebuah paragraf.</p>
@@ -411,7 +416,7 @@
 
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="highlight">
-                        <code>
+                        <mark><code>
                           &lt;!DOCTYPE html&gt; <br>
                           &lt;html&gt; <br>
                             &lt;head&gt; <br>
@@ -430,7 +435,7 @@
                               &lt;p&gt; Ini adalah sebuah paragraf.&lt;/p&gt; <br>
                             &lt;/body&gt; <br>
                           &lt;/html&gt; <br>
-                        </code>
+                        </mark></code>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
                     </div>
@@ -438,10 +443,10 @@
 
                 <section id="PaddingCSS">
                     <h3>Padding CSS</h3>
-                    <p><code>padding</code> properti CSS mendefinisikan <code>padding</code> (spasi) antara teks dan
-                        <code>border</code>. <br> Penggunaan <code>border</code> CSS dan properti <code>padding</code>:</p>
+                    <p><mark><code>padding</mark></code> properti CSS mendefinisikan <mark><code>padding</mark></code> (spasi) antara teks dan
+                        <mark><code>border</mark></code>. <br> Penggunaan <mark><code>border</mark></code> CSS dan properti <mark><code>padding</mark></code>:</p>
 
-                    <div class="contoh p-3 shadow-sm">
+                    <div class="contoh">
                         <style>
                             .PaddingCSS p {
                                 border: 2px solid powderblue;
@@ -458,7 +463,7 @@
 
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="highlight">
-                        <code>
+                        <mark><code>
                             &lt;!DOCTYPE html&gt; <br>
                             &lt;html&gt; <br>
                                 &lt;head&gt; <br>
@@ -478,7 +483,7 @@
                                     &lt;p&gt;Ini adalah sebuah paragraf.&lt;/p&gt; <br>
                                 &lt;/body&gt; <br>
                             &lt;/html&gt; <br>
-                        </code>
+                        </mark></code>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
                     </div>
@@ -486,10 +491,10 @@
 
                 <section id="MarginCSS">
                     <h3>Margin CSS</h3>
-                    <p><code>margin</code> properti CSS mendefinisikan <code>margin</code> (spasi) di luar
-                        <code>border</code>. <br> Penggunaan <code>border</code> CSS dan properti <code>margin</code>:</p>
+                    <p><mark><code>margin</mark></code> properti CSS mendefinisikan <mark><code>margin</mark></code> (spasi) di luar
+                        <mark><code>border</mark></code>. <br> Penggunaan <mark><code>border</mark></code> CSS dan properti <mark><code>margin</mark></code>:</p>
 
-                    <div class="contoh p-3 shadow-sm">
+                    <div class="contoh">
                         <style>
                             .MarginCSS p {
                                 border: 2px solid powderblue;
@@ -505,7 +510,7 @@
 
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="highlight">
-                        <code>
+                        <mark><code>
                             &lt;!DOCTYPE html&gt; <br>
                             &lt;html&gt; <br>
                                 &lt;head&gt; <br>
@@ -527,7 +532,7 @@
                                     &lt;p&gt;This is a paragraph.&lt;/p&gt; <br>
                                 &lt;/body&gt; <br>
                             &lt;/html&gt; <br>
-                        </code>
+                        </mark></code>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
                     </div>
@@ -539,7 +544,7 @@
 
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="highlight">
-                        <code>
+                        <mark><code>
                             &lt;!DOCTYPE html&gt; <br>
                             &lt;html&gt; <br>
                                 &lt;head&gt; <br>
@@ -555,7 +560,7 @@
 <br>
                                 &lt;/body&gt; <br>
                             &lt;/html&gt; <br>
-                        </code>
+                        </mark></code>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
                     </div>
@@ -563,19 +568,19 @@
                     <p>Contoh ini menautkan ke lembar style yang terletak di folder html di situs web saat ini: </p>
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="highlight">
-                        <code>
+                        <mark><code>
               &lt;link rel="stylesheet"
               href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"&gt;
-            </code>
+            </mark></code>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
                     </div>
                     <p>Contoh ini menautkan ke lembar style yang terletak di folder yang sama dengan halaman saat ini:</p>
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="highlight">
-                        <code>
+                        <mark><code>
               &lt;link rel="stylesheet" href="styles.css"&gt;
-            </code>
+            </mark></code>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
                     </div>
@@ -584,18 +589,18 @@
                 <section id="">
                     <h3>Ringkasan Bab</h3>
                     <ul style='margin-top:0cm' type=disc>
-                        <li>Gunakan <code>style</code> atribut HTML untuk penataan sebaris.</li>
-                        <li>Gunakan <code>&lt;style&gt;</code> elemen HTML untuk mendefinisikan CSS internal.</li>
-                        <li>Gunakan <code>&lt;link&gt;</code> elemen HTML untuk merujuk ke file CSS eksternal.</li>
-                        <li>Gunakan <code>&lt;head&gt;</code> elemen HTML untuk menyimpan elemen
-                            <code>&lt;style&gt;</code> dan
-                            <code>&lt;link&gt;</code>.</li>
-                        <li>Gunakan <code>color</code> properti CSS untuk warna teks.</li>
-                        <li>Gunakan <code>font-family</code> properti CSS untuk font teks.</li>
-                        <li>Gunakan <code>font-size</code> properti CSS untuk ukuran teks.</li>
-                        <li>Gunakan <code>border</code> properti CSS untuk perbatasan.</li>
-                        <li>Gunakan <code>padding</code> properti CSS untuk ruang di dalam perbatasan.</li>
-                        <li>Gunakan <code>margin</code> properti CSS untuk ruang di luar perbatasan.</li>
+                        <li>Gunakan <mark><code>style</mark></code> atribut HTML untuk penataan sebaris.</li>
+                        <li>Gunakan <mark><code>&lt;style&gt;</mark></code> elemen HTML untuk mendefinisikan CSS internal.</li>
+                        <li>Gunakan <mark><code>&lt;link&gt;</mark></code> elemen HTML untuk merujuk ke file CSS eksternal.</li>
+                        <li>Gunakan <mark><code>&lt;head&gt;</mark></code> elemen HTML untuk menyimpan elemen
+                            <mark><code>&lt;style&gt;</mark></code> dan
+                            <mark><code>&lt;link&gt;</mark></code>.</li>
+                        <li>Gunakan <mark><code>color</mark></code> properti CSS untuk warna teks.</li>
+                        <li>Gunakan <mark><code>font-family</mark></code> properti CSS untuk font teks.</li>
+                        <li>Gunakan <mark><code>font-size</mark></code> properti CSS untuk ukuran teks.</li>
+                        <li>Gunakan <mark><code>border</mark></code> properti CSS untuk perbatasan.</li>
+                        <li>Gunakan <mark><code>padding</mark></code> properti CSS untuk ruang di dalam perbatasan.</li>
+                        <li>Gunakan <mark><code>margin</mark></code> properti CSS untuk ruang di luar perbatasan.</li>
                     </ul>
                 </section>
 
@@ -610,11 +615,13 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><code>&lt;style&gt;</code></td>
+                                <td><mark><code>&lt;style&gt;</mark></code>
+                                </td>
                                 <td>Mendefinisikan informasi gaya untuk dokumen HTML.</td>
                             </tr>
                             <tr>
-                                <td><code>&lt;link&gt;</code></td>
+                                <td><mark><code>&lt;link&gt;</mark></code>
+                                </td>
                                 <td>Mendefinisikan link antara dokumen dan sumber daya eksternal.</td>
                             </tr>
                         </tbody>
@@ -623,7 +630,7 @@
                 </section>
 
                 <section>
-                    <div class="contoh p-3 shadow-sm">
+                    <div class="contoh">
                         <div class="d-flex justify-content-center align-content-center bg-black" style="flex-direction: column; border:1px dotted #dee2e6;padding:10px;margin:0;">
                             <div class="d-flex justify-content-center align-content-center text-white">
                                 <div class="col">position</div>
@@ -632,17 +639,20 @@
                             <div style="border:1px dotted #999;padding:10px;margin:10px;background-color:#eee ">
                                 <div class="d-flex justify-content-center align-content-center">
                                     <div class="col">margin</div>
-                                    <div class="col"><code>10px</code></div>
+                                    <div class="col"><mark><code>10px</mark></code>
+                                    </div>
                                 </div>
                                 <div style="border:1px dotted #999;padding:10px;margin:10px;background-color:antiquewhite ">
                                     <div class="d-flex justify-content-center align-content-center">
                                         <div class="col">border</div>
-                                        <div class="col"><code>1px dotted #999</code></div>
+                                        <div class="col"><mark><code>1px dotted #999</mark></code>
+                                        </div>
                                     </div>
                                     <div style="border:1px dotted #999;padding:10px;margin:10px;background-color: lightyellow;">
                                         <div class="d-flex justify-content-center align-content-center">
                                             <div class="col">padding</div>
-                                            <div class="col"><code>10px</code></div>
+                                            <div class="col"><mark><code>10px</mark></code>
+                                            </div>
                                         </div>
                                         <div style="border:1px dotted #999;padding:10px;margin:10px;background-color: orchid;color: white;">
                                             ukuran layar dalam pixel

@@ -173,7 +173,7 @@
                     <p>Cascading Style Sheets (CSS) digunakan untuk memformat tata letak halaman web. Dengan CSS, Anda dapat mengontrol warna, font, ukuran teks, jarak antar elemen, bagaimana elemen diposisikan dan ditata, gambar latar belakang atau warna
                         latar apa yang akan digunakan, tampilan berbeda untuk perangkat dan ukuran layar yang berbeda, dan lebih banyak!
                     </p>
-                    <p class="moreInfo text-break"><b>Tip:</b> Kata <b>cascading</b> berarti bahwa gaya yang diterapkan ke elemen induk juga akan diterapkan ke semua elemen turunan di dalam induk. Jadi, jika Anda mengatur warna teks isi ke <q>blue</q>, semua judul, paragraf, dan elemen
+                    <p class="moreInfo text-break"><b>Tip:</b> Kata <b>cascading</b> berarti bahwa style yang diterapkan ke elemen induk juga akan diterapkan ke semua elemen turunan di dalam induk. Jadi, jika Anda mengatur warna teks isi ke <q>blue</q>, semua judul, paragraf, dan elemen
                         teks lain di dalam badan juga akan mendapatkan warna yang sama (kecuali jika Anda menentukan yang lain)!.
                     </p>
                 </section>
@@ -182,20 +182,20 @@
                     <h3>Menggunakan CSS</h3>
                     <p>CSS dapat ditambahkan ke dokumen HTML dengan 3 cara:</p>
                     <ul type="square">
-                        <li><b>Inline</b> - dengan menggunakan styleatribut di dalam elemen HTML</li>
+                        <li><b>Inline</b> - dengan menggunakan <mark><code>&lt;style&gt;</mark></code> atribut di dalam elemen HTML</li>
                         <li><b>Internal</b> - dengan menggunakan <mark><code>&lt;style&gt;</mark></code> elemen di bagian <mark><code>&lt;head&gt;</mark></code>
                         </li>
                         <li><b>Eksternal</b> - dengan menggunakan <mark><code>&lt;link&gt;</mark></code> elemen untuk menautkan ke file CSS eksternal.
                         </li>
                     </ul>
-                    <p>Cara paling umum untuk menambahkan CSS, adalah dengan menyimpan gaya di file CSS eksternal. Namun, dalam tutorial ini kita akan menggunakan gaya inline dan internal, karena ini lebih mudah untuk didemonstrasikan, dan lebih mudah bagi
-                        Anda untuk mencobanya sendiri.</p>
+                    <p>Cara paling umum untuk menambahkan CSS, adalah dengan menyimpan <mark><code>&lt;style&gt;</mark></code> di file CSS eksternal. Namun, dalam tutorial ini kita akan menggunakan <mark><code>&lt;style&gt;</mark></code> inline dan internal,
+                        karena ini lebih mudah untuk didemonstrasikan, dan lebih mudah bagi Anda untuk mencobanya sendiri.</p>
                 </section>
 
                 <section id="InlineCSS">
                     <h3>Inline CSS / CSS sebaris</h3>
-                    <p>CSS sebaris digunakan untuk menerapkan gaya unik ke satu elemen HTML. CSS sebaris menggunakan styleatribut elemen HTML. <br> Contoh berikut menyetel warna teks <mark><code>&lt;h1&gt;</mark></code> elemen menjadi <span style="color: blue;">biru</span>,
-                        dan warna teks <mark><code>&lt;p&gt;</mark></code> elemen menjadi <span style="color: red;">merah</span>:</p>
+                    <p>CSS sebaris digunakan untuk menerapkan <mark><code>&lt;style&gt;</mark></code> unik ke satu elemen HTML. CSS sebaris menggunakan <mark><code>&lt;style&gt;</mark></code> atribut elemen HTML. <br> Contoh berikut menyetel warna teks <mark><code>&lt;h1&gt;</mark></code>
+                        elemen menjadi <span style="color: blue;">biru</span>, dan warna teks <mark><code>&lt;p&gt;</mark></code> elemen menjadi <span style="color: red;">merah</span>:</p>
                     <p>Contoh :</p>
 
                     <div class="contoh">
@@ -218,11 +218,13 @@
 
                 <section id="InternalCSS">
                     <h3>Internal CSS</h3>
-                    <p>Internal CSS digunakan untuk menentukan gaya untuk satu halaman HTML. Internal CSS didefinisikan di
-                        <mark><code>&lt;head&gt;</mark></code> bagian halaman HTML, di dalam <mark><code>&lt;style&gt;</mark></code> elemen. Contoh : berikut menyetel warna teks SEMUA <mark><code>&lt;h1&gt;</mark></code> elemen (pada halaman itu) menjadi
-                        biru, dan warna teks SEMUA <mark><code>&lt;p&gt;</mark></code> elemen menjadi merah. Selain itu, halaman akan ditampilkan dengan warna latar belakang <q>powderblue</q>.</p>
+                    <p>Internal CSS digunakan untuk menentukan style untuk satu halaman HTML. Internal CSS didefinisikan di
+                        <mark><code>&lt;head&gt;</mark></code> bagian halaman HTML, di dalam <mark><code>&lt;style&gt;</mark></code> elemen. Contoh : berikut menyetel warna teks <strong>SEMUA</strong> <mark><code>&lt;h1&gt;</mark></code> elemen (pada
+                        halaman itu) menjadi
+                        <span style="color: blueviolet;">biru</span>, dan warna teks <strong>SEMUA</strong> <mark><code>&lt;p&gt;</mark></code> elemen menjadi <span style="color: red;">merah</span>. Selain itu, halaman akan ditampilkan dengan warna latar
+                        belakang <q>orange</q>.</p>
                     <p>Contoh :</p>
-                    <div class="contoh" style="background-color: powderblue;">
+                    <div class="contoh" style="background-color: orange;">
                         <style>
                             .internal h1 {
                                 color: blue;
@@ -272,7 +274,7 @@
 
                 <section id="ExternalCSS">
                     <h3>External CSS</h3>
-                    <p>Lembar gaya eksternal digunakan untuk menentukan gaya untuk banyak halaman HTML. Untuk menggunakan lembar style eksternal, tambahkan tautan ke dalamnya di <mark><code>&lt;head&gt;</mark></code> bagian setiap halaman HTML.</p>
+                    <p>Lembar style eksternal digunakan untuk menentukan style untuk banyak halaman HTML. Untuk menggunakan lembar style eksternal, tambahkan tautan ke dalamnya di <mark><code>&lt;head&gt;</mark></code> bagian setiap halaman HTML.</p>
 
                     <h6>Latihan :</h6>
                     <p>ada 2 file :</p>
@@ -300,7 +302,7 @@
                         <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                 sendiri</a></p>
                     </div>
-                    <p>Lembar gaya eksternal dapat ditulis dalam editor teks apa pun. File tidak boleh berisi kode HTML apa pun, dan harus disimpan dengan <strong>ekstensi.css</strong>. Berikut adalah tampilan file
+                    <p>Lembar style eksternal dapat ditulis dalam editor teks apa pun. File tidak boleh berisi kode HTML apa pun, dan harus disimpan dengan <strong>ekstensi.css</strong>. Berikut adalah tampilan file
                         <q><strong>styles.css</strong></q>:
                     </p>
                     <p><q><strong>styles.css</strong></q></p>
@@ -617,7 +619,7 @@
                             <tr>
                                 <td><mark><code>&lt;style&gt;</mark></code>
                                 </td>
-                                <td>Mendefinisikan informasi gaya untuk dokumen HTML.</td>
+                                <td>Mendefinisikan informasi style untuk dokumen HTML.</td>
                             </tr>
                             <tr>
                                 <td><mark><code>&lt;link&gt;</mark></code>

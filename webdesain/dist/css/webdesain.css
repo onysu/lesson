@@ -254,8 +254,7 @@
  ul {
      padding-left: 1.25rem;
  }
- 
- .fs-5 {
+ /* .fs-5 {
      font-size: 1.25rem !important;
      font-weight: 500;
  }
@@ -263,7 +262,7 @@
  .fs-6 {
      font-size: 1rem !important;
      font-weight: 500;
- }
+ } */
  
  kbd {
      background-color: lavenderblush;
@@ -271,11 +270,10 @@
      /* border-color: #dee2e6; */
      border: 1px solid #dee2e6;
  }
- 
- strong {
+ /* strong {
      font-size: 1rem !important;
      font-weight: 600;
- }
+ } */
  
  .moreInfo {
      clear: both;
@@ -289,26 +287,23 @@
  section {
      padding: .7rem 0;
  }
- 
- code {
+ /* code {
      font-size: inherit;
-     /* background-color: #EEEEEE; */
+     background-color: #EEEEEE;
      font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New;
-     /* color: black; */
-     /* font-family: Consolas, Menlo, "courier new", monospace; */
-     /* font-size: 16px; */
- }
- 
- pre {
-     /* font-size: inherit; */
+     color: black;
+     font-family: Consolas, Menlo, "courier new", monospace;
+     font-size: 16px;
+ } */
+ /* pre {
+     font-size: inherit;
      font-size: 0.875em;
      font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New;
- }
- 
- .btn-clipboard {
+ } */
+ /* .btn-clipboard {
      position: absolute;
      top: 1.35rem;
-     /* top: 0.65rem; */
+     top: 0.65rem;
      right: 0.65rem;
      z-index: 10;
      display: block;
@@ -318,7 +313,7 @@
      background-color: #fff;
      border: 1px solid wheat;
      border-radius: 0.25rem;
- }
+ } */
  
  .contoh {
      border: 1px solid #ddd;
@@ -379,13 +374,11 @@
      background-color: #fff;
      border-left-width: 0.25rem;
  }
- 
- .highlight {
+ /* .highlight {
      padding: 1.25rem 1.5rem;
      margin-top: 1.25rem;
      margin-bottom: 1.25rem;
      border-left: 1px solid deepskyblue;
-     /* border-left: 1px solid #e9ecef; */
      border-left-width: 0.25rem;
      border-radius: 0.25rem;
      background-color: #fff;
@@ -393,9 +386,8 @@
      border-right: 1px solid rgb(221, 221, 221);
      border-bottom: 1px solid rgb(221, 221, 221);
      box-shadow: rgb(0 0 0 / 8%) 0px 0.125rem 0.25rem !important;
- }
- 
- @media (min-width: 576px) {
+ } */
+ /* @media (min-width: 576px) {
      .bd-content .highlight {
          margin-right: 0;
          margin-left: 0;
@@ -406,16 +398,16 @@
      .highlight {
          padding: 1rem 1.5rem;
      }
- }
+ } */
  /* w3 css */
- 
- .w3-code {
+ /* .w3-code {
      width: auto;
      background-color: #fff;
      padding: 8px 12px;
      border-left: 4px solid #4CAF50;
      word-wrap: break-word;
- }
+ } */
+ /* tag-code */
  
  span.tagnamecolor {
      color: brown;
@@ -432,6 +424,7 @@
  span.attributecolor {
      color: red;
  }
+ /* tag-code */
  
  .nav-tabs .nav-link.active {
      background-color: mistyrose;
@@ -447,12 +440,72 @@
      border-radius: calc(0.25rem - 1px);
      padding: 0rem 0.2em;
  }
- 
- .btn-warning {
+ /* .btn-warning {
      color: white;
+ } */
+ /* .bd-content .highlight {
+     margin-right: unset;
+     margin-left: unset;
+ } */
+ /* bd-clipboard */
+ 
+ .bd-clipboard {
+     position: relative;
+     display: none;
+     float: right;
+ }
+ 
+ @media (min-width: 768px) {
+     .bd-clipboard {
+         display: block;
+     }
+ }
+ 
+ .btn-clipboard {
+     position: absolute;
+     top: 0.65rem;
+     right: 0.65rem;
+     z-index: 10;
+     display: block;
+     padding: 0.25rem 0.5rem;
+     font-size: .65em;
+     color: #0d6efd;
+     background-color: #fff;
+     border: 1px solid;
+     border-radius: 0.25rem;
+ }
+ 
+ .bd-clipboard+.highlight {
+     margin-top: 0;
+ }
+ /* highlight */
+ 
+ .highlight {
+     padding: 1rem;
+     margin-bottom: 1rem;
+     background-color: white;
+     /* background-color: #f8f9fa; */
+ }
+ 
+ @media (min-width: 576px) {
+     .bd-content .highlight {
+         margin-right: 0;
+         margin-left: 0;
+     }
  }
  
  .bd-content .highlight {
      margin-right: unset;
      margin-left: unset;
+     /* margin-right: -0.75rem;
+     margin-left: -0.75rem; */
+ }
+ 
+ .highlight pre {
+     padding: 0;
+     margin-top: 0.65rem;
+     margin-bottom: 0.65rem;
+     white-space: pre;
+     background-color: transparent;
+     border: 0;
  }

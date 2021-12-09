@@ -69,6 +69,7 @@
                     </tr>
                 </table>
             </div>
+
             <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
             <div class="bd-callout">
                 <code>
@@ -399,9 +400,8 @@
 
         <section>
             <h2>Border Tabel HTML</h2>
-            <p>Tabel HTML dapat memiliki batas gaya dan bentuk yang berbeda.</p>
-            <p>Cara Menambahkan Border</p>
-            <p>Saat Anda menambahkan batas ke tabel, Anda juga menambahkan batas di sekitar setiap sel tabel:</p>
+            <p>Tabel HTML dapat memiliki batas gaya dan bentuk yang berbeda. <br> Cara Menambahkan Border :</p>
+            <p>Saat Anda menambahkan <mark><code>border</code></mark> ke tabel, Anda juga menambahkan <mark><code>border</code></mark> di sekitar setiap sel tabel:</p>
             <table style="width:30%;border: 1px solid #282A35;">
                 <tbody>
                     <tr>
@@ -421,93 +421,76 @@
                     </tr>
                 </tbody>
             </table>
+            <br>
+
+            <p>Untuk menambahkan batas, gunakan <mark><code>border</code></mark> properti CSS pada <mark><code>table</code></mark>, <mark><code>th</code></mark>, dan <mark><code>td</code></mark> elemen: <br> Contoh :</p>
+
+            <div class="contoh">
+                <h4>Tabel Dengan Border</h4>
+                <p>Gunakan properti perbatasan CSS untuk menambahkan batas ke tabel.</p>
+                <table style="width:100%;border: 1px solid black;">
+                    <tr>
+                        <th style="border: 1px solid black;">Firstname</th>
+                        <th style="border: 1px solid black;">Lastname</th>
+                        <th style="border: 1px solid black;">Age</th>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">Jill</td>
+                        <td style="border: 1px solid black;">Smith</td>
+                        <td style="border: 1px solid black;">50</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">Eve</td>
+                        <td style="border: 1px solid black;">Jackson</td>
+                        <td style="border: 1px solid black;">94</td>
+                    </tr>
+                    <tr>
+                        <td style="border: 1px solid black;">John</td>
+                        <td style="border: 1px solid black;">Doe</td>
+                        <td style="border: 1px solid black;">80</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <code>
+                  &lt;style&gt; <br>
+                    table, th, td { <br>
+                      border: 1px solid black; <br>
+                    } <br>
+                    &lt;/style&gt; <br>
+                     <br>
+                    &lt;table style="width:100%"&gt; <br>
+                      &lt;tr&gt; <br>
+                        &lt;th&gt;Firstname&lt;/th&gt; <br>
+                        &lt;th&gt;Lastname&lt;/th&gt;  <br>
+                        &lt;th&gt;Age&lt;/th&gt; <br>
+                      &lt;/tr&gt; <br>
+                      &lt;tr&gt; <br>
+                        &lt;td&gt;Jill&lt;/td&gt; <br>
+                        &lt;td&gt;Smith&lt;/td&gt; <br>
+                        &lt;td&gt;50&lt;/td&gt; <br>
+                      &lt;/tr&gt; <br>
+                      &lt;tr&gt; <br>
+                        &lt;td&gt;Eve&lt;/td&gt; <br>
+                        &lt;td&gt;Jackson&lt;/td&gt; <br>
+                        &lt;td&gt;94&lt;/td&gt; <br>
+                      &lt;/tr&gt; <br>
+                      &lt;tr&gt; <br>
+                        &lt;td&gt;John&lt;/td&gt; <br>
+                        &lt;td&gt;Doe&lt;/td&gt; <br>
+                        &lt;td&gt;80&lt;/td&gt; <br>
+                      &lt;/tr&gt; <br>
+                    &lt;/table&gt; <br>
+                </code>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri</a></p>
+            </div>
         </section>
 
-
-        <h4>Tabel Dengan Batas</h4>
-
-        <p>Gunakan properti perbatasan CSS untuk menambahkan batas ke tabel.</p>
-
-        <table style="width:100%;border: 1px solid black;">
-            <tr>
-                <th style="border: 1px solid black;">Firstname</th>
-                <th style="border: 1px solid black;">Lastname</th>
-                <th style="border: 1px solid black;">Age</th>
-            </tr>
-            <tr>
-                <td style="border: 1px solid black;">Jill</td>
-                <td style="border: 1px solid black;">Smith</td>
-                <td style="border: 1px solid black;">50</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid black;">Eve</td>
-                <td style="border: 1px solid black;">Jackson</td>
-                <td style="border: 1px solid black;">94</td>
-            </tr>
-            <tr>
-                <td style="border: 1px solid black;">John</td>
-                <td style="border: 1px solid black;">Doe</td>
-                <td style="border: 1px solid black;">80</td>
-            </tr>
-        </table>
-
-        <table>
-            <tr>
-                <td style='border:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                    <p> </p>
-                </td>
-                <td style='border:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                    <p><span style='color:black'> </span></p>
-                </td>
-                <td style='border:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                    <p><span style='color:black'> </span></p>
-                </td>
-            </tr>
-            <tr>
-                <td style='border:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                    <p><span style='color:black'> </span></p>
-                </td>
-                <td style='border:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                    <p><span style='color:black'> </span></p>
-                </td>
-                <td style='border:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                    <p><span style='color:black'> </span></p>
-                </td>
-            </tr>
-            <tr>
-                <td style='border:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                    <p><span style='color:black'> </span></p>
-                </td>
-                <td style='border:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                    <p><span style='color:black'> </span></p>
-                </td>
-                <td style='border:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                    <p><span style='color:black'> </span></p>
-                </td>
-            </tr>
-        </table>
-
-        <p>Untuk menambahkan batas, gunakan <mark><code>border</code></mark> properti CSS pada <mark><code>table</code></mark>, <mark><code>th</code></mark>, dan <mark><code>td</code></mark> elemen:</p>
-
-        <p>Contoh :</p>
-
-        <p>table, th, td {<br> border: 1px solid black;<br> }
-        </p>
-
-        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_border" target="_blank">Cobalah
-              sendiri &quot;</a></p>
-
-        <div align=center style='text-align:center'>
-
-            <hr size=0 width="100%" noshade style='color:black' align=center>
-
-        </div>
-
-        <p>Batas Tabel Diciutkan</p>
-
-        <p>Untuk menghindari batas ganda seperti pada contoh di atas, setel border-collapse properti CSS ke collapse.
-        </p>
-
+        <h2>Tabel Border Collapse</h2>
+        <p>Untuk menghindari batas ganda seperti pada contoh di atas, setel border-collapse properti CSS ke collapse.</p>
         <p>Ini akan membuat perbatasan runtuh menjadi satu perbatasan:</p>
 
         <tableTable border=1 cellspacing=0 cellpadding=0 width=263 style='width:197.05pt;background:white;border-collapse:collapse;border:none'>

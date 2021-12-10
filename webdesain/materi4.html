@@ -220,7 +220,7 @@
                 <p>Contoh :</p>
                 <div class="bd-example">
                     <p class="fw-bold">Sama dengan nama warna "Tomato":</p>
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2 g-lg-3 text-white text-center fw-bold">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2 g-lg-3 text-white">
                         <div class="col">
                             <div class="p-3" style="border-radius: calc(0.25rem - 1px); background-color: rgb(255, 99, 71);">rgb(255, 99, 71)</div>
                         </div>
@@ -240,7 +240,7 @@
 
                 <div class="bd-example" style="background-image: url(files/img/overlay.jpg);background-repeat: repeat;">
                     <p class="fw-bold">Sama seperti nama warna "Tomato", tapi 50% transparan:</p>
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2 g-lg-3 text-dark text-center fw-bold">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-2 g-lg-3 text-white">
                         <div class="col">
                             <div class="p-3" style="border-radius: calc(0.25rem - 1px); background-color: rgba(255, 99, 71, 0.5);">
                                 rgba(255, 99, 71, 0.5)</div>
@@ -299,15 +299,15 @@
 
                 <div class="bd-example">
                     <p>Percobaan dengan mencampur Nilai <strong>RGB</strong> di bawah ini:</p>
-                    <div class="row text-center fw-bold">
+                    <div class="row text-center">
                         <div class="col">
                             <div id="rgbresult" style="line-height: 60px; background-color: rgb(255, 99, 71);border-radius: calc(0.25rem - 1px);">
-                                <p id="rgbresulttext" style="font-size: large;color: rgb(255, 255, 255);">rgb(255, 99, 71)
+                                <p id="rgbresulttext" style="color: rgb(255, 255, 255);">rgb(255, 99, 71)
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="row text-center" style="border-radius: calc(0.25rem - 1px);">
+                    <div class="row" style="border-radius: calc(0.25rem - 1px);">
                         <div class="col container">
                             <p>RED</p>
                             <input onchange="changeRGB()" oninput="changeRGB()" type="range" id="slideRed" name="slideRed" value="255" min="0" max="255">
@@ -329,7 +329,7 @@
                 <p>Contoh :</p>
 
                 <div class="bd-example">
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2 g-lg-3 text-white text-center fw-bold">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2 g-lg-3 text-white">
                         <div class="col">
                             <div class="p-3" style="border-radius: calc(0.25rem - 1px); background-color:rgb(255, 0, 0);">rgb(255, 0, 0)
                             </div>
@@ -377,39 +377,31 @@
                 <p>Nuansa abu-abu sering didefinisikan menggunakan nilai yang sama untuk ketiga parameter. <br> Contoh :
                 </p>
                 <div class="bd-example">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="p-3 mb-3 fw-normal text-center text-white" style="border-radius: calc(0.25rem - 1px); background-color: rgb(60, 60, 60);">
-                                rgb(60, 60, 60)</div>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2 g-lg-3 text-white">
+                        <div class="col">
+                            <div class="p-3" style="border-radius: calc(0.25rem - 1px); background-color:rgb(60, 60, 60);">rgb(60, 60, 60)</div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="p-3 mb-3 fw-normal text-center text-white" style="border-radius: calc(0.25rem - 1px); background-color: rgb(100, 100, 100);">
+                        <div class="col">
+                            <div class="p-3" style="border-radius: calc(0.25rem - 1px); background-color:rgb(100, 100, 100);">
                                 rgb(100, 100, 100)</div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="p-3 mb-3 fw-normal text-center text-white" style="border-radius: calc(0.25rem - 1px); background-color: rgb(140, 140, 140);">
+                        <div class="col">
+                            <div class="p-3" style="border-radius: calc(0.25rem - 1px); background-color:rgb(140, 140, 140);">
                                 rgb(140, 140, 140)</div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="p-3 mb-3 fw-normal text-center text-white" style="border-radius: calc(0.25rem - 1px); background-color: rgb(180, 180, 180);">
+                        <div class="col">
+                            <div class="p-3" style="border-radius: calc(0.25rem - 1px); background-color:rgb(180, 180, 180);">
                                 rgb(180, 180, 180)</div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="p-3 mb-3 fw-normal text-center text-white" style="border-radius: calc(0.25rem - 1px); background-color: rgb(200, 200, 200);">
+                        <div class="col">
+                            <div class="p-3" style="border-radius: calc(0.25rem - 1px); background-color:rgb(200, 200, 200);">
                                 rgb(200, 200, 200)</div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="p-3 mb-3 fw-normal text-center text-dark" style="border-radius: calc(0.25rem - 1px); background-color: rgb(240, 240, 240);">
+                        <div class="col">
+                            <div class="p-3 text-dark" style="border-radius: calc(0.25rem - 1px); background-color:rgb(240, 240, 240);">
                                 rgb(240, 240, 240)</div>
                         </div>
                     </div>
-                    <!-- <h5 style="color: whitesmoke; padding: 10px; background-color:rgb(60, 60, 60);">rgb(60, 60, 60)</h5>
-                    <h5 style="color: whitesmoke; padding: 10px; background-color:rgb(100, 100, 100);">rgb(100, 100, 100)
-                    </h5>
-                    <h5 style="padding: 10px; background-color:rgb(140, 140, 140);">rgb(140, 140, 140)</h5>
-                    <h5 style="padding: 10px; background-color:rgb(180, 180, 180);">rgb(180, 180, 180)</h5>
-                    <h5 style="padding: 10px; background-color:rgb(200, 200, 200);">rgb(200, 200, 200)</h5>
-                    <h5 style="padding: 10px; background-color:rgb(240, 240, 240);">rgb(240, 240, 240)</h5> -->
                 </div>
 
                 <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>

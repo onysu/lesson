@@ -767,44 +767,48 @@
                 <h3>Saturation</h3>
                 <p><strong>Saturation</strong> dapat digambarkan sebagai intensitas warna.</p>
                 <table class="table table-bordered w-auto">
-                    <tr>
-                        <td><strong>100%</strong></td>
-                        <td>adalah warna murni, tidak ada nuansa abu-abu.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>50%</strong></td>
-                        <td>adalah 50% abu-abu, tetapi Anda masih dapat melihat warnanya.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>0%</strong></td>
-                        <td>benar-benar abu-abu, Anda tidak bisa lagi melihat warnanya.</td>
-                    </tr>
+                    <thead></thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>100%</strong></td>
+                            <td>adalah warna murni, tidak ada nuansa abu-abu.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>50%</strong></td>
+                            <td>adalah 50% abu-abu, tetapi Anda masih dapat melihat warnanya.</td>
+                        </tr>
+                        <tr>
+                            <td><strong>0%</strong></td>
+                            <td>benar-benar abu-abu, Anda tidak bisa lagi melihat warnanya.</td>
+                        </tr>
+                    </tbody>
                 </table>
 
                 <p>Contoh :</p>
                 <div class="bd-example">
                     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2 g-lg-3 text-white">
                         <div class="col">
-                            <div class="p-3" style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</div>
+                            <div class="p-3" style="border-radius: calc(0.25rem - 1px); background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</div>
                         </div>
                         <div class="col">
-                            <div class="p-3" style="background-color:hsl(0, 80%, 50%);">hsl(0, 80%, 50%)</div>
+                            <div class="p-3" style="border-radius: calc(0.25rem - 1px); background-color:hsl(0, 80%, 50%);">hsl(0, 80%, 50%)</div>
                         </div>
                         <div class="col">
-                            <div class="p-3" style="background-color:hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</div>
+                            <div class="p-3" style="border-radius: calc(0.25rem - 1px); background-color:hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</div>
                         </div>
                         <div class="col">
-                            <div class="p-3" style="background-color:hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</div>
+                            <div class="p-3" style="border-radius: calc(0.25rem - 1px); background-color:hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</div>
                         </div>
                         <div class="col">
-                            <div class="p-3" style="background-color:hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</div>
+                            <div class="p-3" style="border-radius: calc(0.25rem - 1px); background-color:hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</div>
                         </div>
                         <div class="col">
-                            <div class="p-3" style="background-color:hsl(0, 0%, 50%);">hsl(0, 0%, 50%)</div>
+                            <div class="p-3" style="border-radius: calc(0.25rem - 1px); background-color:hsl(0, 0%, 50%);">hsl(0, 0%, 50%)
+                            </div>
                         </div>
                     </div>
                     <br>
-                    <p>Dengan warna <strong>HSL</strong>, lebih sedikit <strong>Saturasi</strong> berarti lebih sedikit warna. 0% benar-benar abu-abu.</p>
+                    <p>Dengan warna <strong>HSL</strong>, lebih sedikit <strong>Saturasi</strong> berarti lebih sedikit warna. <strong>0%</strong> benar-benar Abu-abu.</p>
                 </div>
 
                 <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
@@ -831,36 +835,31 @@
                     (putih).
                 </p>
                 <p>Contoh :</p>
-
                 <div class="bd-example">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 100%, 0%);">hsl(0, 100%, 0%)
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2 g-lg-3 text-white">
+                        <div class="col">
+                            <div class="p-3" style="background-color:hsl(0, 100%, 0%);">hsl(0, 100%, 0%)</div>
+                        </div>
+                        <div class="col">
+                            <div class="p-3" style="background-color:hsl(0, 100%, 25%);">hsl(0, 100%, 25%)</div>
+                        </div>
+                        <div class="col">
+                            <div class="p-3" style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</div>
+                        </div>
+                        <div class="col">
+                            <div class="p-3" style="background-color:hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</div>
+                        </div>
+                        <div class="col">
+                            <div class="p-3 text-dark" style="background-color:hsl(0, 100%, 90%);">hsl(0, 100%, 90%)
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 100%, 25%)">hsl(0, 100%, 25%)
+                        <div class="col">
+                            <div class="p-3 text-dark" style="background-color:hsl(0, 100%, 100%);">hsl(0, 100%, 100%)
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-dark" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 100%, 90%);">hsl(0, 100%, 90%)</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-dark" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 100%, 100%);">hsl(0, 100%, 100%)</div>
                         </div>
                     </div>
-                    <!-- <h5 style="padding: 10px; color: whitesmoke; background-color:hsl(0, 100%, 0%);">hsl(0, 100%, 0%)</h5>
-                    <h5 style="padding: 10px; color: whitesmoke; background-color:hsl(0, 100%, 25%);">hsl(0, 100%, 25%)</h5>
-                    <h5 style="padding: 10px; color: whitesmoke; background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h5>
-                    <h5 style="padding: 10px; background-color:hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</h5>
-                    <h5 style="padding: 10px; background-color:hsl(0, 100%, 90%);">hsl(0, 100%, 90%)</h5>
-                    <h5 style="padding: 10px; background-color:hsl(0, 100%, 100%);">hsl(0, 100%, 100%)</h5> -->
+                    <br>
+                    <p>Dengan warna <strong>HSL</strong>, <strong>0%</strong> Lightness berarti <strong>Hitam</strong>, dan <strong>100</strong> Lightness berarti <strong>Putih</strong>.</p>
                 </div>
 
                 <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
@@ -871,12 +870,12 @@
                         &lt;h1 style="background-color:hsl(0, 100%, 50%);"&gt;hsl(0, 100%, 50%)&lt;/h1&gt; <br>
                         &lt;h1 style="background-color:hsl(0, 100%, 75%);"&gt;hsl(0, 100%, 75%)&lt;/h1&gt; <br>
                         &lt;h1 style="background-color:hsl(0, 100%, 90%);"&gt;hsl(0, 100%, 90%)&lt;/h1&gt; <br>
-                        &lt;h1 style="background-color:hsl(0, 100%, 100%);"&gt;hsl(0, 100%, 100%)&lt;/h1&gt;
-                        <p>Dengan warna HSL, 0% lightness berarti hitam, dan 100 lightness berarti putih.</p>
+                        &lt;h1 style="background-color:hsl(0, 100%, 100%);"&gt;hsl(0, 100%, 100%)&lt;/h1&gt;                        
                     </code>
                     <hr>
-                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalahsendiri</a>
-                    </p>
+                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html">Cobalah sendiri <img
+                                draggable="false" role="img" class="emoji" alt="↗"
+                                src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
                 </div>
             </section>
             <hr>

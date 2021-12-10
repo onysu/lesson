@@ -444,17 +444,17 @@
                     <div class="container">
                         <div class="row">
                             <div class="col text-center fw-bold">
-                                <p>RED</p>
+                                <p style="font-weight: 500; color: red;">RED</p>
                                 <input onchange="changeRGBA()" oninput="changeRGBA()" type="range" id="slideRedA" name="slideRedA" value="255" min="0" max="255">
                                 <div id="valRed2A">255</div>
                             </div>
                             <div class="col text-center fw-bold">
-                                <p>GREEN</p>
+                                <p style="font-weight: 500; color: green;">GREEN</p>
                                 <input onchange="changeRGBA()" oninput="changeRGBA()" type="range" id="slideGreenA" name="slideGreenA" value="99" min="0" max="255">
                                 <div id="valGreen2A">0</div>
                             </div>
                             <div class="col text-center fw-bold">
-                                <p>BLUE</p>
+                                <p style="font-weight: 500; color: blue;">BLUE</p>
                                 <input onchange="changeRGBA()" oninput="changeRGBA()" type="range" id="slideBlueA" name="slideBlueA" value="71" min="0" max="255">
                                 <div id="valBlue2A">0</div>
                             </div>
@@ -506,55 +506,55 @@
                         &lt;h1 style="background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)&lt;/h1&gt;
                     </code>
                     <hr>
-                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
-                            sendiri</a></p>
+                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html">Cobalah sendiri <img
+                                draggable="false" role="img" class="emoji" alt="↗"
+                                src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
                 </div>
             </section>
             <hr>
 
             <section id="14">
                 <h2>Warna HEX</h2>
-                <p>Warna heksadesimal ditentukan dengan: #RRGGBB, di mana bilangan bulat heksadesimal RR (merah), GG (hijau) dan BB (biru) menentukan komponen warna.</p>
+                <p>Warna <strong>Heksadesimal</strong> ditentukan dengan: #RRGGBB, di mana bilangan bulat Heksadesimal RR (merah), GG (hijau) dan BB (biru) menentukan komponen warna.</p>
             </section>
 
             <section id="nilaiwarnahex">
                 <h3>Nilai Warna HEX</h3>
-                <p>Dalam HTML, warna dapat ditentukan menggunakan nilai heksadesimal dalam bentuk:</p>
+                <p>Dalam HTML, warna dapat ditentukan menggunakan Nilai Heksadesimal dalam bentuk:</p>
                 <div class="bd-callout">
-                    <code>#rrggbb</code>
+                    <code><b>#rrggbb</b></code>
                 </div>
-                <p>Dimana <strong>rr</strong> (merah), <strong>gg</strong> (hijau) dan <strong>bb</strong> (biru) adalah nilai <strong>heksadesimal</strong> antara <strong>00</strong> dan <strong>ff</strong> (sama dengan desimal 0-255). <br> Misalnya, <strong>#ff0000</strong>                    ditampilkan sebagai <strong>merah</strong>, karena merah diatur ke nilai tertinggi (ff), dan dua lainnya (hijau dan biru) diatur ke 00.
-                    <strong>#00ff00</strong> ditampilkan sebagai <strong>hijau</strong>, karena hijau diatur ke nilai tertinggi (ff), dan dua lainnya (merah dan biru) diatur ke 00. Untuk menampilkan
+                <p>Dimana <strong>rr</strong> (merah), <strong>gg</strong> (hijau) dan <strong>bb</strong> (biru) adalah Nilai <strong>Heksadesimal</strong> antara <strong>00</strong> dan <strong>ff</strong> (sama dengan desimal 0-255). <br> Misalnya, <strong>#ff0000</strong>                    ditampilkan sebagai <strong>merah</strong>, karena merah diatur ke Nilai tertinggi (ff), dan dua lainnya (hijau dan biru) diatur ke 00.
+                    <strong>#00ff00</strong> ditampilkan sebagai <strong>hijau</strong>, karena hijau diatur ke Nilai tertinggi (ff), dan dua lainnya (merah dan biru) diatur ke 00. Untuk menampilkan
                     <strong>hitam</strong>, setel semua parameter warna ke <strong>00</strong>, seperti ini:
                     <strong>#000000</strong>. Untuk menampilkan putih, setel semua parameter warna ke ff, seperti ini:
                     <strong>#ffffff</strong>.
                 </p>
 
-                <p>Percobaan dengan mencampur nilai <strong>HEX</strong> di bawah ini:</p>
-                <div class="contoh p-3">
+                <p>Percobaan dengan mencampur Nilai <strong>HEX</strong> di bawah ini:</p>
+                <div class="bd-example">
                     <div class="row">
-                        <div class="col text-center">
+                        <div class="col text-center text-white fw-bold">
                             <div id="hexresult" style="line-height: 60px; background-color: rgb(255, 99, 71);border-radius: calc(0.25rem - 1px);">
-                                <p id="hexresulttext" style="font-size: x-large; vertical-align: inherit; font-family: monospace; color: rgb(255, 255, 255);">
-                                    #ff6347</p>
+                                <p id="hexresulttext">#ff6347</p>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col text-center">
-                            <p style="vertical-align: inherit;">MERAH</p>
+                    <div class="row text-center">
+                        <div class="col">
+                            <p style="font-weight: 500; color: red;">MERAH</p>
                             <input onchange="changeHex()" oninput="changeHex()" type="range" id="slideRedHex" name="slideRedHex" value="255" min="0" max="255">
-                            <div id="valRed2Hex" style="vertical-align: inherit;">ff</div>
+                            <div id="valRed2Hex">ff</div>
                         </div>
-                        <div class="col text-center">
-                            <p style="vertical-align: inherit;">HIJAU</p>
+                        <div class="col">
+                            <p style="font-weight: 500; color: green;">HIJAU</p>
                             <input onchange="changeHex()" oninput="changeHex()" type="range" id="slideGreenHex" name="slideGreenHex" value="99" min="0" max="255">
-                            <div id="valGreen2Hex" style="vertical-align: inherit;">63</div>
+                            <div id="valGreen2Hex">63</div>
                         </div>
-                        <div class="col text-center">
-                            <p style="vertical-align: inherit;">BIRU</p>
+                        <div class="col">
+                            <p style="font-weight: 500; color: blue;">BIRU</p>
                             <input onchange="changeHex()" oninput="changeHex()" type="range" id="slideBlueHex" name="slideBlueHex" value="71" min="0" max="255">
-                            <div id="valBlue2Hex" style="vertical-align: inherit;">47</div>
+                            <div id="valBlue2Hex">47</div>
                         </div>
                     </div>
                 </div>

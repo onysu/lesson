@@ -415,54 +415,89 @@
                         &lt;h1 style="background-color:rgb(240, 240, 240);">rgb(240, 240, 240)&lt;/h1&gt; <br>
                     </code>
                     <hr>
-                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
-                            sendiri</a></p>
+                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html">Cobalah sendiri <img
+                                draggable="false" role="img" class="emoji" alt="↗"
+                                src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
                 </div>
             </section>
             <hr>
 
             <section id="nilaiwarnargba">
                 <h3>Nilai Warna RGBA</h3>
-                <p>Nilai warna RGBA adalah perpanjangan dari nilai warna RGB dengan saluran Alpha - yang menentukan opasitas untuk warna. Nilai warna RGBA ditentukan dengan:</p>
-                <div class="bd-callout"><code>rgba(red, green, blue, alpha)</code></div>
-                <p>Parameter alpha adalah angka antara 0.0 (sepenuhnya transparan) dan 1.0 (tidak transparan sama sekali).
+                <p>Nilai warna <strong>RGBA</strong> adalah perpanjangan dari nilai warna <strong>RGB</strong> dengan saluran <strong>Alpha</strong> - yang menentukan opasitas untuk warna. Nilai warna RGBA ditentukan dengan:
+                </p>
+                <div class="bd-callout"><code><strong>rgba(red, green, blue, alpha)</strong></code></div>
+                <p>Parameter alpha adalah angka antara <strong>0.0</strong> (sepenuhnya transparan) dan
+                    <strong>1.0</strong> (tidak transparan sama sekali).
                 </p>
 
                 <p>Percobaan dengan mencampur nilai <strong>RGBA</strong> di bawah ini:</p>
-                <div class="contoh p-3" style="background-image: url(files/img/overlay.jpg);background-repeat: repeat;">
+                <div class="bd-example p-3" style="background-image: url(files/img/overlay.jpg);background-repeat: repeat;">
                     <div class="row">
-                        <div class="col text-center">
+                        <div class="col text-center fw-bold">
                             <div id="rgbaresult" style="line-height: 60px; background-color: rgba(255, 99, 71, 0.5);border-radius: calc(0.25rem - 1px);">
                                 <p id="rgbaresulttext" style="font-size: large; color: rgb(255, 255, 255);">rgba(255, 99, 71, 0.5)
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="row container">
-                        <div class="col container text-center">
-                            <p>RED</p>
-                            <input onchange="changeRGBA()" oninput="changeRGBA()" type="range" id="slideRedA" name="slideRedA" value="255" min="0" max="255">
-                            <div id="valRed2A">255</div>
-                        </div>
-                        <div class="col container text-center">
-                            <p>GREEN</p>
-                            <input onchange="changeRGBA()" oninput="changeRGBA()" type="range" id="slideGreenA" name="slideGreenA" value="99" min="0" max="255">
-                            <div id="valGreen2A">0</div>
-                        </div>
-                        <div class="col container text-center">
-                            <p>BLUE</p>
-                            <input onchange="changeRGBA()" oninput="changeRGBA()" type="range" id="slideBlueA" name="slideBlueA" value="71" min="0" max="255">
-                            <div id="valBlue2A">0</div>
-                        </div>
-                        <div class="col container text-center">
-                            <p>ALPHA</p>
-                            <input onchange="changeRGBA()" oninput="changeRGBA()" type="range" id="slideAlphaA" name="slideAlphaA" value="5" min="0" max="10">
-                            <div id="valAlpha2A">0</div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col text-center fw-bold">
+                                <p>RED</p>
+                                <input onchange="changeRGBA()" oninput="changeRGBA()" type="range" id="slideRedA" name="slideRedA" value="255" min="0" max="255">
+                                <div id="valRed2A">255</div>
+                            </div>
+                            <div class="col text-center fw-bold">
+                                <p>GREEN</p>
+                                <input onchange="changeRGBA()" oninput="changeRGBA()" type="range" id="slideGreenA" name="slideGreenA" value="99" min="0" max="255">
+                                <div id="valGreen2A">0</div>
+                            </div>
+                            <div class="col text-center fw-bold">
+                                <p>BLUE</p>
+                                <input onchange="changeRGBA()" oninput="changeRGBA()" type="range" id="slideBlueA" name="slideBlueA" value="71" min="0" max="255">
+                                <div id="valBlue2A">0</div>
+                            </div>
+                            <div class="col text-center fw-bold">
+                                <p>ALPHA</p>
+                                <input onchange="changeRGBA()" oninput="changeRGBA()" type="range" id="slideAlphaA" name="slideAlphaA" value="5" min="0" max="10">
+                                <div id="valAlpha2A">0</div>
+                            </div>
                         </div>
                     </div>
                 </div>
+
                 <p>Contoh :</p>
-                <div class="contoh" style="background-image: url(files/img/img_bg_transparent.gif);background-repeat: repeat;">
+                <div class="bd-example">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2 g-lg-3 text-dark fw-bold">
+                        <div class="col">
+                            <div class="p-3" style="background-color:rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</div>
+                        </div>
+                        <div class="col">
+                            <div class="p-3" style="background-color:rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-3" style="background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-3" style="background-color:rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6)
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-3" style="background-color:rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-3" style="background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- <div class="contoh" style="background-image: url(files/img/img_bg_transparent.gif);background-repeat: repeat;">
                     <div class="row">
                         <div class="col-md-4">
                             <div class="p-3 mb-3 fw-normal text-center text-dark" style="border-radius: calc(0.25rem - 1px); background-color: rgba(255, 99, 71, 0);">
@@ -494,19 +529,19 @@
                                 rgba(255, 99, 71, 1)
                             </div>
                         </div>
-                    </div>
-                    <!-- <h5 style="padding: 10px; background-color:rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h5>
+                    </div> -->
+                <!-- <h5 style="padding: 10px; background-color:rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h5>
                     <h5 style="padding: 10px; background-color:rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)</h5>
                     <h5 style="padding: 10px; background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)</h5>
                     <h5 style="padding: 10px; background-color:rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6)</h5>
                     <h5 style="padding: 10px; background-color:rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)</h5>
                     <h5 style="padding: 10px; background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h5> -->
-                </div>
+        </div>
 
 
-                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                <div class="bd-callout">
-                    <code>
+        <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+        <div class="bd-callout">
+            <code>
                         &lt;h1 style="background-color:rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)&lt;/h1&gt; <br>
                         &lt;h1 style="background-color:rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)&lt;/h1&gt; <br>
                         &lt;h1 style="background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)&lt;/h1&gt; <br>
@@ -514,93 +549,93 @@
                         &lt;h1 style="background-color:rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)&lt;/h1&gt; <br>
                         &lt;h1 style="background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)&lt;/h1&gt;
                     </code>
-                    <hr>
-                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
-                            sendiri</a></p>
-                </div>
-            </section>
             <hr>
+            <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                    sendiri</a></p>
+        </div>
+        </section>
+        <hr>
 
-            <section id="14">
-                <h2>Warna HEX</h2>
-                <p>Warna heksadesimal ditentukan dengan: #RRGGBB, di mana bilangan bulat heksadesimal RR (merah), GG (hijau) dan BB (biru) menentukan komponen warna.</p>
-            </section>
+        <section id="14">
+            <h2>Warna HEX</h2>
+            <p>Warna heksadesimal ditentukan dengan: #RRGGBB, di mana bilangan bulat heksadesimal RR (merah), GG (hijau) dan BB (biru) menentukan komponen warna.</p>
+        </section>
 
-            <section id="nilaiwarnahex">
-                <h3>Nilai Warna HEX</h3>
-                <p>Dalam HTML, warna dapat ditentukan menggunakan nilai heksadesimal dalam bentuk:</p>
-                <div class="bd-callout">
-                    <code>#rrggbb</code>
-                </div>
-                <p>Dimana <strong>rr</strong> (merah), <strong>gg</strong> (hijau) dan <strong>bb</strong> (biru) adalah nilai <strong>heksadesimal</strong> antara <strong>00</strong> dan <strong>ff</strong> (sama dengan desimal 0-255). <br> Misalnya, <strong>#ff0000</strong>                    ditampilkan sebagai <strong>merah</strong>, karena merah diatur ke nilai tertinggi (ff), dan dua lainnya (hijau dan biru) diatur ke 00.
-                    <strong>#00ff00</strong> ditampilkan sebagai <strong>hijau</strong>, karena hijau diatur ke nilai tertinggi (ff), dan dua lainnya (merah dan biru) diatur ke 00. Untuk menampilkan
-                    <strong>hitam</strong>, setel semua parameter warna ke <strong>00</strong>, seperti ini:
-                    <strong>#000000</strong>. Untuk menampilkan putih, setel semua parameter warna ke ff, seperti ini:
-                    <strong>#ffffff</strong>.
-                </p>
+        <section id="nilaiwarnahex">
+            <h3>Nilai Warna HEX</h3>
+            <p>Dalam HTML, warna dapat ditentukan menggunakan nilai heksadesimal dalam bentuk:</p>
+            <div class="bd-callout">
+                <code>#rrggbb</code>
+            </div>
+            <p>Dimana <strong>rr</strong> (merah), <strong>gg</strong> (hijau) dan <strong>bb</strong> (biru) adalah nilai <strong>heksadesimal</strong> antara <strong>00</strong> dan <strong>ff</strong> (sama dengan desimal 0-255). <br> Misalnya, <strong>#ff0000</strong>                ditampilkan sebagai <strong>merah</strong>, karena merah diatur ke nilai tertinggi (ff), dan dua lainnya (hijau dan biru) diatur ke 00.
+                <strong>#00ff00</strong> ditampilkan sebagai <strong>hijau</strong>, karena hijau diatur ke nilai tertinggi (ff), dan dua lainnya (merah dan biru) diatur ke 00. Untuk menampilkan
+                <strong>hitam</strong>, setel semua parameter warna ke <strong>00</strong>, seperti ini:
+                <strong>#000000</strong>. Untuk menampilkan putih, setel semua parameter warna ke ff, seperti ini:
+                <strong>#ffffff</strong>.
+            </p>
 
-                <p>Percobaan dengan mencampur nilai <strong>HEX</strong> di bawah ini:</p>
-                <div class="contoh p-3">
-                    <div class="row">
-                        <div class="col text-center">
-                            <div id="hexresult" style="line-height: 60px; background-color: rgb(255, 99, 71);border-radius: calc(0.25rem - 1px);">
-                                <p id="hexresulttext" style="font-size: x-large; vertical-align: inherit; font-family: monospace; color: rgb(255, 255, 255);">
-                                    #ff6347</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col text-center">
-                            <p style="vertical-align: inherit;">MERAH</p>
-                            <input onchange="changeHex()" oninput="changeHex()" type="range" id="slideRedHex" name="slideRedHex" value="255" min="0" max="255">
-                            <div id="valRed2Hex" style="vertical-align: inherit;">ff</div>
-                        </div>
-                        <div class="col text-center">
-                            <p style="vertical-align: inherit;">HIJAU</p>
-                            <input onchange="changeHex()" oninput="changeHex()" type="range" id="slideGreenHex" name="slideGreenHex" value="99" min="0" max="255">
-                            <div id="valGreen2Hex" style="vertical-align: inherit;">63</div>
-                        </div>
-                        <div class="col text-center">
-                            <p style="vertical-align: inherit;">BIRU</p>
-                            <input onchange="changeHex()" oninput="changeHex()" type="range" id="slideBlueHex" name="slideBlueHex" value="71" min="0" max="255">
-                            <div id="valBlue2Hex" style="vertical-align: inherit;">47</div>
+            <p>Percobaan dengan mencampur nilai <strong>HEX</strong> di bawah ini:</p>
+            <div class="contoh p-3">
+                <div class="row">
+                    <div class="col text-center">
+                        <div id="hexresult" style="line-height: 60px; background-color: rgb(255, 99, 71);border-radius: calc(0.25rem - 1px);">
+                            <p id="hexresulttext" style="font-size: x-large; vertical-align: inherit; font-family: monospace; color: rgb(255, 255, 255);">
+                                #ff6347</p>
                         </div>
                     </div>
                 </div>
-
-                <div class="bd-example">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: #ff0000;">#ff0000</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: #0000ff">#0000ff</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: #3cb371;">#3cb371</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: #ee82ee;">#ee82ee</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: #ffa500;">#ffa500</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: #6a5acd;">#6a5acd</div>
-                        </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <p style="vertical-align: inherit;">MERAH</p>
+                        <input onchange="changeHex()" oninput="changeHex()" type="range" id="slideRedHex" name="slideRedHex" value="255" min="0" max="255">
+                        <div id="valRed2Hex" style="vertical-align: inherit;">ff</div>
                     </div>
-                    <!-- <h5 style="color: white; padding: 10px; background-color:#ff0000;">#ff0000</h5>
+                    <div class="col text-center">
+                        <p style="vertical-align: inherit;">HIJAU</p>
+                        <input onchange="changeHex()" oninput="changeHex()" type="range" id="slideGreenHex" name="slideGreenHex" value="99" min="0" max="255">
+                        <div id="valGreen2Hex" style="vertical-align: inherit;">63</div>
+                    </div>
+                    <div class="col text-center">
+                        <p style="vertical-align: inherit;">BIRU</p>
+                        <input onchange="changeHex()" oninput="changeHex()" type="range" id="slideBlueHex" name="slideBlueHex" value="71" min="0" max="255">
+                        <div id="valBlue2Hex" style="vertical-align: inherit;">47</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bd-example">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: #ff0000;">#ff0000</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: #0000ff">#0000ff</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: #3cb371;">#3cb371</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: #ee82ee;">#ee82ee</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: #ffa500;">#ffa500</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: #6a5acd;">#6a5acd</div>
+                    </div>
+                </div>
+                <!-- <h5 style="color: white; padding: 10px; background-color:#ff0000;">#ff0000</h5>
                     <h5 style="color: white; padding: 10px; background-color:#0000ff;">#0000ff</h5>
                     <h5 style="color: white; padding: 10px; background-color:#3cb371;">#3cb371</h5>
                     <h5 style="color: white; padding: 10px; background-color:#ee82ee;">#ee82ee</h5>
                     <h5 style="color: white; padding: 10px; background-color:#ffa500;">#ffa500</h5>
                     <h5 style="color: white; padding: 10px; background-color:#6a5acd;">#6a5acd</h5> -->
-                </div>
+            </div>
 
 
-                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                <div class="bd-callout">
-                    <code>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <code>
                         &lt;h1 style="background-color:#ff0000;"&gt;#ff0000&lt;/h1&gt; <br>
                         &lt;h1 style="background-color:#0000ff;"&gt;#0000ff&lt;/h1&gt; <br>
                         &lt;h1 style="background-color:#3cb371;"&gt;#3cb371&lt;/h1&gt; <br>
@@ -608,50 +643,50 @@
                         &lt;h1 style="background-color:#ffa500;"&gt;#ffa500&lt;/h1&gt; <br>
                         &lt;h1 style="background-color:#6a5acd;"&gt;#6a5acd&lt;/h1&gt;
                     </code>
-                    <hr>
-                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
-                            sendiri</a></p>
-                </div>
-            </section>
-            <hr>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                        sendiri</a></p>
+            </div>
+        </section>
+        <hr>
 
-            <section id="bayanganabuabuhex">
-                <h2>Bayangan Abu-abu</h2>
-                <p>Nuansa abu-abu sering didefinisikan menggunakan nilai yang sama untuk ketiga parameter: <br> Contoh :
-                </p>
+        <section id="bayanganabuabuhex">
+            <h2>Bayangan Abu-abu</h2>
+            <p>Nuansa abu-abu sering didefinisikan menggunakan nilai yang sama untuk ketiga parameter: <br> Contoh :
+            </p>
 
-                <div class="bd-example">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: #404040;">#404040</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-white" style="border-radius: calc(0.25rem - 1px); background-color: #686868">#686868</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-white" style="border-radius: calc(0.25rem - 1px); background-color: #a0a0a0;">#a0a0a0</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-white" style="border-radius: calc(0.25rem - 1px); background-color: #bebebe;">#bebebe</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-dark" style="border-radius: calc(0.25rem - 1px); background-color: #dcdcdc;">#dcdcdc</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-dark" style="border-radius: calc(0.25rem - 1px); background-color: #f8f8f8;">#f8f8f8</div>
-                        </div>
+            <div class="bd-example">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: #404040;">#404040</div>
                     </div>
-                    <!-- <h5 style="color: whitesmoke; padding: 10px; background-color:#404040;">#404040</h5>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-white" style="border-radius: calc(0.25rem - 1px); background-color: #686868">#686868</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-white" style="border-radius: calc(0.25rem - 1px); background-color: #a0a0a0;">#a0a0a0</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-white" style="border-radius: calc(0.25rem - 1px); background-color: #bebebe;">#bebebe</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-dark" style="border-radius: calc(0.25rem - 1px); background-color: #dcdcdc;">#dcdcdc</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-dark" style="border-radius: calc(0.25rem - 1px); background-color: #f8f8f8;">#f8f8f8</div>
+                    </div>
+                </div>
+                <!-- <h5 style="color: whitesmoke; padding: 10px; background-color:#404040;">#404040</h5>
                     <h5 style="color: whitesmoke; padding: 10px; background-color:#686868;">#686868</h5>
                     <h5 style="padding: 10px; background-color:#a0a0a0;">#a0a0a0</h5>
                     <h5 style="padding: 10px; background-color:#bebebe;">#bebebe</h5>
                     <h5 style="padding: 10px; background-color:#dcdcdc;">#dcdcdc</h5>
                     <h5 style="padding: 10px; background-color:#f8f8f8;">#f8f8f8</h5> -->
-                </div>
+            </div>
 
-                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                <div class="bd-callout">
-                    <code>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <code>
                         &lt;h1 style="background-color:#404040;"&gt;#404040&lt;/h1&gt; <br>
                         &lt;h1 style="background-color:#686868;"&gt;#686868&lt;/h1&gt; <br>
                         &lt;h1 style="background-color:#a0a0a0;"&gt;#a0a0a0&lt;/h1&gt; <br>
@@ -659,102 +694,102 @@
                         &lt;h1 style="background-color:#dcdcdc;"&gt;#dcdcdc&lt;/h1&gt; <br>
                         &lt;h1 style="background-color:#f8f8f8;"&gt;#f8f8f8&lt;/h1&gt;
                     </code>
-                    <hr>
-                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalahsendiri</a>
-                    </p>
-                </div>
-            </section>
-            <hr>
-
-            <section id="15">
-                <H2>Warna HSL & HSLA</H2>
-                <p><strong>HSL</strong> adalah singkatan dari <strong>Hue</strong>, <strong>Saturation</strong>, dan
-                    <strong>Lightness</strong>. Nilai warna <strong>HSLA</strong> merupakan perpanjangan dari
-                    <strong>HSL</strong> dengan saluran <strong>Alpha</strong> (opacity).
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalahsendiri</a>
                 </p>
-            </section>
+            </div>
+        </section>
+        <hr>
 
-            <section id="nilaiwarnahsl">
-                <h3>Nilai Warna HSL</h3>
-                <p>Dalam HTML, sebuah warna dapat ditentukan menggunakan <strong>hue</strong>,
-                    <strong>saturation</strong>, dan <strong>lightness</strong> (<strong>HSL</strong>) dalam bentuk:
-                </p>
-                <p class="highlight">
-                    <code>hsl(hue, saturation, lightness)</code>
-                </p>
-                <table class="table table-bordered w-auto">
-                    <tr>
-                        <td><strong>Hue</strong></td>
-                        <td>adalah derajat pada roda warna dari 0 hingga 360. 0 adalah merah, 120 adalah hijau, dan 240 adalah biru.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Saturation</strong></td>
-                        <td>adalah nilai persentase, 0% berarti bayangan abu-abu, dan 100% adalah warna penuh.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Lightness</strong></td>
-                        <td>juga merupakan nilai persentase, 0% hitam, dan 100% putih.</td>
-                    </tr>
-                </table>
+        <section id="15">
+            <H2>Warna HSL & HSLA</H2>
+            <p><strong>HSL</strong> adalah singkatan dari <strong>Hue</strong>, <strong>Saturation</strong>, dan
+                <strong>Lightness</strong>. Nilai warna <strong>HSLA</strong> merupakan perpanjangan dari
+                <strong>HSL</strong> dengan saluran <strong>Alpha</strong> (opacity).
+            </p>
+        </section>
 
-                <p>Percobaan dengan mencampur nilai <strong>HSL</strong> di bawah ini:</p>
-                <div class="contoh p-3">
-                    <div class="row">
-                        <div class="col text-center">
-                            <div id="hslresult" style="line-height: 60px; background-color: rgb(255, 0, 0);border-radius: calc(0.25rem - 1px);">
-                                <p id="hslresulttext" style="font-size: large; font-family: monospace; color: rgb(255, 255, 255);">
-                                    hsl(0, 100%, 50%)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col container text-center">
-                            <p>HUE</p>
-                            <input onchange="changeHsl()" oninput="changeHsl()" type="range" id="slideHue" name="slideHue" value="0" min="0" max="360">
-                            <div id="valHue">0</div>
-                        </div>
-                        <div class="col container text-center">
-                            <p>SATURATION</p>
-                            <input onchange="changeHsl()" oninput="changeHsl()" type="range" id="slideSat" name="slideSat" value="100" min="0" max="100">
-                            <div id="valSat">100%</div>
-                        </div>
-                        <div class="col container text-center">
-                            <p>LIGHTNESS</p>
-                            <input onchange="changeHsl()" oninput="changeHsl()" type="range" id="slideLight" name="slideLight" value="50" min="0" max="100">
-                            <div id="valLight">50%</div>
+        <section id="nilaiwarnahsl">
+            <h3>Nilai Warna HSL</h3>
+            <p>Dalam HTML, sebuah warna dapat ditentukan menggunakan <strong>hue</strong>,
+                <strong>saturation</strong>, dan <strong>lightness</strong> (<strong>HSL</strong>) dalam bentuk:
+            </p>
+            <p class="highlight">
+                <code>hsl(hue, saturation, lightness)</code>
+            </p>
+            <table class="table table-bordered w-auto">
+                <tr>
+                    <td><strong>Hue</strong></td>
+                    <td>adalah derajat pada roda warna dari 0 hingga 360. 0 adalah merah, 120 adalah hijau, dan 240 adalah biru.</td>
+                </tr>
+                <tr>
+                    <td><strong>Saturation</strong></td>
+                    <td>adalah nilai persentase, 0% berarti bayangan abu-abu, dan 100% adalah warna penuh.</td>
+                </tr>
+                <tr>
+                    <td><strong>Lightness</strong></td>
+                    <td>juga merupakan nilai persentase, 0% hitam, dan 100% putih.</td>
+                </tr>
+            </table>
+
+            <p>Percobaan dengan mencampur nilai <strong>HSL</strong> di bawah ini:</p>
+            <div class="contoh p-3">
+                <div class="row">
+                    <div class="col text-center">
+                        <div id="hslresult" style="line-height: 60px; background-color: rgb(255, 0, 0);border-radius: calc(0.25rem - 1px);">
+                            <p id="hslresulttext" style="font-size: large; font-family: monospace; color: rgb(255, 255, 255);">
+                                hsl(0, 100%, 50%)</p>
                         </div>
                     </div>
                 </div>
-
-                <p>Contoh :</p>
-
-                <div class="bd-example">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(240, 100%, 50%)">
-                                hsl(240, 100%, 50%)</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(147, 50%, 47%);">
-                                hsl(147, 50%, 47%)</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(300, 76%, 72%);">
-                                hsl(300, 76%, 72%)</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(39, 100%, 50%);">
-                                hsl(39, 100%, 50%)</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(248, 53%, 58%);">
-                                hsl(248, 53%, 58%)</div>
-                        </div>
+                <div class="row">
+                    <div class="col container text-center">
+                        <p>HUE</p>
+                        <input onchange="changeHsl()" oninput="changeHsl()" type="range" id="slideHue" name="slideHue" value="0" min="0" max="360">
+                        <div id="valHue">0</div>
                     </div>
-                    <!-- <h5 style="color: whitesmoke; padding: 10px; background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)
+                    <div class="col container text-center">
+                        <p>SATURATION</p>
+                        <input onchange="changeHsl()" oninput="changeHsl()" type="range" id="slideSat" name="slideSat" value="100" min="0" max="100">
+                        <div id="valSat">100%</div>
+                    </div>
+                    <div class="col container text-center">
+                        <p>LIGHTNESS</p>
+                        <input onchange="changeHsl()" oninput="changeHsl()" type="range" id="slideLight" name="slideLight" value="50" min="0" max="100">
+                        <div id="valLight">50%</div>
+                    </div>
+                </div>
+            </div>
+
+            <p>Contoh :</p>
+
+            <div class="bd-example">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(240, 100%, 50%)">
+                            hsl(240, 100%, 50%)</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(147, 50%, 47%);">
+                            hsl(147, 50%, 47%)</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(300, 76%, 72%);">
+                            hsl(300, 76%, 72%)</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(39, 100%, 50%);">
+                            hsl(39, 100%, 50%)</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(248, 53%, 58%);">
+                            hsl(248, 53%, 58%)</div>
+                    </div>
+                </div>
+                <!-- <h5 style="color: whitesmoke; padding: 10px; background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)
                     </h5>
                     <h5 style="color: whitesmoke; padding: 10px; background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)
                     </h5>
@@ -766,11 +801,11 @@
                     </h5>
                     <h5 style="color: whitesmoke; padding: 10px; background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)
                     </h5> -->
-                </div>
+            </div>
 
-                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                <div class="bd-callout">
-                    <code>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <code>
                         &lt;h1 style="background-color:hsl(0, 100%, 50%);"&gt;hsl(0, 100%, 50%)&lt;/h1&gt; <br>
                         &lt;h1 style="background-color:hsl(240, 100%, 50%);"&gt;hsl(240, 100%, 50%)&lt;/h1&gt; <br>
                         &lt;h1 style="background-color:hsl(147, 50%, 47%);"&gt;hsl(147, 50%, 47%)&lt;/h1&gt; <br>
@@ -778,65 +813,70 @@
                         &lt;h1 style="background-color:hsl(39, 100%, 50%);"&gt;hsl(39, 100%, 50%)&lt;/h1&gt; <br>
                         &lt;h1 style="background-color:hsl(248, 53%, 58%);"&gt;hsl(248, 53%, 58%)&lt;/h1&gt;
                     </code>
-                    <hr>
-                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalahsendiri</a>
-                    </p>
-                </div>
-            </section>
-            <hr>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalahsendiri</a>
+                </p>
+            </div>
+        </section>
+        <hr>
 
-            <section id="Saturation">
-                <h3>Saturation</h3>
-                <p><strong>Saturation</strong> dapat digambarkan sebagai intensitas warna.</p>
-                <table class="table table-bordered w-auto">
-                    <tr>
-                        <td><strong>100%</strong></td>
-                        <td>adalah warna murni, tidak ada nuansa abu-abu.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>50%</strong></td>
-                        <td>adalah 50% abu-abu, tetapi Anda masih dapat melihat warnanya.</td>
-                    </tr>
-                    <tr>
-                        <td><strong>0%</strong></td>
-                        <td>benar-benar abu-abu, Anda tidak bisa lagi melihat warnanya.</td>
-                    </tr>
-                </table>
+        <section id="Saturation">
+            <h3>Saturation</h3>
+            <p><strong>Saturation</strong> dapat digambarkan sebagai intensitas warna.</p>
+            <table class="table table-bordered w-auto">
+                <tr>
+                    <td><strong>100%</strong></td>
+                    <td>adalah warna murni, tidak ada nuansa abu-abu.</td>
+                </tr>
+                <tr>
+                    <td><strong>50%</strong></td>
+                    <td>adalah 50% abu-abu, tetapi Anda masih dapat melihat warnanya.</td>
+                </tr>
+                <tr>
+                    <td><strong>0%</strong></td>
+                    <td>benar-benar abu-abu, Anda tidak bisa lagi melihat warnanya.</td>
+                </tr>
+            </table>
 
-                <p>Contoh :</p>
+            <p>Contoh :</p>
 
-                <div class="bd-example">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 80%, 50%)">hsl(0, 80%, 50%)</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 0%, 50%);">hsl(0, 0%, 50%)</div>
+            <div class="bd-example">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 80%, 50%)">hsl(0, 80%, 50%)
                         </div>
                     </div>
-                    <!-- <h5 style="color: whitesmoke; padding: 10px; background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h5>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 60%, 50%);">hsl(0, 60%, 50%)
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 40%, 50%);">hsl(0, 40%, 50%)
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 20%, 50%);">hsl(0, 20%, 50%)
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 0%, 50%);">hsl(0, 0%, 50%)
+                        </div>
+                    </div>
+                </div>
+                <!-- <h5 style="color: whitesmoke; padding: 10px; background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h5>
                     <h5 style="color: whitesmoke; padding: 10px; background-color:hsl(0, 80%, 50%);">hsl(0, 80%, 50%)</h5>
                     <h5 style="color: whitesmoke; padding: 10px; background-color:hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</h5>
                     <h5 style="color: whitesmoke; padding: 10px; background-color:hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</h5>
                     <h5 style="color: whitesmoke; padding: 10px; background-color:hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</h5>
                     <h5 style="color: whitesmoke; padding: 10px; background-color:hsl(0, 0%, 50%);">hsl(0, 0%, 50%)</h5> -->
-                </div>
+            </div>
 
-                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                <div class="bd-callout">
-                    <code>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <code>
                         &lt;h1 style="background-color:hsl(0, 100%, 50%);"&gt;hsl(0, 100%, 50%)&lt;/h1&gt; <br>
                         &lt;h1 style="background-color:hsl(0, 80%, 50%);"&gt;hsl(0, 80%, 50%)&lt;/h1&gt; <br>
                         &lt;h1 style="background-color:hsl(0, 60%, 50%);"&gt;hsl(0, 60%, 50%)&lt;/h1&gt; <br>
@@ -846,52 +886,53 @@
                         <!-- &lt;p&gt;Dengan warna HSL, lebih sedikit saturasi berarti lebih sedikit warna. 0% benar-benar
             abu-abu.&lt;/p&gt; -->
                     </code>
-                    <hr>
-                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
-                            sendiri</a></p>
-                </div>
-            </section>
-            <hr>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                        sendiri</a></p>
+            </div>
+        </section>
+        <hr>
 
-            <section id="Lightness">
-                <h3>Lightness</h3>
-                <p><strong>Lightness</strong> warna dapat digambarkan sebagai seberapa banyak cahaya yang ingin Anda berikan pada warna, di mana 0% berarti tidak ada cahaya (hitam), 50% berarti 50% terang (tidak gelap atau terang) 100% berarti terang penuh
-                    (putih).
-                </p>
-                <p>Contoh :</p>
+        <section id="Lightness">
+            <h3>Lightness</h3>
+            <p><strong>Lightness</strong> warna dapat digambarkan sebagai seberapa banyak cahaya yang ingin Anda berikan pada warna, di mana 0% berarti tidak ada cahaya (hitam), 50% berarti 50% terang (tidak gelap atau terang) 100% berarti terang penuh (putih).
+            </p>
+            <p>Contoh :</p>
 
-                <div class="bd-example">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 100%, 0%);">hsl(0, 100%, 0%)</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 100%, 25%)">hsl(0, 100%, 25%)</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-dark" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 100%, 90%);">hsl(0, 100%, 90%)</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-dark" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 100%, 100%);">hsl(0, 100%, 100%)</div>
+            <div class="bd-example">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 100%, 0%);">hsl(0, 100%, 0%)
                         </div>
                     </div>
-                    <!-- <h5 style="padding: 10px; color: whitesmoke; background-color:hsl(0, 100%, 0%);">hsl(0, 100%, 0%)</h5>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 100%, 25%)">hsl(0, 100%, 25%)
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-dark" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 100%, 90%);">hsl(0, 100%, 90%)</div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-dark" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 100%, 100%);">hsl(0, 100%, 100%)</div>
+                    </div>
+                </div>
+                <!-- <h5 style="padding: 10px; color: whitesmoke; background-color:hsl(0, 100%, 0%);">hsl(0, 100%, 0%)</h5>
                     <h5 style="padding: 10px; color: whitesmoke; background-color:hsl(0, 100%, 25%);">hsl(0, 100%, 25%)</h5>
                     <h5 style="padding: 10px; color: whitesmoke; background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h5>
                     <h5 style="padding: 10px; background-color:hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</h5>
                     <h5 style="padding: 10px; background-color:hsl(0, 100%, 90%);">hsl(0, 100%, 90%)</h5>
                     <h5 style="padding: 10px; background-color:hsl(0, 100%, 100%);">hsl(0, 100%, 100%)</h5> -->
-                </div>
+            </div>
 
-                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                <div class="bd-callout">
-                    <code>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <code>
                         &lt;h1 style="background-color:hsl(0, 100%, 0%);"&gt;hsl(0, 100%, 0%)&lt;/h1&gt; <br>
                         &lt;h1 style="background-color:hsl(0, 100%, 25%);"&gt;hsl(0, 100%, 25%)&lt;/h1&gt; <br>
                         &lt;h1 style="background-color:hsl(0, 100%, 50%);"&gt;hsl(0, 100%, 50%)&lt;/h1&gt; <br>
@@ -900,51 +941,56 @@
                         &lt;h1 style="background-color:hsl(0, 100%, 100%);"&gt;hsl(0, 100%, 100%)&lt;/h1&gt;
                         <p>Dengan warna HSL, 0% lightness berarti hitam, dan 100 lightness berarti putih.</p>
                     </code>
-                    <hr>
-                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalahsendiri</a>
-                    </p>
-                </div>
-            </section>
-            <hr>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalahsendiri</a>
+                </p>
+            </div>
+        </section>
+        <hr>
 
-            <section id="bayanganabuabuhsl">
-                <h3>Bayangan Abu-abu</h3>
-                <p>Nuansa abu-abu sering ditentukan dengan mengatur rona dan saturasi ke 0, dan menyesuaikan kecerahan dari 0% hingga 100% untuk mendapatkan rona yang lebih gelap/terang:</p>
-                <p>Contoh :</p>
+        <section id="bayanganabuabuhsl">
+            <h3>Bayangan Abu-abu</h3>
+            <p>Nuansa abu-abu sering ditentukan dengan mengatur rona dan saturasi ke 0, dan menyesuaikan kecerahan dari 0% hingga 100% untuk mendapatkan rona yang lebih gelap/terang:</p>
+            <p>Contoh :</p>
 
-                <div class="bd-example">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 0%, 20%);">hsl(0, 0%, 20%)</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 0%, 30%)">hsl(0, 0%, 30%)
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 0%, 40%);">hsl(0, 0%, 40%)</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 0%, 60%);">hsl(0, 0%, 60%)</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 0%, 70%);">hsl(0, 0%, 70%)</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-dark" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 0%, 90%);">hsl(0, 0%, 90%)</div>
+            <div class="bd-example">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 0%, 20%);">hsl(0, 0%, 20%)
                         </div>
                     </div>
-                    <!-- <h5 style="color: whitesmoke; padding: 10px; background-color:hsl(0, 0%, 20%);">hsl(0, 0%, 20%)</h5>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 0%, 30%)">hsl(0, 0%, 30%)
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 0%, 40%);">hsl(0, 0%, 40%)
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 0%, 60%);">hsl(0, 0%, 60%)
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-light" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 0%, 70%);">hsl(0, 0%, 70%)
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-dark" style="border-radius: calc(0.25rem - 1px); background-color: hsl(0, 0%, 90%);">hsl(0, 0%, 90%)
+                        </div>
+                    </div>
+                </div>
+                <!-- <h5 style="color: whitesmoke; padding: 10px; background-color:hsl(0, 0%, 20%);">hsl(0, 0%, 20%)</h5>
                     <h5 style="color: whitesmoke; padding: 10px; background-color:hsl(0, 0%, 30%);">hsl(0, 0%, 30%)</h5>
                     <h5 style="color: whitesmoke; padding: 10px; background-color:hsl(0, 0%, 40%);">hsl(0, 0%, 40%)</h5>
                     <h5 style="padding: 10px; background-color:hsl(0, 0%, 60%);">hsl(0, 0%, 60%)</h5>
                     <h5 style="padding: 10px; background-color:hsl(0, 0%, 70%);">hsl(0, 0%, 70%)</h5>
                     <h5 style="padding: 10px; background-color:hsl(0, 0%, 90%);">hsl(0, 0%, 90%)</h5> -->
-                </div>
+            </div>
 
-                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                <div class="bd-callout">
-                    <code>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <code>
                         &lt;h1 style="background-color:hsl(0, 0%, 20%);"&gt;hsl(0, 0%, 20%)&lt;/h1&gt; <br>
                         &lt;h1 style="background-color:hsl(0, 0%, 30%);"&gt;hsl(0, 0%, 30%)&lt;/h1&gt; <br>
                         &lt;h1 style="background-color:hsl(0, 0%, 40%);"&gt;hsl(0, 0%, 40%)&lt;/h1&gt; <br>
@@ -952,99 +998,99 @@
                         &lt;h1 style="background-color:hsl(0, 0%, 70%);"&gt;hsl(0, 0%, 70%)&lt;/h1&gt; <br>
                         &lt;h1 style="background-color:hsl(0, 0%, 90%);"&gt;hsl(0, 0%, 90%)&lt;/h1&gt;
                     </code>
-                    <hr>
-                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
-                            sendiri</a></p>
-                </div>
-            </section>
-            <hr>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                        sendiri</a></p>
+            </div>
+        </section>
+        <hr>
 
-            <section id="nilaiwarnarhsla">
-                <h3>Nilai Warna HSLA</h3>
-                <p>Nilai warna HSLA adalah perpanjangan dari nilai warna HSL dengan saluran Alpha - yang menentukan opasitas untuk warna. Nilai warna HSLA ditentukan dengan:</p>
-                <div class="bd-callout">
-                    <code>hsla(hue, saturation, lightness, alpha)</code>
-                </div>
-                <p>Parameter alpha adalah angka antara 0.0 (sepenuhnya transparan) dan 1.0 (tidak transparan sama sekali):
-                </p>
-                <p>Percobaan dengan mencampur nilai <strong>HSLA</strong> di bawah ini:</p>
-                <div class="contoh p-3" style="background-image: url(files/img/overlay.jpg);background-repeat: repeat;">
-                    <div class="row">
-                        <div class="col text-center">
-                            <div id="hslaresult" style="line-height: 80px; background-color: rgba(255, 0, 0, 0.5);border-radius: calc(0.25rem - 1px);">
-                                <p id="hslaresulttext">hsla(0, 100%, 50%, 0.5)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col text-center">
-                            <p>HUE</p>
-                            <input onchange="changeHsla()" oninput="changeHsla()" type="range" id="slideHueA" name="slideHueA" value="0" min="0" max="360">
-                            <div id="valHueA">0</div>
-                        </div>
-                        <div class="col text-center">
-                            <p>SATURATION</p>
-                            <input onchange="changeHsla()" oninput="changeHsla()" type="range" id="slideSatA" name="slideSatA" value="100" min="0" max="100">
-                            <div id="valSatA">100%</div>
-                        </div>
-                        <div class="col text-center">
-                            <p>LIGHTNESS</p>
-                            <input onchange="changeHsla()" oninput="changeHsla()" type="range" id="slideLightA" name="slideLightA" value="50" min="0" max="100">
-                            <div id="valLightA">50%</div>
-                        </div>
-                        <div class="col text-center">
-                            <p>ALPHA</p>
-                            <input onchange="changeHsla()" oninput="changeHsla()" type="range" id="slideHslAlpha" name="slideHslAlpha" value="5" min="0" max="10">
-                            <div id="valHslAlpha">0.5</div>
+        <section id="nilaiwarnarhsla">
+            <h3>Nilai Warna HSLA</h3>
+            <p>Nilai warna HSLA adalah perpanjangan dari nilai warna HSL dengan saluran Alpha - yang menentukan opasitas untuk warna. Nilai warna HSLA ditentukan dengan:</p>
+            <div class="bd-callout">
+                <code>hsla(hue, saturation, lightness, alpha)</code>
+            </div>
+            <p>Parameter alpha adalah angka antara 0.0 (sepenuhnya transparan) dan 1.0 (tidak transparan sama sekali):
+            </p>
+            <p>Percobaan dengan mencampur nilai <strong>HSLA</strong> di bawah ini:</p>
+            <div class="contoh p-3" style="background-image: url(files/img/overlay.jpg);background-repeat: repeat;">
+                <div class="row">
+                    <div class="col text-center">
+                        <div id="hslaresult" style="line-height: 80px; background-color: rgba(255, 0, 0, 0.5);border-radius: calc(0.25rem - 1px);">
+                            <p id="hslaresulttext">hsla(0, 100%, 50%, 0.5)</p>
                         </div>
                     </div>
                 </div>
-                <p>Contoh :</p>
+                <div class="row">
+                    <div class="col text-center">
+                        <p>HUE</p>
+                        <input onchange="changeHsla()" oninput="changeHsla()" type="range" id="slideHueA" name="slideHueA" value="0" min="0" max="360">
+                        <div id="valHueA">0</div>
+                    </div>
+                    <div class="col text-center">
+                        <p>SATURATION</p>
+                        <input onchange="changeHsla()" oninput="changeHsla()" type="range" id="slideSatA" name="slideSatA" value="100" min="0" max="100">
+                        <div id="valSatA">100%</div>
+                    </div>
+                    <div class="col text-center">
+                        <p>LIGHTNESS</p>
+                        <input onchange="changeHsla()" oninput="changeHsla()" type="range" id="slideLightA" name="slideLightA" value="50" min="0" max="100">
+                        <div id="valLightA">50%</div>
+                    </div>
+                    <div class="col text-center">
+                        <p>ALPHA</p>
+                        <input onchange="changeHsla()" oninput="changeHsla()" type="range" id="slideHslAlpha" name="slideHslAlpha" value="5" min="0" max="10">
+                        <div id="valHslAlpha">0.5</div>
+                    </div>
+                </div>
+            </div>
+            <p>Contoh :</p>
 
-                <div class="contoh" style="background-image: url(files/img/overlay.jpg);background-repeat: repeat;">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-dark" style="border-radius: calc(0.25rem - 1px); background-color: hsla(9, 100%, 64%, 0);">
-                                hsla(9, 100%, 64%, 0)
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-dark" style="border-radius: calc(0.25rem - 1px); background-color: hsla(9, 100%, 64%, 0.2)">
-                                hsla(9, 100%, 64%, 0.2)
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-dark" style="border-radius: calc(0.25rem - 1px); background-color: hsla(9, 100%, 64%, 0.4);">
-                                hsla(9, 100%, 64%, 0.4)
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-dark" style="border-radius: calc(0.25rem - 1px); background-color: hsla(9, 100%, 64%, 0.6);">
-                                hsla(9, 100%, 64%, 0.6)
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-dark" style="border-radius: calc(0.25rem - 1px); background-color: hsla(9, 100%, 64%, 0.8);">
-                                hsla(9, 100%, 64%, 0.8)
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="p-3 mb-3 fw-normal text-center text-dark" style="border-radius: calc(0.25rem - 1px); background-color: hsla(9, 100%, 64%, 1);">
-                                hsla(9, 100%, 64%, 1)
-                            </div>
+            <div class="contoh" style="background-image: url(files/img/overlay.jpg);background-repeat: repeat;">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-dark" style="border-radius: calc(0.25rem - 1px); background-color: hsla(9, 100%, 64%, 0);">
+                            hsla(9, 100%, 64%, 0)
                         </div>
                     </div>
-                    <!-- <h5 style="padding: 10px; background-color:hsla(9, 100%, 64%, 0);">hsla(9, 100%, 64%, 0)</h5>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-dark" style="border-radius: calc(0.25rem - 1px); background-color: hsla(9, 100%, 64%, 0.2)">
+                            hsla(9, 100%, 64%, 0.2)
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-dark" style="border-radius: calc(0.25rem - 1px); background-color: hsla(9, 100%, 64%, 0.4);">
+                            hsla(9, 100%, 64%, 0.4)
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-dark" style="border-radius: calc(0.25rem - 1px); background-color: hsla(9, 100%, 64%, 0.6);">
+                            hsla(9, 100%, 64%, 0.6)
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-dark" style="border-radius: calc(0.25rem - 1px); background-color: hsla(9, 100%, 64%, 0.8);">
+                            hsla(9, 100%, 64%, 0.8)
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="p-3 mb-3 fw-normal text-center text-dark" style="border-radius: calc(0.25rem - 1px); background-color: hsla(9, 100%, 64%, 1);">
+                            hsla(9, 100%, 64%, 1)
+                        </div>
+                    </div>
+                </div>
+                <!-- <h5 style="padding: 10px; background-color:hsla(9, 100%, 64%, 0);">hsla(9, 100%, 64%, 0)</h5>
                     <h5 style="padding: 10px; background-color:hsla(9, 100%, 64%, 0.2);">hsla(9, 100%, 64%, 0.2)</h5>
                     <h5 style="padding: 10px; background-color:hsla(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</h5>
                     <h5 style="padding: 10px; background-color:hsla(9, 100%, 64%, 0.6);">hsla(9, 100%, 64%, 0.6)</h5>
                     <h5 style="padding: 10px; background-color:hsla(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</h5>
                     <h5 style="padding: 10px; background-color:hsla(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</h5> -->
-                </div>
+            </div>
 
-                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                <div class="bd-callout">
-                    <code>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <code>
                         &lt;h1 style="background-color:hsla(9, 100%, 64%, 0);"&gt;hsla(9, 100%, 64%, 0)&lt;/h1&gt; <br>
                         &lt;h1 style="background-color:hsla(9, 100%, 64%, 0.2);"&gt;hsla(9, 100%, 64%, 0.2)&lt;/h1&gt;
                         <br>
@@ -1056,12 +1102,12 @@
                         <br>
                         &lt;h1 style="background-color:hsla(9, 100%, 64%, 1);"&gt;hsla(9, 100%, 64%, 1)&lt;/h1&gt;
                     </code>
-                    <hr>
-                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
-                            sendiri</a>
-                    </p>
-                </div>
-            </section>
-        </div>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                        sendiri</a>
+                </p>
+            </div>
+        </section>
+    </div>
     </div>
 </main>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+                <a class="navbar-brand" href="#">Diggs27 Portfolio</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="nav navbar-nav">
+                    <li class="active" onclick="setActive(this)"><a href="#Home">Home</a></li>
+                    <li onclick="setActive(this)"><a href="#Projects">Projects</a></li>
+                    <li onclick="setActive(this)"><a href="#Skills">Skills</a></li>
+                    <li onclick="setActive(this)"><a href="#About">About</a></li>
+                    <li onclick="setActive(this)"><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </br>
+    </br>
+    </br>
+    <div class="container">
+        <div class="row rowIntroOverride">
+            <div class="col-sm-4 col-md-4 col-lg-3">
+                <img width="50%" id="profilePhoto" src="../assets/img/icons/html5.png" />
+            </div>
+            <div class="col-sm-8 col-md-8 col-lg-9">
+                <br />
+                <mark><b>Developer ^ Software Engineer ^ IT Professional</b></mark>
+                <br />
+                <br />
+
+                <div>
+                    <p>My name is John and I am an IT Professional working in the Healthcare Industry. I currently hold the role of Integration Developer where I take on the responsible for designing, maintaining, troubleshooting and supporting our 300+
+                        integration points. I have a degree in Computer Science and I have been working in the Healthcare field for over 10 years.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="ProjectsTitle" class="row rowHeader">
+            <mark style="width:100%;"><b>Projects</b></mark>
+        </div>
+
+        <div id="Projects" class="row rowOveride">
+            <div class="col-sm-6 col-md-3 col-lg-3 projectItem">
+                <mark style="background:#CCEEFF;"><b>Websites</b></mark>
+                <br />
+                <br />
+                <img class="projectImage" src="test.jpg" />
+                <br />
+                <p>I was asked to help build a website for local apartment management company. Janet at L.A. Classic has a unique style and wanted to showcase it on her website. I took her requirements and built her a site where she can manage and advertise
+                    her apartments over the web. Although simple, I gave her a product she and her clients have been using for over four years. The site uses PHP, MySql and apache. <a href="http://apartmentsforeveryone.com/">http://apartmentsforeveryone.com</a></p>
+            </div>
+
+            <div class="col-sm-6 col-md-3 col-lg-3 projectItem">
+                <mark style="background:#CCEEFF;"><b>Web Applications</b></mark> <br />
+
+                <br />
+                <img class="projectImage" src="test.jpg" />
+                <br />
+
+                <p> Over the past few years I have written a number of web applications at my places of work to help manage different ascpects of Business. Some of these web applications include a network management application to manage wireless internet
+                    subscribers in Northern NH, a Co-Pay Management system used by 12 hospital practices to manage co-payments and print receipts, and a web application to intergrate medical record requests between hospitals. </p>
+
+            </div>
+
+            <div class="col-sm-6 col-md-3 col-lg-3 projectItem">
+                <mark style="background:#CCEEFF;"><b>
+              Programming</b></mark>
+                <br />
+                <br />
+                <img class="projectImage" src="test.jpg" />
+                <br />
+                <p>I have written hundreds of programs over the years that cover a wide range of programming languages and frameworks. Most of my work is done in C# .Net with visual studio, but I have written programs in other languages covering java, perl,
+                    C++ and PHP. I follow the idea of using the right tool for the right job. What works well in one area doesn't work well in another area. I try to keep my skill set broad so I can be prepared to solve problems when they arise. </p>
+            </div>
+
+            <div class="col-sm-6 col-md-3 col-lg-3 projectItem">
+
+                <mark style="background:#CCEEFF;"><b>
+              Databases</b></mark>
+                <br />
+                <br />
+                <img class="projectImage" src="test.jpg" />
+                <br />
+                <p>The past few years I have written hundreds of database queries, stored procedures, custom functions. I have designed, managed and maintained multiple databases. In addition, I have a strong understanding of Crystal Reports and have delivered
+                    over 300 reports to stakeholders to manage day to day operations. </p>
+            </div>
+
+
+        </div>
+        <div id="SkillsTitle" class="row rowHeader">
+            <mark style="width:100%;"><b>Skills</b></mark>
+        </div>
+
+        <div id="Skills">
+            <div class="row rowSkillsOverride">
+                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 skill">
+                    <button class="btn" style="width:100%">Visual Studio</button>
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 skill">
+                    <button class="btn" style="width:100%">Java</button>
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 skill">
+                    <button class="btn" style="width:100%">C++</button>
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 skill">
+                    <button class="btn" style="width:100%">CSS</button>
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 skill">
+                    <button class="btn" style="width:100%">SQL Server</button>
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 skill">
+                    <button class="btn" style="width:100%">C#</button>
+                </div>
+
+                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 skill">
+                    <button class="btn" style="width:100%">ASP.NET</button>
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 skill">
+                    <button class="btn" style="width:100%">MySQL</button>
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 skill">
+                    <button class="btn" style="width:100%">Javascript</button>
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 skill">
+                    <button class="btn" style="width:100%">PHP</button>
+                </div>
+                <div class="col-xs-6 col-sm-2 col-md-2 col-lg-2 skill">
+                    <button class="btn" style="width:100%">Python</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row rowIntroOverrideFooter">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <center>
+                    <a target='_blank' href="https://www.linkedin.com/pub/john-ramsey/29/258/277">
+
+                        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT2b2flhYdu3klHquDA1HqynLvW34j-_UYrpS2FZVlw0ZelPuYCM5U7Mgg" width="20" height="20" border="0" alt="View John Ramsey's profile on LinkedIn">
+
+
+                    </a>
+
+                    <a target='_blank' href="https://github.com/Diggs27">
+
+                        <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" width="20" height="20" border="0" alt="View John Ramsey's profile on Github">
+
+                    </a>
+
+                    <a target='_blank' href="https://twitter.com/simplelogics">
+
+                        <img src="http://www.freepromotips.com/sites/default/files/twitter-Square.jpg" width="20" height="20" border="0" alt="View John Ramsey's profile on Twitter">
+
+                    </a>
+
+                </center>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
+</body>
+
+</html>

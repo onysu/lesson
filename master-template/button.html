@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0 50px;
+            background-color: #f4f4f4;
+            font-family: source-sans-pro, sans-serif;
+        }
+        
+         :focus {
+            outline-color: transparent;
+            outline-style: none;
+        }
+        
+        .full {
+            width: 100%;
+        }
+        
+        .title {
+            letter-spacing: -.065em;
+        }
+        
+        .spacer {
+            padding: 25px 0;
+        }
+        
+        .topcoat-button-bar__item>input {
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 2rem;
+            margin: 0 -2rem -2rem 0;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: auto;
+            opacity: 0.001;
+        }
+        
+        .button-bar,
+        .topcoat-button-bar {
+            display: table;
+            table-layout: fixed;
+            white-space: no-wrap;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .topcoat-button-bar__item {
+            display: table-cell;
+            width: auto;
+            border-radius: 0;
+        }
+        
+        .topcoat-button-bar>.topcoat-button-bar__item:first-child {
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px;
+        }
+        
+        .topcoat-button-bar>.topcoat-button-bar__item:last-child {
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+        }
+        
+        .topcoat-button-bar__item:first-child>.topcoat-button-bar__button {
+            border-right: none;
+        }
+        
+        .topcoat-button-bar__item:last-child>.topcoat-button-bar__button {
+            border-left: none;
+        }
+        
+        .button,
+        .topcoat-button-bar__button {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            border: none;
+            background: transparent;
+            background-clip: padding-box;
+            color: inherit;
+            vertical-align: top;
+            text-decoration: none;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font: inherit;
+            cursor: default;
+            user-select: none;
+        }
+        
+        .topcoat-button-bar__button {
+            padding: 0 1.25rem;
+            border: 1px solid #a5a8a8;
+            /* Important inheritance to manipulate border radius from parent */
+            border-radius: inherit;
+            background-color: #e5e9e8;
+            -webkit-box-shadow: inset 0 1px #fff;
+            box-shadow: inset 0 1px #fff;
+            color: #454545;
+            text-shadow: 0 1px #fff;
+            line-height: 3rem;
+        }
+        
+         :checked+.topcoat-button-bar__button,
+        .topcoat-button-bar__button:active,
+        .topcoat-button-bar__button.is-active {
+            background-color: #d3d7d7;
+            -webkit-box-shadow: inset 0 1px rgba(0, 0, 0, 0.12);
+            box-shadow: inset 0 1px rgba(0, 0, 0, 0.12);
+        }
+        
+        .topcoat-button-bar__item:disabled,
+        .topcoat-button-bar__item.is-disabled {
+            opacity: 0.3;
+            cursor: default;
+            pointer-events: none;
+        }
+        
+        .topcoat-button-bar__button:focus {
+            border: 1px solid #0940fd;
+            -webkit-box-shadow: 0 0 0 2px #6fb5f1;
+            box-shadow: 0 0 0 2px #6fb5f1;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">
+        Topcoat Button Bar
+    </h1>
+    <p>
+        Default style for Topcoat Button Bar.
+        <br> Requirements are portable and accessible markup with flexible and performant css.
+        <br> No javascript required
+    </p>
+
+    <h2>Normal Button Bar</h2>
+
+    <div class="topcoat-button-bar">
+        <div class="topcoat-button-bar__item">
+            <button class="topcoat-button-bar__button">One</button>
+        </div>
+        <div class="topcoat-button-bar__item">
+            <button class="topcoat-button-bar__button">Two</button>
+        </div>
+        <div class="topcoat-button-bar__item">
+            <button class="topcoat-button-bar__button">Three</button>
+        </div>
+    </div>
+
+    <br>
+
+    <h2>Select Button Bar</h2>
+
+    <div class="topcoat-button-bar">
+        <label class="topcoat-button-bar__item">
+        <input type="radio" name="topcoat">
+        <button class="topcoat-button-bar__button">One</button>
+      </label>
+        <label class="topcoat-button-bar__item">
+        <input type="radio" name="topcoat">
+        <button class="topcoat-button-bar__button">Two</button>
+      </label>
+        <label class="topcoat-button-bar__item">
+        <input type="radio" name="topcoat">
+        <button class="topcoat-button-bar__button">Three</button>
+      </label>
+    </div>
+
+    <br>
+
+    <h2>Toggle Button Bar</h2>
+
+    <div class="topcoat-button-bar">
+        <label class="topcoat-button-bar__item">
+        <input type="checkbox">
+        <button class="topcoat-button-bar__button">One</button>
+      </label>
+        <label class="topcoat-button-bar__item">
+        <input type="checkbox">
+        <button class="topcoat-button-bar__button">Two</button>
+      </label>
+        <label class="topcoat-button-bar__item">
+        <input type="checkbox">
+        <button class="topcoat-button-bar__button">Three</button>
+      </label>
+    </div>
+
+    <div class="spacer">
+        <hr>
+    </div>
+
+    <h2>Accessibility</h2>
+    <p>
+        The stateful button bars use inputs and the :checked pseudo style to add functionality without needing Javascript.
+    </p>
+    <p>
+        These stateful button bars rely on implicit ( or nested ) input labels instead of each needing an `id` and a matching `for` attribute on the corresponding label. This makes them more portable since each `id` on a page needs to be unique.
+    </p>
+    <p>
+        If you need to support legacy browsers and accessibility devices you can easily support these by adding the `id` and `for` attributes.
+    </p>
+
+    <div class="topcoat-button-bar">
+        <label for="one" class="topcoat-button-bar__item">
+        <input id="one" type="radio" name="topcoat">
+        <button class="topcoat-button-bar__button">One</button>
+      </label>
+        <label for="two" class="topcoat-button-bar__item">
+        <input id="two" type="radio" name="topcoat">
+        <button class="topcoat-button-bar__button">Two</button>
+      </label>
+        <label for="three" class="topcoat-button-bar__item">
+        <input id="three" type="radio" name="topcoat">
+        <button class="topcoat-button-bar__button">Three</button>
+      </label>
+    </div>
+    <p>
+        *look at HTML source
+    </p>
+
+    <div class="spacer">
+        <hr>
+    </div>
+
+    <h2>Semantic variations</h2>
+    <p>
+        This is where the CSS classes start to show their true benefit. You can use different semantic mark up to reflect your specific use case while maintiaing the same CSS classes.
+    </p>
+    <p>
+        If you are using this button bar as your primary navigation you could change the markup to reflect this semantically by using a nav element. Component looks the same with different mark up.
+    </p>
+
+    <nav class="topcoat-button-bar">
+        <div class="topcoat-button-bar__item">
+            <button class="topcoat-button-bar__button">One</button>
+        </div>
+        <div class="topcoat-button-bar__item">
+            <button class="topcoat-button-bar__button">Two</button>
+        </div>
+        <div class="topcoat-button-bar__item">
+            <button class="topcoat-button-bar__button">Three</button>
+        </div>
+    </nav>
+    <p>
+        *look at HTML source
+    </p>
+    <p>
+        If you are using this button bar as a list of links you could change the markup to semantically reflect this by using an unorderd list with anchor tags. Again, component looks the same with different mark up.
+    </p>
+
+    <ul class="topcoat-button-bar">
+        <li class="topcoat-button-bar__item">
+            <a href="http://topcoat.io" target="_blank" class="topcoat-button-bar__button">
+          Topcoat
+        </a>
+        </li>
+        <li class="topcoat-button-bar__item">
+            <a href="http://brackets.io" target="_blank" class="topcoat-button-bar__button">
+          Brackets
+        </a>
+        </li>
+        <li class="topcoat-button-bar__item">
+            <a href="http://html.adobe.com" target="_blank" class="topcoat-button-bar__button">
+          Adobe Web
+        </a>
+        </li>
+    </ul>
+    <p>
+        *look at HTML source
+    </p>
+
+    <div class="spacer">
+        <hr>
+    </div>
+
+    <h2>Adding sizing</h2>
+
+    <p>
+        Topcoat separates layout and positioning from styling to make the components more reusable.
+        <br> The below example has the layout class `full` added to elements to show how sizing can be applied.
+    </p>
+
+    <div class="topcoat-button-bar full">
+        <div class="topcoat-button-bar__item">
+            <button class="topcoat-button-bar__button full">One</button>
+        </div>
+        <div class="topcoat-button-bar__item">
+            <button class="topcoat-button-bar__button full">Two</button>
+        </div>
+        <div class="topcoat-button-bar__item">
+            <button class="topcoat-button-bar__button full">Three</button>
+        </div>
+    </div>
+
+    <div class="spacer">
+        <hr>
+    </div>
+
+    <small>
+      <a href="https://www.twitter.com/dam">@dam</a> ♥s you
+    </small>
+
+    <script src="//use.edgefonts.net/source-sans-pro:n3,n4,n6;source-code-pro:n3.js"></script>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+</body>
+
+</html>

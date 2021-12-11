@@ -732,8 +732,76 @@
         </section>
         <hr>
 
+        <p>Menghilangkan garis Table, dengan CSS:</p>
 
-        <p>Lewati batas di sekitar tabel dengan keluar tabledari pemilih css:</p>
+        <div class="bd-example">
+            <h2>Tabel Dengan Border Bulat</h2>
+            <p>Gunakan properti radius batas CSS untuk menambahkan sudut membulat ke sel tabel.</p>
+            <table style="width:100%;border-collapse: unset;">
+                <tr>
+                    <th style="text-align: center; border: 1px solid black;border-radius: 10px;">Firstname</th>
+                    <th style="text-align: center; border: 1px solid black;border-radius: 10px;">Lastname</th>
+                    <th style="text-align: center; border: 1px solid black;border-radius: 10px;">Age</th>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;border-radius: 10px;">Jill</td>
+                    <td style="border: 1px solid black;border-radius: 10px;">Smith</td>
+                    <td style="border: 1px solid black;border-radius: 10px;">50</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;border-radius: 10px;">Eve</td>
+                    <td style="border: 1px solid black;border-radius: 10px;">Jackson</td>
+                    <td style="border: 1px solid black;border-radius: 10px;">94</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;border-radius: 10px;">John</td>
+                    <td style="border: 1px solid black;border-radius: 10px;">Doe</td>
+                    <td style="border: 1px solid black;border-radius: 10px;">80</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+        <div class="highlight">
+            <pre>
+            <code>
+&lt;style&gt;
+    th,
+    td {
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+&lt;/style&gt;
+
+&lt;table style="width:100%"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Firstname&lt;/th&gt;
+        &lt;th&gt;Lastname&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Jill&lt;/td&gt;
+        &lt;td&gt;Smith&lt;/td&gt;
+        &lt;td&gt;50&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Eve&lt;/td&gt;
+        &lt;td&gt;Jackson&lt;/td&gt;
+        &lt;td&gt;94&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;Doe&lt;/td&gt;
+        &lt;td&gt;80&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</code>
+</pre>
+            <hr>
+            <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri
+                        <img draggable="false" role="img" class="emoji" alt="↗"
+                            src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+        </div>
 
         <tableTable border=0 cellpadding=0 width=263 style='width:197.05pt;
  background:white'>

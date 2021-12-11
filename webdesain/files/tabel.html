@@ -427,70 +427,67 @@
             <h2>Border Tabel HTML</h2>
             <p>Tabel HTML dapat memiliki batas gaya dan bentuk yang berbeda. <br> Cara Menambahkan Border :</p>
             <p>Saat Anda menambahkan <mark><code>border</code></mark> ke tabel, Anda juga menambahkan
-                <mark><code>border</code></mark> di sekitar setiap sel tabel. <br> Untuk menambahkan batas, gunakan
-                <mark><code>border</code></mark> properti CSS pada
-                <mark><code>table</code></mark>, <mark><code>th</code></mark>, dan <mark><code>td</code></mark> elemen: <br> Contoh :
+                <mark><code>border</code></mark> di sekitar setiap sel tabel.
             </p>
+            <p>Untuk menambahkan border, gunakan <mark><code>border</code></mark> properti CSS pada
+                <mark><code>table</code></mark>, <mark><code>th</code></mark>, dan <mark><code>td</code></mark> elemen.
+            </p>
+            <p>Contoh :</p>
 
             <div class="bd-example">
-                <h4>Tabel Dengan Border</h4>
-                <p>Gunakan properti <mark><code>border</code></mark> CSS untuk menambahkan batas ke tabel.</p>
-                <table style="width:100%;border: 1px solid black;">
+                <table style="width:30%;border-collapse: unset;border: 1px solid black;">
                     <tr>
-                        <th style="border: 1px solid black;">Firstname</th>
-                        <th style="border: 1px solid black;">Lastname</th>
-                        <th style="border: 1px solid black;">Age</th>
+                        <td style="border: 1px solid black;">&nbsp;</td>
+                        <td style="border: 1px solid black;">&nbsp;</td>
+                        <td style="border: 1px solid black;">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td style="border: 1px solid black;">Jill</td>
-                        <td style="border: 1px solid black;">Smith</td>
-                        <td style="border: 1px solid black;">50</td>
+                        <td style="border: 1px solid black;">&nbsp;</td>
+                        <td style="border: 1px solid black;">&nbsp;</td>
+                        <td style="border: 1px solid black;">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td style="border: 1px solid black;">Eve</td>
-                        <td style="border: 1px solid black;">Jackson</td>
-                        <td style="border: 1px solid black;">94</td>
-                    </tr>
-                    <tr>
-                        <td style="border: 1px solid black;">John</td>
-                        <td style="border: 1px solid black;">Doe</td>
-                        <td style="border: 1px solid black;">80</td>
+                        <td style="border: 1px solid black;">&nbsp;</td>
+                        <td style="border: 1px solid black;">&nbsp;</td>
+                        <td style="border: 1px solid black;">&nbsp;</td>
                     </tr>
                 </table>
             </div>
 
             <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-            <div class="bd-callout">
+            <div class="highlight">
                 <code>
-                        &lt;style&gt; <br>
-                        table, th, td { <br>
-                        border: 1px solid black; <br>
+                    &lt;style&gt; <br>
+                        table, <br>
+                        th, <br>
+                        td { <br>
+                            border: 1px solid black; <br>
                         } <br>
-                        &lt;/style&gt; <br>
-                        <br>
-                        &lt;table style="width:100%"&gt; <br>
+                    &lt;/style&gt; <br>
+                    <br>
+                    &lt;table style="width:100%;"&gt; <br>
                         &lt;tr&gt; <br>
-                        &lt;th&gt;Firstname&lt;/th&gt; <br>
-                        &lt;th&gt;Lastname&lt;/th&gt; <br>
-                        &lt;th&gt;Age&lt;/th&gt; <br>
+                            &lt;th&gt;Firstname&lt;/th&gt; <br>
+                            &lt;th&gt;Lastname&lt;/th&gt; <br>
+                            &lt;th&gt;Age&lt;/th&gt; <br>
                         &lt;/tr&gt; <br>
                         &lt;tr&gt; <br>
-                        &lt;td&gt;Jill&lt;/td&gt; <br>
-                        &lt;td&gt;Smith&lt;/td&gt; <br>
-                        &lt;td&gt;50&lt;/td&gt; <br>
+                            &lt;td&gt;Jill&lt;/td&gt; <br>
+                            &lt;td&gt;Smith&lt;/td&gt; <br>
+                            &lt;td&gt;50&lt;/td&gt; <br>
                         &lt;/tr&gt; <br>
                         &lt;tr&gt; <br>
-                        &lt;td&gt;Eve&lt;/td&gt; <br>
-                        &lt;td&gt;Jackson&lt;/td&gt; <br>
-                        &lt;td&gt;94&lt;/td&gt; <br>
+                            &lt;td&gt;Eve&lt;/td&gt; <br>
+                            &lt;td&gt;Jackson&lt;/td&gt; <br>
+                            &lt;td&gt;94&lt;/td&gt; <br>
                         &lt;/tr&gt; <br>
                         &lt;tr&gt; <br>
-                        &lt;td&gt;John&lt;/td&gt; <br>
-                        &lt;td&gt;Doe&lt;/td&gt; <br>
-                        &lt;td&gt;80&lt;/td&gt; <br>
+                            &lt;td&gt;John&lt;/td&gt; <br>
+                            &lt;td&gt;Doe&lt;/td&gt; <br>
+                            &lt;td&gt;80&lt;/td&gt; <br>
                         &lt;/tr&gt; <br>
-                        &lt;/table&gt; <br>
-                    </code>
+                    &lt;/table&gt;
+                </code>
                 <hr>
                 <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                             sendiri <img draggable="false" role="img" class="emoji" alt="↗"
@@ -502,9 +499,8 @@
         <section>
             <h2>Tabel Border Collapse</h2>
             <p>Untuk menghindari border ganda seperti pada contoh di atas, setel
-                <mark><code>border-collapse</code></mark> properti CSS ke <mark><code>collapse</code></mark>.
+                <mark><code>border-collapse</code></mark> properti CSS ke <mark><code>collapse</code></mark>. Ini akan membuat perbatasan runtuh menjadi satu perbatasan:
             </p>
-            <p>Ini akan membuat perbatasan runtuh menjadi satu perbatasan:</p>
             <div class="bd-example">
                 <table style="width:30%;border: 1px solid #282A35;">
                     <tbody>

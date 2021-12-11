@@ -257,7 +257,7 @@
             <p>Contoh :</p>
             <div class="bd-example">
                 <h2>Elemen <code>&lt;tr&gt;</code> mendefinisikan baris tabel</h2>
-                <table style="width:100%;border:1px solid black;">
+                <table style="width:100%;border:1px solid black;border-collapse: unset;">
                     <tr>
                         <td style="border:1px solid black;">Emil</td>
                         <td style="border:1px solid black;">Tobias</td>
@@ -273,26 +273,28 @@
             </div>
             <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
             <div class="bd-callout">
-                <code>
-                        &lt;style&gt; <br>
-                        table, th, td { <br>
-                        &nbsp;&nbsp;border:1px solid black; <br>
-                        } <br>
-                        &lt;/style&gt; <br>
-                        <br>
-                        &lt;table style="width:100%"&gt; <br>
-                        &lt;tr&gt; <br>
-                        &lt;td&gt;Emil&lt;/td&gt; <br>
-                        &lt;td&gt;Tobias&lt;/td&gt; <br>
-                        &lt;td&gt;Linus&lt;/td&gt; <br>
-                        &lt;/tr&gt; <br>
-                        &lt;tr&gt; <br>
-                        &lt;td&gt;16&lt;/td&gt; <br>
-                        &lt;td&gt;14&lt;/td&gt; <br>
-                        &lt;td&gt;10&lt;/td&gt; <br>
-                        &lt;/tr&gt; <br>
-                        &lt;/table&gt; <br>
+                <pre>
+                    <code>
+&lt;style&gt;
+    table, th, td {
+        border:1px solid black;
+    }
+&lt;/style&gt;
+
+&lt;table style="width:100%"&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Emil&lt;/td&gt;
+        &lt;td&gt;Tobias&lt;/td&gt;
+        &lt;td&gt;Linus&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;16&lt;/td&gt;
+        &lt;td&gt;14&lt;/td&gt;
+        &lt;td&gt;10&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
                     </code>
+                </pre>
                 <hr>
                 <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                             sendiri <img draggable="false" role="img" class="emoji" alt="↗"

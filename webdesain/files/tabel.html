@@ -1346,59 +1346,54 @@
 
         <hr>
 
-        <h2>Tabel HTML - Padding Sel</h2>
-
-        <p>Cell padding adalah ruang antara tepi sel dan isi sel. Secara default padding diatur ke 0. Untuk menambahkan padding pada sel tabel, gunakan <mark><code>padding</code></mark> properti CSS.</p>
-
-        <p>Contoh :</p>
-
-        <div class="bd-example">
-            <style>
-                table,
-                th,
-                td {
-                    border: 1px solid black;
-                    border-collapse: collapse;
-                }
-                
-                th,
-                td {
-                    padding: 15px;
-                }
-            </style>
-
-            <h2>Sel Padding</h2>
-            <p>Sel padding menentukan ruang antara konten sel dan batasnya.</p>
-
-            <table style="width:100%">
-                <tr>
-                    <th>Firstname</th>
-                    <th>Lastname</th>
-                    <th>Age</th>
-                </tr>
-                <tr>
-                    <td>Jill</td>
-                    <td>Smith</td>
-                    <td>50</td>
-                </tr>
-                <tr>
-                    <td>Eve</td>
-                    <td>Jackson</td>
-                    <td>94</td>
-                </tr>
-                <tr>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>80</td>
-                </tr>
-            </table>
-            <br>
-            <p><strong>Tip:</strong> Coba ubah padding menjadi 5px.</p>
-        </div>
-
-        <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-        <div class="bd-callout">
-            <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+        <section>
+            <h2>Tabel HTML - Padding Sel</h2>
+            <p>Cell padding adalah ruang antara tepi sel dan isi sel. Secara default padding diatur ke 0. Untuk menambahkan padding pada sel tabel, gunakan <mark><code>padding</code></mark> properti CSS.</p>
+            <p>Contoh :</p>
+            <div class="bd-example">
+                <style>
+                    table,
+                    th,
+                    td {
+                        border: 1px solid black;
+                        border-collapse: collapse;
+                    }
+                    
+                    th,
+                    td {
+                        padding: 15px;
+                    }
+                </style>
+                <h2>Sel Padding</h2>
+                <p>Sel padding menentukan ruang antara konten sel dan batasnya.</p>
+                <table style="width:100%">
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>94</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>80</td>
+                    </tr>
+                </table>
+                <br>
+                <p><strong>Tip:</strong> Coba ubah padding menjadi 5px.</p>
+            </div>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
 &lt;style&gt;
   table, th, td {
     border: 1px solid black;
@@ -1407,7 +1402,7 @@
 
   th,
   td {
-    padding: 15px;
+    <mark>padding: 15px;</mark>
   }
 &lt;/style&gt;
 
@@ -1433,67 +1428,61 @@
     &lt;td&gt;80&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;
-        </code></pre>
-            <hr>
-            <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri <img
-              draggable="false" role="img" class="emoji" alt="↗"
-              src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-        </div>
-
-        <p>Untuk menambahkan padding hanya di atas konten, gunakan <mark><code>padding-top</code></mark> properti. Dan sisi lain dengan <mark><code>padding-bottom</code></mark>, <mark><code>padding-left</code></mark> dan
-            <mark><code>padding-right</code></mark> properti.
-        </p>
-
-        <p>Contoh :</p>
-
-        <div class="bd-example">
-            <style>
-                table,
-                th,
-                td {
-                    border: 1px solid black;
-                    border-collapse: collapse;
-                }
-                
-                th,
-                td {
-                    padding-top: 10px;
-                    padding-bottom: 20px;
-                    padding-left: 30px;
-                    padding-right: 40px;
-                }
-            </style>
-
-            <h2>Sel Padding - top - bottom - left - right</h2>
-            <p>Kita dapat menentukan padding yang berbeda untuk keempat sisi konten sel.</p>
-
-            <table style="width:100%">
-                <tr>
-                    <th>Firstname</th>
-                    <th>Lastname</th>
-                    <th>Age</th>
-                </tr>
-                <tr>
-                    <td>Jill</td>
-                    <td>Smith</td>
-                    <td>50</td>
-                </tr>
-                <tr>
-                    <td>Eve</td>
-                    <td>Jackson</td>
-                    <td>94</td>
-                </tr>
-                <tr>
-                    <td>John</td>
-                    <td>Doe</td>
-                    <td>80</td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-        <div class="bd-callout">
-            <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+          </code></pre>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri <img
+                draggable="false" role="img" class="emoji" alt="↗"
+                src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+            </div>
+            <p>Untuk menambahkan padding hanya di atas konten, gunakan <mark><code>padding-top</code></mark> properti. Dan sisi lain dengan <mark><code>padding-bottom</code></mark>, <mark><code>padding-left</code></mark> dan
+                <mark><code>padding-right</code></mark> properti.
+            </p>
+            <p>Contoh :</p>
+            <div class="bd-example">
+                <style>
+                    table,
+                    th,
+                    td {
+                        border: 1px solid black;
+                        border-collapse: collapse;
+                    }
+                    
+                    th,
+                    td {
+                        padding-top: 10px;
+                        padding-bottom: 20px;
+                        padding-left: 30px;
+                        padding-right: 40px;
+                    }
+                </style>
+                <h2>Sel Padding - top - bottom - left - right</h2>
+                <p>Kita dapat menentukan padding yang berbeda untuk keempat sisi konten sel.</p>
+                <table style="width:100%">
+                    <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>94</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>80</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
 &lt;style&gt;
   table, th, td {
     border: 1px solid black;
@@ -1502,10 +1491,10 @@
 
   th,
   td {
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 30px;
-    padding-right: 40px;
+      <mark>padding-top: 10px;</mark>
+      <mark>padding-bottom: 20px;</mark>
+      <mark>padding-left: 30px;</mark>
+      <mark>padding-right: 40px;</mark>
   }
 &lt;/style&gt;
 
@@ -1531,12 +1520,13 @@
     &lt;td&gt;80&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;
-        </code></pre>
-            <hr>
-            <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri <img
-              draggable="false" role="img" class="emoji" alt="↗"
-              src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-        </div>
+          </code></pre>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri <img
+                draggable="false" role="img" class="emoji" alt="↗"
+                src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+            </div>
+        </section>
 
         <hr>
 

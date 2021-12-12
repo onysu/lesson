@@ -1262,6 +1262,7 @@
                     float: left;
                     margin-left: 15%;
                     margin-right: 15%;
+                    background-color: #fff;
                 }
                 
                 .table5,
@@ -1276,11 +1277,9 @@
                 }
                 
                 .table6 {
-                    float: left;
-                }
-                
-                .table6 {
                     border-spacing: 15px;
+                    float: left;
+                    background-color: #fff;
                 }
                 
                 .table6,
@@ -1288,12 +1287,6 @@
                 .table6 td {
                     border: 1px solid #282A35;
                     border-collapse: unset;
-                }
-                
-                .table6,
-                .table6 th,
-                .table6 td {
-                    border: 1px solid #282A35;
                 }
                 
                 @media (max-width: 650px) {
@@ -1355,30 +1348,100 @@
 
         <h2>Tabel HTML - Padding Sel</h2>
 
-        <p>Cell padding adalah ruang antara tepi sel dan isi sel.
-        </p>
-
-        <p>Secara default padding diatur ke 0.
-        </p>
-
-        <p>Untuk menambahkan padding pada sel tabel, gunakan paddingproperti CSS :
-        </p>
+        <p>Cell padding adalah ruang antara tepi sel dan isi sel. Secara default padding diatur ke 0. Untuk menambahkan padding pada sel tabel, gunakan <mark><code>padding</code></mark> properti CSS.</p>
 
         <p>Contoh :</p>
 
-        <p>th, td {<br> padding: 15px;
-            <br> }
-        </p>
+        <div class="bd-example">
+            <style>
+                table,
+                th,
+                td {
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                }
+                
+                th,
+                td {
+                    padding: 15px;
+                }
+            </style>
 
-        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_cellpadding" target="_blank">Cobalah
-          sendiri &quot;</a>
-        </p>
+            <h2>Sel Padding</h2>
+            <p>Sel padding menentukan ruang antara konten sel dan batasnya.</p>
 
-        <p>Untuk menambahkan padding hanya di atas konten, gunakan padding-topproperti.
-        </p>
+            <table style="width:100%">
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Eve</td>
+                    <td>Jackson</td>
+                    <td>94</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>80</td>
+                </tr>
+            </table>
+            <br>
+            <p><strong>Tip:</strong> Coba ubah padding menjadi 5px.</p>
+        </div>
 
-        <p>Dan sisi lain dengan padding-bottom, padding-left, dan padding-rightproperti:
-        </p>
+        <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+        <div class="bd-callout">
+            <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+&lt;style&gt;
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    padding: 15px;
+  }
+&lt;/style&gt;
+
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Firstname&lt;/th&gt;
+    &lt;th&gt;Lastname&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Jill&lt;/td&gt;
+    &lt;td&gt;Smith&lt;/td&gt;
+    &lt;td&gt;50&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Eve&lt;/td&gt;
+    &lt;td&gt;Jackson&lt;/td&gt;
+    &lt;td&gt;94&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;John&lt;/td&gt;
+    &lt;td&gt;Doe&lt;/td&gt;
+    &lt;td&gt;80&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+        </code></pre>
+            <hr>
+            <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri <img
+              draggable="false" role="img" class="emoji" alt="↗"
+              src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+        </div>
+
+        <p>Untuk menambahkan padding hanya di atas konten, gunakan <mark><code>padding-top</code></mark> properti. Dan sisi lain dengan <mark><code>padding-bottom</code></mark>, <mark><code>padding-left</code></mark> dan
+            <mark><code>padding-right</code></mark> properti.</p>
 
         <p>Contoh :</p>
 

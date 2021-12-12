@@ -1879,74 +1879,72 @@
         </section>
         <hr>
 
-        <h2>Tabel HTML - Garis Zebra Vertikal</h2>
-        <p>Untuk membuat garis-garis zebra vertikal, beri gaya pada setiap <i>kolom</i> lainnya , daripada setiap
-            <i>baris</i> lainnya.
-        </p>
-
-        <div class="bd-example">
-            <style>
-                .ZebraVertikal th:nth-child(even),
-                .ZebraVertikal td:nth-child(even) {
-                    background-color: #D6EEEE;
-                }
-            </style>
-
-            <h2>Tabel Bergaris <span class="text-muted small fw-light">(Striped)</span></h2>
-            <p>Untuk tabel bergaris zebra, gunakan pemilih <mark><code>nth-child()</code></mark> dan tambahkan warna latar ke semua baris tabel genap (atau ganjil):</p>
-
-            <table class="ZebraVertikal table text-center">
-                <tr>
-                    <th>MON</th>
-                    <th>TUE</th>
-                    <th>WED</th>
-                    <th>THU</th>
-                    <th>FRI</th>
-                    <th>SAT</th>
-                    <th>SUN</th>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-            </table>
-        </div>
-
-        <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-        <div class="bd-callout">
-            <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+        <section>
+            <h2>Tabel HTML - Garis Zebra Vertikal</h2>
+            <p>Untuk membuat garis-garis zebra vertikal, beri gaya pada setiap <i>kolom</i> lainnya , daripada setiap
+                <i>baris</i> lainnya.
+            </p>
+            <div class="bd-example">
+                <style>
+                    .ZebraVertikal th:nth-child(even),
+                    .ZebraVertikal td:nth-child(even) {
+                        background-color: #D6EEEE;
+                    }
+                </style>
+                <h2>Tabel Bergaris <span class="text-muted small fw-light">(Striped)</span></h2>
+                <p>Untuk tabel bergaris zebra, gunakan pemilih <mark><code>nth-child()</code></mark> dan tambahkan warna latar ke semua baris tabel genap (atau ganjil):</p>
+                <table class="ZebraVertikal table text-center">
+                    <tr>
+                        <th>MON</th>
+                        <th>TUE</th>
+                        <th>WED</th>
+                        <th>THU</th>
+                        <th>FRI</th>
+                        <th>SAT</th>
+                        <th>SUN</th>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+            <p>Setel <mark><code>:nth-child(even)</code></mark> untuk elemen data tabel seperti ini.</p>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
 &lt;style&gt;
   <mark>th:nth-child(even)</mark>,
   <mark>td:nth-child(even)</mark> {
@@ -2001,51 +1999,156 @@
     &lt;td&gt;&nbsp;&lt;/td&gt;
   &lt;/tr&gt;
 &lt;/table&gt;
-        </code></pre>
+          </code></pre>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri <img
+                draggable="false" role="img" class="emoji" alt="↗"
+                src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+            </div>
+            <p class="moreInfo"><b>Catatan:</b> Letakkan <mark><code>:nth-child()</code></mark> pemilih pada keduanya thdan td elemen jika Anda ingin memiliki style pada header dan sel tabel biasa.</p>
+        </section>
+
+        <hr>
+
+        <h2>Kombinasikan Garis Zebra Vertikal dan Horizontal</h2>
+        <p>Anda dapat menggabungkan gaya dari dua contoh di atas dan Anda akan memiliki garis-garis pada setiap baris dan kolom lainnya.</p>
+        <p>Jika Anda menggunakan warna transparan Anda akan mendapatkan efek tumpang tindih.</p>
+
+        <div class="bd-example">
+            <style>
+                .VertikalHorizontal tr:nth-child(even) {
+                    background-color: rgba(150, 212, 212, 0.4);
+                }
+                
+                .VertikalHorizontal th:nth-child(even),
+                .VertikalHorizontal td:nth-child(even) {
+                    background-color: rgba(150, 212, 212, 0.4);
+                }
+            </style>
+
+            <h2>Tabel Bergaris</h2>
+            <p>Untuk tabel bergaris zebra, gunakan pemilih <mark>nth-child()</mark> dan tambahkan warna latar ke semua baris tabel genap (atau ganjil):
+            </p>
+
+            <table class="VertikalHorizontal" style="width:100%">
+                <tr>
+                    <th>MON</th>
+                    <th>TUE</th>
+                    <th>WED</th>
+                    <th>THU</th>
+                    <th>FRI</th>
+                    <th>SAT</th>
+                    <th>SUN</th>
+                </tr>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+        <div class="bd-callout">
+            <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+&lt;style&gt;
+  <mark>tr:nth-child(even)</mark> {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+
+  <mark>th:nth-child(even)</mark>,
+  <mark>td:nth-child(even)</mark> {
+    background-color: rgba(150, 212, 212, 0.4);
+  }
+&lt;/style&gt;
+
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;MON&lt;/th&gt;
+    &lt;th&gt;TUE&lt;/th&gt;
+    &lt;th&gt;WED&lt;/th&gt;
+    &lt;th&gt;THU&lt;/th&gt;
+    &lt;th&gt;FRI&lt;/th&gt;
+    &lt;th&gt;SAT&lt;/th&gt;
+    &lt;th&gt;SUN&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;...&lt;/td&gt;
+    &lt;td&gt;...&lt;/td&gt;
+    &lt;td&gt;...&lt;/td&gt;
+    &lt;td&gt;...&lt;/td&gt;
+    &lt;td&gt;...&lt;/td&gt;
+    &lt;td&gt;...&lt;/td&gt;
+    &lt;td&gt;...&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;...&lt;/td&gt;
+    &lt;td&gt;...&lt;/td&gt;
+    &lt;td&gt;...&lt;/td&gt;
+    &lt;td&gt;...&lt;/td&gt;
+    &lt;td&gt;...&lt;/td&gt;
+    &lt;td&gt;...&lt;/td&gt;
+    &lt;td&gt;...&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;...&lt;/td&gt;
+    &lt;td&gt;...&lt;/td&gt;
+    &lt;td&gt;...&lt;/td&gt;
+    &lt;td&gt;...&lt;/td&gt;
+    &lt;td&gt;...&lt;/td&gt;
+    &lt;td&gt;...&lt;/td&gt;
+    &lt;td&gt;...&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;...&lt;/td&gt;
+    &lt;td&gt;...&lt;/td&gt;
+    &lt;td&gt;...&lt;/td&gt;
+    &lt;td&gt;...&lt;/td&gt;
+    &lt;td&gt;...&lt;/td&gt;
+    &lt;td&gt;...&lt;/td&gt;
+    &lt;td&gt;...&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+</code></pre>
             <hr>
             <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri <img
               draggable="false" role="img" class="emoji" alt="↗"
               src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
         </div>
 
-        <p>Setel <mark><code>:nth-child(even)</code></mark> untuk elemen data tabel seperti ini.</p>
 
-        <p>Contoh :</p>
-
-        <p>td:nth-child(even), th:nth-child(even) {
-            <br> background-color: #D6EEEE;
-            <br> }
-        </p>
-
-        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_zebra_vertical" target="_blank">Cobalah
-          sendiri
-          &quot;</a>
-        </p>
-
-        <p><b>Catatan:</b> Letakkan :nth-child()pemilih pada keduanya thdan td elemen jika Anda ingin memiliki gaya pada header dan sel tabel biasa.
-        </p>
-
-        <div align=center style='text-align:center'>
-
-            <hr size=0 width="100%" noshade style='color:black' align=center>
-
-        </div>
-
-        <div align=center style='text-align:center'>
-
-            <hr size=0 width="100%" noshade style='color:black' align=center>
-
-        </div>
-
-        <p>Kombinasikan Garis Zebra Vertikal dan Horizontal
-        </p>
-
-        <p>Anda dapat menggabungkan gaya dari dua contoh di atas dan Anda akan memiliki garis-garis pada setiap baris dan kolom lainnya.
-        </p>
-
-        <p>Jika Anda menggunakan warna transparan Anda akan mendapatkan efek tumpang tindih.
-        </p>
-
+        <!--  -->
         <tableTable border=1 cellspacing=0 cellpadding=0 width=525 style='width:394.1pt;background:white;border-collapse:collapse;border:none'>
             <tr>
                 <td style='border:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>

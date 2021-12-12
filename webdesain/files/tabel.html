@@ -2573,65 +2573,255 @@
         </section>
         <hr>
 
-        <h2>Colgroup kosong</h2>
-        <p>Jika Anda ingin menata kolom di tengah tabel, sisipkan &lt;col&gt;elemen &quot;kosong&quot; (tanpa gaya) untuk kolom sebelumnya:</p>
+        <section>
+            <h2>Colgroup kosong</h2>
+            <p>Jika Anda ingin menata kolom di tengah tabel, sisipkan <mark><code>&lt;col&gt;</code></mark> elemen
+                <mark><code>&quot;empty&quot;</code></mark> (tanpa gaya) untuk kolom sebelumnya:
+            </p>
+            <p>Contoh :</p>
+            <div class="bd-example">
+                <h2>Kolom Kosong</h2>
+                <p>Tambahkan elemen kolom <q>empty</q> yang mewakili kolom sebelum kolom yang ingin Anda beri gaya:</p>
+                <table class="table table-borderless">
+                    <colgroup>
+                        <col span="3">
+                        <col span="2" style="background-color: pink">
+                    </colgroup>
+                    <tr>
+                        <th>MON</th>
+                        <th>TUE</th>
+                        <th>WED</th>
+                        <th>THU</th>
+                        <th>FRI</th>
+                        <th>SAT</th>
+                        <th>SUN</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+&lt;table&gt;
+  <mark>&lt;colgroup&gt;</mark>
+    <mark>&lt;col span="3"&gt;</mark>
+    <mark>&lt;col span="2" style="background-color: pink"&gt;</mark>
+  <mark>&lt;/colgroup&gt;</mark>
+  &lt;tr&gt;
+    &lt;th&gt;MON&lt;/th&gt;
+    &lt;th&gt;TUE&lt;/th&gt;
+    &lt;th&gt;WED&lt;/th&gt;
+    &lt;th&gt;THU&lt;/th&gt;
+    &lt;th&gt;FRI&lt;/th&gt;
+    &lt;th&gt;SAT&lt;/th&gt;
+    &lt;th&gt;SUN&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;5&lt;/td&gt;
+    &lt;td&gt;6&lt;/td&gt;
+    &lt;td&gt;7&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;8&lt;/td&gt;
+    &lt;td&gt;9&lt;/td&gt;
+    &lt;td&gt;10&lt;/td&gt;
+    &lt;td&gt;11&lt;/td&gt;
+    &lt;td&gt;12&lt;/td&gt;
+    &lt;td&gt;13&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;15&lt;/td&gt;
+    &lt;td&gt;16&lt;/td&gt;
+    &lt;td&gt;17&lt;/td&gt;
+    &lt;td&gt;18&lt;/td&gt;
+    &lt;td&gt;19&lt;/td&gt;
+    &lt;td&gt;20&lt;/td&gt;
+    &lt;td&gt;21&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;22&lt;/td&gt;
+    &lt;td&gt;23&lt;/td&gt;
+    &lt;td&gt;24&lt;/td&gt;
+    &lt;td&gt;25&lt;/td&gt;
+    &lt;td&gt;26&lt;/td&gt;
+    &lt;td&gt;27&lt;/td&gt;
+    &lt;td&gt;28&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+              </code></pre>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri <img
+                draggable="false" role="img" class="emoji" alt="↗"
+                src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+            </div>
+        </section>
+        <hr>
 
-        <p>Contoh :</p>
-
-
-
-
-
-
-        <p>&lt;table&gt;<br> &lt;colgroup&gt;
-            <br> &lt;col span=&quot;3&quot;&gt;
-            <br> &lt;col span=&quot;2&quot; style=&quot;background-color: pink&quot;&gt;
-            <br> &lt;/colgroup&gt;
-            <br> &lt;tr&gt;
-            <br> &lt;th&gt;MON&lt;/th&gt;
-            <br> &lt;th&gt;TUE&lt;/th&gt;
-            <br> &lt;th&gt;WED&lt;/th&gt;
-            <br> &lt;th&gt;THU&lt;/th&gt;
-            <br> ...
-        </p>
-
-        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_colgroup3" target="_blank">Cobalah
-          sendiri
-          &quot;</a>
-        </p>
-
-        <div align=center style='text-align:center'>
-
-            <hr size=0 width="100%" noshade style='color:black' align=center>
-
-        </div>
-
-        <p>Sembunyikan Kolom
-        </p>
-
-        <p>Anda dapat menyembunyikan kolom dengan visibility: collapseproperti:
-        </p>
-
-        <p>Contoh :
-        </p>
-
-        <p>&lt;table&gt;<br> &lt;colgroup&gt;
-            <br> &lt;col span=&quot;2&quot;&gt;
-            <br> &lt;col span=&quot;3&quot; style=&quot;visibility: collapse&quot;&gt;
-            <br> &lt;/colgroup&gt;
-            <br> &lt;tr&gt;
-            <br> &lt;th&gt;MON&lt;/th&gt;
-            <br> &lt;th&gt;TUE&lt;/th&gt;
-            <br> &lt;th&gt;WED&lt;/th&gt;
-            <br> &lt;th&gt;THU&lt;/th&gt;
-            <br> ...
-        </p>
-
-        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_colgroup4" target="_blank">Cobalah
-          sendiri
-          &quot;</a>
-        </p>
+        <section>
+            <h2>Sembunyikan Kolom</h2>
+            <p>Anda dapat menyembunyikan kolom dengan <mark><code>visibility: collapse</code></mark> properti:</p>
+            <p>Contoh :</p>
+            <div class="bd-example">
+                <h2>Sembunyikan Kolom</h2>
+                <p>Anda dapat menyembunyikan kolom tertentu dengan properti visibilitas:</p>
+                <table class="table table-borderless text-center">
+                    <colgroup>
+                        <col span="2">
+                        <col span="3" style="visibility: collapse">
+                    </colgroup>
+                    <tr>
+                        <th>MON</th>
+                        <th>TUE</th>
+                        <th>WED</th>
+                        <th>THU</th>
+                        <th>FRI</th>
+                        <th>SAT</th>
+                        <th>SUN</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                        <td>20</td>
+                        <td>21</td>
+                    </tr>
+                    <tr>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                    </tr>
+                </table>
+                <p class="moreInfo"><strong>Catatan:</strong> Kolom tabel tidak diciutkan dengan benar di browser Safari.</p>
+            </div>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+&lt;table&gt;
+  <mark>&lt;colgroup&gt;</mark>
+    <mark>&lt;col span="2"&gt;</mark>
+    <mark>&lt;col span="3" style="visibility: collapse"&gt;</mark>
+  <mark>&lt;/colgroup&gt;</mark>
+  &lt;tr&gt;
+    &lt;th&gt;MON&lt;/th&gt;
+    &lt;th&gt;TUE&lt;/th&gt;
+    &lt;th&gt;WED&lt;/th&gt;
+    &lt;th&gt;THU&lt;/th&gt;
+    &lt;th&gt;FRI&lt;/th&gt;
+    &lt;th&gt;SAT&lt;/th&gt;
+    &lt;th&gt;SUN&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;1&lt;/td&gt;
+    &lt;td&gt;2&lt;/td&gt;
+    &lt;td&gt;3&lt;/td&gt;
+    &lt;td&gt;4&lt;/td&gt;
+    &lt;td&gt;5&lt;/td&gt;
+    &lt;td&gt;6&lt;/td&gt;
+    &lt;td&gt;7&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;8&lt;/td&gt;
+    &lt;td&gt;9&lt;/td&gt;
+    &lt;td&gt;10&lt;/td&gt;
+    &lt;td&gt;11&lt;/td&gt;
+    &lt;td&gt;12&lt;/td&gt;
+    &lt;td&gt;13&lt;/td&gt;
+    &lt;td&gt;14&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;15&lt;/td&gt;
+    &lt;td&gt;16&lt;/td&gt;
+    &lt;td&gt;17&lt;/td&gt;
+    &lt;td&gt;18&lt;/td&gt;
+    &lt;td&gt;19&lt;/td&gt;
+    &lt;td&gt;20&lt;/td&gt;
+    &lt;td&gt;21&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;22&lt;/td&gt;
+    &lt;td&gt;23&lt;/td&gt;
+    &lt;td&gt;24&lt;/td&gt;
+    &lt;td&gt;25&lt;/td&gt;
+    &lt;td&gt;26&lt;/td&gt;
+    &lt;td&gt;27&lt;/td&gt;
+    &lt;td&gt;28&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+              </code></pre>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri <img
+                draggable="false" role="img" class="emoji" alt="↗"
+                src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+            </div>
+        </section>
     </div>
+
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
     <script src="../../assets/js/docs.min.js"></script>

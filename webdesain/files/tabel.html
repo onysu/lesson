@@ -515,7 +515,6 @@
                 src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
             </div>
         </section>
-
         <hr>
 
         <section>
@@ -590,7 +589,6 @@
                 src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
             </div>
         </section>
-
         <hr>
 
         <section>
@@ -1113,7 +1111,6 @@
                 src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
             </div>
         </section>
-
         <hr>
 
         <section>
@@ -1343,7 +1340,6 @@
                 </table>
             </div>
         </section>
-
         <hr>
 
         <section>
@@ -1510,7 +1506,6 @@
                 src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
             </div>
         </section>
-
         <hr>
 
         <section>
@@ -1682,7 +1677,6 @@
                 </div>
             </div>
         </section>
-
         <hr>
 
         <section>
@@ -2007,147 +2001,142 @@
             </div>
             <p class="moreInfo"><b>Catatan:</b> Letakkan <mark><code>:nth-child()</code></mark> pemilih pada keduanya thdan td elemen jika Anda ingin memiliki style pada header dan sel tabel biasa.</p>
         </section>
-
         <hr>
 
-        <h2>Kombinasikan Garis Zebra Vertikal dan Horizontal</h2>
-        <p>Anda dapat menggabungkan gaya dari dua contoh di atas dan Anda akan memiliki garis-garis pada setiap baris dan kolom lainnya. Jika Anda menggunakan warna transparan Anda akan mendapatkan efek tumpang tindih.</p>
-
-        <div class="bd-example">
-            <style>
-                .VertikalHorizontal tr:nth-child(even) {
-                    background-color: rgba(150, 212, 212, 0.4);
-                }
-                
-                .VertikalHorizontal th:nth-child(even),
-                .VertikalHorizontal td:nth-child(even) {
-                    background-color: rgba(150, 212, 212, 0.4);
-                }
-            </style>
-
-            <h2>Tabel Bergaris</h2>
-            <p>Untuk tabel bergaris zebra, gunakan pemilih <mark>nth-child()</mark> dan tambahkan warna latar ke semua baris tabel genap (atau ganjil):
-            </p>
-
-            <table class="VertikalHorizontal table text-center" style="width:100%">
-                <tr>
-                    <th>MON</th>
-                    <th>TUE</th>
-                    <th>WED</th>
-                    <th>THU</th>
-                    <th>FRI</th>
-                    <th>SAT</th>
-                    <th>SUN</th>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-            </table>
-        </div>
-
-        <p>Gunakan <mark>rgba()warna</mark> untuk menentukan transparansi warna.</p>
-
-        <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-        <div class="bd-callout">
-            <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
-&lt;style&gt;
-  <mark>tr:nth-child(even)</mark> {
-    background-color: rgba(150, 212, 212, 0.4);
-  }
-
-  <mark>th:nth-child(even)</mark>,
-  <mark>td:nth-child(even)</mark> {
-    background-color: rgba(150, 212, 212, 0.4);
-  }
-&lt;/style&gt;
-
-&lt;table&gt;
-  &lt;tr&gt;
-    &lt;th&gt;MON&lt;/th&gt;
-    &lt;th&gt;TUE&lt;/th&gt;
-    &lt;th&gt;WED&lt;/th&gt;
-    &lt;th&gt;THU&lt;/th&gt;
-    &lt;th&gt;FRI&lt;/th&gt;
-    &lt;th&gt;SAT&lt;/th&gt;
-    &lt;th&gt;SUN&lt;/th&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;...&lt;/td&gt;
-    &lt;td&gt;...&lt;/td&gt;
-    &lt;td&gt;...&lt;/td&gt;
-    &lt;td&gt;...&lt;/td&gt;
-    &lt;td&gt;...&lt;/td&gt;
-    &lt;td&gt;...&lt;/td&gt;
-    &lt;td&gt;...&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;...&lt;/td&gt;
-    &lt;td&gt;...&lt;/td&gt;
-    &lt;td&gt;...&lt;/td&gt;
-    &lt;td&gt;...&lt;/td&gt;
-    &lt;td&gt;...&lt;/td&gt;
-    &lt;td&gt;...&lt;/td&gt;
-    &lt;td&gt;...&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;...&lt;/td&gt;
-    &lt;td&gt;...&lt;/td&gt;
-    &lt;td&gt;...&lt;/td&gt;
-    &lt;td&gt;...&lt;/td&gt;
-    &lt;td&gt;...&lt;/td&gt;
-    &lt;td&gt;...&lt;/td&gt;
-    &lt;td&gt;...&lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-    &lt;td&gt;...&lt;/td&gt;
-    &lt;td&gt;...&lt;/td&gt;
-    &lt;td&gt;...&lt;/td&gt;
-    &lt;td&gt;...&lt;/td&gt;
-    &lt;td&gt;...&lt;/td&gt;
-    &lt;td&gt;...&lt;/td&gt;
-    &lt;td&gt;...&lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/table&gt;
-</code></pre>
-            <hr>
-            <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri <img
-              draggable="false" role="img" class="emoji" alt="↗"
-              src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-        </div>
-
+        <section>
+            <h2>Kombinasikan Garis Zebra Vertikal dan Horizontal</h2>
+            <p>Anda dapat menggabungkan gaya dari dua contoh di atas dan Anda akan memiliki garis-garis pada setiap baris dan kolom lainnya. Jika Anda menggunakan warna transparan Anda akan mendapatkan efek tumpang tindih.</p>
+            <div class="bd-example">
+                <style>
+                    .VertikalHorizontal tr:nth-child(even) {
+                        background-color: rgba(150, 212, 212, 0.4);
+                    }
+                    
+                    .VertikalHorizontal th:nth-child(even),
+                    .VertikalHorizontal td:nth-child(even) {
+                        background-color: rgba(150, 212, 212, 0.4);
+                    }
+                </style>
+                <h2>Tabel Bergaris</h2>
+                <p>Untuk tabel bergaris zebra, gunakan pemilih <mark>nth-child()</mark> dan tambahkan warna latar ke semua baris tabel genap (atau ganjil):
+                </p>
+                <table class="VertikalHorizontal table text-center" style="width:100%">
+                    <tr>
+                        <th>MON</th>
+                        <th>TUE</th>
+                        <th>WED</th>
+                        <th>THU</th>
+                        <th>FRI</th>
+                        <th>SAT</th>
+                        <th>SUN</th>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+            <p>Gunakan <mark>rgba()warna</mark> untuk menentukan transparansi warna.</p>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+          &lt;style&gt;
+            <mark>tr:nth-child(even)</mark> {
+              background-color: rgba(150, 212, 212, 0.4);
+            }
+          
+            <mark>th:nth-child(even)</mark>,
+            <mark>td:nth-child(even)</mark> {
+              background-color: rgba(150, 212, 212, 0.4);
+            }
+          &lt;/style&gt;
+          
+          &lt;table&gt;
+            &lt;tr&gt;
+              &lt;th&gt;MON&lt;/th&gt;
+              &lt;th&gt;TUE&lt;/th&gt;
+              &lt;th&gt;WED&lt;/th&gt;
+              &lt;th&gt;THU&lt;/th&gt;
+              &lt;th&gt;FRI&lt;/th&gt;
+              &lt;th&gt;SAT&lt;/th&gt;
+              &lt;th&gt;SUN&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;...&lt;/td&gt;
+              &lt;td&gt;...&lt;/td&gt;
+              &lt;td&gt;...&lt;/td&gt;
+              &lt;td&gt;...&lt;/td&gt;
+              &lt;td&gt;...&lt;/td&gt;
+              &lt;td&gt;...&lt;/td&gt;
+              &lt;td&gt;...&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;...&lt;/td&gt;
+              &lt;td&gt;...&lt;/td&gt;
+              &lt;td&gt;...&lt;/td&gt;
+              &lt;td&gt;...&lt;/td&gt;
+              &lt;td&gt;...&lt;/td&gt;
+              &lt;td&gt;...&lt;/td&gt;
+              &lt;td&gt;...&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;...&lt;/td&gt;
+              &lt;td&gt;...&lt;/td&gt;
+              &lt;td&gt;...&lt;/td&gt;
+              &lt;td&gt;...&lt;/td&gt;
+              &lt;td&gt;...&lt;/td&gt;
+              &lt;td&gt;...&lt;/td&gt;
+              &lt;td&gt;...&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;...&lt;/td&gt;
+              &lt;td&gt;...&lt;/td&gt;
+              &lt;td&gt;...&lt;/td&gt;
+              &lt;td&gt;...&lt;/td&gt;
+              &lt;td&gt;...&lt;/td&gt;
+              &lt;td&gt;...&lt;/td&gt;
+              &lt;td&gt;...&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/table&gt;
+          </code></pre>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri <img
+                draggable="false" role="img" class="emoji" alt="↗"
+                src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+            </div>
+        </section>
         <hr>
 
         <section>

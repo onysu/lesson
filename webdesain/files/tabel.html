@@ -1441,38 +1441,108 @@
         </div>
 
         <p>Untuk menambahkan padding hanya di atas konten, gunakan <mark><code>padding-top</code></mark> properti. Dan sisi lain dengan <mark><code>padding-bottom</code></mark>, <mark><code>padding-left</code></mark> dan
-            <mark><code>padding-right</code></mark> properti.</p>
+            <mark><code>padding-right</code></mark> properti.
+        </p>
 
         <p>Contoh :</p>
 
-        <p>th, td {<br> padding-top: 10px;
-            <br> padding-bottom: 20px;
-            <br> padding-left: 30px;
-            <br> padding-right: 40px;
-            <br> }
-        </p>
+        <div class="bd-example">
+            <style>
+                table,
+                th,
+                td {
+                    border: 1px solid black;
+                    border-collapse: collapse;
+                }
+                
+                th,
+                td {
+                    padding-top: 10px;
+                    padding-bottom: 20px;
+                    padding-left: 30px;
+                    padding-right: 40px;
+                }
+            </style>
 
-        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_cellpadding2" target="_blank">Cobalah
-          sendiri &quot;</a>
-        </p>
+            <h2>Sel Padding - top - bottom - left - right</h2>
+            <p>Kita dapat menentukan padding yang berbeda untuk keempat sisi konten sel.</p>
 
-        <div align=center style='text-align:center'>
-
-            <hr size=0 width="100%" noshade style='color:black' align=center>
-
+            <table style="width:100%">
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>Jill</td>
+                    <td>Smith</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Eve</td>
+                    <td>Jackson</td>
+                    <td>94</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>80</td>
+                </tr>
+            </table>
         </div>
 
-        <p>Tabel HTML - Spasi Sel
-        </p>
+        <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+        <div class="bd-callout">
+            <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+&lt;style&gt;
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
 
-        <p>Jarak antar sel adalah jarak antar sel.
-        </p>
+  th,
+  td {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+  }
+&lt;/style&gt;
 
-        <p>Secara default, ruang diatur ke 2 piksel.
-        </p>
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Firstname&lt;/th&gt;
+    &lt;th&gt;Lastname&lt;/th&gt;
+    &lt;th&gt;Age&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Jill&lt;/td&gt;
+    &lt;td&gt;Smith&lt;/td&gt;
+    &lt;td&gt;50&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Eve&lt;/td&gt;
+    &lt;td&gt;Jackson&lt;/td&gt;
+    &lt;td&gt;94&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;John&lt;/td&gt;
+    &lt;td&gt;Doe&lt;/td&gt;
+    &lt;td&gt;80&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+        </code></pre>
+            <hr>
+            <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri <img
+              draggable="false" role="img" class="emoji" alt="↗"
+              src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+        </div>
 
-        <p>Untuk mengubah spasi antar sel tabel, gunakan border-spacingproperti CSS pada table elemen:
-        </p>
+        <hr>
+
+
+        <h2>Tabel HTML - Spasi Sel</h2>
+        <p>Jarak antar sel adalah jarak antar sel. Secara default, ruang diatur ke 2 piksel. Untuk mengubah spasi antar sel tabel, gunakan border-spacingproperti CSS pada table elemen.</p>
 
         <p>Contoh :</p>
 

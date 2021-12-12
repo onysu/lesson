@@ -1257,7 +1257,98 @@
         <h2>Padding &amp; Spasi Tabel HTML</h2>
         <p>Tabel HTML dapat menyesuaikan padding di dalam sel, dan juga ruang antar sel.</p>
 
-
+        <style>
+            .table5 {
+                float: left;
+                margin-left: 15%;
+                margin-right: 15%;
+            }
+            
+            .table5,
+            .table5 th,
+            .table5 td {
+                border: 1px solid #282A35;
+                border-collapse: unset;
+            }
+            
+            .table5 td {
+                padding: 10px;
+            }
+            
+            .table6 {
+                float: left;
+            }
+            
+            .table6 {
+                border-spacing: 15px;
+            }
+            
+            .table6,
+            .table6 th,
+            .table6 td {
+                border: 1px solid #282A35;
+                border-collapse: unset;
+            }
+            
+            .table6,
+            .table6 th,
+            .table6 td {
+                border: 1px solid #282A35;
+            }
+            
+            @media (max-width: 650px) {
+                .table5,
+                .table6 {
+                    width: 60%;
+                    float: none;
+                    margin: auto;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                }
+            }
+        </style>
+        <div id="tableborders" style="overflow:auto;">
+            <table class="table5 caption-top">
+                <caption style="text-align: center;">With Padding</caption>
+                <tbody>
+                    <tr>
+                        <td>hello</td>
+                        <td>hello</td>
+                        <td>hello</td>
+                    </tr>
+                    <tr>
+                        <td>hello</td>
+                        <td>hello</td>
+                        <td>hello</td>
+                    </tr>
+                    <tr>
+                        <td>hello</td>
+                        <td>hello</td>
+                        <td>hello</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table6 caption-top">
+                <caption style="text-align: center;">With Spacing</caption>
+                <tbody>
+                    <tr>
+                        <td>hello</td>
+                        <td>hello</td>
+                        <td>hello</td>
+                    </tr>
+                    <tr>
+                        <td>hello</td>
+                        <td>hello</td>
+                        <td>hello</td>
+                    </tr>
+                    <tr>
+                        <td>hello</td>
+                        <td>hello</td>
+                        <td>hello</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
         <!--  -->
         <div align=center style='text-align:center'>

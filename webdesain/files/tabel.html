@@ -1779,13 +1779,16 @@
                 draggable="false" role="img" class="emoji" alt="↗"
                 src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
             </div>
-            <p class="moreInfo"><b>Catatan:</b> Nilai rowspanatribut mewakili jumlah baris yang akan direntang.</p>
+            <p class="moreInfo"><b>Catatan:</b> Nilai <mark><code>rowspan</code></mark> atribut mewakili jumlah baris yang akan direntang.</p>
         </section>
         <hr>
 
         <section>
             <h2>Penataan Tabel HTML</h2>
             <p>Gunakan CSS untuk membuat tabel Anda terlihat lebih baik.</p>
+
+            <!-- <h5>Tabel HTML - Garis Zebra</h5> -->
+            <p>Jika Anda menambahkan warna latar belakang pada setiap baris tabel lainnya, Anda akan mendapatkan efek garis zebra yang bagus.</p>
             <div class="bd-example">
                 <style>
                     .zebra tr:nth-child(even) {
@@ -1793,8 +1796,10 @@
                     }
                 </style>
 
-                <h2>Meja Bergaris Zebra</h2>
-                <p>Untuk tabel bergaris zebra, gunakan pemilih <mark><code>nth-child()</code></mark> dan tambahkan warna latar ke semua baris tabel genap (atau ganjil).</p>
+                <h2>Tabel Bergaris Zebra</h2>
+                <p>Jika Anda menambahkan warna latar belakang pada setiap baris tabel lainnya, Anda akan mendapatkan efek garis zebra yang bagus.
+                </p>
+
 
                 <table class="zebra table">
                     <tr>
@@ -1824,6 +1829,9 @@
                     </tr>
                 </table>
             </div>
+
+            <p>Untuk menata setiap elemen baris tabel lainnya, gunakan <mark><code>:nth-child(even)</code></mark> pemilih seperti ini:</p>
+
             <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
             <div class="bd-callout">
                 <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
@@ -1866,136 +1874,466 @@
                 draggable="false" role="img" class="emoji" alt="↗"
                 src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
             </div>
+
+            <p class="moreInfo"><b>Catatan:</b> Jika Anda menggunakan (odd) daripada (even), penataan gaya akan muncul pada baris 1,3,5 dst. daripada 2,4,6 dst.</p>
         </section>
         <hr>
 
-        <h2>Tabel HTML - Garis Zebra</h2>
-        <p>Jika Anda menambahkan warna latar belakang pada setiap baris tabel lainnya, Anda akan mendapatkan efek garis zebra yang bagus.</p>
+        <h2>Tabel HTML - Garis Zebra Vertikal</h2>
+        <p>Untuk membuat garis-garis zebra vertikal, beri gaya pada setiap <i>kolom</i> lainnya , daripada setiap
+            <i>baris</i> lainnya.
+        </p>
 
-        <!--  -->
+        <div class="bd-example">
+            <style>
+                .ZebraVertikal th:nth-child(even),
+                .ZebraVertikal td:nth-child(even) {
+                    background-color: #D6EEEE;
+                }
+            </style>
+
+            <h2>Tabel Bergaris <span class="text-muted small fw-light">(Striped)</span></h2>
+            <p>Untuk tabel bergaris zebra, gunakan pemilih <mark><code>nth-child()</code></mark> dan tambahkan warna latar ke semua baris tabel genap (atau ganjil):</p>
+
+            <table class="ZebraVertikal table text-center">
+                <tr>
+                    <th>MON</th>
+                    <th>TUE</th>
+                    <th>WED</th>
+                    <th>THU</th>
+                    <th>FRI</th>
+                    <th>SAT</th>
+                    <th>SUN</th>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+        <div class="bd-callout">
+            <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+&lt;style&gt;
+  <mark>th:nth-child(even)</mark>,
+  <mark>td:nth-child(even)</mark> {
+    background-color: #D6EEEE;
+  }
+&lt;/style&gt;
+
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;MON&lt;/th&gt;
+    &lt;th&gt;TUE&lt;/th&gt;
+    &lt;th&gt;WED&lt;/th&gt;
+    &lt;th&gt;THU&lt;/th&gt;
+    &lt;th&gt;FRI&lt;/th&gt;
+    &lt;th&gt;SAT&lt;/th&gt;
+    &lt;th&gt;SUN&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+    &lt;td&gt;&nbsp;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+        </code></pre>
+            <hr>
+            <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri <img
+              draggable="false" role="img" class="emoji" alt="↗"
+              src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+        </div>
+
+        <p>Setel <mark><code>:nth-child(even)</code></mark> untuk elemen data tabel seperti ini.</p>
+
+        <p>Contoh :</p>
+
+        <p>td:nth-child(even), th:nth-child(even) {
+            <br> background-color: #D6EEEE;
+            <br> }
+        </p>
+
+        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_zebra_vertical" target="_blank">Cobalah
+          sendiri
+          &quot;</a>
+        </p>
+
+        <p><b>Catatan:</b> Letakkan :nth-child()pemilih pada keduanya thdan td elemen jika Anda ingin memiliki gaya pada header dan sel tabel biasa.
+        </p>
+
+        <div align=center style='text-align:center'>
+
+            <hr size=0 width="100%" noshade style='color:black' align=center>
+
+        </div>
+
+        <div align=center style='text-align:center'>
+
+            <hr size=0 width="100%" noshade style='color:black' align=center>
+
+        </div>
+
+        <p>Kombinasikan Garis Zebra Vertikal dan Horizontal
+        </p>
+
+        <p>Anda dapat menggabungkan gaya dari dua contoh di atas dan Anda akan memiliki garis-garis pada setiap baris dan kolom lainnya.
+        </p>
+
+        <p>Jika Anda menggunakan warna transparan Anda akan mendapatkan efek tumpang tindih.
+        </p>
 
         <tableTable border=1 cellspacing=0 cellpadding=0 width=525 style='width:394.1pt;background:white;border-collapse:collapse;border:none'>
             <tr>
                 <td style='border:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                    <p>1
+                    <p>
                     </p>
                 </td>
                 <td style='border:solid white 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
-                    <p><span style='color:black'>2</span>
+                    <p><span style='color:black'>
+              </span>
                     </p>
                 </td>
                 <td style='border:solid white 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
-                    <p><span style='color:black'>3</span>
+                    <p><span style='color:black'>
+              </span>
                     </p>
                 </td>
                 <td style='border:solid white 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
-                    <p><span style='color:black'>4</span>
+                    <p><span style='color:black'>
+              </span>
+                    </p>
+                </td>
+                <td style='border:solid white 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
+                    <p><span style='color:black'>
+              </span>
+                    </p>
+                </td>
+                <td style='border:solid white 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
+                    <p><span style='color:black'>
+              </span>
+                    </p>
+                </td>
+                <td style='border:solid white 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
+                    <p><span style='color:black'>
+              </span>
+                    </p>
+                </td>
+                <td style='border:solid white 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
+                    <p><span style='color:black'>
+              </span>
+                    </p>
+                </td>
+                <td style='border:solid white 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
+                    <p><span style='color:black'>
+              </span>
                     </p>
                 </td>
             </tr>
             <tr>
                 <td style='border:solid white 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt'>
-                    <p><span style='color:black'>5</span>
+                    <p><span style='color:black'>
+              </span>
                     </p>
                 </td>
                 <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
   border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                    <p><span style='color:black'>6</span>
+                    <p><span style='color:black'>
+              </span>
                     </p>
                 </td>
                 <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
   border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                    <p><span style='color:black'>7</span>
+                    <p><span style='color:black'>
+              </span>
                     </p>
                 </td>
                 <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
   border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                    <p><span style='color:black'>8</span>
+                    <p><span style='color:black'>
+              </span>
+                    </p>
+                </td>
+                <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
+  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                    <p><span style='color:black'>
+              </span>
+                    </p>
+                </td>
+                <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
+  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                    <p><span style='color:black'>
+              </span>
+                    </p>
+                </td>
+                <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
+  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                    <p><span style='color:black'>
+              </span>
+                    </p>
+                </td>
+                <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
+  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                    <p><span style='color:black'>
+              </span>
+                    </p>
+                </td>
+                <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
+  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                    <p><span style='color:black'>
+              </span>
                     </p>
                 </td>
             </tr>
             <tr>
                 <td style='border:solid white 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt'>
-                    <p><span style='color:black'>9</span>
+                    <p><span style='color:black'>
+              </span>
                     </p>
                 </td>
                 <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
   border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                    <p><span style='color:black'>10</span>
+                    <p><span style='color:black'>
+              </span>
                     </p>
                 </td>
                 <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
   border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                    <p><span style='color:black'>11</span>
+                    <p><span style='color:black'>
+              </span>
                     </p>
                 </td>
                 <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
   border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                    <p><span style='color:black'>12</span>
+                    <p><span style='color:black'>
+              </span>
+                    </p>
+                </td>
+                <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
+  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                    <p><span style='color:black'>
+              </span>
+                    </p>
+                </td>
+                <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
+  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                    <p><span style='color:black'>
+              </span>
+                    </p>
+                </td>
+                <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
+  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                    <p><span style='color:black'>
+              </span>
+                    </p>
+                </td>
+                <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
+  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                    <p><span style='color:black'>
+              </span>
+                    </p>
+                </td>
+                <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
+  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                    <p><span style='color:black'>
+              </span>
                     </p>
                 </td>
             </tr>
             <tr>
                 <td style='border:solid white 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt'>
-                    <p><span style='color:black'>13</span>
+                    <p><span style='color:black'>
+              </span>
                     </p>
                 </td>
                 <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
   border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                    <p><span style='color:black'>14</span>
+                    <p><span style='color:black'>
+              </span>
                     </p>
                 </td>
                 <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
   border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                    <p><span style='color:black'>15</span>
+                    <p><span style='color:black'>
+              </span>
                     </p>
                 </td>
                 <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
   border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                    <p><span style='color:black'>16</span>
+                    <p><span style='color:black'>
+              </span>
+                    </p>
+                </td>
+                <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
+  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                    <p><span style='color:black'>
+              </span>
+                    </p>
+                </td>
+                <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
+  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                    <p><span style='color:black'>
+              </span>
+                    </p>
+                </td>
+                <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
+  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                    <p><span style='color:black'>
+              </span>
+                    </p>
+                </td>
+                <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
+  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                    <p><span style='color:black'>
+              </span>
+                    </p>
+                </td>
+                <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
+  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                    <p><span style='color:black'>
+              </span>
                     </p>
                 </td>
             </tr>
             <tr>
                 <td style='border:solid white 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt'>
-                    <p><span style='color:black'>17</span>
+                    <p><span style='color:black'>
+              </span>
                     </p>
                 </td>
                 <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
   border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                    <p><span style='color:black'>18</span>
+                    <p><span style='color:black'>
+              </span>
                     </p>
                 </td>
                 <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
   border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                    <p><span style='color:black'>19</span>
+                    <p><span style='color:black'>
+              </span>
                     </p>
                 </td>
                 <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
   border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                    <p><span style='color:black'>20</span>
+                    <p><span style='color:black'>
+              </span>
+                    </p>
+                </td>
+                <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
+  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                    <p><span style='color:black'>
+              </span>
+                    </p>
+                </td>
+                <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
+  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                    <p><span style='color:black'>
+              </span>
+                    </p>
+                </td>
+                <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
+  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                    <p><span style='color:black'>
+              </span>
+                    </p>
+                </td>
+                <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
+  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                    <p><span style='color:black'>
+              </span>
+                    </p>
+                </td>
+                <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
+  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                    <p><span style='color:black'>
+              </span>
                     </p>
                 </td>
             </tr>
             </table>
 
-            <p>Untuk menata setiap elemen baris tabel lainnya, gunakan :nth-child(even) pemilih seperti ini:
+            <p><span style='color:white'>Gunakan
+          </span>rgba()warna untuk menentukan transparansi warna:
             </p>
 
             <p>Contoh :
             </p>
 
             <p>tr:nth-child(even) {
-                <br> background-color: #D6EEEE;
+                <br> background-color: rgba(150, 212, 212, 0.4);
+                <br> }
+                <br>
+                <br> th:nth-child(even),td:nth-child(even) {
+                <br> background-color: rgba(150, 212, 212, 0.4);
                 <br> }
             </p>
 
-            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_zebra" target="_blank">Cobalah
+            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_zebra_combine" target="_blank">Cobalah
             sendiri
             &quot;</a>
-            </p>
-
-            <p><b>Catatan:</b> Jika Anda menggunakan (odd)alih-alih (even), penataan gaya akan muncul pada baris 1,3,5 dst. alih-alih 2,4,6 dst.
             </p>
 
             <div align=center style='text-align:center'>
@@ -2004,447 +2342,199 @@
 
             </div>
 
-            <p>Tabel HTML - Garis Zebra Vertikal
+            <p>Pembagi Horisontal
             </p>
 
-            <p>Untuk membuat garis-garis zebra vertikal, beri gaya pada setiap
-                <i>kolom</i> lainnya , alih-alih setiap
-                <i>baris</i> lainnya .
-            </p>
-
-            <tableTable border=1 cellspacing=0 cellpadding=0 width=525 style='width:394.1pt;background:white;border-collapse:collapse;border:none'>
+            <tableTable border=1 cellspacing=0 cellpadding=0 width=876 style='width:656.85pt;background:white;border-collapse:collapse;border:none'>
+                <thead>
+                    <tr>
+                        <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                            <p><b>Nama
+                    depan</b>
+                            </p>
+                        </td>
+                        <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                            <p><b><span style='color:black'>Nama
+                      keluarga</span></b>
+                            </p>
+                        </td>
+                        <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                            <p><b><span style='color:black'>Tabungan</span></b>
+                            </p>
+                        </td>
+                    </tr>
+                </thead>
                 <tr>
-                    <td style='border:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                        <p>1
+                    <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                        <p><span style='color:black'>Petrus</span>
                         </p>
                     </td>
-                    <td style='border:solid white 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
-                        <p><span style='color:black'>2</span>
+                    <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                        <p><span style='color:black'>Grifon</span>
                         </p>
                     </td>
-                    <td style='border:solid white 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
-                        <p><span style='color:black'>3</span>
-                        </p>
-                    </td>
-                    <td style='border:solid white 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
-                        <p><span style='color:black'>4</span>
+                    <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                        <p><span style='color:black'>$100</span>
                         </p>
                     </td>
                 </tr>
                 <tr>
-                    <td style='border:solid white 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt'>
-                        <p><span style='color:black'>5</span>
+                    <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                        <p><span style='color:black'>lois</span>
                         </p>
                     </td>
-                    <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                        <p><span style='color:black'>6</span>
+                    <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                        <p><span style='color:black'>Grifon</span>
                         </p>
                     </td>
-                    <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                        <p><span style='color:black'>7</span>
-                        </p>
-                    </td>
-                    <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                        <p><span style='color:black'>8</span>
+                    <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                        <p><span style='color:black'>$150</span>
                         </p>
                     </td>
                 </tr>
                 <tr>
-                    <td style='border:solid white 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt'>
-                        <p><span style='color:black'>9</span>
+                    <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                        <p><span style='color:black'>joe</span>
                         </p>
                     </td>
-                    <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                        <p><span style='color:black'>10</span>
+                    <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                        <p><span style='color:black'>angsa</span>
                         </p>
                     </td>
-                    <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                        <p><span style='color:black'>11</span>
-                        </p>
-                    </td>
-                    <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                        <p><span style='color:black'>12</span>
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td style='border:solid white 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt'>
-                        <p><span style='color:black'>13</span>
-                        </p>
-                    </td>
-                    <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                        <p><span style='color:black'>14</span>
-                        </p>
-                    </td>
-                    <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                        <p><span style='color:black'>15</span>
-                        </p>
-                    </td>
-                    <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                        <p><span style='color:black'>16</span>
-                        </p>
-                    </td>
-                </tr>
-                <tr>
-                    <td style='border:solid white 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt'>
-                        <p><span style='color:black'>17</span>
-                        </p>
-                    </td>
-                    <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                        <p><span style='color:black'>18</span>
-                        </p>
-                    </td>
-                    <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                        <p><span style='color:black'>19</span>
-                        </p>
-                    </td>
-                    <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                        <p><span style='color:black'>20</span>
+                    <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                        <p><span style='color:black'>$300</span>
                         </p>
                     </td>
                 </tr>
                 </table>
 
-                <p>Setel :nth-child(even)untuk elemen data tabel seperti ini:
+                <p><span style='color:black'>Jika
+              Anda
+              menentukan
+              batas
+              hanya
+              di
+              bagian
+              bawah
+              setiap
+              baris
+              tabel,
+              Anda
+              akan
+              memiliki
+              tabel
+              dengan
+              pembagi
+              horizontal.</span>
+                </p>
+
+                <p>Tambahkan border-bottomproperti ke semua trelemen untuk mendapatkan pembagi horizontal:
                 </p>
 
                 <p>Contoh :
                 </p>
 
-                <p>td:nth-child(even), th:nth-child(even) {
-                    <br> background-color: #D6EEEE;
+                <p>tr {
+                    <br> border-bottom: 1px solid #ddd;
                     <br> }
                 </p>
 
-                <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_zebra_vertical" target="_blank">Cobalah
+                <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_border_divider2" target="_blank">Cobalah
               sendiri
               &quot;</a>
                 </p>
 
-                <p><b>Catatan:</b> Letakkan :nth-child()pemilih pada keduanya thdan td elemen jika Anda ingin memiliki gaya pada header dan sel tabel biasa.
-                </p>
-
                 <div align=center style='text-align:center'>
 
                     <hr size=0 width="100%" noshade style='color:black' align=center>
 
                 </div>
 
-                <div align=center style='text-align:center'>
-
-                    <hr size=0 width="100%" noshade style='color:black' align=center>
-
-                </div>
-
-                <p>Kombinasikan Garis Zebra Vertikal dan Horizontal
+                <p>Meja yang Dapat Dilayangkan
                 </p>
 
-                <p>Anda dapat menggabungkan gaya dari dua contoh di atas dan Anda akan memiliki garis-garis pada setiap baris dan kolom lainnya.
+                <p>Gunakan :hoverpemilih aktif truntuk menyorot baris tabel dengan mouse:
                 </p>
 
-                <p>Jika Anda menggunakan warna transparan Anda akan mendapatkan efek tumpang tindih.
-                </p>
-
-                <tableTable border=1 cellspacing=0 cellpadding=0 width=525 style='width:394.1pt;background:white;border-collapse:collapse;border:none'>
+                <tableTable border=1 cellspacing=0 cellpadding=0 width=876 style='width:656.85pt;background:white;border-collapse:collapse;border:none'>
                     <tr>
-                        <td style='border:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p>
+                        <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                            <p><b>Nama
+                    depan</b>
                             </p>
                         </td>
-                        <td style='border:solid white 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
+                        <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                            <p><b><span style='color:black'>Nama
+                      keluarga</span></b>
                             </p>
                         </td>
-                        <td style='border:solid white 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border:solid white 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border:solid white 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border:solid white 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border:solid white 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border:solid white 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border:solid white 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
+                        <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                            <p><b><span style='color:black'>Tabungan</span></b>
                             </p>
                         </td>
                     </tr>
                     <tr>
-                        <td style='border:solid white 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
+                        <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                            <p><span style='color:black'>Petrus</span>
                             </p>
                         </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
+                        <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                            <p><span style='color:black'>Grifon</span>
                             </p>
                         </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
+                        <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                            <p><span style='color:black'>$100</span>
                             </p>
                         </td>
                     </tr>
                     <tr>
-                        <td style='border:solid white 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
+                        <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                            <p><span style='color:black'>lois</span>
                             </p>
                         </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
+                        <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                            <p><span style='color:black'>Grifon</span>
                             </p>
                         </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
+                        <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                            <p><span style='color:black'>$150</span>
                             </p>
                         </td>
                     </tr>
                     <tr>
-                        <td style='border:solid white 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
+                        <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                            <p><span style='color:black'>joe</span>
                             </p>
                         </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
+                        <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                            <p><span style='color:black'>angsa</span>
                             </p>
                         </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style='border:solid white 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
-                            </p>
-                        </td>
-                        <td style='border-top:none;border-left:none;border-bottom:solid white 1.0pt;
-  border-right:solid white 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                            <p><span style='color:black'>
-                  </span>
+                        <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
+                            <p><span style='color:black'>$300</span>
                             </p>
                         </td>
                     </tr>
                     </table>
 
-                    <p><span style='color:white'>Gunakan
-              </span>rgba()warna untuk menentukan transparansi warna:
+                    <p><span style='color:black'>Contoh</span>
                     </p>
 
-                    <p>Contoh :
+                    <p>tr:hover {background-color: #D6EEEE;}
                     </p>
 
-                    <p>tr:nth-child(even) {
-                        <br> background-color: rgba(150, 212, 212, 0.4);
-                        <br> }
-                        <br>
-                        <br> th:nth-child(even),td:nth-child(even) {
-                        <br> background-color: rgba(150, 212, 212, 0.4);
-                        <br> }
-                    </p>
-
-                    <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_zebra_combine" target="_blank">Cobalah
+                    <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_hover" target="_blank">Cobalah
                 sendiri
                 &quot;</a>
+                    </p>
+
+                    <p>Colgroup Tabel HTML
+                    </p>
+
+                    <p><a href="https://www.w3schools.com/html/html_table_styling.asp"><span
+                  style='font-family:"Segoe UI Symbol",sans-serif'>&#10094;</span>
+                Sebelumnya</a><a href="https://www.w3schools.com/html/html_lists.asp">Berikutnya
+                <span style='font-family:"Segoe UI Symbol",sans-serif'>&#10095;</span></a>
                     </p>
 
                     <div align=center style='text-align:center'>
@@ -2453,104 +2543,299 @@
 
                     </div>
 
-                    <p>Pembagi Horisontal
+                    <p>The &lt;colgroup&gt;elemen digunakan untuk kolom tertentu gaya meja.
                     </p>
 
-                    <tableTable border=1 cellspacing=0 cellpadding=0 width=876 style='width:656.85pt;background:white;border-collapse:collapse;border:none'>
-                        <thead>
-                            <tr>
-                                <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                                    <p><b>Nama
-                        depan</b>
-                                    </p>
-                                </td>
-                                <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                                    <p><b><span style='color:black'>Nama
-                          keluarga</span></b>
-                                    </p>
-                                </td>
-                                <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                                    <p><b><span style='color:black'>Tabungan</span></b>
-                                    </p>
-                                </td>
-                            </tr>
-                        </thead>
+                    <div align=center style='text-align:center'>
+
+                        <hr size=0 width="100%" noshade style='color:black' align=center>
+
+                    </div>
+
+                    <p>Colgroup Tabel HTML
+                    </p>
+
+                    <p>Jika Anda ingin memberi gaya pada dua kolom pertama tabel, gunakan elemen &lt;colgroup&gt; dan &lt;col&gt;.
+                    </p>
+
+                    <tableTable border=1 cellspacing=0 cellpadding=0 width=525 style='width:394.1pt;background:white;border-collapse:collapse;border:none'>
                         <tr>
-                            <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                                <p><span style='color:black'>Petrus</span>
+                            <td style='border:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                                <p><b>SEN</b>
                                 </p>
                             </td>
-                            <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                                <p><span style='color:black'>Grifon</span>
+                            <td style='border:solid #282A35 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
+                                <p><b><span style='color:black'>SELASA</span></b>
                                 </p>
                             </td>
-                            <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                                <p><span style='color:black'>$100</span>
+                            <td style='border:solid #282A35 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
+                                <p><b><span style='color:black'>MENIKAHI</span></b>
+                                </p>
+                            </td>
+                            <td style='border:solid #282A35 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
+                                <p><b><span style='color:black'>KAM</span></b>
+                                </p>
+                            </td>
+                            <td style='border:solid #282A35 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
+                                <p><b><span style='color:black'>JUMAT</span></b>
+                                </p>
+                            </td>
+                            <td style='border:solid #282A35 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
+                                <p><b><span style='color:black'>DUDUK</span></b>
+                                </p>
+                            </td>
+                            <td style='border:solid #282A35 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
+                                <p><b><span style='color:black'>MATAHARI</span></b>
                                 </p>
                             </td>
                         </tr>
                         <tr>
-                            <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                                <p><span style='color:black'>lois</span>
+                            <td style='border:solid #282A35 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>1</span>
                                 </p>
                             </td>
-                            <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                                <p><span style='color:black'>Grifon</span>
+                            <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
+  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>2</span>
                                 </p>
                             </td>
-                            <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                                <p><span style='color:black'>$150</span>
+                            <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
+  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>3</span>
+                                </p>
+                            </td>
+                            <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
+  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>4</span>
+                                </p>
+                            </td>
+                            <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
+  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>5</span>
+                                </p>
+                            </td>
+                            <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
+  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>6</span>
+                                </p>
+                            </td>
+                            <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
+  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>7</span>
                                 </p>
                             </td>
                         </tr>
                         <tr>
-                            <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                                <p><span style='color:black'>joe</span>
+                            <td style='border:solid #282A35 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>8</span>
                                 </p>
                             </td>
-                            <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                                <p><span style='color:black'>angsa</span>
+                            <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
+  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>9</span>
                                 </p>
                             </td>
-                            <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                                <p><span style='color:black'>$300</span>
+                            <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
+  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>10</span>
+                                </p>
+                            </td>
+                            <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
+  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>11</span>
+                                </p>
+                            </td>
+                            <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
+  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>12</span>
+                                </p>
+                            </td>
+                            <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
+  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>13</span>
+                                </p>
+                            </td>
+                            <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
+  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>14</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style='border:solid #282A35 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>15</span>
+                                </p>
+                            </td>
+                            <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
+  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>16</span>
+                                </p>
+                            </td>
+                            <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
+  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>17</span>
+                                </p>
+                            </td>
+                            <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
+  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>18</span>
+                                </p>
+                            </td>
+                            <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
+  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>19</span>
+                                </p>
+                            </td>
+                            <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
+  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>20</span>
+                                </p>
+                            </td>
+                            <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
+  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>21</span>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style='border:solid #282A35 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>22</span>
+                                </p>
+                            </td>
+                            <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
+  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>23</span>
+                                </p>
+                            </td>
+                            <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
+  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>24</span>
+                                </p>
+                            </td>
+                            <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
+  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>25</span>
+                                </p>
+                            </td>
+                            <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
+  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>26</span>
+                                </p>
+                            </td>
+                            <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
+  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>27</span>
+                                </p>
+                            </td>
+                            <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
+  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
+                                <p><span style='color:black'>28</span>
                                 </p>
                             </td>
                         </tr>
                         </table>
 
-                        <p><span style='color:black'>Jika
-                  Anda
-                  menentukan
-                  batas
-                  hanya
-                  di
-                  bagian
-                  bawah
-                  setiap
-                  baris
-                  tabel,
-                  Anda
-                  akan
-                  memiliki
-                  tabel
-                  dengan
-                  pembagi
-                  horizontal.</span>
+                        <p><span style='color:black'>The
+                </span>&lt;colgroup&gt;elemen harus digunakan sebagai wadah untuk spesifikasi kolom.
                         </p>
 
-                        <p>Tambahkan border-bottomproperti ke semua trelemen untuk mendapatkan pembagi horizontal:
+                        <p>Setiap grup ditentukan dengan &lt;col&gt;elemen.
+                        </p>
+
+                        <p>The spanAtribut menentukan berapa banyak kolom yang mendapat gaya.
+                        </p>
+
+                        <p>The styleatribut menentukan gaya untuk memberikan kolom.
+                        </p>
+
+                        <p><b>Catatan:</b> Ada pilihan yang sangat terbatas dari
+                            <a href="https://www.w3schools.com/html/html_table_colgroup.asp#legalcss">properti
+                  CSS
+                  legal
+                  untuk
+                  colgroups</a> .
                         </p>
 
                         <p>Contoh :
                         </p>
 
-                        <p>tr {
-                            <br> border-bottom: 1px solid #ddd;
-                            <br> }
+                        <p>&lt;table&gt;<br> &lt;colgroup&gt;
+                            <br> &lt;col span=&quot;2&quot; style=&quot;background-color: #D6EEEE&quot;&gt;
+                            <br> &lt;/colgroup&gt;
+                            <br> &lt;tr&gt;
+                            <br> &lt;th&gt;MON&lt;/th&gt;
+                            <br> &lt;th&gt;TUE&lt;/th&gt;
+                            <br> &lt;th&gt;WED&lt;/th&gt;
+                            <br> &lt;th&gt;THU&lt;/th&gt;
+                            <br> ...
                         </p>
 
-                        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_border_divider2" target="_blank">Cobalah
+                        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_colgroup1" target="_blank">Cobalah
+                  sendiri
+                  &quot;</a>
+                        </p>
+
+                        <p><b>Catatan:</b> The &lt;colgroup&gt;tag harus menjadi anak dari &lt;table&gt;elemen dan harus ditempatkan sebelum elemen meja lainnya, seperti &lt;thead&gt;, &lt;tr&gt;, &lt;td&gt; dll, tapi setelah &lt;caption&gt;elemen, jika
+                            ada.
+                        </p>
+
+                        <div align=center style='text-align:center'>
+
+                            <hr size=0 width="100%" noshade style='color:black' align=center>
+
+                        </div>
+
+                        <p><a name=legalcss>Properti
+                  CSS
+                  Legal</a>
+                        </p>
+
+                        <p>Hanya ada pilihan properti CSS yang sangat terbatas yang diizinkan untuk digunakan dalam colgroup:
+                        </p>
+
+                        <p><a href="https://www.w3schools.com/cssref/css3_pr_dim_width.asp">width</a>properti<br>
+                            <a href="https://www.w3schools.com/cssref/css3_pr_dim_width.asp">visibility</a>properti<br>
+                            <a href="https://www.w3schools.com/cssref/css3_pr_background.asp">background</a>properti<br>
+                            <a href="https://www.w3schools.com/cssref/css3_pr_border.asp">border</a>properti
+                        </p>
+
+                        <p>Semua properti CSS lainnya tidak akan berpengaruh pada tabel Anda.
+                        </p>
+
+                        <div align=center style='text-align:center'>
+
+                            <hr size=0 width="100%" noshade style='color:black' align=center>
+
+                        </div>
+
+                        <div align=center style='text-align:center'>
+
+                            <hr size=0 width="100%" noshade style='color:black' align=center>
+
+                        </div>
+
+                        <p>Beberapa Elemen Kol
+                        </p>
+
+                        <p>Jika Anda ingin menata lebih banyak kolom dengan gaya berbeda, gunakan lebih banyak &lt;col&gt;elemen di dalam &lt;colgroup&gt;:
+                        </p>
+
+                        <p>Contoh :
+                        </p>
+
+                        <p>&lt;table&gt;<br> &lt;colgroup&gt;
+                            <br> &lt;col span=&quot;2&quot; style=&quot;background-color: #D6EEEE&quot;&gt;
+                            <br> &lt;col span=&quot;3&quot; style=&quot;background-color: pink&quot;&gt;
+                            <br> &lt;/colgroup&gt;
+                            <br> &lt;tr&gt;
+                            <br> &lt;th&gt;MON&lt;/th&gt;
+                            <br> &lt;th&gt;TUE&lt;/th&gt;
+                            <br> &lt;th&gt;WED&lt;/th&gt;
+                            <br> &lt;th&gt;THU&lt;/th&gt;
+                            <br> ...
+                        </p>
+
+                        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_colgroup2" target="_blank">Cobalah
                   sendiri
                   &quot;</a>
                         </p>
@@ -2561,459 +2846,63 @@
 
                         </div>
 
-                        <p>Meja yang Dapat Dilayangkan
+                        <p>Colgroup kosong
                         </p>
 
-                        <p>Gunakan :hoverpemilih aktif truntuk menyorot baris tabel dengan mouse:
+                        <p>Jika Anda ingin menata kolom di tengah tabel, sisipkan &lt;col&gt;elemen &quot;kosong&quot; (tanpa gaya) untuk kolom sebelumnya:
                         </p>
 
-                        <tableTable border=1 cellspacing=0 cellpadding=0 width=876 style='width:656.85pt;background:white;border-collapse:collapse;border:none'>
-                            <tr>
-                                <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                                    <p><b>Nama
-                        depan</b>
-                                    </p>
-                                </td>
-                                <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                                    <p><b><span style='color:black'>Nama
-                          keluarga</span></b>
-                                    </p>
-                                </td>
-                                <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                                    <p><b><span style='color:black'>Tabungan</span></b>
-                                    </p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                                    <p><span style='color:black'>Petrus</span>
-                                    </p>
-                                </td>
-                                <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                                    <p><span style='color:black'>Grifon</span>
-                                    </p>
-                                </td>
-                                <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                                    <p><span style='color:black'>$100</span>
-                                    </p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                                    <p><span style='color:black'>lois</span>
-                                    </p>
-                                </td>
-                                <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                                    <p><span style='color:black'>Grifon</span>
-                                    </p>
-                                </td>
-                                <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                                    <p><span style='color:black'>$150</span>
-                                    </p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                                    <p><span style='color:black'>joe</span>
-                                    </p>
-                                </td>
-                                <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                                    <p><span style='color:black'>angsa</span>
-                                    </p>
-                                </td>
-                                <td style='border:none;border-bottom:solid #DDDDDD 1.0pt;padding:6.0pt 6.0pt 6.0pt 6.0pt'>
-                                    <p><span style='color:black'>$300</span>
-                                    </p>
-                                </td>
-                            </tr>
-                            </table>
+                        <p>Contoh :
+                        </p>
 
-                            <p><span style='color:black'>Contoh</span>
-                            </p>
+                        <p>&lt;table&gt;<br> &lt;colgroup&gt;
+                            <br> &lt;col span=&quot;3&quot;&gt;
+                            <br> &lt;col span=&quot;2&quot; style=&quot;background-color: pink&quot;&gt;
+                            <br> &lt;/colgroup&gt;
+                            <br> &lt;tr&gt;
+                            <br> &lt;th&gt;MON&lt;/th&gt;
+                            <br> &lt;th&gt;TUE&lt;/th&gt;
+                            <br> &lt;th&gt;WED&lt;/th&gt;
+                            <br> &lt;th&gt;THU&lt;/th&gt;
+                            <br> ...
+                        </p>
 
-                            <p>tr:hover {background-color: #D6EEEE;}
-                            </p>
+                        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_colgroup3" target="_blank">Cobalah
+                  sendiri
+                  &quot;</a>
+                        </p>
 
-                            <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_hover" target="_blank">Cobalah
-                    sendiri
-                    &quot;</a>
-                            </p>
+                        <div align=center style='text-align:center'>
 
-                            <p>Colgroup Tabel HTML
-                            </p>
+                            <hr size=0 width="100%" noshade style='color:black' align=center>
 
-                            <p><a href="https://www.w3schools.com/html/html_table_styling.asp"><span
-                      style='font-family:"Segoe UI Symbol",sans-serif'>&#10094;</span>
-                    Sebelumnya</a><a href="https://www.w3schools.com/html/html_lists.asp">Berikutnya
-                    <span style='font-family:"Segoe UI Symbol",sans-serif'>&#10095;</span></a>
-                            </p>
+                        </div>
 
-                            <div align=center style='text-align:center'>
+                        <p>Sembunyikan Kolom
+                        </p>
 
-                                <hr size=0 width="100%" noshade style='color:black' align=center>
+                        <p>Anda dapat menyembunyikan kolom dengan visibility: collapseproperti:
+                        </p>
 
-                            </div>
+                        <p>Contoh :
+                        </p>
 
-                            <p>The &lt;colgroup&gt;elemen digunakan untuk kolom tertentu gaya meja.
-                            </p>
+                        <p>&lt;table&gt;<br> &lt;colgroup&gt;
+                            <br> &lt;col span=&quot;2&quot;&gt;
+                            <br> &lt;col span=&quot;3&quot; style=&quot;visibility: collapse&quot;&gt;
+                            <br> &lt;/colgroup&gt;
+                            <br> &lt;tr&gt;
+                            <br> &lt;th&gt;MON&lt;/th&gt;
+                            <br> &lt;th&gt;TUE&lt;/th&gt;
+                            <br> &lt;th&gt;WED&lt;/th&gt;
+                            <br> &lt;th&gt;THU&lt;/th&gt;
+                            <br> ...
+                        </p>
 
-                            <div align=center style='text-align:center'>
-
-                                <hr size=0 width="100%" noshade style='color:black' align=center>
-
-                            </div>
-
-                            <p>Colgroup Tabel HTML
-                            </p>
-
-                            <p>Jika Anda ingin memberi gaya pada dua kolom pertama tabel, gunakan elemen &lt;colgroup&gt; dan &lt;col&gt;.
-                            </p>
-
-                            <tableTable border=1 cellspacing=0 cellpadding=0 width=525 style='width:394.1pt;background:white;border-collapse:collapse;border:none'>
-                                <tr>
-                                    <td style='border:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><b>SEN</b>
-                                        </p>
-                                    </td>
-                                    <td style='border:solid #282A35 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><b><span style='color:black'>SELASA</span></b>
-                                        </p>
-                                    </td>
-                                    <td style='border:solid #282A35 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><b><span style='color:black'>MENIKAHI</span></b>
-                                        </p>
-                                    </td>
-                                    <td style='border:solid #282A35 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><b><span style='color:black'>KAM</span></b>
-                                        </p>
-                                    </td>
-                                    <td style='border:solid #282A35 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><b><span style='color:black'>JUMAT</span></b>
-                                        </p>
-                                    </td>
-                                    <td style='border:solid #282A35 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><b><span style='color:black'>DUDUK</span></b>
-                                        </p>
-                                    </td>
-                                    <td style='border:solid #282A35 1.0pt;border-left:none;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><b><span style='color:black'>MATAHARI</span></b>
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style='border:solid #282A35 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>1</span>
-                                        </p>
-                                    </td>
-                                    <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
-  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>2</span>
-                                        </p>
-                                    </td>
-                                    <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
-  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>3</span>
-                                        </p>
-                                    </td>
-                                    <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
-  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>4</span>
-                                        </p>
-                                    </td>
-                                    <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
-  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>5</span>
-                                        </p>
-                                    </td>
-                                    <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
-  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>6</span>
-                                        </p>
-                                    </td>
-                                    <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
-  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>7</span>
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style='border:solid #282A35 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>8</span>
-                                        </p>
-                                    </td>
-                                    <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
-  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>9</span>
-                                        </p>
-                                    </td>
-                                    <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
-  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>10</span>
-                                        </p>
-                                    </td>
-                                    <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
-  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>11</span>
-                                        </p>
-                                    </td>
-                                    <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
-  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>12</span>
-                                        </p>
-                                    </td>
-                                    <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
-  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>13</span>
-                                        </p>
-                                    </td>
-                                    <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
-  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>14</span>
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style='border:solid #282A35 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>15</span>
-                                        </p>
-                                    </td>
-                                    <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
-  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>16</span>
-                                        </p>
-                                    </td>
-                                    <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
-  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>17</span>
-                                        </p>
-                                    </td>
-                                    <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
-  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>18</span>
-                                        </p>
-                                    </td>
-                                    <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
-  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>19</span>
-                                        </p>
-                                    </td>
-                                    <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
-  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>20</span>
-                                        </p>
-                                    </td>
-                                    <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
-  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>21</span>
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td style='border:solid #282A35 1.0pt;border-top:none;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>22</span>
-                                        </p>
-                                    </td>
-                                    <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
-  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>23</span>
-                                        </p>
-                                    </td>
-                                    <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
-  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>24</span>
-                                        </p>
-                                    </td>
-                                    <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
-  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>25</span>
-                                        </p>
-                                    </td>
-                                    <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
-  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>26</span>
-                                        </p>
-                                    </td>
-                                    <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
-  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>27</span>
-                                        </p>
-                                    </td>
-                                    <td style='border-top:none;border-left:none;border-bottom:solid #282A35 1.0pt;
-  border-right:solid #282A35 1.0pt;padding:.75pt .75pt .75pt .75pt'>
-                                        <p><span style='color:black'>28</span>
-                                        </p>
-                                    </td>
-                                </tr>
-                                </table>
-
-                                <p><span style='color:black'>The
-                    </span>&lt;colgroup&gt;elemen harus digunakan sebagai wadah untuk spesifikasi kolom.
-                                </p>
-
-                                <p>Setiap grup ditentukan dengan &lt;col&gt;elemen.
-                                </p>
-
-                                <p>The spanAtribut menentukan berapa banyak kolom yang mendapat gaya.
-                                </p>
-
-                                <p>The styleatribut menentukan gaya untuk memberikan kolom.
-                                </p>
-
-                                <p><b>Catatan:</b> Ada pilihan yang sangat terbatas dari
-                                    <a href="https://www.w3schools.com/html/html_table_colgroup.asp#legalcss">properti
-                      CSS
-                      legal
-                      untuk
-                      colgroups</a> .
-                                </p>
-
-                                <p>Contoh :
-                                </p>
-
-                                <p>&lt;table&gt;<br> &lt;colgroup&gt;
-                                    <br> &lt;col span=&quot;2&quot; style=&quot;background-color: #D6EEEE&quot;&gt;
-                                    <br> &lt;/colgroup&gt;
-                                    <br> &lt;tr&gt;
-                                    <br> &lt;th&gt;MON&lt;/th&gt;
-                                    <br> &lt;th&gt;TUE&lt;/th&gt;
-                                    <br> &lt;th&gt;WED&lt;/th&gt;
-                                    <br> &lt;th&gt;THU&lt;/th&gt;
-                                    <br> ...
-                                </p>
-
-                                <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_colgroup1" target="_blank">Cobalah
-                      sendiri
-                      &quot;</a>
-                                </p>
-
-                                <p><b>Catatan:</b> The &lt;colgroup&gt;tag harus menjadi anak dari &lt;table&gt;elemen dan harus ditempatkan sebelum elemen meja lainnya, seperti &lt;thead&gt;, &lt;tr&gt;, &lt;td&gt; dll, tapi setelah &lt;caption&gt;elemen,
-                                    jika ada.
-                                </p>
-
-                                <div align=center style='text-align:center'>
-
-                                    <hr size=0 width="100%" noshade style='color:black' align=center>
-
-                                </div>
-
-                                <p><a name=legalcss>Properti
-                      CSS
-                      Legal</a>
-                                </p>
-
-                                <p>Hanya ada pilihan properti CSS yang sangat terbatas yang diizinkan untuk digunakan dalam colgroup:
-                                </p>
-
-                                <p><a href="https://www.w3schools.com/cssref/css3_pr_dim_width.asp">width</a>properti<br>
-                                    <a href="https://www.w3schools.com/cssref/css3_pr_dim_width.asp">visibility</a>properti<br>
-                                    <a href="https://www.w3schools.com/cssref/css3_pr_background.asp">background</a>properti<br>
-                                    <a href="https://www.w3schools.com/cssref/css3_pr_border.asp">border</a>properti
-                                </p>
-
-                                <p>Semua properti CSS lainnya tidak akan berpengaruh pada tabel Anda.
-                                </p>
-
-                                <div align=center style='text-align:center'>
-
-                                    <hr size=0 width="100%" noshade style='color:black' align=center>
-
-                                </div>
-
-                                <div align=center style='text-align:center'>
-
-                                    <hr size=0 width="100%" noshade style='color:black' align=center>
-
-                                </div>
-
-                                <p>Beberapa Elemen Kol
-                                </p>
-
-                                <p>Jika Anda ingin menata lebih banyak kolom dengan gaya berbeda, gunakan lebih banyak &lt;col&gt;elemen di dalam &lt;colgroup&gt;:
-                                </p>
-
-                                <p>Contoh :
-                                </p>
-
-                                <p>&lt;table&gt;<br> &lt;colgroup&gt;
-                                    <br> &lt;col span=&quot;2&quot; style=&quot;background-color: #D6EEEE&quot;&gt;
-                                    <br> &lt;col span=&quot;3&quot; style=&quot;background-color: pink&quot;&gt;
-                                    <br> &lt;/colgroup&gt;
-                                    <br> &lt;tr&gt;
-                                    <br> &lt;th&gt;MON&lt;/th&gt;
-                                    <br> &lt;th&gt;TUE&lt;/th&gt;
-                                    <br> &lt;th&gt;WED&lt;/th&gt;
-                                    <br> &lt;th&gt;THU&lt;/th&gt;
-                                    <br> ...
-                                </p>
-
-                                <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_colgroup2" target="_blank">Cobalah
-                      sendiri
-                      &quot;</a>
-                                </p>
-
-                                <div align=center style='text-align:center'>
-
-                                    <hr size=0 width="100%" noshade style='color:black' align=center>
-
-                                </div>
-
-                                <p>Colgroup kosong
-                                </p>
-
-                                <p>Jika Anda ingin menata kolom di tengah tabel, sisipkan &lt;col&gt;elemen &quot;kosong&quot; (tanpa gaya) untuk kolom sebelumnya:
-                                </p>
-
-                                <p>Contoh :
-                                </p>
-
-                                <p>&lt;table&gt;<br> &lt;colgroup&gt;
-                                    <br> &lt;col span=&quot;3&quot;&gt;
-                                    <br> &lt;col span=&quot;2&quot; style=&quot;background-color: pink&quot;&gt;
-                                    <br> &lt;/colgroup&gt;
-                                    <br> &lt;tr&gt;
-                                    <br> &lt;th&gt;MON&lt;/th&gt;
-                                    <br> &lt;th&gt;TUE&lt;/th&gt;
-                                    <br> &lt;th&gt;WED&lt;/th&gt;
-                                    <br> &lt;th&gt;THU&lt;/th&gt;
-                                    <br> ...
-                                </p>
-
-                                <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_colgroup3" target="_blank">Cobalah
-                      sendiri
-                      &quot;</a>
-                                </p>
-
-                                <div align=center style='text-align:center'>
-
-                                    <hr size=0 width="100%" noshade style='color:black' align=center>
-
-                                </div>
-
-                                <p>Sembunyikan Kolom
-                                </p>
-
-                                <p>Anda dapat menyembunyikan kolom dengan visibility: collapseproperti:
-                                </p>
-
-                                <p>Contoh :
-                                </p>
-
-                                <p>&lt;table&gt;<br> &lt;colgroup&gt;
-                                    <br> &lt;col span=&quot;2&quot;&gt;
-                                    <br> &lt;col span=&quot;3&quot; style=&quot;visibility: collapse&quot;&gt;
-                                    <br> &lt;/colgroup&gt;
-                                    <br> &lt;tr&gt;
-                                    <br> &lt;th&gt;MON&lt;/th&gt;
-                                    <br> &lt;th&gt;TUE&lt;/th&gt;
-                                    <br> &lt;th&gt;WED&lt;/th&gt;
-                                    <br> &lt;th&gt;THU&lt;/th&gt;
-                                    <br> ...
-                                </p>
-
-                                <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_colgroup4" target="_blank">Cobalah
-                      sendiri
-                      &quot;</a>
-                                </p>
+                        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_colgroup4" target="_blank">Cobalah
+                  sendiri
+                  &quot;</a>
+                        </p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>

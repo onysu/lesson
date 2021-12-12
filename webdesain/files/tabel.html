@@ -1587,105 +1587,204 @@
                 src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
             </div>
         </section>
+        <hr>
 
-        <h2>Tabel HTML Colspan &amp; Rowspan</h2>
-        <p>Tabel HTML dapat memiliki sel yang mencakup beberapa baris dan/atau kolom.</p>
+        <section>
+            <h2>Tabel HTML Colspan &amp; Rowspan</h2>
+            <p>Tabel HTML dapat memiliki sel yang mencakup beberapa baris dan/atau kolom.</p>
+            <div class="bd-example">
+                <style>
+                    .table7 {
+                        padding: 5px;
+                        text-align: center;
+                    }
+                </style>
+                <div style="overflow:auto;border-collapse: collapse;">
+                    <table class="table7" style="width:30%;float:left;background-color: #fff;">
+                        <tbody>
+                            <tr>
+                                <th colspan="2">NAME</th>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table7" style="width:30%;float:left;margin-left:5%;background-color: #fff;">
+                        <tbody>
+                            <tr>
+                                <th rowspan="3">APRIL</th>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table7" style="width:30%;float:right;background-color: #fff;">
+                        <tbody>
+                            <tr>
+                                <th colspan="3">2022</th>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <th colspan="2" rowspan="2">FIESTA</th>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
 
-        <div class="bd-example">
-            <style>
-                .table7 {
-                    padding: 5px;
-                    text-align: center;
-                }
-            </style>
-            <div style="overflow:auto;border-collapse: collapse;">
-                <table class="table7" style="width:30%;float:left;background-color: #fff;">
-                    <tbody>
-                        <tr>
-                            <th colspan="2">NAME</th>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table class="table7" style="width:30%;float:left;margin-left:5%;background-color: #fff;">
-                    <tbody>
-                        <tr>
-                            <th rowspan="3">APRIL</th>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table class="table7" style="width:30%;float:right;background-color: #fff;">
-                    <tbody>
-                        <tr>
-                            <th colspan="3">2022</th>
-                        </tr>
-                        <tr>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <th colspan="2" rowspan="2">FIESTA</th>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                    </tbody>
+        <hr>
+
+        <section>
+            <h2>Tabel HTML - Colspan</h2>
+            <p>Untuk membuat rentang sel pada beberapa kolom, gunakan <mark><code>colspan</code></mark> atribut.</p>
+            <p>Contoh :</p>
+            <div class="bd-example">
+                <h2>Sel yang membentang dua kolom</h2>
+                <p>Untuk membuat rentang sel lebih dari satu kolom, gunakan atribut colspan.</p>
+                <table class="table">
+                    <tr>
+                        <th colspan="2">Name</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td>43</td>
+                    </tr>
+                    <tr>
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>57</td>
+                    </tr>
                 </table>
             </div>
-        </div>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+&lt;table&gt;
+  &lt;tr&gt;
+    <mark>&lt;th colspan="2"&gt;Name&lt;/th&gt;</mark>
+    &lt;th&gt;Age&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Jill&lt;/td&gt;
+    &lt;td&gt;Smith&lt;/td&gt;
+    &lt;td&gt;43&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Eve&lt;/td&gt;
+    &lt;td&gt;Jackson&lt;/td&gt;
+    &lt;td&gt;57&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+          </code></pre>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri <img
+                draggable="false" role="img" class="emoji" alt="↗"
+                src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+            </div>
+            <p class="moreInfo"><strong>Catatan:</strong> Nilai <mark><code>colspan</code></mark> atribut mewakili jumlah kolom yang akan direntang.</p>
+        </section>
+        <hr>
 
-        <h2>Tabel HTML - Colspan</h2>
-        <p>Untuk membuat rentang sel pada beberapa kolom, gunakan <mark><code>colspan</code></mark> atribut.</p>
+        <section>
+            <h2>Tabel HTML - Rowspan</h2>
+            <p>Untuk membuat rentang sel pada beberapa baris, gunakan <mark><code>rowspan</code></mark> atribut.</p>
+            <p>Contoh :</p>
+            <div class="bd-example">
+                <table class="table">
+                    <tr>
+                        <th>Name</th>
+                        <td>Jill</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Phone</th>
+                        <td>555-1234</td>
+                    </tr>
+                    <tr>
+                        <td>555-8745</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Name&lt;/th&gt;
+    &lt;td&gt;Jill&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    <mark>&lt;th rowspan="2"&gt;Phone&lt;/th&gt;</mark>
+    &lt;td&gt;555-1234&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;555-8745&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+          </code></pre>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri <img
+                draggable="false" role="img" class="emoji" alt="↗"
+                src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+            </div>
+            <p class="moreInfo"><b>Catatan:</b> Nilai rowspanatribut mewakili jumlah baris yang akan direntang.</p>
+        </section>
+        <hr>
 
-        <p>Contoh :</p>
 
+        <!--  -->
         <div class="bd-example">
 
         </div>
@@ -1701,28 +1800,7 @@
               src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
         </div>
 
-        <h2>Tabel HTML - Rentang Baris</h2>
-        <p>Untuk membuat rentang sel pada beberapa baris, gunakan <mark><code>rowspan</code></mark> atribut.</p>
 
-        <p>Contoh :</p>
-
-        <div class="bd-example">
-
-        </div>
-
-        <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-        <div class="bd-callout">
-            <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
-        
-        </code></pre>
-            <hr>
-            <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri <img
-              draggable="false" role="img" class="emoji" alt="↗"
-              src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-        </div>
-
-        <p><b>Catatan:</b> Nilai rowspanatribut mewakili jumlah baris yang akan direntang.
-        </p>
 
         <h2>Penataan Tabel HTML</h2>
 

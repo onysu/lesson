@@ -29,7 +29,7 @@
 
             <div class="bd-example">
                 <h2>Tabel Dengan Border Bulat</h2>
-                <p>Gunakan properti radius batas CSS untuk menambahkan sudut membulat ke sel tabel.</p>
+                <p>Gunakan properti <mark><code>border-radius</code></mark> CSS untuk menambahkan sudut membulat ke sel tabel.</p>
                 <table style="width:100%;border-collapse: unset;">
                     <tr>
                         <th style="text-align: center; border: 1px solid black;border-radius: 10px;">Firstname</th>
@@ -99,7 +99,9 @@
 
         <section>
             <h2>Dotted Table Borders</h2>
-            <p>Dengan <mark><code>border-style</code></mark> properti, Anda dapat mengatur tampilan border.</p>
+            <p>Dengan <mark><code>border-style</code></mark> properti, Anda dapat mengatur tampilan
+                <mark><code>border</code></mark>.
+            </p>
             <div class="bd-example">
                 <table class="w-100">
                     <tr>
@@ -643,7 +645,8 @@
                 }
             </style>
             <h2>Header Tabel HTML</h2>
-            <p>Tabel HTML dapat memiliki header untuk setiap kolom atau baris, atau untuk banyak kolom/baris.</p>
+            <p>Tabel HTML dapat memiliki <strong>header</strong> untuk setiap kolom atau baris, atau untuk banyak kolom/baris.
+            </p>
             <div style="overflow:auto;text-align: center;">
                 <table class="table1 mqtable1" style="background-color: #fff;">
                     <tbody>
@@ -887,7 +890,9 @@
                 </table>
             </div>
             <br>
-            <p>Header tabel didefinisikan dengan thelemen, setiap thelemen mewakili sel tabel.</p>
+            <p>Header tabel didefinisikan dengan <mark><code>th</code></mark> elemen, setiap
+                <mark><code>th</code></mark> elemen mewakili sel tabel.
+            </p>
             <p>Contoh :</p>
             <div class="bd-example">
                 <h2>Tabel Header</h2>
@@ -948,49 +953,57 @@
         </section>
         <hr>
 
-        <h2>Header Tabel Vertikal</h2>
-        <p>Untuk menggunakan kolom pertama sebagai header tabel, tentukan sel pertama di setiap baris sebagai thelemen.
-        </p>
+        <section>
+            <h2>Header Tabel Vertikal</h2>
+            <p>Untuk menggunakan kolom pertama sebagai header tabel, tentukan sel pertama di setiap baris sebagai
+                <mark><code>th</code></mark> elemen.
+            </p>
+            <p>Contoh :</p>
+            <div class="bd-example">
+                <style>
+                    table,
+                    th,
+                    td {
+                        border: 1px solid black;
+                        border-collapse: collapse;
+                    }
+                </style>
+                <h2>Tajuk Tabel Vertikal</h2>
+                <p>Kolom pertama menjadi header tabel jika Anda menyetel sel tabel pertama di setiap baris tabel ke elemen TH:</p>
+                <table style="width:100%">
+                    <tr>
+                        <th>Firstname</th>
+                        <td>Jill</td>
+                        <td>Eve</td>
+                    </tr>
+                    <tr>
+                        <th>Lastname</th>
+                        <td>Smith</td>
+                        <td>Jackson</td>
+                    </tr>
+                    <tr>
+                        <th>Age</th>
+                        <td>50</td>
+                        <td>94</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+            <div class="bd-callout">
+                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+            
+            </code></pre>
+                <hr>
+                <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                            sendiri
+                            <img draggable="false" role="img" class="emoji" alt="↗"
+                                src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+            </div>
+        </section>
+        <hr>
 
-        <p>Contoh :</p>
-
-        <p>&lt;table&gt;<br> &lt;tr&gt;
-            <br> &lt;th&gt;Firstname&lt;/th&gt;
-            <br> &lt;td&gt;Jill&lt;/td&gt;
-            <br> &lt;td&gt;Eve&lt;/td&gt;
-            <br> &lt;/tr&gt;
-            <br> &lt;tr&gt;
-            <br> &lt;th&gt;Lastname&lt;/th&gt;<br> &lt;td&gt;Smith&lt;/td&gt;
-            <br> &lt;td&gt;Jackson&lt;/td&gt;
-            <br> &lt;/tr&gt;
-            <br> &lt;tr&gt;
-            <br> &lt;th&gt;Age&lt;/th&gt;
-            <br> &lt;td&gt;94&lt;/td&gt;
-            <br> &lt;td&gt;50&lt;/td&gt;
-            <br> &lt;/tr&gt;
-            <br> &lt;/table&gt;
-        </p>
-
-        <p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_th_vertical" target="_blank">Cobalah
-                    sendiri
-                    &quot;</a></p>
-
-        <div align=center style='text-align:center'>
-
-            <hr size=0 width="100%" noshade style='color:black' align=center>
-
-        </div>
-
-        <div align=center style='text-align:center'>
-
-            <hr size=0 width="100%" noshade style='color:black' align=center>
-
-        </div>
-
-        <p>Sejajarkan Header Tabel</p>
-
-        <p>Secara default, header tabel dicetak tebal dan di tengah:
-        </p>
+        <h2>Sejajarkan Header Tabel</h2>
+        <p>Secara default, header tabel dicetak tebal dan di tengah.</p>
 
         <tableTable border=1 cellspacing=0 cellpadding=0 width=438 style='width:328.45pt;background:white;border-collapse:collapse;border:none'>
             <tr>

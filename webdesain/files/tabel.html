@@ -1351,41 +1351,28 @@
             <p>Cell padding adalah ruang antara tepi sel dan isi sel. Secara default padding diatur ke 0. Untuk menambahkan padding pada sel tabel, gunakan <mark><code>padding</code></mark> properti CSS.</p>
             <p>Contoh :</p>
             <div class="bd-example">
-                <style>
-                    table,
-                    th,
-                    td {
-                        border: 1px solid black;
-                        border-collapse: collapse;
-                    }
-                    
-                    th,
-                    td {
-                        padding: 15px;
-                    }
-                </style>
                 <h2>Sel Padding</h2>
                 <p>Sel padding menentukan ruang antara konten sel dan batasnya.</p>
-                <table style="width:100%">
+                <table style="width:100%;border-collapse: unset;border: 1px solid black;border-collapse: collapse;">
                     <tr>
-                        <th>Firstname</th>
-                        <th>Lastname</th>
-                        <th>Age</th>
+                        <th style="padding: 15px;border: 1px solid black;border-collapse: collapse;">Firstname</th>
+                        <th style="padding: 15px;border: 1px solid black;border-collapse: collapse;">Lastname</th>
+                        <th style="padding: 15px;border: 1px solid black;border-collapse: collapse;">Age</th>
                     </tr>
                     <tr>
-                        <td>Jill</td>
-                        <td>Smith</td>
-                        <td>50</td>
+                        <td style="padding: 15px;border: 1px solid black;border-collapse: collapse;">Jill</td>
+                        <td style="padding: 15px;border: 1px solid black;border-collapse: collapse;">Smith</td>
+                        <td style="padding: 15px;border: 1px solid black;border-collapse: collapse;">50</td>
                     </tr>
                     <tr>
-                        <td>Eve</td>
-                        <td>Jackson</td>
-                        <td>94</td>
+                        <td style="padding: 15px;border: 1px solid black;border-collapse: collapse;">Eve</td>
+                        <td style="padding: 15px;border: 1px solid black;border-collapse: collapse;">Jackson</td>
+                        <td style="padding: 15px;border: 1px solid black;border-collapse: collapse;">94</td>
                     </tr>
                     <tr>
-                        <td>John</td>
-                        <td>Doe</td>
-                        <td>80</td>
+                        <td style="padding: 15px;border: 1px solid black;border-collapse: collapse;">John</td>
+                        <td style="padding: 15px;border: 1px solid black;border-collapse: collapse;">Doe</td>
+                        <td style="padding: 15px;border: 1px solid black;border-collapse: collapse;">80</td>
                     </tr>
                 </table>
                 <br>
@@ -1439,44 +1426,40 @@
             </p>
             <p>Contoh :</p>
             <div class="bd-example">
-                <style>
-                    table,
-                    th,
-                    td {
-                        border: 1px solid black;
-                        border-collapse: collapse;
-                    }
-                    
-                    th,
-                    td {
-                        padding-top: 10px;
-                        padding-bottom: 20px;
-                        padding-left: 30px;
-                        padding-right: 40px;
-                    }
-                </style>
                 <h2>Sel Padding - top - bottom - left - right</h2>
                 <p>Kita dapat menentukan padding yang berbeda untuk keempat sisi konten sel.</p>
-                <table style="width:100%">
+                <table style="width:100%;border: 1px solid black;border-collapse: collapse;">
                     <tr>
-                        <th>Firstname</th>
-                        <th>Lastname</th>
-                        <th>Age</th>
+                        <th style="padding-top: 10px;padding-bottom: 20px;padding-left: 30px;padding-right: 40px;border: 1px solid black;border-collapse: collapse;">
+                            Firstname</th>
+                        <th style="padding-top: 10px;padding-bottom: 20px;padding-left: 30px;padding-right: 40px;border: 1px solid black;border-collapse: collapse;">
+                            Lastname</th>
+                        <th style="padding-top: 10px;padding-bottom: 20px;padding-left: 30px;padding-right: 40px;border: 1px solid black;border-collapse: collapse;">
+                            Age</th>
                     </tr>
                     <tr>
-                        <td>Jill</td>
-                        <td>Smith</td>
-                        <td>50</td>
+                        <td style="padding-top: 10px;padding-bottom: 20px;padding-left: 30px;padding-right: 40px;border: 1px solid black;border-collapse: collapse;">
+                            Jill</td>
+                        <td style="padding-top: 10px;padding-bottom: 20px;padding-left: 30px;padding-right: 40px;border: 1px solid black;border-collapse: collapse;">
+                            Smith</td>
+                        <td style="padding-top: 10px;padding-bottom: 20px;padding-left: 30px;padding-right: 40px;border: 1px solid black;border-collapse: collapse;">
+                            50</td>
                     </tr>
                     <tr>
-                        <td>Eve</td>
-                        <td>Jackson</td>
-                        <td>94</td>
+                        <td style="padding-top: 10px;padding-bottom: 20px;padding-left: 30px;padding-right: 40px;border: 1px solid black;border-collapse: collapse;">
+                            Eve</td>
+                        <td style="padding-top: 10px;padding-bottom: 20px;padding-left: 30px;padding-right: 40px;border: 1px solid black;border-collapse: collapse;">
+                            Jackson</td>
+                        <td style="padding-top: 10px;padding-bottom: 20px;padding-left: 30px;padding-right: 40px;border: 1px solid black;border-collapse: collapse;">
+                            94</td>
                     </tr>
                     <tr>
-                        <td>John</td>
-                        <td>Doe</td>
-                        <td>80</td>
+                        <td style="padding-top: 10px;padding-bottom: 20px;padding-left: 30px;padding-right: 40px;border: 1px solid black;border-collapse: collapse;">
+                            John</td>
+                        <td style="padding-top: 10px;padding-bottom: 20px;padding-left: 30px;padding-right: 40px;border: 1px solid black;border-collapse: collapse;">
+                            Doe</td>
+                        <td style="padding-top: 10px;padding-bottom: 20px;padding-left: 30px;padding-right: 40px;border: 1px solid black;border-collapse: collapse;">
+                            80</td>
                     </tr>
                 </table>
             </div>
@@ -1530,11 +1513,51 @@
 
         <hr>
 
-
         <h2>Tabel HTML - Spasi Sel</h2>
         <p>Jarak antar sel adalah jarak antar sel. Secara default, ruang diatur ke 2 piksel. Untuk mengubah spasi antar sel tabel, gunakan border-spacingproperti CSS pada table elemen.</p>
 
         <p>Contoh :</p>
+
+        <div class="bd-example">
+
+            <h2>Jarak sel</h2>
+            <p>Ubah spasi antar sel dengan properti <code>border-spacing</code>.</p>
+
+            <table style="width:100%;border-spacing: 30px;border-collapse: unset;">
+                <tr>
+                    <th style="border: 1px solid black;">Firstname</th>
+                    <th style="border: 1px solid black;">Lastname</th>
+                    <th style="border: 1px solid black;">Age</th>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;">Jill</td>
+                    <td style="border: 1px solid black;">Smith</td>
+                    <td style="border: 1px solid black;">50</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;">Eve</td>
+                    <td style="border: 1px solid black;">Jackson</td>
+                    <td style="border: 1px solid black;">94</td>
+                </tr>
+                <tr>
+                    <td style="border: 1px solid black;">John</td>
+                    <td style="border: 1px solid black;">Doe</td>
+                    <td style="border: 1px solid black;">80</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+        <div class="bd-callout">
+            <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+        
+        </code></pre>
+            <hr>
+            <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri <img
+              draggable="false" role="img" class="emoji" alt="↗"
+              src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+        </div>
+
 
         <p>table {<br> border-spacing: 30px;
             <br> }

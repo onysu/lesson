@@ -290,6 +290,7 @@ section {
 pre {
     font-size: inherit;
     margin-bottom: 0;
+    margin-top: 60px;
     /* font-size: 0.875em; */
     /* font-family: Consolas, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New; */
 }
@@ -490,9 +491,13 @@ img.emoji {
     border-width: 1px 0 0;
     background-color: #fff;
     margin-bottom: 1rem;
+    margin-top: 0;
     -webkit-box-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
     box-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
-    border-radius: calc(0.25rem - 1px);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: calc(0.25rem - 1px);
+    border-bottom-right-radius: calc(0.25rem - 1px);
     text-shadow: none;
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     margin-right: unset;
@@ -500,6 +505,13 @@ img.emoji {
     /* tambahan */
     font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
+}
+
+.top-example {
+    max-width: 100%;
+    height: auto;
+    -webkit-box-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+    box-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
 }
 
 

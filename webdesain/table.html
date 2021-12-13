@@ -220,7 +220,7 @@
                         </table>
                     </div>
 
-                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <!-- <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="bd-callout">
                         <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
 &lt;style&gt;
@@ -283,49 +283,52 @@
                         <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                 sendiri <img draggable="false" role="img" class="emoji" alt="↗"
                   src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-                    </div>
+                    </div> -->
                 </section>
-                <hr>
+                <!-- <hr> -->
                 <section>
-                    <h2>Tentukan Tabel HTML</h2>
+                    <!-- <h2>Tentukan Tabel HTML</h2> -->
                     <p>Sebuah tabel dalam HTML terdiri dari sel-sel tabel di dalam baris dan kolom</p>
                     <p>Contoh :</p>
-                    <p>Sebuah tabel HTML sederhana:</p>
+                    <!-- <p>Sebuah tabel HTML sederhana:</p> -->
                     <div class="bd-example">
                         <h2>Tabel HTML dasar</h2>
-                        <table style="width:100%;border:1px solid black;border-collapse: unset;margin-bottom: 10px;">
+
+                        <table style="width:100%;border: 1px solid black;">
                             <tr>
-                                <th style="border:1px solid black;">Company</th>
-                                <th style="border:1px solid black;">Contact</th>
-                                <th style="border:1px solid black;">Country</th>
+                                <th style="border: 1px solid black;">Company</th>
+                                <th style="border: 1px solid black;">Contact</th>
+                                <th style="border: 1px solid black;">Country</th>
                             </tr>
                             <tr>
-                                <td style="border:1px solid black;">Alfreds Futterkiste</td>
-                                <td style="border:1px solid black;">Maria Anders</td>
-                                <td style="border:1px solid black;">Germany</td>
+                                <td style="border: 1px solid black;">Alfreds Futterkiste</td>
+                                <td style="border: 1px solid black;">Maria Anders</td>
+                                <td style="border: 1px solid black;">Germany</td>
                             </tr>
                             <tr>
-                                <td style="border:1px solid black;">Centro comercial Moctezuma</td>
-                                <td style="border:1px solid black;">Francisco Chang</td>
-                                <td style="border:1px solid black;">Mexico</td>
+                                <td style="border: 1px solid black;">Centro comercial Moctezuma</td>
+                                <td style="border: 1px solid black;">Francisco Chang</td>
+                                <td style="border: 1px solid black;">Mexico</td>
                             </tr>
                         </table>
-                        <p>Untuk memahami contoh dengan lebih baik, kami telah menambahkan border ke tabel.</p>
+                        <br>
+                        <p>Untuk memahami contoh dengan lebih baik, kami telah menambahkan batas ke tabel.</p>
                     </div>
+
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="bd-callout">
                         <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
 &lt;style&gt;
-  table, th, td {
-    <span class="na">border</span>:<span class="s">1px solid black</span>;
+  <mark>table, th, td</mark> {
+    <mark><span class="na">border</span>:<span class="s">1px solid black</span>;</mark>
   }
 &lt;/style&gt;
 
 &lt;table&gt;
   &lt;tr&gt;
-    &lt;th&gt;Company&lt;/th&gt;
-    &lt;th&gt;Contact&lt;/th&gt;
-    &lt;th&gt;Country&lt;/th&gt;
+    &lt;th&gt;Perusahaan&lt;/th&gt;
+    &lt;th&gt;Kontak&lt;/th&gt;
+    &lt;th&gt;Negara&lt;/th&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
     &lt;td&gt;Alfreds Futterkiste&lt;/td&gt;
@@ -358,21 +361,22 @@
                     <p>Contoh :</p>
                     <div class="bd-example">
                         <h2>Elemen <code>&lt;td&gt;</code> mendefinisikan sel tabel</h2>
-                        <table style="width:100%;border:1px solid black;border-collapse: unset;margin-bottom: 10px;">
+                        <table style="width:100%;border:1px solid black;">
                             <tr>
                                 <td style="border:1px solid black;">Emil</td>
                                 <td style="border:1px solid black;">Tobias</td>
                                 <td style="border:1px solid black;">Linus</td>
                             </tr>
                         </table>
+                        <br>
                         <p>Untuk memahami contoh dengan lebih baik, kami telah menambahkan border ke tabel.</p>
                     </div>
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="bd-callout">
                         <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
 &lt;style&gt;
-  table, th, td {
-    border:1px solid black;
+  <mark>table, th, td</mark> {
+    <mark>border:1px solid black;</mark>
   }
 &lt;/style&gt;
 
@@ -401,7 +405,7 @@
                     <p>Contoh :</p>
                     <div class="bd-example">
                         <h2>Elemen <code>&lt;tr&gt;</code> mendefinisikan baris tabel</h2>
-                        <table style="width:100%;border:1px solid black;border-collapse: unset;margin-bottom: 10px;">
+                        <table style="width:100%;border:1px solid black;">
                             <tr>
                                 <td style="border:1px solid black;">Emil</td>
                                 <td style="border:1px solid black;">Tobias</td>
@@ -413,14 +417,15 @@
                                 <td style="border:1px solid black;">10</td>
                             </tr>
                         </table>
+                        <br>
                         <p>Untuk memahami contoh dengan lebih baik, kami telah menambahkan border ke tabel.</p>
                     </div>
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="bd-callout">
                         <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
 &lt;style&gt;
-  table, th, td {
-    border:1px solid black;
+  <mark>table, th, td</mark> {
+    <mark>border:1px solid black;</mark>
   }
 &lt;/style&gt;
 
@@ -456,7 +461,7 @@
                     <p>Biarkan baris pertama menjadi header tabel:</p>
                     <div class="bd-example">
                         <h2>Elemen <code>&lt;th&gt;</code> mendefinisikan header tabel</h2>
-                        <table style="width:100%;border:1px solid black;border-collapse: unset;margin-bottom: 10px;">
+                        <table style="width:100%;border:1px solid black;">
                             <tr>
                                 <th style="border:1px solid black;">Person 1</th>
                                 <th style="border:1px solid black;">Person 2</th>
@@ -473,16 +478,15 @@
                                 <td style="border:1px solid black;">10</td>
                             </tr>
                         </table>
+                        <br>
                         <p>Untuk memahami contoh dengan lebih baik, kami telah menambahkan border ke tabel.</p>
                     </div>
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="bd-callout">
                         <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"></code>
 &lt;style&gt;
-  table,
-  th,
-  td {
-    border: 1px solid black;
+  <mark>table, th, td</mark> {
+    <mark>border: 1px solid black;</mark>
   }
 &lt;/style&gt;
 
@@ -581,7 +585,7 @@
                     <p>Contoh :</p>
 
                     <div class="bd-example">
-                        <table style="width:30%;border-collapse: unset;border: 1px solid black;">
+                        <table style="width:30%;border: 1px solid black;">
                             <tr>
                                 <td style="border: 1px solid black;">&nbsp;</td>
                                 <td style="border: 1px solid black;">&nbsp;</td>
@@ -604,10 +608,8 @@
                     <div class="highlight">
                         <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"></code>
 &lt;style&gt;
-  table,
-  th,
-  td {
-    border: 1px solid black;
+  <mark>table, th, td</mark> {
+    <mark>border: 1px solid black;</mark>
   }
 &lt;/style&gt;
 
@@ -647,33 +649,40 @@
                         <mark><code>border-collapse</code></mark> properti CSS ke <mark><code>collapse</code></mark>. Ini akan membuat perbatasan runtuh menjadi satu perbatasan:
                     </p>
                     <div class="bd-example">
-                        <table style="width:30%;border: 1px solid #282A35;">
-                            <tbody>
-                                <tr>
-                                    <td style="border: 1px solid #282A35;">&nbsp;</td>
-                                    <td style="border: 1px solid #282A35;">&nbsp;</td>
-                                    <td style="border: 1px solid #282A35;">&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td style="border: 1px solid #282A35;">&nbsp;</td>
-                                    <td style="border: 1px solid #282A35;">&nbsp;</td>
-                                    <td style="border: 1px solid #282A35;">&nbsp;</td>
-                                </tr>
-                                <tr>
-                                    <td style="border: 1px solid #282A35;">&nbsp;</td>
-                                    <td style="border: 1px solid #282A35;">&nbsp;</td>
-                                    <td style="border: 1px solid #282A35;">&nbsp;</td>
-                                </tr>
-                            </tbody>
+                        <h2>Collapsed Borders</h2>
+                        <p>Jika Anda ingin perbatasan diciutkan menjadi satu perbatasan, tambahkan properti CSS border-collapse.
+                        </p>
+
+                        <table style="width:100%;border: 1px solid black;border-collapse: collapse;">
+                            <tr>
+                                <th style="border: 1px solid black;border-collapse: collapse;">Firstname</th>
+                                <th style="border: 1px solid black;border-collapse: collapse;">Lastname</th>
+                                <th style="border: 1px solid black;border-collapse: collapse;">Age</th>
+                            </tr>
+                            <tr>
+                                <td style="border: 1px solid black;border-collapse: collapse;">Jill</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">Smith</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">50</td>
+                            </tr>
+                            <tr>
+                                <td style="border: 1px solid black;border-collapse: collapse;">Eve</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">Jackson</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">94</td>
+                            </tr>
+                            <tr>
+                                <td style="border: 1px solid black;border-collapse: collapse;">John</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">Doe</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">80</td>
+                            </tr>
                         </table>
                     </div>
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="highlight">
                         <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"></code>
 &lt;style&gt;
-  table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
+  <mark>table, th, td</mark> {
+    <mark>border: 1px solid black;</mark>
+    <mark>border-collapse: collapse;</mark>
   }
 &lt;/style&gt;
 
@@ -767,12 +776,12 @@
                     <div class="highlight">
                         <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"></code>
 &lt;style&gt;
-  table, th, td {
-    border: 1px solid white;
-    border-collapse: collapse;
+  <mark>table, th, td</mark> {
+    <mark>border: 1px solid white;</mark>
+    <mark>border-collapse: collapse;</mark>
   }
-  th, td {
-    background-color: #96D4D4;
+  <mark>th, td</mark> {
+    <mark>background-color: #96D4D4;</mark>
   }
 &lt;/style&gt;
 
@@ -818,7 +827,7 @@
                             <mark><code>border</code></mark>.
                         </p>
 
-                        <table style="width:100%;border: 1px solid black;border-radius: 10px;border-collapse: unset;">
+                        <table style="width:100%;border: 1px solid black;border-radius: 10px;">
                             <tr>
                                 <th style="border: 1px solid black;border-radius: 10px;">Firstname</th>
                                 <th style="border: 1px solid black;border-radius: 10px;">Lastname</th>
@@ -846,9 +855,9 @@
                     <div class="highlight">
                         <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"></code>
 &lt;style&gt;
-  table, th, td {
-    border: 1px solid black;
-    border-radius: 10px;
+  <mark>table, th, td</mark> {
+    <mark>border: 1px solid black;</mark>
+    <mark>border-radius: 10px;</mark>
   }
 &lt;/style&gt;
 
@@ -889,15 +898,16 @@
 
                     <div class="bd-example">
                         <h2>Tabel Dengan Border Bulat</h2>
-                        <p>Gunakan properti <mark><code>border-radius</code></mark> CSS untuk menambahkan sudut membulat ke sel tabel.
+                        <p>Menghilangkan garis Table, dengan CSS: <br> Gunakan properti
+                            <mark><code>border-radius</code></mark> CSS untuk menambahkan sudut membulat ke sel tabel.
                         </p>
-                        <table style="width:100%;border-collapse: unset;">
+                        <table style="width:100%;">
                             <tr>
-                                <th style="text-align: center; border: 1px solid black;border-radius: 10px;">Nama Depan
+                                <th style="border: 1px solid black;border-radius: 10px;">Nama Depan
                                 </th>
-                                <th style="text-align: center; border: 1px solid black;border-radius: 10px;">Nama Belakang
+                                <th style="border: 1px solid black;border-radius: 10px;">Nama Belakang
                                 </th>
-                                <th style="text-align: center; border: 1px solid black;border-radius: 10px;">Usia</th>
+                                <th style="border: 1px solid black;border-radius: 10px;">Usia</th>
                             </tr>
                             <tr>
                                 <td style="border: 1px solid black;border-radius: 10px;">Jill</td>
@@ -921,10 +931,9 @@
                     <div class="bd-callout">
                         <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"></code>
 &lt;style&gt;
-  th,
-  td {
-    border: 1px solid black;
-    border-radius: 10px;
+  <mark>th, td</mark> {
+    <mark>border: 1px solid black;</mark>
+    <mark>border-radius: 10px;</mark>
   }
 &lt;/style&gt;
 
@@ -966,42 +975,33 @@
                         <mark><code>border</code></mark>.
                     </p>
                     <div class="bd-example">
-                        <table class="w-100">
+                        <table style="width: 100%;">
                             <tr>
-                                <th style="border: 2px solid black;border-style: dotted;border-collapse: unset;">Nama Depan
-                                </th>
-                                <th style="border: 2px solid black;border-style: dotted;border-collapse: unset;">Nama Belakang
-                                </th>
-                                <th style="border: 2px solid black;border-style: dotted;border-collapse: unset;">Usia
-                                </th>
+                                <th style="border-style: dotted;">Nama Depan</th>
+                                <th style="border-style: dotted;">Nama Belakang</th>
+                                <th style="border-style: dotted;">Usia</th>
                             </tr>
                             <tr>
-                                <td style="border: 2px solid black;border-style: dotted;border-collapse: unset;">Jill
-                                </td>
-                                <td style="border: 2px solid black;border-style: dotted;border-collapse: unset;">Smith
-                                </td>
-                                <td style="border: 2px solid black;border-style: dotted;border-collapse: unset;">50</td>
+                                <td style="border-style: dotted;">Jill</td>
+                                <td style="border-style: dotted;">Smith</td>
+                                <td style="border-style: dotted;">50</td>
                             </tr>
                             <tr>
-                                <td style="border: 2px solid black;border-style: dotted;border-collapse: unset;">Eve
-                                </td>
-                                <td style="border: 2px solid black;border-style: dotted;border-collapse: unset;">Jackson
-                                </td>
-                                <td style="border: 2px solid black;border-style: dotted;border-collapse: unset;">94</td>
+                                <td style="border-style: dotted;">Eve</td>
+                                <td style="border-style: dotted;">Jackson</td>
+                                <td style="border-style: dotted;">94</td>
                             </tr>
                             <tr>
-                                <td style="border: 2px solid black;border-style: dotted;border-collapse: unset;">John
-                                </td>
-                                <td style="border: 2px solid black;border-style: dotted;border-collapse: unset;">Doe
-                                </td>
-                                <td style="border: 2px solid black;border-style: dotted;border-collapse: unset;">80</td>
+                                <td style="border-style: dotted;">John</td>
+                                <td style="border-style: dotted;">Doe</td>
+                                <td style="border-style: dotted;">80</td>
                             </tr>
                         </table>
                     </div>
                     <table class="table w-auto">
                         <thead class="table-light">
                             <tr>
-                                <th colspan="2">Nilai berikut diperbolehkan :</th>
+                                <th colspan="2">Nilai/Value yang diperbolehkan :</th>
                             </tr>
                         </thead>
                         <tr>
@@ -1059,9 +1059,8 @@
                     <div class="bd-callout">
                         <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
 &lt;style&gt;
-  th,
-  td {
-    border-style: dotted;
+  <mark>th, td</mark> {
+    <mark>border-style: dotted;</mark>
   }
 &lt;/style&gt;
 
@@ -1102,28 +1101,26 @@
                     <div class="bd-example">
                         <h2>Tabel Dengan Warna Tepi</h2>
                         <p>Gunakan properti CSS <mark><code>border-color</code></mark> untuk mengatur warna border.</p>
-                        <table style="width:100%;border-collapse: unset;">
-                            <tr style="border-width: unset;">
-                                <th style="border-width: unset; border-style:solid;border-color: #96D4D4;">Nama Depan
-                                </th>
-                                <th style="border-width: unset; border-style:solid;border-color: #96D4D4;">Nama Belakang
-                                </th>
-                                <th style="border-width: unset; border-style:solid;border-color: #96D4D4;">Usia</th>
+                        <table style="width:100%;">
+                            <tr>
+                                <th style="border-style:solid;border-color: #96D4D4;">Nama Depan</th>
+                                <th style="border-style:solid;border-color: #96D4D4;">Nama Belakang</th>
+                                <th style="border-style:solid;border-color: #96D4D4;">Usia</th>
                             </tr>
-                            <tr style="border-width: unset;">
-                                <td style="border-width: unset; border-style:solid;border-color: #96D4D4;">Jill</td>
-                                <td style="border-width: unset; border-style:solid;border-color: #96D4D4;">Smith</td>
-                                <td style="border-width: unset; border-style:solid;border-color: #96D4D4;">50</td>
+                            <tr>
+                                <td style="border-style:solid;border-color: #96D4D4;">Jill</td>
+                                <td style="border-style:solid;border-color: #96D4D4;">Smith</td>
+                                <td style="border-style:solid;border-color: #96D4D4;">50</td>
                             </tr>
-                            <tr style="border-width: unset;">
-                                <td style="border-width: unset; border-style:solid;border-color: #96D4D4;">Eve</td>
-                                <td style="border-width: unset; border-style:solid;border-color: #96D4D4;">Jackson</td>
-                                <td style="border-width: unset; border-style:solid;border-color: #96D4D4;">94</td>
+                            <tr>
+                                <td style="border-style:solid;border-color: #96D4D4;">Eve</td>
+                                <td style="border-style:solid;border-color: #96D4D4;">Jackson</td>
+                                <td style="border-style:solid;border-color: #96D4D4;">94</td>
                             </tr>
-                            <tr style="border-width: unset;">
-                                <td style="border-width: unset; border-style:solid;border-color: #96D4D4;">John</td>
-                                <td style="border-width: unset; border-style:solid;border-color: #96D4D4;">Doe</td>
-                                <td style="border-width: unset; border-style:solid;border-color: #96D4D4;">80</td>
+                            <tr>
+                                <td style="border-style:solid;border-color: #96D4D4;">John</td>
+                                <td style="border-style:solid;border-color: #96D4D4;">Doe</td>
+                                <td style="border-style:solid;border-color: #96D4D4;">80</td>
                             </tr>
                         </table>
                     </div>
@@ -1131,14 +1128,13 @@
                     <div class="bd-callout">
                         <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
 &lt;style&gt;
-  th,
-  td {
-    border-style: solid;
-    border-color: #96D4D4;
+  <mark>th, td</mark> {
+    <mark>border-style: solid;</mark>
+    <mark>border-color: #96D4D4;</mark>
   }
 &lt;/style&gt;
 
-&lt;table style="width:100%"&gt;
+&lt;table&gt;
   &lt;tr&gt;
     &lt;th&gt;Nama Depan&lt;/th&gt;
     &lt;th&gt;Nama Belakang&lt;/th&gt;
@@ -1173,7 +1169,7 @@
                     <h2>Ukuran Tabel HTML</h2>
                     <p>Tabel HTML dapat memiliki ukuran yang berbeda untuk setiap kolom, baris, atau seluruh tabel.</p>
                     <div class="bd-example">
-                        <table style="width:20%;float:left;border: 1px solid #282A35;">
+                        <table style="border-collapse: collapse; width:20%;float:left;border: 1px solid #282A35;">
                             <tr>
                                 <td style="border: 1px solid #282A35;">&nbsp;</td>
                                 <td style="width:80%;border: 1px solid #282A35;">&nbsp;</td>
@@ -1190,7 +1186,7 @@
                                 <td style="border: 1px solid #282A35;">&nbsp;</td>
                             </tr>
                         </table>
-                        <table style="width:50%;float:left;margin-left:5%;border: 1px solid #282A35;">
+                        <table style="border-collapse: collapse; width:50%;float:left;margin-left:5%;border: 1px solid #282A35;">
                             <tr>
                                 <td style="width:40%;border: 1px solid #282A35;">&nbsp;</td>
                                 <td style="border: 1px solid #282A35;">&nbsp;</td>
@@ -1207,7 +1203,7 @@
                                 <td style="border: 1px solid #282A35;">&nbsp;</td>
                             </tr>
                         </table>
-                        <table style="width:20%;float:right;border: 1px solid #282A35;">
+                        <table style="border-collapse: collapse; width:20%;float:right;border: 1px solid #282A35;">
                             <tr>
                                 <td style="width:70%;border: 1px solid #282A35;">&nbsp;</td>
                                 <td style="border: 1px solid #282A35;">&nbsp;</td>
@@ -1255,15 +1251,13 @@
                     <div class="bd-callout">
                         <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
 &lt;style&gt;
-  table,
-  th,
-  td {
-    border: 1px solid black;
-    border-collapse: collapse;
+  <mark>table, th, td</mark> {
+    <mark>border: 1px solid black;</mark>
+    <mark>border-collapse: collapse;</mark>
   }
 &lt;/style&gt;
 
-&lt;table style="width:100%"&gt;
+&lt;table&gt;
   &lt;tr&gt;
     &lt;th&gt;Nama Depan&lt;/th&gt;
     &lt;th&gt;Nama Belakang&lt;/th&gt;
@@ -1327,26 +1321,26 @@
                     <p>Atur lebar kolom pertama menjadi 70%:</p>
                     <div class="bd-example">
                         <h2>Setel kolom pertama menjadi 70% dari lebar tabel</h2>
-                        <table style="width:100%;border: 1px solid black;border-collapse: collapse;">
+                        <table style="width:100%;border:1px solid black;border-collapse: collapse;">
                             <tr>
-                                <th style="width:70%;border: 1px solid black;border-collapse: collapse;">Nama Depan</th>
-                                <th style="border: 1px solid black;border-collapse: collapse;">Nama Belakang</th>
-                                <th style="border: 1px solid black;border-collapse: collapse;">Usia</th>
+                                <th style="width:70%;border:1px solid black;border-collapse: collapse;">Nama Depan</th>
+                                <th style="border:1px solid black;border-collapse: collapse;">Nama Belakang</th>
+                                <th style="border:1px solid black;border-collapse: collapse;">Usia</th>
                             </tr>
                             <tr>
-                                <td style="border: 1px solid black;border-collapse: collapse;">Jill</td>
-                                <td style="border: 1px solid black;border-collapse: collapse;">Smith</td>
-                                <td style="border: 1px solid black;border-collapse: collapse;">50</td>
+                                <td style="border:1px solid black;border-collapse: collapse;">Jill</td>
+                                <td style="border:1px solid black;border-collapse: collapse;">Smith</td>
+                                <td style="border:1px solid black;border-collapse: collapse;">50</td>
                             </tr>
                             <tr>
-                                <td style="border: 1px solid black;border-collapse: collapse;">Eve</td>
-                                <td style="border: 1px solid black;border-collapse: collapse;">Jackson</td>
-                                <td style="border: 1px solid black;border-collapse: collapse;">94</td>
+                                <td style="border:1px solid black;border-collapse: collapse;">Eve</td>
+                                <td style="border:1px solid black;border-collapse: collapse;">Jackson</td>
+                                <td style="border:1px solid black;border-collapse: collapse;">94</td>
                             </tr>
                             <tr>
-                                <td style="border: 1px solid black;border-collapse: collapse;">John</td>
-                                <td style="border: 1px solid black;border-collapse: collapse;">Doe</td>
-                                <td style="border: 1px solid black;border-collapse: collapse;">80</td>
+                                <td style="border:1px solid black;border-collapse: collapse;">John</td>
+                                <td style="border:1px solid black;border-collapse: collapse;">Doe</td>
+                                <td style="border:1px solid black;border-collapse: collapse;">80</td>
                             </tr>
                         </table>
                     </div>
@@ -1354,15 +1348,13 @@
                     <div class="bd-callout">
                         <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
 &lt;style&gt;
-  table,
-  th,
-  td {
-    border: 1px solid black;
-    border-collapse: collapse;
+  <mark>table, th, td</mark> {
+    <mark>border: 1px solid black;</mark>
+    <mark>border-collapse: collapse;</mark>
   }
 &lt;/style&gt;
 
-&lt;table style="width:100%"&gt;
+&lt;table&gt;
   &lt;tr&gt;
     &lt;th style="width:70%"&gt;Nama Depan&lt;/th&gt;
     &lt;th&gt;Nama Belakang&lt;/th&gt;
@@ -1428,15 +1420,13 @@
                     <div class="bd-callout">
                         <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
 &lt;style&gt;
-  table,
-  th,
-  td {
-    border: 1px solid black;
-    border-collapse: collapse;
+  <mark>table, th, td</mark> {
+    <mark>border: 1px solid black;</mark>
+    <mark>border-collapse: collapse;</mark>
   }
 &lt;/style&gt;
 
-&lt;table style="width:100%"&gt;
+&lt;table&gt;
   &lt;tr&gt;
     &lt;th&gt;Nama Depan&lt;/th&gt;
     &lt;th&gt;Nama Belakang&lt;/th&gt;
@@ -1491,14 +1481,6 @@
                             float: right;
                         }
                         
-                        .table1,
-                        .table1 th,
-                        .table1 td {
-                            border: 1px solid #282A35;
-                            border-collapse: collapse;
-                            font-size: 8px;
-                        }
-                        
                         @media (max-width: 650px) {
                             .mqtable1,
                             .mqtable2,
@@ -1523,7 +1505,7 @@
                     <p>Tabel HTML dapat memiliki <strong>header</strong> untuk setiap kolom atau baris, atau untuk banyak kolom/baris.
                     </p>
                     <div style="overflow:auto;text-align: center;">
-                        <table class="table1 mqtable1" style="background-color: #fff;">
+                        <table class="mqtable1" style="background-color: #fff;">
                             <tbody>
                                 <tr>
                                     <th style="width: 20%;border: 1px solid #282A35;border-collapse: collapse;font-size: 8px;">
@@ -1575,7 +1557,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                        <table class="table2 mqtable2" style="background-color: #fff;">
+                        <table class="mqtable2" style="background-color: #fff;">
                             <tbody>
                                 <tr>
                                     <th style="width: 20%;border: 1px solid #282A35;border-collapse: collapse;font-size: 8px;">
@@ -1794,13 +1776,13 @@
                     <div class="bd-callout">
                         <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
 &lt;style&gt;
-  table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
+  <mark>table, th, td</mark> {
+    <mark>border: 1px solid black;</mark>
+    <mark>border-collapse: collapse;</mark>
   }
 &lt;/style&gt;
 
-&lt;table style="width:100%"&gt;
+&lt;table&gt;
   &lt;tr&gt;
     &lt;th&gt;Nama Depan&lt;/th&gt;
     &lt;th&gt;Nama Belakang&lt;/th&gt;
@@ -1833,32 +1815,24 @@
                     </p>
                     <p>Contoh :</p>
                     <div class="bd-example">
-                        <style>
-                            table,
-                            th,
-                            td {
-                                border: 1px solid black;
-                                border-collapse: collapse;
-                            }
-                        </style>
                         <h2>Header Tabel Vertikal</h2>
                         <p>Kolom pertama menjadi header tabel jika Anda menyetel sel tabel pertama di setiap baris tabel ke elemen TH:
                         </p>
-                        <table style="width:100%">
+                        <table style="width:100%;border: 1px solid black;border-collapse: collapse;">
                             <tr>
-                                <th>Nama Depan</th>
-                                <td>Jill</td>
-                                <td>Eve</td>
+                                <th style="border: 1px solid black;border-collapse: collapse;">Nama Depan</th>
+                                <td style="border: 1px solid black;border-collapse: collapse;">Jill</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">Eve</td>
                             </tr>
                             <tr>
-                                <th>Nama Belakang</th>
-                                <td>Smith</td>
-                                <td>Jackson</td>
+                                <th style="border: 1px solid black;border-collapse: collapse;">Nama Belakang</th>
+                                <td style="border: 1px solid black;border-collapse: collapse;">Smith</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">Jackson</td>
                             </tr>
                             <tr>
-                                <th>Usia</th>
-                                <td>50</td>
-                                <td>94</td>
+                                <th style="border: 1px solid black;border-collapse: collapse;">Usia</th>
+                                <td style="border: 1px solid black;border-collapse: collapse;">50</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">94</td>
                             </tr>
                         </table>
                     </div>
@@ -1866,15 +1840,13 @@
                     <div class="bd-callout">
                         <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
 &lt;style&gt;
-  table,
-  th,
-  td {
-    border: 1px solid black;
-    border-collapse: collapse;
+  <mark>table, th, td</mark> {
+    <mark>border: 1px solid black;</mark>
+    <mark>border-collapse: collapse;</mark>
   }
 &lt;/style&gt;
 
-&lt;table style="width:100%"&gt;
+&lt;table&gt;
   &lt;tr&gt;
     &lt;th&gt;Nama Depan&lt;/th&gt;
     &lt;td&gt;Jill&lt;/td&gt;
@@ -1903,26 +1875,7 @@
 
                 <section>
                     <h2>Sejajarkan Header Tabel</h2>
-                    <p>Secara default, header tabel dicetak <strong>tebal</strong> dan di <strong>tengah</strong>.</p>
-                    <div class="bd-example">
-                        <table style="width:100%;border: 1px solid black;border-collapse: collapse;">
-                            <tr>
-                                <th style="text-align: center;">Nama Depan</th>
-                                <th style="text-align: center;">Nama Belakang</th>
-                                <th style="text-align: center;">Usia</th>
-                            </tr>
-                            <tr>
-                                <td style="border: 1px solid black;border-collapse: collapse;">Jill</td>
-                                <td style="border: 1px solid black;border-collapse: collapse;">Smith</td>
-                                <td style="border: 1px solid black;border-collapse: collapse;">50</td>
-                            </tr>
-                            <tr>
-                                <td style="border: 1px solid black;border-collapse: collapse;">Eve</td>
-                                <td style="border: 1px solid black;border-collapse: collapse;">Jackson</td>
-                                <td style="border: 1px solid black;border-collapse: collapse;">94</td>
-                            </tr>
-                        </table>
-                    </div>
+                    <p>Secara standart, header tabel dicetak <strong>tebal</strong> dan di <strong>tengah</strong>.</p>
 
                     <p>Untuk <u>meratakan kiri header</u> tabel, gunakan <mark><code>text-align</code></mark> properti CSS :</p>
                     <p>Contoh :</p>
@@ -1955,15 +1908,12 @@
                     <div class="bd-callout">
                         <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
 &lt;style&gt;
-  table,
-  th,
-  td {
-    border: 1px solid black;
-    border-collapse: collapse;
+  <mark>table, th, td</mark> {
+    <mark>border: 1px solid black;</mark>
+    <mark>border-collapse: collapse;</mark>
   }
-
-  th {
-    text-align: left;
+  <mark>th</mark> {
+    <mark>text-align: left;</mark>
   }
 &lt;/style&gt;
 
@@ -2002,21 +1952,18 @@
                         </p>
                         <table style="width:100%;border: 1px solid black;border-collapse: collapse;">
                             <tr>
-                                <th colspan="2" style="border: 1px solid black;padding: 5px; border-collapse: collapse;text-align: center;">
-                                    Name</th>
-                                <th style="border: 1px solid black;padding: 5px; border-collapse: collapse;text-align: center;">
-                                    Age</th>
+                                <th colspan="2" style="border: 1px solid black;border-collapse: collapse;">Name</th>
+                                <th style="border: 1px solid black;border-collapse: collapse;">Age</th>
                             </tr>
                             <tr>
-                                <td style="border: 1px solid black;padding: 5px; border-collapse: collapse;">Jill</td>
-                                <td style="border: 1px solid black;padding: 5px; border-collapse: collapse;">Smith</td>
-                                <td style="border: 1px solid black;padding: 5px; border-collapse: collapse;">50</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">Jill</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">Smith</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">50</td>
                             </tr>
                             <tr>
-                                <td style="border: 1px solid black;padding: 5px; border-collapse: collapse;">Eve</td>
-                                <td style="border: 1px solid black;padding: 5px; border-collapse: collapse;">Jackson
-                                </td>
-                                <td style="border: 1px solid black;padding: 5px; border-collapse: collapse;">94</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">Eve</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">Jackson</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">94</td>
                             </tr>
                         </table>
                     </div>
@@ -2028,11 +1975,9 @@
                     <div class="bd-callout">
                         <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
 &lt;style&gt;
-  table,
-  th,
-  td {
-    border: 1px solid black;
-    border-collapse: collapse;
+  <mark>table, th, td</mark> {
+    <mark>border: 1px solid black;</mark>
+    <mark>border-collapse: collapse;</mark>
   }
 &lt;/style&gt;
 
@@ -2065,47 +2010,42 @@
                 <hr>
 
                 <section>
-                    <h3>Keterangan Tabel</h3>
+                    <h2>Keterangan Tabel <span class="fw-light text-muted small">(Table Caption)</span></h2>
                     <p>Anda dapat menambahkan keterangan yang berfungsi sebagai judul untuk seluruh tabel.
                     </p>
                     <div class="bd-example">
                         <h2>Keterangan Tabel</h2>
-                        <p>Untuk menambahkan keterangan ke tabel, gunakan tag <mark><code>caption</code></mark>.</p>
-                        <table class="table table-bordered caption-top">
-                            <caption style="text-align: center;">Tabungan Bulanan</caption>
-                            <thead class="text-center">
-                                <tr>
-                                    <th>Bulan</th>
-                                    <th>Tabungan</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>January</td>
-                                    <td>$100</td>
-                                </tr>
-                                <tr>
-                                    <td>February</td>
-                                    <td>$50</td>
-                                </tr>
-                            </tbody>
+                        <p>Untuk menambahkan keterangan/caption ke tabel, gunakan tag <mark><code>caption</code></mark>.</p>
+                        <table style="width: 100%; border: 1px solid black;border-collapse: collapse;">
+                            <caption>Tabungan Bulanan</caption>
+                            <tr>
+                                <th style="border: 1px solid black;border-collapse: collapse;padding: 5px;text-align: left;">Bulan</th>
+                                <th style="border: 1px solid black;border-collapse: collapse;padding: 5px;text-align: left;">Tabungan
+                                </th>
+                            </tr>
+                            <tr>
+                                <td style="border: 1px solid black;border-collapse: collapse;padding: 5px;text-align: left;">January
+                                </td>
+                                <td style="border: 1px solid black;border-collapse: collapse;padding: 5px;text-align: left;">$100</td>
+                            </tr>
+                            <tr>
+                                <td style="border: 1px solid black;border-collapse: collapse;padding: 5px;text-align: left;">February
+                                </td>
+                                <td style="border: 1px solid black;border-collapse: collapse;padding: 5px;text-align: left;">$50</td>
+                            </tr>
                         </table>
                     </div>
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="bd-callout">
                         <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
 &lt;style&gt;
-  table,
-  th,
-  td {
-    border: 1px solid black;
-    border-collapse: collapse;
+  <mark>table, th, td</mark> {
+    <mark>border: 1px solid black;</mark>
+    <mark>border-collapse: collapse;</mark>
   }
-
-  th,
-  td {
-    padding: 5px;
-    text-align: left;
+  <mark>th, td</mark> {
+    <mark>padding: 5px;</mark>
+    <mark>text-align: left;</mark>
   }
 &lt;/style&gt;
 
@@ -2130,7 +2070,7 @@
                 sendiri <img draggable="false" role="img" class="emoji" alt="↗"
                   src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
                     </div>
-                    <p class="moreInfo"><b>Catatan:</b> The &lt;caption&gt;tag harus dimasukkan segera setelah &lt;table&gt;tag.
+                    <p class="moreInfo"><b>Catatan:</b> <mark><code>&lt;caption&gt;</code></mark> tag harus dimasukkan segera setelah <mark><code>&lt;table&gt;</code></mark> tag.
                     </p>
                 </section>
                 <hr>
@@ -2138,87 +2078,47 @@
                 <section>
                     <h2>Padding &amp; Spasi Tabel HTML</h2>
                     <p>Tabel HTML dapat menyesuaikan padding di dalam sel, dan juga ruang antar sel.</p>
-                    <style>
-                        .table5 {
-                            float: left;
-                            margin-left: 15%;
-                            margin-right: 15%;
-                            background-color: #fff;
-                        }
-                        
-                        .table5,
-                        .table5 th,
-                        .table5 td {
-                            border: 1px solid #282A35;
-                            border-collapse: unset;
-                        }
-                        
-                        .table5 td {
-                            padding: 10px;
-                        }
-                        
-                        .table6 {
-                            border-spacing: 15px;
-                            float: left;
-                            background-color: #fff;
-                        }
-                        
-                        .table6,
-                        .table6 th,
-                        .table6 td {
-                            border: 1px solid #282A35;
-                            border-collapse: unset;
-                        }
-                        
-                        @media (max-width: 650px) {
-                            .table5,
-                            .table6 {
-                                width: 60%;
-                                float: none;
-                                margin: auto;
-                                margin-top: 30px;
-                                margin-bottom: 30px;
-                            }
-                        }
-                    </style>
-                    <div id="tableborders" style="overflow:auto;">
-                        <table class="table5 caption-top">
-                            <caption style="text-align: center;">Menggunakan <mark><code>padding</code></mark></caption>
+                    <div style="overflow:auto;">
+                        <table style="float: left;margin-left: 15%;margin-right: 15%;caption-side: unset;border-collapse: separate;border: 1px solid #282A35;">
+                            <caption style="padding-top: 0;padding-bottom: 0;color: unset;text-align: center;">Dengan Padding
+                            </caption>
                             <tbody>
                                 <tr>
-                                    <td>hello</td>
-                                    <td>hello</td>
-                                    <td>hello</td>
+                                    <td style="border: 1px solid #282A35;padding: 10px;">hello</td>
+                                    <td style="border: 1px solid #282A35;padding: 10px;">hello</td>
+                                    <td style="border: 1px solid #282A35;padding: 10px;">hello</td>
                                 </tr>
                                 <tr>
-                                    <td>hello</td>
-                                    <td>hello</td>
-                                    <td>hello</td>
+                                    <td style="border: 1px solid #282A35;padding: 10px;">hello</td>
+                                    <td style="border: 1px solid #282A35;padding: 10px;">hello</td>
+                                    <td style="border: 1px solid #282A35;padding: 10px;">hello</td>
                                 </tr>
                                 <tr>
-                                    <td>hello</td>
-                                    <td>hello</td>
-                                    <td>hello</td>
+                                    <td style="border: 1px solid #282A35;padding: 10px;">hello</td>
+                                    <td style="border: 1px solid #282A35;padding: 10px;">hello</td>
+                                    <td style="border: 1px solid #282A35;padding: 10px;">hello</td>
                                 </tr>
                             </tbody>
                         </table>
-                        <table class="table6 caption-top">
-                            <caption style="text-align: center;">Menggunakan <mark><code>spacing</code></mark></caption>
+
+                        <table style="float: left;margin-left: 15%;margin-right: 15%;caption-side: unset;border-collapse: separate;border: 1px solid #282A35;border-spacing: 15px;">
+                            <caption style="padding-top: 0;padding-bottom: 0;color: unset;text-align: center;">Dengan Spacing
+                            </caption>
                             <tbody>
                                 <tr>
-                                    <td>hello</td>
-                                    <td>hello</td>
-                                    <td>hello</td>
+                                    <td style="border: 1px solid #282A35;">hello</td>
+                                    <td style="border: 1px solid #282A35;">hello</td>
+                                    <td style="border: 1px solid #282A35;">hello</td>
                                 </tr>
                                 <tr>
-                                    <td>hello</td>
-                                    <td>hello</td>
-                                    <td>hello</td>
+                                    <td style="border: 1px solid #282A35;">hello</td>
+                                    <td style="border: 1px solid #282A35;">hello</td>
+                                    <td style="border: 1px solid #282A35;">hello</td>
                                 </tr>
                                 <tr>
-                                    <td>hello</td>
-                                    <td>hello</td>
-                                    <td>hello</td>
+                                    <td style="border: 1px solid #282A35;">hello</td>
+                                    <td style="border: 1px solid #282A35;">hello</td>
+                                    <td style="border: 1px solid #282A35;">hello</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -2304,7 +2204,8 @@
                 sendiri <img draggable="false" role="img" class="emoji" alt="↗"
                   src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
                     </div>
-                    <p>Untuk menambahkan padding hanya di atas konten, gunakan <mark><code>padding-top</code></mark> properti. Dan sisi lain dengan <mark><code>padding-bottom</code></mark>, <mark><code>padding-left</code></mark> dan
+                    <p>Untuk menambahkan padding hanya di atas konten, gunakan <mark><code>padding-top</code></mark> properti. Dan sisi lain dengan <mark><code>padding-bottom</code></mark>,
+                        <mark><code>padding-left</code></mark> dan
                         <mark><code>padding-right</code></mark> properti.
                     </p>
                     <p>Contoh :</p>
@@ -3114,7 +3015,7 @@
                     <p>Gunakan <mark><code>:hover</code></mark> pemilih aktif truntuk menyorot baris tabel dengan mouse.
                     </p>
                     <div class="bd-example">
-                        <style>
+                        <!-- <style>
                             .hoverable tr:hover {
                                 background-color: #D6EEEE;
                             }
@@ -3122,7 +3023,7 @@
                             .hoverable tr {
                                 border-bottom: 1px solid #ddd;
                             }
-                        </style>
+                        </style> -->
                         <h2>Hoverable Table</h2>
                         <p>Move the mouse over the table rows to see the effect.</p>
                         <table class="hoverable" style="width: 100%;border-collapse: collapse;border: unset;">

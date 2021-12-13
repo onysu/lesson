@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #editor {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="editor">
+        <!-- var x = 100; var text = "hello, world"; console.log(x); alert(text); -->
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.3/ace.js"></script>
+    <script src="https://raw.githubusercontent.com/beautify-web/js-beautify/main/js/src/javascript/beautifier.js"></script>
+    <!-- <script>
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/github");
+        editor.getSession().setMode("ace/mode/html");
+    </script> -->
+    <script>
+        var htmlString = `<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  </head>
+  <body>
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+   </bodi>
+</html>`;
+
+        var editor = ace.edit("editor");
+        editor.session.setMode("ace/mode/html");
+        editor.session.setValue(htmlString);
+
+        var beautify = ace.require("ace/ext/beautify");
+        beautify.beautify(editor.session);
+    </script>
+</body>
+
+</html>

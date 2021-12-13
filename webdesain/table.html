@@ -2657,42 +2657,37 @@
                     <!-- <h5>Tabel HTML - Garis Zebra</h5> -->
                     <p>Jika Anda menambahkan warna latar belakang pada setiap baris tabel lainnya, Anda akan mendapatkan efek garis zebra yang bagus.</p>
                     <div class="bd-example">
-                        <style>
-                            .zebra tr:nth-child(even) {
-                                background-color: #D6EEEE;
-                            }
-                        </style>
-
                         <h2>Tabel Bergaris Zebra</h2>
-                        <p>Jika Anda menambahkan warna latar belakang pada setiap baris tabel lainnya, Anda akan mendapatkan efek garis zebra yang bagus.
-                        </p>
+                        <p>Jika Anda menambahkan warna latar belakang pada setiap baris tabel lainnya, Anda akan mendapatkan efek garis zebra yang bagus.</p>
 
-
-                        <table class="zebra table">
+                        <table style="border-collapse: collapse;width: 100%;border: 1px solid white;">
                             <tr>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Points</th>
+                                <th style="text-align: left;padding: 8px;">First Name</th>
+                                <th style="text-align: left;padding: 8px;">Last Name</th>
+                                <th style="text-align: left;padding: 8px;">Points</th>
                             </tr>
                             <tr>
-                                <td>Peter</td>
-                                <td>Griffin</td>
-                                <td>$100</td>
+                                <td style="text-align: left;padding: 8px;background-color: #D6EEEE;border: 1px solid #D6EEEE;">Peter
+                                </td>
+                                <td style="text-align: left;padding: 8px;background-color: #D6EEEE;border: 1px solid #D6EEEE;">Griffin
+                                </td>
+                                <td style="text-align: left;padding: 8px;background-color: #D6EEEE;border: 1px solid #D6EEEE;">$100</td>
                             </tr>
                             <tr>
-                                <td>Lois</td>
-                                <td>Griffin</td>
-                                <td>$150</td>
+                                <td style="text-align: left;padding: 8px;">Lois</td>
+                                <td style="text-align: left;padding: 8px;">Griffin</td>
+                                <td style="text-align: left;padding: 8px;">$150</td>
                             </tr>
                             <tr>
-                                <td>Joe</td>
-                                <td>Swanson</td>
-                                <td>$300</td>
+                                <td style="text-align: left;padding: 8px;background-color: #D6EEEE;border: 1px solid #D6EEEE;">Joe</td>
+                                <td style="text-align: left;padding: 8px;background-color: #D6EEEE;border: 1px solid #D6EEEE;">Swanson
+                                </td>
+                                <td style="text-align: left;padding: 8px;background-color: #D6EEEE;border: 1px solid #D6EEEE;">$300</td>
                             </tr>
                             <tr>
-                                <td>Cleveland</td>
-                                <td>Brown</td>
-                                <td>$250</td>
+                                <td style="text-align: left;padding: 8px;">Cleveland</td>
+                                <td style="text-align: left;padding: 8px;">Brown</td>
+                                <td style="text-align: left;padding: 8px;">$250</td>
                             </tr>
                         </table>
                     </div>
@@ -2705,8 +2700,18 @@
                     <div class="bd-callout">
                         <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
 &lt;style&gt;
+  <mark>table</mark> {
+    <mark>border-collapse: collapse;</mark>
+    <mark>width: 100%;</mark>
+  }
+
+  <mark>th, td</mark> {
+    <mark>text-align: left;</mark>
+    <mark>padding: 8px;</mark>
+  }
+
   <mark>tr:nth-child(even)</mark> {
-  background-color: #D6EEEE;
+    <mark>background-color: #D6EEEE;</mark>
   }
 &lt;/style&gt;
 

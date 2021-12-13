@@ -2704,12 +2704,10 @@
     <mark>border-collapse: collapse;</mark>
     <mark>width: 100%;</mark>
   }
-
   <mark>th, td</mark> {
     <mark>text-align: left;</mark>
     <mark>padding: 8px;</mark>
   }
-
   <mark>tr:nth-child(even)</mark> {
     <mark>background-color: #D6EEEE;</mark>
   }
@@ -2759,6 +2757,53 @@
                         <i>baris</i> lainnya.
                     </p>
                     <div class="bd-example">
+                        <table style="width:60%;border: 1px solid #fff;border-collapse: collapse;font-size: 12px;">
+                            <tbody>
+                                <tr>
+                                    <td style="border: 1px solid #fff;border-collapse: collapse;font-size: 12px;">1</td>
+                                    <td style="border: 1px solid #fff;border-collapse: collapse;font-size: 12px;background-color: rgba(150, 212, 212,0.4);">
+                                        2</td>
+                                    <td style="border: 1px solid #fff;border-collapse: collapse;font-size: 12px;">3</td>
+                                    <td style="border: 1px solid #fff;border-collapse: collapse;font-size: 12px;background-color: rgba(150, 212, 212,0.4);">
+                                        4</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #fff;border-collapse: collapse;font-size: 12px;">5</td>
+                                    <td style="border: 1px solid #fff;border-collapse: collapse;font-size: 12px;background-color: rgba(150, 212, 212,0.4);">
+                                        6</td>
+                                    <td style="border: 1px solid #fff;border-collapse: collapse;font-size: 12px;">7</td>
+                                    <td style="border: 1px solid #fff;border-collapse: collapse;font-size: 12px;background-color: rgba(150, 212, 212,0.4);">
+                                        8</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #fff;border-collapse: collapse;font-size: 12px;">9</td>
+                                    <td style="border: 1px solid #fff;border-collapse: collapse;font-size: 12px;background-color: rgba(150, 212, 212,0.4);">
+                                        10</td>
+                                    <td style="border: 1px solid #fff;border-collapse: collapse;font-size: 12px;">11</td>
+                                    <td style="border: 1px solid #fff;border-collapse: collapse;font-size: 12px;background-color: rgba(150, 212, 212,0.4);">
+                                        12</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #fff;border-collapse: collapse;font-size: 12px;">13</td>
+                                    <td style="border: 1px solid #fff;border-collapse: collapse;font-size: 12px;background-color: rgba(150, 212, 212,0.4);">
+                                        14</td>
+                                    <td style="border: 1px solid #fff;border-collapse: collapse;font-size: 12px;">15</td>
+                                    <td style="border: 1px solid #fff;border-collapse: collapse;font-size: 12px;background-color: rgba(150, 212, 212,0.4);">
+                                        16</td>
+                                </tr>
+                                <tr>
+                                    <td style="border: 1px solid #fff;border-collapse: collapse;font-size: 12px;">17</td>
+                                    <td style="border: 1px solid #fff;border-collapse: collapse;font-size: 12px;background-color: rgba(150, 212, 212,0.4);">
+                                        18</td>
+                                    <td style="border: 1px solid #fff;border-collapse: collapse;font-size: 12px;">19</td>
+                                    <td style="border: 1px solid #fff;border-collapse: collapse;font-size: 12px;background-color: rgba(150, 212, 212,0.4);">
+                                        20</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="bd-example">
                         <style>
                             .ZebraVertikal th:nth-child(even),
                             .ZebraVertikal td:nth-child(even) {
@@ -2767,51 +2812,51 @@
                         </style>
                         <h2>Tabel Bergaris <span class="text-muted small fw-light">(Striped)</span></h2>
                         <p>Untuk tabel bergaris zebra, gunakan pemilih <mark><code>nth-child()</code></mark> dan tambahkan warna latar ke semua baris tabel genap (atau ganjil):</p>
-                        <table class="ZebraVertikal table text-center">
+                        <table class="ZebraVertikal" style="width: 100%; border: 1px solid black;border-collapse: collapse;">
                             <tr>
-                                <th>MON</th>
-                                <th>TUE</th>
-                                <th>WED</th>
-                                <th>THU</th>
-                                <th>FRI</th>
-                                <th>SAT</th>
-                                <th>SUN</th>
+                                <th style="border: 1px solid black;border-collapse: collapse;">MON</th>
+                                <th style="border: 1px solid black;border-collapse: collapse;">TUE</th>
+                                <th style="border: 1px solid black;border-collapse: collapse;">WED</th>
+                                <th style="border: 1px solid black;border-collapse: collapse;">THU</th>
+                                <th style="border: 1px solid black;border-collapse: collapse;">FRI</th>
+                                <th style="border: 1px solid black;border-collapse: collapse;">SAT</th>
+                                <th style="border: 1px solid black;border-collapse: collapse;">SUN</th>
                             </tr>
                             <tr>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
                             </tr>
                             <tr>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
                             </tr>
                             <tr>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
                             </tr>
                             <tr>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
+                                <td style="border: 1px solid black;border-collapse: collapse;">&nbsp;</td>
                             </tr>
                         </table>
                     </div>
@@ -2820,9 +2865,12 @@
                     <div class="bd-callout">
                         <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
 &lt;style&gt;
+  <mark>table, th, td</mark> {
+    <mark>border: 1px solid black;border-collapse: collapse;</mark>
+  }
   <mark>th:nth-child(even)</mark>,
   <mark>td:nth-child(even)</mark> {
-    background-color: #D6EEEE;
+    <mark>background-color: #D6EEEE;</mark>
   }
 &lt;/style&gt;
 

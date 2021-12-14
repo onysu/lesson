@@ -8,6 +8,7 @@
 
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="../assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/github.min.css">
     <link rel="shortcut icon" href="../assets/img/aku-bulat.ico" type="image/x-icon" />
     <link rel="stylesheet" href="dist/css/webdesain.css">
     <!-- <link rel="stylesheet" href="../assets/css/maintenance.css"> -->
@@ -17,20 +18,42 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;title&gt;Title&lt;/title&gt;
 
+&lt;style&gt;
+  body {
+    width: 500px;
+  }
+&lt;/style&gt;
 
+&lt;script type="application/javascript"&gt;
+  function $init() { return true; }
+&lt;/script&gt;
 
-    </div>
+&lt;body&gt;
+&lt;p checked class="title" id='title'&gt;Title&lt;/p&gt;
+&lt;!-- here goes the rest of the page --&gt;
+&lt;/body&gt;
+
+</code></pre>
+
+    <!-- </div> -->
     <!-- /container-fluid -->
 
     <!-- <script src="../assets/js/w3color.js"></script> -->
     <script src="../assets/js/w3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+    <!-- dan mudah untuk memuat bahasa tambahan satu per satu -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/languages/go.min.js"></script> -->
     <script src="../assets/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
     <script src="../assets/js/docsearch.min.js"></script>
     <script src="../assets/js/docs.min.js"></script>
     <!-- <script src="../assets/js/countdown.js"></script> -->
+    <script>
+        hljs.highlightAll();
+    </script>
     <script>
         w3.includeHTML();
     </script>

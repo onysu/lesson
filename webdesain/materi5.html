@@ -183,26 +183,30 @@
                 <h3>Menggunakan CSS</h3>
                 <p>CSS dapat ditambahkan ke dokumen HTML dengan 3 cara:</p>
 
-                <table class="table table-bordered table-hover w-100">
+                <table class="table table-responsive">
                     <thead class="table-light">
                         <tr>
-                            <th>Model CSS</th>
-                            <th>Keterangan</th>
+                            <th scope="col">#</th>
+                            <th scope="col">Model</th>
+                            <th scope="col">Keterangan</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><b>Inline</b></td>
+                            <th scope="row">1</th>
+                            <td>Inline</td>
                             <td>dengan menggunakan <mark><code><span class="nt">&lt;style&gt;</span></mark></code> atribut di dalam elemen HTML</td>
                         </tr>
                         <tr>
-                            <td><b>Internal</b></td>
+                            <th scope="row">2</th>
+                            <td>Internal</td>
                             <td>dengan menggunakan <mark><code><span class="nt">&lt;style&gt;</span></mark></code> elemen di bagian
                                 <mark><code><span class="nt">&lt;head&gt;</span></mark></code>
                             </td>
                         </tr>
                         <tr>
-                            <td><b>Eksternal</b></td>
+                            <th scope="row">3</th>
+                            <td>Eksternal</td>
                             <td>dengan menggunakan <mark><code>&lt;link&gt;</mark></code> elemen untuk menautkan ke file CSS eksternal.</td>
                         </tr>
                     </tbody>

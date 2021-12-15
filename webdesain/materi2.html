@@ -203,7 +203,7 @@
                     <!-- <mark><code>&lt;!DOCTYPE&gt;</mark></code> deklarasi HTML5 adalah: </p> -->
                     <div class="bd-callout">
                         <strong>Deklarasi HTML5 adalah :</strong> <br>
-                        <code>&lt;!DOCTYPE html&gt;</code>
+                        <code><span class="cp">&lt;!DOCTYPE html&gt;</span></code>
                     </div>
             </section>
             <hr>
@@ -250,10 +250,8 @@
 
                 <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                 <div class="bd-callout">
-                    <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
-&lt;p&gt;Ini adalah sebuah paragraf.&lt;/p&gt;
-&lt;p&gt;Ini adalah paragraf lain.&lt;/p&gt;
-                    </code></pre>
+                    <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;p&gt;Ini adalah sebuah paragraf.&lt;/p&gt;
+&lt;p&gt;Ini adalah paragraf lain.&lt;/p&gt;</code></pre>
                     <hr>
                     <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                             sendiri <img draggable="false" role="img" class="emoji" alt="↗"
@@ -273,7 +271,7 @@
 
                 <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                 <div class="bd-callout">
-                    <code>&lt;a href="https://onysu.github.io/lesson/webdesain"&gt;ini adalah link&lt;/a&gt;</code>
+                    <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;a <span class="na">href</span>=<span class="s">"https://onysu.github.io/lesson/webdesain"</span>&gt;ini adalah link&lt;/a&gt;</code></pre>
                     <hr>
                     <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                             sendiri <img draggable="false" role="img" class="emoji" alt="↗"
@@ -300,10 +298,7 @@
 
                 <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                 <div class="bd-callout">
-                    <code>
-                        &lt;img src="https://onysu.github.io/lesson/assets/img/icons/webdesain.png"
-                        alt="html-and-css" width="288" height="288"&gt;
-                    </code>
+                    <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"></code>&lt;img <span class="na">src</span>=<span class="s">"https://onysu.github.io/lesson/assets/img/icons/webdesain.png"</span> <span class="na">alt</span>="html-and-css" <span class="na">width</span>="288" <span class="na">height</span>="288"&gt;</code></pre>
                     <hr>
                     <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                             sendiri <img draggable="false" role="img" class="emoji" alt="↗"
@@ -381,7 +376,7 @@
             </section>
             <hr>
             <section id="elemen-bersarang">
-                <h3>Elemen HTML Bersarang</h3>
+                <h3>Nested HTML Elements</h3>
                 <p>Elemen HTML dapat bersarang (ini berarti elemen dapat berisi elemen lain). Semua dokumen HTML terdiri dari elemen HTML bersarang. Contoh berikut berisi empat elemen HTML (
                     <mark><code>&lt;html&gt;</mark></code>, <mark><code>&lt;body&gt;</mark></code>,
                     <mark><code>&lt;h1&gt;</mark></code> dan <mark><code>&lt;p&gt;</mark></code>):
@@ -389,17 +384,16 @@
                 <p>Contoh :</p>
                 <!-- <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div> -->
                 <div class="bd-callout">
-                    <code>
-                        &lt;!DOCTYPE html&gt; <br>
-                        &lt;html&gt; <br>
-                        &lt;body&gt; <br>
-                        <br>
-                        &lt;h1>Judul Pertama Saya&lt;/h1&gt; <br>
-                        &lt;p>Paragraf pertama saya.&lt;/p&gt; <br>
-                        <br>
-                        &lt;/body&gt; <br>
-                        &lt;/html&gt; <br>
-                    </code>
+                    <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"></code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+
+  <span class="nt">&lt;h1&gt;Judul Pertama Saya&lt;/h1&gt;</span>
+  <span class="nt">&lt;p&gt;Paragraf pertama saya.&lt;/p&gt;</span>
+
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
                     <!-- <hr>
                         <div class="wp-block-button"><a class="wp-block-button__link" href="code-editor/codeEditor2.html" target="_blank" rel="noreferrer noopener">Cobalah sendiri <img draggable="false" role="img" class="emoji" alt="↗" src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></div> -->
                 </div>
@@ -462,22 +456,21 @@
             </section>
             <hr>
             <section id="JanganLewatiTagAkhir">
-                <h3>Jangan abaikan Tag Akhir</h3>
+                <h3>Jangan abaikan tag akhir</h3>
                 <p>Beberapa elemen HTML akan ditampilkan dengan benar, bahkan jika Anda lupa tag akhir: <br> Contoh :
                 </p>
 
                 <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                 <div class="bd-callout">
-                    <code>
-                        &lt;html&gt; <br>
-                        &lt;body&gt; <br>
-                        <br>
-                        &lt;p>Ini adalah paragraf <br>
-                        &lt;p>Ini adalah paragraf <br>
-                        <br>
-                        &lt;/body&gt; <br>
-                        &lt;/html&gt;
-                    </code>
+                    <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;html&gt;
+&lt;body&gt;
+
+  &lt;p&gt;Ini adalah paragraf
+  &lt;p&gt;Ini adalah paragraf
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
                     <hr>
                     <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                             sendiri <img draggable="false" role="img" class="emoji" alt="↗"
@@ -497,9 +490,7 @@
                 </div>
                 <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                 <div class="bd-callout">
-                    <code>
-                        &lt;p&gt;Ini adalah &lt;br&gt; paragraf dengan jeda baris.&lt;/p&gt;
-                    </code>
+                    <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;p&gt;Ini adalah &lt;br&gt; paragraf dengan jeda baris.&lt;/p&gt;</code></pre>
                     <hr>
                     <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                             sendiri <img draggable="false" role="img" class="emoji" alt="↗"
@@ -570,8 +561,7 @@
                     </div>
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="bd-callout">
-                        <code>&lt;a href="https://onysu.github.io/lesson/webdesain/"&gt;Kunjungi
-                            O-Learning&lt;/a&gt;</code>
+                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;a <span class="na">href</span>=<span class="s">"https://onysu.github.io/lesson/webdesain/"</span>&gt;Kunjungi O-Learning&lt;/a&gt;</code></pre>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                                 sendiri <img draggable="false" role="img" class="emoji" alt="↗"
@@ -592,7 +582,7 @@
                     </div>
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="bd-callout">
-                        <code>&lt;img src="https://onysu.github.io/lesson/webdesain/files/img/img_girl.jpg"&gt;</code>
+                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;img <span class="na">src</span>=<span class="s">"https://onysu.github.io/lesson/webdesain/files/img/img_girl.jpg"</span>&gt;</code></pre>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                                 sendiri <img draggable="false" role="img" class="emoji" alt="↗"
@@ -640,8 +630,7 @@
                     </div>
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="bd-callout">
-                        <code>&lt;img src=&quot;https://onysu.github.io/lesson/webdesain/files/img/img_girl.jpg&quot;
-                            width=&quot;225&quot; height=&quot;300&quot;&gt;</code>
+                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;img <span class="na">src</span>=&quot;<span class="s">https://onysu.github.io/lesson/webdesain/files/img/img_girl.jpg</span>&quot; <span class="na">width</span>=&quot;225&quot; <span class="na">height</span>=&quot;300&quot;&gt;</code></pre>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                                 sendiri <img draggable="false" role="img" class="emoji" alt="↗"
@@ -663,8 +652,7 @@
                     </div>
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="bd-callout">
-                        <code>&lt;img src=&quot;https://onysu.github.io/lesson/webdesain/files/img/img_girl.jpg&quot;
-                            alt=&quot;Gadis dengan jaket&quot;&gt;</code>
+                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;img <span class="na">src</span>=&quot;<span class="s">https://onysu.github.io/lesson/webdesain/files/img/img_girl.jpg</span>&quot; <span class="na">alt</span>=&quot;Gadis dengan jaket&quot;&gt;</code></pre>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                                 sendiri <img draggable="false" role="img" class="emoji" alt="↗"
@@ -679,7 +667,7 @@
                     </div>
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="bd-callout">
-                        <code>&lt;img src=&quot;img_typo.jpg&quot; alt=&quot;Gadis dengan jaket&quot;&gt;</code>
+                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;img <span class="na">src</span>=&quot;img_typo.jpg&quot; <span class="na"><span class="na">alt</span></span>=&quot;Gadis dengan jaket&quot;&gt;</code></pre>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                                 sendiri <img draggable="false" role="img" class="emoji" alt="↗"
@@ -698,7 +686,7 @@
                     </div>
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="bd-callout">
-                        <code>&lt;p style=&quot;color:red;&quot;&gt;Ini adalah paragraf merah.&lt;/p&gt;</code>
+                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;p <span class="na">style</span>=&quot;<span class="s">color:red;</span>&quot;&gt;Ini adalah paragraf merah.&lt;/p&gt;</code></pre>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                                 sendiri <img draggable="false" role="img" class="emoji" alt="↗"
@@ -713,14 +701,12 @@
                         <mark><code>&lt;html&gt;</mark></code> tag, untuk mendeklarasikan bahasa halaman Web. Ini dimaksudkan untuk membantu mesin pencari dan browser.</p>
                     <p>Contoh berikut menentukan bahasa Inggris sebagai bahasa:</p>
                     <div class="bd-callout">
-                        <code>
-                            &lt;!DOCTYPE html&gt; <br>
-                            &lt;html lang="<strong>en</strong>"&gt; <br>
-                            &lt;body&gt; <br>
-                            ... <br>
-                            &lt;/body&gt; <br>
-                            &lt;/html&gt;
-                        </code>
+                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+&lt;html lang="<strong>en</strong>"&gt;
+&lt;body&gt;
+...
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
                     </div>
                     <p>
                         <p><strong>Kode Bahasa ISO 639-1</strong> mendefinisikan singkatan untuk bahasa. Dalam HTML dan XHTML mereka dapat digunakan dalam lang dan <span class="notranslate"><mark><code>xml:lang</mark></code></span> atribut.</p>
@@ -735,14 +721,12 @@
 
                     <p>Contoh berikut menentukan bahasa Inggris sebagai bahasa dan Amerika Serikat sebagai negara:</p>
                     <div class="bd-callout">
-                        <code>
-                            &lt;!DOCTYPE html&gt; <br>
-                            &lt;html lang="<strong>en-US</strong>"&gt; <br>
-                            &lt;body&gt; <br>
-                            ... <br>
-                            &lt;/body&gt; <br>
-                            &lt;/html&gt;
-                        </code>
+                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+&lt;html lang="<strong>en-US</strong>"&gt;
+&lt;body&gt;
+...
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
                     </div>
                     <a href="kodebahasa.html" target="_blank" class="btn btn-primary btn-sm" tabindex="-1" role="button" aria-disabled="true">Daftar Kode Negara</a>
                 </section>
@@ -781,14 +765,12 @@
 
                 <div class="bd-callout">
                     <strong>Bagus:</strong>
-                    <p><code>&lt;a href="https://onysu.github.io/lesson/webdesain/"&gt;Kunjungi tutorial HTML
-                            kami&lt;/a&gt;</code>
+                    <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;a <span class="na">href</span>="<span class="s">https://onysu.github.io/lesson/webdesain/</span>"&gt;Kunjungi tutorial HTML kami&lt;/a&gt;</code></pre>
                     </p>
                 </div>
                 <div class="bd-callout">
                     <strong>Buruk:</strong>
-                    <p><code>&lt;a href=https://onysu.github.io/lesson/webdesain/&gt;Kunjungi tutorial HTML
-                            kami&lt;/a&gt;</code>
+                    <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;a <span class="na">href</span>=<span class="s">https://onysu.github.io/lesson/webdesain/</span>&gt;Kunjungi tutorial HTML kami&lt;/a&gt;</code></pre>
                     </p>
                 </div>
 
@@ -809,12 +791,9 @@
 
                 <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                 <div class="bd-callout">
-                    <code>
-                        &lt;p title=Tentang O-Learning&gt; <br>
-                        Anda tidak dapat menghilangkan tanda kutip di sekitar nilai atribut
-                        jika nilainya mengandung spasi. <br>
-                        &lt;/p&gt;
-                    </code>
+                    <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+&lt;p <span class="na">title</span>=<span class="s">Tentang O-Learning</span>&gt;
+Anda tidak dapat menghilangkan tanda kutip di sekitar nilai atribut jika nilainya mengandung spasi.&lt;/p&gt;</code></pre>
                     <hr>
                     <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                             sendiri <img draggable="false" role="img" class="emoji" alt="↗"
@@ -827,14 +806,14 @@
                     itu sendiri berisi tanda kutip ganda, perlu menggunakan tanda kutip tunggal:</p>
 
                 <div class="bd-callout">
-                    <code>&lt;p title='John &quot;ShotGun&quot; Nelson'&gt;</code>
+                    <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;p <span class="na">title</span>='John &quot;ShotGun&quot; Nelson'&gt;</code></pre>
                 </div>
 
                 <p>Atau sebaliknya:</p>
 
                 <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                 <div class="bd-callout">
-                    <code>&lt;p title=&quot;John 'ShotGun' Nelson&quot;&gt;</code>
+                    <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;p <span class="na">title</span>=&quot;John 'ShotGun' Nelson&quot;&gt;</code></pre>
                     <hr>
                     <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                             sendiri <img draggable="false" role="img" class="emoji" alt="↗"

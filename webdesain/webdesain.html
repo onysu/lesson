@@ -10,7 +10,8 @@
     <meta name="docsearch:language" content="id">
     <meta name="docsearch:version" content="5.1">
     <title>Introduction · O-Learning v5.1</title>
-    <script src="../assets/js/w3.js" /></script>
+    <script src="../assets/js/w3.js" />
+    </script>
     <!-- O-Learning core CSS -->
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../assets/css/docs.css" rel="stylesheet" />
@@ -60,7 +61,9 @@
     </div>
 
     <div w3-include-html="header.html"></div>
-    <div w3-include-html="nav.html"></div>
+    <nav class="bd-subnavbar py-2" aria-label="Secondary navigation">
+        <div w3-include-html="nav.html"></div>
+    </nav>
     <!-- <nav class="bd-subnavbar py-2" aria-label="Secondary navigation">
         <div class="container-xxl d-flex align-items-md-center">
             <form class="bd-search position-relative me-auto">
@@ -479,21 +482,25 @@
                 <h3>Apa itu HTML? </h3>
                 <p>
                     <strong>HTML</strong> singkatan dari <strong>Hyper Text Markup Language</strong>. HTML adalah bahasa markup standar untuk membuat halaman Web HTML menggambarkan struktur halaman Web HTML terdiri dari serangkaian elemen Elemen HTML
-                    memberi tahu browser cara menampilkan konten Elemen HTML memberi label potongan konten seperti <q>ini adalah
-                        judul</q>, <q>ini adalah paragraf</q>, <q>ini adalah tautan</q>, dll.
+                    memberi tahu browser cara menampilkan konten Elemen HTML memberi label potongan konten seperti
+                    <q>ini adalah
+              judul</q>, <q>ini adalah paragraf</q>, <q>ini adalah tautan</q>, dll.
                 </p>
                 <p>
-                    File HTML diakhiri dengan ekstensi <strong>.html</strong> atau <strong>.htm</strong>. Ekstensi file ini bisa dilihat dengan mengunakan web browser apa pun (seperti Google <strong>Chrome</strong>,
+                    File HTML diakhiri dengan ekstensi <strong>.html</strong> atau <strong>.htm</strong>. Ekstensi file ini bisa dilihat dengan mengunakan web browser apa pun (seperti Google
+                    <strong>Chrome</strong>,
                     <strong>Safari</strong>, atau <strong>Mozila</strong> Firefox). Browser tersebut membaca file HTML dan merender kontennya sehingga user internet bisa melihat dan membacanya.
                 </p>
                 <p>
-                    Sejarah HTML dimulai oleh Tim <strong>Berners-Lee</strong>, seorang ahli fisika di lembaga penelitian CERN yang berlokasi di Swiss. Versi pertamanya dirilis pada tahun <strong>1991</strong>, dengan 18 tag. Sejak saat itu, setiap kali
-                    ada versi barunya, pasti akan selalu ada tag dan attribute (tag modifier) yang juga baru.
+                    Sejarah HTML dimulai oleh Tim <strong>Berners-Lee</strong>, seorang ahli fisika di lembaga penelitian CERN yang berlokasi di Swiss. Versi pertamanya dirilis pada tahun
+                    <strong>1991</strong>, dengan 18 tag. Sejak saat itu, setiap kali ada versi barunya, pasti akan selalu ada tag dan attribute (tag modifier) yang juga baru.
                 </p>
                 <p>
-                    Berkat popularitasnya yang terus meningkat, bahasa markup ini kini dianggap sebagai standar web resmi. Spesifikasi HTML dikelola dan dikembangkan oleh World <strong>Wide Web Consortium (W3C)</strong>. Berdasarkan HTML Element Reference
-                    milik Mozilla Developer Network, saat ini ada 140 tag HTML, meskipun sebagiannya sudah tidak lagi didukung oleh beberapa versi terbaru browser. Kemudian, pada tahun 2014, HTML5 mulai diperkenalkan. Dengan diperkenalkannya
-                    <strong>HTML5</strong>, terdapat <strong>semantic</strong> baru seperti <mark><code>&lt;article&gt;</code></mark>,
+                    Berkat popularitasnya yang terus meningkat, bahasa markup ini kini dianggap sebagai standar web resmi. Spesifikasi HTML dikelola dan dikembangkan oleh World <strong>Wide Web Consortium
+              (W3C)</strong>. Berdasarkan HTML Element Reference milik Mozilla Developer Network, saat ini ada 140 tag HTML, meskipun sebagiannya sudah tidak lagi didukung oleh beberapa versi terbaru browser. Kemudian, pada tahun 2014, HTML5 mulai diperkenalkan.
+                    Dengan diperkenalkannya
+                    <strong>HTML5</strong>, terdapat <strong>semantic</strong> baru seperti
+                    <mark><code>&lt;article&gt;</code></mark>,
                     <mark><code>&lt;header&gt;</code></mark> dan <mark><code>&lt;footer&gt;</code></mark> yang memperjelas bagian-bagian dalam konten.
                 </p>
                 <section>
@@ -501,8 +508,8 @@
                     <p>
                         <strong>HTML4</strong> (dikenal sebagai <q><strong>HTML</strong></q>) dirilis pada tahun
                         <strong>1999</strong>, kemudian <strong>HTML5</strong> diperkenalkan pada publik pada tahun
-                        <strong>2014</strong>, dengan menambahkan lebih banyak fitur baru ke bahasa mark up. Salah satu fitur canggih di HTML5 adalah dukungan untuk embed <strong>audio</strong> dan <strong>video</strong>. Jadi, daripada menggunakan Flash
-                        player, kita bisa menyematkan file video dan audio ke halaman website dengan memanfaatkan tag
+                        <strong>2014</strong>, dengan menambahkan lebih banyak fitur baru ke bahasa mark up. Salah satu fitur canggih di HTML5 adalah dukungan untuk embed <strong>audio</strong> dan
+                        <strong>video</strong>. Jadi, daripada menggunakan Flash player, kita bisa menyematkan file video dan audio ke halaman website dengan memanfaatkan tag
                         <mark><code>&lt;audio&gt;&lt;/audio&gt;</code></mark> dan
                         <mark><code>&lt;video&gt;&lt;/video&gt;</code></mark>. Fitur tersebut juga memiliki dukungan bawaan untuk
                         <strong>SVG</strong> dan <strong>MathML</strong> untuk rumus matematika dan ilmiah. HTML5 juga memperkenalkan beberapa perbaikan pada semantic. Tag semantic baru mengirimkan informasi pada browser tentang arti konten, yang tak
@@ -640,7 +647,8 @@
                         <span class="fs-5 ms-2">O-Learning</span>
                     </a>
                     <ul class="list-unstyled small text-muted">
-                        <li class="mb-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, adipisci.</li>
+                        <li class="mb-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, adipisci.
+                        </li>
                         <li class="mb-2">Lorem ipsum dolor sit amet.</li>
                         <li class="mb-2">Lorem ipsum dolor sit.</li>
                     </ul>

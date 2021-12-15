@@ -1,63 +1,102 @@
 <header class="navbar navbar-expand-md navbar-dark bd-navbar">
-    <nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation">
-        <a class="navbar-brand p-0 me-2" href="/" aria-label="aku">
-            <img src="../assets/img/aku-bulat-40x40.png" class="img-fluid" alt="aku">
+    <!-- nav pertama -->
+    <nav class="container flex-wrap flex-md-nowrap" aria-label="Main navigation">
+        <a class="navbar-brand p-0 me-4" href="../index.html" aria-label="Bootstrap">
+            <img src="../assets/img/aku-bulat-40x40.png" alt="">
         </a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor" viewBox="0 0 16 16">
         <path fill-rule="evenodd"
           d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-      </svg>
-    </button>
+      </svg></button>
+
         <div class="collapse navbar-collapse" id="bdNavbar">
-            <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav pt-2 py-md-0">
+            <ul class="navbar-nav flex-wrap bd-navbar-nav pt-2 py-md-0">
                 <li class="nav-item col-6 col-md-auto">
-                    <a class="nav-link p-2" href="/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'O-Learning');">Home</a>
+                    <a class="nav-link p-2 active" aria-current="true" href="index.html">Home</a>
+                </li>
+                <li class="nav-item col-6 col-md-auto dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Office</a>
+                    <ul class="dropdown-menu  mx-0 shadow" aria-labelledby="navbarDropdown" style="width: 220px;">
+                        <li>
+                            <a class="dropdown-item d-flex gap-2 align-items-center" href="../word/index.html">
+                                <img src="../assets/img/icons/word.png" width="32" /> Microsoft Word</a>
+                        </li>
+                        <hr class="dropdown-divider">
+                        <li>
+                            <a class="dropdown-item d-flex gap-2 align-items-center" href="../excel/index.html">
+                                <img src="../assets/img/icons/excel.png" width="32" /> Microsoft Excel</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex gap-2 align-items-center" href="../powerpoint/index.html">
+                                <img src="../assets/img/icons/ppt.png" width="32" /> Power Point</a>
+                        </li>
+                        <hr class="dropdown-divider">
+                        <li>
+                            <a class="dropdown-item d-flex gap-2 align-items-center" href="../access/index.html">
+                                <img src="../assets/img/icons/access.png" width="32" /> Microsoft Access</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item col-6 col-md-auto dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Desain</a>
+                    <ul class="dropdown-menu  mx-0 shadow" aria-labelledby="navbarDropdown" style="width: 220px;">
+                        <li>
+                            <a class="dropdown-item" href="../photoshop/index.html">
+                                <img src="../assets/img/icons/ps-logo.png" width="32" /> Photoshop
+                            </a>
+                        </li>
+                        <hr class="dropdown-divider">
+                        <li>
+                            <a class="dropdown-item" href="../coreldraw/index.html">
+                                <img src="../assets/img/icons/coreldraw_32x32.png" width="32" /> CorelDRAW
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="nav-item col-6 col-md-auto">
-                    <a class="nav-link p-2 active" aria-current="true" href="/docs/5.1/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Docs</a>
+                    <a class="nav-link" href="../webdesain/index.html">Web-Desain</a>
                 </li>
                 <li class="nav-item col-6 col-md-auto">
-                    <a class="nav-link p-2" href="/docs/5.1/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Examples</a>
-                </li>
-                <li class="nav-item col-6 col-md-auto">
-                    <a class="nav-link p-2" href="https://icons.getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Icons');" target="_blank" rel="noopener">Icons</a>
-                </li>
-                <li class="nav-item col-6 col-md-auto">
-                    <a class="nav-link p-2" href="https://themes.getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');" target="_blank" rel="noopener">Themes</a>
-                </li>
-                <li class="nav-item col-6 col-md-auto">
-                    <a class="nav-link p-2" href="https://blog.getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Blog');" target="_blank" rel="noopener">Blog</a>
+                    <a class="nav-link" href="../pemrograman/index.html">Pemrograman</a>
                 </li>
             </ul>
             <hr class="d-md-none text-white-50">
-            <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
-                <li class="nav-item col-6 col-md-auto">
-                    <a class="nav-link p-2" href="https://github.com/twbs" target="_blank" rel="noopener">
-
-                        <small class="d-md-none ms-2">GitHub</small>
-                    </a>
-                </li>
-                <li class="nav-item col-6 col-md-auto">
-                    <a class="nav-link p-2" href="https://twitter.com/getbootstrap" target="_blank" rel="noopener">
-
-                        <small class="d-md-none ms-2">Twitter</small>
-                    </a>
-                </li>
-                <li class="nav-item col-6 col-md-auto">
-                    <a class="nav-link p-2" href="https://bootstrap-slack.herokuapp.com/" target="_blank" rel="noopener">
-
-                        <small class="d-md-none ms-2">Slack</small>
-                    </a>
-                </li>
-                <li class="nav-item col-6 col-md-auto">
-                    <a class="nav-link p-2" href="https://opencollective.com/bootstrap" target="_blank" rel="noopener">
-
-                        <small class="d-md-none ms-2">Open Collective</small>
-                    </a>
-                </li>
+            <ul class="navbar-nav flex-wrap ms-md-auto text-light fw-light">
+                <script>
+                    var days = new Array(8);
+                    days[1] = "Minggu";
+                    days[2] = "Senin";
+                    days[3] = "Selasa";
+                    days[4] = "Rabu";
+                    days[5] = "Kamis";
+                    days[6] = "Jumat";
+                    days[7] = "Sabtu";
+                    var months = new Array(13);
+                    months[1] = "Januari";
+                    months[2] = "Februari";
+                    months[3] = "Maret";
+                    months[4] = "April";
+                    months[5] = "Mei";
+                    months[6] = "Juni";
+                    months[7] = "Juli";
+                    months[8] = "Augustus";
+                    months[9] = "September";
+                    months[10] = "Oktober";
+                    months[11] = "November";
+                    months[12] = "Desember";
+                    var dateObj = new Date()
+                    var wday = days[dateObj.getDay() + 1]
+                    var lmonth = months[dateObj.getMonth() + 1]
+                    var date = dateObj.getDate()
+                    var year = dateObj.getFullYear()
+                    document.write(wday + ", " + date + " " + lmonth + " " + year)
+                </script>
             </ul>
-            <!-- <a class="btn btn-bd-download d-lg-inline-block my-2 my-md-0 ms-md-3" href="/docs/5.1/getting-started/download/">Download</a> -->
         </div>
     </nav>
 </header>

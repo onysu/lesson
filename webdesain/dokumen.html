@@ -50,6 +50,15 @@
         ga('send', 'pageview');
     </script>
     <script async src="../assets/analytics.js"></script>
+    <style>
+        .bd-content>.table td:first-child {
+            padding-left: .5rem;
+        }
+        
+        .bd-content>.table td:not(:last-child) {
+            padding-right: 1rem;
+        }
+    </style>
 </head>
 
 <body>
@@ -480,7 +489,7 @@
                 <p>Semua dokumen HTML harus dimulai dengan deklarasi tipe dokumen: <mark><code>&lt;!DOCTYPE html&gt;</code></mark>. Dokumen HTML itu sendiri dimulai dengan <mark><code>&lt;html&gt;</code></mark> dan diakhiri dengan <mark><code>&lt;/html&gt;</code></mark>.
                     Bagian yang terlihat dari dokumen HTML adalah antara <mark><code>&lt;body&gt;</code></mark> dan <mark><code>&lt;/body&gt;</code></mark>.</p>
 
-                <p><strong>Struktur HTML5 :</strong></p>
+                <h3>Struktur HTML5 :</h3>
 
                 <div class="bd-callout">
                     <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
@@ -494,14 +503,55 @@
   &lt;<span class="nt">/head</span>&gt;
 
   &lt;<span class="nt">body</span>&gt;
-
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, world!<span
+      class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ini adalah paragraf<span
+      class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
   &lt;<span class="nt">/body</span>&gt;
 
 &lt;<span class="nt">/html</span>&gt;
 </code></pre>
                 </div>
+                <!-- /bd-callout -->
+
+                <h3>Penjelasannya :</h3>
+                <table class="table table-bordered w-100">
+                    <thead></thead>
+                    <tbody>
+                        <tr>
+                            <td><code>&lt;!DOCTYPE&nbsp;html&gt;</code></td>
+                            <td>Deklarasi mendefinisikan bahwa dokumen ini adalah dokumen HTML5.</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;html&gt;</code></td>
+                            <td>Elemen akar (root) halaman HTML</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;head&gt;</code></td>
+                            <td>Elemen berisi informasi meta tentang halaman HTML.</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;title&gt;</code></td>
+                            <td>Elemen menentukan judul untuk halaman HTML (yang ditampilkan dalam bar judul browser atau tab halaman ini).
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;body&gt;</code></td>
+                            <td>Elemen mendefinisikan tubuh dokumen, dan merupakan wadah untuk semua isi terlihat, seperti judul, paragraf, gambar, hyperlink, tabel, daftar, dll.</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;h1&gt;</code></td>
+                            <td>Elemen mendefinisikan judul.</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;p&gt;</code></td>
+                            <td>Elemen mendefinisikan sebuah paragraf.</td>
+                        </tr>
+                    </tbody>
+                </table>
 
             </div>
+            <!-- /bd-content -->
         </main>
     </div>
 

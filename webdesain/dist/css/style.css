@@ -25,9 +25,9 @@ body {
     /* margin: 0; */
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     /* font-family: 'Poppins', sans-serif; */
-    /* background-color: #f0f2f5; */
+    background-color: #f0f2f5;
     text-shadow: 0 0 0.01rem rgba(0, 0, 0, .3);
-    /* -webkit-font-smoothing: antialiased; */
+    -webkit-font-smoothing: antialiased;
     /* font-size: 1rem; */
     /* font-weight: 400; */
     /* line-height: 1.5; */
@@ -94,17 +94,23 @@ address {
 }
 
 .bd-callout {
-    /* padding: 1.25rem 1.5rem; */
     margin-top: 1.25rem;
     margin-bottom: 1.25rem;
     border-left: 1px solid wheat;
-    /* border-left: 1px solid #e9ecef; */
     border-left-width: 0.25rem;
-    border-radius: 0.25rem;
+    border-radius: max(0px, min(8px, calc((100vw - 4px - 100%) * 9999))) / 8px;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
     background-color: #fff;
+    /* border-left: 1px solid #e9ecef; */
+    /* padding: 1.25rem 1.5rem; */
+    /* border-radius: 0.25rem; */
     /* border-top: 1px solid rgb(221, 221, 221); */
-    border-right: 1px solid rgb(221, 221, 221);
-    border-bottom: 1px solid rgb(221, 221, 221);
+    /* border-right: 1px solid rgb(221, 221, 221); */
+    /* border-bottom: 1px solid rgb(221, 221, 221); */
     /* -webkit-box-shadow: 1px 1px 1px rgb(0 0 0 / 40%); */
     /* box-shadow: 1px 1px 1px rgb(0 0 0 / 40%); */
     /* box-shadow: rgb(0 0 0 / 8%) 0px 0.125rem 0.25rem !important; */
@@ -113,48 +119,36 @@ address {
     /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 
+.struktur {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border-radius: max(0px, min(8px, calc((100vw - 4px - 100%) * 9999))) / 8px;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+}
+
 .bd-callout-warning {
     border-left-color: #f0ad4e;
-    /* -webkit-box-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
-    box-shadow: 1px 1px 1px rgb(0 0 0 / 40%); */
-    background-color: #fff;
-    border-left-width: 0.25rem;
 }
 
 .bd-callout-syntax {
     border-left-color: #5bc0de;
-    /* -webkit-box-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
-    box-shadow: 1px 1px 1px rgb(0 0 0 / 40%); */
-    background-color: #fff;
-    border-left-width: 0.25rem;
 }
 
 .bd-callout-danger {
     border-left-color: #d9534f;
-    /* -webkit-box-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
-    box-shadow: 1px 1px 1px rgb(0 0 0 / 40%); */
-    background-color: #fff;
-    border-left-width: 0.25rem;
 }
 
 
 /* tag-code */
-
-span.tagnamecolor {
-    color: brown;
-}
-
-span.tagcolor {
-    color: mediumblue;
-}
-
-span.attributevaluecolor {
-    color: mediumblue;
-}
-
-span.attributecolor {
-    color: red;
-}
 
 
 /* tag-code */
@@ -289,6 +283,22 @@ img.emoji {
 
 /* chroma pre code */
 
+span.tagnamecolor {
+    color: brown;
+}
+
+span.tagcolor {
+    color: mediumblue;
+}
+
+span.attributevaluecolor {
+    color: mediumblue;
+}
+
+span.attributecolor {
+    color: red;
+}
+
 .chroma .cp {
     color: #008085;
 }
@@ -388,4 +398,8 @@ img.emoji {
 .bd-content>.table th:first-child,
 .bd-content>.table td:first-child {
     padding-left: .5rem;
+}
+
+table {
+    background-color: #fff;
 }

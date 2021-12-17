@@ -227,7 +227,8 @@
                                 <li><a href="pengenalan.html" class="d-inline-flex align-items-center rounded">Pengenalan</a></li>
                                 <li><a href="editor.html" class="d-inline-flex align-items-center rounded">Editor</a></li>
                                 <li><a href="dasar.html" class="d-inline-flex align-items-center rounded">Dasar</a></li>
-                                <li><a href="elemen.html" class="d-inline-flex align-items-center rounded active" aria-current="page">Elemen</a></li>
+                                <li><a href="elemen.html" class="d-inline-flex align-items-center rounded">Elemen</a></li>
+                                <li><a href="atribut.html" class="d-inline-flex align-items-center rounded active" aria-current="page">Atribut</a></li>
                                 <li><a href="heading.html" class="d-inline-flex align-items-center rounded">Heading</a></li>
                                 <li><a href="paragraf.html" class="d-inline-flex align-items-center rounded">Paragraf</a></li>
                                 <li><a href="link.html" class="d-inline-flex align-items-center rounded">Link</a></li>
@@ -549,186 +550,295 @@
         <main class="bd-main order-1">
             <div class="bd-intro">
                 <div class="d-md-flex align-items-center justify-content-between">
-                    <h1 class="bd-title" id="content">Elemen HTML</h1>
+                    <h1 class="bd-title" id="content">Atribut HTML</h1>
                     <!-- <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="#" title="Unduh dan edit file ini untuk latihan" target="_blank" rel="noopener">unduh file latihan</a> -->
                 </div>
-                <p class="bd-lead">Elemen HTML didefinisikan oleh tag awal, beberapa konten, dan tag akhir.</p>
+                <p class="bd-lead">Atribut HTML memberikan informasi tambahan tentang elemen HTML.</p>
             </div>
 
             <article>
-                <h2>Apa itu Elemen HTML?</h2>
-                <p>Elemen HTML didefinisikan oleh tag awal, beberapa konten, dan tag akhir:</p>
-                <p class="bd-callout bd-callout-syntax">
-                    <b>Syntax :</b> <br>
-                    <code>&lt;tagname&gt;Konten berada di sini...&lt;/tagname&gt;</code>
-                </p>
-                <p><strong>Elemen HTML</strong> adalah segalanya mulai dari tag awal hingga tag akhir:</p>
-                <div class="bd-callout">
-                    <code>
-                      &lt;h1&gt;Judul Pertama Saya&lt;/h1&gt; <br>
-                      &lt;p&gt;Paragraf pertama saya.&lt;/p&gt;
-                    </code>
+
+                <!-- <section id="5"> -->
+                <!-- <h2>Atribut HTML</h2> -->
+                <ol>
+                    <li>Semua elemen HTML dapat memiliki <strong>attributes</strong></li>
+                    <li>Atribut memberikan <strong>informasi tambahan</strong> tentang elemen</li>
+                    <li>Atribut selalu ditentukan di <strong>tag awal</strong></li>
+                    <li>Atribut biasanya datang dalam pasangan nama/nilai seperti:
+                        <mark><code>name="value"</mark></code>
+                    </li>
+                </ol>
+
+                <br>
+                <!-- <section> -->
+                <h2><mark><code>href</mark></code> atribut</h2>
+                <p><mark><code>&lt;a&gt;</mark></code> tag mendefinisikan hyperlink. The <strong>href</strong> atribut menentukan link URL untuk membuka sebuah halaman :</p>
+                <p>Contoh :</p>
+
+                <img class="top-example" src="files/img/browser-head.png" alt="">
+                <div class="bd-example">
+                    <a href="https://onysu.github.io/lesson/webdesain/" target="_blank">Kunjungi O-Learning</a>
                 </div>
-                <table class="table table-bordered w-100">
-                    <thead class="table-light">
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                <div class="bd-callout">
+                    <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;a <span class="na">href</span>=<span class="s">"https://onysu.github.io/lesson/webdesain/"</span>&gt;Kunjungi O-Learning&lt;/a&gt;</code></pre>
+                    <hr>
+                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                </div>
+                <!-- </section> -->
+                <br>
+                <!-- <section> -->
+                <h2><mark><code>src</mark></code> atribut</h2>
+                <p><mark><code>&lt;img&gt;</mark></code> tag digunakan untuk menanamkan gambar di halaman HTML.
+                    <mark><code>src</mark></code> menspesifikasikan atribut path ke gambar yang akan ditampilkan:
+                </p>
+                <p>Contoh :</p>
+
+                <img class="top-example" src="files/img/browser-head.png" alt="">
+                <div class="bd-example">
+                    <img src="https://onysu.github.io/lesson/webdesain/files/img/img_girl.jpg" class="img-fluid">
+                </div>
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                <div class="bd-callout">
+                    <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;img <span class="na">src</span>=<span class="s">"https://onysu.github.io/lesson/webdesain/files/img/img_girl.jpg"</span>&gt;</code></pre>
+                    <hr>
+                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                </div>
+                <p>Ada dua cara untuk menentukan URL dalam src atribut:</p>
+                <table class="table table-bordered w-auto">
+                    <thead class="table-light text-center">
                         <tr>
-                            <th scope="col">Mulai tag</th>
-                            <th scope="col">Konten elemen</th>
-                            <th scope="col">Tag akhir</th>
+                            <th>Atribut</th>
+                            <th>Keterangan</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><code>&lt;h1&gt;</code></td>
-                            <td>Judul pertama saya</td>
-                            <td><code>&lt;/h1&gt;</code></td>
+                            <td><strong>Absolute URL</strong></td>
+                            <td class="text-break">link ke gambar eksternal yang dihosting di situs web lain. Contoh:
+                                <code>src="https://onysu.github.io/lesson/assets/img/icons/html5.png"</code>.
+                                <p class="moreInfo text-break"><strong>Catatan:</strong> Gambar eksternal mungkin berada di bawah hak cipta. Jika Anda tidak mendapatkan izin untuk menggunakannya, Anda mungkin melanggar undang-undang hak cipta. Selain itu, Anda tidak dapat mengontrol
+                                    gambar eksternal; itu bisa tiba-tiba dihapus atau diubah.</p>
+                            </td>
                         </tr>
                         <tr>
-                            <td><code>&lt;p&gt;</code></td>
-                            <td>Paragraf pertama saya.</td>
-                            <td><code>&lt;/p&gt;</code></td>
-                        </tr>
-                        <tr>
-                            <td><code>&lt;br&gt;</code></td>
-                            <td><code>none</code></td>
-                            <td><code>none</code></td>
+                            <td><strong>Relative URL</strong></td>
+                            <td class="text-break">link ke gambar yang dihosting di dalam situs web. Di sini, URL tidak menyertakan nama domain. Jika URL dimulai tanpa garis miring, itu akan relatif terhadap halaman saat ini. Contoh:
+                                <code>src="img_girl.jpg</code>. Jika URL dimulai dengan garis miring, itu akan menjadi relatif terhadap domain. Contoh: <code>src="img_girl.jpg</code>.
+                                <p class="moreInfo text-break"><strong>Tip:</strong> Hampir selalu yang terbaik adalah menggunakan URL relatif. Mereka tidak akan rusak jika Anda mengubah domain.
+                                </p>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
-                <p class="moreInfo text-break"><strong>Catatan:</span></strong> Beberapa elemen HTML tidak memiliki konten seperti elemen <mark><code>&lt;br&gt;</code></mark>, elemen ini disebut elemen kosong. Elemen kosong tidak memiliki tag akhir!.</p>
+
+                <!-- </section> -->
                 <br>
-                <!-- <section id="elemen-bersarang"> -->
-                <h2>Nested HTML Elements</h2>
-                <p>Elemen HTML dapat bersarang (ini berarti elemen dapat berisi elemen lain). Semua dokumen HTML terdiri dari elemen HTML bersarang. Contoh berikut berisi empat elemen HTML (
-                    <mark><code>&lt;html&gt;</mark></code>, <mark><code>&lt;body&gt;</mark></code>,
-                    <mark><code>&lt;h1&gt;</mark></code> dan <mark><code>&lt;p&gt;</mark></code>):
+                <!-- <section> -->
+                <h2><mark><code>lebar</mark></code> & <mark><code>tinggi</mark></code> atribut</h2>
+                <p><mark><code>&lt;img&gt;</mark></code> tag juga harus berisi <mark><code>width</mark></code>
+                    dan <mark><code>height</mark></code> atribut, yang menentukan lebar dan tinggi gambar (dalam pixel):
                 </p>
                 <p>Contoh :</p>
-                <!-- <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div> -->
-                <div class="bd-callout">
-                    <pre tabindex="0" class="chroma"><code  data-lang="html"></code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html&gt;</span>
-<span class="nt">&lt;body&gt;</span>
-
-  <span class="nt">&lt;h1&gt;Judul Pertama Saya&lt;/h1&gt;</span>
-  <span class="nt">&lt;p&gt;Paragraf pertama saya.&lt;/p&gt;</span>
-
-<span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre>
-                    <!-- <hr>
-                                        <div class="wp-block-button"><a class="wp-block-button__link" href="codeEditor2.html" target="_blank" rel="noreferrer noopener">Cobalah sendiri <img draggable="false" role="img" class="emoji" alt="↗" src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></div> -->
-                </div>
-                <h3>Penjelasannya :</h3>
-                <ul>
-                    <li>
-                        <p><mark><code>&lt;html&gt;</mark></code> adalah elemen root elemen dan mendefinisikan dokumen HTML secara keseluruhan. Ini memiliki tag awal <mark><code>&lt;html&gt;</mark></code>
-                            dan tag akhir
-                            <mark><code>&lt;/html&gt;</mark></code>. Kemudian, di dalam
-                            <mark><code>&lt;html&gt;</mark></code> elemen ada
-                            <mark><code>&lt;body&gt;</mark></code> elemen:</p>
-                        <p class="bd-callout">
-                            <code>
-                                                &lt;body&gt; <br>
-                                                <br>
-                                                &lt;h1>Judul Pertama Saya&lt;/h1&gt; <br>
-                                                &lt;p>Paragraf pertama saya.&lt;/p&gt; <br>
-                                                <br>
-                                                &lt;/body&gt;
-                                            </code>
-                        </p>
-                    </li>
-                    <li>
-                        <p><mark><code>&lt;body&gt;</mark></code> mendefinisikan tubuh dokumen. Ini memiliki tag awal
-                            <mark><code>&lt;body&gt;</mark></code> dan tag akhir
-                            <mark><code>&lt;/body&gt;</mark></code>. Kemudian, di dalam
-                            <mark><code>&lt;body&gt;</mark></code> elemen ada dua elemen lainnya:
-                            <mark><code>&lt;h1&gt;</mark></code> dan
-                            <mark><code>&lt;p&gt;</mark></code>:
-                        </p>
-                        <p class="bd-callout">
-                            <code>
-                                                &lt;h1>Judul Pertama Saya&lt;/h1&gt; <br>
-                                                &lt;p>Paragraf pertama saya.&lt;/p&gt;
-                                            </code>
-                        </p>
-                    </li>
-                    <li>
-                        <p><mark><code>&lt;h1&gt;</mark></code> elemen mendefinisikan heading (judul). Ini memiliki tag awal
-                            <mark><code>&lt;h1&gt;</mark></code> dan tag akhir
-                            <mark><code>&lt;/h1&gt;</mark></code>:</p>
-
-                        <p class="bd-callout">
-                            <code>
-                                                &lt;h1>Judul Pertama Saya&lt;/h1&gt;
-                                            </code>
-                        </p>
-                    </li>
-                    <li>
-                        <p><mark><code>&lt;p&gt;</mark></code> elemen mendefinisikan sebuah paragraf. Ini memiliki tag awal
-                            <mark><code>&lt;p&gt;</mark></code> dan tag akhir <mark><code>&lt;/p&gt;</mark></code>:
-                        </p>
-                        <p class="bd-callout">
-                            <code>
-                                                &lt;p>Paragraf pertama saya.&lt;/p&gt;
-                                            </code>
-                        </p>
-                    </li>
-                </ul>
-                <!-- </section> -->
-                <br>
-                <!-- <section id="JanganLewatiTagAkhir"> -->
-                <h3>Jangan abaikan tag akhir</h3>
-                <p>Beberapa elemen HTML akan ditampilkan dengan benar, bahkan jika Anda lupa tag akhir: <br> Contoh :
-                </p>
-
-                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                <div class="bd-callout">
-                    <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;html&gt;
-&lt;body&gt;
-
-  &lt;p&gt;Ini adalah paragraf
-  &lt;p&gt;Ini adalah paragraf
-
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-
-                    <hr>
-                    <p><a class="btn btn-warning btn-sm" href="codeEditor2.html" target="_blank">Cobalah
-                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
-                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-                    <p class="moreInfo text-break text-danger"><strong>Warning!!!, jangan pernah mengandalkan ini!
-                        Hasil dan kesalahan yang tidak terduga dapat terjadi jika Anda lupa tag akhir!</strong>
-                    </p>
-                </div>
-                <!-- </section> -->
-                <br>
-                <!-- <section id="elemen-html-Kosong"> -->
-                <h2>Elemen HTML Kosong</h2>
-                <p>Elemen HTML tanpa konten disebut elemen kosong. <mark><code>&lt;br&gt;</mark></code> tag mendefinisikan satu baris, dan merupakan elemen kosong tanpa tag penutup. <br> Contoh : </p>
-
                 <img class="top-example" src="files/img/browser-head.png" alt="">
                 <div class="bd-example">
-                    <p class="mb-0">Ini adalah <br> paragraf dengan jeda baris.</p>
+                    <img src="https://onysu.github.io/lesson/webdesain/files/img/img_girl.jpg" width="225" height="300">
                 </div>
                 <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                 <div class="bd-callout">
-                    <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;p&gt;Ini adalah &lt;br&gt; paragraf dengan jeda baris.&lt;/p&gt;</code></pre>
+                    <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;img <span class="na">src</span>=&quot;<span class="s">https://onysu.github.io/lesson/webdesain/files/img/img_girl.jpg</span>&quot; <span class="na">width</span>=&quot;225&quot; <span class="na">height</span>=&quot;300&quot;&gt;</code></pre>
                     <hr>
-                    <p><a class="btn btn-warning btn-sm" href="codeEditor2.html" target="_blank">Cobalah
+                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                         sendiri <img draggable="false" role="img" class="emoji" alt="↗"
                           src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
                 </div>
-                <div class="moreInfo"><mark><code>&lt;br&gt;</mark></code> adalah Break atau bisa disebut Line Break, untuk membuat Baris Baru.</div>
                 <!-- </section> -->
                 <br>
-                <!-- <section id="HTMLTidakPekaHurufBesar-kecil"> -->
-                <h2>HTML tidak sensitif huruf Besar/Kecil</h2>
-                <p><mark><code>&lt;P&gt;</mark></code> artinya sama dengan <mark><code>&lt;p&gt;</mark></code>. Standar HTML tidak memerlukan tag huruf kecil, kami <strong>merekomendasikan</strong> huruf kecil dalam HTML, dan
-                    <strong>menuntut</strong> huruf kecil untuk jenis dokumen yang lebih ketat seperti XHTML.
+                <!-- <section> -->
+                <h2><mark><code>alt</mark></code> atribut</h2>
+                <p><mark><code>alt</mark></code> Atribut yang diperlukan untuk
+                    <mark><code>&lt;img&gt;</mark></code> tag menentukan teks alternatif untuk gambar, jika gambar karena alasan tertentu tidak dapat ditampilkan. Hal ini dapat disebabkan oleh koneksi yang lambat, atau kesalahan pada
+                    <mark><code>src</mark></code>
+                    atribut, atau jika pengguna menggunakan pembaca layar.
                 </p>
-                <p class="moreInfo text-break">Kami selalu menggunakan nama tag <strong>huruf kecil</strong>.</p>
+                <p>Contoh :</p>
+                <img class="top-example" src="files/img/browser-head.png" alt="">
+                <div class="bd-example">
+                    <img src="https://onysu.github.io/lesson/webdesain/files/img/img_girl.jpg" class="img-fluid" alt="Gadis dengan jaket">
+                </div>
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                <div class="bd-callout">
+                    <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;img <span class="na">src</span>=&quot;<span class="s">https://onysu.github.io/lesson/webdesain/files/img/img_girl.jpg</span>&quot; <span class="na">alt</span>=&quot;Gadis dengan jaket&quot;&gt;</code></pre>
+                    <hr>
+                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                </div>
+
+                <!-- <p>Contoh :</p> -->
+                <p>Lihat apa yang terjadi jika kami mencoba menampilkan gambar yang tidak ada:</p>
+                <img class="top-example" src="files/img/browser-head.png" alt="">
+                <div class="bd-example">
+                    <img src="img_typo.jpg" alt="Gadis dengan jaket">
+                </div>
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                <div class="bd-callout">
+                    <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;img <span class="na">src</span>=&quot;img_typo.jpg&quot; <span class="na"><span class="na">alt</span></span>=&quot;Gadis dengan jaket&quot;&gt;</code></pre>
+                    <hr>
+                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                </div>
+                <!-- </section> -->
+                <br>
+                <!-- <section> -->
+                <h2><code>style</code> atribut</h2>
+                <p><code>style</code> atribut digunakan untuk menambah gaya untuk elemen, seperti warna, font, ukuran, dan banyak lagi.
+                </p>
+                <p>Contoh :</p>
+                <img class="top-example" src="files/img/browser-head.png" alt="">
+                <div class="bd-example">
+                    <p style="color:red;margin-bottom: 0;">Ini adalah paragraf merah.</p>
+                </div>
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                <div class="bd-callout">
+                    <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;p <span class="na">style</span>=&quot;<span class="s">color:red;</span>&quot;&gt;Ini adalah paragraf merah.&lt;/p&gt;</code></pre>
+                    <hr>
+                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                </div>
+                <!-- </section> -->
+                <br>
+                <!-- <section> -->
+                <h2><mark><code>lang</mark></code> atribut</h2>
+                <h5>Kode Bahasa</h5>
+                <p>Anda harus selalu menyertakan <mark><code>lang</mark></code> atribut di dalam
+                    <mark><code>&lt;html&gt;</mark></code> tag, untuk mendeklarasikan bahasa halaman Web. Ini dimaksudkan untuk membantu mesin pencari dan browser.</p>
+                <p>Contoh berikut menentukan bahasa Inggris sebagai bahasa:</p>
+                <div class="bd-callout">
+                    <pre tabindex="0" class="chroma"><code  data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+              &lt;html lang="<strong>en</strong>"&gt;
+              &lt;body&gt;
+              ...
+              &lt;/body&gt;
+              &lt;/html&gt;</code></pre>
+                </div>
+                <p>
+                    <p><strong>Kode Bahasa ISO 639-1</strong> mendefinisikan singkatan untuk bahasa. Dalam HTML dan XHTML mereka dapat digunakan dalam lang dan <span class="notranslate"><mark><code>xml:lang</mark></code></span> atribut.</p>
+                    <a href="kodebahasa.html" target="_blank" class="btn btn-primary btn-sm" tabindex="-1" role="button" aria-disabled="true">Daftar Kode Bahasa</a>
+                </p>
+                <hr>
+                <h5>Kode Negara</h5>
+                <p><b>Kode Negara ISO</b> mendefinisikan singkatan untuk negara. Dalam HTML mereka dapat digunakan sebagai tambahan nilai bahasa di <span class="notranslate"><mark><code>lang</mark></code></span> atribut. Dua karakter pertama dari kode bahasa
+                    mendefinisikan
+                    <strong>bahasa.</strong> dua terakhir mendefinisikan <strong>Negara.</strong>
+                </p>
+
+                <p>Contoh berikut menentukan bahasa Inggris sebagai bahasa dan Amerika Serikat sebagai negara:</p>
+                <div class="bd-callout">
+                    <pre tabindex="0" class="chroma"><code  data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+              &lt;html lang="<strong>en-US</strong>"&gt;
+              &lt;body&gt;
+              ...
+              &lt;/body&gt;
+              &lt;/html&gt;</code></pre>
+                </div>
+                <a href="kodebahasa.html" target="_blank" class="btn btn-primary btn-sm" tabindex="-1" role="button" aria-disabled="true">Daftar Kode Negara</a>
+                <!-- </section> -->
+                <br>
+                <!-- <section> -->
+                <h2><mark><code>title</mark></code> atribut</h2>
+                <p><mark><code>title</mark></code> atribut mendefinisikan beberapa informasi tambahan tentang elemen. Nilai atribut title akan ditampilkan sebagai tooltip saat Anda mengarahkan mouse ke elemen:
+                </p>
+
+                <p>Contoh :</p>
+                <img class="top-example" src="files/img/browser-head.png" alt="">
+                <div class="bd-example">
+                    <p style="margin-bottom: 0;" title="ini adalah tooltip">Ini adalah sebuah paragraf.</p>
+                </div>
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                <div class="bd-callout">
+                    <code>&lt;p title=&quot;I'm a tooltip&quot;&gt;Ini adalah sebuah paragraf.&lt;/p&gt;</code>
+                    <hr>
+                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                </div>
+                <!-- </section> -->
+                <!-- </section> -->
+                <br>
+                <!-- <section> -->
+                <p class="fs-3">Kami Sarankan: Selalu Gunakan Atribut Huruf Kecil.</p>
+                <p>Standar HTML tidak memerlukan nama atribut huruf kecil. Atribut <mark><code>title</mark></code> (dan semua atribut lainnya) dapat ditulis dengan huruf besar atau kecil seperti
+                    <strong>title</strong> atau <strong>TITLE</strong>. <br> Namun, kami
+                    <strong>merekomendasikan</strong> atribut huruf kecil dalam HTML, dan
+                    <strong>menuntut</strong> atribut huruf kecil untuk jenis dokumen yang lebih ketat seperti XHTML.
+                    <br> Kami selalu menggunakan nama atribut huruf kecil.</p>
+                <p>Standar HTML tidak memerlukan tanda kutip di sekitar nilai atribut. Namun, kami
+                    <strong>merekomendasikan</strong> kutipan dalam HTML, dan <strong>meminta</strong> kutipan untuk jenis dokumen yang lebih ketat seperti XHTML.
+                </p>
+
+                <div class="bd-callout">
+                    <strong>Bagus:</strong>
+                    <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;a <span class="na">href</span>="<span class="s">https://onysu.github.io/lesson/webdesain/</span>"&gt;Kunjungi tutorial HTML kami&lt;/a&gt;</code></pre>
+                    </p>
+                </div>
+                <div class="bd-callout">
+                    <strong>Buruk:</strong>
+                    <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;a <span class="na">href</span>=<span class="s">https://onysu.github.io/lesson/webdesain/</span>&gt;Kunjungi tutorial HTML kami&lt;/a&gt;</code></pre>
+                    </p>
+                </div>
+
+                <p>Terkadang Anda harus menggunakan tanda kutip <mark><q>&nbsp;</q></mark>. <br> Contoh ini
+                    <strong>tidak</strong> akan menampilkan atribut <mark><code>title</mark></code> dengan benar, karena berisi spasi:
+                </p>
+
+                <p>Contoh :</p>
+                <img class="top-example" src="files/img/browser-head.png" alt="">
+                <div class="bd-example">
+                    <h1>Tentang O-Learning</h1>
+                    <p title=Tentang O-Learning>
+                        Anda tidak dapat menghilangkan tanda kutip di sekitar nilai atribut jika nilainya mengandung spasi.
+                    </p>
+                    <p><b>Jika Anda menggerakkan mouse ke paragraf di atas, browser Anda hanya akan menampilkan kata
+                      pertama dari judul.</b></p>
+                </div>
+
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                <div class="bd-callout">
+                    <pre tabindex="0" class="chroma"><code  data-lang="html">
+              &lt;p <span class="na">title</span>=<span class="s">Tentang O-Learning</span>&gt;
+              Anda tidak dapat menghilangkan tanda kutip di sekitar nilai atribut jika nilainya mengandung spasi.&lt;/p&gt;</code></pre>
+                    <hr>
+                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                      sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                        src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                </div>
+                <p class="moreInfo text-break">Kami selalu menggunakan tanda kutip di sekitar nilai atribut.</p>
+                <hr class="col-3 col-md-2 mt-4 mb-4">
+                <h2>Kutipan Tunggal atau Ganda?</h2>
+                <p>Tanda kutip ganda <mark><q>&nbsp;</q></mark> di sekitar nilai atribut adalah yang paling umum dalam HTML, tetapi tanda kutip tunggal <mark><code>&apos;&apos;</code></mark> juga dapat digunakan. Dalam beberapa situasi, ketika nilai atribut
+                    itu sendiri berisi tanda kutip ganda, perlu menggunakan tanda kutip tunggal:</p>
+
+                <div class="bd-callout">
+                    <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;p <span class="na">title</span>='John &quot;ShotGun&quot; Nelson'&gt;</code></pre>
+                </div>
+
+                <p>Atau sebaliknya:</p>
+
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                <div class="bd-callout">
+                    <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;p <span class="na">title</span>=&quot;John 'ShotGun' Nelson&quot;&gt;</code></pre>
+                    <hr>
+                    <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                      sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                        src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                </div>
                 <!-- </section> -->
 
             </article>

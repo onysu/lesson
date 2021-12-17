@@ -595,76 +595,208 @@
                         </tr>
                     </tbody>
                 </table>
-                <p class="moreInfo text-break"><strong>Catatan:</span></strong> Beberapa elemen HTML tidak memiliki konten seperti elemen <mark><code>&lt;br&gt;</code></mark>, elemen ini disebut elemen kosong. Elemen kosong tidak memiliki tag akhir!.
-                </p>
+                <p class="moreInfo text-break"><strong>Catatan:</span></strong> Beberapa elemen HTML tidak memiliki konten seperti elemen <mark><code>&lt;br&gt;</code></mark>, elemen ini disebut elemen kosong. Elemen kosong tidak memiliki tag akhir!.</p>
+
+                <section id="elemen-bersarang">
+                    <h3>Nested HTML Elements</h3>
+                    <p>Elemen HTML dapat bersarang (ini berarti elemen dapat berisi elemen lain). Semua dokumen HTML terdiri dari elemen HTML bersarang. Contoh berikut berisi empat elemen HTML (
+                        <mark><code>&lt;html&gt;</mark></code>, <mark><code>&lt;body&gt;</mark></code>,
+                        <mark><code>&lt;h1&gt;</mark></code> dan <mark><code>&lt;p&gt;</mark></code>):
+                    </p>
+                    <p>Contoh :</p>
+                    <!-- <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div> -->
+                    <div class="bd-callout">
+                        <pre tabindex="0" class="chroma"><code  data-lang="html"></code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+                <span class="nt">&lt;html&gt;</span>
+                <span class="nt">&lt;body&gt;</span>
+                
+                  <span class="nt">&lt;h1&gt;Judul Pertama Saya&lt;/h1&gt;</span>
+                  <span class="nt">&lt;p&gt;Paragraf pertama saya.&lt;/p&gt;</span>
+                
+                <span class="nt">&lt;/body&gt;</span>
+                <span class="nt">&lt;/html&gt;</span>
+                </code></pre>
+                        <!-- <hr>
+                                        <div class="wp-block-button"><a class="wp-block-button__link" href="code-editor/codeEditor2.html" target="_blank" rel="noreferrer noopener">Cobalah sendiri <img draggable="false" role="img" class="emoji" alt="↗" src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></div> -->
+                    </div>
+                    <h3>Penjelasannya :</h3>
+                    <ul>
+                        <li>
+                            <p><mark><code>&lt;html&gt;</mark></code> adalah elemen root elemen dan mendefinisikan dokumen HTML secara keseluruhan. Ini memiliki tag awal <mark><code>&lt;html&gt;</mark></code>
+                                dan tag akhir
+                                <mark><code>&lt;/html&gt;</mark></code>. Kemudian, di dalam
+                                <mark><code>&lt;html&gt;</mark></code> elemen ada
+                                <mark><code>&lt;body&gt;</mark></code> elemen:</p>
+                            <p class="bd-callout">
+                                <code>
+                                                &lt;body&gt; <br>
+                                                <br>
+                                                &lt;h1>Judul Pertama Saya&lt;/h1&gt; <br>
+                                                &lt;p>Paragraf pertama saya.&lt;/p&gt; <br>
+                                                <br>
+                                                &lt;/body&gt;
+                                            </code>
+                            </p>
+                        </li>
+                        <li>
+                            <p><mark><code>&lt;body&gt;</mark></code> mendefinisikan tubuh dokumen. Ini memiliki tag awal
+                                <mark><code>&lt;body&gt;</mark></code> dan tag akhir
+                                <mark><code>&lt;/body&gt;</mark></code>. Kemudian, di dalam
+                                <mark><code>&lt;body&gt;</mark></code> elemen ada dua elemen lainnya:
+                                <mark><code>&lt;h1&gt;</mark></code> dan
+                                <mark><code>&lt;p&gt;</mark></code>:
+                            </p>
+                            <p class="bd-callout">
+                                <code>
+                                                &lt;h1>Judul Pertama Saya&lt;/h1&gt; <br>
+                                                &lt;p>Paragraf pertama saya.&lt;/p&gt;
+                                            </code>
+                            </p>
+                        </li>
+                        <li>
+                            <p><mark><code>&lt;h1&gt;</mark></code> elemen mendefinisikan heading (judul). Ini memiliki tag awal
+                                <mark><code>&lt;h1&gt;</mark></code> dan tag akhir
+                                <mark><code>&lt;/h1&gt;</mark></code>:</p>
+
+                            <p class="bd-callout">
+                                <code>
+                                                &lt;h1>Judul Pertama Saya&lt;/h1&gt;
+                                            </code>
+                            </p>
+                        </li>
+                        <li>
+                            <p><mark><code>&lt;p&gt;</mark></code> elemen mendefinisikan sebuah paragraf. Ini memiliki tag awal
+                                <mark><code>&lt;p&gt;</mark></code> dan tag akhir <mark><code>&lt;/p&gt;</mark></code>:
+                            </p>
+                            <p class="bd-callout">
+                                <code>
+                                                &lt;p>Paragraf pertama saya.&lt;/p&gt;
+                                            </code>
+                            </p>
+                        </li>
+                    </ul>
+                </section>
+                <hr>
+                <section id="JanganLewatiTagAkhir">
+                    <h3>Jangan abaikan tag akhir</h3>
+                    <p>Beberapa elemen HTML akan ditampilkan dengan benar, bahkan jika Anda lupa tag akhir: <br> Contoh :
+                    </p>
+
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;html&gt;
+                &lt;body&gt;
+                
+                  &lt;p&gt;Ini adalah paragraf
+                  &lt;p&gt;Ini adalah paragraf
+                
+                &lt;/body&gt;
+                &lt;/html&gt;
+                </code></pre>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                        <p class="moreInfo text-break text-danger"><strong>Warning!!!, jangan pernah mengandalkan ini!
+                        Hasil dan kesalahan yang tidak terduga dapat terjadi jika Anda lupa tag akhir!</strong>
+                        </p>
+                </section>
+                <hr>
+                <section id="elemen-html-Kosong">
+                    <h3>Elemen HTML Kosong</h3>
+                    <p>Elemen HTML tanpa konten disebut elemen kosong. <mark><code>&lt;br&gt;</mark></code> tag mendefinisikan satu baris, dan merupakan elemen kosong tanpa tag penutup. <br> Contoh : </p>
+
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <p class="mb-0">Ini adalah <br> paragraf dengan jeda baris.</p>
+                    </div>
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;p&gt;Ini adalah &lt;br&gt; paragraf dengan jeda baris.&lt;/p&gt;</code></pre>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
+                    <div class="moreInfo"><mark><code>&lt;br&gt;</mark></code> adalah Break atau bisa disebut Line Break, untuk membuat Baris Baru.</div>
+                </section>
+                <hr>
+                <section id="HTMLTidakPekaHurufBesar-kecil">
+                    <h3>HTML tidak sensitif huruf Besar/Kecil</h3>
+                    <p><mark><code>&lt;P&gt;</mark></code> artinya sama dengan <mark><code>&lt;p&gt;</mark></code>. Standar HTML tidak memerlukan tag huruf kecil, kami <strong>merekomendasikan</strong> huruf kecil dalam HTML, dan
+                        <strong>menuntut</strong> huruf kecil untuk jenis dokumen yang lebih ketat seperti XHTML.
+                    </p>
+                    <p class="moreInfo text-break">Kami selalu menggunakan nama tag <strong>huruf kecil</strong>.</p>
+                </section>
+
             </article>
 
         </main>
-    </div>
+        </div>
 
-    <footer class="bd-footer py-5 mt-5 bg-light">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-3 mb-3">
-                    <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="O-Learning">
-                        <img src="../assets/img/aku-bulat-40x40.png" class="img-fluid" alt="aku">
-                        <span class="fs-5 ms-2">O-Learning</span>
-                    </a>
-                    <ul class="list-unstyled small text-muted">
-                        <li class="mb-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, adipisci.
-                        </li>
-                        <li class="mb-2">Lorem ipsum dolor sit amet.</li>
-                        <li class="mb-2">Lorem ipsum dolor sit.</li>
-                    </ul>
-                </div>
-                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-                    <h5>Programs</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#">Microsoft Word</a></li>
-                        <li class="mb-2"><a href="#">Microsoft Excel</a></li>
-                        <li class="mb-2"><a href="#">Power Point</a></li>
-                        <li class="mb-2"><a href="#">Microsoft Access</a></li>
-                        <li class="mb-2"><a href="#">Photoshop</a></li>
-                        <li class="mb-2"><a href="#">CorelDRAW</a></li>
-                        <li class="mb-2"><a href="#">Web-Desain</a></li>
-                        <li class="mb-2"><a href="#">Pemrograman</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-lg-2 mb-3">
-                    <h5>Panduan</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#">Tutorial Office</a></li>
-                        <li class="mb-2"><a href="#">Tutorial Desain</a></li>
-                        <li class="mb-2"><a href="#">Tutorial Web-Desain</a></li>
-                        <li class="mb-2"><a href="#">Tutorial Pemrograman</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-lg-2 mb-3">
-                    <h5>Projek</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#">Website BPKAD</a></li>
-                        <li class="mb-2"><a href="#">Website O-Learning</a></li>
-                        <li class="mb-2"><a href="#">on progress...</a></li>
-                        <li class="mb-2"><a href="#">on progress...</a></li>
-                        <li class="mb-2"><a href="#">on progress...</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-lg-2 mb-3">
-                    <h5>Referensi</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#">excel-easy.com</a></li>
-                        <li class="mb-2"><a href="#">edu.gcfglobal.org</a></li>
-                    </ul>
+        <footer class="bd-footer py-5 mt-5 bg-light">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-3 mb-3">
+                        <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="O-Learning">
+                            <img src="../assets/img/aku-bulat-40x40.png" class="img-fluid" alt="aku">
+                            <span class="fs-5 ms-2">O-Learning</span>
+                        </a>
+                        <ul class="list-unstyled small text-muted">
+                            <li class="mb-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, adipisci.
+                            </li>
+                            <li class="mb-2">Lorem ipsum dolor sit amet.</li>
+                            <li class="mb-2">Lorem ipsum dolor sit.</li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                        <h5>Programs</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#">Microsoft Word</a></li>
+                            <li class="mb-2"><a href="#">Microsoft Excel</a></li>
+                            <li class="mb-2"><a href="#">Power Point</a></li>
+                            <li class="mb-2"><a href="#">Microsoft Access</a></li>
+                            <li class="mb-2"><a href="#">Photoshop</a></li>
+                            <li class="mb-2"><a href="#">CorelDRAW</a></li>
+                            <li class="mb-2"><a href="#">Web-Desain</a></li>
+                            <li class="mb-2"><a href="#">Pemrograman</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-2 mb-3">
+                        <h5>Panduan</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#">Tutorial Office</a></li>
+                            <li class="mb-2"><a href="#">Tutorial Desain</a></li>
+                            <li class="mb-2"><a href="#">Tutorial Web-Desain</a></li>
+                            <li class="mb-2"><a href="#">Tutorial Pemrograman</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-2 mb-3">
+                        <h5>Projek</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#">Website BPKAD</a></li>
+                            <li class="mb-2"><a href="#">Website O-Learning</a></li>
+                            <li class="mb-2"><a href="#">on progress...</a></li>
+                            <li class="mb-2"><a href="#">on progress...</a></li>
+                            <li class="mb-2"><a href="#">on progress...</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-2 mb-3">
+                        <h5>Referensi</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#">excel-easy.com</a></li>
+                            <li class="mb-2"><a href="#">edu.gcfglobal.org</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
 
-    <script src="../assets/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
-    <script src="../assets/js/docsearch.min.js"></script>
-    <script src="../assets/js/docs.min.js"></script>
+        <script src="../assets/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+        <script src="../assets/js/docsearch.min.js"></script>
+        <script src="../assets/js/docs.min.js"></script>
 </body>
 
 </html>

@@ -1,17 +1,68 @@
 <!doctype html>
-<html lang="id">
+<html lang="id-ID">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Introduction · O-Learning v5.1</title>
-    <script src="../assets/js/w3.js" />
+    <meta name="description" content="Hidupkan Bootstrap dengan plugin JavaScript opsional kami. Pelajari tentang setiap plugin, data dan opsi API terprogram kami, dan banyak lagi.">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+
+    <meta name="docsearch:language" content="id">
+    <meta name="docsearch:version" content="5.1">
+
+    <title>JavaScript · Bootstrap v5.1</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/getting-started/javascript/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link href="https://getbootstrap.com/docs/5.1/assets/css/docs.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="dist/css/style.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+    <link rel="icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#7952b3">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@getbootstrap">
+    <meta name="twitter:creator" content="@getbootstrap">
+    <meta name="twitter:title" content="JavaScript">
+    <meta name="twitter:description" content="Hidupkan Bootstrap dengan plugin JavaScript opsional kami. Pelajari tentang setiap plugin, data dan opsi API terprogram kami, dan banyak lagi.">
+    <meta name="twitter:image" content="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-social.png">
+
+    <!-- Facebook -->
+    <meta property="og:url" content="https://getbootstrap.com/docs/5.1/getting-started/javascript/">
+    <meta property="og:title" content="JavaScript">
+    <meta property="og:description" content="Hidupkan Bootstrap dengan plugin JavaScript opsional kami. Pelajari tentang setiap plugin, data dan opsi API terprogram kami, dan banyak lagi.">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-social.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1000">
+    <meta property="og:image:height" content="500">
+
+    <script>
+        window.ga = window.ga || function() {
+            (ga.q = ga.q || []).push(arguments)
+        };
+        ga.l = +new Date;
+        ga('create', 'UA-146052-10', 'getbootstrap.com');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
     </script>
-    <!-- O-Learning core CSS -->
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../assets/css/docs.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../webdesain/dist/css/style.css" />
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+
+
 </head>
 
 <body>
@@ -22,9 +73,147 @@
         </div>
     </div>
 
-    <div w3-include-html="header.html"></div>
+    <header class="navbar navbar-expand-md navbar-dark bd-navbar">
+        <!-- nav pertama -->
+        <nav class="container flex-wrap flex-md-nowrap" aria-label="Main navigation">
+            <a class="navbar-brand p-0 me-4" href="webdesain.html" aria-label="Bootstrap">
+                <img src="/assets/img/aku-bulat-40x40.png" alt="">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg></button>
+
+            <div class="collapse navbar-collapse" id="bdNavbar">
+                <ul class="navbar-nav flex-wrap bd-navbar-nav pt-2 py-md-0">
+                    <li class="nav-item col-6 col-md-auto">
+                        <a class="nav-link p-2 active" aria-current="true" href="webdesain.html">Home</a>
+                    </li>
+                    <li class="nav-item col-6 col-md-auto dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Office</a>
+                        <ul class="dropdown-menu  mx-0 shadow" aria-labelledby="navbarDropdown" style="width: 220px;">
+                            <li>
+                                <a class="dropdown-item d-flex gap-2 align-items-center" href="../word/index.html">
+                                    <img src="/assets/img/icons/word.png" width="32" /> Microsoft Word</a>
+                            </li>
+                            <hr class="dropdown-divider">
+                            <li>
+                                <a class="dropdown-item d-flex gap-2 align-items-center" href="../excel/index.html">
+                                    <img src="/assets/img/icons/excel.png" width="32" /> Microsoft Excel</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex gap-2 align-items-center" href="../powerpoint/index.html">
+                                    <img src="/assets/img/icons/ppt.png" width="32" /> Power Point</a>
+                            </li>
+                            <hr class="dropdown-divider">
+                            <li>
+                                <a class="dropdown-item d-flex gap-2 align-items-center" href="../access/index.html">
+                                    <img src="/assets/img/icons/access.png" width="32" /> Microsoft Access</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item col-6 col-md-auto dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Desain</a>
+                        <ul class="dropdown-menu  mx-0 shadow" aria-labelledby="navbarDropdown" style="width: 220px;">
+                            <li>
+                                <a class="dropdown-item" href="../photoshop/index.html">
+                                    <img src="/assets/img/icons/ps-logo.png" width="32" /> Photoshop
+                                </a>
+                            </li>
+                            <hr class="dropdown-divider">
+                            <li>
+                                <a class="dropdown-item" href="../coreldraw/index.html">
+                                    <img src="/assets/img/icons/coreldraw_32x32.png" width="32" /> CorelDRAW
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item col-6 col-md-auto">
+                        <a class="nav-link" href="../webdesain/index.html">Web-Desain</a>
+                    </li>
+                    <li class="nav-item col-6 col-md-auto">
+                        <a class="nav-link" href="../pemrograman/index.html">Pemrograman</a>
+                    </li>
+                </ul>
+                <hr class="d-md-none text-white-50">
+                <ul class="navbar-nav flex-wrap ms-md-auto text-light fw-light">
+                    <script>
+                        var days = new Array(8);
+                        days[1] = "Minggu";
+                        days[2] = "Senin";
+                        days[3] = "Selasa";
+                        days[4] = "Rabu";
+                        days[5] = "Kamis";
+                        days[6] = "Jumat";
+                        days[7] = "Sabtu";
+                        var months = new Array(13);
+                        months[1] = "Januari";
+                        months[2] = "Februari";
+                        months[3] = "Maret";
+                        months[4] = "April";
+                        months[5] = "Mei";
+                        months[6] = "Juni";
+                        months[7] = "Juli";
+                        months[8] = "Augustus";
+                        months[9] = "September";
+                        months[10] = "Oktober";
+                        months[11] = "November";
+                        months[12] = "Desember";
+                        var dateObj = new Date()
+                        var wday = days[dateObj.getDay() + 1]
+                        var lmonth = months[dateObj.getMonth() + 1]
+                        var date = dateObj.getDate()
+                        var year = dateObj.getFullYear()
+                        document.write(wday + ", " + date + " " + lmonth + " " + year)
+                    </script>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
     <nav class="bd-subnavbar py-2" aria-label="Secondary navigation">
-        <div w3-include-html="nav.html"></div>
+        <div class="container-xxl d-flex align-items-md-center">
+            <form class="bd-search position-relative me-auto">
+                <input type="search" class="form-control" id="search-input" placeholder="Search docs..." aria-label="Search docs for..." autocomplete="off" data-bd-docs-version="5.1">
+            </form>
+            <div class="dropdown ms-3">
+                <button class="btn btn-bd-light dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+              <span class="d-none d-lg-inline">O-Learning</span> v5.1
+            </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-versions">
+                    <li><a class="dropdown-item current" aria-current="true" href="/docs/5.1/">Latest (5.1.x)</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="https://getbootstrap.com/docs/4.6/">v4.6.x</a></li>
+                    <li><a class="dropdown-item" href="https://getbootstrap.com/docs/3.4/">v3.4.1</a></li>
+                    <li><a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="/docs/versions/">All versions</a></li>
+                </ul>
+            </div>
+            <button class="btn bd-sidebar-toggle d-md-none py-0 px-1 ms-3 order-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-expand" fill="currentColor"
+              viewBox="0 0 16 16">
+              <title>Expand</title>
+              <path fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-collapse" fill="currentColor"
+              viewBox="0 0 16 16">
+              <title>Collapse</title>
+              <path fill-rule="evenodd"
+                d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zm7-8a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0zm-.5 11.707l-1.146 1.147a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 11.707V15.5a.5.5 0 0 1-1 0v-3.793z" />
+            </svg>
+          </button>
+        </div>
     </nav>
 
     <div class="container-xxl my-md-4 bd-layout">

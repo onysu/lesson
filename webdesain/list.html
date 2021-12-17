@@ -1,17 +1,17 @@
 <!doctype html>
-<html lang="id">
+<html lang="en">
 
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Introduction · O-Learning v5.1</title>
-    <script src="/assets/js/w3.js" />
+    <script src="../assets/js/w3.js" />
     </script>
     <!-- O-Learning core CSS -->
-    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="/assets/css/docs.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/webdesain/dist/css/style.css" />
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/docs.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../webdesain/dist/css/style.css" />
 </head>
 
 <body>
@@ -22,10 +22,11 @@
         </div>
     </div>
 
-    <div w3-include-html="/webdesain/header.html"></div>
+    <div w3-include-html="header.html"></div>
     <nav class="bd-subnavbar py-2" aria-label="Secondary navigation">
-        <div w3-include-html="/webdesain/nav.html"></div>
+        <div w3-include-html="nav.html"></div>
     </nav>
+
 
     <div class="container-xxl my-md-4 bd-layout">
         <aside class="bd-sidebar">
@@ -35,19 +36,18 @@
                 <ul class="list-unstyled mb-0 py-3 pt-md-1">
 
                     <li class="mb-1">
-                        <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#getting-started-collapse" aria-expanded="true" aria-current="true">Dasar</button>
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#getting-started-collapse" aria-expanded="true" aria-current="true"> -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#getting-started-collapse" aria-expanded="true" aria-current="true">Dasar</button>
                         <div class="collapse show" id="getting-started-collapse">
-
-                            <!-- <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#getting-started-collapse" aria-expanded="false" aria-current="false">Dasar</button>
-                            <div class="collapse" id="getting-started-collapse"> -->
+                            <!-- <div class="collapse" id="getting-started-collapse"> -->
                             <ul class="list-unstyled fw-normal pb-1 small">
-                                <li><a href="/webdesain/dasar/dokumen.html" class="d-inline-flex align-items-center rounded active" aria-current="page">Dokumen</a></li>
-                                <li><a href="/heading.html/" class="d-inline-flex align-items-center rounded">Heading</a></li>
-                                <li><a href="/paragraf.html/" class="d-inline-flex align-items-center rounded">Paragraf</a></li>
-                                <li><a href="/link.html/" class="d-inline-flex align-items-center rounded">Link</a></li>
-                                <li><a href="/gambar.html/" class="d-inline-flex align-items-center rounded">Gambar</a></li>
-                                <li><a href="/button.html/" class="d-inline-flex align-items-center rounded">Button</a></li>
-                                <li><a href="/list.html/" class="d-inline-flex align-items-center rounded">List</a></li>
+                                <li><a href="dokumen.html" class="d-inline-flex align-items-center rounded">Dokumen</a></li>
+                                <li><a href="heading.html" class="d-inline-flex align-items-center rounded">Heading</a></li>
+                                <li><a href="paragraf.html" class="d-inline-flex align-items-center rounded">Paragraf</a></li>
+                                <li><a href="link.html" class="d-inline-flex align-items-center rounded">Link</a></li>
+                                <li><a href="gambar.html" class="d-inline-flex align-items-center rounded">Gambar</a></li>
+                                <li><a href="button.html" class="d-inline-flex align-items-center rounded">Button</a></li>
+                                <li><a href="#" class="d-inline-flex align-items-center rounded active">List</a></li>
                             </ul>
                         </div>
                     </li>
@@ -484,8 +484,7 @@
                 <p>Semua dokumen HTML harus dimulai dengan deklarasi tipe dokumen:
                     <mark><code>&lt;!DOCTYPE html&gt;</code></mark>. Dokumen HTML itu sendiri dimulai dengan
                     <mark><code>&lt;html&gt;</code></mark> dan diakhiri dengan <mark><code>&lt;/html&gt;</code></mark>. Bagian yang terlihat dari dokumen HTML adalah antara <mark><code>&lt;body&gt;</code></mark> dan
-                    <mark><code>&lt;/body&gt;</code></mark>.
-                </p>
+                    <mark><code>&lt;/body&gt;</code></mark>.</p>
 
                 <h3>Struktur HTML5 :</h3>
 
@@ -793,10 +792,10 @@
     <div w3-include-html="footer.html"></div>
 
 
-    <script src="/assets/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    <script src="../assets/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
-    <script src="/assets/js/docsearch.min.js"></script>
-    <script src="/assets/js/docs.min.js"></script>
+    <script src="../assets/js/docsearch.min.js"></script>
+    <script src="../assets/js/docs.min.js"></script>
     <script>
         w3.includeHTML();
     </script>

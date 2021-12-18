@@ -582,7 +582,542 @@
             </div>
 
             <article>
+                <!-- <section> -->
+                <h3>Apa itu CSS?</h3>
+                <p>Cascading Style Sheets (CSS) digunakan untuk memformat tata letak halaman web. Dengan CSS, Anda dapat mengontrol warna, font, ukuran teks, jarak antar elemen, bagaimana elemen diposisikan dan ditata, gambar latar belakang atau warna latar
+                    apa yang akan digunakan, tampilan berbeda untuk perangkat dan ukuran layar yang berbeda, dan lebih banyak!
+                </p>
+                <p class="moreInfo text-break"><b>Tip:</b> Kata <b>cascading</b> berarti bahwa style yang diterapkan ke elemen induk juga akan diterapkan ke semua elemen turunan di dalam induk. Jadi, jika Anda mengatur warna teks isi ke <q>blue</q>, semua judul, paragraf, dan elemen
+                    teks lain di dalam badan juga akan mendapatkan warna yang sama (kecuali jika Anda menentukan yang lain)!.
+                </p>
+                <!-- </section> -->
+                <br>
 
+                <!-- <section> -->
+                <h3>Menggunakan CSS</h3>
+                <p>CSS dapat ditambahkan ke dokumen HTML dengan 3 cara:</p>
+
+                <table class="table table-bordered table-hover table-responsive">
+                    <thead class="table-light text-center">
+                        <tr>
+                            <td scope="col">#</td>
+                            <td scope="col">Model</td>
+                            <td scope="col">Keterangan</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row" class="text-center">1</td>
+                            <th>Inline</th>
+                            <td>dengan menggunakan <mark><code><span class="nt">&lt;style&gt;</span></mark></code> atribut di dalam elemen HTML
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="text-center">2</td>
+                            <th>Internal</th>
+                            <td>dengan menggunakan <mark><code><span class="nt">&lt;style&gt;</span></mark></code> elemen di bagian
+                                <mark><code><span class="nt">&lt;head&gt;</span></mark></code>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row" class="text-center">3</td>
+                            <th>Eksternal</th>
+                            <td>dengan menggunakan <mark><code>&lt;link&gt;</mark></code> elemen untuk menautkan ke file CSS eksternal.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+                <h4>Penjelasannya :</h4>
+                <ul>
+                    <li>
+                        <h5>Inline CSS / CSS Sebaris</h5>
+                        <p>CSS sebaris digunakan untuk menerapkan <mark><code><span class="nt">&lt;style&gt;</span></mark></code> unik ke satu elemen HTML. CSS sebaris menggunakan <mark><code><span class="nt">&lt;style&gt;</span></mark></code>
+                            atribut elemen HTML.
+                            <br> Contoh berikut menyetel warna teks <mark><code>&lt;h1&gt;</mark></code>
+                            elemen menjadi <span style="color: blue;">biru</span>, dan warna teks
+                            <mark><code>&lt;p&gt;</mark></code> elemen menjadi <span style="color: red;">merah</span>:</p>
+                        <p>Contoh :</p>
+
+                        <img class="top-example" src="files/img/browser-head.png" alt="">
+                        <div class="bd-example">
+                            <h1 style="color:blue;">Judul Biru</h1>
+                            <p style="color:red;">Sebuah paragraf merah.</p>
+                        </div>
+
+                        <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+
+                        <div class="bd-callout">
+                            <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+&lt;h1 <span class="na">style</span>=<span class="s">"color:blue;"</span>&gt;Judul Biru&lt;/h1&gt;
+&lt;p <span class="na">style</span>=<span class="s">"color:red;"</span>&gt;Sebuah paragraf merah.&lt;/p&gt;
+</code></pre>
+                            <hr>
+                            <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+            sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+              src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5>Internal CSS</h5>
+                        <p>Internal CSS digunakan untuk menentukan style untuk satu halaman HTML. Internal CSS didefinisikan di
+                            <mark><code><span class="nt">&lt;head&gt;</span></mark></code> bagian halaman HTML, di dalam
+                            <mark><code><span class="nt">&lt;style&gt;</span></mark></code> elemen. Contoh : berikut menyetel warna teks
+                            <strong>SEMUA</strong> <mark><code>&lt;h1&gt;</mark></code> elemen (pada halaman itu) menjadi
+                            <span style="color: blueviolet;">biru</span>, dan warna teks <strong>SEMUA</strong>
+                            <mark><code>&lt;p&gt;</mark></code> elemen menjadi <span style="color: red;">merah</span>. Selain itu, halaman akan ditampilkan dengan warna latar belakang <q>orange</q>.
+                        </p>
+                        <p>Contoh :</p>
+                        <img class="top-example" src="files/img/browser-head.png" alt="">
+                        <div class="bd-example" style="background-color: orange;">
+                            <h1 style="color: blue;">Ini adalah judul</h1>
+                            <p style="color: red;">Ini adalah sebuah paragraf.</p>
+                        </div>
+                        <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                        <div class="bd-callout">
+                            <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="cp"><span class="cp">&lt;!DOCTYPE html&gt;</span></span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="na">body</span> {
+      <span class="s">background-color: orange;</span>
+  }
+  <span class="na">h1</span> {
+      <span class="s">color: blue;</span>
+  }
+  <span class="na">p</span> {
+      <span class="s">color: red;</span>
+  }
+  <span class="p">&lt;</span><span class="nt">/style</span><span class="p">&gt;</span>  
+<span class="p">&lt;</span><span class="nt">/head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Ini adalah judul<span class="p">&lt;</span>/h1<span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ini adalah sebuah paragraf.<span class="p">&lt;</span>/p<span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">/body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">/html</span><span class="p">&gt;</span>
+</code></pre>
+
+                            <hr>
+                            <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+            sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+              src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <h5>External CSS</h5>
+                        <p>Lembar style eksternal digunakan untuk menentukan style untuk banyak halaman HTML. Untuk menggunakan lembar style eksternal, tambahkan tautan ke dalamnya di
+                            <mark><code><span class="nt">&lt;head&gt;</span></mark></code> bagian setiap halaman HTML.
+                        </p>
+
+                        <h5>Latihan :</h5>
+                        ada 2 file :
+                        <ol>
+                            <li>index.html</li>
+                            <li>style.css</li>
+                        </ol>
+                        <br>
+                        <p><q><strong>index.html</strong></q></p>
+                        <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+
+                        <div class="bd-callout">
+                            <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+&lt;<span class="nt">html</span>&gt;
+&lt;<span class="nt">head</span>&gt;
+  &lt;<span class="nt">link</span> <span class="na">rel</span>="<span class="s">stylesheet</span>" <span class="na">href</span>="<span class="s">styles.css</span>"&gt;
+&lt;<span class="nt">/head</span>&gt;
+&lt;<span class="nt">body</span>&gt;
+  &lt;<span class="nt">h1</span>&gt;Ini adalah judul&lt;<span class="nt">/h1</span>&gt;
+  &lt;<span class="nt">p</span>&gt;Ini adalah sebuah paragraf.&lt;<span class="nt">/p</span>&gt;
+&lt;<span class="nt">/body</span>&gt;
+&lt;<span class="nt">/html</span>&gt;
+</code></pre>
+                            <hr>
+                            <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+            sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+              src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                        </div>
+
+                        <p>Lembar style eksternal dapat ditulis dalam editor teks apa pun. File tidak boleh berisi kode HTML apa pun, dan harus disimpan dengan <strong>ekstensi.css</strong>. Berikut adalah tampilan file
+                            <q><strong>styles.css</strong></q>:
+                        </p>
+                        <p><q><strong>styles.css</strong></q></p>
+                        <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                        <div class="bd-callout">
+                            <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+<span class="na">body</span> {
+  <span class="s">background-color: orange;</span>
+}
+<span class="na">h1</span> {
+  <span class="s">color: blue;</span>
+}
+<span class="na">p</span> {
+  <span class="s">color: red;</span>
+}
+</code></pre>
+                            <hr>
+                            <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+            sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+              src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                        </div>
+                        <p class="moreInfo text-break"><b>Tips:</b> Dengan lembar style eksternal, Anda dapat mengubah tampilan seluruh situs web, dengan mengubah satu file!</p>
+                    </li>
+                </ul>
+
+                <p>Cara paling umum untuk menambahkan CSS, adalah dengan menyimpan
+                    <mark><code><span class="nt">&lt;style&gt;</span></mark></code> di file CSS eksternal. Namun, dalam tutorial ini kita akan menggunakan <mark><code><span class="nt">&lt;style&gt;</span></mark></code> inline dan internal, karena ini
+                    lebih mudah untuk didemonstrasikan, dan lebih mudah bagi Anda untuk mencobanya sendiri.
+                </p>
+                <!-- </section> -->
+                <br>
+
+                <!-- <section id="WarnaFontUkuranCSS"> -->
+                <h3>Warna, Font & Ukuran CSS</h3>
+                <p>Di sini, kami akan mendemonstrasikan beberapa properti CSS yang umum digunakan. Anda akan belajar lebih banyak tentang mereka nanti.
+                    <table class="table table-bordered w-100">
+                        <thead class="table-light text-center">
+                            <tr>
+                                <th>Properti</th>
+                                <th>Keterangan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><mark><code>color</mark></code>
+                                </td>
+                                <td>properti CSS mendefinisikan warna teks yang akan digunakan.</td>
+                            </tr>
+                            <tr>
+                                <td><mark><code>font-family</mark></code>
+                                </td>
+                                <td>properti CSS mendefinisikan font yang akan digunakan.</td>
+                            </tr>
+                            <tr>
+                                <td><mark><code>font-size</mark></code>
+                                </td>
+                                <td>properti CSS mendefinisikan ukuran teks yang akan digunakan.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p>Contoh :</p>
+                    <p>Penggunaan warna CSS, <mark><code>font-family</mark></code> dan properti
+                        <mark><code>font-size</mark></code>:</p>
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <h1 style="color: blue;font-family: verdana;font-size: 300%;">Ini adalah judul</h1>
+                        <p style="color: red;font-family: courier;font-size: 160%;">Ini adalah sebuah paragraf.</p>
+                    </div>
+
+
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="cp"><span class="cp">&lt;!DOCTYPE html&gt;</span></span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;style&gt;</span>
+    <span class="na">h1</span> {
+      <span class="s">color: blue;</span>
+      <span class="s">font-family: verdana;</span>
+      <span class="s">font-size: 300%;</span>
+    }
+    <span class="na">p</span> {
+      <span class="s">color: red;</span>
+      <span class="s">font-family: courier;</span>
+      <span class="s">font-size: 160%;</span>
+    }
+  <span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  &lt;h1&gt;Ini adalah judul&lt;/h1&gt;
+  &lt;p&gt;Ini adalah sebuah paragraf.&lt;/p&gt;
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
+                    <!-- </section> -->
+                    <br>
+
+                    <!-- <section id="BorderCSS"> -->
+                    <h3>Border CSS</h3>
+                    <p><mark><code>border</mark></code> properti CSS mendefinisikan perbatasan di sekitar elemen HTML.
+                    </p>
+                    <p class="moreInfo text-break"><b>Tip:</b> Anda dapat menentukan batas untuk hampir semua elemen HTML.
+                    </p>
+                    <p>Contoh : Penggunaan properti <mark><code>border</mark></code> CSS: </p>
+
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <h1>Ini adalah judul</h1>
+                        <p style="border: 2px solid powderblue;">Ini adalah sebuah paragraf.</p>
+                        <p style="border: 2px solid powderblue;">Ini adalah sebuah paragraf.</p>
+                        <p style="border: 2px solid powderblue;">Ini adalah sebuah paragraf.</p>
+                    </div>
+
+
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+<span class="cp"><span class="cp">&lt;!DOCTYPE html&gt;</span></span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;style&gt;</span>
+    <span class="na">p</span> {
+      <span class="s">border: 2px solid powderblue;</span>
+    }
+  <span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  &lt;h1&gt;Ini adalah judul&lt;/h1&gt;
+  &lt;p&gt;Ini adalah sebuah paragraf.&lt;/p&gt;
+  &lt;p&gt;Ini adalah sebuah paragraf.&lt;/p&gt;
+  &lt;p&gt;Ini adalah sebuah paragraf.&lt;/p&gt;
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
+                    <!-- </section> -->
+                    <br>
+
+                    <!-- <section id="PaddingCSS"> -->
+                    <h3>Padding CSS</h3>
+                    <p><mark><code>padding</mark></code> properti CSS mendefinisikan <mark><code>padding</mark></code>
+                        (spasi) antara teks dan
+                        <mark><code>border</mark></code>. <br> Penggunaan <mark><code>border</mark></code> CSS dan properti
+                        <mark><code>padding</mark></code>:</p>
+
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <p style="border: 2px solid powderblue;padding: 30px;">This is a paragraph.</p>
+                        <p style="border: 2px solid powderblue;padding: 30px;">This is a paragraph.</p>
+                        <p style="border: 2px solid powderblue;padding: 30px;">This is a paragraph.</p>
+                    </div>
+
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+<span class="cp"><span class="cp">&lt;!DOCTYPE html&gt;</span></span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;style&gt;</span>
+    <span class="na">p</span> {
+      <span class="s">border: 2px solid powderblue;</span>
+      <span class="s">padding: 30px;</span>
+    }
+  <span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  &lt;p&gt;Ini adalah sebuah paragraf.&lt;/p&gt;
+  &lt;p&gt;Ini adalah sebuah paragraf.&lt;/p&gt;
+  &lt;p&gt;Ini adalah sebuah paragraf.&lt;/p&gt;
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
+                    <!-- </section> -->
+                    <br>
+
+                    <!-- <section id="MarginCSS"> -->
+                    <h3>Margin CSS</h3>
+                    <p><mark><code>margin</mark></code> properti CSS mendefinisikan <mark><code>margin</mark></code>
+                        (spasi) di luar
+                        <mark><code>border</mark></code>. <br> Penggunaan <mark><code>border</mark></code> CSS dan properti
+                        <mark><code>margin</mark></code>:</p>
+
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <h1>This is a heading</h1>
+                        <p style="border: 2px solid powderblue;">This is a paragraph.</p>
+                        <p style="border: 2px solid powderblue;">This is a paragraph.</p>
+                        <p style="border: 2px solid powderblue;">This is a paragraph.</p>
+                    </div>
+
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+<span class="cp"><span class="cp">&lt;!DOCTYPE html&gt;</span></span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;style&gt;</span>
+  <span class="na">p</span> {
+    <span class="s">border: 2px solid powderblue;</span>
+    <span class="s">margin: 50px;</span>
+  }
+<span class="nt">&lt;/style&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  &lt;h1&gt;This is a heading&lt;/h1&gt;
+  &lt;p&gt;This is a paragraph.&lt;/p&gt;
+  &lt;p&gt;This is a paragraph.&lt;/p&gt;
+  &lt;p&gt;This is a paragraph.&lt;/p&gt;
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
+                    <!-- </section> -->
+                    <br>
+
+                    <!-- <section id="LinkkeCSSEksternal"> -->
+                    <h3>Link ke CSS Eksternal</h3>
+                    <p>Style eksternal dapat direferensikan dengan URL lengkap atau dengan jalur relatif ke halaman web saat ini. <br> Contoh ini menggunakan URL lengkap untuk menautkan ke lembar style:</p>
+
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;link</span> <span class="na"><span class="na">rel</span></span>="stylesheet" <span class="na">href</span>=<span class="s">"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"</span>&gt;
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  &lt;h1&gt;This is a heading&lt;/h1&gt;
+  &lt;p&gt;This is a paragraph.&lt;/p&gt;
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
+
+                    <p>Contoh ini menautkan style yang terletak di situs web lain: </p>
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+&lt;link <span class="na">rel</span>=<span class="s">"stylesheet"</span> <span class="na">href</span>=<span class="s">"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"</span>&gt;
+</code></pre>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
+                    <p>Contoh ini menautkan ke lembar style yang terletak di folder yang sama dengan halaman saat ini:
+                    </p>
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">
+&lt;link <span class="na">rel</span>=<span class="s">"stylesheet"</span> <span class="na">href</span>=<span class="s">"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"</span>&gt;
+</code></pre>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
+                    <!-- </section> -->
+                    <br>
+
+                    <!-- <section id=""> -->
+                    <h3>Ringkasan Bab</h3>
+                    <ul>
+                        <li>Gunakan <mark><code>style</mark></code> atribut HTML untuk penataan sebaris.</li>
+                        <li>Gunakan <mark><code><span class="nt">&lt;style&gt;</span></mark></code> elemen HTML untuk mendefinisikan CSS internal.
+                        </li>
+                        <li>Gunakan <mark><code>&lt;link&gt;</mark></code> elemen HTML untuk merujuk ke file CSS eksternal.
+                        </li>
+                        <li>Gunakan <mark><code><span class="nt">&lt;head&gt;</span></mark></code> elemen HTML untuk menyimpan elemen
+                            <mark><code><span class="nt">&lt;style&gt;</span></mark></code> dan
+                            <mark><code>&lt;link&gt;</mark></code>.</li>
+                        <li>Gunakan <mark><code>color</mark></code> properti CSS untuk warna teks.</li>
+                        <li>Gunakan <mark><code>font-family</mark></code> properti CSS untuk font teks.</li>
+                        <li>Gunakan <mark><code>font-size</mark></code> properti CSS untuk ukuran teks.</li>
+                        <li>Gunakan <mark><code>border</mark></code> properti CSS untuk perbatasan.</li>
+                        <li>Gunakan <mark><code>padding</mark></code> properti CSS untuk ruang di dalam perbatasan.</li>
+                        <li>Gunakan <mark><code>margin</mark></code> properti CSS untuk ruang di luar perbatasan.</li>
+                    </ul>
+                    <!-- </section> -->
+                    <br>
+
+                    <!-- <section id=""> -->
+                    <h2>Tag Style HTML</h2>
+                    <table class="table table-bordered w-100">
+                        <thead class="table-light text-center">
+                            <tr>
+                                <th>Elemen</th>
+                                <th>Keterangan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><mark><code><span class="nt">&lt;style&gt;</span></mark></code>
+                                </td>
+                                <td>Mendefinisikan informasi style untuk dokumen HTML.</td>
+                            </tr>
+                            <tr>
+                                <td><mark><code>&lt;link&gt;</mark></code>
+                                </td>
+                                <td>Mendefinisikan link antara dokumen dan sumber daya eksternal.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- <p><span style='color:black'>Untuk daftar lengkap semua tag HTML yang tersedia, kunjungi </span><a href="https://www.w3schools.com/tags/default.asp ">Referensi Tag HTML</a> kami.</p> -->
+                    <!-- </section> -->
+                    <br>
+
+                    <!-- <section> -->
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <div class="d-flex justify-content-center align-content-center bg-black" style="flex-direction: column; border:1px dotted #dee2e6;padding:10px;margin:0;">
+                            <div class="d-flex justify-content-center align-content-center text-white">
+                                <div class="col">position</div>
+                                <div class="col">0</div>
+                            </div>
+                            <div style="border:1px dotted #999;padding:10px;margin:10px;background-color:#eee ">
+                                <div class="d-flex justify-content-center align-content-center">
+                                    <div class="col">margin</div>
+                                    <div class="col"><code>10px</code>
+                                    </div>
+                                </div>
+                                <div style="border:1px dotted #999;padding:10px;margin:10px;background-color:antiquewhite ">
+                                    <div class="d-flex justify-content-center align-content-center">
+                                        <div class="col">border</div>
+                                        <div class="col"><code>1px dotted #999</code>
+                                        </div>
+                                    </div>
+                                    <div style="border:1px dotted #999;padding:10px;margin:10px;background-color: lightyellow;">
+                                        <div class="d-flex justify-content-center align-content-center">
+                                            <div class="col">padding</div>
+                                            <div class="col"><code>10px</code>
+                                            </div>
+                                        </div>
+                                        <div style="border:1px dotted #999;padding:10px;margin:10px;background-color: orchid;color: white;">
+                                            ukuran layar dalam pixel
+                                        </div>
+                                        <div class="d-flex justify-content-center align-content-center">
+                                            <div class="col"></div>
+                                            <div class="col">-</div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center align-content-center">
+                                        <div class="col"></div>
+                                        <div class="col">-</div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center align-content-center text-white">
+                                    <div class="col"></div>
+                                    <div class="col">-</div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center align-content-center text-white">
+                                <div class="col"></div>
+                                <div class="col">0</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- </section> -->
             </article>
 
         </main>

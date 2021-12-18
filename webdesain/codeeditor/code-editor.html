@@ -10,37 +10,6 @@
     <link rel="stylesheet" type="text/css" href="spaceit.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <script>
-        if (window.addEventListener) {
-            window.addEventListener("resize", browserResize);
-        } else if (window.attachEvent) {
-            window.attachEvent("onresize", browserResize);
-        }
-        var xbeforeResize = window.innerWidth;
-
-        function browserResize() {
-            var afterResize = window.innerWidth;
-            if ((xbeforeResize < (970) && afterResize >= (970)) || (xbeforeResize >= (970) && afterResize < (970)) ||
-                (xbeforeResize < (728) && afterResize >= (728)) || (xbeforeResize >= (728) && afterResize < (728)) ||
-                (xbeforeResize < (468) && afterResize >= (468)) || (xbeforeResize >= (468) && afterResize < (468))) {
-                xbeforeResize = afterResize;
-
-                // if (document.getElementById("adngin-try_it_leaderboard-0")) {
-                //     adngin.queue.push(function() {
-                //         adngin.cmd.startAuction(["try_it_leaderboard"]);
-                //     });
-                // }
-
-            }
-            if (window.screen.availWidth <= 768) {
-                restack(window.innerHeight > window.innerWidth);
-            }
-            fixDragBtn();
-            showFrameSize();
-        }
-        var fileID = "";
-    </script>
-
 </head>
 
 <body>
@@ -48,8 +17,10 @@
         <div class="w3-bar" style="overflow:auto">
             <a href="javascript:void(0);" onclick="restack(currentStack)" title="Change Orientation" class="w3-button w3-bar-item w3-hide-small topnav-icons fa fa-rotate"></a>
             <a href="javascript:void(0);" onclick="retheme()" title="Change Theme" class="w3-button w3-bar-item topnav-icons fa fa-adjust"></a>
-            <button id="runbtn" class="w3-button w3-bar-item w3-hover-white w3-hover-text-green" onclick="submitTryit(1);ga('send', 'event', 'runCode', 'click');adngin.cmd.startAuction(['try_it_leaderboard']);">Run &#10095;</button>
-            <span class="w3-right w3-hide-small" style="padding:8px 16px 8px 0;display:block;float:right;font-size:16px;margin-top:4px"><span id="framesize"></span></span>
+            <button id="runbtn" class="w3-button w3-bar-item w3-hover-white w3-hover-text-green" onclick="submitTryit(1);ga('send', 'event', 'runCode', 'click');adngin.cmd.startAuction(['try_it_leaderboard']);">Run
+          &#10095;</button>
+            <span class="w3-right w3-hide-small" style="padding:8px 16px 8px 0;display:block;float:right;font-size:16px;margin-top:4px"><span
+            id="framesize"></span></span>
         </div>
 
     </div>
@@ -94,6 +65,36 @@
     <script src="codemirror.js"></script>
     <script src="codemirror_jsx.js"></script>
     <script src="spaceit.js"></script>
+    <script>
+        if (window.addEventListener) {
+            window.addEventListener("resize", browserResize);
+        } else if (window.attachEvent) {
+            window.attachEvent("onresize", browserResize);
+        }
+        var xbeforeResize = window.innerWidth;
+
+        function browserResize() {
+            var afterResize = window.innerWidth;
+            if ((xbeforeResize < (970) && afterResize >= (970)) || (xbeforeResize >= (970) && afterResize < (970)) ||
+                (xbeforeResize < (728) && afterResize >= (728)) || (xbeforeResize >= (728) && afterResize < (728)) ||
+                (xbeforeResize < (468) && afterResize >= (468)) || (xbeforeResize >= (468) && afterResize < (468))) {
+                xbeforeResize = afterResize;
+
+                // if (document.getElementById("adngin-try_it_leaderboard-0")) {
+                //     adngin.queue.push(function() {
+                //         adngin.cmd.startAuction(["try_it_leaderboard"]);
+                //     });
+                // }
+
+            }
+            if (window.screen.availWidth <= 768) {
+                restack(window.innerHeight > window.innerWidth);
+            }
+            fixDragBtn();
+            showFrameSize();
+        }
+        var fileID = "";
+    </script>
     <script>
         submitTryit()
 

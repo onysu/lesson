@@ -708,6 +708,113 @@
                     <mark><code>&lt;body&gt;</code></mark> (area putih di atas) akan ditampilkan di browser. Konten di dalam elemen
                     <mark><code>&lt;title&gt;</code></mark> akan ditampilkan di bilah judul browser atau di tab halaman.
                 </p>
+                <br>
+                <!-- <section id="elemen-bersarang"> -->
+                <h2>Nested HTML Elements</h2>
+                <p>Elemen HTML dapat bersarang (ini berarti elemen dapat berisi elemen lain). Semua dokumen HTML terdiri dari elemen HTML bersarang. Contoh berikut berisi empat elemen HTML (
+                    <mark><code>&lt;html&gt;</mark></code>, <mark><code>&lt;body&gt;</mark></code>,
+                    <mark><code>&lt;h1&gt;</mark></code> dan <mark><code>&lt;p&gt;</mark></code>):
+                </p>
+                <p>Contoh :</p>
+                <!-- <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div> -->
+                <div class="bd-callout">
+                    <pre tabindex="0" class="chroma"><code  data-lang="html"></code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+                <span class="nt">&lt;html&gt;</span>
+                <span class="nt">&lt;body&gt;</span>
+                
+                  <span class="nt">&lt;h1&gt;Judul Pertama Saya&lt;/h1&gt;</span>
+                  <span class="nt">&lt;p&gt;Paragraf pertama saya.&lt;/p&gt;</span>
+                
+                <span class="nt">&lt;/body&gt;</span>
+                <span class="nt">&lt;/html&gt;</span>
+                </code></pre>
+                    <!-- <hr>
+                                                        <div class="wp-block-button"><a class="wp-block-button__link" href="codeEditor2.html" target="_blank" rel="noreferrer noopener">Cobalah sendiri <img draggable="false" role="img" class="emoji" alt="↗" src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></div> -->
+                </div>
+                <h3>Penjelasannya :</h3>
+                <ul>
+                    <li>
+                        <p><mark><code>&lt;html&gt;</mark></code> adalah elemen root elemen dan mendefinisikan dokumen HTML secara keseluruhan. Ini memiliki tag awal <mark><code>&lt;html&gt;</mark></code>
+                            dan tag akhir
+                            <mark><code>&lt;/html&gt;</mark></code>. Kemudian, di dalam
+                            <mark><code>&lt;html&gt;</mark></code> elemen ada
+                            <mark><code>&lt;body&gt;</mark></code> elemen:</p>
+                        <p class="bd-callout">
+                            <code>
+                                                                &lt;body&gt; <br>
+                                                                <br>
+                                                                &lt;h1>Judul Pertama Saya&lt;/h1&gt; <br>
+                                                                &lt;p>Paragraf pertama saya.&lt;/p&gt; <br>
+                                                                <br>
+                                                                &lt;/body&gt;
+                                                            </code>
+                        </p>
+                    </li>
+                    <li>
+                        <p><mark><code>&lt;body&gt;</mark></code> mendefinisikan tubuh dokumen. Ini memiliki tag awal
+                            <mark><code>&lt;body&gt;</mark></code> dan tag akhir
+                            <mark><code>&lt;/body&gt;</mark></code>. Kemudian, di dalam
+                            <mark><code>&lt;body&gt;</mark></code> elemen ada dua elemen lainnya:
+                            <mark><code>&lt;h1&gt;</mark></code> dan
+                            <mark><code>&lt;p&gt;</mark></code>:
+                        </p>
+                        <p class="bd-callout">
+                            <code>
+                                                                &lt;h1>Judul Pertama Saya&lt;/h1&gt; <br>
+                                                                &lt;p>Paragraf pertama saya.&lt;/p&gt;
+                                                            </code>
+                        </p>
+                    </li>
+                    <li>
+                        <p><mark><code>&lt;h1&gt;</mark></code> elemen mendefinisikan heading (judul). Ini memiliki tag awal
+                            <mark><code>&lt;h1&gt;</mark></code> dan tag akhir
+                            <mark><code>&lt;/h1&gt;</mark></code>:</p>
+
+                        <p class="bd-callout">
+                            <code>
+                                &lt;h1>Judul Pertama Saya&lt;/h1&gt;
+                            </code>
+                        </p>
+                    </li>
+                    <li>
+                        <p><mark><code>&lt;p&gt;</mark></code> elemen mendefinisikan sebuah paragraf. Ini memiliki tag awal
+                            <mark><code>&lt;p&gt;</mark></code> dan tag akhir <mark><code>&lt;/p&gt;</mark></code>:
+                        </p>
+                        <p class="bd-callout">
+                            <code>
+                                &lt;p>Paragraf pertama saya.&lt;/p&gt;
+                            </code>
+                        </p>
+                    </li>
+                </ul>
+                <!-- </section> -->
+                <br>
+                <!-- <section id="JanganLewatiTagAkhir"> -->
+                <h3>Jangan abaikan tag akhir</h3>
+                <p>Beberapa elemen HTML akan ditampilkan dengan benar, bahkan jika Anda lupa tag akhir: <br> Contoh :
+                </p>
+
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                <div class="bd-callout">
+                    <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;html&gt;
+                &lt;body&gt;
+                
+                  &lt;p&gt;Ini adalah paragraf
+                  &lt;p&gt;Ini adalah paragraf
+                
+                &lt;/body&gt;
+                &lt;/html&gt;
+                </code></pre>
+
+                    <hr>
+                    <p><a class="btn btn-warning btn-sm" href="codeEditor2.html" target="_blank">Cobalah
+                      sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                        src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    <p class="moreInfo text-break text-danger"><strong>Warning!!!, jangan pernah mengandalkan ini!
+                      Hasil dan kesalahan yang tidak terduga dapat terjadi jika Anda lupa tag akhir!</strong>
+                    </p>
+                </div>
+                <!-- </section> -->
 
             </article>
 

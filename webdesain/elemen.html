@@ -274,10 +274,10 @@
                         <div class="collapse show" id="customize-collapse">
                             <ul class="list-unstyled fw-normal pb-1 small">
                                 <li><a href="elemen.html" class="d-inline-flex align-items-center rounded active" aria-current="page">Elemen</a></li>
-                                <li><a href="#b" class="d-inline-flex align-items-center rounded">&lt;b&gt;</a></li>
-                                <li><a href="#strong" class="d-inline-flex align-items-center rounded">&lt;strong&gt;</a></li>
-                                <li><a href="#i" class="d-inline-flex align-items-center rounded">&lt;i&gt;</a></li>
-                                <li><a href="#em" class="d-inline-flex align-items-center rounded">&lt;em&gt;</a></li>
+                                <li><a href="#br" class="d-inline-flex align-items-center rounded">&lt;br&gt;</a></li>
+                                <li><a href="#p" class="d-inline-flex align-items-center rounded">&lt;p&gt;</a></li>
+                                <li><a href="#b" class="d-inline-flex align-items-center rounded">&lt;b&gt;/&lt;strong&gt;</a></li>
+                                <li><a href="#i" class="d-inline-flex align-items-center rounded">&lt;i&gt;/&lt;em&gt;</a></li>
                                 <li><a href="#mark" class="d-inline-flex align-items-center rounded">&lt;mark&gt;</a></li>
                                 <li><a href="#small" class="d-inline-flex align-items-center rounded">&lt;small&gt;</a></li>
                                 <li><a href="#del" class="d-inline-flex align-items-center rounded">&lt;del&gt;</a></li>
@@ -609,315 +609,310 @@
             </div>
 
             <article>
-                <h2>Apa itu Elemen HTML?</h2>
-                <p>Elemen HTML didefinisikan oleh <strong>tag awal</strong>, <strong>konten</strong> dan <strong>tag akhir</strong>:</p>
-                <p class="bd-callout bd-callout-syntax">
-                    <b>Syntax :</b> <br>
-                    <code>&lt;tagname&gt; konten... &lt;/tagname&gt;</code>
-                </p>
-                <p><strong>Elemen HTML</strong> adalah segalanya mulai dari tag awal hingga tag akhir:</p>
-                <div class="bd-callout">
-                    <code>
-                      &lt;h1&gt;Judul Pertama Saya&lt;/h1&gt; <br>
-                      &lt;p&gt;Paragraf pertama saya.&lt;/p&gt;
-                    </code>
-                </div>
-                <table class="table table-bordered text-center w-100 table-sm">
-                    <thead class="table-light">
-                        <tr>
-                            <th scope="col">Tag Awal</th>
-                            <th scope="col">Konten</th>
-                            <th scope="col">Tag Akhir</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><code>&lt;h1&gt;</code></td>
-                            <td>Judul pertama saya</td>
-                            <td><code>&lt;/h1&gt;</code></td>
-                        </tr>
-                        <tr>
-                            <td><code>&lt;p&gt;</code></td>
-                            <td>Paragraf pertama saya.</td>
-                            <td><code>&lt;/p&gt;</code></td>
-                        </tr>
-                        <tr>
-                            <td><code>&lt;br&gt;</code></td>
-                            <td><code>kosong</code></td>
-                            <td><code>kosong</code></td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p class="moreInfo text-break"><strong>Catatan:</span></strong> Beberapa elemen HTML tidak memiliki konten seperti elemen <mark><code>&lt;br&gt;</code></mark>, elemen ini disebut elemen kosong. Elemen kosong tidak memiliki tag akhir!.</p>
-                <br>
+                <section>
+                    <h2>Apa itu Elemen HTML?</h2>
+                    <p>Elemen HTML didefinisikan oleh <strong>tag awal</strong>, <strong>konten</strong> dan <strong>tag akhir</strong>:</p>
+                    <p class="bd-callout bd-callout-syntax">
+                        <b>Syntax :</b> <br>
+                        <code>&lt;tagname&gt; konten... &lt;/tagname&gt;</code>
+                    </p>
+                    <p><strong>Elemen HTML</strong> adalah segalanya mulai dari tag awal hingga tag akhir:</p>
+                    <div class="bd-callout">
+                        <code>
+                        &lt;h1&gt;Judul Pertama Saya&lt;/h1&gt; <br>
+                        &lt;p&gt;Paragraf pertama saya.&lt;/p&gt;
+                      </code>
+                    </div>
+                    <table class="table table-bordered text-center w-100 table-sm">
+                        <thead class="table-light">
+                            <tr>
+                                <th scope="col">Tag Awal</th>
+                                <th scope="col">Konten</th>
+                                <th scope="col">Tag Akhir</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>&lt;h1&gt;</code></td>
+                                <td>Judul pertama saya</td>
+                                <td><code>&lt;/h1&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;p&gt;</code></td>
+                                <td>Paragraf pertama saya.</td>
+                                <td><code>&lt;/p&gt;</code></td>
+                            </tr>
+                            <tr>
+                                <td><code>&lt;br&gt;</code></td>
+                                <td><code>kosong</code></td>
+                                <td><code>kosong</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="moreInfo text-break"><strong>Catatan:</span></strong> Beberapa elemen HTML tidak memiliki konten seperti elemen <mark><code>&lt;br&gt;</code></mark>, elemen ini disebut elemen kosong. Elemen kosong tidak memiliki tag akhir!.</p>
+                </section>
 
-                <!-- <section id="elemen-html-Kosong"> -->
-                <h2>Elemen Kosong</h2>
-                <p>Elemen tanpa konten disebut elemen kosong. <mark><code>&lt;br&gt;</mark></code> tag mendefinisikan satu baris, dan merupakan elemen kosong tanpa tag penutup. <br> Contoh : </p>
-
-                <img class="top-example" src="files/img/browser-head.png" alt="">
-                <div class="bd-example">
-                    <p class="mb-0">Ini adalah <br> paragraf dengan jeda baris.</p>
-                </div>
-                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                <div class="bd-callout">
-                    <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;p&gt;Ini adalah &lt;br&gt; paragraf dengan jeda baris.&lt;/p&gt;</code></pre>
-                    <hr>
-                    <p><a class="btn btn-warning btn-sm" href="codeEditor2.html" target="_blank">Cobalah
-                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
-                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-                </div>
-                <div class="moreInfo"><mark><code>&lt;br&gt;</mark></code> adalah Break atau bisa disebut Line Break, untuk membuat Baris Baru.</div>
-                <!-- </section> -->
-                <br>
-                <!-- <section id="HTMLTidakPekaHurufBesar-kecil"> -->
-                <h3>HTML tidak sensitif huruf Besar/Kecil</h3>
-                <p><mark><code>&lt;P&gt;</mark></code> artinya sama dengan <mark><code>&lt;p&gt;</mark></code>. Standar HTML tidak memerlukan tag huruf kecil, kami <strong>merekomendasikan</strong> huruf kecil dalam HTML, dan
-                    <strong>menuntut</strong> huruf kecil untuk jenis dokumen yang lebih ketat seperti XHTML.
-                </p>
-                <p class="moreInfo text-break">Kami selalu menggunakan nama tag <strong>huruf kecil</strong>.</p>
-                <!-- </section> -->
-                <br>
                 <!-- Elemen Pemformatan HTML -->
-                <!-- <section> -->
-                <h2>Elemen Pemformatan HTML</h2>
-                <p>Elemen pemformatan dirancang untuk menampilkan jenis teks khusus:</p>
+                <section>
+                    <h2>Elemen Pemformatan HTML</h2>
+                    <p>Elemen pemformatan dirancang untuk menampilkan jenis teks khusus:</p>
 
-                <table class="table table-bordered table-hover w-100 table-sm">
-                    <thead class="table-light text-center">
-                        <tr>
-                            <th scope="col">Elemen</th>
-                            <th scope="col">Keterangan</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><mark><code>&lt;b&gt;</mark></code>
-                            </td>
-                            <td>Teks tebal</td>
-                        </tr>
-                        <tr>
-                            <td><mark><code>&lt;strong&gt;</mark></code>
-                            </td>
-                            <td>Teks penting</td>
-                        </tr>
-                        <tr>
-                            <td><mark><code>&lt;i&gt;</mark></code>
-                            </td>
-                            <td>Teks miring</td>
-                        </tr>
-                        <tr>
-                            <td><mark><code>&lt;em&gt;</mark></code>
-                            </td>
-                            <td>Teks yang ditekankan</td>
-                        </tr>
-                        <tr>
-                            <td><mark><code>&lt;mark&gt;</mark></code>
-                            </td>
-                            <td>Teks yang ditandai</td>
-                        </tr>
-                        <tr>
-                            <td><mark><code>&lt;small&gt;</mark></code>
-                            </td>
-                            <td>Teks yang lebih kecil</td>
-                        </tr>
-                        <tr>
-                            <td><mark><code>&lt;del&gt;</mark></code>
-                            </td>
-                            <td>Teks yang dihapus</td>
-                        </tr>
-                        <tr>
-                            <td><mark><code>&lt;ins&gt;</mark></code>
-                            </td>
-                            <td>Teks yang disisipkan</td>
-                        </tr>
-                        <tr>
-                            <td><mark><code>&lt;sub&gt;</mark></code>
-                            </td>
-                            <td>Teks subskrip</td>
-                        </tr>
-                        <tr>
-                            <td><mark><code>&lt;sup&gt;</mark></code>
-                            </td>
-                            <td>Teks superskrip</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <!-- </section> -->
-                <br>
+                    <table class="table table-bordered table-hover w-100 table-sm">
+                        <thead class="table-light text-center">
+                            <tr>
+                                <th scope="col">Elemen</th>
+                                <th scope="col">Keterangan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><mark><code>&lt;b&gt;</mark></code>
+                                </td>
+                                <td>Teks tebal</td>
+                            </tr>
+                            <tr>
+                                <td><mark><code>&lt;strong&gt;</mark></code>
+                                </td>
+                                <td>Teks penting</td>
+                            </tr>
+                            <tr>
+                                <td><mark><code>&lt;i&gt;</mark></code>
+                                </td>
+                                <td>Teks miring</td>
+                            </tr>
+                            <tr>
+                                <td><mark><code>&lt;em&gt;</mark></code>
+                                </td>
+                                <td>Teks yang ditekankan</td>
+                            </tr>
+                            <tr>
+                                <td><mark><code>&lt;mark&gt;</mark></code>
+                                </td>
+                                <td>Teks yang ditandai</td>
+                            </tr>
+                            <tr>
+                                <td><mark><code>&lt;small&gt;</mark></code>
+                                </td>
+                                <td>Teks yang lebih kecil</td>
+                            </tr>
+                            <tr>
+                                <td><mark><code>&lt;del&gt;</mark></code>
+                                </td>
+                                <td>Teks yang dihapus</td>
+                            </tr>
+                            <tr>
+                                <td><mark><code>&lt;ins&gt;</mark></code>
+                                </td>
+                                <td>Teks yang disisipkan</td>
+                            </tr>
+                            <tr>
+                                <td><mark><code>&lt;sub&gt;</mark></code>
+                                </td>
+                                <td>Teks subskrip</td>
+                            </tr>
+                            <tr>
+                                <td><mark><code>&lt;sup&gt;</mark></code>
+                                </td>
+                                <td>Teks superskrip</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
 
-                <!-- <section> -->
-                <h3><mark><code>&lt;b&gt;</mark></code> & <mark><code>&lt;strong&gt;</mark></code> elemen</h3>
-                <p><mark><code>&lt;b&gt;</mark></code> Elemen HTML mendefinisikan teks tebal, tanpa kepentingan ekstra. <br> Contoh :</p>
-                <img class="top-example" src="files/img/browser-head.png" alt="">
-                <div class="bd-example">
-                    <b>Ini teks tebal</b>
-                </div>
-                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                <div class="bd-callout">
-                    <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;b&gt;Ini teks tebal&lt;/b&gt;</code></pre>
-                    <hr>
-                    <p><a class="btn btn-warning btn-sm" href="codeEditor2.html" target="_blank">Cobalah
+                <h3>Penjelasannya :</h3>
+                <section id="br">
+                    <h3><code>&lt;br&gt;</code> elemen</h3>
+                    <p>Elemen tanpa konten disebut elemen kosong. <mark><code>&lt;br&gt;</mark></code> tag mendefinisikan satu baris, dan merupakan elemen kosong tanpa tag penutup. <br> Contoh : </p>
+
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <p class="mb-0">Ini adalah <br> paragraf dengan jeda baris.</p>
+                    </div>
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;p&gt;Ini adalah &lt;br&gt; paragraf dengan jeda baris.&lt;/p&gt;</code></pre>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="codeEditor2.html" target="_blank">Cobalah
                         sendiri <img draggable="false" role="img" class="emoji" alt="↗"
                           src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-                </div>
-                <p><mark><code>&lt;strong&gt;</mark></code> Elemen HTML mendefinisikan teks dengan sangat penting. Konten di dalamnya biasanya ditampilkan dalam huruf tebal. <br> Contoh :</p>
-                <img class="top-example" src="files/img/browser-head.png" alt="">
-                <div class="bd-example">
-                    <strong>Teks ini penting!</strong>
-                </div>
-                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                <div class="bd-callout">
-                    <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;strong&gt;Teks ini penting!&lt;/strong&gt;</code></pre>
-                    <hr>
-                    <p><a class="btn btn-warning btn-sm" href="codeEditor2.html" target="_blank">Cobalah
-                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
-                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-                </div>
-                <!-- </section> -->
-                <br>
+                    </div>
+                    <div class="moreInfo"><mark><code>&lt;br&gt;</code></mark> adalah Break atau bisa disebut Line Break, untuk membuat Baris Baru.</div>
+                </section>
 
-                <!-- <section> -->
-                <h3><mark><code>&lt;i&gt;</mark></code> & <mark><code>&lt;em&gt;</mark></code> elemen</h3>
-                <p><mark><code>&lt;i&gt;</mark></code> Elemen HTML mendefinisikan bagian teks alternatif. Konten di dalamnya biasanya ditampilkan dalam huruf miring.</p>
-                <p class="moreInfo"><strong>Tip:</strong> <mark><code>&lt;i&gt;</mark></code> tag sering digunakan untuk menunjukkan istilah teknis, sebuah frase dari bahasa lain, pikiran, nama kapal, dll.</p>
-                <p>Contoh :</p>
-                <img class="top-example" src="files/img/browser-head.png" alt="">
-                <div class="bd-example">
-                    <i>Ini teks miring</i>
-                </div>
-                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                <div class="bd-callout">
-                    <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;i&gt;Ini teks miring&lt;/i&gt;</code></pre>
-                    <hr>
-                    <p><a class="btn btn-warning btn-sm" href="codeEditor2.html" target="_blank">Cobalah
-                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
-                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-                </div>
-                <p><mark><code>&lt;em&gt;</mark></code> Elemen HTML mendefinisikan teks yang ditekankan. Konten di dalamnya biasanya ditampilkan dalam huruf miring.</p>
-                <p class="moreInfo"><strong>Tip:</strong> Pembaca layar akan mengucapkan kata-kata
-                    <mark><code>&lt;em&gt;</mark></code> dengan penekanan, menggunakan tekanan verbal.</p>
-                <p>Contoh :</p>
-                <img class="top-example" src="files/img/browser-head.png" alt="">
-                <div class="bd-example">
-                    <em>Ini teks emphasized</em>
-                </div>
-                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                <div class="bd-callout">
-                    <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;em&gt;Ini teks emphasized&lt;/em&gt;</code></pre>
-                    <hr>
-                    <p><a class="btn btn-warning btn-sm" href="codeEditor2.html" target="_blank">Cobalah
-                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
-                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-                </div>
-                <!-- </section> -->
-                <br>
+                <section id="p">
+                    <h3><code>&lt;p&gt;</code> elemen</h3>
+                    <h4>HTML tidak sensitif huruf Besar/Kecil</h4>
+                    <p><mark><code>&lt;P&gt;</mark></code> artinya sama dengan <mark><code>&lt;p&gt;</mark></code>. Standar HTML tidak memerlukan tag huruf kecil, kami <strong>merekomendasikan</strong> huruf kecil dalam HTML, dan
+                        <strong>menuntut</strong> huruf kecil untuk jenis dokumen yang lebih ketat seperti XHTML.
+                    </p>
+                    <p class="moreInfo text-break">Kami selalu menggunakan nama tag <strong>huruf kecil</strong>.</p>
+                </section>
 
-                <!-- <section> -->
-                <h3><mark><code>&lt;small&gt;</mark></code> elemen</h3>
-                <p><mark><code>&lt;small&gt;</mark></code> Elemen HTML mendefinisikan teks yang lebih kecil. <br> Contoh :</p>
-                <img class="top-example" src="files/img/browser-head.png" alt="">
-                <div class="bd-example">
-                    <small>Ini adalah beberapa teks yang lebih kecil.</small>
-                </div>
-                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                <div class="bd-callout">
-                    <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;small&gt;Ini adalah beberapa teks yang lebih kecil.&lt;/small&gt;</code></pre>
-                    <hr>
-                    <p><a class="btn btn-warning btn-sm" href="codeEditor2.html" target="_blank">Cobalah
+                <section id="b">
+                    <h3><code>&lt;b&gt;</code> & <code>&lt;strong&gt;</code> elemen</h3>
+                    <p><mark><code>&lt;b&gt;</mark></code> Elemen HTML mendefinisikan teks tebal, tanpa kepentingan ekstra. <br> Contoh :</p>
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <b>Ini teks tebal</b>
+                    </div>
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;b&gt;Ini teks tebal&lt;/b&gt;</code></pre>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="codeEditor2.html" target="_blank">Cobalah
                         sendiri <img draggable="false" role="img" class="emoji" alt="↗"
                           src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-                </div>
-                <!-- </section> -->
-                <br>
+                    </div>
+                    <p><mark><code>&lt;strong&gt;</mark></code> Elemen HTML mendefinisikan teks dengan sangat penting. Konten di dalamnya biasanya ditampilkan dalam huruf tebal. <br> Contoh :</p>
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <strong>Teks ini penting!</strong>
+                    </div>
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;strong&gt;Teks ini penting!&lt;/strong&gt;</code></pre>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="codeEditor2.html" target="_blank">Cobalah
+                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
+                </section>
 
-                <!-- <section> -->
-                <h3><mark><code>&lt;mark&gt;</mark></code> elemen</h3>
-                <p><mark><code>&lt;mark&gt;</mark></code> Elemen HTML mendefinisikan teks yang harus ditandai atau disorot. <br> Contoh :</p>
-                <img class="top-example" src="files/img/browser-head.png" alt="">
-                <div class="bd-example">
-                    <p class="mb-0">Jangan lupa beli <mark>susu</mark> hari ini.</p>
-                </div>
-                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                <div class="bd-callout">
-                    <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;p&gt;Jangan lupa beli &lt;mark&gt;susu&lt;/mark&gt; hari ini.&lt;/p&gt;</code></pre>
-                    <hr>
-                    <p><a class="btn btn-warning btn-sm" href="codeEditor2.html">Cobalah sendiri <img draggable="false"
+                <section id="i">
+                    <h3><code>&lt;i&gt;</code> & <code>&lt;em&gt;</code> elemen</h3>
+                    <p><mark><code>&lt;i&gt;</mark></code> Elemen HTML mendefinisikan bagian teks alternatif. Konten di dalamnya biasanya ditampilkan dalam huruf miring.</p>
+                    <p class="moreInfo"><strong>Tip:</strong> <mark><code>&lt;i&gt;</mark></code> tag sering digunakan untuk menunjukkan istilah teknis, sebuah frase dari bahasa lain, pikiran, nama kapal, dll.</p>
+                    <p>Contoh :</p>
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <i>Ini teks miring</i>
+                    </div>
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;i&gt;Ini teks miring&lt;/i&gt;</code></pre>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="codeEditor2.html" target="_blank">Cobalah
+                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
+                    <p><mark><code>&lt;em&gt;</mark></code> Elemen HTML mendefinisikan teks yang ditekankan. Konten di dalamnya biasanya ditampilkan dalam huruf miring.</p>
+                    <p class="moreInfo"><strong>Tip:</strong> Pembaca layar akan mengucapkan kata-kata
+                        <mark><code>&lt;em&gt;</mark></code> dengan penekanan, menggunakan tekanan verbal.</p>
+                    <p>Contoh :</p>
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <em>Ini teks emphasized</em>
+                    </div>
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;em&gt;Ini teks emphasized&lt;/em&gt;</code></pre>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="codeEditor2.html" target="_blank">Cobalah
+                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
+                </section>
+
+                <section id="small">
+                    <h3><code>&lt;small&gt;</code> elemen</h3>
+                    <p><mark><code>&lt;small&gt;</mark></code> Elemen HTML mendefinisikan teks yang lebih kecil. <br> Contoh :</p>
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <small>Ini adalah beberapa teks yang lebih kecil.</small>
+                    </div>
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;small&gt;Ini adalah beberapa teks yang lebih kecil.&lt;/small&gt;</code></pre>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="codeEditor2.html" target="_blank">Cobalah
+                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
+                </section>
+
+                <section id="mark">
+                    <h3><code>&lt;mark&gt;</code> elemen</h3>
+                    <p><mark><code>&lt;mark&gt;</mark></code> Elemen HTML mendefinisikan teks yang harus ditandai atau disorot. <br> Contoh :</p>
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <p class="mb-0">Jangan lupa beli <mark>susu</mark> hari ini.</p>
+                    </div>
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;p&gt;Jangan lupa beli &lt;mark&gt;susu&lt;/mark&gt; hari ini.&lt;/p&gt;</code></pre>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="codeEditor2.html">Cobalah sendiri <img draggable="false"
                           role="img" class="emoji" alt="↗" src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-                </div>
-                <!-- </section> -->
-                <br>
+                    </div>
+                </section>
 
-                <!-- <section> -->
-                <h3><mark><code>&lt;del&gt;</mark></code> elemen</h3>
-                <p><mark><code>&lt;del&gt;</mark></code> Elemen HTML mendefinisikan teks yang telah dihapus dari dokumen. Peramban biasanya akan menyerang garis melalui teks yang dihapus. <br> Contoh :</p>
-                <img class="top-example" src="files/img/browser-head.png" alt="">
-                <div class="bd-example">
-                    <p class="mb-0">Warna favorit saya adalah <del>biru</del> merah.</p>
-                </div>
-                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                <div class="bd-callout">
-                    <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;p&gt;Warna favorit saya adalah &lt;del&gt;biru&lt;/del&gt; merah.&lt;/p&gt;</code></pre>
-                    <hr>
-                    <p><a class="btn btn-warning btn-sm" href="codeEditor2.html" target="_blank">Cobalah
+                <section id="del">
+                    <h3><code>&lt;del&gt;</code> elemen</h3>
+                    <p><mark><code>&lt;del&gt;</mark></code> Elemen HTML mendefinisikan teks yang telah dihapus dari dokumen. Peramban biasanya akan menyerang garis melalui teks yang dihapus. <br> Contoh :</p>
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <p class="mb-0">Warna favorit saya adalah <del>biru</del> merah.</p>
+                    </div>
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;p&gt;Warna favorit saya adalah &lt;del&gt;biru&lt;/del&gt; merah.&lt;/p&gt;</code></pre>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="codeEditor2.html" target="_blank">Cobalah
                         sendiri <img draggable="false" role="img" class="emoji" alt="↗"
                           src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-                </div>
-                <!-- </section> -->
-                <br>
+                    </div>
+                </section>
 
-                <!-- <section> -->
-                <h3><mark><code>&lt;ins&gt;</mark></code> elemen</h3>
-                <p><mark><code>&lt;ins&gt;</mark></code> Elemen HTML mendefinisikan teks yang telah dimasukkan ke dalam dokumen. Browser biasanya akan menggarisbawahi teks yang disisipkan. <br> Contoh :</p>
-                <img class="top-example" src="files/img/browser-head.png" alt="">
-                <div class="bd-example">
-                    <p class="mb-0">Warna favorit saya adalah <del>biru</del> <ins>merah</ins>.</p>
-                </div>
-                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                <div class="bd-callout">
-                    <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;p&gt;Warna favorit saya adalah &lt;del&gt;biru&lt;/del&gt; &lt;ins&gt;merah&lt;/ins&gt;.&lt;/p&gt;</code></pre>
-                    <hr>
-                    <p><a class="btn btn-warning btn-sm" href="codeEditor2.html">Cobalah sendiri <img draggable="false"
+                <section id="ins">
+                    <h3><code>&lt;ins&gt;</code> elemen</h3>
+                    <p><mark><code>&lt;ins&gt;</mark></code> Elemen HTML mendefinisikan teks yang telah dimasukkan ke dalam dokumen. Browser biasanya akan menggarisbawahi teks yang disisipkan. <br> Contoh :</p>
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <p class="mb-0">Warna favorit saya adalah <del>biru</del> <ins>merah</ins>.</p>
+                    </div>
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;p&gt;Warna favorit saya adalah &lt;del&gt;biru&lt;/del&gt; &lt;ins&gt;merah&lt;/ins&gt;.&lt;/p&gt;</code></pre>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="codeEditor2.html">Cobalah sendiri <img draggable="false"
                           role="img" class="emoji" alt="↗" src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-                </div>
-                <!-- </section> -->
-                <br>
+                    </div>
+                </section>
 
-                <!-- <section> -->
-                <h3><mark><code>&lt;sub&gt;</mark></code> elemen</h3>
-                <p><mark><code>&lt;sub&gt;</mark></code> Elemen HTML mendefinisikan teks <strong>subscript</strong>. Teks subskrip muncul setengah karakter di bawah garis normal, dan terkadang ditampilkan dalam font yang lebih kecil. Teks subscript dapat
-                    digunakan untuk rumus kimia, seperti <strong>H<sub>2</sub>O</strong>. <br> Contoh :</p>
-                <img class="top-example" src="files/img/browser-head.png" alt="">
-                <div class="bd-example">
-                    <p class="mb-0">Ini adalah <sub>subscripted</sub> text.</p>
-                </div>
-                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                <div class="bd-callout">
-                    <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;p&gt;Ini adalah &lt;sub&gt;subscripted&lt;/sub&gt; text.&lt;/p&gt;</code></pre>
-                    <hr>
-                    <p><a class="btn btn-warning btn-sm" href="codeEditor2.html" target="_blank">Cobalah
+                <section id="sub">
+                    <h3><code>&lt;sub&gt;</code> elemen</h3>
+                    <p><mark><code>&lt;sub&gt;</mark></code> Elemen HTML mendefinisikan teks <strong>subscript</strong>. Teks subskrip muncul setengah karakter di bawah garis normal, dan terkadang ditampilkan dalam font yang lebih kecil. Teks subscript dapat
+                        digunakan untuk rumus kimia, seperti <strong>H<sub>2</sub>O</strong>. <br> Contoh :</p>
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <p class="mb-0">Ini adalah <sub>subscripted</sub> text.</p>
+                    </div>
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;p&gt;Ini adalah &lt;sub&gt;subscripted&lt;/sub&gt; text.&lt;/p&gt;</code></pre>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="codeEditor2.html" target="_blank">Cobalah
                         sendiri <img draggable="false" role="img" class="emoji" alt="↗"
                           src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-                </div>
-                <!-- </section> -->
-                <br>
+                    </div>
+                </section>
 
-                <!-- <section> -->
-                <h3><mark><code>&lt;sup&gt;</mark></code> elemen</h3>
-                <p><mark><code>&lt;sup&gt;</mark></code> Elemen HTML mendefinisikan teks <strong>superscript</strong>. Teks superskrip muncul setengah karakter di atas garis normal, dan terkadang ditampilkan dalam font yang lebih kecil. Teks superscript
-                    dapat digunakan untuk catatan kaki, seperti <code>WWW<sup>[1]</sup></code>. <br> Contoh :</p>
-                <img class="top-example" src="files/img/browser-head.png" alt="">
-                <div class="bd-example">
-                    <p class="mb-0">Ini adalah <sup>superscripted</sup> text.</p>
-                </div>
-                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                <div class="bd-callout">
-                    <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;p&gt;Ini adalah &lt;sup&gt;superscripted&lt;/sup&gt; text.&lt;/p&gt;</code></pre>
-                    <hr>
-                    <p><a class="btn btn-warning btn-sm" href="codeEditor2.html">Cobalah sendiri <img draggable="false"
+                <section id="sup">
+                    <h3><code>&lt;sup&gt;</code> elemen</h3>
+                    <p><mark><code>&lt;sup&gt;</mark></code> Elemen HTML mendefinisikan teks <strong>superscript</strong>. Teks superskrip muncul setengah karakter di atas garis normal, dan terkadang ditampilkan dalam font yang lebih kecil. Teks superscript
+                        dapat digunakan untuk catatan kaki, seperti <code>WWW<sup>[1]</sup></code>. <br> Contoh :</p>
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <p class="mb-0">Ini adalah <sup>superscripted</sup> text.</p>
+                    </div>
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;p&gt;Ini adalah &lt;sup&gt;superscripted&lt;/sup&gt; text.&lt;/p&gt;</code></pre>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="codeEditor2.html">Cobalah sendiri <img draggable="false"
                           role="img" class="emoji" alt="↗" src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-                </div>
-                <!-- </section> -->
+                    </div>
+                </section>
 
             </article>
 

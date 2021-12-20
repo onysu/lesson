@@ -1,0 +1,1286 @@
+<!doctype html>
+<html lang="id-ID">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pelajari tentang HTML, CSS dan JavaScript.">
+    <meta name="author" content="Ony">
+    <meta name="generator" content="">
+
+    <meta name="docsearch:language" content="id">
+    <meta name="docsearch:version" content="5.1">
+
+    <title>WEB-DESAIN v1.2</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="../../assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/css/style.css">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="../../assets/img/aku-bulat.ico" type="image/x-icon">
+    <!-- <link rel="apple-touch-icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+    <link rel="icon" href="https://getbootstrap.com/docs/5.1/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#7952b3"> -->
+
+    <!-- Twitter -->
+    <!-- <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@getbootstrap">
+    <meta name="twitter:creator" content="@getbootstrap">
+    <meta name="twitter:title" content="JavaScript">
+    <meta name="twitter:description" content="Hidupkan Bootstrap dengan plugin JavaScript opsional kami. Pelajari tentang setiap plugin, data dan opsi API terprogram kami, dan banyak lagi.">
+    <meta name="twitter:image" content="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-social.png"> -->
+
+    <!-- Facebook -->
+    <!-- <meta property="og:url" content="https://getbootstrap.com/docs/5.1/getting-started/javascript/">
+    <meta property="og:title" content="JavaScript">
+    <meta property="og:description" content="Hidupkan Bootstrap dengan plugin JavaScript opsional kami. Pelajari tentang setiap plugin, data dan opsi API terprogram kami, dan banyak lagi.">
+    <meta property="og:type" content="article">
+    <meta property="og:image" content="https://getbootstrap.com/docs/5.1/assets/brand/bootstrap-social.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1000">
+    <meta property="og:image:height" content="500"> -->
+
+    <!-- <script>
+        window.ga = window.ga || function() {
+            (ga.q = ga.q || []).push(arguments)
+        };
+        ga.l = +new Date;
+        ga('create', 'UA-146052-10', 'getbootstrap.com');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script> -->
+
+
+</head>
+
+<body>
+    <div class="skippy visually-hidden-focusable overflow-hidden">
+        <div class="container-xl">
+            <a class="d-inline-flex p-2 m-1" href="#content">Lewati ke konten utama</a>
+            <a class="d-none d-md-inline-flex p-2 m-1" href="#bd-docs-nav">Lewati ke navigasi dokumen</a>
+        </div>
+    </div>
+
+    <header class="navbar navbar-expand-md navbar-dark bd-navbar">
+        <!-- nav pertama -->
+        <nav class="container flex-wrap flex-md-nowrap" aria-label="Main navigation">
+            <a class="navbar-brand p-0 me-4" href="webdesain.html" aria-label="Bootstrap">
+                <img src="/assets/img/aku-bulat-40x40.png" alt="">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg></button>
+
+            <div class="collapse navbar-collapse" id="bdNavbar">
+                <ul class="navbar-nav flex-wrap bd-navbar-nav pt-2 py-md-0">
+                    <li class="nav-item col-6 col-md-auto">
+                        <a class="nav-link p-2 active" aria-current="true" href="webdesain.html">Home</a>
+                    </li>
+                    <li class="nav-item col-6 col-md-auto dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Office</a>
+                        <ul class="dropdown-menu  mx-0 shadow" aria-labelledby="navbarDropdown" style="width: 220px;">
+                            <li>
+                                <a class="dropdown-item d-flex gap-2 align-items-center" href="../word/index.html">
+                                    <img src="/assets/img/icons/word.png" width="32" /> Microsoft Word</a>
+                            </li>
+                            <hr class="dropdown-divider">
+                            <li>
+                                <a class="dropdown-item d-flex gap-2 align-items-center" href="../excel/index.html">
+                                    <img src="/assets/img/icons/excel.png" width="32" /> Microsoft Excel</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex gap-2 align-items-center" href="../powerpoint/index.html">
+                                    <img src="/assets/img/icons/ppt.png" width="32" /> Power Point</a>
+                            </li>
+                            <hr class="dropdown-divider">
+                            <li>
+                                <a class="dropdown-item d-flex gap-2 align-items-center" href="../access/index.html">
+                                    <img src="/assets/img/icons/access.png" width="32" /> Microsoft Access</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item col-6 col-md-auto dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Desain</a>
+                        <ul class="dropdown-menu  mx-0 shadow" aria-labelledby="navbarDropdown" style="width: 220px;">
+                            <li>
+                                <a class="dropdown-item" href="../photoshop/index.html">
+                                    <img src="/assets/img/icons/ps-logo.png" width="32" /> Photoshop
+                                </a>
+                            </li>
+                            <hr class="dropdown-divider">
+                            <li>
+                                <a class="dropdown-item" href="../coreldraw/index.html">
+                                    <img src="/assets/img/icons/coreldraw_32x32.png" width="32" /> CorelDRAW
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item col-6 col-md-auto">
+                        <a class="nav-link" href="../webdesain/index.html">Web-Desain</a>
+                    </li>
+                    <li class="nav-item col-6 col-md-auto">
+                        <a class="nav-link" href="../pemrograman/index.html">Pemrograman</a>
+                    </li>
+                </ul>
+                <hr class="d-md-none text-white-50">
+                <ul class="navbar-nav flex-wrap ms-md-auto text-light fw-light">
+                    <script>
+                        var days = new Array(8);
+                        days[1] = "Minggu";
+                        days[2] = "Senin";
+                        days[3] = "Selasa";
+                        days[4] = "Rabu";
+                        days[5] = "Kamis";
+                        days[6] = "Jumat";
+                        days[7] = "Sabtu";
+                        var months = new Array(13);
+                        months[1] = "Januari";
+                        months[2] = "Februari";
+                        months[3] = "Maret";
+                        months[4] = "April";
+                        months[5] = "Mei";
+                        months[6] = "Juni";
+                        months[7] = "Juli";
+                        months[8] = "Augustus";
+                        months[9] = "September";
+                        months[10] = "Oktober";
+                        months[11] = "November";
+                        months[12] = "Desember";
+                        var dateObj = new Date()
+                        var wday = days[dateObj.getDay() + 1]
+                        var lmonth = months[dateObj.getMonth() + 1]
+                        var date = dateObj.getDate()
+                        var year = dateObj.getFullYear()
+                        document.write(wday + ", " + date + " " + lmonth + " " + year)
+                    </script>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <nav class="bd-subnavbar py-2" aria-label="Secondary navigation">
+        <div class="container-xxl d-flex align-items-md-center">
+            <form class="bd-search position-relative me-auto">
+                <input type="search" class="form-control" id="search-input" placeholder="Search docs..." aria-label="Search docs for..." autocomplete="off" data-bd-docs-version="5.1">
+            </form>
+            <div class="dropdown ms-3">
+                <button class="btn btn-bd-light dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+            <span class="d-none d-lg-inline">O-Learning</span> v5.1
+          </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-versions">
+                    <li><a class="dropdown-item current" aria-current="true" href="/docs/5.1/">Latest (5.1.x)</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="https://getbootstrap.com/docs/4.6/">v4.6.x</a></li>
+                    <li><a class="dropdown-item" href="https://getbootstrap.com/docs/3.4/">v3.4.1</a></li>
+                    <li><a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="/docs/versions/">All versions</a></li>
+                </ul>
+            </div>
+            <button class="btn bd-sidebar-toggle d-md-none py-0 px-1 ms-3 order-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle docs navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-expand" fill="currentColor"
+            viewBox="0 0 16 16">
+            <title>Expand</title>
+            <path fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-collapse" fill="currentColor"
+            viewBox="0 0 16 16">
+            <title>Collapse</title>
+            <path fill-rule="evenodd"
+              d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zm7-8a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0zm-.5 11.707l-1.146 1.147a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 11.707V15.5a.5.5 0 0 1-1 0v-3.793z" />
+          </svg>
+        </button>
+        </div>
+    </nav>
+
+    <div class="container-xxl my-md-4 bd-layout">
+        <aside class="bd-sidebar">
+            <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation">
+                <ul class="list-unstyled mb-0 py-3 pt-md-1">
+
+                    <!-- dasar -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#dasar-collapse" aria-expanded="true" aria-current="true">Dasar</button>
+                        <div class="collapse show" id="dasar-collapse">
+                            <!-- tutup -->
+                            <!-- <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dasar-collapse" aria-expanded="false" aria-current="false">Dasar</button>
+                        <div class="collapse" id="dasar-collapse"> -->
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded active" aria-current="page" target="_blank" href="dasar/dokumen.html">dokumen</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="dasar/heading.html">heading</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="dasar/paragraf.html">paragraf</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="dasar/link.html">link</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="dasar/gambar.html">gambar</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="dasar/tombol.html">tombol</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="dasar/list.html">list</a></li>
+                            </ul>
+
+                        </div>
+                    </li>
+
+                    <!-- atribut -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#atribut-collapse" aria-expanded="true" aria-current="true">Atribut</button>
+                <div class="collapse show" id="atribut-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#atribut-collapse" aria-expanded="false" aria-current="false">Atribut</button>
+                        <div class="collapse" id="atribut-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="atribut/heading.html">Heading</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="atribut/href.html">href</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="atribut/lebar-tinggi.html">Lebar & Tinggi</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="atribut/alt.html">alt</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="atribut/tanpa-tanda-kutip.html">Tanpa tanda kutip</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="atribut/tanpa-tanda-kutip-tidak-berfungsi.html">Tanpa tanda kutip tidak berfungsi</a></li>
+                            </ul>
+
+                        </div>
+                    </li>
+
+                    <!-- heading -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#heading-collapse" aria-expanded="true" aria-current="true">Heading</button>
+                    <div class="collapse show" id="heading-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#heading-collapse" aria-expanded="false" aria-current="false">Heading</button>
+                        <div class="collapse" id="heading-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="heading/heading.html">Heading / Judul</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="heading/headings_hr.html">Pengaturan Horizontal</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="heading/head.html">Head</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- paragraf -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#paragraf-collapse" aria-expanded="true" aria-current="true">Paragraf</button>
+                        <div class="collapse show" id="paragraf-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#paragraf-collapse" aria-expanded="false" aria-current="false">Paragraf</button>
+                        <div class="collapse" id="paragraf-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="paragraf/paragraf.html">paragraf</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="paragraf/paragraf-html-lainnya.html">Paragraf HTML lainnya</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="paragraf/penggunaan-jeda-baris-dalam-html.html">Penggunaan jeda baris dalam HTML</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="paragraf/masalah-puisi.html">Masalah puisi (beberapa masalah dengan format HTML)</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="paragraf/pre.html">Cara
+                      mengontrol jeda baris dan spasi dengan &lt;pre&gt; tag</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- style -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#style-collapse" aria-expanded="true" aria-current="true">Mulai</button>
+                            <div class="collapse show" id="style-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#style-collapse" aria-expanded="false" aria-current="false">Style</button>
+                        <div class="collapse" id="style-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="style/style.html">style</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="style/warna-latar-belakang.html">warna latar belakang</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="style/warna-teks.html">warna teks</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="style/font-teks.html">font teks</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="style/ukuran-teks.html">ukuran teks</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="style/perataan-teks.html">perataan teks</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- pemformatan-teks -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#pemformatanteks-collapse" aria-expanded="true" aria-current="true">Pemformatan Teks</button>
+                                <div class="collapse show" id="pemformatanteks-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#pemformatanteks-collapse" aria-expanded="false" aria-current="false">Pemformatan
+                Teks</button>
+                        <div class="collapse" id="pemformatanteks-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="pemformatan-teks/b.html">Pemformatan tebal menggunakan &lt;b&gt; elemen</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="pemformatan-teks/strong.html">Pemformatan kuat menggunakan &lt;strong&gt; elemen</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="pemformatan-teks/i.html">Pemformatan miring menggunakan &lt;i&gt; elemen</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="pemformatan-teks/em.html">Pemformatan yang ditekankan menggunakan &lt;em&gt; elemen</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="pemformatan-teks/small.html">Pemformatan kecil menggunakan &lt;small&gt; elemen</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="pemformatan-teks/mark.html">Pemformatan yang ditandai menggunakan &lt;mark&gt; elemen</a>
+                                </li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="pemformatan-teks/del.html">Ditandai sebagai dihapus menggunakan &lt;del&gt; elemen</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="pemformatan-teks/ins.html">Ditandai disisipkan menggunakan &lt;ins&gt; elemen</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="pemformatan-teks/del-ins.html">Ditandai dihapus dan disisipkan menggunakan &lt;del&gt; dan
+                      &lt;ins&gt;</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="pemformatan-teks/sub.html">Pemformatan subskrip menggunakan &lt;sub&gt; elemen</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="pemformatan-teks/sup.html">Pemformatan superskrip menggunakan &lt;sup&gt; elemen</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- kutipan -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#kutipan-collapse" aria-expanded="true" aria-current="true">Kutipan dan Kutipan</button>
+                                <div class="collapse show" id="kutipan-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#kutipan-collapse" aria-expanded="false" aria-current="false">Kutipan dan
+                Kutipan</button>
+                        <div class="collapse" id="kutipan-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="kutipan/q.html">Memformat kutipan singkat dengan &lt;q&gt; elemen.</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="kutipan/blockquote.html">Memformat bagian yang dikutip dengan &lt;blockquote&gt; elemen.</a>
+                                </li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="kutipan/address.html">Memformat informasi penulis/pemilik dokumen dengan &lt;address&gt;
+                      elemen</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="kutipan/abbr.html">Memformat singkatan dan akronim dengan &lt;abbr&gt; elemen</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="kutipan/cite.html">Memformat judul karya dengan &lt;cite&gt; elemen</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="kutipan/bdo.html">Memformat arah teks dengan &lt;bdo&gt; elemen</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- komentar -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#komentar-collapse" aria-expanded="true" aria-current="true">Komentar</button>
+                                    <div class="collapse show" id="komentar-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#komentar-collapse" aria-expanded="false" aria-current="false">Komentar</button>
+                        <div class="collapse" id="komentar-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="komentar/komentar-tersembunyi.html">Komentar tersembunyi</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="komentar/komentar-bersyarat.html">Komentar bersyarat</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="komentar/komentar-untuk-debugging.html">Komentar untuk debugging</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- css -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#css-collapse" aria-expanded="true" aria-current="true">CSS</button>
+                                    <div class="collapse show" id="css-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#css-collapse" aria-expanded="false" aria-current="false">CSS</button>
+                        <div class="collapse" id="css-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="css/css-sebaris.html">dengan CSS sebaris</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="css/css-internal.html">dengan CSS internal</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="css/css-eksternal.html">dengan CSS eksternal</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="css/css-font.html">dengan font CSS</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="css/css-id.html">dengan
+                      CSS menggunakan atribut id</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="css/css-class.html">dengan CSS menggunakan atribut class</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="css/css-border.html">dan
+                      border CSS</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="css/css-padding.html">dan padding CSS</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="css/css-margin.html">dan
+                      margin CSS</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="css/css-demo.html">dan
+                      demo lengkap CSS</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- link -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#link-collapse" aria-expanded="true" aria-current="true">Link / Tautan</button>
+                                    <div class="collapse show" id="link-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#link-collapse" aria-expanded="false" aria-current="false">Link / Tautan</button>
+                        <div class="collapse" id="link-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="link/absolut.html">Menautkan, menggunakan URL absolut</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="link/relatif.html">Menautkan, menggunakan URL relatif</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="link/mengubah-warna-tautan.html">Mengubah warna tautan</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="link/menghapus-garis-bawah-dari-tautan.html">Menghapus garis bawah dari tautan</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="link/mengubah-target-tautan.html">Mengubah target tautan</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="link/gambar-sebagai-tautan.html">Gambar sebagai tautan</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="link/membuat-tautan-bookmark.html">Membuat tautan bookmark</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="link/tautan-yang-keluar-dari-bingkai.html">Tautan yang keluar dari bingkai</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="link/tautan-mailto.html">Tautan mailto</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="link/tautan-mailto-dengan-subjek.html">Tautan mailto dengan subjek</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- images -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#image-collapse" aria-expanded="true" aria-current="true">Images</button>
+                                    <div class="collapse show" id="image-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#image-collapse" aria-expanded="false" aria-current="false">Images</button>
+                        <div class="collapse" id="image-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="images/image.html">An
+                      image</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="images/image-height-and-width-using-attributes.html">An image height and width using
+                      attributes</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="images/image-height-and-width-using-css.html">An image height and width using CSS</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="images/image-height-and-width-using-both.html">An image height and width using both</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="images/image-in-another-folder.html">An image in another folder</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="images/image-with-a-broken-link.html">An image with a broken link</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="images/image-on-another-server.html">An image on another server</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="images/image-with-a-broken-link.html">Using an image as a link</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="images/moving-image.html">A moving image</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="images/image-map-with-clickable-regions.html">An image map with clickable regions</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="images/floating-image.html">A floating image</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- tabel -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#tabel-collapse" aria-expanded="true" aria-current="true">Tabel</button>
+                                    <div class="collapse show" id="tabel-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#tabel-collapse" aria-expanded="false" aria-current="false">Tabel</button>
+                        <div class="collapse" id="tabel-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Tabel HTML dasar</a>
+                                </li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Tabel dengan
+                      batas</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Tabel dengan batas
+                      yang diciutkan</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Tabel dengan bantalan
+                      sel</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Tabel dengan
+                      heading</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Tabel dengan heading
+                      rata kiri</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Judul tabel
+                      Horizontal/Vertikal</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Tabel dengan
+                      keterangan</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Sel tabel yang
+                      menjangkau lebih dari satu kolom</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Sel tabel yang
+                      menjangkau lebih dari satu baris</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Tabel dengan spasi
+                      sel</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Tabel dengan tag HTML
+                      di dalamnya</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Tabel dengan gaya
+                      berbeda menggunakan id I</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Tabel dengan gaya
+                      berbeda menggunakan id II</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Tabel dengan gaya
+                      berbeda menggunakan kelas I</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Tabel dengan gaya
+                      berbeda menggunakan kelas II</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- list -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#list-collapse" aria-expanded="true" aria-current="true">List / Daftar</button>
+                                    <div class="collapse show" id="list-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#list-collapse" aria-expanded="false" aria-current="false">List / Daftar</button>
+                        <div class="collapse" id="list-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Daftar yang tidak
+                      diurutkan default)</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Daftar yang tidak
+                      diurutkan dengan peluru disk</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Daftar tidak
+                      berurutan dengan peluru lingkaran</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Daftar tidak
+                      berurutan dengan poin persegi</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Daftar tidak
+                      berurutan tanpa butir</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Daftar yang diurutkan
+                      default)</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Daftar berurut dengan
+                      nomor</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Daftar berurut dengan
+                      huruf</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Daftar berurutan
+                      dengan huruf kecil</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Daftar berurutan
+                      dengan angka romawi</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Daftar berurutan
+                      dengan angka romawi huruf kecil</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Daftar deskripsi</a>
+                                </li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Daftar bersarang
+                      saya</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Daftar bertingkat
+                      II</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Daftar horizontal</a>
+                                </li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Menu daftar
+                      horizontal</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- blok -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#blok-collapse" aria-expanded="true" aria-current="true">Blok & elemen sebaris</button>
+                                    <div class="collapse show" id="blok-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#blok-collapse" aria-expanded="false" aria-current="false">Blok & elemen
+                sebaris</button>
+                        <div class="collapse" id="blok-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">The &lt;div&gt;
+                      elemen</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">The &lt;span&gt;
+                      elemen</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Menata gaya
+                      &lt;div&gt; elemen</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Menata gaya
+                      &lt;span&gt; elemen</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- class -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#class-collapse" aria-expanded="true" aria-current="true">Class</button>
+                                    <div class="collapse show" id="class-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#class-collapse" aria-expanded="false" aria-current="false">Class</button>
+                        <div class="collapse" id="class-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Gaya semua elemen
+                      dengan nama kelas tertentu</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Mengakses elemen
+                      dengan nama kelas tertentu, dengan JavaScript</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Beberapa kelas</a>
+                                </li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Kelas sama, tag
+                      berbeda</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- id -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#id-collapse" aria-expanded="true" aria-current="true">Id</button>
+                                    <div class="collapse show" id="id-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#id-collapse" aria-expanded="false" aria-current="false">Id</button>
+                        <div class="collapse" id="id-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Menata gaya elemen
+                      dengan id tertentu</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Perbedaan antara
+                      kelas dan id</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Mengakses elemen
+                      dengan id tertentu, dengan JavaScript</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- iframe -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#iframe-collapse" aria-expanded="true" aria-current="true">Iframe</button>
+                                    <div class="collapse show" id="iframe-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#iframe-collapse" aria-expanded="false" aria-current="false">Iframe</button>
+                        <div class="collapse" id="iframe-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Bingkai sebaris
+                      (bingkai di dalam laman HTML)</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- script -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#script-collapse" aria-expanded="true" aria-current="true">Script</button>
+                                    <div class="collapse show" id="script-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#script-collapse" aria-expanded="false" aria-current="false">Script</button>
+                        <div class="collapse" id="script-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Sisipkan skrip</a>
+                                </li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Penggunaan
+                      &lt;noscript&gt; tag</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- head-elemen -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#headelemen-collapse" aria-expanded="true" aria-current="true">Head Elemen</button>
+                                    <div class="collapse show" id="headelemen-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#headelemen-collapse" aria-expanded="false" aria-current="false">Head Elemen</button>
+                        <div class="collapse" id="headelemen-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Dokumen HTML yang
+                      valid tanpa lt;html&gt; &lt;body&gt; dan &lt;head&gt;</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Dokumen HTML yang
+                      valid tanpa lt;head&gt; elemen</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">&lt;title&gt; elemen
+                      mendefinisikan judul dokumen</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">&lt;style&gt; elemen
+                      berisi informasi gaya</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">&lt;link&gt; elemen
+                      mendefinisikan hubungan ke sumber daya eksternal</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">&lt;meta&gt; elemen
+                      mendefinisikan informasi meta khusus</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">&lt;script&gt; elemen
+                      mendefinisikan JavaScript sisi klien</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">&lt;base&gt; elemen
+                      mendefinisikan URL dasar untuk semua URL</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- layout  -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#layout-collapse" aria-expanded="true" aria-current="true">Layout / Tata Letak</button>
+                                    <div class="collapse show" id="layout-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#layout-collapse" aria-expanded="false" aria-current="false">Layout / Tata
+                Letak</button>
+                        <div class="collapse" id="layout-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Layout menggunakan
+                      float</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Layout menggunakan
+                      flexbox</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Layout menggunakan
+                      flexbox 2</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Layout menggunakan
+                      flexbox 3</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- kode-komputer-elemen -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#kodekomputerelemen-collapse" aria-expanded="true" aria-current="true">Kode Komputer Elemen</button>
+                                    <div class="collapse show" id="kodekomputerelemen-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#kodekomputerelemen-collapse" aria-expanded="false" aria-current="false">Kode
+                Komputer</button>
+                        <div class="collapse" id="kodekomputerelemen-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Pemformatan masukan
+                      keyboard menggunakan &lt;kbd&gt; elemen</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Pemformatan keluaran
+                      komputer menggunakan &lt;samp&gt; elemen</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Pemformatan kode
+                      pemrograman menggunakan &lt;code&gt; elemen</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Pemformatan kode
+                      pemrograman yang mempertahankan spasi dan jeda baris</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Pemformatan variabel
+                      menggunakan &lt;var&gt; elemen</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- form -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#form-collapse" aria-expanded="true" aria-current="true">Form</button>
+                                    <div class="collapse show" id="form-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#form-collapse" aria-expanded="false" aria-current="false">Form</button>
+                        <div class="collapse" id="form-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Form dengan input
+                      teks</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Form dengan input
+                      tombol radio</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Form dengan bidang
+                      teks dan tombol kirim</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Form dengan bidang
+                      teks tanpa atribut nama</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Mengelompokkan Data
+                      Form</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- form-elemen -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#formelemen-collapse" aria-expanded="true" aria-current="true">Form Elemen</button>
+                                    <div class="collapse show" id="formelemen-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#formelemen-collapse" aria-expanded="false" aria-current="false">Form Elemen</button>
+                        <div class="collapse" id="formelemen-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Daftar tarik-turun
+                      sederhana</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Daftar tarik-turun
+                      dengan nilai yang telah dipilih sebelumnya</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Sebuah textarea
+                      (bidang input teks multi-baris)</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Tombol masukan</a>
+                                </li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Menggunakan
+                      &lt;datalist&gt; Elemen</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Menggunakan
+                      &lt;output&gt; Elemen</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- input-type -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#inputtype-collapse" aria-expanded="true" aria-current="true">Input Type</button>
+                                    <div class="collapse show" id="inputtype-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#inputtype-collapse" aria-expanded="false" aria-current="false">Input Type</button>
+                        <div class="collapse" id="inputtype-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Masukkan jenis
+                      teks</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Masukkan jenis
+                      sandi</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Radio jenis
+                      masukan</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Kotak centang
+                      jenismasukan</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Tombol
+                      jenismasukan</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Masukkan nomor jenis
+                      - dengan batasan</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Masukkan nomor jenis
+                      - dengan langkah</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Jenis masukan tanggal
+                      - dengan pemilih tanggal</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Tanggal jenis input -
+                      dengan batasan</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Masukkan jenis warna
+                      - dengan pemilih warna</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Rentang jenis
+                      masukan</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Jenis masukan
+                      bulan</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Jenis masukan
+                      minggu</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Waktu jenis input</a>
+                                </li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Jenis input
+                      datetime</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Jenis masukan
+                      datetime-local</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Jenis masukan
+                      email</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Penelusuran jenis
+                      masukan</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Jenis masukan tel</a>
+                                </li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Url jenis masukan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- input-atribut -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#inputatribut-collapse" aria-expanded="true" aria-current="true">Input Atribut</button>
+                                    <div class="collapse show" id="inputatribut-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#inputatribut-collapse" aria-expanded="false" aria-current="false">Input
+                Atribut</button>
+                        <div class="collapse" id="inputatribut-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">autocomplete</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">novalidate</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">autofocus</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">form</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">formaction</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">formenctype</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">formmethod</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">formnovalidate</a>
+                                </li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">formtarget</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">height & width</a>
+                                </li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">list</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">min & max</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">multiple</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">pattern</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">placeholder</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">required</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">step</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- grafik-kanvas -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#grafikkanvas-collapse" aria-expanded="true" aria-current="true">Grafik Kanvas</button>
+                                    <div class="collapse show" id="grafikkanvas-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#grafikkanvas-collapse" aria-expanded="false" aria-current="false">Grafik
+                Kanvas</button>
+                        <div class="collapse" id="grafikkanvas-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Menggambar di kanvas
+                      dengan JavaScript</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Gambar garis dengan
+                      lineTo()</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Menggambar lingkaran
+                      dengan busur()</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Menggambar teks
+                      dengan fillText()</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Menggambar teks
+                      dengan strokeText()</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Menggambar gradien
+                      linier</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Menggambar gradien
+                      melingkar</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Menggambar gambar
+                      dengan drawImage()</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- grafik-svg -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#grafiksvg-collapse" aria-expanded="true" aria-current="true">Grafik SVG</button>
+                                    <div class="collapse show" id="grafiksvg-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#grafiksvg-collapse" aria-expanded="false" aria-current="false">Grafik SVG</button>
+                        <div class="collapse" id="grafiksvg-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">SVG Circle</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">SVG Rectangle</a>
+                                </li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">SVG Rounded
+                      Rectangle</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">SVG Star</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">SVG Logo</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- geolokasi -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#geolokasi-collapse" aria-expanded="true" aria-current="true">Geolokasi</button>
+                                    <div class="collapse show" id="geolokasi-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#geolokasi-collapse" aria-expanded="false" aria-current="false">Geolokasi</button>
+                        <div class="collapse" id="geolokasi-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Dapatkan koordinat
+                      geolokasi</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Menangani kesalahan
+                      geolokasi</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Dapatkan geolokasi
+                      dengan peta</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Dapatkan geolokasi
+                      dengan skrip peta Google</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Dapatkan geolokasi
+                      dan perhatikan posisinya</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- penyimpanan-lokal -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#penyimpananlokal-collapse" aria-expanded="true" aria-current="true">Penyimpanan Lokal</button>
+                                    <div class="collapse show" id="penyimpananlokal-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#penyimpananlokal-collapse" aria-expanded="false" aria-current="false">Penyimpanan
+                Lokal</button>
+                        <div class="collapse" id="penyimpananlokal-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Menyimpan nama secara
+                      permanen</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Simpan penghitung
+                      secara permanen</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Menyimpan penghitung
+                      untuk satu sesi</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- media -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#media-collapse" aria-expanded="true" aria-current="true">Media</button>
+                                    <div class="collapse show" id="media-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#media-collapse" aria-expanded="false" aria-current="false">Media</button>
+                        <div class="collapse" id="media-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Putar file video</a>
+                                </li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Memutar file audio
+                      dalam HTML</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Memutar video YouTube
+                      dalam HTML</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Play Bunny</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Play video Bear
+                      dengan kontrol</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Play video Bear
+                      dengan putar otomatis</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">Play suara Horse
+                      dengan kontrol</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- contoh-html-lainnya -->
+                    <li class="mb-1">
+                        <!-- buka -->
+                        <!-- <button class="btn d-inline-flex align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#contohhtmllainnya-collapse" aria-expanded="true" aria-current="true">Contoh HTML Lainnya</button>
+                                    <div class="collapse show" id="contohhtmllainnya-collapse"> -->
+                        <!-- tutup -->
+                        <button class="btn d-inline-flex align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#contohhtmllainnya-collapse" aria-expanded="false" aria-current="false">Contoh HTML
+                Lainnya</button>
+                        <div class="collapse" id="contohhtmllainnya-collapse">
+
+                            <ul class="list-unstyled fw-normal pb-1 small">
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">drag and drop</a>
+                                </li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">web workers</a></li>
+                                <li><a class="d-inline-flex align-items-center rounded" target="_blank" href="#">server sent
+                      events</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="bd-main order-1">
+            <div class="bd-intro">
+                <div class="d-md-flex align-items-center justify-content-between">
+                    <h1 class="bd-title" id="content">Dasar HTML</h1>
+                    <!-- <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="#" title="Unduh dan edit file ini untuk latihan" target="_blank" rel="noopener">unduh file latihan</a> -->
+                </div>
+                <p class="bd-lead">Dalam bab ini kita akan menunjukkan beberapa contoh HTML dasar. Jangan khawatir jika kami menggunakan tag yang belum Anda pelajari.</p>
+            </div>
+
+            <article>
+
+                <p>Semua dokumen HTML harus dimulai dengan deklarasi tipe dokumen:
+                    <mark><code>&lt;!DOCTYPE html&gt;</code></mark>. Dokumen HTML itu sendiri dimulai dengan
+                    <mark><code>&lt;html&gt;</code></mark> dan diakhiri dengan <mark><code>&lt;/html&gt;</code></mark>. Bagian yang terlihat dari dokumen HTML adalah antara <mark><code>&lt;body&gt;</code></mark> dan
+                    <mark><code>&lt;/body&gt;</code></mark>.
+                </p>
+                <br>
+                <h3>Struktur HTML5 :</h3>
+                <div class="bd-callout">
+                    <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+&lt;<span class="nt">html</span> <span class="na">lang</span>=<span class="s">"en"</span>&gt;
+
+  &lt;<span class="nt">head</span>&gt;
+  &lt;<span class="nt">meta</span> <span class="na">charset</span>=<span class="s">"UTF-8"</span>&gt;
+  &lt;<span class="nt">meta</span> <span class="na">http-equiv</span>=<span class="s">"X-UA-Compatible"</span> <span class="na">content</span>=<span class="s">"IE=edge"</span>&gt;
+  &lt;<span class="nt">meta</span> <span class="na">name</span>="viewport" <span class="na">content</span>=<span class="s">"width=device-width, initial-scale</span>=1.0"</span>&gt;
+  &lt;<span class="nt">title</span>&gt;Judul Halaman&lt;/title&gt;
+  &lt;<span class="nt">/head</span>&gt;
+
+  &lt;<span class="nt">body</span>&gt;
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, world!<span
+      class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ini adalah paragraf<span
+      class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  &lt;<span class="nt">/body</span>&gt;
+
+&lt;<span class="nt">/html</span>&gt;
+</code></pre>
+                </div>
+                <!-- /bd-callout -->
+                <h4>Penjelasannya :</h4>
+                <ul>
+                    <li>
+                        <p><mark><code>&lt;html&gt;</mark></code> adalah elemen root elemen dan mendefinisikan dokumen HTML secara keseluruhan. Ini memiliki tag awal <mark><code>&lt;html&gt;</mark></code>
+                            dan tag akhir
+                            <mark><code>&lt;/html&gt;</mark></code>. Kemudian, di dalam
+                            <mark><code>&lt;html&gt;</mark></code> elemen ada
+                            <mark><code>&lt;body&gt;</mark></code> elemen:</p>
+                        <p class="bd-callout">
+                            <code>
+                                        &lt;body&gt; <br>
+                                        <br>
+                                        &lt;h1>Judul Pertama Saya&lt;/h1&gt; <br>
+                                        &lt;p>Paragraf pertama saya.&lt;/p&gt; <br>
+                                        <br>
+                                        &lt;/body&gt;
+                                    </code>
+                        </p>
+                    </li>
+                    <li>
+                        <p><mark><code>&lt;body&gt;</mark></code> mendefinisikan tubuh dokumen. Ini memiliki tag awal
+                            <mark><code>&lt;body&gt;</mark></code> dan tag akhir
+                            <mark><code>&lt;/body&gt;</mark></code>. Kemudian, di dalam
+                            <mark><code>&lt;body&gt;</mark></code> elemen ada dua elemen lainnya:
+                            <mark><code>&lt;h1&gt;</mark></code> dan
+                            <mark><code>&lt;p&gt;</mark></code>:
+                        </p>
+                        <p class="bd-callout">
+                            <code>
+                                        &lt;h1>Judul Pertama Saya&lt;/h1&gt; <br>
+                                        &lt;p>Paragraf pertama saya.&lt;/p&gt;
+                                    </code>
+                        </p>
+                    </li>
+                    <li>
+                        <p><mark><code>&lt;h1&gt;</mark></code> elemen mendefinisikan heading (judul). Ini memiliki tag awal
+                            <mark><code>&lt;h1&gt;</mark></code> dan tag akhir
+                            <mark><code>&lt;/h1&gt;</mark></code>:</p>
+
+                        <p class="bd-callout">
+                            <code>
+                                        &lt;h1>Judul Pertama Saya&lt;/h1&gt;
+                                    </code>
+                        </p>
+                    </li>
+                    <li>
+                        <p><mark><code>&lt;p&gt;</mark></code> elemen mendefinisikan sebuah paragraf. Ini memiliki tag awal
+                            <mark><code>&lt;p&gt;</mark></code> dan tag akhir <mark><code>&lt;/p&gt;</mark></code>:
+                        </p>
+                        <p class="bd-callout">
+                            <code>
+                                        &lt;p>Paragraf pertama saya.&lt;/p&gt;
+                                    </code>
+                        </p>
+                    </li>
+                </ul>
+                <!-- </section> -->
+
+                <br>
+                <!-- <section id="JanganLewatiTagAkhir"> -->
+                <h3>Jangan abaikan tag akhir<span class="text-danger">!</span></h3>
+                <p>Beberapa elemen HTML akan ditampilkan dengan benar, bahkan jika Anda lupa tag akhir: <br> Contoh :
+                </p>
+
+                <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                <div class="bd-callout">
+                    <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;html&gt;
+&lt;body&gt;
+
+  &lt;p&gt;Ini adalah paragraf
+  &lt;p&gt;Ini adalah paragraf
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+                    <hr>
+                    <p><a class="btn btn-warning btn-sm" href="codeEditor2.html" target="_blank">Cobalah
+                  sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                    src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    <p class="moreInfo text-break text-danger fw-bold">Warning!!!, jangan pernah mengandalkan ini! Hasil dan kesalahan yang tidak terduga dapat terjadi jika Anda lupa tag akhir!.
+                    </p>
+                </div>
+                <br>
+                <table class="table table-bordered table-hover w-100">
+                    <thead></thead>
+                    <tbody>
+                        <tr>
+                            <td><code>&lt;!DOCTYPE&nbsp;html&gt;</code></td>
+                            <td>Deklarasi mendefinisikan bahwa dokumen ini adalah dokumen HTML5.</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;html&gt;</code></td>
+                            <td>Elemen akar (root) halaman HTML</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;head&gt;</code></td>
+                            <td>Elemen berisi informasi meta tentang halaman HTML.</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;title&gt;</code></td>
+                            <td>Elemen menentukan judul untuk halaman HTML (yang ditampilkan dalam bar judul browser atau tab halaman ini).
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;body&gt;</code></td>
+                            <td>Elemen mendefinisikan tubuh dokumen, dan merupakan wadah untuk semua isi terlihat, seperti judul, paragraf, gambar, hyperlink, tabel, daftar, dll.</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;h1&gt;</code></td>
+                            <td>Elemen mendefinisikan judul.</td>
+                        </tr>
+                        <tr>
+                            <td><code>&lt;p&gt;</code></td>
+                            <td>Elemen mendefinisikan sebuah paragraf.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- </section> -->
+                <br>
+                <h3>Visualisasi Struktur HTML5:</h3>
+                <div class="struktur">
+                    <code>&lt;html&gt;</code>
+                    <div style="border:1px dotted #999;padding:10px;margin:10px;background-color: #eee;border-radius: max(0px, min(8px, calc((100vw - 4px - 100%) * 9999))) / 8px;-webkit-box-shadow: 1px 1px 1px rgb(0 0 0 / 40%);box-shadow: 1px 1px 1px rgb(0 0 0 / 40%);">
+                        <code>&lt;head&gt;</code>
+                        <div style="border:1px dotted #999;padding:10px;margin:10px;background-color: #fff;border-radius: max(0px, min(8px, calc((100vw - 4px - 100%) * 9999))) / 8px;-webkit-box-shadow: 1px 1px 1px rgb(0 0 0 / 40%);box-shadow: 1px 1px 1px rgb(0 0 0 / 40%);">
+                            <code>&lt;title&gt;Judul halaman&lt;/title&gt;</code>
+                        </div>
+                        <code>&lt;/head&gt;</code>
+                    </div>
+                    <div style="border:1px dotted #999;padding:10px;margin:10px;background-color:#eee;border-radius: max(0px, min(8px, calc((100vw - 4px - 100%) * 9999))) / 8px;-webkit-box-shadow: 1px 1px 1px rgb(0 0 0 / 40%);box-shadow: 1px 1px 1px rgb(0 0 0 / 40%);">
+                        <code>&lt;body&gt;</code>
+                        <div style="border:1px dotted #999;padding:10px;margin:10px;background-color:#fff;border-radius: max(0px, min(8px, calc((100vw - 4px - 100%) * 9999))) / 8px;-webkit-box-shadow: 1px 1px 1px rgb(0 0 0 / 40%);box-shadow: 1px 1px 1px rgb(0 0 0 / 40%);">
+                            <div style="border:1px dotted #999;padding:10px;margin:10px;border-radius: max(0px, min(8px, calc((100vw - 4px - 100%) * 9999))) / 8px;background-color: whitesmoke;-webkit-box-shadow: 1px 1px 1px rgb(0 0 0 / 40%);box-shadow: 1px 1px 1px rgb(0 0 0 / 40%);">
+                                <code>&lt;h1&gt;Judul halaman&lt;/h1&gt;</code>
+                            </div>
+                            <div style="border:1px dotted #999;padding:10px;margin:10px;border-radius: max(0px, min(8px, calc((100vw - 4px - 100%) * 9999))) / 8px;background-color: whitesmoke;-webkit-box-shadow: 1px 1px 1px rgb(0 0 0 / 40%);box-shadow: 1px 1px 1px rgb(0 0 0 / 40%);">
+                                <code>&lt;p&gt;Ini adalah paragraf.&lt;/p&gt;</code>
+                            </div>
+                            <div style="border:1px dotted #999;padding:10px;margin:10px;border-radius: max(0px, min(8px, calc((100vw - 4px - 100%) * 9999))) / 8px;background-color: whitesmoke;-webkit-box-shadow: 1px 1px 1px rgb(0 0 0 / 40%);box-shadow: 1px 1px 1px rgb(0 0 0 / 40%);">
+                                <code>&lt;p&gt;Ini adalah paragraf yang lain.&lt;/p&gt;</code>
+                            </div>
+                        </div>
+                        <code>&lt;/body&gt;</code>
+                    </div>
+                    <code>&lt;/html&gt;</code>
+                </div>
+                <p class="moreInfo text-break"><strong>Catatan:</strong> Konten di dalam bagian
+                    <mark><code>&lt;body&gt;</code></mark> (area putih di atas) akan ditampilkan di browser. Konten di dalam elemen
+                    <mark><code>&lt;title&gt;</code></mark> akan ditampilkan di bilah judul browser atau di tab halaman.
+                </p>
+
+            </article>
+
+        </main>
+    </div>
+
+    <footer class="bd-footer py-5 mt-5 bg-light">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-lg-3 mb-3">
+                    <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/" aria-label="O-Learning">
+                        <img src="../../assets/img/aku-bulat-40x40.png" class="img-fluid" alt="aku">
+                        <span class="fs-5 ms-2">O-Learning</span>
+                    </a>
+                    <ul class="list-unstyled small text-muted">
+                        <li class="mb-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, adipisci.
+                        </li>
+                        <li class="mb-2">Lorem ipsum dolor sit amet.</li>
+                        <li class="mb-2">Lorem ipsum dolor sit.</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                    <h5>Programs</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Microsoft Word</a></li>
+                        <li class="mb-2"><a href="#">Microsoft Excel</a></li>
+                        <li class="mb-2"><a href="#">Power Point</a></li>
+                        <li class="mb-2"><a href="#">Microsoft Access</a></li>
+                        <li class="mb-2"><a href="#">Photoshop</a></li>
+                        <li class="mb-2"><a href="#">CorelDRAW</a></li>
+                        <li class="mb-2"><a href="#">Web-Desain</a></li>
+                        <li class="mb-2"><a href="#">Pemrograman</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Panduan</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Tutorial Office</a></li>
+                        <li class="mb-2"><a href="#">Tutorial Desain</a></li>
+                        <li class="mb-2"><a href="#">Tutorial Web-Desain</a></li>
+                        <li class="mb-2"><a href="#">Tutorial Pemrograman</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Projek</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">Website BPKAD</a></li>
+                        <li class="mb-2"><a href="#">Website O-Learning</a></li>
+                        <li class="mb-2"><a href="#">on progress...</a></li>
+                        <li class="mb-2"><a href="#">on progress...</a></li>
+                        <li class="mb-2"><a href="#">on progress...</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                    <h5>Referensi</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#">excel-easy.com</a></li>
+                        <li class="mb-2"><a href="#">edu.gcfglobal.org</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../../assets/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="../../assets/js/docsearch.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+</body>
+
+</html>

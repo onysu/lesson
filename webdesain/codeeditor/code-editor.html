@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="w3schools30.css">
     <link rel="stylesheet" href="codemirror.css">
-    <link rel="stylesheet" type="text/css" href="spaceit.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="spaceit.css" /> -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
@@ -30,22 +30,22 @@
         <div id="textareacontainer">
             <div id="textarea">
                 <div id="textareawrapper">
-                    <textarea autocomplete="off" id="textareaCode" wrap="logical" spellcheck="false"><!DOCTYPE html>
-&lt;html&gt;
-&lt;body&gt;
+                    <textarea autocomplete="off" id="textareaCode" wrap="logical" spellcheck="false">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
 
-&lt;h1>This is heading 1&lt;/h1&gt;
-&lt;p>This is some text.&lt;/p&gt;
-&lt;hr&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Judul Halaman&lt;/title&gt;
+  &lt;/head&gt;
 
-&lt;h2>This is heading 2&lt;/h2&gt;
-&lt;p>This is some other text.&lt;/p&gt;
-&lt;hr&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;p&gt;Ini adalah paragraf&lt;/p&gt;
+  &lt;/body&gt;
 
-&lt;h2>This is heading 2&lt;/h2&gt;
-&lt;p>This is some other text.&lt;/p&gt;
-
-&lt;/body&gt;
 &lt;/html&gt;
 </textarea>
                     <form id="codeForm" autocomplete="off" style="margin:0px;display:none;">
@@ -63,7 +63,7 @@
 
     <script src="codemirror.js"></script>
     <script src="codemirror_jsx.js"></script>
-    <script src="spaceit.js"></script>
+    <!-- <script src="spaceit.js"></script> -->
     <script>
         if (window.addEventListener) {
             window.addEventListener("resize", browserResize);
@@ -344,38 +344,38 @@
             }
         }
 
-        function openMenu() {
-            var x = document.getElementById("navbarDropMenu");
-            var y = document.getElementById("menuOverlay");
-            var z = document.getElementById("menuButton");
-            if (z.className.indexOf("w3-text-gray") == -1) {
-                z.className += " w3-text-gray";
-            } else {
-                z.className = z.className.replace(" w3-text-gray", "");
-            }
-            if (z.className.indexOf("w3-gray") == -1) {
-                z.className += " w3-gray";
-            } else {
-                z.className = z.className.replace(" w3-gray", "");
-            }
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-            if (y.className.indexOf("w3-show") == -1) {
-                y.className += " w3-show";
-            } else {
-                y.className = y.className.replace(" w3-show", "");
-            }
+        // function openMenu() {
+        //     var x = document.getElementById("navbarDropMenu");
+        //     var y = document.getElementById("menuOverlay");
+        //     var z = document.getElementById("menuButton");
+        //     if (z.className.indexOf("w3-text-gray") == -1) {
+        //         z.className += " w3-text-gray";
+        //     } else {
+        //         z.className = z.className.replace(" w3-text-gray", "");
+        //     }
+        //     if (z.className.indexOf("w3-gray") == -1) {
+        //         z.className += " w3-gray";
+        //     } else {
+        //         z.className = z.className.replace(" w3-gray", "");
+        //     }
+        //     if (x.className.indexOf("w3-show") == -1) {
+        //         x.className += " w3-show";
+        //     } else {
+        //         x.className = x.className.replace(" w3-show", "");
+        //     }
+        //     if (y.className.indexOf("w3-show") == -1) {
+        //         y.className += " w3-show";
+        //     } else {
+        //         y.className = y.className.replace(" w3-show", "");
+        //     }
 
-        }
+        // }
         // Ketika pengguna mengklik di mana saja di luar modal, close it
-        window.onclick = function(event) {
-            if (event.target == document.getElementById("menuOverlay")) {
-                openMenu();
-            }
-        }
+        // window.onclick = function(event) {
+        //     if (event.target == document.getElementById("menuOverlay")) {
+        //         openMenu();
+        //     }
+        // }
     </script>
 </body>
 

@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="lib/codemirror.css">
     <script src="mode/xml/xml.js"></script>
     <script src="addon/edit/closetag.js"></script>
-    <script src="addon/edit/closebrackets.js"></script>
-    <link rel="stylesheet" href="theme/dracula.css">
+    <link rel="stylesheet" href="theme/idea.css">
 </head>
 
 <body>
@@ -22,10 +21,10 @@
     <script>
         var editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
             mode: "xml",
-            theme: "dracula",
+            theme: "idea",
             lineNumbers: true,
             autoCloseTags: true,
-            autoclosebrackets: true
+            // lineWrapping: true
         });
     </script>
 </body>

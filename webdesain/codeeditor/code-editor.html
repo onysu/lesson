@@ -15,8 +15,8 @@
 <body>
     <div class="trytopnav">
         <div class="w3-bar" style="overflow:auto">
-            <a href="javascript:void(0);" onclick="restack(currentStack)" title="Change Orientation" class="w3-button w3-bar-item w3-hide-small topnav-icons fa fa-rotate"></a>
-            <a href="javascript:void(0);" onclick="retheme()" title="Change Theme" class="w3-button w3-bar-item topnav-icons fa fa-adjust"></a>
+            <a href="javascript:void(0);" onclick="restack(currentStack)" title="Ubah Orientasi" class="w3-button w3-bar-item w3-hide-small topnav-icons fa fa-rotate"></a>
+            <a href="javascript:void(0);" onclick="retheme()" title="Ubah Tema" class="w3-button w3-bar-item topnav-icons fa fa-adjust"></a>
             <button id="runbtn" class="w3-button w3-bar-item w3-hover-white w3-hover-text-green" onclick="submitTryit(1);">Run &#10095;</button>
             <span class="w3-right w3-hide-small" style="padding:8px 16px 8px 0;display:block;float:right;font-size:16px;margin-top:4px"><span
             id="framesize"></span></span>
@@ -129,9 +129,7 @@
                 ifrw.document.open();
                 ifrw.document.write(text);
                 ifrw.document.close();
-                //23.02.2016: contentEditable is set to true, to fix text-selection (bug) in firefox.
-                //(and back to false to prevent the content from being editable)
-                //(To reproduce the error: Select text in the result window with, and without, the contentEditable statements below.)  
+                // contentEditable disetel ke true, untuk memperbaiki pemilihan teks (bug) di firefox, dan kembali ke false untuk mencegah konten agar tidak dapat diedit. Untuk mereproduksi kesalahan: Pilih teks di jendela hasil dengan dan tanpa, pernyataan contentEditable di bawah ini.
                 if (ifrw.document.body && !ifrw.document.body.isContentEditable) {
                     ifrw.document.body.contentEditable = true;
                     ifrw.document.body.contentEditable = false;
@@ -198,7 +196,7 @@
             var width, height;
             width = Number(w3_getStyleValue(document.getElementById("iframeResult"), "width").replace("px", "")).toFixed();
             height = Number(w3_getStyleValue(document.getElementById("iframeResult"), "height").replace("px", "")).toFixed();
-            document.getElementById("framesize").innerHTML = "Result Size: <span>" + width + " x " + height + "</span>";
+            document.getElementById("framesize").innerHTML = "Ukuran : <span>" + width + " x " + height + "</span>";
         }
         var dragging = false;
         var stack;
@@ -323,7 +321,7 @@
 
         function colorcoding() {
             var ua = navigator.userAgent;
-            //Opera Mini refreshes the page when trying to edit the textarea.
+            // Opera Mini me-refresh halaman saat mencoba mengedit textarea.
             if (ua && ua.toUpperCase().indexOf("OPERA MINI") > -1) {
                 return false;
             }
@@ -334,7 +332,7 @@
                 smartIndent: false,
                 addModeClass: true
             });
-            //  window.editor.on("change", function () {window.editor.save();});
+            // window.editor.on("change", function () {window.editor.save();});
         }
         colorcoding();
 
@@ -372,7 +370,7 @@
             }
 
         }
-        // When the user clicks anywhere outside of the modal, close it
+        // Ketika pengguna mengklik di mana saja di luar modal, close it
         window.onclick = function(event) {
             if (event.target == document.getElementById("menuOverlay")) {
                 openMenu();

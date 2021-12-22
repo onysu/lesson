@@ -2252,6 +2252,101 @@ mengabaikannya.
 
                 <hr>
 
+                <!-- Komentar -->
+                <section id="11">
+                    <h2>Tag Komentar HTML</h2>
+                    <p>Komentar HTML tidak ditampilkan di browser, tetapi dapat membantu mendokumentasikan kode sumber HTML Anda. Anda dapat menambahkan komentar ke sumber HTML Anda dengan menggunakan
+                        <strong>Syntax</strong> berikut: <br> Perhatikan bahwa ada tanda seru <mark>!</mark> di <strong>tag
+                      awal</strong>, tetapi tidak di <strong>tag akhir</strong>.
+                    </p>
+                    <div class="bd-callout">
+                        <pre tabindex="0" class="chroma"><code  data-lang="html"><b>Syntax :</b>
+                &lt;<span class="c">!-- Tulis komentar anda disini --</span>&gt;
+                </code></pre>
+                    </div>
+                    <p class="moreInfo"><strong>Catatan:</strong> Komentar tidak ditampilkan oleh browser, tetapi dapat membantu mendokumentasikan kode sumber HTML Anda.</p>
+                </section>
+
+                <section id="11.1">
+                    <h2>Tambahkan Komentar</h2>
+                    <p>Dengan komentar Anda dapat menempatkan pemberitahuan dan pengingat dalam kode HTML Anda. <br> Contoh :
+                    </p>
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <!-- Ini adalah komentar -->
+                        <p class="mb-0">Ini adalah sebuah paragraf.</p>
+                        <!-- Komentar tidak ditampilkan di browser -->
+                    </div>
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <pre tabindex="0" class="chroma"><code  data-lang="html">
+                &lt;<span class="c">!-- Ini adalah komentar --</span>&gt;
+                &lt;p&gt;Ini adalah sebuah paragraf.&lt;/p&gt;
+                &lt;<span class="c">!-- Komentar tidak ditampilkan di browser --</span>&gt;
+                </code></pre>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
+                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
+                </section>
+
+                <section id="11.2">
+                    <h2>Sembunyikan Konten</h2>
+                    <p>Komentar dapat digunakan untuk menyembunyikan konten. Yang dapat membantu jika Anda menyembunyikan konten untuk sementara. <br> Contoh :</p>
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <p class="mb-0">Ini adalah sebuah paragraf.</p>
+                        <!-- <p>Ini adalah paragraf lain </p> -->
+                        <p class="mb-0">Ini juga paragraf.</p>
+                    </div>
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <pre tabindex="0" class="chroma"><code  data-lang="html">
+                &lt;p&gt;Ini adalah sebuah paragraf.&lt;/p&gt;
+                
+                &lt;<span class="c">!-- &lt;p&gt;Ini adalah paragraf lain &lt;/p&gt; --</span>&gt;
+                
+                &lt;p&gt;Ini juga paragraf.&lt;/p&gt;
+                </code></pre>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
+                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
+                </section>
+
+                <section id="11.3">
+                    <p class="moreInfo">Anda juga dapat menyembunyikan lebih dari satu baris, semua yang ada di antara
+                        <mark><code>&lt;!--</mark></code> dan <mark><code>--&gt;</mark></code> akan disembunyikan dari tampilan. <br> Contoh :
+                    </p>
+
+                    <br>
+
+                    <h2>Sembunyikan bagian kode HTML:</h2>
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <p class="mb-0">Ini adalah sebuah paragraf.</p>
+                        <p class="mb-0">Ini juga paragraf.</p>
+                    </div>
+
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <pre tabindex="0" class="chroma"><code  data-lang="html">
+                &lt;p&gt;Ini adalah sebuah paragraf.&lt;/p&gt;
+                <span class="c">&lt;!--</span>
+                <span class="c">&lt;p&gt;Lihat gambar keren ini:&lt;/p&gt;</span>
+                <span class="c">&lt;img border="0" src="pic_trulli.jpg" alt="Trulli"&gt;</span>
+                <span class="c">--&gt;</span>
+                &lt;p&gt;Ini juga paragraf.&lt;/p&gt;
+                </code></pre>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
+                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
+                </section>
+
             </div>
             <!-- /bd-content -->
         </main>

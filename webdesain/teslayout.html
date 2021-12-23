@@ -3765,6 +3765,474 @@ USA
 
                 <hr>
 
+                <section id="14">
+                    <h2>Hyperlink</h2>
+                    <p>Links HTML adalah hyperlink. Anda dapat mengklik link dan melompat ke dokumen lain. Saat Anda menggerakkan mouse di atas link, panah mouse akan berubah menjadi tangan kecil.</p>
+                    <p class="bd-callout bd-callout-warning"><strong>Catatan:</strong> Links tidak harus berupa teks. Links dapat berupa gambar atau elemen HTML lainnya!.</p>
+                </section>
+                <section>
+                    <h2>Syntax</h2>
+                    <p><mark><code>&lt;a&gt;</mark></code> Tag HTML mendefinisikan hyperlink. Ini memiliki sintaks berikut:
+                    </p>
+                    <div class="bd-callout bd-callout-syntax">
+                        <b>Syntax :</b> <br>
+                        <code>&lt;a href="url"&gt;link text&lt;/a&gt;</code>
+                    </div>
+                    <p>Atribut terpenting dari <mark><code>&lt;a&gt;</mark></code> elemen adalah href atribut, yang menunjukkan tujuan link.
+                        <i>link teks</i> adalah bagian yang akan terlihat pembaca. Mengklik teks link, akan mengirim pembaca ke alamat URL yang ditentukan.
+                    </p>
+
+                    <p>Contoh ini menunjukkan cara membuat link ke O-Learning.io :</p>
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <p><a href="https://onysu.github.io/lesson/webdesain/">Kunjungi O-Learning.io!</a></p>
+                    </div>
+
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <code>&lt;a href="https://onysu.github.io/lesson/"&gt;Kunjungi O-Learning.io!&lt;/a&gt;</code>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri <img
+                          draggable="false" role="img" class="emoji" alt="↗"
+                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
+                    <p>Secara default, link akan muncul sebagai berikut di semua browser:</p>
+                    <ul type="square">
+                        <li>Links yang belum dikunjungi digaris bawahi dan berwarna <span style="color: blue;">biru</span>.
+                        </li>
+                        <li>Links yang dikunjungi digaris bawahi dan berwarna <span style="color: #BF00FF;">ungu</span>
+                        </li>
+                        <li>Links aktif digaris bawahi dan <span style="color: red;">merah</span></li>
+                    </ul>
+                    <p class="moreInfo text-break"><strong>Tip:</strong> Links tentu saja dapat ditata dengan CSS, untuk mendapatkan tampilan lain!</p>
+                </section>
+                <section>
+                    <h2>Atribut Target</h2>
+                    <p>Secara default, halaman tertaut akan ditampilkan di jendela browser saat ini. Untuk mengubahnya, Anda harus menentukan <mark><code>target</mark></code> lain untuk link tersebut.
+                        <mark><code>target</mark></code> menspesifikasikan atribut mana untuk membuka dokumen terkait.
+                        <mark><code>target</mark></code> atribut dapat memiliki salah satu dari nilai berikut:
+                    </p>
+                    <ul type="square">
+                        <li><mark><code>_self</mark></code> - Default. Membuka dokumen di jendela/tab yang sama dengan yang diklik.
+                        </li>
+                        <li><mark><code>_blank</mark></code> - Membuka dokumen di jendela atau tab baru.</li>
+                        <li><mark><code>_parent</mark></code> - Membuka dokumen di bingkai induk.</li>
+                        <li><mark><code>_top</mark></code> - Membuka dokumen di seluruh badan jendela.</li>
+                    </ul>
+                    <p>Contoh : <br> Gunakan <mark><code>target="_blank"</mark></code> untuk membuka link tab baru browser :</p>
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <p><a href="https://onysu.github.io/lesson/webdesain/" target="_blank">Kunjungi
+                        O-Learning!</a>
+                        </p>
+                    </div>
+
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <code>
+                                                            &lt;a href="https://onysu.github.io/lesson/webdesain/" target="_blank"&gt;Kunjungi O-Learning!&lt;/a&gt;</code>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri <img
+                          draggable="false" role="img" class="emoji" alt="↗"
+                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
+                </section>
+                <section>
+                    <h2>URL Absolut vs. URL Relatif</h2>
+                    <p>Kedua contoh di atas menggunakan <strong>URL absolut</strong> (alamat web lengkap) dalam
+                        <strong>href</strong> atribut. Links lokal (link ke halaman dalam situs web yang sama) ditentukan dengan
+                        <strong>URL relatif</strong> (tanpa bagian &quot;https://www&quot;).
+                    </p>
+                    <p>Contoh :</p>
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <h2>Absolute URLs</h2>
+                        <p><a href="https://onysu.github.io/lesson/webdesain/">O-Learning</a> <br> <a href="https://www.google.com/">Google</a></p>
+
+                        <h2>Relative URLs</h2>
+                        <p><a href="link-lokal.html">Halaman Lokal</a></p>
+                    </div>
+
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <code>
+                                                        &lt;h2&gt;Absolute URLs&lt;/h2&gt; <br>
+                                                        &lt;p&gt;&lt;a href="https://onysu.github.io/lesson/webdesain/"&gt;O-Learning&lt;/a&gt;&lt;/p&gt; <br>
+                                                        &lt;p&gt;&lt;a href="https://www.google.com/"&gt;Google&lt;/a&gt;&lt;/p&gt; <br>
+                                                        <br>
+                                                        &lt;h2&gt;Relative URLs&lt;/h2&gt; <br>
+                                                        &lt;p&gt;&lt;a href="link-lokal.html"&gt;HTML Images&lt;/a&gt;&lt;/p&gt;
+                                                    </code>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
+                </section>
+                <section>
+                    <h2>Gunakan Gambar sebagai Links</h2>
+                    <p>Untuk menggunakan gambar sebagai link, cukup letakkan <mark><code>&lt;img&gt;</mark></code> tag di dalam
+                        <mark><code>&lt;a&gt;</mark></code> tag:
+                    </p>
+                    <p>Contoh :</p>
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <p>
+                            <a href="https://onysu.github.io/lesson/webdesain/">
+                                <img src="files/img/R.gif" alt="HTML tutorial" style="width:100px;height:100px;">
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <code>
+                                                            &lt;a href="https://onysu.github.io/lesson/webdesain/"&gt; <br>
+                                                            &lt;img src="R.gif" alt="HTML tutorial" style="width:100px;height:100px;"&gt;
+                                                            <br>
+                                                            &lt;/a&gt; <br>
+                                                        </code>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
+                </section>
+                <section>
+                    <h2>Links ke Alamat Email</h2>
+                    <p>Gunakan <mark><code>mailto:</mark></code> di dalam <mark><code>href</mark></code> atribut untuk membuat
+                        <mark><code>link</mark></code> yang membuka program pengguna email (agar mereka mengirim email baru):</p>
+                    <p>Contoh :</p>
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <h2>Tautan ke Alamat Email</h2>
+                        <p>Untuk membuat tautan yang terbuka di program email pengguna (agar mereka dapat mengirim email baru), gunakan
+                            <strong><code>mailto:</code></strong> di dalam atribut href:
+                        </p>
+                        <p><a href="mailto:someone@example.com">Kirim email</a></p>
+                    </div>
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <code>
+                                            &lt;h2&gt;Link ke alamat Email&lt;/h2&gt; <br>
+                                            &lt;p&gt;&lt;a href="mailto:someone@example.com"&gt;Kirim email&lt;/a&gt;&lt;/p&gt;
+                                        </code>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
+                </section>
+                <section>
+                    <h2>Tombol sebagai Links</h2>
+                    <p>Untuk menggunakan tombol HTML sebagai link, Anda harus menambahkan beberapa kode JavaScript. <br> JavaScript memungkinkan Anda untuk menentukan apa yang terjadi pada peristiwa tertentu, seperti mengklik tombol:</p>
+                    <p>Contoh :</p>
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <p><button class="btn btn-secondary text-light btn-sm" onclick="document.location='link-lokal.html'">Link
+                        lokal</button></p>
+                    </div>
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <code>
+                                            &lt;button onclick="document.location='link-lokal.html'">Link lokal&lt;/button&gt;
+                                        </code>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
+                </section>
+                <section>
+                    <h2>Links Judul</h2>
+                    <p><mark><code>title</mark></code> Atribut menentukan informasi tambahan tentang elemen. Informasi ini paling sering ditampilkan sebagai teks tooltip ketika mouse bergerak di atas elemen.</p>
+                    <p>Contoh :</p>
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <h2>Judul Tautan</h2>
+                        <p>Atribut judul menentukan informasi tambahan tentang suatu elemen. Informasi tersebut paling sering ditampilkan sebagai teks tooltip ketika mouse bergerak di atas elemen.</p>
+                        <p><a href="https://onysu.github.io/lesson/webdesain/" title="Kunjungi Tutorial HTML kami">Kunjungi Tutorial HTML
+                        kami</a></p>
+                    </div>
+
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <code>
+                                            &lt;a href="https://onysu.github.io/lesson/webdesain/" title="Kunjungi Tutorial HTML kami"&gt;Kunjungi Tutorial HTML kami&lt;/a&gt;
+                                        </code>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
+                </section>
+                <section>
+                    <h2>Ringkasan Bab</h2>
+                    <ul style='margin-top:0cm' type=disc>
+                        <li>Gunakan <mark><code>&lt;a&gt;</mark></code> elemen untuk menentukan link.</li>
+                        <li>Gunakan <mark><code>href</mark></code> atribut untuk menentukan alamat link.</li>
+                        <li>Gunakan <mark><code>target</mark></code> atribut untuk menentukan tempat membuka dokumen tertaut.
+                        </li>
+                        <li>Gunakan <mark><code>&lt;img&gt;</mark></code> elemen (di dalam
+                            <mark><code>&lt;a&gt;</mark></code>) untuk menggunakan gambar sebagai link.</li>
+                        <li>Gunakan mailto:skema di dalam hrefatribut untuk membuat link yang membuka program email pengguna.
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Tag Links HTML</h2>
+                    <table class="table table-bordered w-100">
+                        <thead class="table-light text-center">
+                            <tr>
+                                <th>Tag</th>
+                                <th>Keterangan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>&lt;a&gt;</code>
+                                </td>
+                                <td>Mendefinisikan hyperlink</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p><span style='color:black'>Untuk daftar lengkap semua tag HTML yang tersedia, kunjungi </span><a href="tag-html.html" target="_blank">Referensi Tag HTML</a> kami.</p>
+                </section>
+                <!-- HTML Links - Different Colors -->
+                <section id="WarnaLinks">
+                    <h2>Warna Link</h2>
+                    <p>Links HTML ditampilkan dalam warna yang berbeda tergantung pada apakah telah dikunjungi, belum dikunjungi, atau aktif.
+                    </p>
+                    <h2>Warna Links HTML</h2>
+                    <p>Secara default, link akan muncul seperti ini (di semua browser):</p>
+                    <ul type="square">
+                        <li>Links yang belum dikunjungi digarisbawahi dan berwarna <span style="color: blue;"><u>biru</u></span>.</li>
+                        <li>Links yang dikunjungi digarisbawahi dan berwarna <span style="color: #800080;"><u>ungu</u></span>.</li>
+                        <li>Links aktif digarisbawahi dan <span style="color: red;"><u>merah</u></span>.</li>
+                    </ul>
+                    <p>Anda dapat mengubah warna status link, dengan menggunakan CSS:</p>
+                    <p>Contoh :</p>
+                    <p>Di sini, link yang belum dikunjungi akan berwarna hijau tanpa garis bawah. Links yang dikunjungi akan berwarna merah muda tanpa garis bawah. Links aktif akan berwarna kuning dan digarisbawahi. Selain itu, saat mengarahkan mouse ke
+                        link (a:hover) itu akan menjadi merah dan digarisbawahi:</p>
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <style>
+                            .berbedawarna a:link {
+                                color: green;
+                                background-color: transparent;
+                                text-decoration: none;
+                            }
+                            
+                            .berbedawarna a:visited {
+                                color: pink;
+                                background-color: transparent;
+                                text-decoration: none;
+                            }
+                            
+                            .berbedawarna a:hover {
+                                color: blue;
+                                background-color: transparent;
+                                text-decoration: underline;
+                            }
+                            
+                            .berbedawarna a:active {
+                                color: yellow;
+                                background-color: transparent;
+                                text-decoration: underline;
+                            }
+                        </style>
+                        <div class="berbedawarna">
+                            <h2>Warna Link</h2>
+                            <p>Anda dapat mengubah warna default link.</p>
+                            <p><a href="https://onysu.github.io/lesson/webdesain/" target="_blank">HTML Tutorial</a></p>
+                        </div>
+                    </div>
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <code>
+                                                &lt;style&gt; <br>
+                                                    a:link { <br>
+                                                        color: green; <br>
+                                                        background-color: transparent; <br>
+                                                        text-decoration: none; <br>
+                                                    } <br>
+                                                <br>
+                                                    a:visited { <br>
+                                                        color: pink; <br>
+                                                        background-color: transparent; <br>
+                                                        text-decoration: none; <br>
+                                                    } <br>
+                                                <br>
+                                                    a:hover { <br>
+                                                        color: red; <br>
+                                                        background-color: transparent; <br>
+                                                        text-decoration: underline; <br>
+                                                    } <br>
+                                                <br>
+                                                    a:active { <br>
+                                                        color: yellow; <br>
+                                                        background-color: transparent; <br>
+                                                        text-decoration: underline; <br>
+                                                    } <br>
+                                                &lt;/style&gt; <br>
+                                                <br>
+                                                    &lt;h2&gt;Warna Link&lt;/h2&gt; <br>
+                                                    &lt;p&gt;Anda dapat mengubah warna default link.&lt;/p&gt; <br>
+                                                <br>
+                                                    &lt;a href="https://onysu.github.io/lesson/webdesain/" target="_blank"&gt;HTML Tutorial&lt;/a&gt; <br>
+                                                </code>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
+                </section>
+                <section>
+                    <h2>Tombol Links</h2>
+                    <p>Links juga dapat ditata sebagai tombol, dengan menggunakan CSS:</p>
+                    <!-- <p><a href="javascript:void(0)">Ini adalah link</a></p> -->
+                    <p>Contoh :</p>
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <style>
+                            .tombollink a:link,
+                            .tombollink a:visited {
+                                background-color: #f44336;
+                                color: white;
+                                padding: 15px 25px;
+                                text-align: center;
+                                text-decoration: none;
+                                display: inline-block;
+                            }
+                            
+                            .tombollink a:hover,
+                            .tombollink a:active {
+                                background-color: red;
+                            }
+                        </style>
+                        <div class="tombollink">
+                            <h2>Tombol Link</h2>
+                            <p>Link yang diatur sebagai tombol:</p>
+                            <p><a>Ini sebuah Link</a></p>
+                        </div>
+                    </div>
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <code>
+                                            &lt;style&gt; <br>
+                                                a:link, <br>
+                                                a:visited { <br>
+                                            background-color: #f44336; <br>
+                                            color: white; <br>
+                                            padding: 15px 25px; <br>
+                                            text-align: center; <br>
+                                            text-decoration: none; <br>
+                                            display: inline-block; <br>
+                                                } <br>
+                                             <br>
+                                                a:hover, <br>
+                                                a:active { <br>
+                                            background-color: red; <br>
+                                                } <br>
+                                            &lt;/style&gt; <br>
+                                             <br>
+                                                &lt;h2&gt;Link Button&lt;/h2&gt; <br>
+                                                &lt;p&gt;A link styled as a button:&lt;/p&gt; <br>
+                                                &lt;a href="default.asp" target="_blank"&gt;This is a link&lt;/a&gt; <br>
+                                                </code>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
+                    <!-- <p>Untuk mempelajari lebih lanjut tentang CSS, buka <a href="https://onysu.github.io/lesson/webdesain/materi5.html#16">Tutorial CSS</a> kami.</p> -->
+                </section>
+                <section>
+                    <h2>Tag Links HTML</h2>
+                    <table class="table table-bordered w-100">
+                        <thead class="table-light text-center">
+                            <tr>
+                                <th>Tag</th>
+                                <th>Keterangan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>&lt;a&gt;</code>
+                                </td>
+                                <td>Mendefinisikan hyperlink</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- <p><span style='color:black'>Untuk daftar lengkap semua tag HTML yang tersedia, kunjungi </span><a href="https://www.w3schools.com/tags/default.asp">Referensi Tag HTML</a> kami.</p> -->
+                </section>
+                <!-- LINK BOOKMARKS -->
+                <section id="BookmarkLinks">
+                    <h2>Buat Bookmark</h2>
+                    <p>Links HTML dapat digunakan untuk membuat bookmark, sehingga pembaca dapat melompat ke bagian tertentu dari halaman web.
+                    </p>
+
+                    <h2>Membuat Bookmark di HTML</h2>
+                    <p>Bookmark dapat berguna jika halaman web sangat panjang. Untuk membuat bookmark - buat bookmark terlebih dahulu, lalu tambahkan link ke sana. Ketika link diklik, halaman akan bergulir ke bawah atau ke atas ke lokasi dengan bookmark.
+                    </p>
+                    <p>Contoh :</p>
+                    <p>Pertama, gunakan <mark><code>id</mark></code> atribut untuk membuat bookmark:</p>
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <h2 id="C4">Bab 4</h2>
+                    </div>
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <code>
+                                                &lt;h2 id="C4"&gt;Bab 4&lt;/h2&gt;
+                                                </code>
+                    </div>
+                    <p>Kemudian, tambahkan link ke bookmark (&quot;Langsung ke Bab 4&quot;), dari dalam halaman yang sama:
+                    </p>
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <p><a href="#C4">Langsung ke Bab 4</a></p>
+                    </div>
+                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <div class="bd-callout">
+                        <code>
+                                                    &lt;a href="#C4"&gt;Langsung ke Bab 4&lt;/a&gt;
+                                                    </code>
+                        <hr>
+                        <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
+                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
+                </section>
+                <section>
+                    <h2>Ringkasan Bab</h2>
+                    <ul type="square">
+                        <li>Gunakan <mark><code>id</mark></code> atribut (<mark><code>id="value"</mark></code>) untuk menentukan bookmark di halaman.
+                        </li>
+                        <li>Gunakan <mark><code>href</mark></code> atribut (<mark><code>href="#value"</mark></code>) untuk menautkan ke bookmark
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Tag Links HTML</h2>
+                    <table class="table table-bordered w-100">
+                        <thead class="table-light text-center">
+                            <tr>
+                                <th>Tag</th>
+                                <th>Keterangan</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td><code>&lt;a&gt;</code>
+                            </td>
+                            <td>Mendefinisikan hyperlink</td>
+                        </tr>
+                    </table>
+
+                    <!-- <p><span style='color:black'>Untuk daftar lengkap semua tag HTML yang tersedia, kunjungi </span><a href="https://www.w3schools.com/tags/default.asp">Referensi Tag HTML</a> kami.</p> -->
+                </section>
+
             </div>
             <!-- /bd-content -->
         </main>

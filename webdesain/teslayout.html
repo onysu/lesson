@@ -3817,18 +3817,39 @@ USA
                     <p class="moreInfo text-break"><strong>Tip:</strong> Links tentu saja dapat ditata dengan CSS, untuk mendapatkan tampilan lain!</p>
                 </section>
                 <section id="14.2">
-                    <h2>Atribut Target</h2>
+                    <h2>Target Atribut</h2>
                     <p>Secara default, halaman tertaut akan ditampilkan di jendela browser saat ini. Untuk mengubahnya, Kalian harus menentukan <mark><code>target</mark></code> lain untuk link tersebut.
                         <mark><code>target</mark></code> menspesifikasikan atribut mana untuk membuka dokumen terkait.
                         <mark><code>target</mark></code> atribut dapat memiliki salah satu dari nilai berikut:
                     </p>
-                    <ul type="square">
-                        <li><mark><code>_self</mark></code> - Default. Membuka dokumen di jendela/tab yang sama dengan yang diklik.
-                        </li>
-                        <li><mark><code>_blank</mark></code> - Membuka dokumen di jendela atau tab baru.</li>
-                        <li><mark><code>_parent</mark></code> - Membuka dokumen di bingkai induk.</li>
-                        <li><mark><code>_top</mark></code> - Membuka dokumen di seluruh badan jendela.</li>
-                    </ul>
+
+                    <table class="table table-bordered w-100 table-responsive">
+                        <!-- <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        </thead> -->
+                        <tbody>
+                            <tr>
+                                <td><code>_self</code></td>
+                                <td>Default. Membuka dokumen di jendela/tab yang sama dengan yang diklik.</td>
+                            </tr>
+                            <tr>
+                                <td><code>_blank</code></td>
+                                <td>Membuka dokumen di jendela atau tab baru.</td>
+                            </tr>
+                            <tr>
+                                <td><code>_parent</code></td>
+                                <td>Membuka dokumen di bingkai induk.</td>
+                            </tr>
+                            <tr>
+                                <td><code>_top</code></td>
+                                <td>Membuka dokumen di seluruh badan jendela.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
                     <p>Contoh : <br> Gunakan <mark><code>target="_blank"</mark></code> untuk membuka link tab baru browser :</p>
                     <img class="top-example" src="files/img/browser-head.png" alt="">
                     <div class="bd-example">
@@ -3840,7 +3861,8 @@ USA
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="bd-callout">
                         <code>
-                                                            &lt;a href="https://onysu.github.io/lesson/webdesain/" target="_blank"&gt;Kunjungi O-Learning!&lt;/a&gt;</code>
+                          &lt;a href="https://onysu.github.io/lesson/webdesain/" target="_blank"&gt;Kunjungi O-Learning!&lt;/a&gt;
+                        </code>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah sendiri <img
                           draggable="false" role="img" class="emoji" alt="↗"
@@ -3866,13 +3888,13 @@ USA
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="bd-callout">
                         <code>
-                                                        &lt;h2&gt;Absolute URLs&lt;/h2&gt; <br>
-                                                        &lt;p&gt;&lt;a href="https://onysu.github.io/lesson/webdesain/"&gt;O-Learning&lt;/a&gt;&lt;/p&gt; <br>
-                                                        &lt;p&gt;&lt;a href="https://www.google.com/"&gt;Google&lt;/a&gt;&lt;/p&gt; <br>
-                                                        <br>
-                                                        &lt;h2&gt;Relative URLs&lt;/h2&gt; <br>
-                                                        &lt;p&gt;&lt;a href="link-lokal.html"&gt;HTML Images&lt;/a&gt;&lt;/p&gt;
-                                                    </code>
+                            &lt;h2&gt;Absolute URLs&lt;/h2&gt; <br>
+                            &lt;p&gt;&lt;a href="https://onysu.github.io/lesson/webdesain/"&gt;O-Learning&lt;/a&gt;&lt;/p&gt; <br>
+                            &lt;p&gt;&lt;a href="https://www.google.com/"&gt;Google&lt;/a&gt;&lt;/p&gt; <br>
+                            <br>
+                            &lt;h2&gt;Relative URLs&lt;/h2&gt; <br>
+                            &lt;p&gt;&lt;a href="link-lokal.html"&gt;HTML Images&lt;/a&gt;&lt;/p&gt;
+                        </code>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                         sendiri <img draggable="false" role="img" class="emoji" alt="↗"
@@ -3897,11 +3919,11 @@ USA
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="bd-callout">
                         <code>
-                                                            &lt;a href="https://onysu.github.io/lesson/webdesain/"&gt; <br>
-                                                            &lt;img src="R.gif" alt="HTML tutorial" style="width:100px;height:100px;"&gt;
-                                                            <br>
-                                                            &lt;/a&gt; <br>
-                                                        </code>
+                      &lt;a href="https://onysu.github.io/lesson/webdesain/"&gt; <br>
+                      &lt;img src="R.gif" alt="HTML tutorial" style="width:100px;height:100px;"&gt;
+                      <br>
+                      &lt;/a&gt; <br>
+                      </code>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                         sendiri <img draggable="false" role="img" class="emoji" alt="↗"
@@ -3924,9 +3946,9 @@ USA
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="bd-callout">
                         <code>
-                                            &lt;h2&gt;Link ke alamat Email&lt;/h2&gt; <br>
-                                            &lt;p&gt;&lt;a href="mailto:someone@example.com"&gt;Kirim email&lt;/a&gt;&lt;/p&gt;
-                                        </code>
+                            &lt;h2&gt;Link ke alamat Email&lt;/h2&gt; <br>
+                            &lt;p&gt;&lt;a href="mailto:someone@example.com"&gt;Kirim email&lt;/a&gt;&lt;/p&gt;
+                        </code>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                         sendiri <img draggable="false" role="img" class="emoji" alt="↗"
@@ -3935,9 +3957,8 @@ USA
                 </section>
                 <section id="14.6">
                     <h2>Tombol Links</h2>
-                    <p>Links juga dapat ditata sebagai tombol, dengan menggunakan CSS:</p>
+                    <p>Links juga dapat ditata sebagai tombol, dengan menggunakan CSS. <br> Contoh :</p>
                     <!-- <p><a href="javascript:void(0)">Ini adalah link</a></p> -->
-                    <p>Contoh :</p>
                     <img class="top-example" src="files/img/browser-head.png" alt="">
                     <div class="bd-example">
                         <style>
@@ -3992,9 +4013,8 @@ USA
                           src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
                     </div>
                     <!-- <p>Untuk mempelajari lebih lanjut tentang CSS, buka <a href="https://onysu.github.io/lesson/webdesain/materi5.html#16">Tutorial CSS</a> kami.</p> -->
-                    <h2>Tombol sebagai Links</h2>
-                    <p>Kalian juga bisa menambahkan beberapa kode JavaScript. <br> JavaScript memungkinkan Kalian untuk menentukan apa yang terjadi pada peristiwa tertentu, seperti mengklik tombol:</p>
-                    <p>Contoh :</p>
+                    <!-- <h2>Tombol sebagai Links</h2> -->
+                    <p>Kalian juga bisa menambahkan beberapa kode JavaScript. <br> JavaScript memungkinkan Kalian untuk menentukan apa yang terjadi pada peristiwa tertentu, seperti mengklik tombol. <br> Contoh :</p>
                     <img class="top-example" src="files/img/browser-head.png" alt="">
                     <div class="bd-example">
                         <p><button class="btn btn-secondary text-light btn-sm" onclick="document.location='link-lokal.html'">Link
@@ -4003,8 +4023,8 @@ USA
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="bd-callout">
                         <code>
-                                            &lt;button onclick="document.location='link-lokal.html'">Link lokal&lt;/button&gt;
-                                        </code>
+                            &lt;button onclick="document.location='link-lokal.html'">Link lokal&lt;/button&gt;
+                        </code>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                         sendiri <img draggable="false" role="img" class="emoji" alt="↗"
@@ -4013,8 +4033,7 @@ USA
                 </section>
                 <section id="14.7">
                     <h2>Links Judul</h2>
-                    <p><mark><code>title</mark></code> Atribut menentukan informasi tambahan tentang elemen. Informasi ini paling sering ditampilkan sebagai teks tooltip ketika mouse bergerak di atas elemen.</p>
-                    <p>Contoh :</p>
+                    <p><mark><code>title</mark></code> Atribut menentukan informasi tambahan tentang elemen. Informasi ini paling sering ditampilkan sebagai teks tooltip ketika mouse bergerak di atas elemen. <br> Contoh :</p>
                     <img class="top-example" src="files/img/browser-head.png" alt="">
                     <div class="bd-example">
                         <h2>Judul Tautan</h2>
@@ -4026,8 +4045,8 @@ USA
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="bd-callout">
                         <code>
-                                            &lt;a href="https://onysu.github.io/lesson/webdesain/" title="Kunjungi Tutorial HTML kami"&gt;Kunjungi Tutorial HTML kami&lt;/a&gt;
-                                        </code>
+                            &lt;a href="https://onysu.github.io/lesson/webdesain/" title="Kunjungi Tutorial HTML kami"&gt;Kunjungi Tutorial HTML kami&lt;/a&gt;
+                        </code>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="code-editor/codeEditor2.html" target="_blank">Cobalah
                         sendiri <img draggable="false" role="img" class="emoji" alt="↗"
@@ -4157,9 +4176,6 @@ USA
                     </div>
                 </section>
                 <section id="">
-
-                </section>
-                <section id="">
                     <h2>Tag Links HTML</h2>
                     <table class="table table-bordered w-100">
                         <thead class="table-light text-center">
@@ -4181,13 +4197,11 @@ USA
                 <!-- LINK BOOKMARKS -->
                 <section id="14.9">
                     <h2>Buat Bookmark</h2>
-                    <p>Links HTML dapat digunakan untuk membuat bookmark, sehingga pembaca dapat melompat ke bagian tertentu dari halaman web.
-                    </p>
-
-                    <h2>Membuat Bookmark di HTML</h2>
+                    <p>Links HTML dapat digunakan untuk membuat bookmark, sehingga pembaca dapat melompat ke bagian tertentu dari halaman web.</p>
+                    <br>
+                    <h3>Membuat Bookmark di HTML</h3>
                     <p>Bookmark dapat berguna jika halaman web sangat panjang. Untuk membuat bookmark - buat bookmark terlebih dahulu, lalu tambahkan link ke sana. Ketika link diklik, halaman akan bergulir ke bawah atau ke atas ke lokasi dengan bookmark.
-                    </p>
-                    <p>Contoh :</p>
+                        <br> Contoh :</p>
                     <p>Pertama, gunakan <mark><code>id</mark></code> atribut untuk membuat bookmark:</p>
                     <img class="top-example" src="files/img/browser-head.png" alt="">
                     <div class="bd-example">

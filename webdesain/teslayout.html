@@ -24,9 +24,35 @@
 
     <!-- Favicons -->
     <link rel="shortcut icon" href="../assets/img/aku-bulat.ico" type="image/x-icon">
+    <style>
+        .bar {
+            position: fixed;
+            top: 50px;
+            /* z-index: 1; */
+            width: 100%;
+            background-color: #f1f1f1;
+        }
+        
+        .progress-container {
+            width: 100%;
+            height: 8px;
+            background: #ccc;
+        }
+        
+        .progress-bar {
+            height: 8px;
+            background: #04AA6D;
+            width: 0%;
+        }
+    </style>
 </head>
 
 <body>
+    <div class="bar">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div>
     <div class="skippy visually-hidden-focusable overflow-hidden">
         <div class="container-xl">
             <a class="d-inline-flex p-2 m-1" href="#content">Lewati ke konten utama</a>
@@ -138,6 +164,7 @@
         </nav>
     </header>
 
+
     <nav class="bd-subnavbar py-2" aria-label="Secondary navigation">
         <div class="container-xxl d-flex align-items-md-center">
             <form class="bd-search position-relative me-auto">
@@ -175,10 +202,15 @@
               d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zm7-8a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0zm-.5 11.707l-1.146 1.147a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 11.707V15.5a.5.5 0 0 1-1 0v-3.793z" />
           </svg>
         </button>
+
+
         </div>
     </nav>
 
+
+
     <div class="container-xxl my-md-4 bd-layout">
+
         <aside class="bd-sidebar">
             <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation">
                 <ul class="list-unstyled mb-0 py-3 pt-md-1">
@@ -188,6 +220,7 @@
         </aside>
 
         <main class="bd-main order-1">
+
 
             <div class="bd-intro">
                 <div class="d-md-flex align-items-center justify-content-between">
@@ -4422,6 +4455,19 @@ USA
             } else {
                 document.getElementById('hslaresulttext').style.color = "#1f2d3d";
             }
+        }
+    </script>
+    <script>
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        function myFunction() {
+            var winScroll = document.bd - content.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
         }
     </script>
 </body>

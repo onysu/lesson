@@ -27,15 +27,16 @@
 </head>
 
 <body>
-    <div class="bar">
-        <div class="progress-container">
-            <div class="progress-bar" id="myBar"></div>
-        </div>
-    </div>
     <div class="skippy visually-hidden-focusable overflow-hidden">
         <div class="container-xl">
             <a class="d-inline-flex p-2 m-1" href="#content">Lewati ke konten utama</a>
             <a class="d-none d-md-inline-flex p-2 m-1" href="#bd-docs-nav">Lewati ke navigasi dokumen</a>
+        </div>
+    </div>
+
+    <div class="bar">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
         </div>
     </div>
 
@@ -4439,7 +4440,7 @@ USA
         };
 
         function myFunction() {
-            var winScroll = document.bd - content.scrollTop || document.documentElement.scrollTop;
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
             var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             var scrolled = (winScroll / height) * 100;
             document.getElementById("myBar").style.width = scrolled + "%";

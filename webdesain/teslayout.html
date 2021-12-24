@@ -4580,7 +4580,7 @@ USA
                     </div>
                     <!-- <p><strong>Tip:</strong> Untuk mempelajari lebih lanjut tentang CSS Float, baca <a href="https://www.w3schools.com/css/css_float.asp">Tutorial CSS Float</a> kami.</p> -->
                 </section>
-                <section id="15.x">
+                <section id="15.10">
                     <h2>Format Gambar Umum</h2>
                     <p>Berikut adalah jenis file gambar yang paling umum, yang didukung di semua browser (Chrome, Edge, Firefox, Safari, Opera):
                     </p>
@@ -4626,7 +4626,7 @@ USA
                         </tbody>
                     </table>
                 </section>
-                <section id="15.x">
+                <!-- <section id="15.x">
                     <h2>Ringkasan Bab</h2>
                     <ul>
                         <li>Gunakan <mark><code>&lt;img&gt;</mark></code> elemen HTML untuk mendefinisikan gambar</li>
@@ -4674,11 +4674,10 @@ USA
                             </tr>
                         </tbody>
                     </table>
-                    <!-- <p>Untuk daftar lengkap semua tag HTML yang tersedia, kunjungi <a href="https://www.w3schools.com/tags/default.asp">Referensi Tag HTML</a> kami.</p> -->
-                </section>
+                </section> -->
                 <!-- HTML Image Maps -->
-                <section id="15.x">
-                    <h2>Peta Gambar HTML</h2>
+                <section id="15.11">
+                    <h2>Pemetaan Gambar / Map</h2>
                     <p>Dengan peta gambar HTML, Anda dapat membuat area yang dapat diklik pada gambar.</p>
                     <h5>Peta Gambar</h5>
                     <p><mark><code>&lt;map&gt;</mark></code> Tag HTML mendefinisikan peta gambar. Peta gambar adalah gambar dengan area yang dapat diklik. Area ditentukan dengan satu atau lebih
@@ -4694,15 +4693,14 @@ USA
                     </div>
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="bd-callout">
-                        <code>
-                                        &lt;img src="workplace.jpg" alt="Workplace" usemap="#workmap"&gt; <br>
-                                        <br>
-                                        &lt;map name="workmap"&gt; <br>
-                                            &lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html"&gt; <br>
-                                            &lt;area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm"&gt; <br>
-                                            &lt;area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.html"&gt; <br>
-                                        &lt;/map&gt; <br>
-                                    </code>
+                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;img <span class="na">src</span>="workplace.jpg" <span class="na">alt</span>="Workplace" <span class="na">usemap</span>="#workmap"&gt;
+  
+&lt;map <span class="na">name</span>="workmap"&gt;
+&lt;area <span class="na">shape</span>="rect" <span class="na">coords</span>="34,44,270,350" <span class="na">alt</span>="Computer" <span class="na">href</span>="computer.html"&gt;
+&lt;area <span class="na">shape</span>="rect" <span class="na">coords</span>="290,172,333,250" <span class="na">alt</span>="Phone" <span class="na">href</span>="phone.htm"&gt;
+&lt;area <span class="na">shape</span>="circle" <span class="na">coords</span>="337,300,44" <span class="na">alt</span>="Coffee" <span class="na">href</span>="coffee.html"&gt;
+&lt;/map&gt;
+</code></pre>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
                         sendiri <img draggable="false" role="img" class="emoji" alt="↗"
@@ -4711,16 +4709,14 @@ USA
                 </section>
                 <section id="15.x">
                     <h2>Bagaimana cara kerjanya?</h2>
-                    <p>Gagasan di balik peta gambar adalah bahwa Anda harus dapat melakukan tindakan yang berbeda tergantung di mana dalam gambar yang Anda klik. Untuk membuat peta gambar, Anda memerlukan gambar, dan beberapa kode HTML yang menjelaskan area
-                        yang dapat diklik.
-                    </p>
+                    <p>Ide dari Map gambar adalah bahwa Anda harus dapat melakukan aksi yang berbeda tergantung di mana gambar yang Anda klik. Untuk membuat peta gambar, Anda memerlukan gambar dan beberapa kode area yang dapat diklik.</p>
                     <h2>Foto</h2>
-                    <p>Gambar disisipkan menggunakan <mark><code>&lt;img&gt;</mark></code> tag. Satu-satunya perbedaan dari gambar lain adalah Anda harus menambahkan <mark><code>usemap</mark></code> atribut:</p>
-                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <p>Gambar disisipkan menggunakan <mark><code>&lt;img&gt;</mark></code> tag. Satu-satunya perbedaan dari gambar lain adalah Anda harus menambahkan <mark><code>usemap</mark></code> atribut.
+                        <!-- <img class="top-example" src="files/img/browser-head.png" alt="">
                     <div class="bd-example">
                         <img class="img-fluid" src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap">
-                    </div>
-                    <p><mark><code>nilai usemap</mark></code> dimulai dengan tag hash <strong>#</strong> diikuti dengan nama peta gambar, dan digunakan untuk menciptakan hubungan antara gambar dan peta gambar.</p>
+                    </div> -->
+                        <mark><code>nilai usemap</mark></code> dimulai dengan hash tag <strong>#</strong> diikuti dengan nama peta gambar dan digunakan untuk menciptakan hubungan antara gambar dan peta gambar.</p>
                     <p class="moreInfo"><strong>Tip:</strong> Anda dapat menggunakan gambar apa saja sebagai peta gambar!.</p>
                 </section>
                 <section id="15.x">
@@ -4733,8 +4729,11 @@ USA
                         <code>&lt;map name="workmap"&gt;</code>
                     </div>
                     <p><mark><code>name</mark></code> atribut harus memiliki nilai yang sama sebagai
-                        <mark><code>&lt;img&gt;</mark></code>'s <mark><code>usemap</mark></code> atribut.</p>
-                    <h3>Area</h3>
+                        <mark><code>&lt;img&gt;'s</mark></code> <mark><code>usemap</mark></code> atribut.</p>
+                </section>
+
+                <section id="">
+                    <h2>Area</h2>
                     <p>Kemudian, tambahkan area yang dapat diklik. Area yang dapat diklik didefinisikan menggunakan
                         <mark><code>&lt;area&gt;</mark></code> elemen.
                     </p>
@@ -4774,7 +4773,8 @@ USA
                     <p>Anda juga harus menentukan beberapa koordinat untuk dapat menempatkan area yang dapat diklik ke dalam gambar.
                     </p>
                 </section>
-                <section id="15.x">
+
+                <section id="15.11.1">
                     <h2>Shape="rect"</h2>
                     <p>Koordinat untuk <mark><code>shape="rect"</mark></code>
                         </mark> berpasangan, satu untuk <strong>sumbu x</strong> dan satu untuk <strong>sumbu
@@ -4833,13 +4833,12 @@ USA
                     </div>
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="bd-callout">
-                        <code>
-                                        &lt;p&gt;&lt;img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap1" width="400" height="379"&gt;&lt;/p&gt; <br>
-                                            <br>
-                                        &lt;map name="workmap1"&gt; <br>
-                                            &lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.html"&gt; <br>
-                                        &lt;/map&gt;
-                                    </code>
+                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;p&gt;&lt;img <span class="na">src</span>="files/img/workplace.jpg" <span class="na">alt</span>="Workplace" <span class="na">usemap</span>="#workmap1" <span class="na">width</span>="400" <span class="na">height</span>="379"&gt;&lt;/p&gt;
+
+&lt;map <span class="na">name</span>="workmap1"&gt;
+&lt;area <span class="na">shape</span>="rect" <span class="na">coords</span>="34,44,270,350" <span class="na">alt</span>="Computer" <span class="na">href</span>="computer.html"&gt;
+&lt;/map&gt;
+</code></pre>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
                         sendiri <img draggable="false" role="img" class="emoji" alt="↗"
@@ -4855,7 +4854,7 @@ USA
                         <img src="files/img/workplace.jpg" alt="tempat kerja" style="max-width: 360px;">
                     </div>
                 </section>
-                <section id="15.x">
+                <section id="15.11.2">
                     <h2>Shape="circle"</h2>
                     <p>Untuk menambahkan luas lingkaran, pertama cari koordinat pusat lingkaran: <strong>337,300</strong>
                     </p>
@@ -4930,7 +4929,7 @@ USA
                         <img src="files/img/workplace.jpg" alt="tempat kerja" style="max-width: 360px;">
                     </div>
                 </section>
-                <section id="15.x">
+                <section id="15.11.3">
                     <h2>Shape="poly"</h2>
                     <p>Ini <mark><code>shape=&quot;poly&quot;</mark></code>
                         </mark> berisi beberapa titik koordinat, yang menciptakan bentuk yang dibentuk dengan garis lurus (poligon). Ini dapat digunakan untuk membuat bentuk apa pun. Seperti mungkin bentuk croissant!

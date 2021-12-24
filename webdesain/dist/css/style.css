@@ -58,7 +58,7 @@ ul.icon-list li a {
 .moreInfo {
     clear: both;
     min-height: 35px;
-    background: url(https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/32/000000/external-man-avatars-vitaliy-gorbachev-flat-vitaly-gorbachev-4.png) no-repeat;
+    background: url(/webdesain/files/img/aku_32x32.png) no-repeat;
     background-position-y: top;
     padding: 0px 0px 0px 45px;
     margin: 1.27em 0 1em 0;
@@ -103,16 +103,8 @@ address {
     border-bottom: none;
 }
 
-.bd-callout-warning {
-    border-left-color: #f0ad4e;
-}
-
 .bd-callout-syntax {
     border-left-color: #5bc0de;
-}
-
-.bd-callout-danger {
-    border-left-color: #d9534f;
 }
 
 .nav-tabs .nav-link.active {
@@ -121,13 +113,15 @@ address {
 }
 
 mark {
-    background: #eee;
-    padding: 0 5px;
-    border-radius: 4px;
-    -webkit-box-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
-    box-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+    /* background: antiquewhite; */
+    padding: 0 6px;
+    border-radius: 3px;
+    /* -webkit-box-shadow: 1px 1px 1px rgb(0 0 0 / 40%);
+    box-shadow: 1px 1px 1px rgb(0 0 0 / 40%); */
     position: relative;
-    top: -1px;
+    top: 0;
+    /* top: -1px; */
+    /* font-weight: 500; */
 }
 
 img.emoji {
@@ -318,20 +312,14 @@ span.attributecolor {
 
 .bd-callout,
 .bd-example,
-.bd-callout-danger,
-.bd-callout-syntax,
-.bd-callout-warning,
-.struktur {
+.bd-callout-syntax .struktur {
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
     box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
     background-color: #fff;
 }
 
 .bd-callout,
-.bd-callout-danger,
-.bd-callout-syntax,
-.bd-callout-warning,
-.struktur {
+.bd-callout-syntax .struktur {
     border-radius: max(0px, min(8px, calc((100vw - 4px - 100%) * 9999))) / 8px;
 }
 
@@ -422,5 +410,9 @@ span.attributecolor {
 }
 
 td:nth-child(1) {
+    text-align: center;
+}
+
+th {
     text-align: center;
 }

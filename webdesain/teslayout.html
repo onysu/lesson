@@ -4854,6 +4854,7 @@ USA
                         <img src="files/img/workplace.jpg" alt="tempat kerja" style="max-width: 360px;">
                     </div>
                 </section>
+                <br>
                 <section id="15.11.2">
                     <h2>Shape="circle"</h2>
                     <p>Untuk menambahkan luas lingkaran, pertama cari koordinat pusat lingkaran: <strong>337,300</strong>
@@ -4909,13 +4910,11 @@ USA
                     </div>
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="bd-callout">
-                        <code>
-                                        &lt;p&gt;&lt;img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap2" width="360" height="339"&gt;&lt;/p&gt; <br>
-                                            <br>
-                                        &lt;map name="workmap2"&gt; <br>
-                                            &lt;area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.html"&gt; <br>
-                                        &lt;/map&gt; <br>
-                                    </code>
+                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;p&gt;&lt;img <span class="na">src</span>="files/img/workplace.jpg" <span class="na">alt</span>="Workplace" <span class="na">usemap</span>="#workmap2" <span class="na">width</span>="360" <span class="na">height</span>="339"&gt;&lt;/p&gt;
+
+&lt;map <span class="na">name</span>="workmap2"&gt;
+&lt;area <span class="na">shape</span>="circle" <span class="na">coords</span>="337,300,44" <span class="na">alt</span>="Cup of coffee" <span class="na">href</span>="coffee.html"&gt;
+&lt;/map&gt;</code></pre>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
                         sendiri <img draggable="false" role="img" class="emoji" alt="↗"
@@ -4929,13 +4928,14 @@ USA
                         <img src="files/img/workplace.jpg" alt="tempat kerja" style="max-width: 360px;">
                     </div>
                 </section>
+                <br>
                 <section id="15.11.3">
                     <h2>Shape="poly"</h2>
                     <p>Ini <mark><code>shape=&quot;poly&quot;</mark></code>
                         </mark> berisi beberapa titik koordinat, yang menciptakan bentuk yang dibentuk dengan garis lurus (poligon). Ini dapat digunakan untuk membuat bentuk apa pun. Seperti mungkin bentuk croissant!
                     </p>
                     <p>Bagaimana caranya agar croissant pada gambar di bawah ini menjadi link yang bisa diklik?.</p>
-                    <h5>Langkah-langkah :</h5>
+                    <h3>Langkah-langkah :</h3>
                     <p>Kita harus mencari koordinat x dan y untuk semua tepi croissant:</p>
                     <p><img class="img-fluid" src="files/img/frenchfood4.jpg" alt="Makanan Perancis"></p>
                     <p>Koordinat berpasangan, satu untuk sumbu x dan satu untuk sumbu y:</p>
@@ -4953,12 +4953,10 @@ USA
                     </div>
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="bd-callout">
-                        <code>
-                                        &lt;p&gt;&lt;img src="files/img/frenchfood.jpg" alt="French Food" usemap="#foodmap" width="450" height="675"&gt;&lt;/p&gt; <br>
-                                            <br>
-                                        &lt;map name="foodmap"&gt; <br>
-                                            &lt;area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" alt="Croissant" href="croissant.html"&gt; <br>
-                                    </code>
+                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;p&gt;&lt;img <span class="na">src</span>="files/img/frenchfood.jpg" <span class="na">alt</span>="French Food" <span class="na">usemap</span>="#foodmap" <span class="na">width</span>="450" <span class="na">height</span>="675"&gt;&lt;/p&gt;
+
+&lt;map <span class="na">name</span>="foodmap"&gt;
+&lt;area <span class="na">shape</span>="poly" <span class="na">coords</span>="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147" <span class="na">alt</span>="Croissant" <span class="na">href</span>="croissant.html"&gt;</code></pre>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
                         sendiri <img draggable="false" role="img" class="emoji" alt="↗"
@@ -4968,7 +4966,7 @@ USA
                     <p>Ini adalah area yang dapat diklik dan akan menuju ke halaman &quot;croissant.html&quot;:</p>
                     <p><img class="img-fluid" src="files/img/frenchfood3.jpg" alt="Makanan Perancis"></p>
                 </section>
-                <section id="15.x">
+                <section id="15.12">
                     <h2>Peta Gambar dan JavaScript</h2>
                     <p>Area yang dapat diklik juga dapat memicu fungsi JavaScript. <br> Tambahkan
                         <mark><code>click event</mark></code> ke <mark><code>&lt;area&gt;</mark></code> elemen untuk menjalankan fungsi JavaScript:
@@ -4991,26 +4989,24 @@ USA
                     </div>
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="bd-callout">
-                        <code>
-                                        &lt;p&gt;&lt;img src="files/img/workplace.jpg" alt="Workplace" usemap="#workmap4" width="400" height="379"&gt;&lt;/p&gt; <br>
-                                            <br>
-                                        &lt;map name="workmap4"&gt; <br>
-                                            &lt;area shape="circle" coords="337,300,44" href="coffee.html" onclick="myFunction()"&gt; <br>
-                                        &lt;/map&gt; <br>
-                                            <br>
-                                        &lt;script&gt; <br>
-                                            function myFunction() { <br>
-                                                alert("Anda mengklik cangkir kopi!"); <br>
-                                            } <br>
-                                        &lt;/script&gt;
-                                    </code>
+                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;p&gt;&lt;img <span class="na">src</span>="files/img/workplace.jpg" <span class="na">alt</span>="Workplace" <span class="na">usemap</span>="#workmap4" <span class="na">width</span>="400" <span class="na">height</span>="379"&gt;&lt;/p&gt;
+
+&lt;map <span class="na">name</span>="workmap4"&gt;
+&lt;area <span class="na">shape</span>="circle" <span class="na">coords</span>="337,300,44" <span class="na">href</span>="coffee.html" <span class="na">onclick</span>="myFunction()"&gt;
+&lt;/map&gt;
+
+&lt;script&gt;
+  function myFunction() {
+    alert("Anda mengklik cangkir kopi!");
+  }
+&lt;/script&gt;</code></pre>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
                         sendiri <img draggable="false" role="img" class="emoji" alt="↗"
                           src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
                     </div>
                 </section>
-                <section id="15.x">
+                <!-- <section id="15.x">
                     <h2>Ringkasan Bab</h2>
                     <ul style='margin-top:0cm' type=disc>
                         <li>Gunakan <mark><code>&lt;map&gt;</code></mark> elemen HTML untuk mendefinisikan peta gambar</li>
@@ -5018,8 +5014,8 @@ USA
                         </li>
                         <li>Gunakan usemapatribut HTML <mark><code>&lt;img&gt;</code></mark> elemen untuk menunjuk ke peta gambar</li>
                     </ul>
-                </section>
-                <section id="15.x">
+                </section> -->
+                <!-- <section id="15.x">
                     <h2>Tag Gambar HTML</h2>
                     <table class="table table-bordered w-100">
                         <thead class="table-light text-center">
@@ -5053,13 +5049,13 @@ USA
                     </table>
                     <p>Untuk daftar lengkap semua tag HTML yang tersedia, kunjungi <a href="tag-html.html" target="_blank">Referensi Tag
                       HTML</a>.</p>
-                </section>
+                </section> -->
                 <!-- HTML Background Images -->
-                <section id="15.x">
-                    <h3>Gambar Background HTML</h3>
+                <section id="15.13">
+                    <h2>Gambar Background HTML</h2>
                     <p>Gambar background dapat ditentukan untuk hampir semua elemen HTML.</p>
 
-                    <h2>Gambar Background pada elemen HTML</h2>
+                    <h4>Gambar Background pada elemen HTML</h4>
                     <p>Untuk menambahkan gambar background pada elemen HTML, gunakan <mark><code>style</mark></code>
                         </mark> atribut HTML dan <mark><code>background-image</mark></code>
                         </mark> properti CSS : <br> Contoh :</p>
@@ -5086,27 +5082,15 @@ USA
                     </div>
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="bd-callout">
-                        <code>
-                                        &lt;p&gt;Gambar background untuk elemen div:&lt;/p&gt; <br>
-                                            <br>
-                                        &lt;div style="background-image: url('files/img/img_girl.jpg');"&gt; <br>
-                                            Anda dapat menentukan gambar background <br> untuk setiap elemen HTML yang terlihat. <br> Dalam contoh ini, gambar
-                                            background <br> ditentukan untuk elemen div. <br> Secara default, gambar latar <br> akan mengulangi dirinya sendiri ke
-                                            arah(s)
-                                                <br> di mana itu lebih kecil dari elemen <br> di mana itu ditentukan. (Coba ubah ukuran <br> jendela browser untuk
-                                            melihat bagaimana <br> gambar background berperilaku. <br>
-                                        &lt;/div&gt; <br>
-                                            <br>
-                                        &lt;p&gt;Gambar background untuk elemen p:&lt;/p&gt; <br>
-                                            <br>
-                                        &lt;p style="background-image: url('files/img/img_girl.jpg');"&gt; <br>
-                                            Anda dapat menentukan gambar background <br> untuk setiap elemen HTML yang terlihat. <br> Dalam contoh ini, gambar
-                                            background <br> ditentukan untuk elemen p. <br> Secara default, gambar latar <br> akan mengulangi dirinya sendiri ke
-                                            arah(s)
-                                                <br> di mana itu lebih kecil dari elemen <br> di mana itu ditentukan. (Coba ubah ukuran <br> jendela browser untuk
-                                            melihat bagaimana <br> gambar background berperilaku. <br>
-                                        &lt;/p&gt;
-                                    </code>
+                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;p&gt;Gambar background untuk elemen div:&lt;/p&gt; 
+
+&lt;div <span class="na">style</span>="background-image: url('files/img/img_girl.jpg');"&gt; 
+Anda dapat menentukan gambar background untuk setiap elemen HTML yang terlihat. Dalam contoh ini, gambar background  ditentukan untuk elemen div.  Secara default, gambar latar  akan mengulangi dirinya sendiri ke arah(s) di mana itu lebih kecil dari elemen  di mana itu ditentukan. (Coba ubah ukuran  jendela browser untuk melihat bagaimana  gambar background berperilaku.&lt;/div&gt; 
+
+&lt;p&gt;Gambar background untuk elemen p:&lt;/p&gt; 
+
+&lt;p <span class="na">style</span>="background-image: url('files/img/img_girl.jpg');"&gt;
+Anda dapat menentukan gambar background  untuk setiap elemen HTML yang terlihat.  Dalam contoh ini, gambar background  ditentukan untuk elemen p.  Secara default, gambar latar  akan mengulangi dirinya sendiri ke arah(s) di mana itu lebih kecil dari elemen  di mana itu ditentukan. (Coba ubah ukuran  jendela browser untuk melihat bagaimana  gambar background berperilaku.&lt;/p&gt;</code></pre>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
                         sendiri <img draggable="false" role="img" class="emoji" alt="↗"
@@ -5131,13 +5115,11 @@ USA
 
                     <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="bd-callout">
-                        <code>
-                                        &lt;style&gt; <br>
-                                            div { <br>
-                                                background-image: url('files/img/img_girl.jpg'); <br>
-                                            } <br>
-                                        &lt;/style&gt;
-                                    </code>
+                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;style&gt;
+  <span class="nt">div</span> {
+    <span class="na">background-image:</span> url('files/img/img_girl.jpg');
+}
+&lt;/style&gt;</code></pre>
                         <hr>
                         <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
                         sendiri <img draggable="false" role="img" class="emoji" alt="↗"

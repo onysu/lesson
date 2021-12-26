@@ -6340,27 +6340,22 @@ Anda dapat menentukan gambar background  untuk setiap elemen HTML yang terlihat.
                 <section id="16.15">
                     <h2>Lebar Kolom Tabel HTML</h2>
                     <div class="py-3">
-                        <table class="w-100">
+                        <table style="width:30%;border:1px solid black; border-collapse: collapse;">
                             <tbody>
                                 <tr>
-                                    <td style=" background-color: #fff; border: 1px solid #282A35;">&nbsp;</td>
-                                    <td style="width:60%;background-color:rgba(150, 212, 212,0.3);border: 1px solid #282A35;">
-                                        &nbsp;</td>
-                                    <td style="background-color: #fff; border: 1px solid #282A35;">&nbsp;</td>
+                                    <td style="border:1px solid black; border-collapse: collapse;">&nbsp;</td>
+                                    <td style="width:60%;background-color:rgba(150, 212, 212,0.3);border:1px solid black; border-collapse: collapse;">&nbsp;</td>
+                                    <td style="border:1px solid black; border-collapse: collapse;">&nbsp;</td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #fff; border: 1px solid #282A35;">&nbsp;</td>
-                                    <td style="background-color:rgba(150, 212, 212,0.3);border: 1px solid #282A35;">
-                                        &nbsp;
-                                    </td>
-                                    <td style="background-color: #fff; border: 1px solid #282A35;">&nbsp;</td>
+                                    <td style="border:1px solid black; border-collapse: collapse;">&nbsp;</td>
+                                    <td style="background-color:rgba(150, 212, 212,0.3);border:1px solid black; border-collapse: collapse;">&nbsp;</td>
+                                    <td style="border:1px solid black; border-collapse: collapse;">&nbsp;</td>
                                 </tr>
                                 <tr>
-                                    <td style="background-color: #fff; border: 1px solid #282A35;">&nbsp;</td>
-                                    <td style="background-color:rgba(150, 212, 212,0.3);border: 1px solid #282A35;">
-                                        &nbsp;
-                                    </td>
-                                    <td style="background-color: #fff; border: 1px solid #282A35;">&nbsp;</td>
+                                    <td style="border:1px solid black; border-collapse: collapse;">&nbsp;</td>
+                                    <td style="background-color:rgba(150, 212, 212,0.3);border:1px solid black; border-collapse: collapse;">&nbsp;</td>
+                                    <td style="border:1px solid black; border-collapse: collapse;">&nbsp;</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -6437,8 +6432,32 @@ Anda dapat menentukan gambar background  untuk setiap elemen HTML yang terlihat.
                 </section>
                 <section id="16.16">
                     <h2>Tinggi Baris Tabel HTML</h2>
-                    <p>Untuk mengatur tinggi baris tertentu, tambahkan <mark><code>style</code></mark> atribut pada elemen baris tabel.
-                    </p>
+
+                    <div class="py-3">
+                        <table style="width:30%;border:1px solid black; border-collapse: collapse;">
+                            <thead>
+                                <tr>
+                                    <th style="border:1px solid black; border-collapse: collapse;">&nbsp;</th>
+                                    <th style="border:1px solid black; border-collapse: collapse;">&nbsp;</th>
+                                    <th style="border:1px solid black; border-collapse: collapse;">&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="height:100px;background-color:rgba(150, 212, 212,0.3)">
+                                    <td style="border:1px solid black; border-collapse: collapse;">&nbsp;</td>
+                                    <td style="border:1px solid black; border-collapse: collapse;">&nbsp;</td>
+                                    <td style="border:1px solid black; border-collapse: collapse;">&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td style="border:1px solid black; border-collapse: collapse;">&nbsp;</td>
+                                    <td style="border:1px solid black; border-collapse: collapse;">&nbsp;</td>
+                                    <td style="border:1px solid black; border-collapse: collapse;">&nbsp;</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p>Untuk mengatur tinggi baris tertentu, tambahkan <mark><code>style</code></mark> atribut pada elemen baris tabel.</p>
                     <img class="top-example" src="files/img/browser-head.png" alt="">
                     <div class="bd-example">
                         <h5>Atur tinggi baris kedua menjadi 200 piksel:</h5>

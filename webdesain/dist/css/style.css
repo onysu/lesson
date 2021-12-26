@@ -162,7 +162,7 @@ img.emoji {
 
 /* tabel-native */
 
-.bd-example.table {
+.bd-example>table {
     display: table;
     border-collapse: separate;
     box-sizing: border-box;
@@ -172,47 +172,69 @@ img.emoji {
     caption-side: unset;
 }
 
-.bd-example.caption {
-    display: table-caption;
-    text-align: -webkit-center;
-}
-
-.bd-example.tbody {
-    display: table-row-group;
-    vertical-align: middle;
-    border-color: inherit;
-    border-style: unset;
-    border-width: unset;
-}
-
-.bd-example.tr {
-    display: table-row;
-    vertical-align: inherit;
-    border-color: inherit;
-    border-style: unset;
-    border-width: unset;
-}
-
-.bd-example.thead {
+.bd-example>thead {
     display: table-header-group;
     vertical-align: middle;
     border-color: inherit;
-    border-width: inherit;
 }
 
-.bd-example.th {
+.bd-example>tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.bd-example>tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.bd-example>th {
     display: table-cell;
     vertical-align: inherit;
     font-weight: bold;
-    text-align: center;
+    text-align: -internal-center;
+}
+
+.bd-example>td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+
+.bd-example>caption {
+    display: table-caption;
+    text-align: -webkit-center;
+    text-align: -moz-center;
+}
+
+.bd-example>tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+    border-color: unset;
+    border-style: unset;
     border-width: unset;
 }
 
-.bd-example.td {
-    display: table-cell;
-    vertical-align: inherit;
-    border-width: unset;
-}
+
+/* table.bd-example {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+    caption-side: unset;
+} */
+
+
+/* caption.bd-example {
+    display: table-caption;
+    text-align: -webkit-center;
+} */
 
 
 /* chroma pre code */
@@ -410,10 +432,11 @@ span.attributecolor {
     z-index: 1;
 }
 
-td:nth-child(1) {
+
+/* td:nth-child(1) {
     text-align: center;
 }
 
 th {
     text-align: center;
-}
+} */

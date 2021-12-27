@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="id-ID">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pelajari tentang HTML, CSS dan JavaScript.">
+    <meta name="author" content="Ony">
+    <meta name="generator" content="">
+
+    <meta name="docsearch:language" content="id">
+    <meta name="docsearch:version" content="5.1">
+
+    <title>WEB-DESAIN v1.2</title>
+
+    <script src="../../assets/js/w3.js"></script>
+    <script src="../../assets/js/w3color.js"></script>
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="../../assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <!-- <link rel="stylesheet" href="../../assets/css/all.css"> -->
+    <!-- <link rel="stylesheet" href="dist/css/webdesain.css"> -->
+    <link rel="stylesheet" href="../../assets/css/bootstrap-icons.css">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="../../assets/img/aku-bulat.ico" type="image/x-icon">
+</head>
+
+<h2>Daftar HTML</h2>
+<p>Daftar HTML memungkinkan pengembang web untuk mengelompokkan satu set item terkait dalam daftar.</p>
+<p>Contoh</p>
+<p>Daftar HTML yang tidak berurutan:</p>
+<ul>
+    <li>Barang</li>
+    <li>Barang</li>
+    <li>Barang</li>
+    <li>Barang</li>
+</ul>
+<p>Daftar HTML yang dipesan:</p>
+<ol>
+    <li>barang pertama</li>
+    <li>Barang kedua</li>
+    <li>Barang ketiga</li>
+    <li>Barang keempat</li>
+</ol>
+<h2>Daftar HTML Tidak Terurut</h2>
+<p>Daftar tidak berurutan dimulai dengan &lt;ul&gt;tag. Setiap item daftar dimulai dengan &lt;li&gt;tag.</p>
+<p>Item daftar akan ditandai dengan peluru (lingkaran hitam kecil) secara default:</p>
+<p>Contoh</p>
+<p>&lt;ul&gt; <br> &lt;li&gt;Coffee&lt;/li&gt; <br> &lt;li&gt;Tea&lt;/li&gt; <br> &lt;li&gt;Milk&lt;/li&gt; <br> &lt;/ul&gt; </p>
+<h2>Daftar HTML yang Dipesan</h2>
+<p>Daftar yang diurutkan dimulai dengan &lt;ol&gt;tag. Setiap item daftar dimulai dengan &lt;li&gt;tag.</p>
+<p>Item daftar akan ditandai dengan angka secara default:</p>
+<p>Contoh</p>
+<p>&lt;ol&gt; <br> &lt;li&gt;Coffee&lt;/li&gt; <br> &lt;li&gt;Tea&lt;/li&gt; <br> &lt;li&gt;Milk&lt;/li&gt; <br> &lt;/ol&gt; </p>
+<h2>Daftar Deskripsi HTML</h2>
+<p>HTML juga mendukung daftar deskripsi.</p>
+<p>Daftar deskripsi adalah daftar istilah, dengan deskripsi setiap istilah.</p>
+<p>&lt;dl&gt;tag mendefinisikan daftar deskripsi, yang &lt;dt&gt;tag mendefinisikan istilah (nama), dan &lt;dd&gt;tag menjelaskan setiap istilah:</p>
+<p>Contoh</p>
+<p>&lt;dl&gt; <br> &lt;dt&gt;Coffee&lt;/dt&gt; <br> &lt;dd&gt;- black hot drink&lt;/dd&gt; <br> &lt;dt&gt;Milk&lt;/dt&gt; <br> &lt;dd&gt;- white cold drink&lt;/dd&gt; <br> &lt;/dl&gt; </p>
+<h2>Daftar Tidak Berurutan HTML</h2>
+<p>Tag HTML &lt;ul&gt;mendefinisikan daftar yang tidak berurutan (berpoin).</p>
+<h2>Daftar HTML Tidak Terurut</h2>
+<p>Daftar tidak berurutan dimulai dengan &lt;ul&gt;tag. Setiap item daftar dimulai dengan &lt;li&gt;tag.</p>
+<p>Item daftar akan ditandai dengan peluru (lingkaran hitam kecil) secara default:</p>
+<p>Contoh</p>
+<p>&lt;ul&gt; <br> &lt;li&gt;Coffee&lt;/li&gt; <br> &lt;li&gt;Tea&lt;/li&gt; <br> &lt;li&gt;Milk&lt;/li&gt; <br> &lt;/ul&gt; </p>
+<h2>Daftar HTML Tidak Terurut - Pilih Penanda Item Daftar</h2>
+<p>list-style-typeProperti CSS digunakan untuk menentukan gaya penanda item daftar. Itu dapat memiliki salah satu dari nilai berikut:</p>
+<table>
+    <tr>
+        <td>
+            <h2>Value</h2>
+        </td>
+        <td>
+            <h2>Description</h2>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>disc</p>
+        </td>
+        <td>
+            <p>Sets the list item marker to a bullet (default)</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>circle</p>
+        </td>
+        <td>
+            <p>Sets the list item marker to a circle</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>square</p>
+        </td>
+        <td>
+            <p>Sets the list item marker to a square</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>none</p>
+        </td>
+        <td>
+            <p>list items will not be marked</p>
+        </td>
+    </tr>
+</table>
+<h2>Contoh - Disk</h2>
+<p>&lt;ul style=&quot;list-style-type:disc;&quot;&gt; <br> &lt;li&gt;Coffee&lt;/li&gt; <br> &lt;li&gt;Tea&lt;/li&gt; <br> &lt;li&gt;Milk&lt;/li&gt; <br> &lt;/ul&gt; </p>
+<h2>Contoh - Lingkaran</h2>
+<p>&lt;ul style=&quot;list-style-type:circle;&quot;&gt; <br> &lt;li&gt;Coffee&lt;/li&gt; <br> &lt;li&gt;Tea&lt;/li&gt; <br> &lt;li&gt;Milk&lt;/li&gt; <br> &lt;/ul&gt; </p>
+<h2>Contoh - Kotak</h2>
+<p>&lt;ul style=&quot;list-style-type:square;&quot;&gt; <br> &lt;li&gt;Coffee&lt;/li&gt; <br> &lt;li&gt;Tea&lt;/li&gt; <br> &lt;li&gt;Milk&lt;/li&gt; <br> &lt;/ul&gt; </p>
+<h2>Contoh - Tidak ada</h2>
+<p>&lt;ul style=&quot;list-style-type:none;&quot;&gt; <br> &lt;li&gt;Coffee&lt;/li&gt; <br> &lt;li&gt;Tea&lt;/li&gt; <br> &lt;li&gt;Milk&lt;/li&gt; <br> &lt;/ul&gt; </p>
+<h2>Daftar HTML Bersarang</h2>
+<p>Daftar dapat bersarang (daftar di dalam daftar):</p>
+<p>Contoh</p>
+<p>&lt;ul&gt; <br> &lt;li&gt;Coffee&lt;/li&gt; <br> &lt;li&gt;Tea <br> &lt;ul&gt; <br> &lt;li&gt;Black tea&lt;/li&gt; <br> &lt;li&gt;Green tea&lt;/li&gt; <br> &lt;/ul&gt; <br> &lt;/li&gt; <br> &lt;li&gt;Milk&lt;/li&gt; <br> &lt;/ul&gt; </p>
+<p>Catatan:</b> Item daftar (&lt;li&gt;) dapat berisi daftar baru, dan elemen HTML lainnya, seperti gambar dan tautan, dll.</p>
+<h2>Daftar Horizontal dengan CSS</h2>
+<p>Daftar HTML dapat ditata dengan berbagai cara dengan CSS.</p>
+<p>Salah satu cara populer adalah menata daftar secara horizontal, untuk membuat menu navigasi:</p>
+<p>Contoh</p>
+<p>&lt;!DOCTYPE html&gt; <br> &lt;html&gt; <br> &lt;head&gt; <br> &lt;style&gt; <br> ul { <br> list-style-type: none; <br> margin: 0; <br> padding: 0; <br> overflow: hidden; <br> background-color: #333333; <br> } <br>
+    <br> li { <br> float: left; <br> } <br>
+    <br> li a { <br> display: block; <br> color: white; <br> text-align: center; <br> padding: 16px; <br> text-decoration: none; <br> } <br>
+    <br> li a:hover { <br> background-color: #111111; <br> } <br> &lt;/style&gt; <br> &lt;/head&gt; <br> &lt;body&gt; <br>
+    <br> &lt;ul&gt; <br> &lt;li&gt;&lt;a href=&quot;#home&quot;&gt;Home&lt;/a&gt;&lt;/li&gt; <br> &lt;li&gt;&lt;a href=&quot;#news&quot;&gt;News&lt;/a&gt;&lt;/li&gt; <br> &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+    <br> &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;About&lt;/a&gt;&lt;/li&gt; <br> &lt;/ul&gt; <br>
+    <br> &lt;/body&gt; <br> &lt;/html&gt; </p>
+<p>Tip:</b> Anda dapat mempelajari lebih lanjut tentang CSS di <a href="https://www-w3schools-com.translate.goog/css/default.asp?_x_tr_sl=auto&amp;_x_tr_tl=id&amp;_x_tr_hl=id">Tutorial CSS</a> kami .</p>
+<h2>Daftar Urutan HTML</h2>
+<p>&lt;ol&gt;Tag HTML mendefinisikan daftar yang dipesan. Daftar yang diurutkan dapat berupa angka atau abjad.</p>
+<h2>Daftar HTML yang Dipesan</h2>
+<p>Daftar yang diurutkan dimulai dengan &lt;ol&gt;tag. Setiap item daftar dimulai dengan &lt;li&gt;tag.</p>
+<p>Item daftar akan ditandai dengan angka secara default:</p>
+<p>Contoh</p>
+<p>&lt;ol&gt; <br> &lt;li&gt;Coffee&lt;/li&gt; <br> &lt;li&gt;Tea&lt;/li&gt; <br> &lt;li&gt;Milk&lt;/li&gt; <br> &lt;/ol&gt; </p>
+<h2>Daftar HTML yang Dipesan - Atribut Jenis</h2>
+<p>typeatribut dari &lt;ol&gt;tag, mendefinisikan jenis item daftar penanda:</p>
+<table>
+    <tr>
+        <td>
+            <h2>Type</h2>
+        </td>
+        <td>
+            <h2>Description</h2>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>type=&quot;1&quot;</p>
+        </td>
+        <td>
+            <p>list items will be numbered with numbers (default)</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>type=&quot;A&quot;</p>
+        </td>
+        <td>
+            <p>list items will be numbered with uppercase letters</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>type=&quot;a&quot;</p>
+        </td>
+        <td>
+            <p>list items will be numbered with lowercase letters</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>type=&quot;I&quot;</p>
+        </td>
+        <td>
+            <p>list items will be numbered with uppercase roman numbers
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>type=&quot;i&quot;</p>
+        </td>
+        <td>
+            <p>list items will be numbered with lowercase roman numbers
+            </p>
+        </td>
+    </tr>
+</table>
+<h2>Nomor:</h2>
+<p>&lt;ol type=&quot;1&quot;&gt; <br> &lt;li&gt;Coffee&lt;/li&gt; <br> &lt;li&gt;Tea&lt;/li&gt; <br> &lt;li&gt;Milk&lt;/li&gt; <br> &lt;/ol&gt; </p>
+<h2>Huruf besar:</h2>
+<p>&lt;ol type=&quot;A&quot;&gt; <br> &lt;li&gt;Coffee&lt;/li&gt; <br> &lt;li&gt;Tea&lt;/li&gt; <br> &lt;li&gt;Milk&lt;/li&gt; <br> &lt;/ol&gt; </p>
+<h2>Huruf kecil:</h2>
+<p>&lt;ol type=&quot;a&quot;&gt; <br> &lt;li&gt;Coffee&lt;/li&gt; <br> &lt;li&gt;Tea&lt;/li&gt; <br> &lt;li&gt;Milk&lt;/li&gt; <br> &lt;/ol&gt; </p>
+<h2>Angka Romawi Huruf Besar:</h2>
+<p>&lt;ol type=&quot;I&quot;&gt; <br> &lt;li&gt;Coffee&lt;/li&gt; <br> &lt;li&gt;Tea&lt;/li&gt; <br> &lt;li&gt;Milk&lt;/li&gt; <br> &lt;/ol&gt; </p>
+<h2>Angka Romawi Huruf Kecil:</h2>
+<p>&lt;ol type=&quot;i&quot;&gt; <br> &lt;li&gt;Coffee&lt;/li&gt; <br> &lt;li&gt;Tea&lt;/li&gt; <br> &lt;li&gt;Milk&lt;/li&gt; <br> &lt;/ol&gt; </p>
+<h2>Penghitungan Daftar Kontrol</h2>
+<p>Secara default, daftar yang diurutkan akan mulai menghitung dari 1. Jika Anda ingin mulai menghitung dari nomor yang ditentukan, Anda dapat menggunakan startatribut:</p>
+<p>Contoh</p>
+<p>&lt;ol start=&quot;50&quot;&gt; <br> &lt;li&gt;Coffee&lt;/li&gt; <br> &lt;li&gt;Tea&lt;/li&gt; <br> &lt;li&gt;Milk&lt;/li&gt; <br> &lt;/ol&gt; </p>
+<h2>Daftar HTML Bersarang</h2>
+<p>Daftar dapat bersarang (daftar di dalam daftar):</p>
+<p>Contoh</p>
+<p>&lt;ol&gt; <br> &lt;li&gt;Coffee&lt;/li&gt; <br> &lt;li&gt;Tea <br> &lt;ol&gt; <br> &lt;li&gt;Black tea&lt;/li&gt; <br> &lt;li&gt;Green tea&lt;/li&gt; <br> &lt;/ol&gt; <br> &lt;/li&gt; <br> &lt;li&gt;Milk&lt;/li&gt; <br> &lt;/ol&gt; </p>
+<p>Catatan:</b> Item daftar ( &lt;li&gt;) dapat berisi daftar baru, dan elemen HTML lainnya, seperti gambar dan tautan, dll.</p>
+<h2>Daftar Lainnya</h2>
+<p>HTML juga mendukung daftar deskripsi.</p>
+<h2>Daftar Deskripsi HTML</h2>
+<p>Daftar deskripsi adalah daftar istilah, dengan deskripsi setiap istilah.</p>
+<p><a href="https://www-w3schools-com.translate.goog/tags/tag_dl.asp?_x_tr_sl=auto&amp;_x_tr_tl=id&amp;_x_tr_hl=id">&lt;dl&gt;</a>tag mendefinisikan daftar deskripsi, yang tag mendefinisikan istilah (nama), dan tag menjelaskan setiap istilah:
+    <a href="https://www-w3schools-com.translate.goog/tags/tag_dt.asp?_x_tr_sl=auto&amp;_x_tr_tl=id&amp;_x_tr_hl=id">&lt;dt&gt;</a>
+    <a href="https://www-w3schools-com.translate.goog/tags/tag_dd.asp?_x_tr_sl=auto&amp;_x_tr_tl=id&amp;_x_tr_hl=id">&lt;dd&gt;</a></p>
+<p>Contoh</p>
+<p>&lt;dl&gt; <br> &lt;dt&gt;Coffee&lt;/dt&gt; <br> &lt;dd&gt;- black hot drink&lt;/dd&gt; <br> &lt;dt&gt;Milk&lt;/dt&gt; <br> &lt;dd&gt;- white cold drink&lt;/dd&gt; <br> &lt;/dl&gt;
+</p>
+
+<script src="../../assets/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+<script src="../../assets/js/docsearch.min.js"></script>
+<script src="../../assets/js/docs.min.js"></script>
+<script>
+    w3.includeHTML();
+</script>
+<script>
+    //changeRed(255)
+    //changeGreen(0)
+    //changeBlue(0)
+    changeRGB("r");
+
+    function changeRGB(x) {
+        var col, r, g, b;
+        r = document.getElementById("slideRed").value;
+        g = document.getElementById("slideGreen").value;
+        b = document.getElementById("slideBlue").value;
+        col = w3color("rgb(" + r + "," + g + "," + b + ")");
+        document.getElementById('valRed2').innerHTML = r;
+        document.getElementById('valGreen2').innerHTML = g;
+        document.getElementById('valBlue2').innerHTML = b;
+        document.getElementById('rgbresult').style.backgroundColor = col.toRgbString();
+        document.getElementById('rgbresulttext').innerHTML = col.toRgbString();
+        if (col.isDark(150)) {
+            document.getElementById('rgbresulttext').style.color = "#ffffff";
+        } else {
+            document.getElementById('rgbresulttext').style.color = "#1f2d3d";
+        }
+    }
+    //function changeGreen(value) {
+    //    document.getElementById('valGreen').innerHTML = value;
+    //}
+    //function changeBlue(value) {
+    //    document.getElementById('valBlue').innerHTML = value;
+    //}
+    changeRGBA("r");
+
+    function changeRGBA(x) {
+        var col, r, g, b, a;
+        r = document.getElementById("slideRedA").value;
+        g = document.getElementById("slideGreenA").value;
+        b = document.getElementById("slideBlueA").value;
+        a = document.getElementById("slideAlphaA").value / 10;
+        col = w3color("rgba(" + r + "," + g + "," + b + "," + a + ")");
+        document.getElementById('valRed2A').innerHTML = r;
+        document.getElementById('valGreen2A').innerHTML = g;
+        document.getElementById('valBlue2A').innerHTML = b;
+        document.getElementById('valAlpha2A').innerHTML = a;
+        document.getElementById('rgbaresult').style.backgroundColor = col.toRgbaString();
+        document.getElementById('rgbaresulttext').innerHTML = col.toRgbaString();
+        if (col.isDark(150) && a > 0.2) {
+            document.getElementById('rgbaresulttext').style.color = "#ffffff";
+        } else {
+            document.getElementById('rgbaresulttext').style.color = "#1f2d3d";
+        }
+    }
+
+    //changeRed(255)
+    //changeGreen(0)
+    //changeBlue(0)
+    changeHex("r");
+
+    function changeHex(x) {
+        var col, r, g, b;
+        r = document.getElementById("slideRedHex").value;
+        g = document.getElementById("slideGreenHex").value;
+        b = document.getElementById("slideBlueHex").value;
+        col = w3color("rgb(" + r + "," + g + "," + b + ")");
+        document.getElementById('valRed2Hex').innerHTML = col.toHexString().substr(1, 2);
+        document.getElementById('valGreen2Hex').innerHTML = col.toHexString().substr(3, 2);
+        document.getElementById('valBlue2Hex').innerHTML = col.toHexString().substr(5, 2);
+        document.getElementById('hexresult').style.backgroundColor = col.toRgbString();
+        document.getElementById('hexresulttext').innerHTML = col.toHexString();
+        if (col.isDark(150)) {
+            document.getElementById('hexresulttext').style.color = "#ffffff";
+        } else {
+            document.getElementById('hexresulttext').style.color = "#1f2d3d";
+        }
+    }
+
+    //changeRed(255)
+    //changeGreen(0)
+    //changeBlue(0)
+    changeHsl("h");
+
+    function changeHsl(x) {
+        var col, h, s, l;
+        h = document.getElementById("slideHue").value;
+        s = document.getElementById("slideSat").value;
+        l = document.getElementById("slideLight").value;
+        col = w3color("hsl(" + h + "," + s / 100 + "," + l / 100 + ")");
+        document.getElementById('valHue').innerHTML = col.toHsl().h;
+        document.getElementById('valSat').innerHTML = Math.round(col.toHsl().s * 100) + "%";
+        document.getElementById('valLight').innerHTML = Math.round(col.toHsl().l * 100) + "%";
+        document.getElementById('hslresult').style.backgroundColor = col.toHslString();
+        document.getElementById('hslresulttext').innerHTML = col.toHslString();
+        if (col.isDark(150)) {
+            document.getElementById('hslresulttext').style.color = "#ffffff";
+        } else {
+            document.getElementById('hslresulttext').style.color = "#1f2d3d";
+        }
+    }
+    changeHsla("h");
+
+    function changeHsla(x) {
+        var col, h, s, l, a;
+        h = document.getElementById("slideHueA").value;
+        s = document.getElementById("slideSatA").value;
+        l = document.getElementById("slideLightA").value;
+        a = document.getElementById("slideHslAlpha").value / 10;
+        col = w3color("hsla(" + h + "," + s / 100 + "," + l / 100 + "," + a + ")");
+        document.getElementById('valHueA').innerHTML = col.toHsl().h;
+        document.getElementById('valSatA').innerHTML = Math.round(col.toHsl().s * 100) + "%";
+        document.getElementById('valLightA').innerHTML = Math.round(col.toHsl().l * 100) + "%";
+        document.getElementById('valHslAlpha').innerHTML = col.toHsl().a;
+        document.getElementById('hslaresult').style.backgroundColor = col.toHslaString();
+        document.getElementById('hslaresulttext').innerHTML = col.toHslaString();
+        if (col.isDark(150) && a > 0.2) {
+            document.getElementById('hslaresulttext').style.color = "#ffffff";
+        } else {
+            document.getElementById('hslaresulttext').style.color = "#1f2d3d";
+        }
+    }
+</script>
+<script>
+    // Saat user scroll halaman, jalankan myFunction
+    window.onscroll = function() {
+        myFunction()
+    };
+
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+    }
+</script>

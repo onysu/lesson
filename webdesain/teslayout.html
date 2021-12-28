@@ -1761,6 +1761,39 @@
                           sendiri <img draggable="false" role="img" class="emoji" alt="↗"
                             src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
                     </div>
+
+                    <p>Contoh dibawah ini <strong>tidak</strong> akan menampilkan atribut <mark><code>title</mark></code> dengan benar, karena berisi spasi:</p>
+
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <h1>Tentang O-Learning</h1>
+                        <p title=Tentang O-Learning>
+                            kalian tidak dapat menghilangkan tanda kutip di sekitar nilai atribut jika nilainya mengandung spasi.
+                        </p>
+                        <br>
+                        <p class="text-muted">Jika kalian menggerakkan mouse ke paragraf di atas, browser kalian hanya akan menampilkan kata pertama dari title yaitu <q>Tentang</q> saja.</p>
+                    </div>
+                    <div class="highlight">
+                        <div class="syntaxhighlighter  xml">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="gutter">
+                                            <div class="line number1 index0 alt2">1</div>
+                                        </td>
+                                        <td class="code">
+                                            <div class="container-fluid">
+                                                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">p</span> <span class="na">title</span><span class="o">=</span><span class="s">"Tentang O-Learning"<span class="p">&gt;</span>kalian tidak dapat menghilangkan tanda kutip di sekitar nilai atribut jika nilainya mengandung spasi.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span></code></pre>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
+                          sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                            src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
                 </section>
 
                 <section id="5.8">
@@ -1774,62 +1807,102 @@
                         <strong>merekomendasikan</strong> kutipan dalam HTML, dan <strong>meminta</strong> kutipan untuk jenis dokumen yang lebih ketat seperti XHTML.
                     </p>
 
-                    <div class="bd-callout">
-                        <strong>Bagus:</strong>
-                        <pre tabindex="0" class="chroma"><code data-lang="html">&lt;a <span class="na">href</span>="<span class="s">https://onysu.github.io/lesson/webdesain/</span>"&gt;Kunjungi tutorial HTML kami&lt;/a&gt;</code></pre>
-                        </p>
-                    </div>
-                    <div class="bd-callout">
-                        <strong>Buruk:</strong>
-                        <pre tabindex="0" class="chroma"><code data-lang="html">&lt;a <span class="na">href</span>=<span class="s">https://onysu.github.io/lesson/webdesain/</span>&gt;Kunjungi tutorial HTML kami&lt;/a&gt;</code></pre>
-                        </p>
-                    </div>
-
-                    <p>Terkadang kalian harus menggunakan tanda kutip <mark><q>&nbsp;</q></mark>. <br> Contoh dibawah ini <strong>tidak</strong> akan menampilkan atribut <mark><code>title</mark></code> dengan benar, karena berisi spasi:
-                    </p>
-
-                    <p>Contoh :</p>
-                    <img class="top-example" src="files/img/browser-head.png" alt="">
-                    <div class="bd-example">
-                        <h1>Tentang O-Learning</h1>
-                        <p title=Tentang O-Learning>
-                            kalian tidak dapat menghilangkan tanda kutip di sekitar nilai atribut jika nilainya mengandung spasi.
-                        </p>
-                        <br>
-                        <p class="text-muted">Jika kalian menggerakkan mouse ke paragraf di atas, browser kalian hanya akan menampilkan kata pertama dari title yaitu <q>Tentang</q> saja.</p>
+                    <strong>Bagus :</strong>
+                    <div class="highlight">
+                        <div class="syntaxhighlighter  xml">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="gutter">
+                                            <div class="line number1 index0 alt2">1</div>
+                                        </td>
+                                        <td class="code">
+                                            <div class="container-fluid">
+                                                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://www.google.com/"<span class="p">&gt;</span>Kunjungi Google<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span></code></pre>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
 
-                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                    <div class="bd-callout">
-                        <pre tabindex="0" class="chroma"><code data-lang="html">&lt;p <span class="na">title</span>=<span class="s">Tentang O-Learning</span>&gt;kalian tidak dapat menghilangkan tanda kutip di sekitar nilai atribut jika nilainya mengandung spasi.&lt;/p&gt;</code></pre>
-                        <hr>
-                        <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
-                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
-                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    <strong>Buruk :</strong>
+                    <div class="highlight">
+                        <div class="syntaxhighlighter  xml">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="gutter">
+                                            <div class="line number1 index0 alt2">1</div>
+                                        </td>
+                                        <td class="code">
+                                            <div class="container-fluid">
+                                                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">https://www.google.com/<span class="p">&gt;</span>Kunjungi Google<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span></code></pre>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
+
+                    <p>Terkadang kalian harus menggunakan tanda kutip <mark><q>&nbsp;</q></mark>.</p>
                     <p class="moreInfo text-break">Kami selalu menggunakan tanda kutip di sekitar nilai atribut.</p>
+
                     <br>
                     <h2>Kutipan Tunggal atau Ganda?</h2>
                     <p>Tanda kutip ganda <mark><q>&nbsp;</q></mark> di sekitar nilai atribut adalah yang paling umum dalam HTML, tetapi tanda kutip tunggal <mark><code>&apos;&apos;</code></mark> juga dapat digunakan. Dalam beberapa situasi, ketika nilai
                         atribut itu sendiri berisi tanda kutip ganda, perlu menggunakan tanda kutip tunggal.</p>
                     <p>Perhatikan baik-baik kedua contoh dibawah ini :</p>
-
-                    <div class="bd-callout">
-                        <pre tabindex="0" class="chroma"><code data-lang="html">&lt;p <span class="na">title</span>='John &quot;ShotGun&quot; Nelson'&gt;</code></pre>
+                    <div class="highlight">
+                        <div class="syntaxhighlighter  xml">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="gutter">
+                                            <div class="line number1 index0 alt2">1</div>
+                                        </td>
+                                        <td class="code">
+                                            <div class="container-fluid">
+                                                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">p</span> <span class="na">title</span><span class="o">=</span><span class="s">&apos;John &quot;ShotGun&quot; Nelson&apos;<span class="p">&gt;</span></code></pre>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
+                          sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                            src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
                     </div>
 
                     <p>Atau sebaliknya:</p>
 
-                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                    <div class="bd-callout">
-                        <pre tabindex="0" class="chroma"><code data-lang="html">&lt;p <span class="na">title</span>=&quot;John 'ShotGun' Nelson&quot;&gt;</code></pre>
-                        <hr>
+                    <div class="highlight">
+                        <div class="syntaxhighlighter  xml">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="gutter">
+                                            <div class="line number1 index0 alt2">1</div>
+                                        </td>
+                                        <td class="code">
+                                            <div class="container-fluid">
+                                                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">p</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;John &apos;ShotGun&apos; Nelson&quot;<span class="p">&gt;</span></code></pre>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                         <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
-                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
-                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                          sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                            src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
                     </div>
                 </section>
-                <!-- <section id="5.9">
+
+                <section id="5.9">
                     <h2>Ringkasan</h2>
                     <ul type="square">
                         <li>Semua elemen HTML dapat memiliki <strong>atribut</strong></li>
@@ -1848,7 +1921,7 @@
                         <li><mark><code>title</mark></code> atribut mendefinisikan beberapa informasi tambahan tentang elemen.
                         </li>
                     </ul>
-                </section> -->
+                </section>
 
                 <hr>
 

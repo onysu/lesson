@@ -18,9 +18,10 @@
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="../assets/css/docs.css" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="dist/css/highlight-code.css">
     <!-- <link rel="stylesheet" href="../assets/css/all.css"> -->
     <!-- <link rel="stylesheet" href="dist/css/webdesain.css"> -->
-    <link rel="stylesheet" href="../assets/css/bootstrap-icons.css">
 
     <!-- Favicons -->
     <link rel="shortcut icon" href="../assets/img/aku-bulat.ico" type="image/x-icon">
@@ -375,7 +376,59 @@
                     <p class="lead">HTML adalah bahasa markup standar untuk membuat halaman Web.</p>
                     <br>
                     <h2>Contoh Dokumen HTML</h2>
-                    <div class="bd-callout">
+
+                    <div class="highlight">
+                        <div class="syntaxhighlighter  xml">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="gutter">
+                                            <div class="line number1 index0 alt2">1</div>
+                                            <div class="line number2 index1 alt1">2</div>
+                                            <div class="line number3 index2 alt2">3</div>
+                                            <div class="line number4 index3 alt1">4</div>
+                                            <div class="line number5 index4 alt2">5</div>
+                                            <div class="line number6 index5 alt1">6</div>
+                                            <div class="line number7 index6 alt2">7</div>
+                                            <div class="line number8 index7 alt1">8</div>
+                                            <div class="line number9 index8 alt2">9</div>
+                                            <div class="line number10 index9 alt1">10</div>
+                                            <div class="line number11 index10 alt2">11</div>
+                                            <div class="line number12 index11 alt1">12</div>
+                                            <div class="line number13 index12 alt2">13</div>
+                                            <div class="line number14 index13 alt1">14</div>
+                                            <div class="line number15 index14 alt2">15</div>
+                                            <div class="line number16 index15 alt1">16</div>
+                                            <div class="line number17 index16 alt2">17</div>
+                                        </td>
+                                        <td class="code">
+                                            <div class="container-fluid">
+                                                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width, initial-scale=1&#34;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Hello, world!<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, world!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>My first paragraph.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+  
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- <div class="bd-callout">
                         <pre tabindex="0" class="chroma">
 <code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
 <span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
@@ -386,14 +439,15 @@
   <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;#&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Judul Halaman<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-<!-- konten disini -->
+
 <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, world!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ini adalah paragraf<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre>
-                    </div>
+                    </div> -->
+
                     <h3>Penjelasannya :</h3>
                     <table class="table table-bordered w-100">
                         <thead></thead>

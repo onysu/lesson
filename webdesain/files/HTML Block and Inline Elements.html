@@ -1,69 +1,455 @@
-<h1>Blok HTML dan Elemen Inline</h1>
-<p>Setiap elemen HTML memiliki nilai tampilan default, tergantung pada jenis elemen apa itu.</p>
-<p>Ada dua nilai tampilan: blok dan inline.</p>
-<h2>Elemen Level Blok.</h2>
-<p>Elemen blok-level selalu dimulai pada baris baru.</p>
-<p>Elemen blok-level selalu membutuhkan lebar penuh (membentang ke kiri dan kanan sejauh yang bisa).</p>
-<p>Elemen blok level memiliki margin atas dan bawah, sedangkan elemen inline tidak.</p>
-<p>&lt;div&gt; Elemen adalah elemen blok-level.</p>
-<p>Berikut adalah elemen-elemen blok-level dalam HTML:</p>
-<h2>Elemen Inline.</h2>
-<p>Elemen inline tidak dimulai pada baris baru.</p>
-<p>Elemen inline hanya memakan lebar sebanyak yang diperlukan.</p>
-<p>Ini <span>sebuah &lt;span&gt; elemen di dalamnya</span> sebuah paragraf.</p>
-<p>Berikut adalah elemen inline dalam HTML:</p>
-<p><strong>Catatan:</strong> Elemen inline tidak dapat berisi elemen blok-level!</p>
-<h2>&lt;div&gt; Elemen</h2>
-<p><code>&lt;div&gt;</code> Elemen sering digunakan sebagai wadah untuk elemen HTML lainnya.</p>
-<p><code>&lt;div&gt;</code> elemen tidak memiliki atribut yang diperlukan, tetapi <code>style</code>, <code>class</code> dan <code>id</code> adalah umum.</p>
-<p>Ketika digunakan bersama dengan CSS, <code>&lt;div&gt;</code> Elemen dapat digunakan untuk gaya blok konten:</p>
-<h3>Contoh</h3>
-<p><span><span>&lt;</span>div<span>style<span>="background-color:black;color:white;padding:20px;"</span></span><span>&gt;</span></span><br> &nbsp;
-    <span><span>&lt;</span>h2<span>&gt;</span></span>London<span><span>&lt;</span>/h2<span>&gt;</span></span><br>&nbsp;
-    <span><span>&lt;</span>p<span>&gt;</span></span>London adalah ibu kota Inggris.Ini adalah kota terpadat di Inggris, dengan wilayah metropolitan lebih dari 13 juta penduduk.<span><span>&lt;</span>/p<span>&gt;</span></span><br>
-    <span><span>&lt;</span>/div<span>&gt;</span></span>
-</p>
-<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_div" target="_blank">Cobalah sendiri »</a>
-</p>
-<h2>&lt;span&gt; Elemen</h2>
-<p><code>&lt;span&gt;</code> Elemen adalah wadah inline yang digunakan untuk menandai bagian dari teks, atau bagian dari dokumen.</p>
-<p><code>&lt;span&gt;</code> elemen tidak memiliki atribut yang diperlukan, tetapi <code>style</code>, <code>class</code> dan <code>id</code> adalah umum.</p>
-<p>Ketika digunakan bersama dengan CSS, <code>&lt;span&gt;</code> Elemen dapat digunakan untuk membuat bagian dari teks:</p>
-<h3>Contoh</h3>
-<p><span><span>&lt;</span>p<span>&gt;</span></span>Ibu saya memiliki mata <span><span>&lt;</span>span<span>
-        style<span>="color:blue;font-weight:bold"</span></span><span>&gt;</span></span>biru<span><span>&lt;</span>/span<span>&gt;</span></span>
-    dan ayahku punya mata <span><span>&lt;</span>span<span>
-        style<span>="color:darkolivegreen;font-weight:bold"</span></span><span>&gt;</span></span>hijau tua
-    <span><span>&lt;</span>/span<span>&gt;</span></span>.<span><span>&lt;</span>/p<span>&gt;</span></span><br>
-</p>
-<p><a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_span" target="_blank">Cobalah sendiri »</a></p>
-<h2>Ringkasan Bab.</h2>
-<ul>
-    <li>Ada dua nilai tampilan: blok dan inline</li>
-    <li>Elemen blok-level selalu dimulai pada baris baru dan mengambil lebar penuh yang tersedia</li>
-    <li>Elemen inline tidak dimulai pada baris baru dan hanya membutuhkan lebar sebanyak yang diperlukan</li>
-    <li><code>&lt;div&gt;</code> Elemen adalah level blok dan sering digunakan sebagai wadah untuk elemen HTML lainnya
-    </li>
-    <li><code>&lt;span&gt;</code> Elemen adalah wadah inline yang digunakan untuk menandai bagian dari teks, atau bagian dari dokumen</li>
-</ul>
-<h2>HTML Tag</h2>
-<table>
-    <tbody>
-        <tr>
-            <th>Tag</th>
-            <th>Keterangan</th>
-        </tr>
-        <tr>
-            <td><a href="https://www.w3schools.com/tags/tag_div.asp">&lt;div&gt;</a></td>
-            <td>Mendefinisikan bagian dalam dokumen (level blok)</td>
-        </tr>
-        <tr>
-            <td><a href="https://www.w3schools.com/tags/tag_span.asp">&lt;span&gt;</a></td>
-            <td>Menentukan bagian dalam dokumen (online)</td>
-        </tr>
-    </tbody>
-</table>
-<p>Untuk daftar lengkap semua Tag HTML yang tersedia, kunjungi <a href="#">Referensi Tag HTML</a>.</p>
+<!doctype html>
+<html lang="id-ID">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pelajari tentang HTML, CSS dan JavaScript.">
+    <meta name="author" content="Ony">
+    <meta name="generator" content="">
+
+    <meta name="docsearch:language" content="id">
+    <meta name="docsearch:version" content="5.1">
+
+    <title>WEB-DESAIN v1.2</title>
+
+    <script src="../../assets/js/w3.js"></script>
+    <script src="../../assets/js/w3color.js"></script>
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="../../assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap-icons.css">
+    <link rel="stylesheet" href="dist/css/highlight-code.css">
+    <!-- <link rel="stylesheet" href="../../assets/css/all.css"> -->
+    <!-- <link rel="stylesheet" href="dist/css/webdesain.css"> -->
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="../assets/img/aku-bulat.ico" type="image/x-icon">
+</head>
+
+<body>
+
+
+
+
+    <section>
+        <h1>Blok HTML dan Elemen Inline</h1>
+        <p>Setiap elemen HTML memiliki nilai tampilan default, tergantung pada jenis elemen apa itu.</p>
+        <p>Ada dua nilai tampilan: blok dan inline.</p>
+    </section>
+
+    <section>
+        <h2>Elemen Level Blok.</h2>
+        <p>Elemen blok-level selalu dimulai pada baris baru.</p>
+        <p>Elemen blok-level selalu membutuhkan lebar penuh (membentang ke kiri dan kanan sejauh yang bisa).</p>
+        <p>Elemen blok level memiliki margin atas dan bawah, sedangkan elemen inline tidak.</p>
+        <p>&lt;div&gt; Elemen adalah elemen blok-level.</p>
+        <img class="top-example" src="files/img/browser-head.png" alt="">
+        <div class="bd-example">
+            <div style="border: 1px solid black">Hello World</div>
+        </div>
+        <div class="highlight">
+            <div class="syntaxhighlighter  xml">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="gutter">
+                                <div class="line number1 index0 alt2">1</div>
+                                <div class="line number2 index1 alt1">2</div>
+                            </td>
+                            <td class="code">
+                                <div class="container-fluid">
+                                    <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">"border: 1px solid black"<span class="p">&gt;</span>Hello, World!<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Elemen div adalah elemen blok, dan akan selalu dimulai pada baris baru dan mengambil lebar penuh yang tersedia (membentang ke kiri dan kanan sejauh mungkin).<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span></code></pre>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
+            sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+              src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+        </div>
+        <p class="moreInfo">Elemen Div adalah elemen blok, dan akan selalu dimulai pada baris baru dan mengambil lebar penuh yang tersedia (membentang ke kiri dan kanan sejauh yang bisa).</p>
+        <p>Berikut adalah elemen-elemen blok-level dalam HTML:</p>
+        <table>
+            <tr>
+                <td>&lt;addres&gt;</td>
+                <td>&lt;article&gt;</td>
+                <td>&lt;aside&gt;</td>
+                <td>&lt;blockquote&gt;</td>
+                <td>&lt;canvas&gt;</td>
+                <td>&lt;add&gt;</td>
+                <td>&lt;div&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;dl&gt;</td>
+                <td>&lt;dt&gt;</td>
+                <td>&lt;fieldset&gt;</td>
+                <td>&lt;figcaption&gt;</td>
+                <td>&lt;figure&gt;</td>
+                <td>&lt;footer&gt;</td>
+                <td>&lt;form&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;h1&gt;-&lt;h6&gt;</td>
+                <td>&lt;header&gt;</td>
+                <td>&lt;hr&gt;</td>
+                <td>&lt;li&gt;</td>
+                <td>&lt;main&gt;</td>
+                <td>&lt;nav&gt;</td>
+                <td>&lt;noscript&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;ol&gt;</td>
+                <td>&lt;p&gt;</td>
+                <td>&lt;pre&gt;</td>
+                <td>&lt;section&gt;</td>
+                <td>&lt;table&gt;</td>
+                <td>&lt;tfoot&gt;</td>
+                <td>&lt;ul&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;video&gt;</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Elemen Inline.</h2>
+        <p>Elemen inline tidak dimulai pada baris baru. Elemen inline hanya memakan lebar sebanyak yang diperlukan. Ini <span>sebuah &lt;span&gt; elemen di dalamnya</span> sebuah paragraf.</p>
+        <h3>Contoh</h3>
+        <img class="top-example" src="files/img/browser-head.png" alt="">
+        <div class="bd-example">
+            <p>Ini adalah rentang inline <span style="border: 1px solid black">Hello World</span> elemen di dalam paragraf.</p>
+        </div>
+        <div class="highlight">
+            <div class="syntaxhighlighter  xml">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="gutter">
+                                <div class="line number1 index0 alt2">1</div>
+                            </td>
+                            <td class="code">
+                                <div class="container-fluid">
+                                    <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ini adalah rentang inline <span class="p">&lt;</span><span class="nt">span</span> <span class="na">style</span><span class="o">=</span><span class="s">"border: 1px solid black"<span class="p">&gt;</span>Hello, World!<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span> elemen di dalam paragraf.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span></code></pre>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
+      sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+        src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+        </div>
+        <p class="moreInfo">Elemen span adalah elemen inline, dan tidak akan dimulai pada baris baru dan hanya membutuhkan lebar sebanyak yang diperlukan.</p>
+        <p>Berikut adalah elemen inline dalam HTML:</p>
+        <table>
+            <tr>
+                <td>&lt;a&gt;</td>
+                <td>&lt;abbr&gt;</td>
+                <td>&lt;acronym&gt;</td>
+                <td>&lt;b&gt;</td>
+                <td>&lt;bdo&gt;</td>
+                <td>&lt;big&gt;</td>
+                <td>&lt;br&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;button&gt;</td>
+                <td>&lt;cite&gt;</td>
+                <td>&lt;code&gt;</td>
+                <td>&lt;dfn&gt;</td>
+                <td>&lt;em&gt;</td>
+                <td>&lt;i&gt;</td>
+                <td>&lt;img&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;input&gt;</td>
+                <td>&lt;kbd&gt;</td>
+                <td>&lt;label&gt;</td>
+                <td>&lt;map&gt;</td>
+                <td>&lt;object&gt;</td>
+                <td>&lt;output&gt;</td>
+                <td>&lt;q&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;samp&gt;</td>
+                <td>&lt;script&gt;</td>
+                <td>&lt;select&gt;</td>
+                <td>&lt;small&gt;</td>
+                <td>&lt;span&gt;</td>
+                <td>&lt;strong&gt;</td>
+                <td>&lt;sub&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;sup&gt;</td>
+                <td>&lt;textarea&gt;</td>
+                <td>&lt;time&gt;</td>
+                <td>&lt;tt&gt;</td>
+                <td>&lt;var&gt;</td>
+            </tr>
+        </table>
+        <p class="moreInfo"><strong>Catatan:</strong> Elemen inline tidak dapat berisi elemen blok-level!</p>
+    </section>
+
+    <section>
+        <h2>&lt;div&gt; Elemen</h2>
+        <p><code>&lt;div&gt;</code> Elemen sering digunakan sebagai wadah untuk elemen HTML lainnya. <code>&lt;div&gt;</code> elemen tidak memiliki atribut yang diperlukan, tetapi <code>style</code>, <code>class</code> dan <code>id</code> adalah umum. Ketika
+            digunakan bersama dengan CSS, <code>&lt;div&gt;</code> Elemen dapat digunakan untuk gaya blok konten:</p>
+        <h3>Contoh</h3>
+        <img class="top-example" src="files/img/browser-head.png" alt="">
+        <div class="bd-example">
+            <div style="background-color:black;color:white;padding:20px;">
+                <h2>London</h2>
+                <p>London adalah ibu kota Inggris.Ini adalah kota terpadat di Inggris, dengan wilayah metropolitan lebih dari 13 juta penduduk.</p>
+                <p>Berdiri di Sungai Thames, London telah menjadi pemukiman besar selama dua milenium, sejarahnya kembali ke pendiriannya oleh Romawi, yang menamainya Londinium.</p>
+            </div>
+        </div>
+        <div class="highlight">
+            <div class="syntaxhighlighter  xml">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="gutter">
+                                <div class="line number1 index0 alt2">1</div>
+                                <div class="line number2 index1 alt1">2</div>
+                                <div class="line number2 index1 alt1">3</div>
+                                <div class="line number2 index1 alt1">4</div>
+                                <div class="line number2 index1 alt1">5</div>
+                            </td>
+                            <td class="code">
+                                <div class="container-fluid">
+                                    <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">"background-color:black;color:white;padding:20px;"<span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>London<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>London adalah ibu kota Inggris.Ini adalah kota terpadat di Inggris, dengan wilayah metropolitan lebih dari 13 juta penduduk.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Berdiri di Sungai Thames, London telah menjadi pemukiman besar selama dua milenium, sejarahnya kembali ke pendiriannya oleh Romawi, yang menamainya Londinium.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
+            sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+              src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>&lt;span&gt; Elemen</h2>
+        <p><code>&lt;span&gt;</code> Elemen adalah wadah inline yang digunakan untuk menandai bagian dari teks, atau bagian dari dokumen. <code>&lt;span&gt;</code> elemen tidak memiliki atribut yang diperlukan, tetapi <code>style</code>, <code>class</code>            dan
+            <code>id</code> adalah umum. Ketika digunakan bersama dengan CSS, <code>&lt;span&gt;</code> Elemen dapat digunakan untuk membuat bagian dari teks:</p>
+        <h3>Contoh</h3>
+        <img class="top-example" src="files/img/browser-head.png" alt="">
+        <div class="bd-example">
+            <h1>Elemen span.</h1>
+            <p>Ibu saya memiliki mata <span style="color:blue;font-weight:bold">biru</span> dan ayahku punya mata <span style="color:darkolivegreen;font-weight:bold">hijau tua</span>.</p>
+        </div>
+        <div class="highlight">
+            <div class="syntaxhighlighter  xml">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td class="gutter">
+                                <div class="line number1 index0 alt2">1</div>
+                                <div class="line number2 index1 alt1">2</div>
+                                <div class="line number2 index1 alt1">3</div>
+                                <div class="line number2 index1 alt1">4</div>
+                            </td>
+                            <td class="code">
+                                <div class="container-fluid">
+                                    <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Elemen span.<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span>p<span class="p">&gt;</span>Ibu saya memiliki mata <span class="p">&lt;</span>span <span class="na">style</span><span class="o">=</span><span class="s">"color:blue;font-weight:bold"</span><span class="p">&gt;</span>biru<span class="p">&lt;</span>/span<span class="p">&gt;</span> dan ayahku punya mata <span class="p">&lt;</span>span
+<span class="na">style</span><span class="o">=</span><span class="s">"color:darkolivegreen;font-weight:bold"</span><span class="p">&gt;</span>hijau tua<span class="p">&lt;</span>/span<span class="p">&gt;</span>.<span class="p">&lt;</span>/p<span class="p">&gt;</span></code></pre>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
+            sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+              src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Ringkasan Bab.</h2>
+        <ul>
+            <li>Ada dua nilai tampilan: blok dan inline</li>
+            <li>Elemen blok-level selalu dimulai pada baris baru dan mengambil lebar penuh yang tersedia</li>
+            <li>Elemen inline tidak dimulai pada baris baru dan hanya membutuhkan lebar sebanyak yang diperlukan</li>
+            <li><code>&lt;div&gt;</code> Elemen adalah level blok dan sering digunakan sebagai wadah untuk elemen HTML lainnya
+            </li>
+            <li><code>&lt;span&gt;</code> Elemen adalah wadah inline yang digunakan untuk menandai bagian dari teks, atau bagian dari dokumen</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>HTML Tag</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Tag</th>
+                    <th>Keterangan</th>
+                </tr>
+                <tr>
+                    <td><a href="https://www.w3schools.com/tags/tag_div.asp">&lt;div&gt;</a></td>
+                    <td>Mendefinisikan bagian dalam dokumen (level blok)</td>
+                </tr>
+                <tr>
+                    <td><a href="https://www.w3schools.com/tags/tag_span.asp">&lt;span&gt;</a></td>
+                    <td>Menentukan bagian dalam dokumen (online)</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Untuk daftar lengkap semua Tag HTML yang tersedia, kunjungi <a href="#">Referensi Tag HTML</a>.</p>
+    </section>
+
+
+    <script src="../../assets/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="../../assets/js/docsearch.min.js"></script>
+    <script src="../../assets/js/docs.min.js"></script>
+    <script>
+        w3.includeHTML();
+    </script>
+    <script>
+        //changeRed(255)
+        //changeGreen(0)
+        //changeBlue(0)
+        changeRGB("r");
+
+        function changeRGB(x) {
+            var col, r, g, b;
+            r = document.getElementById("slideRed").value;
+            g = document.getElementById("slideGreen").value;
+            b = document.getElementById("slideBlue").value;
+            col = w3color("rgb(" + r + "," + g + "," + b + ")");
+            document.getElementById('valRed2').innerHTML = r;
+            document.getElementById('valGreen2').innerHTML = g;
+            document.getElementById('valBlue2').innerHTML = b;
+            document.getElementById('rgbresult').style.backgroundColor = col.toRgbString();
+            document.getElementById('rgbresulttext').innerHTML = col.toRgbString();
+            if (col.isDark(150)) {
+                document.getElementById('rgbresulttext').style.color = "#ffffff";
+            } else {
+                document.getElementById('rgbresulttext').style.color = "#1f2d3d";
+            }
+        }
+        //function changeGreen(value) {
+        //    document.getElementById('valGreen').innerHTML = value;
+        //}
+        //function changeBlue(value) {
+        //    document.getElementById('valBlue').innerHTML = value;
+        //}
+        changeRGBA("r");
+
+        function changeRGBA(x) {
+            var col, r, g, b, a;
+            r = document.getElementById("slideRedA").value;
+            g = document.getElementById("slideGreenA").value;
+            b = document.getElementById("slideBlueA").value;
+            a = document.getElementById("slideAlphaA").value / 10;
+            col = w3color("rgba(" + r + "," + g + "," + b + "," + a + ")");
+            document.getElementById('valRed2A').innerHTML = r;
+            document.getElementById('valGreen2A').innerHTML = g;
+            document.getElementById('valBlue2A').innerHTML = b;
+            document.getElementById('valAlpha2A').innerHTML = a;
+            document.getElementById('rgbaresult').style.backgroundColor = col.toRgbaString();
+            document.getElementById('rgbaresulttext').innerHTML = col.toRgbaString();
+            if (col.isDark(150) && a > 0.2) {
+                document.getElementById('rgbaresulttext').style.color = "#ffffff";
+            } else {
+                document.getElementById('rgbaresulttext').style.color = "#1f2d3d";
+            }
+        }
+
+        //changeRed(255)
+        //changeGreen(0)
+        //changeBlue(0)
+        changeHex("r");
+
+        function changeHex(x) {
+            var col, r, g, b;
+            r = document.getElementById("slideRedHex").value;
+            g = document.getElementById("slideGreenHex").value;
+            b = document.getElementById("slideBlueHex").value;
+            col = w3color("rgb(" + r + "," + g + "," + b + ")");
+            document.getElementById('valRed2Hex').innerHTML = col.toHexString().substr(1, 2);
+            document.getElementById('valGreen2Hex').innerHTML = col.toHexString().substr(3, 2);
+            document.getElementById('valBlue2Hex').innerHTML = col.toHexString().substr(5, 2);
+            document.getElementById('hexresult').style.backgroundColor = col.toRgbString();
+            document.getElementById('hexresulttext').innerHTML = col.toHexString();
+            if (col.isDark(150)) {
+                document.getElementById('hexresulttext').style.color = "#ffffff";
+            } else {
+                document.getElementById('hexresulttext').style.color = "#1f2d3d";
+            }
+        }
+
+        //changeRed(255)
+        //changeGreen(0)
+        //changeBlue(0)
+        changeHsl("h");
+
+        function changeHsl(x) {
+            var col, h, s, l;
+            h = document.getElementById("slideHue").value;
+            s = document.getElementById("slideSat").value;
+            l = document.getElementById("slideLight").value;
+            col = w3color("hsl(" + h + "," + s / 100 + "," + l / 100 + ")");
+            document.getElementById('valHue').innerHTML = col.toHsl().h;
+            document.getElementById('valSat').innerHTML = Math.round(col.toHsl().s * 100) + "%";
+            document.getElementById('valLight').innerHTML = Math.round(col.toHsl().l * 100) + "%";
+            document.getElementById('hslresult').style.backgroundColor = col.toHslString();
+            document.getElementById('hslresulttext').innerHTML = col.toHslString();
+            if (col.isDark(150)) {
+                document.getElementById('hslresulttext').style.color = "#ffffff";
+            } else {
+                document.getElementById('hslresulttext').style.color = "#1f2d3d";
+            }
+        }
+        changeHsla("h");
+
+        function changeHsla(x) {
+            var col, h, s, l, a;
+            h = document.getElementById("slideHueA").value;
+            s = document.getElementById("slideSatA").value;
+            l = document.getElementById("slideLightA").value;
+            a = document.getElementById("slideHslAlpha").value / 10;
+            col = w3color("hsla(" + h + "," + s / 100 + "," + l / 100 + "," + a + ")");
+            document.getElementById('valHueA').innerHTML = col.toHsl().h;
+            document.getElementById('valSatA').innerHTML = Math.round(col.toHsl().s * 100) + "%";
+            document.getElementById('valLightA').innerHTML = Math.round(col.toHsl().l * 100) + "%";
+            document.getElementById('valHslAlpha').innerHTML = col.toHsl().a;
+            document.getElementById('hslaresult').style.backgroundColor = col.toHslaString();
+            document.getElementById('hslaresulttext').innerHTML = col.toHslaString();
+            if (col.isDark(150) && a > 0.2) {
+                document.getElementById('hslaresulttext').style.color = "#ffffff";
+            } else {
+                document.getElementById('hslaresulttext').style.color = "#1f2d3d";
+            }
+        }
+    </script>
+    <script>
+        // Saat user scroll halaman, jalankan myFunction
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
 </body>
 
 </html>

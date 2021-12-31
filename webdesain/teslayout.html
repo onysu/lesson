@@ -3169,7 +3169,7 @@ USA
                         <mark><code>&lt;!--</mark></code> dan <mark><code>--&gt;</mark></code> akan disembunyikan dari tampilan. <br> Contoh :
                     </p>
 
-                    <h2>Sembunyikan bagian kode HTML:</h2>
+                    <h2>Sembunyikan beberapa sebagian Konten</h2>
                     <img class="top-example" src="files/img/browser-head.png" alt="">
                     <div class="bd-example">
                         <p class="mb-0">Ini adalah sebuah paragraf.</p>
@@ -3206,25 +3206,11 @@ USA
                             draggable="false" role="img" class="emoji" alt="↗"
                             src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
                     </div>
-
-                    <!-- <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                    <div class="bd-callout">
-                        <pre tabindex="0" class="chroma"><code data-lang="html">&lt;p&gt;Ini adalah sebuah paragraf.&lt;/p&gt;
-<span class="c">&lt;!--</span>
-<span class="c">&lt;p&gt;Lihat gambar keren ini:&lt;/p&gt;</span>
-<span class="c">&lt;img border="0" src="pic_trulli.jpg" alt="Trulli"&gt;</span>
-<span class="c">--&gt;</span>
-&lt;p&gt;Ini juga paragraf.&lt;/p&gt;</code></pre>
-                        <hr>
-                        <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
-                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
-                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-                    </div> -->
                 </section>
 
-                <section>
+                <section id="11.4">
                     <p class="moreInfo">Komentar juga bagus untuk men-debug HTML, karena kalian dapat mengomentari baris kode HTML, satu per satu, untuk mencari kesalahan.</p>
-                    <br>
+
                     <h2>Sembunyikan Konten Sebaris</h2>
                     <p>Komentar dapat digunakan untuk menyembunyikan bagian di tengah kode HTML. <br> Contoh :</p>
                     <p>Sembunyikan bagian dari paragaph:</p>
@@ -3234,13 +3220,26 @@ USA
                             <!-- teks yang bagus -->adalah sebuah paragraf.
                         </p>
                     </div>
-                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                    <div class="bd-callout">
-                        <pre tabindex="0" class="chroma"><code  data-lang="html">&lt;p&gt;Ini &lt;<span class="c">!-- teks yang bagus --</span>&gt; adalah sebuah paragraf.&lt;/p&gt;</code></pre>
-                        <hr>
-                        <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
-                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
-                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    <div class="highlight">
+                        <div class="syntaxhighlighter  xml">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="gutter">
+                                            <div class="line number1 index0 alt2">1</div>
+                                        </td>
+                                        <td class="code">
+                                            <div class="container-fluid">
+                                                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ini <span class="c">&lt;!-- teks yang bagus --&gt;</span> adalah sebuah paragraf.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span></code></pre>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah sendiri <img
+                            draggable="false" role="img" class="emoji" alt="↗"
+                            src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
                     </div>
                 </section>
 
@@ -3292,8 +3291,44 @@ USA
                             </div>
                         </div>
                     </div>
+                    <div class="highlight">
+                        <div class="syntaxhighlighter  xml">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="gutter">
+                                            <div class="line number1 index0 alt2">1</div>
+                                            <div class="line number2 index1 alt1">2</div>
+                                            <div class="line number2 index1 alt1">3</div>
+                                            <div class="line number2 index1 alt1">4</div>
+                                            <div class="line number2 index1 alt1">5</div>
+                                            <div class="line number2 index1 alt1">6</div>
+                                            <div class="line number2 index1 alt1">7</div>
+                                            <div class="line number2 index1 alt1">8</div>
+                                        </td>
+                                        <td class="code">
+                                            <div class="container-fluid">
+                                                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">h1</span> <span class="na">style</span><span class="o">=</span><span class="s">"background-color:Tomato;"<span class="p">&gt;</span>Tomato<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h1</span> <span class="na">style</span><span class="o">=</span><span class="s">"background-color:Orange;"<span class="p">&gt;</span>Orange<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h1</span> <span class="na">style</span><span class="o">=</span><span class="s">"background-color:DodgerBlue;"<span class="p">&gt;</span>DodgerBlue<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h1</span> <span class="na">style</span><span class="o">=</span><span class="s">"background-color:MediumSeaGreen;"<span class="p">&gt;</span>MediumSeaGreen<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h1</span> <span class="na">style</span><span class="o">=</span><span class="s">"background-color:Gray;"<span class="p">&gt;</span>Gray<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h1</span> <span class="na">style</span><span class="o">=</span><span class="s">"background-color:SlateBlue;"<span class="p">&gt;</span>SlateBlue<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h1</span> <span class="na">style</span><span class="o">=</span><span class="s">"background-color:Violet;"<span class="p">&gt;</span>Violet<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h1</span> <span class="na">style</span><span class="o">=</span><span class="s">"background-color:LightGray;"<span class="p">&gt;</span>LightGray<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</code></pre>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah sendiri <img
+                            draggable="false" role="img" class="emoji" alt="↗"
+                            src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
 
-                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
+                    <!-- <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
                     <div class="bd-callout">
                         <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;h1 <span class="na">style</span>="<span class="s">background-color:Tomato;</span>"&gt;Tomato&lt;/h1&gt;
 &lt;h1 <span class="na">style</span>="<span class="s">background-color:Orange;</span>"&gt;Orange&lt;/h1&gt;
@@ -3307,10 +3342,11 @@ USA
                         <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
         sendiri <img draggable="false" role="img" class="emoji" alt="↗"
           src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-                    </div>
+                    </div> -->
                     <!-- <p>HTML mendukung <a href="https://www.w3schools.com/colors/colors_names.asp">140 nama warna
                         standar</a>.</p> -->
                 </section>
+
                 <section id="12.1">
                     <h2>Warna Background</h2>
                     <p>kalian dapat mengatur warna background untuk elemen HTML:</p>
@@ -3336,6 +3372,7 @@ USA
           src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
                     </div>
                 </section>
+
                 <section id="12.2">
                     <h2>Warna Teks</h2>
                     <p>kalian dapat mengatur warna teks:</p>

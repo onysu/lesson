@@ -6206,32 +6206,87 @@ USA
                                 width: 100%;
                             }
                         </style>
-
+                        <h1>Atribut atau Style : Lebar / Tinggi?</h1>
                         <div class="contohimg">
-                            <p><img src="files/img/html5.gif" alt="HTML5 Icon" width="128" height="128">
-                            </p>
+                            <p>Gambar 1 menggunakan atribut lebar (diatur ke 128 piksel), tetapi style di bagian head menimpanya, dan mengatur lebar hingga 100%.</p>
+                            <p><img src="files/img/html5.gif" alt="HTML5 Icon" width="128" height="128"></p>
+
+                            <p>Gambar 2 menggunakan atribut style untuk mengatur lebar menjadi 128 piksel, ini tidak akan ditimpa oleh gaya di Bagian head:</p>
                             <p><img src="files/img/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"></p>
                         </div>
                     </div>
+                    <div class="highlight">
+                        Code :
+                        <div class="syntaxhighlighter  xml">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="gutter">
+                                            <div class="line number1 index0 alt2">1</div>
+                                            <div class="line number2 index1 alt1">2</div>
+                                            <div class="line number2 index1 alt1">3</div>
+                                            <div class="line number2 index1 alt1">4</div>
+                                            <div class="line number2 index1 alt1">5</div>
+                                            <div class="line number2 index1 alt1">6</div>
+                                            <div class="line number2 index1 alt1">7</div>
+                                            <div class="line number2 index1 alt1">8</div>
+                                            <div class="line number2 index1 alt1">9</div>
+                                            <div class="line number2 index1 alt1">10</div>
+                                            <div class="line number2 index1 alt1">11</div>
+                                            <div class="line number2 index1 alt1">12</div>
+                                            <div class="line number2 index1 alt1">13</div>
+                                            <div class="line number2 index1 alt1">14</div>
+                                            <div class="line number2 index1 alt1">15</div>
+                                            <div class="line number2 index1 alt1">16</div>
+                                            <div class="line number2 index1 alt1">17</div>
+                                            <div class="line number2 index1 alt1">18</div>
+                                            <div class="line number2 index1 alt1">19</div>
+                                            <div class="line number2 index1 alt1">20</div>
+                                            <div class="line number2 index1 alt1">21</div>
+                                            <div class="line number2 index1 alt1">22</div>
+                                            <div class="line number2 index1 alt1">23</div>
+                                            <div class="line number2 index1 alt1">24</div>
+                                            <div class="line number2 index1 alt1">25</div>
+                                        </td>
+                                        <td class="code">
+                                            <div class="container-fluid">
+                                                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"utf-8"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"viewport"</span> <span class="na">content</span><span class="o">=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>...<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+      <span class="c fst-italic">/* style ini menetapkan lebar semua gambar menjadi 100%: */</span>
+      <span class="na">img</span> {
+        <span class="s">width: 100%;</span>
+      }
+      <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
 
-                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                    <div class="bd-callout">
-                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;style&gt;
-  <span class="c"><em>&lt;!-- style ini mengatur lebar semua gambar menjadi 100%: --&gt;</em></span>
-  <span class="na">img</span> {
-      <span class="s">width: 100%;</span>
-  }
-&lt;/style&gt;
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Atribut atau Style lebar / tinggi?<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
 
-&lt;img <span class="na">src</span>="html5.gif" <span class="na">alt</span>="HTML5 Icon" <span class="na">width</span>="128" <span class="na">height</span>="128"&gt;
-&lt;img <span class="na">src</span>="html5.gif" <span class="na">alt</span>="HTML5 Icon" <span class="na">style</span>="width:128px;height:128px;"&gt;
-</code></pre>
-                        <hr>
-                        <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
-                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
-                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Gambar pertama menggunakan atribut lebar (diatur ke 128 piksel), tetapi style di bagian head menimpanya, dan mengatur lebar hingga 100%.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"html5.gif"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"HTML5 Icon"</span> <span class="na">width</span><span class="o">=</span><span class="s">"128"</span> <span class="na">height</span><span class="o">=</span><span class="s">"128"</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Gambar kedua menggunakan atribut style untuk mengatur lebar menjadi 128 piksel, ini tidak akan ditimpa oleh gaya di Bagian head:<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"html5.gif"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"HTML5 Icon"</span> <span class="na">style</span><span class="o">=</span><span class="s">"width:128px;height:128px;"</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah sendiri <img
+                            draggable="false" role="img" class="emoji" alt="↗"
+                            src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
                     </div>
                 </section>
+
                 <section id="15.5">
                     <h2>Gambar di Folder Lain</h2>
                     <p>Jika Anda memiliki gambar di sub-folder, Anda harus menyertakan nama folder di
@@ -6243,16 +6298,30 @@ USA
                     <div class="bd-example">
                         <img class="img-fluid" src="files/img/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
                     </div>
-
-                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                    <div class="bd-callout">
-                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;img <span class="na">src</span>=<span class="s">"files/img/html5.gif"</span> <span class="na">alt</span>=<span class="s">"HTML5 Icon"</span> <span class="na">style</span>=<span class="s">"width:128px;height:128px;"</span>&gt;</code></pre>
-                        <hr>
-                        <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
-                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
-                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    <div class="highlight">
+                        Code :
+                        <div class="syntaxhighlighter  xml">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="gutter">
+                                            <div class="line number1 index0 alt2">1</div>
+                                        </td>
+                                        <td class="code">
+                                            <div class="container-fluid">
+                                                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"files/img/html5.gif" <span class="na">alt</span><span class="o">=</span><span class="s">"HTML5 Icon"</span> <span class="na">style</span><span class="o">=</span><span class="s">"width:128px;height:128px;"</span><span class="p">&gt;</span></code></pre>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah sendiri <img
+                            draggable="false" role="img" class="emoji" alt="↗"
+                            src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
                     </div>
                 </section>
+
                 <section id="15.6">
                     <h2>Gambar di Server/Situs Web Lain</h2>
                     <p>Beberapa situs web menunjuk ke gambar di server lain. Untuk menunjuk ke gambar di server lain, Anda harus menentukan URL absolut (penuh) dalam <mark><code>src</mark></code> atribut. <br> Contoh :</p>
@@ -6260,19 +6329,32 @@ USA
                     <div class="bd-example">
                         <img src="https://github.com/onysu/lesson/blob/main/webdesain/files/img/Onlinelearning.jpg?raw=true" alt="O-Learning" class="img-fluid">
                     </div>
-
-                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                    <div class="bd-callout">
-                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;img <span class="na">src</span>=<span class="s">"https://github.com/onysu/lesson/blob/main/webdesain/files/img/Onlinelearning.jpg?raw=true"</span> <span class="na">alt</span>=<span class="s">"O-Learning"</span> <span class="na">style</span>=<span class="s">"width:120px;height:90px;"</span>&gt;</code></pre>
-                        <hr>
-                        <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
-                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
-                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    <div class="highlight">
+                        Code :
+                        <div class="syntaxhighlighter  xml">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="gutter">
+                                            <div class="line number1 index0 alt2">1</div>
+                                        </td>
+                                        <td class="code">
+                                            <div class="container-fluid">
+                                                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://github.com/onysu/lesson/blob/main/webdesain/files/img/Onlinelearning.jpg?raw=true" <span class="na">alt</span><span class="o">=</span><span class="s">"O-Learning"</span> <span class="na">style</span><span class="o">=</span><span class="s">"width:120px;height:90px;"</span><span class="p">&gt;</span></code></pre>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah sendiri <img
+                            draggable="false" role="img" class="emoji" alt="↗"
+                            src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
                     </div>
-
                     <p class="moreInfo text-break"><strong>Catatan tentang gambar eksternal:</strong> Gambar eksternal mungkin berada di bawah hak cipta. Jika Anda tidak mendapatkan izin untuk menggunakannya, Anda mungkin melanggar undang-undang hak cipta. Selain itu, Anda tidak dapat
                         mengontrol gambar eksternal; itu bisa tiba-tiba dihapus atau diubah.</p>
                 </section>
+
                 <section id="15.7">
                     <h2>Gambar Animasi</h2>
                     <p>HTML memungkinkan <strong>GIF</strong> animasi:</p>
@@ -6281,16 +6363,30 @@ USA
                     <div class="bd-example">
                         <img src="files/img/home.gif" alt="Home" class="img-fluid">
                     </div>
-
-                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                    <div class="bd-callout">
-                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;img <span class="na">src</span>="home.gif" <span class="na">alt</span>="Home" <span class="na">style</span>="width:48px;height:48px;"&gt;</code></pre>
-                        <hr>
-                        <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
-                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
-                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    <div class="highlight">
+                        Code :
+                        <div class="syntaxhighlighter  xml">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="gutter">
+                                            <div class="line number1 index0 alt2">1</div>
+                                        </td>
+                                        <td class="code">
+                                            <div class="container-fluid">
+                                                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"home.gif" <span class="na">alt</span><span class="o">=</span><span class="s">"Home"</span> <span class="na">style</span><span class="o">=</span><span class="s">"width:48px;height:48px;"</span><span class="p">&gt;</span></code></pre>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah sendiri <img
+                            draggable="false" role="img" class="emoji" alt="↗"
+                            src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
                     </div>
                 </section>
+
                 <section id="15.8">
                     <h2>Gambar sebagai Links</h2>
                     <p>Untuk menggunakan gambar sebagai link, letakkan <mark><code>&lt;img&gt;</mark></code> tag di dalam
@@ -6301,16 +6397,37 @@ USA
                             <img class="img-fluid" src="files/img/home.gif" alt="HTML tutorial" style="width:42px;height:42px;">
                         </a>
                     </div>
-
-                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                    <div class="bd-callout">
-                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;a <span class="na">href</span>="https://onysu.github.io/lesson/webdesain/"&gt;&lt;img <span class="na">src</span>="home.gif" <span class="na">alt</span>="HTML tutorial" <span class="na">style</span>="width:42px;height:42px;"&gt;&lt;/a&gt;</code></pre>
-                        <hr>
-                        <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
-                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
-                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    <div class="highlight">
+                        Code :
+                        <div class="syntaxhighlighter  xml">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="gutter">
+                                            <div class="line number1 index0 alt2">1</div>
+                                            <div class="line number1 index0 alt2">2</div>
+                                            <div class="line number1 index0 alt2">3</div>
+                                        </td>
+                                        <td class="code">
+                                            <div class="container-fluid">
+                                                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://onysu.github.io/lesson/webdesain/"<span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span
+class="s">"home.gif" <span class="na">alt</span><span class="o">=</span><span class="s">"HTML tutorial"</span> <span
+class="na">style</span><span class="o">=</span><span class="s">"width:42px;height:42px;"</span><span
+class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span></code></pre>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah sendiri <img
+                            draggable="false" role="img" class="emoji" alt="↗"
+                            src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
                     </div>
                 </section>
+
                 <section id="15.9">
                     <h2>Gambar Mengambang <span class="text-muted small fw-light">(Image Floating)</span></h2>
                     <p>Gunakan <code>float</code> properti CSS untuk membiarkan gambar melayang ke kanan atau ke kiri teks: </p>
@@ -6323,29 +6440,38 @@ USA
                         <p><strong>Gambar mengambang di sebelah kiri teks.</strong></p>
                         <img src="files/img/home.gif" alt="Smiley face" style="width:42px;height:42px;"> Lorem ipsum dolor sit amet consectetur.
                     </div>
+                    <div class="highlight">
+                        Code :
+                        <div class="syntaxhighlighter  xml">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="gutter">
+                                            <div class="line number1 index0 alt2">1</div>
+                                            <div class="line number2 index1 alt1">2</div>
+                                            <div class="line number2 index1 alt1">3</div>
+                                        </td>
+                                        <td class="code">
+                                            <div class="container-fluid">
+                                                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"home.gif"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"Home"</span> <span class="na">style</span><span class="o">=</span><span class="s">"float:right;width:42px;height:42px;"</span><span class="p">&gt;</span>Sebuah paragraf dengan gambar mengambang.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 
-                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                    <div class="bd-callout">
-                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;p&gt;
-&lt;img <span class="na">src</span>=<span class="s">"home.gif"</span> <span class="na">alt</span>=<span class="s">"Home"</span> <span class="na">style</span>=<span class="s">"float:right;width:42px;height:42px;"</span>&gt; Sebuah paragraf dengan gambar mengambang.
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;img <span class="na">src</span>=<span class="s">"home.gif"</span> <span class="na">alt</span>=<span class="s">"Home"</span> <span class="na">style</span>=<span class="s">"width:42px;height:42px;"</span>&gt; Sebuah paragraf dengan gambar mengambang.
-&lt;/p&gt;
-</code></pre>
-                        <hr>
-                        <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
-                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
-                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"home.gif"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"Home"</span> <span class="na">style</span><span class="o">=</span><span class="s">"width:42px;height:42px;"</span><span class="p">&gt;</span>Sebuah paragraf dengan gambar mengambang.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span></code></pre>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah sendiri <img
+                            draggable="false" role="img" class="emoji" alt="↗"
+                            src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
                     </div>
-                    <!-- <p><strong>Tip:</strong> Untuk mempelajari lebih lanjut tentang CSS Float, baca <a href="https://www.w3schools.com/css/css_float.asp">Tutorial CSS Float</a> kami.</p> -->
                 </section>
+
                 <section id="15.10">
                     <h2>Format Gambar Umum</h2>
-                    <p>Berikut adalah jenis file gambar yang paling umum, yang didukung di semua browser (Chrome, Edge, Firefox, Safari, Opera):
-                    </p>
-                    <table class="table table-bordered table-hover table-responsive table-sm">
+                    <p>Berikut adalah jenis file gambar yang paling umum, yang didukung di semua browser (Chrome, Edge, Firefox, Safari, Opera):</p>
+                    <table class="table table-bordered table-hover table-responsive table-sm text-center">
                         <thead class="table-light text-center">
                             <tr>
                                 <th>Singkatan</th>
@@ -6387,7 +6513,7 @@ USA
                         </tbody>
                     </table>
                 </section>
-                <!-- <section id="15.x">
+                <section id="15.x">
                     <h2>Ringkasan Bab</h2>
                     <ul>
                         <li>Gunakan <mark><code>&lt;img&gt;</mark></code> elemen HTML untuk mendefinisikan gambar</li>
@@ -6405,7 +6531,12 @@ USA
                 </section>
                 <section id="15.x">
                     <h2>Tag Gambar HTML</h2>
-                  <table class="table table-bordered table-hover table-responsive table-sm">
+                    <style>
+                        .taggmbr td:nth-child(1) {
+                            text-align: center;
+                        }
+                    </style>
+                    <table class="table table-bordered table-hover table-responsive table-sm taggmbr">
                         <thead class="table-light text-center">
                             <tr>
                                 <th>Tag</th>
@@ -6414,28 +6545,25 @@ USA
                         </thead>
                         <tbody>
                             <tr>
-                                <td><mark><code>&lt;img&gt;</mark></code>
-                                </td>
+                                <td><code>&lt;img&gt;</code></td>
                                 <td>Mendefinisikan gambar</td>
                             </tr>
                             <tr>
-                                <td><mark><code>&lt;map&gt;</mark></code>
-                                </td>
+                                <td><code>&lt;map&gt;</code></td>
                                 <td>Mendefinisikan peta gambar</td>
                             </tr>
                             <tr>
-                                <td><mark><code>&lt;area&gt;</mark></code>
-                                </td>
+                                <td><code>&lt;area&gt;</code></td>
                                 <td>Mendefinisikan area yang dapat diklik di dalam peta gambar</td>
                             </tr>
                             <tr>
-                                <td><mark><code>&lt;picture&gt;</mark></code>
-                                </td>
+                                <td><code>&lt;picture&gt;</code></td>
                                 <td>Mendefinisikan wadah untuk beberapa sumber gambar</td>
                             </tr>
                         </tbody>
                     </table>
-                </section> -->
+                </section>
+
                 <!-- HTML Image Maps -->
                 <section id="15.11">
                     <h2>Pemetaan Gambar / Map</h2>
@@ -6453,22 +6581,42 @@ USA
                       <area shape="circle" coords="260,231,35" alt="Coffee" href="coffee.html">
                     </map>
                     </div>
-                    <div class="bd-clipboard"><button type="button" class="btn-clipboard" title="" data-bs-original-title="Copy to clipboard">Copy</button></div>
-                    <div class="bd-callout">
-                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html">&lt;img <span class="na">src</span>="workplace.jpg" <span class="na">alt</span>="Workplace" <span class="na">usemap</span>="#workmap" <span class="na">width</span>="305px"&gt; 
-  
-&lt;map <span class="na">name</span>="workmap"&gt;
-  &lt;area <span class="na">shape</span>="rect" <span class="na">coords</span>="24,32,208,264" <span class="na">alt</span>="Computer" <span class="na">href</span>="computer.html"&gt;
-  &lt;area <span class="na">shape</span>="rect" <span class="na">coords</span>="220,129,254,188" <span class="na">alt</span>="Phone" <span class="na">href</span>="phone.htm"&gt;
-  &lt;area <span class="na">shape</span>="circle" <span class="na">coords</span>="260,231,35" <span class="na">alt</span>="Coffee" <span class="na">href</span>="coffee.html"&gt;
-&lt;/map&gt;
-</code></pre>
-                        <hr>
-                        <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
-                        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
-                          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    <div class="highlight">
+                        Code :
+                        <div class="syntaxhighlighter  xml">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="gutter">
+                                            <div class="line number1 index0 alt2">1</div>
+                                            <div class="line number2 index1 alt1">2</div>
+                                            <div class="line number2 index1 alt1">3</div>
+                                            <div class="line number2 index1 alt1">4</div>
+                                            <div class="line number2 index1 alt1">5</div>
+                                            <div class="line number2 index1 alt1">6</div>
+                                            <div class="line number2 index1 alt1">7</div>
+                                        </td>
+                                        <td class="code">
+                                            <div class="container-fluid">
+                                                <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"workplace.jpg" <span class="na">alt</span><span class="o">=</span><span class="s">"Workplace"<span class="p">&gt;</span> <span class="na">usemap</span><span class="o">=</span><span class="s">"#workmap"</span> <span class="na">width</span><span class="o">=</span><span class="s">"305px"</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">map</span> <span class="na">name</span><span class="o">=</span><span class="s">"workmap"<span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">area</span> <span class="na">shape</span><span class="o">=</span><span class="s">"rect" <span class="na">coords</span><span class="o">=</span><span class="s">"24,32,208,264"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"Computer"</span> <span class="na">href</span><span class="o">=</span><span class="s">"computer.html"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">area</span> <span class="na">shape</span><span class="o">=</span><span class="s">"rect" <span class="na">coords</span><span class="o">=</span><span class="s">"220,129,254,188"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"Phone"</span> <span class="na">href</span><span class="o">=</span><span class="s">"phone.htm"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">area</span> <span class="na">shape</span><span class="o">=</span><span class="s">"circle" <span class="na">coords</span><span class="o">=</span><span class="s">"260,231,35"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"Coffee"</span> <span class="na">href</span><span class="o">=</span><span class="s">"coffee.html"</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">map</span><span class="p">&gt;</span></code></pre>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah sendiri <img
+                            draggable="false" role="img" class="emoji" alt="↗"
+                            src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
                     </div>
                 </section>
+
                 <section id="15.x">
                     <h2>Bagaimana cara kerjanya?</h2>
                     <p>Ide dari Map gambar adalah bahwa Anda harus dapat melakukan aksi yang berbeda tergantung di mana gambar yang Anda klik. Untuk membuat peta gambar, Anda memerlukan gambar dan beberapa kode area yang dapat diklik.</p>
@@ -6487,7 +6635,7 @@ USA
                         <mark><code>&lt;map&gt;</mark></code> elemen yang digunakan untuk membuat peta gambar, dan terkait dengan gambar dengan menggunakan diperlukan <mark><code>name</mark></code> atribut:
                     </p>
 
-                    <div class="bd-callout">
+                    <div class="bd-callout bd-callout-syntax">
                         <code>&lt;map name="workmap"&gt;</code>
                     </div>
                     <p><mark><code>name</mark></code> atribut harus memiliki nilai yang sama sebagai

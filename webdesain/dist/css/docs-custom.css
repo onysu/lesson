@@ -676,7 +676,7 @@
 }
 
 @media (min-width: 768px) {
-    :root {
+     :root {
         scroll-padding-top: 4rem
     }
 }
@@ -1071,7 +1071,8 @@
     padding: 1rem;
     margin: 1rem -.75rem 0;
     border: solid #dee2e6;
-    border-width: 1px 0 0
+    border-width: 1px 0 0;
+    margin-top: 0;
 }
 
 .bd-example::after {
@@ -1085,9 +1086,12 @@
         padding: 1.5rem;
         margin-right: 0;
         margin-left: 0;
-        border-width: 1px;
-        border-top-left-radius: .25rem;
-        border-top-right-radius: .25rem
+        border-width: 0;
+        /* border-width: 1px; */
+        /* border-top-left-radius: .25rem;
+        border-top-right-radius: .25rem */
+        border-top-left-radius: 0;
+        border-top-right-radius: 0
     }
     .bd-example+.bd-clipboard+.highlight {
         border-bottom-right-radius: .25rem;

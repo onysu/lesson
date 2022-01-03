@@ -7853,8 +7853,8 @@ gambar Background berperilaku.
 
                 <section id="16.4">
                     <h2>Judul Tabel <span class="text-muted fw-light small">(Table Headers)</span></h2>
-                    <p>Terkadang Anda ingin sel Anda menjadi tajuk, dalam kasus tersebut gunakan
-                        <mark><code>&lt;th&gt;</code></mark> tag alih-alih <mark><code>&lt;td&gt;</code></mark> tag:
+                    <p>Terkadang Anda ingin sel Anda menjadi judul, dalam kasus tersebut gunakan
+                        <mark><code>&lt;th&gt;</code></mark> tag daripada <mark><code>&lt;td&gt;</code></mark> tag:
                     </p>
                     <p>Contoh :</p>
                     <p>Biarkan baris pertama menjadi header tabel:</p>
@@ -7953,8 +7953,7 @@ gambar Background berperilaku.
                             draggable="false" role="img" class="emoji" alt="↗"
                             src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
                     </div>
-
-                    <p>Secara default, teks dalam &lt;th&gt;elemen dicetak tebal dan di tengah, tetapi Anda dapat mengubahnya dengan CSS.</p>
+                    <p class="moreInfo">Secara default, teks dalam &lt;th&gt; elemen dicetak <u>tebal dan di tengah</u>, tetapi Anda dapat mengubahnya dengan CSS.</p>
                 </section>
 
                 <section id="16.5">
@@ -8263,7 +8262,7 @@ gambar Background berperilaku.
                     <p>Contoh :</p>
                     <img class="top-example" src="files/img/browser-head.png" alt="">
                     <div class="bd-example">
-                        <h2>Tabel Dengan Border Tak Terlihat</h2>
+                        <h2>Tabel dengan Border Tak Terlihat</h2>
                         <p>Style tabel dengan <mark><code>border</code></mark> <strong>Putih</strong> dan warna latar belakang sel untuk memberikan kesan <mark><code>border</code></mark> yang tidak terlihat.
                         </p>
                         <table style="width:100%;border: 1px solid white;border-collapse: collapse;">
@@ -8355,7 +8354,7 @@ gambar Background berperilaku.
                                             <div class="container-fluid">
                                                 <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
   <span class="na">table, th, td</span> {
-    <span class="s">border:1px solid black;</span>
+    <span class="s">border:1px solid white;</span>
     <span class="s">border-collapse: collapse;</span>
   }
   <span class="na">th, td</span> {
@@ -8650,32 +8649,26 @@ gambar Background berperilaku.
                     <p>Dengan <mark><code>border-style</code></mark> properti, Anda dapat mengatur tampilan <mark><code>border</code></mark>.</p>
                     <img class="top-example" src="files/img/browser-head.png" alt="">
                     <div class="bd-example">
-                        <style>
-                            .tabeldotted th,
-                            td {
-                                border-style: dotted;
-                            }
-                        </style>
-                        <table class="tabeldotted w-100">
+                        <table style="width:100%;">
                             <tr>
-                                <th style="text-align: center;">Nama Depan</th>
-                                <th style="text-align: center;">Nama Belakang</th>
-                                <th style="text-align: center;">Usia</th>
+                                <th style="border-style: dotted;">Nama Depan</th>
+                                <th style="border-style: dotted;">Nama Belakang</th>
+                                <th style="border-style: dotted;">Usia</th>
                             </tr>
                             <tr>
-                                <td>Jill</td>
-                                <td>Smith</td>
-                                <td>50</td>
+                                <td style="border-style: dotted;">Jill</td>
+                                <td style="border-style: dotted;">Smith</td>
+                                <td style="border-style: dotted;">50</td>
                             </tr>
                             <tr>
-                                <td>Eve</td>
-                                <td>Jackson</td>
-                                <td>94</td>
+                                <td style="border-style: dotted;">Eve</td>
+                                <td style="border-style: dotted;">Jackson</td>
+                                <td style="border-style: dotted;">94</td>
                             </tr>
                             <tr>
-                                <td>John</td>
-                                <td>Doe</td>
-                                <td>80</td>
+                                <td style="border-style: dotted;">John</td>
+                                <td style="border-style: dotted;">Doe</td>
+                                <td style="border-style: dotted;">80</td>
                             </tr>
                         </table>
                     </div>
@@ -9684,7 +9677,7 @@ gambar Background berperilaku.
                 </section>
                 <section id="16.20">
                     <h2>Header untuk Beberapa Kolom</h2>
-                    <p>Anda dapat memiliki tajuk yang membentang lebih dari dua kolom atau lebih.</p>
+                    <p>Anda dapat memiliki judul yang membentang lebih dari dua kolom atau lebih.</p>
                     <img class="top-example" src="files/img/browser-head.png" alt="">
                     <div class="bd-example">
                         <h2>Header yang mencakup dua kolom</h2>

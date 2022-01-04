@@ -151,12 +151,20 @@ img.emoji {
 /* tabel-native */
 
 .bd-example table {
+    /* display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey;
+    caption-side: unset; */
     display: table;
     border-collapse: separate;
     box-sizing: border-box;
     text-indent: initial;
     border-spacing: 2px;
     border-color: grey;
+    /* bootstrap */
     caption-side: unset;
 }
 
@@ -187,10 +195,17 @@ img.emoji {
 }
 
 .bd-example td {
-    display: table-cell;
+    /* display: table-cell;
     vertical-align: inherit;
     border-width: unset;
-    border: 1px solid;
+    border-color: inherit;
+    border: solid; */
+    display: table-cell;
+    vertical-align: inherit;
+    /* bootstrap */
+    border-color: unset;
+    border-style: unset;
+    border-width: unset;
 }
 
 .bd-example caption {

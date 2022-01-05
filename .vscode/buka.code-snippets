@@ -1,62 +1,18 @@
 {
-// Tempatkan cuplikan ruang kerja pelajaran Anda di sini.Setiap cuplikan didefinisikan dengan nama cuplikan dan memiliki ruang lingkup, awalan, tubuh dan
-// keterangan.Tambahkan ID-bahasa yang dipisahkan koma dari bahasa di mana cuplikan berlaku di bidang lingkup.Jika ruang lingkup
-// dibiarkan kosong atau dihilangkan, cuplikan akan diterapkan pada semua bahasa.Awalan adalah apa itu
-// Digunakan untuk memicu cuplikan dan tubuh akan diperluas dan dimasukkan.Kemungkinan variabel adalah:
-// $1, $2 untuk halte tab, $0 untuk posisi kursor akhir, dan ${1: label}, ${2: Lain} untuk placeholder.
-// placeholder dengan ID yang sama terhubung.
-// Contoh:
-	// "Print to console": {
-	// 	"scope": "javascript,typescript",
-	// 	"prefix": "log",
-	// 	"body": [
-	// 		"console.log('$1');",
-	// 		"$2"
-	// 	],
-	// 	"description": "Log output to console"
-	// }
-  // "For Loop": {
-  //   "prefix": [
-  //     "for",
-  //     "for-const"
-  //   ],
-  //   "body": [
-  //     "for (const ${2:element} of ${1:array}) {",
-  //     "\t$0",
-  //     "}"
-  //   ],
-  //   "description": "A for loop."
-  // },
-  "buka-h1": {
-    "scope": "xml,html",
-    "prefix": [
-      "buka-h1"
-    ],
-    "body": [
-      "<span class=\"p\">&lt;</span><span class=\"nt\">h1</span><span class=\"p\">&gt;</span>...<span class=\"p\">&lt;/</span><span class=\"nt\">h1</span><span class=\"p\">&gt;</span>"
-    ],
-    "description": "<h1></h1>"
-  },  
-  "buka-p": {
-    "scope": "xml,html",
-    "prefix": [
-      "buka-p"
-    ],
-    "body": [
-      "<span class=\"p\">&lt;</span><span class=\"nt\">p</span><span class=\"p\">&gt;</span>...<span class=\"p\">&lt;/</span><span class=\"nt\">p</span><span class=\"p\">&gt;</span>"
-    ],
-    "description": "<p></p>"
-  },
-  "style-p": {
-    "scope": "xml,html",
-    "prefix": [
-      "stylep"
-    ],
-    "body": [
-      "<span class=\"p\">&lt;</span><span class=\"nt\">p</span> <span class=\"na\">style</span><span class=\"o\">=</span><span class=\"s\">\"\"<span class=\"p\">&gt;</span>$1<span class=\"p\">&lt;/</span><span class=\"nt\">p</span><span class=\"p\">&gt;</span>"
-    ],
-    "description": "<p style=\"\"></p>"
-  },
+  // Tempatkan cuplikan Anda untuk HTML di sini.Setiap cuplikan didefinisikan dengan nama cuplikan dan memiliki awalan, tubuh dan
+  // keterangan.Awalanya adalah apa yang digunakan untuk memicu cuplikan dan tubuh akan diperluas dan dimasukkan.Kemungkinan variabel adalah:
+  // $1, $2 untuk halte tab, $0 untuk posisi kursor akhir, dan ${1: label}, ${2: Lain} untuk placeholder.Placeholder dengan
+  // ID yang sama terhubung.
+  // Contoh:
+  // "cetak ke konsol": {
+  // 	"prefix": "log",
+  // 	"body": [
+  // 		"console.log('$1');",
+  // 		"$2"
+  // 	],
+  // 	"description": "Log output to console"
+  // }
+  
   "image": {
     "scope": "xml,html",
     "prefix": [
@@ -97,16 +53,6 @@
     ],
     "description": "<img src=\"\" alt=\"\" usemap=\"\" width=\"\">"
   },
-  "div-p": {
-    "scope": "xml,html",
-    "prefix": [
-      "div.style"
-    ],
-    "body": [
-      "<span class=\"p\">&lt;</span><span class=\"nt\">div</span> <span class=\"na\">style</span><span class=\"o\">=</span><span class=\"s\">\"\"<span class=\"p\">&gt;</span>$1<span class=\"p\">&lt;/</span><span class=\"nt\">div</span><span class=\"p\">&gt;</span>"
-    ],
-    "description": "<div style=\"\"></div>"
-  },
   "a-href": {
     "scope": "xml,html",
     "prefix": [
@@ -126,16 +72,6 @@
       "<span class=\"p\">&lt;</span><span class=\"nt\">a</span> <span class=\"na\">href</span><span class=\"o\">=</span><span class=\"s\">\"#\" <span class=\"na\">target</span><span class=\"o\">=</span><span class=\"s\">\"_blank\"<span class=\"p\">&gt;</span>$1<span class=\"p\">&lt;/</span><span class=\"nt\">a</span><span class=\"p\">&gt;</span>"
     ],
     "description": "<a href=\"\"></a>"
-  },
-  "style": {
-    "scope": "xml,html",
-    "prefix": [
-      "gaya"
-    ],
-    "body": [
-      "<span class=\"p\">&lt;</span><span class=\"nt\">style</span><span class=\"p\">&gt;</span>\n <span class=\"p\">.</span><span class=\"nc\">.$1</span> <span class=\"p\">{</span>\n   <span class=\"k\">xxx</span><span class=\"p\">:</span> <span class=\"nf\">xxx</span><span class=\"p\">;</span>\n <span class=\"p\">}</span>\n<span class=\"p\">&lt;/</span><span class=\"nt\">style</span><span class=\"p\">&gt;</span>"
-    ],
-    "description": "<style>body {}</style>"
   },
   "link-css": {
     "scope": "xml,html",
@@ -166,166 +102,5 @@
       "<span class=\"p\">&lt;</span><span class=\"nt\">script</span> <span class=\"na\">src</span><span class=\"o\">=</span><span class=\"s\">\"...\"</span><span class=\"p\">&gt;$1&lt;/</span><span class=\"nt\">script</span><span class=\"p\">&gt;</span>"
     ],
     "description": "<script src=\"\"></script>"
-  },
-  // **********************************
-  "style-css": {
-    "prefix": [
-      "css"
-    ],
-    "body": [
-      "<code class=\"language-css\" data-lang=\"css\">",
-      "<span class=\"nt\">xxx</span> <span class=\"p\">{</span>",
-      "\t<span class=\"k\">xxx</span><span class=\"p\">:</span> <span class=\"nf\">xxx</span><span class=\"p\">;</span>",
-      "<span class=\"p\">}</span>",
-      "</code>"
-    ],
-    "description": "style."
-  },  
-  "div-class": {
-    "prefix": [
-      "div.class"
-    ],
-    "body": [
-      "<code class=\"language-html\" data-lang=\"html\">",
-      "<span class=\"p\">&lt;</span><span class=\"nt\">div</span> <span class=\"na\">class</span><span class=\"o\">=</span><span class=\"s\">\"$1\"</span><span class=\"p\">&gt;</span>$2<span class=\"p\">&lt;/</span><span class=\"nt\">div</span><span class=\"p\">&gt;</span>",
-      "</code>$0"
-    ],
-    "description": "<div class=\"\"></div>"
-  },
-  "h1-class": {
-    "prefix": [
-      "h1.class"
-    ],
-    "body": [
-      "<code class=\"language-html\" data-lang=\"html\">",
-      "<span class=\"p\">&lt;</span><span class=\"nt\">h1</span> <span class=\"na\">class</span><span class=\"o\">=</span><span class=\"s\">\"$1\"</span><span class=\"p\">&gt;</span>$2<span class=\"p\">&lt;/</span><span class=\"nt\">h1</span><span class=\"p\">&gt;</span>",
-      "</code>$0"
-    ],
-    "description": "<h1 class=\"\"></h1>"
-  },
-  "p-class": {
-    "prefix": [
-      "p.class"
-    ],
-    "body": [
-      "<code class=\"language-html\" data-lang=\"html\">",
-      "<span class=\"p\">&lt;</span><span class=\"nt\">p</span> <span class=\"na\">class</span><span class=\"o\">=</span><span class=\"s\">\"$1\"</span><span class=\"p\">&gt;</span>$2<span class=\"p\">&lt;/</span><span class=\"nt\">p</span><span class=\"p\">&gt;</span>",
-      "</code>$0"
-    ],
-    "description": "<p class=\"\"></p>"
-  },
-  "div-style": {
-    "prefix": [
-      "div.style"
-    ],
-    "body": [
-      "<code class=\"language-html\" data-lang=\"html\">",
-      "<span class=\"p\">&lt;</span><span class=\"nt\">div</span> <span class=\"na\">style</span><span class=\"o\">=</span><span class=\"s\">\"$1\"</span><span class=\"p\">&gt;</span>$2<span class=\"p\">&lt;/</span><span class=\"nt\">div</span><span class=\"p\">&gt;</span>",
-      "</code>$0"
-    ],
-    "description": "<div class=\"\"></div>"
-  },
-  "h1-style": {
-    "prefix": [
-      "h1.style"
-    ],
-    "body": [
-      "<code class=\"language-html\" data-lang=\"html\">",
-      "<span class=\"p\">&lt;</span><span class=\"nt\">h1</span> <span class=\"na\">style</span><span class=\"o\">=</span><span class=\"s\">\"$1\"</span><span class=\"p\">&gt;</span>$2<span class=\"p\">&lt;/</span><span class=\"nt\">h1</span><span class=\"p\">&gt;</span>",
-      "</code>$0"
-    ],
-    "description": "<h1 class=\"\"></h1>"
-  },
-  "p-style": {
-    "prefix": [
-      "p.style"
-    ],
-    "body": [
-      "<code class=\"language-html\" data-lang=\"html\">",
-      "<span class=\"p\">&lt;</span><span class=\"nt\">p</span> <span class=\"na\">style</span><span class=\"o\">=</span><span class=\"s\">\"$1\"</span><span class=\"p\">&gt;</span>$2<span class=\"p\">&lt;/</span><span class=\"nt\">p</span><span class=\"p\">&gt;</span>",
-      "</code>$0"
-    ],
-    "description": "<p class=\"\"></p>"
-  },
-  "komen": {
-    "prefix": [
-      "komen"
-    ],
-    "body": [
-      "<code class=\"language-html\" data-lang=\"html\">",
-      "<span class=\"c\">&lt;!-- xxx --&gt;</span>",
-      "</code>$0"
-    ],
-    "description": "<p class=\"\"></p>"
-  },
-  "doctype": {
-    "prefix": [
-      "doctype"
-    ],
-    "body": [
-      "<code class=\"language-html\" data-lang=\"html\"><span class=\"cp\">&lt;!doctype html&gt;</span>",
-      "<span class=\"p\">&lt;</span><span class=\"nt\">html</span> <span class=\"na\">lang</span><span class=\"o\">=</span><span class=\"s\">\"en\"</span><span class=\"p\">&gt;</span>\n",
-      "\t<span class=\"p\">&lt;</span><span class=\"nt\">head</span><span class=\"p\">&gt;</span>",
-      "\t\t<span class=\"p\">&lt;</span><span class=\"nt\">meta</span> <span class=\"na\">charset</span><span class=\"o\">=</span> <span class=\"s\">\"utf-8\"</span><span class=\"p\">&gt;</span>",
-      "\t\t<span class=\"p\">&lt;</span><span class=\"nt\">meta</span> <span class=\"na\">name</span><span class=\"o\">=</span> <span class=\"s\">\"viewport\"</span><span class=\"na\">content</span><span class=\"o\">=</span> <span class=\"s\">\"width=device-width, initial-scale=1\"</span><span class=\"p\">&gt;</span>",
-      "\t\t<span class=\"p\">&lt;</span><span class=\"nt\">title</span><span class=\"p\">&gt;</span>Judul Halaman<span class=\"p\">&lt;/</span><span class=\"nt\">title</span><span class=\"p\">&gt;</span>",
-      "\t<span class=\"p\">&lt;/</span><span class=\"nt\">head</span><span class=\"p\">&gt;</span>\n",
-      "\t<span class=\"p\">&lt;</span><span class=\"nt\">body</span><span class=\"p\">&gt;</span>",
-      "\t\t<span class=\"p\">&lt;</span><span class=\"nt\">h1</span><span class=\"p\">&gt;</span>Hello, world!<span class=\"p\">&lt;/</span><span class=\"nt\">h1</span><span class=\"p\">&gt;</span>",
-      "\t\t<span class=\"p\">&lt;</span><span class=\"nt\">p</span><span class=\"p\">&gt;</span>Ini adalah sebuah paragraf<span class=\"p\">&lt;/</span><span class=\"nt\">p</span><span class=\"p\">&gt;</span>",
-      "\t<span class=\"p\">&lt;/</span><span class=\"nt\">body</span><span class=\"p\">&gt;</span>\n",
-      "<span class=\"p\">&lt;/</span><span class=\"nt\">html</span><span class=\"p\">&gt;</span>",
-      "</code>$0"
-    ],
-    "description": "<!doctype html>"
-  },
-  "doctype-link": {
-    "prefix": [
-      "doctype.link"
-    ],
-    "body": [
-      "<code class=\"language-html\" data-lang=\"html\"><span class=\"cp\">&lt;!doctype html&gt;</span>",
-      "<span class=\"p\">&lt;</span><span class=\"nt\">html</span> <span class=\"na\">lang</span><span class=\"o\">=</span><span class=\"s\">\"en\"</span><span class=\"p\">&gt;</span>\n",
-      "\t<span class=\"p\">&lt;</span><span class=\"nt\">head</span><span class=\"p\">&gt;</span>",
-      "\t\t<span class=\"p\">&lt;</span><span class=\"nt\">meta</span> <span class=\"na\">charset</span><span class=\"o\">=</span> <span class=\"s\">\"utf-8\"</span><span class=\"p\">&gt;</span>",
-      "\t\t<span class=\"p\">&lt;</span><span class=\"nt\">meta</span> <span class=\"na\">name</span><span class=\"o\">=</span> <span class=\"s\">\"viewport\"</span><span class=\"na\">content</span><span class=\"o\">=</span> <span class=\"s\">\"width=device-width, initial-scale=1\"</span><span class=\"p\">&gt;</span>",
-      "\t\t<span class=\"p\">&lt;</span><span class=\"nt\">link</span> <span class=\"na\">href</span><span class=\"o\">=</span><span class=\"s\">\"...\"</span> <span class=\"na\">rel</span><span class=\"o\">=</span><span class=\"s\">\"stylesheet\"</span><span class=\"p\">&gt;</span>",
-      "\t\t<span class=\"p\">&lt;</span><span class=\"nt\">title</span><span class=\"p\">&gt;</span>Judul Halaman<span class=\"p\">&lt;/</span><span class=\"nt\">title</span><span class=\"p\">&gt;</span>",
-      "\t<span class=\"p\">&lt;/</span><span class=\"nt\">head</span><span class=\"p\">&gt;</span>\n",
-      "\t<span class=\"p\">&lt;</span><span class=\"nt\">body</span><span class=\"p\">&gt;</span>",
-      "\t\t<span class=\"p\">&lt;</span><span class=\"nt\">h1</span><span class=\"p\">&gt;</span>Hello, world!<span class=\"p\">&lt;/</span><span class=\"nt\">h1</span><span class=\"p\">&gt;</span>",
-      "\t\t<span class=\"p\">&lt;</span><span class=\"nt\">p</span><span class=\"p\">&gt;</span>Ini adalah sebuah paragraf<span class=\"p\">&lt;/</span><span class=\"nt\">p</span><span class=\"p\">&gt;</span>",
-      "\t<span class=\"p\">&lt;/</span><span class=\"nt\">body</span><span class=\"p\">&gt;</span>\n",
-      "<span class=\"p\">&lt;/</span><span class=\"nt\">html</span><span class=\"p\">&gt;</span>",
-      "</code>$0"
-    ],
-    "description": "<!doctype html>"
-  },
-  "doctype-link-style": {
-    "prefix": [
-      "doctype.link.style"
-    ],
-    "body": [
-      "<code class=\"language-html\" data-lang=\"html\"><span class=\"cp\">&lt;!doctype html&gt;</span>",
-      "<span class=\"p\">&lt;</span><span class=\"nt\">html</span> <span class=\"na\">lang</span><span class=\"o\">=</span><span class=\"s\">\"en\"</span><span class=\"p\">&gt;</span>\n",
-      "\t<span class=\"p\">&lt;</span><span class=\"nt\">head</span><span class=\"p\">&gt;</span>",
-      "\t\t<span class=\"p\">&lt;</span><span class=\"nt\">meta</span> <span class=\"na\">charset</span><span class=\"o\">=</span> <span class=\"s\">\"utf-8\"</span><span class=\"p\">&gt;</span>",
-      "\t\t<span class=\"p\">&lt;</span><span class=\"nt\">meta</span> <span class=\"na\">name</span><span class=\"o\">=</span> <span class=\"s\">\"viewport\"</span><span class=\"na\">content</span><span class=\"o\">=</span> <span class=\"s\">\"width=device-width, initial-scale=1\"</span><span class=\"p\">&gt;</span>",
-      "\t\t<span class=\"p\">&lt;</span><span class=\"nt\">link</span> <span class=\"na\">href</span><span class=\"o\">=</span><span class=\"s\">\"...\"</span> <span class=\"na\">rel</span><span class=\"o\">=</span><span class=\"s\">\"stylesheet\"</span><span class=\"p\">&gt;</span>",
-      "\t\t<span class=\"p\">&lt;</span><span class=\"nt\">title</span><span class=\"p\">&gt;</span>Judul Halaman<span class=\"p\">&lt;/</span><span class=\"nt\">title</span><span class=\"p\">&gt;</span>",
-      "\t\t<code class=\"language-css\" data-lang=\"css\"><span class=\"p\">&lt;</span><span class=\"na\">style</span><span class=\"p\">&gt;</span>",
-      "\t\t\t<span class=\"p\">.</span><span class=\"nc\">body</span> <span class=\"p\">{</span>",
-      "\t\t\t\t<span class=\"k\">box-sizing</span><span class=\"p\">:</span> <span class=\"kc\">content-box</span><span class=\"p\">;</span>",
-      "\t\t\t<span class=\"p\">}</span>",
-      "\t\t<span class=\"p\">&lt;/</span><span class=\"nt\">style</span><span class=\"p\">&gt;</span></code>",
-      "\t<span class=\"p\">&lt;/</span><span class=\"nt\">head</span><span class=\"p\">&gt;</span>\n",
-      "\t<span class=\"p\">&lt;</span><span class=\"nt\">body</span><span class=\"p\">&gt;</span>",
-      "\t\t<span class=\"p\">&lt;</span><span class=\"nt\">h1</span><span class=\"p\">&gt;</span>Hello, world!<span class=\"p\">&lt;/</span><span class=\"nt\">h1</span><span class=\"p\">&gt;</span>",
-      "\t\t<span class=\"p\">&lt;</span><span class=\"nt\">p</span><span class=\"p\">&gt;</span>Ini adalah sebuah paragraf<span class=\"p\">&lt;/</span><span class=\"nt\">p</span><span class=\"p\">&gt;</span>",
-      "\t<span class=\"p\">&lt;/</span><span class=\"nt\">body</span><span class=\"p\">&gt;</span>\n",
-      "<span class=\"p\">&lt;/</span><span class=\"nt\">html</span><span class=\"p\">&gt;</span>",
-      "</code>$0"
-    ],
-    "description": "<!doctype html>"
   },
 }

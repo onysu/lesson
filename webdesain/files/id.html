@@ -1,0 +1,142 @@
+<h1>Atribut ID HTML.</h1>
+<p>Atribut HTML <code>ID</code> digunakan untuk menentukan ID unik untuk elemen HTML.Anda tidak dapat memiliki lebih dari satu elemen dengan ID yang sama dalam dokumen HTML.</p>
+
+<h2>Menggunakan Atribut ID</h2>
+<p>Atribut <code>ID</code> Menentukan ID unik untuk elemen HTML.Nilai atribut <code>ID</code> harus unik dalam dokumen HTML. Atribut <code>ID</code> digunakan untuk menunjuk ke deklarasi style tertentu dalam lembar style. Ini juga digunakan oleh JavaScript
+    untuk mengakses dan memanipulasi elemen dengan ID tertentu. Sintaks untuk ID adalah: Tulis karakter hash (#), diikuti oleh nama ID. Kemudian, tentukan properti CSS dalam kurung kurawal {}. Dalam contoh berikut kita Memiliki elemen <code>&lt;h1&gt;</code>    yang menunjuk ke nama ID "MyHEADER". Elemen <code>&lt;h1&gt;</code> ini akan ditata sesuai dengan <code>#myheader</code> definisi style di bagian head:</p>
+
+<p>Contoh :</p>
+
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+        style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html
+<span class="tagcolor" style="color:mediumblue">&gt;</span>
+</span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+        style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+        class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>#myHeader
+      <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+        background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+            style="color:black">:</span> lightblue<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>black
+<span class="cssdelimitercolor" style="color:black">;</span>
+</span><br>&nbsp; padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+            style="color:black">:</span> 40px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; text-align
+<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+            style="color:black">:</span> center<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+<br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+        style="color:mediumblue">&lt;</span>/style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+        class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+        class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+        class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red"> id<span
+          class="attributevaluecolor" style="color:mediumblue">="myHeader"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>My Header
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body
+<span class="tagcolor" style="color:mediumblue">&gt;</span>
+</span><br><span class="tagnamecolor" style="color:brown"><span
+        class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span>
+
+<a href="#" target="_blank">Try it Yourself »</a>
+
+<p class="moreInfo"><strong>Catatan:</strong> Nama ID peka huruf besar-kecil!</p>
+<p class="moreInfo"><strong>Catatan:</strong> Nama ID harus mengandung setidaknya satu karakter, tidak dapat memulai dengan angka dan tidak boleh mengandung spasi putih (spasi, tab, dll.).</p>
+
+<h2>Perbedaan antara kelas dan ID</h2>
+<p>Nama kelas dapat digunakan oleh beberapa elemen HTML, sedangkan nama ID hanya boleh digunakan oleh satu elemen HTML dalam halaman:</p>
+
+<p>Contoh :</p>
+
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br><span class="commentcolor" style="color:green">/* Style elemen dengan ID "myHeader" */</span><br>
+<strong>#myHeader</strong> <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor"
+          style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> lightblue<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; color
+<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+            style="color:black">:</span> black<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>40px
+<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+            style="color:black">:</span> center<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor" style="color:green">/* Style semua elemen dengan nama kelas "city" */</span><br><strong>.city
+      </strong><span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+            class="cssdelimitercolor" style="color:black">:</span> tomato<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>white
+<span class="cssdelimitercolor" style="color:black">;</span>
+</span><br>&nbsp;&nbsp;padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+            style="color:black">:</span> 10px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+<br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+        style="color:mediumblue">&lt;</span>/style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<br><span class="commentcolor" style="color:green">&lt;!-- Elemen dengan ID unik --&gt;</span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor"
+          style="color:mediumblue">="myHeader"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>My Cities
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="commentcolor" style="color:green">&lt;!--
+      Beberapa elemen dengan kelas yang sama --&gt;</span><br><span class="tagnamecolor" style="color:brown"><span
+        class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="attributecolor" style="color:red">
+        class<span class="attributevaluecolor" style="color:mediumblue">="city"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>London<span class="tagnamecolor" style="color:brown"><span
+        class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+        class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>London adalah ibu kota Inggris.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p
+<span class="tagcolor" style="color:mediumblue">&gt;</span>
+</span><br><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor"
+          style="color:mediumblue">="city"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Paris<span class="tagnamecolor" style="color:brown"><span
+        class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+        class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Paris adalah ibu kota Prancis.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p
+<span class="tagcolor" style="color:mediumblue">&gt;</span>
+</span><br><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor"
+          style="color:mediumblue">="city"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tokyo<span class="tagnamecolor" style="color:brown"><span
+        class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+        class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tokyo adalah ibu kota Jepang.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p
+<span class="tagcolor" style="color:mediumblue">&gt;</span>
+
+<a href="#" target="_blank">Try it Yourself »</a>
+
+<p><strong>Tip:</strong> Anda dapat belajar lebih banyak tentang CSS di <a href="#">Tutorial CSS.</a>.</p>
+
+<h2>HTML Bookmark dengan ID dan Tautan</h2>
+<p>Bookmark HTML digunakan untuk memungkinkan pembaca untuk melompat ke bagian lain dari halaman web. Bookmark dapat bermanfaat jika halaman Anda sangat panjang. Untuk menggunakan bookmark, Anda harus terlebih dahulu membuatnya, dan kemudian tambahkan tautan
+    ke sana. Kemudian, ketika tautan diklik, halaman akan bergulir ke lokasi dengan bookmark.</p>
+
+<p>Contoh :</p>
+<p>Pertama, buat bookmark dengan atribut <code>id</code> :</p>
+
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor"
+        style="color:mediumblue">="C4"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Chapter 4<span class="tagnamecolor" style="color:brown"><span
+      class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span>
+
+<p>Kemudian, tambahkan tautan ke bookmark ("lompat ke bab 4"), dari dalam halaman yang sama:</p>
+
+<p>Contoh :</p>
+
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor"
+      style="color:mediumblue">="#C4"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Lompat ke Bab 4<span class="tagnamecolor" style="color:brown"><span
+    class="tagcolor" style="color:mediumblue">&lt;</span>/a
+<span class="tagcolor" style="color:mediumblue">&gt;</span>
+
+<a target="_blank" href="#">Try it Yourself »</a>
+
+<p>Atau, tambahkan tautan ke bookmark ("lompat ke bab 4"), dari halaman lain:</p>
+
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor"
+          style="color:mediumblue">="html_demo.html#C4"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Lompat ke Bab 4<span class="tagnamecolor" style="color:brown"><span
+        class="tagcolor" style="color:mediumblue">&lt;</span>/a
+<span class="tagcolor" style="color:mediumblue">&gt;</span>
+
+<h2>Menggunakan Atribut ID dalam JavaScript</h2>
+<p>Atribut <code>ID</code> juga dapat digunakan oleh JavaScript untuk melakukan beberapa tugas untuk elemen tertentu. Javascript dapat mengakses elemen dengan ID tertentu dengan <code>getelementbyid()</code> metode:</p>
+
+<p>Contoh :</p>
+
+<p>Gunakan atribut <code>ID</code> untuk memanipulasi teks dengan JavaScript:</p>
+
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+        style="color:mediumblue">&lt;</span>script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br><span
+        class="jskeywordcolor" style="color:mediumblue">function</span> displayResult() {
+<br>&nbsp;&nbsp;document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"myHeader"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> =
+<span class="jsstringcolor" style="color:brown">"Have a nice day!"
+      </span>;<br>}<br><span class="jsnumbercolor" style="color:red">
+      </span> </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+        style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span>
+
+<a href="#" target="_blank">Try it Yourself »</a>
+
+<p><strong>Tip:</strong> Belajar JavaScript dalam Bab <a href="#">html Javascript</a>, atau di <a href="#">tutorial javascript</a>.</p>
+
+<h2>Ringkasan Bab</h2>
+<ul>
+    <li>Atribut <code>ID</code> digunakan untuk menentukan ID unik untuk elemen HTML.</li>
+    <li>Nilai atribut <code>ID</code> harus unik dalam dokumen HTML.</li>
+    <li>Atribut <code>ID</code> digunakan oleh CSS dan JavaScript ke style / pilih elemen tertentu.</li>
+    <li>Nilai atribut <code>ID</code> adalah peka huruf besar-kecil.</li>
+    <li>Atribut <code>ID</code> juga digunakan untuk membuat bookmark HTML.</li>
+    <li>JavaScript dapat mengakses elemen dengan ID tertentu dengan metode <code>getelementbyid()</code>.</li>
+</ul>

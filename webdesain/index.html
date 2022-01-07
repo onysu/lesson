@@ -14545,29 +14545,119 @@ gambar Background berperilaku.
 
                     <h2>Penggunaan atribut class dalam javascript</h2>
                     <p>Nama class juga dapat digunakan oleh JavaScript untuk melakukan tugas-tugas tertentu untuk elemen tertentu. JavaScript dapat mengakses elemen dengan nama class tertentu dengan metode: <mark>getElementsByClassName()</mark></p>
-                    <p>Contoh :</p>
-                    <p>Klik pada tombol untuk menyembunyikan semua elemen dengan nama class "city":</p>
-                    <div>
-                        <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br><span
-                        class="jskeywordcolor" style="color:mediumblue">function</span> myFunction() {<br> <span class="jskeywordcolor" style="color:mediumblue">var</span> x = <strong>document.<span class="jspropertycolor"
-                          style="color:black">getElementsByClassName</span>(<span class="jsstringcolor"
-                          style="color:brown">"city"</span>)</strong>;<br> <span class="jskeywordcolor" style="color:mediumblue">for</span> (<span class="jskeywordcolor" style="color:mediumblue">var</span> i =
-                        <span class="jsnumbercolor" style="color:red">0</span>; i &lt; x.<span class="jspropertycolor" style="color:black">length</span>; <span class="jsnumbercolor" style="color:red">
-                      </span> i++) {<br> x[i].<span class="jspropertycolor" style="color:black">style</span>.<span class="jspropertycolor" style="color:black">display</span> = <span class="jsstringcolor" style="color:brown">"none"</span>;<br> }
-                        <br>}<br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                        style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+                    <!-- <p>Contoh :</p> -->
+                    <!-- <p>Klik pada tombol untuk menyembunyikan semua elemen dengan nama class "city":</p> -->
+
+                    <!-- <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+                        <h2>Use of The class Attribute in JavaScript</h2>
+                        <p>Click the button to hide all elements with class name "city":</p>
+
+                        <button onclick="myFunction()">Hide elements</button>
+
+                        <h2 class="city">London</h2>
+                        <p>London is the capital of England.</p>
+
+                        <h2 class="city">Paris</h2>
+                        <p>Paris is the capital of France.</p>
+
+                        <h2 class="city">Tokyo</h2>
+                        <p>Tokyo is the capital of Japan.</p>
+
+                        <script>
+                            function myFunction() {
+                                var x = document.getElementsByClassName("city");
+                                for (var i = 0; i < x.length; i++) {
+                                    x[i].style.display = "none";
+                                }
+                            }
+                        </script>
+                    </div> -->
+
+                    <div class="highlight">
+                        Code :
+                        <div class="syntaxhighlighter  xml">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="gutter">
+                                            <div class="line number1 index0 alt2">1</div>
+                                            <div class="line number2 index1 alt1">2</div>
+                                            <div class="line number2 index1 alt1">3</div>
+                                            <div class="line number2 index1 alt1">4</div>
+                                            <div class="line number2 index1 alt1">5</div>
+                                            <div class="line number2 index1 alt1">6</div>
+                                            <div class="line number2 index1 alt1">7</div>
+                                            <div class="line number2 index1 alt1">8</div>
+                                            <div class="line number2 index1 alt1">9</div>
+                                            <div class="line number2 index1 alt1">10</div>
+                                            <div class="line number2 index1 alt1">11</div>
+                                            <div class="line number2 index1 alt1">12</div>
+                                            <div class="line number2 index1 alt1">13</div>
+                                            <div class="line number2 index1 alt1">14</div>
+                                            <div class="line number2 index1 alt1">15</div>
+                                            <div class="line number2 index1 alt1">16</div>
+                                            <div class="line number2 index1 alt1">17</div>
+                                            <div class="line number2 index1 alt1">18</div>
+                                            <div class="line number2 index1 alt1">19</div>
+                                            <div class="line number2 index1 alt1">20</div>
+                                            <div class="line number2 index1 alt1">21</div>
+                                            <div class="line number2 index1 alt1">22</div>
+                                        </td>
+                                        <td class="code">
+                                            <div class="container-fluid">
+                                                <pre tabindex="0" class="chroma">
+<code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Penggunaan atribut class dalam javascript<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Klik tombol untuk menyembunyikan semua elemen dengan nama class "city":<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">button</span> <span class="na">onclick</span><span class="o">=</span><span class="s">"myFunction()"</span><span class="p">&gt;</span>Sembunyikan elemen.<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span
+  class="s">"city"</span><span class="p">&gt;</span>London<span class="p">&lt;/</span><span class="nt">h2</span><span
+  class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>London adalah ibu kota Inggris.<span
+  class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span
+  class="s">"city"</span><span class="p">&gt;</span>Paris<span class="p">&lt;/</span><span class="nt">h2</span><span
+  class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Paris adalah ibu kota Prancis.<span
+  class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span
+  class="s">"city"</span><span class="p">&gt;</span>Tokyo<span class="p">&lt;/</span><span class="nt">h2</span><span
+  class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Tokyo adalah ibu kota Jepang.<span
+  class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="nt">function</span> myFunction() <span class="p">{</span>
+    <span class="k">var</span> x = document.getElementsByClassName("city")<span class="p">;</span>
+    <span class="k">for</span> (var i = 0; i < x.length; i++) {
+      <span class="p">x[i].style.display = "none";</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code>
+</pre>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah sendiri <img draggable="false" role="img" class="emoji" alt="↗" src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
                     </div>
-                    <a href="#" target="_blank">Try it Yourself »</a>
+
                     <p>Jangan khawatir jika Anda tidak mengerti kode dalam contoh di atas. Anda akan belajar lebih banyak tentang Javascript di bab kami <a href="#">HTML JavaScript</a>, atau Anda dapat mempelajari di <a href="#">Tutorial javascript.</a>.</p>
+
                     <h2>Ringkasan Bab</h2>
                     <ul>
-                        <li>Atribut <mark>class</mark> HTML menentukan satu atau lebih nama <mark>class</mark> untuk suatu elemen.</li>
+                        <li>Atribut <mark>class</mark> HTML menentukan satu atau lebih nama <mark>class</mark> untuk suatu elemen</li>
                         <li>Class digunakan oleh CSS dan JavaScript untuk memilih dan mengakses elemen tertentu.</li>
                         <li>Atribut <mark>class</mark> dapat digunakan pada elemen HTML apa pun.</li>
                         <li>Nama <mark>class</mark> peka huruf besar-kecil.</li>
                         <li>Elemen HTML yang berbeda dapat menunjuk ke nama <mark>class</mark> yang sama.</li>
-                        <li>Javascript dapat mengakses elemen dengan nama <mark>class</mark> tertentu dengan metode GetElementsByClassName ().
-                        </li>
+                        <li>Javascript dapat mengakses elemen dengan nama <mark>class</mark> tertentu dengan metode GetElementsByClassName().</li>
                     </ul>
                 </section>
 

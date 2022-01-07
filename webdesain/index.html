@@ -29,6 +29,7 @@
 </head>
 
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <div class="skippy visually-hidden-focusable overflow-hidden">
         <div class="container-xl">
             <a class="d-inline-flex p-2 m-1" href="#content">Lewati ke konten utama</a>
@@ -14291,6 +14292,29 @@ gambar Background berperilaku.
             var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             var scrolled = (winScroll / height) * 100;
             document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
+    <script>
+        // Dapatkan tombol
+        var mybutton = document.getElementById("myBtn");
+
+        // Ketika pengguna memutar 20px dari atas dokumen, tunjukkan tombol
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // Ketika pengguna mengklik tombol, gulir ke bagian atas dokumen
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
     </script>
 </body>

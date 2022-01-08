@@ -14678,7 +14678,7 @@ gambar Background berperilaku.
                 <!-- id -->
                 <section id="20">
                     <h1>Atribut id HTML.</h1>
-                    <p>Atribut HTML <mark>id</mark> digunakan untuk menentukan id unik untuk elemen HTML.Anda tidak dapat memiliki lebih dari satu elemen dengan id yang sama dalam dokumen HTML.</p>
+                    <p>Atribut HTML <mark>id</mark> digunakan untuk menentukan id unik untuk elemen HTML. Anda tidak dapat memiliki lebih dari satu elemen dengan id yang sama dalam dokumen HTML.</p>
                 </section>
 
                 <section id="20.1">
@@ -14769,7 +14769,115 @@ gambar Background berperilaku.
                 <section id="20.2">
                     <h2>Perbedaan antara class dan id</h2>
                     <p>Nama class dapat digunakan oleh beberapa elemen HTML, sedangkan nama id hanya boleh digunakan oleh satu elemen HTML dalam halaman:</p>
+
                     <p>Contoh :</p>
+
+                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <div class="bd-example">
+
+                    </div>
+
+                    <div class="highlight">
+                        Code :
+                        <div class="syntaxhighlighter  xml">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="gutter">
+                                            <div class="line number1 index0 alt2">1</div>
+                                            <div class="line number2 index1 alt1">2</div>
+                                            <div class="line number2 index1 alt1">3</div>
+                                            <div class="line number2 index1 alt1">4</div>
+                                            <div class="line number2 index1 alt1">5</div>
+                                            <div class="line number2 index1 alt1">6</div>
+                                            <div class="line number2 index1 alt1">7</div>
+                                            <div class="line number2 index1 alt1">8</div>
+                                            <div class="line number2 index1 alt1">9</div>
+                                            <div class="line number2 index1 alt1">10</div>
+                                            <div class="line number2 index1 alt1">11</div>
+                                            <div class="line number2 index1 alt1">12</div>
+                                            <div class="line number2 index1 alt1">13</div>
+                                            <div class="line number2 index1 alt1">14</div>
+                                            <div class="line number2 index1 alt1">15</div>
+                                            <div class="line number2 index1 alt1">16</div>
+                                            <div class="line number2 index1 alt1">17</div>
+                                            <div class="line number2 index1 alt1">18</div>
+                                            <div class="line number2 index1 alt1">19</div>
+                                            <div class="line number2 index1 alt1">20</div>
+                                            <div class="line number2 index1 alt1">21</div>
+                                            <div class="line number2 index1 alt1">22</div>
+                                            <div class="line number2 index1 alt1">23</div>
+                                            <div class="line number2 index1 alt1">24</div>
+                                            <div class="line number2 index1 alt1">25</div>
+                                            <div class="line number2 index1 alt1">26</div>
+                                            <div class="line number2 index1 alt1">27</div>
+                                            <div class="line number2 index1 alt1">28</div>
+                                            <div class="line number2 index1 alt1">29</div>
+                                            <div class="line number2 index1 alt1">30</div>
+                                            <div class="line number2 index1 alt1">31</div>
+                                            <div class="line number2 index1 alt1">32</div>
+                                            <div class="line number2 index1 alt1">33</div>
+                                        </td>
+                                        <td class="code">
+                                            <div class="container-fluid">
+                                                <pre tabindex="0" class="chroma">
+<code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span> <span class="s">"utf-8"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span> <span class="s">"viewport"</span><span class="na">content</span><span class="o">=</span> <span class="s">"width=device-width, initial-scale=1"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Perbedaan antara Class dan id<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="na">style</span><span class="p">&gt;</span>
+      <span class="c fst-italic">/* gaya elemen dengan id "myHeader" */</span>
+      <span class="p">#</span><span class="nc">myHeader</span> <span class="p">{</span>
+        <span class="k">background-color</span><span class="p">:</span> <span class="kc">lightblue</span><span class="p">;</span>
+        <span class="k">color</span><span class="p">:</span> <span class="kc">black</span><span class="p">;</span>
+        <span class="k">padding</span><span class="p">:</span> <span class="kc">40px</span><span class="p">;</span>
+        <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="c fst-italic">/* gaya semua elemen dengan nama class "city" */</span>
+      <span class="p">.</span><span class="nc">city</span> <span class="p">{</span>
+        <span class="k">background-color</span><span class="p">:</span> <span class="kc">tomato</span><span class="p">;</span>
+        <span class="k">color</span><span class="p">:</span> <span class="kc">white</span><span class="p">;</span>
+        <span class="k">padding</span><span class="p">:</span> <span class="kc">10px</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Perbedaan antara class dan id<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Nama Class dapat digunakan oleh beberapa elemen HTML, sedangkan nama id hanya boleh digunakan oleh satu elemen HTML dalam
+    halaman:<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+    <span class="c fst-italic">&lt;!-- Elemen dengan id unik --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">id</span><span class="o">=</span><span class="s">"myHeader"</span><span class="p">&gt;</span>Kota Saya<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    
+    <span class="c fst-italic">&lt;!-- Beberapa elemen dengan class yang sama --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">"city"</span><span class="p">&gt;</span>London<span class="p">&lt;/</span><span
+      class="nt">h2</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>London adalah ibu kota Inggris.<span
+    class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    
+    <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">"city"</span><span class="p">&gt;</span>Paris<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Paris adalah ibu kota Prancis.<span
+    class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    
+    <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">class</span><span class="o">=</span><span class="s">"city"</span><span class="p">&gt;</span>Tokyo<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Tokyo adalah ibu kota Jepang.<span
+    class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code>
+</pre>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah sendiri <img draggable="false" role="img" class="emoji" alt="↗" src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+                    </div>
+
                     <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br><span class="commentcolor" style="color:green">/* Style elemen dengan id "myHeader"
                                                       */</span><br>
                     <strong>#myHeader</strong> <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor"

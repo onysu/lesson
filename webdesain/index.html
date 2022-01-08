@@ -14767,14 +14767,39 @@ gambar Background berperilaku.
                 </section>
 
                 <section id="20.2">
-                    <h2>Perbedaan antara class dan id</h2>
+                    <h2>Perbedaan antara Class dan id</h2>
                     <p>Nama class dapat digunakan oleh beberapa elemen HTML, sedangkan nama id hanya boleh digunakan oleh satu elemen HTML dalam halaman:</p>
 
                     <p>Contoh :</p>
 
                     <img class="top-example" src="files/img/browser-head.png" alt="">
                     <div class="bd-example">
+                        <style>
+                            #myHeader {
+                                background-color: lightblue;
+                                color: black;
+                                padding: 40px;
+                                text-align: center;
+                            }
+                            
+                            #perbedaanantaraclassdanid .city {
+                                background-color: tomato;
+                                color: white;
+                                padding: 10px;
+                                margin: 30px 0 20px 0;
+                            }
+                        </style>
 
+                        <h1 id="myHeader">Kota Saya</h1>
+
+                        <div id="perbedaanantaraclassdanid">
+                            <h2 class="city">London</h2>
+                            <p>London adalah ibu kota Inggris.</p>
+                            <h2 class="city">Paris</h2>
+                            <p>Paris adalah ibu kota Prancis.</p>
+                            <h2 class="city">Tokyo</h2>
+                            <p>Tokyo adalah ibu kota Jepang.</p>
+                        </div>
                     </div>
 
                     <div class="highlight">
@@ -14817,6 +14842,16 @@ gambar Background berperilaku.
                                             <div class="line number2 index1 alt1">31</div>
                                             <div class="line number2 index1 alt1">32</div>
                                             <div class="line number2 index1 alt1">33</div>
+                                            <div class="line number2 index1 alt1">34</div>
+                                            <div class="line number2 index1 alt1">35</div>
+                                            <div class="line number2 index1 alt1">36</div>
+                                            <div class="line number2 index1 alt1">37</div>
+                                            <div class="line number2 index1 alt1">38</div>
+                                            <div class="line number2 index1 alt1">39</div>
+                                            <div class="line number2 index1 alt1">40</div>
+                                            <div class="line number2 index1 alt1">41</div>
+                                            <div class="line number2 index1 alt1">42</div>
+                                            <div class="line number2 index1 alt1">43</div>
                                         </td>
                                         <td class="code">
                                             <div class="container-fluid">
@@ -14877,47 +14912,7 @@ gambar Background berperilaku.
                         </div>
                         <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah sendiri <img draggable="false" role="img" class="emoji" alt="↗" src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
                     </div>
-
-                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br><span class="commentcolor" style="color:green">/* Style elemen dengan id "myHeader"
-                                                      */</span><br>
-                    <strong>#myHeader</strong> <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor"
-                                                        style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> lightblue<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; color
-                    <span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
-                              style="color:black">:</span> black<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>40px
-                    <span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
-                              style="color:black">:</span> center<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor" style="color:green">/* Style semua elemen dengan
-                                                      nama class "city" */</span><br><strong>.city
-                                                    </strong><span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
-                              class="cssdelimitercolor" style="color:black">:</span> tomato<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>white
-                    <span class="cssdelimitercolor" style="color:black">;</span>
-                    </span><br>&nbsp;&nbsp;padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span
-                              class="cssdelimitercolor" style="color:black">:</span> 10px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
-                    <br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                                                      style="color:mediumblue">&lt;</span>/style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                    <br><span class="commentcolor" style="color:green">&lt;!-- Elemen dengan id unik --&gt;</span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="attributecolor"
-                        style="color:red"> id<span class="attributevaluecolor"
-                                                        style="color:mediumblue">="myHeader"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>My Cities
-                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="commentcolor" style="color:green">&lt;!--
-                                                    Beberapa elemen dengan class yang sama --&gt;</span><br><span class="tagnamecolor" style="color:brown"><span
-                                                      class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="attributecolor" style="color:red">
-                                                      class<span class="attributevaluecolor" style="color:mediumblue">="city"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>London<span class="tagnamecolor" style="color:brown"><span
-                                                      class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
-                                                      class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>London adalah ibu kota Inggris.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p
-                    <span class="tagcolor" style="color:mediumblue">&gt;</span>
-                    </span><br><br>
-                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor"
-                                                        style="color:mediumblue">="city"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Paris<span class="tagnamecolor" style="color:brown"><span
-                                                      class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
-                                                      class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Paris adalah ibu kota Prancis.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p
-                    <span class="tagcolor" style="color:mediumblue">&gt;</span>
-                    </span><br><br>
-                    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor"
-                                                        style="color:mediumblue">="city"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tokyo<span class="tagnamecolor" style="color:brown"><span
-                                                      class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
-                                                      class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tokyo adalah ibu kota Jepang.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p
-                    <span class="tagcolor" style="color:mediumblue">&gt;</span>
-                    <a href="#" target="_blank">Try it Yourself »</a>
-                    <p><strong>Tip:</strong> Anda dapat belajar lebih banyak tentang CSS di <a href="#">Tutorial CSS.</a>.</p>
+                    <p class="moreInfo"><strong>Tip:</strong> Anda dapat belajar lebih banyak tentang CSS di <a href="#">Tutorial CSS.</a>.</p>
                 </section>
 
                 <section id="20.3">

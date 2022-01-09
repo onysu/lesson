@@ -15534,91 +15534,7 @@ gambar Background berperilaku.
 
                     <img class="top-example" src="files/img/browser-head.png" alt="">
                     <div class="bd-example">
-                        <style>
-                            #csslayoutfloat header {
-                                background-color: #666;
-                                padding: 30px;
-                                text-align: center;
-                                font-size: 35px;
-                                color: white;
-                            }
-                            /* Buat dua kolom / kotak yang mengapung di samping satu sama lain */
-                            
-                            #csslayoutfloat nav {
-                                float: left;
-                                width: 30%;
-                                /* height: 300px; */
-                                /* hanya untuk demonstrasi, harus dihapus */
-                                background: #ccc;
-                                padding: 20px;
-                            }
-                            /* Gaya daftar di dalam menu */
-                            
-                            #csslayoutfloat nav ul {
-                                list-style-type: none;
-                                padding: 0;
-                            }
-                            
-                            #csslayoutfloat article {
-                                float: left;
-                                padding: 20px;
-                                width: 70%;
-                                background-color: #f1f1f1;
-                                height: 300px;
-                                /* hanya untuk demonstrasi, harus dihapus */
-                            }
-                            /* Mengapung yang jelas setelah kolom */
-                            
-                            #csslayoutfloat section::after {
-                                content: "";
-                                display: table;
-                                clear: both;
-                            }
-                            /* Gaya footer. */
-                            
-                            #csslayoutfloat footer {
-                                background-color: #777;
-                                padding: 10px;
-                                text-align: center;
-                                color: white;
-                            }
-                            /* Tata letak responsif - membuat dua kolom / kotak menumpuk di atas satu sama lain, bukan di samping satu sama lain, pada layar kecil */
-                            
-                            @media (max-width: 600px) {
-                                nav,
-                                article {
-                                    width: 100%;
-                                    height: auto;
-                                }
-                            }
-                        </style>
-
-                        <div id="csslayoutfloat">
-                            <h2>Layout CSS float</h2>
-                            <p>Dalam contoh ini, kami telah membuat header, dua kolom / kotak dan footer.Pada layar yang lebih kecil, kolom akan menumpuk di atas satu sama lain. Ubah ukuran jendela browser untuk melihat efek responsif (Anda akan mempelajari
-                                lebih lanjut tentang ini di bab berikutnya - HTML responsif.)
-                            </p>
-                            <header>
-                                <h2>Kota</h2>
-                            </header>
-                            <section>
-                                <nav>
-                                    <ul>
-                                        <li><a href="#">London</a></li>
-                                        <li><a href="#">Paris</a></li>
-                                        <li><a href="#">Tokyo</a></li>
-                                    </ul>
-                                </nav>
-                                <article>
-                                    <h1>London</h1>
-                                    <p>London adalah ibu kota Inggris.Ini adalah kota terpadat di Inggris, dengan wilayah metropolitan lebih dari 13 juta penduduk.</p>
-                                    <p>Berdiri di Sungai Thames, London telah menjadi pemukiman besar selama dua milenium, sejarahnya kembali ke pendiriannya oleh Romawi, yang menamainya Londinium.</p>
-                                </article>
-                            </section>
-                            <footer>
-                                <p>Footer</p>
-                            </footer>
-                        </div>
+                        <iframe src="CSS-Layout-Float.html" height="725px" width="100%" title="CSS Float Layout"></iframe>
                     </div>
 
                     <div class="highlight">
@@ -15728,6 +15644,9 @@ gambar Background berperilaku.
                                             <div class="line number2 index1 alt1">98</div>
                                             <div class="line number2 index1 alt1">99</div>
                                             <div class="line number2 index1 alt1">100</div>
+                                            <div class="line number2 index1 alt1">101</div>
+                                            <div class="line number2 index1 alt1">102</div>
+                                            <div class="line number2 index1 alt1">103</div>
                                         </td>
                                         <td class="code">
                                             <div class="container-fluid">
@@ -15808,26 +15727,29 @@ gambar Background berperilaku.
     <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Layout CSS float.<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Dalam contoh ini, kami telah membuat header, dua kolom / kotak dan footer.Pada layar yang lebih kecil, kolom akan menumpuk satu sama lain.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ubah ukuran jendela browser untuk melihat efek responsif (Anda akan mempelajari lebih lanjut tentang ini di bab kami berikutnya - HTML Responsif.)<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
     <span class="p">&lt;</span><span class="nt">header</span> <span class="na">class</span><span class="o">=</span><span class="s">"header"</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Kota<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Kota<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
     <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
 
     <span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">"section"</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">nav</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav"</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>London<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>Paris<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>Tokyo<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">nav</span> <span class="na">class</span><span class="o">=</span><span class="s">"nav"</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>London<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>Paris<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"#"</span><span class="p">&gt;</span>Tokyo<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
     <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
+
     <span class="p">&lt;</span><span class="nt">article</span> <span class="na">class</span><span class="o">=</span><span class="s">"article"</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>London<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>London adalah ibu kota Inggris.Ini adalah kota terpadat di Inggris, dengan wilayah metropolitan lebih dari 13 juta penduduk.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Berdiri di Sungai Thames, London telah menjadi pemukiman besar selama dua milenium, sejarahnya kembali ke pendiriannya oleh Romawi, yang menamainya Londinium.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>London<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>London adalah ibu kota Inggris.Ini adalah kota terpadat di Inggris, dengan wilayah metropolitan lebih dari 13 juta penduduk.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Berdiri di Sungai Thames, London telah menjadi pemukiman besar selama dua milenium, sejarahnya kembali ke pendiriannya oleh Romawi, yang menamainya Londinium.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
     <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+
     <span class="p">&lt;</span><span class="nt">footer</span> <span class="na">class</span><span class="o">=</span><span class="s">"footer"</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Footer<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Footer<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
     <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
 
   <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>

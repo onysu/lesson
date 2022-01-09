@@ -15264,9 +15264,9 @@ gambar Background berperilaku.
                 </section>
 
                 <section id="21.1">
-                    <div class="bd-callout bd-callout-warning">
-                        <h2 id="incompatible-plugins">Sintaks Iframe HTML</h2>
-                        <pre><span style="color: mediumblue;">&lt;</span><span style="color: #212529;">iframe src</span>=<span style="color: mediumblue;">"<i>url</i>"</span> <span style="color: #212529;">title</span>=<span style="color: mediumblue;">"<i>description</i>"</span><span style="color: mediumblue;">&gt;</span><span style="color: mediumblue;">&lt;</span><span style="color: #212529;">/iframe</span><span style="color: mediumblue;">&gt;</span></pre>
+                    <div class="bd-callout bd-callout-warning chroma">
+                        <h2>Sintaks Iframe HTML</h2>
+                        <span class="na">&lt;</span>iframe src="<span class="s fst-italic">url</span>" title="<span class="s fst-italic">description</span>"<span class="na">&gt;</span><span class="na">&lt;</span>/iframe<span class="na">&gt;</span>
                     </div>
                     <p>Tag <mark>&lt;iframe&gt;</mark> menentukan bingkai inline. Bingkai inline digunakan untuk menanamkan dokumen lain dalam dokumen HTML saat ini.</p>
                     <p class="moreInfo"><strong>Tip:</strong> Ini adalah praktik yang baik untuk selalu menyertakan atribut
@@ -15398,7 +15398,7 @@ gambar Background berperilaku.
 
                     <img class="top-example" src="files/img/browser-head.png" alt="">
                     <div class="bd-example">
-                        <iframe src="https://www.youtube.com/embed/ykkg1WE8_7o" style="border:2px solid red;" title="YouTube video"></iframe>
+                        <iframe src="https://www.youtube.com/embed/ykkg1WE8_7o" style="border:5px solid red;" title="YouTube video"></iframe>
                     </div>
                     <div class="highlight">
                         Code :
@@ -15411,7 +15411,7 @@ gambar Background berperilaku.
                                         </td>
                                         <td class="code">
                                             <div class="container-fluid">
-                                                <pre tabindex="0" class="chroma"><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://www.youtube.com/embed/ykkg1WE8_7o"</span> <span class="na">style</span><span class="o">=</span><span class="s">"border:2px solid red;"</span> <span class="na">title</span><span class="o">=</span><span class="s">"YouTube video"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span></code></pre>
+                                                <pre tabindex="0" class="chroma"><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://www.youtube.com/embed/ykkg1WE8_7o"</span> <span class="na">style</span><span class="o">=</span><span class="s">"border:5px solid red;"</span> <span class="na">title</span><span class="o">=</span><span class="s">"YouTube video"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span></code></pre>
                                             </div>
                                         </td>
                                     </tr>
@@ -15428,13 +15428,13 @@ gambar Background berperilaku.
                     <h2><span class="text-muted fw-light">Iframe :</span> Target untuk Link</h2>
                     <p>Sebuah iframe dapat digunakan sebagai frame <code>target</code> untuk sebuah link. Atribut target tautan harus merujuk ke atribut <code>name</code> iframe:</p>
                     <p>Contoh :</p>
-                    <img class="top-example" src="files/img/browser-head.png" alt="">
+                    <!-- <img class="top-example" src="files/img/browser-head.png" alt="">
                     <div class="bd-example">
-                        <iframe src="demo_iframe.htm" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
-                        <p><a href="https://onysu.github.io/lesson/webdesain/index.html" target="iframe_a">O-Learning</a></p>
+                        <iframe src="" name="iframe_a" height="300px" width="100%" title="Iframe O-Learning"></iframe>
+                        <p><a href="https://www.youtube.com/embed/OzHHjg_RJGw" target="iframe_a">O-Learning</a></p>
                         <p>Ketika atribut target dari tautan cocok dengan nama iframe, tautan akan terbuka di iFrame.</p>
 
-                    </div>
+                    </div> -->
                     <div class="highlight">
                         Code :
                         <div class="syntaxhighlighter  xml">
@@ -15447,8 +15447,8 @@ gambar Background berperilaku.
                                         </td>
                                         <td class="code">
                                             <div class="container-fluid">
-                                                <pre tabindex="0" class="chroma"><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">"demo_iframe.htm"</span> <span class="na">name</span><span class="o">=</span><span class="s">"iframe_a"</span> <span class="na">title</span><span class="o">=</span><span class="s">"O-Learning"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://onysu.github.io/lesson/webdesain/index.html"</span> <span class="na">target</span><span class="o">=</span><span class="s">"iframe_a"</span><span class="p">&gt;</span>O-Learning<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                                                <pre tabindex="0" class="chroma"><span class="p">&lt;</span><span class="nt">iframe</span> <span class="na">src</span><span class="o">=</span><span class="s">""</span> <span class="na">name</span><span class="o">=</span><span class="s">"iframe_a"</span> <span class="na">title</span><span class="o">=</span><span class="s">"O-Learning"</span><span class="p">&gt;&lt;/</span><span class="nt">iframe</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://www.youtube.com/embed/OzHHjg_RJGw"</span> <span class="na">target</span><span class="o">=</span><span class="s">"iframe_a"</span><span class="p">&gt;</span>O-Learning<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </code></pre>
                                             </div>
                                         </td>

@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="id-id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Pelajari tentang HTML, CSS dan JavaScript." />
+  <meta name="author" content="Ony" />
+  <meta name="generator" content="" />
+
+  <meta name="docsearch:language" content="id" />
+  <meta name="docsearch:version" content="5.1" />
+
+  <title>WEB-DESAIN v1.2</title>
+
+  <script src="../assets/js/w3.js"></script>
+  <script src="../assets/js/w3color.js"></script>
+  <link href="../assets/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="dist/css/style.css" />
+  <link href="../assets/css/docs.css" rel="stylesheet" />
+  <link href="dist/css/docs-custom.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/bootstrap-icons.css" />
+  <link rel="stylesheet" href="dist/css/highlight-code.css" />
+  <!-- <link rel="stylesheet" href="../assets/css/all.css"> -->
+  <!-- <link rel="stylesheet" href="dist/css/webdesain.css"> -->
+
+  <!-- Favicons -->
+  <link rel="shortcut icon" href="../assets/img/aku-bulat.ico" type="image/x-icon" />
+</head>
+
+<body>
+  <button onclick="topFunction()" id="myBtn" title="Kembali keatas">
+    Top
+  </button>
+  <div class="skippy visually-hidden-focusable overflow-hidden">
+    <div class="container-xl">
+      <a class="d-inline-flex p-2 m-1" href="#content">Lewati ke konten utama</a>
+      <a class="d-none d-md-inline-flex p-2 m-1" href="#bd-docs-nav">Lewati ke navigasi dokumen</a>
+    </div>
+  </div>
+
+  <!-- <div class="bar">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div> -->
+
+  <header class="navbar navbar-expand-md navbar-dark bd-navbar">
+    <!-- nav pertama -->
+    <nav class="container flex-wrap flex-md-nowrap" aria-label="Main navigation">
+      <a class="navbar-brand p-0 me-4" href="index.html" aria-label="Bootstrap">
+        <img src="../assets/img/aku-bulat-40x40.png" alt="" />
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bdNavbar"
+        aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="bi" fill="currentColor"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg>
+      </button>
+
+      <div class="collapse navbar-collapse" id="bdNavbar">
+        <ul class="navbar-nav flex-wrap bd-navbar-nav pt-2 py-md-0">
+          <li class="nav-item col-6 col-md-auto">
+            <a class="nav-link p-2 active" aria-current="true" href="webdesain.html">Home</a>
+          </li>
+          <li class="nav-item col-6 col-md-auto dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Office</a>
+            <ul class="dropdown-menu mx-0 shadow" aria-labelledby="navbarDropdown" style="width: 220px">
+              <li>
+                <a class="dropdown-item d-flex gap-2 align-items-center" href="../word/index.html">
+                  <img src="../assets/img/icons/word.png" width="32" />
+                  Microsoft Word</a>
+              </li>
+              <hr class="dropdown-divider" />
+              <li>
+                <a class="dropdown-item d-flex gap-2 align-items-center" href="../excel/index.html">
+                  <img src="../assets/img/icons/excel.png" width="32" />
+                  Microsoft Excel</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li>
+                <a class="dropdown-item d-flex gap-2 align-items-center" href="../powerpoint/index.html">
+                  <img src="../assets/img/icons/ppt.png" width="32" /> Power
+                  Point</a>
+              </li>
+              <hr class="dropdown-divider" />
+              <li>
+                <a class="dropdown-item d-flex gap-2 align-items-center" href="../access/index.html">
+                  <img src="../assets/img/icons/access.png" width="32" />
+                  Microsoft Access</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item col-6 col-md-auto dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Desain</a>
+            <ul class="dropdown-menu mx-0 shadow" aria-labelledby="navbarDropdown" style="width: 220px">
+              <li>
+                <a class="dropdown-item" href="../photoshop/index.html">
+                  <img src="../assets/img/icons/ps-logo.png" width="32" />
+                  Photoshop
+                </a>
+              </li>
+              <hr class="dropdown-divider" />
+              <li>
+                <a class="dropdown-item" href="../coreldraw/index.html">
+                  <img src="../assets/img/icons/coreldraw_32x32.png" width="32" />
+                  CorelDRAW
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item col-6 col-md-auto">
+            <a class="nav-link" href="../webdesain/index.html">Web-Desain</a>
+          </li>
+          <li class="nav-item col-6 col-md-auto">
+            <a class="nav-link" href="../pemrograman/index.html">Pemrograman</a>
+          </li>
+        </ul>
+        <hr class="d-md-none text-white-50" />
+        <ul class="navbar-nav flex-wrap ms-md-auto text-light fw-light">
+          <script>
+            var days = new Array(8);
+            days[1] = "Senin";
+            days[2] = "Selasa";
+            days[3] = "Rabu";
+            days[4] = "Kamis";
+            days[5] = "Jumat";
+            days[6] = "Sabtu";
+            days[7] = "Minggu";
+            var months = new Array(13);
+            months[1] = "Januari";
+            months[2] = "Februari";
+            months[3] = "Maret";
+            months[4] = "April";
+            months[5] = "Mei";
+            months[6] = "Juni";
+            months[7] = "Juli";
+            months[8] = "Augustus";
+            months[9] = "September";
+            months[10] = "Oktober";
+            months[11] = "November";
+            months[12] = "Desember";
+            var dateObj = new Date();
+            var wday = days[dateObj.getDay() + 1];
+            var lmonth = months[dateObj.getMonth() + 1];
+            var date = dateObj.getDate();
+            var year = dateObj.getFullYear();
+            document.write(wday + ", " + date + " " + lmonth + " " + year);
+          </script>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <nav class="bd-subnavbar" aria-label="Secondary navigation">
+    <div class="d-flex align-items-md-center">
+      <!-- <div class="position-relative me-auto"> -->
+      <div class="nav-scroller">
+        <nav class="nav nav-underline" aria-label="Secondary navigation">
+          <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Link</a>
+        </nav>
+      </div>
+      <!-- </div> -->
+      <!-- <div class="position-relative me-auto"></div> -->
+      <!-- <form class="bd-search position-relative me-auto">
+                <input type="search" class="form-control" id="search-input" placeholder="Search docs..." aria-label="Search docs for..." autocomplete="off" data-bd-docs-version="5.1">
+            </form> -->
+      <!-- <div class="dropdown ms-3">
+                <button class="btn btn-bd-light dropdown-toggle" id="bd-versions" data-bs-toggle="dropdown" aria-expanded="false" data-bs-display="static">
+            <span class="d-none d-lg-inline">WebDesain</span> v1.2
+          </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-versions">
+                    <li><a class="dropdown-item current" aria-current="true" href="https://onysu.github.io/lesson/webdesain/index.html">Terbaru (1.2)</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">v1.1</a></li>
+                    <li><a class="dropdown-item" href="#">v1.0</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="/docs/versions/">Semua Versi</a></li>
+                </ul>
+            </div> -->
+      <button class="btn bd-sidebar-toggle d-md-none py-0 px-1 ms-3 order-3 collapsed" type="button"
+        data-bs-toggle="collapse" data-bs-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false"
+        aria-label="Toggle docs navigation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-expand" fill="currentColor"
+          viewBox="0 0 16 16">
+          <title>Expand</title>
+          <path fill-rule="evenodd"
+            d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-collapse" fill="currentColor"
+          viewBox="0 0 16 16">
+          <title>Collapse</title>
+          <path fill-rule="evenodd"
+            d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zm7-8a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0zm-.5 11.707l-1.146 1.147a.5.5 0 0 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 11.707V15.5a.5.5 0 0 1-1 0v-3.793z" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="container-fluid my-md-4 bd-layout">
+    <aside class="bd-sidebar">
+      <nav class="collapse bd-links" id="bd-docs-nav" aria-label="Docs navigation">
+        <ul class="list-unstyled mb-0 py-3 pt-md-1">
+          <div w3-include-html="aside.html"></div>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="bd-main order-1">
+      <div class="bd-intro">
+        <div class="d-md-flex align-items-center justify-content-between">
+          <h1 class="bd-title" id="content">Modul Layout Grid CSS</h1>
+          <!-- <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="#" title="Unduh dan edit file ini untuk latihan" rel="noopener">unduh file latihan</a> -->
+        </div>
+        <p class="bd-lead">
+          Modul Layout Grid CSS menawarkan sistem tata letak berbasis grid, dengan baris dan kolom, membuatnya lebih
+          mudah untuk merancang halaman web tanpa harus menggunakan float dan positioning.</p>
+      </div>
+
+      <div class="bd-content">
+        <section>
+          <img class="top-example" src="files/img/browser-head.png" alt="">
+          <div class="bd-example">
+            <style>
+              .grid-container1 {
+                display: grid;
+                grid-template-areas:
+                  'header header header header header header'
+                  'menu main main main right right'
+                  'menu footer footer footer footer footer';
+                grid-gap: 10px;
+                background-color: #2196F3;
+                padding: 10px;
+              }
+
+              .grid-container1>div {
+                background-color: rgba(255, 255, 255, 0.8);
+                text-align: center;
+                padding: 20px 0;
+                font-size: 30px;
+              }
+
+              .item1 {
+                grid-area: header;
+              }
+
+              .item2 {
+                grid-area: menu;
+              }
+
+              .item3 {
+                grid-area: main;
+              }
+
+              .item4 {
+                grid-area: right;
+              }
+
+              .item5 {
+                grid-area: footer;
+              }
+            </style>
+
+            <h1>Tata Letak Grid.</h1>
+            <p>Tata letak grid ini mengandung enam kolom dan tiga baris:</p>
+            <div class="grid-container1">
+              <div class="item1">Header</div>
+              <div class="item2">Menu</div>
+              <div class="item3">Main</div>
+              <div class="item4">Right</div>
+              <div class="item5">Footer</div>
+            </div>
+          </div>
+
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                      <div class="line number2 index1 alt1">6</div>
+                      <div class="line number2 index1 alt1">7</div>
+                      <div class="line number2 index1 alt1">8</div>
+                      <div class="line number2 index1 alt1">9</div>
+                      <div class="line number2 index1 alt1">10</div>
+                      <div class="line number2 index1 alt1">11</div>
+                      <div class="line number2 index1 alt1">12</div>
+                      <div class="line number2 index1 alt1">13</div>
+                      <div class="line number2 index1 alt1">14</div>
+                      <div class="line number2 index1 alt1">15</div>
+                      <div class="line number2 index1 alt1">16</div>
+                      <div class="line number2 index1 alt1">17</div>
+                      <div class="line number2 index1 alt1">18</div>
+                      <div class="line number2 index1 alt1">19</div>
+                      <div class="line number2 index1 alt1">20</div>
+                      <div class="line number2 index1 alt1">21</div>
+                      <div class="line number2 index1 alt1">22</div>
+                      <div class="line number2 index1 alt1">23</div>
+                      <div class="line number2 index1 alt1">24</div>
+                      <div class="line number2 index1 alt1">25</div>
+                      <div class="line number2 index1 alt1">26</div>
+                      <div class="line number2 index1 alt1">27</div>
+                      <div class="line number2 index1 alt1">28</div>
+                      <div class="line number2 index1 alt1">29</div>
+                      <div class="line number2 index1 alt1">30</div>
+                      <div class="line number2 index1 alt1">31</div>
+                      <div class="line number2 index1 alt1">32</div>
+                      <div class="line number2 index1 alt1">33</div>
+                      <div class="line number2 index1 alt1">34</div>
+                      <div class="line number2 index1 alt1">35</div>
+                      <div class="line number2 index1 alt1">36</div>
+                      <div class="line number2 index1 alt1">37</div>
+                      <div class="line number2 index1 alt1">38</div>
+                      <div class="line number2 index1 alt1">39</div>
+                      <div class="line number2 index1 alt1">40</div>
+                      <div class="line number2 index1 alt1">41</div>
+                      <div class="line number2 index1 alt1">42</div>
+                      <div class="line number2 index1 alt1">43</div>
+                      <div class="line number2 index1 alt1">44</div>
+                      <div class="line number2 index1 alt1">45</div>
+                      <div class="line number2 index1 alt1">46</div>
+                      <div class="line number2 index1 alt1">47</div>
+                      <div class="line number2 index1 alt1">48</div>
+                      <div class="line number2 index1 alt1">49</div>
+                      <div class="line number2 index1 alt1">50</div>
+                      <div class="line number2 index1 alt1">51</div>
+                      <div class="line number2 index1 alt1">52</div>
+                      <div class="line number2 index1 alt1">53</div>
+                      <div class="line number2 index1 alt1">54</div>
+                      <div class="line number2 index1 alt1">55</div>
+                      <div class="line number2 index1 alt1">56</div>
+                      <div class="line number2 index1 alt1">57</div>
+                      <div class="line number2 index1 alt1">58</div>
+                      <div class="line number2 index1 alt1">59</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span> <span class="s">"utf-8"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span> <span class="s">"viewport"</span><span class="na">content</span><span class="o">=</span> <span class="s">"width=device-width, initial-scale=1"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Judul Halaman<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="na">style</span><span class="p">&gt;</span>
+      <span class="p">.</span><span class="nc">grid-container</span> <span class="p">{</span>
+        <span class="k">display</span><span class="p">:</span> <span class="s">grid</span><span class="p">;</span>
+        <span class="k">grid-template-areas</span><span class="p">:</span>
+            <span class="s">'header header header header header header'</span>
+            <span class="s">'menu main main main right right'</span>
+            <span class="s">'menu footer footer footer footer footer'</span><span class="p">;</span>
+        <span class="k">grid-gap</span><span class="p">:</span> <span class="s">10px</span><span class="p">;</span>
+        <span class="k">background-color</span><span class="p">:</span> <span class="s">#2196F3</span><span class="p">;</span>
+        <span class="k">padding</span><span class="p">:</span> <span class="s">10px</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="p">.</span><span class="nc">grid-container > div</span> <span class="p">{</span>
+        <span class="k">background-color</span><span class="p">:</span> <span class="s">rgba(255, 255, 255, 0.8)</span><span class="p">;</span>
+        <span class="k">display</span><span class="p">:</span> <span class="s">grid</span><span class="p">;</span>
+        <span class="k">text-align</span><span class="p">:</span> <span class="s">center</span><span class="p">;</span>
+        <span class="k">padding</span><span class="p">:</span> <span class="s">20px 0</span><span class="p">;</span>
+        <span class="k">font-size</span><span class="p">:</span> <span class="s">30px</span><span class="p">;</span>
+      <span class="p">}</span>
+      
+      <span class="nt">.item1</span> <span class="p">{</span>
+        <span class="k">grid-area</span><span class="p">:</span> <span class="nf">header</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="nt">.item2</span> <span class="p">{</span>
+        <span class="k">grid-area</span><span class="p">:</span> <span class="nf">menu</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="nt">.item3</span> <span class="p">{</span>
+        <span class="k">grid-area</span><span class="p">:</span> <span class="nf">main</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="nt">.item4</span> <span class="p">{</span>
+        <span class="k">grid-area</span><span class="p">:</span> <span class="nf">right</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="nt">.item5</span> <span class="p">{</span>
+        <span class="k">grid-area</span><span class="p">:</span> <span class="nf">footer</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Grid Layout<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Tata letak grid ini mengandung enam kolom dan tiga baris:<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-container"</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"item1"</span><span class="p">&gt;</span>Header<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"item2"</span><span class="p">&gt;</span>Menu<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"item3"</span><span class="p">&gt;</span>Main<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"item4"</span><span class="p">&gt;</span>Right<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"item5"</span><span class="p">&gt;</span>Footer<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah sendiri <img
+                  draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Tata Letak Grid.</h2>
+          <p>Modul Layout Grid CSS menawarkan sistem tata letak berbasis grid, dengan baris dan kolom, membuatnya lebih
+            mudah untuk merancang halaman web tanpa harus menggunakan float dan positioning.</p>
+        </section>
+
+        <section>
+          <h2>Dukungan Browser</h2>
+          <p>Sifat-sifat grid didukung di semua browser modern.</p>
+          <div class="w3-responsive">
+            <style>
+              table.browserref {
+                border-collapse: collapse;
+                width: 100%;
+              }
+
+              table.browserref th {
+                height: 44px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                border: 1px solid #d4d4d4;
+                background-color: #ffffff;
+                font-weight: normal;
+                color: #555555;
+                padding: 11px 5px 11px 5px;
+                vertical-align: middle;
+              }
+
+              table.browserref tr:nth-child(odd) {
+                background-color: #ffffff;
+              }
+
+              table.browserref tr:nth-child(even) {
+                background-color: #E7E9EB;
+              }
+
+              table.browserref th:first-child,
+              table.browserref td:first-child {
+                padding-left: 16px;
+              }
+
+              table.browserref td {
+                border: 1px solid #d4d4d4;
+                text-align: center;
+                padding: 8px;
+                vertical-align: top;
+              }
+
+              table.browserref .bsChrome {
+                background-image: url(files/img/compatible_chrome.gif);
+              }
+
+              table.browserref .bsEdge {
+                background-image: url(files/img/compatible_edge.png);
+              }
+
+              table.browserref .bsFirefox {
+                background-image: url(files/img/compatible_firefox.png);
+              }
+
+              table.browserref .bsSafari {
+                background-image: url(files/img/compatible_safari.gif);
+              }
+
+              table.browserref .bsOpera {
+                background-image: url(files/img/compatible_opera.gif);
+              }
+            </style>
+            <table class="browserref notranslate">
+              <tbody>
+                <tr>
+                  <th style="width: 20%; height: 50px" class="bsChrome" title="Chrome"></th>
+                  <th style="width: 20%" class="bsEdge" title="Internet Explorer / Edge"></th>
+                  <th style="width: 20%" class="bsFirefox" title="Firefox"></th>
+                  <th style="width: 20%" class="bsSafari" title="Safari"></th>
+                  <th style="width: 20%" class="bsOpera" title="Opera"></th>
+                </tr>
+                <tr>
+                  <td>57.0</td>
+                  <td>16.0</td>
+                  <td>52.0</td>
+                  <td>10</td>
+                  <td>44</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section>
+          <h2>Elemen Grid</h2>
+          <p>Layout Grid terdiri dari elemen induk, dengan satu atau lebih elemen child.</p>
+          <p>Contoh :</p>
+          <img class="top-example" src="files/img/browser-head.png" alt="">
+          <div class="bd-example">
+            <style>
+              .grid-container2 {
+                display: grid;
+                grid-template-columns: auto auto auto;
+                background-color: #2196F3;
+                padding: 10px;
+              }
+
+              .grid-item2 {
+                background-color: rgba(255, 255, 255, 0.8);
+                border: 1px solid rgba(0, 0, 0, 0.8);
+                text-align: center;
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+              }
+            </style>
+
+            <h1>Elemen Grid.</h1>
+            <p>Tata letak grid harus memiliki elemen induk dengan display yang diatur ke grid atau inline-grid.</p>
+            <p>Elemen child langsung dari grid container secara otomatis menjadi item grid.</p>
+
+            <div class="grid-container2">
+              <div class="grid-item2">1</div>
+              <div class="grid-item2">2</div>
+              <div class="grid-item2">3</div>
+              <div class="grid-item2">4</div>
+              <div class="grid-item2">5</div>
+              <div class="grid-item2">6</div>
+              <div class="grid-item2">7</div>
+              <div class="grid-item2">8</div>
+              <div class="grid-item2">9</div>
+            </div>
+          </div>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                      <div class="line number2 index1 alt1">6</div>
+                      <div class="line number2 index1 alt1">7</div>
+                      <div class="line number2 index1 alt1">8</div>
+                      <div class="line number2 index1 alt1">9</div>
+                      <div class="line number2 index1 alt1">10</div>
+                      <div class="line number2 index1 alt1">11</div>
+                      <div class="line number2 index1 alt1">12</div>
+                      <div class="line number2 index1 alt1">13</div>
+                      <div class="line number2 index1 alt1">14</div>
+                      <div class="line number2 index1 alt1">15</div>
+                      <div class="line number2 index1 alt1">16</div>
+                      <div class="line number2 index1 alt1">17</div>
+                      <div class="line number2 index1 alt1">18</div>
+                      <div class="line number2 index1 alt1">19</div>
+                      <div class="line number2 index1 alt1">20</div>
+                      <div class="line number2 index1 alt1">21</div>
+                      <div class="line number2 index1 alt1">22</div>
+                      <div class="line number2 index1 alt1">23</div>
+                      <div class="line number2 index1 alt1">24</div>
+                      <div class="line number2 index1 alt1">25</div>
+                      <div class="line number2 index1 alt1">26</div>
+                      <div class="line number2 index1 alt1">27</div>
+                      <div class="line number2 index1 alt1">28</div>
+                      <div class="line number2 index1 alt1">29</div>
+                      <div class="line number2 index1 alt1">30</div>
+                      <div class="line number2 index1 alt1">31</div>
+                      <div class="line number2 index1 alt1">32</div>
+                      <div class="line number2 index1 alt1">33</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="na">style</span><span class="p">&gt;</span>
+  <span class="p">.</span><span class="nc">grid-container</span> <span class="p">{</span>
+    <span class="k">display</span><span class="p">:</span> <span class="s">grid</span><span class="p">;</span>
+    <span class="k">grid-template-columns</span><span class="p">:</span> <span class="s">auto auto auto</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="s">#2196F3</span><span class="p">;</span>
+    <span class="k">padding</span><span class="p">:</span> <span class="s">10px</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="p">.</span><span class="nc">grid-item</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="s">rgba(255, 255, 255, 0.8)</span><span class="p">;</span>
+    <span class="k">border</span><span class="p">:</span> <span class="s">1px solid rgba(0, 0, 0, 0.8)</span><span class="p">;</span>
+    <span class="k">text-align</span><span class="p">:</span> <span class="s">center</span><span class="p">;</span>
+    <span class="k">padding</span><span class="p">:</span> <span class="s">20px</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="s">30px</span><span class="p">;</span>
+    <span class="k">text-align</span><span class="p">:</span> <span class="s">center</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Elemen Grid.<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Tata letak grid harus memiliki elemen induk dengan <em>display</em> yang diatur ke <em>grid</em> atau <em>inline-grid</em>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Elemen child langsung dari grid container secara otomatis menjadi item grid.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-container"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;</span>1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;</span>2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;</span>3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;</span>4<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;</span>5<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;</span>6<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;</span>7<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;</span>8<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;</span>9<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah sendiri <img
+                  draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Tampilkan Property.</h2>
+          <p>Elemen HTML menjadi grid container ketika properti <mark>display</mark> diatur ke <mark>grid</mark> atau
+            <mark>inline-grid</mark>.
+          </p>
+          <div class="w3-example">
+            <h3>Contoh :</h3>
+            <div class="w3-code notranslate cssHigh">
+              <span class="cssselectorcolor" style="color: brown">
+                .grid-container
+                <span class="cssdelimitercolor" style="color: black">{</span><span class="csspropertycolor"
+                  style="color: red"><br />&nbsp; display<span class="csspropertyvaluecolor"
+                    style="color: mediumblue"><span class="cssdelimitercolor" style="color: black">:</span>
+                    grid<span class="cssdelimitercolor" style="color: black">;</span></span><br /></span><span
+                  class="cssdelimitercolor" style="color: black">}</span>
+              </span>
+            </div>
+            <p>
+              <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_display_grid">Try it Yourself »</a>
+            </p>
+          </div>
+          <div class="w3-example">
+            <h3>Example</h3>
+            <div class="w3-code notranslate cssHigh">
+              <span class="cssselectorcolor" style="color: brown">
+                .grid-container
+                <span class="cssdelimitercolor" style="color: black">{</span><span class="csspropertycolor"
+                  style="color: red"><br />&nbsp; display<span class="csspropertyvaluecolor"
+                    style="color: mediumblue"><span class="cssdelimitercolor" style="color: black">:</span>
+                    inline-grid<span class="cssdelimitercolor" style="color: black">;</span></span><br /></span><span
+                  class="cssdelimitercolor" style="color: black">}</span>
+              </span>
+            </div>
+            <p>
+              <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_display_inline-grid">Try it
+                Yourself »</a>
+            </p>
+          </div>
+          <p>
+            All direct children of the grid container automatically become
+            <em>grid items</em>.
+          </p>
+        </section>
+
+        <h2>Kolom Grid</h2>
+        <p>Garis vertikal item grid disebut <em>kolom</em>.</p>
+
+        <img src="grid_columns.png" style="max-width: 100%" />
+        <hr />
+        <h2>Grid Row</h2>
+        <p>Garis horizontal item grid disebut <em>row</em>.</p>
+
+        <img src="grid_rows.png" style="max-width: 100%" />
+        <hr />
+
+        <h2>Grid Gap</h2>
+        <p>Ruang antara setiap kolom / baris disebut <em>gap</em>.</p>
+
+        <img src="grid_gaps.png" style="max-width: 100%" />
+
+        <p>Anda dapat menyesuaikan ukuran celah dengan menggunakan salah satu dari yang berikut ini Properti:</p>
+        <ul>
+          <li><code class="w3-codespan">grid-column-gap</code></li>
+          <li><code class="w3-codespan">grid-row-gap</code></li>
+          <li><code class="w3-codespan">grid-gap</code></li>
+        </ul>
+
+        <div class="w3-example">
+          <h3>Example</h3>
+          <p>
+            The <code class="w3-codespan">grid-column-gap</code> property
+            sets the gap between the columns:
+          </p>
+          <div class="w3-code notranslate cssHigh">
+            <span class="cssselectorcolor" style="color: brown">
+              .grid-container
+              <span class="cssdelimitercolor" style="color: black">{</span><span class="csspropertycolor"
+                style="color: red"><br />&nbsp; display<span class="csspropertyvaluecolor"
+                  style="color: mediumblue"><span class="cssdelimitercolor" style="color: black">:</span>
+                  grid<span class="cssdelimitercolor" style="color: black">;</span></span><br /><strong>&nbsp;
+                  grid-column-gap<span class="csspropertyvaluecolor" style="color: mediumblue"><span
+                      class="cssdelimitercolor" style="color: black">:</span>
+                    50px<span class="cssdelimitercolor" style="color: black">;</span></span></strong><br /></span><span
+                class="cssdelimitercolor" style="color: black">}</span>
+            </span>
+          </div>
+          <p>
+            <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_grid-column-gap">Try it Yourself
+              »</a>
+          </p>
+        </div>
+        <div class="w3-example">
+          <h3>Example</h3>
+          <p>
+            The <code class="w3-codespan">grid-row-gap</code> property
+            sets the gap between the rows:
+          </p>
+          <div class="w3-code notranslate cssHigh">
+            <span class="cssselectorcolor" style="color: brown">
+              .grid-container
+              <span class="cssdelimitercolor" style="color: black">{</span><span class="csspropertycolor"
+                style="color: red"><br />&nbsp; display<span class="csspropertyvaluecolor"
+                  style="color: mediumblue"><span class="cssdelimitercolor" style="color: black">:</span>
+                  grid<span class="cssdelimitercolor" style="color: black">;</span></span><br /><strong>&nbsp;
+                  grid-row-gap<span class="csspropertyvaluecolor" style="color: mediumblue"><span
+                      class="cssdelimitercolor" style="color: black">:</span>
+                    50px<span class="cssdelimitercolor" style="color: black">;</span></span><br /></strong></span><span
+                class="cssdelimitercolor" style="color: black">}</span>
+            </span>
+          </div>
+          <p>
+            <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_grid-row-gap">Try it Yourself »</a>
+          </p>
+        </div>
+        <div class="w3-example">
+          <h3>Example</h3>
+          <p>
+            The <code class="w3-codespan">grid-gap</code> property is a
+            shorthand property for the
+            <code class="w3-codespan">grid-row-gap</code> and the
+            <code class="w3-codespan">grid-column-gap</code> properties:
+          </p>
+          <div class="w3-code notranslate cssHigh">
+            <span class="cssselectorcolor" style="color: brown">
+              .grid-container
+              <span class="cssdelimitercolor" style="color: black">{</span><span class="csspropertycolor"
+                style="color: red"><br />&nbsp; display<span class="csspropertyvaluecolor"
+                  style="color: mediumblue"><span class="cssdelimitercolor" style="color: black">:</span>
+                  grid<span class="cssdelimitercolor" style="color: black">;</span></span><br /><strong>&nbsp;
+                  grid-gap<span class="csspropertyvaluecolor" style="color: mediumblue"><span class="cssdelimitercolor"
+                      style="color: black">:</span>
+                    50px 100px<span class="cssdelimitercolor"
+                      style="color: black">;</span></span><br /></strong></span><span class="cssdelimitercolor"
+                style="color: black">}</span>
+            </span>
+          </div>
+          <p>
+            <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_grid-gap2">Try it Yourself »</a>
+          </p>
+        </div>
+        <div class="w3-example">
+          <h3>Example</h3>
+          <p>
+            The <code class="w3-codespan">grid-gap</code> property can
+            also be used to set both the row gap and the column gap in one
+            value:
+          </p>
+          <div class="w3-code notranslate cssHigh">
+            <span class="cssselectorcolor" style="color: brown">
+              .grid-container
+              <span class="cssdelimitercolor" style="color: black">{</span><span class="csspropertycolor"
+                style="color: red"><br />&nbsp; display<span class="csspropertyvaluecolor"
+                  style="color: mediumblue"><span class="cssdelimitercolor" style="color: black">:</span>
+                  grid<span class="cssdelimitercolor" style="color: black">;</span></span><br /><strong>&nbsp;
+                  grid-gap<span class="csspropertyvaluecolor" style="color: mediumblue"><span class="cssdelimitercolor"
+                      style="color: black">:</span>
+                    50px<span class="cssdelimitercolor" style="color: black">;</span></span><br /></strong></span><span
+                class="cssdelimitercolor" style="color: black">}</span>
+            </span>
+          </div>
+          <p>
+            <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_grid-gap">Try it Yourself »</a>
+          </p>
+        </div>
+
+        <hr />
+        <h2>Grid Lines</h2>
+        <p>The lines between columns are called <em>column lines</em>.</p>
+        <p>The lines between rows are called <em>row lines</em>.</p>
+
+        <img src="grid_lines.png" style="max-width: 100%" />
+
+        <p>
+          Refer to line numbers when placing a grid item in a grid
+          container:
+        </p>
+        <div class="w3-example">
+          <h3>Example</h3>
+          <p>
+            Place a grid item at column line 1, and let it end on column
+            line 3:
+          </p>
+          <div class="w3-code notranslate cssHigh">
+            <span class="cssselectorcolor" style="color: brown">
+              .item1
+              <span class="cssdelimitercolor" style="color: black">{</span><span class="csspropertycolor"
+                style="color: red"><br /><strong> &nbsp; </strong>grid-column-start<span class="csspropertyvaluecolor"
+                  style="color: mediumblue"><span class="cssdelimitercolor" style="color: black">:</span>
+                  1<span class="cssdelimitercolor" style="color: black">;</span></span><br />&nbsp;
+                grid-column-end<span class="csspropertyvaluecolor" style="color: mediumblue"><span
+                    class="cssdelimitercolor" style="color: black">:</span>
+                  3<span class="cssdelimitercolor" style="color: black">;</span></span><br /></span><span
+                class="cssdelimitercolor" style="color: black">}</span>
+            </span>
+          </div>
+          <p>
+            <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_lines">Try it Yourself »</a>
+          </p>
+        </div>
+
+        <div class="w3-example">
+          <h3>Example</h3>
+          <p>
+            Place a grid item at row line 1, and let it end on row line 3:
+          </p>
+          <div class="w3-code notranslate cssHigh">
+            <span class="cssselectorcolor" style="color: brown">
+              .item1
+              <span class="cssdelimitercolor" style="color: black">{</span><span class="csspropertycolor"
+                style="color: red"><br /><strong> &nbsp; </strong>grid-row-start<span class="csspropertyvaluecolor"
+                  style="color: mediumblue"><span class="cssdelimitercolor" style="color: black">:</span>
+                  1<span class="cssdelimitercolor" style="color: black">;</span></span><br />&nbsp; grid-row-end<span
+                  class="csspropertyvaluecolor" style="color: mediumblue"><span class="cssdelimitercolor"
+                    style="color: black">:</span>
+                  3<span class="cssdelimitercolor" style="color: black">;</span></span><br /></span><span
+                class="cssdelimitercolor" style="color: black">}</span>
+            </span>
+          </div>
+          <p>
+            <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_lines2">Try it Yourself »</a>
+          </p>
+        </div>
+        <hr />
+
+        <h2>All CSS Grid Properties</h2>
+
+        <table class="ws-table-all notranslate">
+          <tbody>
+            <tr>
+              <th style="width: 30%">Property</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>
+                <a href="/cssref/css3_pr_column-gap.asp">column-gap</a>
+              </td>
+              <td>Specifies the gap between the columns</td>
+            </tr>
+            <tr>
+              <td><a href="/cssref/css3_pr_gap.asp">gap</a></td>
+              <td>
+                A shorthand property for the <em>row-gap</em> and the
+                <em>column-gap</em> properties
+              </td>
+            </tr>
+            <tr>
+              <td><a href="/cssref/pr_grid.asp">grid</a></td>
+              <td>
+                A shorthand property for the
+                <em>grid-template-rows, grid-template-columns,
+                  grid-template-areas, grid-auto-rows,
+                  grid-auto-columns</em>, and the <em>grid-auto-flow</em> properties
+              </td>
+            </tr>
+            <tr>
+              <td><a href="/cssref/pr_grid-area.asp">grid-area</a></td>
+              <td>
+                Either specifies a name for the grid item, or this
+                property is a shorthand property for the
+                <em>grid-row-start</em>, <em>grid-column-start</em>,
+                <em>grid-row-end</em>, and
+                <em>grid-column-end</em> properties
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="/cssref/pr_grid-auto-columns.asp">grid-auto-columns</a>
+              </td>
+              <td>Specifies a default column size</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="/cssref/pr_grid-auto-flow.asp">grid-auto-flow</a>
+              </td>
+              <td>
+                Specifies how auto-placed items are inserted in the grid
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="/cssref/pr_grid-auto-rows.asp">grid-auto-rows</a>
+              </td>
+              <td>Specifies a default row size</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="/cssref/pr_grid-column.asp">grid-column</a>
+              </td>
+              <td>
+                A shorthand property for the
+                <em>grid-column-start</em> and the
+                <em>grid-column-end</em> properties
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="/cssref/pr_grid-column-end.asp">grid-column-end</a>
+              </td>
+              <td>Specifies where to end the grid item</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="/cssref/pr_grid-column-gap.asp">grid-column-gap</a>
+              </td>
+              <td>Specifies the size of the gap between columns</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="/cssref/pr_grid-column-start.asp">grid-column-start</a>
+              </td>
+              <td>Specifies where to start the grid item</td>
+            </tr>
+            <tr>
+              <td><a href="/cssref/pr_grid-gap.asp">grid-gap</a></td>
+              <td>
+                A shorthand property for the <em>grid-row-gap</em> and
+                <em>grid-column-gap</em> properties
+              </td>
+            </tr>
+            <tr>
+              <td><a href="/cssref/pr_grid-row.asp">grid-row</a></td>
+              <td>
+                A shorthand property for the <em>grid-row-start</em> and
+                the <em>grid-row-end</em> properties
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="/cssref/pr_grid-row-end.asp">grid-row-end</a>
+              </td>
+              <td>Specifies where to end the grid item</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="/cssref/pr_grid-row-gap.asp">grid-row-gap</a>
+              </td>
+              <td>Specifies the size of the gap between rows</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="/cssref/pr_grid-row-start.asp">grid-row-start</a>
+              </td>
+              <td>Specifies where to start the grid item</td>
+            </tr>
+            <tr>
+              <td>
+                <a href="/cssref/pr_grid-template.asp">grid-template</a>
+              </td>
+              <td>
+                A shorthand property for the <em>grid-template-rows</em>,
+                <em>grid-template-columns</em> and
+                <em>grid-areas</em> properties
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="/cssref/pr_grid-template-areas.asp">grid-template-areas</a>
+              </td>
+              <td>
+                Specifies how to display columns and rows, using named
+                grid items
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="/cssref/pr_grid-template-columns.asp">grid-template-columns</a>
+              </td>
+              <td>
+                Specifies the size of the columns, and how many columns in
+                a grid layout
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="/cssref/pr_grid-template-rows.asp">grid-template-rows</a>
+              </td>
+              <td>Specifies the size of the rows in a grid layout</td>
+            </tr>
+            <tr>
+              <td><a href="/cssref/css3_pr_row-gap.asp">row-gap</a></td>
+              <td>Specifies the gap between the grid rows</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <br />
+        <div class="w3-clear nextprev">
+          <a class="w3-left w3-btn" href="css_rwd_templates.asp">❮ Previous</a>
+          <a class="w3-right w3-btn" href="css_grid_container.asp">Next ❯</a>
+        </div>
+        <div id="mypagediv2" style="position: relative; text-align: center"></div>
+        <br />
+      </div>
+      </section>
+  </div>
+  <!-- /bd-content -->
+  </main>
+  <!-- /bd-main -->
+  </div>
+  <!-- /container-xxl -->
+
+  <footer class="bd-footer py-5 mt-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 mb-3">
+          <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/"
+            aria-label="O-Learning">
+            <img src="../assets/img/aku-bulat-40x40.png" class="img-fluid" alt="aku" />
+            <span class="fs-5 ms-2">O-Learning</span>
+          </a>
+          <style>
+            .list-group-item {
+              padding: 0.5rem 0;
+              background: none;
+            }
+          </style>
+          <ul class="list-group list-group-flush small text-muted">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="me-auto">
+                <div style="font-weight: 300">Nama</div>
+                <span style="font-weight: bold">Ony</span>
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="me-auto">
+                <div style="font-weight: 300">Email</div>
+                <span style="font-weight: bold">onydarrell@gmail.com</span>
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="me-auto">
+                <div style="font-weight: 300">Phone</div>
+                <span style="font-weight: bold">+62 8155509153</span>
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="me-auto">
+                <div style="font-weight: 300">Profesi</div>
+                <span>
+                  <ul style="list-style: square">
+                    <li style="font-weight: bold">Web Development</li>
+                    <li style="font-weight: bold">
+                      Computer Program Lecturer
+                    </li>
+                  </ul>
+                </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+          <h5>Programs</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#">Microsoft Word</a></li>
+            <li class="mb-2"><a href="#">Microsoft Excel</a></li>
+            <li class="mb-2"><a href="#">Power Point</a></li>
+            <li class="mb-2"><a href="#">Microsoft Access</a></li>
+            <li class="mb-2"><a href="#">Photoshop</a></li>
+            <li class="mb-2"><a href="#">CorelDRAW</a></li>
+            <li class="mb-2"><a href="#">Web-Desain</a></li>
+            <li class="mb-2"><a href="#">Pemrograman</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3">
+          <h5>Panduan</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#">Tutorial Office</a></li>
+            <li class="mb-2"><a href="#">Tutorial Desain</a></li>
+            <li class="mb-2"><a href="#">Tutorial Web-Desain</a></li>
+            <li class="mb-2"><a href="#">Tutorial Pemrograman</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3">
+          <h5>Referensi</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#">excel-easy.com</a></li>
+            <li class="mb-2"><a href="#">edu.gcfglobal.org</a></li>
+            <li class="mb-2"><a href="#">w3schools.com</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3">
+          <div class="d-flex justify-content-between">
+            <ul class="list-unstyled d-flex">
+              <li class="ms-2">
+                <a class="link-dark" href="https://web.whatsapp.com/" target="_blank" rel="noopener">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="darkcyan" class="bi bi-whatsapp"
+                    viewBox="0 0 16 16">
+                    <title>WhatsApp</title>
+                    <path
+                      d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                  </svg>
+                </a>
+              </li>
+              <li class="ms-2">
+                <a class="link-dark" href="https://www.instagram.com/" target="_blank" rel="noopener">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="darkcyan" class="bi bi-instagram"
+                    viewBox="0 0 16 16">
+                    <title>Instagram</title>
+                    <path
+                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                  </svg>
+                </a>
+              </li>
+              <li class="ms-2">
+                <a class="link-dark" href="https://www.facebook.com/" target="_blank" rel="noopener">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="darkcyan" class="bi bi-facebook"
+                    viewBox="0 0 16 16">
+                    <title>Facebook</title>
+                    <path
+                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                  </svg>
+                </a>
+              </li>
+              <li class="ms-2">
+                <a class="link-dark" href="https://twitter.com/" target="_blank" rel="noopener">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="darkcyan" class="bi bi-twitter"
+                    viewBox="0 0 16 16">
+                    <title>Twitter</title>
+                    <path
+                      d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                  </svg>
+                </a>
+              </li>
+              <li class="ms-2">
+                <a class="link-dark" href="https://github.com/" target="_blank" rel="noopener">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="darkcyan" class="bi bi-github"
+                    viewBox="0 0 16 16">
+                    <title>GitHub</title>
+                    <path
+                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1975.0234239210404!2d112.17218620788897!3d-8.096705243068591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78ec6e84b1ebb9%3A0x703fb709760df83a!2sBlitar!5e0!3m2!1sen!2sid!4v1637518450886!5m2!1sen!2sid"
+          width="100%" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="../assets/js/docsearch.min.js"></script>
+  <script src="../assets/js/docs.min.js"></script>
+  <script>
+    w3.includeHTML();
+  </script>
+  <script>
+    //changeRed(255)
+    //changeGreen(0)
+    //changeBlue(0)
+    changeRGB("r");
+
+    function changeRGB(x) {
+      var col, r, g, b;
+      r = document.getElementById("slideRed").value;
+      g = document.getElementById("slideGreen").value;
+      b = document.getElementById("slideBlue").value;
+      col = w3color("rgb(" + r + "," + g + "," + b + ")");
+      document.getElementById("valRed2").innerHTML = r;
+      document.getElementById("valGreen2").innerHTML = g;
+      document.getElementById("valBlue2").innerHTML = b;
+      document.getElementById("rgbresult").style.backgroundColor =
+        col.toRgbString();
+      document.getElementById("rgbresulttext").innerHTML = col.toRgbString();
+      if (col.isDark(150)) {
+        document.getElementById("rgbresulttext").style.color = "#ffffff";
+      } else {
+        document.getElementById("rgbresulttext").style.color = "#1f2d3d";
+      }
+    }
+    //function changeGreen(value) {
+    //    document.getElementById('valGreen').innerHTML = value;
+    //}
+    //function changeBlue(value) {
+    //    document.getElementById('valBlue').innerHTML = value;
+    //}
+    changeRGBA("r");
+
+    function changeRGBA(x) {
+      var col, r, g, b, a;
+      r = document.getElementById("slideRedA").value;
+      g = document.getElementById("slideGreenA").value;
+      b = document.getElementById("slideBlueA").value;
+      a = document.getElementById("slideAlphaA").value / 10;
+      col = w3color("rgba(" + r + "," + g + "," + b + "," + a + ")");
+      document.getElementById("valRed2A").innerHTML = r;
+      document.getElementById("valGreen2A").innerHTML = g;
+      document.getElementById("valBlue2A").innerHTML = b;
+      document.getElementById("valAlpha2A").innerHTML = a;
+      document.getElementById("rgbaresult").style.backgroundColor =
+        col.toRgbaString();
+      document.getElementById("rgbaresulttext").innerHTML =
+        col.toRgbaString();
+      if (col.isDark(150) && a > 0.2) {
+        document.getElementById("rgbaresulttext").style.color = "#ffffff";
+      } else {
+        document.getElementById("rgbaresulttext").style.color = "#1f2d3d";
+      }
+    }
+
+    //changeRed(255)
+    //changeGreen(0)
+    //changeBlue(0)
+    changeHex("r");
+
+    function changeHex(x) {
+      var col, r, g, b;
+      r = document.getElementById("slideRedHex").value;
+      g = document.getElementById("slideGreenHex").value;
+      b = document.getElementById("slideBlueHex").value;
+      col = w3color("rgb(" + r + "," + g + "," + b + ")");
+      document.getElementById("valRed2Hex").innerHTML = col
+        .toHexString()
+        .substr(1, 2);
+      document.getElementById("valGreen2Hex").innerHTML = col
+        .toHexString()
+        .substr(3, 2);
+      document.getElementById("valBlue2Hex").innerHTML = col
+        .toHexString()
+        .substr(5, 2);
+      document.getElementById("hexresult").style.backgroundColor =
+        col.toRgbString();
+      document.getElementById("hexresulttext").innerHTML = col.toHexString();
+      if (col.isDark(150)) {
+        document.getElementById("hexresulttext").style.color = "#ffffff";
+      } else {
+        document.getElementById("hexresulttext").style.color = "#1f2d3d";
+      }
+    }
+
+    //changeRed(255)
+    //changeGreen(0)
+    //changeBlue(0)
+    changeHsl("h");
+
+    function changeHsl(x) {
+      var col, h, s, l;
+      h = document.getElementById("slideHue").value;
+      s = document.getElementById("slideSat").value;
+      l = document.getElementById("slideLight").value;
+      col = w3color("hsl(" + h + "," + s / 100 + "," + l / 100 + ")");
+      document.getElementById("valHue").innerHTML = col.toHsl().h;
+      document.getElementById("valSat").innerHTML =
+        Math.round(col.toHsl().s * 100) + "%";
+      document.getElementById("valLight").innerHTML =
+        Math.round(col.toHsl().l * 100) + "%";
+      document.getElementById("hslresult").style.backgroundColor =
+        col.toHslString();
+      document.getElementById("hslresulttext").innerHTML = col.toHslString();
+      if (col.isDark(150)) {
+        document.getElementById("hslresulttext").style.color = "#ffffff";
+      } else {
+        document.getElementById("hslresulttext").style.color = "#1f2d3d";
+      }
+    }
+    changeHsla("h");
+
+    function changeHsla(x) {
+      var col, h, s, l, a;
+      h = document.getElementById("slideHueA").value;
+      s = document.getElementById("slideSatA").value;
+      l = document.getElementById("slideLightA").value;
+      a = document.getElementById("slideHslAlpha").value / 10;
+      col = w3color(
+        "hsla(" + h + "," + s / 100 + "," + l / 100 + "," + a + ")"
+      );
+      document.getElementById("valHueA").innerHTML = col.toHsl().h;
+      document.getElementById("valSatA").innerHTML =
+        Math.round(col.toHsl().s * 100) + "%";
+      document.getElementById("valLightA").innerHTML =
+        Math.round(col.toHsl().l * 100) + "%";
+      document.getElementById("valHslAlpha").innerHTML = col.toHsl().a;
+      document.getElementById("hslaresult").style.backgroundColor =
+        col.toHslaString();
+      document.getElementById("hslaresulttext").innerHTML =
+        col.toHslaString();
+      if (col.isDark(150) && a > 0.2) {
+        document.getElementById("hslaresulttext").style.color = "#ffffff";
+      } else {
+        document.getElementById("hslaresulttext").style.color = "#1f2d3d";
+      }
+    }
+  </script>
+  <!-- Saat user scroll halaman, jalankan myFunction -->
+  <!-- <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script> -->
+  <script>
+    // Dapatkan tombol
+    var mybutton = document.getElementById("myBtn");
+
+    // Ketika pengguna memutar 20px dari atas dokumen, tunjukkan tombol
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 250 ||
+        document.documentElement.scrollTop > 250
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // Ketika pengguna mengklik tombol, gulir ke bagian atas dokumen
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+</body>
+
+</html>

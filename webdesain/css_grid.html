@@ -228,870 +228,603 @@
     <main class="bd-main order-1">
       <div class="bd-intro">
         <div class="d-md-flex align-items-center justify-content-between">
-          <h1 class="bd-title" id="content">Modul Layout Grid CSS</h1>
+          <!-- <h1 class="bd-title" id="content"></h1> -->
           <!-- <a class="btn btn-sm btn-bd-light mb-2 mb-md-0" href="#" title="Unduh dan edit file ini untuk latihan" rel="noopener">unduh file latihan</a> -->
         </div>
-        <p class="bd-lead">
-          Modul Layout Grid CSS menawarkan sistem tata letak berbasis grid, dengan baris dan kolom, membuatnya lebih
-          mudah untuk merancang halaman web tanpa harus menggunakan float dan positioning.</p>
+        <!-- <p class="bd-lead"></p> -->
       </div>
 
       <div class="bd-content">
-        <section>
-          <img class="top-example" src="files/img/browser-head.png" alt="">
-          <div class="bd-example">
-            <style>
-              .grid-container1 {
-                display: grid;
-                grid-template-areas:
-                  'header header header header header header'
-                  'menu main main main right right'
-                  'menu footer footer footer footer footer';
-                grid-gap: 10px;
-                background-color: #2196F3;
-                padding: 10px;
-              }
+        <!-- <div class="w3-col l10 m12" id="main"> -->
+        <h1>CSS Grid Container</h1>
+        <img class="top-example" src="files/img/browser-head.png" alt="">
+        <div class="bd-example">
+          <iframe src="css_grid_container.html" frameborder="0" width="100%" height="280"></iframe>
+        </div>
 
-              .grid-container1>div {
-                background-color: rgba(255, 255, 255, 0.8);
-                text-align: center;
-                padding: 20px 0;
-                font-size: 30px;
-              }
-
-              .item1 {
-                grid-area: header;
-              }
-
-              .item2 {
-                grid-area: menu;
-              }
-
-              .item3 {
-                grid-area: main;
-              }
-
-              .item4 {
-                grid-area: right;
-              }
-
-              .item5 {
-                grid-area: footer;
-              }
-            </style>
-
-            <h1>Tata Letak Grid.</h1>
-            <p>Tata letak grid ini mengandung enam kolom dan tiga baris:</p>
-            <div class="grid-container1">
-              <div class="item1">Header</div>
-              <div class="item2">Menu</div>
-              <div class="item3">Main</div>
-              <div class="item4">Right</div>
-              <div class="item5">Footer</div>
-            </div>
-          </div>
-
-          <div class="highlight">
-            Code :
-            <div class="syntaxhighlighter  xml">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="gutter">
-                      <div class="line number1 index0 alt2">1</div>
-                      <div class="line number2 index1 alt1">2</div>
-                      <div class="line number2 index1 alt1">3</div>
-                      <div class="line number2 index1 alt1">4</div>
-                      <div class="line number2 index1 alt1">5</div>
-                      <div class="line number2 index1 alt1">6</div>
-                      <div class="line number2 index1 alt1">7</div>
-                      <div class="line number2 index1 alt1">8</div>
-                      <div class="line number2 index1 alt1">9</div>
-                      <div class="line number2 index1 alt1">10</div>
-                      <div class="line number2 index1 alt1">11</div>
-                      <div class="line number2 index1 alt1">12</div>
-                      <div class="line number2 index1 alt1">13</div>
-                      <div class="line number2 index1 alt1">14</div>
-                      <div class="line number2 index1 alt1">15</div>
-                      <div class="line number2 index1 alt1">16</div>
-                      <div class="line number2 index1 alt1">17</div>
-                      <div class="line number2 index1 alt1">18</div>
-                      <div class="line number2 index1 alt1">19</div>
-                      <div class="line number2 index1 alt1">20</div>
-                      <div class="line number2 index1 alt1">21</div>
-                      <div class="line number2 index1 alt1">22</div>
-                      <div class="line number2 index1 alt1">23</div>
-                      <div class="line number2 index1 alt1">24</div>
-                      <div class="line number2 index1 alt1">25</div>
-                      <div class="line number2 index1 alt1">26</div>
-                      <div class="line number2 index1 alt1">27</div>
-                      <div class="line number2 index1 alt1">28</div>
-                      <div class="line number2 index1 alt1">29</div>
-                      <div class="line number2 index1 alt1">30</div>
-                      <div class="line number2 index1 alt1">31</div>
-                      <div class="line number2 index1 alt1">32</div>
-                      <div class="line number2 index1 alt1">33</div>
-                      <div class="line number2 index1 alt1">34</div>
-                      <div class="line number2 index1 alt1">35</div>
-                      <div class="line number2 index1 alt1">36</div>
-                      <div class="line number2 index1 alt1">37</div>
-                      <div class="line number2 index1 alt1">38</div>
-                      <div class="line number2 index1 alt1">39</div>
-                      <div class="line number2 index1 alt1">40</div>
-                      <div class="line number2 index1 alt1">41</div>
-                      <div class="line number2 index1 alt1">42</div>
-                      <div class="line number2 index1 alt1">43</div>
-                      <div class="line number2 index1 alt1">44</div>
-                      <div class="line number2 index1 alt1">45</div>
-                      <div class="line number2 index1 alt1">46</div>
-                      <div class="line number2 index1 alt1">47</div>
-                      <div class="line number2 index1 alt1">48</div>
-                      <div class="line number2 index1 alt1">49</div>
-                      <div class="line number2 index1 alt1">50</div>
-                      <div class="line number2 index1 alt1">51</div>
-                      <div class="line number2 index1 alt1">52</div>
-                      <div class="line number2 index1 alt1">53</div>
-                      <div class="line number2 index1 alt1">54</div>
-                      <div class="line number2 index1 alt1">55</div>
-                      <div class="line number2 index1 alt1">56</div>
-                      <div class="line number2 index1 alt1">57</div>
-                      <div class="line number2 index1 alt1">58</div>
-                      <div class="line number2 index1 alt1">59</div>
-                    </td>
-                    <td class="code">
-                      <div class="container-fluid">
-                        <pre tabindex="0" class="chroma">
+        <div class="highlight">
+          Code :
+          <div class="syntaxhighlighter  xml">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                    <div class="line number2 index1 alt1">2</div>
+                    <div class="line number2 index1 alt1">3</div>
+                    <div class="line number2 index1 alt1">4</div>
+                    <div class="line number2 index1 alt1">5</div>
+                    <div class="line number2 index1 alt1">6</div>
+                    <div class="line number2 index1 alt1">7</div>
+                    <div class="line number2 index1 alt1">8</div>
+                    <div class="line number2 index1 alt1">9</div>
+                    <div class="line number2 index1 alt1">10</div>
+                    <div class="line number2 index1 alt1">11</div>
+                    <div class="line number2 index1 alt1">12</div>
+                    <div class="line number2 index1 alt1">13</div>
+                    <div class="line number2 index1 alt1">14</div>
+                    <div class="line number2 index1 alt1">15</div>
+                    <div class="line number2 index1 alt1">16</div>
+                    <div class="line number2 index1 alt1">17</div>
+                    <div class="line number2 index1 alt1">18</div>
+                    <div class="line number2 index1 alt1">19</div>
+                    <div class="line number2 index1 alt1">20</div>
+                    <div class="line number2 index1 alt1">21</div>
+                    <div class="line number2 index1 alt1">22</div>
+                    <div class="line number2 index1 alt1">23</div>
+                    <div class="line number2 index1 alt1">24</div>
+                    <div class="line number2 index1 alt1">25</div>
+                    <div class="line number2 index1 alt1">26</div>
+                    <div class="line number2 index1 alt1">27</div>
+                    <div class="line number2 index1 alt1">28</div>
+                    <div class="line number2 index1 alt1">29</div>
+                    <div class="line number2 index1 alt1">30</div>
+                    <div class="line number2 index1 alt1">31</div>
+                    <div class="line number2 index1 alt1">32</div>
+                    <div class="line number2 index1 alt1">33</div>
+                    <div class="line number2 index1 alt1">34</div>
+                    <div class="line number2 index1 alt1">35</div>
+                    <div class="line number2 index1 alt1">36</div>
+                    <div class="line number2 index1 alt1">37</div>
+                    <div class="line number2 index1 alt1">38</div>
+                    <div class="line number2 index1 alt1">39</div>
+                    <div class="line number2 index1 alt1">40</div>
+                    <div class="line number2 index1 alt1">41</div>
+                    <div class="line number2 index1 alt1">42</div>
+                    <div class="line number2 index1 alt1">43</div>
+                    <div class="line number2 index1 alt1">44</div>
+                    <div class="line number2 index1 alt1">45</div>
+                    <div class="line number2 index1 alt1">46</div>
+                    <div class="line number2 index1 alt1">47</div>
+                    <div class="line number2 index1 alt1">48</div>
+                    <div class="line number2 index1 alt1">49</div>
+                    <div class="line number2 index1 alt1">50</div>
+                    <div class="line number2 index1 alt1">51</div>
+                    <div class="line number2 index1 alt1">52</div>
+                    <div class="line number2 index1 alt1">53</div>
+                    <div class="line number2 index1 alt1">54</div>
+                    <div class="line number2 index1 alt1">55</div>
+                    <div class="line number2 index1 alt1">56</div>
+                    <div class="line number2 index1 alt1">57</div>
+                    <div class="line number2 index1 alt1">58</div>
+                    <div class="line number2 index1 alt1">59</div>
+                    <div class="line number2 index1 alt1">60</div>
+                    <div class="line number2 index1 alt1">61</div>
+                    <div class="line number2 index1 alt1">62</div>
+                    <div class="line number2 index1 alt1">63</div>
+                    <div class="line number2 index1 alt1">64</div>
+                    <div class="line number2 index1 alt1">65</div>
+                    <div class="line number2 index1 alt1">66</div>
+                    <div class="line number2 index1 alt1">67</div>
+                    <div class="line number2 index1 alt1">68</div>
+                    <div class="line number2 index1 alt1">69</div>
+                    <div class="line number2 index1 alt1">70</div>
+                    <div class="line number2 index1 alt1">71</div>
+                    <div class="line number2 index1 alt1">72</div>
+                    <div class="line number2 index1 alt1">73</div>
+                    <div class="line number2 index1 alt1">74</div>
+                    <div class="line number2 index1 alt1">75</div>
+                    <div class="line number2 index1 alt1">76</div>
+                    <div class="line number2 index1 alt1">77</div>
+                    <div class="line number2 index1 alt1">78</div>
+                    <div class="line number2 index1 alt1">79</div>
+                    <div class="line number2 index1 alt1">80</div>
+                    <div class="line number2 index1 alt1">81</div>
+                    <div class="line number2 index1 alt1">82</div>
+                    <div class="line number2 index1 alt1">83</div>
+                    <div class="line number2 index1 alt1">84</div>
+                    <div class="line number2 index1 alt1">85</div>
+                    <div class="line number2 index1 alt1">86</div>
+                    <div class="line number2 index1 alt1">87</div>
+                    <div class="line number2 index1 alt1">88</div>
+                    <div class="line number2 index1 alt1">89</div>
+                    <div class="line number2 index1 alt1">90</div>
+                    <div class="line number2 index1 alt1">91</div>
+                    <div class="line number2 index1 alt1">92</div>
+                    <div class="line number2 index1 alt1">93</div>
+                    <div class="line number2 index1 alt1">94</div>
+                    <div class="line number2 index1 alt1">95</div>
+                    <div class="line number2 index1 alt1">96</div>
+                    <div class="line number2 index1 alt1">97</div>
+                    <div class="line number2 index1 alt1">98</div>
+                    <div class="line number2 index1 alt1">99</div>
+                    <div class="line number2 index1 alt1">100</div>
+                    <div class="line number2 index1 alt1">101</div>
+                    <div class="line number2 index1 alt1">102</div>
+                    <div class="line number2 index1 alt1">103</div>
+                    <div class="line number2 index1 alt1">104</div>
+                  </td>
+                  <td class="code">
+                    <div class="container-fluid">
+                      <pre tabindex="0" class="chroma">
 <code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
 <span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span><span class="p">&gt;</span>
-
   <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span> <span class="s">"utf-8"</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span> <span class="s">"viewport"</span><span class="na">content</span><span class="o">=</span> <span class="s">"width=device-width, initial-scale=1"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">"..."</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Judul Halaman<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="na">style</span><span class="p">&gt;</span>
+    <code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="na">style</span><span class="p">&gt;</span>
       <span class="p">.</span><span class="nc">grid-container</span> <span class="p">{</span>
-        <span class="k">display</span><span class="p">:</span> <span class="s">grid</span><span class="p">;</span>
-        <span class="k">grid-template-areas</span><span class="p">:</span>
-            <span class="s">'header header header header header header'</span>
-            <span class="s">'menu main main main right right'</span>
-            <span class="s">'menu footer footer footer footer footer'</span><span class="p">;</span>
-        <span class="k">grid-gap</span><span class="p">:</span> <span class="s">10px</span><span class="p">;</span>
-        <span class="k">background-color</span><span class="p">:</span> <span class="s">#2196F3</span><span class="p">;</span>
-        <span class="k">padding</span><span class="p">:</span> <span class="s">10px</span><span class="p">;</span>
+        <span class="k">display</span><span class="p">:</span> <span class="kc">grid</span><span class="p">;</span>
+        <span class="k">grid-template-columns</span><span class="p">:</span> <span class="kc">auto auto auto auto</span><span class="p">;</span>
+        <span class="k">grid-gap</span><span class="p">:</span> <span class="kc">10px</span><span class="p">;</span>
+        <span class="k">background-color</span><span class="p">:</span> <span class="kc">#2196F3</span><span class="p">;</span>
+        <span class="k">padding</span><span class="p">:</span> <span class="kc">10px</span><span class="p">;</span>
       <span class="p">}</span>
-
       <span class="p">.</span><span class="nc">grid-container > div</span> <span class="p">{</span>
-        <span class="k">background-color</span><span class="p">:</span> <span class="s">rgba(255, 255, 255, 0.8)</span><span class="p">;</span>
-        <span class="k">display</span><span class="p">:</span> <span class="s">grid</span><span class="p">;</span>
-        <span class="k">text-align</span><span class="p">:</span> <span class="s">center</span><span class="p">;</span>
-        <span class="k">padding</span><span class="p">:</span> <span class="s">20px 0</span><span class="p">;</span>
-        <span class="k">font-size</span><span class="p">:</span> <span class="s">30px</span><span class="p">;</span>
+        <span class="k">background-color</span><span class="p">:</span> <span class="kc">rgba(255, 255, 255, 0.8)</span><span class="p">;</span>
+        <span class="k">border</span><span class="p">:</span> <span class="kc">1px solid black</span><span class="p">;</span>
+        <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+        <span class="k">font-size</span><span class="p">:</span> <span class="kc">30px</span><span class="p">;</span>
       <span class="p">}</span>
-      
-      <span class="nt">.item1</span> <span class="p">{</span>
-        <span class="k">grid-area</span><span class="p">:</span> <span class="nf">header</span><span class="p">;</span>
-      <span class="p">}</span>
-      <span class="nt">.item2</span> <span class="p">{</span>
-        <span class="k">grid-area</span><span class="p">:</span> <span class="nf">menu</span><span class="p">;</span>
-      <span class="p">}</span>
-      <span class="nt">.item3</span> <span class="p">{</span>
-        <span class="k">grid-area</span><span class="p">:</span> <span class="nf">main</span><span class="p">;</span>
-      <span class="p">}</span>
-      <span class="nt">.item4</span> <span class="p">{</span>
-        <span class="k">grid-area</span><span class="p">:</span> <span class="nf">right</span><span class="p">;</span>
-      <span class="p">}</span>
-      <span class="nt">.item5</span> <span class="p">{</span>
-        <span class="k">grid-area</span><span class="p">:</span> <span class="nf">footer</span><span class="p">;</span>
-      <span class="p">}</span>
-    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code>
   <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
 
-    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Grid Layout<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Tata letak grid ini mengandung enam kolom dan tiga baris:<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Grid Container<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>A Grid Container consists of grid items arranged in columns and rows<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
     
-    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-container"</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"item1"</span><span class="p">&gt;</span>Header<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"item2"</span><span class="p">&gt;</span>Menu<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"item3"</span><span class="p">&gt;</span>Main<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"item4"</span><span class="p">&gt;</span>Right<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"item5"</span><span class="p">&gt;</span>Footer<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-
   <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah sendiri <img
-                  draggable="false" role="img" class="emoji" alt="↗"
-                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-          </div>
-        </section>
-
-        <section>
-          <h2>Tata Letak Grid.</h2>
-          <p>Modul Layout Grid CSS menawarkan sistem tata letak berbasis grid, dengan baris dan kolom, membuatnya lebih
-            mudah untuk merancang halaman web tanpa harus menggunakan float dan positioning.</p>
-        </section>
-
-        <section>
-          <h2>Dukungan Browser</h2>
-          <p>Sifat-sifat grid didukung di semua browser modern.</p>
-          <div class="w3-responsive">
-            <style>
-              table.browserref {
-                border-collapse: collapse;
-                width: 100%;
-              }
-
-              table.browserref th {
-                height: 44px;
-                background-repeat: no-repeat;
-                background-position: center center;
-                border: 1px solid #d4d4d4;
-                background-color: #ffffff;
-                font-weight: normal;
-                color: #555555;
-                padding: 11px 5px 11px 5px;
-                vertical-align: middle;
-              }
-
-              table.browserref tr:nth-child(odd) {
-                background-color: #ffffff;
-              }
-
-              table.browserref tr:nth-child(even) {
-                background-color: #E7E9EB;
-              }
-
-              table.browserref th:first-child,
-              table.browserref td:first-child {
-                padding-left: 16px;
-              }
-
-              table.browserref td {
-                border: 1px solid #d4d4d4;
-                text-align: center;
-                padding: 8px;
-                vertical-align: top;
-              }
-
-              table.browserref .bsChrome {
-                background-image: url(files/img/compatible_chrome.gif);
-              }
-
-              table.browserref .bsEdge {
-                background-image: url(files/img/compatible_edge.png);
-              }
-
-              table.browserref .bsFirefox {
-                background-image: url(files/img/compatible_firefox.png);
-              }
-
-              table.browserref .bsSafari {
-                background-image: url(files/img/compatible_safari.gif);
-              }
-
-              table.browserref .bsOpera {
-                background-image: url(files/img/compatible_opera.gif);
-              }
-            </style>
-            <table class="browserref notranslate">
-              <tbody>
-                <tr>
-                  <th style="width: 20%; height: 50px" class="bsChrome" title="Chrome"></th>
-                  <th style="width: 20%" class="bsEdge" title="Internet Explorer / Edge"></th>
-                  <th style="width: 20%" class="bsFirefox" title="Firefox"></th>
-                  <th style="width: 20%" class="bsSafari" title="Safari"></th>
-                  <th style="width: 20%" class="bsOpera" title="Opera"></th>
-                </tr>
-                <tr>
-                  <td>57.0</td>
-                  <td>16.0</td>
-                  <td>52.0</td>
-                  <td>10</td>
-                  <td>44</td>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code>
+</pre>
+                    </div>
+                  </td>
                 </tr>
               </tbody>
             </table>
           </div>
-        </section>
+          <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah sendiri <img
+                draggable="false" role="img" class="emoji" alt="↗"
+                src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+        </div>
 
-        <section>
-          <h2>Elemen Grid</h2>
-          <p>Layout Grid terdiri dari elemen induk, dengan satu atau lebih elemen child.</p>
-          <p>Contoh :</p>
-          <img class="top-example" src="files/img/browser-head.png" alt="">
-          <div class="bd-example">
-            <style>
-              .grid-container2 {
-                display: grid;
-                grid-template-columns: auto auto auto;
-                background-color: #2196F3;
-                padding: 10px;
-              }
+        <h2>Grid Container</h2>
+        <p>To make an HTML element behave as a grid container, you have to set the <code
+            class="w3-codespan">display</code>
+          property to <code class="w3-codespan">
+        grid</code> or <code class="w3-codespan">inline-grid</code>.</p>
+        <p>Grid containers consist of grid items, placed inside columns and rows.</p>
 
-              .grid-item2 {
-                background-color: rgba(255, 255, 255, 0.8);
-                border: 1px solid rgba(0, 0, 0, 0.8);
-                text-align: center;
-                padding: 20px;
-                font-size: 30px;
-                text-align: center;
-              }
-            </style>
+        <hr>
+        <h2>The grid-template-columns Property</h2>
+        <p>The <code class="w3-codespan">grid-template-columns</code> property defines the
+          number of columns in your grid layout, and it can define the width of each column.</p>
+        <p>The value is a space-separated-list, where each value defines the width
+          of the respective column.</p>
+        <p>If you want your grid layout to contain 4 columns, specify the width of the 4 columns, or "auto" if all
+          columns
+          should have the same width.</p>
 
-            <h1>Elemen Grid.</h1>
-            <p>Tata letak grid harus memiliki elemen induk dengan display yang diatur ke grid atau inline-grid.</p>
-            <p>Elemen child langsung dari grid container secara otomatis menjadi item grid.</p>
-
-            <div class="grid-container2">
-              <div class="grid-item2">1</div>
-              <div class="grid-item2">2</div>
-              <div class="grid-item2">3</div>
-              <div class="grid-item2">4</div>
-              <div class="grid-item2">5</div>
-              <div class="grid-item2">6</div>
-              <div class="grid-item2">7</div>
-              <div class="grid-item2">8</div>
-              <div class="grid-item2">9</div>
-            </div>
-          </div>
-          <div class="highlight">
-            Code :
-            <div class="syntaxhighlighter  xml">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="gutter">
-                      <div class="line number1 index0 alt2">1</div>
-                      <div class="line number2 index1 alt1">2</div>
-                      <div class="line number2 index1 alt1">3</div>
-                      <div class="line number2 index1 alt1">4</div>
-                      <div class="line number2 index1 alt1">5</div>
-                      <div class="line number2 index1 alt1">6</div>
-                      <div class="line number2 index1 alt1">7</div>
-                      <div class="line number2 index1 alt1">8</div>
-                      <div class="line number2 index1 alt1">9</div>
-                      <div class="line number2 index1 alt1">10</div>
-                      <div class="line number2 index1 alt1">11</div>
-                      <div class="line number2 index1 alt1">12</div>
-                      <div class="line number2 index1 alt1">13</div>
-                      <div class="line number2 index1 alt1">14</div>
-                      <div class="line number2 index1 alt1">15</div>
-                      <div class="line number2 index1 alt1">16</div>
-                      <div class="line number2 index1 alt1">17</div>
-                      <div class="line number2 index1 alt1">18</div>
-                      <div class="line number2 index1 alt1">19</div>
-                      <div class="line number2 index1 alt1">20</div>
-                      <div class="line number2 index1 alt1">21</div>
-                      <div class="line number2 index1 alt1">22</div>
-                      <div class="line number2 index1 alt1">23</div>
-                      <div class="line number2 index1 alt1">24</div>
-                      <div class="line number2 index1 alt1">25</div>
-                      <div class="line number2 index1 alt1">26</div>
-                      <div class="line number2 index1 alt1">27</div>
-                      <div class="line number2 index1 alt1">28</div>
-                      <div class="line number2 index1 alt1">29</div>
-                      <div class="line number2 index1 alt1">30</div>
-                      <div class="line number2 index1 alt1">31</div>
-                      <div class="line number2 index1 alt1">32</div>
-                      <div class="line number2 index1 alt1">33</div>
-                    </td>
-                    <td class="code">
-                      <div class="container-fluid">
-                        <pre tabindex="0" class="chroma">
-<code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="na">style</span><span class="p">&gt;</span>
-  <span class="p">.</span><span class="nc">grid-container</span> <span class="p">{</span>
-    <span class="k">display</span><span class="p">:</span> <span class="s">grid</span><span class="p">;</span>
-    <span class="k">grid-template-columns</span><span class="p">:</span> <span class="s">auto auto auto</span><span class="p">;</span>
-    <span class="k">background-color</span><span class="p">:</span> <span class="s">#2196F3</span><span class="p">;</span>
-    <span class="k">padding</span><span class="p">:</span> <span class="s">10px</span><span class="p">;</span>
-  <span class="p">}</span>
-
-  <span class="p">.</span><span class="nc">grid-item</span> <span class="p">{</span>
-    <span class="k">background-color</span><span class="p">:</span> <span class="s">rgba(255, 255, 255, 0.8)</span><span class="p">;</span>
-    <span class="k">border</span><span class="p">:</span> <span class="s">1px solid rgba(0, 0, 0, 0.8)</span><span class="p">;</span>
-    <span class="k">text-align</span><span class="p">:</span> <span class="s">center</span><span class="p">;</span>
-    <span class="k">padding</span><span class="p">:</span> <span class="s">20px</span><span class="p">;</span>
-    <span class="k">font-size</span><span class="p">:</span> <span class="s">30px</span><span class="p">;</span>
-    <span class="k">text-align</span><span class="p">:</span> <span class="s">center</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
-
-<span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Elemen Grid.<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Tata letak grid harus memiliki elemen induk dengan <em>display</em> yang diatur ke <em>grid</em> atau <em>inline-grid</em>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Elemen child langsung dari grid container secara otomatis menjadi item grid.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-
-<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-container"</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;</span>1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;</span>2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;</span>3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;</span>4<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;</span>5<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;</span>6<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;</span>7<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;</span>8<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-item"</span><span class="p">&gt;</span>9<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah sendiri <img
-                  draggable="false" role="img" class="emoji" alt="↗"
-                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-          </div>
-        </section>
-
-        <section>
-          <h2>Tampilkan Property.</h2>
-          <p>Elemen HTML menjadi grid container ketika properti <mark>display</mark> diatur ke <mark>grid</mark> atau
-            <mark>inline-grid</mark>.
+        <div class="w3-example">
+          <h3>Example</h3>
+          <p>Make a grid with 4 columns:</p>
+          <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+              .grid-container <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                style="color:red"><br>
+                &nbsp; display<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> grid<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br>&nbsp;
+                grid-template-columns<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> auto auto auto auto<span
+                    class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                class="cssdelimitercolor" style="color:black">}</span>
+            </span></div>
+          <p>
+            <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_grid-template-columns1">Try it
+              Yourself
+              »</a>
           </p>
+        </div>
 
-          <p>Contoh :</p>
-          <div class="highlight">
-            Code :
-            <div class="syntaxhighlighter  xml">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="gutter">
-                      <div class="line number1 index0 alt2">1</div>
-                      <div class="line number2 index1 alt1">2</div>
-                      <div class="line number2 index1 alt1">3</div>
-                      <div class="line number2 index1 alt1">4</div>
-                      <div class="line number2 index1 alt1">5</div>
-                    </td>
-                    <td class="code">
-                      <div class="container-fluid">
-                        <pre tabindex="0" class="chroma">
-<code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
-  <span class="nt">.grid-container</span> <span class="p">{</span>
-    <span class="k">display</span><span class="p">:</span> <span class="nf">grid</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah sendiri
-                <img draggable="false" role="img" class="emoji" alt="↗"
-                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-          </div>
+        <div class="w3-panel w3-note">
+          <p><b>Note:</b> If you have more than 4 items in a 4 columns grid, the grid will automatically
+            add a new row to put the items in.</p>
+        </div>
 
-          <p>Contoh :</p>
-          <div class="highlight">
-            Code :
-            <div class="syntaxhighlighter  xml">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="gutter">
-                      <div class="line number1 index0 alt2">1</div>
-                      <div class="line number2 index1 alt1">2</div>
-                      <div class="line number2 index1 alt1">3</div>
-                      <div class="line number2 index1 alt1">4</div>
-                      <div class="line number2 index1 alt1">5</div>
-                    </td>
-                    <td class="code">
-                      <div class="container-fluid">
-                        <pre tabindex="0" class="chroma">
-<code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
-  <span class="nt">.grid-container</span> <span class="p">{</span>
-    <span class="k">display</span><span class="p">:</span> <span class="nf">inline-grid</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah sendiri
-                <img draggable="false" role="img" class="emoji" alt="↗"
-                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-          </div>
-          <p>Semua child langsung dari container grid secara otomatis menjadi <em>item grid</em>.</p>
-        </section>
+        <p>The <code class="w3-codespan">grid-template-columns</code> property can also be used to specify the size
+          (width) of
+          the columns.</p>
 
-        <section>
-          <h2>Grid Column <span class="text-muted fw-light">/ Kolom</span></h2>
-          <p>Garis vertikal item grid disebut <em>kolom</em>.</p>
-          <img src="files/img/grid_columns.png" style="max-width: 100%" />
-        </section>
+        <div class="w3-example">
+          <h3>Example</h3>
+          <p>Set a size for the 4 columns:</p>
+          <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+              .grid-container <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                style="color:red"><br>
+                &nbsp; display<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> grid<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br>&nbsp;
+                grid-template-columns<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> 80px 200px auto 40px<span
+                    class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                class="cssdelimitercolor" style="color:black">}</span>
+            </span></div>
+          <p>
+            <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_grid-template-columns2">Try it
+              Yourself
+              »</a>
+          </p>
+        </div>
 
-        <section>
-          <h2>Grid Row <span class="text-muted fw-light">/ Baris</span></h2>
-          <p>Garis horizontal item grid disebut <em>row</em>.</p>
-          <img src="files/img/grid_rows.png" style="max-width: 100%" />
-        </section>
-
-        <section>
-          <h2>Grid Gap<span class="text-muted fw-light">/ Jarak</span></h2>
-          <p>Ruang antara setiap kolom / baris disebut <em>gap</em>.</p>
-          <img src="files/img/grid_gaps.png" style="max-width: 100%" />
-        </section>
-
-        <section>
-          <p>Anda dapat menyesuaikan ukuran celah dengan menggunakan salah satu dari Properti yang berikut ini :</p>
-          <ul>
-            <li><code>grid-column-gap</code></li>
-            <li><code>grid-row-gap</code></li>
-            <li><code>grid-gap</code></li>
-          </ul>
+        <hr>
+        <h2>The grid-template-rows Property</h2>
+        <p>The <code class="w3-codespan">grid-template-rows</code> property defines the height of each row.</p>
+        <div class="grid-container2" style="grid-template-columns:auto auto auto auto;grid-template-rows:80px 200px;">
           <div>
-            <p>Contoh :</p>
-            <p><code>grid-column-gap</code> property mengatur celah antara kolom:</p>
-            <div class="highlight">
-              Code :
-              <div class="syntaxhighlighter  xml">
-                <table>
-                  <tbody>
-                    <tr>
-                      <td class="gutter">
-                        <div class="line number1 index0 alt2">1</div>
-                        <div class="line number2 index1 alt1">2</div>
-                        <div class="line number2 index1 alt1">3</div>
-                        <div class="line number2 index1 alt1">4</div>
-                        <div class="line number2 index1 alt1">5</div>
-                        <div class="line number2 index1 alt1">6</div>
-                      </td>
-                      <td class="code">
-                        <div class="container-fluid">
-                          <pre tabindex="0" class="chroma">
-<code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
-  <span class="nt">.grid-container</span> <span class="p">{</span>
-    <span class="k">display</span><span class="p">:</span> <span class="nf">grid</span><span class="p">;</span>
-    <mark><span class="k">grid-column-gap</span><span class="p">:</span> <span class="nf">50px</span><span class="p">;</span></mark>
-  <span class="p">}</span>
-<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <p><a class="btn btn-warning btn-sm"
-                  href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-column-gap"
-                  target="_blank">Cobalah sendiri
-                  <img draggable="false" role="img" class="emoji" alt="↗"
-                    src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-            </div>
-            <div class="highlight">
-              Code :
-              <div class="syntaxhighlighter  xml">
-                <table>
-                  <tbody>
-                    <tr>
-                      <td class="gutter">
-                        <div class="line number1 index0 alt2">1</div>
-                        <div class="line number2 index1 alt1">2</div>
-                        <div class="line number2 index1 alt1">3</div>
-                        <div class="line number2 index1 alt1">4</div>
-                        <div class="line number2 index1 alt1">5</div>
-                        <div class="line number2 index1 alt1">6</div>
-                      </td>
-                      <td class="code">
-                        <div class="container-fluid">
-                          <pre tabindex="0" class="chroma">
-<code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
-  <span class="nt">.grid-container</span> <span class="p">{</span>
-    <span class="k">display</span><span class="p">:</span> <span class="nf">grid</span><span class="p">;</span>
-    <mark><span class="k">grid-row-gap</span><span class="p">:</span> <span class="nf">50px</span><span class="p">;</span></mark>
-  <span class="p">}</span>
-<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <p><a class="btn btn-warning btn-sm"
-                  href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-row-gap"
-                  target="_blank">Cobalah
-                  sendiri <img draggable="false" role="img" class="emoji" alt="↗"
-                    src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-            </div>
-            <div class="highlight">
-              Code :
-              <div class="syntaxhighlighter  xml">
-                <table>
-                  <tbody>
-                    <tr>
-                      <td class="gutter">
-                        <div class="line number1 index0 alt2">1</div>
-                        <div class="line number2 index1 alt1">2</div>
-                        <div class="line number2 index1 alt1">3</div>
-                        <div class="line number2 index1 alt1">4</div>
-                        <div class="line number2 index1 alt1">5</div>
-                        <div class="line number2 index1 alt1">6</div>
-                      </td>
-                      <td class="code">
-                        <div class="container-fluid">
-                          <pre tabindex="0" class="chroma">
-<code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
-  <span class="nt">.grid-container</span> <span class="p">{</span>
-    <span class="k">display</span><span class="p">:</span> <span class="nf">grid</span><span class="p">;</span>
-    <mark><span class="k">grid-gap</span><span class="p">:</span> <span class="nf">50px 100px</span><span class="p">;</span></mark>
-  <span class="p">}</span>
-<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <p><a class="btn btn-warning btn-sm"
-                  href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap2" target="_blank">Cobalah
-                  sendiri
-                  <img draggable="false" role="img" class="emoji" alt="↗"
-                    src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-            </div>
-            <div class="highlight">
-              Code :
-              <div class="syntaxhighlighter  xml">
-                <table>
-                  <tbody>
-                    <tr>
-                      <td class="gutter">
-                        <div class="line number1 index0 alt2">1</div>
-                        <div class="line number2 index1 alt1">2</div>
-                        <div class="line number2 index1 alt1">3</div>
-                        <div class="line number2 index1 alt1">4</div>
-                        <div class="line number2 index1 alt1">5</div>
-                        <div class="line number2 index1 alt1">6</div>
-                      </td>
-                      <td class="code">
-                        <div class="container-fluid">
-                          <pre tabindex="0" class="chroma">
-<code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
-  <span class="nt">.grid-container</span> <span class="p">{</span>
-    <span class="k">display</span><span class="p">:</span> <span class="nf">grid</span><span class="p">;</span>
-    <mark><span class="k">grid-gap</span><span class="p">:</span> <span class="nf">50px</span><span class="p">;</span></mark>
-  <span class="p">}</span>
-<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
-                        </div>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <p><a class="btn btn-warning btn-sm"
-                  href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-gap" target="_blank">Cobalah
-                  sendiri
-                  <img draggable="false" role="img" class="emoji" alt="↗"
-                    src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-            </div>
-        </section>
-
-        <section>
-          <h2>Grid Lines</h2>
-          <p>Garis-garis antara kolom disebut <em>column lines</em>.</p>
-          <p>Garis-garis antara baris disebut <em>row lines</em>.</p>
-          <img src="files/img/grid_lines.png" style="max-width: 100%" />
-          <p>Lihat nomor baris saat menempatkan item grid dalam grid container:</p>
-
-          <p>Contoh :</p>
-          <p>Tempatkan item kotak di jalur kolom 1, dan biarkan berakhir pada jalur kolom 3:</p>
-          <div class="highlight">
-            Code :
-            <div class="syntaxhighlighter  xml">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="gutter">
-                      <div class="line number1 index0 alt2">1</div>
-                      <div class="line number2 index1 alt1">2</div>
-                      <div class="line number2 index1 alt1">3</div>
-                      <div class="line number2 index1 alt1">4</div>
-                      <div class="line number2 index1 alt1">5</div>
-                      <div class="line number2 index1 alt1">6</div>
-                    </td>
-                    <td class="code">
-                      <div class="container-fluid">
-                        <pre tabindex="0" class="chroma">
-<code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
-  <span class="nt">.item1</span> <span class="p">{</span>
-    <span class="k">grid-column-start</span><span class="p">:</span> <span class="nf">1</span><span class="p">;</span>
-    <span class="k">grid-column-end</span><span class="p">:</span> <span class="nf">3</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p><a class="btn btn-warning btn-sm"
-                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_lines" target="_blank">Cobalah
-                sendiri
-                <img draggable="false" role="img" class="emoji" alt="↗"
-                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+            <h1>1</h1>
           </div>
-
-          <p>Tempatkan item grid pada baris baris 1, dan biarkan berakhir pada baris baris 3:</p>
-          <div class="highlight">
-            Code :
-            <div class="syntaxhighlighter  xml">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="gutter">
-                      <div class="line number1 index0 alt2">1</div>
-                      <div class="line number2 index1 alt1">2</div>
-                      <div class="line number2 index1 alt1">3</div>
-                      <div class="line number2 index1 alt1">4</div>
-                      <div class="line number2 index1 alt1">5</div>
-                      <div class="line number2 index1 alt1">6</div>
-                    </td>
-                    <td class="code">
-                      <div class="container-fluid">
-                        <pre tabindex="0" class="chroma">
-<code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
-  <span class="nt">.item1</span> <span class="p">{</span>
-    <span class="k">grid-row-start</span><span class="p">:</span> <span class="nf">1</span><span class="p">;</span>
-    <span class="k">grid-row-end</span><span class="p">:</span> <span class="nf">3</span><span class="p">;</span>
-  <span class="p">}</span>
-<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p><a class="btn btn-warning btn-sm"
-                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_lines2" target="_blank">Cobalah
-                sendiri
-                <img draggable="false" role="img" class="emoji" alt="↗"
-                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          <div>
+            <h1>2</h1>
           </div>
-        </section>
+          <div>
+            <h1>3</h1>
+          </div>
+          <div>
+            <h1>4</h1>
+          </div>
+          <div>
+            <h1>5</h1>
+          </div>
+          <div>
+            <h1>6</h1>
+          </div>
+          <div>
+            <h1>7</h1>
+          </div>
+          <div>
+            <h1>8</h1>
+          </div>
+        </div>
 
-        <section>
-          <h2>Semua Properties Grid CSS</h2>
-          <table class="table table-bordered table-hover">
-            <thead class="table-light">
-              <tr>
-                <th>Properti</th>
-                <th>Keterangan</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><a href="https://www.w3schools.com/cssref/css3_pr_column-gap.asp" target="_blank">column-gap</a>
-                </td>
-                <td>Menentukan celah antara kolom</td>
-              </tr>
-              <tr>
-                <td><a href="https://www.w3schools.com/cssref/css3_pr_gap.asp" target="_blank">gap</a></td>
-                <td>Properti singkatan untuk celah-baris dan sifat-sifat gap kolom</td>
-              </tr>
-              <tr>
-                <td><a href="https://www.w3schools.com/cssref/pr_grid.asp" target="_blank">grid</a></td>
-                <td>Properti steno untuk baris grid-template, kolom grid-template, area template grid,
-                  grid-auto-baris, kolom grid-auto, dan properti aliran-otomatis</td>
-              </tr>
-              <tr>
-                <td><a href="https://www.w3schools.com/cssref/pr_grid-area.asp" target="_blank">grid-area</a></td>
-                <td>Baik menentukan nama untuk item grid, atau properti ini adalah properti singkat untuk
-                  Grid-Bill-Start, Grid-Column-Start, Grid-Row-End, dan Grid-Column-End
-                  Properti.
-                </td>
-              </tr>
-              <tr>
-                <td><a href="https://www.w3schools.com/cssref/pr_grid-auto-columns.asp"
-                    target="_blank">grid-auto-columns</a></td>
-                <td>Menentukan ukuran kolom default</td>
-              </tr>
-              <tr>
-                <td><a href="https://www.w3schools.com/cssref/pr_grid-auto-flow.asp" target="_blank">grid-auto-flow</a>
-                </td>
-                <td>Menentukan bagaimana item yang ditempatkan secara otomatis dimasukkan ke dalam grid</td>
-              </tr>
-              <tr>
-                <td><a href="https://www.w3schools.com/cssref/pr_grid-auto-rows.asp" target="_blank">grid-auto-rows</a>
-                </td>
-                <td>Menentukan ukuran baris default</td>
-              </tr>
-              <tr>
-                <td><a href="https://www.w3schools.com/cssref/pr_grid-column.asp" target="_blank">grid-column</a></td>
-                <td>Properti Singkatan untuk Properti Grid-Column-Marrow dan Grid-Column-End</td>
-              </tr>
-              <tr>
-                <td><a href="https://www.w3schools.com/cssref/pr_grid-column-end.asp"
-                    target="_blank">grid-column-end</a>
-                </td>
-                <td>Menentukan di mana untuk mengakhiri item grid</td>
-              </tr>
-              <tr>
-                <td><a href="https://www.w3schools.com/cssref/pr_grid-column-gap.asp"
-                    target="_blank">grid-column-gap</a>
-                </td>
-                <td>Menentukan ukuran celah antara kolom</td>
-              </tr>
-              <tr>
-                <td><a href="https://www.w3schools.com/cssref/pr_grid-column-start.asp"
-                    target="_blank">grid-column-start</a></td>
-                <td>Menentukan di mana untuk memulai item grid</td>
-              </tr>
-              <tr>
-                <td><a href="https://www.w3schools.com/cssref/pr_grid-gap.asp" target="_blank">grid-gap</a></td>
-                <td>Properti Singkatan untuk Properti Grid-Row-Gap dan Grid-Column-Gap</td>
-              </tr>
-              <tr>
-                <td><a href="https://www.w3schools.com/cssref/pr_grid-row.asp" target="_blank">grid-row</a></td>
-                <td>Properti Singkatan untuk Start-Row-Start dan properti Grid-Row-End</td>
-              </tr>
-              <tr>
-                <td><a href="https://www.w3schools.com/cssref/pr_grid-row-end.asp" target="_blank">grid-row-end</a></td>
-                <td>Menentukan di mana untuk mengakhiri item grid</td>
-              </tr>
-              <tr>
-                <td><a href="https://www.w3schools.com/cssref/pr_grid-row-gap.asp" target="_blank">grid-row-gap</a></td>
-                <td>Menentukan ukuran celah antara baris</td>
-              </tr>
-              <tr>
-                <td><a href="https://www.w3schools.com/cssref/pr_grid-row-start.asp" target="_blank">grid-row-start</a>
-                </td>
-                <td>Menentukan di mana untuk memulai item grid</td>
-              </tr>
-              <tr>
-                <td><a href="https://www.w3schools.com/cssref/pr_grid-template.asp" target="_blank">grid-template</a>
-                </td>
-                <td>Properti singkatan untuk baris-templat-grid, kolom grid-template dan Properti area grid</td>
-              </tr>
-              <tr>
-                <td><a href="https://www.w3schools.com/cssref/pr_grid-template-areas.asp"
-                    target="_blank">grid-template-areas</a></td>
-                <td>Menentukan cara menampilkan kolom dan baris, menggunakan item grid bernama</td>
-              </tr>
-              <tr>
-                <td><a href="https://www.w3schools.com/cssref/pr_grid-template-columns.asp"
-                    target="_blank">grid-template-columns</a></td>
-                <td>Menentukan ukuran kolom, dan berapa banyak kolom dalam tata letak grid</td>
-              </tr>
-              <tr>
-                <td><a href="https://www.w3schools.com/cssref/pr_grid-template-rows.asp"
-                    target="_blank">grid-template-rows</a></td>
-                <td>Menentukan ukuran baris dalam tata letak grid</td>
-              </tr>
-              <tr>
-                <td><a href="https://www.w3schools.com/cssref/css3_pr_row-gap.asp" target="_blank">row-gap</a></td>
-                <td>Menentukan celah antara baris grid</td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
+        <p>The value is a space-separated-list, where each value defines the height of the respective row:</p>
+
+        <div class="w3-example">
+          <h3>Example</h3>
+          <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+              .grid-container <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                style="color:red"><br>
+                &nbsp; display<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> grid<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br>&nbsp;
+                grid-template-rows<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> 80px 200px<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                style="color:black">}</span>
+            </span></div>
+          <p>
+            <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_grid-template-rows">Try it Yourself
+              »</a>
+          </p>
+        </div>
+
+        <hr>
+        <h2>The justify-content Property</h2>
+        <p>The <code class="w3-codespan">justify-content</code> property is used to align the whole grid inside the
+          container.
+        </p>
+        <div class="grid-container2" style="grid-template-columns:50px 50px 50px;justify-content: space-evenly;">
+          <div>
+            <h1>1</h1>
+          </div>
+          <div>
+            <h1>2</h1>
+          </div>
+          <div>
+            <h1>3</h1>
+          </div>
+          <div>
+            <h1>4</h1>
+          </div>
+          <div>
+            <h1>5</h1>
+          </div>
+          <div>
+            <h1>6</h1>
+          </div>
+        </div>
+        <div class="w3-panel w3-note">
+          <p><b>Note:</b> The grid's total width has to be less than the container's width for the <code
+              class="w3-codespan">justify-content</code> property to have any effect.</p>
+        </div>
+
+        <div class="w3-example">
+          <h3>Example</h3>
+          <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+              .grid-container <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                style="color:red"><br>
+                &nbsp; display<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> grid<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br>&nbsp;
+                justify-content<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> space-evenly<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                style="color:black">}</span>
+            </span></div>
+          <p>
+            <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_justify-content_space-evenly">Try
+              it
+              Yourself »</a>
+          </p>
+        </div>
+        <div class="w3-example">
+          <h3>Example</h3>
+          <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+              .grid-container <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                style="color:red"><br>
+                &nbsp; display<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> grid<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br>&nbsp;
+                justify-content<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> space-around<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                style="color:black">}</span>
+            </span></div>
+          <p>
+            <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_justify-content_space-around">Try
+              it
+              Yourself »</a>
+          </p>
+        </div>
+        <div class="w3-example">
+          <h3>Example</h3>
+          <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+              .grid-container <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                style="color:red"><br>
+                &nbsp; display<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> grid<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br>&nbsp;
+                justify-content<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> space-between<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                style="color:black">}</span>
+            </span></div>
+          <p>
+            <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_justify-content_space-between">Try
+              it
+              Yourself »</a>
+          </p>
+        </div>
+
+        <div class="w3-example">
+          <h3>Example</h3>
+          <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+              .grid-container <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                style="color:red"><br>
+                &nbsp; display<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> grid<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br>&nbsp;
+                justify-content<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                style="color:black">}</span>
+            </span></div>
+          <p>
+            <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_justify-content_center">Try it
+              Yourself
+              »</a>
+          </p>
+        </div>
+        <div class="w3-example">
+          <h3>Example</h3>
+          <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+              .grid-container <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                style="color:red"><br>
+                &nbsp; display<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> grid<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br>&nbsp;
+                justify-content<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> start<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                style="color:black">}</span>
+            </span></div>
+          <p>
+            <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_justify-content_start">Try it
+              Yourself
+              »</a>
+          </p>
+        </div>
+        <div class="w3-example">
+          <h3>Example</h3>
+          <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+              .grid-container <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                style="color:red"><br>
+                &nbsp; display<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> grid<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br>&nbsp;
+                justify-content<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> end<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                style="color:black">}</span>
+            </span></div>
+          <p>
+            <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_justify-content_end">Try it
+              Yourself »</a>
+          </p>
+        </div>
+        <hr>
+        <h2>The align-content Property</h2>
+        <p>The <code class="w3-codespan">align-content</code> property is used to <em>
+            vertically</em> align the whole grid inside the container.</p>
+
+        <div class="w3-white notranslate w3-padding">
+          <div class="grid-container2" style="height:400px;grid-template-columns:auto auto auto;align-content: center;">
+            <div>
+              <h1>1</h1>
+            </div>
+            <div>
+              <h1>2</h1>
+            </div>
+            <div>
+              <h1>3</h1>
+            </div>
+            <div>
+              <h1>4</h1>
+            </div>
+            <div>
+              <h1>5</h1>
+            </div>
+            <div>
+              <h1>6</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="w3-panel w3-note">
+          <p><b>Note:</b> The grid's total height has to be less than the container's height for the <code
+              class="w3-codespan">align-content</code> property to have any effect.</p>
+        </div>
+
+        <div class="w3-example">
+          <h3>Example</h3>
+          <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+              .grid-container <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                style="color:red"><br>
+                &nbsp; display<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> grid<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br>&nbsp; height<span class="csspropertyvaluecolor"
+                  style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 400px<span
+                    class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                align-content<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                style="color:black">}</span>
+            </span></div>
+          <p>
+            <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_align-content_center">Try it
+              Yourself »</a>
+          </p>
+        </div>
+
+        <div class="w3-example">
+          <h3>Example</h3>
+          <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+              .grid-container <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                style="color:red"><br>
+                &nbsp; display<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> grid<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br>&nbsp; height<span class="csspropertyvaluecolor"
+                  style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 400px<span
+                    class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                align-content<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> space-evenly<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                style="color:black">}</span>
+            </span></div>
+          <p>
+            <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_align-content_space-evenly">Try it
+              Yourself
+              »</a>
+          </p>
+        </div>
+
+        <div class="w3-example">
+          <h3>Example</h3>
+          <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+              .grid-container <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                style="color:red"><br>
+                &nbsp; display<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> grid<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br>&nbsp; height<span class="csspropertyvaluecolor"
+                  style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 400px<span
+                    class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                align-content<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> space-around<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                style="color:black">}</span>
+            </span></div>
+          <p>
+            <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_align-content_space-around">Try it
+              Yourself
+              »</a>
+          </p>
+        </div>
+
+        <div class="w3-example">
+          <h3>Example</h3>
+          <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+              .grid-container <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                style="color:red"><br>
+                &nbsp; display<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> grid<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br>&nbsp; height<span class="csspropertyvaluecolor"
+                  style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 400px<span
+                    class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                align-content<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> space-between<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                style="color:black">}</span>
+            </span></div>
+          <p>
+            <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_align-content_space-between">Try it
+              Yourself »</a>
+          </p>
+        </div>
+
+        <div class="w3-example">
+          <h3>Example</h3>
+          <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+              .grid-container <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                style="color:red"><br>
+                &nbsp; display<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> grid<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br>&nbsp; height<span class="csspropertyvaluecolor"
+                  style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 400px<span
+                    class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                align-content<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> start<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                style="color:black">}</span>
+            </span></div>
+          <p>
+            <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_align-content_start">Try it
+              Yourself »</a>
+          </p>
+        </div>
+
+        <div class="w3-example">
+          <h3>Example</h3>
+          <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+              .grid-container <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                style="color:red"><br>
+                &nbsp; display<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> grid<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br>&nbsp; height<span class="csspropertyvaluecolor"
+                  style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 400px<span
+                    class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+                align-content<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span> end<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br></span><span class="cssdelimitercolor"
+                style="color:black">}</span>
+            </span></div>
+          <p>
+            <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_align-content_end">Try it Yourself
+              »</a>
+          </p>
+        </div>
+
+        <!-- </div> -->
 
       </div>
       <!-- /bd-content -->
@@ -1099,148 +832,6 @@
     <!-- /bd-main -->
   </div>
   <!-- /container-xxl -->
-
-  <footer class="bd-footer py-5 mt-5 bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 mb-3">
-          <a class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none" href="/"
-            aria-label="O-Learning">
-            <img src="../assets/img/aku-bulat-40x40.png" class="img-fluid" alt="aku" />
-            <span class="fs-5 ms-2">O-Learning</span>
-          </a>
-          <style>
-            .list-group-item {
-              padding: 0.5rem 0;
-              background: none;
-            }
-          </style>
-          <ul class="list-group list-group-flush small text-muted">
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="me-auto">
-                <div style="font-weight: 300">Nama</div>
-                <span style="font-weight: bold">Ony</span>
-              </div>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="me-auto">
-                <div style="font-weight: 300">Email</div>
-                <span style="font-weight: bold">onydarrell@gmail.com</span>
-              </div>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="me-auto">
-                <div style="font-weight: 300">Phone</div>
-                <span style="font-weight: bold">+62 8155509153</span>
-              </div>
-            </li>
-            <li class="list-group-item d-flex justify-content-between align-items-start">
-              <div class="me-auto">
-                <div style="font-weight: 300">Profesi</div>
-                <span>
-                  <ul style="list-style: square">
-                    <li style="font-weight: bold">Web Development</li>
-                    <li style="font-weight: bold">
-                      Computer Program Lecturer
-                    </li>
-                  </ul>
-                </span>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="col-6 col-lg-2 offset-lg-1 mb-3">
-          <h5>Programs</h5>
-          <ul class="list-unstyled">
-            <li class="mb-2"><a href="#">Microsoft Word</a></li>
-            <li class="mb-2"><a href="#">Microsoft Excel</a></li>
-            <li class="mb-2"><a href="#">Power Point</a></li>
-            <li class="mb-2"><a href="#">Microsoft Access</a></li>
-            <li class="mb-2"><a href="#">Photoshop</a></li>
-            <li class="mb-2"><a href="#">CorelDRAW</a></li>
-            <li class="mb-2"><a href="#">Web-Desain</a></li>
-            <li class="mb-2"><a href="#">Pemrograman</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-lg-2 mb-3">
-          <h5>Panduan</h5>
-          <ul class="list-unstyled">
-            <li class="mb-2"><a href="#">Tutorial Office</a></li>
-            <li class="mb-2"><a href="#">Tutorial Desain</a></li>
-            <li class="mb-2"><a href="#">Tutorial Web-Desain</a></li>
-            <li class="mb-2"><a href="#">Tutorial Pemrograman</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-lg-2 mb-3">
-          <h5>Referensi</h5>
-          <ul class="list-unstyled">
-            <li class="mb-2"><a href="#">excel-easy.com</a></li>
-            <li class="mb-2"><a href="#">edu.gcfglobal.org</a></li>
-            <li class="mb-2"><a href="#">w3schools.com</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-lg-2 mb-3">
-          <div class="d-flex justify-content-between">
-            <ul class="list-unstyled d-flex">
-              <li class="ms-2">
-                <a class="link-dark" href="https://web.whatsapp.com/" target="_blank" rel="noopener">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="darkcyan" class="bi bi-whatsapp"
-                    viewBox="0 0 16 16">
-                    <title>WhatsApp</title>
-                    <path
-                      d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
-                  </svg>
-                </a>
-              </li>
-              <li class="ms-2">
-                <a class="link-dark" href="https://www.instagram.com/" target="_blank" rel="noopener">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="darkcyan" class="bi bi-instagram"
-                    viewBox="0 0 16 16">
-                    <title>Instagram</title>
-                    <path
-                      d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
-                  </svg>
-                </a>
-              </li>
-              <li class="ms-2">
-                <a class="link-dark" href="https://www.facebook.com/" target="_blank" rel="noopener">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="darkcyan" class="bi bi-facebook"
-                    viewBox="0 0 16 16">
-                    <title>Facebook</title>
-                    <path
-                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                  </svg>
-                </a>
-              </li>
-              <li class="ms-2">
-                <a class="link-dark" href="https://twitter.com/" target="_blank" rel="noopener">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="darkcyan" class="bi bi-twitter"
-                    viewBox="0 0 16 16">
-                    <title>Twitter</title>
-                    <path
-                      d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                  </svg>
-                </a>
-              </li>
-              <li class="ms-2">
-                <a class="link-dark" href="https://github.com/" target="_blank" rel="noopener">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="darkcyan" class="bi bi-github"
-                    viewBox="0 0 16 16">
-                    <title>GitHub</title>
-                    <path
-                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1975.0234239210404!2d112.17218620788897!3d-8.096705243068591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78ec6e84b1ebb9%3A0x703fb709760df83a!2sBlitar!5e0!3m2!1sen!2sid!4v1637518450886!5m2!1sen!2sid"
-          width="100%" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-    </div>
-  </footer>
 
   <script src="../assets/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -1250,182 +841,7 @@
   <script>
     w3.includeHTML();
   </script>
-  <script>
-    //changeRed(255)
-    //changeGreen(0)
-    //changeBlue(0)
-    changeRGB("r");
 
-    function changeRGB(x) {
-      var col, r, g, b;
-      r = document.getElementById("slideRed").value;
-      g = document.getElementById("slideGreen").value;
-      b = document.getElementById("slideBlue").value;
-      col = w3color("rgb(" + r + "," + g + "," + b + ")");
-      document.getElementById("valRed2").innerHTML = r;
-      document.getElementById("valGreen2").innerHTML = g;
-      document.getElementById("valBlue2").innerHTML = b;
-      document.getElementById("rgbresult").style.backgroundColor =
-        col.toRgbString();
-      document.getElementById("rgbresulttext").innerHTML = col.toRgbString();
-      if (col.isDark(150)) {
-        document.getElementById("rgbresulttext").style.color = "#ffffff";
-      } else {
-        document.getElementById("rgbresulttext").style.color = "#1f2d3d";
-      }
-    }
-    //function changeGreen(value) {
-    //    document.getElementById('valGreen').innerHTML = value;
-    //}
-    //function changeBlue(value) {
-    //    document.getElementById('valBlue').innerHTML = value;
-    //}
-    changeRGBA("r");
-
-    function changeRGBA(x) {
-      var col, r, g, b, a;
-      r = document.getElementById("slideRedA").value;
-      g = document.getElementById("slideGreenA").value;
-      b = document.getElementById("slideBlueA").value;
-      a = document.getElementById("slideAlphaA").value / 10;
-      col = w3color("rgba(" + r + "," + g + "," + b + "," + a + ")");
-      document.getElementById("valRed2A").innerHTML = r;
-      document.getElementById("valGreen2A").innerHTML = g;
-      document.getElementById("valBlue2A").innerHTML = b;
-      document.getElementById("valAlpha2A").innerHTML = a;
-      document.getElementById("rgbaresult").style.backgroundColor =
-        col.toRgbaString();
-      document.getElementById("rgbaresulttext").innerHTML =
-        col.toRgbaString();
-      if (col.isDark(150) && a > 0.2) {
-        document.getElementById("rgbaresulttext").style.color = "#ffffff";
-      } else {
-        document.getElementById("rgbaresulttext").style.color = "#1f2d3d";
-      }
-    }
-
-    //changeRed(255)
-    //changeGreen(0)
-    //changeBlue(0)
-    changeHex("r");
-
-    function changeHex(x) {
-      var col, r, g, b;
-      r = document.getElementById("slideRedHex").value;
-      g = document.getElementById("slideGreenHex").value;
-      b = document.getElementById("slideBlueHex").value;
-      col = w3color("rgb(" + r + "," + g + "," + b + ")");
-      document.getElementById("valRed2Hex").innerHTML = col
-        .toHexString()
-        .substr(1, 2);
-      document.getElementById("valGreen2Hex").innerHTML = col
-        .toHexString()
-        .substr(3, 2);
-      document.getElementById("valBlue2Hex").innerHTML = col
-        .toHexString()
-        .substr(5, 2);
-      document.getElementById("hexresult").style.backgroundColor =
-        col.toRgbString();
-      document.getElementById("hexresulttext").innerHTML = col.toHexString();
-      if (col.isDark(150)) {
-        document.getElementById("hexresulttext").style.color = "#ffffff";
-      } else {
-        document.getElementById("hexresulttext").style.color = "#1f2d3d";
-      }
-    }
-
-    //changeRed(255)
-    //changeGreen(0)
-    //changeBlue(0)
-    changeHsl("h");
-
-    function changeHsl(x) {
-      var col, h, s, l;
-      h = document.getElementById("slideHue").value;
-      s = document.getElementById("slideSat").value;
-      l = document.getElementById("slideLight").value;
-      col = w3color("hsl(" + h + "," + s / 100 + "," + l / 100 + ")");
-      document.getElementById("valHue").innerHTML = col.toHsl().h;
-      document.getElementById("valSat").innerHTML =
-        Math.round(col.toHsl().s * 100) + "%";
-      document.getElementById("valLight").innerHTML =
-        Math.round(col.toHsl().l * 100) + "%";
-      document.getElementById("hslresult").style.backgroundColor =
-        col.toHslString();
-      document.getElementById("hslresulttext").innerHTML = col.toHslString();
-      if (col.isDark(150)) {
-        document.getElementById("hslresulttext").style.color = "#ffffff";
-      } else {
-        document.getElementById("hslresulttext").style.color = "#1f2d3d";
-      }
-    }
-    changeHsla("h");
-
-    function changeHsla(x) {
-      var col, h, s, l, a;
-      h = document.getElementById("slideHueA").value;
-      s = document.getElementById("slideSatA").value;
-      l = document.getElementById("slideLightA").value;
-      a = document.getElementById("slideHslAlpha").value / 10;
-      col = w3color(
-        "hsla(" + h + "," + s / 100 + "," + l / 100 + "," + a + ")"
-      );
-      document.getElementById("valHueA").innerHTML = col.toHsl().h;
-      document.getElementById("valSatA").innerHTML =
-        Math.round(col.toHsl().s * 100) + "%";
-      document.getElementById("valLightA").innerHTML =
-        Math.round(col.toHsl().l * 100) + "%";
-      document.getElementById("valHslAlpha").innerHTML = col.toHsl().a;
-      document.getElementById("hslaresult").style.backgroundColor =
-        col.toHslaString();
-      document.getElementById("hslaresulttext").innerHTML =
-        col.toHslaString();
-      if (col.isDark(150) && a > 0.2) {
-        document.getElementById("hslaresulttext").style.color = "#ffffff";
-      } else {
-        document.getElementById("hslaresulttext").style.color = "#1f2d3d";
-      }
-    }
-  </script>
-  <!-- Saat user scroll halaman, jalankan myFunction -->
-  <!-- <script>
-        window.onscroll = function() {
-            myFunction()
-        };
-
-        function myFunction() {
-            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            var scrolled = (winScroll / height) * 100;
-            document.getElementById("myBar").style.width = scrolled + "%";
-        }
-    </script> -->
-  <script>
-    // Dapatkan tombol
-    var mybutton = document.getElementById("myBtn");
-
-    // Ketika pengguna memutar 20px dari atas dokumen, tunjukkan tombol
-    window.onscroll = function () {
-      scrollFunction();
-    };
-
-    function scrollFunction() {
-      if (
-        document.body.scrollTop > 250 ||
-        document.documentElement.scrollTop > 250
-      ) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-
-    // Ketika pengguna mengklik tombol, gulir ke bagian atas dokumen
-    function topFunction() {
-      document.body.scrollTop = 0;
-      document.documentElement.scrollTop = 0;
-    }
-  </script>
 </body>
 
 </html>

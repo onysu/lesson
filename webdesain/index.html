@@ -17617,6 +17617,665 @@ gambar Background berperilaku.
           </table>
         </section>
 
+        <!-- CSS Grid Container -->
+        <section>
+          <h1>CSS Grid Container</h1>
+          <p>Grid Container terdiri dari item grid yang disusun dalam kolom dan baris. <br> child elements(s) langsung
+            dari grid container secara otomatis menjadi item grid.</p>
+          <img class="top-example" src="files/img/browser-head.png" alt="">
+          <div class="bd-example">
+            <iframe src="css_grid_container.html" frameborder="0" width="100%" height="120"></iframe>
+          </div>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                      <div class="line number2 index1 alt1">6</div>
+                      <div class="line number2 index1 alt1">7</div>
+                      <div class="line number2 index1 alt1">8</div>
+                      <div class="line number2 index1 alt1">9</div>
+                      <div class="line number2 index1 alt1">10</div>
+                      <div class="line number2 index1 alt1">11</div>
+                      <div class="line number2 index1 alt1">12</div>
+                      <div class="line number2 index1 alt1">13</div>
+                      <div class="line number2 index1 alt1">14</div>
+                      <div class="line number2 index1 alt1">15</div>
+                      <div class="line number2 index1 alt1">16</div>
+                      <div class="line number2 index1 alt1">17</div>
+                      <div class="line number2 index1 alt1">18</div>
+                      <div class="line number2 index1 alt1">19</div>
+                      <div class="line number2 index1 alt1">20</div>
+                      <div class="line number2 index1 alt1">21</div>
+                      <div class="line number2 index1 alt1">22</div>
+                      <div class="line number2 index1 alt1">23</div>
+                      <div class="line number2 index1 alt1">24</div>
+                      <div class="line number2 index1 alt1">25</div>
+                      <div class="line number2 index1 alt1">26</div>
+                      <div class="line number2 index1 alt1">27</div>
+                      <div class="line number2 index1 alt1">28</div>
+                      <div class="line number2 index1 alt1">29</div>
+                      <div class="line number2 index1 alt1">30</div>
+                      <div class="line number2 index1 alt1">31</div>
+                      <div class="line number2 index1 alt1">32</div>
+                      <div class="line number2 index1 alt1">33</div>
+                      <div class="line number2 index1 alt1">34</div>
+                      <div class="line number2 index1 alt1">35</div>
+                      <div class="line number2 index1 alt1">36</div>
+                      <div class="line number2 index1 alt1">37</div>
+                      <div class="line number2 index1 alt1">38</div>
+                      <div class="line number2 index1 alt1">39</div>
+                      <div class="line number2 index1 alt1">40</div>
+                      <div class="line number2 index1 alt1">41</div>
+                      <div class="line number2 index1 alt1">42</div>
+                      <div class="line number2 index1 alt1">43</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+        <code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+        <span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span> <span class="s">"utf-8"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span> <span class="s">"viewport"</span><span class="na">content</span><span class="o">=</span> <span class="s">"width=device-width, initial-scale=1"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">"..."</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Judul Halaman<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+            <code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="na">style</span><span class="p">&gt;</span>
+              <span class="p">.</span><span class="nc">grid-container</span> <span class="p">{</span>
+        <span class="k">display</span><span class="p">:</span> <span class="kc">grid</span><span class="p">;</span>
+        <span class="k">grid-template-columns</span><span class="p">:</span> <span class="kc">auto auto auto auto</span><span class="p">;</span>
+        <span class="k">grid-gap</span><span class="p">:</span> <span class="kc">10px</span><span class="p">;</span>
+        <span class="k">background-color</span><span class="p">:</span> <span class="kc">#2196F3</span><span class="p">;</span>
+        <span class="k">padding</span><span class="p">:</span> <span class="kc">10px</span><span class="p">;</span>
+              <span class="p">}</span>
+              <span class="p">.</span><span class="nc">grid-container > div</span> <span class="p">{</span>
+        <span class="k">background-color</span><span class="p">:</span> <span class="kc">rgba(255, 255, 255, 0.8)</span><span class="p">;</span>
+        <span class="k">border</span><span class="p">:</span> <span class="kc">1px solid black</span><span class="p">;</span>
+        <span class="k">text-align</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span>
+        <span class="k">font-size</span><span class="p">:</span> <span class="kc">30px</span><span class="p">;</span>
+              <span class="p">}</span>
+            <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code>
+          <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+          
+            <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Grid Container<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Grid Container terdiri dari item grid yang disusun dalam kolom dan baris<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+            
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">"grid-container"</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>4<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>5<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>6<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>7<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>8<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        
+            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>child elements(s) langsung dari grid container secara otomatis menjadi item grid.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+            
+          <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_container" target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+          <p>Untuk membuat elemen HTML sebagai grid container, Anda harus mengatur properti <mark>display</mark>
+            (tampilan) ke <mark>grid</mark> atau <mark>inline-grid</mark>. Grid container terdiri dari item grid,
+            ditempatkan di dalam kolom dan baris.</p>
+        </section>
+
+        <!-- grid-template-columns -->
+        <section>
+          <h2>Properti <code>grid-template-columns</code></h2>
+          <p>Properti grid-template-columns mendefinisikan jumlah kolom dalam tata letak grid Anda, dan dapat menentukan
+            lebar setiap kolom. Nilainya adalah daftar yang dipisahkan spasi, di mana setiap nilai menentukan lebar
+            kolom
+            masing-masing. Jika Anda ingin tata letak kisi Anda berisi 4 kolom, tentukan lebar 4 kolom, atau <q>auto</q>
+            jika semua kolom harus memiliki lebar yang sama.</p>
+          <p>Contoh :</p>
+          <div class="highlight">
+            Buat grid dengan 4 kolom : <br>
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+        <code class="language-html" data-lang="html"><span class="p">.</span><span class="nc">grid-container</span> <span class="p">{</span>
+          <span class="k">display</span><span class="p">:</span> <span class="kc">grid</span><span class="p">;</span>
+          <mark><span class="k">grid-template-columns</span><span class="p">:</span> <span class="kc">auto auto auto auto</span><span class="p">;</span></mark>
+        <span class="p">}</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_container" target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+          <p class="moreInfo"><b>Catatan:</b> Jika Anda memiliki lebih dari 4 item dalam grid 4 kolom, grid akan secara
+            otomatis Tambahkan baris baru untuk memasukkan item.</p>
+          <p>Properti <mark>grid-template-columns</mark> juga dapat digunakan untuk menentukan ukuran (lebar) kolom.</p>
+          <p>Contoh :</p>
+          <div class="highlight">
+            Tetapkan ukuran untuk 4 kolom : <br>
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+        <code class="language-html" data-lang="html"><span class="p">.</span><span class="nc">grid-container</span> <span class="p">{</span>
+          <span class="k">display</span><span class="p">:</span> <span class="kc">grid</span><span class="p">;</span>
+          <mark><span class="k">grid-template-columns</span><span class="p">:</span> <span class="kc">80px 200px auto 40px</span><span class="p">;</span></mark>
+        <span class="p">}</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-template-columns2"
+                target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+        </section>
+
+        <!-- grid-template-rows -->
+        <section>
+          <h2>Properti <code>grid-template-rows</code></h2>
+          <p>Properti <mark>grid-template-rows</mark> mendefinisikan ketinggian setiap baris.</p>
+          <img class="top-example" src="files/img/browser-head.png" alt="">
+          <div class="bd-example">
+            <iframe src="css_grid_grid-template-rows.html" frameborder="0" width="100%" height="440"></iframe>
+          </div>
+          <p>Nilainya adalah <code>space-separated-list</code>, di mana setiap nilai mendefinisikan ketinggian baris
+            masing-masing:</p>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+        <code class="language-html" data-lang="html"><span class="p">.</span><span class="nc">grid-container</span> <span class="p">{</span>
+          <span class="k">display</span><span class="p">:</span> <span class="kc">grid</span><span class="p">;</span>
+          <mark><span class="k">grid-template-rows</span><span class="p">:</span> <span class="kc">80px 200px</span><span class="p">;</span></mark>
+        <span class="p">}</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-template-columns2"
+                target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+        </section>
+
+        <!-- justify-content -->
+        <section>
+          <h2>Properti <code>justify-content</code></h2>
+          <p>Properti justify-content digunakan untuk menyelaraskan seluruh grid di dalam container.</p>
+          <img class="top-example" src="files/img/browser-head.png" alt="">
+          <div class="bd-example">
+            <iframe src="css_grid_justify-content_space-evenly.html" width="100%" height="255" frameborder="0"></iframe>
+          </div>
+          <p><b>Catatan:</b> Lebar total grid harus kurang dari lebar container agar properti justify-content memiliki
+            efek
+            apapun.</p>
+          <div class="highlight">
+            Code : justify-content: space-evenly
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+        <code class="language-html" data-lang="html"><span class="p">.</span><span class="nc">grid-container</span> <span class="p">{</span>
+          <span class="k">display</span><span class="p">:</span> <span class="kc">grid</span><span class="p">;</span>
+          <mark><span class="k">justify-content</span><span class="p">:</span> <span class="kc">space-evenly</span><span class="p">;</span></mark>
+        <span class="p">}</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_justify-content_space-evenly"
+                target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+
+          <div class="highlight">
+            Code : justify-content: space-around
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+        <code class="language-html" data-lang="html"><span class="p">.</span><span class="nc">grid-container</span> <span class="p">{</span>
+          <span class="k">display</span><span class="p">:</span> <span class="kc">grid</span><span class="p">;</span>
+          <mark><span class="k">justify-content</span><span class="p">:</span> <span class="kc">space-around</span><span class="p">;</span></mark>
+        <span class="p">}</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_justify-content_space-around"
+                target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+
+          <div class="highlight">
+            Code : justify-content: space-between
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+        <code class="language-html" data-lang="html"><span class="p">.</span><span class="nc">grid-container</span> <span class="p">{</span>
+          <span class="k">display</span><span class="p">:</span> <span class="kc">grid</span><span class="p">;</span>
+          <mark><span class="k">justify-content</span><span class="p">:</span> <span class="kc">space-between</span><span class="p">;</span></mark>
+        <span class="p">}</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_justify-content_space-between"
+                target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+
+          <div class="highlight">
+            Code : justify-content: center
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+        <code class="language-html" data-lang="html"><span class="p">.</span><span class="nc">grid-container</span> <span class="p">{</span>
+          <span class="k">display</span><span class="p">:</span> <span class="kc">grid</span><span class="p">;</span>
+          <mark><span class="k">justify-content</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span></mark>
+        <span class="p">}</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_justify-content_center"
+                target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+
+          <div class="highlight">
+            Code : justify-content: start
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+        <code class="language-html" data-lang="html"><span class="p">.</span><span class="nc">grid-container</span> <span class="p">{</span>
+          <span class="k">display</span><span class="p">:</span> <span class="kc">grid</span><span class="p">;</span>
+          <mark><span class="k">justify-content</span><span class="p">:</span> <span class="kc">start</span><span class="p">;</span></mark>
+        <span class="p">}</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_justify-content_start"
+                target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+
+          <div class="highlight">
+            Code : justify-content: end
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+        <code class="language-html" data-lang="html"><span class="p">.</span><span class="nc">grid-container</span> <span class="p">{</span>
+          <span class="k">display</span><span class="p">:</span> <span class="kc">grid</span><span class="p">;</span>
+          <mark><span class="k">justify-content</span><span class="p">:</span> <span class="kc">end</span><span class="p">;</span></mark>
+        <span class="p">}</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_justify-content_end"
+                target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+        </section>
+
+        <!-- align-content -->
+        <section>
+          <h2>Properti <code>align-content</code></h2>
+          <p>Properti <mark>align-content</mark> digunakan untuk menyelaraskan seluruh grid secara vertikal di dalam
+            container.</p>
+          <img class="top-example" src="files/img/browser-head.png" alt="">
+          <div class="bd-example">
+            <iframe src="css_grid_align-content_center.html" width="100%" height="480" frameborder="0"></iframe>
+          </div>
+          <p><b>Note:</b> Tinggi total grid harus kurang dari tinggi wadah/container agar properti
+            <mark>align-content</mark> memiliki efek apapun.
+          </p>
+          <div class="highlight">
+            Code : align-content: center
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+        <code class="language-html" data-lang="html"><span class="p">.</span><span class="nc">grid-container</span> <span class="p">{</span>
+          <span class="k">display</span><span class="p">:</span> <span class="kc">grid</span><span class="p">;</span>
+          <span class="k">height</span><span class="p">:</span> <span class="kc">400px</span><span class="p">;</span>
+          <mark><span class="k">align-content</span><span class="p">:</span> <span class="kc">center</span><span class="p">;</span></mark>
+        <span class="p">}</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_justify-content_space-evenly"
+                target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+          <div class="highlight">
+            Code : align-content: space-evenly
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+        <code class="language-html" data-lang="html"><span class="p">.</span><span class="nc">grid-container</span> <span class="p">{</span>
+          <span class="k">display</span><span class="p">:</span> <span class="kc">grid</span><span class="p">;</span>
+          <span class="k">height</span><span class="p">:</span> <span class="kc">400px</span><span class="p">;</span>
+          <mark><span class="k">align-content</span><span class="p">:</span> <span class="kc">space-evenly</span><span class="p">;</span></mark>
+        <span class="p">}</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_justify-content_space-evenly"
+                target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+          <div class="highlight">
+            Code : align-content: space-around
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+        <code class="language-html" data-lang="html"><span class="p">.</span><span class="nc">grid-container</span> <span class="p">{</span>
+          <span class="k">display</span><span class="p">:</span> <span class="kc">grid</span><span class="p">;</span>
+          <span class="k">height</span><span class="p">:</span> <span class="kc">400px</span><span class="p">;</span>
+          <mark><span class="k">align-content</span><span class="p">:</span> <span class="kc">space-around</span><span class="p">;</span></mark>
+        <span class="p">}</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_justify-content_space-evenly"
+                target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+          <div class="highlight">
+            Code : align-content: space-between
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+        <code class="language-html" data-lang="html"><span class="p">.</span><span class="nc">grid-container</span> <span class="p">{</span>
+          <span class="k">display</span><span class="p">:</span> <span class="kc">grid</span><span class="p">;</span>
+          <span class="k">height</span><span class="p">:</span> <span class="kc">400px</span><span class="p">;</span>
+          <mark><span class="k">align-content</span><span class="p">:</span> <span class="kc">space-between</span><span class="p">;</span></mark>
+        <span class="p">}</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_justify-content_space-evenly"
+                target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+          <div class="highlight">
+            Code : align-content: start
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+        <code class="language-html" data-lang="html"><span class="p">.</span><span class="nc">grid-container</span> <span class="p">{</span>
+          <span class="k">display</span><span class="p">:</span> <span class="kc">grid</span><span class="p">;</span>
+          <span class="k">height</span><span class="p">:</span> <span class="kc">400px</span><span class="p">;</span>
+          <mark><span class="k">align-content</span><span class="p">:</span> <span class="kc">start</span><span class="p">;</span></mark>
+        <span class="p">}</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_justify-content_space-evenly"
+                target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+          <div class="highlight">
+            Code : align-content: end
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+        <code class="language-html" data-lang="html"><span class="p">.</span><span class="nc">grid-container</span> <span class="p">{</span>
+          <span class="k">display</span><span class="p">:</span> <span class="kc">grid</span><span class="p">;</span>
+          <span class="k">height</span><span class="p">:</span> <span class="kc">400px</span><span class="p">;</span>
+          <mark><span class="k">align-content</span><span class="p">:</span> <span class="kc">end</span><span class="p">;</span></mark>
+        <span class="p">}</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_justify-content_space-evenly"
+                target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+        </section>
+
       </div>
       <!-- /bd-content -->
     </main>

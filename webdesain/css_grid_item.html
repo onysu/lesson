@@ -59,7 +59,7 @@
               <div class="container-fluid">
                 <pre tabindex="0" class="chroma">
 <code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
-  <span class="nt">item1</span> <span class="p">{</span>
+  <span class="nt">.item1</span> <span class="p">{</span>
     <span class="k">grid-column</span><span class="p">:</span> <span class="nf">1 / 5</span><span class="p">;</span>
   <span class="p">}</span>
 <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
@@ -93,7 +93,7 @@
               <div class="container-fluid">
                 <pre tabindex="0" class="chroma">
 <code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
-  <span class="nt">item1</span> <span class="p">{</span>
+  <span class="nt">.item1</span> <span class="p">{</span>
     <span class="k">grid-column</span><span class="p">:</span> <span class="nf">1 / span 3</span><span class="p">;</span>
   <span class="p">}</span>
 <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
@@ -127,7 +127,7 @@
               <div class="container-fluid">
                 <pre tabindex="0" class="chroma">
 <code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
-  <span class="nt">item2</span> <span class="p">{</span>
+  <span class="nt">.item2</span> <span class="p">{</span>
     <span class="k">grid-column</span><span class="p">:</span> <span class="nf">2 / span 3</span><span class="p">;</span>
   <span class="p">}</span>
 <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
@@ -144,187 +144,167 @@
   </div>
 
   <h2>Properti <code>grid-row</code></h2>
-  Properti Grid-Row mendefinisikan pada baris mana untuk menempatkan item.
+  Properti grid-row mendefinisikan pada baris mana untuk menempatkan item.
   Anda mendefinisikan di mana barang akan dimulai, dan di mana barang akan berakhir.
 
-
-  <div class="grid-container2" style="grid-template-columns:auto auto auto auto auto auto">
-    <div style="grid-row:1/span 3;background-color:#ffffff;">
-      <h1>1</h1>
-    </div>
-    <div>
-      <h1>2</h1>
-    </div>
-    <div>
-      <h1>3</h1>
-    </div>
-    <div>
-      <h1>4</h1>
-    </div>
-    <div>
-      <h1>5</h1>
-    </div>
-    <div>
-      <h1>6</h1>
-    </div>
-    <div>
-      <h1>7</h1>
-    </div>
-    <div>
-      <h1>8</h1>
-    </div>
-    <div>
-      <h1>9</h1>
-    </div>
-    <div>
-      <h1>10</h1>
-    </div>
-    <div>
-      <h1>11</h1>
-    </div>
-    <div>
-      <h1>12</h1>
-    </div>
-    <div>
-      <h1>13</h1>
-    </div>
-    <div>
-      <h1>14</h1>
-    </div>
-    <div>
-      <h1>15</h1>
-    </div>
-    <div>
-      <h1>16</h1>
-    </div>
+  <img class="top-example" src="files/img/browser-head.png" alt="">
+  <div class="bd-example">
+    <iframe src="trycss_grid_grid-row1.html" width="100%" height="auto" frameborder="0"></iframe>
   </div>
-
-  <p class="moreInfo"><b>Catatan:</b> The <code>Grid-Row</code> Property adalah properti singkatan untuk
-    <code>Grid-Bill-Start</code> dan <code>Grid-Bill-End</code> properti.
+  <p class="moreInfo"><b>Catatan:</b> <code>grid-row</code> Property adalah properti kependekan untuk
+    <code>grid-row-start</code> dan <code>grid-row-end</code> properti.
   </p>
+  <p>Untuk menempatkan item, Anda dapat merujuk ke nomor baris, atau menggunakan kata kunci "span" untuk menentukan
+    berapa
+    banyak baris item yang akan terbentang:</p>
 
-  <p>To place an item, you can refer to <em>line numbers</em>, or use the keyword "span" to
-    define how many rows the item will span:</p>
-
-  <div>
-    <h5>Contoh :</h5>
-    <p>Make "item1" start on row-line 1 and end on row-line 4:</p>
-    <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
-        .item1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
-          style="color:red"><br>
-          &nbsp;
-          grid-row<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
-              style="color:black">:</span> 1 / 4<span class="cssdelimitercolor"
-              style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
-      </span></div>
-    <p>
-      <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_grid-row1">Try it Yourself »</a>
-    </p>
+  <div class="highlight">
+    Buat "item1" mulai pada baris-baris 1 dan berakhir pada baris-baris 4: <br>
+    Code : <code>grid-row: 1 / 4</code>
+    <div class="syntaxhighlighter  xml">
+      <table>
+        <tbody>
+          <tr>
+            <td class="gutter">
+              <div class="line number1 index0 alt2">1</div>
+              <div class="line number2 index1 alt1">2</div>
+              <div class="line number2 index1 alt1">3</div>
+              <div class="line number2 index1 alt1">4</div>
+              <div class="line number2 index1 alt1">5</div>
+            </td>
+            <td class="code">
+              <div class="container-fluid">
+                <pre tabindex="0" class="chroma">
+<code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="nt">.item1</span> <span class="p">{</span>
+    <span class="k">grid-row</span><span class="p">:</span> <span class="nf">1 / 4</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p><a class="btn btn-warning btn-sm" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-row1"
+        target="_blank">Cobalah
+        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
   </div>
 
-  <div>
-    <h5>Contoh :</h5>
-    <p>Make "item1" start on row 1 and span 2 rows:</p>
-    <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
-        .item1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
-          style="color:red"><br>
-          &nbsp;
-          grid-row<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
-              style="color:black">:</span> 1 / span 2<span class="cssdelimitercolor"
-              style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
-      </span></div>
-    <p>
-      <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_grid-row2">Try it Yourself »</a>
-    </p>
+  <div class="highlight">
+    Buat "item1" mulai pada baris 1 dan rentang 2 baris: <br>
+    Code : <code>grid-row: 1 / span 2</code>
+    <div class="syntaxhighlighter  xml">
+      <table>
+        <tbody>
+          <tr>
+            <td class="gutter">
+              <div class="line number1 index0 alt2">1</div>
+              <div class="line number2 index1 alt1">2</div>
+              <div class="line number2 index1 alt1">3</div>
+              <div class="line number2 index1 alt1">4</div>
+              <div class="line number2 index1 alt1">5</div>
+            </td>
+            <td class="code">
+              <div class="container-fluid">
+                <pre tabindex="0" class="chroma">
+<code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="nt">.item1</span> <span class="p">{</span>
+    <span class="k">grid-row</span><span class="p">:</span> <span class="nf">1 / span 2</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p><a class="btn btn-warning btn-sm" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-row2"
+        target="_blank">Cobalah
+        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
   </div>
 
-  <hr>
-
-  <h2>The grid-area Property</h2>
-  <p>The <code>grid-area</code> property can be used as a shorthand property for the
-    <code>grid-row-start</code>, <code>grid-column-start</code>, <code class="w3-codespan">grid-row-end</code> and the
-    <code>grid-column-end</code> properties.
+  <h2>Properti <code>grid-area</code></h2>
+  <p>Properti <mark>grid-area</mark> dapat digunakan sebagai properti untuk <mark>grid-start-start</mark>,
+    <mark>grid-column-start</mark>, <mark>grid-row-end</mark> dan <mark>grid-kolom-end</mark>.
   </p>
-
-  <div class="grid-container2" style="grid-template-columns:auto auto auto auto auto auto">
-    <div>
-      <h1>1</h1>
-    </div>
-    <div>
-      <h1>2</h1>
-    </div>
-    <div>
-      <h1>3</h1>
-    </div>
-    <div>
-      <h1>4</h1>
-    </div>
-    <div>
-      <h1>5</h1>
-    </div>
-    <div>
-      <h1>6</h1>
-    </div>
-    <div>
-      <h1>7</h1>
-    </div>
-    <div style="grid-area:1/2/5/6;background-color:#ffffff;">
-      <h1>8</h1>
-    </div>
-    <div>
-      <h1>9</h1>
-    </div>
-    <div>
-      <h1>10</h1>
-    </div>
-    <div>
-      <h1>11</h1>
-    </div>
-    <div>
-      <h1>12</h1>
-    </div>
-    <div>
-      <h1>13</h1>
-    </div>
-    <div>
-      <h1>14</h1>
-    </div>
-    <div>
-      <h1>15</h1>
-    </div>
+  <img class="top-example" src="files/img/browser-head.png" alt="">
+  <div class="bd-example">
+    <iframe src="trycss_grid_grid-area1.html" width="100%" height="auto" frameborder="0"></iframe>
   </div>
 
-  <div>
-    <h5>Contoh :</h5>
-    <p>Make "item8" start on row-line 1 and column-line 2, and end on row-line 5 and column line 6:</p>
-    <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
-        .item8 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
-          style="color:red"><br>
-          &nbsp;
-          grid-area<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
-              style="color:black">:</span> 1 / 2 / 5 / 6<span class="cssdelimitercolor"
-              style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
-      </span></div>
-    <p>
-      <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_grid-area1">Try it Yourself »</a>
-    </p>
+  <h5>Contoh :</h5>
+  <p></p>
+
+  <div class="highlight">
+    Buat "Item8" mulai pada baris-line 1 dan kolom-line 2, dan berakhir pada baris baris 5 dan jalur kolom 6: <br>
+    Code : <code>grid-area: 1 / 2 / 5 / 6</code>
+    <div class="syntaxhighlighter  xml">
+      <table>
+        <tbody>
+          <tr>
+            <td class="gutter">
+              <div class="line number1 index0 alt2">1</div>
+              <div class="line number2 index1 alt1">2</div>
+              <div class="line number2 index1 alt1">3</div>
+              <div class="line number2 index1 alt1">4</div>
+              <div class="line number2 index1 alt1">5</div>
+            </td>
+            <td class="code">
+              <div class="container-fluid">
+                <pre tabindex="0" class="chroma">
+<code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="nt">.item8</span> <span class="p">{</span>
+    <span class="k">grid-area</span><span class="p">:</span> <span class="nf">1 / 2 / 5 / 6</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p><a class="btn btn-warning btn-sm" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-area1"
+        target="_blank">Cobalah
+        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+  </div>
+  <div class="highlight">
+    Buat "item8" mulai pada baris-line 2 dan kolom-line 1, dan span 2 baris dan 3 kolom: <br>
+    Code : <code>grid-area: 2 / 1 / span 2 / span 3</code>
+    <div class="syntaxhighlighter  xml">
+      <table>
+        <tbody>
+          <tr>
+            <td class="gutter">
+              <div class="line number1 index0 alt2">1</div>
+              <div class="line number2 index1 alt1">2</div>
+              <div class="line number2 index1 alt1">3</div>
+              <div class="line number2 index1 alt1">4</div>
+              <div class="line number2 index1 alt1">5</div>
+            </td>
+            <td class="code">
+              <div class="container-fluid">
+                <pre tabindex="0" class="chroma">
+<code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="nt">.item8</span> <span class="p">{</span>
+    <span class="k">grid-area</span><span class="p">:</span> <span class="nf">2 / 1 / span 2 / span 3</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p><a class="btn btn-warning btn-sm" href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-area2"
+        target="_blank">Cobalah
+        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
   </div>
 
-  <div>
-    <h5>Contoh :</h5>
-    <p>Make "item8" start on row-line 2 and column-line 1, and span 2 rows and 3 columns:</p>
-    <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
-        .item8 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
-          style="color:red"><br>
-          &nbsp;
-          grid-area<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
-              style="color:black">:</span> 2 / 1 / span 2 / span 3<span class="cssdelimitercolor"
-              style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
-      </span></div>
-    <p>
-      <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_grid-area2">Try it Yourself »</a>
-    </p>
-  </div>
   <h2>Naming Grid Items</h2>
   <p>The <code>grid-area</code> property can also be used to assign names to grid items.</p>
 

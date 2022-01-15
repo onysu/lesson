@@ -303,132 +303,177 @@
           src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
   </div>
 
-  <h2>Naming Grid Items</h2>
-  <p>The <code>grid-area</code> property can also be used to assign names to grid items.</p>
-
-  <div class="grid-container2" style="grid-template-areas:
-    'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';">
-    <div style="grid-area: header">
-      <h3>Header</h3>
+  <h2>Penamaan Grid Items</h2>
+  <p>Properti <em>grid-area</em> juga dapat digunakan untuk menetapkan nama ke item grid.</p>
+  <img class="top-example" src="files/img/browser-head.png" alt="">
+  <div class="bd-example">
+    <iframe src="contoh_trycss_grid_grid-area_named.html" width="100%" height="auto" frameborder="0"></iframe>
+  </div>
+  <p class="moreInfo">Penamaan item grid dapat dirujuk oleh properti <mark>grid-template-areas</mark> dari wadah grid.
+  </p>
+  <div class="highlight">
+    Item1 mendapatkan nama "Myarea" dan mencakup semua 5 kolom dalam tata letak grid 5 kolom: <br>
+    Code : <code>grid-template-areas: 'myArea myArea myArea myArea myArea'</code>
+    <div class="syntaxhighlighter  xml">
+      <table>
+        <tbody>
+          <tr>
+            <td class="gutter">
+              <div class="line number1 index0 alt2">1</div>
+              <div class="line number2 index1 alt1">2</div>
+              <div class="line number2 index1 alt1">3</div>
+              <div class="line number2 index1 alt1">4</div>
+              <div class="line number2 index1 alt1">5</div>
+              <div class="line number2 index1 alt1">6</div>
+              <div class="line number2 index1 alt1">7</div>
+            </td>
+            <td class="code">
+              <div class="container-fluid">
+                <pre tabindex="0" class="chroma">
+<code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="nt">.item1</span> <span class="p">{</span>
+    <span class="k">grid-area</span><span class="p">:</span> <span class="nf">myArea</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nt">.grid-container</span> <span class="p">{</span>
+    <span class="k">grid-template-areas</span><span class="p">:</span> <span class="nf">'myArea myArea myArea myArea myArea'</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div style="grid-area: menu">
-      <h3>Menu</h3>
+    <p><a class="btn btn-warning btn-sm"
+        href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-area_named" target="_blank">Cobalah
+        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+  </div>
+  <p>Setiap baris didefinisikan oleh apostrof (' '). <br>
+    Kolom di setiap baris didefinisikan di dalam apostrof, dipisahkan oleh spasi.</p>
+  <p><b>Catatan:</b> Tanda titik mewakili item grid tanpa nama.</p>
+  <div class="highlight">
+    Biarkan "myArea" menjangkau dua kolom dalam tata letak kotak lima kolom (tanda titik mewakili item tanpa nama): <br>
+    Code : <code>grid-template-areas: 'myArea myArea . . .'</code>
+    <div class="syntaxhighlighter  xml">
+      <table>
+        <tbody>
+          <tr>
+            <td class="gutter">
+              <div class="line number1 index0 alt2">1</div>
+              <div class="line number2 index1 alt1">2</div>
+              <div class="line number2 index1 alt1">3</div>
+              <div class="line number2 index1 alt1">4</div>
+              <div class="line number2 index1 alt1">5</div>
+              <div class="line number2 index1 alt1">6</div>
+              <div class="line number2 index1 alt1">7</div>
+            </td>
+            <td class="code">
+              <div class="container-fluid">
+                <pre tabindex="0" class="chroma">
+<code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="nt">.item1</span> <span class="p">{</span>
+    <span class="k">grid-area</span><span class="p">:</span> <span class="nf">myArea</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nt">.grid-container</span> <span class="p">{</span>
+    <span class="k">grid-template-areas</span><span class="p">:</span> <span class="nf">'myArea myArea . . .'</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div style="grid-area: main">
-      <h3>Main</h3>
+    <p><a class="btn btn-warning btn-sm"
+        href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-area_named1" target="_blank">Cobalah
+        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+  </div>
+  <p>Untuk mendefinisikan dua baris, tentukan kolom baris kedua di dalam satu set apostrof lainnya:</p>
+  <div class="highlight">
+    Buat "Item1" spons dua kolom dan dua baris:s: <br>
+    Code : <code>grid-template-areas: 'myArea myArea . . .' 'myArea myArea . . .'</code>
+    <div class="syntaxhighlighter  xml">
+      <table>
+        <tbody>
+          <tr>
+            <td class="gutter">
+              <div class="line number1 index0 alt2">1</div>
+              <div class="line number2 index1 alt1">2</div>
+              <div class="line number2 index1 alt1">3</div>
+              <div class="line number2 index1 alt1">4</div>
+              <div class="line number2 index1 alt1">5</div>
+            </td>
+            <td class="code">
+              <div class="container-fluid">
+                <pre tabindex="0" class="chroma">
+<code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="nt">.grid-container</span> <span class="p">{</span>
+    <span class="k">grid-template-areas</span><span class="p">:</span> <span class="nf">'myArea myArea . . .' 'myArea myArea . . .'</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div style="grid-area: right">
-      <h3>Right</h3>
-    </div>
-    <div style="grid-area: footer">
-      <h3>Footer</h3>
-    </div>
+    <p><a class="btn btn-warning btn-sm"
+        href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-area_named2" target="_blank">Cobalah
+        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
   </div>
 
-  <p>Named grid items can be referred to by the <code>grid-template-areas</code> property
-    of the grid container.</p>
 
-  <div>
-    <h5>Contoh :</h5>
-    <p>Item1 gets the name "myArea" and spans all five columns in a five columns grid layout:</p>
-    <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
-        .item1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
-          style="color:red"><br>&nbsp; grid-area<span class="csspropertyvaluecolor" style="color:mediumblue"><span
-              class="cssdelimitercolor" style="color:black">:</span>
-            myArea<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
-          class="cssdelimitercolor" style="color:black">}</span><br>.grid-container <span class="cssdelimitercolor"
-          style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
-          grid-template-areas<span class="csspropertyvaluecolor" style="color:mediumblue"><span
-              class="cssdelimitercolor" style="color:black">:</span> 'myArea myArea
-            myArea myArea myArea'<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
-          class="cssdelimitercolor" style="color:black">}</span> <br> </span></div>
-    <p>
-      <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_grid-area_named">Try it Yourself »</a>
-    </p>
-  </div>
+  <h5>Contoh :</h5>
+  <p>Make "item1" span two columns <em>and</em> two rows:</p>
+  <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+      .grid-container <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+        style="color:red"><br>&nbsp; grid-template-areas<span class="csspropertyvaluecolor"
+          style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 'myArea myArea
+          . . .' 'myArea myArea . . .'<span class="cssdelimitercolor"
+            style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
+      <br> </span></div>
+  <p>
+    <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_grid-area_named2">Try it Yourself »</a>
+  </p>
 
-  <p>Each row is defined by apostrophes (' ')</p>
-  <p>The columns in each row is defined inside the apostrophes, separated by a
-    space.</p>
-  <div class="w3-panel w3-note">
-    <p><b>Note:</b> A period sign represents a grid item with no name.</p>
-  </div>
-
-  <div>
-    <h5>Contoh :</h5>
-    <p>Let "myArea" span two columns in a five columns grid layout (period signs
-      represent items with no name):</p>
-    <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
-        .item1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
-          style="color:red"><br>&nbsp; grid-area<span class="csspropertyvaluecolor" style="color:mediumblue"><span
-              class="cssdelimitercolor" style="color:black">:</span>
-            myArea<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
-          class="cssdelimitercolor" style="color:black">}</span><br>.grid-container <span class="cssdelimitercolor"
-          style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
-          grid-template-areas<span class="csspropertyvaluecolor" style="color:mediumblue"><span
-              class="cssdelimitercolor" style="color:black">:</span> 'myArea myArea
-            . . .'<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
-          class="cssdelimitercolor" style="color:black">}</span> <br> </span></div>
-    <p>
-      <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_grid-area_named1">Try it Yourself »</a>
-    </p>
-  </div>
-
-
-  <p>To define two rows, define the column of the second row inside another set of apostrophes:</p>
-  <div>
-    <h5>Contoh :</h5>
-    <p>Make "item1" span two columns <em>and</em> two rows:</p>
-    <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
-        .grid-container <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
-          style="color:red"><br>&nbsp; grid-template-areas<span class="csspropertyvaluecolor"
-            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 'myArea myArea
-            . . .' 'myArea myArea . . .'<span class="cssdelimitercolor"
-              style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>
-        <br> </span></div>
-    <p>
-      <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_grid-area_named2">Try it Yourself »</a>
-    </p>
-  </div>
-
-  <div>
-    <h5>Contoh :</h5>
-    <p>Name all items, and make a ready-to-use webpage template:</p>
-    <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
-        .item1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
-          style="color:red"> grid-area<span class="csspropertyvaluecolor" style="color:mediumblue"><span
-              class="cssdelimitercolor" style="color:black">:</span> header<span class="cssdelimitercolor"
-              style="color:black">;</span></span> </span><span class="cssdelimitercolor"
-          style="color:black">}</span><br>.item2 <span class="cssdelimitercolor" style="color:black">{</span><span
-          class="csspropertycolor" style="color:red"> grid-area<span class="csspropertyvaluecolor"
-            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> menu<span
-              class="cssdelimitercolor" style="color:black">;</span></span> </span><span class="cssdelimitercolor"
-          style="color:black">}</span><br>.item3 <span class="cssdelimitercolor" style="color:black">{</span><span
-          class="csspropertycolor" style="color:red">
-          grid-area<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
-              style="color:black">:</span> main<span class="cssdelimitercolor" style="color:black">;</span></span>
-        </span><span class="cssdelimitercolor" style="color:black">}</span><br>.item4 <span class="cssdelimitercolor"
-          style="color:black">{</span><span class="csspropertycolor" style="color:red"> grid-area<span
-            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
-              style="color:black">:</span> right<span class="cssdelimitercolor" style="color:black">;</span></span>
-        </span><span class="cssdelimitercolor" style="color:black">}</span><br>.item5 <span class="cssdelimitercolor"
-          style="color:black">{</span><span class="csspropertycolor" style="color:red"> grid-area<span
-            class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
-              style="color:black">:</span>
-            footer<span class="cssdelimitercolor" style="color:black">;</span></span> </span><span
-          class="cssdelimitercolor" style="color:black">}</span><br><br>.grid-container <span class="cssdelimitercolor"
-          style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
-          grid-template-areas<span class="csspropertyvaluecolor" style="color:mediumblue"><span
-              class="cssdelimitercolor" style="color:black">:</span><br>&nbsp;&nbsp;&nbsp;
-            'header header header header header header'<br>&nbsp;&nbsp;&nbsp; 'menu main
-            main main right right'<br>&nbsp;&nbsp;&nbsp; 'menu footer footer footer footer
-            footer'<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
-          class="cssdelimitercolor" style="color:black">}</span> <br> </span></div>
-    <p>
-      <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_grid-area_named3">Try it Yourself »</a>
-    </p>
+  <h5>Contoh :</h5>
+  <p>Name all items, and make a ready-to-use webpage template:</p>
+  <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+      .item1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+        style="color:red"> grid-area<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+            class="cssdelimitercolor" style="color:black">:</span> header<span class="cssdelimitercolor"
+            style="color:black">;</span></span> </span><span class="cssdelimitercolor"
+        style="color:black">}</span><br>.item2 <span class="cssdelimitercolor" style="color:black">{</span><span
+        class="csspropertycolor" style="color:red"> grid-area<span class="csspropertyvaluecolor"
+          style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> menu<span
+            class="cssdelimitercolor" style="color:black">;</span></span> </span><span class="cssdelimitercolor"
+        style="color:black">}</span><br>.item3 <span class="cssdelimitercolor" style="color:black">{</span><span
+        class="csspropertycolor" style="color:red">
+        grid-area<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+            style="color:black">:</span> main<span class="cssdelimitercolor" style="color:black">;</span></span>
+      </span><span class="cssdelimitercolor" style="color:black">}</span><br>.item4 <span class="cssdelimitercolor"
+        style="color:black">{</span><span class="csspropertycolor" style="color:red"> grid-area<span
+          class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+            style="color:black">:</span> right<span class="cssdelimitercolor" style="color:black">;</span></span>
+      </span><span class="cssdelimitercolor" style="color:black">}</span><br>.item5 <span class="cssdelimitercolor"
+        style="color:black">{</span><span class="csspropertycolor" style="color:red"> grid-area<span
+          class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+            style="color:black">:</span>
+          footer<span class="cssdelimitercolor" style="color:black">;</span></span> </span><span
+        class="cssdelimitercolor" style="color:black">}</span><br><br>.grid-container <span class="cssdelimitercolor"
+        style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+        grid-template-areas<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+            style="color:black">:</span><br>&nbsp;&nbsp;&nbsp;
+          'header header header header header header'<br>&nbsp;&nbsp;&nbsp; 'menu main
+          main main right right'<br>&nbsp;&nbsp;&nbsp; 'menu footer footer footer footer
+          footer'<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+        class="cssdelimitercolor" style="color:black">}</span> <br> </span></div>
+  <p>
+    <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_grid-area_named3">Try it Yourself »</a>
+  </p>
   </div>
 
   <hr>

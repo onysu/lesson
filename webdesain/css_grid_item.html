@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <!-- <div class="w3-col l10 m12" id="main"> -->
+
   <h1>CSS Grid Item</h1>
   <img class="top-example" src="files/img/browser-head.png" alt="">
   <div class="bd-example">
@@ -40,10 +40,9 @@
     banyak kolom item akan span.</p>
 
   <h5>Contoh :</h5>
-
   <div class="highlight">
     Buat "item1" mulai pada kolom 1 dan berakhir sebelum kolom 5 : <br>
-    Code :
+    Contoh Code :
     <div class="syntaxhighlighter  xml">
       <table>
         <tbody>
@@ -74,10 +73,9 @@
         sendiri <img draggable="false" role="img" class="emoji" alt="↗"
           src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
   </div>
-
   <div class="highlight">
     Buat "item1" mulai pada kolom 1 dan span 3 kolom : <br>
-    Code :
+    Contoh Code :
     <div class="syntaxhighlighter  xml">
       <table>
         <tbody>
@@ -108,10 +106,9 @@
         sendiri <img draggable="false" role="img" class="emoji" alt="↗"
           src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
   </div>
-
   <div class="highlight">
     Buat "item2" mulai pada kolom 2 dan span 3 kolom : <br>
-    Code :
+    Contoh Code :
     <div class="syntaxhighlighter  xml">
       <table>
         <tbody>
@@ -160,7 +157,7 @@
 
   <div class="highlight">
     Buat "item1" mulai pada baris-baris 1 dan berakhir pada baris-baris 4: <br>
-    Code : <code>grid-row: 1 / 4</code>
+    Contoh Code : <code>grid-row: 1 / 4</code>
     <div class="syntaxhighlighter  xml">
       <table>
         <tbody>
@@ -191,10 +188,9 @@
         sendiri <img draggable="false" role="img" class="emoji" alt="↗"
           src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
   </div>
-
   <div class="highlight">
     Buat "item1" mulai pada baris 1 dan rentang 2 baris: <br>
-    Code : <code>grid-row: 1 / span 2</code>
+    Contoh Code : <code>grid-row: 1 / span 2</code>
     <div class="syntaxhighlighter  xml">
       <table>
         <tbody>
@@ -238,7 +234,7 @@
   <h5>Contoh :</h5>
   <div class="highlight">
     Buat "Item8" mulai pada baris-line 1 dan kolom-line 2, dan berakhir pada baris baris 5 dan jalur kolom 6: <br>
-    Code : <code>grid-area: 1 / 2 / 5 / 6</code>
+    Contoh Code : <code>grid-area: 1 / 2 / 5 / 6</code>
     <div class="syntaxhighlighter  xml">
       <table>
         <tbody>
@@ -271,7 +267,7 @@
   </div>
   <div class="highlight">
     Buat "item8" mulai pada baris-line 2 dan kolom-line 1, dan span 2 baris dan 3 kolom: <br>
-    Code : <code>grid-area: 2 / 1 / span 2 / span 3</code>
+    Contoh Code : <code>grid-area: 2 / 1 / span 2 / span 3</code>
     <div class="syntaxhighlighter  xml">
       <table>
         <tbody>
@@ -312,8 +308,8 @@
   <p class="moreInfo">Penamaan item grid dapat dirujuk oleh properti <mark>grid-template-areas</mark> dari wadah grid.
   </p>
   <div class="highlight">
-    Item1 mendapatkan nama "Myarea" dan mencakup semua 5 kolom dalam tata letak grid 5 kolom: <br>
-    Code : <code>grid-template-areas: 'myArea myArea myArea myArea myArea'</code>
+    Item1 mempunyai nama "myArea" dan mencakup semua 5 kolom dalam tata letak grid 5 kolom: <br>
+    Contoh Code : <code>grid-template-areas: 'myArea myArea myArea myArea myArea'</code>
     <div class="syntaxhighlighter  xml">
       <table>
         <tbody>
@@ -349,12 +345,13 @@
         sendiri <img draggable="false" role="img" class="emoji" alt="↗"
           src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
   </div>
-  <p>Setiap baris didefinisikan oleh apostrof (' '). <br>
+  <p>Setiap baris didefinisikan oleh apostrof (&apos; &apos;). <br>
     Kolom di setiap baris didefinisikan di dalam apostrof, dipisahkan oleh spasi.</p>
   <p><b>Catatan:</b> Tanda titik mewakili item grid tanpa nama.</p>
+
   <div class="highlight">
     Biarkan "myArea" menjangkau dua kolom dalam tata letak kotak lima kolom (tanda titik mewakili item tanpa nama): <br>
-    Code : <code>grid-template-areas: 'myArea myArea . . .'</code>
+    Contoh Code : <code>grid-template-areas: 'myArea myArea . . .'</code>
     <div class="syntaxhighlighter  xml">
       <table>
         <tbody>
@@ -392,8 +389,8 @@
   </div>
   <p>Untuk mendefinisikan dua baris, tentukan kolom baris kedua di dalam satu set apostrof lainnya:</p>
   <div class="highlight">
-    Buat "Item1" spons dua kolom dan dua baris:s: <br>
-    Code : <code>grid-template-areas: 'myArea myArea . . .' 'myArea myArea . . .'</code>
+    Buat "item1" menjangkau dua kolom dan dua baris : <br>
+    Contoh Code : <code>grid-template-areas: 'myArea myArea . . .' 'myArea myArea . . .'</code>
     <div class="syntaxhighlighter  xml">
       <table>
         <tbody>
@@ -424,391 +421,181 @@
         sendiri <img draggable="false" role="img" class="emoji" alt="↗"
           src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
   </div>
-
-  <!-- sampe sini -->
-
-  <h5>Contoh :</h5>
-  <p>Name all items, and make a ready-to-use webpage template:</p>
-  <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
-      .item1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
-        style="color:red"> grid-area<span class="csspropertyvaluecolor" style="color:mediumblue"><span
-            class="cssdelimitercolor" style="color:black">:</span> header<span class="cssdelimitercolor"
-            style="color:black">;</span></span> </span><span class="cssdelimitercolor"
-        style="color:black">}</span><br>.item2 <span class="cssdelimitercolor" style="color:black">{</span><span
-        class="csspropertycolor" style="color:red"> grid-area<span class="csspropertyvaluecolor"
-          style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> menu<span
-            class="cssdelimitercolor" style="color:black">;</span></span> </span><span class="cssdelimitercolor"
-        style="color:black">}</span><br>.item3 <span class="cssdelimitercolor" style="color:black">{</span><span
-        class="csspropertycolor" style="color:red">
-        grid-area<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
-            style="color:black">:</span> main<span class="cssdelimitercolor" style="color:black">;</span></span>
-      </span><span class="cssdelimitercolor" style="color:black">}</span><br>.item4 <span class="cssdelimitercolor"
-        style="color:black">{</span><span class="csspropertycolor" style="color:red"> grid-area<span
-          class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
-            style="color:black">:</span> right<span class="cssdelimitercolor" style="color:black">;</span></span>
-      </span><span class="cssdelimitercolor" style="color:black">}</span><br>.item5 <span class="cssdelimitercolor"
-        style="color:black">{</span><span class="csspropertycolor" style="color:red"> grid-area<span
-          class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
-            style="color:black">:</span>
-          footer<span class="cssdelimitercolor" style="color:black">;</span></span> </span><span
-        class="cssdelimitercolor" style="color:black">}</span><br><br>.grid-container <span class="cssdelimitercolor"
-        style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
-        grid-template-areas<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
-            style="color:black">:</span><br>&nbsp;&nbsp;&nbsp;
-          'header header header header header header'<br>&nbsp;&nbsp;&nbsp; 'menu main
-          main main right right'<br>&nbsp;&nbsp;&nbsp; 'menu footer footer footer footer
-          footer'<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
-        class="cssdelimitercolor" style="color:black">}</span> <br> </span></div>
-  <p>
-    <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_grid-area_named3">Try it Yourself »</a>
-  </p>
-  </div>
-
-  <hr>
-
-  <h2>The Order of the Items</h2>
-
-  <p>The Grid Layout allows us to position the items anywhere we like.</p>
-  <div class="w3-panel w3-note">
-    <p>The first item in the HTML code does not have to appear as the first item in the grid.</p>
-  </div>
-
-  <div class="grid-container2" style="grid-template-columns:auto auto auto">
-    <div style="grid-area: 1 / 3 / 2 / 4;">
-      <h1>1</h1>
+  <div class="highlight">
+    Beri nama semua item, dan buat templat halaman web siap pakai: <br>
+    Contoh Code :
+    <div class="syntaxhighlighter  xml">
+      <table>
+        <tbody>
+          <tr>
+            <td class="gutter">
+              <div class="line number1 index0 alt2">1</div>
+              <div class="line number2 index1 alt1">2</div>
+              <div class="line number2 index1 alt1">3</div>
+              <div class="line number2 index1 alt1">4</div>
+              <div class="line number2 index1 alt1">5</div>
+              <div class="line number2 index1 alt1">6</div>
+              <div class="line number2 index1 alt1">7</div>
+              <div class="line number2 index1 alt1">8</div>
+              <div class="line number2 index1 alt1">9</div>
+              <div class="line number2 index1 alt1">10</div>
+              <div class="line number2 index1 alt1">11</div>
+              <div class="line number2 index1 alt1">12</div>
+              <div class="line number2 index1 alt1">13</div>
+              <div class="line number2 index1 alt1">14</div>
+              <div class="line number2 index1 alt1">15</div>
+              <div class="line number2 index1 alt1">16</div>
+              <div class="line number2 index1 alt1">17</div>
+              <div class="line number2 index1 alt1">18</div>
+              <div class="line number2 index1 alt1">19</div>
+            </td>
+            <td class="code">
+              <div class="container-fluid">
+                <pre tabindex="0" class="chroma">
+<code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="nt">.grid-container</span> <span class="p">{</span>
+    <span class="k">grid-template-areas</span><span class="p">:</span> <span class="nf">
+      'header header header header header header'
+      'menu main main main right right'
+      'menu footer footer footer footer footer'</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nt">.item1</span> <span class="p">{</span>
+    <span class="k">grid-area</span><span class="p">:</span> <span class="nf">header</span><span class="p">;</span>
+  <span class="nt">.item2</span> <span class="p">{</span>
+    <span class="k">grid-area</span><span class="p">:</span> <span class="nf">menu</span><span class="p">;</span>
+  <span class="nt">.item3</span> <span class="p">{</span>
+    <span class="k">grid-area</span><span class="p">:</span> <span class="nf">main</span><span class="p">;</span>
+  <span class="nt">.item4</span> <span class="p">{</span>
+    <span class="k">grid-area</span><span class="p">:</span> <span class="nf">right</span><span class="p">;</span>
+  <span class="nt">.item5</span> <span class="p">{</span>
+    <span class="k">grid-area</span><span class="p">:</span> <span class="nf">footer</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div style="grid-area: 2 / 3 / 3 / 4;">
-      <h1>2</h1>
+    <p><a class="btn btn-warning btn-sm"
+        href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-area_named3" target="_blank">Cobalah
+        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+  </div>
+
+  <h2>Urutan Item</h2>
+  <p>Tata letak grid memungkinkan kita memposisikan item di mana saja kita suka.</p>
+  <p class="moreInfo">Item pertama dalam kode HTML tidak harus muncul sebagai item pertama di grid.</p>
+
+  <img class="top-example" src="files/img/browser-head.png" alt="">
+  <div class="bd-example">
+    <iframe src="trycss_grid_flexible_order.html" width="100%" height="auto" frameborder="0"></iframe>
+  </div>
+
+  <div class="highlight">
+    Contoh Code :
+    <div class="syntaxhighlighter  xml">
+      <table>
+        <tbody>
+          <tr>
+            <td class="gutter">
+              <div class="line number1 index0 alt2">1</div>
+              <div class="line number2 index1 alt1">2</div>
+              <div class="line number2 index1 alt1">3</div>
+              <div class="line number2 index1 alt1">4</div>
+              <div class="line number2 index1 alt1">5</div>
+              <div class="line number2 index1 alt1">6</div>
+              <div class="line number2 index1 alt1">7</div>
+              <div class="line number2 index1 alt1">8</div>
+              <div class="line number2 index1 alt1">9</div>
+              <div class="line number2 index1 alt1">10</div>
+            </td>
+            <td class="code">
+              <div class="container-fluid">
+                <pre tabindex="0" class="chroma">
+<code class="language-css" data-lang="css">
+<span class="nt">.item1</span> <span class="p">{</span>
+  <span class="k">grid-area</span><span class="p">:</span> <span class="nf">header</span><span class="p">;</span>
+<span class="nt">.item2</span> <span class="p">{</span>
+  <span class="k">grid-area</span><span class="p">:</span> <span class="nf">menu</span><span class="p">;</span>
+<span class="nt">.item3</span> <span class="p">{</span>
+  <span class="k">grid-area</span><span class="p">:</span> <span class="nf">main</span><span class="p">;</span>
+<span class="nt">.item4</span> <span class="p">{</span>
+  <span class="k">grid-area</span><span class="p">:</span> <span class="nf">right</span><span class="p">;</span>
+<span class="nt">.item5</span> <span class="p">{</span>
+  <span class="k">grid-area</span><span class="p">:</span> <span class="nf">footer</span><span class="p">;</span>
+</code></pre>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div style="grid-area: 1 / 1 / 2 / 2;">
-      <h1>3</h1>
+    <p><a class="btn btn-warning btn-sm"
+        href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_flexible_order" target="_blank">Cobalah
+        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+  </div>
+
+  <p class="moreInfo">Anda dapat mengatur ulang untuk ukuran layar tertentu, dengan menggunakan queri media:</p>
+
+  <div class="highlight">
+    Contoh Code :
+    <div class="syntaxhighlighter  xml">
+      <table>
+        <tbody>
+          <tr>
+            <td class="gutter">
+              <div class="line number1 index0 alt2">1</div>
+              <div class="line number2 index1 alt1">2</div>
+              <div class="line number2 index1 alt1">3</div>
+              <div class="line number2 index1 alt1">4</div>
+              <div class="line number2 index1 alt1">5</div>
+              <div class="line number2 index1 alt1">6</div>
+              <div class="line number2 index1 alt1">7</div>
+              <div class="line number2 index1 alt1">8</div>
+              <div class="line number2 index1 alt1">9</div>
+              <div class="line number2 index1 alt1">10</div>
+              <div class="line number2 index1 alt1">11</div>
+              <div class="line number2 index1 alt1">12</div>
+              <div class="line number2 index1 alt1">13</div>
+              <div class="line number2 index1 alt1">14</div>
+              <div class="line number2 index1 alt1">15</div>
+              <div class="line number2 index1 alt1">16</div>
+              <div class="line number2 index1 alt1">17</div>
+            </td>
+            <td class="code">
+              <div class="container-fluid">
+                <pre tabindex="0" class="chroma">
+  <code class="language-css" data-lang="css"><span class="nt">@media only screen and (max-width: 500px)</span> <span class="p">{</span>
+    <span class="nt">.item1</span> <span class="p">{</span>
+      <span class="k">grid-area</span><span class="p">:</span> <span class="nf">header</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="nt">.item2</span> <span class="p">{</span>
+      <span class="k">grid-area</span><span class="p">:</span> <span class="nf">menu</span><span class="p">;</span>
+    <span class="p">}</span>
+      <span class="nt">.item3</span> <span class="p">{</span>
+      <span class="k">grid-area</span><span class="p">:</span> <span class="nf">main</span><span class="p">;</span>
+    <span class="p">}</span>
+      <span class="nt">.item4</span> <span class="p">{</span>
+      <span class="k">grid-area</span><span class="p">:</span> <span class="nf">right</span><span class="p">;</span>
+    <span class="p">}</span>
+      <span class="nt">.item5</span> <span class="p">{</span>
+      <span class="k">grid-area</span><span class="p">:</span> <span class="nf">footer</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>  </code></pre>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div style="grid-area: 1 / 2 / 2 / 3;">
-      <h1>4</h1>
-    </div>
-    <div style="grid-area: 2 / 1 / 3 / 2;">
-      <h1>5</h1>
-    </div>
-    <div style="grid-area: 2 / 2 / 3 / 3;">
-      <h1>6</h1>
-    </div>
+    <p><a class="btn btn-warning btn-sm"
+        href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_flexible_order2" target="_blank">Cobalah
+        sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+          src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
   </div>
 
-  <div>
-    <h5>Contoh :</h5>
-    <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
-        .item1 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
-          style="color:red"> grid-area<span class="csspropertyvaluecolor" style="color:mediumblue"><span
-              class="cssdelimitercolor" style="color:black">:</span> 1 / 3 / 2 / 4<span class="cssdelimitercolor"
-              style="color:black">;</span></span> </span><span class="cssdelimitercolor"
-          style="color:black">}</span><br>.item2 <span class="cssdelimitercolor" style="color:black">{</span><span
-          class="csspropertycolor" style="color:red"> grid-area<span class="csspropertyvaluecolor"
-            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 2 / 3 / 3 / 4<span
-              class="cssdelimitercolor" style="color:black">;</span></span> </span><span class="cssdelimitercolor"
-          style="color:black">}</span><br>
-        .item3 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
-          style="color:red"> grid-area<span class="csspropertyvaluecolor" style="color:mediumblue"><span
-              class="cssdelimitercolor" style="color:black">:</span> 1 / 1 / 2 / 2<span class="cssdelimitercolor"
-              style="color:black">;</span></span> </span><span class="cssdelimitercolor"
-          style="color:black">}</span><br>.item4 <span class="cssdelimitercolor" style="color:black">{</span><span
-          class="csspropertycolor" style="color:red"> grid-area<span class="csspropertyvaluecolor"
-            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1 / 2 / 2 / 3<span
-              class="cssdelimitercolor" style="color:black">;</span></span> </span><span class="cssdelimitercolor"
-          style="color:black">}</span><br>
-        .item5 <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
-          style="color:red"> grid-area<span class="csspropertyvaluecolor" style="color:mediumblue"><span
-              class="cssdelimitercolor" style="color:black">:</span> 2 / 1 / 3 / 2<span class="cssdelimitercolor"
-              style="color:black">;</span></span> </span><span class="cssdelimitercolor"
-          style="color:black">}</span><br>.item6 <span class="cssdelimitercolor" style="color:black">{</span><span
-          class="csspropertycolor" style="color:red"> grid-area<span class="csspropertyvaluecolor"
-            style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 2 / 2 / 3 / 3<span
-              class="cssdelimitercolor" style="color:black">;</span></span> </span><span class="cssdelimitercolor"
-          style="color:black">}</span>
-      </span></div>
-    <p>
-      <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_flexible_order">Try it Yourself »</a>
-    </p>
-  </div>
-
-  <p>You can re-arrange the order for certain screen sizes, by using media queries:</p>
-
-  <style>
-    .examplemediaqueries {
-      grid-row: 1 / span 2;
-    }
-
-    @media only screen and (max-width: 500px) {
-      .examplemediaqueries {
-        grid-row: 2;
-        grid-column: 1 / span 2;
-      }
-    }
-  </style>
-  <div>
-    <h5>Contoh :</h5>
-    <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
-        @media only screen and (max-width: 500px) <span class="cssdelimitercolor" style="color:black">{</span><span
-          class="cssselectorcolor" style="color:brown"><br>&nbsp; .item1 <span class="cssdelimitercolor"
-            style="color:black"><span class="cssdelimitercolor" style="color:black">{</span></span><span
-            class="csspropertycolor" style="color:red"> grid-area<span class="csspropertyvaluecolor"
-              style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1 /
-              span 3 / 2 / 4<span class="cssdelimitercolor" style="color:black">;</span></span> </span><span
-            class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor"
-              style="color:black">}</span></span><br>&nbsp; .item2 <span class="cssdelimitercolor"
-            style="color:black"><span class="cssdelimitercolor" style="color:black">{</span></span><span
-            class="csspropertycolor" style="color:red"> grid-area<span class="csspropertyvaluecolor"
-              style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 3 / 3 / 4 / 4<span
-                class="cssdelimitercolor" style="color:black">;</span></span> </span><span class="cssdelimitercolor"
-            style="color:black"><span class="cssdelimitercolor" style="color:black">}</span></span><br>&nbsp;
-          .item3 <span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor"
-              style="color:black">{</span></span><span class="csspropertycolor" style="color:red"> grid-area<span
-              class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
-                style="color:black">:</span> 2 / 1 / 3 / 2<span class="cssdelimitercolor"
-                style="color:black">;</span></span> </span><span class="cssdelimitercolor" style="color:black"><span
-              class="cssdelimitercolor" style="color:black">}</span></span><br>&nbsp; .item4 <span
-            class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor"
-              style="color:black">{</span></span><span class="csspropertycolor" style="color:red"> grid-area<span
-              class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
-                style="color:black">:</span> 2 / 2 /
-              span 2 / 3<span class="cssdelimitercolor" style="color:black">;</span></span> </span><span
-            class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor"
-              style="color:black">}</span></span><br>&nbsp; .item5 <span class="cssdelimitercolor"
-            style="color:black"><span class="cssdelimitercolor" style="color:black">{</span></span><span
-            class="csspropertycolor" style="color:red"> grid-area<span class="csspropertyvaluecolor"
-              style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 3 / 1 / 4 / 2<span
-                class="cssdelimitercolor" style="color:black">;</span></span> </span><span class="cssdelimitercolor"
-            style="color:black"><span class="cssdelimitercolor" style="color:black">}</span></span><br>&nbsp; .item6
-          <span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor"
-              style="color:black">{</span></span><span class="csspropertycolor" style="color:red"> grid-area<span
-              class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
-                style="color:black">:</span> 2 / 3 / 3 / 4<span class="cssdelimitercolor"
-                style="color:black">;</span></span> </span><span class="cssdelimitercolor" style="color:black"><span
-              class="cssdelimitercolor" style="color:black">}</span></span><br></span><span class="cssdelimitercolor"
-          style="color:black">}</span>
-      </span></div>
-    <p>
-      <a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_flexible_order2">Try it Yourself »</a>
-    </p>
-  </div>
-
-
-  <!--
-<hr>
-
-<h2>The justify-self Property</h2>
-<p>The <code>justify-self</code> property can be used to align the content inside an item.</p>
-<div class="w3-white notranslate w3-padding">
-  <div class="grid-container2" style="grid-template-columns:auto auto auto">
-    <div style="justify-self: center;"><h1>1</h1></div>
-    <div><h1>2</h1></div>
-    <div><h1>3</h1></div>  
-    <div><h1>4</h1></div>  
-    <div><h1>5</h1></div>  
-    <div><h1>6</h1></div>  
-  </div>
-</div>
-
-<div>
-<h5>Contoh :</h5>
-<div class="w3-code notranslate cssHigh">
-  .item1 {<br>
-  &nbsp; 
-  justify-self: center;<br>}
-</div>
-<p>
-<a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_grid-template-columns">Try it Yourself &raquo;</a>
-</p>
-</div>
-
-<div>
-<h5>Contoh :</h5>
-<div class="w3-code notranslate cssHigh">
-  .item1 {<br>
-  &nbsp; 
-  justify-self: start;<br>}
-</div>
-<p>
-<a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_grid-template-columns">Try it Yourself &raquo;</a>
-</p>
-</div>
-
-<div>
-<h5>Contoh :</h5>
-<div class="w3-code notranslate cssHigh">
-  .item1 {<br>
-  &nbsp; 
-  justify-self: end;<br>}
-</div>
-<p>
-<a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_grid-template-columns">Try it Yourself &raquo;</a>
-</p>
-</div>
-
-<div>
-<h5>Contoh :</h5>
-<div class="w3-code notranslate cssHigh">
-  .item1 {<br>
-  &nbsp; 
-  justify-self: stretch;<br>}
-</div>
-<p>
-<a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_grid-template-columns">Try it Yourself &raquo;</a>
-</p>
-</div>
--->
-
-  <!--
-<hr>
-
-<h2>The align-self Property</h2>
-<p>The <code>align-self</code> property can be used to vertically align the content inside an item.</p>
-
-<div>
-<h5>Contoh :</h5>
-<div class="w3-code notranslate cssHigh">
-  .item1 {<br>
-  &nbsp; 
-  align-self: end;<br>}
-</div>
-<div class="w3-white notranslate w3-padding">
-  <div class="grid-container2" style="grid-template-columns:auto auto auto;grid-template-rows:150px 150px">
-    <div style="align-self: end;"><h1>1</h1></div>
-    <div><h1>2</h1></div>
-    <div><h1>3</h1></div>  
-    <div><h1>4</h1></div>  
-    <div><h1>5</h1></div>  
-    <div><h1>6</h1></div>  
-  </div>
-</div>
-<p>
-<a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_grid-template-columns">Try it Yourself &raquo;</a>
-</p>
-</div>
-
-<div>
-<h5>Contoh :</h5>
-<div class="w3-code notranslate cssHigh">
-  .item1 {<br>
-  &nbsp; 
-  align-self: start;<br>}
-</div>
-<div class="w3-white notranslate w3-padding">
-  <div class="grid-container2" style="grid-template-columns:auto auto auto;grid-template-rows:150px 150px">
-    <div style="align-self: start;"><h1>1</h1></div>
-    <div><h1>2</h1></div>
-    <div><h1>3</h1></div>  
-    <div><h1>4</h1></div>  
-    <div><h1>5</h1></div>  
-    <div><h1>6</h1></div>  
-  </div>
-</div>
-<p>
-<a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_grid-template-columns">Try it Yourself &raquo;</a>
-</p>
-</div>
-
-<div>
-<h5>Contoh :</h5>
-<div class="w3-code notranslate cssHigh">
-  .item1 {<br>
-  &nbsp; 
-  align-self: center;<br>}
-</div>
-<div class="w3-white notranslate w3-padding">
-  <div class="grid-container2" style="grid-template-columns:auto auto auto;grid-template-rows:150px 150px">
-    <div style="align-self: center;"><h1>1</h1></div>
-    <div><h1>2</h1></div>
-    <div><h1>3</h1></div>  
-    <div><h1>4</h1></div>  
-    <div><h1>5</h1></div>  
-    <div><h1>6</h1></div>  
-  </div>
-</div>
-<p>
-<a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_grid-template-columns">Try it Yourself &raquo;</a>
-</p>
-</div>
-
-<div>
-<h5>Contoh :</h5>
-<div class="w3-code notranslate cssHigh">
-  .item1 {<br>
-  &nbsp; 
-  align-self: stretch;<br>}
-</div>
-<div class="w3-white notranslate w3-padding">
-  <div class="grid-container2" style="grid-template-columns:auto auto auto;grid-template-rows:150px 150px">
-    <div style="align-self: stretch;"><h1>1</h1></div>
-    <div><h1>2</h1></div>
-    <div><h1>3</h1></div>  
-    <div><h1>4</h1></div>  
-    <div><h1>5</h1></div>  
-    <div><h1>6</h1></div>  
-  </div>
-</div>
-<p>
-<a class="w3-btn" target="_blank" href="tryit.asp?filename=trycss_grid_grid-template-columns">Try it Yourself &raquo;</a>
-</p>
-</div>
--->
-
-  <!--
-<hr>
-
-<h2>CSS Grid Layout Item Properties</h2>
-<p>The following table lists the CSS properties used with grid items:</p>
-<table class="ws-table-all notranslate">
-  <tr>
-    <th style="width:25%">Property</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td><a href="/cssref/pr_grid-column-start.asp">grid-column-start</a></td>
-    <td>Specifies where to start the grid item</td>
-  </tr>
-  <tr>
-    <td><a href="/cssref/pr_grid-column-end.asp">grid-column-end</a></td>
-    <td>Specifies where to end the grid item</td>
-  </tr>
-  <tr>
-    <td><a href="/cssref/pr_grid-row-start.asp">grid-row-start</a></td>
-    <td>Specifies where to start the grid item</td>
-  </tr>
-  <tr>
-    <td><a href="/cssref/pr_grid-row-end.asp">grid-row-end</a></td>
-    <td>Specifies where to end the grid item</td>
-  </tr>
-  <tr>
-    <td><a href="/cssref/pr_grid-column.asp">grid-column</a></td>
-    <td>A shorthand property for the <em>grid-column-start</em> and the <em>grid-column-end</em> properties</td>
-  </tr>
-  <tr>
-    <td><a href="/cssref/pr_grid-row.asp">grid-row</a></td>
-    <td>A shorthand property for the <em>grid-row-start</em> and the <em>grid-row-end</em> properties</td>
-  </tr>
-  <tr>
-    <td><a href="/cssref/pr_grid-area.asp">grid-area</a></td>
-    <td>Specifies a name for the grid item</td>
-  </tr>
-  <tr>
-    <td><a href="/cssref/pr_grid_justify-self.asp">justify-self</a></td>
-    <td>Specifies how to align content aling the row axis</td>
-  </tr>
-  <tr>
-    <td><a href="/cssref/pr_grid_align-self.asp">align-self</a></td>
-    <td>Specifies how to align content aling the column axis</td>
-  </tr>
-</table>
--->
-  <br>
-  <div class="w3-clear nextprev">
-    <a class="w3-left w3-btn" href="css_grid_container.asp">❮ Previous</a>
-    <a class="w3-right w3-btn" href="css_templates.asp">Next ❯</a>
-  </div>
-  <div id="mypagediv2" style="position:relative;text-align:center;"></div>
-  <br>
-
-  <!-- </div> -->
 </body>
 
 </html>

@@ -18284,6 +18284,613 @@ gambar Background berperilaku.
                   src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
           </div>
         </section>
+        <!-- CSS Grid Item -->
+        <section id="22.6.2">
+          <h1>CSS Grid Item</h1>
+          <img class="top-example" src="files/img/browser-head.png" alt="">
+          <div class="bd-example">
+            <iframe src="trycss_grid_item.html" width="100%" height="auto" frameborder="0"></iframe>
+          </div>
+        </section>
+
+        <section>
+          <h2>Child Elemen (Items)</h2>
+          <p>
+            Grid <em>container</em> berisi <em>item</em> grid. Secara default, sebuah wadah/container memiliki satu item
+            kisi
+            untuk setiap kolom, di setiap baris, tetapi Anda
+            dapat menata
+            style item grid sehingga item tersebut akan menjangkau beberapa kolom dan/atau baris.
+          </p>
+        </section>
+
+        <!-- Properti grid-column -->
+        <section>
+          <h2>Properti <code>grid-column</code></h2>
+          Properti grid-column yang ditentukan pada kolom mana untuk menempatkan item. Anda menentukan di mana item akan
+          dimulai, dan di mana item akan berakhir.
+          <img class="top-example" src="files/img/browser-head.png" alt="">
+          <div class="bd-example">
+            <iframe src="trycss_grid_item2.html" width="100%" height="auto" frameborder="0"></iframe>
+          </div>
+          <p class="moreInfo"><b>Catatan:</b> Properti <mark>grid-column</mark> adalah properti singkatan untuk properti
+            <mark>grid-column-start</mark> dan <mark>grid-column-end</mark>.
+          </p>
+          <p>Untuk menempatkan item, Anda dapat merujuk ke nomor baris, atau menggunakan kata kunci "span" untuk
+            menentukan
+            berapa
+            banyak kolom item akan span.</p>
+          <h5>Contoh :</h5>
+          <div class="highlight">
+            Buat "item1" mulai pada kolom 1 dan berakhir sebelum kolom 5 : <br>
+            Contoh Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="nt">.item1</span> <span class="p">{</span>
+    <span class="k">grid-column</span><span class="p">:</span> <span class="nf">1 / 5</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-column_line"
+                target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+          <div class="highlight">
+            Buat "item1" mulai pada kolom 1 dan span 3 kolom : <br>
+            Contoh Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+            <span class="nt">.item1</span> <span class="p">{</span>
+              <span class="k">grid-column</span><span class="p">:</span> <span class="nf">1 / span 3</span><span class="p">;</span>
+            <span class="p">}</span>
+          <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-column" target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+          <div class="highlight">
+            Buat "item2" mulai pada kolom 2 dan span 3 kolom : <br>
+            Contoh Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+            <span class="nt">.item2</span> <span class="p">{</span>
+              <span class="k">grid-column</span><span class="p">:</span> <span class="nf">2 / span 3</span><span class="p">;</span>
+            <span class="p">}</span>
+          <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-column2" target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+        </section>
+
+        <!-- Properti grid-row -->
+        <section>
+          <h2>Properti <code>grid-row</code></h2>
+          Properti grid-row mendefinisikan pada baris mana untuk menempatkan item.
+          Anda mendefinisikan di mana barang akan dimulai, dan di mana barang akan berakhir.
+          <img class="top-example" src="files/img/browser-head.png" alt="">
+          <div class="bd-example">
+            <iframe src="trycss_grid_grid-row1.html" width="100%" height="auto" frameborder="0"></iframe>
+          </div>
+          <p class="moreInfo"><b>Catatan:</b> <code>grid-row</code> Property adalah properti kependekan untuk
+            <code>grid-row-start</code> dan <code>grid-row-end</code> properti.
+          </p>
+          <p>Untuk menempatkan item, Anda dapat merujuk ke nomor baris, atau menggunakan kata kunci "span" untuk
+            menentukan
+            berapa
+            banyak baris item yang akan terbentang:</p>
+          <div class="highlight">
+            Buat "item1" mulai pada baris-baris 1 dan berakhir pada baris-baris 4: <br>
+            Contoh Code : <code>grid-row: 1 / 4</code>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="nt">.item1</span> <span class="p">{</span>
+    <span class="k">grid-row</span><span class="p">:</span> <span class="nf">1 / 4</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-row1" target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+          <div class="highlight">
+            Buat "item1" mulai pada baris 1 dan rentang 2 baris: <br>
+            Contoh Code : <code>grid-row: 1 / span 2</code>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+            <span class="nt">.item1</span> <span class="p">{</span>
+              <span class="k">grid-row</span><span class="p">:</span> <span class="nf">1 / span 2</span><span class="p">;</span>
+            <span class="p">}</span>
+          <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-row2" target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+        </section>
+
+        <!-- Properti grid-area -->
+        <section>
+          <h2>Properti <code>grid-area</code></h2>
+          <p>Properti <mark>grid-area</mark> dapat digunakan sebagai properti untuk <mark>grid-start-start</mark>,
+            <mark>grid-column-start</mark>, <mark>grid-row-end</mark> dan <mark>grid-kolom-end</mark>.
+          </p>
+          <img class="top-example" src="files/img/browser-head.png" alt="">
+          <div class="bd-example">
+            <iframe src="trycss_grid_grid-area1.html" width="100%" height="auto" frameborder="0"></iframe>
+          </div>
+          <h5>Contoh :</h5>
+          <div class="highlight">
+            Buat "Item8" mulai pada baris-line 1 dan kolom-line 2, dan berakhir pada baris baris 5 dan jalur kolom 6:
+            <br>
+            Contoh Code : <code>grid-area: 1 / 2 / 5 / 6</code>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="nt">.item8</span> <span class="p">{</span>
+    <span class="k">grid-area</span><span class="p">:</span> <span class="nf">1 / 2 / 5 / 6</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-area1" target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+          <div class="highlight">
+            Buat "item8" mulai pada baris-line 2 dan kolom-line 1, dan span 2 baris dan 3 kolom: <br>
+            Contoh Code : <code>grid-area: 2 / 1 / span 2 / span 3</code>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+            <span class="nt">.item8</span> <span class="p">{</span>
+              <span class="k">grid-area</span><span class="p">:</span> <span class="nf">2 / 1 / span 2 / span 3</span><span class="p">;</span>
+            <span class="p">}</span>
+          <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-area2" target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+        </section>
+
+        <!-- Penamaan Grid Items -->
+        <section>
+          <h2>Penamaan Grid Items</h2>
+          <p>Properti <em>grid-area</em> juga dapat digunakan untuk menetapkan nama ke item grid.</p>
+          <img class="top-example" src="files/img/browser-head.png" alt="">
+          <div class="bd-example">
+            <iframe src="contoh_trycss_grid_grid-area_named.html" width="100%" height="auto" frameborder="0"></iframe>
+          </div>
+          <p class="moreInfo">Penamaan item grid dapat dirujuk oleh properti <mark>grid-template-areas</mark> dari wadah
+            grid.
+          </p>
+          <div class="highlight">
+            Item1 mempunyai nama "myArea" dan mencakup semua 5 kolom dalam tata letak grid 5 kolom: <br>
+            Contoh Code : <code>grid-template-areas: 'myArea myArea myArea myArea myArea'</code>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                      <div class="line number2 index1 alt1">6</div>
+                      <div class="line number2 index1 alt1">7</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+            <span class="nt">.item1</span> <span class="p">{</span>
+              <span class="k">grid-area</span><span class="p">:</span> <span class="nf">myArea</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">.grid-container</span> <span class="p">{</span>
+              <span class="k">grid-template-areas</span><span class="p">:</span> <span class="nf">'myArea myArea myArea myArea myArea'</span><span class="p">;</span>
+            <span class="p">}</span>
+          <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-area_named"
+                target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+          <p>Setiap baris didefinisikan oleh apostrof (&apos; &apos;). <br>
+            Kolom di setiap baris didefinisikan di dalam apostrof, dipisahkan oleh spasi.</p>
+          <p><b>Catatan:</b> Tanda titik mewakili item grid tanpa nama.</p>
+          <div class="highlight">
+            Biarkan "myArea" menjangkau dua kolom dalam tata letak kotak lima kolom (tanda titik mewakili item tanpa
+            nama): <br>
+            Contoh Code : <code>grid-template-areas: 'myArea myArea . . .'</code>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                      <div class="line number2 index1 alt1">6</div>
+                      <div class="line number2 index1 alt1">7</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+            <span class="nt">.item1</span> <span class="p">{</span>
+              <span class="k">grid-area</span><span class="p">:</span> <span class="nf">myArea</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">.grid-container</span> <span class="p">{</span>
+              <span class="k">grid-template-areas</span><span class="p">:</span> <span class="nf">'myArea myArea . . .'</span><span class="p">;</span>
+            <span class="p">}</span>
+          <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-area_named1"
+                target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+          <p>Untuk mendefinisikan dua baris, tentukan kolom baris kedua di dalam satu set apostrof lainnya:</p>
+          <div class="highlight">
+            Buat "item1" menjangkau dua kolom dan dua baris : <br>
+            Contoh Code : <code>grid-template-areas: 'myArea myArea . . .' 'myArea myArea . . .'</code>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+            <span class="nt">.grid-container</span> <span class="p">{</span>
+              <span class="k">grid-template-areas</span><span class="p">:</span> <span class="nf">'myArea myArea . . .' 'myArea myArea . . .'</span><span class="p">;</span>
+            <span class="p">}</span>
+          <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-area_named2"
+                target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+          <div class="highlight">
+            Beri nama semua item, dan buat templat halaman web siap pakai: <br>
+            Contoh Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                      <div class="line number2 index1 alt1">6</div>
+                      <div class="line number2 index1 alt1">7</div>
+                      <div class="line number2 index1 alt1">8</div>
+                      <div class="line number2 index1 alt1">9</div>
+                      <div class="line number2 index1 alt1">10</div>
+                      <div class="line number2 index1 alt1">11</div>
+                      <div class="line number2 index1 alt1">12</div>
+                      <div class="line number2 index1 alt1">13</div>
+                      <div class="line number2 index1 alt1">14</div>
+                      <div class="line number2 index1 alt1">15</div>
+                      <div class="line number2 index1 alt1">16</div>
+                      <div class="line number2 index1 alt1">17</div>
+                      <div class="line number2 index1 alt1">18</div>
+                      <div class="line number2 index1 alt1">19</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+            <span class="nt">.grid-container</span> <span class="p">{</span>
+              <span class="k">grid-template-areas</span><span class="p">:</span> <span class="nf">
+                'header header header header header header'
+                'menu main main main right right'
+                'menu footer footer footer footer footer'</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">.item1</span> <span class="p">{</span>
+              <span class="k">grid-area</span><span class="p">:</span> <span class="nf">header</span><span class="p">;</span>
+            <span class="nt">.item2</span> <span class="p">{</span>
+              <span class="k">grid-area</span><span class="p">:</span> <span class="nf">menu</span><span class="p">;</span>
+            <span class="nt">.item3</span> <span class="p">{</span>
+              <span class="k">grid-area</span><span class="p">:</span> <span class="nf">main</span><span class="p">;</span>
+            <span class="nt">.item4</span> <span class="p">{</span>
+              <span class="k">grid-area</span><span class="p">:</span> <span class="nf">right</span><span class="p">;</span>
+            <span class="nt">.item5</span> <span class="p">{</span>
+              <span class="k">grid-area</span><span class="p">:</span> <span class="nf">footer</span><span class="p">;</span>
+            <span class="p">}</span>
+          <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_grid-area_named3"
+                target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+        </section>
+
+        <!-- Urutan Item -->
+        <section>
+          <h2>Urutan Item</h2>
+          <p>Tata letak grid memungkinkan kita memposisikan item di mana saja kita suka.</p>
+          <p class="moreInfo">Item pertama dalam kode HTML tidak harus muncul sebagai item pertama di grid.</p>
+          <img class="top-example" src="files/img/browser-head.png" alt="">
+          <div class="bd-example">
+            <iframe src="trycss_grid_flexible_order.html" width="100%" height="auto" frameborder="0"></iframe>
+          </div>
+          <div class="highlight">
+            Contoh Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                      <div class="line number2 index1 alt1">6</div>
+                      <div class="line number2 index1 alt1">7</div>
+                      <div class="line number2 index1 alt1">8</div>
+                      <div class="line number2 index1 alt1">9</div>
+                      <div class="line number2 index1 alt1">10</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-css" data-lang="css">
+          <span class="nt">.item1</span> <span class="p">{</span>
+            <span class="k">grid-area</span><span class="p">:</span> <span class="nf">header</span><span class="p">;</span>
+          <span class="nt">.item2</span> <span class="p">{</span>
+            <span class="k">grid-area</span><span class="p">:</span> <span class="nf">menu</span><span class="p">;</span>
+          <span class="nt">.item3</span> <span class="p">{</span>
+            <span class="k">grid-area</span><span class="p">:</span> <span class="nf">main</span><span class="p">;</span>
+          <span class="nt">.item4</span> <span class="p">{</span>
+            <span class="k">grid-area</span><span class="p">:</span> <span class="nf">right</span><span class="p">;</span>
+          <span class="nt">.item5</span> <span class="p">{</span>
+            <span class="k">grid-area</span><span class="p">:</span> <span class="nf">footer</span><span class="p">;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_flexible_order"
+                target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+          <p class="moreInfo">Anda dapat mengatur ulang untuk ukuran layar tertentu, dengan menggunakan queri media:</p>
+          <div class="highlight">
+            Contoh Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                      <div class="line number2 index1 alt1">6</div>
+                      <div class="line number2 index1 alt1">7</div>
+                      <div class="line number2 index1 alt1">8</div>
+                      <div class="line number2 index1 alt1">9</div>
+                      <div class="line number2 index1 alt1">10</div>
+                      <div class="line number2 index1 alt1">11</div>
+                      <div class="line number2 index1 alt1">12</div>
+                      <div class="line number2 index1 alt1">13</div>
+                      <div class="line number2 index1 alt1">14</div>
+                      <div class="line number2 index1 alt1">15</div>
+                      <div class="line number2 index1 alt1">16</div>
+                      <div class="line number2 index1 alt1">17</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-css" data-lang="css"><span class="nt">@media only screen and (max-width: 500px)</span> <span class="p">{</span>
+            <span class="nt">.item1</span> <span class="p">{</span>
+              <span class="k">grid-area</span><span class="p">:</span> <span class="nf">header</span><span class="p">;</span>
+            <span class="p">}</span>
+            <span class="nt">.item2</span> <span class="p">{</span>
+              <span class="k">grid-area</span><span class="p">:</span> <span class="nf">menu</span><span class="p">;</span>
+            <span class="p">}</span>
+              <span class="nt">.item3</span> <span class="p">{</span>
+              <span class="k">grid-area</span><span class="p">:</span> <span class="nf">main</span><span class="p">;</span>
+            <span class="p">}</span>
+              <span class="nt">.item4</span> <span class="p">{</span>
+              <span class="k">grid-area</span><span class="p">:</span> <span class="nf">right</span><span class="p">;</span>
+            <span class="p">}</span>
+              <span class="nt">.item5</span> <span class="p">{</span>
+              <span class="k">grid-area</span><span class="p">:</span> <span class="nf">footer</span><span class="p">;</span>
+            <span class="p">}</span>
+          <span class="p">}</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/css/tryit.asp?filename=trycss_grid_flexible_order2"
+                target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+        </section>
 
         <hr>
 

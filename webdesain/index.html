@@ -432,7 +432,7 @@
           <h1>Pengenalan HTML</h1>
           <p class="lead">HTML adalah bahasa markup standar untuk membuat halaman Web.</p>
           <br>
-          <h2>Contoh : Dokumen HTML</h2>
+          <h4>Contoh : Dokumen HTML</h4>
 
           <div class="highlight">
             <div class="syntaxhighlighter  xml">
@@ -454,9 +454,6 @@
                       <div class="line number12 index11 alt1">12</div>
                       <div class="line number13 index12 alt2">13</div>
                       <div class="line number14 index13 alt1">14</div>
-                      <div class="line number15 index14 alt2">15</div>
-                      <div class="line number16 index15 alt1">16</div>
-                      <div class="line number17 index16 alt2">17</div>
                     </td>
                     <td class="code">
                       <div class="container-fluid">
@@ -467,16 +464,13 @@
     <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width, initial-scale=1&#34;</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Judul Halaman<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-
   <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
 
     <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, world!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Paragraf pertama saya.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
     
-  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-  
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>  
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre>
                       </div>
                     </td>
                   </tr>
@@ -484,8 +478,7 @@
               </table>
             </div>
           </div>
-
-          <h3>Penjelasannya :</h3>
+          <h4>Penjelasannya :</h4>
           <table class="table table-bordered table-hover table-sm">
             <!-- <thead></thead> -->
             <tbody>
@@ -574,9 +567,12 @@
 
           <p class="bd-callout bd-callout-syntax">
             <b>Syntax :</b> <br>
-            <code>&lt;tagname&gt;Konten berada di sini...&lt;/tagname&gt;</code>
+            <code>&lt;tagname&gt;Konten...&lt;/tagname&gt;</code>
           </p>
-          <p><strong>Elemen HTML</strong> adalah segalanya mulai dari tag awal hingga tag akhir:</p>
+          <p class="moreInfo"><strong>Elemen HTML</strong> adalah segalanya mulai dari <strong>tag awal</strong> hingga
+            <strong>tag
+              akhir</strong>:
+          </p>
           <div class="highlight">
             <div class="syntaxhighlighter  xml">
               <table>
@@ -601,10 +597,6 @@
                 sendiri <img draggable="false" role="img" class="emoji" alt="↗"
                   src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
           </div>
-          <!-- <p class="bd-callout">
-                        <code>&lt;h1&gt;Judul Pertama Saya&lt;/h1&gt; <br>
-                                    &lt;p&gt;Paragraf pertama saya.&lt;/p&gt;</code>
-                    </p> -->
 
           <table class="table table-bordered table-hover table-sm text-center">
             <thead class="table-light">
@@ -641,8 +633,7 @@
           <h2>Browser Web</h2>
           <p>Tujuan browser web (Chrome, Edge, Firefox, Safari) adalah untuk membaca dokumen HTML dan
             menampilkannya dengan benar. Browser tidak menampilkan tag HTML, tetapi menggunakannya untuk
-            menentukan cara menampilkan dokumen:
-          </p>
+            menentukan cara menampilkan dokumen.</p>
         </section>
 
         <hr>
@@ -653,25 +644,51 @@
           <p>Kalian perlu Editor teks untuk mempelajari HTML. Halaman web dapat dibuat dan dimodifikasi dengan
             menggunakan editor HTML profesional. Beberapa contoh text editor terbaik saat ini :</p>
 
-          <ul class="icon-list">
-            <li><a href="https://update.code.visualstudio.com/1.62.3/win32-x64-user/stable" rel="noopener"
-                target="_blank">Visual
-                Code Studio</a></li>
-            <li><a href="https://atom.io/download/windows_x64" rel="noopener" target="_blank">Atom</a></li>
-            <li><a
-                href="https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.1.9.2/npp.8.1.9.2.Installer.exe"
-                rel="noopener" target="_blank">Notepad++</a></li>
-            <li><a href="https://github.com/brackets-cont/brackets/releases/download/v2.0.1/Brackets.2.0.1ml.exe"
-                rel="noopener" target="_blank">Brackets</a></li>
-            <li><a href="https://download.sublimetext.com/sublime_text_build_4121_x64_setup.exe" rel="noopener"
-                target="_blank">Sublime Text</a></li>
-          </ul>
+          <ol class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Visual Code Studio</div>
+                <a href="https://update.code.visualstudio.com/1.62.3/win32-x64-user/stable"
+                  class="badge bg-warning rounded-pill">download</a>
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Atom</div>
+                <a href="https://atom.io/download/windows_x64" class="badge bg-warning rounded-pill">download</a>
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Notepad++</div>
+                <a href="https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.1.9.2/npp.8.1.9.2.Installer.exe"
+                  class="badge bg-warning rounded-pill">download</a>
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Brackets</div>
+                <a href="https://github.com/brackets-cont/brackets/releases/download/v2.0.1/Brackets.2.0.1ml.exe"
+                  class="badge bg-warning rounded-pill">download</a>
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Sublime Text</div>
+                <a href="https://download.sublimetext.com/sublime_text_build_4121_x64_setup.exe"
+                  class="badge bg-warning rounded-pill">download</a>
+              </div>
+            </li>
+          </ol>
+
           <br>
-          <p>Atau dengan Code Editor sederhana seperti <strong>Notepad</strong> bawaan dari Windows.</p>
+
+          <p class="moreInfo">Atau dengan Code Editor sederhana seperti <strong>Notepad</strong> bawaan dari Windows.
+          </p>
           <h3>Belajar menggunakan Notepad :</h3>
           <p>Ikuti langkah-langkah di bawah ini untuk membuat halaman web pertama kalian dengan Notepad :</p>
 
-          <h4>Langkah 1:</h4>
+          <h4><span class="text-muted fw-light">Langkah 1:</span></h4>
           <ul>
             <li>Pada <strong>Windows 7</strong>, buka Start Menu kalian dan ketik "Notepad" di kotak
               pencarian. Pilih Notepad untuk membuka aplikasi. kalian juga dari di Start Menu -
@@ -681,7 +698,7 @@
             <li>Pada <strong>Windows 10</strong>, klik kanan Start - Run, ketik Notepad.</li>
           </ul>
 
-          <h4>Langkah 2: Tulis Beberapa HTML</h4>
+          <h4><span class="text-muted fw-light">Langkah 2:</span> Tulis Beberapa HTML</h4>
           <p>Tulis atau salin kode HTML berikut ke Notepad:</p>
           <div class="highlight">
             <div class="syntaxhighlighter  xml">
@@ -703,9 +720,6 @@
                       <div class="line number12 index11 alt1">12</div>
                       <div class="line number13 index12 alt2">13</div>
                       <div class="line number14 index13 alt1">14</div>
-                      <div class="line number15 index14 alt2">15</div>
-                      <div class="line number16 index15 alt1">16</div>
-                      <div class="line number17 index16 alt2">17</div>
                     </td>
                     <td class="code">
                       <div class="container-fluid">
@@ -716,16 +730,13 @@
     <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width, initial-scale=1&#34;</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Judul Halaman<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-
   <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
 
     <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, world!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Paragraf pertama saya.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
     
-  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-  
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>  
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre>
                       </div>
                     </td>
                   </tr>
@@ -734,7 +745,7 @@
             </div>
           </div>
 
-          <h4>Langkah 3: Simpan Halaman HTML</h4>
+          <h4><span class="text-muted fw-light">Langkah 3:</span> Simpan Halaman HTML</h4>
           <strong>Save As</strong> di menu Notepad. Beri nama file <strong>&quot;index.htm&quot;</strong> dan
           atur pengkodean ke <strong>UTF-8</strong> (yang merupakan pengkodean pilihan untuk file HTML).</p>
           <p><img class="img-fluid" src="files/html_files/image003.png" alt=""></p>
@@ -743,13 +754,12 @@
             terserah kalian.
           </p>
 
-          <h4>Langkah 4: Lihat Halaman HTML di Browser</h4>
+          <h4><span class="text-muted fw-light">Langkah 4:</span> Lihat Halaman HTML di Browser</h4>
           <p>Buka file HTML yang disimpan di browser favorit kalian (klik dua kali pada file, atau klik kanan
             - dan pilih
             <q>Open with</q>).
           </p>
           <p>Hasilnya akan terlihat seperti ini:</p>
-
           <img class="top-example" src="files/img/browser-head.png" alt="">
           <div class="bd-example">
             <h1>Hello, world!</h1>
@@ -783,9 +793,6 @@
                       <div class="line number12 index11 alt1">12</div>
                       <div class="line number13 index12 alt2">13</div>
                       <div class="line number14 index13 alt1">14</div>
-                      <div class="line number15 index14 alt2">15</div>
-                      <div class="line number16 index15 alt1">16</div>
-                      <div class="line number17 index16 alt2">17</div>
                     </td>
                     <td class="code">
                       <div class="container-fluid">
@@ -796,16 +803,13 @@
     <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width, initial-scale=1&#34;</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Judul Halaman<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
   <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-
   <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
 
     <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, world!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
     <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Paragraf pertama saya.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
     
-  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-  
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>  
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre>
                       </div>
                     </td>
                   </tr>

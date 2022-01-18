@@ -7976,25 +7976,7 @@ gambar Background berperilaku.
           <p>Tampilkan gambar yang berbeda untuk ukuran layar yang berbeda:</p>
           <img class="top-example" src="files/img/browser-head.png" alt="">
           <div class="bd-example">
-            <h2>Elemen gambar</h2>
-            <picture>
-              <source media="(min-width: 650px)" srcset="files/img/img_food.jpg">
-              <source media="(min-width: 465px)" srcset="files/img/img_car.jpg">
-              <img src="files/img/img_girl.jpg" class="img-fluid">
-            </picture>
-            <br>
-            <br>
-            <p>Ubah ukuran browser untuk melihat versi berbeda dari pemuatan gambar pada ukuran viewport
-              yang berbeda. Browser mencari elemen sumber pertama tempat kueri media cocok dengan lebar
-              area pandang pengguna saat ini, dan mengambil gambar
-              yang ditentukan di atribut <code><mark>srcset</mark></code>.</p>
-            <p>Elemen img diperlukan sebagai tag anak terakhir dari blok deklarasi gambar. Elemen img
-              digunakan untuk menyediakan kompatibilitas mundur untuk browser yang tidak mendukung elemen
-              gambar, atau jika tidak ada tag sumber yang cocok.
-            </p>
-            <p class="moreInfo"><strong>Catatan</strong>: Elemen gambar tidak didukung di IE12 dan versi
-              sebelumnya atau Safari 9.0 dan versi sebelumnya.
-            </p>
+            <iframe src="tryhtml_images_picture1.html" width="100%" height="470" frameborder="0"></iframe>
           </div>
 
           <div class="highlight">
@@ -8023,7 +8005,8 @@ gambar Background berperilaku.
                 </tbody>
               </table>
             </div>
-            <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_picture1" target="_blank">Cobalah
                 sendiri <img draggable="false" role="img" class="emoji" alt="↗"
                   src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
           </div>
@@ -8061,18 +8044,7 @@ gambar Background berperilaku.
           <p>Browser akan menggunakan format gambar pertama yang dikenalinya:</p>
           <img class="top-example" src="files/img/browser-head.png" alt="">
           <div class="bd-example">
-            <h2>Elemen gambar</h2>
-            <picture>
-              <source srcset="files/img/img_avatar.png">
-              <source srcset="files/img/img_girl.jpg">
-              <img class="img-fluid" src="files/img/img_beatles.gif" alt="Beatles">
-            </picture>
-            <br><br>
-            <p>Elemen gambar tidak akan dapat digunakan jika format gambar tidak didukung oleh semua
-              perangkat.
-              <br> Perangkat akan menggunakan format gambar yang mendukung perangkat tersebut dan
-              mengabaikan gambar lainnya.
-            </p>
+            <iframe src="tryhtml_images_picture_format.html" width="100%" height="595" frameborder="0"></iframe>
           </div>
           <div class="highlight">
             Code :
@@ -8092,7 +8064,7 @@ gambar Background berperilaku.
                         <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">picture</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">source</span> <span class="na">srcset</span><span class="o">=</span><span class="s">"img_avatar.png"<span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">source</span> <span class="na">srcset</span><span class="o">=</span><span class="s">"img_girl.jpg"<span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"img_beatles.gif"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"Beatles"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"img_beatles.gif"</span> <span class="na">alt</span><span class="o">=</span><span class="s">"Beatles"</span> <span class="na">style</span><span class="o">=</span><span class="s">"width:auto;"</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">picture</span><span class="p">&gt;</span></code></pre>
                       </div>
                     </td>

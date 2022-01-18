@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tryhtml_images_picture1</title>
+</head>
+
+<body>
+  <picture>
+    <source media="(min-width: 650px)" srcset="https://www.w3schools.com/html/img_food.jpg">
+    <source media="(min-width: 465px)" srcset="https://www.w3schools.com/html/img_car.jpg">
+    <img src="https://www.w3schools.com/html/img_girl.jpg" style="width:auto;">
+  </picture>
+
+  <p>Ubah ukuran browser untuk melihat versi yang berbeda dari pemuatan gambar pada berbagai ukuran viewport.
+    Browser mencari elemen sumber pertama di mana kueri media cocok dengan lebar viewport pengguna saat ini,
+    dan mengambil gambar yang ditentukan dalam atribut srcset.</p>
+
+  <p>Elemen IMG diperlukan sebagai tag anak terakhir dari blok deklarasi gambar.Elemen IMG digunakan untuk memberikan
+    kompatibilitas mundur untuk browser yang tidak mendukung elemen gambar, atau jika tidak ada tag sumber yang cocok.
+  </p>
+
+  <p><strong>Catatan:</strong> Elemen gambar tidak didukung dalam IE12 dan sebelumnya atau Safari 9.0 dan sebelumnya.
+  </p>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tryhtml_images_style</title>
+  <style>
+    /* Gaya ini menetapkan lebar semua gambar hingga 100%: */
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <p>Gambar pertama menggunakan atribut lebar (diatur ke 128 piksel), tetapi gaya di bagian kepala menimpanya, dan
+    Setel lebar hingga 100%.</p>
+
+  <img src="files/img/html5.gif" alt="HTML5 Icon" width="128" height="128">
+
+  <p>Gambar kedua menggunakan atribut gaya untuk mengatur lebar menjadi 128 piksel, ini tidak akan ditimpa oleh gaya di
+    bagian kepala:</p>
+
+  <img src="files/img/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;">
+</body>
+
+</html>

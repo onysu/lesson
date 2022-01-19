@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tryhtml_layout_flexbox</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Style the header */
+    header {
+      background-color: #666;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: white;
+    }
+
+    /* Container for flexboxes */
+    section {
+      display: -webkit-flex;
+      display: flex;
+    }
+
+    /* Style the navigation menu */
+    nav {
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      background: #ccc;
+      padding: 20px;
+    }
+
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    /* Style the content */
+    article {
+      -webkit-flex: 3;
+      -ms-flex: 3;
+      flex: 3;
+      background-color: #f1f1f1;
+      padding: 10px;
+    }
+
+    /* Style the footer */
+    footer {
+      background-color: #777;
+      padding: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+    @media (max-width: 600px) {
+      section {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <p>Dalam contoh ini, kami telah membuat header, dua kolom/kotak dan footer. Pada layar yang lebih kecil, kolom akan
+    bertumpuk satu sama lain.
+    Ubah ukuran jendela browser untuk melihat efek responsif.</p>
+  <p><b>Catatan:</b> Flexbox tidak didukung di Internet Explorer 10 dan versi yang lebih lama.</p>
+
+
+  <header>
+    <h2>Kota</h2>
+  </header>
+
+  <section>
+    <nav>
+      <ul>
+        <li><a href="#">London</a></li>
+        <li><a href="#">Paris</a></li>
+        <li><a href="#">Tokyo</a></li>
+      </ul>
+    </nav>
+
+    <article>
+      <h1>London</h1>
+      <p>London adalah ibu kota Inggris. Ini adalah kota terpadat di Britania Raya, dengan wilayah metropolitan lebih
+        dari 13
+        juta penduduk.</p>
+      <p>Berdiri di Sungai Thames, London telah menjadi pemukiman utama selama dua milenium, sejarahnya kembali ke
+        pendiriannya
+        oleh orang Romawi, yang menamakannya Londinium.</p>
+    </article>
+  </section>
+
+  <footer>
+    <p>Footer</p>
+  </footer>
+</body>
+
+</html>

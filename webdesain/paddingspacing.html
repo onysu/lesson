@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>paddingspacing</title>
+  <style>
+    .table2 {
+      float: left;
+      margin-left: 15%;
+      margin-right: 15%;
+    }
+
+    .table2,
+    .table2 th,
+    .table2 td {
+      border: 1px solid #282A35;
+    }
+
+    .table2,
+    .table2 th,
+    .table2 td {
+      border: 1px solid #282A35;
+    }
+
+    .table2 td {
+      padding: 10px;
+    }
+
+    .table3 {
+      float: left;
+    }
+
+    .table3 {
+      border-spacing: 15px;
+    }
+
+    .table3,
+    .table3 th,
+    .table3 td {
+      border: 1px solid #282A35;
+    }
+
+    @media (max-width: 650px) {
+
+      .table2,
+      .table3 {
+        width: 60%;
+        float: none;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div style="overflow:auto;">
+    <table class="table2">
+      <caption>With Padding</caption>
+      <tbody>
+        <tr>
+          <td>hello</td>
+          <td>hello</td>
+          <td>hello</td>
+        </tr>
+        <tr>
+          <td>hello</td>
+          <td>hello</td>
+          <td>hello</td>
+        </tr>
+        <tr>
+          <td>hello</td>
+          <td>hello</td>
+          <td>hello</td>
+        </tr>
+      </tbody>
+    </table>
+    <table class="table3">
+      <caption>With Spacing</caption>
+      <tbody>
+        <tr>
+          <td>hello</td>
+          <td>hello</td>
+          <td>hello</td>
+        </tr>
+        <tr>
+          <td>hello</td>
+          <td>hello</td>
+          <td>hello</td>
+        </tr>
+        <tr>
+          <td>hello</td>
+          <td>hello</td>
+          <td>hello</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>

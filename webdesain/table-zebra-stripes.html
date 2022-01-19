@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>table-zebra-stripes</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #D6EEEE;
+    }
+  </style>
+</head>
+
+<body>
+  <p>Untuk tabel bergaris zebra, gunakan pemilih nth-child() dan tambahkan latar belakang-warna ke semua baris tabel
+    genap (atau ganjil).</p>
+  <table>
+    <tr>
+      <th>Nama Depan</th>
+      <th>Nama Belakang</th>
+      <th>Tabungan</th>
+    </tr>
+    <tr>
+      <td>Peter</td>
+      <td>Griffin</td>
+      <td>Rp. 1.440.730,00</td>
+    </tr>
+    <tr>
+      <td>Lois</td>
+      <td>Griffin</td>
+      <td>Rp. 2.161.095,00</td>
+    </tr>
+    <tr>
+      <td>Joe</td>
+      <td>Swanson</td>
+      <td>Rp. 4.322.190,00</td>
+    </tr>
+    <tr>
+      <td>Cleveland</td>
+      <td>Brown</td>
+      <td>Rp. 3.601.825,00</td>
+    </tr>
+  </table>
+</body>
+
+</html>

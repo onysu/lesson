@@ -294,37 +294,61 @@ Klik untuk menampilkan tanggal dan waktu.&lt;/button&gt;
           </p>
 
           <h5>Contoh :</h5>
+          <img class="top-example" src="files/img/browser-head.png" alt="">
+          <div class="bd-example">
+            <h2>Gunakan Javascript untuk Mengubah Teks</h2>
+            <p>Contoh ini menulis "Halo Javascript!" ke dalam elemen HTML dengan id="demo" :</p>
+            <p id="demo"></p>
+            <script>
+              document.getElementById("demo").innerHTML = "Hello JavaScript!";
+            </script>
+          </div>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                      <div class="line number2 index1 alt1">6</div>
+                      <div class="line number2 index1 alt1">7</div>
+                      <div class="line number2 index1 alt1">8</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Gunakan Javascript untuk Mengubah Teks<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Contoh ini menulis "Halo Javascript!" ke dalam elemen HTML dengan id="demo" :<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 
-          <div class="w3-example">
-            <h3>Example</h3>
-            <div class="w3-code notranslate htmlHigh">
-              <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                  style="color:mediumblue">&lt;</span>script<span class="tagcolor"
-                  style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br><span
-                  class="jsnumbercolor" style="color:red">
-                </span> document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span
-                  class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor"
-                  style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Hello
-                  JavaScript!"</span>;<br>
-              </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                  style="color:mediumblue">&lt;</span>/script<span class="tagcolor"
-                  style="color:mediumblue">&gt;</span></span>
+&lt;p <span class="na">id</span>="demo">&lt;/p&gt;
+
+<span class="nt">&lt;script&gt;</span>
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+<span class="nt">&lt;/script&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <a target="_blank" href="tryit.asp?filename=tryhtml_script" class="w3-btn w3-margin-bottom">Try it
-              Yourself »</a>
+            <p><a class="btn btn-warning btn-sm" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_script"
+                target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
           </div>
-          <div class="w3-panel w3-note">
-            <p><strong>Tip:</strong> You can learn much more about JavaScript in our <a
-                href="/js/default.asp">JavaScript
-                Tutorial</a>.</p>
-          </div>
-          <hr>
+        </section>
 
-          <h2>A Taste of JavaScript</h2>
-          <p>Here are some examples of what JavaScript can do:</p>
+        <section>
+          <h2>Rasa Javascript</h2>
+          <p>Berikut adalah beberapa contoh dari apa yang dapat dilakukan JavaScript:</p>
           <div class="w3-example">
-            <h3>Example</h3>
-            <p>JavaScript can change content:</p>
+            <h5>Contoh :</h5>
+            <p>JavaScript dapat mengubah konten:</p>
             <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span
                   class="jsnumbercolor" style="color:red">
                 </span> document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span
@@ -337,8 +361,8 @@ Klik untuk menampilkan tanggal dan waktu.&lt;/button&gt;
               »</a>
           </div>
           <div class="w3-example">
-            <h3>Example</h3>
-            <p>JavaScript can change styles:</p>
+            <h5>Contoh :</h5>
+            <p>Javascript dapat mengubah style:</p>
             <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black">
                 document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span
                   class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor"
@@ -359,8 +383,8 @@ Klik untuk menampilkan tanggal dan waktu.&lt;/button&gt;
               »</a>
           </div>
           <div class="w3-example">
-            <h3>Example</h3>
-            <p>JavaScript can change attributes:</p>
+            <h5>Contoh :</h5>
+            <p>Javascript dapat mengubah atribut:</p>
             <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span
                   class="jsnumbercolor" style="color:red">
                 </span> document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span
@@ -387,7 +411,7 @@ Klik untuk menampilkan tanggal dan waktu.&lt;/button&gt;
             have disabled scripts in their browser or have a browser that doesn't support
             scripts:</p>
           <div class="w3-example">
-            <h3>Example</h3>
+            <h5>Contoh :</h5>
             <div class="w3-code notranslate htmlHigh">
               <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
                   style="color:mediumblue">&lt;</span>script<span class="tagcolor"

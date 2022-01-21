@@ -298,9 +298,9 @@ Klik untuk menampilkan tanggal dan waktu.&lt;/button&gt;
           <div class="bd-example">
             <h2>Gunakan Javascript untuk Mengubah Teks</h2>
             <p>Contoh ini menulis "Halo Javascript!" ke dalam elemen HTML dengan id="demo" :</p>
-            <p id="demo"></p>
+            <p id="demo1"></p>
             <script>
-              document.getElementById("demo").innerHTML = "Hello JavaScript!";
+              document.getElementById("demo1").innerHTML = "Hello JavaScript!";
             </script>
           </div>
           <div class="highlight">
@@ -344,11 +344,57 @@ Klik untuk menampilkan tanggal dan waktu.&lt;/button&gt;
         </section>
 
         <section>
-          <h2>Rasa Javascript</h2>
+          <h2>Javascript</h2>
           <p>Berikut adalah beberapa contoh dari apa yang dapat dilakukan JavaScript:</p>
           <div class="w3-example">
             <h5>Contoh :</h5>
-            <p>JavaScript dapat mengubah konten:</p>
+            <!-- <p>JavaScript dapat mengubah konten:</p> -->
+            <img class="top-example" src="files/img/browser-head.png" alt="">
+            <div class="bd-example">
+              <iframe src="tryhtml_script_html.html" width="100%" height="125" frameborder="0"></iframe>
+            </div>
+            <div class="highlight">
+              Code :
+              <div class="syntaxhighlighter  xml">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td class="gutter">
+                        <div class="line number1 index0 alt2">1</div>
+                        <div class="line number2 index1 alt1">2</div>
+                        <div class="line number2 index1 alt1">3</div>
+                        <div class="line number2 index1 alt1">4</div>
+                        <div class="line number2 index1 alt1">5</div>
+                        <div class="line number2 index1 alt1">6</div>
+                        <div class="line number2 index1 alt1">7</div>
+                        <div class="line number2 index1 alt1">8</div>
+                        <div class="line number2 index1 alt1">9</div>
+                      </td>
+                      <td class="code">
+                        <div class="container-fluid">
+                          <pre tabindex="0" class="chroma">
+<code class="language-html" data-lang="html">&lt;p&gt;Javascript dapat mengubah konten elemen HTML:&lt;/p&gt;
+&lt;button type="button" onclick="myFunction()"&gt;Klik aku!&lt;/button&gt;
+&lt;p id="demo"&gt;Ini adalah demonstrasi.&lt;/p&gt;
+
+&lt;script&gt;
+  function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+  }
+&lt;/script&gt;</code></pre>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p><a class="btn btn-warning btn-sm"
+                  href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_script" target="_blank">Cobalah
+                  sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                    src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+            </div>
+
+
             <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span
                   class="jsnumbercolor" style="color:red">
                 </span> document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span

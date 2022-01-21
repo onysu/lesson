@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tryhtml_script_attribute</title>
+</head>
+
+<body>
+  <p>Di sini, JavaScript mengubah nilai atribut SRC (Sumber) dari suatu gambar.</p>
+
+  <script>
+    function light(sw) {
+      var pic;
+      if (sw == 0) {
+        pic = "files/img/pic_bulboff.gif"
+      } else {
+        pic = "files/img/pic_bulbon.gif"
+      }
+      document.getElementById('myImage').src = pic;
+    }
+  </script>
+
+  <img id="myImage" src="files/img/pic_bulboff.gif" width="100" height="180">
+
+  <p>
+    <button type="button" onclick="light(1)">Lampu menyala</button>
+    <button type="button" onclick="light(0)">Matikan</button>
+  </p>
+</body>
+
+</html>

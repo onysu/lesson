@@ -15129,7 +15129,592 @@ gambar Background berperilaku.
 
         <!-- HTML - Elemen Head -->
         <section id="25">
-          <!--  -->
+          <h1><span class="text-muted fw-light">HTML :</span> Head Elemen</h1>
+          <p class="lead">HTML <mark>&lt;head&gt;</mark> element adalah wadah untuk elemen-elemen berikut:
+            <mark>&lt;title&gt;</mark>,
+            <mark>&lt;style&gt;</mark>, <mark>&lt;meta&gt;</mark>, <mark>&lt;link&gt;</mark>,
+            <mark>&lt;script&gt;</mark>, dan <mark>&lt;base&gt;</mark>.
+          </p>
+
+          <p>&lt;head&gt; element adalah wadah untuk metadata (data tentang data) dan ditempatkan antara
+            <mark>&lt;html&gt;</mark>
+            tag dan <mark>&lt;body&gt;</mark> tag. <br>
+            Metadata HTML adalah data tentang dokumen HTML. Metadata tidak ditampilkan. <br>
+            Metadata biasanya menentukan judul dokumen, kumpulan karakter, style, skrip, dan informasi meta lainnya.
+          </p>
+        </section>
+        <section id="25.1">
+          <h2><code>&lt;title&gt;</code> elemen</h2>
+          <p>Elemen <mark>&lt;title&gt;</mark> mendefinisikan judul dokumen. Judul harus hanya teks, dan ditampilkan di
+            bilah judul browser atau di tab halaman. Elemen <mark>&lt;title&gt;</mark> ini diperlukan dalam dokumen
+            HTML!. Isi judul halaman sangat penting untuk optimasi mesin pencari (SEO)! Judul halaman digunakan oleh
+            algoritme mesin pencari untuk menentukan urutan saat mencantumkan halaman dalam hasil pencarian.</p>
+          <ul>
+            <li>Mendefinisikan judul di bilah alat browser</li>
+            <li>Memberikan judul untuk halaman ketika ditambahkan ke favorit</li>
+            <li>Menampilkan judul halaman di hasil mesin telusur</li>
+          </ul>
+          <p>Jadi, cobalah untuk membuat judulnya seakurat dan bermakna mungkin!</p>
+          <div class="highlight">
+            Code : Contoh Dokumen HTML sederhana
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                      <div class="line number2 index1 alt1">6</div>
+                      <div class="line number2 index1 alt1">7</div>
+                      <div class="line number2 index1 alt1">8</div>
+                      <div class="line number2 index1 alt1">9</div>
+                      <div class="line number2 index1 alt1">10</div>
+                      <div class="line number2 index1 alt1">11</div>
+                      <div class="line number2 index1 alt1">12</div>
+                      <div class="line number2 index1 alt1">13</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span> <span class="s">"utf-8"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span> <span class="s">"viewport"</span><span class="na">content</span><span class="o">=</span> <span class="s">"width=device-width, initial-scale=1"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Judul halaman yang bermakna<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+
+    Isi dokumen ......
+
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_head_title" target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+        </section>
+        <section id="25.2">
+          <h2><code>&lt;style&gt;</code> elemen</h2>
+          <p><mark>&lt;style&gt;</mark> element digunakan untuk menentukan informasi gaya untuk satu halaman HTML.</p>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                      <div class="line number2 index1 alt1">6</div>
+                      <div class="line number2 index1 alt1">7</div>
+                      <div class="line number2 index1 alt1">8</div>
+                      <div class="line number2 index1 alt1">9</div>
+                      <div class="line number2 index1 alt1">10</div>
+                      <div class="line number2 index1 alt1">11</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="nt">body </span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="nf">powderblue</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nt">h1 </span> <span class="p">{</span>
+    <span class="k">color</span><span class="p">:</span> <span class="nf">red</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nt">p </span> <span class="p">{</span>
+    <span class="k">color</span><span class="p">:</span> <span class="nf">blue</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_head_style" target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+        </section>
+        <section id="25.3">
+          <h2><code>&lt;link&gt;</code> elemen</h2>
+          <p><mark>&lt;link&gt;</mark> elemen mendefinisikan hubungan antara dokumen saat ini dan sumber daya eksternal.
+            <mark>&lt;link&gt;</mark>
+            tag paling sering digunakan untuk menautkan ke style sheet eksternal:
+          </p>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                      <div class="line number2 index1 alt1">6</div>
+                      <div class="line number2 index1 alt1">7</div>
+                      <div class="line number2 index1 alt1">8</div>
+                      <div class="line number2 index1 alt1">9</div>
+                      <div class="line number2 index1 alt1">10</div>
+                      <div class="line number2 index1 alt1">11</div>
+                      <div class="line number2 index1 alt1">12</div>
+                      <div class="line number2 index1 alt1">13</div>
+                      <div class="line number2 index1 alt1">14</div>
+                      <div class="line number2 index1 alt1">15</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span> <span class="s">"utf-8"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span> <span class="s">"viewport"</span><span class="na">content</span><span class="o">=</span> <span class="s">"width=device-width, initial-scale=1"</span><span class="p">&gt;</span>
+  <mark><span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">"mystyle.css"</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span><span class="p">&gt;</span></mark>
+  <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Judul Halaman<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, world!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ini adalah sebuah paragraf<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_head_link" target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+          <p><strong>Tip:</strong> Untuk mempelajari semua tentang CSS, kunjungi Bab <a href="#13" target="_blank">CSS
+              Tutorial</a>.
+          </p>
+        </section>
+        <section id="25.4">
+          <h2><code>&lt;meta&gt;</code> elemen</h2>
+          <p>&lt;meta&gt; element biasanya digunakan untuk menentukan kumpulan karakter, deskripsi halaman, kata kunci,
+            penulis dokumen, dan pengaturan viewport. Metadata tidak akan ditampilkan pada halaman, tetapi digunakan
+            oleh browser (cara menampilkan konten atau memuat ulang halaman), oleh mesin pencari (kata kunci), dan
+            layanan web lainnya.</p>
+
+          <h5>Contoh :</h5>
+          <div class="highlight">
+            Code : <b>Tentukan set karakter yang digunakan:</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span
+class="attributecolor" style="color:red"> charset<span class="attributevaluecolor"
+style="color:mediumblue">="UTF-8"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="highlight">
+            Code : <b>Tentukan kata kunci untuk mesin pencari:</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span
+class="attributecolor" style="color:red"> name<span class="attributevaluecolor"
+style="color:mediumblue">="keywords"</span> content<span class="attributevaluecolor"
+style="color:mediumblue">="HTML, CSS, JavaScript"</span></span><span class="tagcolor"
+style="color:mediumblue">&gt;</span></span></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="highlight">
+            Code : <b>Tentukan deskripsi halaman web Anda:</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span
+class="attributecolor" style="color:red"> name<span class="attributevaluecolor"
+style="color:mediumblue">="description"</span> content<span class="attributevaluecolor"
+style="color:mediumblue">="Free Web tutorials"</span></span><span class="tagcolor"
+style="color:mediumblue">&gt;</span></span></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="highlight">
+            Code : <b>Tentukan penulis halaman:</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span
+class="attributecolor" style="color:red"> name<span class="attributevaluecolor"
+style="color:mediumblue">="author"</span> content<span class="attributevaluecolor" style="color:mediumblue">="John Doe"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="highlight">
+            Code : <b>Refresh dokumen setiap 30 detik:</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> http-equiv<span class="attributevaluecolor" style="color:mediumblue">="refresh"</span> content<span
+class="attributevaluecolor" style="color:mediumblue">="30"</span></span><span class="tagcolor"
+style="color:mediumblue">&gt;</span></span></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="highlight">
+            Code : <b>Mengatur viewport untuk membuat situs web Anda terlihat bagus di semua perangkat:</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> name<span class="attributevaluecolor"
+style="color:mediumblue">="viewport"</span> content<span class="attributevaluecolor"
+style="color:mediumblue">="width=device-width, initial-scale=1.0"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <p>Contoh <mark>&lt;meta&gt;</mark> tags:</p>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                      <div class="line number2 index1 alt1">6</div>
+                      <div class="line number2 index1 alt1">7</div>
+                      <div class="line number2 index1 alt1">8</div>
+                      <div class="line number2 index1 alt1">9</div>
+                      <div class="line number2 index1 alt1">10</div>
+                      <div class="line number2 index1 alt1">11</div>
+                      <div class="line number2 index1 alt1">12</div>
+                      <div class="line number2 index1 alt1">13</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"utf-8"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span> <span class="s">"description"</span><span class="na">content</span><span class="o">=</span><span class="s">"Free Web tutorials"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"keywords"</span><span class="na">content</span><span class="o">=</span> <span class="s">"HTML, CSS, JavaScript"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"author"</span><span class="na">content</span><span class="o">=</span><span class="s">"John Doe"</span><span class="p">&gt;</span>    
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Judul Halaman<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Semua informasi meta masuk ke dalam bagian head.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_head_meta" target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+        </section>
+        <section id="25.5">
+          <h2>Mengatur Viewport</h2>
+          <p>Viewport adalah area pengguna yang terlihat dari halaman web. Ini bervariasi dengan perangkat - itu akan
+            lebih kecil pada ponsel daripada di layar komputer. Anda harus menyertakan elemen &lt;meta&gt; berikut di
+            semua halaman web kalian: </p>
+
+          <p>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> name<span
+                  class="attributevaluecolor" style="color:mediumblue">="viewport"</span> content<span
+                  class="attributevaluecolor" style="color:mediumblue">="width=device-width,
+                  initial-scale=1.0"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+          </p>
+
+          <p>Ini memberi instruksi browser tentang caranya untuk mengontrol dimensi dan penskalaan halaman.</p>
+          <p>Bagian <mark><code>width=device-width</code></mark> mengatur lebar halaman untuk mengikuti lebar layar
+            perangkat (yang
+            akan bervariasi tergantung pada perangkat). <br>
+            Bagian <mark><code>initial-scale=1.0</code></mark> menetapkan tingkat zoom awal ketika halaman pertama kali
+            dimuat oleh
+            browser. <br>
+            Berikut adalah contoh halaman web tanpa tag meta viewport, dan halaman web yang sama dengan tag meta
+            viewport:</p>
+
+          <p class="moreInfo"><strong>Tip:</strong> Jika Anda menelusuri halaman ini dengan telepon atau tablet, Anda
+            dapat mengklik dua tautan di bawah untuk melihat perbedaannya.</p>
+          <div class="row text-center">
+            <div class="col"><a target="_blank" href="example_withoutviewport.htm"><img
+                  src="../webdesain/files/img/img_viewport1.png"> <br><br><b>Tanpa viewport meta tag</b></a></div>
+            <div class="col"><a target="_blank" href="example_withviewport.htm"><img
+                  src="../webdesain/files/img/img_viewport2.png"> <br><br><b>Dengan viewport meta tag</b></a></div>
+          </div>
+        </section>
+        <section id="25.6">
+          <h2><code>&lt;script&gt;</code> elemen</h2>
+          <p><mark>&lt;script&gt;</mark> elemen digunakan untuk mendefinisikan JavaScript sisi klien. berikut JavaScript
+            menulis <q>Hello JavaScript!</q> menjadi elemen HTML menggunakan id=<q>demo</q> :</p>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="na">function myFunction()</span> <span class="p">{</span>
+    <span class="s">document.getElementById("demo").innerHTML = "Hello JavaScript!";</span>
+  <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_head_script" target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+          <div class="w3-panel w3-note">
+            <p class="moreInfo"><strong>Tip:</strong> Untuk mempelajari semua tentang JavaScript, kunjungi Bab <a
+                href="#23">JavaScript
+                Tutorial</a>.</p>
+          </div>
+        </section>
+        <section id="25.7">
+          <h2><code>&lt;base&gt;</code> elemen</h2>
+          <p>
+            <mark>&lt;base&gt;</mark> element menentukan URL dasar dan / atau target untuk semua URL relatif dalam
+            halaman. <br>
+            <mark>&lt;base&gt;</mark> tag harus memiliki href atau atribut target yang ada, atau keduanya. <br>
+            Hanya ada satu <mark>&lt;base&gt;</mark> element dalam dokumen!
+          </p>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                      <div class="line number2 index1 alt1">6</div>
+                      <div class="line number2 index1 alt1">7</div>
+                      <div class="line number2 index1 alt1">8</div>
+                      <div class="line number2 index1 alt1">9</div>
+                      <div class="line number2 index1 alt1">10</div>
+                      <div class="line number2 index1 alt1">11</div>
+                      <div class="line number2 index1 alt1">12</div>
+                      <div class="line number2 index1 alt1">13</div>
+                      <div class="line number2 index1 alt1">14</div>
+                      <div class="line number2 index1 alt1">15</div>
+                      <div class="line number2 index1 alt1">16</div>
+                      <div class="line number2 index1 alt1">17</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>    
+    <span class="p">&lt;</span><span class="nt">base</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://www.w3schools.com/"</span> <span class="na">target</span><span class="o">=</span><span class="s">"_blank"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Judul Halaman<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Elemen Dasar<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>&lt;<span class="nt">img</span> <span class="na">src</span>="images/stickman.gif" <span class="na">width</span>="24" <span class="na">height</span>="39" <span class="na">alt</span>="Stickman"&gt; - Perhatikan bahwa kami hanya menentukan relatif
+    alamat untuk gambar.Karena kami telah menentukan URL dasar di bagian head, browser akan mencari gambar di
+    <q>https://www.w3schools.com/images/stickman.gif</q>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>&lt;<span class="nt">a</span> <span class="na">href</span>="tags/tag_base.asp"&gt;Tag Dasar HTML.&lt;<span class="nt">/a</span>&gt; - Perhatikan bahwa tautan terbuka di jendela baru, bahkan jika tidak 
+    atribut target="_blank". Ini karena atribut target dari elemen dasar diatur ke "_blank".<span class="p">&lt;/</span><span class="nt">p</span><span
+      class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah sendiri <img
+                  draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+        </section>
+        <section>
+          <h2>Ringkasan Bab</h2>
+          <ul style="list-style-type: square;">
+            <li><code>&lt;head&gt;</code> adalah wadah untuk metadata (data tentang data).</li>
+            <li><code>&lt;head&gt;</code> ditempatkan di antara <code>&lt;html&gt;</code> tag dan
+              <code>&lt;body&gt;</code> tag.
+            </li>
+            <li><code>&lt;title&gt;</code> diperlukan dan menentukan judul dokumen.</li>
+            <li><code>&lt;style&gt;</code> ini digunakan untuk mendefinisikan informasi gaya untuk satu dokumen.</li>
+            <li><code>&lt;link&gt;</code> tag paling sering digunakan untuk menautkan ke lembar gaya eksternal .</li>
+            <li><code>&lt;meta&gt;</code> ini biasanya digunakan untuk menentukan set karakter, deskripsi halaman, kata
+              kunci,
+              penulis dokumen, dan pengaturan viewport Elemen.</li>
+            <li><code>&lt;script&gt;</code> ini digunakan untuk mendefinisikan JavaScript sisi klien.</li>
+            <li><code>&lt;base&gt;</code> menentukan URL dasar dan/atau target untuk semua URL relatif di halaman.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Elemen Head HTML</h2>
+          <table class="table table-hover table-sm">
+            <thead class="table-light">
+              <tr>
+                <th>Tag</th>
+                <th>Keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="#">&lt;head&gt;</a></td>
+                <td>Mendefinisikan informasi tentang dokumen</td>
+              </tr>
+              <tr>
+                <td><a href="#">&lt;title&gt;</a></td>
+                <td>Menentukan judul dokumen</td>
+              </tr>
+              <tr>
+                <td><a href="#">&lt;base&gt;</a></td>
+                <td>Menentukan alamat default atau target default untuk semua tautan pada halaman</td>
+              </tr>
+              <tr>
+                <td><a href="#">&lt;link&gt;</a></td>
+                <td>Mendefinisikan hubungan antara dokumen dan sumber daya eksternal</td>
+              </tr>
+              <tr>
+                <td><a href="#">&lt;meta&gt;</a></td>
+                <td>Mendefinisikan metadata tentang dokumen HTML</td>
+              </tr>
+              <tr>
+                <td><a href="#">&lt;script&gt;</a></td>
+                <td>Mendefinisikan skrip sisi klien</td>
+              </tr>
+              <tr>
+                <td><a href="#">&lt;style&gt;</a></td>
+                <td>Mendefinisikan informasi gaya untuk dokumen</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="w3-note w3-panel">
+            <p>Untuk daftar lengkap semua tag HTML yang tersedia, kunjungi <a href="/tags/default.asp">Referensi Tag
+                HTML</a>.</p>
+          </div>
         </section>
 
         <hr>

@@ -422,89 +422,161 @@
                 sendiri <img draggable="false" role="img" class="emoji" alt="↗"
                   src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
           </div>
-
-          <div class="w3-example">
-            <h3>Example</h3>
-            <div class="w3-code notranslate htmlHigh">
-              <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                  style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red"> rel<span
-                    class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span> href<span
-                    class="attributevaluecolor" style="color:mediumblue">="mystyle.css"</span></span><span
-                  class="tagcolor" style="color:mediumblue">&gt;</span></span>
-            </div>
-            <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_head_link" target="_blank">Try it
-              Yourself »</a>
-          </div>
-          <div class="w3-panel w3-note">
-            <p><strong>Tip:</strong> To learn all about CSS, visit our <a href="/css/default.asp">CSS Tutorial</a>.
-            </p>
-          </div>
+          <p><strong>Tip:</strong> Untuk mempelajari semua tentang CSS, kunjungi Bab <a href="#13" target="_blank">CSS
+              Tutorial</a>.
+          </p>
         </section>
 
-        <section>
+        <section id="25.4">
           <h2><code>&lt;meta&gt;</code> elemen</h2>
-          <p>The <code>&lt;meta&gt;</code> element is typically used
-            to specify the character set, page description, keywords, author of the document,
-            and viewport settings.</p>
-          <p>The metadata will not be displayed on the page, but are used by browsers (how to display content
-            or reload page),
-            by search engines (keywords), and other web services.</p>
+          <p>&lt;meta&gt; element biasanya digunakan untuk menentukan kumpulan karakter, deskripsi halaman, kata kunci,
+            penulis dokumen, dan pengaturan viewport. Metadata tidak akan ditampilkan pada halaman, tetapi digunakan
+            oleh browser (cara menampilkan konten atau memuat ulang halaman), oleh mesin pencari (kata kunci), dan
+            layanan web lainnya.</p>
 
-          <h2>Examples</h2>
-          <p><b>Define the character set used:</b></p>
-          <div class="w3-code w3-border notranslate htmlHigh">
-            <div><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                  style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> charset<span
-                    class="attributevaluecolor" style="color:mediumblue">="UTF-8"</span></span><span class="tagcolor"
-                  style="color:mediumblue">&gt;</span></span></div>
-          </div>
-
-          <p><b>Define keywords for search engines:</b></p>
-          <div class="w3-code w3-border notranslate htmlHigh">
-            <div><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                  style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> name<span
-                    class="attributevaluecolor" style="color:mediumblue">="keywords"</span> content<span
-                    class="attributevaluecolor" style="color:mediumblue">="HTML, CSS, JavaScript"</span></span><span
-                  class="tagcolor" style="color:mediumblue">&gt;</span></span></div>
-          </div>
-
-          <p><b>Define a description of your web page:</b></p>
-          <div class="w3-code w3-border notranslate htmlHigh">
-            <div><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                  style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> name<span
-                    class="attributevaluecolor" style="color:mediumblue">="description"</span> content<span
-                    class="attributevaluecolor" style="color:mediumblue">="Free Web tutorials"</span></span><span
-                  class="tagcolor" style="color:mediumblue">&gt;</span></span></div>
-          </div>
-
-          <p><b>Define the author of a page:</b></p>
-          <div class="w3-code w3-border notranslate htmlHigh">
-            <div><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                  style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> name<span
-                    class="attributevaluecolor" style="color:mediumblue">="author"</span> content<span
-                    class="attributevaluecolor" style="color:mediumblue">="John Doe"</span></span><span class="tagcolor"
-                  style="color:mediumblue">&gt;</span></span></div>
-          </div>
-
-          <p><b>Refresh document every 30 seconds:</b></p>
-          <div class="w3-code w3-border notranslate htmlHigh">
-            <div><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                  style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red">
-                  http-equiv<span class="attributevaluecolor" style="color:mediumblue">="refresh"</span> content<span
-                    class="attributevaluecolor" style="color:mediumblue">="30"</span></span><span class="tagcolor"
-                  style="color:mediumblue">&gt;</span></span></div>
-          </div>
-
-          <p><b>Setting the viewport to make your website look good on all devices:</b></p>
-          <div class="w3-code w3-border notranslate htmlHigh">
-            <div>
-              <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                  style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> name<span
-                    class="attributevaluecolor" style="color:mediumblue">="viewport"</span> content<span
-                    class="attributevaluecolor" style="color:mediumblue">="width=device-width,
-                    initial-scale=1.0"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+          <h5>Contoh :</h5>
+          <div class="highlight">
+            Code : <b>Tentukan set karakter yang digunakan:</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span
+class="attributecolor" style="color:red"> charset<span class="attributevaluecolor"
+style="color:mediumblue">="UTF-8"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
+
+          <div class="highlight">
+            Code : <b>Tentukan kata kunci untuk mesin pencari:</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span
+class="attributecolor" style="color:red"> name<span class="attributevaluecolor"
+style="color:mediumblue">="keywords"</span> content<span class="attributevaluecolor"
+style="color:mediumblue">="HTML, CSS, JavaScript"</span></span><span class="tagcolor"
+style="color:mediumblue">&gt;</span></span></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="highlight">
+            Code : <b>Tentukan deskripsi halaman web Anda:</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span
+class="attributecolor" style="color:red"> name<span class="attributevaluecolor"
+style="color:mediumblue">="description"</span> content<span class="attributevaluecolor"
+style="color:mediumblue">="Free Web tutorials"</span></span><span class="tagcolor"
+style="color:mediumblue">&gt;</span></span></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="highlight">
+            Code : <b>Tentukan penulis halaman:</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span
+class="attributecolor" style="color:red"> name<span class="attributevaluecolor"
+style="color:mediumblue">="author"</span> content<span class="attributevaluecolor" style="color:mediumblue">="John Doe"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="highlight">
+            Code : <b>Refresh dokumen setiap 30 detik:</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> http-equiv<span class="attributevaluecolor" style="color:mediumblue">="refresh"</span> content<span
+class="attributevaluecolor" style="color:mediumblue">="30"</span></span><span class="tagcolor"
+style="color:mediumblue">&gt;</span></span></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="highlight">
+            Code : <b>Mengatur viewport untuk membuat situs web Anda terlihat bagus di semua perangkat:</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> name<span class="attributevaluecolor"
+style="color:mediumblue">="viewport"</span> content<span class="attributevaluecolor"
+style="color:mediumblue">="width=device-width, initial-scale=1.0"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
           <p>Example of <code>&lt;meta&gt;</code> tags:</p>
           <div class="w3-example">
             <h3>Example</h3>

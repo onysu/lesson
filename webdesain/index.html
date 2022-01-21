@@ -14950,7 +14950,176 @@ gambar Background berperilaku.
 
         <!-- HTML File Paths -->
         <section id="24">
-          <!--  -->
+          <h1>Jalur File HTML <span class="text-center fw-light">/ File Paths</span></h1>
+          <p class="lead">Jalur file menjelaskan lokasi file dalam struktur folder situs web.</p>
+
+          <h4>Contoh File Paths</h4>
+          <table class="table table-sm">
+            <tbody>
+              <tr>
+                <th style="width:280px">Path</th>
+                <th>Keterangan</th>
+              </tr>
+              <tr>
+                <td>&lt;img src="picture.jpg"&gt;</td>
+                <td>File "picture.jpg" terletak di folder yang sama dengan halaman saat ini</td>
+              </tr>
+              <tr>
+                <td>&lt;img src="images/picture.jpg"&gt;</td>
+                <td>File "picture.jpg" terletak di folder gambar di folder saat ini</td>
+              </tr>
+              <tr>
+                <td>&lt;img src="/images/picture.jpg"&gt;</td>
+                <td>File "picture.jpg" terletak di folder gambar di root web saat ini</td>
+              </tr>
+              <tr>
+                <td>&lt;img src="../picture.jpg"&gt;</td>
+                <td>File "picture.jpg" terletak di folder satu level naik dari folder saat ini</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          Jalur file menjelaskan lokasi file dalam struktur folder situs web. Jalur file digunakan saat menautkan ke
+          file eksternal, seperti:
+          <ul>
+            <li>Halaman Web</li>
+            <li>Gambar-gambar</li>
+            <li>Style Sheets</li>
+            <li>JavaScripts</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Jalur File Absolut</h2>
+          <p>Sebuah jalur file absolut adalah URL penuh (Full URL) ke file:</p>
+          <img class="top-example" src="files/img/browser-head.png" alt="">
+          <div class="bd-example">
+            <h2>Menggunakan jalur file Full URL</h2>
+            <img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain" style="width:300px">
+          </div>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+        <code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Menggunakan jalur file Full URL<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://www.w3schools.com/images/picture.jpg" <span class="na">alt</span>="Mountain" <span class="na">style</span>="width:300px"</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_files_absoulute" target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+          <p class="moreInfo">Tag &lt;img&gt; dijelaskan dalam bab : <a
+              href="https://onysu.github.io/lesson/webdesain/index.html#15" target="_blank">HTML Images</a>.</p>
+        </section>
+        <section>
+          <h2>Jalur File Relatif</h2>
+          <p>Jalur file relatif menunjuk ke file relatif terhadap halaman saat ini. Dalam contoh berikut, jalur file
+            menunjuk ke file di folder gambar yang berada Di akar web saat ini :</p>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+        <code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Menggunakan Relative File Path<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"/img/picture.jpg" <span class="na">alt</span>="Mountain" <span class="na">style</span>="width:300px"</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_files_absoulute" target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+
+          <p>Dalam contoh berikut, jalur file menunjuk ke file di folder gambar yang terletak di Folder saat ini :</p>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+        <code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Menggunakan Relative File Path<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"img/picture.jpg" <span class="na">alt</span>="Mountain" <span class="na">style</span>="width:300px"</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_files_absoulute" target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+
+          <p>Dalam contoh berikut, jalur file menunjuk ke file di folder gambar yang terletak di folder satu level naik
+            dari folder saat ini :</p>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+        <code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Menggunakan Relative File Path<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"../img/picture.jpg" <span class="na">alt</span>="Mountain" <span class="na">style</span>="width:300px"</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_files_absoulute" target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+        </section>
+        <section>
+          <h2>Praktek terbaik</h2>
+          <p>Ini adalah praktik terbaik untuk menggunakan jalur file relatif (jika mungkin). Saat menggunakan jalur file
+            relatif, halaman web Anda tidak akan terikat pada saat ini URL dasar.Semua
+            tautan akan bekerja di komputer Anda sendiri (localhost) serta pada domain publik Anda saat ini dan domain
+            publik Anda di masa depan.</p>
         </section>
 
         <hr>

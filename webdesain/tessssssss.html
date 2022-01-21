@@ -236,13 +236,54 @@
       </div>
 
       <div class="bd-content">
+
+        <section id="24">
+          <h1>Jalur File HTML <span class="text-center fw-light">/ File Paths</span></h1>
+          <p class="lead">Jalur file menjelaskan lokasi file dalam struktur folder situs web.</p>
+
+          <h4>Contoh File Paths</h4>
+          <table class="table table-sm">
+            <tbody>
+              <tr>
+                <th style="width:280px">Path</th>
+                <th>Keterangan</th>
+              </tr>
+              <tr>
+                <td>&lt;img src="picture.jpg"&gt;</td>
+                <td>File "picture.jpg" terletak di folder yang sama dengan halaman saat ini</td>
+              </tr>
+              <tr>
+                <td>&lt;img src="images/picture.jpg"&gt;</td>
+                <td>File "picture.jpg" terletak di folder gambar di folder saat ini</td>
+              </tr>
+              <tr>
+                <td>&lt;img src="/images/picture.jpg"&gt;</td>
+                <td>File "picture.jpg" terletak di folder gambar di root web saat ini</td>
+              </tr>
+              <tr>
+                <td>&lt;img src="../picture.jpg"&gt;</td>
+                <td>File "picture.jpg" terletak di folder satu level naik dari folder saat ini</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
         <section>
-          <h1>HTML <span class="color_h1">JavaScript</span></h1>
-          <p class="lead">Javascript membuat Halaman HTML lebih dinamis dan interaktif.</p>
-          <h5>Contoh :</h5>
+          Jalur file menjelaskan lokasi file dalam struktur folder situs web. Jalur file digunakan saat menautkan ke
+          file eksternal, seperti:
+          <ul>
+            <li>Halaman Web</li>
+            <li>Gambar-gambar</li>
+            <li>Style Sheets</li>
+            <li>JavaScripts</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Jalur File Absolut</h2>
+          <p>Sebuah jalur file absolut adalah URL penuh (Full URL) ke file:</p>
           <img class="top-example" src="files/img/browser-head.png" alt="">
           <div class="bd-example">
-            <iframe src="tryhtml_scripts_intro.html" width="100%" height="155" frameborder="0"></iframe>
+            <h2>Menggunakan jalur file Full URL</h2>
+            <img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain" style="width:300px">
           </div>
           <div class="highlight">
             Code :
@@ -253,20 +294,12 @@
                     <td class="gutter">
                       <div class="line number1 index0 alt2">1</div>
                       <div class="line number2 index1 alt1">2</div>
-                      <div class="line number2 index1 alt1">3</div>
-                      <div class="line number2 index1 alt1">4</div>
-                      <div class="line number2 index1 alt1">5</div>
-                      <div class="line number2 index1 alt1">6</div>
                     </td>
                     <td class="code">
                       <div class="container-fluid">
                         <pre tabindex="0" class="chroma">
-<code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>JavaScript Pertamaku<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-
-&lt;button <span class="na">type</span>="<span class="s">button</span>" <span class="na">onclick</span>="<span class="s">document.getElementById('demo').innerHTML = Date()"</span>&gt;
-Klik untuk menampilkan tanggal dan waktu.&lt;/button&gt;
-
-<span class="p">&lt;</span><span class="nt">p</span> <span class="na">id</span><span class="o">=</span><span class="s">"demo"</span><span class="p">&gt;</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span></code></pre>
+<code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Menggunakan jalur file Full URL<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"https://www.w3schools.com/images/picture.jpg" <span class="na">alt</span>="Mountain" <span class="na">style</span>="width:300px"</span><span class="p">&gt;</span></code></pre>
                       </div>
                     </td>
                   </tr>
@@ -274,35 +307,17 @@ Klik untuk menampilkan tanggal dan waktu.&lt;/button&gt;
               </table>
             </div>
             <p><a class="btn btn-warning btn-sm"
-                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_scripts_intro" target="_blank">Cobalah
+                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_files_absoulute" target="_blank">Cobalah
                 sendiri <img draggable="false" role="img" class="emoji" alt="↗"
                   src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
           </div>
+          <p class="moreInfo">Tag &lt;img&gt; dijelaskan dalam bab : <a
+              href="https://onysu.github.io/lesson/webdesain/index.html#15" target="_blank">HTML Images</a>.</p>
         </section>
-
         <section>
-          <h2>Tag <code>&lt;script&gt;</code> HTML</h2>
-          <p>
-            Tag HTML
-            <code>&lt;script&gt;</code> digunakan untuk mendefinisikan skrip sisi klien(JavaScript). <br>
-            Elemen <code>&lt;script&gt;</code> berisi pernyataan skrip, atau menunjuk ke file skrip eksternal melalui
-            atribut <mark><code>src</code></mark>. <br> Penggunaan umum untuk JavaScript adalah manipulasi gambar,
-            validasi formulir, dan perubahan konten yang dinamis. <br> Untuk memilih elemen HTML, JavaScript paling
-            sering
-            menggunakan metode <mark><code>document.getElementById()</code></mark>. <br>
-            Contoh JavaScript ini menulis "Halo JavaScript!" menjadi elemen HTML dengan id = "demo":
-          </p>
-
-          <h5>Contoh :</h5>
-          <img class="top-example" src="files/img/browser-head.png" alt="">
-          <div class="bd-example">
-            <h2>Gunakan Javascript untuk Mengubah Teks</h2>
-            <p>Contoh ini menulis "Halo Javascript!" ke dalam elemen HTML dengan id="demo" :</p>
-            <p id="demo1"></p>
-            <script>
-              document.getElementById("demo1").innerHTML = "Hello JavaScript!";
-            </script>
-          </div>
+          <h2>Jalur File Relatif</h2>
+          <p>Jalur file relatif menunjuk ke file relatif terhadap halaman saat ini. Dalam contoh berikut, jalur file
+            menunjuk ke file di folder gambar yang berada Di akar web saat ini :</p>
           <div class="highlight">
             Code :
             <div class="syntaxhighlighter  xml">
@@ -312,259 +327,89 @@ Klik untuk menampilkan tanggal dan waktu.&lt;/button&gt;
                     <td class="gutter">
                       <div class="line number1 index0 alt2">1</div>
                       <div class="line number2 index1 alt1">2</div>
-                      <div class="line number2 index1 alt1">3</div>
-                      <div class="line number2 index1 alt1">4</div>
-                      <div class="line number2 index1 alt1">5</div>
-                      <div class="line number2 index1 alt1">6</div>
-                      <div class="line number2 index1 alt1">7</div>
-                      <div class="line number2 index1 alt1">8</div>
                     </td>
                     <td class="code">
                       <div class="container-fluid">
                         <pre tabindex="0" class="chroma">
-<code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Gunakan Javascript untuk Mengubah Teks<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Contoh ini menulis "Halo Javascript!" ke dalam elemen HTML dengan id="demo" :<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-
-&lt;p <span class="na">id</span>="demo">&lt;/p&gt;
-
-<span class="nt">&lt;script&gt;</span>
-  document.getElementById("demo").innerHTML = "Hello JavaScript!";
-<span class="nt">&lt;/script&gt;</span></code></pre>
+<code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Menggunakan Relative File Path<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"/img/picture.jpg" <span class="na">alt</span>="Mountain" <span class="na">style</span>="width:300px"</span><span class="p">&gt;</span></code></pre>
                       </div>
                     </td>
                   </tr>
                 </tbody>
               </table>
             </div>
-            <p><a class="btn btn-warning btn-sm" href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_script"
-                target="_blank">Cobalah
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_files_absoulute" target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+
+          <p>Dalam contoh berikut, jalur file menunjuk ke file di folder gambar yang terletak di Folder saat ini :</p>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Menggunakan Relative File Path<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"img/picture.jpg" <span class="na">alt</span>="Mountain" <span class="na">style</span>="width:300px"</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_files_absoulute" target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+
+          <p>Dalam contoh berikut, jalur file menunjuk ke file di folder gambar yang terletak di folder satu level naik
+            dari folder saat ini :</p>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Menggunakan Relative File Path<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">"../img/picture.jpg" <span class="na">alt</span>="Mountain" <span class="na">style</span>="width:300px"</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_files_absoulute" target="_blank">Cobalah
                 sendiri <img draggable="false" role="img" class="emoji" alt="↗"
                   src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
           </div>
         </section>
-
         <section>
-          <p class="lead">Berikut adalah beberapa contoh dari apa yang dapat dilakukan JavaScript:</p>
-
-          <h5>Contoh :</h5>
-          <img class="top-example" src="files/img/browser-head.png" alt="">
-          <div class="bd-example">
-            <iframe src="tryhtml_script_html.html" width="100%" height="125" frameborder="0"></iframe>
-          </div>
-          <div class="highlight">
-            Code : Mengubah Konten
-            <div class="syntaxhighlighter  xml">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="gutter">
-                      <div class="line number1 index0 alt2">1</div>
-                      <div class="line number2 index1 alt1">2</div>
-                      <div class="line number2 index1 alt1">3</div>
-                      <div class="line number2 index1 alt1">4</div>
-                      <div class="line number2 index1 alt1">5</div>
-                      <div class="line number2 index1 alt1">6</div>
-                      <div class="line number2 index1 alt1">7</div>
-                      <div class="line number2 index1 alt1">8</div>
-                      <div class="line number2 index1 alt1">9</div>
-                    </td>
-                    <td class="code">
-                      <div class="container-fluid">
-                        <pre tabindex="0" class="chroma">
-<code class="language-html" data-lang="html">&lt;p&gt;Javascript dapat mengubah konten elemen HTML:&lt;/p&gt;
-&lt;button type="button" onclick="myFunction()"&gt;Klik aku!&lt;/button&gt;
-&lt;p id="demo"&gt;Ini adalah demonstrasi.&lt;/p&gt;
-
-&lt;script&gt;
-  function myFunction() {
-    document.getElementById("demo").innerHTML = "Hello JavaScript!";
-  }
-&lt;/script&gt;</code></pre>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p><a class="btn btn-warning btn-sm"
-                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_script_html" target="_blank">Cobalah
-                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
-                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-          </div>
-
-          <h5>Contoh :</h5>
-          <img class="top-example" src="files/img/browser-head.png" alt="">
-          <div class="bd-example">
-            <iframe src="tryhtml_script_styles.html" width="100%" height="110" frameborder="0"></iframe>
-          </div>
-          <div class="highlight">
-            Code : Mengubah Style
-            <div class="syntaxhighlighter  xml">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="gutter">
-                      <div class="line number1 index0 alt2">1</div>
-                      <div class="line number2 index1 alt1">2</div>
-                      <div class="line number2 index1 alt1">3</div>
-                      <div class="line number2 index1 alt1">4</div>
-                      <div class="line number2 index1 alt1">5</div>
-                      <div class="line number2 index1 alt1">6</div>
-                      <div class="line number2 index1 alt1">7</div>
-                      <div class="line number2 index1 alt1">8</div>
-                      <div class="line number2 index1 alt1">9</div>
-                      <div class="line number2 index1 alt1">10</div>
-                      <div class="line number2 index1 alt1">11</div>
-                    </td>
-                    <td class="code">
-                      <div class="container-fluid">
-                        <pre tabindex="0" class="chroma">
-<code class="language-html" data-lang="html">&lt;p id="demo"&gt;JavaScript dapat mengubah style.&lt;/p&gt;
-
-&lt;script&gt;
-  function myFunction() {
-    document.getElementById("demo").style.fontSize = "25px";
-    document.getElementById("demo").style.color = "red";
-    document.getElementById("demo").style.backgroundColor = "yellow";
-  }
-&lt;/script&gt;
-
-&lt;button type="button" onclick="myFunction()"&gt;Klik aku!&lt;/button&gt;</code></pre>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p><a class="btn btn-warning btn-sm"
-                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_script_styles" target="_blank">Cobalah
-                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
-                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-          </div>
-
-          <h5>Contoh :</h5>
-          <img class="top-example" src="files/img/browser-head.png" alt="">
-          <div class="bd-example">
-            <iframe src="tryhtml_script_attribute.html" width="100%" height="290" frameborder="0"></iframe>
-          </div>
-          <div class="highlight">
-            Code : Mengubah Atribut
-            <div class="syntaxhighlighter  xml">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="gutter">
-                      <div class="line number1 index0 alt2">1</div>
-                      <div class="line number2 index1 alt1">2</div>
-                      <div class="line number2 index1 alt1">3</div>
-                      <div class="line number2 index1 alt1">4</div>
-                      <div class="line number2 index1 alt1">5</div>
-                      <div class="line number2 index1 alt1">6</div>
-                      <div class="line number2 index1 alt1">7</div>
-                      <div class="line number2 index1 alt1">8</div>
-                      <div class="line number2 index1 alt1">9</div>
-                      <div class="line number2 index1 alt1">10</div>
-                      <div class="line number2 index1 alt1">11</div>
-                      <div class="line number2 index1 alt1">12</div>
-                      <div class="line number2 index1 alt1">13</div>
-                      <div class="line number2 index1 alt1">14</div>
-                      <div class="line number2 index1 alt1">15</div>
-                      <div class="line number2 index1 alt1">16</div>
-                      <div class="line number2 index1 alt1">17</div>
-                      <div class="line number2 index1 alt1">18</div>
-                      <div class="line number2 index1 alt1">19</div>
-                      <div class="line number2 index1 alt1">20</div>
-                    </td>
-                    <td class="code">
-                      <div class="container-fluid">
-                        <pre tabindex="0" class="chroma">
-<code class="language-html" data-lang="html">&lt;p&gt;Di sini, JavaScript mengubah nilai atribut SRC (Sumber) dari suatu gambar.&lt;/p&gt;
-
-&lt;script&gt;
-  function light(sw) {
-    var pic;
-    if (sw == 0) {
-      pic = "pic_bulboff.gif"
-    } else {
-      pic = "pic_bulbon.gif"
-    }
-    document.getElementById('myImage').src = pic;
-  }
-&lt;/script&gt;
-
-&lt;img id="myImage" src="pic_bulboff.gif" width="100" height="180"&gt;
-
-&lt;p&gt;
-  &lt;button type="button" onclick="light(1)"&gt;Lampu Menyala&lt;/button&gt;
-  &lt;button type="button" onclick="light(0)"&gt;Matikan&lt;/button&gt;
-&lt;/p&gt;</code></pre>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p><a class="btn btn-warning btn-sm"
-                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_script_attribute"
-                target="_blank">Cobalah
-                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
-                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-          </div>
+          <h2>Praktek terbaik</h2>
+          <p>Ini adalah praktik terbaik untuk menggunakan jalur file relatif (jika mungkin). Saat menggunakan jalur file
+            relatif, halaman web Anda tidak akan terikat pada saat ini URL dasar.Semua
+            tautan akan bekerja di komputer Anda sendiri (localhost) serta pada domain publik Anda saat ini dan domain
+            publik Anda di masa depan.</p>
         </section>
 
-        <section>
-          <h2>Tag <code>&lt;noscript&gt;</code> HTML</h2>
-          <p>Tag HTML <mark>&lt;noscript&gt;</mark> mendefinisikan konten alternatif yang akan ditampilkan kepada
-            pengguna yang telah
-            menonaktifkan skrip di browser mereka atau memiliki browser yang tidak mendukung skrip:</p>
-          <h5>Contoh :</h5>
-          <img class="top-example" src="files/img/browser-head.png" alt="">
-          <div class="bd-example">
-            <iframe src="tryhtml_noscript.html" width="100%" height="85" frameborder="0"></iframe>
-          </div>
-          <div class="highlight">
-            Code : Mengubah Konten
-            <div class="syntaxhighlighter  xml">
-              <table>
-                <tbody>
-                  <tr>
-                    <td class="gutter">
-                      <div class="line number1 index0 alt2">1</div>
-                      <div class="line number2 index1 alt1">2</div>
-                      <div class="line number2 index1 alt1">3</div>
-                      <div class="line number2 index1 alt1">4</div>
-                      <div class="line number2 index1 alt1">5</div>
-                      <div class="line number2 index1 alt1">6</div>
-                      <div class="line number2 index1 alt1">7</div>
-                      <div class="line number2 index1 alt1">8</div>
-                      <div class="line number2 index1 alt1">9</div>
-                    </td>
-                    <td class="code">
-                      <div class="container-fluid">
-                        <pre tabindex="0" class="chroma">
-<code class="language-html" data-lang="html">&lt;p id="demo"&gt;&lt;/p&gt;
-
-&lt;script&gt;
-  document.getElementById("demo").innerHTML = "Hello JavaScript!";
-&lt;/script&gt;
-
-&lt;noscript&gt;Maaf, browser Anda tidak mendukung JavaScript!&lt;/noscript&gt;
-
-&lt;p&gt;Browser tanpa dukungan untuk JavaScript akan menunjukkan teks yang ditulis di dalam elemen noscript.&lt;/p&gt;</code></pre>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <p><a class="btn btn-warning btn-sm"
-                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_noscript" target="_blank">Cobalah
-                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
-                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
-          </div>
-
-          <!-- </div> -->
-        </section>
       </div>
       <!-- /bd-content -->
     </main>

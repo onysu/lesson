@@ -663,107 +663,132 @@ style="color:mediumblue">="width=device-width, initial-scale=1.0"</span></span><
         </section>
 
         <section id="25.6">
-          <h2>The HTML &lt;script&gt; Element</h2>
-          <p>The <code>&lt;script&gt;</code> element is used to define client-side JavaScripts.
-          </p>
-          <p>The following JavaScript writes "Hello JavaScript!" into an HTML element with id="demo":</p>
-
-          <div class="w3-example">
-            <h3>Example</h3>
-            <div class="w3-code notranslate htmlHigh">
-              <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                  style="color:mediumblue">&lt;</span>script<span class="tagcolor"
-                  style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br><span
-                  class="jskeywordcolor" style="color:mediumblue">function</span> myFunction() {<br><span
-                  class="jsnumbercolor" style="color:red">
-                </span> &nbsp;<span class="jsnumbercolor" style="color:red">
-                </span> document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span
-                  class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor"
-                  style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Hello
-                  JavaScript!"</span>;<br><span class="jsnumbercolor" style="color:red">
-                </span> }<br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                  style="color:mediumblue">&lt;</span>/script<span class="tagcolor"
-                  style="color:mediumblue">&gt;</span></span>
+          <h2><code>&lt;script&gt;</code> elemen</h2>
+          <p><mark>&lt;script&gt;</mark> elemen digunakan untuk mendefinisikan JavaScript sisi klien. berikut JavaScript
+            menulis <q>Hello JavaScript!</q> menjadi elemen HTML menggunakan id=<q>demo</q> :</p>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
+  <span class="na">function myFunction()</span> <span class="p">{</span>
+    <span class="s">document.getElementById("demo").innerHTML = "Hello JavaScript!";</span>
+  <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_head_script" target="_blank">Try it
-              Yourself
-              »</a>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_head_script" target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
           </div>
           <div class="w3-panel w3-note">
-            <p><strong>Tip:</strong> To learn all about JavaScript, visit our <a href="/js/default.asp">JavaScript
-                Tutorial</a>.
-            </p>
+            <p class="moreInfo"><strong>Tip:</strong> Untuk mempelajari semua tentang JavaScript, kunjungi Bab <a
+                href="#23">JavaScript
+                Tutorial</a>.</p>
           </div>
-          <hr>
+        </section>
 
-          <h2>The HTML &lt;base&gt; Element</h2>
-          <p>The <code>&lt;base&gt;</code> element specifies the base URL and/or target for all
-            relative
-            URLs in a page.</p>
-          <p>The <code>&lt;base&gt;</code> tag must have either an
-            href or a target attribute present, or both.</p>
-          <p>There can only be one single <code>&lt;base&gt;</code>
-            element in a document!</p>
-          <div class="w3-example">
-            <h3>Example</h3>
-            <p>Specify a default URL and a default target for all links on a page:</p>
-            <div class="w3-code notranslate htmlHigh">
-              <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                  style="color:mediumblue">&lt;</span>head<span class="tagcolor"
-                  style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
-                  class="tagcolor" style="color:mediumblue">&lt;</span>base<span class="attributecolor"
-                  style="color:red">
-                  href<span class="attributevaluecolor" style="color:mediumblue">="https://www.w3schools.com/"</span>
-                  target<span class="attributevaluecolor" style="color:mediumblue">="_blank"</span></span><span
-                  class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
-                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span
-                  class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-              <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                  style="color:mediumblue">&lt;</span>body<span class="tagcolor"
-                  style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
-                  class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor"
-                  style="color:red">
-                  src<span class="attributevaluecolor" style="color:mediumblue">="images/stickman.gif"</span>
-                  width<span class="attributevaluecolor" style="color:mediumblue">="24"</span> height<span
-                    class="attributevaluecolor" style="color:mediumblue">="39"</span>
-                  alt<span class="attributevaluecolor" style="color:mediumblue">="Stickman"</span></span><span
-                  class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
-                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span
-                  class="attributecolor" style="color:red">
-                  href<span class="attributevaluecolor" style="color:mediumblue">="tags/tag_base.asp"</span></span><span
-                  class="tagcolor" style="color:mediumblue">&gt;</span></span>HTML base Tag<span class="tagnamecolor"
-                style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor"
-                  style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
-                  class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
-                  style="color:mediumblue">&gt;</span></span><br>
+        <section id="25.7">
+          <h2><code>&lt;base&gt;</code> elemen</h2>
+          <p>
+            <mark>&lt;base&gt;</mark> element menentukan URL dasar dan / atau target untuk semua URL relatif dalam
+            halaman. <br>
+            <mark>&lt;base&gt;</mark> tag harus memiliki href atau atribut target yang ada, atau keduanya. <br>
+            Hanya ada satu <mark>&lt;base&gt;</mark> element dalam dokumen!
+          </p>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                      <div class="line number2 index1 alt1">6</div>
+                      <div class="line number2 index1 alt1">7</div>
+                      <div class="line number2 index1 alt1">8</div>
+                      <div class="line number2 index1 alt1">9</div>
+                      <div class="line number2 index1 alt1">10</div>
+                      <div class="line number2 index1 alt1">11</div>
+                      <div class="line number2 index1 alt1">12</div>
+                      <div class="line number2 index1 alt1">13</div>
+                      <div class="line number2 index1 alt1">14</div>
+                      <div class="line number2 index1 alt1">15</div>
+                      <div class="line number2 index1 alt1">16</div>
+                      <div class="line number2 index1 alt1">17</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>    
+    <span class="p">&lt;</span><span class="nt">base</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://www.w3schools.com/"</span> <span class="na">target</span><span class="o">=</span><span class="s">"_blank"</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Judul Halaman<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Elemen Dasar<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>&lt;<span class="nt">img</span> <span class="na">src</span>="images/stickman.gif" <span class="na">width</span>="24" <span class="na">height</span>="39" <span class="na">alt</span>="Stickman"&gt; - Perhatikan bahwa kami hanya menentukan relatif
+    alamat untuk gambar.Karena kami telah menentukan URL dasar di bagian head, browser akan mencari gambar di
+    <q>https://www.w3schools.com/images/stickman.gif</q>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>&lt;<span class="nt">a</span> <span class="na">href</span>="tags/tag_base.asp"&gt;Tag Dasar HTML.&lt;<span class="nt">/a</span>&gt; - Perhatikan bahwa tautan terbuka di jendela baru, bahkan jika tidak 
+    atribut target="_blank". Ini karena atribut target dari elemen dasar diatur ke "_blank".<span class="p">&lt;/</span><span class="nt">p</span><span
+      class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_head_base" target="_blank">Try it
-              Yourself »</a>
+            <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah sendiri <img
+                  draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
           </div>
-          <hr>
-          <h2>Chapter Summary</h2>
-          <ul>
-            <li>The <code>&lt;head&gt;</code> element is a container for metadata (data
-              about data)</li>
-            <li>The <code>&lt;head&gt;</code> element is placed between the <code>&lt;html&gt;</code> tag and the
-              <code>&lt;body&gt;</code> tag
-            </li>
-            <li>The <code>&lt;title&gt;</code> element is required and
-              it defines the title of the document</li>
-            <li>The <code>&lt;style&gt;</code> element is used to
-              define style information for a single document</li>
-            <li>The <code>&lt;link&gt;</code>
-              tag is most often used to link to external style sheets</li>
-            <li>The <code>&lt;meta&gt;</code> element is typically
-              used to specify the character set, page description, keywords, author of the
-              document, and viewport settings</li>
-            <li>The <code>&lt;script&gt;</code> element is used to define client-side JavaScripts
-            </li>
-            <li>The <code>&lt;base&gt;</code> element specifies the
-              base URL and/or target for all relative URLs in a page</li>
-          </ul>
-          <hr>
+        </section>
 
+        <section>
+          <h2>Ringkasan Bab</h2>
+          <ul>
+            <li><code>&lt;head&gt;</code> adalah wadah untuk metadata (data tentang data).</li>
+            <li><code>&lt;head&gt;</code> ditempatkan di antara <code>&lt;html&gt;</code> tag dan
+              <code>&lt;body&gt;</code> tag.</li>
+            <li><code>&lt;title&gt;</code> diperlukan dan menentukan judul dokumen.</li>
+            <li><code>&lt;style&gt;</code> ini digunakan untuk mendefinisikan informasi gaya untuk satu dokumen.</li>
+            <li><code>&lt;link&gt;</code> tag paling sering digunakan untuk menautkan ke lembar gaya eksternal .</li>
+            <li><code>&lt;meta&gt;</code> ini biasanya digunakan untuk menentukan set karakter, deskripsi halaman, kata
+              kunci,
+              penulis dokumen, dan pengaturan viewport Elemen.</li>
+            <li><code>&lt;script&gt;</code> ini digunakan untuk mendefinisikan JavaScript sisi klien.</li>
+            <li><code>&lt;base&gt;</code> menentukan URL dasar dan/atau target untuk semua URL relatif di halaman.</li>
+          </ul>
+        </section>
+
+        <section>
           <h2>HTML head Elements</h2>
           <table class="ws-table-all notranslate">
             <tbody>

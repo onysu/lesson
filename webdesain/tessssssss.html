@@ -237,6 +237,7 @@
 
       <div class="bd-content">
 
+        <!-- Desain Web Responsif HTML -->
         <section>
           <h1>Desain Web Responsif HTML</h1>
           <p class="lead">Desain Web Responsif adalah tentang membuat halaman web yang terlihat bagus di semua
@@ -252,7 +253,7 @@
               sendiri <img draggable="false" role="img" class="emoji" alt="↗"
                 src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
         </section>
-
+        <!-- Mengatur Viewport -->
         <section>
           <h2>Mengatur Viewport</h2>
           <p>Untuk membuat situs web responsif, tambahkan tag <mark>&lt;meta&gt;</mark> berikut ke semua halaman Web
@@ -308,7 +309,7 @@ style="color:mediumblue">&gt;</span></span></pre>
           <p class="moreInfo"><strong>Tip:</strong> Jika Anda menelusuri halaman ini di telepon atau tablet, Anda dapat
             mengklik dua tautan di atas untuk melihat perbedaannya.</p>
         </section>
-
+        <!-- Gambar Responsif -->
         <section>
           <h2>Gambar Responsif</h2>
           <p>Gambar responsif adalah gambar yang skala dengan baik agar sesuai dengan ukuran browser.</p>
@@ -352,7 +353,7 @@ style="color:mediumblue">&gt;</span></span></pre>
             Solusi yang lebih baik, dalam banyak kasus, adalah menggunakan properti <mark>max-width</mark> sebagai
             gantinya.</p>
         </section>
-
+        <!-- max-width -->
         <section>
           <h3>Menggunakan Properti <code>max-width</code></h3>
           <p>Jika properti <mark>max-width</mark> diatur ke 100%, gambar akan diperkecil jika perlu, tetapi tidak pernah
@@ -389,7 +390,7 @@ style="color:mediumblue">&gt;</span></span></pre>
                   src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
           </div>
         </section>
-
+        <!-- Tampilkan gambar yang berbeda tergantung pada lebar browser -->
         <section>
           <h3>Tampilkan gambar yang berbeda tergantung pada lebar browser</h3>
           <p>HTML <mark>&lt;picture&gt;</mark> element memungkinkan Anda untuk menentukan gambar yang berbeda untuk
@@ -442,7 +443,7 @@ style="color:mediumblue">&gt;</span></span></pre>
                   src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
           </div>
         </section>
-
+        <!-- Ukuran Teks Responsif -->
         <section>
           <h2>Ukuran Teks Responsif</h2>
           <p class="lead">Ukuran teks dapat diatur dengan unit "vw", yang berarti "viewport width". Dengan begitu ukuran
@@ -487,431 +488,407 @@ style="color:mediumblue">&gt;</span></span></pre>
           <p class="moreInfo">Viewport adalah ukuran jendela browser. 1vw = 1% dari lebar viewport. Jika viewport lebar
             50cm, 1vw = 0.5cm.</p>
         </section>
-
-
-        <h2>Media Queries</h2>
-        <p>In addition to resize text and images, it is also common to use media queries
-          in responsive web pages.</p>
-        <p>With media queries you can define completely different styles for different browser
-          sizes.</p>
-
-        <p>Example: resize the browser window to see that the three div elements below will display
-          horizontally on large screens and stacked vertically on small screens:</p>
-        <style>
-          .menu {
-            width: 20%;
-            float: left;
-          }
-
-          .main {
-            width: 60%;
-            float: left;
-          }
-
-          .right {
-            width: 20%;
-            float: left;
-          }
-
-          @media (max-width:800px) {
-            .menu {
-              width: 100%;
-            }
-
-            .main {
-              width: 100%;
-            }
-
-            .right {
-              width: 100%;
-            }
-          }
-        </style>
-        <div class="w3-row">
-          <div class="menu">
-            <div class="w3-blue w3-padding">Left Menu<br><br><br></div>
+        <!-- Media Queries -->
+        <section>
+          <h2>Media Queries</h2>
+          <p>Selain mengubah ukuran teks dan gambar, juga umum untuk menggunakan kueri media
+            di halaman web responsif. Dengan kueri media Anda dapat menentukan gaya yang sama sekali berbeda untuk
+            berbagai ukuran browser. <br> <b>Contoh:</b> Ubah ukuran jendela browser untuk melihat bahwa tiga elemen div
+            di bawah
+            ini
+            akan ditampilkan
+            secara horizontal pada layar besar dan ditumpuk secara vertikal di layar kecil:</p>
+          <img class="top-example" src="files/img/browser-head.png" alt="">
+          <div class="bd-example">
+            <iframe src="tryhtml_responsive_media_query.html" width="100%" height="175" frameborder="0"></iframe>
           </div>
-          <div class="main">
-            <div class="w3-light-gray w3-padding">Main Content<br><br><br></div>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                      <div class="line number2 index1 alt1">6</div>
+                      <div class="line number2 index1 alt1">7</div>
+                      <div class="line number2 index1 alt1">8</div>
+                      <div class="line number2 index1 alt1">9</div>
+                      <div class="line number2 index1 alt1">10</div>
+                      <div class="line number2 index1 alt1">11</div>
+                      <div class="line number2 index1 alt1">12</div>
+                      <div class="line number2 index1 alt1">13</div>
+                      <div class="line number2 index1 alt1">14</div>
+                      <div class="line number2 index1 alt1">15</div>
+                      <div class="line number2 index1 alt1">16</div>
+                      <div class="line number2 index1 alt1">17</div>
+                      <div class="line number2 index1 alt1">18</div>
+                      <div class="line number2 index1 alt1">19</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-css" data-lang="css">&lt;<span class="nt">style</span>&gt;
+            <span class="nt">.left</span>,
+            <span class="nt">.right</span> {
+              <span class="na">float</span>: <span class="mi">left</span>;
+              <span class="na">width</span>: <span class="mi">20%</span>;
+            }
+            <span class="nt">.main</span> {
+              <span class="na">float</span>: <span class="mi">left</span>;
+              <span class="na">width</span>: <span class="mi">60%</span>;
+            }
+          
+            <span class="nt">@media screen and (max-width: 800px)</span> {
+              <span class="nt">.left</span>,
+              <span class="nt">.main</span>,
+              <span class="nt">.right</span> {
+                <span class="na">width</span>: <span class="mi">100%</span>;
+              }
+            }
+          &lt;<span class="nt">/style</span>&gt;</code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_media_query"
+                target="_blank">Cobalah sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
           </div>
-          <div class="right">
-            <div class="ws-green w3-padding">Right Content<br><br><br></div>
+        </section>
+        <!-- Halaman Web Responsif - Contoh Full -->
+        <section>
+          <h2>Halaman Web Responsif - Contoh Full</h2>
+          <p>Halaman Web responsif harus terlihat bagus di layar desktop besar dan pada ponsel kecil.</p>
+          <img class="top-example" src="files/img/browser-head.png" alt="">
+          <div class="bd-example">
+            <iframe src="tryhtml_responsive_media_query3.html" width="100%" height="375" frameborder="0"></iframe>
           </div>
-        </div>
-        <div class="w3-example">
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                      <div class="line number2 index1 alt1">6</div>
+                      <div class="line number2 index1 alt1">7</div>
+                      <div class="line number2 index1 alt1">8</div>
+                      <div class="line number2 index1 alt1">9</div>
+                      <div class="line number2 index1 alt1">10</div>
+                      <div class="line number2 index1 alt1">11</div>
+                      <div class="line number2 index1 alt1">12</div>
+                      <div class="line number2 index1 alt1">13</div>
+                      <div class="line number2 index1 alt1">14</div>
+                      <div class="line number2 index1 alt1">15</div>
+                      <div class="line number2 index1 alt1">16</div>
+                      <div class="line number2 index1 alt1">17</div>
+                      <div class="line number2 index1 alt1">18</div>
+                      <div class="line number2 index1 alt1">19</div>
+                      <div class="line number2 index1 alt1">20</div>
+                      <div class="line number2 index1 alt1">21</div>
+                      <div class="line number2 index1 alt1">22</div>
+                      <div class="line number2 index1 alt1">23</div>
+                      <div class="line number2 index1 alt1">24</div>
+                      <div class="line number2 index1 alt1">25</div>
+                      <div class="line number2 index1 alt1">26</div>
+                      <div class="line number2 index1 alt1">27</div>
+                      <div class="line number2 index1 alt1">28</div>
+                      <div class="line number2 index1 alt1">29</div>
+                      <div class="line number2 index1 alt1">30</div>
+                      <div class="line number2 index1 alt1">31</div>
+                      <div class="line number2 index1 alt1">32</div>
+                      <div class="line number2 index1 alt1">33</div>
+                      <div class="line number2 index1 alt1">34</div>
+                      <div class="line number2 index1 alt1">35</div>
+                      <div class="line number2 index1 alt1">36</div>
+                      <div class="line number2 index1 alt1">37</div>
+                      <div class="line number2 index1 alt1">38</div>
+                      <div class="line number2 index1 alt1">39</div>
+                      <div class="line number2 index1 alt1">40</div>
+                      <div class="line number2 index1 alt1">41</div>
+                      <div class="line number2 index1 alt1">42</div>
+                      <div class="line number2 index1 alt1">43</div>
+                      <div class="line number2 index1 alt1">44</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-html" data-lang="html">&lt;<span class="nt">style</span>&gt;
+            <span class="nt">*</span> {
+              <span class="na">box-sizing</span>: <span class="s">border-box</span>;
+            }
+          
+            <span class="nt">.menu</span> {
+              <span class="na">float</span>: <span class="s">left</span>;
+              <span class="na">width</span>: <span class="s">20%</span>;
+              <span class="na">text-align</span>: <span class="s">center</span>;
+            }
+          
+            <span class="nt">.menu a</span> {
+              <span class="na">background-color</span>: <span class="s">#e5e5e5</span>;
+              <span class="na">padding</span>: <span class="s">8px</span>;
+              <span class="na">margin-top</span>: <span class="s">7px</span>;
+              <span class="na">display</span>: <span class="s">block</span>;
+              <span class="na">width</span>: <span class="s">100%</span>;
+              <span class="na">color</span>: <span class="s">black</span>;
+            }
+          
+            <span class="nt">.main</span> {
+              <span class="na">float</span>: <span class="s">left</span>;
+              <span class="na">width</span>: <span class="s">60%</span>;
+              <span class="na">padding</span>: <span class="s">0 20px</span>;
+            }
+          
+            <span class="nt">.right</span> {
+              <span class="na">background-color</span>: <span class="s">#e5e5e5</span>;
+              <span class="na">float</span>: <span class="s">left</span>;
+              <span class="na">width</span>: <span class="s">20%</span>;
+              <span class="na">padding</span>: <span class="s">15px</span>;
+              <span class="na">margin-top</span>: <span class="s">7px</span>;
+              <span class="na">text-align</span>: <span class="s">center</span>;
+            }
+          
+            <span class="nt">@media only screen and (max-width: 620px)</span> {
+              <span class="c"><em>/* Untuk ponsel: */</em></span>
+              <span class="nt">.menu</span>,
+              <span class="nt">.main</span>,
+              <span class="nt">.right</span> {
+                <span class="na">width</span>: <span class="s">100%</span>;
+              }
+            }
+          &lt;<span class="nt">/style</span>&gt;</code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_media_query3"
+                target="_blank">Cobalah sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+        </section>
+
+        <!-- Desain Web Responsif - Frameworks -->
+        <section>
+          <h2>Desain Web Responsif - Framework (Kerangka Kerja)</h2>
+          <p class="lead">Semua kerangka kerja CSS populer menawarkan desain responsif. Mereka gratis, dan mudah
+            digunakan.</p>
+          <h2>W3.CSS</h2>
+          <ul>
+            <li>W3.CSS adalah kerangka kerja CSS modern dengan dukungan untuk desktop, tablet, dan desain seluler secara
+              default.</li>
+            <li>W3.CSS lebih kecil dan lebih cepat daripada kerangka kerja CSS serupa.</li>
+            <li>W3.CSS dirancang untuk menjadi alternatif berkualitas tinggi untuk Bootstrap.</li>
+            <li>W3.CSS dirancang untuk tidak bergantung pada jQuery atau library JavaScript lainnya.</li>
+          </ul>
           <h5>Contoh :</h5>
-          <div class="w3-code notranslate htmlHigh">
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>style<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>.left,
-              .right <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
-                style="color:red"><br>&nbsp; float<span class="csspropertyvaluecolor" style="color:mediumblue"><span
-                    class="cssdelimitercolor" style="color:black">:</span> left<span class="cssdelimitercolor"
-                    style="color:black">;</span></span><br>&nbsp;
-                width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
-                    style="color:black">:</span> 20%<span class="cssdelimitercolor" style="color:black">;</span></span>
-                <span class="commentcolor" style="color:green">/* The width is
-                  20%, by default */</span><br></span><span class="cssdelimitercolor"
-                style="color:black">}</span><br><br>.main <span class="cssdelimitercolor"
-                style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; float<span
-                  class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
-                    style="color:black">:</span> left<span class="cssdelimitercolor"
-                    style="color:black">;</span></span><br>&nbsp; width<span class="csspropertyvaluecolor"
-                  style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 60%<span
-                    class="cssdelimitercolor" style="color:black">;</span></span> <span class="commentcolor"
-                  style="color:green">/* The width is 60%, by default */</span><br></span><span
-                class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor"
-                style="color:green">/* Use a media query to
-                add a breakpoint at 800px: */</span><br>@media screen and (max-width: 800px) <span
-                class="cssdelimitercolor" style="color:black">{</span><span class="cssselectorcolor"
-                style="color:brown"><br>&nbsp; .left,
-                .main, .right <span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor"
-                    style="color:black">{</span></span><span class="csspropertycolor"
-                  style="color:red"><br>&nbsp;&nbsp;&nbsp;
-                  width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
-                      style="color:black">:</span> 100%<span class="cssdelimitercolor"
-                      style="color:black">;</span></span>
-                  <span class="commentcolor" style="color:green">/* The width is 100%, when the viewport is 800px or
-                    smaller
-                    */</span><br>&nbsp;
-                </span><span class="cssdelimitercolor" style="color:black"><span class="cssdelimitercolor"
-                    style="color:black">}</span></span><br></span><span class="cssdelimitercolor"
-                style="color:black">}</span><br></span><span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>
+          <img class="top-example" src="files/img/browser-head.png" alt="">
+          <div class="bd-example">
+            <iframe src="tryhtml_responsive_w3css.html" width="100%" height="320" frameborder="0"></iframe>
           </div>
-          <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_responsive_media_query"
-            target="_blank">Try
-            it
-            Yourself »</a>
-        </div>
-
-        <div class="w3-note w3-panel">
-          <p><strong>Tip:</strong> To learn more about Media Queries and Responsive Web Design, read our <a
-              href="/css/css_rwd_intro.asp">RWD Tutorial</a>.<br></p>
-        </div>
-
-        <hr>
-        <h2>Responsive Web Page - Full Example</h2>
-
-        <p>A responsive web page should look good on large desktop screens and on small mobile phones.</p>
-
-        <div>
-          <div class="w3-col header" style="background-color:#e5e5e5
-;margin-bottom:8px;height:60px;"></div>
-          <div class="w3-row">
-            <div class="w3-col s3" style="background-color:#e5e5e5
-;height:170px;border-right:8px solid white;"></div>
-            <div class="w3-col s6" style="background-color:#e5e5e5
-;height:170px;border-right:8px solid white;"></div>
-            <div class="w3-col s3" style="background-color:#e5e5e5
-;height:170px;"></div>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                      <div class="line number2 index1 alt1">6</div>
+                      <div class="line number2 index1 alt1">7</div>
+                      <div class="line number2 index1 alt1">8</div>
+                      <div class="line number2 index1 alt1">9</div>
+                      <div class="line number2 index1 alt1">10</div>
+                      <div class="line number2 index1 alt1">11</div>
+                      <div class="line number2 index1 alt1">12</div>
+                      <div class="line number2 index1 alt1">13</div>
+                      <div class="line number2 index1 alt1">14</div>
+                      <div class="line number2 index1 alt1">15</div>
+                      <div class="line number2 index1 alt1">16</div>
+                      <div class="line number2 index1 alt1">17</div>
+                      <div class="line number2 index1 alt1">18</div>
+                      <div class="line number2 index1 alt1">19</div>
+                      <div class="line number2 index1 alt1">20</div>
+                      <div class="line number2 index1 alt1">21</div>
+                      <div class="line number2 index1 alt1">22</div>
+                      <div class="line number2 index1 alt1">23</div>
+                      <div class="line number2 index1 alt1">24</div>
+                      <div class="line number2 index1 alt1">25</div>
+                      <div class="line number2 index1 alt1">26</div>
+                      <div class="line number2 index1 alt1">27</div>
+                      <div class="line number2 index1 alt1">28</div>
+                      <div class="line number2 index1 alt1">29</div>
+                      <div class="line number2 index1 alt1">30</div>
+                      <div class="line number2 index1 alt1">31</div>
+                      <div class="line number2 index1 alt1">32</div>
+                      <div class="line number2 index1 alt1">33</div>
+                      <div class="line number2 index1 alt1">34</div>
+                      <div class="line number2 index1 alt1">35</div>
+                      <div class="line number2 index1 alt1">36</div>
+                      <div class="line number2 index1 alt1">37</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+          <span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span> <span class="s">"utf-8"</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span> <span class="s">"viewport"</span><span class="na">content</span><span class="o">=</span> <span class="s">"width=device-width, initial-scale=1"</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">"https://www.w3schools.com/w3css/4/w3.css"</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Judul Halaman<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+          
+              &lt;div <span class="na">class</span>="w3-container w3-green"&gt;
+                &lt;h1&gt;W3Schools Demo&lt;/h1&gt;
+                &lt;p&gt;Ubah ukuran halaman responsif ini!&lt;/p&gt;
+              &lt;/div&gt;
+              
+              &lt;div <span class="na">class</span>="<span class="s">w3-row-padding</span>"&gt;
+                &lt;div <span class="na">class</span>="<span class="s">w3-third</span>"&gt;
+          &lt;h2&gt;London&lt;/h2&gt;
+          &lt;p&gt;London adalah ibu kota Inggris.&lt;/p&gt;
+          &lt;p&gt;Ini adalah kota terpadat di Inggris, dengan wilayah metropolitan lebih dari 13 juta penduduk.&lt;/p&gt;
+                &lt;/div&gt;
+              
+                &lt;div <span class="na">class</span>="<span class="s">w3-third</span>"&gt;
+          &lt;h2&gt;Paris&lt;/h2&gt;
+          &lt;p&gt;Paris adalah ibu kota Prancis.&lt;/p&gt;
+          &lt;p&gt;Area Paris adalah salah satu pusat populasi terbesar di Eropa, dengan lebih dari 12 juta penduduk.&lt;/p&gt;
+                &lt;/div&gt;
+              
+                &lt;div <span class="na">class</span>="<span class="s">w3-third</span>"&gt;
+          &lt;h2&gt;Tokyo&lt;/h2&gt;
+          &lt;p&gt;Tokyo adalah ibu kota Jepang.&lt;/p&gt;
+          &lt;p&gt;Ini adalah pusat wilayah Tokyo yang lebih besar, dan wilayah metropolitan terpadat di dunia.&lt;/p&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+          
+            <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_w3css"
+                target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
           </div>
-          <div class="w3-col footer" style="background-color:#e5e5e5
-;margin-top:8px;height:31px;"></div>
-        </div>
+        </section>
 
-
-        <p>
-          <a class="ws-btn w3-margin-top" href="tryit.asp?filename=tryhtml_responsive_media_query3" target="_blank">Try
-            it
-            Yourself »</a>
-        </p>
-
-        <div class="w3-panel w3-note">
-          <p>Ever heard about <strong>W3Schools Spaces</strong>? Here you can create your website from scratch or use
-            a
-            template, and host it for free.</p>
-          <a class="ws-btn" href="https://www.w3spaces.com" target="_blank" title="Get Started With W3Schools Spaces"
-            onclick="ga('send', 'event', 'SpacesNote' , 'fromHTMLResponsive')">Get started for free ❯</a>
-          <p class="w3-small"><em>* no credit card required</em></p>
-        </div>
-
-        <hr>
-
-        <h2>Responsive Web Design - Frameworks</h2>
-
-        <p>All popular CSS Frameworks offer responsive design.</p>
-        <p>They are free, and easy to use.</p>
-
-        <h2>W3.CSS</h2>
-        <p>
-          W3.CSS is a modern CSS framework with support for desktop, tablet, and mobile
-          design by default.</p>
-        <p>
-          W3.CSS is smaller and faster than similar CSS frameworks.</p>
-        <p>
-          W3.CSS is designed to be a high quality alternative to Bootstrap.</p>
-        <p>
-          W3.CSS is designed to be independent of jQuery or any other JavaScript library.</p>
-
-        <div class="w3-container ws-green">
-          <h1>W3.CSS Demo</h1>
-          <p>Resize the page to see the responsiveness!</p>
-        </div>
-
-        <div class="w3-row-padding w3-light-grey">
-          <div class="w3-third">
-            <h2>London</h2>
-            <p>London is the capital city of England.</p>
-            <p>It is the most populous city in the United Kingdom,
-              with a metropolitan area of over 13 million inhabitants.</p>
-          </div>
-          <div class="w3-third">
-            <h2>Paris</h2>
-            <p>Paris is the capital of France.</p>
-            <p>The Paris area is one of the largest population centers in Europe,
-              with more than 12 million inhabitants.</p>
-          </div>
-          <div class="w3-third">
-            <h2>Tokyo</h2>
-            <p>Tokyo is the capital of Japan.</p>
-            <p>It is the center of the Greater Tokyo Area,
-              and the most populous metropolitan area in the world.</p>
-          </div>
-        </div>
-
-        <div class="w3-example">
-          <h5>Contoh :</h5>
-          <div class="w3-code notranslate htmlHigh">
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red">
-                html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span
-              class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>html<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red">
-                name<span class="attributevaluecolor" style="color:mediumblue">="viewport"</span>
-                content<span class="attributevaluecolor" style="color:mediumblue">="width=device-width,
-                  initial-scale=1"</span></span><span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red">
-                rel<span class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span>
-                href<span class="attributevaluecolor"
-                  style="color:mediumblue">="https://www.w3schools.com/w3css/4/w3.css"</span></span><span
-                class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red">
-                class<span class="attributevaluecolor" style="color:mediumblue">="w3-container
-                  w3-green"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>h1<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>W3Schools Demo<span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span> <br>&nbsp;
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>p<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>Resize this responsive page!<span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span> <br><span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red">
-                class<span class="attributevaluecolor" style="color:mediumblue">="w3-row-padding"</span></span><span
-                class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span
-                class="attributecolor" style="color:red"> class<span class="attributevaluecolor"
-                  style="color:mediumblue">="w3-third"</span></span><span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>London<span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>London is the capital city of England.<span
-              class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>It is the most populous city in the United
-            Kingdom,<br>&nbsp;&nbsp;&nbsp; with a
-            metropolitan area of over 13 million inhabitants.<span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br><br>&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span
-                class="attributecolor" style="color:red">
-                class<span class="attributevaluecolor" style="color:mediumblue">="w3-third"</span></span><span
-                class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span
-              class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>h2<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>Paris<span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>Paris is
-            the capital of France.<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
-            <br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>p<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>The
-            Paris area is one of the largest
-            population centers in Europe,<br>&nbsp;&nbsp;&nbsp; with more than 12 million
-            inhabitants.<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br><br>&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span
-                class="attributecolor" style="color:red">
-                class<span class="attributevaluecolor" style="color:mediumblue">="w3-third"</span></span><span
-                class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>h2<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>Tokyo<span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>Tokyo is the capital of Japan.<span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>It
-            is the center of the Greater Tokyo Area,<br>&nbsp;&nbsp;&nbsp; and the most populous
-            metropolitan area in the world.<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>/html<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>
-          </div>
-          <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_responsive_w3css" target="_blank">Try it
-            Yourself »</a>
-        </div>
-        <p>To learn more about W3.CSS, read our <a href="/w3css/default.asp">W3.CSS Tutorial</a>.</p>
-        <hr>
         <h2>Bootstrap</h2>
+        <p>Framework (Kerangka Kerja) CSS populer lainnya adalah bootstrap.Bootstrap menggunakan HTML, CSS dan JQuery
+          untuk membuat web responsif halaman.</p>
+        <h5>Contoh :</h5>
+        <img class="top-example" src="files/img/browser-head.png" alt="">
+        <div class="bd-example">
+          <iframe src="tryhtml_responsive_bootstrap.html" width="100%" height="500" frameborder="0"></iframe>
+        </div>
 
-        <p>Another popular CSS framework is Bootstrap. Bootstrap uses HTML, CSS and jQuery to make responsive web
-          pages.</p>
-
-        <div class="w3-example">
-          <h5>Contoh :</h5>
-          <div class="w3-code notranslate htmlHigh">
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red">
-                html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span
-              class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>html<span class="attributecolor" style="color:red"> lang<span
-                  class="attributevaluecolor" style="color:mediumblue">="en"</span></span><span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>Bootstrap
-            Example<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>/title<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red">
-                charset<span class="attributevaluecolor" style="color:mediumblue">="utf-8"</span></span><span
-                class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span
-                class="attributecolor" style="color:red">
-                name<span class="attributevaluecolor" style="color:mediumblue">="viewport"</span>
-                content<span class="attributevaluecolor" style="color:mediumblue">="width=device-width,
-                  initial-scale=1"</span></span><span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red">
-                rel<span class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span>
-                href<span class="attributevaluecolor"
-                  style="color:mediumblue">="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"</span></span><span
-                class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>script<span class="attributecolor" style="color:red">
-                src<span class="attributevaluecolor"
-                  style="color:mediumblue">="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"</span></span><span
-                class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor"
-              style="color:black"></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>/script<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>script<span class="attributecolor" style="color:red">
-                src<span class="attributevaluecolor"
-                  style="color:mediumblue">="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"</span></span><span
-                class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor"
-              style="color:black"></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>/script<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>/head<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red">
-                class<span class="attributevaluecolor" style="color:mediumblue">="container"</span></span><span
-                class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span
-                class="attributecolor" style="color:red">
-                class<span class="attributevaluecolor" style="color:mediumblue">="jumbotron"</span></span><span
-                class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span
-              class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>h1<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>My First Bootstrap Page<span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>&nbsp;
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>/div<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span
-                class="attributecolor" style="color:red">
-                class<span class="attributevaluecolor" style="color:mediumblue">="row"</span></span><span
-                class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span
-              class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>div<span class="attributecolor" style="color:red">
-                class<span class="attributevaluecolor" style="color:mediumblue">="col-sm-4"</span></span><span
-                class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            ...<br>&nbsp;&nbsp;&nbsp;
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>/div<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span
-                class="attributecolor" style="color:red"> class<span class="attributevaluecolor"
-                  style="color:mediumblue">="col-sm-4"</span></span><span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            ...<br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>/div<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>div<span
-                class="attributecolor" style="color:red">
-                class<span class="attributevaluecolor" style="color:mediumblue">="col-sm-4"</span></span><span
-                class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;
-            ...<br>&nbsp;&nbsp;&nbsp;
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>/div<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>&nbsp;
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>/div<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>/div<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>
+        <div class="highlight">
+          Code :
+          <div class="syntaxhighlighter  xml">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                    <div class="line number2 index1 alt1">2</div>
+                    <div class="line number2 index1 alt1">3</div>
+                    <div class="line number2 index1 alt1">4</div>
+                    <div class="line number2 index1 alt1">5</div>
+                    <div class="line number2 index1 alt1">6</div>
+                    <div class="line number2 index1 alt1">7</div>
+                    <div class="line number2 index1 alt1">8</div>
+                    <div class="line number2 index1 alt1">9</div>
+                    <div class="line number2 index1 alt1">10</div>
+                    <div class="line number2 index1 alt1">11</div>
+                    <div class="line number2 index1 alt1">12</div>
+                    <div class="line number2 index1 alt1">13</div>
+                    <div class="line number2 index1 alt1">14</div>
+                    <div class="line number2 index1 alt1">15</div>
+                    <div class="line number2 index1 alt1">16</div>
+                    <div class="line number2 index1 alt1">17</div>
+                    <div class="line number2 index1 alt1">18</div>
+                    <div class="line number2 index1 alt1">19</div>
+                    <div class="line number2 index1 alt1">20</div>
+                    <div class="line number2 index1 alt1">21</div>
+                    <div class="line number2 index1 alt1">22</div>
+                    <div class="line number2 index1 alt1">23</div>
+                    <div class="line number2 index1 alt1">24</div>
+                    <div class="line number2 index1 alt1">25</div>
+                    <div class="line number2 index1 alt1">26</div>
+                    <div class="line number2 index1 alt1">27</div>
+                    <div class="line number2 index1 alt1">28</div>
+                    <div class="line number2 index1 alt1">29</div>
+                  </td>
+                  <td class="code">
+                    <div class="container-fluid">
+                      <pre tabindex="0" class="chroma">
+<code class="language-html" data-lang="html">&lt;<span class="cp">!DOCTYPE html</span>&gt;
+&lt;html lang="<span class="s"><span class="na">en</span></span>"&gt;
+&lt;head&gt;
+  &lt;title&gt;Bootstrap Framework&lt;/title&gt;
+  &lt;meta <span class="na">charset</span>="utf-8"&gt;
+  &lt;meta <span class="na">name</span>="<span class="s">viewport</span>" <span class="na">content</span>="<span class="s">width=device-width, initial-scale=1</span>"&gt;
+  &lt;link <span class="na">rel</span>="<span class="s">stylesheet</span>" <span class="na">href</span>="<span class="s">https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css</span>"&gt;
+  &lt;script <span class="na">src</span>="<span class="s">https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js</span>"&gt;&lt;/script&gt;
+  &lt;script <span class="na">src</span>="<span class="s">https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js</span>"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div <span class="na">class</span>="container"&gt;
+    &lt;div <span class="na">class</span>="jumbotron"&gt;
+      &lt;h1&gt;Halaman Bootstrap pertama saya&lt;/h1&gt;
+    &lt;/div&gt;
+    &lt;div <span class="na">class</span>="row"&gt;
+      &lt;div <span class="na">class</span>="col-sm-4"&gt;
+        ...
+      &lt;/div&gt;
+      &lt;div <span class="na">class</span>="col-sm-4"&gt;
+        ...
+      &lt;/div&gt;
+      &lt;div <span class="na">class</span>="col-sm-4"&gt;
+        ...
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <a target="_blank" href="tryit.asp?filename=tryhtml_responsive_bootstrap" class="w3-btn w3-margin-bottom">Try
-            it
-            Yourself »</a>
+          <p><a class="btn btn-warning btn-sm"
+              href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_bootstrap"
+              target="_blank">Cobalah sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
         </div>
-        <p>To learn more about Bootstrap, go to our <a href="/bootstrap/default.asp">Bootstrap Tutorial</a>.</p>
-
-        <br>
-        <div class="w3-clear nextprev">
-          <a class="w3-left w3-btn" href="html_layout.asp">❮ Previous</a>
-          <a class="w3-right w3-btn" href="html_computercode_elements.asp">Next ❯</a>
-        </div>
-        <div id="mypagediv2" style="position:relative;text-align:center;"></div>
-        <br>
-
-        <!-- </div> -->
 
 
       </div>

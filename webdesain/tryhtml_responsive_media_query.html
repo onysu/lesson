@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tryhtml_responsive_media_query</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .left {
+      background-color: #2196F3;
+      padding: 20px;
+      float: left;
+      width: 20%;
+      /* Lebarnya 20%, secara default */
+    }
+
+    .main {
+      background-color: #f1f1f1;
+      padding: 20px;
+      float: left;
+      width: 60%;
+      /* Lebarnya 60%, secara default */
+    }
+
+    .right {
+      background-color: #04AA6D;
+      padding: 20px;
+      float: left;
+      width: 20%;
+      /* Lebarnya 20%, secara default */
+    }
+
+    /* Gunakan kueri media untuk menambahkan titik istirahat pada 800px: */
+    @media screen and (max-width: 800px) {
+
+      .left,
+      .main,
+      .right {
+        width: 100%;
+        /* Lebarnya 100%, ketika viewport adalah 800px atau lebih kecil */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <p>Ubah ukuran jendela browser. <br> Pastikan Anda mencapai breakpoint di 800px saat mengubah ukuran bingkai ini.</p>
+
+  <div class="left">
+    <p>Menu Kiri</p>
+  </div>
+
+  <div class="main">
+    <p>Isi Konten</p>
+  </div>
+
+  <div class="right">
+    <p>Menu Kanan</p>
+  </div>
+</body>
+
+</html>

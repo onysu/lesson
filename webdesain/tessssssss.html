@@ -351,10 +351,17 @@ style="color:mediumblue">&gt;</span></span></pre>
           <p>Perhatikan bahwa pada contoh di atas, gambar dapat ditingkatkan menjadi lebih besar dari ukuran aslinya.
             Solusi yang lebih baik, dalam banyak kasus, adalah menggunakan properti <mark>max-width</mark> sebagai
             gantinya.</p>
+        </section>
+
+        <section>
           <h3>Menggunakan Properti <code>max-width</code></h3>
           <p>Jika properti <mark>max-width</mark> diatur ke 100%, gambar akan diperkecil jika perlu, tetapi tidak pernah
             memperbesar lebih besar dari ukuran aslinya.</p>
-          <img src="https://www.w3schools.com/html/img_girl.jpg" style="max-width:100%;height:auto;">
+          <img class="top-example" src="files/img/browser-head.png" alt="">
+          <div class="bd-example">
+            <img src="https://www.w3schools.com/html/img_girl.jpg" style="max-width:100%;height:auto;">
+          </div>
+
           <div class="highlight">
             Code :
             <div class="syntaxhighlighter  xml">
@@ -367,7 +374,8 @@ style="color:mediumblue">&gt;</span></span></pre>
                     <td class="code">
                       <div class="container-fluid">
                         <pre tabindex="0" class="chroma">
-<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="img_girl.jpg"</span> style<span class="attributevaluecolor" style="color:mediumblue">="<strong>max-width:100%;</strong>height:auto;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span></pre>
+&lt;<span class="nt">img</span> <span class="na">src</span>="<span class="s">img_girl.jpg</span>" <span class="na">style</span>="<span class="s">max-width:100%;height:auto;</span>"&gt;
+</pre>
                       </div>
                     </td>
                   </tr>
@@ -382,81 +390,104 @@ style="color:mediumblue">&gt;</span></span></pre>
           </div>
         </section>
 
-        <h3>Show Different Images Depending on Browser Width</h3>
-        <p>The HTML <code>&lt;picture&gt;</code> element allows you to define different images for
-          different browser window sizes.</p>
-        <p>Resize the browser window to see how the image below change depending on the width:</p>
-        <picture>
-          <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
-          <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
-          <source srcset="flowers.jpg">
-          <img src="img_smallflower.jpg" alt="Flowers">
-        </picture>
-
-        <div class="w3-example">
-          <h3>Example</h3>
-          <div class="w3-code notranslate htmlHigh">
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>picture<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>source<span
-                class="attributecolor" style="color:red">
-                srcset<span class="attributevaluecolor" style="color:mediumblue">="img_smallflower.jpg"</span>
-                media<span class="attributevaluecolor" style="color:mediumblue">="(max-width:
-                  600px)"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>source<span class="attributecolor" style="color:red"> srcset<span
-                  class="attributevaluecolor" style="color:mediumblue">="img_flowers.jpg"</span> media<span
-                  class="attributevaluecolor" style="color:mediumblue">="(max-width:
-                  1500px)"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>source<span class="attributecolor" style="color:red"> srcset<span
-                  class="attributevaluecolor" style="color:mediumblue">="flowers.jpg"</span></span><span
-                class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span
-                class="attributecolor" style="color:red">
-                src<span class="attributevaluecolor" style="color:mediumblue">="img_smallflower.jpg"</span>
-                alt<span class="attributevaluecolor" style="color:mediumblue">="Flowers"</span></span><span
-                class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/picture<span
-                class="tagcolor" style="color:mediumblue">&gt;</span></span>
+        <section>
+          <h3>Tampilkan gambar yang berbeda tergantung pada lebar browser</h3>
+          <p>HTML <mark>&lt;picture&gt;</mark> element memungkinkan Anda untuk menentukan gambar yang berbeda untuk
+            ukuran
+            jendela
+            browser yang berbeda. Ubah ukuran jendela browser untuk melihat bagaimana gambar di bawah ini berubah
+            tergantung pada lebarnya :</p>
+          <img class="top-example" src="files/img/browser-head.png" alt="">
+          <div class="bd-example">
+            <picture>
+              <source srcset="https://www.w3schools.com/html/img_smallflower.jpg" media="(max-width: 600px)">
+              <source srcset="https://www.w3schools.com/html/img_flowers.jpg" media="(max-width: 1500px)">
+              <source srcset="https://www.w3schools.com/html/flowers.jpg">
+              <img src="https://www.w3schools.com/html/img_smallflower.jpg" alt="Flowers">
+            </picture>
           </div>
-          <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_responsive_picture" target="_blank">Try
-            it
-            Yourself »</a>
-        </div>
-        <hr>
-
-        <h2>Responsive Text Size</h2>
-        <p>The text size can be set with a "vw" unit, which means the "viewport width".</p>
-        <p>That way the text size will follow the size of the browser window:</p>
-
-        <div class="w3-light-grey w3-padding w3-round">
-          <h1 style="font-size:8vw;">Hello World</h1>
-          <p style="font-size:2vw;">Resize the browser window to see how the text size scales.</p>
-        </div>
-
-        <div class="w3-example">
-          <h3>Example</h3>
-          <div class="w3-code notranslate htmlHigh">
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red"> style<span
-                  class="attributevaluecolor"
-                  style="color:mediumblue">="<strong>font-size:10vw</strong>"</span></span><span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>Hello World<span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                      <div class="line number2 index1 alt1">6</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+&lt;<span class="nt">picture</span>&gt;
+  &lt;<span class="nt">source</span> <span class="na">srcset</span>="<span class="s">img_smallflower.jpg</span>" <span class="na">media</span>="<span class="s">(max-width: 600px)</span>"&gt;
+  &lt;<span class="nt">source</span> <span class="na">srcset</span>="<span class="s">img_flowers.jpg</span>" <span class="na">media</span>="<span class="s">(max-width: 1500px)</span>"&gt;
+  &lt;<span class="nt">source</span> <span class="na">srcset</span>="<span class="s">flowers.jpg</span>"&gt;
+  &lt;<span class="nt">img</span> <span class="na">src</span>="<span class="s">img_smallflower.jpg</span>" <span class="na">alt</span>="<span class="s">Flowers</span>"&gt;
+&lt;<span class="nt">/picture</span>&gt;
+</pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_picture"
+                target="_blank">Cobalah sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
           </div>
-          <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_responsive_text" target="_blank">Try it
-            Yourself
-            »</a>
-        </div>
+        </section>
 
-        <div class="w3-note w3-panel">
-          <p>Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is
-            0.5cm.</p>
-        </div>
-        <hr>
+        <section>
+          <h2>Ukuran Teks Responsif</h2>
+          <p class="lead">Ukuran teks dapat diatur dengan unit "vw", yang berarti "viewport width". Dengan begitu ukuran
+            teks akan
+            mengikuti ukuran jendela browser:</p>
+          <img class="top-example" src="files/img/browser-head.png" alt="">
+          <div class="bd-example">
+            <h1 style="font-size:10vw;">Responsive Text</h1>
+            <p style="font-size:5vw;">Ubah ukuran jendela browser untuk melihat bagaimana skala ukuran teks.</p>
+            <p style="font-size:5vw;">Gunakan unit "vw" saat mengukur teks. 10VW akan mengatur ukuran hingga 10% dari
+              lebar viewport.</p>
+          </div>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+&lt;<span class="nt">h1</span> <span class="na">style</span>="<span class="s">font-size:10vw;</span>"&gt;Responsive Text&lt;<span class="nt">/h1</span>&gt;
+&lt;<span class="nt">p</span> <span class="na">style</span>="<span class="s">font-size:5vw;</span>"&gt;Ubah ukuran jendela browser untuk melihat bagaimana skala ukuran teks.&lt;<span class="nt">/p</span>&gt;
+&lt;<span class="nt">p</span> <span class="na">style</span>="<span class="s">font-size:5vw;</span>"&gt;Gunakan unit "vw" saat mengukur teks. 10vw akan mengatur ukuran hingga 10% dari lebar viewport.&lt;<span class="nt">/p</span>&gt;
+</pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_responsive_text" target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+          <p class="moreInfo">Viewport adalah ukuran jendela browser. 1vw = 1% dari lebar viewport. Jika viewport lebar
+            50cm, 1vw = 0.5cm.</p>
+        </section>
+
 
         <h2>Media Queries</h2>
         <p>In addition to resize text and images, it is also common to use media queries
@@ -508,7 +539,7 @@ style="color:mediumblue">&gt;</span></span></pre>
           </div>
         </div>
         <div class="w3-example">
-          <h3>Example</h3>
+          <h5>Contoh :</h5>
           <div class="w3-code notranslate htmlHigh">
             <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
                 style="color:mediumblue">&lt;</span>style<span class="tagcolor"
@@ -641,7 +672,7 @@ style="color:mediumblue">&gt;</span></span></pre>
         </div>
 
         <div class="w3-example">
-          <h3>Example</h3>
+          <h5>Contoh :</h5>
           <div class="w3-code notranslate htmlHigh">
             <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
                 style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red">
@@ -763,7 +794,7 @@ style="color:mediumblue">&gt;</span></span></pre>
           pages.</p>
 
         <div class="w3-example">
-          <h3>Example</h3>
+          <h5>Contoh :</h5>
           <div class="w3-code notranslate htmlHigh">
             <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
                 style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red">

@@ -559,433 +559,438 @@
                   draggable="false" role="img" class="emoji" alt="↗"
                   src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
           </div>
-
-          <!-- Nesting article -->
-          <h2>Nesting &lt;article&gt; in &lt;section&gt; or Vice Versa?</h2>
-          <p>Elemen &lt;article&gt; menentukan konten mandiri dan mandiri.
-            Elemen
-          <section> mendefinisikan bagian dalam dokumen.
-            Bisakah kita menggunakan definisi untuk memutuskan bagaimana menyusun elemen-elemen itu? Tidak, kita tidak
-            bisa!
-            Jadi, Anda akan menemukan halaman HTML dengan elemen <section> yang mengandung elemen &lt;article&gt;, dan
-              elemen
-              &lt;article&gt; yang mengandung elemen <section>.</p>
-              </section>
-
-              <h2>HTML &lt;header&gt; Element</h2>
-              <p>The <code class="w3-codespan">&lt;header&gt;</code> element represents a container for introductory
-                content
-                or
-                a set of navigational links.</p>
-              <p>A <code class="w3-codespan">&lt;header&gt;</code> element typically contains:</p>
-              <ul>
-                <li>one or more heading elements (&lt;h1&gt; - &lt;h6&gt;)</li>
-                <li>logo or icon</li>
-                <li>authorship information</li>
-              </ul>
-              <p><b>Note:</b> You can have several <code class="w3-codespan">&lt;header&gt;</code> elements in one
-                HTML document. However, <code class="w3-codespan">&lt;header&gt;</code> cannot be placed within a
-                <code class="w3-codespan">&lt;footer&gt;</code>, <code class="w3-codespan">&lt;address&gt;</code> or
-                another
-                <code class="w3-codespan">&lt;header&gt;</code> element.
-              </p>
-              <div class="w3-example">
-                <h5>Contoh :</h5>
-                <p>A header for an &lt;article&gt;:&nbsp;</p>
-                <div class="w3-code notranslate htmlHigh">
-
-                  <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>article<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span><br>
-                  &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>header<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span><br>
-                  &nbsp;&nbsp;&nbsp;
-                  <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>h1<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span>What Does WWF Do?<span class="tagnamecolor"
-                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                  &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>p<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span>WWF's
-                  mission:<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span><br>
-                  &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>/header<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span><br>
-                  &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>p<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span>WWF's
-                  mission is to stop the degradation of our planet's natural environment,<br>&nbsp; and build a
-                  future in
-                  which
-                  humans live in harmony with nature.<span class="tagnamecolor" style="color:brown"><span
-                      class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span><br>
-                  <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>/article<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span>
-                </div>
-                <a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml5_header">Try it
-                  Yourself
-                  »</a>
-              </div>
-              <hr>
-
-              <h2>HTML &lt;footer&gt; Element</h2>
-              <p>The <code class="w3-codespan">&lt;footer&gt;</code> element defines a footer for a document or
-                section.</p>
-              <p>A <code class="w3-codespan">&lt;footer&gt;</code> element typically contains:</p>
-              <ul>
-                <li>authorship information</li>
-                <li>copyright
-                  information</li>
-                <li>contact information</li>
-                <li>sitemap</li>
-                <li>back to top links</li>
-                <li>related documents</li>
-              </ul>
-              <p>You can have several <code class="w3-codespan">&lt;footer&gt;</code> elements in one document.</p>
-              <div class="w3-example">
-                <h5>Contoh :</h5>
-                <p>A footer section in a document:</p>
-                <div class="w3-code notranslate htmlHigh">
-
-                  <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>footer<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span><br>
-                  &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>p<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span>Author:
-                  Hege Refsnes<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span><br>
-                  &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>p<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span
-                      class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor"
-                      style="color:red">
-                      href<span class="attributevaluecolor"
-                        style="color:mediumblue">="mailto:hege@example.com"</span></span><span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span>hege@example.com<span class="tagnamecolor"
-                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor"
-                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                  <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>/footer<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span>
-                </div>
-                <a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml5_footer">Try it
-                  Yourself
-                  »</a>
-              </div>
-              <hr>
-
-              <h2>HTML &lt;nav&gt; Element</h2>
-              <p>The <code class="w3-codespan">&lt;nav&gt;</code> element defines a set of navigation links.</p>
-              <div class="w3-panel w3-note">
-                <p>Notice that NOT all links of a document should be inside a <code
-                    class="w3-codespan">&lt;nav&gt;</code>
-                  element.
-                  The
-                  <code class="w3-codespan">&lt;nav&gt;</code> element is intended only for major block of
-                  navigation links.
-                </p>
-                <p>Browsers, such as screen readers for disabled users, can use this element
-                  to determine whether to omit the initial rendering of this content.</p>
-              </div>
-
-              <div class="w3-example">
-                <h5>Contoh :</h5>
-                <p>A set of navigation links:</p>
-                <div class="w3-code notranslate htmlHigh">
-                  <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>nav<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span><br>
-                  &nbsp;
-                  <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span
-                        class="attributevaluecolor" style="color:mediumblue">="/html/"</span></span><span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span>HTML<span class="tagnamecolor"
-                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span> |<br>
-                  &nbsp;
-                  <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span
-                        class="attributevaluecolor" style="color:mediumblue">="/css/"</span></span><span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span>CSS<span class="tagnamecolor"
-                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span> |<br>
-                  &nbsp;
-                  <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span
-                        class="attributevaluecolor" style="color:mediumblue">="/js/"</span></span><span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span>JavaScript<span class="tagnamecolor"
-                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span> |<br>
-                  &nbsp;
-                  <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span
-                        class="attributevaluecolor" style="color:mediumblue">="/jquery/"</span></span><span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span>jQuery<span class="tagnamecolor"
-                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                  <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>/nav<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span>
-                </div>
-                <a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml5_nav">Try it
-                  Yourself
-                  »</a>
-              </div>
-              <hr>
-
-              <h2>HTML &lt;aside&gt; Element</h2>
-              <p>The <code class="w3-codespan">&lt;aside&gt;</code> element defines some content aside from the
-                content it
-                is
-                placed in (like a sidebar).</p>
-              <p>The <code class="w3-codespan">&lt;aside&gt;</code> content should be
-                indirectly related to the surrounding content.</p>
-              <div class="w3-example">
-                <h5>Contoh :</h5>
-                <p>Display some content aside from the content it is placed in:</p>
-                <div class="w3-code notranslate htmlHigh">
-                  <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>p<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span>My family and I visited The Epcot center this
-                  summer. The weather was
-                  nice, and Epcot was amazing! I had a great summer together with my
-                  family!<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor"
-                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>aside<span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
-                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h4<span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span>Epcot Center<span class="tagnamecolor"
-                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h4<span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
-                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span>Epcot is a theme
-                  park at Walt Disney World Resort featuring exciting attractions,
-                  international pavilions, award-winning fireworks and seasonal special
-                  events.<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
-                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/aside<span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span>
-                </div>
-                <a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml5_aside">Try it
-                  Yourself
-                  »</a>
-              </div>
-
-              <div class="w3-example">
-                <h3>Example 2</h3>
-                <p>Use CSS to style the &lt;aside&gt; element:</p>
-                <div class="w3-code notranslate htmlHigh">
-                  <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>html<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
-                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
-                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor"
-                    style="color:brown"><br>aside
-                    <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
-                      style="color:red"><br>&nbsp; width<span class="csspropertyvaluecolor"
-                        style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
-                        30%<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
-                      padding-left<span class="csspropertyvaluecolor" style="color:mediumblue"><span
-                          class="cssdelimitercolor" style="color:black">:</span> 15px<span class="cssdelimitercolor"
-                          style="color:black">;</span></span><br>&nbsp; margin-left<span class="csspropertyvaluecolor"
-                        style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 15px<span
-                          class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; float<span
-                        class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
-                          style="color:black">:</span>
-                        right<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
-                      font-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span
-                          class="cssdelimitercolor" style="color:black">:</span> italic<span class="cssdelimitercolor"
-                          style="color:black">;</span></span><br>&nbsp;
-                      background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span
-                          class="cssdelimitercolor" style="color:black">:</span> lightgray<span
-                          class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
-                      class="cssdelimitercolor" style="color:black">}</span><br></span><span class="tagnamecolor"
-                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
-                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
-                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                  <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>p<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span>My
-                  family and I visited The Epcot
-                  center this summer. The weather was nice, and Epcot was amazing! I had a great
-                  summer together with my family!<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor"
-                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>aside<span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
-                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span>The Epcot center is a
-                  theme park at Walt Disney World Resort featuring exciting attractions,
-                  international pavilions, award-winning fireworks and seasonal special
-                  events.<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
-                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/aside<span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor"
-                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span>My family and I visited The Epcot
-                  center
-                  this summer. The weather was nice, and Epcot was amazing! I had a great summer
-                  together with my family!<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
-                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span>My family and I visited The Epcot
-                  center
-                  this summer. The weather was nice, and Epcot was amazing! I had a great summer
-                  together with my family!<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor"
-                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
-                    style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span>
-                </div>
-                <a target="_blank" href="tryit.asp?filename=tryhtml5_aside2" class="w3-btn w3-margin-bottom">Try it
-                  Yourself
-                  »</a>
-              </div>
-              <hr>
-
-              <h2>HTML &lt;figure&gt; and &lt;figcaption&gt; Elements</h2>
-              <p>The <code class="w3-codespan">&lt;figure&gt;</code> tag specifies self-contained content, like
-                illustrations,
-                diagrams, photos, code listings, etc.</p>
-              <p>The <code class="w3-codespan">&lt;figcaption&gt;</code> tag defines a caption for a <code
-                  class="w3-codespan">&lt;figure&gt;</code> element. The <code
-                  class="w3-codespan">&lt;figcaption&gt;</code>
-                element
-                can be placed as the first or
-                as the last child of a <code class="w3-codespan">&lt;figure&gt;</code> element.</p>
-              <p>The <code class="w3-codespan">&lt;img&gt;</code> element defines the actual
-                image/illustration.&nbsp;</p>
-              <div class="w3-example">
-                <h5>Contoh :</h5>
-                <div class="w3-code notranslate htmlHigh">
-                  <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>figure<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span><br>
-                  &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red">
-                      src<span class="attributevaluecolor" style="color:mediumblue">="pic_trulli.jpg"</span>
-                      alt<span class="attributevaluecolor" style="color:mediumblue">="Trulli"</span></span><span
-                      class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
-                  &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>figcaption<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span>Fig1. - Trulli, Puglia, Italy.<span
-                    class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>/figcaption<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span><br>
-                  <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                      style="color:mediumblue">&lt;</span>/figure<span class="tagcolor"
-                      style="color:mediumblue">&gt;</span></span>
-                </div>
-                <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_figcaption" target="_blank">Try
-                  it
-                  Yourself
-                  »</a>
-              </div>
-              <hr>
-
-              <h2>Why Semantic Elements?</h2>
-              <p>According to the W3C: "A semantic Web allows data to be shared and reused across applications,
-                enterprises, and communities."</p>
-              <hr>
-
-              <h2>Semantic Elements in HTML</h2>
-              <p>Below is a list of some of the semantic elements in HTML.</p>
-              <table class="ws-table-all notranslate">
+        </section>
+        <!-- Nesting article -->
+        <section id="28.4">
+          <h2>Nesting/Bersarang <code>&lt;article&gt;</code> di <code>&lt;section&gt;</code> atau sebaliknya?</h2>
+          <p>Elemen <mark>&lt;article&gt;</mark> menentukan konten mandiri dan mandiri. Elemen
+            <mark>&lt;section&gt;</mark> mendefinisikan bagian dalam dokumen. Bisakah kita menggunakan definisi untuk
+            memutuskan bagaimana menyusun elemen-elemen itu? Tidak, kita tidak bisa! Jadi, Anda akan menemukan halaman
+            HTML dengan elemen <mark>&lt;section&gt;</mark> yang mengandung elemen <mark>&lt;article&gt;</mark>, dan
+            elemen <mark>&lt;article&gt;</mark> yang mengandung elemen <mark>&lt;section&gt;</mark>.
+          </p>
+        </section>
+        <!-- <header> -->
+        <section id="28.5">
+          <h2><code>&lt;header&gt;</code> Elemen</h2>
+          <p>Elemen <mark>&lt;header&gt;</mark> mewakili wadah untuk konten pengantar atau kumpulan tautan navigasi.
+            <br> Elemen <mark>&lt;header&gt;</mark> biasanya berisi:
+          </p>
+          <ul>
+            <li>satu atau lebih elemen heading (&lt;h1&gt; - &lt;h6&gt;)</li>
+            <li>logo atau ikon</li>
+            <li>informasi pengarang</li>
+          </ul>
+          <p class="moreInfo"><b>Catatan:</b> Anda dapat memiliki beberapa elemen <mark>&lt;header&gt;</mark> dalam
+            satu
+            dokumen HTML. Namun, <mark>&lt;header&gt;</mark> tidak dapat ditempatkan di dalam elemen
+            <mark>&lt;footer&gt;</mark>, <mark>&lt;address&gt;</mark> atau <mark>&lt;header&gt;</mark> lainnya.
+          </p>
+          <h5>Contoh :</h5>
+          <p>Header untuk <mark>&lt;article&gt;</mark>:</p>
+          <img class="top-example" src="files/img/browser-head.png" alt="">
+          <div class="bd-example">
+            <article>
+              <header>
+                <h1>Apa yang dilakukan WWF?</h1>
+                <p>Misi WWF:</p>
+              </header>
+              <p>Misi WWF adalah menghentikan degradasi lingkungan alam planet kita, dan membangun masa depan di mana
+                manusia hidup selaras dengan alam.</p>
+            </article>
+          </div>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
                 <tbody>
                   <tr>
-                    <th style="width:20%">Tag</th>
-                    <th>Description</th>
-                  </tr>
-                  <tr>
-                    <td><a href="/tags/tag_article.asp">&lt;article&gt;</a></td>
-                    <td>Defines independent, self-contained content</td>
-                  </tr>
-                  <tr>
-                    <td><a href="/tags/tag_aside.asp">&lt;aside&gt;</a></td>
-                    <td>Defines content aside from the page content</td>
-                  </tr>
-                  <tr>
-                    <td><a href="/tags/tag_details.asp">&lt;details&gt;</a></td>
-                    <td>Defines additional details that the user can view or hide</td>
-                  </tr>
-                  <tr>
-                    <td><a href="/tags/tag_figcaption.asp">&lt;figcaption&gt;</a></td>
-                    <td>Defines a caption for a &lt;figure&gt; element</td>
-                  </tr>
-                  <tr>
-                    <td><a href="/tags/tag_figure.asp">&lt;figure&gt;</a></td>
-                    <td>Specifies self-contained content, like illustrations, diagrams, photos, code
-                      listings, etc.</td>
-                  </tr>
-                  <tr>
-                    <td><a href="/tags/tag_footer.asp">&lt;footer&gt;</a></td>
-                    <td>Defines a footer for a document or section</td>
-                  </tr>
-                  <tr>
-                    <td><a href="/tags/tag_header.asp">&lt;header&gt;</a></td>
-                    <td>Specifies a header for a document or section</td>
-                  </tr>
-                  <tr>
-                    <td><a href="/tags/tag_main.asp">&lt;main&gt;</a></td>
-                    <td>Specifies the main content of a document</td>
-                  </tr>
-                  <tr>
-                    <td><a href="/tags/tag_mark.asp">&lt;mark&gt;</a></td>
-                    <td>Defines marked/highlighted text</td>
-                  </tr>
-                  <tr>
-                    <td><a href="/tags/tag_nav.asp">&lt;nav&gt;</a></td>
-                    <td>Defines navigation links</td>
-                  </tr>
-                  <tr>
-                    <td><a href="/tags/tag_section.asp">&lt;section&gt;</a></td>
-                    <td>Defines a section in a document</td>
-                  </tr>
-                  <tr>
-                    <td><a href="/tags/tag_summary.asp">&lt;summary&gt;</a></td>
-                    <td>Defines a visible heading for a &lt;details&gt; element</td>
-                  </tr>
-                  <tr>
-                    <td><a href="/tags/tag_time.asp">&lt;time&gt;</a></td>
-                    <td>Defines a date/time</td>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                      <div class="line number2 index1 alt1">6</div>
+                      <div class="line number2 index1 alt1">7</div>
+                      <div class="line number2 index1 alt1">8</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+            <code class="language-html" data-lang="html">&lt;<span class="nt">article</span>&gt;
+              &lt;<span class="nt">header</span>&gt;
+                &lt;<span class="nt">h1</span>&gt;Apa Yang Dilakukan WWF?&lt;<span class="nt">/h1</span>&gt;
+                &lt;<span class="nt">p</span>&gt;Misi WWF:&lt;<span class="nt">/p</span>&gt;
+              &lt;<span class="nt">/header</span>&gt;
+              &lt;<span class="nt">p</span>&gt;Misi WWF adalah menghentikan degradasi lingkungan alam planet kita, dan membangun masa depan di mana manusia
+                hidup selaras dengan alam.&lt;<span class="nt">/p</span>&gt;
+            &lt;<span class="nt">/article</span>&gt;</code></pre>
+                      </div>
+                    </td>
                   </tr>
                 </tbody>
               </table>
-              <div class="w3-note w3-panel">
-                <p>For a complete list of all available HTML tags, visit our <a href="/tags/default.asp">HTML Tag
-                    Reference</a>.</p>
-              </div>
+            </div>
+            <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+        </section>
+        <!-- <footer> -->
+        <section id="28.6">
+          <h2><code>&lt;footer&gt;</code> Elemen</h2>
+          <p>Elemen <mark>&lt;footer&gt;</mark> mendefinisikan footer untuk dokumen atau bagian. <br>
+            Elemen <mark>&lt;footer&gt;</mark> biasanya berisi:</p>
+          <ul>
+            <li>Informasi Kepenulisan</li>
+            <li>Informasi Hak Cipta</li>
+            <li>Kontak Informasi</li>
+            <li>Sitemap.</li>
+            <li>Kembali Ke Top Tautan</li>
+            <li>Dokumen Terkait</li>
+          </ul>
+          <p>Anda dapat memiliki beberapa elemen <mark>&lt;footer&gt;</mark> dalam satu dokumen.</p>
+          <h5>Contoh :</h5>
+          <p>Bagian footer dalam dokumen:</p>
+          <img class="top-example" src="files/img/browser-head.png" alt="">
+          <div class="bd-example">
+            <footer>
+              <p>Penulis: Ony Darrell</p>
+              <p><a href="mailto:onydarrell@gmail.com">onydarrell@gmail.com</a></p>
+            </footer>
+          </div>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-html" data-lang="html">&lt;<span class="nt">footer</span>&gt;
+            &lt;<span class="nt">p</span>&gt;Penulis: Ony Darrell&lt;<span class="nt">/p</span>&gt;
+            &lt;<span class="nt">p</span>&gt;&lt;<span class="nt">a</span> <span class="na">href</span>="mailto:onydarrell@gmail.com"&gt;onydarrell@gmail.com&lt;<span class="nt">/a</span>&gt;&lt;<span class="nt">/p</span>&gt;
+          &lt;<span class="nt">/footer</span>&gt;</code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah sendiri <img
+                  draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+        </section>
+        <!-- <nav> -->
+        <section id="28.7">
+          <h2><code>&lt;nav&gt;</code> Elemen</h2>
+          <p>Elemen <mark>&lt;nav&gt;</mark> mendefinisikan sekumpulan tautan navigasi.</p>
+          <p>Perhatikan bahwa TIDAK semua tautan dokumen harus berada di dalam elemen <mark>&lt;nav&gt;</mark>. Elemen
+            <mark>&lt;nav&gt;</mark> ditujukan hanya untuk blok utama tautan navigasi. <br>
+            Browser, seperti pembaca layar untuk pengguna yang dinonaktifkan, dapat menggunakan elemen ini untuk
+            menentukan apakah akan menghilangkan rendering awal konten ini.
+          </p>
+          <h5>Contoh :</h5>
+          <p>Satu set tautan navigasi:</p>
+          <img class="top-example" src="files/img/browser-head.png" alt="">
+          <div class="bd-example">
+            <footer>
+              <p>Penulis: Ony Darrell</p>
+              <p><a href="mailto:onydarrell@gmail.com">onydarrell@gmail.com</a></p>
+            </footer>
+          </div>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                      <div class="line number2 index1 alt1">6</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<code class="language-html" data-lang="html">&lt;<span class="nt">nav</span>&gt;
+  &lt;<span class="nt">a</span> <span class="na">href</span>="/html/"&gt;HTML&lt;<span class="nt">/a</span>&gt; |
+  &lt;<span class="nt">a</span> <span class="na">href</span>="/css/"&gt;CSS&lt;<span class="nt">/a</span>&gt; |
+  &lt;<span class="nt">a</span> <span class="na">href</span>="/js/"&gt;JavaScript&lt;<span class="nt">/a</span>&gt; |
+  &lt;<span class="nt">a</span> <span class="na">href</span>="/jquery/"&gt;jQuery&lt;<span class="nt">/a</span>&gt;
+&lt;<span class="nt">/nav</span>&gt;</code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah sendiri <img
+                  draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+        </section>
+        <!-- <aside> -->
+        <section id="28.8">
+          <h2><code>&lt;aside&gt;</code> Elemen</h2>
+          <p>Elemen <mark>&lt;aside&gt;</mark> mendefinisikan beberapa konten selain dari konten tempat ia ditempatkan
+            (seperti bilah sisi). <br>
+            Konten <mark>&lt;aside&gt;</mark> harus secara tidak langsung terkait dengan konten di sekitarnya.</p>
+          <h5>Contoh 1</h5>
+          <p>Disisihkan beberapa konten dari konten yang ditempatkan di:</p>
+          <img class="top-example" src="files/img/browser-head.png" alt="">
+          <div class="bd-example">
+            <p>Saya dan keluarga saya mengunjungi Pusat Epcot musim panas ini.Cuacanya bagus, dan Epcot luar biasa!Saya
+              memiliki musim panas yang menyenangkan bersama keluarga saya!.</p>
 
-              <br>
-              <div class="w3-clear nextprev">
-                <a class="w3-left w3-btn" href="html_computercode_elements.asp">❮ Previous</a>
-                <a class="w3-right w3-btn" href="html5_syntax.asp">Next ❯</a>
-              </div>
-              <div id="mypagediv2" style="position:relative;text-align:center;"></div>
-              <br>
+            <aside>
+              <h4>Pusat Epcot</h4>
+              <p>EPCOT adalah taman hiburan di Walt Disney World Resort yang menampilkan atraksi menarik, paviliun
+                internasional, kembang api pemenang penghargaan dan acara-acara khusus musiman.</p>
+            </aside>
+          </div>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                      <div class="line number2 index1 alt1">6</div>
+                      <div class="line number2 index1 alt1">7</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<code class="language-html" data-lang="html">&lt;<span class="nt">p</span>&gt;Saya dan keluarga saya mengunjungi Pusat Epcot musim panas ini.Cuacanya bagus, dan Epcot luar biasa!Saya memiliki musim panas yang menyenangkan bersama keluarga saya!.&lt;<span class="nt">/p</span>&gt;
 
-              <!-- </div> -->
+&lt;<span class="nt">aside</span>&gt;
+  &lt;<span class="nt">h4</span>&gt;Pusat Epcot&lt;<span class="nt">/h4</span>&gt;
+  &lt;<span class="nt">p</span>&gt;EPCOT adalah taman hiburan di Walt Disney World Resort yang menampilkan atraksi menarik, paviliun
+  internasional, kembang api pemenang penghargaan dan acara-acara khusus musiman.&lt;<span class="nt">/p</span>&gt;
+&lt;<span class="nt">/aside</span>&gt;</code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah sendiri <img
+                  draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+
+          <h5>Contoh 2</h5>
+          <p>Gunakan CSS untuk style <mark>&lt;aside&gt;</mark> elemen:</p>
+          <img class="top-example" src="files/img/browser-head.png" alt="">
+          <div class="bd-example">
+            <iframe src="tryhtml5_aside2.html" width="100%" height="200" frameborder="0"></iframe>
+          </div>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                      <div class="line number2 index1 alt1">6</div>
+                      <div class="line number2 index1 alt1">7</div>
+                      <div class="line number2 index1 alt1">8</div>
+                      <div class="line number2 index1 alt1">9</div>
+                      <div class="line number2 index1 alt1">10</div>
+                      <div class="line number2 index1 alt1">11</div>
+                      <div class="line number2 index1 alt1">12</div>
+                      <div class="line number2 index1 alt1">13</div>
+                      <div class="line number2 index1 alt1">14</div>
+                      <div class="line number2 index1 alt1">15</div>
+                      <div class="line number2 index1 alt1">16</div>
+                      <div class="line number2 index1 alt1">17</div>
+                      <div class="line number2 index1 alt1">18</div>
+                      <div class="line number2 index1 alt1">19</div>
+                      <div class="line number2 index1 alt1">20</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+<code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="nt">aside</span> <span class="p">{</span>
+    <span class="k">width</span><span class="p">:</span> <span class="nf">30%</span><span class="p">;</span>
+    <span class="k">padding-left</span><span class="p">:</span> <span class="nf">15px</span><span class="p">;</span>
+    <span class="k">margin-left</span><span class="p">:</span> <span class="nf">15px</span><span class="p">;</span>
+    <span class="k">float</span><span class="p">:</span> <span class="nf">right</span><span class="p">;</span>
+    <span class="k">font-style</span><span class="p">:</span> <span class="nf">italic</span><span class="p">;</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="nf">lightgray</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Saya dan keluarga saya mengunjungi Pusat Epcot musim panas ini. Cuacanya bagus, dan Epcot luar biasa!Saya memiliki musim panas yang menyenangkan bersama keluarga saya!.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">aside</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Pusat Epcot adalah taman hiburan di Walt Disney World Resort yang menampilkan atraksi menarik, paviliun internasional, kembang api pemenang penghargaan dan acara-acara khusus musiman.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">/aside</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Saya dan keluarga saya mengunjungi Pusat Epcot musim panas ini.Cuacanya bagus, dan Epcot luar biasa!Saya memiliki musim panas yang menyenangkan bersama keluarga saya!.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Saya dan keluarga saya mengunjungi Pusat Epcot musim panas ini.Cuacanya bagus, dan Epcot luar biasa!Saya memiliki musim panas yang menyenangkan bersama keluarga saya!.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah sendiri <img
+                  draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+        </section>
+        <!-- <figure> and <figcaption> -->
+        <section id="28.9">
+          <h2><code>&lt;figure&gt;</code> &amp; <code>&lt;figcaption&gt;</code> Elemen</h2>
+          <p>Tag <mark>&lt;figure&gt;</mark> menentukan konten mandiri, seperti ilustrasi, diagram, foto, daftar kode,
+            dll. <br> Tag <mark>&lt;figcaption&gt;</mark> mendefinisikan keterangan untuk elemen
+            <mark>&lt;figure&gt;</mark>.
+            Elemen <mark>&lt;figcaption&gt;</mark> dapat ditempatkan sebagai yang pertama atau sebagai anak terakhir
+            dari
+            elemen <mark>&lt;figure&gt;</mark>. <br> Elemen <mark>&lt;img&gt;</mark> mendefinisikan gambar/ilustrasi
+            yang
+            sebenarnya.
+          </p>
+          <h5>Contoh :</h5>
+          <div class="bd-example">
+            <h2>Tempat untuk dikunjungi</h2>
+            <p>Pemandangan Puglia yang paling terkenal adalah rumah kerucut yang unik (Trulli) yang ditemukan di daerah
+              sekitar Alberobello, sebuah situs yang dinyatakan warisan dunia oleh UNESCO.</p>
+            <figure>
+              <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Trulli" style="width:100%">
+              <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+            </figure>
+          </div>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-html" data-lang="html">&lt;<span class="nt">figure</span>&gt;
+            &lt;<span class="nt">img</span> <span class="na">src</span>="pic_trulli.jpg" <span class="na">alt</span>="Trulli" <span class="na">style</span>="width:100%"&gt;
+            &lt;<span class="nt">figcaption</span>&gt;Fig.1 - Trulli, Puglia, Italy.&lt;<span class="nt">/figcaption</span>&gt;
+          &lt;<span class="nt">/figure</span>&gt;</code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm" href="codeeditor/code-editor.html" target="_blank">Cobalah sendiri <img
+                  draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+        </section>
+
+        <section id="28.10">
+          <h2>Mengapa Elemen Semantik?</h2>
+          <p class="lead">Menurut W3C: <q>Web semantik memungkinkan data untuk dibagikan dan digunakan kembali di
+              seluruh aplikasi, perusahaan, dan komunitas.</q></p>
+        </section>
+
+        <section>
+          <h2>Elemen Semantik dalam HTML</h2>
+          <p>Di bawah ini adalah daftar beberapa elemen semantik dalam HTML.</p>
+          <table class="table table-hover table-sm">
+            <thead class="table-light">
+              <tr>
+                <th style="width:20%">Tag</th>
+                <th>Keterangan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="/tags/tag_article.asp">&lt;article&gt;</a></td>
+                <td>Defines independent, self-contained content</td>
+              </tr>
+              <tr>
+                <td><a href="/tags/tag_aside.asp">&lt;aside&gt;</a></td>
+                <td>Defines content aside from the page content</td>
+              </tr>
+              <tr>
+                <td><a href="/tags/tag_details.asp">&lt;details&gt;</a></td>
+                <td>Defines additional details that the user can view or hide</td>
+              </tr>
+              <tr>
+                <td><a href="/tags/tag_figcaption.asp">&lt;figcaption&gt;</a></td>
+                <td>Defines a caption for a &lt;figure&gt; element</td>
+              </tr>
+              <tr>
+                <td><a href="/tags/tag_figure.asp">&lt;figure&gt;</a></td>
+                <td>Specifies self-contained content, like illustrations, diagrams, photos, code
+                  listings, etc.</td>
+              </tr>
+              <tr>
+                <td><a href="/tags/tag_footer.asp">&lt;footer&gt;</a></td>
+                <td>Defines a footer for a document or section</td>
+              </tr>
+              <tr>
+                <td><a href="/tags/tag_header.asp">&lt;header&gt;</a></td>
+                <td>Specifies a header for a document or section</td>
+              </tr>
+              <tr>
+                <td><a href="/tags/tag_main.asp">&lt;main&gt;</a></td>
+                <td>Specifies the main content of a document</td>
+              </tr>
+              <tr>
+                <td><a href="/tags/tag_mark.asp">&lt;mark&gt;</a></td>
+                <td>Defines marked/highlighted text</td>
+              </tr>
+              <tr>
+                <td><a href="/tags/tag_nav.asp">&lt;nav&gt;</a></td>
+                <td>Defines navigation links</td>
+              </tr>
+              <tr>
+                <td><a href="/tags/tag_section.asp">&lt;section&gt;</a></td>
+                <td>Defines a section in a document</td>
+              </tr>
+              <tr>
+                <td><a href="/tags/tag_summary.asp">&lt;summary&gt;</a></td>
+                <td>Defines a visible heading for a &lt;details&gt; element</td>
+              </tr>
+              <tr>
+                <td><a href="/tags/tag_time.asp">&lt;time&gt;</a></td>
+                <td>Defines a date/time</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
 
       </div>
       <!-- /bd-content -->

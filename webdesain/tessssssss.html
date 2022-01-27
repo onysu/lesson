@@ -237,7 +237,866 @@
 
       <div class="bd-content">
 
+        <h1>Panduan Style HTML</h1>
+        <p class="lead">Kode HTML yang konsisten, bersih, dan rapi membuatnya lebih mudah bagi orang lain untuk membaca
+          dan memahami
+          Kode Anda.Berikut adalah beberapa pedoman dan tips untuk membuat kode HTML yang baik.</p>
 
+        <h2>Selalu deklarasikan jenis dokumen</h2>
+        <p>Selalu deklarasikan tipe dokumen sebagai baris pertama dalam dokumen Anda. Jenis dokumen yang benar untuk
+          HTML adalah:</p>
+
+        <div class="bd-callout bd-callout-syntax">
+          <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+              style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red">
+              html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+        </div>
+
+        <h2>Gunakan Nama Elemen Huruf Kecil</h2>
+        <p>HTML memungkinkan pencampuran huruf besar dan kecil dalam nama elemen. Namun, kami sarankan menggunakan nama
+          elemen huruf kecil, karena :</p>
+        <ul>
+          <li>Mencampur nama huruf besar dan huruf kecil terlihat buruk</li>
+          <li>Pengembang biasanya menggunakan nama huruf kecil</li>
+          <li>Huruf kecil terlihat bersih.</li>
+          <li>Huruf kecil lebih mudah untuk ditulis</li>
+        </ul>
+
+        <div class="highlight">
+          Code : <b>BAIK</b>
+          <div class="syntaxhighlighter  xml">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                    <div class="line number2 index1 alt1">2</div>
+                    <div class="line number2 index1 alt1">3</div>
+                  </td>
+                  <td class="code">
+                    <div class="container-fluid">
+                      <pre tabindex="0" class="chroma">
+<code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ini adalah sebuah paragraf<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span></code></pre>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="highlight">
+          Code : <b>BURUK</b>
+          <div class="syntaxhighlighter  xml">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                    <div class="line number2 index1 alt1">2</div>
+                    <div class="line number2 index1 alt1">3</div>
+                  </td>
+                  <td class="code">
+                    <div class="container-fluid">
+                      <pre tabindex="0" class="chroma">
+<code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">BODY</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">P</span><span class="p">&gt;</span>Ini adalah sebuah paragraf<span class="p">&lt;/</span><span class="nt">P</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">BODY</span><span class="p">&gt;</span></code></pre>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <h2>Tutup Semua Elemen HTML</h2>
+        <p>Dalam HTML, Anda tidak harus menutup semua elemen (misalnya <code>&lt;p&gt;</code> elemen). Namun, kami
+          sangat menyarankan untuk menutup semua elemen HTML, seperti ini:</p>
+        <div class="highlight">
+          Code : <b>BAIK</b>
+          <div class="syntaxhighlighter  xml">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                    <div class="line number2 index1 alt1">2</div>
+                    <div class="line number2 index1 alt1">3</div>
+                    <div class="line number2 index1 alt1">4</div>
+                  </td>
+                  <td class="code">
+                    <div class="container-fluid">
+                      <pre tabindex="0" class="chroma">
+<code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ini adalah sebuah paragraf<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ini adalah sebuah paragraf<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span></code></pre>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="highlight">
+          Code : <b>BURUK</b>
+          <div class="syntaxhighlighter  xml">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                    <div class="line number2 index1 alt1">2</div>
+                    <div class="line number2 index1 alt1">3</div>
+                    <div class="line number2 index1 alt1">4</div>
+                  </td>
+                  <td class="code">
+                    <div class="container-fluid">
+                      <pre tabindex="0" class="chroma">
+<code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ini adalah sebuah paragraf.
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ini adalah sebuah paragraf.
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span></code></pre>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <h2>Gunakan Nama Atribut Huruf Kecil</h2>
+        <p>HTML memungkinkan pencampuran huruf besar dan kecil dalam nama atribut. Namun, kami sarankan menggunakan nama
+          atribut huruf kecil, karena:</p>
+        <ul>
+          <li>Mencampur nama huruf besar dan huruf kecil terlihat buruk.</li>
+          <li>Pengembang biasanya menggunakan nama huruf kecil.</li>
+          <li>Huruf kecil terlihat lebih bersih.</li>
+          <li>Huruf kecil lebih mudah untuk ditulis.</li>
+        </ul>
+        <div class="highlight">
+          Code : <b>BAIK</b>
+          <div class="syntaxhighlighter  xml">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                  </td>
+                  <td class="code">
+                    <div class="container-fluid">
+                      <pre tabindex="0"
+                        class="chroma"><code class="language-html" data-lang="html">&lt;<span class="nt">a</span> <span class="na">href</span>="<span class="s">https://onysu.github.io/lesson/webdesain/</span>"&gt;Visit our HTML tutorial&lt;<span class="nt">/a</span>&gt;</code></pre>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="highlight">
+          Code : <b>BURUK</b>
+          <div class="syntaxhighlighter  xml">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                  </td>
+                  <td class="code">
+                    <div class="container-fluid">
+                      <pre tabindex="0"
+                        class="chroma"><code class="language-html" data-lang="html">&lt;<span class="nt">a</span> <span class="na">HREF</span>="<span class="s">https://onysu.github.io/lesson/webdesain/</span>"&gt;Visit our HTML tutorial&lt;<span class="nt">/a</span>&gt;</code></pre>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <h2>Selalu Kutip Nilai Atribut</h2>
+        <p>HTML memungkinkan nilai atribut tanpa tanda kutip. Namun, kami sarankan mengutip nilai atribut, karena:</p>
+        <ul>
+          <li>Pengembang biasanya mengutip nilai atribut.</li>
+          <li>Nilai Kutipan lebih mudah dibaca.</li>
+          <li>Anda harus menggunakan kutipan jika nilainya berisi spasi.</li>
+        </ul>
+        <div class="highlight">
+          Code : <b>BAIK</b>
+          <div class="syntaxhighlighter  xml">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                  </td>
+                  <td class="code">
+                    <div class="container-fluid">
+                      <pre tabindex="0"
+                        class="chroma"><code class="language-html" data-lang="html">&lt;<span class="nt">table</span> <span class="na">class</span>="striped"&gt;</code></pre>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="highlight">
+          Code : <b>BURUK</b>
+          <div class="syntaxhighlighter  xml">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                  </td>
+                  <td class="code">
+                    <div class="container-fluid">
+                      <pre tabindex="0"
+                        class="chroma"><code class="language-html" data-lang="html">&lt;<span class="nt">table</span> <span class="na">class</span>=striped&gt;</code></pre>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="highlight">
+          Ini tidak akan berhasil, karena nilainya berisi spasi: <br>
+          Code : <b>SANGAT BURUK</b>
+          <div class="syntaxhighlighter  xml">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                  </td>
+                  <td class="code">
+                    <div class="container-fluid">
+                      <pre tabindex="0"
+                        class="chroma"><code class="language-html" data-lang="html">&lt;<span class="nt">table</span> <span class="na">class</span>=table striped&gt;</code></pre>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <h2>Always Specify alt, width, and height for Images</h2>
+        <p>Always specify the <code class="w3-codespan">alt</code> attribute for images. This attribute is important
+          if the
+          image
+          for some reason cannot be displayed.</p>
+        <p>Also, always define the <code class="w3-codespan">width</code> and <code class="w3-codespan">
+height</code> of images. This reduces flickering, because the browser can reserve space for
+          the image before loading.</p>
+        <div class="w3-example">
+          <h3>Good:</h3>
+          <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red">
+                src<span class="attributevaluecolor" style="color:mediumblue">="html5.gif"</span> alt<span
+                  class="attributevaluecolor" style="color:mediumblue">="HTML5"</span> style<span
+                  class="attributevaluecolor" style="color:mediumblue">="width:128px;height:128px"</span></span><span
+                class="tagcolor" style="color:mediumblue">&gt;</span></span>
+          </div>
+        </div>
+        <div class="w3-example">
+          <h3>Bad:</h3>
+          <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red">
+                src<span class="attributevaluecolor" style="color:mediumblue">="html5.gif"</span></span><span
+                class="tagcolor" style="color:mediumblue">&gt;</span></span>
+          </div>
+        </div>
+        <hr>
+
+        <h2>Spaces and Equal Signs</h2>
+        <p>HTML allows spaces around equal signs. But space-less is easier to read and
+          groups entities better together.</p>
+        <div class="w3-example">
+          <h3>Good:</h3>
+          <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red"> rel<span
+                  class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span> href<span
+                  class="attributevaluecolor" style="color:mediumblue">="styles.css"</span></span><span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>
+          </div>
+        </div>
+        <div class="w3-example">
+          <h3>Bad:</h3>
+          <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red">
+                rel <span class="attributevaluecolor" style="color:mediumblue">= "stylesheet"</span> href <span
+                  class="attributevaluecolor" style="color:mediumblue">= "styles.css"</span></span><span
+                class="tagcolor" style="color:mediumblue">&gt;</span></span>
+          </div>
+        </div>
+        <hr>
+
+        <h2>Avoid Long Code Lines</h2>
+        <p>When using an HTML editor, it is NOT convenient to scroll right and left to read the HTML code.</p>
+        <p>Try to avoid too long code lines.</p>
+        <hr>
+
+        <h2>Blank Lines and Indentation</h2>
+        <p>Do not add blank lines, spaces, or indentations without a reason.</p>
+        <p>For readability, add blank lines to separate large or logical code blocks.</p>
+        <p>For readability, add two spaces of indentation. Do not use the tab key.</p>
+        <div class="w3-example">
+          <h3>Good:</h3>
+          <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>body<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>Famous Cities<span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>Tokyo<span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>Tokyo is the capital of Japan, the
+            center of the Greater Tokyo Area,<br>and the most
+            populous metropolitan area in the world.<br>It is the
+            seat of the Japanese government and the Imperial Palace,<br>
+            and the home of the Japanese Imperial Family.<span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>
+          </div>
+        </div>
+
+        <div class="w3-example">
+          <h3>Bad:</h3>
+          <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>body<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><br>&nbsp; <span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>Famous Cities<span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><br>&nbsp; <span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>Tokyo<span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>
+            <br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; Tokyo is the capital of Japan, the
+            center of the Greater Tokyo Area,<br>&nbsp;&nbsp;&nbsp; and the most
+            populous metropolitan area in the world.<br>&nbsp;&nbsp;&nbsp; It is the
+            seat of the Japanese government and the Imperial Palace,<br>&nbsp;&nbsp;&nbsp;
+            and the home of the Japanese Imperial Family.<br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>
+          </div>
+        </div>
+        <div class="w3-example">
+          <h3>Good Table Example:</h3>
+          <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>table<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>tr<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>Name<span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>
+            &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>th<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>Description<span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>
+            &nbsp;
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>/tr<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>tr<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>A<span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>
+            &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>td<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>Description of A<span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>
+            &nbsp;
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>/tr<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>tr<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>B<span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>
+            &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>td<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>Description of B<span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/tr<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>/table<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>
+          </div>
+        </div>
+        <div class="w3-example">
+          <h3>Good List Example:</h3>
+          <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>ul<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>London<span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>Paris<span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>
+            &nbsp;
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>li<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>Tokyo<span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>/ul<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>
+          </div>
+        </div>
+        <hr>
+
+        <h2>Never Skip the &lt;title&gt; Element</h2>
+        <p>The <code class="w3-codespan">&lt;title&gt;</code> element is required in HTML.</p>
+        <p>The contents of a page title is very important for search engine optimization
+          (SEO)! The page title is used by search engine algorithms to decide the order
+          when listing pages in search results.</p>
+        <p>The <code class="w3-codespan">&lt;title&gt;</code> element:</p>
+        <ul>
+          <li>defines a title in the browser toolbar</li>
+          <li>provides a title for the page when it is added to favorites</li>
+          <li>displays a title for the page in search-engine results</li>
+        </ul>
+        <p>So, try to make the title as accurate and meaningful as possible:&nbsp;</p>
+        <div class="w3-example">
+          <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>title<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>HTML
+            Style Guide and Coding Conventions<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>/title<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>
+          </div>
+        </div>
+        <hr>
+        <h2>Omitting &lt;html&gt; and &lt;body&gt;?</h2>
+        <p>An HTML page will validate without the <code class="w3-codespan">&lt;html&gt;</code> and
+          <code class="w3-codespan">&lt;body&gt;</code> tags:
+        </p>
+        <div class="w3-example">
+          <h3>Example</h3>
+          <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red">
+                html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span
+              class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>head<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>Page Title<span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span
+                class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>/head<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>
+            <br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>h1<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>This is a heading<span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>This is a paragraph.<span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>
+          </div>
+          <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_syntax_nobody" target="_blank">Try it
+            Yourself
+            »</a>
+        </div>
+
+        <p>However, we strongly recommend to always add the <code class="w3-codespan">&lt;html&gt;</code> and
+          <code class="w3-codespan">&lt;body&gt;</code> tags!
+        </p>
+        <p>Omitting <code class="w3-codespan">&lt;body&gt;</code> can produce errors in older browsers.</p>
+        <p>Omitting <code class="w3-codespan">&lt;html&gt;</code> and <code class="w3-codespan">&lt;body&gt;</code>
+          can also crash DOM and XML software.</p>
+        <hr>
+        <h2>Omitting &lt;head&gt;?</h2>
+        <p>The HTML &lt;head&gt; tag can also
+          be omitted.</p>
+        <p>Browsers will add all elements before <code class="w3-codespan">&lt;body&gt;</code>, to a default <code
+            class="w3-codespan">&lt;head&gt;</code>
+          element.</p>
+        <div class="w3-example">
+          <h3>Example</h3>
+          <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red">
+                html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span
+              class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>html<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>Page Title<span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span
+                class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>body<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>This is a heading<span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>This is a paragraph.<span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>
+            <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>
+          </div>
+          <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_syntax_nohead" target="_blank">Try it
+            Yourself
+            »</a>
+        </div>
+        <p>However, we recommend using the <code class="w3-codespan">&lt;head&gt;</code> tag.</p>
+
+        <hr>
+
+        <h2>Close Empty HTML Elements?</h2>
+        <p>In HTML, it is optional to close empty elements.</p>
+        <div class="w3-example">
+          <h3>Allowed:</h3>
+          <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red">
+                charset<span class="attributevaluecolor" style="color:mediumblue">="utf-8"</span></span><span
+                class="tagcolor" style="color:mediumblue">&gt;</span></span>
+          </div>
+        </div>
+        <div class="w3-example">
+          <h3>Also Allowed:</h3>
+          <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> charset<span
+                  class="attributevaluecolor" style="color:mediumblue">="utf-8"</span> /</span><span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>
+          </div>
+        </div>
+        <p>If you expect XML/XHTML software to access your page, keep the
+          closing slash (/), because it is required in XML and XHTML.</p>
+
+        <hr>
+
+        <h2>Add the lang Attribute</h2>
+        <p>You should always include the <code class="w3-codespan">lang</code> attribute
+          inside the <code class="w3-codespan">&lt;html&gt;</code> tag, to declare the
+          language of the Web page. This is meant to assist search engines and browsers.</p>
+        <div class="w3-example">
+          <h3>Example</h3>
+          <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red">
+                html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span
+              class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>html<span class="attributecolor" style="color:red"> lang<span
+                  class="attributevaluecolor" style="color:mediumblue">="en-us"</span></span><span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>Page Title<span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span
+                class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>/head<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>This is a
+            heading<span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>This is a paragraph.<span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
+                class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>
+          </div>
+          <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_syntax_body" target="_blank">Try it
+            Yourself
+            »</a>
+        </div>
+
+
+        <hr>
+
+        <h2>Meta Data</h2>
+        <p>To ensure proper interpretation and correct search engine indexing, both the language and
+          the character encoding <code class="w3-codespan">&lt;meta charset="<em>charset</em>"&gt;</code> should be
+          defined as
+          early as possible in an HTML document:</p>
+        <div class="w3-example">
+          <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red">
+                html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span
+              class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>html<span class="attributecolor" style="color:red">
+                lang<span class="attributevaluecolor" style="color:mediumblue">="en-us"</span></span><span
+                class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span
+                class="attributecolor" style="color:red">
+                charset<span class="attributevaluecolor" style="color:mediumblue">="UTF-8"</span></span><span
+                class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+            &nbsp;
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>title<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>Page Title<span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span
+                class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor"
+              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>
+          </div>
+        </div>
+        <hr>
+
+        <h2>Setting The Viewport</h2>
+
+        <p>The viewport is the user's visible area of a web page. It varies with the device
+          - it will be smaller on a mobile phone than on a computer screen.</p>
+        <p>You should include the following <code class="w3-codespan">&lt;meta&gt;</code> element in all your web
+          pages:</p>
+        <div class="w3-code w3-border notranslate htmlHigh">
+          <div>
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> name<span
+                  class="attributevaluecolor" style="color:mediumblue">="viewport"</span> content<span
+                  class="attributevaluecolor" style="color:mediumblue">="width=device-width,
+                  initial-scale=1.0"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+          </div>
+        </div>
+        <p>This gives the browser instructions on how
+          to control the page's dimensions and scaling.</p>
+        <p>The <code class="w3-codespan">width=device-width</code> part sets the width of the page to follow the
+          screen-width
+          of the device (which will vary depending on the device).</p>
+        <p>The <code class="w3-codespan">initial-scale=1.0</code> part sets the initial zoom level when the page is
+          first
+          loaded by the browser.</p>
+        <p>Here is an example of a web page <em>without</em> the viewport meta tag, and the same web page
+          <em>with</em> the
+          viewport meta tag:
+        </p>
+        <div class="w3-note w3-panel">
+          <p><strong>Tip:</strong> If you are browsing this page with a phone or a tablet, you can click on the two
+            links
+            below to see the difference.</p>
+        </div>
+        <br>
+        <div class="w3-row" style="text-align:center;">
+          <div class="w3-half">
+            <a target="_blank" href="example_withoutviewport.htm"><img src="/css/img_viewport1.png"
+                class="w3-hover-shadow viewport"><br><br><b>Without the
+                viewport meta tag</b></a>
+            <br>
+            <br>
+          </div>
+          <div class="w3-half">
+            <a target="_blank" href="example_withviewport.htm"><img src="/css/img_viewport2.png"
+                class="w3-hover-shadow viewport"><br><br><b>With the
+                viewport meta tag</b></a>
+            <br>
+            <br>
+          </div>
+        </div>
+        <hr>
+
+        <h2>HTML Comments</h2>
+        <p>Short comments should be written on one line, like this:</p>
+        <div class="w3-example">
+          <div class="w3-code notranslate htmlHigh">
+            <span class="commentcolor" style="color:green">&lt;!-- This is a comment --&gt;</span>
+          </div>
+        </div>
+        <p>Comments that spans more than one line, should be written like this:</p>
+        <div class="w3-example">
+          <div class="w3-code notranslate htmlHigh">
+            <span class="commentcolor" style="color:green">&lt;!-- <br>&nbsp; This is a long comment example. This is
+              a long comment example.<br>&nbsp; This is a
+              long comment example. This is a long comment example.<br>--&gt;</span>
+          </div>
+        </div>
+        <p>Long comments are easier to observe if they are indented with two spaces.</p>
+        <hr>
+
+        <h2>Using Style Sheets</h2>
+        <p>Use simple syntax for linking to style sheets (the <code class="w3-codespan">
+type</code> attribute is not necessary):</p>
+        <div class="w3-example">
+          <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red"> rel<span
+                  class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span> href<span
+                  class="attributevaluecolor" style="color:mediumblue">="styles.css"</span></span><span class="tagcolor"
+                style="color:mediumblue">&gt;</span></span>
+          </div>
+        </div>
+        <p>Short CSS rules can be written compressed, like this:</p>
+        <div class="w3-example">
+          <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+              p.intro <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                style="color:red">font-family<span class="csspropertyvaluecolor" style="color:mediumblue"><span
+                    class="cssdelimitercolor" style="color:black">:</span>Verdana<span class="cssdelimitercolor"
+                    style="color:black">;</span></span>font-size<span class="csspropertyvaluecolor"
+                  style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>16em<span
+                    class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor"
+                style="color:black">}</span> </span></div>
+        </div>
+
+        <p>Long CSS rules should be written over multiple lines:</p>
+        <div class="w3-example">
+          <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+              body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
+                style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor"
+                  style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> lightgrey<span
+                    class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; font-family<span
+                  class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                    style="color:black">:</span> "Arial
+                  Black", Helvetica, sans-serif<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br>&nbsp;
+                font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
+                    style="color:black">:</span> 16em<span class="cssdelimitercolor"
+                    style="color:black">;</span></span><br>&nbsp; color<span class="csspropertyvaluecolor"
+                  style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
+                  black<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
+                class="cssdelimitercolor" style="color:black">}</span> </span></div>
+        </div>
+
+        <ul>
+          <li>Place the opening bracket on the same line as the selector</li>
+          <li>Use one space before the opening bracket</li>
+          <li>Use two spaces of indentation</li>
+          <li>Use semicolon after each property-value pair, including the last</li>
+          <li>Only use quotes around values if the value contains spaces</li>
+          <li>Place the closing bracket on a new line, without leading spaces</li>
+        </ul>
+        <hr>
+
+        <h2>Loading JavaScript in HTML</h2>
+        <p>Use simple syntax for loading external scripts (the <code class="w3-codespan">
+type</code> attribute is not necessary):</p>
+
+        <div class="w3-example">
+          <div class="w3-code notranslate htmlHigh">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>script<span class="attributecolor" style="color:red"> src<span
+                  class="attributevaluecolor" style="color:mediumblue">="myscript.js"</span></span><span
+                class="tagcolor" style="color:mediumblue">&gt;</span></span>
+          </div>
+        </div>
+        <hr>
+        <h2>Accessing HTML Elements with JavaScript</h2>
+        <p>Using "untidy" HTML code can result in JavaScript errors.</p>
+        <p>These two JavaScript statements will produce different results:</p>
+
+        <div class="w3-example">
+          <h3>Example</h3>
+          <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor"
+                style="color:red">
+              </span> getElementById(<span class="jsstringcolor" style="color:brown">"Demo"</span>).<span
+                class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jsstringcolor"
+                style="color:brown">"Hello"</span>;<br><br>getElementById(<span class="jsstringcolor"
+                style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span>
+              <span class="jsnumbercolor" style="color:red">
+              </span> = <span class="jsstringcolor" style="color:brown">"Hello"</span>;<span class="jsnumbercolor"
+                style="color:red">
+              </span> </span></div>
+          <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_syntax_javascript" target="_blank">Try
+            it
+            Yourself »</a>
+        </div>
+        <p><a href="/js/js_conventions.asp">Visit the JavaScript Style Guide</a>.</p>
+        <hr>
+
+        <h2>Use Lower Case File Names</h2>
+        <p>Some web servers (Apache, Unix) are case sensitive about file names: "london.jpg" cannot be accessed as
+          "London.jpg". </p>
+        <p>Other web servers (Microsoft, IIS) are not case sensitive: "london.jpg" can be accessed as
+          "London.jpg".</p>
+        <p>If you use a mix of uppercase and lowercase, you have to be aware of this.</p>
+        <p>If you move from a case-insensitive to a case-sensitive server, even small
+          errors will break your web!</p>
+        <p>To avoid these problems, always use lowercase file names!</p>
+        <hr>
+
+        <h2>File Extensions</h2>
+        <p>HTML files should have a <strong>.html</strong> extension (<strong>.htm</strong> is allowed).</p>
+        <p>CSS files should have a <strong>.css</strong> extension.</p>
+        <p>JavaScript files should have a <strong>.js</strong> extension.</p>
+        <hr>
+
+        <h2>Differences Between .htm and .html?</h2>
+        <p>There is no difference between the .htm and .html file extensions!</p>
+        <p>Both will be
+          treated as HTML by any web browser and web server.</p>
+        <hr>
+
+        <h2>Default Filenames</h2>
+        <p>When a URL does not specify a filename at the end (like "https://www.w3schools.com/"),
+          the server just adds a default filename, such as "index.html",
+          "index.htm", "default.html", or "default.htm".</p>
+        <p>If your server is configured only with "index.html" as the default filename, your
+          file must be named "index.html", and not "default.html".</p>
+        <p>However, servers can be configured with more than one default filename;
+          usually you can set up as many default filenames as you want.</p>
+
+        <br>
+        <div class="w3-clear nextprev">
+          <a class="w3-left w3-btn" href="html5_semantic_elements.asp">❮ Previous</a>
+          <a class="w3-right w3-btn" href="html_entities.asp">Next ❯</a>
+        </div>
+        <div id="mypagediv2" style="position:relative;text-align:center;"></div>
+        <br>
+
+        <!-- </div> -->
 
       </div>
       <!-- /bd-content -->

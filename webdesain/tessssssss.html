@@ -486,70 +486,105 @@
           </div>
         </div>
 
-        <h2>Always Specify alt, width, and height for Images</h2>
-        <p>Always specify the <code class="w3-codespan">alt</code> attribute for images. This attribute is important
-          if the
-          image
-          for some reason cannot be displayed.</p>
-        <p>Also, always define the <code class="w3-codespan">width</code> and <code class="w3-codespan">
-height</code> of images. This reduces flickering, because the browser can reserve space for
-          the image before loading.</p>
-        <div class="w3-example">
-          <h3>Good:</h3>
-          <div class="w3-code notranslate htmlHigh">
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red">
-                src<span class="attributevaluecolor" style="color:mediumblue">="html5.gif"</span> alt<span
-                  class="attributevaluecolor" style="color:mediumblue">="HTML5"</span> style<span
-                  class="attributevaluecolor" style="color:mediumblue">="width:128px;height:128px"</span></span><span
-                class="tagcolor" style="color:mediumblue">&gt;</span></span>
+        <h2>Selalu tentukan <code>Alt</code>, <code>Width</code> &amp; <code>Height</code> untuk Gambar</h2>
+        <p>Selalu tentukan atribut <mark>alt</mark> untuk gambar. Atribut ini penting jika gambar karena alasan tertentu
+          tidak dapat ditampilkan. <br> Juga, selalu tentukan lebar dan tinggi gambar. Ini mengurangi kedipan, karena
+          browser dapat memesan ruang untuk gambar sebelum dimuat.</p>
+        <div class="highlight">
+          Code : <b>BAIK</b>
+          <div class="syntaxhighlighter  xml">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                  </td>
+                  <td class="code">
+                    <div class="container-fluid">
+                      <pre tabindex="0"
+                        class="chroma"><code class="language-html" data-lang="html">&lt;<span class="nt">img</span> <span class="na">src</span>="html5.gif" <span class="na">alt</span>="HTML5" <span class="na">style</span>="width:128px;height:128px"&gt;</code></pre>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-        <div class="w3-example">
-          <h3>Bad:</h3>
-          <div class="w3-code notranslate htmlHigh">
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red">
-                src<span class="attributevaluecolor" style="color:mediumblue">="html5.gif"</span></span><span
-                class="tagcolor" style="color:mediumblue">&gt;</span></span>
+        <div class="highlight">
+          Code : <b>BURUK</b>
+          <div class="syntaxhighlighter  xml">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                  </td>
+                  <td class="code">
+                    <div class="container-fluid">
+                      <pre tabindex="0"
+                        class="chroma"><code class="language-html" data-lang="html">&lt;<span class="nt">img</span> <span class="na">src</span>="html5.gif"&gt;</code></pre>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-        <hr>
 
-        <h2>Spaces and Equal Signs</h2>
-        <p>HTML allows spaces around equal signs. But space-less is easier to read and
-          groups entities better together.</p>
-        <div class="w3-example">
-          <h3>Good:</h3>
-          <div class="w3-code notranslate htmlHigh">
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red"> rel<span
-                  class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span> href<span
-                  class="attributevaluecolor" style="color:mediumblue">="styles.css"</span></span><span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>
+        <h2>Spasi &amp; Tanda-Tanda yang Sama</h2>
+        <p>HTML memungkinkan spasi di sekitar tanda yang sama.Tetapi ruang-kurang lebih mudah untuk membaca dan
+          mengelompokkan entitas lebih baik bersama.</p>
+        <div class="highlight">
+          Code : <b>BAIK</b>
+          <div class="syntaxhighlighter  xml">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                  </td>
+                  <td class="code">
+                    <div class="container-fluid">
+                      <pre tabindex="0"
+                        class="chroma"><code class="language-html" data-lang="html">&lt;<span class="nt">link</span> <span class="na">rel</span>="stylesheet" <span class="na">href</span>="styles.css"&gt;</code></pre>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-        <div class="w3-example">
-          <h3>Bad:</h3>
-          <div class="w3-code notranslate htmlHigh">
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red">
-                rel <span class="attributevaluecolor" style="color:mediumblue">= "stylesheet"</span> href <span
-                  class="attributevaluecolor" style="color:mediumblue">= "styles.css"</span></span><span
-                class="tagcolor" style="color:mediumblue">&gt;</span></span>
+        <div class="highlight">
+          Code : <b>BURUK</b>
+          <div class="syntaxhighlighter  xml">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                  </td>
+                  <td class="code">
+                    <div class="container-fluid">
+                      <pre tabindex="0"
+                        class="chroma"><code class="language-html" data-lang="html">&lt;<span class="nt">link</span><span class="na"> rel</span> = "stylesheet" <span class="na">href</span> = "styles.css"&gt;</code></pre>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-        <hr>
 
-        <h2>Avoid Long Code Lines</h2>
-        <p>When using an HTML editor, it is NOT convenient to scroll right and left to read the HTML code.</p>
-        <p>Try to avoid too long code lines.</p>
-        <hr>
+        <h2>Hindari Garis Kode Panjang</h2>
+        <p>Saat menggunakan editor HTML, TIDAK nyaman untuk menggulir ke kanan dan kiri untuk membaca kode HTML. Cobalah
+          untuk menghindari baris kode yang terlalu panjang.</p>
 
-        <h2>Blank Lines and Indentation</h2>
-        <p>Do not add blank lines, spaces, or indentations without a reason.</p>
-        <p>For readability, add blank lines to separate large or logical code blocks.</p>
-        <p>For readability, add two spaces of indentation. Do not use the tab key.</p>
+        <h2>Garis Kosong &amp; Lekukan</h2>
+        <p>Jangan menambahkan baris, spasi, atau lekukan kosong tanpa alasan. <br> Agar mudah dibaca, tambahkan baris
+          kosong untuk memisahkan blok kode besar atau logis. <br> Agar mudah dibaca, tambahkan dua spasi lekukan.
+          Jangan gunakan tombol tab.</p>
+
+
         <div class="w3-example">
           <h3>Good:</h3>
           <div class="w3-code notranslate htmlHigh">

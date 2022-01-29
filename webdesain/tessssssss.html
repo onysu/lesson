@@ -579,147 +579,172 @@
         <p>Saat menggunakan editor HTML, TIDAK nyaman untuk menggulir ke kanan dan kiri untuk membaca kode HTML. Cobalah
           untuk menghindari baris kode yang terlalu panjang.</p>
 
-        <h2>Garis Kosong &amp; Lekukan</h2>
+        <h2>Garis Kosong &amp; Lekukan <span class="fw-light text-muted">(Blank Lines and Indentation)</span></h2>
         <p>Jangan menambahkan baris, spasi, atau lekukan kosong tanpa alasan. <br> Agar mudah dibaca, tambahkan baris
           kosong untuk memisahkan blok kode besar atau logis. <br> Agar mudah dibaca, tambahkan dua spasi lekukan.
           Jangan gunakan tombol tab.</p>
+        <div class="highlight">
+          Code : <b>BAIK</b>
+          <div class="syntaxhighlighter  xml">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                    <div class="line number1 index0 alt2">2</div>
+                    <div class="line number1 index0 alt2">3</div>
+                    <div class="line number1 index0 alt2">4</div>
+                    <div class="line number1 index0 alt2">5</div>
+                    <div class="line number1 index0 alt2">6</div>
+                    <div class="line number1 index0 alt2">7</div>
+                    <div class="line number1 index0 alt2">8</div>
+                    <div class="line number1 index0 alt2">9</div>
+                    <div class="line number1 index0 alt2">10</div>
+                    <div class="line number1 index0 alt2">11</div>
+                  </td>
+                  <td class="code">
+                    <div class="container-fluid">
+                      <pre tabindex="0" class="chroma">
+<code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
 
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Kota-kota Terkenal<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
 
-        <div class="w3-example">
-          <h3>Good:</h3>
-          <div class="w3-code notranslate htmlHigh">
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>body<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>Famous Cities<span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>Tokyo<span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>p<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>Tokyo is the capital of Japan, the
-            center of the Greater Tokyo Area,<br>and the most
-            populous metropolitan area in the world.<br>It is the
-            seat of the Japanese government and the Imperial Palace,<br>
-            and the home of the Japanese Imperial Family.<span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>
+  <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Tokyo<span
+    class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Tokyo adalah ibu kota Jepang, pusat Wilayah Tokyo Raya,
+  dan wilayah metropolitan terpadat di dunia.
+  Ini adalah pusat pemerintahan Jepang dan Istana Kekaisaran,
+  dan rumah dari Keluarga Kekaisaran Jepang.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span></code></pre>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="highlight">
+          Code : <b>BURUK</b>
+          <div class="syntaxhighlighter  xml">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                    <div class="line number1 index0 alt2">2</div>
+                    <div class="line number1 index0 alt2">3</div>
+                    <div class="line number1 index0 alt2">4</div>
+                    <div class="line number1 index0 alt2">5</div>
+                    <div class="line number1 index0 alt2">6</div>
+                    <div class="line number1 index0 alt2">7</div>
+                    <div class="line number1 index0 alt2">8</div>
+                    <div class="line number1 index0 alt2">9</div>
+                    <div class="line number1 index0 alt2">10</div>
+                    <div class="line number1 index0 alt2">11</div>
+                    <div class="line number1 index0 alt2">12</div>
+                    <div class="line number1 index0 alt2">13</div>
+                  </td>
+                  <td class="code">
+                    <div class="container-fluid">
+                      <pre tabindex="0" class="chroma">
+<code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Kota-kota Terkenal<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+
+  <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Tokyo<span
+    class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+    Tokyo adalah ibu kota Jepang, pusat Wilayah Tokyo Raya,
+    dan wilayah metropolitan terpadat di dunia.
+    Ini adalah pusat pemerintahan Jepang dan Istana Kekaisaran,
+    dan rumah dari Keluarga Kekaisaran Jepang.
+  <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span></code></pre>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="highlight">
+          Code : <b>Contoh Tabel yang Baik</b>
+          <div class="syntaxhighlighter  xml">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                    <div class="line number1 index0 alt2">2</div>
+                    <div class="line number1 index0 alt2">3</div>
+                    <div class="line number1 index0 alt2">4</div>
+                    <div class="line number1 index0 alt2">5</div>
+                    <div class="line number1 index0 alt2">6</div>
+                    <div class="line number1 index0 alt2">7</div>
+                    <div class="line number1 index0 alt2">8</div>
+                    <div class="line number1 index0 alt2">9</div>
+                    <div class="line number1 index0 alt2">10</div>
+                    <div class="line number1 index0 alt2">11</div>
+                    <div class="line number1 index0 alt2">12</div>
+                    <div class="line number1 index0 alt2">13</div>
+                    <div class="line number1 index0 alt2">14</div>
+                  </td>
+                  <td class="code">
+                    <div class="container-fluid">
+                      <pre tabindex="0" class="chroma">
+<code class="language-html" data-lang="html">&lt;<span class="nt">table</span>&gt;
+  &lt;<span class="nt">tr</span>&gt;
+    &lt;<span class="nt">th</span>&gt;Nama&lt;<span class="nt">/th</span>&gt;
+    &lt;<span class="nt">th</span>&gt;Keterangan&lt;<span class="nt">/th</span>&gt;
+  &lt;<span class="nt">/tr</span>&gt;
+  &lt;<span class="nt">tr</span>&gt;
+    &lt;<span class="nt">td</span>&gt;A&lt;<span class="nt">/td</span>&gt;
+    &lt;<span class="nt">td</span>&gt;Deskripsi A.&lt;<span class="nt">/td</span>&gt;
+  &lt;<span class="nt">/tr</span>&gt;
+  &lt;<span class="nt">tr</span>&gt;
+    &lt;<span class="nt">td</span>&gt;B&lt;<span class="nt">/td</span>&gt;
+    &lt;<span class="nt">td</span>&gt;Deskripsi B.&lt;<span class="nt">/td</span>&gt;
+  &lt;<span class="nt">/tr</span>&gt;
+&lt;<span class="nt">/table</span>&gt;</code></pre>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="highlight">
+          Code : <b>Contoh List yang Baik</b>
+          <div class="syntaxhighlighter  xml">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                    <div class="line number1 index0 alt2">2</div>
+                    <div class="line number1 index0 alt2">3</div>
+                    <div class="line number1 index0 alt2">4</div>
+                    <div class="line number1 index0 alt2">5</div>
+                  </td>
+                  <td class="code">
+                    <div class="container-fluid">
+                      <pre tabindex="0" class="chroma">
+<code class="language-html" data-lang="html">&lt;<span class="nt">ul</span>&gt;
+  &lt;<span class="nt">li</span>&gt;London&lt;<span class="nt">/li</span>&gt;
+  &lt;<span class="nt">li</span>&gt;Paris&lt;<span class="nt">/li</span>&gt;
+  &lt;<span class="nt">li</span>&gt;Tokyo&lt;<span class="nt">/li</span>&gt;
+&lt;<span class="nt">/ul</span>&gt;</code></pre>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
 
-        <div class="w3-example">
-          <h3>Bad:</h3>
-          <div class="w3-code notranslate htmlHigh">
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>body<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br><br>&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>Famous Cities<span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br><br>&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>Tokyo<span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>
-            <br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>p<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; Tokyo is the capital of Japan, the
-            center of the Greater Tokyo Area,<br>&nbsp;&nbsp;&nbsp; and the most
-            populous metropolitan area in the world.<br>&nbsp;&nbsp;&nbsp; It is the
-            seat of the Japanese government and the Imperial Palace,<br>&nbsp;&nbsp;&nbsp;
-            and the home of the Japanese Imperial Family.<br>&nbsp; <span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>
-          </div>
-        </div>
-        <div class="w3-example">
-          <h3>Good Table Example:</h3>
-          <div class="w3-code notranslate htmlHigh">
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>table<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>tr<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>Name<span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>
-            &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>th<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>Description<span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>
-            &nbsp;
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>/tr<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>tr<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>A<span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>
-            &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>td<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>Description of A<span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>
-            &nbsp;
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>/tr<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>tr<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>B<span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>
-            &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>td<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>Description of B<span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/tr<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>/table<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>
-          </div>
-        </div>
-        <div class="w3-example">
-          <h3>Good List Example:</h3>
-          <div class="w3-code notranslate htmlHigh">
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>ul<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>London<span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor"
-              style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>Paris<span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br>
-            &nbsp;
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>li<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>Tokyo<span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span
-                class="tagcolor" style="color:mediumblue">&lt;</span>/ul<span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>
-          </div>
-        </div>
-        <hr>
-
-        <h2>Never Skip the &lt;title&gt; Element</h2>
+        <h2>Jangan Pernah Lewati Elemen <code>&lt;title&gt;</code></h2>
         <p>The <code class="w3-codespan">&lt;title&gt;</code> element is required in HTML.</p>
         <p>The contents of a page title is very important for search engine optimization
           (SEO)! The page title is used by search engine algorithms to decide the order

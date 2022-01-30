@@ -253,7 +253,8 @@
         </div>
 
         <h2>Gunakan Nama Elemen Huruf Kecil</h2>
-        <p>HTML memungkinkan pencampuran huruf besar dan kecil dalam nama elemen. Namun, kami sarankan menggunakan nama
+        <p class="lead">HTML memungkinkan pencampuran huruf besar dan kecil dalam nama elemen. Namun, kami sarankan
+          menggunakan nama
           elemen huruf kecil, karena :</p>
         <ul>
           <li>Mencampur nama huruf besar dan huruf kecil terlihat buruk</li>
@@ -312,7 +313,8 @@
         </div>
 
         <h2>Tutup Semua Elemen HTML</h2>
-        <p>Dalam HTML, Kalian tidak harus menutup semua elemen (misalnya <code>&lt;p&gt;</code> elemen). Namun, kami
+        <p class="lead">Dalam HTML, Kalian tidak harus menutup semua elemen (misalnya <code>&lt;p&gt;</code> elemen).
+          Namun, kami
           sangat menyarankan untuk menutup semua elemen HTML, seperti ini:</p>
         <div class="highlight">
           Code : <b>BAIK</b>
@@ -368,7 +370,8 @@
         </div>
 
         <h2>Gunakan Nama Atribut Huruf Kecil</h2>
-        <p>HTML memungkinkan pencampuran huruf besar dan kecil dalam nama atribut. Namun, kami sarankan menggunakan nama
+        <p class="lead">HTML memungkinkan pencampuran huruf besar dan kecil dalam nama atribut. Namun, kami sarankan
+          menggunakan nama
           atribut huruf kecil, karena:</p>
         <ul>
           <li>Mencampur nama huruf besar dan huruf kecil terlihat buruk.</li>
@@ -418,7 +421,8 @@
         </div>
 
         <h2>Selalu Kutip Nilai Atribut</h2>
-        <p>HTML memungkinkan nilai atribut tanpa tanda kutip. Namun, kami sarankan mengutip nilai atribut, karena:</p>
+        <p class="lead">HTML memungkinkan nilai atribut tanpa tanda kutip. Namun, kami sarankan mengutip nilai atribut,
+          karena:</p>
         <ul>
           <li>Pengembang biasanya mengutip nilai atribut.</li>
           <li>Nilai Kutipan lebih mudah dibaca.</li>
@@ -821,8 +825,8 @@
         </p>
 
         <h2>Menghilangkan <code>&lt;head&gt;</code>?</h2>
-        <p class="lead">Tag HTML <mark>&lt;head&gt;</mark> juga dapat dihilangkan. <br>
-          Browser akan menambahkan semua elemen sebelum <mark>&lt;body&gt;</mark>, ke elemen <mark>&lt;head&gt;</mark>
+        <p class="lead">Tag HTML <mark>&lt;head&gt;</mark> juga dapat dihilangkan.</p>
+        <p>Browser akan menambahkan semua elemen sebelum <mark>&lt;body&gt;</mark>, ke elemen <mark>&lt;head&gt;</mark>
           default.</p>
         <h5>Contoh :</h5>
         <div class="highlight">
@@ -1033,142 +1037,236 @@
 
         <h2>HTML Komentar</h2>
         <p>Komentar singkat harus ditulis pada satu baris, seperti ini:</p>
-        <span style="color:green">&lt;!-- Ini komentar --&gt;</span>
+        <div class="highlight">
+          Code : <code>comments</code>
+          <div class="syntaxhighlighter  xml">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                  </td>
+                  <td class="code">
+                    <div class="container-fluid">
+                      <pre tabindex="0"
+                        class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- Ini komentar --&gt;</span></code></pre>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
         <p>Komentar yang mencakup lebih dari satu baris, harus ditulis seperti ini:</p>
-        <span style="color:green">&lt;!-- <br> Ini adalah contoh komentar yang
-          panjang. Ini adalah contoh komentar yang panjang. <br> Ini adalah contoh komentar yang panjang. Ini
-          adalah contoh komentar yang panjang.<br>--&gt;</span>
+        <div class="highlight">
+          Code : <code>comments</code>
+          <div class="syntaxhighlighter  xml">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                    <div class="line number1 index0 alt2">2</div>
+                    <div class="line number1 index0 alt2">3</div>
+                    <div class="line number1 index0 alt2">4</div>
+                  </td>
+                  <td class="code">
+                    <div class="container-fluid">
+                      <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- 
+  Ini adalah contoh komentar yang panjang. Ini adalah contoh komentar yang panjang.
+  Ini adalah contoh komentar yang panjang. Ini adalah contoh komentar yang panjang.
+--&gt;</span></code></pre>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
         <p class="moreInfo">Komentar panjang lebih mudah untuk diamati jika mereka berdekatan dengan dua ruang.</p>
 
         <h2>Menggunakan Style Sheets</h2>
-        <p>Use simple syntax for linking to style sheets (the <code>type</code> attribute is not necessary):</p>
-
-
-        <div class="w3-example">
-          <div class="w3-code notranslate htmlHigh">
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red"> rel<span
-                  class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span> href<span
-                  class="attributevaluecolor" style="color:mediumblue">="styles.css"</span></span><span class="tagcolor"
-                style="color:mediumblue">&gt;</span></span>
+        <p class="lead">Gunakan sintaks sederhana untuk menautkan ke lembar style (atribut <mark>type</mark> tidak
+          diperlukan):</p>
+        <div class="highlight">
+          Code :
+          <div class="syntaxhighlighter  xml">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                  </td>
+                  <td class="code">
+                    <div class="container-fluid">
+                      <pre tabindex="0"
+                        class="chroma"><code class="language-html" data-lang="html">&lt;<span class="nt">link</span> <span class="na">rel</span>="stylesheet" <span class="na">href</span>="styles.css"&gt;</code></pre>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-
-        <p>Short CSS rules can be written compressed, like this:</p>
-        <div class="w3-example">
-          <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
-              p.intro <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
-                style="color:red">font-family<span class="csspropertyvaluecolor" style="color:mediumblue"><span
-                    class="cssdelimitercolor" style="color:black">:</span>Verdana<span class="cssdelimitercolor"
-                    style="color:black">;</span></span>font-size<span class="csspropertyvaluecolor"
-                  style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>16em<span
-                    class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor"
-                style="color:black">}</span> </span></div>
+        <p>Aturan CSS pendek dapat ditulis dikompresi, seperti ini:</p>
+        <div class="highlight">
+          Code : CSS Pendek
+          <div class="syntaxhighlighter  xml">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                    <div class="line number1 index0 alt2">2</div>
+                    <div class="line number1 index0 alt2">3</div>
+                    <div class="line number1 index0 alt2">4</div>
+                    <div class="line number1 index0 alt2">5</div>
+                    <div class="line number1 index0 alt2">6</div>
+                  </td>
+                  <td class="code">
+                    <div class="container-fluid">
+                      <pre tabindex="0" class="chroma">
+<code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="nt">p.intro</span> <span class="p">{</span>
+    <span class="k">font-family</span><span class="p">:</span> <span class="nf">Verdana</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="nf">16em</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-
-        <p>Long CSS rules should be written over multiple lines:</p>
-        <div class="w3-example">
-          <div class="w3-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
-              body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor"
-                style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor"
-                  style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> lightgrey<span
-                    class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; font-family<span
-                  class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
-                    style="color:black">:</span> "Arial
-                  Black", Helvetica, sans-serif<span class="cssdelimitercolor"
-                    style="color:black">;</span></span><br>&nbsp;
-                font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor"
-                    style="color:black">:</span> 16em<span class="cssdelimitercolor"
-                    style="color:black">;</span></span><br>&nbsp; color<span class="csspropertyvaluecolor"
-                  style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>
-                  black<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span
-                class="cssdelimitercolor" style="color:black">}</span> </span></div>
+        <div class="highlight">
+          Code : CSS Panjang
+          <div class="syntaxhighlighter  xml">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                    <div class="line number1 index0 alt2">2</div>
+                    <div class="line number1 index0 alt2">3</div>
+                    <div class="line number1 index0 alt2">4</div>
+                    <div class="line number1 index0 alt2">5</div>
+                    <div class="line number1 index0 alt2">6</div>
+                    <div class="line number1 index0 alt2">7</div>
+                    <div class="line number1 index0 alt2">8</div>
+                  </td>
+                  <td class="code">
+                    <div class="container-fluid">
+                      <pre tabindex="0" class="chroma">
+<code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+  <span class="nt">body</span> <span class="p">{</span>
+    <span class="k">background-color</span><span class="p">:</span> <span class="nf">lightgrey</span><span class="p">;</span>
+    <span class="k">font-family</span><span class="p">:</span> <span class="nf">"Arial Black", Helvetica, sans-serif</span><span class="p">;</span>
+    <span class="k">font-size</span><span class="p">:</span> <span class="nf">16em</span><span class="p">;</span>
+    <span class="k">color</span><span class="p">:</span> <span class="nf">black</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-
+        <p class="fs-5">Aturan CSS Panjang harus ditulis lebih dari beberapa baris:</p>
         <ul>
-          <li>Place the opening bracket on the same line as the selector</li>
-          <li>Use one space before the opening bracket</li>
-          <li>Use two spaces of indentation</li>
-          <li>Use semicolon after each property-value pair, including the last</li>
-          <li>Only use quotes around values if the value contains spaces</li>
-          <li>Place the closing bracket on a new line, without leading spaces</li>
+          <li>Tempatkan braket pembuka pada garis yang sama dengan pemilih.</li>
+          <li>Gunakan satu ruang sebelum braket pembuka.</li>
+          <li>Gunakan dua spasi lekukan.</li>
+          <li>Gunakan titik koma setelah setiap pasangan nilai properti, termasuk yang terakhir.</li>
+          <li>Hanya gunakan kutipan di sekitar nilai jika nilai berisi spasi.</li>
+          <li>Tempatkan braket penutup di baris baru, tanpa spasi terkemuka.</li>
         </ul>
-        <hr>
 
-        <h2>Loading JavaScript in HTML</h2>
-        <p>Use simple syntax for loading external scripts (the <code>
-type</code> attribute is not necessary):</p>
-
-        <div class="w3-example">
-          <div class="w3-code notranslate htmlHigh">
-            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
-                style="color:mediumblue">&lt;</span>script<span class="attributecolor" style="color:red"> src<span
-                  class="attributevaluecolor" style="color:mediumblue">="myscript.js"</span></span><span
-                class="tagcolor" style="color:mediumblue">&gt;</span></span>
+        <h2>Memuat Javascript di HTML</h2>
+        <p class="lead">Gunakan sintaks sederhana untuk memuat script eksternal (atribut <mark>type</mark> tidak
+          diperlukan):</p>
+        <div class="highlight">
+          Code :
+          <div class="syntaxhighlighter  xml">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                  </td>
+                  <td class="code">
+                    <div class="container-fluid">
+                      <pre tabindex="0" class="chroma">
+<code class="language-html" data-lang="html"><span class="p"><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="myscript.js"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span></code></pre>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-        <hr>
-        <h2>Accessing HTML Elements with JavaScript</h2>
-        <p>Using "untidy" HTML code can result in JavaScript errors.</p>
-        <p>These two JavaScript statements will produce different results:</p>
 
-        <div class="w3-example">
-          <h5>Contoh :</h5>
-          <div class="w3-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor"
-                style="color:red">
-              </span> getElementById(<span class="jsstringcolor" style="color:brown">"Demo"</span>).<span
-                class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jsstringcolor"
-                style="color:brown">"Hello"</span>;<br><br>getElementById(<span class="jsstringcolor"
-                style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span>
-              <span class="jsnumbercolor" style="color:red">
-              </span> = <span class="jsstringcolor" style="color:brown">"Hello"</span>;<span class="jsnumbercolor"
-                style="color:red">
-              </span> </span></div>
-          <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_syntax_javascript" target="_blank">Try
-            it
-            Yourself »</a>
+        <h2>Mengakses elemen HTML dengan JavaScript</h2>
+        <p>Menggunakan kode HTML <q>untidy</q> dapat menghasilkan kesalahan JavaScript. <br> Dua pernyataan JavaScript
+          ini akan menghasilkan hasil yang berbeda:</p>
+        <h5>Contoh :</h5>
+        <div class="highlight">
+          Code :
+          <div class="syntaxhighlighter  xml">
+            <table>
+              <tbody>
+                <tr>
+                  <td class="gutter">
+                    <div class="line number1 index0 alt2">1</div>
+                    <div class="line number1 index0 alt2">2</div>
+                    <div class="line number1 index0 alt2">3</div>
+                  </td>
+                  <td class="code">
+                    <div class="container-fluid">
+                      <pre tabindex="0" class="chroma">
+<code class="language-html" data-lang="html"><span class="p"><span class="nt">getElementById("Demo").innerHTML</span> = <span class="na">"Hello"</span>;
+
+<span class="nt">getElementById("demo").innerHTML</span> = <span class="na">"Hello"</span>;</code></pre>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p><a class="btn btn-warning btn-sm"
+              href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_syntax_javascript" target="_blank">Cobalah
+              sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
         </div>
-        <p><a href="/js/js_conventions.asp">Visit the JavaScript Style Guide</a>.</p>
-        <hr>
 
-        <h2>Use Lower Case File Names</h2>
-        <p>Some web servers (Apache, Unix) are case sensitive about file names: "london.jpg" cannot be accessed as
-          "London.jpg". </p>
-        <p>Other web servers (Microsoft, IIS) are not case sensitive: "london.jpg" can be accessed as
-          "London.jpg".</p>
-        <p>If you use a mix of uppercase and lowercase, you have to be aware of this.</p>
-        <p>If you move from a case-insensitive to a case-sensitive server, even small
-          errors will break your web!</p>
-        <p>To avoid these problems, always use lowercase file names!</p>
-        <hr>
+        <h2>Gunakan Nama File Huruf Kecil</h2>
+        <p>Beberapa server web (Apache, Unix) adalah case sensitive tentang nama file: "london.jpg" tidak
+          dapat diakses sebagai
+          "London.jpg". <br> Server Web lainnya (Microsoft, IIS) tidak peka huruf besar-kecil: "London.jpg" dapat
+          diakses sebagai
+          "London.jpg". <br> Jika Anda menggunakan campuran huruf besar dan kecil, Anda harus menyadari hal ini. <br>
+          Jika Anda pindah dari case-insensitive ke server case-sensitive, bahkan kesalahan kecil akan merusak web
+          Anda!. <br> Untuk menghindari masalah ini, selalu gunakan nama file kecil!</p>
 
         <h2>File Extensions</h2>
-        <p>HTML files should have a <strong>.html</strong> extension (<strong>.htm</strong> is allowed).</p>
-        <p>CSS files should have a <strong>.css</strong> extension.</p>
-        <p>JavaScript files should have a <strong>.js</strong> extension.</p>
-        <hr>
+        <p>
+          File HTML harus memiliki ekstensi <b>.html</b> (<b>.htm</b> diperbolehkan). <br>
+          File CSS harus memiliki ekstensi <b>.css</b>. <br>
+          File JavaScript harus memiliki ekstensi <b>.js</b>.
+        </p>
 
-        <h2>Differences Between .htm and .html?</h2>
-        <p>There is no difference between the .htm and .html file extensions!</p>
-        <p>Both will be
-          treated as HTML by any web browser and web server.</p>
-        <hr>
+        <h2>Perbedaan antara .htm dan .html?</h2>
+        <p class="lead">Tidak ada perbedaan antara ekstensi file .htm dan .html!. Keduanya akan diperlakukan sebagai
+          HTML oleh
+          browser web dan server web.</p>
 
-        <h2>Default Filenames</h2>
-        <p>When a URL does not specify a filename at the end (like "https://www.w3schools.com/"),
-          the server just adds a default filename, such as "index.html",
-          "index.htm", "default.html", or "default.htm".</p>
-        <p>If your server is configured only with "index.html" as the default filename, your
-          file must be named "index.html", and not "default.html".</p>
-        <p>However, servers can be configured with more than one default filename;
-          usually you can set up as many default filenames as you want.</p>
-
-        <br>
-        <div class="w3-clear nextprev">
-          <a class="w3-left w3-btn" href="html5_semantic_elements.asp">❮ Previous</a>
-          <a class="w3-right w3-btn" href="html_entities.asp">Next ❯</a>
-        </div>
-        <div id="mypagediv2" style="position:relative;text-align:center;"></div>
+        <h2>Nama File Default</h2>
+        <p>Ketika URL tidak menentukan nama file pada akhirnya (seperti "https://www.w3schools.com/"), server baru saja
+          menambahkan nama file default, seperti "index.html", "index.htm", "default.html ", atau" default.htm ". <br>
+          Jika server Anda dikonfigurasi hanya dengan "index.html" sebagai nama file default, file Anda harus dinamai
+          "index.html", dan bukan "default.html". <br> Namun, server dapat dikonfigurasi dengan lebih dari satu nama
+          file default;Biasanya Anda dapat mengatur nama file default sebanyak yang Anda inginkan.</p>
         <br>
 
         <!-- </div> -->

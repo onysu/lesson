@@ -19968,6 +19968,1055 @@ z = x + y;</code></pre>
           </table>
         </section>
 
+        <hr>
+
+        <!-- HTML Style Guide -->
+        <section id="29">
+          <h1>Panduan Style HTML</h1>
+          <p class="lead">Kode HTML yang konsisten, bersih, dan rapi membuatnya lebih mudah bagi orang lain untuk
+            membaca
+            dan memahami
+            Kode Kalian.Berikut adalah beberapa pedoman dan tips untuk membuat kode HTML yang baik.</p>
+
+          <h2>Selalu deklarasikan jenis dokumen</h2>
+          <p>Selalu deklarasikan tipe dokumen sebagai baris pertama dalam dokumen Kalian. Jenis dokumen yang benar untuk
+            HTML adalah:</p>
+
+          <div class="bd-callout bd-callout-syntax">
+            <span class="tagnamecolor" style="color:brown"><span class="tagcolor"
+                style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red">
+                html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+          </div>
+
+          <h2>Gunakan Nama Elemen Huruf Kecil</h2>
+          <p class="lead">HTML memungkinkan pencampuran huruf besar dan kecil dalam nama elemen. Namun, kami sarankan
+            menggunakan nama
+            elemen huruf kecil, karena :</p>
+          <ul>
+            <li>Mencampur nama huruf besar dan huruf kecil terlihat buruk</li>
+            <li>Pengembang biasanya menggunakan nama huruf kecil</li>
+            <li>Huruf kecil terlihat bersih.</li>
+            <li>Huruf kecil lebih mudah untuk ditulis</li>
+          </ul>
+
+          <div class="highlight">
+            Code : <b>BAIK</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ini adalah sebuah paragraf<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="highlight">
+            Code : <b>BURUK</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">BODY</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">P</span><span class="p">&gt;</span>Ini adalah sebuah paragraf<span class="p">&lt;/</span><span class="nt">P</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">BODY</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <h2>Tutup Semua Elemen HTML</h2>
+          <p class="lead">Dalam HTML, Kalian tidak harus menutup semua elemen (misalnya <code>&lt;p&gt;</code> elemen).
+            Namun, kami
+            sangat menyarankan untuk menutup semua elemen HTML, seperti ini:</p>
+          <div class="highlight">
+            Code : <b>BAIK</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ini adalah sebuah paragraf<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ini adalah sebuah paragraf<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="highlight">
+            Code : <b>BURUK</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">section</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ini adalah sebuah paragraf.
+            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ini adalah sebuah paragraf.
+          <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <h2>Gunakan Nama Atribut Huruf Kecil</h2>
+          <p class="lead">HTML memungkinkan pencampuran huruf besar dan kecil dalam nama atribut. Namun, kami sarankan
+            menggunakan nama
+            atribut huruf kecil, karena:</p>
+          <ul>
+            <li>Mencampur nama huruf besar dan huruf kecil terlihat buruk.</li>
+            <li>Pengembang biasanya menggunakan nama huruf kecil.</li>
+            <li>Huruf kecil terlihat lebih bersih.</li>
+            <li>Huruf kecil lebih mudah untuk ditulis.</li>
+          </ul>
+          <div class="highlight">
+            Code : <b>BAIK</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0"
+                          class="chroma"><code class="language-html" data-lang="html">&lt;<span class="nt">a</span> <span class="na">href</span>="<span class="s">https://onysu.github.io/lesson/webdesain/</span>"&gt;Visit our HTML tutorial&lt;<span class="nt">/a</span>&gt;</code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="highlight">
+            Code : <b>BURUK</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0"
+                          class="chroma"><code class="language-html" data-lang="html">&lt;<span class="nt">a</span> <span class="na">HREF</span>="<span class="s">https://onysu.github.io/lesson/webdesain/</span>"&gt;Visit our HTML tutorial&lt;<span class="nt">/a</span>&gt;</code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <h2>Selalu Kutip Nilai Atribut</h2>
+          <p class="lead">HTML memungkinkan nilai atribut tanpa tanda kutip. Namun, kami sarankan mengutip nilai
+            atribut,
+            karena:</p>
+          <ul>
+            <li>Pengembang biasanya mengutip nilai atribut.</li>
+            <li>Nilai Kutipan lebih mudah dibaca.</li>
+            <li>Kalian harus menggunakan kutipan jika nilainya berisi spasi.</li>
+          </ul>
+          <div class="highlight">
+            Code : <b>BAIK</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0"
+                          class="chroma"><code class="language-html" data-lang="html">&lt;<span class="nt">table</span> <span class="na">class</span>="striped"&gt;</code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="highlight">
+            Code : <b>BURUK</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0"
+                          class="chroma"><code class="language-html" data-lang="html">&lt;<span class="nt">table</span> <span class="na">class</span>=striped&gt;</code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="highlight">
+            Ini tidak akan berhasil, karena nilainya berisi spasi: <br>
+            Code : <b>SANGAT BURUK</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0"
+                          class="chroma"><code class="language-html" data-lang="html">&lt;<span class="nt">table</span> <span class="na">class</span>=table striped&gt;</code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <h2>Selalu tentukan <code>Alt</code>, <code>Width</code> &amp; <code>Height</code> untuk Gambar</h2>
+          <p>Selalu tentukan atribut <mark>alt</mark> untuk gambar. Atribut ini penting jika gambar karena alasan
+            tertentu
+            tidak dapat ditampilkan. <br> Juga, selalu tentukan lebar dan tinggi gambar. Ini mengurangi kedipan, karena
+            browser dapat memesan ruang untuk gambar sebelum dimuat.</p>
+          <div class="highlight">
+            Code : <b>BAIK</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0"
+                          class="chroma"><code class="language-html" data-lang="html">&lt;<span class="nt">img</span> <span class="na">src</span>="html5.gif" <span class="na">alt</span>="HTML5" <span class="na">style</span>="width:128px;height:128px"&gt;</code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="highlight">
+            Code : <b>BURUK</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0"
+                          class="chroma"><code class="language-html" data-lang="html">&lt;<span class="nt">img</span> <span class="na">src</span>="html5.gif"&gt;</code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <h2>Spasi &amp; Tanda-Tanda yang Sama</h2>
+          <p>HTML memungkinkan spasi di sekitar tanda yang sama.Tetapi ruang-kurang lebih mudah untuk membaca dan
+            mengelompokkan entitas lebih baik bersama.</p>
+          <div class="highlight">
+            Code : <b>BAIK</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0"
+                          class="chroma"><code class="language-html" data-lang="html">&lt;<span class="nt">link</span> <span class="na">rel</span>="stylesheet" <span class="na">href</span>="styles.css"&gt;</code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="highlight">
+            Code : <b>BURUK</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0"
+                          class="chroma"><code class="language-html" data-lang="html">&lt;<span class="nt">link</span><span class="na"> rel</span> = "stylesheet" <span class="na">href</span> = "styles.css"&gt;</code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <h2>Hindari Garis Kode Panjang</h2>
+          <p>Saat menggunakan editor HTML, TIDAK nyaman untuk menggulir ke kanan dan kiri untuk membaca kode HTML.
+            Cobalah
+            untuk menghindari baris kode yang terlalu panjang.</p>
+
+          <h2>Garis Kosong &amp; Lekukan <span class="fw-light text-muted">(Blank Lines and Indentation)</span></h2>
+          <p>Jangan menambahkan baris, spasi, atau lekukan kosong tanpa alasan. <br> Agar mudah dibaca, tambahkan baris
+            kosong untuk memisahkan blok kode besar atau logis. <br> Agar mudah dibaca, tambahkan dua spasi lekukan.
+            Jangan gunakan tombol tab.</p>
+          <h5>Contoh :</h5>
+          <div class="highlight">
+            Code : <b>BAIK</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number1 index0 alt2">2</div>
+                      <div class="line number1 index0 alt2">3</div>
+                      <div class="line number1 index0 alt2">4</div>
+                      <div class="line number1 index0 alt2">5</div>
+                      <div class="line number1 index0 alt2">6</div>
+                      <div class="line number1 index0 alt2">7</div>
+                      <div class="line number1 index0 alt2">8</div>
+                      <div class="line number1 index0 alt2">9</div>
+                      <div class="line number1 index0 alt2">10</div>
+                      <div class="line number1 index0 alt2">11</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+          
+            <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Kota-kota Terkenal<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+          
+            <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Tokyo<span
+              class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Tokyo adalah ibu kota Jepang, pusat Wilayah Tokyo Raya,
+            dan wilayah metropolitan terpadat di dunia.
+            Ini adalah pusat pemerintahan Jepang dan Istana Kekaisaran,
+            dan rumah dari Keluarga Kekaisaran Jepang.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+          
+          <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="highlight">
+            Code : <b>BURUK</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number1 index0 alt2">2</div>
+                      <div class="line number1 index0 alt2">3</div>
+                      <div class="line number1 index0 alt2">4</div>
+                      <div class="line number1 index0 alt2">5</div>
+                      <div class="line number1 index0 alt2">6</div>
+                      <div class="line number1 index0 alt2">7</div>
+                      <div class="line number1 index0 alt2">8</div>
+                      <div class="line number1 index0 alt2">9</div>
+                      <div class="line number1 index0 alt2">10</div>
+                      <div class="line number1 index0 alt2">11</div>
+                      <div class="line number1 index0 alt2">12</div>
+                      <div class="line number1 index0 alt2">13</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+          
+            <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Kota-kota Terkenal<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+          
+            <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Tokyo<span
+              class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+              Tokyo adalah ibu kota Jepang, pusat Wilayah Tokyo Raya,
+              dan wilayah metropolitan terpadat di dunia.
+              Ini adalah pusat pemerintahan Jepang dan Istana Kekaisaran,
+              dan rumah dari Keluarga Kekaisaran Jepang.
+            <span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+          
+          <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="highlight">
+            Code : <b>Contoh Tabel yang Baik</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number1 index0 alt2">2</div>
+                      <div class="line number1 index0 alt2">3</div>
+                      <div class="line number1 index0 alt2">4</div>
+                      <div class="line number1 index0 alt2">5</div>
+                      <div class="line number1 index0 alt2">6</div>
+                      <div class="line number1 index0 alt2">7</div>
+                      <div class="line number1 index0 alt2">8</div>
+                      <div class="line number1 index0 alt2">9</div>
+                      <div class="line number1 index0 alt2">10</div>
+                      <div class="line number1 index0 alt2">11</div>
+                      <div class="line number1 index0 alt2">12</div>
+                      <div class="line number1 index0 alt2">13</div>
+                      <div class="line number1 index0 alt2">14</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-html" data-lang="html">&lt;<span class="nt">table</span>&gt;
+            &lt;<span class="nt">tr</span>&gt;
+              &lt;<span class="nt">th</span>&gt;Nama&lt;<span class="nt">/th</span>&gt;
+              &lt;<span class="nt">th</span>&gt;Keterangan&lt;<span class="nt">/th</span>&gt;
+            &lt;<span class="nt">/tr</span>&gt;
+            &lt;<span class="nt">tr</span>&gt;
+              &lt;<span class="nt">td</span>&gt;A&lt;<span class="nt">/td</span>&gt;
+              &lt;<span class="nt">td</span>&gt;Deskripsi A.&lt;<span class="nt">/td</span>&gt;
+            &lt;<span class="nt">/tr</span>&gt;
+            &lt;<span class="nt">tr</span>&gt;
+              &lt;<span class="nt">td</span>&gt;B&lt;<span class="nt">/td</span>&gt;
+              &lt;<span class="nt">td</span>&gt;Deskripsi B.&lt;<span class="nt">/td</span>&gt;
+            &lt;<span class="nt">/tr</span>&gt;
+          &lt;<span class="nt">/table</span>&gt;</code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="highlight">
+            Code : <b>Contoh List yang Baik</b>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number1 index0 alt2">2</div>
+                      <div class="line number1 index0 alt2">3</div>
+                      <div class="line number1 index0 alt2">4</div>
+                      <div class="line number1 index0 alt2">5</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-html" data-lang="html">&lt;<span class="nt">ul</span>&gt;
+            &lt;<span class="nt">li</span>&gt;London&lt;<span class="nt">/li</span>&gt;
+            &lt;<span class="nt">li</span>&gt;Paris&lt;<span class="nt">/li</span>&gt;
+            &lt;<span class="nt">li</span>&gt;Tokyo&lt;<span class="nt">/li</span>&gt;
+          &lt;<span class="nt">/ul</span>&gt;</code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <h2>Jangan Pernah Lewati Elemen <code>&lt;title&gt;</code></h2>
+          <p class="lead">Elemen <mark>&lt;title&gt;</mark> diperlukan dalam HTML.</p>
+          <p>Isi judul halaman sangat penting untuk optimasi mesin pencari (SEO)! Judul halaman digunakan oleh algoritme
+            mesin pencari untuk menentukan urutan saat mencantumkan halaman dalam hasil pencarian.</p>
+          Elemen <code>&lt;title&gt;</code>:
+          <ul>
+            <li>mendefinisikan judul di bilah alat browser.</li>
+            <li>memberikan judul untuk halaman ketika ditambahkan ke favorit.</li>
+            <li>menampilkan judul halaman dalam hasil mesin pencari.</li>
+          </ul>
+          <p>Jadi, cobalah untuk membuat judul seakurat dan sebermakna mungkin:</p>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0"
+                          class="chroma"><code class="language-html" data-lang="html">&lt;<span class="nt">title</span>&gt;Panduan Style HTML Dan Konvensi Pengkodean&lt;<span class="nt">/title</span>&gt;</code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <h2>Menghilangkan <code>&lt;html&gt;</code> &amp; <code>&lt;body&gt;</code>?</h2>
+          <p class="lead">Halaman HTML akan divalidasi tanpa tag <mark>&lt;html&gt;</mark> dan
+            <mark>&lt;body&gt;</mark>:
+          </p>
+          <h5>Contoh :</h5>
+          <div class="highlight">
+            Code : <code>&lt;html&gt;</code> | <code>&lt;body&gt;</code>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number1 index0 alt2">2</div>
+                      <div class="line number1 index0 alt2">3</div>
+                      <div class="line number1 index0 alt2">4</div>
+                      <div class="line number1 index0 alt2">5</div>
+                      <div class="line number1 index0 alt2">6</div>
+                      <div class="line number1 index0 alt2">7</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+          <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Judul Halaman<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+          
+          <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, world!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ini adalah sebuah paragraf<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <p class="moreInfo">Namun, kami sangat menyarankan untuk selalu menambahkan tag <mark>&lt;html&gt;</mark> dan
+            <mark>&lt;body&gt;</mark>!. <br> Menghilangkan <mark>&lt;body&gt;</mark> dapat menghasilkan kesalahan di
+            browser lama. <br> Menghilangkan <mark>&lt;html&gt;</mark> dan <mark>&lt;body&gt;</mark> juga dapat merusak
+            perangkat lunak DOM an XML.
+          </p>
+
+          <h2>Menghilangkan <code>&lt;head&gt;</code>?</h2>
+          <p class="lead">Tag HTML <mark>&lt;head&gt;</mark> juga dapat dihilangkan.</p>
+          <p>Browser akan menambahkan semua elemen sebelum <mark>&lt;body&gt;</mark>, ke elemen
+            <mark>&lt;head&gt;</mark>
+            default.
+          </p>
+          <h5>Contoh :</h5>
+          <div class="highlight">
+            Code : <code>head</code>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number1 index0 alt2">2</div>
+                      <div class="line number1 index0 alt2">3</div>
+                      <div class="line number1 index0 alt2">4</div>
+                      <div class="line number1 index0 alt2">5</div>
+                      <div class="line number1 index0 alt2">6</div>
+                      <div class="line number1 index0 alt2">7</div>
+                      <div class="line number1 index0 alt2">8</div>
+                      <div class="line number1 index0 alt2">9</div>
+                      <div class="line number1 index0 alt2">10</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+          <span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Judul Halaman<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+          
+              <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, world!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ini adalah sebuah paragraf<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+          
+            <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <p class="moreInfo">Namun, sebaiknya gunakan tag <mark>&lt;head&gt;</mark>.</p>
+
+          <h2>Tutup Elemen HTML Kosong?</h2>
+          <p class="lead">Dalam HTML, adalah opsional untuk menutup elemen kosong.</p>
+          <h5>Contoh :</h5>
+          <div class="highlight">
+            Code : Diizinkan
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span> <span class="s">"utf-8"</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="highlight">
+            Code : Juga Diizinkan
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0"
+                          class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span> <span class="s">"utf-8"</span>/<span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <p class="moreInfo">Jika Kalian mengharapkan perangkat lunak XML / XHTML untuk mengakses halaman Kalian,
+            simpan
+            slash
+            penutup (/),
+            karena diperlukan dalam XML dan XHTML.</p>
+
+          <hr>
+
+          <h2>Tambahkan Atribut <code>lang</code></h2>
+          <p>Kalian harus selalu menyertakan atribut <mark>lang</mark> di dalam tag &lt;html&gt;, untuk mendeklarasikan
+            bahasa halaman Web. Ini dimaksudkan untuk membantu mesin pencari dan browser.</p>
+          <h5>Contoh :</h5>
+          <div class="highlight">
+            Code : <code>lang</code>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                      <div class="line number2 index1 alt1">6</div>
+                      <div class="line number2 index1 alt1">7</div>
+                      <div class="line number2 index1 alt1">8</div>
+                      <div class="line number2 index1 alt1">9</div>
+                      <div class="line number2 index1 alt1">10</div>
+                      <div class="line number2 index1 alt1">11</div>
+                      <div class="line number2 index1 alt1">12</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+          <mark><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span><span class="p">&gt;</span></mark>
+            <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span> <span class="s">"utf-8"</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span> <span class="s">"viewport"</span><span class="na">content</span><span class="o">=</span> <span class="s">"width=device-width, initial-scale=1"</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Judul Halaman<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, world!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Ini adalah sebuah paragraf<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <h2>Meta Data</h2>
+          <p>Untuk memastikan interpretasi yang tepat dan pengindeksan mesin telusur yang benar, bahasa dan pengkodean
+            karakter <mark>&lt;meta charset="charset"&gt;</mark> harus didefinisikan sedini mungkin dalam dokumen HTML:
+          </p>
+          <div class="highlight">
+            Code : <code>lang</code>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number2 index1 alt1">2</div>
+                      <div class="line number2 index1 alt1">3</div>
+                      <div class="line number2 index1 alt1">4</div>
+                      <div class="line number2 index1 alt1">5</div>
+                      <div class="line number2 index1 alt1">6</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!doctype html&gt;</span>
+          <span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span><span class="p">&gt;</span>
+          <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span> <span class="s">"utf-8"</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Judul Halaman<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <h2>Mengatur Viewport</h2>
+          <p>Viewport adalah area pengguna yang terlihat dari halaman web. Ini bervariasi dengan perangkat - itu akan
+            lebih kecil pada ponsel daripada pada layar komputer. <br> Kalian harus menyertakan elemen
+            <mark>&lt;meta&gt;</mark> berikut di semua halaman web Kalian:
+          </p>
+          <div class="highlight">
+            Code : <code>viewport</code>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0"
+                          class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span> <span class="s">"viewport"</span><span class="na">content</span><span class="o">=</span> <span class="s">"width=device-width, initial-scale=1.0"</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <p>Ini memberikan petunjuk kepada browser tentang cara mengontrol dimensi dan penskalaan halaman. <br> Bagian
+            width=device-width mengatur lebar halaman untuk mengikuti lebar layar perangkat (yang akan bervariasi
+            tergantung pada perangkat). <br> Bagian initial-scale=1.0 menyetel tingkat zoom awal saat halaman pertama
+            kali
+            dimuat oleh browser. <br> Berikut adalah contoh halaman web tanpa tag meta viewport, dan halaman web yang
+            sama
+            dengan tag meta viewport: </p>
+          <p class="moreInfo"><b>Tip:</b> Jika Anda menjelajahi halaman ini dengan ponsel atau tablet, Anda dapat
+            mengklik
+            dua tautan di bawah untuk melihat perbedaannya.</p>
+          <br>
+          <iframe src="viewport.html" width="100%" height="450" frameborder="0"></iframe>
+
+          <h2>HTML Komentar</h2>
+          <p>Komentar singkat harus ditulis pada satu baris, seperti ini:</p>
+          <div class="highlight">
+            Code : <code>comments</code>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0"
+                          class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- Ini komentar --&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <p>Komentar yang mencakup lebih dari satu baris, harus ditulis seperti ini:</p>
+          <div class="highlight">
+            Code : <code>comments</code>
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number1 index0 alt2">2</div>
+                      <div class="line number1 index0 alt2">3</div>
+                      <div class="line number1 index0 alt2">4</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- 
+            Ini adalah contoh komentar yang panjang. Ini adalah contoh komentar yang panjang.
+            Ini adalah contoh komentar yang panjang. Ini adalah contoh komentar yang panjang.
+          --&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <p class="moreInfo">Komentar panjang lebih mudah untuk diamati jika mereka berdekatan dengan dua ruang.</p>
+
+          <h2>Menggunakan Style Sheets</h2>
+          <p class="lead">Gunakan sintaks sederhana untuk menautkan ke lembar style (atribut <mark>type</mark> tidak
+            diperlukan):</p>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0"
+                          class="chroma"><code class="language-html" data-lang="html">&lt;<span class="nt">link</span> <span class="na">rel</span>="stylesheet" <span class="na">href</span>="styles.css"&gt;</code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <p>Aturan CSS pendek dapat ditulis dikompresi, seperti ini:</p>
+          <div class="highlight">
+            Code : CSS Pendek
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number1 index0 alt2">2</div>
+                      <div class="line number1 index0 alt2">3</div>
+                      <div class="line number1 index0 alt2">4</div>
+                      <div class="line number1 index0 alt2">5</div>
+                      <div class="line number1 index0 alt2">6</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+            <span class="nt">p.intro</span> <span class="p">{</span>
+              <span class="k">font-family</span><span class="p">:</span> <span class="nf">Verdana</span><span class="p">;</span>
+              <span class="k">font-size</span><span class="p">:</span> <span class="nf">16em</span><span class="p">;</span>
+            <span class="p">}</span>
+          <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="highlight">
+            Code : CSS Panjang
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number1 index0 alt2">2</div>
+                      <div class="line number1 index0 alt2">3</div>
+                      <div class="line number1 index0 alt2">4</div>
+                      <div class="line number1 index0 alt2">5</div>
+                      <div class="line number1 index0 alt2">6</div>
+                      <div class="line number1 index0 alt2">7</div>
+                      <div class="line number1 index0 alt2">8</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-css" data-lang="css"><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+            <span class="nt">body</span> <span class="p">{</span>
+              <span class="k">background-color</span><span class="p">:</span> <span class="nf">lightgrey</span><span class="p">;</span>
+              <span class="k">font-family</span><span class="p">:</span> <span class="nf">"Arial Black", Helvetica, sans-serif</span><span class="p">;</span>
+              <span class="k">font-size</span><span class="p">:</span> <span class="nf">16em</span><span class="p">;</span>
+              <span class="k">color</span><span class="p">:</span> <span class="nf">black</span><span class="p">;</span>
+            <span class="p">}</span>
+          <span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <p class="fs-5">Aturan CSS Panjang harus ditulis lebih dari beberapa baris:</p>
+          <ul>
+            <li>Tempatkan braket pembuka pada garis yang sama dengan pemilih.</li>
+            <li>Gunakan satu ruang sebelum braket pembuka.</li>
+            <li>Gunakan dua spasi lekukan.</li>
+            <li>Gunakan titik koma setelah setiap pasangan nilai properti, termasuk yang terakhir.</li>
+            <li>Hanya gunakan kutipan di sekitar nilai jika nilai berisi spasi.</li>
+            <li>Tempatkan braket penutup di baris baru, tanpa spasi terkemuka.</li>
+          </ul>
+
+          <h2>Memuat Javascript di HTML</h2>
+          <p class="lead">Gunakan sintaks sederhana untuk memuat script eksternal (atribut <mark>type</mark> tidak
+            diperlukan):</p>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-html" data-lang="html"><span class="p"><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="myscript.js"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span></code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <h2>Mengakses elemen HTML dengan JavaScript</h2>
+          <p>Menggunakan kode HTML <q>untidy</q> dapat menghasilkan kesalahan JavaScript. <br> Dua pernyataan JavaScript
+            ini akan menghasilkan hasil yang berbeda:</p>
+          <h5>Contoh :</h5>
+          <div class="highlight">
+            Code :
+            <div class="syntaxhighlighter  xml">
+              <table>
+                <tbody>
+                  <tr>
+                    <td class="gutter">
+                      <div class="line number1 index0 alt2">1</div>
+                      <div class="line number1 index0 alt2">2</div>
+                      <div class="line number1 index0 alt2">3</div>
+                    </td>
+                    <td class="code">
+                      <div class="container-fluid">
+                        <pre tabindex="0" class="chroma">
+          <code class="language-html" data-lang="html"><span class="p"><span class="nt">getElementById("Demo").innerHTML</span> = <span class="na">"Hello"</span>;
+          
+          <span class="nt">getElementById("demo").innerHTML</span> = <span class="na">"Hello"</span>;</code></pre>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p><a class="btn btn-warning btn-sm"
+                href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_syntax_javascript"
+                target="_blank">Cobalah
+                sendiri <img draggable="false" role="img" class="emoji" alt="↗"
+                  src="https://s.w.org/images/core/emoji/13.1.0/svg/2197.svg"></a></p>
+          </div>
+
+          <h2>Gunakan Nama File Huruf Kecil</h2>
+          <p>Beberapa server web (Apache, Unix) adalah case sensitive tentang nama file: "london.jpg" tidak
+            dapat diakses sebagai
+            "London.jpg". <br> Server Web lainnya (Microsoft, IIS) tidak peka huruf besar-kecil: "London.jpg" dapat
+            diakses sebagai
+            "London.jpg". <br> Jika Anda menggunakan campuran huruf besar dan kecil, Anda harus menyadari hal ini. <br>
+            Jika Anda pindah dari case-insensitive ke server case-sensitive, bahkan kesalahan kecil akan merusak web
+            Anda!. <br> Untuk menghindari masalah ini, selalu gunakan nama file kecil!</p>
+
+          <h2>File Extensions</h2>
+          <p>
+            File HTML harus memiliki ekstensi <b>.html</b> (<b>.htm</b> diperbolehkan). <br>
+            File CSS harus memiliki ekstensi <b>.css</b>. <br>
+            File JavaScript harus memiliki ekstensi <b>.js</b>.
+          </p>
+
+          <h2>Perbedaan antara .htm dan .html?</h2>
+          <p class="lead">Tidak ada perbedaan antara ekstensi file .htm dan .html!. Keduanya akan diperlakukan sebagai
+            HTML oleh
+            browser web dan server web.</p>
+
+          <h2>Nama File Default</h2>
+          <p>Ketika URL tidak menentukan nama file pada akhirnya (seperti "https://www.w3schools.com/"), server baru
+            saja
+            menambahkan nama file default, seperti "index.html", "index.htm", "default.html ", atau" default.htm ". <br>
+            Jika server Anda dikonfigurasi hanya dengan "index.html" sebagai nama file default, file Anda harus dinamai
+            "index.html", dan bukan "default.html". <br> Namun, server dapat dikonfigurasi dengan lebih dari satu nama
+            file default;Biasanya Anda dapat mengatur nama file default sebanyak yang Anda inginkan.</p>
+        </section>
+
       </div>
       <!-- /bd-content -->
     </main>

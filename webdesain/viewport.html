@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>viewport</title>
+  <style>
+    /* *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    } */
+
+    a {
+      background-color: transparent;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    img.viewport {
+      border: 10px solid #f1f1f1;
+      border-radius: 3px;
+    }
+
+    .w3-half {
+      width: 49.99999%;
+      float: left;
+    }
+
+    @media (min-width: 360px) {
+      .w3-half {
+        width: 49.99999%;
+      }
+    }
+
+    .w3-hover-shadow:hover {
+      box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="w3-row" style="text-align:center;">
+    <div class="w3-half">
+      <a target="_blank" href="example_withoutviewport.htm"><img src="https://www.w3schools.com/css/img_viewport1.png"
+          class="w3-hover-shadow viewport"><br><br><b>Tanpa tag meta viewport</b></a>
+      <br>
+      <br>
+    </div>
+    <div class="w3-half">
+      <a target="_blank" href="example_withviewport.htm"><img src="https://www.w3schools.com/css/img_viewport2.png"
+          class="w3-hover-shadow viewport"><br><br><b>Dengan tag meta viewport</b></a>
+      <br>
+      <br>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -13,7 +13,7 @@ function createSnow() {
 setInterval(createSnow, 100);
 
 // count-down
-let counteDate = new Date('jan 1, 2022 00:00:00').getTime();
+let counteDate = new Date('jan 1, 2026 00:00:00').getTime();
 
 function countDown() {
     let now = new Date().getTime();

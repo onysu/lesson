@@ -112,26 +112,234 @@
     <hr>
 
     <h3>Apa Itu PHP?</h3>
-    <p><b>PHP</b> (Hypertext Preprocessor) adalah bahasa pemrograman yang berjalan di sisi server (server-side).</p>
-    <p>Dikembangkan oleh Rasmus Lerdorf pada tahun 1994.</p>
-    <p>Digunakan untuk membuat halaman web dinamis dan interaktif.</p>
-    <p>File PHP memiliki ekstensi <code>.php</code>.</p>
+    <p>PHP = <b>P</b>HP: <b>H</b>ypertext <b>P</b>reprocessor <br>
+      → Bahasa backend untuk membuat website dinamis
+    </p>
+    <p><b>PHP</b> (Hypertext Preprocessor) adalah bahasa pemrograman yang berjalan di sisi server (server-side). <br>
+      Dikembangkan oleh Rasmus Lerdorf pada tahun 1994. <br>
+      Digunakan untuk membuat halaman web dinamis dan interaktif. <br>
+      File PHP memiliki ekstensi <code>.php</code>.</p>
+
+    <p>Kegunaan PHP:
+    <ul>
+      <li>Form Login, Register</li>
+      <li>CRUD (Create, Read, Update, Delete)</li>
+      <li>Upload file</li>
+      <li>Sistem Dashboard Admin</li>
+    </ul>
+    </p>
+
+    <p>Keunggulan PHP:
+    <ul>
+      <li>Mudah</li>
+      <li>Banyak contoh di internet</li>
+      <li>Dipakai WordPress, Facebook (awal), dll</li>
+      <li>Bisa berjalan di hosting murah</li>
+    </ul>
+    </p>
+
+    <hr>
+    <h3>Bagaimana PHP Bekerja?</h3>
+    <p>
+      Contoh Salah: <br>
+      ❌ double-click <code>index.php</code> di file explorer → langsung buka di browser <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hasil: kode PHP tidak dijalankan, tampil apa adanya.
+    </p>
+    <p>
+      Contoh Benar: <br>
+      ✅ letakkan <code>index.php</code> di folder <code>htdocs</code> (XAMPP) atau <code>www</code> (Laragon) → buka di
+      browser via <code>http://localhost/namafolder/index.php</code> <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Hasil: kode PHP dijalankan di server, tampil sesuai output.
+    </p>
+    <p>
+      Penjelasan: <br>
+      1. Browser mengirim request ke server (XAMPP/Laragon) <br>
+      2. Server memproses kode PHP di file <code>.php</code> <br>
+      3. Server mengirim hasil (HTML/CSS/JS) kembali ke browser <br>
+      4. Browser menampilkan hasilnya
+    </p>
+
+    <p>
+      Jadi, PHP dijalankan di server, bukan di browser. Itulah sebabnya kita perlu menggunakan local server seperti
+      XAMPP atau Laragon untuk menjalankan file PHP.
+    </p>
+
+    <p>
+      Ekstensi file PHP selalu <code>.php</code>, bukan <code>.html</code> atau lainnya. Contoh: <code>index.php</code>,
+      <code>biodata.php</code>.
+    </p>
+
+    <p>
+      Bagian Utama: <br>
+    <ul>
+      <li>Apache = web server</li>
+      <li>PHP = interpreter</li>
+      <li>MySQL = database engine</li>
+      <li>phpMyAdmin = pengelola database via web</li>
+    </ul>
+    </p>
 
     <hr>
 
-    <h3>Menjalankan PHP di Local Server</h3>
-    <p>Untuk menjalankan PHP secara lokal, kita perlu menginstal web server seperti:</p>
-    <ul>
-      <li><b>XAMPP</b>: Paket software yang mencakup Apache (web server), MySQL (database), PHP, dan Perl.</li>
-      <li><b>Laragon</b>: Alternatif ringan untuk XAMPP dengan fitur tambahan.</li>
-    </ul>
-    <p>Setelah instalasi, file PHP disimpan di folder khusus:
-    <ul>
-      <li>XAMPP: <code>htdocs</code></li>
-      <li>Laragon: <code>www</code></li>
-    </ul>
+    <h3>INSTALASI XAMPP</h3>
+    <ol>
+      <li>Download XAMPP dari <a href="https://www.apachefriends.org/index.html" target="_blank">apachefriends.org</a>
+      </li>
+      <li>Jalankan installer, ikuti langkah instalasi</li>
+      <li>Tentukan lokasi: misalnya <code>C:\xampp\</code> atau <code>D:\xampp\</code> tunggu sampai instalasi selesai.
+      </li>
+      <!-- <li>Buka XAMPP Control Panel</li>
+      <li>Start atau centang module <b>Apache</b> dan <b>MySQL</b></li>
+      <li>Buka browser, akses <code>http://localhost/</code> untuk cek apakah XAMPP berjalan</li> -->
+    </ol>
+
+    <h3>Menjalankan XAMPP Control Panel</h3>
+    <ol>
+      <li>Buka XAMPP Control Panel dari menu Start atau dari folder instalasi XAMPP</li>
+      <li>Di Control Panel, klik tombol "Start" pada module <b>Apache</b> dan <b>MySQL</b></li>
+      <li>Pastikan status berubah menjadi "Running" berwarna hijau</li>
+      <!-- <li>Buka browser, akses <code>http://localhost/</code> untuk memastikan XAMPP berjalan dengan baik</li> -->
+    </ol>
+
+    <h3>Menguji Apache</h3>
+    <ol>
+      <li>Buka browser</li>
+      <li>Ketik <code>http://localhost/</code> di address bar</li>
+      <li>Jika muncul halaman dashboard XAMPP, berarti Apache sudah berjalan dengan baik</li>
+    </ol>
+
+    <hr>
+
+    <h3>Mengenal Folder htdocs</h3>
+    <p>Folder <code>htdocs</code> adalah root directory untuk menyimpan file website di XAMPP. <br>
+      Lokasi default: <code>C:\xampp\htdocs\</code> atau <code>D:\xampp\htdocs\</code></p>
+    <p>Semua file PHP, HTML, CSS, JS yang ingin dijalankan melalui localhost harus disimpan di dalam folder
+      <code>htdocs</code>.
     </p>
-    <p>Akses file melalui browser dengan URL: <code>http://localhost/nama_folder/namafile.php</code></p>
+
+    <h3>Membuat Project PHP Pertama</h3>
+    <ol>
+      <li>Buka folder instalasi XAMPP, biasanya di <code>C:\xampp\htdocs\</code> atau <code>D:\xampp\htdocs\</code></li>
+      <li>Buat folder baru untuk project, misalnya <code>belajarphp</code></li>
+      <li>Buka text editor (misalnya Notepad, VSCode)</li>
+      <li>Buat file baru dengan nama <code>index.php</code></li>
+      <li>Isi file dengan kode berikut:
+        <pre><code>&lt;?php
+echo "Hello, World!";
+?&gt;</code></pre>
+      </li>
+      <li>Simpan file di dalam folder <code>belajarphp</code> yang sudah dibuat di langkah 2</li>
+      <li>Buka browser, akses <code>http://localhost/belajarphp/</code></li>
+      <li>Jika muncul tulisan "Hello, World!", berarti Apache dan PHP sudah berjalan dengan baik</li>
+    </ol>
+
+    <hr>
+
+    <h3>Penjelasan Tag PHP</h3>
+    <p>Tag pembuka PHP adalah <code>&lt;?php</code> dan tag penutupnya adalah <code>?&gt;</code>. <br>
+      Semua kode PHP harus ditulis di antara tag ini.</p>
+    <p>Contoh:
+    <pre><code>&lt;?php
+echo "Ini adalah kode PHP";
+?&gt;</code></pre>
+    </p>
+
+    <hr>
+
+    <h3>Output di PHP</h3>
+    <p>Ada dua cara utama untuk menampilkan output di PHP:</p>
+    <ul>
+      <li><b>echo</b>: digunakan untuk menampilkan satu atau lebih string. Contoh:
+        <pre><code>&lt;?php
+echo "Halo, Dunia!";
+?&gt;</code></pre>
+      </li>
+      <li><b>print</b>: mirip dengan echo, tetapi hanya dapat menampilkan satu string. Contoh:
+        <pre><code>&lt;?php
+print "Selamat datang di PHP!";
+?&gt;</code></pre>
+      </li>
+    </ul>
+
+    <h3>Perbedaan Utama: Echo vs Print</h3>
+    <ul>
+      <li>
+        ✔ A. echo → bisa mencetak beberapa nilai sekaligus <br>
+        <pre><code>&lt;?php
+echo "Halo ", "dunia ", "PHP!";
+?&gt;</code></pre>
+        Output: <br>
+        <code>Halo dunia PHP!</code>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+      </li>
+      <li>
+        ❌ B. print → tidak bisa mencetak beberapa nilai sekaligus <br>
+        <pre><code>&lt;?php
+print "Halo ", "dunia ", "PHP!";
+?&gt;</code></pre>
+        Output: <br>
+        <code>Error: print hanya bisa mencetak satu nilai saja.</code>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+      </li>
+      <li>
+        ✔ C. Kecepatan eksekusi:
+        <ul>
+          <li><code>echo</code> → sedikit lebih cepat karena tidak mengembalikan nilai</li>
+          <li><code>print</code> → sedikit lebih lambat karena mengembalikan nilai 1</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>Penggunaan dalam kondisi (conditional)</h3>
+    <p>Karena <code>print</code> mengembalikan nilai 1, maka bisa dipakai dalam ekspresi:</p>
+    <pre><code>&lt;?php
+if (print "Hai") {
+echo " - Ini dieksekusi";
+}
+?&gt;</code></pre>
+    <p>Output</p>
+    <pre><code>Hai - Ini dieksekusi</code></pre>
+    <p><code>echo</code> tidak bisa digunakan seperti ini.</p>
+
+    <h4>Kesimpulan Sederhana</h4>
+    <ul>
+      <li>Gunakan echo → untuk menampilkan teks biasa (lebih cepat, fleksibel).</li>
+      <li>Gunakan print → bila kamu butuh nilai balik (jarang diperlukan).</li>
+      <li>Keduanya umum dipakai, jadi pilih sesuai kebutuhan.</li>
+    </ul>
+
+    <hr>
+
+    <h3>Menulis Komentar di PHP</h3>
+    <p>Komentar digunakan untuk memberikan penjelasan pada kode dan tidak akan dieksekusi oleh PHP. Ada tiga cara
+      menulis komentar di PHP:</p>
+    <ul>
+      <li><b>Komentar satu baris</b> menggunakan <code>//</code> atau <code>#</code>:
+        <pre><code>&lt;?php
+// Ini adalah komentar satu baris
+# Ini juga komentar satu baris
+echo "Halo!";
+?&gt;</code></pre>
+      </li>
+      <li><b>Komentar multi-baris</b> menggunakan <code>/* ... */</code>:
+        <pre><code>&lt;?php
+/* Ini adalah komentar
+   yang terdiri dari
+    beberapa baris */
+echo "Halo!";
+?&gt;</code></pre>
+      </li>
+    </ul>
+
+
+
+
+    <hr>
+
+    <h3>Latihan: Membuat File Biodata</h3>
+    <p>Buat file bernama <code>biodata.php</code> di dalam folder project Anda. Isi file tersebut dengan kode
 
   </div>
 

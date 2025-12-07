@@ -333,13 +333,106 @@ echo "Halo!";
       </li>
     </ul>
 
+    <hr>
 
-
+    <h3>HTML + PHP (Mixed Code)</h3>
+    <p>Kode PHP dapat disisipkan di dalam file HTML. Contoh:</p>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Contoh PHP dalam HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Selamat Datang&lt;/h1&gt;
+    &lt;?php
+        echo "&lt;p&gt;Ini adalah paragraf yang dihasilkan oleh PHP.&lt;/p&gt;";
+    ?&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    <p>Output di browser:</p>
+    <pre><code>Selamat Datang
+Ini adalah paragraf yang dihasilkan oleh PHP.</code></pre>
 
     <hr>
 
-    <h3>Latihan: Membuat File Biodata</h3>
-    <p>Buat file bernama <code>biodata.php</code> di dalam folder project Anda. Isi file tersebut dengan kode
+    <h3>Error Umum Pemula</h3>
+    <ul>
+      <li>Lupa menulis tag pembuka <code>&lt;?php</code> atau penutup <code>?&gt;</code></li>
+      <li>Lupa menyimpan file dengan ekstensi <code>.php</code></li>
+      <li>Folder tidak diletakkan di htdocs</li>
+      <li>Salah menulis URL</li>
+      <li>Apache belum aktif</li>
+      <li>Membuka file langsung di browser tanpa melalui localhost</li>
+      <li>Salah ketik pada perintah seperti <code>echo</code> atau <code>print</code></li>
+      <li>Lupa menambahkan tanda titik koma (<code>;</code>) di akhir perintah</li>
+    </ul>
+    <p>Jika error:</p>
+    <code>Parse error: syntax error...</code>
+    <p>Artinya ada kesalahan penulisan.</p>
+
+    <hr>
+
+    <h3>LATIHAN MANDIRI</h3>
+    <p>Buat file <code>biodata.php</code> yang menampilkan informasi berikut menggunakan PHP:</p>
+    <ul>
+      <li>Nama: [Isi nama kamu]</li>
+      <li>Umur: [Isi umur kamu]</li>
+      <li>Alamat: [Isi alamat kamu]</li>
+    </ul>
+    <p>Contoh output yang diharapkan:</p>
+    <pre><code>Nama: Budi Santoso
+Umur: 20 tahun
+Alamat: Jl. Merdeka No. 10, Jakarta</code></pre>
+
+    <p>Gunakan perintah <code>echo</code> atau <code>print</code> untuk menampilkan informasi di atas.</p>
+
+    <pre><code>&lt;?php   
+echo "&lt;h1&gt;Data Diri&lt;/h1&gt;";
+echo "Nama: Budi Santoso&lt;br&gt;";
+echo "Umur: 20 tahun&lt;br&gt;";
+echo "Alamat: Jl. Merdeka No. 10, Jakarta&lt;br&gt;";
+?&gt;</code></pre>
+
+    <p>Jalankan :</p>
+
+    <code>http://localhost/belajarphp/biodata.php</code>
+
+    <hr>
+
+    <h3>PR UNTUK SISWA</h3>
+    <p>Buat Folder baru</p>
+    <code>latihan1</code>
+    <p>Di dalam folder <code>latihan1</code>, Buat file PHP baru bernama <code>perkenalan.php</code> yang menampilkan
+      informasi berikut:</p>
+
+    <ul>
+      <li>Perkenalkan nama saya [Isi nama kamu].</li>
+      <li>Saya berumur [Isi umur kamu] tahun.</li>
+      <li>Saya tinggal di [Isi alamat kamu].</li>
+      <li>Saya sedang belajar pemrograman web menggunakan PHP.</li>
+    </ul>
+    <p>Contoh output yang diharapkan:</p>
+    <pre><code>Perkenalkan nama saya Budi Santoso.
+Saya berumur 20 tahun.
+Saya tinggal di Jl. Merdeka No. 10, Jakarta.
+Saya sedang belajar pemrograman web menggunakan PHP.</code></pre>
+    <p>Gunakan perintah <code>echo</code> atau <code>print</code> untuk menampilkan informasi di atas.</p>
+
+    <!-- <pre><code>&lt;?php
+echo "Perkenalkan nama saya Budi Santoso.&lt;br&gt;";
+echo "Saya berumur 20 tahun.&lt;br&gt;";
+echo "Saya tinggal di Jl. Merdeka No. 10, Jakarta.&lt;br&gt;";
+echo "Saya sedang belajar pemrograman web menggunakan PHP.&lt;br&gt;";
+?&gt;</code></pre> -->
+
+    <p>Jalankan :</p>
+
+    <code>http://localhost/latihan1/perkenalan.php</code>
+
+    <hr>
+
 
   </div>
 
